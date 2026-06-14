@@ -35,13 +35,14 @@ tags:
 
 ### 03 — Script
 - [[00 - Script Format Guide]] — how to write a scene here
-- The script is a **clean slate** — no scenes drafted yet. Write them into `03 - Script/` following the planned running order in [[Structure & Scene Map]].
+- Drafted so far: [[01 - Cold Open — The Standup]] · [[02 - The Loom and the Guild — John half]]. Write the rest into `03 - Script/` following the running order in [[Structure & Scene Map]].
 
 ### 04 — References
 - [[Luddites — Period & Conditions]] — **comprehensive**: enclosure, empire & slavery, capitalism, the machinery question (the world John teaches the audience)
 - [[Luddites — History]] · [[AI Coding & Labor]] — quick reference + the real modern parallel
 - [[Primary Sources — Luddite Era]] — quotable period texts (Byron, ballads, proclamations, Ricardo, Clare)
 - [[Braided Structure — Reference]] — how the build-then-switch form works, and who does it best
+- [[Writing Didactic Drama — Craft Notes]] — how to teach political economy through character without lecturing (Brecht, Shaw, Churchill, *Enron*, *The Big Short*, verbatim theatre)
 - [[Quotes & Epigraphs]] · [[Inspiration — Tone & Form]]
 - Pulled passages: [[The Weavers — Pulled Passages]] · [[Office Space — Pulled Lines]] · [[Arcadia — Structural Technique]]
 
