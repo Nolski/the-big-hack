@@ -54,7 +54,7 @@ tags:
 **Comedy:** Liam's B1 pedantry, now logged as a "behavioural concern." The loving tic is now the case against him. **The curdle is visible here.**
 
 ### B8 — The system closes ranks (managed out)
-| HR offboarding. "This isn't a reflection of your value." The all-hands applause clip from B3 replays over it. Priya, who "advocated," signs. | The bailiff. The 1812 Frame Breaking Act invoked. The magistrate's contempt. Cartwright's affable regret. |
+| HR offboarding. "This isn't a reflection of your value." The all-hands applause clip from B3 replays over it. Kristina, who "advocated," signs. | The bailiff. The 1812 Frame Breaking Act invoked. The magistrate's contempt. Cartwright's affable regret. |
 **Comedy:** GONE. The B3 hype patter returns as the magistrate's eulogy / the layoff jingle. The laugh dies in the audience's throat.
 
 ---

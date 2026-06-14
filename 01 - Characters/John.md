@@ -40,7 +40,7 @@ See the full beat-by-beat in [[Beat Sheet — Parallel Intercut]] and [[John Arc
 
 ## Relationships
 - **[[Historical World — Supporting|Mary]]** — his wife. The stake made flesh; the household whose hunger turns him. (The AI-video character to keep *sympathetic*, not uncanny.)
-- **[[Historical World — Supporting|Mr. Cartwright]]** — the mill owner. Affable, modern, sure he is doing the rational thing. The smiling axe. Mirror of [[Modern World — Supporting|Priya]].
+- **[[Historical World — Supporting|Mr. Cartwright]]** — the mill owner. Affable, modern, sure he is doing the rational thing. The smiling axe. Mirror of [[Modern World — Supporting|Kristina]].
 - **[[Historical World — Supporting|Becker]]** — a younger weaver, the frame-breaker who names the enemy and pulls John in. (Name borrowed from [[The Weavers — Pulled Passages]].)
 - **[[Historical World — Supporting|The Magistrate]]** — the law closing ranks; the bailiff and the 1812 Act. Mirror of [[Modern World — Supporting|HR]].
 - **[[Historical World — Supporting|THE LOOM]]** — the machine. Mirror of [[Modern World — Supporting|THE AGENT]].

@@ -19,7 +19,7 @@ tags:
 **The political economy belongs to the *audience*, not the characters.** [[Liam]] and [[John]] each understand only their own small patch — the bug, the loom, the rent. The braid (see [[Braided Structure — Reference]]) and the narrator supply the system they can't see. That gap is **dramatic irony**, and it's the engine that lets the show be deeply educational while no character ever lectures. The instant a character accurately diagnoses the system they're trapped in, it's cringe; the instant they *misdiagnose* it ("the law will sort it out"; "being right is safe"), it's tragedy — and the audience learns more.
 
 ## The anti-cringe rules (from the masters)
-- **Steelman the antagonist — give the machine its best argument.** Shaw's *Major Barbara* ("A Discussion in Three Acts") makes the arms-dealer Undershaft the most persuasive person on stage. Audiences forgive a thesis when they can't tell whose side the author is on. Our [[Historical World — Supporting|Cartwright]] (= "progress") and [[Modern World — Supporting|Priya]] (= real conversion data) must be *right on their own terms*. Never stupid, never cackling.
+- **Steelman the antagonist — give the machine its best argument.** Shaw's *Major Barbara* ("A Discussion in Three Acts") makes the arms-dealer Undershaft the most persuasive person on stage. Audiences forgive a thesis when they can't tell whose side the author is on. Our [[Historical World — Supporting|Cartwright]] (= "progress") and [[Modern World — Supporting|Kristina]] (= real conversion data) must be *right on their own terms*. Never stupid, never cackling.
 - **Put the ideology *inside* the character.** Willy Loman's tragedy is that he has internalised the system that discards him ("a man is not a piece of fruit"). That's how political economy becomes *character*, not message: the worker who believes in the thing killing him. We already have it — John's faith in fair dealing; Liam's belief that excellence is a shield.
 - **Subtext over statement.** Bury the point under what people actually say; leave half the conversation to silence. Kill any line that could be a tweet about capitalism. No "As you know, Bob."
 - **Comedy is the Trojan horse.** *Enron*, *The Big Short*, *Serious Money* all smuggle dense economics in on satire and spectacle; the laugh lowers the guard, then it curdles. This is our spine — lean harder (see the curdle ledger in [[Themes & Motifs]]).
@@ -43,7 +43,7 @@ Used 4–5 times across the hour, this is the educational backbone — and it's 
 
 ## How to use it
 - Drafting any "concept" beat: first ask *can a character simply not understand this instead of explaining it?* (dramatic irony). If it must be stated, hand it to the narrator/Agent and **own the artifice** (Big Short).
-- Drafting [[Historical World — Supporting|Cartwright]] / [[Modern World — Supporting|Priya]]: write their best, sincerest case (Shaw). If the audience nods along before they wince, it's working.
+- Drafting [[Historical World — Supporting|Cartwright]] / [[Modern World — Supporting|Kristina]]: write their best, sincerest case (Shaw). If the audience nods along before they wince, it's working.
 - Building set pieces: reach for **verbatim** primary text (Churchill / verbatim theatre) and **embodied abstraction** (Enron) before reaching for explanation.
 - Feeds: [[Beat Sheet — Parallel Intercut]] (esp. B3 demos, B7 review/wage-cut, B8 the system), [[Staging — Two Speakers]], [[01 - Cold Open — The Standup]].
 

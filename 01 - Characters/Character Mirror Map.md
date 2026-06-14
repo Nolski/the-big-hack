@@ -14,7 +14,7 @@ The spine of the play: every figure in [[Liam]]'s world has a twin in [[John]]'s
 |---|---|---|
 | **The craftsman** (protagonist) | [[Liam]] — prickly genius, alone | [[John]] — plain family man, embedded |
 | **The machine** | THE AGENT (AI coding agent) | THE LOOM (power loom / factory) |
-| **The smiling axe** (replaces him kindly) | Priya (manager) | Mr. Cartwright (mill owner) |
+| **The smiling axe** (replaces him kindly) | Kristina (manager) | Mr. Cartwright (mill owner) |
 | **The active betrayer** (rides the new thing up) | Marcus (fast-adopter dev) | Becker* (young frame-breaker) |
 | **The passive betrayal** (survives by going quiet) | Sam + the dev team | The neighbours who take factory work |
 | **The system** (process + power, human face) | HR / "People Partner" | The Magistrate / the Bailiff |

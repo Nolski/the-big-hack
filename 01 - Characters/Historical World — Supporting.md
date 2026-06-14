@@ -21,9 +21,9 @@ John's world, early 1810s English North. All **AI-generated video characters** (
 - **Beats:** B4, B7, B9 (the cold hearth).
 
 ## Mr. Cartwright — the mill owner *(the smiling axe)*
-- **Function:** affable, modern, *certain he is being reasonable*. Offers the factory as progress, cuts the piece-rate as "the market," and is genuinely puzzled that anyone's upset. The historical Priya. (Name nods to real manufacturer William Cartwright of Rawfolds Mill — keep fictionalised.)
+- **Function:** affable, modern, *certain he is being reasonable*. Offers the factory as progress, cuts the piece-rate as "the market," and is genuinely puzzled that anyone's upset. The historical Kristina. (Name nods to real manufacturer William Cartwright of Rawfolds Mill — keep fictionalised.)
 - **Voice:** improving, enlightened, faintly evangelical about machinery and efficiency.
-- **Mirror:** [[Modern World — Supporting|Priya]].
+- **Mirror:** [[Modern World — Supporting|Kristina]].
 - **Beats:** B5 (factory opens), B7 (wage cut).
 
 ## Becker — the young frame-breaker *(the active path)*

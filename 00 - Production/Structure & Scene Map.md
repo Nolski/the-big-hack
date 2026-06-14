@@ -43,20 +43,21 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 5 | The Factory Opens | II · John | B5 | ⬜ |
 | 6 | The Demo → *Liam half* | III · Liam | B3 | ⬜ |
 | 7 | Liam Solves the Unsolvable | III · Liam | B4 | ⬜ |
-| 8 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
-| 9 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
-| 10 | The Performance Review | III · Liam | B7 | ⬜ |
-| 11 | HR Offboarding | III · Liam | B8 | ⬜ |
-| 12 | The Weavers Take the Jobs | IV · John | B6 | ⬜ |
-| 13 | The Wage Cut | IV · John | B7 | ⬜ |
-| 14 | The Bailiff | IV · John | B8 | ⬜ |
-| 15 | The Cold Hearth | IV · John | B9 | ⬜ |
-| 16 | The Empty Apartment | V · Liam | B9 | ⬜ |
-| 17 | The Forum | V · Liam | B10 | ⬜ |
-| 18 | Liam Decides | V · Liam | B11 | ⬜ |
-| 19 | The Tavern Oath | VI · John | B10 | ⬜ |
-| 20 | John Marches | VI · John | B11 | ⬜ |
-| 21 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
+| 8 | [[08 - The Win We Needed\|The Win We Needed]] | III · Liam | B5 | ✏️ |
+| 9 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
+| 10 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
+| 11 | [[11 - The Performance Review\|The Performance Review]] | III · Liam | B7 | ✏️ |
+| 12 | HR Offboarding | III · Liam | B8 | ⬜ |
+| 13 | The Weavers Take the Jobs | IV · John | B6 | ⬜ |
+| 14 | [[14 - The Wage Cut\|The Wage Cut]] | IV · John | B7 | ✏️ |
+| 15 | The Bailiff | IV · John | B8 | ⬜ |
+| 16 | The Cold Hearth | IV · John | B9 | ⬜ |
+| 17 | The Empty Apartment | V · Liam | B9 | ⬜ |
+| 18 | The Forum | V · Liam | B10 | ⬜ |
+| 19 | Liam Decides | V · Liam | B11 | ⬜ |
+| 20 | The Tavern Oath | VI · John | B10 | ⬜ |
+| 21 | John Marches | VI · John | B11 | ⬜ |
+| 22 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
 
 > [!note] Drafting note
 > The wordless dual prologue ("Cold Open — Two Workshops") was **cut**; the show opens cold on Liam's standup ([[01 - Cold Open — The Standup]]), then **rewinds straight to John** ([[02 - The Loom and the Guild — John half]]). Movement I is now a single scene. **The Demo** is still *split* across movements (John half in Movement II, Liam half in Movement III). This table is the source of truth for order; beats map to [[Beat Sheet — Parallel Intercut]].

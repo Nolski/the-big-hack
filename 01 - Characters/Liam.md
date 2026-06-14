@@ -37,7 +37,7 @@ Start: **king of the workshop** — the person who solves what no one else can (
 See the full beat-by-beat in [[Beat Sheet — Parallel Intercut]] and [[Liam Arc]].
 
 ## Relationships
-- **[[Modern World — Supporting|Priya]]** — his manager. Likes Liam, "advocates" for him, and signs the paperwork anyway. The smiling axe. Mirror of John's [[Historical World — Supporting|Mr. Cartwright]].
+- **[[Modern World — Supporting|Kristina]]** — his manager. Likes Liam, "advocates" for him, and signs the paperwork anyway. The smiling axe. Mirror of John's [[Historical World — Supporting|Mr. Cartwright]].
 - **[[Modern World — Supporting|Marcus]]** — coworker Liam mentored; adopts the agent fastest, and reframes Liam as "resistant to change" in the room where it matters.
 - **[[Modern World — Supporting|Sam]]** — coworker Liam considered a friend; goes quiet at the decisive moment. The betrayal is mostly *silence*, not villainy.
 - **[[Modern World — Supporting|THE AGENT]]** — the machine. Cheerful, helpful, relentless. Mirror of [[Historical World — Supporting|THE LOOM]].

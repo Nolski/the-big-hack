@@ -27,7 +27,7 @@ A man who believes *being excellent is the same as being safe* learns — too la
 5. **B5 — Reframed.** "Agent-first team." His job becomes *reviewing the machine*. The ground shifts under the word "value."
 6. **B6 — The quiet.** Marcus recasts him as a "bottleneck"; Sam says nothing. The betrayal is mostly silence.
 7. **B7 — Over-correct.** He fights by being *more right* — blocks bad PRs, files the bug. It's logged as "friction." The review.
-8. **B8 — Managed out.** HR. "Not a reflection of your value." Priya signs. The B3 applause replays. Comedy dead.
+8. **B8 — Managed out.** HR. "Not a reflection of your value." Kristina signs. The B3 applause replays. Comedy dead.
 9. **B9 — The empty apartment.** Messages on read. The self he built on competence has nothing to stand on.
 10. **B10 — The forum.** Strangers name his betrayal and aim his rage. Belonging, of the worst kind.
 11. **B11 — The decision.** He chooses to act. (Keep the act abstract; the point is the crossed line.)
