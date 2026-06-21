@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+remote/_sb_out/
+# NOTE: artifacts/ (generated audio + sketches) is intentionally committed.

@@ -1,0 +1,19 @@
+services:
+  storyboard:
+    build: .
+    image: bighack-storyboard:local
+    container_name: bighack-storyboard
+    working_dir: /app
+    ports:
+      - "127.0.0.1:8011:8008"      # bind to localhost only
+    volumes:
+      # App code + storyboard.yaml + generated artifacts (persisted to the repo).
+      - ./:/app
+      # SSH key + known_hosts, read-only, so the container can reach the GPU host
+      # WITHOUT installing anything on it. known_hosts keeps host-key verification on.
+      - ${HOME}/.ssh:/root/.ssh:ro
+      # OpenRouter key, read-only, single file (not the whole folder).
+      - ../../ai_keys:/run/secrets/ai_keys:ro
+    environment:
+      - AI_KEYS_FILE=/run/secrets/ai_keys
+    restart: unless-stopped

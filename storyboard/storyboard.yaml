@@ -1,0 +1,1200 @@
+meta:
+  title: The Big Hack
+  subtitle: A Kiwicon talk staged as a play. Two men, two centuries, one machine.
+  version: 1
+
+settings:
+  tts:
+    host: duster@192.168.0.237
+    python: /home/duster/miniconda3/envs/flash311/bin/python
+    workdir: /home/duster/wan2.2_test
+    # GPU 0 holds a 70B LLM but has the most spare VRAM; "auto" picks the freest card.
+    gpu: auto
+    design_model: Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+    clone_model: Qwen/Qwen3-TTS-12Hz-1.7B-Base
+    language: English
+  music:
+    # Best open-source music model that fits the spare VRAM here (MusicGen, via
+    # transformers). Falls back to medium/small automatically if VRAM is tight.
+    model: facebook/musicgen-medium
+    seconds: 24
+    # Period-accurate base styles by world; a scene's own music.prompt overrides this.
+    styles:
+      modern: >-
+        Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+        electronic drone, subtle unease, slow and spacious, no drums, no melody.
+        Modern, clinical, the quiet hum of an open-plan office.
+      historical: >-
+        Early nineteenth century English folk, Georgian era, period accurate.
+        Solo fiddle and gentle acoustic guitar, sparse and melancholic, a lone
+        plaintive folk melody, no drums, no modern instruments.
+      both: >-
+        Two eras blending into one: a lone period fiddle folk melody over a cold
+        modern synth drone, melancholic and building, sparse, cinematic.
+      frame: >-
+        Neutral, restrained documentary underscore, soft sustained strings, a
+        sense of looking back across time, sparse and quiet.
+  image:
+    model: google/gemini-2.5-flash-image
+    # Prepended to every scene sketch prompt for a consistent look.
+    style: >-
+      Black and white pencil storyboard sketch for a stage play, loose expressive
+      graphite linework, cinematic single-frame composition, dramatic theatrical
+      lighting, no text, no captions, no color, hand-drawn look.
+    portrait_style: >-
+      Black and white pencil character study, single figure, expressive graphite
+      lines, theatrical lighting, neutral background, no text, no color.
+
+# ---------------------------------------------------------------------------
+# CHARACTERS
+# voice.mode: "design" (describe the voice) or "clone" (mimic a ref wav).
+# voice.seed changes the take/delivery; voice.instruct is the voice identity.
+# ---------------------------------------------------------------------------
+characters:
+- id: narrator
+  name: Narrator
+  world: frame
+  role: narration
+  medium: voiceover
+  live: false
+  description: Neutral, disembodied narration that bridges the 200-year rewind and frames scenes.
+  voice:
+    mode: xvector
+    seed: 42
+    instruct: >-
+      A calm, neutral documentary narrator. Measured, unhurried, clear. Gender-neutral
+      to soft male timbre, plain modern English, no theatrics, no salesy energy. The
+      voice of a thoughtful history film.
+    sample_text: The North of England. The spring of eighteen twelve.
+
+    sample: voices/narrator.wav
+    vector: vectors/narrator.npy
+- id: liam
+  name: Liam
+  world: modern
+  role: protagonist
+  medium: live-actor
+  live: true
+  description: A brilliant, exacting software developer who loves the craft and cannot survive in a world that decided it no longer needs him.
+  voice:
+    mode: xvector
+    seed: 101
+    instruct: >-
+      A precise, slightly irritable male software engineer in his late thirties.
+      Flat, controlled affect that occasionally bursts. Plain modern American English,
+      clipped and exact, faintly condescending when correcting people. Not theatrical,
+      not a narrator — a real tired smart guy in a meeting.
+    sample_text: That's not a bug. That's undefined behaviour.
+
+    sample: voices/liam.wav
+    vector: vectors/liam.npy
+- id: john
+  name: John
+  world: historical
+  role: protagonist
+  medium: live-actor
+  live: true
+  description: A skilled handloom weaver and steady family man in 1810s Yorkshire, unmade by the power loom.
+  voice:
+    mode: xvector
+    seed: 202
+    instruct: >-
+      A warm, plain-spoken man of about forty from the north of England, a Yorkshire
+      weaver. Unhurried, gentle, grounded, concrete. A soft northern English accent,
+      chapel-going, kind. Talks like an ordinary working man, not an actor.
+    sample_text: Forty years my family has worked this loom.
+
+    sample: voices/john.wav
+    vector: vectors/john.npy
+- id: kristina
+  name: Kristina
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The PM/manager. Velocity over craft, the smiling axe. Kind and useless.
+  voice:
+    mode: xvector
+    seed: 303
+    instruct: >-
+      A brisk, upbeat female product manager in her thirties, American. Warm, friendly
+      delivery-speak full of corporate optimism and gentle management euphemism. Sounds
+      genuinely nice and completely immovable. Conversational, not a narrator.
+    sample_text: I want to be transparent with you, because I respect you.
+
+    sample: voices/kristina.wav
+    vector: vectors/kristina.npy
+- id: brendan
+  name: Brendan
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The empathetic adopter. The one colleague who doesn't hate Liam; conflicted but complicit.
+  voice:
+    mode: xvector
+    seed: 404
+    instruct: >-
+      An open, modest, conciliatory young male engineer, late twenties, American.
+      Soft-spoken, earnest, a little nervous, reaches to collaborate even mid-conflict.
+      Ordinary and likeable, not polished.
+    sample_text: Maybe we could go through it together?
+
+    sample: voices/brendan.wav
+    vector: vectors/brendan.npy
+- id: ceo
+  name: The CEO
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The pressure from above. Not greed but fear; the decent man at the top of the machine.
+  voice:
+    mode: xvector
+    seed: 505
+    instruct: >-
+      A warm, big-picture male startup founder in his forties, American. Optimistic,
+      reassuring, charismatic, with an undercurrent of fear and exhaustion he is trying
+      to keep out of his voice. Sincere, never a tyrant.
+    sample_text: This is the one we needed.
+
+    sample: voices/ceo.wav
+    vector: vectors/ceo.npy
+- id: marcus
+  name: Marcus
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The fast adopter and active betrayer. Ambitious, reading the wind correctly.
+  voice:
+    mode: xvector
+    seed: 606
+    instruct: >-
+      A fluent, optimistic, conference-ready young male developer, late twenties,
+      American. Confident, fast, talks in velocity and vibes. Smooth and self-assured.
+    sample_text: Honestly, the agent just unblocks everyone. It's a different game now.
+
+    sample: voices/marcus.wav
+    vector: vectors/marcus.npy
+- id: sam
+  name: Sam
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The friend who goes quiet. The betrayal that hurts most is silence.
+  voice:
+    mode: xvector
+    seed: 707
+    instruct: >-
+      A friendly, conflict-averse male coworker, thirties, American. Agreeable, a bit
+      vague, says "yeah, totally" a lot, then goes absent. Warm but evasive.
+    sample_text: Yeah. Yeah, totally. We should — we should catch up.
+
+    sample: voices/sam.wav
+    vector: vectors/sam.npy
+- id: hr
+  name: HR / People Partner
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The system. Pure process and euphemism; the human face of an inhuman procedure.
+  voice:
+    mode: xvector
+    seed: 808
+    instruct: >-
+      A scripted, gentle, immovable female HR business partner, American. Soft,
+      rehearsed compassion, says "unfortunately" and "I want to acknowledge" a lot.
+      Kind tone, zero give.
+    sample_text: Unfortunately, your role has been impacted.
+
+    sample: voices/hr.wav
+    vector: vectors/hr.npy
+- id: agent
+  name: THE AGENT
+  world: modern
+  role: machine
+  medium: ai-video
+  live: false
+  description: The AI coding agent. Cheerful, tireless, genuinely capable, therefore terrifying.
+  voice:
+    mode: xvector
+    seed: 909
+    instruct: >-
+      A warm, corporate-synthetic AI assistant voice, gender-neutral, always positive,
+      slightly too eager and tireless. Smooth and friendly with a faint synthetic
+      evenness underneath, like a helpful product that never blinks.
+    sample_text: Hi Liam! Want me to take it from here?
+
+    sample: voices/agent.wav
+    vector: vectors/agent.npy
+- id: mary
+  name: Mary
+  world: historical
+  role: supporting
+  medium: ai-video
+  live: false
+  description: John's wife. The stake made flesh; the household whose hunger turns John.
+  voice:
+    mode: xvector
+    seed: 1010
+    instruct: >-
+      A warm, practical, plain-spoken northern English woman of about thirty-five.
+      Tender and tired, counts the world in loaves and candles. Soft Yorkshire accent,
+      affectionate, real — sympathetic, never uncanny.
+    sample_text: John, the bread's out, and the tea's going cold.
+
+    sample: voices/mary.wav
+    vector: vectors/mary.npy
+- id: cartwright
+  name: Mr. Cartwright
+  world: historical
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The mill owner. Affable, modern, certain he is being reasonable. The historical Kristina.
+  voice:
+    mode: xvector
+    seed: 1111
+    instruct: >-
+      An affable, improving English gentleman mill owner of the early 1800s, fifties.
+      Enlightened, faintly evangelical about machinery and efficiency, genuinely fond
+      and genuinely puzzled anyone's upset. Educated English accent, never a sneer.
+    sample_text: And do you think I set the price? Manchester sets the price.
+
+    sample: voices/cartwright.wav
+    vector: vectors/cartwright.npy
+- id: becker
+  name: Becker
+  world: historical
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The young frame-breaker. Names the loom as the enemy and pulls John toward action.
+  voice:
+    mode: xvector
+    seed: 1212
+    instruct: >-
+      A hot, vivid, righteous young northern English weaver, early twenties. Angry,
+      charismatic, urgent, the recruiter's certainty. Strong Yorkshire accent, fast
+      and burning.
+    sample_text: One lad to mind a dozen of 'em. One lad!
+
+    sample: voices/becker.wav
+    vector: vectors/becker.npy
+- id: magistrate
+  name: The Magistrate
+  world: historical
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The law closing ranks. Receives John's lawful petition with cold courtesy.
+  voice:
+    mode: xvector
+    seed: 1313
+    instruct: >-
+      A cold, courteous, authoritative English official of the early 1800s, sixties.
+      Clipped, superior, the law as euphemism, contempt under perfect manners.
+      Refined English accent.
+    sample_text: The law is the law. I'd advise you to remember it.
+
+    sample: voices/magistrate.wav
+    vector: vectors/magistrate.npy
+- id: loom
+  name: THE LOOM
+  world: historical
+  role: machine
+  medium: sound
+  live: false
+  description: The power loom / factory as a character. Rhythmic, iron, faceless; begins as marvel, becomes Moloch.
+  voice:
+    mode: xvector
+    seed: 1414
+    instruct: >-
+      A low, rhythmic, mechanical voice, half-machine half-choir, cold and tireless and
+      faintly menacing, like iron learning to speak. Even, relentless, inhuman.
+    sample_text: Faster. Cheaper. Always. Faster.
+
+# ---------------------------------------------------------------------------
+# SCENES (running order from "Structure & Scene Map")
+# line.type: live | video | narration | direction
+# line.speaker: a character id (for live/video) — narration uses the narrator voice
+# ---------------------------------------------------------------------------
+    sample: voices/loom.wav
+    vector: vectors/loom.npy
+- id: liam's dad
+  name: liam's dad
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: ''
+  voice:
+    mode: design
+    seed: 42
+    instruct: 'insufferable arrogant and whiney '
+    sample_text: ''
+    sample: voices/liam's dad.wav
+  portrait: portraits/liam's dad.png
+scenes:
+- id: s01
+  number: 1
+  title: Cold Open — The Standup
+  movement: I · Liam
+  world: modern
+  beat: B2
+  status: drafted
+  setting: A morning standup. Coworker video tiles in a grid. Liam is the one black square.
+  music:
+    prompt: >-
+      Cold minimal corporate-tech ambient, a single repeating muted synth pulse,
+      low drone, faint unease under forced cheer, no drums, slow and clinical.
+    audio: music/s01.wav
+  narration: ""
+  sketch:
+    prompt: >-
+      A modern open-plan tech office at morning standup; a grid of glowing video-call
+      tiles on a big screen, smiling coworkers, one tile a blank black square; a lone
+      developer's desk in the foreground, tense atmosphere.
+    image: sketches/s01.png
+  lines:
+  - id: l1
+    type: video
+    speaker: kristina
+    text: >-
+      Morning, everyone — quick one today, lots to get through. Huge week: the new
+      developer portal shipped Friday and the feedback is the best we've had on
+      anything. Brendan basically lived here all weekend to land it — thank you,
+      Brendan, seriously.
+    direction: Mid-standup, smiling.
+    audio: lines/s01_l1.wav
+  - id: l2
+    type: video
+    speaker: brendan
+    text: >-
+      Oh — thanks. It went out clean, it's stable in prod. I used Claude Code,
+      Opus four point eight, for most of it. Happy to walk anyone through it.
+    direction: Modest glow.
+    audio: lines/s01_l2.wav
+  - id: l3
+    type: live
+    speaker: liam
+    text: Quick thing. The "brief" thing we shipped Friday is corrupting timestamps in prod.
+    direction: Flat, over the last seconds of the clip.
+    audio: lines/s01_l3.wav
+  - id: l4
+    type: video
+    speaker: kristina
+    text: Okay — let's not derail standup, we can take that offline—
+    direction: Smile holding.
+    audio: lines/s01_l4.wav
+  - id: l5
+    type: live
+    speaker: liam
+    text: >-
+      It's eight hundred lines nobody read. It authenticates with a long-lived API
+      key in plaintext. That's not a style nit. That's a credential sitting in a log.
+    audio: lines/s01_l5.wav
+  - id: l6
+    type: video
+    speaker: brendan
+    text: I— maybe we could go through it together? I'm sure there's—
+    direction: Nervous.
+    audio: lines/s01_l6.wav
+  - id: l7
+    type: video
+    speaker: kristina
+    text: >-
+      The API-key call was deliberate, actually — keys convert better than OAuth,
+      we have the numbers.
+    direction: Owning it.
+    audio: lines/s01_l7.wav
+  - id: l8
+    type: live
+    speaker: liam
+    text: Right. And when the key leaks, the numbers will be great for whoever finds it.
+    audio: lines/s01_l8.wav
+  - id: l9
+    type: direction
+    speaker: ""
+    text: Silence on the grid. Kristina opens her mouth, closes it. Cut — straight into the rewind.
+
+  setting_audio: narration/s01_setting.wav
+- id: s02
+  number: 2
+  title: The Loom and the Guild — John half
+  movement: II · John
+  world: historical
+  beat: B1+B2
+  status: drafted
+  setting: A weaving village, spring 1812. John at his cottage handloom by the window.
+  music:
+    prompt: >-
+      Warm gentle early 1800s English folk, solo fiddle and acoustic guitar, the
+      soft rhythmic clack of a handloom as percussion, pastoral and content, period
+      accurate Georgian cottage music, melancholic undertone.
+    audio: music/s02.wav
+  narration: >-
+    The north of England. The spring of eighteen twelve. In a weaving village, the
+    cloth is still made by hand, in the home, at a man's own pace.
+  sketch:
+    prompt: >-
+      A 19th-century English cottage interior, a handloom weaver at a wooden loom beside
+      a small window with daylight, woven cloth, humble warm domestic space; through the
+      window, faint smoke of a distant factory in the valley.
+    image: sketches/s02.png
+  lines:
+  - id: l1
+    type: live
+    speaker: john
+    text: >-
+      Forty years my family's worked this loom. My father's father set it by that
+      window so he could see the weather coming.
+    direction: To audience.
+    audio: lines/s02_l1.wav
+  - id: l2
+    type: video
+    speaker: mary
+    text: >-
+      John — bread's out, and the tea's going cold. The boy's been asking again when
+      he gets a loom of his own.
+    direction: In the kitchen window. Warm, unbothered.
+    audio: lines/s02_l2.wav
+  - id: l3
+    type: live
+    speaker: john
+    text: Tell him when his arms reach the treadles. Not a day before.
+    audio: lines/s02_l3.wav
+  - id: l4
+    type: video
+    speaker: becker
+    text: >-
+      John — you hear? Cartwright's putting up a shed of steam-looms down the valley.
+      One lad to mind a dozen of 'em. One lad.
+    direction: At the gate, worried not yet angry.
+    audio: lines/s02_l4.wav
+  - id: l5
+    type: live
+    speaker: john
+    text: Folk'll always want good cloth, lad. Honest cloth.
+    audio: lines/s02_l5.wav
+  - id: l6
+    type: video
+    speaker: becker
+    text: And when they buy the cheap stuff anyway? What then?
+    audio: lines/s02_l6.wav
+  - id: l7
+    type: video
+    speaker: loom
+    text: Faster. Cheaper. Always.
+    direction: Far off, under everything — a faint iron knock down the valley.
+
+    audio: lines/s02_l7.wav
+  narration_audio: narration/s02.wav
+  setting_audio: narration/s02_setting.wav
+- id: s03
+  number: 3
+  title: The Demo — John half
+  movement: II · John
+  world: historical
+  beat: B3
+  status: stub
+  setting: Cartwright unveils the power loom to the village.
+  narration: A few miles off, the future was being switched on, and called a marvel.
+  sketch:
+    prompt: >-
+      A crowd of 1810s English villagers gathered in a new brick mill, a mill owner
+      gesturing proudly at a row of iron power looms, shafts of light, awe and unease
+      on the faces.
+    image: sketches/s03.png
+  lines:
+  - id: l1
+    type: video
+    speaker: cartwright
+    text: >-
+      Come closer, come closer — don't be shy of it. This one machine does the work
+      of ten good men, and never tires, and never asks for Sunday.
+    direction: Unveiling, to applause.
+
+    audio: lines/s03_l1.wav
+  narration_audio: narration/s03.wav
+  music:
+    prompt: >-
+      Early nineteenth century English folk, Georgian era, period accurate.
+      Solo fiddle and gentle acoustic guitar, sparse and melancholic, a lone
+      plaintive folk melody, no drums, no modern instruments.
+    audio: music/s03.wav
+  setting_audio: narration/s03_setting.wav
+- id: s04
+  number: 4
+  title: The Loom Arrives
+  movement: II · John
+  world: historical
+  beat: B4
+  status: stub
+  setting: The factory's rhythm reaches the lane. The arithmetic begins to change.
+  narration: At first it was only a sound. Then it was the price of bread.
+  sketch:
+    prompt: >-
+      A row of cottage weavers' homes in a valley, a large smoking factory looming on
+      the hill above, the shadow of the chimney falling across the small houses.
+    image: sketches/s04.png
+  lines:
+  - id: l1
+    type: video
+    speaker: loom
+    text: Faster. Cheaper. Always. Faster.
+    direction: Closer now, no longer faint.
+
+    audio: lines/s04_l1.wav
+  narration_audio: narration/s04.wav
+  music:
+    prompt: >-
+      Early nineteenth century English folk, Georgian era, period accurate.
+      Solo fiddle and gentle acoustic guitar, sparse and melancholic, a lone
+      plaintive folk melody, no drums, no modern instruments.
+    audio: music/s04.wav
+  setting_audio: narration/s04_setting.wav
+- id: s05
+  number: 5
+  title: The Factory Opens
+  movement: II · John
+  world: historical
+  beat: B5
+  status: stub
+  setting: The factory offers indoor work; the rate for hand-cloth collapses. Cut on the sting.
+  narration: The factory opened its doors. And one by one, the lane walked in.
+  sketch:
+    prompt: >-
+      Workers filing into a 19th-century textile factory at dawn, gates open, a lone
+      handloom weaver standing apart watching his neighbours go in, betrayal and survival.
+    image: sketches/s05.png
+  lines:
+  - id: l1
+    type: video
+    speaker: cartwright
+    text: >-
+      There's a place for you in here too, John. Warm, dry, steady wage. I'd hate to
+      see a good man left out on a principle.
+    direction: Reasonable, fond.
+
+    audio: lines/s05_l1.wav
+  narration_audio: narration/s05.wav
+  music:
+    prompt: >-
+      Early nineteenth century English folk, Georgian era, period accurate.
+      Solo fiddle and gentle acoustic guitar, sparse and melancholic, a lone
+      plaintive folk melody, no drums, no modern instruments.
+    audio: music/s05.wav
+  setting_audio: narration/s05_setting.wav
+- id: s06
+  number: 6
+  title: The Demo — Liam half
+  movement: III · Liam
+  world: modern
+  beat: B3
+  status: stub
+  setting: The agent demos itself solving Liam's hard problem in seconds.
+  narration: Two hundred years on, the marvel had a friendlier face.
+  sketch:
+    prompt: >-
+      A developer watching a large screen where an AI coding assistant rapidly writes
+      code, a cheerful chat bubble, the developer's face lit by the monitor, uneasy awe.
+    image: sketches/s06.png
+  lines:
+  - id: l1
+    type: video
+    speaker: agent
+    text: >-
+      Hi Liam! I took a look at that race condition — I think I've got it. Want me to
+      take it from here?
+    direction: Cheerful boot-up.
+    audio: lines/s06_l1.wav
+  - id: l2
+    type: live
+    speaker: liam
+    text: '...That took me three days.'
+
+    audio: lines/s06_l2.wav
+  narration_audio: narration/s06.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s06.wav
+  setting_audio: narration/s06_setting.wav
+- id: s07
+  number: 7
+  title: Liam Solves the Unsolvable
+  movement: III · Liam
+  world: modern
+  beat: B4
+  status: stub
+  setting: Liam's last great solo win — the work he was born for.
+  narration: He had one more good day in him. He didn't know it was the last.
+  sketch:
+    prompt: >-
+      A developer alone at night at a desk lit by monitors, deep in focus, a wall of
+      code and diagrams, a single triumphant moment of a hard problem cracked.
+    image: sketches/s07.png
+  lines:
+  - id: l1
+    type: live
+    speaker: liam
+    text: >-
+      There. Twenty lines. It was never the database — it was the clock. Of course it
+      was the clock.
+    direction: To himself, quietly delighted.
+
+    audio: lines/s07_l1.wav
+  narration_audio: narration/s07.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s07.wav
+  setting_audio: narration/s07_setting.wav
+- id: s08
+  number: 8
+  title: The Win We Needed
+  movement: III · Liam
+  world: modern
+  beat: B5
+  status: drafted
+  setting: All-hands. The agent rollout becomes the mandate. No live speaker — Liam silent below.
+  narration: The numbers came in green. And green has a gravity all its own.
+  sketch:
+    prompt: >-
+      A company all-hands meeting, a large dashboard of green metrics on screen, a CEO
+      presenting warmly, an applauding audience in silhouette, one developer sitting
+      still and silent in the front row.
+    image: sketches/s08.png
+  lines:
+  - id: l1
+    type: video
+    speaker: kristina
+    text: >-
+      So — the agent rollout. The numbers are real: activation's up, support tickets
+      are down, sentiment's green across the board. I do want to be fair to the
+      engineers, though. The senior folks have raised concerns — code going in unread,
+      long-lived keys, the juniors not really learning the craft. Those aren't nothing.
+    direction: Proud, then honestly hedging.
+    audio: lines/s08_l1.wav
+  - id: l2
+    type: video
+    speaker: ceo
+    text: >-
+      No, they're not nothing. I hear them, I do. But I just came out of a board
+      meeting looking at our runway, and this is the first quarter the line went the
+      right way. This is the one we needed. I can't walk back in there and tell them
+      some of the engineers have reservations.
+    direction: Warm, fear underneath.
+    audio: lines/s08_l2.wav
+  - id: l3
+    type: video
+    speaker: ceo
+    text: So from Monday — we're agent-first. Everything routes through the agent. Humans review.
+
+    audio: lines/s08_l3.wav
+  narration_audio: narration/s08.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s08.wav
+  setting_audio: narration/s08_setting.wav
+- id: s09
+  number: 9
+  title: Adopt the Agent (All-Hands)
+  movement: III · Liam
+  world: modern
+  beat: B5
+  status: stub
+  setting: The mandate lands on the floor; Marcus becomes its evangelist.
+  narration: Every revolution needs its early believers. They are rarely the ones who built the old world.
+  sketch:
+    prompt: >-
+      A young confident developer presenting enthusiastically to coworkers about an AI
+      tool, hands wide, others nodding, one older developer at the edge unconvinced.
+    image: sketches/s09.png
+  lines:
+  - id: l1
+    type: video
+    speaker: marcus
+    text: >-
+      Honestly? It's a different game now. The agent unblocks everyone. We should be
+      shipping three times what we were — if people lean in instead of fighting it.
+    direction: Conference-ready, a glance at Liam.
+
+    audio: lines/s09_l1.wav
+  narration_audio: narration/s09.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s09.wav
+  setting_audio: narration/s09_setting.wav
+- id: s10
+  number: 10
+  title: The Coworkers Go Quiet
+  movement: III · Liam
+  world: modern
+  beat: B6
+  status: stub
+  setting: The friends Liam counted on stop answering. The silence, literalised in chat.
+  narration: The betrayal, when it came, made no sound at all.
+  sketch:
+    prompt: >-
+      A lonely developer at a desk staring at a chat window full of unanswered messages
+      marked "seen", empty surrounding desks, cold blue screen light.
+    image: sketches/s10.png
+  lines:
+  - id: l1
+    type: video
+    speaker: sam
+    text: Yeah. Yeah, totally. We should — we should catch up soon.
+    direction: Friendly, already gone.
+    audio: lines/s10_l1.wav
+  - id: l2
+    type: direction
+    speaker: ""
+    text: Liam's messages stack up on screen. Seen. Seen. Seen. No reply.
+
+  narration_audio: narration/s10.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s10.wav
+  setting_audio: narration/s10_setting.wav
+- id: s11
+  number: 11
+  title: The Performance Review
+  movement: III · Liam
+  world: modern
+  beat: B7
+  status: drafted
+  setting: A one-on-one. Kristina, warm and transparent, manages Liam out.
+  narration: They sat him down in a soft room and called it a conversation.
+  sketch:
+    prompt: >-
+      A quiet one-on-one meeting in a glass-walled office, a manager speaking gently
+      across a small table to a developer, an HR document on the table, sterile warmth.
+    image: sketches/s11.png
+  lines:
+  - id: l1
+    type: video
+    speaker: kristina
+    text: >-
+      I want to be transparent with you, because I respect you. You were right about
+      the portal. You're right about most things, honestly — that's not in question.
+    direction: Warm, sincere.
+    audio: lines/s11_l1.wav
+  - id: l2
+    type: live
+    speaker: liam
+    text: Then what is.
+    audio: lines/s11_l2.wav
+  - id: l3
+    type: video
+    speaker: kristina
+    text: >-
+      Collaboration. The room finds you... hard to work with. And in the new setup,
+      where the agent does the first pass and we review together, that part matters
+      more than it used to. I advocated for you in calibration. I want you to know that.
+    audio: lines/s11_l3.wav
+  - id: l4
+    type: live
+    speaker: liam
+    text: Advocated.
+    audio: lines/s11_l4.wav
+  - id: l5
+    type: video
+    speaker: kristina
+    text: This isn't a reflection of your value, Liam. It really isn't.
+
+    audio: lines/s11_l5.wav
+  narration_audio: narration/s11.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s11.wav
+  setting_audio: narration/s11_setting.wav
+- id: s12
+  number: 12
+  title: HR Offboarding
+  movement: III · Liam
+  world: modern
+  beat: B8
+  status: stub
+  setting: Process and euphemism. The human face of an inhuman procedure.
+  narration: And then the kindest people in the building took everything he had.
+  sketch:
+    prompt: >-
+      An HR offboarding meeting, an HR partner sliding a folder across a table, a
+      developer holding a cardboard box of desk belongings, fluorescent light, finality.
+    image: sketches/s12.png
+  lines:
+  - id: l1
+    type: video
+    speaker: hr
+    text: >-
+      I want to acknowledge how hard this is. Unfortunately, your role has been
+      impacted as part of this transition. We're really grateful for your contributions.
+    direction: Scripted, gentle, immovable.
+
+    audio: lines/s12_l1.wav
+  narration_audio: narration/s12.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s12.wav
+  setting_audio: narration/s12_setting.wav
+- id: s13
+  number: 13
+  title: The Weavers Take the Jobs
+  movement: IV · John
+  world: historical
+  beat: B6
+  status: stub
+  setting: Neighbours take the factory work. Survival reads as abandonment.
+  narration: They were not bad men. They were hungry men. It is a hard thing to tell apart.
+  sketch:
+    prompt: >-
+      Former handloom weavers walking into a factory at dawn, heads down, unable to meet
+      the eye of a man standing in his cottage doorway watching them pass.
+    image: sketches/s13.png
+  lines:
+  - id: l1
+    type: video
+    speaker: sam
+    text: A man's to feed his own first, John. You'd do the same. You would.
+    direction: Can't meet his eye.
+
+    audio: lines/s13_l1.wav
+  narration_audio: narration/s13.wav
+  music:
+    prompt: >-
+      Early nineteenth century English folk, Georgian era, period accurate.
+      Solo fiddle and gentle acoustic guitar, sparse and melancholic, a lone
+      plaintive folk melody, no drums, no modern instruments.
+    audio: music/s13.wav
+  setting_audio: narration/s13_setting.wav
+- id: s14
+  number: 14
+  title: The Wage Cut
+  movement: IV · John
+  world: historical
+  beat: B7
+  status: drafted
+  setting: Cartwright delivers the rate cut and the factory offer as reasonable kindness.
+  narration: He went to the mill to ask for fairness. He had always believed it was owed.
+  sketch:
+    prompt: >-
+      A mill owner's office, 1810s, a well-dressed factory owner speaking kindly to a
+      weathered handloom weaver who stands cap in hand; through the window, new power
+      looms turning.
+    image: sketches/s14.png
+  lines:
+  - id: l1
+    type: video
+    speaker: cartwright
+    text: John! Come in, come in. I'll not pretend I don't know why you've come. The rate. I know.
+    direction: Affable, genuinely fond.
+    audio: lines/s14_l1.wav
+  - id: l2
+    type: live
+    speaker: john
+    text: It's the third cut this year, Mr. Cartwright. A man can't feed a family on it.
+    audio: lines/s14_l2.wav
+  - id: l3
+    type: video
+    speaker: cartwright
+    text: >-
+      And do you think I set the price? Manchester sets the price. The cloth from my
+      sheds goes out at half what your hand-work costs, and the buyers — God love them
+      — they read the number and nothing else. I'm offering you a place inside, John.
+      Indoors. Steady. Tending the new looms.
+    audio: lines/s14_l3.wav
+  - id: l4
+    type: live
+    speaker: john
+    text: Minding the machine that took my trade.
+    audio: lines/s14_l4.wav
+  - id: l5
+    type: video
+    speaker: cartwright
+    text: >-
+      Minding progress. I'm trying to do you a kindness, man. I wish you'd take it as one.
+
+    audio: lines/s14_l5.wav
+  narration_audio: narration/s14.wav
+  music:
+    prompt: >-
+      Early nineteenth century English folk, Georgian era, period accurate.
+      Solo fiddle and gentle acoustic guitar, sparse and melancholic, a lone
+      plaintive folk melody, no drums, no modern instruments.
+    audio: music/s14.wav
+  setting_audio: narration/s14_setting.wav
+- id: s15
+  number: 15
+  title: The Bailiff
+  movement: IV · John
+  world: historical
+  beat: B8
+  status: stub
+  setting: The lawful petition fails; the law closes ranks; the bailiff comes.
+  narration: He wrote a petition, in his best hand. The law had a hand too.
+  sketch:
+    prompt: >-
+      A bailiff and a magistrate at a cottage door, 1810s, removing a loom or goods, a
+      weaver's family in the doorway, cold authority against domestic ruin.
+    image: sketches/s15.png
+  lines:
+  - id: l1
+    type: video
+    speaker: magistrate
+    text: >-
+      The petition is noted. But the law is the law, and there is a new Act now for
+      men who break frames. I'd advise you to remember it.
+    direction: Cold courtesy.
+
+    audio: lines/s15_l1.wav
+  narration_audio: narration/s15.wav
+  music:
+    prompt: >-
+      Early nineteenth century English folk, Georgian era, period accurate.
+      Solo fiddle and gentle acoustic guitar, sparse and melancholic, a lone
+      plaintive folk melody, no drums, no modern instruments.
+    audio: music/s15.wav
+  setting_audio: narration/s15_setting.wav
+- id: s16
+  number: 16
+  title: The Cold Hearth
+  movement: IV · John
+  world: historical
+  beat: B9
+  status: stub
+  setting: Hunger in his own house. The thing he built his identity on fails. Mary breaks.
+  narration: There is a particular cold that comes when a working hearth goes out.
+  sketch:
+    prompt: >-
+      A dim cottage interior at night, a cold dark hearth, a mother and children, a
+      father with his head in his hands, the idle loom in shadow behind them.
+    image: sketches/s16.png
+  lines:
+  - id: l1
+    type: video
+    speaker: mary
+    text: >-
+      Don't you tell me to be patient. I have been patient. The children are hungry,
+      John, and patience never once put bread on this table.
+    direction: Grief turned to fury.
+
+    audio: lines/s16_l1.wav
+  narration_audio: narration/s16.wav
+  music:
+    prompt: >-
+      Early nineteenth century English folk, Georgian era, period accurate.
+      Solo fiddle and gentle acoustic guitar, sparse and melancholic, a lone
+      plaintive folk melody, no drums, no modern instruments.
+    audio: music/s16.wav
+  setting_audio: narration/s16_setting.wav
+- id: s17
+  number: 17
+  title: The Empty Apartment
+  movement: V · Liam
+  world: modern
+  beat: B9
+  status: stub
+  setting: Isolation. Liam alone after the job is gone.
+  narration: Without the work, he found there was less of him than he'd thought.
+  sketch:
+    prompt: >-
+      A man alone in a sparse modern apartment at night, the blue glow of a laptop on
+      his face, takeout containers, a city out the window, profound isolation.
+    image: sketches/s17.png
+  lines:
+  - id: l1
+    type: live
+    speaker: liam
+    text: >-
+      I built half the things they run on. I could tell them exactly where the
+      bodies are. ...They stopped reading my messages on a Tuesday.
+    direction: To audience, very flat.
+
+    audio: lines/s17_l1.wav
+  narration_audio: narration/s17.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s17.wav
+  setting_audio: narration/s17_setting.wav
+- id: s18
+  number: 18
+  title: The Forum
+  movement: V · Liam
+  world: modern
+  beat: B10
+  status: stub
+  setting: Online, voices name his betrayal and aim his anger.
+  narration: Somewhere out in the dark, people were waiting to explain his life to him.
+  sketch:
+    prompt: >-
+      A face lit only by a laptop in a dark room, an anonymous forum of glowing
+      usernames and angry threads reflected in the glasses, seduction of belonging.
+    image: sketches/s18.png
+  lines:
+  - id: l1
+    type: direction
+    speaker: ""
+    text: Anonymous voices scroll up the screen — naming the machine, the managers, the betrayal. Each one fits.
+
+  narration_audio: narration/s18.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s18.wav
+  setting_audio: narration/s18_setting.wav
+- id: s19
+  number: 19
+  title: Liam Decides
+  movement: V · Liam
+  world: modern
+  beat: B11
+  status: stub
+  setting: The decision. His hand hovering over the keys. Cut at the brink.
+  narration: Every long fall ends in a small, quiet choice.
+  sketch:
+    prompt: >-
+      Extreme close-up of a developer's hands poised over a keyboard in the dark, a
+      terminal cursor blinking, a single moment of decision before pressing a key.
+    image: sketches/s19.png
+  lines:
+  - id: l1
+    type: live
+    speaker: liam
+    text: They wanted me to just review the machine's work. ...Fine. Let's review it.
+    direction: Quiet. A hand over the keys.
+
+    audio: lines/s19_l1.wav
+  narration_audio: narration/s19.wav
+  music:
+    prompt: >-
+      Cold, minimal ambient corporate-tech underscore. Sparse synth pads, low
+      electronic drone, subtle unease, slow and spacious, no drums, no melody.
+      Modern, clinical, the quiet hum of an open-plan office.
+    audio: music/s19.wav
+  setting_audio: narration/s19_setting.wav
+- id: s20
+  number: 20
+  title: The Tavern Oath
+  movement: VI · John
+  world: historical
+  beat: B10
+  status: stub
+  setting: A firelit tavern where John is known. The room turns oath-bound. Becker recruits.
+  music:
+    prompt: >-
+      Early 1800s English tavern folk turning dark, low fiddle drone and bodhran
+      heartbeat, conspiratorial and rising, candlelit and grim, period accurate,
+      building to an oath.
+    audio: music/s20.wav
+  narration: There is a kind of brotherhood that only opens its door to the ruined.
+  sketch:
+    prompt: >-
+      A firelit low tavern room, 1810s, men leaning in around a table by candlelight,
+      oath-taking, hammers and conspiracy in shadow, faces half-lit by flame.
+    image: sketches/s20.png
+  lines:
+  - id: l1
+    type: video
+    speaker: becker
+    text: >-
+      You counselled patience, John. We were patient. Look what patience bought you.
+      Put your hand in. Better dead than crawl back to the old life on your knees.
+    direction: Hot, righteous, recruiting.
+
+    audio: lines/s20_l1.wav
+  narration_audio: narration/s20.wav
+  setting_audio: narration/s20_setting.wav
+- id: s21
+  number: 21
+  title: John Marches
+  movement: VI · John
+  world: historical
+  beat: B11
+  status: stub
+  setting: John takes the oath and marches with the frame-breakers. Hammer raised.
+  music:
+    prompt: >-
+      Ominous building period folk-orchestral march, low strings and a grim marching
+      drum, a fiddle melody turned to defiance, dread and resolve, cinematic, rising.
+    audio: music/s21.wav
+  narration: He had counselled against this his whole life. He went anyway.
+  sketch:
+    prompt: >-
+      A torchlit night march of 1810s working men with hammers crossing moorland toward
+      a factory, one older weaver in front, grim resolve, smoke and sparks.
+    image: sketches/s21.png
+  lines:
+  - id: l1
+    type: live
+    speaker: john
+    text: For forty years I made things. Tonight, God forgive me, I'll unmake one.
+    direction: To audience, on the march.
+
+    audio: lines/s21_l1.wav
+  narration_audio: narration/s21.wav
+  setting_audio: narration/s21_setting.wav
+- id: s22
+  number: 22
+  title: Both Hands on the Machine
+  movement: VI · both (converge)
+  world: both
+  beat: B12
+  status: stub
+  setting: The two threads collapse into one. Hold on the moment before. Black.
+  music:
+    prompt: >-
+      A lone period fiddle folk melody and a cold modern synth drone fusing into one,
+      two centuries collapsing together, melancholic and enormous, building then
+      cutting to silence, cinematic climax.
+    audio: music/s22.wav
+  narration: Two men. Two centuries. The same hammer, the same hesitation, the same machine.
+  sketch:
+    prompt: >-
+      A split or double-exposed image fusing a 19th-century weaver raising a hammer over
+      a power loom and a modern developer's hands over a keyboard, two eras becoming one
+      gesture, the instant before action, going to black.
+    image: sketches/s22.png
+  lines:
+  - id: l1
+    type: live
+    speaker: john
+    text: A hand on the machine.
+    direction: Hammer raised. Hold.
+    audio: lines/s22_l1.wav
+  - id: l2
+    type: live
+    speaker: liam
+    text: A hand on the machine.
+    direction: Over the keys. Hold. Black.
+    audio: lines/s22_l2.wav
+  narration_audio: narration/s22.wav
+  setting_audio: narration/s22_setting.wav
