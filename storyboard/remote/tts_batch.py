@@ -61,13 +61,28 @@ def pick_gpu(requested):
         return "cuda:0"
 
 
+def _attn_order():
+    # Prefer flash-attn (fast path on hosts that have it), fall back to PyTorch
+    # SDPA — built into torch, works on CUDA *and* ROCm — when flash-attn is
+    # absent. An explicit QWEN_ATTN env var pins a single implementation.
+    override = os.environ.get("QWEN_ATTN")
+    return [override] if override else ["flash_attention_2", "sdpa"]
+
+
 def load_model(model_id, device):
     t0 = time.time()
-    m = Qwen3TTSModel.from_pretrained(
-        model_id, device_map=device, dtype=torch.bfloat16,
-        attn_implementation="flash_attention_2")
-    log({"info": f"loaded {model_id} on {device} in {time.time()-t0:.1f}s"})
-    return m
+    last = None
+    for attn in _attn_order():
+        try:
+            m = Qwen3TTSModel.from_pretrained(
+                model_id, device_map=device, dtype=torch.bfloat16,
+                attn_implementation=attn)
+            log({"info": f"loaded {model_id} on {device} via attn={attn} in {time.time()-t0:.1f}s"})
+            return m
+        except (ImportError, ValueError, RuntimeError) as e:
+            last = e
+            log({"info": f"attn={attn} unavailable ({type(e).__name__}: {e}); trying next"})
+    raise last
 
 
 def main():
