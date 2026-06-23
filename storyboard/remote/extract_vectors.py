@@ -36,13 +36,30 @@ def pick_gpu(req):
         return "cuda:0"
 
 
+def load_model(model_id, device):
+    # Prefer flash-attn (fast path on hosts that have it), fall back to PyTorch
+    # SDPA — built into torch, works on CUDA *and* ROCm — when flash-attn is
+    # absent. An explicit QWEN_ATTN env var pins a single implementation.
+    override = os.environ.get("QWEN_ATTN")
+    last = None
+    for attn in ([override] if override else ["flash_attention_2", "sdpa"]):
+        try:
+            m = Qwen3TTSModel.from_pretrained(
+                model_id, device_map=device, dtype=torch.bfloat16,
+                attn_implementation=attn)
+            log({"info": f"loaded {model_id} on {device} via attn={attn}"})
+            return m
+        except (ImportError, ValueError, RuntimeError) as e:
+            last = e
+            log({"info": f"attn={attn} unavailable ({type(e).__name__}: {e}); trying next"})
+    raise last
+
+
 def main():
     job = json.load(sys.stdin)
     os.makedirs(VECDIR, exist_ok=True)
     device = pick_gpu(job.get("gpu", "auto"))
-    tts = Qwen3TTSModel.from_pretrained(
-        job["clone_model"], device_map=device, dtype=torch.bfloat16,
-        attn_implementation="flash_attention_2")
+    tts = load_model(job["clone_model"], device)
     for it in job["items"]:
         try:
             prompt = tts.create_voice_clone_prompt(
