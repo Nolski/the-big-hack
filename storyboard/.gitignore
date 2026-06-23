@@ -2,4 +2,8 @@ __pycache__/
 *.pyc
 .DS_Store
 remote/_sb_out/
+# Local, untracked GPU-host connection details (real host/paths). Never commit.
+docker-compose.override.yml
+.env
+overrides.json
 # NOTE: artifacts/ (generated audio + sketches) is intentionally committed.

@@ -9,6 +9,8 @@ services:
     volumes:
       # App code + storyboard.yaml + generated artifacts (persisted to the repo).
       - ./:/app
+      # The play's scene scripts (source of truth for scenes), read-only.
+      - "../03 - Script:/scripts:ro"
       # SSH key + known_hosts, read-only, so the container can reach the GPU host
       # WITHOUT installing anything on it. known_hosts keeps host-key verification on.
       - ${HOME}/.ssh:/root/.ssh:ro
@@ -16,4 +18,6 @@ services:
       - ../../ai_keys:/run/secrets/ai_keys:ro
     environment:
       - AI_KEYS_FILE=/run/secrets/ai_keys
+      # Scenes are parsed from the mounted scripts folder (see volumes above).
+      - SB_SCRIPTS_DIR=/scripts
     restart: unless-stopped

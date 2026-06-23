@@ -1,39 +1,46 @@
 #!/usr/bin/env python
 """The Big Hack — Storyboard backend.
 
-A small FastAPI app that turns the play's YAML into a playable, editable
-storyboard: it manages characters + scenes, generates voice audio with
-Qwen3-TTS on the GPU box (over SSH), renders scene sketches with an AI image
-model (OpenRouter), and writes every artifact path back into storyboard.yaml so
-the result can be committed.
+A small FastAPI app that turns the play into a playable, editable storyboard.
+
+Scenes are parsed *live* from the play's script markdown (the vault's
+"03 - Script" folder, see script_parser.py) — the scripts are the single source
+of truth. This file (storyboard.yaml) holds only the cast (voices) and the
+generation settings. The app generates voice audio with Qwen3-TTS and a
+period score with MusicGen on a GPU box (over SSH), and scene sketches with an
+AI image model (OpenRouter).
+
+Every connection detail (GPU host, interpreter, model names) is read from
+settings and can be overridden by environment variables, so a different
+operator can run their own models without editing any file:
+    SB_TTS_HOST, SB_TTS_PYTHON, SB_TTS_WORKDIR, SB_TTS_GPU,
+    SB_TTS_DESIGN_MODEL, SB_TTS_CLONE_MODEL, SB_TTS_LANGUAGE,
+    SB_MUSIC_MODEL, SB_MUSIC_SECONDS, SB_IMAGE_MODEL, SB_SCRIPTS_DIR
 """
 import os
-import io
-import re
 import json
 import base64
-import shutil
 import subprocess
-import tempfile
 from pathlib import Path
 
 import requests
 from fastapi import FastAPI, HTTPException, Body
-from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from ruamel.yaml import YAML
+
+import script_parser
 
 HERE = Path(__file__).resolve().parent
 YAML_PATH = HERE / "storyboard.yaml"
 ARTIFACTS = HERE / "artifacts"
 STATIC = HERE / "static"
+OVERRIDES_PATH = HERE / "overrides.json"
 REMOTE_SCRIPT = HERE / "remote" / "tts_batch.py"
+EXTRACT_SCRIPT = HERE / "remote" / "extract_vectors.py"
+MUSIC_SCRIPT = HERE / "remote" / "music_gen.py"
 
 for sub in ("voices", "narration", "lines", "sketches", "portraits", "vectors", "music"):
     (ARTIFACTS / sub).mkdir(parents=True, exist_ok=True)
-
-EXTRACT_SCRIPT = HERE / "remote" / "extract_vectors.py"
-MUSIC_SCRIPT = HERE / "remote" / "music_gen.py"
 
 yaml = YAML()
 yaml.preserve_quotes = True
@@ -43,23 +50,58 @@ app = FastAPI(title="The Big Hack — Storyboard")
 
 
 # --------------------------------------------------------------------------- #
-# Data load / save
+# Config (cast + settings) load / save
 # --------------------------------------------------------------------------- #
-def load_doc():
+def load_cfg():
     with open(YAML_PATH) as f:
         return yaml.load(f)
 
 
-def save_doc(doc):
+CFG = load_cfg()
+
+
+def persist_cfg():
     with open(YAML_PATH, "w") as f:
-        yaml.dump(doc, f)
+        yaml.dump(CFG, f)
 
 
-DOC = load_doc()
+def _env(name):
+    v = os.environ.get(name)
+    return v if v not in (None, "") else None
 
 
-def persist():
-    save_doc(DOC)
+def settings():
+    """Resolved settings = storyboard.yaml overlaid with environment overrides."""
+    s = json.loads(json.dumps(CFG.get("settings", {})))
+    tts = s.setdefault("tts", {})
+    for key, var in (("host", "SB_TTS_HOST"), ("python", "SB_TTS_PYTHON"),
+                     ("workdir", "SB_TTS_WORKDIR"), ("gpu", "SB_TTS_GPU"),
+                     ("design_model", "SB_TTS_DESIGN_MODEL"),
+                     ("clone_model", "SB_TTS_CLONE_MODEL"),
+                     ("language", "SB_TTS_LANGUAGE")):
+        if _env(var):
+            tts[key] = _env(var)
+    music = s.setdefault("music", {})
+    if _env("SB_MUSIC_MODEL"):
+        music["model"] = _env("SB_MUSIC_MODEL")
+    if _env("SB_MUSIC_SECONDS"):
+        music["seconds"] = int(_env("SB_MUSIC_SECONDS"))
+    image = s.setdefault("image", {})
+    if _env("SB_IMAGE_MODEL"):
+        image["model"] = _env("SB_IMAGE_MODEL")
+    if _env("SB_SCRIPTS_DIR"):
+        s["scripts_dir"] = _env("SB_SCRIPTS_DIR")
+    return s
+
+
+def scripts_dir():
+    raw = settings().get("scripts_dir", "../03 - Script")
+    p = Path(raw)
+    return p if p.is_absolute() else (HERE / p).resolve()
+
+
+def characters():
+    return CFG.setdefault("characters", [])
 
 
 def find(seq, _id):
@@ -69,8 +111,96 @@ def find(seq, _id):
     return -1, None
 
 
-def settings():
-    return DOC["settings"]
+def char_by_id(cid):
+    return find(characters(), cid)[1]
+
+
+VOICED = ("live", "video", "narration", "direction")
+
+
+def is_voiceable(text):
+    return bool(text and __import__("re").search(r"[A-Za-z0-9]", text))
+
+
+# --------------------------------------------------------------------------- #
+# Scene overrides (in-app edits, kept in a sidecar so the authored markdown
+# stays the source of truth and is never rewritten by the app)
+# --------------------------------------------------------------------------- #
+def load_overrides():
+    if OVERRIDES_PATH.exists():
+        try:
+            return json.loads(OVERRIDES_PATH.read_text())
+        except Exception:
+            pass
+    return {"scenes": {}, "added": [], "deleted": []}
+
+
+OVR = load_overrides()
+
+
+def save_overrides():
+    OVERRIDES_PATH.write_text(json.dumps(OVR, indent=2))
+
+
+def _apply_overrides(scenes):
+    out = [s for s in scenes if s["id"] not in OVR.get("deleted", [])]
+    for s in out:
+        ov = OVR.get("scenes", {}).get(s["id"])
+        if not ov:
+            continue
+        for k, v in ov.items():
+            if k in ("sketch", "music") and isinstance(v, dict):
+                s.setdefault(k, {}).update(v)
+            else:
+                s[k] = v
+    out += [dict(s) for s in OVR.get("added", []) if s["id"] not in OVR.get("deleted", [])]
+    out.sort(key=lambda s: s.get("number", 999))
+    return out
+
+
+def _resolve_artifacts(scenes):
+    """Fill artifact paths from disk (deterministic names) so generation results
+    show up without the app ever writing them into the scripts."""
+    for s in scenes:
+        sid = s["id"]
+        sk = s.setdefault("sketch", {})
+        img = ARTIFACTS / "sketches" / f"{sid}.png"
+        if img.exists():
+            sk["image"] = f"sketches/{sid}.png"
+        else:
+            sk.pop("image", None)
+        mu = s.setdefault("music", {})
+        mwav = ARTIFACTS / "music" / f"{sid}.wav"
+        if mwav.exists():
+            mu["audio"] = f"music/{sid}.wav"
+        else:
+            mu.pop("audio", None)
+        for line in s.get("lines", []):
+            wav = ARTIFACTS / "lines" / f"{sid}_{line['id']}.wav"
+            if wav.exists():
+                line["audio"] = f"lines/{sid}_{line['id']}.wav"
+            else:
+                line.pop("audio", None)
+        sset = ARTIFACTS / "narration" / f"{sid}_setting.wav"
+        if (s.get("setting") or "").strip() and sset.exists():
+            s["setting_audio"] = f"narration/{sid}_setting.wav"
+        snar = ARTIFACTS / "narration" / f"{sid}.wav"
+        if (s.get("narration") or "").strip() and snar.exists():
+            s["narration_audio"] = f"narration/{sid}.wav"
+    return scenes
+
+
+def build_scenes():
+    base = script_parser.load_scenes(
+        scripts_dir(), characters(), CFG.get("aliases"))
+    return _resolve_artifacts(_apply_overrides(base))
+
+
+def get_scene(sid):
+    _, scene = find(build_scenes(), sid)
+    if scene is None:
+        raise HTTPException(404, "scene not found")
+    return scene
 
 
 # --------------------------------------------------------------------------- #
@@ -96,9 +226,6 @@ def openrouter_key():
 # --------------------------------------------------------------------------- #
 # TTS over SSH (batched)
 # --------------------------------------------------------------------------- #
-# Keep StrictHostKeyChecking on (verified against the mounted known_hosts) so a
-# spoofed GPU host can't intercept the SSH session — part of the supply-chain
-# hardening. BatchMode avoids any interactive prompt hanging the request.
 SSH_OPTS = ["-o", "BatchMode=yes", "-o", "ConnectTimeout=10",
             "-o", "StrictHostKeyChecking=yes"]
 
@@ -108,10 +235,6 @@ def _ssh_base(host):
 
 
 def run_tts(items):
-    """items: list of dicts {out, mode, text, instruct|ref_audio, seed}.
-    Generates on the remote GPU box and copies WAVs back into ARTIFACTS.
-    Returns {out: {ok, dur?, error?}}.
-    """
     if not items:
         return {}
     s = settings()["tts"]
@@ -119,11 +242,9 @@ def run_tts(items):
     workdir = s["workdir"]
     remote_script = f"{workdir}/_sb_tts_batch.py"
 
-    # Push the latest generator script.
     subprocess.run(["scp", "-q", *SSH_OPTS, str(REMOTE_SCRIPT), f"{host}:{remote_script}"],
                    check=True, timeout=60)
 
-    # For x-vector items, make sure the saved embedding is present on the host.
     pushed = set()
     for it in items:
         if it.get("mode") == "xvector":
@@ -165,7 +286,6 @@ def run_tts(items):
         if "out" in obj:
             results[obj["out"]] = obj
 
-    # Pull back the successful files.
     for out, r in results.items():
         if r.get("ok"):
             local = ARTIFACTS / out
@@ -184,7 +304,7 @@ def run_tts(items):
 
 
 def voice_item(out, char, text):
-    v = char.get("voice", {})
+    v = (char or {}).get("voice", {})
     mode = v.get("mode", "design")
     item = {"out": out, "mode": mode, "text": text, "seed": v.get("seed")}
     if mode == "xvector":
@@ -196,12 +316,17 @@ def voice_item(out, char, text):
     return item
 
 
+def speaker_for_line(line):
+    """The character voicing a line. Narrator reads narration AND stage directions."""
+    if line.get("type") in ("narration", "direction"):
+        return char_by_id("narrator")
+    return char_by_id(line.get("speaker"))
+
+
 # --------------------------------------------------------------------------- #
 # Background music over SSH (MusicGen)
 # --------------------------------------------------------------------------- #
 def run_music(items):
-    """items: [{out, prompt, seconds, seed}]. Generates on the GPU box and copies
-    WAVs back into ARTIFACTS. Returns {out: {ok, ...}}."""
     if not items:
         return {}
     s = settings()["tts"]
@@ -281,19 +406,24 @@ def gen_image(prompt, out_relpath):
 # --------------------------------------------------------------------------- #
 @app.get("/api/storyboard")
 def get_storyboard():
-    return json.loads(json.dumps(DOC))  # plain types for JSON
+    return {
+        "meta": json.loads(json.dumps(CFG.get("meta", {}))),
+        "settings": settings(),
+        "characters": json.loads(json.dumps(characters())),
+        "scenes": build_scenes(),
+    }
 
 
 @app.put("/api/character/{cid}")
 def update_character(cid: str, payload: dict = Body(...)):
-    idx, char = find(DOC["characters"], cid)
+    idx, char = find(characters(), cid)
     if char is None:
         raise HTTPException(404, "character not found")
     for k, v in payload.items():
         if k == "id":
             continue
         char[k] = v
-    persist()
+    persist_cfg()
     return char
 
 
@@ -301,70 +431,57 @@ def update_character(cid: str, payload: dict = Body(...)):
 def add_character(payload: dict = Body(...)):
     if not payload.get("id"):
         raise HTTPException(400, "id required")
-    if find(DOC["characters"], payload["id"])[1] is not None:
+    if find(characters(), payload["id"])[1] is not None:
         raise HTTPException(400, "id exists")
-    DOC["characters"].append(payload)
-    persist()
+    characters().append(payload)
+    persist_cfg()
     return payload
 
 
 @app.delete("/api/character/{cid}")
 def delete_character(cid: str):
-    idx, char = find(DOC["characters"], cid)
+    idx, char = find(characters(), cid)
     if char is None:
         raise HTTPException(404, "not found")
-    DOC["characters"].pop(idx)
-    persist()
+    characters().pop(idx)
+    persist_cfg()
     return {"ok": True}
 
 
 @app.put("/api/scene/{sid}")
 def update_scene(sid: str, payload: dict = Body(...)):
-    idx, scene = find(DOC["scenes"], sid)
-    if scene is None:
-        raise HTTPException(404, "scene not found")
-    for k, v in payload.items():
-        if k == "id":
-            continue
-        scene[k] = v
-    persist()
-    return scene
+    payload.pop("id", None)
+    OVR.setdefault("scenes", {})[sid] = payload
+    save_overrides()
+    return get_scene(sid)
 
 
 @app.post("/api/scene")
 def add_scene(payload: dict = Body(...)):
-    if not payload.get("id"):
-        # auto id
-        n = len(DOC["scenes"]) + 1
-        payload["id"] = f"s{n:02d}"
-        payload.setdefault("number", n)
-    DOC["scenes"].append(payload)
-    persist()
+    nums = [s.get("number", 0) for s in build_scenes()]
+    n = (max(nums) if nums else 0) + 1
+    payload.setdefault("id", f"s{n:02d}")
+    payload.setdefault("number", n)
+    payload.setdefault("lines", [])
+    OVR.setdefault("added", []).append(payload)
+    save_overrides()
     return payload
 
 
 @app.delete("/api/scene/{sid}")
 def delete_scene(sid: str):
-    idx, scene = find(DOC["scenes"], sid)
-    if scene is None:
-        raise HTTPException(404, "not found")
-    DOC["scenes"].pop(idx)
-    persist()
+    OVR.setdefault("deleted", [])
+    if sid not in OVR["deleted"]:
+        OVR["deleted"].append(sid)
+    OVR.get("scenes", {}).pop(sid, None)
+    OVR["added"] = [s for s in OVR.get("added", []) if s.get("id") != sid]
+    save_overrides()
     return {"ok": True}
 
 
 @app.post("/api/scenes/reorder")
 def reorder_scenes(payload: dict = Body(...)):
-    order = payload.get("order", [])
-    by_id = {s["id"]: s for s in DOC["scenes"]}
-    new = [by_id[i] for i in order if i in by_id]
-    for s in DOC["scenes"]:
-        if s["id"] not in order:
-            new.append(s)
-    DOC["scenes"][:] = new
-    for n, s in enumerate(DOC["scenes"], 1):
-        s["number"] = n
-    persist()
+    # Scene order follows the scripts' scene_number; reordering is a no-op.
     return {"ok": True}
 
 
@@ -373,7 +490,7 @@ def reorder_scenes(payload: dict = Body(...)):
 # --------------------------------------------------------------------------- #
 @app.post("/api/generate/voice/{cid}")
 def generate_voice(cid: str):
-    idx, char = find(DOC["characters"], cid)
+    char = char_by_id(cid)
     if char is None:
         raise HTTPException(404, "character not found")
     text = char.get("voice", {}).get("sample_text") or f"Hello, I am {char['name']}."
@@ -383,42 +500,32 @@ def generate_voice(cid: str):
     if not r.get("ok"):
         raise HTTPException(500, r.get("error", "generation failed"))
     char.setdefault("voice", {})["sample"] = out
-    persist()
+    persist_cfg()
     return {"path": out, **r}
 
 
 @app.post("/api/generate/sketch/{sid}")
 def generate_sketch(sid: str):
-    idx, scene = find(DOC["scenes"], sid)
-    if scene is None:
-        raise HTTPException(404, "scene not found")
+    scene = get_scene(sid)
     style = settings()["image"].get("style", "")
     prompt = scene.get("sketch", {}).get("prompt", "")
     full = f"{style}\n\nScene: {scene.get('title','')}. {prompt}"
     out = f"sketches/{sid}.png"
     gen_image(full, out)
-    scene.setdefault("sketch", {})["image"] = out
-    persist()
     return {"path": out}
 
 
 @app.post("/api/generate/music/{sid}")
 def generate_music(sid: str):
-    idx, scene = find(DOC["scenes"], sid)
-    if scene is None:
-        raise HTTPException(404, "scene not found")
+    scene = get_scene(sid)
     prompt = music_prompt_for(scene)
     secs = settings().get("music", {}).get("seconds", 24)
     out = f"music/{sid}.wav"
     res = run_music([{"out": out, "prompt": prompt,
-                      "seconds": secs, "seed": (idx + 1) * 7}])
+                      "seconds": secs, "seed": (scene.get("number", 1)) * 7}])
     r = res.get(out, {})
     if not r.get("ok"):
         raise HTTPException(500, r.get("error", "music generation failed"))
-    m = scene.setdefault("music", {})
-    m["prompt"] = prompt  # persist the resolved prompt so it's editable
-    m["audio"] = out
-    persist()
     return {"path": out, **r}
 
 
@@ -427,32 +534,24 @@ def generate_music_all(payload: dict = Body(default={})):
     only_missing = payload.get("only_missing", False)
     items, targets = [], []
     secs = settings().get("music", {}).get("seconds", 24)
-    for i, scene in enumerate(DOC["scenes"]):
+    for scene in build_scenes():
         if only_missing and (scene.get("music") or {}).get("audio"):
             continue
         prompt = music_prompt_for(scene)
         if not prompt:
             continue
         out = f"music/{scene['id']}.wav"
-        items.append({"out": out, "prompt": prompt, "seconds": secs, "seed": (i + 1) * 7})
-        targets.append((scene["id"], out, prompt))
+        items.append({"out": out, "prompt": prompt, "seconds": secs,
+                      "seed": scene.get("number", 1) * 7})
+        targets.append(out)
     res = run_music(items)
-    ok = 0
-    for sid, out, prompt in targets:
-        if not res.get(out, {}).get("ok"):
-            continue
-        ok += 1
-        _, scene = find(DOC["scenes"], sid)
-        m = scene.setdefault("music", {})
-        m["prompt"] = prompt
-        m["audio"] = out
-    persist()
+    ok = sum(1 for o in targets if res.get(o, {}).get("ok"))
     return {"generated": ok, "total": len(targets), "results": res}
 
 
 @app.post("/api/generate/portrait/{cid}")
 def generate_portrait(cid: str):
-    idx, char = find(DOC["characters"], cid)
+    char = char_by_id(cid)
     if char is None:
         raise HTTPException(404, "character not found")
     style = settings()["image"].get("portrait_style", "")
@@ -460,20 +559,14 @@ def generate_portrait(cid: str):
     out = f"portraits/{cid}.png"
     gen_image(full, out)
     char["portrait"] = out
-    persist()
+    persist_cfg()
     return {"path": out}
-
-
-def char_by_id(cid):
-    return find(DOC["characters"], cid)[1]
 
 
 @app.post("/api/generate/scene-audio/{sid}")
 def generate_scene_audio(sid: str):
-    """Generate narration + every voiced line for one scene in a single batch."""
-    idx, scene = find(DOC["scenes"], sid)
-    if scene is None:
-        raise HTTPException(404, "scene not found")
+    """Generate setting + narration + every voiced line for one scene in a batch."""
+    scene = get_scene(sid)
     items, targets = [], []
     narrator = char_by_id("narrator")
 
@@ -481,54 +574,35 @@ def generate_scene_audio(sid: str):
     if setting:
         out = f"narration/{sid}_setting.wav"
         items.append(voice_item(out, narrator, setting))
-        targets.append(("setting", None, out))
-
+        targets.append(out)
     narr = (scene.get("narration") or "").strip()
     if narr:
         out = f"narration/{sid}.wav"
         items.append(voice_item(out, narrator, narr))
-        targets.append(("narration", None, out))
-
+        targets.append(out)
     for line in scene.get("lines", []):
-        if line.get("type") not in ("live", "video"):
+        if line.get("type") not in VOICED:
             continue
-        char = char_by_id(line.get("speaker"))
+        char = speaker_for_line(line)
         text = (line.get("text") or "").strip()
-        if not char or not text:
+        if not char or not is_voiceable(text):
             continue
         out = f"lines/{sid}_{line['id']}.wav"
         items.append(voice_item(out, char, text))
-        targets.append(("line", line["id"], out))
+        targets.append(out)
 
     res = run_tts(items)
-    ok = 0
-    for kind, lid, out in targets:
-        r = res.get(out, {})
-        if not r.get("ok"):
-            continue
-        ok += 1
-        if kind == "setting":
-            scene["setting_audio"] = out
-        elif kind == "narration":
-            scene["narration_audio"] = out
-        else:
-            _, line = next(((i, l) for i, l in enumerate(scene["lines"])
-                            if l["id"] == lid), (None, None))
-            if line is not None:
-                line["audio"] = out
-    persist()
+    ok = sum(1 for o in targets if res.get(o, {}).get("ok"))
     return {"generated": ok, "total": len(targets), "results": res}
 
 
 @app.post("/api/generate/line/{sid}/{lid}")
 def generate_line(sid: str, lid: str):
-    idx, scene = find(DOC["scenes"], sid)
-    if scene is None:
-        raise HTTPException(404, "scene not found")
+    scene = get_scene(sid)
     line = next((l for l in scene.get("lines", []) if l["id"] == lid), None)
     if line is None:
         raise HTTPException(404, "line not found")
-    char = char_by_id(line.get("speaker"))
+    char = speaker_for_line(line)
     if not char:
         raise HTTPException(400, "line has no valid speaker")
     out = f"lines/{sid}_{lid}.wav"
@@ -536,8 +610,6 @@ def generate_line(sid: str, lid: str):
     r = res.get(out, {})
     if not r.get("ok"):
         raise HTTPException(500, r.get("error", "generation failed"))
-    line["audio"] = out
-    persist()
     return {"path": out, **r}
 
 
@@ -546,7 +618,7 @@ def generate_voices_all(payload: dict = Body(default={})):
     """Generate every character voice sample in ONE model load."""
     only_missing = payload.get("only_missing", False)
     items, targets = [], []
-    for c in DOC["characters"]:
+    for c in characters():
         if only_missing and c.get("voice", {}).get("sample"):
             continue
         text = c.get("voice", {}).get("sample_text") or f"Hello, I am {c['name']}."
@@ -559,15 +631,13 @@ def generate_voices_all(payload: dict = Body(default={})):
         if res.get(out, {}).get("ok"):
             ok += 1
             char_by_id(cid).setdefault("voice", {})["sample"] = out
-    persist()
+    persist_cfg()
     return {"generated": ok, "total": len(targets), "results": res}
 
 
 @app.post("/api/vectors/extract-all")
 def extract_vectors_all(payload: dict = Body(default={})):
-    """Extract a reusable speaker x-vector from each character's voice sample and
-    save it (artifacts/vectors/<id>.npy). Switches the character to 'xvector' mode
-    so all future lines render from the saved vector — reproducible + reusable."""
+    """Extract a reusable speaker x-vector from each character's voice sample."""
     only_missing = payload.get("only_missing", False)
     s = settings()["tts"]
     host, workdir = s["host"], s["workdir"]
@@ -577,7 +647,7 @@ def extract_vectors_all(payload: dict = Body(default={})):
                    check=True, timeout=30)
 
     items = []
-    for c in DOC["characters"]:
+    for c in characters():
         sample = c.get("voice", {}).get("sample")
         if not sample:
             continue
@@ -626,7 +696,7 @@ def extract_vectors_all(payload: dict = Body(default={})):
         v = char_by_id(cid).setdefault("voice", {})
         v["vector"] = f"vectors/{cid}.npy"
         v["mode"] = "xvector"
-    persist()
+    persist_cfg()
     if not results and proc.returncode != 0:
         raise HTTPException(500, f"Vector extraction failed: {proc.stderr[-600:]}")
     return {"extracted": ok, "total": len(items), "results": results}
@@ -634,67 +704,50 @@ def extract_vectors_all(payload: dict = Body(default={})):
 
 @app.post("/api/generate/audio-all")
 def generate_audio_all(payload: dict = Body(default={})):
-    """Generate narration + every voiced line across the whole show in one batch."""
+    """Generate setting + narration + every voiced line across the show in a batch."""
     only_missing = payload.get("only_missing", False)
     items, targets = [], []
     narrator = char_by_id("narrator")
-    for scene in DOC["scenes"]:
+    for scene in build_scenes():
+        sid = scene["id"]
         setting = (scene.get("setting") or "").strip()
         if setting and not (only_missing and scene.get("setting_audio")):
-            out = f"narration/{scene['id']}_setting.wav"
+            out = f"narration/{sid}_setting.wav"
             items.append(voice_item(out, narrator, setting))
-            targets.append(("setting", scene["id"], None, out))
+            targets.append(out)
         narr = (scene.get("narration") or "").strip()
         if narr and not (only_missing and scene.get("narration_audio")):
-            out = f"narration/{scene['id']}.wav"
+            out = f"narration/{sid}.wav"
             items.append(voice_item(out, narrator, narr))
-            targets.append(("narration", scene["id"], None, out))
+            targets.append(out)
         for line in scene.get("lines", []):
-            if line.get("type") not in ("live", "video"):
+            if line.get("type") not in VOICED:
                 continue
-            char = char_by_id(line.get("speaker"))
+            char = speaker_for_line(line)
             text = (line.get("text") or "").strip()
-            if not char or not text:
+            if not char or not is_voiceable(text):
                 continue
             if only_missing and line.get("audio"):
                 continue
-            out = f"lines/{scene['id']}_{line['id']}.wav"
+            out = f"lines/{sid}_{line['id']}.wav"
             items.append(voice_item(out, char, text))
-            targets.append(("line", scene["id"], line["id"], out))
+            targets.append(out)
     res = run_tts(items)
-    ok = 0
-    for kind, sid, lid, out in targets:
-        if not res.get(out, {}).get("ok"):
-            continue
-        ok += 1
-        _, scene = find(DOC["scenes"], sid)
-        if kind == "setting":
-            scene["setting_audio"] = out
-        elif kind == "narration":
-            scene["narration_audio"] = out
-        else:
-            line = next((l for l in scene["lines"] if l["id"] == lid), None)
-            if line is not None:
-                line["audio"] = out
-    persist()
+    ok = sum(1 for o in targets if res.get(o, {}).get("ok"))
     return {"generated": ok, "total": len(targets), "results": res}
 
 
 @app.post("/api/generate/narration/{sid}")
 def generate_narration(sid: str):
-    idx, scene = find(DOC["scenes"], sid)
-    if scene is None:
-        raise HTTPException(404, "scene not found")
+    scene = get_scene(sid)
     narr = (scene.get("narration") or "").strip()
     if not narr:
-        raise HTTPException(400, "scene has no narration text")
+        raise HTTPException(400, "scene has no scene-level narration (narrator lines are inline)")
     out = f"narration/{sid}.wav"
     res = run_tts([voice_item(out, char_by_id("narrator"), narr)])
     r = res.get(out, {})
     if not r.get("ok"):
         raise HTTPException(500, r.get("error", "generation failed"))
-    scene["narration_audio"] = out
-    persist()
     return {"path": out, **r}
 
 

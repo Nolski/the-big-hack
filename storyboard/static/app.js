@@ -237,18 +237,27 @@ function openScene(id) {
     if (drawerMusic) { drawerMusic.pause(); drawerMusic = null; }
     const btn = $("#playScene", root);
     const seq = [];
-    if (scene.setting_audio) seq.push({ src: scene.setting_audio, line: -1 });
-    if (scene.narration_audio) seq.push({ src: scene.narration_audio, line: -1 });
+    let music = (scene.music && scene.music.audio) || null;
+    if (scene.setting_audio) seq.push({ src: scene.setting_audio, line: -1, music });
+    if (scene.narration_audio) seq.push({ src: scene.narration_audio, line: -1, music });
     edit.lines.forEach((ln, i) => {
       const saved = (scene.lines || []).find((l) => l.id === ln.id);
-      if (saved && saved.audio) seq.push({ src: saved.audio, line: i });
+      const cue = saved && saved.music;
+      if (cue) music = cue === "scene" ? (scene.music && scene.music.audio) || null : cue;
+      if (saved && saved.audio) seq.push({ src: saved.audio, line: i, music });
     });
     if (!seq.length) return toast("No audio yet — generate scene audio first.");
-    if (scene.music && scene.music.audio) {
-      drawerMusic = new Audio(bust(scene.music.audio));
-      drawerMusic.loop = true; drawerMusic.volume = 0.18;
-      drawerMusic.play().catch(() => {});
-    }
+    let curMusic = null;
+    const setDrawerMusic = (src) => {
+      if (src === curMusic) return;
+      curMusic = src;
+      if (drawerMusic) { drawerMusic.pause(); drawerMusic = null; }
+      if (src) {
+        drawerMusic = new Audio(bust(src));
+        drawerMusic.loop = true; drawerMusic.volume = 0.18;
+        drawerMusic.play().catch(() => {});
+      }
+    };
     const lineEls = () => root.querySelectorAll("#lines .line");
     const hl = (idx) => lineEls().forEach((el, i) =>
       (el.style.outline = i === idx ? "2px solid var(--accent)" : ""));
@@ -261,6 +270,7 @@ function openScene(id) {
     const step = () => {
       if (k >= seq.length) return reset();
       const b = seq[k];
+      setDrawerMusic(b.music);
       hl(b.line);
       const el = b.line >= 0 ? lineEls()[b.line] : null;
       if (el) el.scrollIntoView({ block: "nearest", behavior: "smooth" });
@@ -521,7 +531,7 @@ function openChar(id) {
     } else if (edit.voice.mode === "clone") {
       m.innerHTML = `<label class="field">Reference wav (path on GPU host)</label>
         <input class="in" id="f-ref" value="${esc(edit.voice.ref_audio || "")}">
-        <p class="hint">e.g. /home/duster/wan2.2_test/twitter_ref.wav</p>`;
+        <p class="hint">e.g. /path/on/host/ref.wav</p>`;
       $("#f-ref", root).oninput = (e) => (edit.voice.ref_audio = e.target.value);
     } else {
       m.innerHTML = `<label class="field">Voice description (instruct)</label>
@@ -563,15 +573,15 @@ function openChar(id) {
 // --------------------------------------------------------------------------
 const Player = {
   beats: [], idx: 0, playing: false, audio: new Audio(),
-  music: Object.assign(new Audio(), { loop: true }), _musicSid: null,
+  music: Object.assign(new Audio(), { loop: true }), _musicSrc: null,
   setMusic(b) {
-    const sc = b && SB.scenes.find((s) => s.id === b.sid);
-    const src = sc && sc.music && sc.music.audio;
-    if (b && b.sid === this._musicSid) return;        // same scene, keep playing
-    this._musicSid = b ? b.sid : null;
+    // Each beat carries its effective music src (scene bed, or a [MUSIC:] cue).
+    const want = (b && b.music) || null;
+    if (want === this._musicSrc) return;              // unchanged, keep playing
+    this._musicSrc = want;
     this.music.pause();
-    if (src && this.playing) {
-      this.music.src = bust(src);
+    if (want && this.playing) {
+      this.music.src = bust(want);
       this.music.volume = 0.16;
       this.music.play().catch(() => {});
     }
@@ -581,23 +591,26 @@ const Player = {
     sceneIds.forEach((sid) => {
       const s = SB.scenes.find((x) => x.id === sid);
       if (!s) return;
+      // Effective music: the scene's bed until an inline [MUSIC:] cue changes it.
+      let music = (s.music && s.music.audio) || null;
+      const push = (o) => beats.push(Object.assign(
+        { sid, sketch: s.sketch && s.sketch.image, music,
+          title: `Scene ${s.number} — ${s.title}` }, o));
       if ((s.setting || "").trim()) {
-        beats.push({ sid, sketch: s.sketch && s.sketch.image, speaker: "THE STAGE",
-          text: s.setting, direction: "", audio: s.setting_audio, isDir: true,
-          title: `Scene ${s.number} — ${s.title}` });
+        push({ speaker: "Narrator", text: s.setting, direction: "",
+          audio: s.setting_audio, isDir: true });
       }
       if ((s.narration || "").trim()) {
-        beats.push({ sid, sketch: s.sketch && s.sketch.image, speaker: "Narrator",
-          text: s.narration, direction: "", audio: s.narration_audio,
-          title: `Scene ${s.number} — ${s.title}` });
+        push({ speaker: "Narrator", text: s.narration, direction: "",
+          audio: s.narration_audio });
       }
       (s.lines || []).forEach((l) => {
+        if (l.music) music = l.music === "scene" ? (s.music && s.music.audio) || null : l.music;
         const spk = l.type === "direction" ? "" :
           (charById(l.speaker)?.name || l.speaker || "");
-        beats.push({ sid, sketch: s.sketch && s.sketch.image,
-          speaker: l.type === "direction" ? "STAGE" : spk,
+        push({ speaker: l.type === "direction" ? "STAGE" : spk,
           text: l.text, direction: l.direction || "", audio: l.audio,
-          title: `Scene ${s.number} — ${s.title}`, isDir: l.type === "direction" });
+          isDir: l.type === "direction", music });
       });
     });
     this.beats = beats; this.idx = 0;
@@ -629,10 +642,10 @@ const Player = {
   prev() { clearTimeout(this._t); this.audio.pause(); if (this.idx > 0) this.idx--; this.play(); },
   toggle() {
     this.playing = !this.playing;
-    if (this.playing) { this._musicSid = null; this.play(); }
+    if (this.playing) { this._musicSrc = null; this.play(); }
     else { this.audio.pause(); this.music.pause(); clearTimeout(this._t); this.paint(); }
   },
-  stop() { this.playing = false; this.audio.pause(); this.music.pause(); this._musicSid = null; clearTimeout(this._t); },
+  stop() { this.playing = false; this.audio.pause(); this.music.pause(); this._musicSrc = null; clearTimeout(this._t); },
   paint() {
     const b = this.beats[this.idx];
     const stage = $("#stage"); if (!stage) return;

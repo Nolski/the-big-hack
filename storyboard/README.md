@@ -83,6 +83,23 @@ settings:
 `~/.ssh/config` (e.g. `host: gpubox`). The container mounts `~/.ssh` read‑only, so
 your config, key, and `known_hosts` all apply inside it.
 
+The values in `storyboard.yaml` are intentionally placeholders so no real host
+gets committed. Keep your real connection details **out of git** by either:
+
+- setting env vars (`SB_TTS_HOST`, `SB_TTS_PYTHON`, `SB_TTS_WORKDIR`, …), or
+- creating a local, untracked `docker-compose.override.yml` (gitignored) that
+  injects them — `docker compose` auto-merges it:
+
+```yaml
+# storyboard/docker-compose.override.yml  (not committed)
+services:
+  storyboard:
+    environment:
+      - SB_TTS_HOST=user@your-gpu-host
+      - SB_TTS_PYTHON=/path/to/python
+      - SB_TTS_WORKDIR=/path/to/workdir
+```
+
 ### 2. Provide the OpenRouter key
 Either set `OPENROUTER_API_KEY` in the container environment, or drop it in a file
 the compose mounts. By default `docker-compose.yml` mounts `../../ai_keys` to
