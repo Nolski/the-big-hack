@@ -27,7 +27,7 @@ Liam's world. All of these are **AI-generated video characters** (see [[AI Video
 - **Beats:** B2 (opener), later among the coworkers who go quiet (B6).
 
 > [!note] Mirror-map follow-up
-> **Kristina now absorbs the old "Priya" manager role** — one person is both the standup PM (B2) and the manager who runs the review and offboarding (B7–B8); the smiling axe is a single face. Still to reconcile in [[Character Mirror Map]]: Brendan overlaps Marcus's "fast adopter" function and Sam's "sympathetic-but-complicit silence" — decide whether Brendan *replaces* Sam and whether Marcus survives as the *active* betrayer before drafting B6.
+> **Kristina is a single consolidated manager role** — one person is both the standup PM (B2) and the manager who runs the review and offboarding (B7–B8); the smiling axe is a single face. Still to reconcile in [[Character Mirror Map]]: Brendan overlaps Marcus's "fast adopter" function and Sam's "sympathetic-but-complicit silence" — decide whether Brendan *replaces* Sam and whether Marcus survives as the *active* betrayer before drafting B6.
 
 ## THE CEO — the pressure from above *(not greed — fear)*
 - **Function:** carries the company's survival. Genuinely relieved by the launch, genuinely hears the engineers' concerns, and genuinely can't afford them — turns "one good weekend" into the **agent-first mandate**, not from malice but from a bad dashboard and a hard boardroom. The decent man at the top of the machine; the pressure that rolls down through Kristina to Liam. Role-based (unnamed, like HR), but written warm and human so the steelman lands.
