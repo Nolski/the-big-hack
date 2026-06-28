@@ -222,23 +222,6 @@ characters:
     sample_text: Unfortunately, your role has been impacted.
     sample: voices/hr.wav
     vector: vectors/hr.npy
-- id: agent
-  name: THE AGENT
-  world: modern
-  role: machine
-  medium: ai-video
-  live: false
-  description: The AI coding agent. Cheerful, tireless, genuinely capable, therefore terrifying.
-  voice:
-    mode: xvector
-    seed: 909
-    instruct: >-
-      A warm, corporate-synthetic AI assistant voice, gender-neutral, always positive,
-      slightly too eager and tireless. Smooth and friendly with a faint synthetic
-      evenness underneath, like a helpful product that never blinks.
-    sample_text: Hi Liam! Want me to take it from here?
-    sample: voices/agent.wav
-    vector: vectors/agent.npy
 - id: mary
   name: Mary
   world: historical
@@ -307,22 +290,6 @@ characters:
     sample_text: The law is the law. I'd advise you to remember it.
     sample: voices/magistrate.wav
     vector: vectors/magistrate.npy
-- id: loom
-  name: THE LOOM
-  world: historical
-  role: machine
-  medium: sound
-  live: false
-  description: The power loom / factory as a character. Rhythmic, iron, faceless; begins as marvel, becomes Moloch.
-  voice:
-    mode: xvector
-    seed: 1414
-    instruct: >-
-      A low, rhythmic, mechanical voice, half-machine half-choir, cold and tireless and
-      faintly menacing, like iron learning to speak. Even, relentless, inhuman.
-    sample_text: Faster. Cheaper. Always. Faster.
-    sample: voices/loom.wav
-    vector: vectors/loom.npy
 - id: liam's dad
   name: liam's dad
   world: modern

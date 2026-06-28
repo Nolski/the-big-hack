@@ -20,7 +20,7 @@ Usable lines from both eras — epigraphs, projected text, chorus material, or s
 
 ## Modern (Liam's world) — write our own, in this register
 - The corporate-cult banner energy: *"With every decision you make, ask yourself: is this good for the company?"* (Office Space — calibration only; write our own). [[Office Space — Pulled Lines]].
-- THE AGENT's catchphrase (ours): **"Want me to take it from here?"** — friendly in B1, total in B12. See [[Themes & Motifs]].
+- The AI tool's on-screen catchphrase (ours): **"Want me to take it from here?"** — friendly in B1, total in B12. See [[Themes & Motifs]].
 - Liam's hubris line (ours): **"They'll always need the person who does the hard part."** (the Demo scene) — the irony the whole play detonates.
 
 ## Framing candidates (the thesis, in a line)

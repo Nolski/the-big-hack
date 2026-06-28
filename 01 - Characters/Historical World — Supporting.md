@@ -12,7 +12,7 @@ tags:
 
 # Historical World — Supporting Cast (AI Video)
 
-John's world, early 1810s English North. All **AI-generated video characters** (see [[AI Video Production Tracker]]). Each mirrors a modern counterpart — see [[Character Mirror Map]]. Grounded in [[Luddites — History]] and [[The Weavers — Pulled Passages]].
+John's world, early 1810s English North. All **AI-generated video characters** here (see [[AI Video Production Tracker]]) mirror a modern counterpart — see [[Character Mirror Map]]. Grounded in [[Luddites — History]] and [[The Weavers — Pulled Passages]].
 
 ## Mary — John's wife *(the stake made flesh)*
 - **Function:** the household. Her hunger and the children's are what turn John. Where Liam loses his *self*, John loses his ability to feed *her*. The emotional engine of his arc.
@@ -44,11 +44,8 @@ John's world, early 1810s English North. All **AI-generated video characters** (
 - **Mirror:** [[Modern World — Supporting|HR]].
 - **Beats:** B7, B8.
 
-## THE LOOM — the machine
-- **Function:** the power loom / the factory itself as a character. Rhythmic, iron, faceless or masked, choral. Begins as marvel, becomes Moloch. Consistent design so its menace pays off.
-- **Voice:** mechanical clatter that resolves into something almost-vocal; can echo THE AGENT's lines.
-- **Mirror:** [[Modern World — Supporting|THE AGENT]].
-- **Beats:** B2, B4, throughout.
+> [!note] The steam looms are not a character
+> The power looms / the factory that undercut John are a **force** in his world, not a figure to cast or voice — they appear only as ambient machine-sound and distant visuals (see [[AI Video Production Tracker]] and [[Staging — Two Speakers]]). Design them for consistency so the menace pays off: a clatter and iron rhythm that grows from a distant knock to an overwhelming din, never gaining a voice. NB: this is the *power loom* / factory menace, **not** John's own cottage handloom, which is a live stage prop he works.
 
 ## Optional: Old Hilse — the refusenik *(the road not taken)*
 - **Function:** an older weaver who will **not** break the machines on principle and dies at his loom for it (straight from [[The Weavers — Pulled Passages]]). A living counter-argument to Becker — and a possible mirror for a modern dev who "keeps their head down" and is destroyed anyway. Use if you want a third option on stage between submission and revolt.

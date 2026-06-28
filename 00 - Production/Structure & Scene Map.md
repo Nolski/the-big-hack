@@ -14,7 +14,7 @@ tags:
 > **multi-scene movements** with cliffhanger hand-offs — the Godfather Part II / Cloud Atlas / Cloud Nine shape. The scene *content* is unchanged; the **order and grouping** changed.
 
 ## The movement structure
-The show **opens cold inside Liam's world** — no dual prologue — then **rewinds 200 years and cuts straight to John's world after a single cold-open scene.** The braid runs from there. Each thread (Liam / John) runs chronologically across its movements; we cut between them at near-climaxes. Because the prologue is gone, the establishing work it used to do is absorbed: **Liam + THE AGENT** are established by the cold-open standup, and **John + THE LOOM** are established from scratch at the top of Movement II (the rewind).
+The show **opens cold inside Liam's world** — no dual prologue — then **rewinds 200 years and cuts straight to John's world after a single cold-open scene.** The braid runs from there. Each thread (Liam / John) runs chronologically across its movements; we cut between them at near-climaxes. Because the prologue is gone, the establishing work it used to do is absorbed: **Liam** is established by the cold-open standup (where the AI coding tool first shows up alongside him), and **John** is established from scratch at the top of Movement II — the rewind — where the steam looms first make themselves heard.
 
 > [!important] Restructure — Movement I is now just the cold open
 > The earlier plan ran three more Liam scenes (the demo / his "last good day" / the reorg) before the first cut to John. **Those now move into Movement III** so we reach John's warm world *immediately* after the abrasive cold open — which is also where the audience's sympathy gets banked (see the consequence note below). Liam's chronology is unchanged, just regrouped: his B3–B5 (the demo, the unsolvable, adopt-the-agent) now open his squeeze movement.
@@ -64,7 +64,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 
 > [!warning] Two consequences of the cut-to-John-now structure — watch these
 > 1. **Sympathy load — now answered fast.** We meet Liam abrasive-first, with no warm "in-flow joy" (old B1) to bank goodwill. The fix in this restructure: **John's warm establishment arrives immediately** ([[02 - The Loom and the Guild — John half]]) — he faces the audience open-faced where Liam stayed a black square, and *that* is the early foothold (alongside Brendan). Protect John's warmth in Movement II; it's load-bearing.
-> 2. **John's establishment carries the rewind.** Establishing John + THE LOOM was the prologue's job; it now opens Movement II on a neutral narrator V.O. (the 200-year rewind), marked B1+B2 — drafted in [[02 - The Loom and the Guild — John half]]. Without it the rewind has no ground.
+> 2. **John's establishment carries the rewind.** Establishing John (and the first distant sound of the steam looms) was the prologue's job; it now opens Movement II on a neutral narrator V.O. (the 200-year rewind), marked B1+B2 — drafted in [[02 - The Loom and the Guild — John half]]. Without it the rewind has no ground.
 
 ## Braided rules of thumb
 - **Cut at the peak.** End every movement on a near-climax / open question, then switch. See [[Braided Structure — Reference]].

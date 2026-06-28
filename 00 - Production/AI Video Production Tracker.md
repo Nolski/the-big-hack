@@ -16,8 +16,6 @@ Status legend: 🧠 concept · ✍️ prompt-ready · 🎬 generated · ✂️ e
 ## Character reference sheet (lock these first)
 | Character | World | Role | Look reference / seed | Voice | Mirror |
 |---|---|---|---|---|---|
-| THE AGENT (coding AI) | modern | the machine | TBD — uncanny, friendly-corporate | synthetic, warm-then-cold | THE LOOM |
-| THE LOOM (power loom) | historical | the machine | TBD — iron, rhythmic, faceless or masked | mechanical, choral | THE AGENT |
 | Kristina (PM/manager) | modern | velocity-first PM; the smiling axe | TBD | brisk, upbeat; management euphemism | Mr. Cartwright |
 | THE CEO | modern | the pressure from above | TBD | warm, founder-optimistic, fear under it | the market / the board (≈ Cartwright's "Manchester") |
 | Brendan (engineer) | modern | the empathetic adopter | TBD — warm, ordinary, likeable | open, modest, conciliatory | Fellow weavers (the conflicted) || Mr. Cartwright (mill owner) | historical | the smiling axe | TBD | TBD | Kristina |
@@ -31,13 +29,13 @@ Status legend: 🧠 concept · ✍️ prompt-ready · 🎬 generated · ✂️ e
 ## Clip list
 | ID | Scene | Character | What happens in the clip | Length | Prompt status | Status |
 |---|---|---|---|---|---|---|
-| AIV-001 | The Demo *(rehomed from cut prologue)* | THE AGENT | Boots up; cheery "Hi Liam! Want me to take it from here?" | ~6s | ✍️ | 🧠 |
-| AIV-002 | The Loom and the Guild — John half *(rehomed from cut prologue)* | THE LOOM (power loom) | First appearance — **faint and distant**: the flat mechanical knock of steam looms heard down the valley under John's warm handloom. Sound more than sight. The menace character (mirror of THE AGENT); grows over later scenes. **NB: not John's own loom** — John works an ordinary cottage handloom (live stage prop, no clip). | ~10s | ✍️ | 🧠 |
+| AIV-001 | The Demo *(rehomed from cut prologue)* | On-screen UI (screen capture, not a character) | On-screen UI wakes — streaming text and a prompt, "Want me to take it from here?". Text on screen only, no voice. | ~6s | ✍️ | 🧠 |
+| AIV-002 | The Loom and the Guild — John half *(rehomed from cut prologue)* | Steam looms, distant (ambient sound/visual, not a character) | First appearance — **faint and distant**: the flat mechanical knock of steam looms heard down the valley under John's warm handloom. Sound more than sight; grows over later scenes. **NB: not John's own loom** — John works an ordinary cottage handloom (live stage prop, no clip). | ~10s | ✍️ | 🧠 |
 | AIV-010 | Cold Open — The Standup | Kristina (PM) | Celebrates the shipped portal ("best feedback of anything we've shipped"); thanks Brendan for working the weekend; steps in to own the API-key call (conversion data); then left speechless by Liam's credential jab | ~20s | 🧠 | 🧠 |
 | AIV-011 | Cold Open — The Standup | Standup grid | Nodding, half-listening coworker tiles (ambient loop) | loop | 🧠 | 🧠 |
 | AIV-012 | Cold Open — The Standup | Brendan | Modest glow → defends a live/stable product → nervous; "I used Claude Code, Opus 4.8… maybe we could review it together"; cut off twice | ~14s | 🧠 | 🧠 |
 | AIV-013 | Cold Open — The Standup | THE PR (screen share) | The merged ~800-LOC PR ("+812 / −4", green **Merged** badge) Liam pulls up himself and scrolls | ~10s | 🧠 | 🧠 |
-| AIV-020 | The Demo | THE AGENT | Demos itself solving Liam's hard problem in seconds | ~12s | 🧠 | 🧠 |
+| AIV-020 | The Demo | Demo screen (screen capture, not a character) | On screen: the tool solves Liam's hard problem in seconds — code and output streaming. Screen only, no voice. | ~12s | 🧠 | 🧠 |
 | AIV-021 | The Demo | Mr. Cartwright | Unveils the power loom to applause | ~12s | 🧠 | 🧠 |
 | AIV-030 | The Loom and the Guild — John half | Mary (John's wife) | In the kitchen window (her own screen, not John's space): bread's out, tea's going cold, the boy's asking after his own loom; later, "carrier's coming up the lane." Ordinary, warm, unbothered. **Sympathetic, NOT uncanny — best lip-sync, warmest grade.** | ~10s | 🧠 | 🧠 |
 | AIV-031 | The Tavern Oath (B10) *(freed from John's intro)* | The alehouse / tavern (ambient) | A firelit low room where John is known — a nod, a half-raised cup, men leaning in. Originally cut for John's intro; rehome to the Tavern Oath, where the same room turns oath-bound. | loop | 🧠 | 🧠 |
@@ -62,4 +60,4 @@ Status legend: 🧠 concept · ✍️ prompt-ready · 🎬 generated · ✂️ e
 - **Aspect / resolution:** <to match projection surface>
 - **Naming:** `AIV-### - <character> - <scene>.mp4` in `_attachments/`
 - **Backup:** keep an offline local copy of every show-ready clip; never depend on live generation.
-- **The machines (Agent / Loom):** generate as recurring "characters" with a fixed look so their late menace pays off the early friendliness.
+- **The machines (the AI coding tool / the steam looms):** not characters, and not cast or voiced — they appear only as plain on-screen UI / screen captures (modern) and as ambient sound-and-visual of distant looms (historical), written into scenes as stage and sound direction.
