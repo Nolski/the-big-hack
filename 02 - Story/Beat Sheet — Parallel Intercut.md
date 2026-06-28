@@ -22,7 +22,7 @@ tags:
 | [[Liam]] (modern) | [[John]] (historical) |
 |---|---|
 | Liam alone, in flow, doing the thing only he can do — and loving it. The joy of the puzzle. | John at his loom at dawn, in rhythm, a master of his hands. The cloth is *his*. |
-**Machine first-appears:** THE AGENT boots up, cheery — "Want me to take it from here?" / THE LOOM clatters to life in the distance.
+**Machine first appears (a force, not a character):** in Liam's world the AI tool's interface wakes on screen — "Want me to take it from here?"; in John's, the steam looms clatter to life in the distance. Neither speaks; both are only heard and seen, never voiced.
 **Comedy:** Liam's loving pedantry is adorable. → *Pays off in B7 when the same pedantry is "friction."*
 
 ### B2 — The community (where he has standing)
@@ -30,7 +30,7 @@ tags:
 **Comedy:** corporate standup ritual vs guild pomp — both faintly ridiculous, both *home*. → *Curdles in B6/B8 when the same room turns on him.*
 
 ### B3 — The machine demonstrated
-| All-hands demo: THE AGENT solves, in seconds, a class of problem Liam is proud of. Applause. | Mr. Cartwright unveils the power loom to the village; a marvel; applause. |
+| All-hands demo: the AI tool solves, in seconds, a class of problem Liam is proud of. Applause. | Mr. Cartwright unveils the power loom to the village; a marvel; applause. |
 **Comedy:** boosterish hype patter (modern keynote / 1810s "improvement" evangelism) — identical and absurd. → *Returns as a eulogy in B8.*
 
 ### B4 — "But I'm still the best" (the last good day)
@@ -83,4 +83,4 @@ tags:
 - [ ] Does the modern scene and its twin **rhyme** (same function, opposite texture)?
 - [ ] Is the **betrayal** rooted in ordinary survival, not villainy?
 - [ ] Did a **comedy seed** get planted (Act I) or **paid off un-funny** (Act II–III)? Log it in [[Themes & Motifs]].
-- [ ] Is the **machine** present (THE AGENT / THE LOOM) and consistent with [[AI Video Production Tracker]]?
+- [ ] Is the **machine** present (the AI tool / the steam looms) and consistent with [[AI Video Production Tracker]]?

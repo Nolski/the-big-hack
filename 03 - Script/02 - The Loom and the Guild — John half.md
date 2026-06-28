@@ -8,7 +8,7 @@ beat: "[[Beat Sheet — Parallel Intercut#B1 — At the height of the craft]]"
 status: drafted
 runtime_estimate: ~3 min
 live_cast: John
-ai_video_assets: "[[AI Video Production Tracker|AIV-030 Mary — kitchen window]], [[AI Video Production Tracker|AIV-032 Young weaver — the lane]], [[AI Video Production Tracker|AIV-002 THE LOOM (power loom) — distant]]"
+ai_video_assets: "[[AI Video Production Tracker|AIV-030 Mary — kitchen window]], [[AI Video Production Tracker|AIV-032 Young weaver — the lane]], [[AI Video Production Tracker|AIV-002 Steam looms (distant) — ambient]]"
 tags:
   - scene
   - john-arc
@@ -30,7 +30,7 @@ Everyone else is **AI video on the surrounding screens**, each in their own spac
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-030]] — Mary, kitchen window (warm, NOT uncanny):** bread's out, tea's going cold, the boy's asking after his own loom; later, the carrier's coming up the lane. Ordinary and easy, no fear in it. Best lip-sync, warmest grade — she's the emotional engine of the arc.
 - **[[AI Video Production Tracker|AIV-032]] — Young weaver, the lane (responsive):** stops at the gate with gossip about Cartwright's new steam-loom shed; pushes John on what it means. John waves it off. The un-radicalised seed of [[Historical World — Supporting|Becker]]. His coming to John for a read on the news *is* John's standing (B2) — no tavern crowd needed.
-- **[[AI Video Production Tracker|AIV-002]] — THE LOOM (power loom), distant:** the very end only — a faint, flat mechanical knock down the valley under John's handloom. The *menace* character (mirror of THE AGENT); a sound, not a sight. **Not** John's own loom.
+- **[[AI Video Production Tracker|AIV-002]] — steam looms, distant (ambient sound):** the very end only — a faint, flat mechanical knock down the valley under John's handloom. The *menace* — a sound, not a sight, and not a character. **Not** John's own loom.
 
 ---
 

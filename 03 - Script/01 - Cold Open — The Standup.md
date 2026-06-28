@@ -8,7 +8,7 @@ beat: "[[Beat Sheet — Parallel Intercut#B2 — The community (where he has sta
 status: drafted
 runtime_estimate: ~9 min
 live_cast: Liam
-ai_video_assets: "[[AI Video Production Tracker|AIV-010 Kristina — Standup]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-012 Brendan — Standup]], [[AI Video Production Tracker|AIV-013 The PR — screen share]], [[AI Video Production Tracker|AIV-014 THE AGENT — Cursor demo]]"
+ai_video_assets: "[[AI Video Production Tracker|AIV-010 Kristina — Standup]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-012 Brendan — Standup]], [[AI Video Production Tracker|AIV-013 The PR — screen share]], [[AI Video Production Tracker|AIV-014 Cursor demo — on-screen UI]]"
 tags:
   - scene
   - liam-arc
@@ -17,7 +17,7 @@ tags:
 # Scene 01 — Cold Open — The Standup
 
 > [!info] Beat
-> Dramatizes **[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)|B2 — The community]]** and serves as the show's opener. The machine first-appears *by reference* (Brendan built the now-shipped API developer portal with [[Modern World — Supporting|THE AGENT]] — "Claude Code, Opus 4.8") and then, for the first time, **on screen** — in the Cursor demo Brendan gives Kristina at the end of the scene. Mirror twin scene: **The Loom and the Guild → John half** (Movement II).
+> Dramatizes **[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)|B2 — The community]]** and serves as the show's opener. The machine first-appears *by reference* (Brendan built the now-shipped API developer portal with the AI coding tool — "Claude Code, Opus 4.8") and then, for the first time, **on screen** — in the Cursor demo Brendan gives Kristina at the end of the scene. Mirror twin scene: **The Loom and the Guild → John half** (Movement II).
 
 ## Purpose
 Open the show inside Liam's world and his worst habit at once: a brilliant, contemptuous craftsman, needled by a celebration he isn't at the centre of, tears down a *shipped, beloved* product after the fact — humiliating the junior who built it **and** the PM who steps in to shield him. Then flip the lens: after Liam logs off, the same tools he sneers at quietly seduce the person he just humiliated. Plant the pedantry and contempt-for-non-engineers that become the documented case against him — and plant, in Kristina's wonder at the agent, the velocity-worship that will later be used to grind him down.
@@ -30,7 +30,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 - **[[AI Video Production Tracker|AIV-010]] — Kristina (PM):** runs the standup; celebrates the shipped API developer portal; thanks Brendan for the weekend; is humiliated by the degree line and left speechless; recovers to wrap the standup; then, in the huddle, confides about HR, defends-then-drops it, and is converted by the agent demo ("I'm going to build so much").
 - **[[AI Video Production Tracker|AIV-012]] — Brendan:** modest glow → honest about skimming but having tests → reveals he fed Liam's memo to Claude (which implemented the JWTs) → the patient teacher in the Cursor demo → the decent kid who calls Liam to give feedback and can't get through.
 - **[[AI Video Production Tracker|AIV-013]] — The PR (screen share):** the merged ~800-LOC PR — "+812 / −4", a green **Merged** badge — that Liam pulls up himself and scrolls.
-- **[[AI Video Production Tracker|AIV-014]] — THE AGENT (Cursor demo):** the machine's first on-screen appearance. A plan streaming in plan mode, then hundreds of lines of code written live, then an Approve/Deny install dialog. Cheerful, tireless, fast. Mirror of THE LOOM in John's world.
+- **[[AI Video Production Tracker|AIV-014]] — Cursor demo (on-screen UI):** the machine's first on-screen appearance. A plan streaming in plan mode, then hundreds of lines of code written live, then an Approve/Deny install dialog. Tireless and fast — screen only, no voice. Mirror of the steam looms in John's world.
 
 ---
 
@@ -162,8 +162,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 
 *(She hits enter. A plan streams out on screen — steps, files, an architecture — faster than either of them can read.)*
 
-> [!screen] VIDEO — THE AGENT · `AIV-014` *(cheerful, on-screen text reading itself out)*
-> Here's the plan: a Slack slash-command handler, a Jira API client, an approval step before anything destructive, and a deploy config. Shall I proceed?
+*(On screen — `AIV-014` — the plan writes itself out: a Slack slash-command handler, a Jira API client, an approval step before anything destructive, a deploy config. At the foot of it, a prompt waits — "Proceed?")*
 
 > [!screen] VIDEO — BRENDAN · `AIV-012` *(scanning it, the practiced eye)*
 > See — this is the part people skip. It's good, but it's guessing on a couple of things because we didn't tell it. *(points)* It wants to hard-code the Jira credentials — no, we keep secrets in Vault. And it's deploying to some random Lambda; ours go on the internal cluster. Watch — you just tell it.
@@ -184,8 +183,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 
 *(It stops. A dialog appears.)*
 
-> [!screen] VIDEO — THE AGENT · `AIV-014`
-> I've built the Slack app and the Jira integration. Install the Slack app to your workspace now? Approve, or deny?
+*(A dialog box on screen — `AIV-014`: the Slack app and Jira integration are built. "Install the Slack app to your workspace now?" — buttons: Approve / Deny.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(a small, almost frightened laugh)*
 > …It's asking me. Do I just—
@@ -235,7 +233,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 - **Tech accuracy:** JWTs are stateless/signed (no per-request DB hit, self-expiring); long-lived keys force a lookup but convert far better. The kicker is that **Claude implemented Liam's JWT memo line-for-line**, and **Kristina** consciously swapped to keys after user studies showed expiry/refresh tanked partner adoption. So Liam's anti-AI dogma is wrong twice over, and his real target — the human who made the call — he attacks on credential and gender instead of merits.
 - **The trigger** is the *celebration of weekend grind*, not a bug. Play the flip on "He worked the weekend."
 - **The sexism is "vaguely":** never explicit, fully deniable — he attacks her *credential* and her *right to decide* ("never yours to override"), in a patient-mansplaining register; later "her little user study." Deniable as "just the org chart," felt by the audience as gendered.
-- **The second half is the real engine.** After Liam logs off, the tools he mocks seduce the woman he humiliated. The agent's first **on-screen** appearance (Cursor demo) is played for genuine wonder — the awe is the **speed**, not the code — and Kristina's "I'm going to build so much" is the seed of the velocity-worship that later reframes Liam as "friction" (→ [[08 - The Win We Needed]], [[11 - The Performance Review]]). Mirror of THE LOOM arriving in John's valley.
+- **The second half is the real engine.** After Liam logs off, the tools he mocks seduce the woman he humiliated. The tool's first **on-screen** appearance (Cursor demo) is played for genuine wonder — the awe is the **speed**, not the code — and Kristina's "I'm going to build so much" is the seed of the velocity-worship that later reframes Liam as "friction" (→ [[08 - The Win We Needed]], [[11 - The Performance Review]]). Mirror of the steam looms arriving in John's valley.
 - **HR beat / "above my pay grade":** Kristina nearly reports him and is talked down ("you learn to work around him"); Brendan tries to give feedback and can't get through. Nobody owns the harm — the same diffusion of responsibility that later makes the layoff nobody's fault. Log against [[Themes & Motifs]].
 - **Sympathy load:** footholds are **Brendan** (steps on no one, tries to do right by both) and **Kristina** (shielded a junior, got slapped down, then quietly out-grows the moment). Liam attacks both.
-- **Mirror:** rhymes forward to John at the loom (B2, Movement II) — same "community where he has standing," opposite texture (John *embedded* and warm; Liam *tolerated* and sharp), and THE AGENT here ↔ THE LOOM there.
+- **Mirror:** rhymes forward to John at the loom (B2, Movement II) — same "community where he has standing," opposite texture (John *embedded* and warm; Liam *tolerated* and sharp), and the AI tool here ↔ the steam looms there.

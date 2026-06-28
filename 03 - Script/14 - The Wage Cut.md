@@ -8,7 +8,7 @@ beat: "[[Beat Sheet — Parallel Intercut#B7 — He fights it the only way he kn
 status: drafted
 runtime_estimate: ~4 min
 live_cast: John
-ai_video_assets: "[[AI Video Production Tracker|AIV-080 Cartwright — the wage cut]], [[AI Video Production Tracker|AIV-002 THE LOOM (power loom) — through the window]]"
+ai_video_assets: "[[AI Video Production Tracker|AIV-080 Cartwright — the wage cut]], [[AI Video Production Tracker|AIV-002 Steam looms (through the window) — ambient]]"
 tags:
   - scene
   - john-arc
@@ -27,7 +27,7 @@ Cut John's rate — and make the audience *grant Cartwright his case before they
 
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-080]] — Cartwright (the wage cut):** affable, improving, faintly evangelical about the new looms; genuinely fond of John; genuinely sorry; genuinely puzzled that his offer isn't welcome. Delivers the cut and the factory offer as reasonable kindness. **Never a sneer** — if he reads as a villain, the scene has failed.
-- **[[AI Video Production Tracker|AIV-002]] — THE LOOM (power loom), through the window:** behind Cartwright, the new shed's looms moving in steady rows — the menace, visible now but still framed as *his progress*, not yet horror.
+- **[[AI Video Production Tracker|AIV-002]] — steam looms, through the window (ambient visual):** behind Cartwright, the new shed's looms moving in steady rows — the menace, visible now but still framed as *his progress*, not yet horror.
 
 ---
 

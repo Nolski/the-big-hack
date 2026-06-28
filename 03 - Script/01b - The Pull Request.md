@@ -8,7 +8,7 @@ beat: "[[Beat Sheet — Parallel Intercut#B2 — The community (where he has sta
 status: drafted
 runtime_estimate: ~7 min
 live_cast: Liam
-ai_video_assets: "[[AI Video Production Tracker|AIV-015 Brendan — PR review]], [[AI Video Production Tracker|AIV-016 The diff — screen share]], [[AI Video Production Tracker|AIV-017 THE AGENT — plan + transcript]], [[AI Video Production Tracker|AIV-018 CI / canary dashboard]]"
+ai_video_assets: "[[AI Video Production Tracker|AIV-015 Brendan — PR review]], [[AI Video Production Tracker|AIV-016 The diff — screen share]], [[AI Video Production Tracker|AIV-017 Plan + transcript — on-screen UI]], [[AI Video Production Tracker|AIV-018 CI / canary dashboard]]"
 tags:
   - scene
   - liam-arc
@@ -28,7 +28,7 @@ Continuous with the cold open — later the same morning, same dual-monitor desk
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-015]] — Brendan:** the patient, well-reasoned adopter. Not defensive — generous. Concedes Liam's real points (precedent risk; the PR should've been split), reframes the rest with actual agentic-engineering practice, and lands the kind, devastating note ("it's not coming for the thinking — it's coming for the typing… you'd be unbelievable at this"). The decent man, out-arguing Liam without ever attacking him.
 - **[[AI Video Production Tracker|AIV-016]] — The diff (screen share):** the same merged API developer portal PR from `AIV-013`, now open and scrolled — the file tree, the portal's services, the auth/token section Liam keeps circling.
-- **[[AI Video Production Tracker|AIV-017]] — THE AGENT (plan + transcript, screen share):** the machine present *as evidence* — the plan-mode plan it wrote before touching a file, then the long back-and-forth session transcript (Brendan's corrections, the agent's revisions). The review artifact Liam doesn't think to look at.
+- **[[AI Video Production Tracker|AIV-017]] — Plan + transcript (on-screen UI):** the tool's work shown *as evidence* — the plan-mode plan written before any file was touched, then the long session transcript (Brendan's corrections, the tool's revisions). Screen only, no voice; written as stage direction, never a speaker callout. The review artifact Liam doesn't think to look at.
 - **[[AI Video Production Tracker|AIV-018]] — CI / canary dashboard (screen graphic):** green integration tests against a partner sandbox; the flagged 5%→100% staged rollout from Thursday; flat error rate / latency. Text-on-screen, no voice. The safety net that replaced the midnight line-read.
 
 ---
@@ -64,8 +64,7 @@ Continuous with the cold open — later the same morning, same dual-monitor desk
 > [!screen] VIDEO — BRENDAN · `AIV-015`
 > Reading every line catches typos. It's terrible at catching *design* mistakes — you go diff-blind by line two hundred and rubber-stamp the rest. You know that better than anyone. *(beat)* So you don't start with the diff. You start with the intent. *(pulling it up)* Here —
 
-> [!screen] VIDEO — THE AGENT (plan + transcript) · `AIV-017` *(screen share — a plan in plan-mode, then a long back-and-forth transcript scrolling under it)*
-> *The plan it wrote before it touched a file: the portal's four services, secrets in Vault, the staged rollout, the keys flagged as a tradeoff. Below it, the whole session — Brendan's corrections, the agent's revisions, on and on.*
+*(On screen — `AIV-017` — Brendan's screen-share: the plan-mode plan the tool wrote before it touched a file — the portal's services, secrets in Vault, the staged rollout, the keys flagged as a tradeoff. Below it, the whole session scrolls — Brendan's corrections, the tool's revisions, on and on.)*
 
 > [!screen] VIDEO — BRENDAN · `AIV-015`
 > That's the plan it wrote *before* a single line of code. I read that like a hawk — that's where the real decisions live. And this is the entire conversation — every time I pushed back, every thing I made it redo. *(beat)* The thing you review isn't just the diff. It's the plan, the transcript, the tests, and what it does in prod.
@@ -107,7 +106,7 @@ Continuous with the cold open — later the same morning, same dual-monitor desk
 
 *(BRENDAN's tile blinks out. The diff sits there — green, merged, alive, fine. LIAM scrolls it a moment longer, hunting for the flaw that would prove him right. He doesn't find it. The keyboard-clack motif comes up — but he isn't typing. Under it, faint and far off, the flat mechanical knock of a distant loom. Cold light starts to fail toward warm. Two hundred years fall away.)*
 
-> [!screen] VIDEO — THE AGENT (plan + transcript) · `AIV-017` *(the screen-share dims out as the lights change — the last modern image to go)*
+*(On screen — `AIV-017` — the plan and transcript dim out as the lights change; the last modern image to go.)*
 
 *(Hand-off into Movement II — [[02 - The Loom and the Guild — John half]]. The keyboard-clack has become loom-clack.)*
 

@@ -9,7 +9,7 @@ tags:
 
 ## The core convention
 - **Speaker A plays [[Liam]]** (modern). **Speaker B plays [[John]]** (historical). They hold these roles all night — the audience anchors to two faces.
-- **Everyone else is AI-generated video**: managers, coworkers, HR, the wife, the magistrate, the factory owner, and the *machines themselves* (the coding agent and the loom can be given faces / voices). Catalogued in [[AI Video Production Tracker]].
+- **Everyone else is AI-generated video**: managers, coworkers, HR, the wife, the magistrate, the factory owner. The **machines** (the AI coding tool and the steam looms) are *not characters* and not cast — they're a recurring presence only: on-screen UI / screen captures for the tool, ambient clatter and distant visuals for the looms, with no faces that talk and no lines. Catalogued in [[AI Video Production Tracker]].
 - The two speakers can also **narrate** / address the audience directly (Brechtian — see [[Inspiration — Tone & Form]]). They are inside the story *and* commenting on it.
 
 ## Stage picture
@@ -22,7 +22,7 @@ tags:
 - **Two modes of video:**
   1. *Responsive* — short clips triggered on cue (a manager's one-liner). Lives or dies on tight operator cueing.
   2. *Ambient* — looping/background presence (an all-hands crowd, a factory floor) the actor moves within.
-- **The machine has a voice.** The AI coding agent and the power loom are recurring video/audio "characters." Give them a consistent look + voice so their late-play menace is set up early.
+- **The machine has a presence — not a voice, not lines.** The AI coding tool and the steam looms are never characters; they never speak or address anyone. Give each a consistent look and sound (on-screen text / UI for the tool, mechanical clatter for the looms) so their late-play menace is set up early.
 
 ## Transitions (no blackouts)
 - **Light wipe + sound.** A keyboard-clack motif resolves into a loom-clack motif (or vice-versa) to carry the cut between Liam and John. The shared screen briefly shows the *other* world to bridge.

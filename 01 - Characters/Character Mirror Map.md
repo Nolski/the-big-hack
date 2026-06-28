@@ -13,7 +13,6 @@ The spine of the play: every figure in [[Liam]]'s world has a twin in [[John]]'s
 | Function | Modern (Liam's world) | Historical (John's world) |
 |---|---|---|
 | **The craftsman** (protagonist) | [[Liam]] — prickly genius, alone | [[John]] — plain family man, embedded |
-| **The machine** | THE AGENT (AI coding agent) | THE LOOM (power loom / factory) |
 | **The smiling axe** (replaces him kindly) | Kristina (manager) | Mr. Cartwright (mill owner) |
 | **The active betrayer** (rides the new thing up) | Marcus (fast-adopter dev) | Becker* (young frame-breaker) |
 | **The passive betrayal** (survives by going quiet) | Sam + the dev team | The neighbours who take factory work |
@@ -23,6 +22,9 @@ The spine of the play: every figure in [[Liam]]'s world has a twin in [[John]]'s
 | **The road not taken** (refuse, and die anyway) | *(optional: the dev who keeps their head down)* | Old Hilse (dies at his loom) |
 
 > \* **Deliberate inversion to exploit:** in Liam's world the *fast adopter* (Marcus) is a betrayer and a faceless *forum* does the radicalising. In John's world that same hot young-man energy (Becker) is the *radicaliser/brother*. The young man who climbs the new machine and the young man who smashes it are the same age — the play can rhyme and invert them on purpose.
+
+> [!note] The displacing technology is not a character
+> The thing that replaces the craftsman — the AI coding tool in Liam's world, the steam-powered looms in John's — is a **force** in each world, not a figure with a mirror twin, so it isn't a row in the table above. It has no lines and never speaks; it shows up only as on-screen UI (modern) or ambient machine-sound (historical).
 
 ## Why the asymmetry matters
 The one pairing that is **not** symmetrical is "the stake." John has Mary and the children — an external, visible thing to lose. Liam's stake is *internal*: his identity, his craft, his belief that being good is enough. That asymmetry is the point — it lets the same fall read two ways:
