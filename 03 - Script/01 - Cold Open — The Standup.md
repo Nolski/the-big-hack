@@ -17,7 +17,7 @@ tags:
 # Scene 01 — Cold Open — The Standup
 
 > [!info] Beat
-> Dramatizes **[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)|B2 — The community]]** and serves as the show's opener. The machine first-appears *by reference* (Brendan built the now-shipped client API with [[Modern World — Supporting|THE AGENT]] — "Claude Code, Opus 4.8") and then, for the first time, **on screen** — in the Cursor demo Brendan gives Kristina at the end of the scene. Mirror twin scene: **The Loom and the Guild → John half** (Movement II).
+> Dramatizes **[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)|B2 — The community]]** and serves as the show's opener. The machine first-appears *by reference* (Brendan built the now-shipped API developer portal with [[Modern World — Supporting|THE AGENT]] — "Claude Code, Opus 4.8") and then, for the first time, **on screen** — in the Cursor demo Brendan gives Kristina at the end of the scene. Mirror twin scene: **The Loom and the Guild → John half** (Movement II).
 
 ## Purpose
 Open the show inside Liam's world and his worst habit at once: a brilliant, contemptuous craftsman, needled by a celebration he isn't at the centre of, tears down a *shipped, beloved* product after the fact — humiliating the junior who built it **and** the PM who steps in to shield him. Then flip the lens: after Liam logs off, the same tools he sneers at quietly seduce the person he just humiliated. Plant the pedantry and contempt-for-non-engineers that become the documented case against him — and plant, in Kristina's wonder at the agent, the velocity-worship that will later be used to grind him down.
@@ -27,7 +27,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-011]] — Standup grid (ambient loop):** the half-listening coworker tiles; runs under the standup, nodding through the whole blow-up having heard none of it.
-- **[[AI Video Production Tracker|AIV-010]] — Kristina (PM):** runs the standup; celebrates the shipped client API; thanks Brendan for the weekend; is humiliated by the degree line and left speechless; recovers to wrap the standup; then, in the huddle, confides about HR, defends-then-drops it, and is converted by the agent demo ("I'm going to build so much").
+- **[[AI Video Production Tracker|AIV-010]] — Kristina (PM):** runs the standup; celebrates the shipped API developer portal; thanks Brendan for the weekend; is humiliated by the degree line and left speechless; recovers to wrap the standup; then, in the huddle, confides about HR, defends-then-drops it, and is converted by the agent demo ("I'm going to build so much").
 - **[[AI Video Production Tracker|AIV-012]] — Brendan:** modest glow → honest about skimming but having tests → reveals he fed Liam's memo to Claude (which implemented the JWTs) → the patient teacher in the Cursor demo → the decent kid who calls Liam to give feedback and can't get through.
 - **[[AI Video Production Tracker|AIV-013]] — The PR (screen share):** the merged ~800-LOC PR — "+812 / −4", a green **Merged** badge — that Liam pulls up himself and scrolls.
 - **[[AI Video Production Tracker|AIV-014]] — THE AGENT (Cursor demo):** the machine's first on-screen appearance. A plan streaming in plan mode, then hundreds of lines of code written live, then an Approve/Deny install dialog. Cheerful, tireless, fast. Mirror of THE LOOM in John's world.
@@ -46,7 +46,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 *(He is very obviously not eating. He doesn't so much as glance at the call — the memes keep scrolling on the big monitor, the house still half-laughing at them while the standup tries to start underneath.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> *Warm, and she means it.* No worries. Okay — before tickets, one thing, because I'm not letting it slide by. The client API. It went live Thursday, and — honestly? The feedback's been *incredible.* Two of our biggest integration partners shipped on it over the weekend. Support's quiet, adoption's climbing, people posting about it unprompted. Best launch we've had in ages.
+> *Warm, and she means it.* No worries. Okay — before tickets, one thing, because I'm not letting it slide by. The API developer portal. It went live Thursday, and — honestly? The feedback's been *incredible.* Two of our biggest integration partners shipped on it over the weekend. Support's quiet, adoption's climbing, people posting about it unprompted. Best launch we've had in ages.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(turning to one tile in particular)*
 > And that's so much down to Brendan — who, I happen to know, put most of his weekend into getting it over the line. So. Thank you, genuinely. It did not go unnoticed.
@@ -63,7 +63,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 > [!screen] VIDEO — THE PR (screen share) · `AIV-013`
 > *The merged pull request. A wall of additions, the file tree scrolling on. "+812 / −4" sits at the top like a dare. A green **Merged** badge beside it.*
 
-**LIAM** *(live, the first real attention he's paid all morning)*: Hang on. This *shipped?* This is the client API — live, in front of partners, right now? *(scrolling, fast)* Eight hundred lines in one PR. Who reviewed this?
+**LIAM** *(live, the first real attention he's paid all morning)*: Hang on. This *shipped?* This is the developer portal — live, in front of partners, right now? *(scrolling, fast)* Eight hundred lines in one PR. Who reviewed this?
 
 > [!screen] VIDEO — BRENDAN · `AIV-012` *(still gamely)*
 > I mean — it's been live since Thursday, totally stable, partners are already on it, so—
@@ -216,7 +216,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 > [!screen] VIDEO — BRENDAN · `AIV-012` *(gentle, trying)*
 > Hey, got a sec? Listen — about standup. The thing with Kristina, the degree line. That… wasn't great, man. She was pretty rattled. I think you should maybe—
 
-**LIAM** *(live, not really listening)*: The token thing still stands, by the way. Long-lived keys on a client API — I was right about that, whatever her little user study says. The DB hit on every request alone—
+**LIAM** *(live, not really listening)*: The token thing still stands, by the way. Long-lived keys on a public developer portal — I was right about that, whatever her little user study says. The DB hit on every request alone—
 
 > [!screen] VIDEO — BRENDAN · `AIV-012`
 > I— Liam. I'm not talking about the tokens. I'm talking about Kristina. The way you spoke to her.

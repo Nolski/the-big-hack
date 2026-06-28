@@ -23,11 +23,11 @@ tags:
 Pay off the standup's unfinished fight and turn the screw on the real tragedy: Liam's two complaints — the **weekend-grind precedent** and the **unreviewable 800-line PR** — are *genuinely good points*, and he's still a dick delivering them, talking down to the one colleague who likes him. Against that, Brendan answers with calm, correct, modern practice — review the intent not the diff, risk-based reading, tests as verification, staged rollout as the safety net, ownership — and every reasonable answer makes Liam more obsolete, not less. The horror is that nobody's wrong and nobody's cruel: Brendan isn't seduced by a shortcut, he's *better at the new shape of the job*, and the thing Liam built his identity on (the heroic careful reader who catches it at midnight) is being automated out from under him while he calls it beneath him. Plant "it's not coming for the thinking, it's coming for the typing" so it can come back un-funny.
 
 ## Setting / Staging
-Continuous with the cold open — later the same morning, same dual-monitor desk, same bathrobe, the wall of Reddit memes still parked on the big monitor. Liam started a Slack huddle; Brendan's tile is back. The big monitor now holds the **diff** (Liam dragged it up himself), and partway through, Brendan's screen-share takes over: the agent's **plan + session transcript**, then the **CI / canary dashboard**. Same cool monitor-blue. Two engineers talking shop — the comedy and the dread both come from the *accuracy*. Liam never crosses onto the video plane: he's live at the desk, Brendan is on screen, the artifacts are on screen-share. The warm/analog half of the stage (John's loom) stays dark until the final hand-off, when the distant loom-knock comes up under the keyboard-clack and we rewind.
+Continuous with the cold open — later the same morning, same dual-monitor desk, same bathrobe, the wall of Reddit memes still parked on the big monitor. Liam started a Slack huddle; Brendan's tile is back. The big monitor now holds the **API developer portal diff** (Liam dragged it up himself), and partway through, Brendan's screen-share takes over: the agent's **plan + session transcript**, then the **CI / canary dashboard**. Same cool monitor-blue. Two engineers talking shop — the comedy and the dread both come from the *accuracy*. Liam never crosses onto the video plane: he's live at the desk, Brendan is on screen, the artifacts are on screen-share. The warm/analog half of the stage (John's loom) stays dark until the final hand-off, when the distant loom-knock comes up under the keyboard-clack and we rewind.
 
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-015]] — Brendan:** the patient, well-reasoned adopter. Not defensive — generous. Concedes Liam's real points (precedent risk; the PR should've been split), reframes the rest with actual agentic-engineering practice, and lands the kind, devastating note ("it's not coming for the thinking — it's coming for the typing… you'd be unbelievable at this"). The decent man, out-arguing Liam without ever attacking him.
-- **[[AI Video Production Tracker|AIV-016]] — The diff (screen share):** the same merged PR from `AIV-013`, now open and scrolled — the file tree, the four components, the auth/token section Liam keeps circling.
+- **[[AI Video Production Tracker|AIV-016]] — The diff (screen share):** the same merged API developer portal PR from `AIV-013`, now open and scrolled — the file tree, the portal's services, the auth/token section Liam keeps circling.
 - **[[AI Video Production Tracker|AIV-017]] — THE AGENT (plan + transcript, screen share):** the machine present *as evidence* — the plan-mode plan it wrote before touching a file, then the long back-and-forth session transcript (Brendan's corrections, the agent's revisions). The review artifact Liam doesn't think to look at.
 - **[[AI Video Production Tracker|AIV-018]] — CI / canary dashboard (screen graphic):** green integration tests against a partner sandbox; the flagged 5%→100% staged rollout from Thursday; flat error rate / latency. Text-on-screen, no voice. The safety net that replaced the midnight line-read.
 
@@ -37,7 +37,7 @@ Continuous with the cold open — later the same morning, same dual-monitor desk
 
 *(The keyboard-clack motif from the standup never quite stopped — it carries us straight here. Same desk, same bathrobe, the meme wall still parked on the big monitor. But the small monitor's lit again: a Slack huddle, and this time LIAM is the one who started it. BRENDAN's tile blinks in. On the big screen the memes are gone — LIAM has dragged the merged PR back up himself, the diff open, scrolling.)*
 
-**LIAM** *(live, already mid-scroll, no hello but a long sigh)*: Walk me through it. The whole thing. I want to actually see how you wrote this.
+**LIAM** *(live, already mid-scroll, no hello but a long sigh)*: Walk me through it. The whole thing — a whole API developer portal, start to finish. I want to actually see how you wrote this.
 
 > [!screen] VIDEO — BRENDAN · `AIV-015` *(easy — choosing not to be defensive)*
 > Yeah, course. I'd rather go through it with you than not. *(sharing his screen)* I've got the PR and the whole session up ready to go.
@@ -54,7 +54,7 @@ Continuous with the cold open — later the same morning, same dual-monitor desk
 
 *(LIAM doesn't engage with that — can't. He goes back to the screen, where the argument is one he knows how to win.)*
 
-**LIAM** *(live, scrolling fast)*: …Whatever. The code. Look at this. Eight hundred lines. *One* PR. *(scrolling)* The Slack handler, the Jira client, the auth, the deploy config — all jammed into one diff. *(earnest, and turning the knife)* How is anybody supposed to review this? This PR is massive. There are too many moving parts. *(beat)* Be honest with me. There's no way you reviewed this the way you would have if you'd actually written it. Line by line. You can't have.
+**LIAM** *(live, scrolling fast)*: …Whatever. The code. Look at this. Eight hundred lines. *One* PR. *(scrolling)* The whole portal — the front-end, the key-issuance service, the auth, the deploy config — all jammed into one diff. *(earnest, and turning the knife)* How is anybody supposed to review this? This PR is massive. There are too many moving parts. *(beat)* Be honest with me. There's no way you reviewed this the way you would have if you'd actually written it. Line by line. You can't have.
 
 > [!screen] VIDEO — BRENDAN · `AIV-015` *(no defensiveness — this is the thing he's thought hardest about)*
 > The size — you're right. It should've been three or four smaller PRs, stacked. That's on me, I'm splitting them like that now. *(beat)* But "read it like I wrote it, line by line" — that's the part I'd push back on. That's not how you review this. It's not even the best way to review *human* code.
@@ -65,7 +65,7 @@ Continuous with the cold open — later the same morning, same dual-monitor desk
 > Reading every line catches typos. It's terrible at catching *design* mistakes — you go diff-blind by line two hundred and rubber-stamp the rest. You know that better than anyone. *(beat)* So you don't start with the diff. You start with the intent. *(pulling it up)* Here —
 
 > [!screen] VIDEO — THE AGENT (plan + transcript) · `AIV-017` *(screen share — a plan in plan-mode, then a long back-and-forth transcript scrolling under it)*
-> *The plan it wrote before it touched a file: the four components, secrets in Vault, the approval step, the keys flagged as a tradeoff. Below it, the whole session — Brendan's corrections, the agent's revisions, on and on.*
+> *The plan it wrote before it touched a file: the portal's four services, secrets in Vault, the staged rollout, the keys flagged as a tradeoff. Below it, the whole session — Brendan's corrections, the agent's revisions, on and on.*
 
 > [!screen] VIDEO — BRENDAN · `AIV-015`
 > That's the plan it wrote *before* a single line of code. I read that like a hawk — that's where the real decisions live. And this is the entire conversation — every time I pushed back, every thing I made it redo. *(beat)* The thing you review isn't just the diff. It's the plan, the transcript, the tests, and what it does in prod.
@@ -79,7 +79,7 @@ Continuous with the cold open — later the same morning, same dual-monitor desk
 > *No voice. The tests are green. The rollout graph steps up in two stages, a day apart. The lines stay flat.*
 
 > [!screen] VIDEO — BRENDAN · `AIV-015`
-> I wrote the integration tests myself — real partner sandbox, real token flows, not the agent marking its own unit tests. *(beat)* And the auth, the token handling — the one part that can actually hurt someone — I read every line of that. Twice. That's the five percent that matters. The CRUD, the Slack plumbing? I skimmed it, and I'm fine with that, because if it's wrong the suite goes red and it never leaves the canary.
+> I wrote the integration tests myself — real partner sandbox, real token flows, not the agent marking its own unit tests. *(beat)* And the auth, the token handling — the one part that can actually hurt someone — I read every line of that. Twice. That's the five percent that matters. The CRUD, the portal front-end? I skimmed it, and I'm fine with that, because if it's wrong the suite goes red and it never leaves the canary.
 
 **LIAM** *(live, pouncing)*: It's not on a canary. It's *live.* In front of partners. You told me that yourself this morning.
 
