@@ -22,7 +22,7 @@ A man who believes *being excellent is the same as being safe* learns — too la
 ## Beats
 1. **B1 — Flow.** Liam alone, solving the unsolvable, joyous. We *love* him here, pedantry and all.
 2. **B2 — Half-belonging.** The standup; he's the hard-bug guy; he mistakes being useful for being safe.
-3. **B3 — The demo.** THE AGENT does his proudest trick in seconds. He laughs it off. (Hubris seeded.)
+3. **B3 — The demo.** The AI tool does his proudest trick in seconds. He laughs it off. (Hubris seeded.)
 4. **B4 — The last good day.** He solves something the agent can't. Proof. Victory lap.
 5. **B5 — Reframed.** "Agent-first team." His job becomes *reviewing the machine*. The ground shifts under the word "value."
 6. **B6 — The quiet.** Marcus recasts him as a "bottleneck"; Sam says nothing. The betrayal is mostly silence.

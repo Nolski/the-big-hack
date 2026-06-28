@@ -12,7 +12,7 @@ tags:
 
 # Modern World — Supporting Cast (AI Video)
 
-Liam's world. All of these are **AI-generated video characters** (see [[AI Video Production Tracker]]). Each has a mirror in [[Historical World — Supporting]] — see [[Character Mirror Map]].
+Liam's world. All of these are **AI-generated video characters** (see [[AI Video Production Tracker]]); each has a mirror in [[Historical World — Supporting]] — see [[Character Mirror Map]].
 
 ## Kristina — the PM / manager *(velocity over craft; the smiling axe)*
 - **Function:** the **same upbeat face across the whole fall** — she runs the standup early and owns Liam's review and exit later. In the opener she celebrates the just-launched developer portal (best feedback of any release) and thanks Brendan for grinding the weekend to ship it. **Not clueless** — when Liam attacks the API-key choice she owns it with real conversion data (keys convert better than OAuth), then steps in to shield Brendan; her usual deflection (smoothing friction into a *scheduling problem*) **fails for the first time** here, and Liam's credential jab leaves her speechless. Later she genuinely *likes* Liam, "advocates" for him in calibration, and **signs the severance anyway** — not a villain, a decent person executing a rational machine. This is where the betrayal is most *systemic*: the person who celebrated the launch is the person who manages him out, and means well at every step. Her instinct to reward raw velocity is the soil the layoff grows in.
@@ -53,11 +53,8 @@ Liam's world. All of these are **AI-generated video characters** (see [[AI Video
 - **Mirror:** [[Historical World — Supporting|The Magistrate]] / the bailiff.
 - **Beats:** B8.
 
-## THE AGENT — the machine
-- **Function:** the AI coding agent. Cheerful, tireless, *genuinely capable*, and therefore terrifying. Starts as a helpful tool ("Want me to take it from here?") and becomes the thing the whole org reorganises around. Give it a consistent face/voice so its late-play menace is earned.
-- **Voice:** warm corporate-synthetic. Always positive. Never tires. Slightly too eager.
-- **Mirror:** [[Historical World — Supporting|THE LOOM]].
-- **Beats:** B1, B3, B5, throughout.
+> [!note] The AI coding tool is not a character
+> The tool that displaces Liam is a **force** the humans use and talk about, not a figure to cast or voice — its menace is in how it's *deployed*, not in any personality. It appears only as on-screen UI / screen captures (see [[AI Video Production Tracker]] and [[Staging — Two Speakers]]); anything that looks like it "talking" is written as stage direction, never dialogue. Keep its look consistent — a warm corporate-synthetic interface, streaming text, a default on-screen prompt of "Want me to take it from here?" — so the late-play menace is earned.
 
 ## Recurring extras
 - **The all-hands crowd** — ambient video of an applauding company audience (reused, curdled, in B8).

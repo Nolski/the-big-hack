@@ -12,7 +12,7 @@ The thematic engine and the **curdle ledger** — the comedy setups (Act I) and 
 
 ## Core themes
 - **The craft is the self.** For both men, the work isn't a job — it's identity, dignity, meaning. Take the work and you don't make a man unemployed; you make him *disappear*.
-- **It's not the machine — it's the deployment.** Neither THE AGENT nor THE LOOM is evil. The harm is in *how* they're used to discard people and *who* gets to decide. (The honest Luddite point.)
+- **It's not the machine — it's the deployment.** Neither the AI tool nor the steam looms are evil. The harm is in *how* they're used to discard people and *who* gets to decide. (The honest Luddite point.)
 - **Betrayal is mostly silence.** The people who destroy Liam and John are not villains — they're neighbours and coworkers making locally-survivable choices. Abandonment is a sum, not an act.
 - **Radicalisation as the last available belonging.** Stripped of community, both men are *adopted* by a community of grievance. The play refuses to pretend that isn't seductive — and refuses to cheer it.
 - **Progress's eulogy.** The same boosterish hype language ("improvement," "efficiency," "this is the future") is spoken over the marvel *and* over the ruined man. Same words, opposite meaning.
@@ -33,7 +33,7 @@ The signature device: a laugh in Act I returns without the laugh in Act II–III
 | The all-hands applause clip; everyone claps for the agent (B3). | The same applause clip replays, hollow, over Liam's offboarding (B8). |
 | Cartwright's evangelism about "improvement" at the loom unveiling (B3). | The same words as the magistrate's cold eulogy / justification (B8). |
 | The cheerful standup chant / jingle (B2). | The jingle plays under the empty office in B9. |
-| THE AGENT's friendly "Want me to take it from here?" (B1). | The exact line, menacing, as it takes *everything* (B11–B12). |
+| The AI tool's friendly on-screen prompt "Want me to take it from here?" (B1). | The same on-screen line, menacing now, as the machine takes *everything* (B11–B12). |
 | John's quiet contentment with a clean day's work — the household ticking over, bread ready, the carrier coming for the finished cloth ([[02 - The Loom and the Guild — John half]], B1) — *shown, not stated.* | The thing he stakes his worth on, **I provide**, breaks at the cold hearth (B9) — the same household, now hungry. |
 | John, waving off the steam-mill news: *"Then we do what we've always done. Sign a petition. It gets sorted out."* (B2). | His faith that fairness is owed — the lawful petition answered with a deeper wage cut and contempt, then the bailiff (B7–B8). **The flaw, dropped in passing.** |
 | John, of the steam loom: *"A dozen looms making cheap, rough cloth. People still pay for good cloth."* (B1) — the finer-than-the-machine assumption. | The exact skill made worthless when the rate for hand-cloth collapses (B5–B7). Direct rhyme of Liam's B4 "I'm still the best." |

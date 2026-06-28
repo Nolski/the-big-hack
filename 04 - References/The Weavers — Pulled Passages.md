@@ -28,7 +28,7 @@ tags:
 
 **The machine named as the enemy** — Act IV (Hornig)
 > **HORNIG:** "It's the factories. They're goin' to smash up the power-looms. For it's them that is ruinin' the hand-loom weaver."
-- → The literal Luddite beat. Twin of THE AGENT in Liam's world.
+- → The literal Luddite beat. Twin of the AI tool in Liam's world.
 
 **The uprising** — (Becker; a young weaver)
 > **BECKER:** "One, two, three, an' we're inside the house. Then, at it like lightnin' — bang, crack, shiver!"

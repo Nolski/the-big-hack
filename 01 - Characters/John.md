@@ -43,7 +43,8 @@ See the full beat-by-beat in [[Beat Sheet — Parallel Intercut]] and [[John Arc
 - **[[Historical World — Supporting|Mr. Cartwright]]** — the mill owner. Affable, modern, sure he is doing the rational thing. The smiling axe. Mirror of [[Modern World — Supporting|Kristina]].
 - **[[Historical World — Supporting|Becker]]** — a younger weaver, the frame-breaker who names the enemy and pulls John in. (Name borrowed from [[The Weavers — Pulled Passages]].)
 - **[[Historical World — Supporting|The Magistrate]]** — the law closing ranks; the bailiff and the 1812 Act. Mirror of [[Modern World — Supporting|HR]].
-- **[[Historical World — Supporting|THE LOOM]]** — the machine. Mirror of [[Modern World — Supporting|THE AGENT]].
+
+*Not a relationship — a force:* the power looms / the factory system that undercut John are not a person and not a character — they have no lines and never speak; they act *on* his world as an ambient menace. (Staging notes in [[Historical World — Supporting]].)
 
 ## Appears in
 All historical-world scenes (to be drafted) — see the running order in [[Structure & Scene Map]].

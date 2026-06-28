@@ -17,8 +17,10 @@ A scene juggles (1) live dialogue, (2) AI-video character dialogue, and (3) stag
 > **LIAM** *(live)*: I didn't break it. I *clarified* it.
 
 - **AI-video character** — a callout block so it reads as "on screen," tagged with the clip ID from [[AI Video Production Tracker]]:
-> [!screen] VIDEO — THE AGENT · `AIV-001`
-> *Cheerful.* Hi Liam! Want me to take it from here?
+> [!screen] VIDEO — KRISTINA · `AIV-010`
+> *Mid-standup, brisk.* Morning, everyone — let's keep it tight, lots on today.
+
+- **The machines are NOT characters.** The AI coding tool and the steam looms never get a speaker callout and never have lines. Write the tool's on-screen text / UI and the looms' clatter as **stage / sound direction** (italics) — e.g. *(On screen: the plan streams out; a prompt waits — "Proceed?")* — never as a video dialogue block.
 
 - **Stage / video / sound direction** — italics, on its own line:
 > *(Keyboard-clack motif resolves into loom-clack. Lights shift warm → cold.)*
