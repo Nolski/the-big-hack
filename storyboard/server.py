@@ -271,7 +271,8 @@ def run_tts(items):
 
     proc = subprocess.run(
         _ssh_base(host) + [f"cd {workdir} && {s['python']} _sb_tts_batch.py"],
-        input=json.dumps(job), capture_output=True, text=True, timeout=1800,
+        input=json.dumps(job), capture_output=True, text=True,
+        timeout=int(os.environ.get("SB_TTS_TIMEOUT", "7200")),
     )
 
     results = {}
