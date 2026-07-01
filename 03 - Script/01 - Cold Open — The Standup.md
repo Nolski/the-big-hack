@@ -6,9 +6,9 @@ world: modern
 arc: liam-arc
 beat: "[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)]]"
 status: drafted
-runtime_estimate: ~9 min
+runtime_estimate: ~14 min
 live_cast: Liam
-ai_video_assets: "[[AI Video Production Tracker|AIV-010 Kristina — Standup]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-012 Brendan — Standup]], [[AI Video Production Tracker|AIV-013 The PR — screen share]], [[AI Video Production Tracker|AIV-014 Cursor demo — on-screen UI]]"
+ai_video_assets: "[[AI Video Production Tracker|AIV-010 Kristina — Standup]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-012 Brendan — Standup]], [[AI Video Production Tracker|AIV-013 The PR — screen share]], [[AI Video Production Tracker|AIV-014 Cursor demo — on-screen UI]], [[AI Video Production Tracker|AIV-015 Brendan — PR review]], [[AI Video Production Tracker|AIV-016 The diff — screen share]], [[AI Video Production Tracker|AIV-017 Plan + transcript — on-screen UI]], [[AI Video Production Tracker|AIV-018 CI / canary dashboard]]"
 tags:
   - scene
   - liam-arc
@@ -17,13 +17,15 @@ tags:
 # Scene 01 — Cold Open — The Standup
 
 > [!info] Beat
-> Dramatizes **[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)|B2 — The community]]** and serves as the show's opener. The machine first-appears *by reference* (Brendan built the now-shipped API developer portal with the AI coding tool — "Claude Code, Opus 4.8") and then, for the first time, **on screen** — in the Cursor demo Brendan gives Kristina at the end of the scene. Mirror twin scene: **The Loom and the Guild → John half** (Movement II).
+> Dramatizes **[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)|B2 — The community]]** and serves as the show's opener (its **PR-review coda** seeds B5/B6). The machine first-appears *by reference* (Brendan built the now-shipped API developer portal with the AI coding tool — "Claude Code, Opus 4.8") and then, for the first time, **on screen** — in the Cursor demo Brendan gives Kristina. The scene closes on a one-to-one **PR review** (Liam pulls Brendan back to litigate the merged portal) that carries the loom-knock hand-off into the rewind. Mirror twin scene: **The Loom and the Guild → John half** (Movement II).
 
 ## Purpose
 Open the show inside Liam's world and his worst habit at once: a brilliant, contemptuous craftsman, needled by a celebration he isn't at the centre of, tears down a *shipped, beloved* product after the fact — humiliating the junior who built it **and** the PM who steps in to shield him. Then flip the lens: after Liam logs off, the same tools he sneers at quietly seduce the person he just humiliated. Plant the pedantry and contempt-for-non-engineers that become the documented case against him — and plant, in Kristina's wonder at the agent, the velocity-worship that will later be used to grind him down.
 
+Then the **PR-review coda** turns the screw on the real tragedy. Liam pulls Brendan back to litigate the portal one-to-one — and first, gruffly, *owns* that the degree line was cruel while insisting (badly) it came from genuine concern. His two complaints — the **weekend-grind precedent** and the **unreviewable 800-line PR** — are *good points*, and he's still a dick delivering them. Against that, Brendan answers with calm, correct agentic practice — review the intent not the diff, risk-based reading, tests as verification, staged rollout as the safety net, ownership — and every reasonable answer makes Liam more obsolete, not less. Nobody's wrong and nobody's cruel: Brendan isn't seduced by a shortcut, he's *better at the new shape of the job*, and the heroic-careful-reader identity Liam built his life on is being automated out from under him while he calls it beneath him. Plant **"it's not coming for the thinking — it's coming for the typing"** so it comes back un-funny.
+
 ## Setting / Staging
-Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrobe, barely out of bed: one monitor is a wall of **Reddit anti-AI memes** he scrolls with the mouse, the other holds the **Zoom standup grid** of coworker tiles. His own tile is a **camera-off black square labeled "Liam"** — and it *stays* black, even through the cruelty: the audience sees the man the call cannot. The memes are up *first* and large; the house reads them and laughs along before they even find the man underneath, and he keeps scrolling them through the meeting. The joke he's enjoying — that AI "confidently lies to you" — is the exact thing he weaponises minutes later against Brendan's AI-written code. After the blow-up and after Liam logs off, the scene stays with the screens for its second half: Kristina and Brendan in a 1:1, and a live Cursor/agent demo. Light: cool monitor-blue; the warm/analog half of the stage (John's loom) stays dark for now.
+Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrobe, barely out of bed: one monitor is a wall of **Reddit anti-AI memes** he scrolls with the mouse, the other holds the **Zoom standup grid** of coworker tiles. His own tile is a **camera-off black square labeled "Liam"** — and it *stays* black, even through the cruelty: the audience sees the man the call cannot. The memes are up *first* and large; the house reads them and laughs along before they even find the man underneath, and he keeps scrolling them through the meeting. The joke he's enjoying — that AI "confidently lies to you" — is the exact thing he weaponises minutes later against Brendan's AI-written code. After the blow-up and after Liam logs off, the scene stays with the screens: Kristina and Brendan in a 1:1, then a live Cursor/agent demo. **The coda** returns to Liam — still at the same desk, the memes now gone, the merged portal diff dragged back up — for a one-to-one PR review with Brendan (Liam started the huddle): two engineers talking shop, the comedy and the dread both from the *accuracy*. Liam never crosses onto the video plane — he's live at the desk, Brendan is on a tile, the diff / plan-transcript / dashboard are on screen-share. Light: cool monitor-blue; the warm/analog half of the stage (John's loom) stays dark until the final hand-off, when the distant loom-knock comes up under the keyboard-clack and we rewind.
 
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-011]] — Standup grid (ambient loop):** the half-listening coworker tiles; runs under the standup, nodding through the whole blow-up having heard none of it.
@@ -31,6 +33,10 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 - **[[AI Video Production Tracker|AIV-012]] — Brendan:** modest glow → honest about skimming but having tests → reveals he fed Liam's memo to Claude (which implemented the JWTs) → the patient teacher in the Cursor demo → the decent kid who calls Liam to give feedback and can't get through.
 - **[[AI Video Production Tracker|AIV-013]] — The PR (screen share):** the merged ~800-LOC PR — "+812 / −4", a green **Merged** badge — that Liam pulls up himself and scrolls.
 - **[[AI Video Production Tracker|AIV-014]] — Cursor demo (on-screen UI):** the machine's first on-screen appearance. A plan streaming in plan mode, then hundreds of lines of code written live, then an Approve/Deny install dialog. Tireless and fast — screen only, no voice. Mirror of the steam looms in John's world.
+- **[[AI Video Production Tracker|AIV-015]] — Brendan (PR-review coda):** the patient, well-reasoned adopter. Not defensive — generous. Concedes Liam's real points (precedent risk; the PR should've been split), reframes the rest with actual agentic practice, and lands the kind, devastating note ("it's not coming for the thinking — it's coming for the typing… you'd be unbelievable at this"). The decent man, out-arguing Liam without ever attacking him.
+- **[[AI Video Production Tracker|AIV-016]] — The diff (screen share):** the same merged API developer portal PR from `AIV-013`, now open and scrolled — file tree, the portal's services, the auth/token section Liam keeps circling.
+- **[[AI Video Production Tracker|AIV-017]] — Plan + transcript (on-screen UI):** the tool's work shown *as evidence* — the plan-mode plan written before any file was touched, then the long session transcript (Brendan's corrections, the tool's revisions). Screen only, no voice; written as **stage direction**, never a speaker callout. The review artifact Liam doesn't think to look at; it's the last modern image to dim as the rewind begins.
+- **[[AI Video Production Tracker|AIV-018]] — CI / canary dashboard (screen graphic):** green integration tests against a partner sandbox; the flagged 5%→100% staged rollout from Thursday; flat error rate / latency. Text-on-screen, no voice. The safety net that replaced the midnight line-read.
 
 ---
 
@@ -207,24 +213,94 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 > [!screen] VIDEO — BRENDAN · `AIV-012` *(a warm smile — and the faintest flicker of something he can't name yet)*
 > Yeah. You are. *(beat)* Okay — I've gotta run, got some actual work to do. Later?
 
-*(Her tile blinks out, still glowing. BRENDAN sits a moment. Then, decent kid that he is, he makes a call he doesn't have to make.)*
+*(Her tile blinks out, still glowing. BRENDAN gathers himself to go — and a Slack huddle request lights his screen. From LIAM. He looks at it a beat, wary, then takes it; decent kid that he is.)*
 
-*(Below, LIAM — still live, still scrolling his memes — gets a Slack call: BRENDAN. He answers without looking up.)*
+*(Below, LIAM — still live, still in the bathrobe, the memes finally gone: he's dragged the merged PR back up onto the big monitor, the diff open. He's been stewing. No hello.)*
 
-> [!screen] VIDEO — BRENDAN · `AIV-012` *(gentle, trying)*
-> Hey, got a sec? Listen — about standup. The thing with Kristina, the degree line. That… wasn't great, man. She was pretty rattled. I think you should maybe—
+**LIAM** *(live, gruff — not his comfort zone, getting it out of the way first)*: Before anything. The Kristina thing. This morning — the degree line. *(a beat; this is hard for him)* That landed like shit. I know. I shouldn't have said it like that.
 
-**LIAM** *(live, not really listening)*: The token thing still stands, by the way. Long-lived keys on a public developer portal — I was right about that, whatever her little user study says. The DB hit on every request alone—
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(caught off guard he's saying it)*
+> …Okay. Yeah. It really did.
 
-> [!screen] VIDEO — BRENDAN · `AIV-012`
-> I— Liam. I'm not talking about the tokens. I'm talking about Kristina. The way you spoke to her.
+**LIAM** *(live)*: But I wasn't *wrong* to be worried. I'm not trying to bully her but I think we're about to get burned and nobody in that room is listening, and it comes out of my mouth as… *(a small, helpless gesture)* …that. I'm bad at this. I know I'm bad at this.
 
-**LIAM** *(live)*: I spoke to her like a colleague who made an engineering call she isn't qualified to make. If she can't—
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(gently)*
+> …Honestly? If you said it to *her* the way you just said it to me, it'd go a lot better.
 
-> [!screen] VIDEO — BRENDAN · `AIV-012` *(a sigh; the kid gives up the gentle way)*
-> …You know what — it's not my call. That's above my pay grade. *(beat)* Forget it. Talk later, Liam.
+**LIAM** *(live, already moving on — can't stay in it)*: Yeah, well. *(beat)* Anyway. That's not why I called. The portal. Walk me through it — the whole thing, start to finish. I want to actually see how you wrote this.
 
-*(BRENDAN hangs up. LIAM has already gone back to his memes — never registered a thing. Keyboard-clack motif up, and out.)*
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(easy — choosing not to be defensive)*
+> Yeah, course. I'd rather go through it with you than not. *(sharing his screen)* I've got the PR and the whole session up.
+
+*(On the big monitor the diff opens out — `AIV-016` — the merged portal PR, file tree and all, BRENDAN's screen now driving it.)*
+
+**LIAM** *(live)*: Before the code, though. *(a beat — the other thing he came to say)* The weekend. Since when do we work weekends? *(scrolling)* You know what you just did? Kristina was practically salivating over the idea that we'll all just give up our Saturdays now whenever someone upstairs fumbles a deadline.
+
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(level — concedes it)*
+> It wasn't a weekend, Liam. It was maybe three hours Saturday because I was bored and messing around with the new Opus. Most of it happened while I was making coffee.
+
+**LIAM** *(live, not hearing it)*: Wow. So clever — you vibecoded over coffee and it was no work at all. *(beat)* That's how it always starts. "Three hours, no big deal." Then it's the baseline. *(certain, and he thinks this is kindness)* I'm looking out for you here. You'll grind yourself into the ground and call it fun, and in two years they'll have quietly rewritten what "normal" means — and you'll be on call every week for the code your agent wrote.
+
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(gentle, and he means it)*
+> Kristina works way more weekends than I do... *(beat)* But me shipping something I was excited about on a Saturday isn't a death march. *(carefully)* I think you've seen so many death marches you can't tell the two apart anymore. That's not a dig. I just think it's true.
+
+*(LIAM doesn't engage with that — can't. He goes back to the screen, where the argument is one he knows how to win.)*
+
+**LIAM** *(live, scrolling fast)*: …Whatever. The code. Look at this. Eight hundred lines. *One* PR. *(scrolling)* The whole portal — the front-end, the key-issuance service, the auth, the deploy config — all jammed into one diff. *(earnest, and turning the knife)* How is anybody supposed to review this? It's massive. There are too many moving parts. *(beat)* Be honest with me. There's no way you reviewed this the way you would have if you'd written it yourself. Line by line. You can't have.
+
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(no defensiveness — this is the thing he's thought hardest about)*
+> The size — you're right. It should've been three or four smaller PRs, stacked. That's on me, I'm splitting them like that now. *(beat)* But "read it like I wrote it, line by line" — that's the part I'd push back on. That's not how you review this. It's not even the best way to review *human* code.
+
+**LIAM** *(live, a short, incredulous laugh)*: …Yeah? You've got a better way? Go on, then.
+
+> [!screen] VIDEO — BRENDAN · `AIV-015`
+> Reading every line catches typos. It's terrible at catching *design* mistakes — you go diff-blind by line two hundred and rubber-stamp the rest. You know that better than anyone. *(beat)* So you don't start with the diff. You start with the intent. *(pulling it up)* Here —
+
+*(On screen — `AIV-017` — BRENDAN's screen-share: the plan-mode plan the tool wrote before it touched a file — the portal's services, secrets in Vault, the staged rollout, the keys flagged as a tradeoff. Below it, the whole session scrolls — Brendan's corrections, the tool's revisions, on and on.)*
+
+> [!screen] VIDEO — BRENDAN · `AIV-015`
+> That's the plan it wrote *before* a single line of code. I read that like a hawk — that's where the real decisions live. And this is the entire conversation — every time I pushed back, every thing I made it redo. *(beat)* The thing you review isn't just the diff. It's the plan, the transcript, the tests, and what it does in prod.
+
+**LIAM** *(live, flat — his line from the standup, back again)*: The tests. Here we go. The AI wrote the code *and* wrote the tests that say the code's fine. I made this exact point three hours ago.
+
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(easy)*
+> And it'd be a great point if I'd let it grade its own homework. I didn't. *(pulls up CI)*
+
+> [!screen] VIDEO — CI / canary dashboard · `AIV-018` *(screen graphic — green integration suite against a partner sandbox; a 5%→100% rollout timeline from Thursday; flat error / latency)*
+> *No voice. The tests are green. The rollout graph steps up in two stages, a day apart. The lines stay flat.*
+
+> [!screen] VIDEO — BRENDAN · `AIV-015`
+> I wrote the integration tests myself — real partner sandbox, real token flows, not the AI marking its own unit tests. *(beat)* And the auth, the token handling — the one part that can actually hurt someone — I read every line of that. Twice. That's the five percent that matters. The CRUD, the front-end? I skimmed it, and I'm fine with that, because if it's wrong the suite goes red and it never leaves the canary.
+
+**LIAM** *(live, pouncing)*: It's not on a canary. It's *live.* In front of partners. You told me that yourself this morning.
+
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(points at the dashboard)*
+> It went out behind a flag Thursday morning. Five percent. Sat there all day — error rate flat, latency flat — so it promoted itself to everyone Thursday night. By the time you saw "live," it had a full day on real traffic. *(beat)* If it had wobbled it'd have rolled itself back and you'd never have heard about it. *(quiet)* That's the safety net now. Not me reading line four hundred at midnight.
+
+*(A beat. LIAM has nowhere to put that. So he narrows — finds the one real thing, the engineer surfacing under the contempt.)*
+
+**LIAM** *(live, quieter)*: Great. So now it's not just vibecoding — we're trusting the robot to ship for us, too. Can't imagine that going sideways. *(beat)* Anyway. The long-lived keys are still wrong. I don't care how cleanly it shipped. A key that never expires, sitting in a partner's env file forever — that's a breach waiting to happen, and no canary catches *that.* It's not an error. It's a decision.
+
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(simple, no fight — gives him the point)*
+> …Yeah. On that, you're right. I said the same thing — so did the tool, it's flagged right there in the plan. *(beat)* But that was Kristina's call, with the adoption data. You and I both lost that one to a conversion chart. *(careful)* Take it up with her. Gently, though — the way you just did with me. Not the way you did this morning.
+
+**LIAM** *(live, sliding past it, back to the thing under all of it)*: …I'm serious about the weekend, Brendan. You're better than this. You're a *real* engineer — you don't need to outsource your thinking to a chatbot and pull Saturdays to look fast. *(a beat, almost warm)* I'm only saying it because I like you. Most of these people I wouldn't bother.
+
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(a real beat — he takes it as meant, and answers straight)*
+> …I know. And I do like working with you — I've learned more from you than from anyone here, that's true. *(beat)* But I didn't outsource the thinking. I *did* the thinking — the plan, the tests, the rollout, the five percent that bites. The tool did the typing. *(gentle — this is the one meant to land)* That's the part you keep not hearing, man. It's not coming for the thinking. It's coming for the typing. *(beat)* You're the best thinker here. You'd be unbelievable at this — if you'd stop deciding it's beneath you.
+
+*(LIAM goes quiet and literal — the way he does when he's hurt.)*
+
+**LIAM** *(live)*: …It is beneath me. *(beat)* I spent twenty years learning to do this properly. I'm not going to sit here and let a glorified autocomplete tell me that's the same thing as typing a paragraph and hitting accept.
+
+> [!screen] VIDEO — BRENDAN · `AIV-015` *(quietly, not unkind — and he lets it go)*
+> …Yeah. Okay. *(beat)* For what it's worth, nobody's saying it's the same thing. *(he reaches once more, then doesn't)* I'll split the PR up next time. Promise. *(beat)* Talk later, Liam.
+
+*(BRENDAN's tile blinks out. The diff sits there — green, merged, alive, fine. LIAM scrolls it a moment longer, hunting for the flaw that would prove him right. He doesn't find it. The keyboard-clack motif comes up — but he isn't typing. Under it, faint and far off, the flat mechanical knock of a distant loom. Cold light starts to fail toward warm. Two hundred years fall away.)*
+
+*(On screen — `AIV-017` — the plan and transcript dim out as the lights change; the last modern image to go.)*
+
+*(Hand-off into Movement II — [[02 - The Loom and the Guild — John half]]. The keyboard-clack has become loom-clack.)*
 
 ---
 
@@ -234,6 +310,15 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 - **The trigger** is the *celebration of weekend grind*, not a bug. Play the flip on "He worked the weekend."
 - **The sexism is "vaguely":** never explicit, fully deniable — he attacks her *credential* and her *right to decide* ("never yours to override"), in a patient-mansplaining register; later "her little user study." Deniable as "just the org chart," felt by the audience as gendered.
 - **The second half is the real engine.** After Liam logs off, the tools he mocks seduce the woman he humiliated. The tool's first **on-screen** appearance (Cursor demo) is played for genuine wonder — the awe is the **speed**, not the code — and Kristina's "I'm going to build so much" is the seed of the velocity-worship that later reframes Liam as "friction" (→ [[08 - The Win We Needed]], [[11 - The Performance Review]]). Mirror of the steam looms arriving in John's valley.
-- **HR beat / "above my pay grade":** Kristina nearly reports him and is talked down ("you learn to work around him"); Brendan tries to give feedback and can't get through. Nobody owns the harm — the same diffusion of responsibility that later makes the layoff nobody's fault. Log against [[Themes & Motifs]].
-- **Sympathy load:** footholds are **Brendan** (steps on no one, tries to do right by both) and **Kristina** (shielded a junior, got slapped down, then quietly out-grows the moment). Liam attacks both.
+- **HR beat / nobody owns the harm:** Kristina nearly reports him and is talked down ("you learn to work around him"). In the coda Liam himself names the degree line as out of line — but *privately, to Brendan,* and it never reaches Kristina, so the harm stays unrepaired. Nobody owns it where it counts — the same diffusion of responsibility that later makes the layoff nobody's fault. Log against [[Themes & Motifs]].
+- **Sympathy load:** footholds are **Brendan** (steps on no one, tries to do right by both) and **Kristina** (shielded a junior, got slapped down, then quietly out-grows the moment). Liam attacks both — but the coda cracks him open just enough (the clumsy half-apology) that he's a bad communicator with real concern, not a monster.
 - **Mirror:** rhymes forward to John at the loom (B2, Movement II) — same "community where he has standing," opposite texture (John *embedded* and warm; Liam *tolerated* and sharp), and the AI tool here ↔ the steam looms there.
+
+### PR-review coda (folds in the former Scene 1b)
+- **Liam owns-but-defends (the humanising beat):** he opens the one-to-one by conceding the degree line "landed like shit" — then insists he wasn't *wrong* to worry and that it came out cruel because "I'm bad at this," not because he meant to kick her. Keep it gruff and short; he bolts straight back to the technical the moment it gets vulnerable. The admission never reaches Kristina (see HR beat) — it humanises him without repairing anything.
+- **Right twice and a dick twice.** His coda complaints are *legitimate* — weekend-grind-as-precedent is a real labour problem, and a single 800-LOC AI PR genuinely is hard to review well. His sin is the contempt and the talking-down, and his blind spot is that Brendan has already thought past every objection. He wins the keys point; he loses everything else — keep him neither cleanly right nor cleanly wrong.
+- **Brendan is the steelman of agentic practice — don't strawman him.** Every answer is real best practice: review intent/plan over diff; the session transcript as a review artifact; risk-based reading (line-by-line on auth, skim the boilerplate); human-authored integration tests vs. the AI grading itself; flagged 5%→100% canary + observability as the safety net; ownership of merged code. He concedes what's true (split the PR; the precedent risk; the keys). He's not seduced — he's *better at the new job.* That's the dread.
+- **The curdle planted here:** "It's not coming for the thinking — it's coming for the typing. You'd be unbelievable at this — if you'd stop deciding it's beneath you." Pays off un-funny in B5/B6 (role redefined to *reviewer of the machine*) and B7 (the careful-reader identity logged as "friction"). The job Brendan describes is the exact job Liam will be told he's bad at.
+- **Friendship beat:** Liam frames the dickishness as protection ("I'm only saying it because I like you"). Brendan takes it as meant and still disagrees — and answers the insult with a compliment Liam can only hear as an insult. Keep the warmth real or the tragedy doesn't bite.
+- **Dedupe / continuity:** the long-lived-keys fight plays in **full at the standup** (Kristina owns it); the coda only *callbacks* it. The "AI wrote the tests" jab is planted at the standup ("it'll lie straight to your face") and paid off by the coda's CI/canary rebuttal — don't re-argue it. The rewind/loom hand-off runs **once**, at the very end of the coda.
+- **Runtime / structure:** this scene is now ~14 min — Movement I is a single (long) scene again. Watch the consequence flagged in [[Structure & Scene Map]]: the longer Movement I delays John's warm establishment, which the cut-to-John-now design wants to arrive fast.
