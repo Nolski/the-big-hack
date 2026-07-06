@@ -21,7 +21,7 @@ The show **opens cold inside Liam's world** — no dual prologue — then **rewi
 
 | Movement | Thread | Builds from → to (cut at the peak) | Approx |
 |---|---|---|---|
-| **I** | 🟦 Liam | **Cold open on the abrasive standup** — establish Liam + the machine (by reference). *Cut on his cruelty, straight into the rewind.* | ~5 min |
+| **I** | 🟦 Liam | **Cold open on the abrasive standup** — establish Liam + the machine (by reference), then the PR-review coda. *Cut on the loom-knock, straight into the rewind.* | ~14 min |
 | **II** | 🟫 John | (Rewind 200 yrs — neutral narrator V.O.) **Establish John at his loom + the guild** → the loom marvel → his finest cloth → **the factory opens, the rate collapses**. *Cut on the sting.* | ~10 min |
 | **III** | 🟦 Liam | The demo → his "last good day" → the reorg → the squeeze: coworkers go quiet → the review → **managed out**. *Cut at the gut-punch, on the threshold of the empty apartment.* | ~14 min |
 | **IV** | 🟫 John | The squeeze: neighbours take the jobs → the petition fails → the bailiff → **the cold hearth, Mary breaks**. *Cut as the oath becomes thinkable.* | ~9 min |
@@ -36,8 +36,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 
 | Order | Scene (working title) | Movement | Beat | Status |
 |---|---|---|---|---|
-| 1 | [[01 - Cold Open — The Standup\|Cold Open — The Standup]] | I · Liam | B2 (+B1 by ref) | ✏️ |
-| 1b | [[01b - The Pull Request\|The Pull Request]] | I · Liam | B2 (→ seeds B5/B6) | ✏️ |
+| 1 | [[01 - Cold Open — The Standup\|Cold Open — The Standup]] | I · Liam | B2 (+B1 by ref; coda seeds B5/B6) | ✏️ |
 | 2 | [[02 - The Loom and the Guild — John half\|The Loom and the Guild — John half]] | II · John | B1+B2 | ✏️ |
 | 3 | The Demo → *John half* | II · John | B3 | ⬜ |
 | 4 | The Loom Arrives | II · John | B4 | ⬜ |
@@ -60,8 +59,8 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 21 | John Marches | VI · John | B11 | ⬜ |
 | 22 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
 
-> [!warning] Movement I now has a coda — decide before locking
-> [[01b - The Pull Request]] is drafted as a Movement I coda: it flows straight out of the standup and **carries the loom-knock hand-off into the rewind** (arguably a cleaner bridge to John than the cold open's meme-button). The cost: it adds a second Liam scene *before* the cut to John, softening the "Movement I is one scene → John's warmth arrives immediately" design (consequence note below). Alternative home: **Movement III**, just before Scene 10 ("The Coworkers Go Quiet" / B6), where its review-burden content is the truer beat. If 1b stays here, the rewind hand-off lives at the **end of 1b**, not the end of Scene 1 — don't run it twice.
+> [!note] Movement I is one scene again — the PR review folded into the cold open
+> The former "The Pull Request" coda (Scene 1b) is now **merged into [[01 - Cold Open — The Standup]]** as its closing PR-review beat, and the loom-knock hand-off lives at the end of that scene. Movement I is a single scene again — but a longer one (~14 min). Watch the consequence below: the longer Movement I delays John's warm establishment, which the cut-to-John-now design wants to arrive fast. If runtime becomes a problem, the review-burden coda is the natural thing to lift back out into **Movement III** (before Scene 10 / B6), where its content is the truer beat.
 
 > [!note] Drafting note
 > The wordless dual prologue ("Cold Open — Two Workshops") was **cut**; the show opens cold on Liam's standup ([[01 - Cold Open — The Standup]]), then **rewinds straight to John** ([[02 - The Loom and the Guild — John half]]). Movement I is now a single scene. **The Demo** is still *split* across movements (John half in Movement II, Liam half in Movement III). This table is the source of truth for order; beats map to [[Beat Sheet — Parallel Intercut]].
