@@ -23,7 +23,7 @@ The show **opens cold inside Liam's world** — no dual prologue — then **rewi
 |---|---|---|---|
 | **I** | 🟦 Liam | **Cold open — four short scenes:** the abrasive standup → the Cursor demo → the PR review → the future. Establish Liam + the machine (by reference), then quietly hand the method — and the case against him — to the people who'll use it. *Cut on the loom-knock, straight into the rewind.* | ~18 min |
 | **II** | 🟫 John | (Rewind 200 yrs — neutral narrator V.O.) **Establish John at his loom + the guild** → the loom marvel → his finest cloth → **the factory opens, the rate collapses**. *Cut on the sting.* | ~10 min |
-| **III** | 🟦 Liam | The demo → his "last good day" → the reorg → the squeeze: coworkers go quiet → the review → **managed out**. *Cut at the gut-punch, on the threshold of the empty apartment.* | ~14 min |
+| **III** | 🟦 Liam | The day-two standup (the machine quietly solves his bug) → the demo → his "last good day" → the reorg → the squeeze: coworkers go quiet → the review → **managed out**. *Cut at the gut-punch, on the threshold of the empty apartment.* | ~14 min |
 | **IV** | 🟫 John | The squeeze: neighbours take the jobs → the petition fails → the bailiff → **the cold hearth, Mary breaks**. *Cut as the oath becomes thinkable.* | ~9 min |
 | **V** | 🟦 Liam | The break: isolation → the forum → the decision → **his hand hovering over the keys**. *Cut at the brink.* | ~9 min |
 | **VI** | 🟫 John → **both** | The oath → the march → hammer raised — and the two threads **collapse into one** (the [[Arcadia — Structural Technique|Arcadia]]/Nolan convergence). Hold on the moment *before*. Black. | ~12 min |
@@ -44,23 +44,24 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 3 | The Demo → *John half* | II · John | B3 | ⬜ |
 | 4 | The Loom Arrives | II · John | B4 | ⬜ |
 | 5 | The Factory Opens | II · John | B5 | ⬜ |
-| 6 | The Demo → *Liam half* | III · Liam | B3 | ⬜ |
-| 7 | Liam Solves the Unsolvable | III · Liam | B4 | ⬜ |
-| 8 | [[08 - The Win We Needed\|The Win We Needed]] | III · Liam | B5 | ✏️ |
-| 9 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
-| 10 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
-| 11 | [[11 - The Performance Review\|The Performance Review]] | III · Liam | B7 | ✏️ |
-| 12 | HR Offboarding | III · Liam | B8 | ⬜ |
-| 13 | The Weavers Take the Jobs | IV · John | B6 | ⬜ |
-| 14 | [[14 - The Wage Cut\|The Wage Cut]] | IV · John | B7 | ✏️ |
-| 15 | The Bailiff | IV · John | B8 | ⬜ |
-| 16 | The Cold Hearth | IV · John | B9 | ⬜ |
-| 17 | The Empty Apartment | V · Liam | B9 | ⬜ |
-| 18 | The Forum | V · Liam | B10 | ⬜ |
-| 19 | Liam Decides | V · Liam | B11 | ⬜ |
-| 20 | The Tavern Oath | VI · John | B10 | ⬜ |
-| 21 | John Marches | VI · John | B11 | ⬜ |
-| 22 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
+| 6 | [[06 - Good Instinct\|Good Instinct]] | III · Liam | B2 (day two; seeds B3/B4) | ✏️ |
+| 7 | The Demo → *Liam half* | III · Liam | B3 | ⬜ |
+| 8 | Liam Solves the Unsolvable | III · Liam | B4 | ⬜ |
+| 9 | [[09 - The Win We Needed\|The Win We Needed]] | III · Liam | B5 | ✏️ |
+| 10 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
+| 11 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
+| 12 | [[12 - The Performance Review\|The Performance Review]] | III · Liam | B7 | ✏️ |
+| 13 | HR Offboarding | III · Liam | B8 | ⬜ |
+| 14 | The Weavers Take the Jobs | IV · John | B6 | ⬜ |
+| 15 | [[15 - The Wage Cut\|The Wage Cut]] | IV · John | B7 | ✏️ |
+| 16 | The Bailiff | IV · John | B8 | ⬜ |
+| 17 | The Cold Hearth | IV · John | B9 | ⬜ |
+| 18 | The Empty Apartment | V · Liam | B9 | ⬜ |
+| 19 | The Forum | V · Liam | B10 | ⬜ |
+| 20 | Liam Decides | V · Liam | B11 | ⬜ |
+| 21 | The Tavern Oath | VI · John | B10 | ⬜ |
+| 22 | John Marches | VI · John | B11 | ⬜ |
+| 23 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
 
 > [!note] Movement I is now four short scenes (split for navigation + clarity)
 > The cold open is broken into four individually-navigable scenes so each part stands on its own: **[[01 - Cold Open — The Standup|standup]] → [[01b - The Cursor Demo|the Cursor demo]] → [[01c - The PR Review|the PR review]] → [[01d - The Future|the future]]**. The **methodology moved** out of the PR review (where Liam steamrolls Brendan and never lets him explain) into the final scene, where Brendan teaches it to Kristina on a call — the person who most needs the lesson refuses it; the person who'll later manage Liam out receives it eagerly. The loom-knock hand-off lives at the end of **01d**. Runtime is now ~18 min, which delays John's warm establishment — if that becomes a problem, 01b–01d are the natural candidates to lift into **Movement III**.

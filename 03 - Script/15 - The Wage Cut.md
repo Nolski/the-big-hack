@@ -1,6 +1,6 @@
 ---
 type: scene
-scene_number: 14
+scene_number: 15
 title: The Wage Cut
 world: historical
 arc: john-arc
@@ -14,10 +14,10 @@ tags:
   - john-arc
 ---
 
-# Scene 14 — The Wage Cut
+# Scene 15 — The Wage Cut
 
 > [!info] Beat
-> Dramatizes **[[Beat Sheet — Parallel Intercut#B7 — He fights it the only way he knows (and it backfires)|B7 — He fights it the only way he knows]]**. John petitions *lawfully* and is answered with a deeper cut and an offer that's worse than the cut. Mirror twin scene: **[[11 - The Performance Review]]** (Liam, same beat). The curdle of his B2 line in [[02 - The Loom and the Guild — John half]] — *"sign a petition, it gets sorted"* — pays off here: it doesn't.
+> Dramatizes **[[Beat Sheet — Parallel Intercut#B7 — He fights it the only way he knows (and it backfires)|B7 — He fights it the only way he knows]]**. John petitions *lawfully* and is answered with a deeper cut and an offer that's worse than the cut. Mirror twin scene: **[[12 - The Performance Review]]** (Liam, same beat). The curdle of his B2 line in [[02 - The Loom and the Guild — John half]] — *"sign a petition, it gets sorted"* — pays off here: it doesn't.
 
 ## Purpose
 Cut John's rate — and make the audience *grant Cartwright his case before they recoil.* Cartwright respects John, is genuinely sorry, and is telling the truth: he doesn't set the price, the market does, and the old law that protected the rate is being struck from the books. His offer of factory work is meant as a real kindness. The horror is that none of it is malice and John is still being ruined — and the "market" Cartwright defers to is one he himself built by buying the looms. (Steelman per [[Writing Didactic Drama — Craft Notes]].)
@@ -77,5 +77,5 @@ Cut John's rate — and make the audience *grant Cartwright his case before they
 - **His flaw is the trap.** John's lie — "fairness is owed to honest work; the law will see sense" ([[John Arc]]) — is exactly what the scene dismantles. He fights the only lawful, dignified way he knows (the petition), and it's worth nothing against "the market."
 - **Curdle payoff.** Pays off John's easy *"sign a petition, it gets sorted out"* from [[02 - The Loom and the Guild — John half]] — logged in [[Themes & Motifs]]. It doesn't get sorted.
 - **Period accuracy.** The protective statute really was dismantled exactly here: the **wage-fixing clauses of the Statute of Artificers were repealed in 1813** (apprenticeship clauses 1814), and the 1808 minimum-wage bill was refused on laissez-faire grounds — see [[Luddites — Period & Conditions]] §3. Keep the date soft ("this year, the next") rather than pinned. Cartwright's name nods to William Cartwright of Rawfolds; keep him fictionalised.
-- **Mirror twin.** Beat-for-beat with [[11 - The Performance Review]]: a good-faith plea met with a sincere, reasonable, immovable "no." Keep Cartwright and Kristina tonally matched.
+- **Mirror twin.** Beat-for-beat with [[12 - The Performance Review]]: a good-faith plea met with a sincere, reasonable, immovable "no." Keep Cartwright and Kristina tonally matched.
 - **No physical interaction.** John live (with his own petition prop); Cartwright on the shared screen; operator-cued with breathing room.

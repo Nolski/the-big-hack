@@ -1,6 +1,6 @@
 ---
 type: scene
-scene_number: 11
+scene_number: 12
 title: The Performance Review
 world: modern
 arc: liam-arc
@@ -14,10 +14,10 @@ tags:
   - liam-arc
 ---
 
-# Scene 11 — The Performance Review
+# Scene 12 — The Performance Review
 
 > [!info] Beat
-> Dramatizes **[[Beat Sheet — Parallel Intercut#B7 — He fights it the only way he knows (and it backfires)|B7 — He fights it the only way he knows]]**. Liam defends himself by being *more right* — and it's logged as "friction." Mirror twin scene: **[[14 - The Wage Cut]]** (John petitions Cartwright, same beat, same outcome). The curdle of the cold open: his pedantry from [[01 - Cold Open — The Standup]] comes back itemised as a behavioural problem.
+> Dramatizes **[[Beat Sheet — Parallel Intercut#B7 — He fights it the only way he knows (and it backfires)|B7 — He fights it the only way he knows]]**. Liam defends himself by being *more right* — and it's logged as "friction." Mirror twin scene: **[[15 - The Wage Cut]]** (John petitions Cartwright, same beat, same outcome). The curdle of the cold open: his pedantry from [[01 - Cold Open — The Standup]] comes back itemised as a behavioural problem.
 
 ## Purpose
 Manage Liam out — and make the audience *agree with Kristina before they recoil.* Kristina is warm, honest, genuinely likes him, and **really did** advocate for him; her case (the work has changed; being right slowly isn't the job any more) is sincere and partly true. Liam fights the only way he knows — by proving he was correct — which is exactly the trait being recast as the liability. The horror is that no one in the scene is wrong and a good engineer is being discarded as a kindness. (Steelman per [[Writing Didactic Drama — Craft Notes]].)
@@ -72,5 +72,5 @@ A 1:1. **Liam** (live, Speaker A) at a bare meeting-room laptop — and this tim
 - **His flaw is the trap.** Liam's lie — "being right is the same as being safe" ([[Liam Arc]]) — is exactly what the scene weaponises. He defends himself by being *more* correct, which is the behaviour being recast as friction. He never once addresses the room; he argues the code.
 - **Curdle payoff (already logged in [[Themes & Motifs]]).** His cold-open pedantry and "nobody does this" contempt return here itemised as a "behavioural concern." The B3/cold-open applause for fast shipping is the same logic that now frames him as the bottleneck.
 - **Camera-on inversion.** In [[01 - Cold Open — The Standup]] Liam never showed the call his face and was untouchable. Here he does, and it saves him from nothing — the quiet mirror.
-- **Mirror twin.** Beat-for-beat with [[14 - The Wage Cut]]: petition/defence made in good faith, met with a sincere reasonable "no." Keep Kristina and Cartwright tonally matched — warm, regretful, immovable.
+- **Mirror twin.** Beat-for-beat with [[15 - The Wage Cut]]: petition/defence made in good faith, met with a sincere reasonable "no." Keep Kristina and Cartwright tonally matched — warm, regretful, immovable.
 - **No physical interaction.** Liam live; Kristina on the shared screen; operator-cued with breathing room.
