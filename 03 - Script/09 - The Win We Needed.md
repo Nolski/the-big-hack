@@ -1,6 +1,6 @@
 ---
 type: scene
-scene_number: 8
+scene_number: 9
 title: The Win We Needed
 world: modern
 arc: liam-arc
@@ -14,10 +14,10 @@ tags:
   - liam-arc
 ---
 
-# Scene 08 — The Win We Needed
+# Scene 09 — The Win We Needed
 
 > [!info] Beat
-> Dramatizes the *cause* of **[[Beat Sheet — Parallel Intercut#B5 — Adopt the machine (the reorg)|B5 — Adopt the machine (the reorg)]]** — the private leadership decision that becomes the public "agent-first" mandate in **Adopt the Agent (All-Hands)**. Mirror twin: John's **B5 — The Factory Opens** (the masters move to power looms because "the market" forces their hand). The pressure here rolls downhill into [[11 - The Performance Review]] (Liam recast as "friction").
+> Dramatizes the *cause* of **[[Beat Sheet — Parallel Intercut#B5 — Adopt the machine (the reorg)|B5 — Adopt the machine (the reorg)]]** — the private leadership decision that becomes the public "agent-first" mandate in **Adopt the Agent (All-Hands)**. Mirror twin: John's **B5 — The Factory Opens** (the masters move to power looms because "the market" forces their hand). The pressure here rolls downhill into [[12 - The Performance Review]] (Liam recast as "friction").
 
 ## Purpose
 Show that the company is **not a cartoon** ([[Liam Arc]]: "everyone behaves locally reasonably; the horror is the sum"). The CEO isn't greedy — he's *frightened*: the metrics are bad, the runway is short, and this launch is the first real win in months. Kristina genuinely relays the engineers' real, legitimate concerns; she isn't a shill. The audience should agree the company *needs* this win — then watch the need become the mandate that grinds Liam down. (Steelman at the org level, per [[Writing Didactic Drama — Craft Notes]].)
@@ -81,7 +81,7 @@ The show's **first scene with no live speaker** — both characters are AI video
 
 ## Notes
 - **Steelman check (both of them).** The CEO names the concerns as legitimate ("I don't want a company that ships garbage quickly") and is driven by real fear, not greed (runway, the board, six months of apologies). Kristina honestly defends the engineers — she's the opposite of a shill here. The audience should grant the company its need for the win *before* they clock that the mandate is the thing that will ruin Liam. If either reads as a villain, soften. See [[Writing Didactic Drama — Craft Notes]].
-- **It's the cause of the squeeze.** "Get everyone working like that one engineer" is the seed of the agent-first reorg (B5 all-hands) and, downstream, Kristina's calibration pressure and the "friction" framing in [[11 - The Performance Review]]. Nobody decides to hurt Liam; the pressure just rolls downhill.
+- **It's the cause of the squeeze.** "Get everyone working like that one engineer" is the seed of the agent-first reorg (B5 all-hands) and, downstream, Kristina's calibration pressure and the "friction" framing in [[12 - The Performance Review]]. Nobody decides to hurt Liam; the pressure just rolls downhill.
 - **Dramatic irony (the staging payoff).** With Liam silent below, the room literally names *his* cold-open concern — the long-lived keys he was mocked for raising in [[01 - Cold Open — The Standup]] — agrees it's legitimate, and overrides it for the metric. He's not in the room where his worth is redefined. ("The room decides his fate, not the code" — and he isn't even in it.)
 - **Curdle / callbacks.** Brendan's weekend grind (celebrated in the cold open) becomes the *template the whole company must match*; Kristina's velocity instinct from the opener is here shown as honestly conflicted, which makes her later complicity sadder. Log against [[Themes & Motifs]].
 - **Mirror twin — John's B5.** Same decision two centuries apart: the boss, squeezed by a market above him, adopts the machine and passes the squeeze down. The CEO ↔ "the board / the market" rhymes with Cartwright ↔ "Manchester sets the price." See [[Character Mirror Map]] follow-up below.
