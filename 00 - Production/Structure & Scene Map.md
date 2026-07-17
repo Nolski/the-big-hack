@@ -23,7 +23,7 @@ The show **opens cold inside Liam's world** — no dual prologue — then **rewi
 |---|---|---|---|
 | **I** | 🟦 Liam | **Cold open on the abrasive standup** — establish Liam + the machine (by reference), then the PR-review coda. *Cut on the loom-knock, straight into the rewind.* | ~14 min |
 | **II** | 🟫 John | (Rewind 200 yrs — neutral narrator V.O.) **Establish John at his loom + the guild** → the loom marvel → his finest cloth → **the factory opens, the rate collapses**. *Cut on the sting.* | ~10 min |
-| **III** | 🟦 Liam | The day-two standup (the machine quietly solves his bug) → the demo → his "last good day" → the reorg → the squeeze: coworkers go quiet → the review → **managed out**. *Cut at the gut-punch, on the threshold of the empty apartment.* | ~14 min |
+| **III** | 🟦 Liam | The day-two standup and debrief (the machine quietly solves his bug; the adopters clock what that means) → the demo → his "last good day" → the reorg → the squeeze: coworkers go quiet → the review → **managed out**. *Cut at the gut-punch, on the threshold of the empty apartment.* | ~14 min |
 | **IV** | 🟫 John | The squeeze: neighbours take the jobs → the petition fails → the bailiff → **the cold hearth, Mary breaks**. *Cut as the oath becomes thinkable.* | ~9 min |
 | **V** | 🟦 Liam | The break: isolation → the forum → the decision → **his hand hovering over the keys**. *Cut at the brink.* | ~9 min |
 | **VI** | 🟫 John → **both** | The oath → the march → hammer raised — and the two threads **collapse into one** (the [[Arcadia — Structural Technique|Arcadia]]/Nolan convergence). Hold on the moment *before*. Black. | ~12 min |
@@ -42,26 +42,27 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 4 | The Loom Arrives | II · John | B4 | ⬜ |
 | 5 | The Factory Opens | II · John | B5 | ⬜ |
 | 6 | [[06 - Good Instinct\|Good Instinct]] | III · Liam | B2 (day two; seeds B3/B4) | ✏️ |
-| 7 | The Demo → *Liam half* | III · Liam | B3 | ⬜ |
-| 8 | Liam Solves the Unsolvable | III · Liam | B4 | ⬜ |
-| 9 | [[09 - The Win We Needed\|The Win We Needed]] | III · Liam | B5 | ✏️ |
-| 10 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
-| 11 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
-| 12 | [[12 - The Performance Review\|The Performance Review]] | III · Liam | B7 | ✏️ |
-| 13 | HR Offboarding | III · Liam | B8 | ⬜ |
-| 14 | The Weavers Take the Jobs | IV · John | B6 | ⬜ |
-| 15 | [[15 - The Wage Cut\|The Wage Cut]] | IV · John | B7 | ✏️ |
-| 16 | The Bailiff | IV · John | B8 | ⬜ |
-| 17 | The Cold Hearth | IV · John | B9 | ⬜ |
-| 18 | The Empty Apartment | V · Liam | B9 | ⬜ |
-| 19 | The Forum | V · Liam | B10 | ⬜ |
-| 20 | Liam Decides | V · Liam | B11 | ⬜ |
-| 21 | The Tavern Oath | VI · John | B10 | ⬜ |
-| 22 | John Marches | VI · John | B11 | ⬜ |
-| 23 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
+| 7 | [[07 - Heads Together\|Heads Together]] | III · Liam | B2 (day two; seeds B5/B6) | ✏️ |
+| 8 | The Demo → *Liam half* | III · Liam | B3 | ⬜ |
+| 9 | Liam Solves the Unsolvable | III · Liam | B4 | ⬜ |
+| 10 | [[10 - The Win We Needed\|The Win We Needed]] | III · Liam | B5 | ✏️ |
+| 11 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
+| 12 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
+| 13 | [[13 - The Performance Review\|The Performance Review]] | III · Liam | B7 | ✏️ |
+| 14 | HR Offboarding | III · Liam | B8 | ⬜ |
+| 15 | The Weavers Take the Jobs | IV · John | B6 | ⬜ |
+| 16 | [[16 - The Wage Cut\|The Wage Cut]] | IV · John | B7 | ✏️ |
+| 17 | The Bailiff | IV · John | B8 | ⬜ |
+| 18 | The Cold Hearth | IV · John | B9 | ⬜ |
+| 19 | The Empty Apartment | V · Liam | B9 | ⬜ |
+| 20 | The Forum | V · Liam | B10 | ⬜ |
+| 21 | Liam Decides | V · Liam | B11 | ⬜ |
+| 22 | The Tavern Oath | VI · John | B10 | ⬜ |
+| 23 | John Marches | VI · John | B11 | ⬜ |
+| 24 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
 
 > [!note] Movement I is one scene again — the PR review folded into the cold open
-> The former "The Pull Request" coda (Scene 1b) is now **merged into [[01 - Cold Open — The Standup]]** as its closing PR-review beat, and the loom-knock hand-off lives at the end of that scene. Movement I is a single scene again — but a longer one (~14 min). Watch the consequence below: the longer Movement I delays John's warm establishment, which the cut-to-John-now design wants to arrive fast. If runtime becomes a problem, the review-burden coda is the natural thing to lift back out into **Movement III** (before Scene 11 / B6), where its content is the truer beat.
+> The former "The Pull Request" coda (Scene 1b) is now **merged into [[01 - Cold Open — The Standup]]** as its closing PR-review beat, and the loom-knock hand-off lives at the end of that scene. Movement I is a single scene again — but a longer one (~14 min). Watch the consequence below: the longer Movement I delays John's warm establishment, which the cut-to-John-now design wants to arrive fast. If runtime becomes a problem, the review-burden coda is the natural thing to lift back out into **Movement III** (before Scene 12 / B6), where its content is the truer beat.
 
 > [!note] Drafting note
 > The wordless dual prologue ("Cold Open — Two Workshops") was **cut**; the show opens cold on Liam's standup ([[01 - Cold Open — The Standup]]), then **rewinds straight to John** ([[02 - The Loom and the Guild — John half]]). Movement I is now a single scene. **The Demo** is still *split* across movements (John half in Movement II, Liam half in Movement III). This table is the source of truth for order; beats map to [[Beat Sheet — Parallel Intercut]].
