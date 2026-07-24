@@ -21,14 +21,14 @@ The show **opens cold inside Liam's world** — no dual prologue — then **rewi
 
 | Movement | Thread | Builds from → to (cut at the peak) | Approx |
 |---|---|---|---|
-| **I** | 🟦 Liam | **Cold open on the abrasive standup** — establish Liam + the machine (by reference), then the PR-review coda. *Cut on the loom-knock, straight into the rewind.* | ~14 min |
+| **I** | 🟦 Liam | **Cold open — four short scenes:** the abrasive standup → the Cursor demo → the PR review → the future. Establish Liam + the machine (by reference), then quietly hand the method — and the case against him — to the people who'll use it. *Cut on the loom-knock, straight into the rewind.* | ~18 min |
 | **II** | 🟫 John | (Rewind 200 yrs — neutral narrator V.O.) **Establish John at his loom + the guild** → the loom marvel → his finest cloth → **the factory opens, the rate collapses**. *Cut on the sting.* | ~10 min |
 | **III** | 🟦 Liam | The demo → his "last good day" → the reorg → the squeeze: coworkers go quiet → the review → **managed out**. *Cut at the gut-punch, on the threshold of the empty apartment.* | ~14 min |
 | **IV** | 🟫 John | The squeeze: neighbours take the jobs → the petition fails → the bailiff → **the cold hearth, Mary breaks**. *Cut as the oath becomes thinkable.* | ~9 min |
 | **V** | 🟦 Liam | The break: isolation → the forum → the decision → **his hand hovering over the keys**. *Cut at the brink.* | ~9 min |
 | **VI** | 🟫 John → **both** | The oath → the march → hammer raised — and the two threads **collapse into one** (the [[Arcadia — Structural Technique|Arcadia]]/Nolan convergence). Hold on the moment *before*. Black. | ~12 min |
 
-The rhythm: **G · J · G · J · G · (J→both)** — we open cold inside Liam's world (one scene, no prologue), then rewind to John. Five switches, each on a cliffhanger; the threads stay separate until Movement VI. (Movement I is deliberately short — one scene — so John's warmth arrives early.)
+The rhythm: **G · J · G · J · G · (J→both)** — we open cold inside Liam's world (one scene, no prologue), then rewind to John. Five switches, each on a cliffhanger; the threads stay separate until Movement VI. (Movement I is split into four short, individually-navigable scenes — standup / demo / PR review / future — still front-loaded so John's warmth arrives soon after.)
 
 ## Scene running order (regrouped into movements)
 Drafting has started — **Scene 1 is the drafted cold open** ([[01 - Cold Open — The Standup]]); the rest is the planned running order to write into `03 - Script/` (using the Scene template). Titles are working names; status updates as scenes get written.
@@ -36,7 +36,10 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 
 | Order | Scene (working title) | Movement | Beat | Status |
 |---|---|---|---|---|
-| 1 | [[01 - Cold Open — The Standup\|Cold Open — The Standup]] | I · Liam | B2 (+B1 by ref; coda seeds B5/B6) | ✏️ |
+| 1 | [[01 - Cold Open — The Standup\|Cold Open — The Standup]] | I · Liam | B2 (+B1 by ref) | ✏️ |
+| 1b | [[01b - The Cursor Demo\|The Cursor Demo]] | I · Liam | B2 (seeds B5/B6) | ✏️ |
+| 1c | [[01c - The PR Review\|The PR Review]] | I · Liam | B2 (seeds B5/B6/B7) | ✏️ |
+| 1d | [[01d - The Future\|The Future]] | I · Liam | B2 (seeds B6/B7/B8) | ✏️ |
 | 2 | [[02 - The Loom and the Guild — John half\|The Loom and the Guild — John half]] | II · John | B1+B2 | ✏️ |
 | 3 | The Demo → *John half* | II · John | B3 | ⬜ |
 | 4 | The Loom Arrives | II · John | B4 | ⬜ |
@@ -59,11 +62,11 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 21 | John Marches | VI · John | B11 | ⬜ |
 | 22 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
 
-> [!note] Movement I is one scene again — the PR review folded into the cold open
-> The former "The Pull Request" coda (Scene 1b) is now **merged into [[01 - Cold Open — The Standup]]** as its closing PR-review beat, and the loom-knock hand-off lives at the end of that scene. Movement I is a single scene again — but a longer one (~14 min). Watch the consequence below: the longer Movement I delays John's warm establishment, which the cut-to-John-now design wants to arrive fast. If runtime becomes a problem, the review-burden coda is the natural thing to lift back out into **Movement III** (before Scene 10 / B6), where its content is the truer beat.
+> [!note] Movement I is now four short scenes (split for navigation + clarity)
+> The cold open is broken into four individually-navigable scenes so each part stands on its own: **[[01 - Cold Open — The Standup|standup]] → [[01b - The Cursor Demo|the Cursor demo]] → [[01c - The PR Review|the PR review]] → [[01d - The Future|the future]]**. The **methodology moved** out of the PR review (where Liam steamrolls Brendan and never lets him explain) into the final scene, where Brendan teaches it to Kristina on a call — the person who most needs the lesson refuses it; the person who'll later manage Liam out receives it eagerly. The loom-knock hand-off lives at the end of **01d**. Runtime is now ~18 min, which delays John's warm establishment — if that becomes a problem, 01b–01d are the natural candidates to lift into **Movement III**.
 
 > [!note] Drafting note
-> The wordless dual prologue ("Cold Open — Two Workshops") was **cut**; the show opens cold on Liam's standup ([[01 - Cold Open — The Standup]]), then **rewinds straight to John** ([[02 - The Loom and the Guild — John half]]). Movement I is now a single scene. **The Demo** is still *split* across movements (John half in Movement II, Liam half in Movement III). This table is the source of truth for order; beats map to [[Beat Sheet — Parallel Intercut]].
+> The wordless dual prologue ("Cold Open — Two Workshops") was **cut**; the show opens cold on Liam's standup ([[01 - Cold Open — The Standup]]) and runs three more short scenes (demo / PR review / future) before **rewinding straight to John** ([[02 - The Loom and the Guild — John half]]). **The Demo** is still *split* across movements (John half in Movement II, Liam half in Movement III). This table is the source of truth for order; beats map to [[Beat Sheet — Parallel Intercut]].
 
 > [!warning] Two consequences of the cut-to-John-now structure — watch these
 > 1. **Sympathy load — now answered fast.** We meet Liam abrasive-first, with no warm "in-flow joy" (old B1) to bank goodwill. The fix in this restructure: **John's warm establishment arrives immediately** ([[02 - The Loom and the Guild — John half]]) — he faces the audience open-faced where Liam stayed a black square, and *that* is the early foothold (alongside Brendan). Protect John's warmth in Movement II; it's load-bearing.
