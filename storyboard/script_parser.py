@@ -348,13 +348,17 @@ def parse_scene_file(path, name_index):
     fm, body = split_frontmatter(text)
     if str(fm.get("type", "")).lower() != "scene":
         return None
-    num = fm.get("scene_number")
-    try:
-        num = int(num)
-    except (TypeError, ValueError):
-        m = re.match(r"\s*(\d+)", Path(path).stem)
-        num = int(m.group(1)) if m else 0
-    sid = f"s{num:02d}"
+    # scene_number may carry a letter suffix (e.g. "1b" for the split cold-open
+    # scenes). Keep the integer part for sorting (`number`) and preserve the
+    # suffix in the scene id so 1/1b/1c/1d stay distinct and individually
+    # playable — the on-disk artifacts are named with the suffixed id (s01b …).
+    raw = fm.get("scene_number")
+    if raw is None or str(raw).strip() == "":
+        raw = Path(path).stem
+    m = re.match(r"\s*(\d+)\s*([a-z]*)", str(raw), re.IGNORECASE)
+    num = int(m.group(1)) if m else 0
+    suffix = (m.group(2).lower() if m else "")
+    sid = f"s{num:02d}{suffix}"
     staging = section(body, "Setting / Staging") or section(body, "Setting")
     script = section(body, "Script")
     title = str(fm.get("title") or Path(path).stem)
