@@ -11,6 +11,9 @@ services:
       - ./:/app
       # The play's scene scripts (source of truth for scenes), read-only.
       - "../03 - Script:/scripts:ro"
+      # The repo's git dir, READ-ONLY, for the in-app Scene Review (diff two
+      # refs / a ref vs the working tree). Only read-only git plumbing is run.
+      - "../.git:/gitdir:ro"
       # SSH key + known_hosts, read-only, so the container can reach the GPU host
       # WITHOUT installing anything on it. known_hosts keeps host-key verification on.
       - ${HOME}/.ssh:/root/.ssh:ro
@@ -20,4 +23,6 @@ services:
       - AI_KEYS_FILE=/run/secrets/ai_keys
       # Scenes are parsed from the mounted scripts folder (see volumes above).
       - SB_SCRIPTS_DIR=/scripts
+      # Read-only git dir for the Scene Review feature (see volumes above).
+      - SB_GIT_DIR=/gitdir
     restart: unless-stopped

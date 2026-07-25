@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Big Hack — Review changes</title>
+  <link rel="stylesheet" href="review.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="/">← Storyboard</a>
+    <h1>Review changes</h1>
+    <div class="controls">
+      <label>Before
+        <select id="before"></select>
+      </label>
+      <span class="arrow">→</span>
+      <label>After
+        <select id="after"></select>
+      </label>
+      <button id="compare" class="primary">Compare</button>
+      <label class="chk"><input type="checkbox" id="showUnchanged" /> show unchanged scenes</label>
+      <label class="chk"><input type="checkbox" id="showEqualLines" /> show unchanged lines</label>
+    </div>
+    <div class="legend">
+      <span class="lg added">added</span>
+      <span class="lg removed">removed</span>
+      <span class="lg modified">modified</span>
+      <span class="lg unchanged">unchanged</span>
+    </div>
+  </header>
+
+  <div id="status" class="status"></div>
+  <main id="results"></main>
+
+  <div id="nowplaying" class="nowplaying hidden">
+    <span id="npLabel"></span>
+    <button id="npStop">■ stop</button>
+  </div>
+
+  <script src="review.js"></script>
+</body>
+</html>

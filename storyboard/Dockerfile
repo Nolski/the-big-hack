@@ -1,10 +1,11 @@
 # Base image pinned by digest for full reproducibility (supply-chain hardening).
 FROM python:3.12.7-slim-bookworm@sha256:60d9996b6a8a3689d36db740b49f4327be3be09a21122bd02fb8895abb38b50d
 
-# Only system tool we need is an SSH/scp client to reach the GPU host.
-# Pinned, from Debian's GPG-signed distro repos; no third-party apt sources.
+# System tools: an SSH/scp client to reach the GPU host, and git (read-only)
+# for the in-app Scene Review diff. Both from Debian's GPG-signed distro repos;
+# no third-party apt sources.
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends openssh-client=1:9.2p1-2+deb12u10 \
+    && apt-get install -y --no-install-recommends openssh-client=1:9.2p1-2+deb12u10 git \
     && rm -rf /var/lib/apt/lists/*
 
 ENV PIP_NO_CACHE_DIR=1 \
