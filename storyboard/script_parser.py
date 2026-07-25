@@ -366,7 +366,6 @@ def parse_scene_file(path, name_index):
     return {
         "id": sid,
         "number": num,
-        "display_number": f"{num}{suffix}",
         "title": title,
         "movement": movement_label(fm),
         "world": WORLD_MAP.get(str(fm.get("world", "modern")).lower(), "modern"),
@@ -396,4 +395,6 @@ def load_scenes(scripts_dir, characters, aliases=None):
         if scene:
             scenes.append(scene)
     scenes.sort(key=lambda s: s["number"])
+    for position, scene in enumerate(scenes, start=1):
+        scene["display_number"] = position
     return scenes
