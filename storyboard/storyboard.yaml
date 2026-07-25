@@ -167,10 +167,13 @@ characters:
     mode: xvector
     seed: 505
     instruct: >-
-      A warm, big-picture male startup founder in his forties, American. Optimistic,
-      reassuring, charismatic, with an undercurrent of fear and exhaustion he is trying
-      to keep out of his voice. Sincere, never a tyrant.
-    sample_text: This is the one we needed.
+      A warm, big-picture male startup founder in his forties, American. Confident and
+      unmistakably authoritative, but lightly playful: quick flashes of dry humor, an
+      easy grin in the voice, and the relaxed charisma of someone who enjoys the people
+      in the room. Optimistic and reassuring, with an undercurrent of fear and exhaustion
+      he keeps out of his voice. Conversational and lively, never goofy, salesy, or
+      tyrannical; when the stakes surface, the authority lands cleanly.
+    sample_text: There she is. Sit. Tell me those numbers are real — I could use one good surprise this quarter.
     sample: voices/ceo.wav
     vector: vectors/ceo.npy
 - id: marcus
@@ -307,6 +310,20 @@ characters:
 
 # Aliases let a script speaker name resolve to a cast id when they differ.
 # (e.g. the script's "Young weaver" is the pre-radical Becker.)
+- id: kara
+  name: Kara
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: Head of Product, Kristina's boss; reports to the CEO. The last sane skeptic with power — dry, seasoned, protective of what is real, and it will not matter.
+  voice:
+    mode: xvector
+    seed: 646
+    instruct: 'A woman in her early fifties, American — unmistakably a female voice, a warm low alto register. Head of product energy: fast-paced, excited, animated delivery, big enthusiasm, punchy emphasis, thinks out loud at speed. Mature, seasoned, commanding, but clearly a woman throughout. Conversational, not a narrator.'
+    sample_text: I woke up to six of them overnight. Six! They are all incredibly long, and they all sound like ChatGPT. Does he not have anything better to do?
+    sample: voices/kara.wav
+    vector: vectors/kara.npy
 aliases:
   young weaver: becker
   the pr: ""
