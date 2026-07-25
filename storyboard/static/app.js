@@ -92,7 +92,7 @@ function sceneCard(s) {
     <div class="thumb" ${img ? `style="background-image:url('${bust(img)}')"` : ""}>
       ${img ? "" : "no sketch"}</div>
     <div class="scene-meta">
-      <div class="scene-num">SCENE ${s.number} · ${esc(s.movement || "")}</div>
+      <div class="scene-num">SCENE ${esc(s.display_number || s.number)} · ${esc(s.movement || "")}</div>
       <div class="scene-title">${esc(s.title)}</div>
       <div class="pills">
         <span class="pill ${s.world}">${esc(s.world)}</span>
@@ -156,7 +156,7 @@ function openScene(id) {
   function paint() {
     root.innerHTML = `
       <div class="btn-row" style="justify-content:space-between">
-        <h3>Scene ${esc(scene.number)} — Edit</h3>
+        <h3>Scene ${esc(scene.display_number || scene.number)} — Edit</h3>
         <div class="btn-row">
           <button class="btn mini" id="playScene">▶ Play scene</button>
           <button class="btn ghost" id="x">✕</button>
@@ -595,7 +595,7 @@ const Player = {
       let music = (s.music && s.music.audio) || null;
       const push = (o) => beats.push(Object.assign(
         { sid, sketch: s.sketch && s.sketch.image, music,
-          title: `Scene ${s.number} — ${s.title}` }, o));
+          title: `Scene ${s.display_number || s.number} — ${s.title}` }, o));
       if ((s.setting || "").trim()) {
         push({ speaker: "Narrator", text: s.setting, direction: "",
           audio: s.setting_audio, isDir: true });
@@ -673,7 +673,7 @@ function renderPlayer() {
         ${SB.scenes.map((s) => `
           <div class="pl-item" data-sid="${s.id}">
             <div>${esc(s.title)}</div>
-            <div class="n">SCENE ${s.number} · ${esc(s.world)}${(s.lines||[]).some(l=>l.audio)||s.narration_audio?" · ♪":""}</div>
+            <div class="n">SCENE ${esc(s.display_number || s.number)} · ${esc(s.world)}${(s.lines||[]).some(l=>l.audio)||s.narration_audio?" · ♪":""}</div>
           </div>`).join("")}
       </div>
       <div class="stage" id="stage">

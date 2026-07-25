@@ -366,6 +366,7 @@ def parse_scene_file(path, name_index):
     return {
         "id": sid,
         "number": num,
+        "display_number": f"{num}{suffix}",
         "title": title,
         "movement": movement_label(fm),
         "world": WORLD_MAP.get(str(fm.get("world", "modern")).lower(), "modern"),
