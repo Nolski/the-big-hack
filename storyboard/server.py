@@ -753,6 +753,145 @@ def generate_narration(sid: str):
 
 
 # --------------------------------------------------------------------------- #
+# Scene Review — diff two git refs (or a ref vs the live working tree) and hear
+# the before/after audio side by side. Git is read-only: a read-only .git is
+# mounted at SB_GIT_DIR and we only ever run read-only plumbing (for-each-ref,
+# rev-parse, ls-tree, show, archive). Committed refs are materialised on demand
+# (scripts via `git archive` into a per-sha tmp cache; audio/sketch bytes via
+# `git show`); the working tree is served live from ARTIFACTS.
+# --------------------------------------------------------------------------- #
+import io as _io                      # noqa: E402
+import tarfile as _tarfile           # noqa: E402
+import hashlib as _hashlib           # noqa: E402
+import mimetypes as _mimetypes       # noqa: E402
+from fastapi.responses import Response, FileResponse  # noqa: E402
+import review_core                    # noqa: E402
+
+GIT_DIR = os.environ.get("SB_GIT_DIR")
+REVIEW_CACHE = Path("/tmp/bighack-review")
+REVIEW_WORKING = "working"
+ARTIFACT_PREFIX = "storyboard/artifacts"
+
+
+def _review_enabled():
+    return bool(GIT_DIR) and Path(GIT_DIR).exists()
+
+
+def _git(*args, binary=False):
+    # `-c safe.directory=*` avoids git's dubious-ownership refusal when the
+    # host-owned .git is read by root inside the container.
+    cmd = ["git", "-c", "safe.directory=*", "--git-dir", GIT_DIR, *args]
+    return subprocess.run(cmd, capture_output=True, text=not binary)
+
+
+def _review_refs():
+    refs, seen = [], set()
+    for scope in ("refs/heads", "refs/remotes"):
+        r = _git("for-each-ref", "--format=%(refname:short)", scope)
+        for ln in r.stdout.splitlines():
+            b = ln.strip()
+            if b and not b.endswith("/HEAD") and b not in seen:
+                seen.add(b)
+                refs.append(b)
+    return refs
+
+
+def _ref_scripts_dir(ref):
+    """Export a committed ref's `03 - Script` subtree into a per-sha cache."""
+    sha = _git("rev-parse", ref).stdout.strip()
+    if not sha:
+        raise HTTPException(404, f"unknown ref: {ref}")
+    dest = REVIEW_CACHE / sha
+    marker = dest / ".scripts_done"
+    if not marker.exists():
+        dest.mkdir(parents=True, exist_ok=True)
+        p = subprocess.run(
+            ["git", "-c", "safe.directory=*", "--git-dir", GIT_DIR,
+             "archive", "--format=tar", ref, "--", "03 - Script"],
+            capture_output=True)
+        if p.returncode == 0 and p.stdout:
+            with _tarfile.open(fileobj=_io.BytesIO(p.stdout)) as t:
+                t.extractall(dest)
+        marker.write_text("1")
+    return dest / "03 - Script"
+
+
+def _ref_artifact_set(ref):
+    r = _git("ls-tree", "-r", "--name-only", ref, "--", ARTIFACT_PREFIX)
+    return {ln.strip() for ln in r.stdout.splitlines() if ln.strip()}
+
+
+def _review_side(ref):
+    """Return scenes for a side with `_audio`/`_sketch` artifact-relative paths."""
+    if ref == REVIEW_WORKING:
+        scenes = build_scenes()
+        for s in scenes:
+            s["_sketch"] = (s.get("sketch") or {}).get("image")
+            for ln in s.get("lines", []):
+                ln["_audio"] = ln.get("audio")
+        return scenes
+    scenes = script_parser.load_scenes(
+        _ref_scripts_dir(ref), characters(), CFG.get("aliases"))
+    present = _ref_artifact_set(ref)
+    for s in scenes:
+        sid = s["id"]
+        s["_sketch"] = (f"sketches/{sid}.png"
+                        if f"{ARTIFACT_PREFIX}/sketches/{sid}.png" in present else None)
+        for ln in s.get("lines", []):
+            rel = f"lines/{sid}_{ln['id']}.wav"
+            ln["_audio"] = rel if f"{ARTIFACT_PREFIX}/{rel}" in present else None
+    return scenes
+
+
+def _review_sketch_hash(ref, rel):
+    if not rel:
+        return None
+    if ref == REVIEW_WORKING:
+        p = ARTIFACTS / rel
+        return _hashlib.md5(p.read_bytes()).hexdigest() if p.exists() else None
+    r = _git("show", f"{ref}:{ARTIFACT_PREFIX}/{rel}", binary=True)
+    return _hashlib.md5(r.stdout).hexdigest() if r.returncode == 0 and r.stdout else None
+
+
+@app.get("/api/review/refs")
+def api_review_refs():
+    if not _review_enabled():
+        raise HTTPException(503, "review disabled: SB_GIT_DIR not mounted")
+    cur = _git("rev-parse", "--abbrev-ref", "HEAD").stdout.strip()
+    return {"refs": _review_refs(), "current": cur, "working": REVIEW_WORKING}
+
+
+@app.get("/api/review/diff")
+def api_review_diff(before: str = "main", after: str = REVIEW_WORKING):
+    if not _review_enabled():
+        raise HTTPException(503, "review disabled: SB_GIT_DIR not mounted")
+    a = _review_side(before)
+    b = _review_side(after)
+    return review_core.build_diff(a, b, before, after, "/api/review/media",
+                                  _review_sketch_hash)
+
+
+@app.get("/api/review/media")
+def api_review_media(ref: str, path: str):
+    if not _review_enabled():
+        raise HTTPException(503, "review disabled")
+    rel = path.lstrip("/")
+    if ".." in rel.split("/") or rel.startswith("/"):
+        raise HTTPException(400, "bad path")
+    if ref == REVIEW_WORKING:
+        target = (ARTIFACTS / rel).resolve()
+        if not str(target).startswith(str(ARTIFACTS.resolve())) or not target.exists():
+            raise HTTPException(404, "not found")
+        return FileResponse(str(target))
+    r = _git("show", f"{ref}:{ARTIFACT_PREFIX}/{rel}", binary=True)
+    if r.returncode != 0 or not r.stdout:
+        raise HTTPException(404, "not found")
+    ctype = _mimetypes.guess_type(rel)[0] or "application/octet-stream"
+    return Response(content=r.stdout, media_type=ctype,
+                    headers={"Cache-Control": "no-store"})
+
+
+# --------------------------------------------------------------------------- #
 # Static + artifacts
 # --------------------------------------------------------------------------- #
 app.mount("/artifacts", StaticFiles(directory=str(ARTIFACTS)), name="artifacts")

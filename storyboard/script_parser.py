@@ -395,4 +395,6 @@ def load_scenes(scripts_dir, characters, aliases=None):
         if scene:
             scenes.append(scene)
     scenes.sort(key=lambda s: s["number"])
+    for position, scene in enumerate(scenes, start=1):
+        scene["display_number"] = position
     return scenes
