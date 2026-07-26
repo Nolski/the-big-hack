@@ -301,11 +301,12 @@ characters:
   live: false
   description: ''
   voice:
-    mode: design
+    mode: xvector
     seed: 42
     instruct: 'insufferable arrogant and whiney '
     sample_text: ''
     sample: voices/liam's dad.wav
+    vector: vectors/liam's dad.npy
   portrait: portraits/liam's dad.png
 
 # Aliases let a script speaker name resolve to a cast id when they differ.
@@ -324,6 +325,26 @@ characters:
     sample_text: I woke up to six of them overnight. Six! They are all incredibly long, and they all sound like ChatGPT. Does he not have anything better to do?
     sample: voices/kara.wav
     vector: vectors/kara.npy
+- id: doug
+  name: Doug
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: The other curmudgeon. Staff engineer with security-team energy; distrusts the weights the way Liam distrusts the vendors. Technically half-right, socially unbearable, never quite sanctionable.
+  voice:
+    mode: xvector
+    seed: 909
+    instruct: >-
+      An insufferably condescending male staff engineer, late forties, American.
+      Nasal, adenoidal, pinched voice, slightly congested. Patronizing sing-song
+      delivery where every sentence lands like a correction. Smug, unhurried,
+      faux-polite, whiny, grating. Never raises his volume, which makes it worse.
+      The coworker everyone mutes.
+    sample_text: Sorry — quick flag. I'm just going to say it. Nobody can audit eighty billion numbers, Liam. Nobody. And I want it noted that I flagged it.
+    sample: voices/doug.wav
+    vector: vectors/doug.npy
+  portrait: portraits/doug.png
 aliases:
   young weaver: becker
   the pr: ""

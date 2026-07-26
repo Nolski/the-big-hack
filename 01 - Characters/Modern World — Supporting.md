@@ -42,6 +42,12 @@ Liam's world. All of these are **AI-generated video characters** (see [[AI Video
 - **Mirror:** the younger weavers who take the factory floor (see [[Historical World — Supporting|Becker]] and the factory weavers).
 - **Beats:** B5, B6, B8.
 
+## Doug — the other curmudgeon *(the mirror that cancels him out)*
+- **Function:** a staff engineer with security-team energy; the only other person in the company who thinks everyone is doing AI wrong — for exactly opposite reasons. Liam distrusts the vendors; Doug distrusts the weights. Their standup fight in [[11b - Best Practices]] is technically competent on both sides and useless from either: Chinese backdoors, poisoned training data, "nobody can audit eighty billion numbers," the monkey-selfie case. He isn't wrong enough to dismiss or right enough to matter, and the fight he picks makes Liam's compliance point unhearable. Not a villain, not an ally — a second squeaky wheel that gets Liam's whole register filed under "friction."
+- **Voice:** exceptionally annoying, on purpose. Nasal, condescending, unhurried, faux-procedural ("quick flag," "I want it noted," "with respect"). Talks over people at constant volume; never raises it; never quite crosses the line a manager could act on.
+- **Mirror:** none clean — closest is the tavern know-it-all in the [[Historical World — Supporting|meeting scenes]] who derails the weavers' grievances with his own hobby-horse. Record as an asymmetry if it doesn't hold.
+- **Beats:** B5 ([[11b - Best Practices]]); optional recur in B6/B7 as a named source for the review's "peer feedback."
+
 ## Sam — the friend who goes quiet *(the passive betrayal)*
 - **Function:** the coworker Liam actually considered a friend. At the decisive meeting, Sam *says nothing*. The betrayal that hurts most is silence, not attack. Later, awkward, avoidant.
 - **Voice:** friendly, conflict-averse, full of "yeah, totally" and then absent.
