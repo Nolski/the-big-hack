@@ -49,7 +49,9 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 8 | The Demo → *Liam half* | III · Liam | B3 | ⬜ |
 | 9 | Liam Solves the Unsolvable | III · Liam | B4 | ⬜ |
 | 10 | [[10 - The Win We Needed\|The Win We Needed]] | III · Liam | B5 | ✏️ |
+| 10a | [[08 - The One-on-One\|The One-on-One]] *(file `08`)* | III · Liam | B5 (seeds B6/B7) | ✏️ |
 | 11 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
+| 11b | [[11b - Best Practices\|Best Practices]] | III · Liam | B5 (seeds B6/B7) | ✏️ |
 | 12 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
 | 13 | [[13 - The Performance Review\|The Performance Review]] | III · Liam | B7 | ✏️ |
 | 14 | HR Offboarding | III · Liam | B8 | ⬜ |
@@ -63,6 +65,12 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 22 | The Tavern Oath | VI · John | B10 | ⬜ |
 | 23 | John Marches | VI · John | B11 | ⬜ |
 | 24 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
+
+> [!note] Movement III — number/order drift (read before renumbering)
+> Drafted scene *files* carry `scene_number`s that no longer line up cleanly with these running-order slots: `06`/`07` (B2), **`08` = The One-on-One (B5)**, `10`/`13`. This **table is the source of truth for ORDER**; a scene's `scene_number` frontmatter is the source of truth for its **storyboard id** (`s08`, `s10`, `s11b`, …). To avoid renumber/artifact-rename churn, new insertions use **letter suffixes** (the `1b/1c/1d` precedent): the new Liam-adopts-badly scene is **`11b` → `s11b`**, and The One-on-One is shown at order `10a` though its file is `08`. The undrafted B3/B4 Liam scenes (Demo → *Liam half*, Liam Solves the Unsolvable) still hold slots 8–9 as *intended order* and need their own numbers when written — reconcile deliberately, don't auto-renumber.
+
+> [!note] Mirror asymmetry — "adopts, but badly" has no clean John twin
+> [[11b - Best Practices]] rhymes *loosely* with John's **B5→B6** (the factory opens; neighbours take the jobs; the craftsman left out as the community reorganises around the machine). But per [[Character Mirror Map]] the rhyme is **deliberately incomplete**: John is never *offered* the loom — he's offered destitution, and the "refuse and die anyway" seat is Old Hilse's. Liam's distinctly-modern cruelty is that he *is* expected to adopt and retrain, and — doing it badly — hands the system its own justification. Log as an **asymmetry**, not a forced twin scene.
 
 > [!note] Movement I is now four short scenes (split for navigation + clarity)
 > The cold open is broken into four individually-navigable scenes so each part stands on its own: **[[01 - Cold Open — The Standup|standup]] → [[01b - The Cursor Demo|the Cursor demo]] → [[01c - The PR Review|the PR review]] → [[01d - The Future|the future]]**. The **methodology moved** out of the PR review (where Liam steamrolls Brendan and never lets him explain) into the final scene, where Brendan teaches it to Kristina on a call — the person who most needs the lesson refuses it; the person who'll later manage Liam out receives it eagerly. The loom-knock hand-off lives at the end of **01d**. Runtime is now ~18 min, which delays John's warm establishment — if that becomes a problem, 01b–01d are the natural candidates to lift into **Movement III**.
