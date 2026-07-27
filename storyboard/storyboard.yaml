@@ -182,16 +182,20 @@ characters:
   role: supporting
   medium: ai-video
   live: false
-  description: The fast adopter and active betrayer. Ambitious, reading the wind correctly.
+  description: Another engineer on the team. Ships fast by accepting what the agent writes; in the Scene 11b standup he unmutes to defend himself and turns out to be exactly as stubborn as Liam, and far more annoying.
   voice:
     mode: xvector
-    seed: 606
+    seed: 909
     instruct: >-
-      A fluent, optimistic, conference-ready young male developer, late twenties,
-      American. Confident, fast, talks in velocity and vibes. Smooth and self-assured.
-    sample_text: Honestly, the agent just unblocks everyone. It's a different game now.
+      An insufferably condescending male software engineer, late forties, American.
+      Nasal, adenoidal, pinched voice, slightly congested. Patronizing sing-song
+      delivery where every sentence lands like a correction. Smug, unhurried,
+      faux-polite, whiny, grating. Never raises his volume, which makes it worse.
+      The coworker everyone mutes.
+    sample_text: Sorry — quick flag. I'm just going to say it. Nobody can audit eighty billion numbers, Liam. Nobody. And I want it noted that I flagged it.
     sample: voices/marcus.wav
     vector: vectors/marcus.npy
+  portrait: portraits/marcus.png
 - id: sam
   name: Sam
   world: modern
@@ -301,11 +305,12 @@ characters:
   live: false
   description: ''
   voice:
-    mode: design
+    mode: xvector
     seed: 42
     instruct: 'insufferable arrogant and whiney '
     sample_text: ''
     sample: voices/liam's dad.wav
+    vector: vectors/liam's dad.npy
   portrait: portraits/liam's dad.png
 
 # Aliases let a script speaker name resolve to a cast id when they differ.
