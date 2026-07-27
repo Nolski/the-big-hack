@@ -28,7 +28,7 @@ Liam's world. All of these are **AI-generated video characters** (see [[AI Video
 - **Beats:** B2 (opener; the day-two huddle where he quietly solves Liam's race condition with Claude and lets Liam thank *him* — [[06 - Good Instinct]]; and the debrief where he can't take the credit and, honest to a fault, half-exposes Liam to Kristina anyway — [[07 - Heads Together]]), later among the coworkers who go quiet (B6).
 
 > [!note] Mirror-map follow-up
-> **Kristina is a single consolidated manager role** — one person is both the standup PM (B2) and the manager who runs the review and offboarding (B7–B8); the smiling axe is a single face. Still to reconcile in [[Character Mirror Map]]: Brendan overlaps Marcus's "fast adopter" function and Sam's "sympathetic-but-complicit silence" — decide whether Brendan *replaces* Sam and whether Marcus survives as the *active* betrayer before drafting B6.
+> **Kristina is a single consolidated manager role** — one person is both the standup PM (B2) and the manager who runs the review and offboarding (B7–B8); the smiling axe is a single face. Still to reconcile in [[Character Mirror Map]]: Brendan overlaps Sam's "sympathetic-but-complicit silence" — decide whether Brendan *replaces* Sam before drafting B6. (Marcus is deliberately kept ordinary — see his entry — and carries no betrayer arc unless a scene earns it.)
 
 ## THE CEO — the pressure from above *(not greed — fear)*
 - **Function:** carries the company's survival. Genuinely relieved by the launch, genuinely hears the engineers' concerns, and genuinely can't afford them — turns "one good weekend" into the **agent-first mandate**, not from malice but from a bad dashboard and a hard boardroom. The decent man at the top of the machine; the pressure that rolls down through Kristina to Liam. Role-based (unnamed, like HR), but written warm and human so the steelman lands.
@@ -36,11 +36,11 @@ Liam's world. All of these are **AI-generated video characters** (see [[AI Video
 - **Mirror:** no single historical character — he's the modern face of the **market pressure** even [[Historical World — Supporting|Mr. Cartwright]] answers to ("Manchester sets the price"). The board ≈ the buyers who "read the number." Reconcile in [[Character Mirror Map]].
 - **Beats:** B5 — the win becomes the mandate ([[10 - The Win We Needed]]).
 
-## Marcus — the fast adopter *(the active betrayer)*
-- **Function:** a younger dev Liam mentored. Embraces the agent immediately, builds his new status on it, and reframes Liam as "resistant to change" / "a bottleneck" in the room where it counts. Not evil — *ambitious*, and reading the wind correctly.
-- **Voice:** fluent, optimistic, conference-ready. Talks in velocity and vibes.
-- **Mirror:** the younger weavers who take the factory floor (see [[Historical World — Supporting|Becker]] and the factory weavers).
-- **Beats:** B5, B6, B8.
+## Marcus — another engineer on the team
+- **Function:** deliberately ordinary — a software engineer who adopted the tools like everyone else and ships fast by accepting what the agent writes (Kristina's "three of those out the door yesterday"). What the show establishes about him is only what it needs: in [[11b - Best Practices]] he hears Liam name him, unmutes to defend himself, and turns out to be exactly stubborn enough to keep a pointless fight alive — Chinese models, poisoned weights, one-character backdoors, "I want it noted that I flagged it." He talks over Kristina, challenges Liam competently, resolves nothing, and stays just professional enough that there's nothing to sanction. Later he exists in the review only as "the Marcus PR" ([[13 - The Performance Review]]).
+- **Voice:** in the standup moment: exceptionally annoying — nasal, condescending, faux-procedural ("quick flag," "I want it noted"), constant volume, never quite rude.
+- **Mirror:** none required; keep him a face in the grid.
+- **Beats:** B5 ([[11b - Best Practices]]); referenced in B7.
 
 ## Sam — the friend who goes quiet *(the passive betrayal)*
 - **Function:** the coworker Liam actually considered a friend. At the decisive meeting, Sam *says nothing*. The betrayal that hurts most is silence, not attack. Later, awkward, avoidant.
