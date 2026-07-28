@@ -43,7 +43,7 @@ A remote one-on-one, late morning: two tiles on the shared screen, **Kristina** 
 > I saw.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
-> A week, for a retry loop. I know. But it shipped, it works, and honestly? I'm just happy he's in. Six weeks ago he was posting memes about vibe-coding. Now he's expensed a whole computer and he comes to standup with opinions about inference. For Liam, that's a conversion.
+> A week, for a retry loop. I know. But it shipped, it works, and honestly? I'm just happy he's in. Six weeks ago he was posting memes about vibe-coding. Now he's expensed a whole computer and he comes to standup with opinions about inference. For Liam, that's a lot of progress — he's adopting new tooling.
 
 > [!screen] VIDEO — BRENDAN · `AIV-057` *(a small laugh)*
 > It's something.
@@ -66,7 +66,7 @@ A remote one-on-one, late morning: two tiles on the shared screen, **Kristina** 
 > Of course.
 
 > [!screen] VIDEO — BRENDAN · `AIV-057`
-> I don't think the setup is doing what he thinks it's doing. I sat with him for an hour — he walked me through the whole rig. And it's genuinely impressive. It's real engineering. *(beat)* And it's making him slower. He told me himself: he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something.
+> I don't think Liam's setup is really that productive. I sat with him for an hour — he walked me through the whole rig. And it's genuinely impressive. It's real engineering. *(beat)* And it's making him slower. He told me himself: he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > Slower how? He's four weeks in.
@@ -86,13 +86,13 @@ A remote one-on-one, late morning: two tiles on the shared screen, **Kristina** 
 > Meaning what?
 
 > [!screen] VIDEO — BRENDAN · `AIV-057` *(like it costs him)*
-> I went into that doc last week to add an entry, and I ended up deleting half of it instead. Whole sections about problems I haven't seen since spring. The made-up endpoints — that was real, that was every week for a year. The new models just don't do it. Not unless you're running something cheap, and then you get what you paid for. *(beat)* I cut my rules file by a third last month, to see what would happen. Nothing got worse. *(quieter)* Most of my setup is instructions for a model that doesn't exist anymore. I keep it out of habit.
+> I went into that doc last week to add an entry, and I ended up deleting half of it instead. Whole sections about problems I haven't seen since spring. The made-up endpoints — that was real, that was every week for a year. The new models just don't do it. Not unless you run the older models. *(beat)* I cut my rules file by a third last month, to see what would happen. Nothing got worse. *(quieter)* Most of my setup is instructions for a model that doesn't exist anymore. I keep it out of habit.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(a beat)*
 > Huh.
 
 > [!screen] VIDEO — BRENDAN · `AIV-057`
-> And look — Liam being slow is Liam's sprint. We'd absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position — out loud, at standup, in an eleven-page doc — is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the grads decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. That could genuinely hurt us.
+> And look — Liam being slow is Liam's sprint. We'd absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position — out loud, at standup, in an eleven-page doc — is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the new engineers decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. That could genuinely hurt us.
 
 *(Kristina sits with it. Then, leaning in — warm, and completely sure.)*
 
@@ -136,8 +136,6 @@ A remote one-on-one, late morning: two tiles on the shared screen, **Kristina** 
 *(She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder — there and gone.)*
 
 *(Her calendar chimes: the next thing. She mutes the test channel, straightens, and goes back to her day.)*
-
-*(The bot waits for Monday.)*
 
 ---
 
