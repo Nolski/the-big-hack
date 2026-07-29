@@ -52,6 +52,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 10a | [[08 - The One-on-One\|The One-on-One]] *(file `08`)* | III · Liam | B5 (seeds B6/B7) | ✏️ |
 | 11 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
 | 11b | [[11b - Best Practices\|Best Practices]] | III · Liam | B5 (seeds B6/B7) | ✏️ |
+| 11c | [[11c - The Latest Model\|The Latest Model]] | III · Liam | B5 (seeds B6/B7) | ✏️ |
 | 12 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
 | 13 | [[13 - The Performance Review\|The Performance Review]] | III · Liam | B7 | ✏️ |
 | 14 | HR Offboarding | III · Liam | B8 | ⬜ |
