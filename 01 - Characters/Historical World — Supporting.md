@@ -33,9 +33,8 @@ John's world, early 1810s English North. All **AI-generated video characters** h
 - **Beats:** B6, B10 (the tavern oath), B11.
 
 ## The neighbours / fellow weavers *(the passive betrayal)*
-- **Function:** the men and women who take the factory work to survive. Not villains — the Sams of
-  1812. They can't meet John's eye on the lane. Survival reads as abandonment.
-- **Mirror:** [[Modern World — Supporting|Sam]] and the dev coworkers.
+- **Function:** the men and women who take the factory work to survive. Not villains — the Brendans of 1812. They can't meet John's eye on the lane. Survival reads as abandonment.
+- **Mirror:** [[Modern World — Supporting|Brendan]] and the dev coworkers. Keep the asymmetry logged in [[Character Mirror Map]]: John's neighbours have to walk past him; Liam's colleague answers a form.
 - **Beats:** B6, B9.
 
 ## The Magistrate / the Bailiff — the system

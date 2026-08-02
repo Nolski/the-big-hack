@@ -46,8 +46,8 @@ tags:
 **Comedy:** change-management doublespeak / "improvement" sermon. The joke is still funny — *just*.
 
 ### B6 — The community fractures (the betrayal begins)
-| Marcus rides the agent up and recasts Liam as "resistant to change." Sam goes quiet. | Neighbours take the factory jobs to survive. They can't meet John's eye on the lane. |
-**The betrayal is mostly *silence*, not villainy — survival, not malice.** This is the moral core.
+| A peer feedback form asks a leading question and Liam's colleagues answer it honestly; the answers are anonymised, summarised by the tool, and read out in a calibration room he isn't in. Kristina advocates and loses. ([[12 - Below Expectations]]) | Neighbours take the factory jobs to survive. They can't meet John's eye on the lane. |
+**The betrayal is mostly *silence*, not villainy — survival, not malice.** This is the moral core. In the modern half the silence has a mechanism: nobody goes behind his back, everybody answers a question truthfully, and the record assembles itself. Brendan, not a separate "Sam," carries this.
 
 ### B7 — He fights it the only way he knows (and it backfires)
 | Liam is *more correct, more thoroughly* — files the bug, blocks the bad PR. Reads as obstruction. The performance review. | John petitions — lawful, patient, dignified. The masters cut the piece-rate again and answer with contempt. |

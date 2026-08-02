@@ -25,7 +25,7 @@ A man who believes *being excellent is the same as being safe* learns — too la
 3. **B3 — The demo.** The AI tool does his proudest trick in seconds. He laughs it off. (Hubris seeded.)
 4. **B4 — The last good day.** He solves something the agent can't. Proof. Victory lap.
 5. **B5 — Reframed.** "Agent-first team." His job becomes *reviewing the machine*. The ground shifts under the word "value."
-6. **B6 — The quiet.** Marcus recasts him as a "bottleneck"; Sam says nothing. The betrayal is mostly silence.
+6. **B6 — The quiet.** A feedback form asks his colleagues a leading question; they answer it honestly and the tool turns them into one anonymous sentence. Calibration prices him on it while he's at his desk reading every line. The betrayal is mostly silence, and the silence has paperwork.
 7. **B7 — Over-correct.** He fights by being *more right* — blocks bad PRs, files the bug. It's logged as "friction." The review.
 8. **B8 — Managed out.** HR. "Not a reflection of your value." Kristina signs. The B3 applause replays. Comedy dead.
 9. **B9 — The empty apartment.** Messages on read. The self he built on competence has nothing to stand on.

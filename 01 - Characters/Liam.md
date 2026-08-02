@@ -48,8 +48,8 @@ See the full beat-by-beat in [[Beat Sheet — Parallel Intercut]] and [[Liam Arc
 
 ## Relationships
 - **[[Modern World — Supporting|Kristina]]** — his manager. Likes Liam, "advocates" for him, and signs the paperwork anyway. The smiling axe. Mirror of John's [[Historical World — Supporting|Mr. Cartwright]].
-- **[[Modern World — Supporting|Marcus]]** — coworker Liam mentored; adopts the agent fastest, and reframes Liam as "resistant to change" in the room where it matters.
-- **[[Modern World — Supporting|Sam]]** — coworker Liam considered a friend; goes quiet at the decisive moment. The betrayal is mostly *silence*, not villainy.
+- **[[Modern World — Supporting|Marcus]]** — coworker Liam mentored; adopts the agent fastest, and puts the nine days in writing when a form asks him to. Not malicious, which is worse.
+- **[[Modern World — Supporting|Brendan]]** — the coworker Liam thinks of as an ally, and the one who ends him. He carries both halves: the only person who reaches out, and the friend who goes quiet. The betrayal isn't villainy or even silence in the end — it's an honest answer to a question Liam never hears asked ([[12 - Below Expectations]]).
 
 *Not a relationship — a force:* the AI coding tool deployed in Liam's workplace is not a person and not a character — it has no lines and never speaks to anyone; the humans use it and talk about it. (Staging notes in [[Modern World — Supporting]].)
 

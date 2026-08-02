@@ -53,7 +53,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 11 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
 | 11b | [[11b - Best Practices\|Best Practices]] | III · Liam | B5 (seeds B6/B7) | ✏️ |
 | 11c | [[11c - The Latest Model\|The Latest Model]] | III · Liam | B5 (seeds B6/B7) | ✏️ |
-| 12 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
+| 12 | [[12 - Below Expectations\|Below Expectations]] | III · Liam | B6 | ✏️ |
 | 13 | [[13 - The Performance Review\|The Performance Review]] | III · Liam | B7 | ✏️ |
 | 14 | HR Offboarding | III · Liam | B8 | ⬜ |
 | 15 | The Weavers Take the Jobs | IV · John | B6 | ⬜ |
@@ -69,6 +69,9 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 
 > [!note] Movement III — number/order drift (read before renumbering)
 > Drafted scene *files* carry `scene_number`s that no longer line up cleanly with these running-order slots: `06`/`07` (B2), **`08` = The One-on-One (B5)**, `10`/`13`. This **table is the source of truth for ORDER**; a scene's `scene_number` frontmatter is the source of truth for its **storyboard id** (`s08`, `s10`, `s11b`, …). To avoid renumber/artifact-rename churn, new insertions use **letter suffixes** (the `1b/1c/1d` precedent): the new Liam-adopts-badly scene is **`11b` → `s11b`**, and The One-on-One is shown at order `10a` though its file is `08`. The undrafted B3/B4 Liam scenes (Demo → *Liam half*, Liam Solves the Unsolvable) still hold slots 8–9 as *intended order* and need their own numbers when written — reconcile deliberately, don't auto-renumber.
+
+> [!note] Slot 12 retitled — "The Coworkers Go Quiet" → "Below Expectations"
+> The working title described the *effect*; the drafted scene ([[12 - Below Expectations]], `scene_number: 12` → `s12`) stages the **mechanism**, which turned out to be a peer feedback form and a calibration spreadsheet. No renumbering — the slot, the beat (B6) and the storyboard id are unchanged. The scene has **no live speaker**: Liam is lit at his desk throughout and never looks up, which is the staging argument for his whole arc. It also resolves the long-standing cast question by **cutting Sam** (Brendan absorbs the passive betrayal) and fixes the company as **US-domiciled**, so the calibration/PIP vocabulary is used straight — see [[Performance Management — How It Actually Works]].
 
 > [!note] Mirror asymmetry — "adopts, but badly" has no clean John twin
 > [[11b - Best Practices]] rhymes *loosely* with John's **B5→B6** (the factory opens; neighbours take the jobs; the craftsman left out as the community reorganises around the machine). But per [[Character Mirror Map]] the rhyme is **deliberately incomplete**: John is never *offered* the loom — he's offered destitution, and the "refuse and die anyway" seat is Old Hilse's. Liam's distinctly-modern cruelty is that he *is* expected to adopt and retrain, and — doing it badly — hands the system its own justification. Log as an **asymmetry**, not a forced twin scene.
