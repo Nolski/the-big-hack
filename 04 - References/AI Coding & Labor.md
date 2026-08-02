@@ -25,6 +25,9 @@ The Luddite point, updated: the question is **not** "is AI coding good or bad," 
 - **The deskilling dynamic:** value shifts from *making* to *reviewing/prompting*; senior craft judgment is reframed as a "bottleneck"; the "easy 90%" gets automated and the "hard 10%" is no longer enough of a job to keep a person (Liam's own line, in the Demo scene).
 - **The betrayal mechanics:** layoffs framed as "restructuring" / "efficiency"; the kind manager who "advocates" and still signs; coworkers who adopt fastest and reframe the holdout; the silence of friends who need to keep *their* jobs.
 
+> [!info] The mechanics live next door
+> How the betrayal is actually *executed* — calibration, the dual-axis rating, the manufactured paper trail, "non-regretted attrition," and what AI adoption criteria and telemetry changed in 2025–26 — is in [[Performance Management — How It Actually Works]]. Use that note when drafting B6–B8; use this one for the argument and the parallel.
+
 ## Threads worth researching as you draft (verify current specifics)
 - Tech-sector layoffs justified by AI productivity gains; the gap between hype and measured output.
 - Studies on AI-assisted coding productivity (contested — some show gains, some show *slowdowns* for experienced devs on complex tasks). Good fuel for Liam being *right* and ignored.

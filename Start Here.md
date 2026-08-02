@@ -40,6 +40,7 @@ tags:
 ### 04 — References
 - [[Luddites — Period & Conditions]] — **comprehensive**: enclosure, empire & slavery, capitalism, the machinery question (the world John teaches the audience)
 - [[Luddites — History]] · [[AI Coding & Labor]] — quick reference + the real modern parallel
+- [[Performance Management — How It Actually Works]] — the machinery of Liam's exit: calibration, the two-axis trap, the manufactured paper trail, and what AI adoption criteria changed
 - [[Primary Sources — Luddite Era]] — quotable period texts (Byron, ballads, proclamations, Ricardo, Clare)
 - [[Braided Structure — Reference]] — how the build-then-switch form works, and who does it best
 - [[Writing Didactic Drama — Craft Notes]] — how to teach political economy through character without lecturing (Brecht, Shaw, Churchill, *Enron*, *The Big Short*, verbatim theatre)
