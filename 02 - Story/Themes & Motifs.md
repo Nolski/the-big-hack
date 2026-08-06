@@ -8,14 +8,15 @@ tags:
 
 # Themes & Motifs
 
-The thematic engine and the **curdle ledger** — the comedy setups (Act I) and where each comes back un-funny (Act II–III). Keep this in sync with [[Beat Sheet — Parallel Intercut]] as you draft.
+The thematic engine and the **curdle ledger** — the comedy setups early and where each comes back un-funny later. Keep it in sync with [[Structure & Scene Map]] as you draft; it is the play's best asset and the one document the rework left almost untouched.
 
 ## Core themes
-- **The craft is the self.** For both men, the work isn't a job — it's identity, dignity, meaning. Take the work and you don't make a man unemployed; you make him *disappear*.
-- **It's not the machine — it's the deployment.** Neither the AI tool nor the steam looms are evil. The harm is in *how* they're used to discard people and *who* gets to decide. (The honest Luddite point.)
-- **Betrayal is mostly silence.** The people who destroy Liam and John are not villains — they're neighbours and coworkers making locally-survivable choices. Abandonment is a sum, not an act.
-- **Radicalisation as the last available belonging.** Stripped of community, both men are *adopted* by a community of grievance. The play refuses to pretend that isn't seductive — and refuses to cheer it.
+- **The craft is the self.** The work isn't a job — it's identity, dignity, meaning. Take the work and you don't make a man unemployed; you make him *disappear*.
+- **It's not the machine — it's the deployment.** The AI tool isn't evil. The harm is in *how* it's used to discard people and *who* gets to decide. (The honest Luddite point, and the one thing Marcus is unambiguously right about.)
+- **Betrayal is mostly silence, and it has paperwork.** The people who destroy Liam are not villains — they're coworkers making locally-survivable choices, mostly by filling in a form correctly. Abandonment is a sum, not an act.
+- **Being right is not the same as being safe.** Liam is right about the code and Marcus is right about the system, and it protects neither of them. The audience will want to believe correctness is armour; the play spends 75 minutes taking that away.
 - **Progress's eulogy.** The same boosterish hype language ("improvement," "efficiency," "this is the future") is spoken over the marvel *and* over the ruined man. Same words, opposite meaning.
+- **The machinery doesn't need him to have done anything.** Nothing in the second half turns on Liam's guilt. The form, the summary, the headline, the charge sheet and the removal order all work exactly as designed on a man who did nothing.
 
 ## The Curdle Ledger (setup → payoff)
 The signature device: a laugh in Act I returns without the laugh in Act II–III.
@@ -46,24 +47,25 @@ The signature device: a laugh in Act I returns without the laugh in Act II–III
 | Corporate hype-keynote patter at the agent demo (B3). | The identical patter as the layoff framing / "exciting transition" (B8). |
 | "We're a family here" said warmly at standup (B2). | "We're a family here" said by the person handing over severance (B8). |
 | The all-hands applause clip; everyone claps for the agent (B3). | The same applause clip replays, hollow, over Liam's offboarding (B8). |
-| Cartwright's evangelism about "improvement" at the loom unveiling (B3). | The same words as the magistrate's cold eulogy / justification (B8). |
+| Marcus's Luddite tangents — a bit, a derail, a man nobody wants to sit next to (Movement I). | The Alien Enemies Act of 1798 was last invoked in the War of 1812; the Frame Breaking Act is 1812. He says the true thing at the end and is treated as a crank, exactly as he has been all night (Movement V). |
 | The cheerful standup chant / jingle (B2). | The jingle plays under the empty office in B9. |
-| The AI tool's friendly on-screen prompt "Want me to take it from here?" (B1). | The same on-screen line, menacing now, as the machine takes *everything* (B11–B12). |
-| John's quiet contentment with a clean day's work — the household ticking over, bread ready, the carrier coming for the finished cloth ([[02 - The Loom and the Guild — John half]], B1) — *shown, not stated.* | The thing he stakes his worth on, **I provide**, breaks at the cold hearth (B9) — the same household, now hungry. |
-| John, waving off the steam-mill news: *"Then we do what we've always done. Sign a petition. It gets sorted out."* (B2). | His faith that fairness is owed — the lawful petition answered with a deeper wage cut and contempt, then the bailiff (B7–B8). **The flaw, dropped in passing.** |
-| John, of the steam loom: *"A dozen looms making cheap, rough cloth. People still pay for good cloth."* (B1) — the finer-than-the-machine assumption. | The exact skill made worthless when the rate for hand-cloth collapses (B5–B7). Direct rhyme of Liam's B4 "I'm still the best." |
-| John to the boy via Mary: *"He can have one when he's learned the trade"* — the trade passed to his son, the apprenticeship (B1). | The trade that can't be passed down — the apprenticeship clauses repealed 1814; the boy inherits nothing ([[Luddites — Period & Conditions]]). |
-| The young weaver, rattled by the steam-loom shed — *"so what do we do?"* — and John talks him down (B2). | John takes the hammer himself and marches, abandoning the patience he preached (B10–B11). The lad is the un-radicalised seed of [[Historical World — Supporting|Becker]]. |
+| The AI tool's friendly on-screen prompt "Want me to take it from here?" (B1). | The same on-screen line as the agent, still holding his token, takes production down while he sleeps — then apologises in the first person. Play the apology straight: the biggest laugh and the coldest moment in the show (Movement III). |
+| Liam, dismissing the whole risk category — *rogue agents deleting production databases* — as the thing everyone gets wrong about it ([[11b - Best Practices]], B5). | It is precisely what happens, to him, using access nobody revoked (Movement III). **This line is already written and needs no editing at all.** |
+| Liam's own boast about his air-gapped local rig — *"if I wanted to exfiltrate a codebase I'd build exactly that"* ([[11b - Best Practices]], B5). | Quoted by the press verbatim, accurately, and lethally. Nothing is invented and the picture is entirely false (Movement IV). |
+| "I don't give it tool calls" — the safety line Liam is proudest of ([[11b - Best Practices]], B5). | The company's agent has every tool call there is, and a token minted in his name. His caution protected the one machine that wasn't the problem (Movement III). |
+| HR's kindness at the exit — "you'll keep your laptop until Friday, we're not going to be weird about it" (Movement III, to write). | The un-revoked access. The only genuinely generous act in the play is the one that destroys him. |
+| "Responses are anonymised and shared with managers in summary" and the sentence it produced — *"multiple peers cite friction and slow review turnaround"* ([[12 - Below Expectations]], B6). | Read into a courtroom as evidence. Three careful, contradictory human answers folded into one sentence nobody typed, and it convicts him. The play's best device pays off twice (Movement V). |
+| The severance paperwork, the calibration spreadsheet, the peer feedback form — the play's running joke that everything happens on a document. | *"Administrative error"* — the government's own phrase, in a real court filing, for a man it removed and did not return. The last document in the chain (Movement V). |
 
 > Add a row whenever you plant a joke. A setup with no payoff is a wasted bullet; a payoff with no setup won't land.
 
 ## Recurring motifs / images
-- **Hands.** Liam's on the keys; John's at the loom. Skilled hands, then idle hands, then hands raised against the machine. The finish is *both hands on the machine*.
-- **Rhythm/sound.** Keyboard-clack ↔ loom-clack — the transition motif (see [[Staging — Two Speakers]]). The machine's rhythm slowly drowns the human one.
-- **The accumulating object** (from [[Arcadia — Structural Technique]]): the shared table gathers a shuttle, a laptop, a severance envelope, a writ — until both worlds' debris sits together at the end.
-- **"Want me to take it from here?"** — the machine's catchphrase. Helpful, then total.
-- **The provider / the proof.** John's bread; Liam's "I'm still the best." Both are the thing each man stakes his worth on, and both are taken.
-- **Light = era.** A warm/cold or analog/blue split distinguishes the two worlds — and merges in B12.
+- **Hands.** Liam's on the keys — skilled, then idle, then held out for a form to be signed and finally for something worse. He never raises them.
+- **Backspace.** Brendan holding it down: the policy message, the half-typed sentence about Liam, the finished patch. The one time he doesn't is the one that ends him.
+- **The accumulating paperwork.** The shared table gathers a laptop, a severance envelope, a printed feedback summary, a charging document, a removal order — until the pile is the argument.
+- **"Want me to take it from here?"** — the machine's catchphrase. Helpful, then total, then apologetic.
+- **The proof.** "I'm still the best" — the thing Liam stakes his worth on, and the thing repriced to zero by people who like him.
+- **Text on screen with no face.** DMs left on read, then chyrons, then push notifications, then a docket entry. The colder the medium gets, the worse the news.
 
 ## The thesis, restated for the writers' room
-We are not asking "is AI good or bad." We are asking: **what does a society owe the people it makes "redundant," and how cheaply will it betray them?** Told twice, two centuries apart, so no one in the audience gets to feel safely modern. (See [[Concept & Thesis]].)
+We are not asking "is AI good or bad." We are asking: **what does a society owe the people it makes "redundant," and how cheaply will it betray them?** Nobody in the play does anything unreasonable, and a man ends up on a plane. (See [[Concept & Thesis]].)

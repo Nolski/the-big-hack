@@ -7,8 +7,8 @@ arc: liam-arc
 beat: "[[Beat Sheet — Parallel Intercut#B6 — The community fractures (the betrayal begins)]]"
 status: drafted
 runtime_estimate: ~6 min
-live_cast: "— (no live speaker; Liam present on stage, silent)"
-ai_video_assets: "[[AI Video Production Tracker|AIV-060 The feedback form — screen]], [[AI Video Production Tracker|AIV-061 Brendan — the feedback round]], [[AI Video Production Tracker|AIV-062 Marcus — the feedback round]], [[AI Video Production Tracker|AIV-063 Kristina — calibration]], [[AI Video Production Tracker|AIV-064 Kara — calibration]], [[AI Video Production Tracker|AIV-065 The People Partner — calibration]], [[AI Video Production Tracker|AIV-066 The calibration sheet — screen]]"
+live_cast: "Brendan (+ Liam present on stage, silent)"
+ai_video_assets: "[[AI Video Production Tracker|AIV-060 The feedback form — screen]], [[AI Video Production Tracker|AIV-062 Marcus — the feedback round]], [[AI Video Production Tracker|AIV-063 Kristina — calibration]], [[AI Video Production Tracker|AIV-064 Kara — calibration]], [[AI Video Production Tracker|AIV-065 The People Partner — calibration]], [[AI Video Production Tracker|AIV-066 The calibration sheet — screen]]"
 tags:
   - scene
   - liam-arc
@@ -23,15 +23,21 @@ tags:
 Show how a decision gets made about a man by people who never speak to him. Nobody lies, nobody schemes, and nothing that happens would look wrong in a transcript. Marcus fills in a survey because he was asked and because he genuinely thinks it's the only place anything gets fixed. Brendan writes four true paragraphs, hedges twice, and doesn't delete them — the inversion of his three deletions in [[11b - Best Practices]], and worse than silence, because it's honest. The tool folds all of it into one sentence nobody typed. Then calibration: Kristina's case for Liam is conceded instantly and dies of it, the true explanation for his adoption number is too long to give, and she trades him for Brendan because she has one slot and two names. The audience should not be able to name the villain, and should watch the file get built anyway.
 
 ## Setting / Staging
-**Liam is on stage for the whole scene**, alone at his desk in a pool of lamplight — the silver box, a diff open, reading line by line — and he never looks up and never speaks. Everything else happens on the screens above him: first a Slack huddle between Marcus and Brendan, then Brendan alone with a feedback form; after that a calibration call, Kara chairing, Kristina and the People Partner, a spreadsheet of names shared between them. He is the subject of every sentence in the scene and is not in it.
+**Liam is on stage for the whole scene**, alone at his desk in a pool of lamplight — the silver box, a diff open, reading line by line — and he never looks up and never speaks. **Brendan is on stage too**, live (Speaker B), at his own desk: first in a huddle with Marcus on the screen above, then alone with the feedback form, typing. The calibration call that follows is all video — Kara chairing, Kristina, the People Partner, a spreadsheet of names shared between them. Liam is the subject of every sentence in the scene and is not in it.
 
-No live speaker. He has no lines, never crosses onto the video plane, and never learns that any of this happened — the running mirror from [[08 - The One-on-One]] and [[11c - The Latest Model]], used here for its full value.
+**Two live men, two desks, one typing the thing that ends the other — who never looks up.** Neither has a word to say to the other; they are in the same room and on separate planets, and the twenty minutes Brendan spends on four paragraphs plays out in full view of the man they are about to cost everything. Liam never crosses onto the video plane and never learns that any of this happened — the running mirror from [[08 - The One-on-One]] and [[11c - The Latest Model]], used here for its full value.
 
 Cool monitor-blue; John's half of the stage stays dark. Mid-Movement III, no loom-knock hand-off — it closes on its own image.
 
+## Live Cast
+
+- **BRENDAN** — live, Speaker B (the feedback round): in the huddle, ordinary and a little tired; asks the one question that matters to him ("does it go to Kristina with your name on it?") and accepts the answer. Then alone with the box, where the work is all in the face and the typing.
+
+> [!note] Live/video plane
+> Brendan plays these scenes **live at his own desk**, diegetically on the call — he and Liam are remote colleagues, so they share no props and never touch. Everyone else stays on the video plane.
+
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-060]] — The feedback form (screen graphic, no voice):** "H2 Peer Input" — a deadline, a progress bar, a column of 1–5 sliders, and one optional free-text box under the question *"Is there anyone whose work made it harder for you to deliver this half?"*; the anonymity notice at the top; later, after the cycle closes, the generated manager summary under Liam's name. Screen only, written as stage direction.
-- **[[AI Video Production Tracker|AIV-061]] — Brendan (the feedback round):** in the huddle, ordinary and a little tired; asks the one question that matters to him ("does it go to Kristina with your name on it?") and accepts the answer. Then alone with the box, where the work is all in the face and the typing. Same locked look/voice as `AIV-012`.
 - **[[AI Video Production Tracker|AIV-062]] — Marcus (the feedback round):** helpful, unbothered, entirely sincere. No malice anywhere in it — he did the form this morning, he thinks it's a good form, and he encourages Brendan to do it because otherwise nothing changes. The register from `AIV-055` with the annoyance dialled most of the way out; he is being a decent colleague. Same locked look/voice.
 - **[[AI Video Production Tracker|AIV-063]] — Kristina (calibration):** comes in prepared to win and gets her main point conceded in four words; tries to explain the local rig and hears how it sounds; makes the trade; makes one real, well-argued attempt and loses it to arithmetic. This is the "I pushed back on this" she cites in [[13 - The Performance Review]] — play it so the audience later knows she wasn't lying. Same locked look/voice as `AIV-010`.
 - **[[AI Video Production Tracker|AIV-064]] — Kara (calibration, chairing):** dry, fair, moving a list. Concedes everything Kristina says and changes nothing. Doesn't enjoy the arithmetic and doesn't pretend it's anything else. Same locked look/voice as `AIV-047`.
@@ -48,20 +54,17 @@ Cool monitor-blue; John's half of the stage stays dark. Mid-Movement III, no loo
 > [!screen] VIDEO — MARCUS · `AIV-062` *(winding up, already half gone)*
 > —no, ship it. The migration's reversible. That's the whole point of the flag.
 
-> [!screen] VIDEO — BRENDAN · `AIV-061`
-> Cool. Thanks for looking.
+**BRENDAN** *(live)*: Cool. Thanks for looking.
 
 > [!screen] VIDEO — MARCUS · `AIV-062`
 > Hey — did you do the feedback thing?
 
-> [!screen] VIDEO — BRENDAN · `AIV-061`
-> Which one?
+**BRENDAN** *(live)*: Which one?
 
 > [!screen] VIDEO — MARCUS · `AIV-062`
 > Half-year round. Closes Friday. They've been chasing me since Monday, I finally did it this morning.
 
-> [!screen] VIDEO — BRENDAN · `AIV-061`
-> Not yet.
+**BRENDAN** *(live)*: Not yet.
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(sharing his screen without being asked)*
 > Ten minutes. Less. Most of it's sliders.
@@ -71,25 +74,22 @@ Cool monitor-blue; John's half of the stage stays dark. Mid-Movement III, no loo
 > [!screen] VIDEO — MARCUS · `AIV-062` *(reading it out, approving)*
 > See, that one's a good question. Somebody actually thought about that one.
 
-> [!screen] VIDEO — BRENDAN · `AIV-061`
-> Did you put something?
+**BRENDAN** *(live)*: Did you put something?
 
 > [!screen] VIDEO — MARCUS · `AIV-062`
 > I put the nine days. *(no heat in it at all)* I'm not being funny about it. Four lines, nine days, that's just what happened. And the standup thing, the model argument. I said thirty minutes. It was probably ten. Thirty's how it felt.
 
-> [!screen] VIDEO — BRENDAN · `AIV-061` *(careful)*
-> Does it go to Kristina with your name on it?
+**BRENDAN** *(live, careful)*: Does it go to Kristina with your name on it?
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(scrolling up to show him)*
 > Aggregated. Says so at the top — "responses are anonymised and shared with managers in summary." That's the whole reason anyone answers it straight.
 
-> [!screen] VIDEO — BRENDAN · `AIV-061`
-> Right.
+**BRENDAN** *(live)*: Right.
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(genuinely trying to help, on his way out)*
 > Put something, though. It's the only place it actually goes. Otherwise nothing changes and everyone just complains in DMs for another six months.
 
-*(His tile drops. Brendan's stays.)*
+*(MARCUS's tile drops. BRENDAN stays where he is.)*
 
 *(He opens the form. The sliders take a minute. Then the box at the bottom, and the cursor in it.)*
 
@@ -258,4 +258,5 @@ Cool monitor-blue; John's half of the stage stays dark. Mid-Movement III, no loo
 - **Cast note — Sam is cut.** Brendan now carries the passive betrayal (B6/B8/B9) as well as his own arc; the open question in [[Modern World — Supporting]] is resolved in favour of one conflicted man rather than two. The "goes quiet" register survives as the four-second "no concerns" response, which needs no cast at all.
 - **Curdle rows logged in [[Themes & Motifs]].**
 - **Mirror twin (John).** John's B6 — neighbours taking the factory work, unable to meet his eye on the lane. Same function, opposite texture: John's betrayers have to look at him and can't; Liam's never have to, because the form is between them. Note the asymmetry rather than forcing the rhyme.
-- **No live speaker, no physical interaction.** All video, operator-cued, with breathing room. Liam is lit on stage throughout and never crosses the plane.
+- **Two live men, no physical interaction.** Brendan is live at his desk for the first half; the calibration call is all video, operator-cued, with breathing room. Liam is lit on stage throughout and never crosses the plane. Neither man speaks to the other in the entire scene.
+- **Staging change — read before rehearsing.** This scene was designed with **no live speaker** ([[Structure & Scene Map]] called Liam's silent, never-look-up desk "the staging argument for his whole arc"). Making Brendan live overturns that deliberately: the argument survives, and gains a second body — the audience now watches the twenty minutes of typing that ends Liam happen in the same light as the man reading his diff. If it plays as too much company for a scene whose subject is abandonment, the fallback is to put Brendan back on the video plane; nothing else in the scene depends on it.

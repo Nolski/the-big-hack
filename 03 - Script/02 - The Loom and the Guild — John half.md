@@ -5,7 +5,7 @@ title: The Loom and the Guild — John half
 world: historical
 arc: john-arc
 beat: "[[Beat Sheet — Parallel Intercut#B1 — At the height of the craft]]"
-status: drafted
+status: cut
 runtime_estimate: ~3 min
 live_cast: John
 ai_video_assets: "[[AI Video Production Tracker|AIV-030 Mary — kitchen window]], [[AI Video Production Tracker|AIV-032 Young weaver — the lane]], [[AI Video Production Tracker|AIV-002 Steam looms (distant) — ambient]]"
@@ -15,6 +15,9 @@ tags:
 ---
 
 # Scene 02 — The Loom and the Guild — John half
+
+> [!danger] CUT from the running order
+> John is cut from the show ([[Rework — The Escalation Pass]] §A2), so this scene is not performed. It stays in the vault as **Marcus's argument bank** — the concrete detail he draws on about the cottage trade, the rate, and what a weaver was casually sure of — and as source for verbatim inserts. Its rendered storyboard artifacts (`s02`) are left in place; nothing in [[Structure & Scene Map]] plays it.
 
 > [!info] Beat
 > Dramatizes **[[Beat Sheet — Parallel Intercut#B1 — At the height of the craft|B1 — At the height of the craft]]** and **[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)|B2 — The community]]** — the John-world twin of the cold-open standup. The show **rewinds 200 years** here on a neutral narrator V.O. Mirror twin scene: **[[01 - Cold Open — The Standup]]** (same craft + community, opposite texture — Liam *tolerated and sharp*; John *embedded and warm*).

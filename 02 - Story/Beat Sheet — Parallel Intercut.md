@@ -7,10 +7,12 @@ tags:
 
 # Beat Sheet — Parallel Intercut
 
-**The thematic master document.** Twelve beats; each runs in both worlds so the two threads *rhyme*. Read [[Liam Arc]] / [[John Arc]] for each throughline alone, and [[Themes & Motifs]] for the comedy-that-curdles ledger.
+> [!danger] RETIRED — do not draft against this
+> The mirror this document exists to police is gone. John is cut and there is no second thread to rhyme with ([[Rework — The Escalation Pass]] §A2). **The running order is [[Structure & Scene Map]]; the throughline is [[Liam Arc]].** The B1–B12 beat numbers still referenced in drafted scenes' frontmatter are stale for the same reason.
+>
+> The file is kept for two reasons: drafted scenes link into its headings, and the twelve beats are a decent inventory of what a displacement story does — useful when writing the second half, and useful to Marcus, who argues in exactly these terms. Read it as an inventory, not a plan.
 
-> [!important] This is the thematic map, NOT the running order
-> The play is now told in a **braided structure** (long movements that build to a near-climax, then switch — Godfather II / Cloud Atlas / Cloud Nine), **not** beat-by-beat side-by-side. So this beat sheet defines *which* Liam beat rhymes with *which* John beat — the correspondences the audience should feel — while the actual **running order groups beats into movements** in [[Structure & Scene Map]]. Use this to keep the rhymes honest; use the Scene Map to sequence. The filename keeps "Parallel Intercut" only so existing links don't break.
+**The thematic map as it was.** Twelve beats; each ran in both worlds so the two threads rhymed. [[Themes & Motifs]] holds the comedy-that-curdles ledger and is still live.
 
 > **How to read:** each beat = one shared dramatic function, dramatised twice. The two columns should *rhyme*. The comedy column tracks the joke planted here that comes back un-funny later.
 
@@ -75,7 +77,7 @@ tags:
 
 ### B12 — Both hands on the machine (the collapse)
 | Liam at the keyboard, about to do the irreversible thing. | John at the loom-that-replaced-him, hammer raised. |
-**The [[Arcadia — Structural Technique|collapse]]:** both timelines on stage at once, lit as one silhouette. The AI-video chorus goes **silent**. We hold on the moment *before* the act. **Cut to black on the question, not the answer.**
+**The collapse (retired):** both timelines on stage at once, lit as one silhouette. The AI-video chorus goes **silent**. We hold on the moment *before* the act. **Cut to black on the question, not the answer.** — The ending is now a removal, not a deed; the "hold on the moment before" instinct survived and the rest didn't. See [[Concept & Thesis]].
 
 ---
 

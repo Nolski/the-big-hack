@@ -7,8 +7,8 @@ arc: liam-arc
 beat: "B5 (seeds B6/B7)"
 status: drafted
 runtime_estimate: ~4 min
-live_cast: "— (no live speaker; both parties AI video)"
-ai_video_assets: "[[AI Video Production Tracker|AIV-056 Kristina — the follow-up 1:1]], [[AI Video Production Tracker|AIV-057 Brendan — the follow-up 1:1]], [[AI Video Production Tracker|AIV-058 Kristina's screen — the new bot]]"
+live_cast: Brendan
+ai_video_assets: "[[AI Video Production Tracker|AIV-056 Kristina — the follow-up 1:1]], [[AI Video Production Tracker|AIV-058 Kristina's screen — the new bot]]"
 tags:
   - scene
   - liam-arc
@@ -23,11 +23,17 @@ tags:
 Two honest people disagree kindly and both lose. It opens with Kristina's secret: let into a Zoom early on Friday, she caught the tail of the CEO's board call — a member saying, flippantly, that a lot of companies are going through the same challenges and "you probably need to performance manage a bunch of them out." She doesn't know what it was about, thinks it sounded AI-adoption related, and files the risk under herself: "obviously you and Liam are going to be fine. But I'm worried about myself." Brendan starts to reassure her and lands somewhere else — "is Liam going to be fine?" — which opens the case from the huddle: the measured slowness, the stubs, the fancy autocomplete, plus the thing that actually scares him — he went to update his "things it gets wrong" doc and deleted half of it instead, because the latest models simply don't make the mistakes his whole method was built to catch. Kristina throws his own scaffolding back at him ("nobody called *your* tinkering unproductive — the tinkering is what sold me"), argues he's too fluent to see his own experience doing the work, and insists Liam has earned the right to find his own road in. She means every word, and she wins; Brendan folds with "Yeah. Maybe." Then the call ends, and instead of going back to her day she opens Cursor, picks the newest Claude on the list, and asks for another Slack bot — and the machine asks *her* the Vault question she had to type at it six weeks ago, hallucinates nothing, and finishes in about four minutes. The scene ends on a feeling she can't name, a thought about Liam she doesn't want, and a calendar chime. Nobody decides anything out loud.
 
 ## Setting / Staging
-A remote one-on-one, late morning: two tiles on the shared screen, **Kristina** in one, **Brendan** in the other — the same monitor-blue register as [[08 - The One-on-One]]. After the call, the closing movement is Kristina alone at her desk with her own screen (`AIV-058`), the machine's side written entirely as stage direction. **Recommended framing:** the stage below stays empty, or holds Liam heads-down at his rig, unaware, per the running mirror. No live speaker. Mid-Movement III; no loom-knock hand-off — it closes on its own image.
+A remote one-on-one, late morning: **Brendan live (Speaker B)** at his desk, **Kristina** in her tile on the shared screen — the same monitor-blue register as [[08 - The One-on-One]]. After the call, the closing movement is Kristina alone at her desk with her own screen (`AIV-058`), the machine's side written entirely as stage direction; **Brendan stays lit through it**, back at his own board, so the house watches him not know what she's just found out. **Recommended framing:** Liam heads-down at his rig, unaware, per the running mirror. Mid-Movement III; no loom-knock hand-off — it closes on its own image.
+
+## Live Cast
+
+- **BRENDAN** — live, Speaker B (the follow-up 1:1): Careful, reluctant, not out to get anyone; starts to reassure Kristina and lands on the quiet question that opens the case ("…Is Liam going to be fine?"); lays out the case in arithmetic, not adjectives; admits the embarrassing thing (he deleted half his own scaffolding and nothing got worse); starts the sentence he's deleted twice and puts it down again; concedes the argument he believes he's right about.
+
+> [!note] Live/video plane
+> Brendan plays these scenes **live at his own desk**, diegetically on the call — he and Liam are remote colleagues, so they share no props and never touch. Everyone else stays on the video plane.
 
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-056]] — Kristina (the follow-up 1:1):** same locked look/voice as `AIV-010`. Genuinely delighted Liam is "in"; tired of standup turning into a panel discussion. Early, the warm delivery drops: she repeats the overheard board sentence ("performance manage a bunch of them out"), swears Brendan to secrecy, and files the risk under herself ("obviously you and Liam are going to be fine. But I'm worried about myself"). Then she mounts a warm, sharp, winning defense of Liam — and of Brendan's own history of tinkering — and spends the rest of the scene alone with what she finds at her own keyboard.
-- **[[AI Video Production Tracker|AIV-057]] — Brendan (the follow-up 1:1):** same locked look/voice as `AIV-012`. Careful, reluctant, not out to get anyone; starts to reassure Kristina and lands on the quiet question that opens the case ("…Is Liam going to be fine?"); lays out the case in arithmetic, not adjectives; admits the embarrassing thing (he deleted half his own scaffolding and nothing got worse); starts the sentence he's deleted twice and puts it down again; concedes the argument he believes he's right about.
 - **[[AI Video Production Tracker|AIV-058]] — Kristina's screen — the new bot (screen graphic, no voice):** the model dropdown (she picks the newest Claude, deliberately); a plain-words prompt for a standup-summary bot; a plan with real endpoints and nothing to catch; the machine asking whether the new signing secret should live in Vault like the Jira bot's; green tests, Approve/Deny, and a first tidy EXAMPLE summary in a muted channel. Rhyme of `AIV-014`. Screen only, written as stage direction.
 
 ---
@@ -39,20 +45,17 @@ A remote one-on-one, late morning: two tiles on the shared screen, **Kristina** 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(working down a list, easy)*
 > …so comms are handled, the launch post goes out Thursday. That's my whole list. *(brighter)* Oh — and Liam closed the webhook ticket. Did you see?
 
-> [!screen] VIDEO — BRENDAN · `AIV-057`
-> I saw.
+**BRENDAN** *(live)*: I saw.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > A week, for a retry loop. I know. But it shipped, it works, and honestly? I'm just happy he's in. Six weeks ago he was posting memes about vibe-coding. Now he's expensed a whole computer and he comes to standup with opinions about inference. For Liam, that's a lot of progress — he's adopting new tooling.
 
-> [!screen] VIDEO — BRENDAN · `AIV-057` *(a small laugh)*
-> It's something.
+**BRENDAN** *(live, a small laugh)*: It's something.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(the but)*
 > I could do without standup turning into a panel discussion, though. Three this week. I asked for a doc — they wrote the doc. It's eleven pages, and now they're fighting in the comments.
 
-> [!screen] VIDEO — BRENDAN · `AIV-057`
-> I've been staying out of the comments.
+**BRENDAN** *(live)*: I've been staying out of the comments.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > Wise.
@@ -62,54 +65,46 @@ A remote one-on-one, late morning: two tiles on the shared screen, **Kristina** 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(lower)*
 > Can I tell you something? This stays here.
 
-> [!screen] VIDEO — BRENDAN · `AIV-057`
-> Always.
+**BRENDAN** *(live)*: Always.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > I got let into a Zoom early on Friday — leadership thing — and the CEO was still wrapping his last call. Board member, I'm pretty sure. I don't think either of them clocked I was in the room. *(beat)* The board guy was so relaxed about it. He said — and this is close to word for word — "a lot of companies are going through the same challenges, and the reality is you probably need to performance manage a bunch of them out."
 
-> [!screen] VIDEO — BRENDAN · `AIV-057`
-> …Performance manage who out?
+**BRENDAN** *(live)*: …Performance manage who out?
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > I don't know. The call ended about ten seconds after I joined. *(beat)* I don't know exactly what they were talking about, but it sounded AI-adoption related. *(a small, not-quite laugh)* Obviously you and Liam are going to be fine. But I'm worried about myself.
 
 *(A beat. Brendan starts to reassure her — and lands somewhere else.)*
 
-> [!screen] VIDEO — BRENDAN · `AIV-057` *(carefully)*
-> …Is Liam going to be fine?
+**BRENDAN** *(live, carefully)*: …Is Liam going to be fine?
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > What do you mean? He's adopting. You've seen it — he's in.
 
-> [!screen] VIDEO — BRENDAN · `AIV-057`
-> I don't think Liam's setup is really that productive. I sat with him for an hour — he walked me through the whole rig. And it's genuinely impressive. It's real engineering. *(beat)* And it's making him slower. He told me himself: he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something.
+**BRENDAN** *(live)*: I don't think Liam's setup is really that productive. I sat with him for an hour — he walked me through the whole rig. And it's genuinely impressive. It's real engineering. *(beat)* And it's making him slower. He told me himself: he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > Slower how? He's four weeks in.
 
-> [!screen] VIDEO — BRENDAN · `AIV-057` *(choosing the words)*
-> It's not the four weeks. The model that fits on that box is a year behind what the rest of the team is on, and he won't let it *do* anything. No tools, no tests, no network. He asks it for stubs, it gives him stubs, and he fills in the rest by hand. He calls it fancy autocomplete. He's proud that's all it is. *(beat)* He's trying, Kristina. Genuinely. But what he's built is a very expensive way of proving a point.
+**BRENDAN** *(live, choosing the words)*: It's not the four weeks. The model that fits on that box is a year behind what the rest of the team is on, and he won't let it *do* anything. No tools, no tests, no network. He asks it for stubs, it gives him stubs, and he fills in the rest by hand. He calls it fancy autocomplete. He's proud that's all it is. *(beat)* He's trying, Kristina. Genuinely. But what he's built is a very expensive way of proving a point.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(pushing back, not unkind)*
 > Okay — but do you hear yourself, a little? You keep a document called "Things it gets wrong." You've got rules files older than some of our repos. You told me the whole skill was catching it — I watched you correct a made-up endpoint like you were marking a kid's homework. Nobody stood over *you* calling the tinkering unproductive. The tinkering is what sold me. He's doing exactly what you did. It's just pointed somewhere you wouldn't point it.
 
 *(A pause. This is the part he's been sitting on.)*
 
-> [!screen] VIDEO — BRENDAN · `AIV-057`
-> …Honest answer? I'm not sure the tinkering matters anymore.
+**BRENDAN** *(live)*: …Honest answer? I'm not sure the tinkering matters anymore.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > Meaning what?
 
-> [!screen] VIDEO — BRENDAN · `AIV-057` *(like it costs him)*
-> I went into that doc last week to add an entry, and I ended up deleting half of it instead. Whole sections about problems I haven't seen since spring. The made-up endpoints — that was real, that was every week for a year. The new models just don't do it. Not unless you run the older models. *(beat)* I cut my rules file by a third last month, to see what would happen. Nothing got worse. *(quieter)* Most of my setup is instructions for a model that doesn't exist anymore. I keep it out of habit.
+**BRENDAN** *(live, like it costs him)*: I went into that doc last week to add an entry, and I ended up deleting half of it instead. Whole sections about problems I haven't seen since spring. The made-up endpoints — that was real, that was every week for a year. The new models just don't do it. Not unless you run the older models. *(beat)* I cut my rules file by a third last month, to see what would happen. Nothing got worse. *(quieter)* Most of my setup is instructions for a model that doesn't exist anymore. I keep it out of habit.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(a beat)*
 > Huh.
 
-> [!screen] VIDEO — BRENDAN · `AIV-057`
-> And look — Liam being slow is Liam's sprint. We'd absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position — out loud, at standup, in an eleven-page doc — is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the new engineers decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. That could genuinely hurt us.
+**BRENDAN** *(live)*: And look — Liam being slow is Liam's sprint. We'd absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position — out loud, at standup, in an eleven-page doc — is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the new engineers decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. That could genuinely hurt us.
 
 *(Kristina sits with it. Then, leaning in — warm, and completely sure.)*
 
@@ -118,19 +113,17 @@ A remote one-on-one, late morning: two tiles on the shared screen, **Kristina** 
 
 *(A long beat. Brendan starts to say something — the sentence he's deleted twice — and puts it down again.)*
 
-> [!screen] VIDEO — BRENDAN · `AIV-057`
-> …Yeah. *(beat)* Maybe.
+**BRENDAN** *(live)*: …Yeah. *(beat)* Maybe.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(kindly, closing it)*
 > He shipped the webhook thing. Give him the quarter.
 
-> [!screen] VIDEO — BRENDAN · `AIV-057`
-> Yeah. *(a glance off-screen — his board)* I've got a thing at half past. Thanks, Kristina.
+**BRENDAN** *(live)*: Yeah. *(a glance off-screen — his board)* I've got a thing at half past. Thanks, Kristina.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > Go. This was useful, honestly.
 
-*(His tile drops. Hers sits alone in the call for a moment. She won. She closes the window.)*
+*(BRENDAN drops the call and turns back to his own board — still lit, still there, already onto something else. Hers sits alone in the call for a moment. She won. She closes the window.)*
 
 *(Her desk, after. The launch post is open in the next tab, waiting. She doesn't go to it.)*
 
@@ -166,6 +159,6 @@ A remote one-on-one, late morning: two tiles on the shared screen, **Kristina** 
 - **Both of them are right.** Brendan is right that the scaffolding era is ending and that Liam's method is a beautifully engineered dead end. Kristina is right that Brendan can't see his own hands anymore. The scene never adjudicates; the four minutes at the end adjudicate.
 - **Play the shudder small.** One breath, gone. No music sting, no hold. The calendar chime is the scene's actual ending — the day continues, which is the point.
 - **The overheard sentence (seed).** The board member's line is quoted once, close to verbatim, and never explained — no names, no list, no numbers, and nobody in the scene finds out what it was actually about. Don't resolve it. It pays off when the review (B7, [[13 - The Performance Review]]) does what the sentence prescribed: "performance managed out" as practice, with Liam's name on it. And note the double misread: her fear for herself isn't wrong (four minutes later a bot formats her minutes better than she does), but "obviously you and Liam are going to be fine" is the sentence the back half of the play disproves.
-- **Kristina's secret is Brendan's next silence.** She swears him to it ("this stays here"). He now knows performance-management talk is in the air while holding a case that the most senior engineer on the team is the least productive — so speaking up about Liam stops being feedback and starts being a nomination. That weight feeds directly into his B6 "coworkers go quiet" ([[12 - The Coworkers Go Quiet]]). And the ugliness: she repeats the sentence, aims it at herself, and then defends the man it's actually for — a contradiction she can't hear.
+- **Kristina's secret is Brendan's next silence.** She swears him to it ("this stays here"). He now knows performance-management talk is in the air while holding a case that the most senior engineer on the team is the least productive — so speaking up about Liam stops being feedback and starts being a nomination. That weight feeds directly into his B6 "coworkers go quiet" ([[12 - Below Expectations]]). And the ugliness: she repeats the sentence, aims it at herself, and then defends the man it's actually for — a contradiction she can't hear.
 - **Continuity.** The webhook ticket, the eleven-page doc (the thread Kristina ordered), the measured slowness, "fancy autocomplete," and the deleted messages are all [[11b - Best Practices]]. The board pressure under the CEO is [[10 - The Win We Needed]] — keep the overheard line flippant and unattributed, and invent no names or numbers around it; "performance manage them out" rhymes forward to the review's language (B7). The scaffolding (rules files, "things it gets wrong"), the invented endpoint, the Vault correction, and the model-picker fumble are [[01b - The Cursor Demo]]. "Get on the boat" is her framing from [[01d - The Future]]. "Opus 4.8" was named in [[01 - Cold Open — The Standup]]; the dropdown here just shows a newer number — don't invent a name for it.
 - **The title is what she clicks.** "The Latest Model" is the dropdown selection, Brendan's argument, and the thing Liam's box can't run. Leave all three readings alone.

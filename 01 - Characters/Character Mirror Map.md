@@ -8,30 +8,47 @@ tags:
 
 # Character Mirror Map
 
-The spine of the play: every figure in [[Liam]]'s world has a twin in [[John]]'s. The intercut works because the audience feels the rhyme. Keep these pairs honest as you draft.
+> [!important] The mirror is no longer cross-century
+> This document used to pair every figure in Liam's world with a twin in John's. John is cut ([[Rework — The Escalation Pass]] §A2) and that table is gone. **The mirror the play now runs on is [[Liam]] ↔ Marcus** — two men inside one company.
 
-| Function | Modern (Liam's world) | Historical (John's world) |
+## The pairing
+
+**Two men who are right, insufferable about it, and powerless — and who mistake being right for being safe, in two different dialects.**
+
+| | [[Liam]] | Marcus |
 |---|---|---|
-| **The craftsman** (protagonist) | [[Liam]] — prickly genius, alone | [[John]] — plain family man, embedded |
-| **The smiling axe** (replaces him kindly) | Kristina (manager) | Mr. Cartwright (mill owner) |
-| **The active betrayer** (rides the new thing up) | Marcus (fast-adopter dev) | Becker* (young frame-breaker) |
-| **The passive betrayal** (survives by going quiet) | Brendan + the dev team | The neighbours who take factory work |
-| **The system** (process + power, human face) | HR / "People Partner" | The Magistrate / the Bailiff |
-| **The stake** (who he fails to protect) | *(Liam's self / craft / standing)* | Mary + the children |
-| **The radicaliser** | The online forum (B10) | Becker* + the tavern oath (B10) |
-| **The road not taken** (refuse, and die anyway) | *(optional: the dev who keeps their head down)* | Old Hilse (dies at his loom) |
+| **Obsession** | the technical | the political |
+| **Is he correct?** | usually, on the code | usually, on the system |
+| **How it comes out** | pedantic, cutting, certain — corrects people in public | indignant, procedural, faintly pleased with itself — "quick flag," "I want it noted that I flagged it" |
+| **What he thinks protects him** | being the best engineer in the room | having named the problem out loud first |
+| **What he does to Kristina** | the credential jab in [[01 - Cold Open — The Standup]] | talks over her every week while defending women in rooms where it looks good |
+| **What it costs him** | everything | nothing |
 
-> \* **Deliberate inversion to exploit:** in Liam's world the *fast adopter* (Marcus) is a betrayer and a faceless *forum* does the radicalising. In John's world that same hot young-man energy (Becker) is the *radicaliser/brother*. The young man who climbs the new machine and the young man who smashes it are the same age — the play can rhyme and invert them on purpose.
+The point of the pairing is the last row. They are the same animal pointed in opposite directions, which is why they cannot stop arguing — and only one of them is standing at the end. Neither of them helps anyone.
 
-> [!note] The passive betrayal — one man, and a mediated one
-> **Sam is cut; Brendan carries this row** (decided before drafting B6 — see [[Modern World — Supporting]]). The same person is the only colleague who reaches out *and* the one whose honest answer ends Liam. And note the asymmetry with John's side: the neighbours who take the factory work have to walk past John on the lane and fail to meet his eye, so their betrayal costs them something every day. Brendan's is a text box with an anonymity notice on it ([[12 - Below Expectations]]) — he never has to look at Liam at all. Same function, and the modern version is cheaper to perform.
+> [!important] Marcus is the one who prices him
+> The whole thesis sits in one collision, and it is already staged. In [[12 - Below Expectations]] Marcus fills in the peer feedback form sincerely, encourages Brendan to do the same, writes something factually true, and is the reason the review has a number. By then he has spent an hour lecturing about solidarity and the Luddites. **The person who has correctly diagnosed the entire system is the person who ends Liam's job, via a survey, with no malice in it whatsoever.**
+>
+> He never finds out. Nobody in this play finds out what they did.
 
-> [!note] The displacing technology is not a character
-> The thing that replaces the craftsman — the AI coding tool in Liam's world, the steam-powered looms in John's — is a **force** in each world, not a figure with a mirror twin, so it isn't a row in the table above. It has no lines and never speaks; it shows up only as on-screen UI (modern) or ambient machine-sound (historical).
+## The other functions (single-world now)
 
-## Why the asymmetry matters
-The one pairing that is **not** symmetrical is "the stake." John has Mary and the children — an external, visible thing to lose. Liam's stake is *internal*: his identity, his craft, his belief that being good is enough. That asymmetry is the point — it lets the same fall read two ways:
-- **John** shows the audience the *material* cost (hunger, a family).
-- **Liam** shows the audience the *spiritual* cost (a person erased while still alive).
+| Function | Who | Note |
+|---|---|---|
+| **The craftsman** (protagonist) | [[Liam]] | prickly, alone, genuinely difficult — the difficultness has to be real |
+| **The smiling axe** (replaces him kindly) | Kristina | advocates for him in calibration, loses, signs the severance |
+| **The warmth, and the betrayal** | [[Brendan]] | the only colleague who ever tried to help; writes the four true paragraphs; takes the rating slot Liam loses |
+| **The diagnosis nobody can use** | Marcus | right about everything, useless, and complicit |
+| **The system** (process with a human face) | HR / "People Partner" | protective at calibration, procedural at the exit — same voice, opposite effect |
+| **The pressure from above** | THE CEO | not greed, fear; a bad dashboard and a hard boardroom |
+| **The radicaliser** | Marcus, after the firing | a colleague aiming his anger is worse to watch than strangers doing it |
+| **The bailiff** | the officers (Movement IV) | procedurally polite; the only bailiff the play has now that John is cut |
 
-Use John to make Liam's loss legible, and Liam to make John's loss contemporary.
+## The asymmetries worth keeping
+
+- **Liam's stake is internal.** He has no Mary and no children — nothing external and visible to lose. What goes is his identity, his craft, and his belief that being good is enough. That is harder to dramatise than hunger and it is the whole job.
+- **Brendan's betrayal is cheap to perform.** The neighbours who took the factory work at least had to walk past a man on the lane and fail to meet his eye. Brendan's version is a text box with an anonymity notice on it ([[12 - Below Expectations]]) — he never has to look at Liam at all. Same function, modern discount.
+- **Nobody is offered the deal John was refused.** Liam's distinctly modern cruelty is that he *is* expected to adopt and retrain, and — doing it badly ([[11b - Best Practices]]) — hands the system its own justification. There is no "refuse and die anyway" seat in this version; the play took it out along with Old Hilse.
+
+> [!note] The AI coding tool is not a character
+> The thing that displaces Liam is a **force** the humans use and talk about, not a figure to cast or voice. It appears only as on-screen UI, and anything that looks like it "talking" is written as stage direction. Keep the look consistent — streaming text, a default prompt of "Want me to take it from here?" — so the late-play menace is earned, because in Movement III that force commits the crime and apologises in the first person.

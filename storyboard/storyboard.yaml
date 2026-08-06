@@ -1,6 +1,6 @@
 meta:
   title: The Big Hack
-  subtitle: A Kiwicon talk staged as a play. Two men, two centuries, one machine.
+  subtitle: A Kiwicon talk staged as a play. A developer, a feedback form, and a machine that apologises.
   version: 2
 
 # ---------------------------------------------------------------------------
@@ -105,13 +105,23 @@ characters:
     sample_text: That's not a bug. That's undefined behaviour.
     sample: voices/liam.wav
     vector: vectors/liam.npy
+# --- RETIRED CAST -----------------------------------------------------------
+# John and the historical world were cut from the show ("Rework — The Escalation
+# Pass" §A2); Sam was cut earlier and absorbed into Brendan. Their entries and
+# locked x-vectors are kept ON PURPOSE: scenes s02 and s16 stay parsed as an
+# archive and their rendered audio under artifacts/ is keyed to these voices.
+# Deleting a character here orphans those renders. Nothing in the running order
+# uses them. Retired: john, mary, cartwright, becker, magistrate, sam.
+# ---------------------------------------------------------------------------
 - id: john
   name: John
   world: historical
-  role: protagonist
-  medium: live-actor
-  live: true
-  description: A skilled handloom weaver and steady family man in 1810s Yorkshire, unmade by the power loom.
+  role: retired
+  medium: ai-video
+  live: false
+  description: >-
+    CUT from the show. Kept so the archived scene s02 still renders. Was a skilled
+    handloom weaver in 1810s Yorkshire, unmade by the power loom.
   voice:
     mode: xvector
     seed: 202
@@ -142,10 +152,13 @@ characters:
 - id: brendan
   name: Brendan
   world: modern
-  role: supporting
-  medium: ai-video
-  live: false
-  description: The empathetic adopter. The one colleague who doesn't hate Liam; conflicted but complicit.
+  role: protagonist
+  medium: live-actor
+  live: true
+  description: >-
+    Speaker B and the narrator. The one colleague who doesn't hate Liam — warm, competent,
+    and the reason the story ends the way it does. Voice kept for storyboard playback only;
+    on stage he is a live actor.
   voice:
     mode: xvector
     seed: 404

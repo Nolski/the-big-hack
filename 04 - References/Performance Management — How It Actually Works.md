@@ -11,7 +11,7 @@ tags:
 # Performance Management — How It Actually Works
 
 > [!quote] Why it matters for *The Big Hack*
-> [[Liam]] is not fired. He is **processed**. This note is the machinery of that processing — how a headcount number becomes a rating, a rating becomes a paper trail, and a paper trail becomes a name — so that [[12 - The Coworkers Go Quiet]], [[13 - The Performance Review]] and the offboarding (B8) are *procedurally accurate* and not a satirical guess. The play's argument only survives if a room full of Kiwicon engineers who have been through this recognise every step.
+> [[Liam]] is not fired. He is **processed**. This note is the machinery of that processing — how a headcount number becomes a rating, a rating becomes a paper trail, and a paper trail becomes a name — so that [[12 - Below Expectations]], [[13 - The Performance Review]] and the offboarding (B8) are *procedurally accurate* and not a satirical guess. The play's argument only survives if a room full of Kiwicon engineers who have been through this recognise every step.
 
 > [!warning] Verify before staging
 > Specifics below are drawn from reporting and research through mid-2026 and are contested terrain, not settled fact. Company-specific claims are named with their source so they can be re-checked; treat the *mechanics* as reliable and the *numbers* as needing a fresh look before the show goes up. See also the jurisdiction flag at the bottom — the process described here is the American one, and the audience is not American.
