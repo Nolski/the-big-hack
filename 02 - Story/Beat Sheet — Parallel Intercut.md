@@ -48,7 +48,7 @@ tags:
 **Comedy:** change-management doublespeak / "improvement" sermon. The joke is still funny — *just*.
 
 ### B6 — The community fractures (the betrayal begins)
-| A peer feedback form asks a leading question and Liam's colleagues answer it honestly; the answers are anonymised, summarised by the tool, and read out in a calibration room he isn't in. Kristina advocates and loses. ([[12 - Below Expectations]]) | Neighbours take the factory jobs to survive. They can't meet John's eye on the lane. |
+| A peer feedback form asks a leading question and Liam's colleagues answer it honestly; the answers are anonymised and summarised by the tool into a sentence nobody typed. Liam reads it, rings the colleague who wrote it, and thanks him for the help. ([[12 - Below Expectations]]) Kristina advocates in a comment thread, is agreed with, and is resolved — now the prologue to [[13 - The Performance Review]]. | Neighbours take the factory jobs to survive. They can't meet John's eye on the lane. |
 **The betrayal is mostly *silence*, not villainy — survival, not malice.** This is the moral core. In the modern half the silence has a mechanism: nobody goes behind his back, everybody answers a question truthfully, and the record assembles itself. Brendan, not a separate "Sam," carries this.
 
 ### B7 — He fights it the only way he knows (and it backfires)

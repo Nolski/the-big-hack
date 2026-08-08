@@ -39,7 +39,7 @@ The point of the pairing is the last row. They are the same animal pointed in op
 | **The smiling axe** (replaces him kindly) | Kristina | advocates for him in calibration, loses, signs the severance |
 | **The warmth, and the betrayal** | [[Brendan]] | the only colleague who ever tried to help; writes the four true paragraphs; takes the rating slot Liam loses |
 | **The diagnosis nobody can use** | Marcus | right about everything, useless, and complicit |
-| **The system** (process with a human face) | HR / "People Partner" | protective at calibration, procedural at the exit — same voice, opposite effect |
+| **The system** (process with a human face) | HR / "People Partner" | protective at calibration as pasted boilerplate, procedural at the exit in person — same voice, opposite effect |
 | **The pressure from above** | THE CEO | not greed, fear; a bad dashboard and a hard boardroom |
 | **The radicaliser** | Marcus, after the firing | a colleague aiming his anger is worse to watch than strangers doing it |
 | **The bailiff** | the officers (Movement IV) | procedurally polite; the only bailiff the play has now that John is cut |

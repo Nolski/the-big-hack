@@ -39,13 +39,18 @@ He narrates from **after** — retrospectively, knowing how it ends. That hands 
 >
 > Two tests every draft: does he narrate *himself*, and would the scene still work with the narration cut? If a scene only works because he told us what it meant, the scene isn't working. He can explain how calibration works; he cannot explain what it means.
 
+> [!warning] The one sanctioned exception — don't let a later pass "fix" it
+> There is exactly one place in the play where Brendan turns out and starts to explain himself: **"I want to be clear that I'm not—"**, immediately before he clicks Submit in [[12 - Below Expectations]]. He doesn't finish the sentence and nothing makes him stop; he just stops, and clicks. It is not narration and it is not a confession — it is an apology the play denies him, and it works *because* the rule above is otherwise absolute. **Do not extend the line, do not answer it, and do not add a second one anywhere in the show.** A draft that completes the sentence has thrown away both the beat and the rule.
+>
+> Everything else in that scene is drafting aloud, not direct address: he is alone at a keyboard reading his own sentences back and revising them, talking to the screen. That is a different mode and it is not restricted.
+
 ## Arc
 
 1. **Movement I** — the decent man who gets stepped on. Shipped the thing, offers to walk Liam through it, is talked over. The audience adopts him immediately.
 2. **[[06 - Good Instinct]]** — uses the tool carefully, because he actually heard Liam's one legitimate objection. Quietly solves Liam's race condition and lets Liam credit his own instinct. First flicker of guilt he can't name.
 3. **[[07 - Heads Together]]** — can't take credit, and being honest to a fault, half-exposes Liam to Kristina anyway. Deletes Claude's branch — live hand, live keyboard.
 4. **[[11b - Best Practices]]** — the three deletions: the policy message, "I don't know if liam is ever going to—", the finished patch. Live, this is a man holding backspace while another man talks.
-5. **[[12 - Below Expectations]]** — the turn. Asked a leading question by the peer feedback form, he writes four true paragraphs and, for the first time, doesn't hold backspace. He does it warmly, encouraged by Marcus, with no malice in it.
+5. **[[12 - Below Expectations]]** — the turn, and his longest solo in the play. Asked a leading question by the peer feedback form, he talks himself through twenty minutes of drafting and, for the first time, doesn't hold backspace. He does it warmly, encouraged by Marcus, with no malice in it. The one deletion he *does* make is the only cruel sentence in the answer, which leaves the rest cleaner and more quotable — he curates toward kindness and builds a better weapon. Then Liam rings him, asks the exact question he asked Marcus, gets an honest answer, doesn't hear it, and thanks him for being the only person who'll tell him anything.
 6. **After** — awkward and avoidant. Messages left on read. He takes the rating slot Liam lost without ever knowing the two things are connected.
 7. **The arrest** — he can be physically present and do nothing.
 

@@ -4,11 +4,11 @@ scene_number: 12
 title: Below Expectations
 world: modern
 arc: liam-arc
-beat: "[[Beat Sheet — Parallel Intercut#B6 — The community fractures (the betrayal begins)]]"
+beat: "[[Liam Arc]] — the record gets manufactured"
 status: drafted
-runtime_estimate: ~6 min
-live_cast: "Brendan (+ Liam present on stage, silent)"
-ai_video_assets: "[[AI Video Production Tracker|AIV-060 The feedback form — screen]], [[AI Video Production Tracker|AIV-062 Marcus — the feedback round]], [[AI Video Production Tracker|AIV-063 Kristina — calibration]], [[AI Video Production Tracker|AIV-064 Kara — calibration]], [[AI Video Production Tracker|AIV-065 The People Partner — calibration]], [[AI Video Production Tracker|AIV-066 The calibration sheet — screen]]"
+runtime_estimate: ~7 min
+live_cast: "Liam, Brendan"
+ai_video_assets: "[[AI Video Production Tracker|AIV-060 The feedback form — screen]], [[AI Video Production Tracker|AIV-062 Marcus — the feedback round]]"
 tags:
   - scene
   - liam-arc
@@ -17,39 +17,38 @@ tags:
 # Scene 12 — Below Expectations
 
 > [!info] Beat
-> Dramatizes **[[Beat Sheet — Parallel Intercut#B6 — The community fractures (the betrayal begins)|B6 — The community fractures]]** — and the betrayal turns out to be a form and a spreadsheet. Two movements: colleagues answer an honest question honestly, then the answers arrive in a room Liam isn't in, with the names stripped off. Mirror twin: John's **B6** (the neighbours take the factory work and can't meet his eye on the lane). Supplies the origin of three things [[13 - The Performance Review]] currently asserts without evidence: the word "friction," the nine days, and the "Collaboration: Below Expectations" line on `AIV-071`. Machinery and vocabulary from [[Performance Management — How It Actually Works]].
+> The record gets manufactured, and it takes three people about half an hour. A form asks a leading question, two colleagues answer it honestly, a tool folds the answers into one sentence nobody typed, and then the man it is about calls up the man who wrote it and asks him for help fixing it. Running order in [[Structure & Scene Map]]; throughline in [[Liam Arc]]. Supplies the origin of the things [[13 - The Performance Review]] asserts without evidence: the word "friction," the nine days, and the peer summary. Machinery and vocabulary from [[Performance Management — How It Actually Works]].
 
 ## Purpose
-Show how a decision gets made about a man by people who never speak to him. Nobody lies, nobody schemes, and nothing that happens would look wrong in a transcript. Marcus fills in a survey because he was asked and because he genuinely thinks it's the only place anything gets fixed. Brendan writes four true paragraphs, hedges twice, and doesn't delete them — the inversion of his three deletions in [[11b - Best Practices]], and worse than silence, because it's honest. The tool folds all of it into one sentence nobody typed. Then calibration: Kristina's case for Liam is conceded instantly and dies of it, the true explanation for his adoption number is too long to give, and she trades him for Brendan because she has one slot and two names. The audience should not be able to name the villain, and should watch the file get built anyway.
+Show the audience how easy it is to end someone without ever telling them — and then show that telling them wouldn't have helped either. Nobody lies and nobody schemes. Marcus fills in a survey because he was asked and because he sincerely believes it is the only channel where anything gets fixed, and he is not wrong about that. Brendan writes four true paragraphs, hedges twice, deletes the one cruel sentence, and submits — the inversion of his three deletions in [[11b - Best Practices]], and worse than silence, because it is honest. The tool folds all of it into one generated bullet with no author and no way back to a source. Then Liam, who is better at finding the cause of a problem than anyone in the building, calls Brendan and applies that skill to the one problem where it does not work: he asks Brendan the exact question Brendan asked Marcus, gets a truthful answer, cannot hear it as an answer, takes some kind advice that is a paraphrase of the thing that ended him, writes it down, and thanks him for being the only person who will tell him anything. The audience should not be able to name the villain, and should watch the file get built anyway.
 
 ## Setting / Staging
-**Liam is on stage for the whole scene**, alone at his desk in a pool of lamplight — the silver box, a diff open, reading line by line — and he never looks up and never speaks. **Brendan is on stage too**, live (Speaker B), at his own desk: first in a huddle with Marcus on the screen above, then alone with the feedback form, typing. The calibration call that follows is all video — Kara chairing, Kristina, the People Partner, a spreadsheet of names shared between them. Liam is the subject of every sentence in the scene and is not in it.
+Three pictures, in order. **A huddle:** Brendan live at his desk with Marcus on the screen above him, winding down off a code review. **A man alone with a box:** Brendan at the same desk, the screen behind him now only a form, talking himself through twenty minutes of writing. **A call:** two live men at two desks in two separate pools of light, and for the only time in the scene nobody else on the line and nothing on the screen above them.
 
-**Two live men, two desks, one typing the thing that ends the other — who never looks up.** Neither has a word to say to the other; they are in the same room and on separate planets, and the twenty minutes Brendan spends on four paragraphs plays out in full view of the man they are about to cost everything. Liam never crosses onto the video plane and never learns that any of this happened — the running mirror from [[08 - The One-on-One]] and [[11c - The Latest Model]], used here for its full value.
+**Liam is on stage for the whole scene.** For the first two movements he is at his own desk in a pool of lamplight — the silver box, a diff open, reading line by line — and he never looks up and never speaks. He is the subject of every sentence being typed above him and he is not in the conversation. In the third movement he speaks, and what he wants to talk about is how to fix it.
 
-Cool monitor-blue; John's half of the stage stays dark. Mid-Movement III, no loom-knock hand-off — it closes on its own image.
+**The two live men never share a plane.** They are remote colleagues on a call — separate desks, separate light, no shared props, no contact — exactly as in [[11b - Best Practices]]. Marcus arrives only as a tile on the screen and can be argued with, quoted and heard; he is never touched and never hands anyone anything.
+
+Cool monitor-blue throughout. The screen above the desks carries the form, then goes dark for the whole third movement and stays dark. The scene closes on its own image.
 
 ## Live Cast
 
-- **BRENDAN** — live, Speaker B (the feedback round): in the huddle, ordinary and a little tired; asks the one question that matters to him ("does it go to Kristina with your name on it?") and accepts the answer. Then alone with the box, where the work is all in the face and the typing.
+- **BRENDAN** — live, Speaker B. In the huddle, ordinary and a little tired; asks the one question that matters to him ("does it go to Kristina with your name on it?") and accepts the answer. Alone with the box, the work is the drafting: he reads his own sentences back and revises them out loud, and every revision makes it worse. On the call he is generous, useless, and completely honest.
+- **LIAM** — live, Speaker A. Silent and reading for two movements. On the call he is doing his job well: no self-pity, no accusation, a defect report he intends to close.
 
 > [!note] Live/video plane
-> Brendan plays these scenes **live at his own desk**, diegetically on the call — he and Liam are remote colleagues, so they share no props and never touch. Everyone else stays on the video plane.
+> Both live men play at their own desks, diegetically on a call — no shared props, no contact. Marcus is the only character on the video plane and he is gone before the second movement starts. **The third movement needs no video asset at all.**
 
 ## AI Video Cues
-- **[[AI Video Production Tracker|AIV-060]] — The feedback form (screen graphic, no voice):** "H2 Peer Input" — a deadline, a progress bar, a column of 1–5 sliders, and one optional free-text box under the question *"Is there anyone whose work made it harder for you to deliver this half?"*; the anonymity notice at the top; later, after the cycle closes, the generated manager summary under Liam's name. Screen only, written as stage direction.
-- **[[AI Video Production Tracker|AIV-062]] — Marcus (the feedback round):** helpful, unbothered, entirely sincere. No malice anywhere in it — he did the form this morning, he thinks it's a good form, and he encourages Brendan to do it because otherwise nothing changes. The register from `AIV-055` with the annoyance dialled most of the way out; he is being a decent colleague. Same locked look/voice.
-- **[[AI Video Production Tracker|AIV-063]] — Kristina (calibration):** comes in prepared to win and gets her main point conceded in four words; tries to explain the local rig and hears how it sounds; makes the trade; makes one real, well-argued attempt and loses it to arithmetic. This is the "I pushed back on this" she cites in [[13 - The Performance Review]] — play it so the audience later knows she wasn't lying. Same locked look/voice as `AIV-010`.
-- **[[AI Video Production Tracker|AIV-064]] — Kara (calibration, chairing):** dry, fair, moving a list. Concedes everything Kristina says and changes nothing. Doesn't enjoy the arithmetic and doesn't pretend it's anything else. Same locked look/voice as `AIV-047`.
-- **[[AI Video Production Tracker|AIV-065]] — The People Partner (calibration):** first appearance, months before the offboarding. Scripted, gentle, immovable — and, in this scene, the person most concerned with protecting Liam procedurally. Reads the aggregate, won't break out the names, wants a documented plan before anyone sits down with him. Says "non-regretted" in the same voice as everything else.
-- **[[AI Video Production Tracker|AIV-066]] — The calibration sheet (screen graphic, no voice):** rows of names, a rating dropdown per row, a counter at the top ("Exceeds — 3 of 4 used"), a column headed "Tooling adoption (H2)" with Liam's cell near zero, and at the end the entry: **Collaboration: Below Expectations.** Screen only, written as stage direction.
+- **[[AI Video Production Tracker|AIV-060]] — The feedback form (screen graphic, no voice):** three states. **(1)** "H2 Peer Input" — a deadline, a progress bar, a column of 1–5 sliders, and one optional free-text box under the question *"Is there anyone whose work made it harder for you to deliver this half?"*; the anonymity notice along the top. **(2)** After the cycle closes: the generated manager summary under Liam's name, one bullet. **(3)** Liam's own self-review packet a fortnight later — the peer input section with that bullet in it, and the two-axis self-rating below. Screen only, written as stage direction.
+- **[[AI Video Production Tracker|AIV-062]] — Marcus (the feedback round):** helpful, unbothered, entirely sincere. No malice anywhere in it — he did the form this morning, he thinks it is a good form, and he encourages Brendan because otherwise nothing changes. **The `AIV-055` register with the point-scoring left in and the aggression taken out:** he is enthusiastic rather than annoyed, which is a warmer setting and not a quieter one. He is being a decent colleague and he is right about almost everything he says. Same locked look and voice.
 - **[[AI Video Production Tracker|AIV-011]]** — standup grid, optional ambient reuse for the four-second response.
 
 ---
 
 ## Script
 
-*(Late afternoon. A Slack huddle: two tiles, MARCUS and BRENDAN, a diff open between them. Below, LIAM at his desk, reading. [MUSIC: music/slackhuddle.mp3])*
+*(Late afternoon. A Slack huddle on the screen above BRENDAN's desk: his tile and MARCUS's, a diff open between them. Below, in his own pool of light, LIAM at his desk, reading. [MUSIC: music/slackhuddle.mp3])*
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(winding up, already half gone)*
 > —no, ship it. The migration's reversible. That's the whole point of the flag.
@@ -62,7 +61,7 @@ Cool monitor-blue; John's half of the stage stays dark. Mid-Movement III, no loo
 **BRENDAN** *(live)*: Which one?
 
 > [!screen] VIDEO — MARCUS · `AIV-062`
-> Half-year round. Closes Friday. They've been chasing me since Monday, I finally did it this morning.
+> Half-year peer round. Closes Friday. They've been chasing me since Monday. I finally did it this morning.
 
 **BRENDAN** *(live)*: Not yet.
 
@@ -71,192 +70,219 @@ Cool monitor-blue; John's half of the stage stays dark. Mid-Movement III, no loo
 
 *(On the shared screen — `AIV-060` — the form. "H2 Peer Input." A deadline, a progress bar, a column of one-to-five sliders. At the bottom, one free-text box, and above it: "Is there anyone whose work made it harder for you to deliver this half? (Optional)")*
 
-> [!screen] VIDEO — MARCUS · `AIV-062` *(reading it out, approving)*
-> See, that one's a good question. Somebody actually thought about that one.
+> [!screen] VIDEO — MARCUS · `AIV-062` *(stopping on it)*
+> Okay, but — read that one. The bottom one.
+
+**BRENDAN** *(live)*: I'm reading it.
+
+> [!screen] VIDEO — MARCUS · `AIV-062`
+> Every survey this company has ever sent me is "do you feel valued." "Do you have the tools you need to succeed." Do I feel *valued*. On a scale of one to five.
+
+**BRENDAN** *(live)*: Ha.
+
+> [!screen] VIDEO — MARCUS · `AIV-062` *(and he means it)*
+> No, but — nobody has ever asked me what's actually slowing me down. Three years. Not once. They ask you how you *feel* about it. *(beat)* And then somebody put that on there. Whoever wrote that one, genuinely — good. That's the only question on here that costs them anything.
 
 **BRENDAN** *(live)*: Did you put something?
 
-> [!screen] VIDEO — MARCUS · `AIV-062`
-> I put the nine days. *(no heat in it at all)* I'm not being funny about it. Four lines, nine days, that's just what happened. And the standup thing, the model argument. I said thirty minutes. It was probably ten. Thirty's how it felt.
+> [!screen] VIDEO — MARCUS · `AIV-062` *(no heat in it at all)*
+> I put the nine days. And I like Liam, I'm not being funny about it. Four lines, nine days. That's just what happened, it's in the queue, anyone can go and look. *(beat)* And the standup thing. The model argument. I said thirty minutes. It was probably ten. Thirty's how it felt.
 
 **BRENDAN** *(live, careful)*: Does it go to Kristina with your name on it?
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(scrolling up to show him)*
-> Aggregated. Says so at the top — "responses are anonymised and shared with managers in summary." That's the whole reason anyone answers it straight.
+> Aggregated. Says so at the top — "responses are anonymised and shared with managers in summary." *(beat)* Which is the whole reason anyone answers it straight. If my name was on it I'd type "no notes" like everybody else and we'd all keep having the same year forever.
 
 **BRENDAN** *(live)*: Right.
 
-> [!screen] VIDEO — MARCUS · `AIV-062` *(genuinely trying to help, on his way out)*
-> Put something, though. It's the only place it actually goes. Otherwise nothing changes and everyone just complains in DMs for another six months.
+> [!screen] VIDEO — MARCUS · `AIV-062`
+> I said in standup I wanted it noted. Nobody was taking minutes. *(beat)* Turns out this is where things get noted.
+
+**BRENDAN** *(live)*: Yeah.
+
+> [!screen] VIDEO — MARCUS · `AIV-062` *(on his way out, genuinely trying to help)*
+> Put something, though. Actually put something. It's the only place it goes. *(beat)* Otherwise nothing changes and we all complain in DMs for another six months.
+
+**BRENDAN** *(live)*: Yeah. *(beat)* No, I will.
 
 *(MARCUS's tile drops. BRENDAN stays where he is.)*
 
-*(He opens the form. The sliders take a minute. Then the box at the bottom, and the cursor in it.)*
+*(He opens the form on his own screen. Below him, LIAM turns a page of the diff.)*
 
-*(He has said all of this out loud already — to Kristina, a few weeks ago, on a call he was asked to keep to himself. He has typed a version of it twice at his own keyboard and held backspace both times. The difference is that this time somebody asked him.)*
+*(The sliders. He goes down the column at speed — a row of names, a row of numbers.)*
 
-*(He writes four paragraphs. That Liam is the strongest engineer on the team. That his setup is slower than what the rest of them are running, and that Liam measured that himself and said so. That the review queue backs up behind him. That the newer engineers are starting to treat Liam's position on the tooling as the careful one, and Brendan doesn't think it is any more. He hedges twice. He puts in the part about Liam being right about the race condition, because it's true and it belongs in there.)*
+**BRENDAN** *(live, to the screen, mild)*: "Rate this person's technical judgement." Four. "Rate this person's communication." *(he drags it)* Four. *(beat)* Four out of what, though. Four out of everyone I've ever met, or four out of— *(he drags the next one)* Four.
 
-*(He reads it back. It's accurate, it's fair, and it took him twenty minutes. He doesn't hold backspace. He clicks Submit.)*
+*(He reaches the bottom. The box. The question above it. The cursor blinks and he doesn't type anything.)*
 
-*(Somewhere else in the same hour, another response: the sliders left at their defaults, "no concerns" in the box, tab closed. Four seconds.)*
+**BRENDAN** *(live)*: It's optional.
 
-*(Later, with nobody watching it — `AIV-060` — the cycle closes and the tool assembles a summary for each manager. Under Liam's name, one generated bullet: "Multiple peers cite friction and slow review turnaround." Nobody typed that sentence. Brendan's four paragraphs are in there somewhere, and so are the four seconds.)*
+*(He scrolls up. He scrolls back down. It's still there.)*
 
-*(The huddle window is gone. Below, LIAM turns a page of the diff. A week goes by, or two.)*
+**BRENDAN** *(live)*: It says optional.
 
-*(A calibration call. Three tiles: KARA, chairing. KRISTINA. The PEOPLE PARTNER, sharing a spreadsheet — `AIV-066` — rows of names, a dropdown on each row, a counter at the top: "Exceeds — 3 of 4 used.")*
+*(He types. He reads it as it goes.)*
 
-> [!screen] VIDEO — KARA · `AIV-064` *(mid-list, brisk)*
-> —yes. Fine. Marcus at Exceeds, I'm happy with that.
+**BRENDAN** *(live)*: "No major concerns." *(beat, looking at it)* …That's not an answer. That's just — that's me not answering it.
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> He's had a good half. He shipped a lot.
+*(He sits back.)*
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065` *(typing)*
-> Marcus, Exceeds. *(beat)* Okay. Liam.
+**BRENDAN** *(live)*: If I leave it blank, that's fine. Loads of people leave it blank. *(beat)* Marcus said most people leave it blank.
 
-> [!screen] VIDEO — KRISTINA · `AIV-063` *(ready for this one)*
-> Liam is the highest technical bar on this team. That's not a close call. Nobody writes code like him, and nobody catches what he catches.
+*(He looks at the empty box.)*
 
-> [!screen] VIDEO — KARA · `AIV-064`
-> Nobody's arguing with that.
+**BRENDAN** *(live)*: Marcus didn't leave it blank.
 
-*(And that's the topic closed. The thing Kristina came in to say was granted before she finished saying it.)*
+*(He tries the other one out loud, testing it against the room.)*
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065` *(reading the rest of the row)*
-> Peer input's come back on him. It's a summary line — "multiple peers cite friction and slow review turnaround."
+**BRENDAN** *(live)*: "Nobody's making it harder." *(beat)* …That's not true, though. That's a lie. It's a small one, but if I'm going to put something in the box and the thing I put in the box isn't— *(he stops)*
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> Which peers?
+*(He takes his hands off the keyboard.)*
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065`
-> I can't break it out. That's the basis they answer it on.
+**BRENDAN** *(live, quieter)*: I'm not trying to get anyone in trouble.
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> How many is multiple?
+*(The cursor keeps blinking. There's nobody on the call.)*
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065`
-> Three.
+**BRENDAN** *(live)*: Nobody's *in* trouble. It's a form. It goes into a summary. *(beat)* Marcus put his in and Marcus likes him.
 
-*(Kristina reads the line again. She can hear one of them in it — a particular way of hedging before the sentence that matters. She isn't sure. She couldn't say so if she were.)*
+*(He opens another tab: the review queue. He doesn't have to look for anything. It's the first row.)*
 
-> [!screen] VIDEO — KARA · `AIV-064`
-> There's a cycle-time number under it as well. Someone pulled his review queue. A four-line change sat nine days.
+**BRENDAN** *(live, reading it)*: Nine days. *(beat)* Yeah.
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> Nine days is— *(and she stops, because it is nine days)*
+*(He goes back to the box and starts properly.)*
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065`
-> And his tooling adoption is near zero for the half. He's got a seat. It isn't being used.
+**BRENDAN** *(live, typing, reading it as it goes)*: "Liam is the strongest engineer on this team." *(beat, reading it back)* …That reads like I'm building up to something.
 
-> [!screen] VIDEO — KRISTINA · `AIV-063` *(going in)*
-> Okay — that one I can actually explain. He's running a model locally, on hardware we bought him, because our own security policy says proprietary source doesn't go to outside providers, and he wrote that policy, and it's still in force, so technically he's the only—
+*(He reads it again.)*
 
-*(She hears it. Out loud, in this room, in the time she has, it sounds like exactly what it sounds like.)*
+**BRENDAN** *(live)*: It's true, though.
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> …It's a longer conversation than we've got.
+*(He leaves it.)*
 
-> [!screen] VIDEO — KARA · `AIV-064` *(not unkind)*
-> Kristina. I asked you a while back to go and find out what was actually real over there. Is he using the tools or isn't he?
+**BRENDAN** *(live, typing)*: "He's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself — he measured two sprints, with it and without it, and he was slower with it." *(beat, adding)* "He said it like it settled something."
 
-> [!screen] VIDEO — KRISTINA · `AIV-063` *(a beat)*
-> Not the ones we bought.
+*(He reads that last sentence back. He takes it out.)*
 
-> [!screen] VIDEO — KARA · `AIV-064`
-> Okay.
+**BRENDAN** *(live)*: He didn't mean it like that.
 
-*(On the sheet, the dropdown on Liam's row is still empty.)*
+**BRENDAN** *(live, typing)*: "Review turnaround on his queue is long. There was a four-line fix that sat for nine days." *(beat)* "I don't think that's carelessness. I think he reads everything and there's a lot to read."
 
-> [!screen] VIDEO — KARA · `AIV-064`
-> I've got one Exceeds left in this group, and two of your names on the list.
+*(He hesitates over the next one longer than he has over any of them.)*
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> …Brendan.
+**BRENDAN** *(live, typing, slower)*: "The newer engineers have started treating his position on the tooling as the careful one."
 
-> [!screen] VIDEO — KARA · `AIV-064`
-> Brendan.
+*(He stops. He reads that one back twice.)*
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> He's shipping. It'd be strange not to.
+**BRENDAN** *(live)*: …That's the one that's actually true.
 
-*(The People Partner enters it. Brendan wrote the four paragraphs and Brendan gets the slot, and nobody on the call is holding both of those at once.)*
+**BRENDAN** *(live, typing)*: "I don't think it is any more. I might be wrong about that."
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065`
-> So — Liam. I'd have impact at Meets. The work's good, there just isn't much of it landed this half. The question is the second axis.
+*(He scrolls back up to the top of the box.)*
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> Collaboration.
+**BRENDAN** *(live)*: And he was right about the race condition. *(typing)* "He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it." *(beat)* Right.
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065`
-> Collaboration. And if we're putting him at Below there, I'd want a plan behind it before anyone sits down with him. Thirty, sixty, ninety, written criteria, dates. I don't want the first written thing in someone's file to be the last one.
+*(He reads the whole thing through. Four paragraphs. It's accurate, it's fair, and it has taken him twenty minutes. Underneath it there is a Submit button.)*
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> Can I say one thing, and then I'll leave it.
+**BRENDAN** *(live, out — to the house, the only time all scene)*: I want to be clear that I'm not—
 
-> [!screen] VIDEO — KARA · `AIV-064`
-> Go on.
+*(He doesn't finish it. Nobody makes him stop; he just stops. He turns back to the screen. He doesn't hold backspace. He clicks Submit.)*
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> Every system that would take this company down if it broke, he built. We have never had a bad Saturday. Not once, in four years. That's one man reading every line, and there's no column for it, because the whole point of it is that nothing happens. *(beat)* If we're marking him down in the half where he was the only person checking anything, I'd like it written down somewhere that I said so.
+*(The progress bar fills. "Thanks — your feedback has been recorded.")*
 
-> [!screen] VIDEO — KARA · `AIV-064` *(and she means it)*
-> I don't disagree with any of that.
+*(Somewhere else in the same hour, another response: the sliders left where they loaded, "no concerns" typed into the box, tab closed. Four seconds.)*
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> But.
+*(Friday. The cycle closes. With nobody watching it — `AIV-060` — the tool reads every response and writes each manager a summary. Under Liam's name, one bullet: "Multiple peers cite friction and slow review turnaround.")*
 
-> [!screen] VIDEO — KARA · `AIV-064`
-> But I hand a distribution in on Thursday, and there's no field on it for a Saturday that didn't happen. *(beat)* I'm not going to pretend that's a good answer to you. It's the answer.
+*(Nobody typed that sentence. Brendan's four paragraphs are in there somewhere, and so are the four seconds, and there is no way from the sentence back to either of them.)*
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065` *(back to the sheet, housekeeping)*
-> One more field and I'll let you both go. If this ends in an exit — and I'm not saying it does — are we treating that as regretted or non-regretted?
+*(A fortnight, or a bit more. The screen above the desks goes dark and stays dark. Two men, two desks, two pools of light. BRENDAN's laptop rings.)*
 
-*(A pause one beat longer than the others.)*
+**BRENDAN** *(live)*: Hey.
 
-> [!screen] VIDEO — KARA · `AIV-064`
-> Non-regretted.
+**LIAM** *(live, no preamble)*: Are you free? Two minutes.
 
-*(The People Partner selects it from a dropdown. Nobody remarks on it, because there is nothing unusual about it.)*
+**BRENDAN** *(live)*: Yeah, course.
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065`
-> Then I've got Meets on impact, Below Expectations on collaboration, plan attached. Kristina, that conversation has to happen inside the cycle window — so this week or next.
+**LIAM** *(live)*: Self-review's open. There's a section I don't understand and I want to make sure I'm reading it right before I put something stupid in the box underneath it.
 
-*(On the sheet — `AIV-066` — the cell fills in. Collaboration: Below Expectations.)*
+**BRENDAN** *(live)*: Sure.
 
-> [!screen] VIDEO — KRISTINA · `AIV-063`
-> I'll get time with him.
+*(On LIAM's screen — `AIV-060` — his self-review packet. Near the top, a section headed "Peer input summary," and under it one line.)*
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-065`
-> What do you want it called? On the invite.
+**LIAM** *(live, reading it off, flat)*: "Multiple peers cite friction and slow review turnaround." *(beat)* That's it. That's the whole section.
 
-> [!screen] VIDEO — KRISTINA · `AIV-063` *(a beat)*
-> …H2 check-in.
+**BRENDAN** *(live)*: …Right.
 
-> [!screen] VIDEO — KARA · `AIV-064` *(already on the next row)*
-> Okay. Who've we got next.
+**LIAM** *(live)*: So. Two things. *(beat)* One — "multiple." Multiple is more than one, so it's two at minimum, and realistically three, because if it were two you'd say two. There are four engineers on this team, Brendan. One of them is me.
 
-*(The tiles carry on down the list. The screens dim on them, and the monitor-blue narrows to the desk below.)*
+**BRENDAN** *(live, a beat too long)*: Yeah.
 
-*(On LIAM's second monitor a calendar invite arrives: H2 check-in. Thirty minutes. Thursday. He glances at it, clicks Accept, and goes back to the diff. He has four more files to read and he's going to read all of them.)*
+**LIAM** *(live)*: It's a list of four names with one crossed off. That's not anonymous, that's just — they've arranged it so I can't ask. *(immediately, dismissing it)* Obviously not you. I mean the— you know what I mean.
+
+**BRENDAN** *(live)*: …Yeah.
+
+**LIAM** *(live)*: Did you put something?
+
+**BRENDAN** *(live)*: Yeah.
+
+**LIAM** *(live, already moving on)*: Right, no — everyone did, it's basically mandatory. I mean did anyone actually *say* anything. Did anyone come to you about me.
+
+**BRENDAN** *(live, beat)*: …Nobody came to me.
+
+**LIAM** *(live)*: Okay. *(beat, then a burst)* Okay, so here's my problem. "Friction" isn't a thing. I can't reproduce it. If you file a bug that says "it's slow," I go and find out *what's* slow — which call, which query, which week. This says friction. Friction with what? On which PR? There's no reporter, there's no steps, there's no version. It's not a defect report. It's a mood.
+
+**BRENDAN** *(live, careful)*: I don't think it's meant to be a—
+
+**LIAM** *(live)*: I'm not angry. I want to fix it, that's the entire reason I'm calling. If somebody tells me what the thing is, I'll go and fix the thing. I'm good at that. That's the one thing I'm actually—
+
+*(He stops himself.)*
+
+**LIAM** *(live)*: Sorry.
+
+**BRENDAN** *(live)*: You're alright.
+
+**LIAM** *(live)*: You're on the team. You see it. *(beat)* What's the friction?
+
+*(BRENDAN doesn't answer straight away.)*
+
+**BRENDAN** *(live)*: …Maybe the review queue?
+
+**LIAM** *(live)*: The queue.
+
+**BRENDAN** *(live)*: You've got a lot in it. *(beat)* And people are shipping faster than they used to, so it stacks up behind you.
+
+**LIAM** *(live, genuinely considering it)*: That's fair. *(beat)* That's actually fair. It stacks up because I'm reading it. If I stopped reading it, it wouldn't stack up.
+
+**BRENDAN** *(live, quiet)*: Yeah.
+
+**LIAM** *(live, writing it down)*: No — I'll take that. I can do something with that. Anything under twenty lines goes out same day, and I flag the rest so people know where they are. *(beat)* That's a real thing. Thank you.
+
+*(On LIAM's screen, the rest of the packet. He has already done the first axis — a paragraph and a half about the migration, with links.)*
+
+*(He moves to the second one. "Collaboration." A dropdown. He opens it without slowing down and takes **Exceeds Expectations**, because he has never once in his life been the problem, and goes back to the paragraph he was writing.)*
+
+**LIAM** *(live, going)*: Right. Thanks. *(beat)* Seriously — thanks. You're the only one on this team who'll actually tell me anything.
+
+*(He hangs up. BRENDAN sits with his hand still on the trackpad.)*
+
+*(On LIAM's second monitor a calendar invite arrives: H2 check-in. Thirty minutes. Thursday. He clicks Accept without opening it and goes back to the diff. He has four more files to read and he's going to read all of them.)*
 
 *(The terminal puts out another token. The blue eases down.)*
 
 ---
 
 ## Notes
-- **The betrayal is a form.** B6 in this play was always "the coworkers go quiet," and the quiet turns out to have a mechanism: somebody asks a question and people answer it. Nobody goes behind Liam's back — Brendan writes the same case he already argued to Kristina's face in [[11c - The Latest Model]], and Marcus writes what literally happened. The cruelty is structural: the question is leading, the answers are stripped of their authors, and a summary generated by nobody carries into a room as evidence. Don't let any character notice this. The staging notices it.
-- **Brendan doesn't delete.** In [[11b - Best Practices]] he holds backspace three times — the policy message, "I don't know if liam is ever going to—", and the finished patch. Here he submits. The scene turns on why: a form is not the same as telling someone, and leaving an optional box empty felt like lying. That's the whole B6 mechanic in one man's hands, and it's *honesty* doing the damage, which is worse than cowardice and much harder to hate him for.
-- **Marcus is being a good colleague.** Dial his `AIV-055` register most of the way down. He encourages Brendan to fill it in because he sincerely believes it's the only channel that works, and he's not wrong about the nine days. His "I want it noted that I flagged it" from the standup finally gets a place where things are noted, and it's this. Play it warm; the curdle is in the outcome, not the delivery.
-- **Kristina's advocacy is real, and now the audience has seen it.** In [[13 - The Performance Review]] she says "I pushed back on this. I've been in your corner all year." This scene exists so that line lands as true. She wins the technical argument in four words and loses everything else, and the moment she actually loses is the one where she starts explaining the local rig and hears herself.
-- **The trade is the sharpest thing in the scene — don't underline it.** One Exceeds, two names, and she picks Brendan for a completely defensible reason. Nobody on the call knows that the man getting the slot is one of the three peers in the summary. Let the audience assemble it; no reaction shot, no music.
-- **The People Partner is protective.** First appearance, months before the offboarding, and in this room they're the one slowing things down: won't break out the names, wants a documented plan and real criteria before anyone sits Liam down, doesn't want the first written thing in his file to be the last. Scripted, gentle, immovable ([[Modern World — Supporting]]). The "non-regretted" line is not a sneer — it's a required field, said in the same voice as the rest, and the horror is that nobody reacts. See the term-of-art note in [[Performance Management — How It Actually Works]].
-- **Kara pays off Scene 08.** She warned Kristina that one engineer's good weekend becomes an operating model by Friday, and asked to understand what was real before it travelled. Here she's the one balancing a curve and asking the blunt version of her own question. She concedes Kristina's case completely and changes nothing, which is the point — the constraint isn't a person's opinion, it's a distribution due Thursday.
-- **Liam never looks up.** No live lines, no reaction, no awareness. His lie — being right is the same as being safe ([[Liam Arc]]) — is staged literally: he is reading every line while the room decides, and the reading is what they're marking him down for. He accepts the invite without reading it, which is the only careless thing he does in the entire play.
-- **Where Scene 13's numbers come from.** "Three people came to me, and the word they used was 'friction'" is now knowingly inexact. Nobody came to her; three people filled in a form and a tool wrote the word. Keep the line in Scene 13 as it is — she's rounding an anonymised aggregate into something human, because that's how she experienced it, and because "the tool summarised your peers" is not a sentence you can say to someone you're managing out. The nine days, the four lines and the "Collaboration: Below Expectations" string are exact matches to `AIV-071` and should stay that way.
-- **Cast note — Sam is cut.** Brendan now carries the passive betrayal (B6/B8/B9) as well as his own arc; the open question in [[Modern World — Supporting]] is resolved in favour of one conflicted man rather than two. The "goes quiet" register survives as the four-second "no concerns" response, which needs no cast at all.
+- **The betrayal is a form, and the form works exactly as designed.** Nobody goes behind Liam's back. Brendan writes the same case he already argued to Kristina's face in [[11c - The Latest Model]]; Marcus writes what literally happened and can point at the row in the queue. The cruelty is structural: the question is leading, the answers are stripped of their authors, and a summary generated by nobody arrives in a document as evidence. **Don't let any character notice this. The staging notices it.**
+- **Brendan doesn't delete — except once, and he deletes the kind thing.** In [[11b - Best Practices]] he holds backspace three times. Here he submits. The one sentence he does take out ("he said it like it settled something") is the only cruel one in the whole answer, and removing it makes the rest cleaner and more quotable. He is curating toward kindness and the result is a better weapon. That is the whole mechanic in one gesture, and it is *honesty* doing the damage, which is worse than cowardice and much harder to hate him for.
+- **The one direct address is deliberate and it is the only one.** *"I want to be clear that I'm not—"* is the single place in the play where Brendan starts to explain himself, and the play does not let him finish the sentence. It is not a confession and it is not narration; it is an apology he is denied. The rule in [[Brendan]] — he narrates the world, never himself — holds precisely because this is the exception that gets cut off. **Do not extend this line and do not add a second one.** If a later pass "fixes" the unfinished sentence, the device is gone.
+- **Marcus is being a good colleague and he is right.** Dial the `AIV-055` aggression out and leave the point-scoring in — enthusiasm, not annoyance. Nobody has ever asked him what slows him down; that is true, and it is a reasonable thing to be pleased about. His "I want it noted that I flagged it" from the standup finally finds a place where things get noted, and it is a survey. Play it warm. The curdle is in the outcome, not the delivery. **He never learns he wrote the sentence that ended Liam, and he should not.**
+- **The mirrored question is the spine of the scene.** Brendan asks Marcus *"did you put something?"* in the first movement and gets a cheerful yes. Liam asks Brendan the same words in the third and gets a truthful yes, and hears it as "did you complete the form," because he cannot construct a world in which Brendan is the problem. **Brendan tells him. It does not count as telling.** Play the two exchanges with the same rhythm so the audience hears the rhyme.
+- **Nobody lies on the call.** "Nobody came to me" is true. "Yeah" is true. "Maybe the review queue" is true, generous, and a paraphrase of paragraph three of the thing that ended him — and Liam thanks him for it and writes it down. Every sentence in the third movement would survive a transcript.
+- **Liam is good at his job for the whole call.** No self-pity, no accusation, no defeat. He treats his own review as a defect report and he is *correct* about all of it: friction is not reproducible, "multiple" is arithmetic, and a list of four names with one crossed off is not anonymous. Being right does nothing, which is [[Liam Arc]]'s lie staged as method rather than announced. He is funny without meaning to be; do not let the actor play the tragedy.
+- **The self-rating.** He takes **Exceeds Expectations** on Collaboration without slowing down, and Scene 13 comes back with **Below Expectations** on the same axis. It is the cheapest and cruellest beat in the scene and it only works if it is thrown away — no pause, no held look, no music.
+- **Liam looks up once, and looks at the wrong thing.** Two movements of silent reading while the document fills in above him, then a call in which he finally engages with the process and asks the only person who can't help him. He accepts the Thursday invite without opening it, which is the only careless thing he does in the entire play.
+- **Where Scene 13's numbers come from.** *"Three people came to me, and the word they used was 'friction'"* is now knowingly inexact. Nobody came to her; people filled in a form and a tool wrote the word. Keep the line in [[13 - The Performance Review]] as it is — she's rounding an anonymised aggregate into something human, because that's how she experienced it, and because "the tool summarised your peers" is not a sentence you can say to someone you're managing out.
+- **Calibration was cut from this scene.** An earlier draft ran a second movement of spreadsheet and comment thread — Kristina advocating in writing, being agreed with, and being marked Resolved; the Exceeds slot traded to Brendan; the classification dropdown. It was twenty-six beats of document with fifty-six seconds of voice-over over it, and its own note flagged that as the scene's biggest rehearsal risk. The rating now enters as a wordless prologue at the top of [[13 - The Performance Review]]. **Do not reinstate it here.** The scene's argument is stronger when the third movement is two men talking than when it is a spreadsheet filling in, and putting the decision in a room — or a document — invites the audience to audit the room, which is a fight the play cannot win and does not want.
+- **Strings that must not drift.** *"Multiple peers cite friction and slow review turnaround"* is reused verbatim as the prosecution's evidence in the trial ([[Rework — The Escalation Pass]] §F) — it must stay word-for-word. *"Collaboration: Below Expectations"* must match `AIV-071` in [[13 - The Performance Review]]. The nine days and the four lines are exact and are checked against the same scene.
+- **Production note — the third movement is free.** Two live actors, one phone call, a dark screen. It is the first time all night the two live men are alone on a line together, and it needs no clip, no lip-sync, no operator cue and no render. The old second movement needed three assets; this one needs none.
 - **Curdle rows logged in [[Themes & Motifs]].**
-- **Mirror twin (John).** John's B6 — neighbours taking the factory work, unable to meet his eye on the lane. Same function, opposite texture: John's betrayers have to look at him and can't; Liam's never have to, because the form is between them. Note the asymmetry rather than forcing the rhyme.
-- **Two live men, no physical interaction.** Brendan is live at his desk for the first half; the calibration call is all video, operator-cued, with breathing room. Liam is lit on stage throughout and never crosses the plane. Neither man speaks to the other in the entire scene.
-- **Staging change — read before rehearsing.** This scene was designed with **no live speaker** ([[Structure & Scene Map]] called Liam's silent, never-look-up desk "the staging argument for his whole arc"). Making Brendan live overturns that deliberately: the argument survives, and gains a second body — the audience now watches the twenty minutes of typing that ends Liam happen in the same light as the man reading his diff. If it plays as too much company for a scene whose subject is abandonment, the fallback is to put Brendan back on the video plane; nothing else in the scene depends on it.
