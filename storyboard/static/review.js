@@ -42,20 +42,14 @@ function stopAudio() {
   setPlaying(null, null);
 }
 
-function playOne(url, btn, label) {
-  stopAudio();
-  if (!url) return;
-  player.src = url;
-  player.onended = () => setPlaying(null, null);
-  player.play().catch(() => {});
-  setPlaying(btn, label || "playing…");
-}
-
-function playQueue(items, label) {
+// `offset` is how many items of the original sequence were skipped, so a queue
+// started midway through a scene still counts against the whole scene.
+function playQueue(items, label, offset = 0) {
   stopAudio();
   queue = items.filter((x) => x && x.url);
   if (!queue.length) return;
   queueIdx = 0;
+  const total = offset + queue.length;
   const step = () => {
     if (queueIdx >= queue.length) {
       setPlaying(null, null);
@@ -71,9 +65,16 @@ function playQueue(items, label) {
       queueIdx++;
       step();
     });
-    setPlaying(it.btn || null, `${label} — ${queueIdx + 1}/${queue.length}`);
+    const who = it.label ? ` · ${it.label}` : "";
+    setPlaying(it.btn || null, `${label}${who} — ${offset + queueIdx + 1}/${total}`);
   };
   step();
+}
+
+// Clicking one line's ▶ plays that line and keeps going to the end of the
+// scene, so you can start a read-through partway in.
+function playFrom(seq, idx, label) {
+  playQueue(seq.slice(idx), label, idx);
 }
 
 $("#npStop").addEventListener("click", stopAudio);
@@ -158,42 +159,13 @@ function sceneCard(s) {
   if (s.status !== "unchanged") card.classList.add("open");
 
   const title = esc(s.title_after || s.title_before || "");
-  const head = el("div", "scene-head");
-  head.innerHTML =
-    `<span class="badge ${s.status}">${s.status}</span>` +
-    `<span class="sid">${s.id}</span>` +
-    `<span class="stitle">${title}</span>` +
-    (s.n_changed ? `<span class="nchg">${s.n_changed} line${s.n_changed > 1 ? "s" : ""} changed</span>` : "") +
-    `<span class="spacer"></span>`;
-
-  const actions = el("div", "scene-actions");
-  const changedAfter = s.rows
-    .filter((r) => (r.type === "added" || r.type === "modified") && r.after && r.after.audio)
-    .map((r) => ({ url: r.after.audio }));
-  if (changedAfter.length) {
-    const b = el("button", null, `▶ changed (${changedAfter.length})`);
-    b.addEventListener("click", (e) => {
-      e.stopPropagation();
-      playQueue(changedAfter, `${s.id} changed`);
-    });
-    actions.appendChild(b);
-  }
-  const side = s.status === "removed" ? "before" : "after";
-  const allSide = s.rows.filter((r) => r[side] && r[side].audio).map((r) => ({ url: r[side].audio }));
-  if (allSide.length) {
-    const b = el("button", null, `▶ all ${side} (${allSide.length})`);
-    b.addEventListener("click", (e) => {
-      e.stopPropagation();
-      playQueue(allSide, `${s.id} ${side}`);
-    });
-    actions.appendChild(b);
-  }
-  head.appendChild(actions);
-  head.appendChild(el("span", "caret", "▶"));
-  head.addEventListener("click", () => card.classList.toggle("open"));
-  card.appendChild(head);
-
   const body = el("div", "scene-body");
+
+  // Per-side playback sequences, filled in row order as the cells are built.
+  const seqs = {
+    before: [], after: [], changedAfter: [],
+    labelBefore: `${s.id} before`, labelAfter: `${s.id} after`,
+  };
 
   if (s.title_before != null && s.title_after != null && s.title_before !== s.title_after) {
     body.appendChild(
@@ -227,9 +199,42 @@ function sceneCard(s) {
   rowsWrap.appendChild(
     el("div", "colhead", `<div>before · ${esc(s.title_before || "—")}</div><div>after · ${esc(s.title_after || "—")}</div>`)
   );
-  s.rows.forEach((r) => rowsWrap.appendChild(rowEl(r)));
+  s.rows.forEach((r) => rowsWrap.appendChild(rowEl(r, seqs)));
   body.appendChild(rowsWrap);
 
+  // Head is built last so its buttons can share the sequences the rows filled.
+  const head = el("div", "scene-head");
+  head.innerHTML =
+    `<span class="badge ${s.status}">${s.status}</span>` +
+    `<span class="sid">${s.id}</span>` +
+    `<span class="stitle">${title}</span>` +
+    (s.n_changed ? `<span class="nchg">${s.n_changed} line${s.n_changed > 1 ? "s" : ""} changed</span>` : "") +
+    `<span class="spacer"></span>`;
+
+  const actions = el("div", "scene-actions");
+  if (seqs.changedAfter.length) {
+    const b = el("button", null, `▶ changed (${seqs.changedAfter.length})`);
+    b.addEventListener("click", (e) => {
+      e.stopPropagation();
+      playQueue(seqs.changedAfter, `${s.id} changed`);
+    });
+    actions.appendChild(b);
+  }
+  const side = s.status === "removed" ? "before" : "after";
+  const allSide = seqs[side];
+  if (allSide.length) {
+    const b = el("button", null, `▶ all ${side} (${allSide.length})`);
+    b.addEventListener("click", (e) => {
+      e.stopPropagation();
+      playQueue(allSide, `${s.id} ${side}`);
+    });
+    actions.appendChild(b);
+  }
+  head.appendChild(actions);
+  head.appendChild(el("span", "caret", "▶"));
+  head.addEventListener("click", () => card.classList.toggle("open"));
+
+  card.appendChild(head);
   card.appendChild(body);
   return card;
 }
@@ -250,7 +255,10 @@ function wordHtml(words, sideKey) {
     .join("");
 }
 
-function cellEl(line, sideClass, words, sideKey) {
+// `seq` is the running list of playable clips for this side of this scene, in
+// row order. Each play button records its own index in it so a click can queue
+// itself plus everything after it.
+function cellEl(line, sideClass, words, sideKey, seq, seqLabel) {
   const cell = el("div", `cell ${sideClass}`);
   if (!line) {
     cell.classList.add("empty");
@@ -266,7 +274,9 @@ function cellEl(line, sideClass, words, sideKey) {
   if (line.music) cell.appendChild(el("div", "cue", `♪ ${esc(line.music)}`));
   if (line.audio) {
     const btn = el("button", "play", "▶");
-    btn.addEventListener("click", () => playOne(line.audio, btn, (line.label || "line").toUpperCase()));
+    const idx = seq.length;
+    seq.push({ url: line.audio, btn, label: (line.label || "line").toUpperCase() });
+    btn.addEventListener("click", () => playFrom(seq, idx, seqLabel));
     cell.appendChild(btn);
   } else if (line.text) {
     cell.appendChild(el("div", "noaudio", "no audio"));
@@ -274,11 +284,15 @@ function cellEl(line, sideClass, words, sideKey) {
   return cell;
 }
 
-function rowEl(r) {
+function rowEl(r, seqs) {
   const row = el("div", `row ${r.type}`);
   if (r.type === "equal" && !$("#showEqualLines").checked) row.classList.add("hide");
-  row.appendChild(cellEl(r.before, "before", r.words, "a"));
-  row.appendChild(cellEl(r.after, "after", r.words, "b"));
+  row.appendChild(cellEl(r.before, "before", r.words, "a", seqs.before, seqs.labelBefore));
+  const nAfter = seqs.after.length;
+  row.appendChild(cellEl(r.after, "after", r.words, "b", seqs.after, seqs.labelAfter));
+  if ((r.type === "added" || r.type === "modified") && seqs.after.length > nAfter) {
+    seqs.changedAfter.push(seqs.after[seqs.after.length - 1]);
+  }
   return row;
 }
 

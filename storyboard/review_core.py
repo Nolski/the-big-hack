@@ -22,11 +22,26 @@ def norm(t):
     return re.sub(r"\s+", " ", (t or "").strip())
 
 
+# Bare plane markers the script uses to say WHICH plane a line is on — the live
+# actor (`**LIAM** *(live)*:`) versus the AI-video plane (`[!screen] VIDEO — …`).
+# The parser folds them into `direction`, so moving a character between planes
+# reads as a change on every one of their lines. Reviewers care about what the
+# line says, not which plane delivers it, so these are stripped before aligning
+# and before display. Everything else in the parenthetical — the actual
+# performance direction, including "voice-over" — is kept.
+_PLANE_MARKERS = {"live", "video"}
+
+
+def strip_plane(direction):
+    parts = [p.strip() for p in (direction or "").split(",")]
+    return ", ".join(p for p in parts if p and p.lower() not in _PLANE_MARKERS)
+
+
 def _key(ln):
     return (
         f"{ln.get('speaker') or ln.get('type', '')}"
         f"\u0001{norm(ln.get('text', ''))}"
-        f"\u0001{norm(ln.get('direction', ''))}"
+        f"\u0001{norm(strip_plane(ln.get('direction', '')))}"
     ).lower()
 
 
@@ -50,7 +65,7 @@ def _line_view(ln, ref, media_base):
         "speaker": ln.get("speaker"),
         "label": ln.get("speaker") or ln.get("type", ""),
         "text": ln.get("text") or "",
-        "direction": ln.get("direction") or "",
+        "direction": strip_plane(ln.get("direction")),
         "music": ln.get("music"),
         "audio": (f"{media_base}?ref={ref}&path={ln['_audio']}" if ln.get("_audio") else None),
     }
