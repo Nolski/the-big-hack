@@ -180,8 +180,9 @@ How the machinery actually reaches Liam, in the order it happens. Roughly one re
 | ~2 months | Calibration — a deadline, a sheet and a comment thread, not a meeting. Kristina advocates in writing, is agreed with, and is resolved. Rating and rank order locked. | [[13 - The Performance Review]], the wordless prologue |
 | ~6 weeks | HR coaches the manager. The doc is written, reviewed, and finalised **before** the meeting. | Offstage |
 | Day 0 | The review. Delivery, not discussion. | [[13 - The Performance Review]] |
-| +1 week | The fork: the plan, or the agreement with a release of claims and a non-disparagement clause. | **Gap — an unwritten scene, and possibly the cruellest one available** |
-| +2–8 weeks | Offboarding. Process, euphemism, laptop, badge, do-not-rehire flag. | Slot 14, HR Offboarding (B8) |
+| +2 days | The fork: the plan, or the agreement with a release of claims and a non-disparagement clause. He takes the plan. | [[13b - The Plan]] |
+| +2 days → +98 days | The plan runs. Four measurable criteria go green; the fifth is a judgement call with an empty field against it. | [[13b - The Plan]] |
+| +98 days | Offboarding. Process, euphemism, equipment return, do-not-rehire flag — and the access left live "until Friday," as a kindness. | [[14 - The Offboarding]] |
 | After | Silence — some of it his colleagues protecting themselves, some of it bought and signed. | [[19 - The Empty Apartment]] (B9) |
 
 ## How to use it — craft notes

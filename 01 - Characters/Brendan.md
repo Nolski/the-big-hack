@@ -51,8 +51,9 @@ He narrates from **after** — retrospectively, knowing how it ends. That hands 
 3. **[[07 - Heads Together]]** — can't take credit, and being honest to a fault, half-exposes Liam to Kristina anyway. Deletes Claude's branch — live hand, live keyboard.
 4. **[[11b - Best Practices]]** — the three deletions: the policy message, "I don't know if liam is ever going to—", the finished patch. Live, this is a man holding backspace while another man talks.
 5. **[[12 - Below Expectations]]** — the turn, and his longest solo in the play. Asked a leading question by the peer feedback form, he talks himself through twenty minutes of drafting and, for the first time, doesn't hold backspace. He does it warmly, encouraged by Marcus, with no malice in it. The one deletion he *does* make is the only cruel sentence in the answer, which leaves the rest cleaner and more quotable — he curates toward kindness and builds a better weapon. Then Liam rings him, asks the exact question he asked Marcus, gets an honest answer, doesn't hear it, and thanks him for being the only person who'll tell him anything.
-6. **After** — awkward and avoidant. Messages left on read. He takes the rating slot Liam lost without ever knowing the two things are connected.
-7. **The arrest** — he can be physically present and do nothing.
+6. **[[13b - The Plan]]** — two minutes of a man trying to warn someone and finding no sentence that survives being said. *"The nine weeks is there now."* Then, again: *"It's there* now." Then nothing, because Liam asks why it wouldn't be there in three months and the honest answer is four paragraphs in March. **Same gesture as the unfinished line before Submit** — a man stopping with nothing stopping him. He never tries a third time.
+7. **After** — awkward and avoidant. Messages left on read. He takes the rating slot Liam lost without ever knowing the two things are connected, and in [[14 - The Offboarding]] the promotion lands under the launch applause while Liam is being processed in another room. **Liam congratulates him and means it.** Brendan does not reply, and is not in the scene.
+8. **The arrest** — he can be physically present and do nothing.
 
 He stays warm **through** the betrayal. It is honesty and inertia from a good young man, never cowardice or calculation. Track the audience's journey deliberately: **trust him, enjoy him, then find out.**
 
@@ -65,4 +66,4 @@ Live, Speaker B. In every drafted scene he and Liam are remote colleagues on a c
 His two screen assets stay as **screen graphics**, not character clips: `AIV-044` (the Claude session) and `AIV-054` (the plain session, the three deletions). They matter more now that a live body is sitting at them.
 
 ## Appears in
-[[01 - Cold Open — The Standup]] · [[01b - The Cursor Demo]] · [[01c - The PR Review]] · [[01d - The Future]] · [[06 - Good Instinct]] · [[07 - Heads Together]] · [[11b - Best Practices]] · [[11c - The Latest Model]] · [[12 - Below Expectations]]
+[[01 - Cold Open — The Standup]] · [[01b - The Cursor Demo]] · [[01c - The PR Review]] · [[01d - The Future]] · [[06 - Good Instinct]] · [[07 - Heads Together]] · [[11b - Best Practices]] · [[11c - The Latest Model]] · [[12 - Below Expectations]] · [[13b - The Plan]]

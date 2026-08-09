@@ -28,6 +28,18 @@ The decision record for this structure — including the questions still open �
 
 **Runtime is over the original 60-minute budget and that is a known cost.** Either accept ~75–80, or cut from Movement I — 01b–01d were flagged early as the liftable scenes.
 
+> [!warning] Measured runtime — the overrun is in Movement II, not Movement I
+> Spoken audio only (stage directions excluded), measured off the rendered line wavs: the drafted run through Scene 14 is **~56 min of dialogue**. TTS renders at 176 wpm, which is brisk for naturalistic stage delivery with this much `*(beat)*` in it — at 145–155 wpm plus the wordless business, **the drafted run is realistically 66–72 minutes staged**, with five scenes still to write.
+>
+> Against the table above: **Movement I is on budget** (~17 min spoken, before 1e). **Movement II is not** — ~35 min spoken against a ~22 min allowance. The fat is in `11b` (7.0m, the longest scene in the show) and `12` (6.3m), not in the cold-open block the earlier note flagged. Decide the cut before Movements IV–V get written, not after.
+
+| Movement | Spoken (measured) | Budget |
+|---|---|---|
+| I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
+| II — `6` through `13b` | 34.6 min | ~22 min |
+| III — `14` only so far | 4.1 min | ~12 min |
+| **Drafted total** | **55.5 min** | |
+
 ## Scene running order
 
 Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
@@ -47,7 +59,8 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 11c | [[11c - The Latest Model\|The Latest Model]] | II | ✏️ |
 | 12 | [[12 - Below Expectations\|Below Expectations]] | II | ✏️ |
 | 13 | [[13 - The Performance Review\|The Performance Review]] | II | ✏️ |
-| 14 | HR Offboarding *(to write)* | III | ⬜ |
+| 13b | [[13b - The Plan\|The Plan]] | II | ✏️ |
+| 14 | [[14 - The Offboarding\|The Offboarding]] | III | ✏️ |
 | 19 | The Empty Apartment *(to write)* | III | ⬜ |
 | 20 | The Hack *(to write)* | III | ⬜ |
 | 21 | The Press Invents Him *(to write)* | IV | ⬜ |
