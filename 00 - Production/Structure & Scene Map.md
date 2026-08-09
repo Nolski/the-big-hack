@@ -29,7 +29,9 @@ The decision record for this structure — including the questions still open �
 **Runtime is over the original 60-minute budget and that is a known cost.** Either accept ~75–80, or cut from Movement I — 01b–01d were flagged early as the liftable scenes.
 
 > [!warning] Measured runtime — the overrun is in Movement II, not Movement I
-> Spoken audio only (stage directions excluded), measured off the rendered line wavs: the drafted run through Scene 14 is **~56 min of dialogue**. TTS renders at 176 wpm, which is brisk for naturalistic stage delivery with this much `*(beat)*` in it — at 145–155 wpm plus the wordless business, **the drafted run is realistically 66–72 minutes staged**, with five scenes still to write.
+> Spoken audio only (stage directions excluded), measured off the rendered line wavs: the drafted run through Scene 14 is **55.7 min of dialogue**. TTS renders at 176 wpm, which is brisk for naturalistic stage delivery with this much `*(beat)*` in it — at 145–155 wpm plus the wordless business, **the drafted run is realistically 66–72 minutes staged**, with five scenes still to write.
+>
+> **The storyboard playback length is not the stage length and will mislead you.** The app has the narrator read every stage direction aloud, which adds 2–4 minutes per scene and is an artifact of the medium — `13b` plays back at 4.6 min against 2.2 min of dialogue, `14` at 6.6 against 4.3, and the wordless calibration prologue in `13` reads as three minutes of narration that will play as about one minute of images. Judge pacing from the spoken column, never from the player.
 >
 > Against the table above: **Movement I is on budget** (~17 min spoken, before 1e). **Movement II is not** — ~35 min spoken against a ~22 min allowance. The fat is in `11b` (7.0m, the longest scene in the show) and `12` (6.3m), not in the cold-open block the earlier note flagged. Decide the cut before Movements IV–V get written, not after.
 
@@ -37,8 +39,10 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
 | II — `6` through `13b` | 34.6 min | ~22 min |
-| III — `14` only so far | 4.1 min | ~12 min |
-| **Drafted total** | **55.5 min** | |
+| III — `14` only so far | 4.3 min | ~12 min |
+| **Drafted total** | **55.7 min** | |
+
+All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered.
 
 ## Scene running order
 
