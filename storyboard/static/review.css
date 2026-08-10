@@ -30,6 +30,11 @@ body {
   padding: 12px 20px;
   display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px;
 }
+/* On desktop the bar's children lay out as direct flex items of .topbar, so the
+   wrapper is invisible to layout and nothing about the wide view changes. */
+.bar { display: contents; }
+.menu-toggle { display: none; }
+
 .topbar .back { color: var(--muted); text-decoration: none; font-size: 13px; padding: 4px 8px; border: 1px solid var(--border); border-radius: 6px; }
 .topbar h1 { font-size: 16px; margin: 0; letter-spacing: .3px; }
 .controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
@@ -160,6 +165,16 @@ main { padding: 8px 20px 120px; display: flex; flex-direction: column; gap: 14px
 @media (max-width: 760px) {
   .topbar { padding: 10px 12px; gap: 8px 10px; }
   .topbar h1 { font-size: 15px; }
+
+  /* Collapsible options. The status line lives outside the header and keeps
+     showing "<before> → <after> · counts", so nothing is lost when it's shut. */
+  .bar { display: flex; align-items: center; gap: 10px; width: 100%; }
+  .bar h1 { flex: 1; min-width: 0; }
+  .menu-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 38px; padding: 8px 12px; font-size: 13px; white-space: nowrap;
+  }
+  .topbar.collapsed .controls { display: none; }
 
   .controls { width: 100%; gap: 8px; }
   .controls label:not(.chk) { flex: 1 1 100%; gap: 4px; }
