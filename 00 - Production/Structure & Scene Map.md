@@ -74,6 +74,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 14 | [[14 - The Offboarding\|The Offboarding]] | III | ✏️ |
 | 19 | [[19 - Nine Tickets\|Nine Tickets]] | III | ✏️ |
 | 20 | [[20 - The Audit\|The Audit]] | III | ✏️ |
+| 20b | [[20b - Next Week\|Next Week]] | III | ✏️ |
 | 21 | The Press Invents Him *(to write)* | IV | ⬜ |
 | 22 | The Arrest *(to write)* | IV | ⬜ |
 | 23 | The Trial *(to write)* | V | ⬜ |

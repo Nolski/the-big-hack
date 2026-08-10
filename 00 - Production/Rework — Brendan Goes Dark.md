@@ -161,8 +161,16 @@ House grammar is screens, streaming text, and text with no face. Write the **scr
 
 ## G · Open questions
 
-- [ ] **Does Liam ever find out it was Brendan?** Recommend **no, or far too late to matter.** The play's cruellest available shape is that Liam goes to a Salvadoran prison still thinking of Brendan as the only person who ever told him anything.
-- [ ] **Does Brendan try to confess?** He would. He is honest. He would also find no sentence that survives being said — which is his established gesture, three times over. **Recommend he tries, to a machine or a form, and it doesn't take.**
+> [!done] Resolved — the ending of Brendan's arc
+> **He returns the machine, is never charged, and never says it.** Brendan keeps his promise and brings the Studio back on the day he said he would ([[20b - Next Week]]) — the ordinary decent thing, which puts the evidence in Liam's flat. **Liam is charged, tried and removed for it.** Brendan is invisible to the process for exactly the reason he was invisible to the reduction: nothing he does generates a row anywhere.
+>
+> **It is an evil arc containing no evil act.** He never lies, never schemes, never frames anyone and never acts against Liam — he declines to speak, eight times, each time for a sympathetic reason. **Not taking credit and not taking responsibility turn out to be the same gesture**, and the play has been showing the charming version of it since [[06 - Good Instinct]]. Liam meanwhile invests in him to the very end: crediting him, mentoring him, handing him the machine, and recommending him by name for a job on his last good day.
+>
+> **And he never tells the audience either.** The narrator rule — *narrates the world, never himself* — stops being a craft constraint and becomes the ending: an hour of warm, generous storytelling by the man who did it, with the sentence never said. **Do not give him a confession beat anywhere, to anyone.**
+
+- [x] **Does Liam ever find out it was Brendan?** **No.** He goes still thinking of Brendan as the only person who ever told him anything.
+- [x] **Does Brendan try to confess?** Three times, and he is stopped or stops himself every time — the last by Liam being kind (*"You didn't do anything"*) and then by his own backspace. **After [[20 - The Audit]] he stops trying.** No fourth attempt anywhere.
+- [x] **Is Brendan ever charged?** **No, and the play never explains why.**
 - [ ] **How drunk, and how do we stage it without comedy?** The scene has to be funny for a while — a drunk man narrating his own prompt engineering is funny — and then stop being funny without a visible gear change.
 - [ ] **Does the audience see him type the sentence, or only its consequences?** Recommend **see it**, and make it short enough that they don't realise what they've watched until it's running.
 - [ ] Cast/production: this adds no new characters and no new video assets. **The hack scene is one live actor asleep and a screen.** It may be the cheapest scene in the second half.
