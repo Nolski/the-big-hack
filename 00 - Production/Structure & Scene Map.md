@@ -39,17 +39,17 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
 | II — `6` through `13b` | 34.6 min | ~22 min |
-| III — `14`, `19` | 9.5 min | ~12 min |
-| **Drafted total** | **60.9 min** | |
+| III — `14`, `19`, `20` | 11.9 min | ~12 min |
+| **Drafted total** | **63.3 min** | |
 
-All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 19 render — `14` and `19` are both fully rendered and orphan-free.**
+All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 20 render — `14`, `19` and `20` are all fully rendered and orphan-free.**
 
-> [!note] Movement III is the only one on budget, and it isn't finished
-> `14` measures **4.6 min** spoken and `19` measures **4.8 min**, against a ~12 min allowance — but Scene 20 (the hack) is still unwritten, and it is mostly wordless, so it will add stage time without adding much to the spoken column. **Judge that scene by the clock in rehearsal, not by this table.**
+> [!warning] Movement III's spoken figure is the least trustworthy number in this table
+> Movement III reads as **on budget** (11.9 against ~12) and it is not. `20` measures only **2.4 min spoken** because two thirds of it is stage direction — but in that scene the stage directions *are* the staged content: the counter, the widening list, the clarifying question, the notification wall. **They play as several minutes of real time and appear here as zero.** Same for the **ring** in `14` (thirty to forty seconds).
 >
-> Two scenes carry long wordless sequences that measure as nothing here and play as real time: the **ring** in `14` (thirty to forty seconds) and, when written, the counter sequence in `20`. Neither shows up in the spoken figure.
+> **Judge `20` on a clock in rehearsal, never from this column and never from the storyboard player.** Best current estimate for Movement III as staged is **16–18 minutes**, not 11.9.
 >
-> **Movement II is still ~13 min over and no decision has been made.** The fat is in `11b` (7.0) and `12` (6.3). That is now the largest open problem in the show.
+> **Movement II is still ~13 min over and no decision has been made.** The fat is in `11b` (7.0) and `12` (6.3). With Movements IV and V still unwritten, that is the largest open problem in the show.
 
 ## Scene running order
 
