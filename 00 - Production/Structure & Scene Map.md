@@ -73,7 +73,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 13b | [[13b - The Plan\|The Plan]] | II | ✏️ |
 | 14 | [[14 - The Offboarding\|The Offboarding]] | III | ✏️ |
 | 19 | [[19 - Nine Tickets\|Nine Tickets]] | III | ✏️ |
-| 20 | The Hack *(to write)* | III | ⬜ |
+| 20 | [[20 - The Audit\|The Audit]] | III | ✏️ |
 | 21 | The Press Invents Him *(to write)* | IV | ⬜ |
 | 22 | The Arrest *(to write)* | IV | ⬜ |
 | 23 | The Trial *(to write)* | V | ⬜ |

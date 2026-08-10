@@ -8,7 +8,10 @@ tags:
 
 # Rework — Brendan Goes Dark
 
-> [!important] Status: design set, nothing drafted
+> [!done] Status: drafted — §C is [[19 - Nine Tickets]], §D–§E are [[20 - The Audit]]
+> Both scenes are written and rendered. **Two things changed in drafting and this note is now behind them.** (1) What Brendan asks for is not "get my work back" — it is **a security audit**, which is the responsible thing and the thing he had been asking the company for since February, plus the three words **"and prove it."** To prove the list, the machine opens the doors. That is a stronger and more sympathetic engine than the portfolio version and it is what the fury in the scene is actually about. (2) The scene's spine became **why Brendan breaks and Liam doesn't** — Liam's worth is internal, Brendan's has only ever come from the company. §G's open questions are still open.
+
+> [!important] Original status: design set, nothing drafted
 > Supersedes **§C of [[Rework — The Escalation Pass]]** ("the accidental hack — the agent does it while Liam is asleep"). The hack is now **deliberate, human, drunk, and Brendan's** — and the machine still does most of it. Factual shelf: [[Real Cases — Hacks, Trials & the Press]] §1. Guardrails: [[Writing Didactic Drama — Craft Notes]] and §G of the escalation pass.
 
 ## The twist in one breath
