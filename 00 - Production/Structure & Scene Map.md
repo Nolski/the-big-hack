@@ -39,10 +39,13 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
 | II — `6` through `13b` | 34.6 min | ~22 min |
-| III — `14` only so far | 4.3 min | ~12 min |
-| **Drafted total** | **55.7 min** | |
+| III — `14` only so far | 4.3 min *(stale — rewritten)* | ~12 min |
+| **Drafted total** | **55.7 min** *(stale)* | |
 
 All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered.
+
+> [!warning] Scene 14 was rewritten and its audio is stale
+> `14` is now **the reduction**, not the plan's outcome — he is selected by a scored headcount process that never read the improvement plan. The rendered line audio and sketches under `storyboard/artifacts/s14/` predate that rewrite and must be re-rendered before the spoken figure above means anything. Roughly ~4.5 min of dialogue plus a long wordless **ring** sequence that measures as nothing and plays as thirty to forty seconds. `AIV-076` is a new screen asset with no artifacts at all.
 
 ## Scene running order
 
