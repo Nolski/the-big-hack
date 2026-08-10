@@ -297,9 +297,43 @@ function rowEl(r, seqs) {
 }
 
 // --------------------------------------------------------------------------- //
+// collapsible options (mobile only — the CSS rule is inside a media query, so
+// leaving the class on at desktop width is harmless)
+// --------------------------------------------------------------------------- //
+const MENU_KEY = "review.menuCollapsed";
+const isNarrow = () => window.matchMedia("(max-width: 760px)").matches;
+
+function setMenu(collapsed) {
+  $("#topbar").classList.toggle("collapsed", collapsed);
+  const btn = $("#menuToggle");
+  btn.setAttribute("aria-expanded", String(!collapsed));
+  btn.textContent = collapsed ? "☰ Options" : "✕ Options";
+  try {
+    localStorage.setItem(MENU_KEY, collapsed ? "1" : "0");
+  } catch (e) {
+    /* private mode — the toggle still works, it just won't persist */
+  }
+}
+
+$("#menuToggle").addEventListener("click", () =>
+  setMenu(!$("#topbar").classList.contains("collapsed"))
+);
+
+// Default to collapsed: the common case is the default comparison, and the
+// status line already says which one it is.
+let startCollapsed = true;
+try {
+  startCollapsed = localStorage.getItem(MENU_KEY) !== "0";
+} catch (e) { /* ignore */ }
+setMenu(startCollapsed);
+
+// --------------------------------------------------------------------------- //
 // wiring
 // --------------------------------------------------------------------------- //
-$("#compare").addEventListener("click", compare);
+$("#compare").addEventListener("click", async () => {
+  await compare();
+  if (isNarrow()) setMenu(true);   // get out of the way once you've asked for it
+});
 $("#showUnchanged").addEventListener("change", () => compare());
 $("#showEqualLines").addEventListener("change", () => {
   document.querySelectorAll(".row.equal").forEach((r) =>

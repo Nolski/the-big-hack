@@ -4,13 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>The Big Hack — Review changes</title>
-  <link rel="stylesheet" href="review.css?v=20260810-mobile" />
+  <link rel="stylesheet" href="review.css?v=20260810-menu" />
 </head>
 <body>
-  <header class="topbar">
-    <a class="back" href="/">← Storyboard</a>
-    <h1>Review changes</h1>
-    <div class="controls">
+  <header class="topbar" id="topbar">
+    <div class="bar">
+      <a class="back" href="/">← Storyboard</a>
+      <h1>Review changes</h1>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="true" aria-controls="controls">☰ Options</button>
+    </div>
+    <div class="controls" id="controls">
       <label>Before
         <select id="before"></select>
       </label>
@@ -38,6 +41,6 @@
     <button id="npStop">■ stop</button>
   </div>
 
-  <script src="review.js?v=20260808-play-through"></script>
+  <script src="review.js?v=20260810-menu"></script>
 </body>
 </html>
