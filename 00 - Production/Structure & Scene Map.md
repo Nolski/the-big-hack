@@ -77,7 +77,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 20b | [[20b - Next Week\|Next Week]] | III | ✏️ |
 | 21 | The Press Invents Him *(to write)* | IV | ⬜ |
 | 22 | The Arrest *(to write)* | IV | ⬜ |
-| 23 | The Trial *(to write)* | V | ⬜ |
+| 23 | [[23 - The Trial\|The Trial]] | V | ✏️ |
 | 24 | The Removal *(to write)* | V | ⬜ |
 
 **Out of the running order, kept in the vault:** [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Both are cut from the show and both stay as source material for Marcus's arguments and for verbatim inserts.

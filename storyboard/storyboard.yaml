@@ -342,6 +342,30 @@ characters:
     sample_text: I woke up to six of them overnight. Six! They are all incredibly long, and they all sound like ChatGPT. Does he not have anything better to do?
     sample: voices/kara.wav
     vector: vectors/kara.npy
+- id: prosecutor
+  name: The Prosecutor
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: Assistant US Attorney. Competent, unhurried, entirely sincere, never sneering. She believes the case and the case is reasonable. Reads nineteen counts as a list of facts.
+  voice:
+    mode: design
+    seed: 851
+    instruct: A calm, professional female federal prosecutor, forties, American. Measured and unhurried, precise diction, courteous throughout. Never theatrical, never sneering, no relish. Reads charges as a flat list of facts.
+    sample_text: Count one. Intentional access of a protected computer without authorisation.
+- id: judge
+  name: The Judge
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: Patient, fair, and genuinely trying to run a good courtroom. Gives the defence every latitude and it changes nothing.
+  voice:
+    mode: design
+    seed: 861
+    instruct: A patient, fair female federal judge, sixties, American. Dry, unhurried, quietly authoritative. Courteous and genuinely attentive; corrects people without a trace of irony or impatience.
+    sample_text: That is a serious argument, and your counsel has made it in writing.
 aliases:
   young weaver: becker
   people partner: hr
