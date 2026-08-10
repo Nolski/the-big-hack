@@ -45,6 +45,18 @@ A man who believes *being excellent is the same as being safe* learns — too la
 ## Turn (the hinge)
 **B8 → B9.** Not the layoff itself but the *silence after* — the realisation that the people he counted on were never going to speak. That's where belief dies.
 
+## The second turn — the break, and it is the real ending
+**He can exonerate himself with one sentence and he does not say it.** He lent Brendan the machine, he knows it, and the moment anyone hands him a timestamp he does the arithmetic in his head, because that is what he does.
+
+**This is surrender, not sacrifice.** He is not shielding the kid — he has stopped believing that saying true things does anything, and the play has proved him right seven times: the race condition logged as friction; "friction isn't reproducible" changing nothing; the security policy scored as 3%; four criteria green and never assessed; *"I don't know that it's a who"*; *"I don't think there was anything"*; and *"every single thing it did, it was allowed to do."* **The eighth time, he doesn't try.**
+
+His organising principle — *if I find the defect I can fix it* — dies here, and that is the death of the character, well before the removal. He will tell himself it is because Brendan is a kid. **The audience should be able to see it is because he has run the other calculation and the answer is that nothing happens.**
+
+**The Luddites land here.** They had frames to break — direct, physical, effective for an afternoon, and they hanged for it. *"They lost, by the way"* returns meaning the opposite of what it meant: at least there was something to put a hammer through. **There is no frame here**, and Marcus's remedy has been obsolete for two hundred years. Full statement in [[Concept & Thesis]].
+
+> [!note] The gesture transfers
+> Consider giving Liam the play's signature stop — a sentence started and abandoned, *"He had the— "* — **once, and never again.** Brendan has done it four times (before Submit, twice about the nine weeks, and the backspace after the hack) and it has read as weakness all night. **The man those unfinished sentences destroyed produces the last one**, and it costs him everything. Do not let anyone finish it and do not repeat it.
+
 ## The second hinge — and the thing to protect
 The play's back half takes the agency **away** from him. He is not a machine-breaker; he is a man things happen to, holding a defence that is right and worthless. Every temptation to let him act — to hack deliberately, to escalate in court, to make a speech — should be refused. Marcus escalates; Liam is mortified. The absurdism lives in the institutions; Liam stays naturalistic, and the audience's anchor stays real.
 

@@ -8,7 +8,7 @@ tags:
 # Concept & Thesis
 
 ## Logline
-As AI coding agents eat the craft he lives for, a brilliant, prickly developer named **[[Liam]]** is managed out of his job — priced by a peer feedback form his colleagues fill in honestly. Then the company's agent, still holding a token minted in his name, takes production down while he sleeps. The press decides what he is, officers arrive to collect him, and the trial that was supposed to settle it never finishes. The story is told by **[[Brendan]]**, the one colleague who ever tried to help him.
+As AI coding agents eat the craft he lives for, a brilliant, prickly developer named **[[Liam]]** is laid off by a scoring process that has no column for anything he actually does. He lends his machine to the young colleague cut alongside him — the only kindness available to him — and that colleague, drunk and furious and right about everything, asks a local model for a security audit and goes to sleep while it opens eleven thousand doors. Every line of the log carries Liam's name. The press decides what he is, officers arrive to collect him, and the trial that was supposed to settle it never finishes. The story is told by **[[Brendan]]**, the one colleague who ever tried to help him, who never once says what he did.
 
 ## The shape
 - **Runtime:** ~75 minutes.
@@ -29,6 +29,21 @@ Three things the play wants the (hacker / builder) audience to feel by the end:
 Early: the comedy is **observational** — corporate AI-hype doublespeak, Liam's exhausting correctness, Marcus derailing a standup with the Luddites. Big laughs.
 
 Late: the **identical devices return without the laugh**. The all-hands jingle plays over the layoff. The "we're a family here" line is said by the person signing the severance. Liam's own dismissive line about rogue agents deleting production databases becomes the thing that happens. The anonymised sentence that priced him in calibration is read into a courtroom as evidence. The curdle is the engine of the piece — tracked line-by-line in [[Themes & Motifs]].
+
+## The break — and why there is nothing to break
+
+**Liam can exonerate himself with one sentence and he does not say it.** He lent the machine to Brendan; he knows it; the moment anyone gives him a timestamp he does the arithmetic in his head, because he is excellent and that is what he does. **And he says nothing.**
+
+> [!important] This is surrender, not sacrifice — the distinction is the whole ending
+> A noble Liam who *chooses* to shield the kid is a trap: it hands him agency the play has spent seventy-five minutes refusing him, it turns him into a martyr when he is meant to stay hard to love, and it wrecks the thesis, because if his silence is what convicts him then the machinery needed his cooperation after all.
+>
+> **He is not protecting Brendan. He has stopped believing that saying true things does anything** — and he is right, because the play has proved it to him seven times. He was right about the race condition and it was logged as friction. Right that "friction" wasn't reproducible; nothing moved. Right about the security policy; the sheet said 3%. He did the plan and went four-for-four and it was never assessed. He was right that the reduction made no sense and was told there was no *who*. He asked what he could have done differently and was told: nothing. He was right about the hack — *"every single thing it did, it was allowed to do."*
+>
+> The eighth time, he doesn't try. **His organising principle — if I find the defect I can fix it — dies here, and that is the death of the character**, well before the removal. He will tell himself it's because Brendan is a kid. The audience should be able to see it is because he has run the other calculation too, and the answer is that nothing happens.
+
+**And this is where the Luddites finally land.** They had frames to break. It was direct, it was physical, it worked for an afternoon, and they hanged for it — *"they lost, by the way,"* which Liam says early and wins the argument with. It comes back meaning the opposite of what it meant: **at least there was something to put a hammer through.**
+
+There is no frame here. You cannot break a spreadsheet column that doesn't exist, an anonymised sentence nobody typed, a reduction with no author, or a log with your own name on every line. **Marcus is right about the diagnosis all night and his remedy has been obsolete for two hundred years.** The machinery does not need Liam to fight it, and it does not need him not to. That is the most frightening thing the play has to say and it should be said by nobody — it is the shape of the last twenty minutes, not a line.
 
 ## The ending (direction set, last beats open)
 Liam is removed to a Salvadoran prison while his trial is still on the calendar. Not a verdict — the courtroom simply becoming irrelevant after the audience has spent twenty minutes learning its rules. The real hook is exact: the 2025 removals were carried out under the **Alien Enemies Act of 1798**, previously invoked three times, the first being the War of 1812 — and the **Frame Breaking Act** is 1812. Marcus says this, accurately, and is treated as a crank.

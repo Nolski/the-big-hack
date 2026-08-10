@@ -39,10 +39,10 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
 | II — `6` through `13b` | 34.6 min | ~22 min |
-| III — `14`, `19`, `20` | 11.9 min | ~12 min |
-| **Drafted total** | **63.3 min** | |
+| III — `14`, `19`, `20`, `20b` | 13.8 min | ~12 min |
+| **Drafted total** | **65.2 min** | |
 
-All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 20 render — `14`, `19` and `20` are all fully rendered and orphan-free.**
+All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 20b render — `14`, `19`, `20` and `20b` are all fully rendered and orphan-free.**
 
 > [!warning] Movement III's spoken figure is the least trustworthy number in this table
 > Movement III reads as **on budget** (11.9 against ~12) and it is not. `20` measures only **2.4 min spoken** because two thirds of it is stage direction — but in that scene the stage directions *are* the staged content: the counter, the widening list, the clarifying question, the notification wall. **They play as several minutes of real time and appear here as zero.** Same for the **ring** in `14` (thirty to forty seconds).
