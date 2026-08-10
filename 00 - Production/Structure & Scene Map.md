@@ -22,7 +22,7 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus, the Luddites as a bit, and the credential jab at Kristina he calls out and helps nobody by calling out. | ~20 min |
 | **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. | ~22 min |
-| **III** | Offboarding → the empty apartment → **the hack**. The agent, still holding a token minted in his name, does it while he's asleep. | ~12 min |
+| **III** | Offboarding → **Brendan was cut too** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. | ~12 min |
 | **IV** | The press invents him → the arrest. Procedurally polite officers, a form to sign, a name mispronounced. | ~10 min |
 | **V** | The trial → **the removal**. The verdict never comes. | ~14 min |
 
@@ -68,7 +68,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 13 | [[13 - The Performance Review\|The Performance Review]] | II | ✏️ |
 | 13b | [[13b - The Plan\|The Plan]] | II | ✏️ |
 | 14 | [[14 - The Offboarding\|The Offboarding]] | III | ✏️ |
-| 19 | The Empty Apartment *(to write)* | III | ⬜ |
+| 19 | [[19 - Nine Tickets\|Nine Tickets]] | III | ✏️ |
 | 20 | The Hack *(to write)* | III | ⬜ |
 | 21 | The Press Invents Him *(to write)* | IV | ⬜ |
 | 22 | The Arrest *(to write)* | IV | ⬜ |

@@ -98,7 +98,7 @@ By the time the meeting happens: the rating is locked, the wording is reviewed b
 
 ## What's different for a senior engineer
 
-Liam is ~38, staff-ish, twenty years in, **no direct reports by choice** ([[Liam]]). Every one of those facts changes the mechanics.
+Liam is ~48, staff-ish, thirty years in, **no direct reports by choice** ([[Liam]]). Every one of those facts changes the mechanics.
 
 - **He is not judged on output.** Above senior, evaluation shifts to **scope, leverage, influence, multiplier effect** — how much *other people's* output you increase. This criterion is socially constructed, ambiguously measured, and therefore the easiest place in the whole framework to build a case. A senior engineer who solves the hardest problems personally is, in this frame, *doing junior work at a senior price* — and that sentence is said sincerely in calibration rooms.
 - **His best work is illegible.** Prevented outages produce no artefact. The systems he quietly holds up generate tickets only when they break. The review reads what's in the tracker, and a career spent making sure nothing happens shows up as nothing happening.

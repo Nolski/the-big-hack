@@ -20,14 +20,14 @@ tags:
 **Mirror twin:** [[John]] — both are *masters of a craft* made redundant by a machine, betrayed by their own community, and radicalised. Liam is the prickly genius; John is the simple family man. Same fall, different men, so the audience can't write it off as one guy's bad attitude.
 
 ## Snapshot
-- **Age / station:** ~38. Staff(-ish) engineer at a mid-size, well-funded modern software company. No direct reports — by choice. The person other engineers quietly route the *hard* bugs to.
+- **Age / station:** ~48. Staff(-ish) engineer at a mid-size, well-funded modern software company. No direct reports — by choice. The person other engineers quietly route the *hard* bugs to.
 - **Wants (external):** to keep doing the work he's great at, on his terms, and be respected for it.
 - **Needs (internal):** to be *seen* — to have his craft and care recognised as worth something by people he (secretly) wants to belong with. He'd never say this out loud.
 - **Fatal flaw / blind spot:** he believes **being right is the same as being safe**. He thinks excellence is a shield. He is socially oblivious to the fact that the room decides his fate, not the code. He mistakes politics for noise.
 - **Voice:** precise, qualifying, parenthetical. Corrects people mid-sentence. Long pauses, then a burst. Uses exact words ("that's not a bug, that's *undefined behaviour*"). Funny without meaning to be. Goes quiet and literal when hurt.
 
 ## Biography
-Self-taught before he was credentialed; the kind of kid who read the language spec for fun. Genuinely gifted — not a savant fantasy, a *person* who has put 20 years into being very good at one hard thing. He has shipped systems that quietly hold the company up. He measures his life in **elegant solutions**: the joy is the puzzle, the click of a problem yielding. He is not anti-AI in principle — he's curious about it — but he resents being told the thing he loves is now a "workflow."
+Self-taught before he was credentialed; the kind of kid who read the language spec for fun. Genuinely gifted — not a savant fantasy, a *person* who has put thirty years into being very good at one hard thing. He has shipped systems that quietly hold the company up. He measures his life in **elegant solutions**: the joy is the puzzle, the click of a problem yielding. He is not anti-AI in principle — he's curious about it — but he resents being told the thing he loves is now a "workflow."
 
 He has fewer friends than he thinks. He has been at the company long enough to believe the people around him are *his people*. They are not, quite. That gap is the whole tragedy.
 

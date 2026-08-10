@@ -22,7 +22,7 @@ tags:
 ## Purpose
 The firing must not make sense — and must be completely mechanical, so the audience cannot find a villain to be angry at instead of the machine.
 
-**He is not worried when the scene starts, and he is right not to be.** He has been difficult for fifteen years. He has been told he is hard work, told he is abrasive, told he blocks things — for his entire career, by everyone, continuously — and in fifteen years it has never once cost him anything, because he is the person you bring the hard bug to. That is not delusion. It is twenty years of evidence, correctly read. **The friction is a constant, and a constant explains nothing.** So when it turns out to be the thing that ended him, it lands as a physical shock, on him and on the house.
+**He is not worried when the scene starts, and he is right not to be.** He has been difficult for twenty-five years. He has been told he is hard work, told he is abrasive, told he blocks things — for his entire career, by everyone, continuously — and in twenty-five years it has never once cost him anything, because he is the person you bring the hard bug to. That is not delusion. It is twenty-five years of evidence, correctly read. **The friction is a constant, and a constant explains nothing.** So when it turns out to be the thing that ended him, it lands as a physical shock, on him and on the house.
 
 The engine is the **tracking**. Every input to the reduction is a field somebody thought to build: authored changes, merged changes, incidents, tooling adoption, last cycle's rating. What Liam is actually worth has no field — four years of reading every line so that nothing happens, and *nothing happening* does not populate a column. He gets close to saying this in the room, in pieces, and cannot land it, because the one dialect he has is the one nobody around him speaks.
 
@@ -187,7 +187,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 *(A long beat. He is not angry. He is trying to make an arithmetic come out and it will not.)*
 
-**LIAM** *(live)*: I've been like this for fifteen years.
+**LIAM** *(live)*: I've been like this for twenty-five years.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > …I know.
@@ -268,7 +268,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: *(beat)* …Okay.
 
-*(And then, fifteen years too late, in the wrong room, he gets there on his own.)*
+*(And then, twenty-five years too late, in the wrong room, he gets there on his own.)*
 
 **LIAM** *(live)*: Is it — *(beat)* I know people find me — I know I'm not— *(beat)* Should I have been in more rooms? Should I have been friendlier?
 
@@ -302,8 +302,8 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 ## Notes
 - **He is not braced, and that is the whole scene.** Earlier drafts had him walk in prepared — a document, a case, a ninety-day pack — and a prepared man is a man who already knows. **Refuse it.** He arrives busy, cheerful and mid-problem, and the first thirty seconds must be genuinely light. The audience should be enjoying him.
-- **The friction is a constant, and a constant explains nothing.** He has been told he is difficult for his entire career, by everyone, continuously, and it has never cost him a thing — he got promoted four times being exactly this person. That is not denial; it is a correct reading of fifteen years of evidence. **Nothing in this scene should suggest he had it coming or should have known.** The horror is that the variable that changed is not in him.
-- **"I've been like this for fifteen years."** The centre of the scene. It is not a defence and must not be played as one — he is stating a fact about the world that has just stopped being true, and hearing how strange it sounds. Follow it with the four promotions and *"same person,"* flat, and let Dana leave the silence alone.
+- **The friction is a constant, and a constant explains nothing.** He has been told he is difficult for his entire career, by everyone, continuously, and it has never cost him a thing — he got promoted four times being exactly this person. That is not denial; it is a correct reading of twenty-five years of evidence. **Nothing in this scene should suggest he had it coming or should have known.** The horror is that the variable that changed is not in him.
+- **"I've been like this for twenty-five years."** The centre of the scene. It is not a defence and must not be played as one — he is stating a fact about the world that has just stopped being true, and hearing how strange it sounds. Follow it with the four promotions and *"same person,"* flat, and let Dana leave the silence alone.
 - **The firing does not make sense, and that is the design, not a gap.** A scored reduction ran in another part of the building off tracked fields. **Do not let any character explain it** — Dana can only say "they're separate processes," which is true, complete and useless, and "I don't know that it's a who," which is the honest answer. The prologue does the explaining and Liam never sees it.
 - **"Is it everyone?" / "It isn't everyone, no." / "So somebody picked."** The hinge. A whole-company layoff would make sense; being selected out of a group does not. And the answer to *somebody picked* is that the process exists precisely so that nobody did.
 - **The prologue is the scene.** `AIV-076` must be readable — the audience has to *see the columns* and register that reviews are not among them. Both figures on Liam's row are adjustments he made for good reasons: the 3% is him following a security policy he wrote and which is still in force, and the authored-changes arrow points down because he took Brendan's advice in [[12 - Below Expectations]] and started clearing his queue. **He corrected himself, twice, sincerely, and both corrections are on the sheet as deficits.** Hold the authored-changes cell a beat longer than the others and underline it no other way.
