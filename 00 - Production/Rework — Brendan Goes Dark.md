@@ -9,7 +9,7 @@ tags:
 # Rework — Brendan Goes Dark
 
 > [!done] Status: drafted — §C is [[19 - Nine Tickets]], §D–§E are [[20 - The Audit]]
-> Both scenes are written and rendered. **Two things changed in drafting and this note is now behind them.** (1) What Brendan asks for is not "get my work back" — it is **a security audit**, which is the responsible thing and the thing he had been asking the company for since February, plus the three words **"and prove it."** To prove the list, the machine opens the doors. That is a stronger and more sympathetic engine than the portfolio version and it is what the fury in the scene is actually about. (2) The scene's spine became **why Brendan breaks and Liam doesn't** — Liam's worth is internal, Brendan's has only ever come from the company. §G's open questions are still open.
+> Both scenes are written and rendered. **Two things changed in drafting and this note is now behind them.** (1) It is **almost a mistake**, not a decision. Most of the scene is Brendan furious *on Liam's behalf* — four years on the rota, never a weekend page, nothing ever went down, and no column anywhere for it — and contemptuous of the company deciding an agent covers reliability now. *"Let's see, then"* is the entire moment of intent. (2) What he asks for is **a security audit**, and the culpable act is six seconds of banal prompt framing to get past the model's one hedge — **and it is not even a lie.** The old "get my work back" and "and prove it" versions are both retired: they gave him intent, which makes it a revenge story. The guardrails point lands as a drunk laugh — *"you can just say things to it"* — and the last thing he does before bed is **not read the plan**. §G's open questions are still open.
 
 > [!important] Original status: design set, nothing drafted
 > Supersedes **§C of [[Rework — The Escalation Pass]]** ("the accidental hack — the agent does it while Liam is asleep"). The hack is now **deliberate, human, drunk, and Brendan's** — and the machine still does most of it. Factual shelf: [[Real Cases — Hacks, Trials & the Press]] §1. Guardrails: [[Writing Didactic Drama — Craft Notes]] and §G of the escalation pass.
@@ -92,6 +92,9 @@ Then Brendan asks to borrow it — for personal projects, to rebuild his portfol
 ## D · Scene 20 — the hack
 
 ### What he asks for
+> [!note] Superseded by the draft — kept for the reasoning
+> This section proposed *"get my own work back."* **[[20 - The Audit]] does something better**: he is angry on *Liam's* behalf (four years, no weekend page, nothing ever down, no column for it), contemptuous of the company deciding an agent covers reliability, and he pokes at it to find out — *"let's see, then."* The model hedges once; he retypes the request as a scoped internal security audit; it agrees. **He never asks for anything for himself.** That keeps him further from villainy and closer to his established flaw, and it means the culpable act is six seconds of prompt framing that every engineer in the room has done.
+
 **Not "destroy them."** He asks for his own work back — every line he ever wrote at that company, his commits, his designs, the portfolio he no longer has access to. It is morally sympathetic, it is arguably his, and it is technically indistinguishable from exfiltrating the company's entire codebase.
 
 That single instruction is the whole human contribution. **Four minutes of typing.** Everything after it is the machine reasoning about how to accomplish it.
