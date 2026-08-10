@@ -6,7 +6,7 @@ world: modern
 arc: liam-arc
 beat: "[[Liam Arc]] — the handover"
 status: drafted
-runtime_estimate: ~6 min
+runtime_estimate: ~5 min
 live_cast: "Liam, Brendan"
 ai_video_assets: "none — no video, no screens, no operator cues"
 tags:
@@ -297,7 +297,7 @@ Two beers. Nobody is drinking fast until they are.
 - **"Don't go quiet."** The last line of dialogue, and the play's subject said out loud, by accident, to the one person it is about to be true of — except that what Brendan does instead of going quiet is much worse. **No emphasis, no pause after it.** Logged in [[Themes & Motifs]].
 - **The empty apartment is four beats at the end, not a scene.** The clean rectangle in the dust, two bottles carried to the kitchen because that is what you do, and the box still by the door. **Resist adding anything.** The old slot-19 "Empty Apartment" scene is absorbed here — a whole scene of Liam alone would be the play explaining its own ending, and this does it in twenty seconds with a man tidying up.
 - **The jingle stays out of this scene.** [[Themes & Motifs]] promises the standup jingle over the empty office; per [[Rework — Brendan Goes Dark]] §E it is wanted under the counter in Scene 20. Using it twice spends it.
-- **Runtime.** ~6 min spoken. If it has to come down, cut the "glasses" exchange and shorten the three pieces of advice to two. **Do not cut the six days, the nine, "Marcus files everything," "Don't," the swear, the handover, or "don't go quiet."**
+- **Runtime.** **4.8 min spoken, measured off the rendered line audio** — shorter than it reads, because it is almost entirely short exchanges. If it has to come down, cut the "glasses" exchange and shorten the three pieces of advice to two. **Do not cut the six days, the nine, "Marcus files everything," "Don't," the swear, the handover, or "don't go quiet."**
 
 > [!warning] Continuity — Liam's age changed to make this scene possible
 > The dot-com beat requires Liam to have been working in 2001. [[Liam]] had him at **~38**, which makes him about thirteen. He is now **~48** — consistent with *"telling me I'm hard work since I was twenty-three"* plus the twenty-five years he cites in [[14 - The Offboarding]], and with roughly thirty years at the craft.

@@ -39,13 +39,17 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
 | II — `6` through `13b` | 34.6 min | ~22 min |
-| III — `14` only so far | 4.3 min *(stale — rewritten)* | ~12 min |
-| **Drafted total** | **55.7 min** *(stale)* | |
+| III — `14`, `19` | 9.5 min | ~12 min |
+| **Drafted total** | **60.9 min** | |
 
-All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered.
+All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 19 render — `14` and `19` are both fully rendered and orphan-free.**
 
-> [!warning] Scene 14 was rewritten and its audio is stale
-> `14` is now **the reduction**, not the plan's outcome — he is selected by a scored headcount process that never read the improvement plan. The rendered line audio and sketches under `storyboard/artifacts/s14/` predate that rewrite and must be re-rendered before the spoken figure above means anything. Roughly ~4.5 min of dialogue plus a long wordless **ring** sequence that measures as nothing and plays as thirty to forty seconds. `AIV-076` is a new screen asset with no artifacts at all.
+> [!note] Movement III is the only one on budget, and it isn't finished
+> `14` measures **4.6 min** spoken and `19` measures **4.8 min**, against a ~12 min allowance — but Scene 20 (the hack) is still unwritten, and it is mostly wordless, so it will add stage time without adding much to the spoken column. **Judge that scene by the clock in rehearsal, not by this table.**
+>
+> Two scenes carry long wordless sequences that measure as nothing here and play as real time: the **ring** in `14` (thirty to forty seconds) and, when written, the counter sequence in `20`. Neither shows up in the spoken figure.
+>
+> **Movement II is still ~13 min over and no decision has been made.** The fat is in `11b` (7.0) and `12` (6.3). That is now the largest open problem in the show.
 
 ## Scene running order
 
