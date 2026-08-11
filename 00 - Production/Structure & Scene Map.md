@@ -41,8 +41,10 @@ The decision record for this structure — including the questions still open �
 | II — `6` through `13b` | 34.6 min | ~22 min |
 | III — `14`, `19`, `20`, `20b` | 13.8 min | ~12 min |
 | IV — `22` only; `21` unwritten | 2.8 min | ~10 min |
-| V — `23` only; `24` unwritten | 3.7 min | ~14 min |
-| **Drafted total** | **71.7 min** | |
+| V — `23`, `24` | 5.3 min | ~10 min |
+| **Drafted total** | **73.4 min** | |
+
+**Only Scene 21 (the press) is unwritten.** Everything else is drafted, rendered and orphan-free.
 
 All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 20b render — `14`, `19`, `20` and `20b` are all fully rendered and orphan-free.**
 
