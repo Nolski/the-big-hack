@@ -86,7 +86,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 **LIAM** *(live)*: Can I say something about that?
 
 > [!screen] VIDEO — JUDGE · `AIV-086` *(patient)*
-> Through your counsel, Mr. Vasilenko.
+> Through your counsel, Mr. Mkrtchyan.
 
 **LIAM** *(live)*: It's — it'll take nine seconds. *(beat)* It says "without authorisation." My access was never revoked. Nobody revoked it. There's a case, *Van Buren*, it's a Supreme Court case, and it's about exactly this — it's not about what you did with the access, it's about whether you had it. *(beat)* And I had it. They gave it to me and they never took it back. That's not a crime, that's their filing system.
 
@@ -157,7 +157,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 *(A long beat. The room settles.)*
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085` *(and this is not a trap; she is closing a hole in her own case)*
-> One last matter. The device was in your sole possession from the thirty-first through to the day of the incident. *(beat)* Mr. Vasilenko — in that period, was the device at any point out of your control, or in the possession of any other person?
+> One last matter. The device was in your sole possession from the thirty-first through to the day of the incident. *(beat)* Mr. Mkrtchyan — in that period, was the device at any point out of your control, or in the possession of any other person?
 
 *(Nothing in the room moves.)*
 
@@ -174,7 +174,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 *(He does not look at the gallery. He has not looked at the gallery once.)*
 
 > [!screen] VIDEO — JUDGE · `AIV-086` *(gently)*
-> Take your time, Mr. Vasilenko.
+> Take your time, Mr. Mkrtchyan.
 
 *(A long beat. He takes his time. It doesn't help.)*
 
@@ -222,6 +222,6 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 - **Runtime.** **3.7 min spoken, measured** — well under the ~9 min I first estimated, because the scene is mostly short exchanges and thirty of its sixty-six lines are stage direction. **Staged it is longer**: the count list, the pauses either side of the break, and the silence on the em-dash all read as real time and measure as nothing. Judge it on a clock. If it has to come down, cut Marcus's second answer and shorten the count list to twelve. **Do not cut the *Van Buren* exchange, the friction line, "He had the—", or the calendar.**
 
 > [!warning] Surnames — invented here, and Liam's is a real decision
-> **No surname existed anywhere in the vault before this scene**, and a courtroom cannot address a man by his first name. This draft uses **Liam Vasilenko** and **Marcus Ehrlich**. Both are placeholders and neither is load-bearing yet — **change them now rather than after Movement IV is written.**
+> **No surname existed anywhere in the vault before this scene**, and a courtroom cannot address a man by his first name. This draft uses **Liam Mkrtchyan** and **Marcus Ehrlich**. Both are placeholders and neither is load-bearing yet — **change them now rather than after Movement IV is written.**
 >
 > **Liam's surname is not a neutral choice**, for two reasons. It is the name the officers mispronounce in the arrest ([[Liam Arc]] B12, [[Rework — The Escalation Pass]] §E), so it has to be plausibly mispronounceable. And §A4 of the escalation pass keeps the **visa question deliberately open** — a Slavic surname does not decide it, but it leans the audience, and it makes the Alien Enemies Act ending land as causal rather than absurd. **If the intention is to keep A4 genuinely open, pick something more neutral.** If the visa road is being taken, this one works and the mispronunciation is free.

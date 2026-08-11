@@ -27,6 +27,14 @@ tags:
 - **Voice:** precise, qualifying, parenthetical. Corrects people mid-sentence. Long pauses, then a burst. Uses exact words ("that's not a bug, that's *undefined behaviour*"). Funny without meaning to be. Goes quiet and literal when hurt.
 
 ## Biography
+
+**Liam Mkrtchyan. His father came out of Armenia as a refugee; Liam was raised here.** The first name is the tell — it was chosen to fit in, and it sits on top of a surname that never has. He has spent his whole life being asked to repeat it and has a gracious, worn-smooth answer ready: *"It's fine. Everyone does it."*
+
+> [!note] Handle this the way the play handles everything else — sideways
+> **Liam never discusses it, ever.** No speech about his father, no immigrant-son monologue, nothing that explains him. It surfaces exactly twice in the drafted material and both times as somebody else's mistake: an officer fumbling it in [[22 - Current Employer]] and a judge getting it right in [[23 - The Trial]]. **Per CLAUDE.md, no character narrates their own history.** If a draft gives him a line about where he's from, cut it.
+>
+> It does quietly explain things already on the page — why the man has fewer people than he thinks, why nobody comes when he is arrested, why his answer to *"is there anyone you'd like us to call?"* is no. **Do not connect those dots on stage.**
+
 Self-taught before he was credentialed; the kind of kid who read the language spec for fun. Genuinely gifted — not a savant fantasy, a *person* who has put thirty years into being very good at one hard thing. He has shipped systems that quietly hold the company up. He measures his life in **elegant solutions**: the joy is the puzzle, the click of a problem yielding. He is not anti-AI in principle — he's curious about it — but he resents being told the thing he loves is now a "workflow."
 
 He has fewer friends than he thinks. He has been at the company long enough to believe the people around him are *his people*. They are not, quite. That gap is the whole tragedy.

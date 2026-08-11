@@ -51,7 +51,24 @@ John, the John thread, the historical supporting cast and the two-century braid 
 - **Still open:** whether we see El Salvador at all, or end at the airport / the empty apartment / an unanswered message. Recommend not showing the prison — [[Concept & Thesis]] holds on the moment before, and a rendered CECOT is the one image that could tip the whole thing into spectacle.
 - **Still open:** what the very last beat is. Candidates — the trial date being read out to an empty chair; Marcus finally being right and nobody there to hear it; the agent's on-screen "Want me to take it from here?" with no one at the desk.
 
-### A4 — Is Liam on a visa? · **DELIBERATELY OPEN**
+### A4 — Is Liam on a visa? · **RESOLVED: the play never says. It is never mentioned at all.**
+
+> [!important] Not answered — retired as a question the play asks
+> **Liam is Liam Mkrtchyan, the child of an Armenian refugee, raised here** ([[Liam]]), which closes the H-1B road: a man whose father came out as a refugee and who grew up in this country is not on a work visa at forty-eight. The causal chain the visa bought — severance → 60-day clock → NTA → removal — is gone.
+>
+> **And nothing replaces it. No status is ever stated, no basis is ever given, and nobody ever explains why he is on the list — not to Liam, and not to the audience.**
+>
+> This is stronger than any mechanism, because every mechanism requires the play to *explain itself*, and the play's entire method is that nothing is ever explained to the person it is happening to. **The house is put in exactly Liam's position: it does not get told either.**
+>
+> **It is the fourth and last variant of the refrain**, and the only one with no sentence in it at all:
+> - *"There is nowhere on the sheet to ask which peers, and nobody to ask."* — calibration
+> - *"I don't know that it's a who."* — the offboarding
+> - *"That's not something I'd be able to tell you."* — the arrest
+> - **— the removal**
+>
+> **Hard rules for [[24 - The Removal]] and any later pass.** No statute is cited on stage against Liam. No officer, clerk, lawyer or judge states a basis. Liam does not ask, because by then he has stopped asking. **Marcus names the Alien Enemies Act in [[23 - The Trial]] and is shut down, and that is the only time the audience hears it** — from the crank, in the wrong room, before it happens, and treated as a tangent. **Do not confirm him later.** The play's last document says *"administrative error"* and the play never says of what.
+
+### A4 *(original text, retained)* — Is Liam on a visa? · **DELIBERATELY OPEN**
 Left unresolved until the ending is written. Both roads still work: a visa makes the whole chain causal (severance → 60-day clock → NTA → removal), and no visa makes it absurdist (they take him anyway; the paperwork is wrong; nobody stops it — which is also documented).
 
 - **What to do in the meantime:** write Movement I so that **either** is still available. That costs one plantable, deletable line — an offhand mention of a lawyer appointment or a renewal date, thrown away, with no weight on it. Plant it; cut it later if the ending doesn't want it. Don't write anything in the back half that *requires* an answer until §A3 is finished.

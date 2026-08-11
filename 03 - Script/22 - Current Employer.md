@@ -90,11 +90,11 @@ On the desk, the Mac Studio, plugged in. On the laptop beside it, **MARCUS on a 
 
 *(Two OFFICERS. Live, in the room, for the first time in this play. They are polite. One of them is holding a tablet.)*
 
-**OFFICER ONE** *(live)*: Morning. Are you Liam Vasi— *(he checks it)* — Vass-il-EN-ko?
+**OFFICER ONE** *(live)*: Morning. Are you Liam Muh— *(he checks it)* — Muh-KURT-chan?
 
-**LIAM** *(live)*: Vasilenko.
+**LIAM** *(live)*: Mkrtchyan.
 
-**OFFICER ONE** *(live)*: Vasilenko. Sorry.
+**OFFICER ONE** *(live)*: Mkrtchyan. Sorry.
 
 **LIAM** *(live)*: It's fine. Everyone does it.
 
@@ -239,7 +239,7 @@ On the desk, the Mac Studio, plugged in. On the laptop beside it, **MARCUS on a 
   - **This is the third "noted."** The calibration thread was marked **Resolved**; the judge will say *"it's noted, we'll deal with it."* Same word, three institutions, one meaning. **Do not let anyone remark on it.**
   - The mechanism is real: employer tax records feeding enforcement systems, [[Real Cases — Hacks, Trials & the Press]] §3. **Re-verify before staging.**
 - **A4 stays open and this scene keeps it open.** The officers never say why he is on the list, so the beat plays identically whether or not there is a visa. **Do not add a line that decides it.**
-- **The name.** *"Vass-il-EN-ko" / "Vasilenko." / "Sorry." / "It's fine. Everyone does it."* He is gracious about it, which is worse. **Surname is still a placeholder — see the flag in [[23 - The Trial]] before it gets locked.**
+- **The name.** *"Muh-KURT-chan" / "Mkrtchyan." / "Sorry." / "It's fine. Everyone does it."* He is gracious about it, which is worse. **Surname is still a placeholder — see the flag in [[23 - The Trial]] before it gets locked.**
 - **"Is there anyone you'd like us to call for you?"** The worst question in the play, asked out of pure kindness, and he thinks about it *properly* before answering. **The pause is the whole isolation beat and it costs four seconds.** Do not cut it and do not let him answer quickly.
 - **He almost gets there and doesn't.** *"It's been sat on that desk"* — untrue, and he believes it, because the thought has not arrived. **Do not let him get there in this scene** and do not have him mention Brendan.
 - **Brendan is not in this scene.** He is physically present and silent at the trial ([[23 - The Trial]]), where speaking is formally invited, and doing it twice halves it.
