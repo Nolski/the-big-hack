@@ -25,7 +25,7 @@ Nobody in this play ever becomes a cartoon. Every functionary stays polite, sinc
 | **II** | The institutions become *procedurally* strange — a rating decided in a comment thread, a sentence nobody typed, a reduction with no author. **Nothing is invented**; every mechanism is real and checkable ([[Performance Management — How It Actually Works]]). | Every individual behaves defensibly. Kristina advocates. Brendan is honest. Marcus is sincere. Dana is kind. |
 | **III** | Still real. The hack is the most heightened event in the show and **every element of it is documented** — the escape-and-verify pattern, the weaponised CLI, the published package ([[Real Cases — Hacks, Trials & the Press]] §1). The counter is a *theatrical* device over a real event, not an unreal one. | The machine is polite, competent and obedient throughout. It never gloats and never malfunctions. |
 | **IV** | **First genuine detachment.** The press describes a man who does not exist — **using only accurate quotes.** The officers are procedurally perfect and the paperwork is wrong. | The officers are never cruel and never raise their voices. Nothing is fabricated by anybody; the falsehood is entirely in the arrangement. |
-| **V** | The court operates **flawlessly, at scale, on a false premise**, and then turns out not to be the thing that decides. | Real charging practice, real statutes, real filings. **The top rung is not a madder courtroom — it is a courtroom that becomes irrelevant.** |
+| **V** | The court operates **flawlessly, at scale, on a false premise** — and then does not happen at all, because he signs. | Real charging practice, real sentencing arithmetic. **The top rung is not a madder courtroom and not a bigger event — it is the anchor giving way.** |
 
 ## The five checks — run every new scene against all of them
 
@@ -42,6 +42,9 @@ Nobody in this play ever becomes a cartoon. Every functionary stays polite, sinc
 
 ## What the top of the ladder actually is
 
-Not a bigger event. **The same bureaucratic register applied to a human being one final time.** The audience spends twenty minutes learning the rules of a trial; the trial does not decide anything; a removal happens on a form while it is still in the calendar; and the government's own word for the result is *"administrative error."* That is a real phrase from a real filing and it is the last document in a play made of documents.
+Not a bigger event. **The man stops.** The audience spends twenty minutes learning the rules of a trial and there is no trial, because he agrees to a statement of facts that is not true — the same document-shaped choice he refused in [[13b - The Plan]] at enormous cost, answered the other way. **The last image is a calendar entry being deleted.** Nobody watches it happen.
+
+> [!note] The removal ending is cut
+> An earlier plan had the courtroom made irrelevant by a removal under the Alien Enemies Act, ending on *"administrative error."* **That is out** — [[Rework — The Escalation Pass]] §A3. The top rung is unchanged in shape and is now reached by the anchor breaking rather than by one more institution arriving.
 
 **And underneath it, the thing nobody says:** the Luddites had frames to break. There is no frame here. See the break in [[Concept & Thesis]].

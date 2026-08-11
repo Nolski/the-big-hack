@@ -390,6 +390,18 @@ characters:
     seed: 841
     instruct: A practical, clerical female federal officer, thirties, American. Matter-of-fact and mildly helpful, like someone working through a form. Not cold, not warm. Apologises plainly and moves on.
     sample_text: Sorry. You moved and we do not know you.
+- id: counsel
+  name: Defence Counsel
+  world: modern
+  role: supporting
+  medium: ai-video
+  live: false
+  description: Liam's defence lawyer. Tired, decent, competent and out of moves. Got him a genuinely good outcome and knows what it costs him.
+  voice:
+    mode: design
+    seed: 871
+    instruct: A tired, decent male defence attorney, fifties, American. Plain-spoken and unhurried, no courtroom theatre, no cynicism. Explains hard things kindly and directly, like someone at the end of a long week who still respects his client.
+    sample_text: They have come back at eighteen months.
 aliases:
   young weaver: becker
   people partner: hr

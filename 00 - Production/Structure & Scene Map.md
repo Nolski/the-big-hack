@@ -24,7 +24,7 @@ The decision record for this structure — including the questions still open �
 | **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. | ~22 min |
 | **III** | Offboarding → **Brendan was cut too** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. | ~12 min |
 | **IV** | The press invents him → the arrest. Procedurally polite officers, a form, a name mispronounced, and a takedown triggered by a man trying to correct a record. **Cast goes to four live actors here** — see [[22 - Current Employer]]. | ~10 min |
-| **V** | The trial → **the removal**. The verdict never comes. | ~14 min |
+| **V** | The trial → **the plea**. The verdict never comes because there is no trial: he signs. **The immigration ending is cut** — [[Rework — The Escalation Pass]] §A3. | ~10 min |
 
 **Runtime is over the original 60-minute budget and that is a known cost.** Either accept ~75–80, or cut from Movement I — 01b–01d were flagged early as the liftable scenes.
 
@@ -80,7 +80,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 21 | The Press Invents Him *(to write)* | IV | ⬜ |
 | 22 | [[22 - Current Employer\|Current Employer]] | IV | ✏️ |
 | 23 | [[23 - The Trial\|The Trial]] | V | ✏️ |
-| 24 | The Removal *(to write)* | V | ⬜ |
+| 24 | [[24 - Statement of Facts\|Statement of Facts]] | V | ✏️ |
 
 **Out of the running order, kept in the vault:** [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Both are cut from the show and both stay as source material for Marcus's arguments and for verbatim inserts.
 

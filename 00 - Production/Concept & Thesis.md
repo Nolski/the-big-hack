@@ -45,10 +45,18 @@ Late: the **identical devices return without the laugh**. The all-hands jingle p
 
 There is no frame here. You cannot break a spreadsheet column that doesn't exist, an anonymised sentence nobody typed, a reduction with no author, or a log with your own name on every line. **Marcus is right about the diagnosis all night and his remedy has been obsolete for two hundred years.** The machinery does not need Liam to fight it, and it does not need him not to. That is the most frightening thing the play has to say and it should be said by nobody — it is the shape of the last twenty minutes, not a line.
 
-## The ending (direction set, last beats open)
-Liam is removed to a Salvadoran prison while his trial is still on the calendar. Not a verdict — the courtroom simply becoming irrelevant after the audience has spent twenty minutes learning its rules. The real hook is exact: the 2025 removals were carried out under the **Alien Enemies Act of 1798**, previously invoked three times, the first being the War of 1812 — and the **Frame Breaking Act** is 1812. Marcus says this, accurately, and is treated as a crank.
+## The ending
 
-We do **not** show the prison. We hold on the moment *before* — and let the AI-video chorus, finally, go silent. Cut to black on the question, not the answer. Which specific image carries that is still open; see [[Rework — The Escalation Pass]] §A3.
+**He signs.** They come back at eighteen months against a stacked fifty-one years, the offer carries a **statement of facts** he has to agree is accurate, one word of it is not true, and he signs it anyway ([[24 - Statement of Facts]]).
+
+It is the payoff of [[13b - The Plan]], where he refused a separation agreement over the word *"mutual"* and it cost him everything — *"nobody's ever going to open the file and find me disagreeing."* **Same man, same shape of choice, opposite answer**, because the break has already happened and he has stopped believing anything he says makes a difference.
+
+**The courtroom becomes irrelevant and he is the one who makes it irrelevant.** The audience spends twenty minutes learning the rules of a trial that does not happen — not because the state took him somewhere the court couldn't reach, but because about 97% of federal cases end this way. **The last image is a calendar entry being deleted**, in exactly the register of every other field in this play: the classification dropdown, the rehire flag, the "Manager assessment" box. A field changes, nobody watches it, and it is the whole story.
+
+> [!note] The immigration ending is cut — see [[Rework — The Escalation Pass]] §A3
+> No removal, no Salvadoran prison, no Alien Enemies Act, no ICE. It bought back **R2** (a boo-able institution, against a play whose whole claim is that there is nobody to boo) and **R5** (American border politics, in a Wellington room, changing the subject in the last ten minutes), plus about eight minutes of runtime and an ending that stays about work.
+>
+> **The cost was the 1798/1812 coincidence and "administrative error," and it is a real loss.** The Luddite payoff below is untouched and was always the stronger half.
 
 > Working title: **The Big Hack** (the double meaning is the point — the heist, and the hack-job done to two men). Easy to rename.
 

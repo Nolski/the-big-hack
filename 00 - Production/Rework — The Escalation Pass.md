@@ -42,7 +42,22 @@ Not a new character. **Marcus**, the engineer already on the team, becomes the L
 ### A2 — Does John survive? · **RESOLVED: no, fully cut**
 John, the John thread, the historical supporting cast and the two-century braid all come out. The Luddite material survives **only** in Marcus's mouth and in verbatim text he quotes. See §K for the removal list, and **R1** for the cost — which is now the single largest problem in the rework, because John was carrying the play's warmth.
 
-### A3 — What is the ending? · **DIRECTION SET, details open**
+### A3 — What is the ending? · **CHANGED: the removal is cut. He signs a plea.**
+
+> [!important] The immigration thread is out of the play entirely
+> **No removal, no Salvadoran prison, no Alien Enemies Act, no ICE.** The ending is [[24 - Statement of Facts]]: they come back at eighteen months, the offer carries a statement of facts he has to agree is true and isn't, and **he signs it.**
+>
+> **Why.** Two of the risks below were the ones most likely to sink the show and they compounded exactly here. **R5 (Americanness):** CFAA is American but legible to any engineer; removal is American *politics*, in a Wellington room, and it changes the subject in the last ten minutes from what a company owes the people it discards to what a government does at a border. **R2 (villainy):** ICE is the easiest thing in the show to boo, and the play's whole claim is that there is nobody to boo. Not putting it on stage is a cheaper fix than policing it.
+>
+> **And the break already outranked it.** Per [[Concept & Thesis]], the break in [[23 - The Trial]] *is* the death of the character — which made the removal an epilogue to the real climax. **The ladder's top rung is now the anchor giving way rather than one more institution escalating**, which is stronger for a play whose whole method depends on Liam staying real.
+>
+> **The top rung survives intact.** The courtroom still becomes irrelevant, and the audience still spends twenty minutes learning the rules of a trial that does not happen — **but he is the one who makes it irrelevant**, by signing, which about 97% of federal defendants do.
+>
+> **What it cost.** The 1798 / War of 1812 / Frame Breaking Act coincidence, and *"administrative error"* as the last document. The coincidence was lovely and it is a real loss. **The Luddite payoff is untouched** — *they had frames to break; there is nothing here to break* — and that was always the stronger half, because it is an argument rather than a coincidence. Marcus keeps the Frame Breaking Act and loses the Alien Enemies Act; his witness-box speech in [[23 - The Trial]] is rewritten accordingly.
+>
+> **Knock-on:** Marcus is now **never vindicated on stage at all.** He is right all night and nothing later confirms him. That is a change to the plan §B has carried since the rework and it is deliberate.
+
+### A3 *(original text, retained)* — What is the ending? · **DIRECTION SET, details open**
 **Liam ends up in a Salvadoran prison.** Not a verdict — a removal. The trial is still on the calendar when he goes.
 
 - **This is stronger than the sentencing ending I proposed** and it fixes the ladder's top rung: the absurdism doesn't climax in a courtroom, it climaxes in the courtroom becoming *irrelevant*. The audience has spent twenty minutes learning the rules of a trial that then doesn't happen.
