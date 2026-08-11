@@ -366,6 +366,30 @@ characters:
     seed: 861
     instruct: A patient, fair female federal judge, sixties, American. Dry, unhurried, quietly authoritative. Courteous and genuinely attentive; corrects people without a trace of irony or impatience.
     sample_text: That is a serious argument, and your counsel has made it in writing.
+- id: officer one
+  name: Officer One
+  world: modern
+  role: supporting
+  medium: live-actor
+  live: true
+  description: Federal officer. Does the talking. Procedurally polite, calm, unhurried, faintly apologetic about the paperwork. Does not know why Liam is on the list and says so without evasion.
+  voice:
+    mode: design
+    seed: 831
+    instruct: A calm, courteous male federal officer, forties, American. Even, unhurried, faintly apologetic about paperwork. Never raises his voice, never sneers, no relish. Businesslike warmth throughout.
+    sample_text: We have got a warrant for your arrest. You can stop me anywhere.
+- id: officer two
+  name: Officer Two
+  world: modern
+  role: supporting
+  medium: live-actor
+  live: true
+  description: Federal officer with the tablet. Helpful in a clerical way; genuinely tries to fix the record and cannot. She is the one who apologises after the takedown.
+  voice:
+    mode: design
+    seed: 841
+    instruct: A practical, clerical female federal officer, thirties, American. Matter-of-fact and mildly helpful, like someone working through a form. Not cold, not warm. Apologises plainly and moves on.
+    sample_text: Sorry. You moved and we do not know you.
 aliases:
   young weaver: becker
   people partner: hr

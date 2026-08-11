@@ -23,7 +23,7 @@ The decision record for this structure — including the questions still open �
 | **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus, the Luddites as a bit, and the credential jab at Kristina he calls out and helps nobody by calling out. | ~20 min |
 | **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. | ~22 min |
 | **III** | Offboarding → **Brendan was cut too** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. | ~12 min |
-| **IV** | The press invents him → the arrest. Procedurally polite officers, a form to sign, a name mispronounced. | ~10 min |
+| **IV** | The press invents him → the arrest. Procedurally polite officers, a form, a name mispronounced, and a takedown triggered by a man trying to correct a record. **Cast goes to four live actors here** — see [[22 - Current Employer]]. | ~10 min |
 | **V** | The trial → **the removal**. The verdict never comes. | ~14 min |
 
 **Runtime is over the original 60-minute budget and that is a known cost.** Either accept ~75–80, or cut from Movement I — 01b–01d were flagged early as the liftable scenes.
@@ -76,7 +76,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 20 | [[20 - The Audit\|The Audit]] | III | ✏️ |
 | 20b | [[20b - Next Week\|Next Week]] | III | ✏️ |
 | 21 | The Press Invents Him *(to write)* | IV | ⬜ |
-| 22 | The Arrest *(to write)* | IV | ⬜ |
+| 22 | [[22 - Current Employer\|Current Employer]] | IV | ✏️ |
 | 23 | [[23 - The Trial\|The Trial]] | V | ✏️ |
 | 24 | The Removal *(to write)* | V | ⬜ |
 
