@@ -40,7 +40,9 @@ The decision record for this structure — including the questions still open �
 | I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
 | II — `6` through `13b` | 34.6 min | ~22 min |
 | III — `14`, `19`, `20`, `20b` | 13.8 min | ~12 min |
-| **Drafted total** | **65.2 min** | |
+| IV — `22` only; `21` unwritten | 2.8 min | ~10 min |
+| V — `23` only; `24` unwritten | 3.7 min | ~14 min |
+| **Drafted total** | **71.7 min** | |
 
 All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 20b render — `14`, `19`, `20` and `20b` are all fully rendered and orphan-free.**
 
