@@ -201,7 +201,6 @@ The screen comes back on. [[19 - Nine Tickets]] was the only scene in the play w
 
 *(The counter appears — `AIV-078`. It reads **1**.)*
 
----
 
 *(The first minute is genuinely satisfying and the audience is allowed to enjoy it. The list fills in fast. Repositories. A staging environment. A metrics dashboard nobody has opened since 2024. Every line green and true.)*
 
@@ -221,7 +220,6 @@ The screen comes back on. [[19 - Nine Tickets]] was the only scene in the play w
 
 *(He is asleep.)*
 
----
 
 *(**The clock: 01:58.** The counter is at 486, and this is the last moment at which anybody could have stopped it.)*
 
@@ -265,7 +263,6 @@ The screen comes back on. [[19 - Nine Tickets]] was the only scene in the play w
 
 *(Take the lights before the sound.)*
 
----
 
 *(**06:31.** The lamp. BRENDAN asleep at the table. On screen — `AIV-079` — it has finished, and it has written him a summary, because that is what he asked for.)*
 

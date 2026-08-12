@@ -39,6 +39,13 @@ Mark it explicitly: note the clip length and where the live line lands. Example:
 >
 > **LIAM** *(live, over the last 4s of the clip)*: Quick thing — the "brief" thing we shipped Friday is corrupting timestamps in prod.
 
+> [!warning] Never put a bare `---` inside the `## Script` section
+> **It silently truncates the scene.** `script_parser.py` ends the Script section at the first `## ` heading *or* a line that is exactly `---`, so everything after a mid-script horizontal rule is invisible to the app: no audio, no line ids, no review diff — and **nothing warns you.** It cost Scene 20 fifty-two lines, including its entire back half, which rendered as "complete" while missing the catastrophe, the apology and the last image.
+>
+> **To mark a movement break inside a scene, use a stage direction or a blank line.** Both read fine in Obsidian. The only `---` in a scene file belongs between the last line of the script and `## Notes`.
+>
+> **Cheap check after drafting:** `GET /api/storyboard` and confirm the scene's last parsed line is the last line you wrote.
+
 ## Scene frontmatter (set status honestly)
 `status: stub → drafted → revised → locked`. The [[Structure & Scene Map]] table reads these. Always fill `beat`, `world`, `live_cast`, and `ai_video_assets`.
 
