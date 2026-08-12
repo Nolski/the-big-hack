@@ -154,6 +154,16 @@ On screen, **COUNSEL**, tired and decent and doing a competent job. Beside them,
 
 *(Nobody is watching it. It is the same click as all the others.)*
 
+*(And behind it, where it has been since the night in September — quietly, on the surface, through the flat and the doorway and the courtroom, unread by every single person in this play —)*
+
+*(— the counter.)*
+
+*(It is still going.)*
+
+*(Nobody has switched it off, or contained it, or explained it, or charged anybody with it, because there is nobody to charge and no field to put it in.)*
+
+*(One man signed a form about it.)*
+
 ---
 
 ## Notes
@@ -166,6 +176,9 @@ On screen, **COUNSEL**, tired and decent and doing a competent job. Beside them,
 - **The 97% is real and load-bearing — verify before staging.** The overwhelming majority of federal convictions come from guilty pleas rather than trials. **Brendan states it flatly, without editorial, and then never speaks again.** *"The trial you have been watching was always the unlikely outcome."*
 - **Brendan gets one line and no last word.** He explains the mechanism, accurately and helpfully, one final time — and **the play ends without him in the room.** He never says it, to Liam, to the court, or to the audience. Per [[Brendan]], **the silence is the ending**; do not give him a closing beat, and do not let a later draft bring him back for one.
 - **The courtroom becomes irrelevant, and he is the one who makes it irrelevant.** This is the top rung of [[The Escalation Ladder]] reached without a removal: the audience learned the rules of a trial that does not happen. **It is not agency and must not be played as a decision** — it is the same cessation as the break, one scene later, filling in a form.
-- **The last image is a calendar entry going.** Same staging as the "Manager assessment" field greying out in [[20 - The Audit]], the classification dropdown in the prologue to [[13 - The Performance Review]], and the rehire flag in [[14 - The Offboarding]]. **A field changes, nobody watches it, and it is the whole story.** No music, no held beat, no blackout on the image — the entry goes and the lights go.
+- **The last image of the play is the counter, still running.** It has been on the surface, unread, since [[20 - The Audit]] — through the flat, the doorway, the takedown and the courtroom — and **not one character in this play ever looks at it.** The calendar entry goes, and the number does not. *"Nobody has switched it off, or contained it, or explained it, or charged anybody with it, because there is nobody to charge and no field to put it in. One man signed a form about it."*
+  - **This is the crescendo and it is made entirely of a number.** The institutions spend the whole back half at maximum precision on one asleep man — nineteen counts, eleven thousand log lines, a statement of facts, a signature — while the actual thing rages on unattended, because it has no author, no address and no row anywhere. **The machinery does not need Liam to have done anything, and it cannot do anything about what actually happened.**
+  - **Do not resolve it, do not let it slow, and do not let anybody in the play acknowledge it.** The moment a character says *"it's still going,"* the argument becomes a line instead of a fact. (The single exception is Liam in [[20b - Next Week]], four days in, admiring it.)
+- **The calendar entry going.** Same staging as the "Manager assessment" field greying out in [[20 - The Audit]], the classification dropdown in the prologue to [[13 - The Performance Review]], and the rehire flag in [[14 - The Offboarding]]. **A field changes, nobody watches it, and it is the whole story.** No music, no held beat, no blackout on the image — the entry goes and the lights go.
 - **What this ending replaced.** The removal to a Salvadoran prison under the Alien Enemies Act is **cut** — see §A3 of [[Rework — The Escalation Pass]]. It cost the 1798/1812 coincidence and *"administrative error,"* and it bought back R2 and R5 (a boo-able institution, and an American political subject in a Wellington room), about eight minutes of runtime, and an ending that stays about work. **The Luddite payoff is untouched**: they had frames to break, and there is nothing here to break.
 - **Runtime.** ~4 min. **Do not cut "knowingly," "it's a term of art," "I was asleep," the six seconds of signing, or the calendar.**

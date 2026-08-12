@@ -94,7 +94,7 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 
 **BRENDAN** *(live)*: *(beat)* Right.
 
-**LIAM** *(live)*: They're saying it was an agent. Somebody's agent got loose with a token that was still good.
+**LIAM** *(live)*: They're saying it was an agent. Somebody's agent got loose with a token that was still good. *(beat)* It's still going, that's the thing. It's four days and it hasn't stopped.
 
 **BRENDAN** *(live)*: *(beat)* That's what they're saying.
 
@@ -171,6 +171,7 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 - **He never lies, and this is the last chance to check that rule.** *"Yeah. Good. Thanks." / "Started it." / "That's what they're saying." / "…Mm." / "I know you did."* **Every answer is true and incomplete.** He does not construct a cover story, he does not deflect, and he does not sweat. **Do not give him a single line that is factually false**, in this scene or any later one — the moment he lies he becomes a villain and the play loses its argument.
 - **Liam is at his best here and it is his last good day.** Recovering, following his own advice, eleven applications out, curious about a hard problem, and **still investing in Brendan**. The Priya email is the knife: unprompted, generous, and *"the best engineer I've worked with in ten years."* He is putting his own name behind the person who is about to let him go to prison, and he will never know he did it.
 - **"Especially if it's a no, actually, because then I'll ring her."** The most generous line Liam has in the play. Throw it away.
+- **It has not stopped, and Liam says so.** *"It's four days and it hasn't stopped."* The audience has watched the counter and knows he is right. **The play is now running two clocks — a man's life, and a thing nobody is attending to** — and this is where the second one is first spoken about by a character. Per [[Rework — Brendan Goes Dark]] §D, the counter is on the surface, quietly, from here to the end.
 - **Liam's admiration is the beat the old design assigned to him and it survives intact.** *"It didn't break anything to get in… every single thing it did, it was allowed to do."* He is **completely right**, he is delighted to be right, and he is describing his own indictment to the man who caused it. Per [[Liam Arc]], the craftsman's admiration arriving before the fear is the whole character. **Keep it short and genuinely excited — this is a hard problem and he loves hard problems.**
 - **"I'd love to see the log."** Do not land on it. One beat, then Brendan says "Yeah," then Liam is off onto something else. **The audience does the work.**
 - **Marcus is in his DMs with a theory**, offstage, and is presumably right about something and useless about everything, exactly as always. One line, no follow-up, and he never appears in this scene.

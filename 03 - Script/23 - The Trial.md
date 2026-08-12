@@ -34,6 +34,9 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > [!important] The narrator device is doing its worst work here
 > Per [[Brendan]]: *he narrates the world, never himself.* In this scene that means he will explain the Computer Fraud and Abuse Act, accurately and helpfully and rather warmly, to an audience who by now know exactly what he did. **He never once refers to himself, and the play never lets him.** If a draft gives him a single line of self-reference, cut it — the silence is the ending.
 
+> [!important] The counter is in the courtroom
+> Quiet, on the surface, all the way through — through the nineteen counts, through the friction line, through the break. **The thing he is on trial for has not stopped and is not being attended to by anybody in the building.** Nobody looks at it and nobody mentions it. **It is the single strongest argument the play makes and it is made entirely by a number nobody in the room can be bothered to read.**
+
 > [!note] Live/video plane
 > Two live actors in the same room for the first time since [[20b - Next Week]], and **they never speak to each other and never touch.** Liam does not look at the gallery. Brendan cannot stop looking at the dock. Everyone else is on screen; no video character shares Liam's plane at any point.
 
@@ -66,6 +69,10 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > —counts eleven through fourteen, unauthorised access to a protected computer in furtherance of fraud. Counts fifteen and sixteen, damage to a protected computer. Count seventeen, aggravated identity theft.
 
 **BRENDAN** *(to audience)*: Most of them are the same act, counted differently.
+
+*(beat)*
+
+**BRENDAN** *(to audience)*: All nineteen of them are things that happened before four o'clock in the morning on one night in September. *(beat)* Nothing after that is on the indictment. *(beat)* There was no way to write it down.
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > Counts eighteen and nineteen relate to the published package.

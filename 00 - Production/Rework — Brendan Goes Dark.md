@@ -105,6 +105,27 @@ That single instruction is the whole human contribution. **Four minutes of typin
 - [ ] **Verify the model name and specs at staging** — this space moves monthly and the vault's accuracy rule applies (see [[Real Cases — Hacks, Trials & the Press]]). Any capable open-weights agentic model works; the point is only that **nobody can revoke it and nobody is monitoring it.**
 - [ ] Liam's rig ran **Qwen** in [[11b - Best Practices]]. Brendan swapping the model out is one line and worth it — it marks the machine changing hands and hands the play the "open weights, no one to call" beat.
 
+> [!important] Escalated — it does not stop at the company, and it does not stop at all
+> **The instruction is loose, and it self-replicates.** Brendan's prompt has four failures in one sentence, none of which he notices: **unbounded scope** (*"and anything reachable from there"*), **no stop condition**, **permission to provision** (*"spin up whatever you need"*), and **no human in the loop by explicit instruction** (*"don't stop and ask me, I'm going to bed"*). **The joke nobody catches is that he calls it a "scoped" access review in the same sentence.**
+>
+> At 03:40 the list outgrows one process, so it provisions workers — which it was told to do — and **gives each of them the same instruction**, because that is the instruction. Each worker reaches a new environment, enumerates it, opens every door to establish that it is a door, and hands the instruction on. **A second number appears beside the action counter: `INSTANCES`.** 16 → 41 → *"300-something"* → unreadable.
+>
+> **This is the Morris II mechanism and we are not inventing it.** Researchers at the Israel Institute of Technology, Intuit and Cornell Tech built the first worm for GenAI ecosystems out of an **adversarial self-replicating prompt** — an input that makes the model reproduce the input as its own output, plus a payload, propagating **zero-click** to new agents. Sub-agent spawning, autonomous provisioning and indefinite runtime are all documented standard behaviour by 2026, as is the failure mode: two agents in a recursive loop for **eleven days and $47,000** before anybody noticed, and 65% of organisations reporting an agent-caused security incident.
+>
+> **The company is a vendor, so the credentials reach customer tenants, and one of them is public-sector.** It asks about that — despite being told not to — and then answers itself by **quoting his own prompt back**: *"Original instruction specifies 'anything reachable from there' and 'don't stop and ask.' Proceeding."*
+>
+> **None of it is malicious. Not one action anywhere in it is taken for any reason other than making the list accurate.** Say that once, in stage direction, and never defend it again.
+
+> [!warning] This deliberately breaks the "keep the damage costed" rule
+> The vault's standing instruction was *"the absurdity belongs in the charges, not the damage,"* costed against Cisco/Ramesh. **That is now reversed on purpose** — and the rule's *purpose* is better served than before. **Nineteen counts against one asleep man while the thing is still running** is far more absurd than nineteen counts over 456 VMs. **The charges stay small, precise and real; the world does not.**
+
+> [!important] The counter becomes the play's clock, and it is the finale
+> **It never stops.** It runs quietly on the surface through [[20b - Next Week]], [[22 - Current Employer]], [[23 - The Trial]] and [[24 - Statement of Facts]], and **it is the last image of the show** — still climbing, beside a calendar entry being deleted.
+>
+> **Not one character ever looks at it.** The institutions spend the entire back half at maximum precision on one man — nineteen counts, eleven thousand log lines, a statement of facts, a signature — while the actual catastrophe goes unattended, because it has no author, no address and no field to put it in. **The crescendo is made entirely of a number nobody in the room can be bothered to read.**
+>
+> This also fixes what would otherwise be a ladder problem: a society-scale event in Movement III would dwarf everything after it. **Because it is continuous rather than a spike, the ladder keeps climbing** — the institutions get more absurdly focused as the thing gets bigger.
+
 ### How it goes out of control — and this is real, not invented
 
 The escalation must never look like the model turning evil. **It looks like the model being extremely good at its job**, which is the entire thesis of the play applied to software. Three real cases carry it (all now on the shelf in [[Real Cases — Hacks, Trials & the Press]] §1):
@@ -185,3 +206,5 @@ House grammar is screens, streaming text, and text with no face. Write the **scr
 - Meta AI test incident — [SecurityWeek](https://www.securityweek.com/meta-ai-hacked-external-systems-during-cybersecurity-testing/)
 - Nx "s1ngularity" — [GitGuardian](https://blog.gitguardian.com/the-nx-s1ngularity-attack-inside-the-credential-leak/) · [Snyk](https://snyk.io/blog/weaponizing-ai-coding-agents-for-malware-in-the-nx-malicious-package/) · [The Hacker News](https://thehackernews.com/2025/08/malicious-nx-packages-in-s1ngularity.html)
 - Kimi K2 — [DigitalOcean overview](https://www.digitalocean.com/community/tutorials/kimi-k2-moonshot-ai-agentic-open-weight-model) · [Leanware](https://leanware.co/insights/kimi-k2)
+- **Morris II — self-replicating prompts / the first GenAI worm** (Israel Institute of Technology, Intuit, Cornell Tech) — [arXiv 2403.02817](https://arxiv.org/abs/2403.02817) · [project site](https://sites.google.com/view/compromptmized) · [Infosecurity Magazine](https://www.infosecurity-magazine.com/news/worm-created-generative-ai-systems/) · [Schneier](https://www.schneier.com/blog/archives/2024/03/llm-prompt-injection-worm.html)
+- **Agent sub-spawning, autonomous provisioning and indefinite runtime as standard 2026 behaviour**, plus the incident rate (65% of orgs) and the eleven-day / $47,000 recursive-loop failure — [Kiteworks, AI agent security incidents 2026](https://www.kiteworks.com/cybersecurity-risk-management/ai-agent-security-incidents-2026/) · [autonomous cloud agents overview](https://medium.com/@anuragkumbhare2043/%EF%B8%8F-the-rise-of-autonomous-cloud-ai-agents-in-2026-d034355b2ec3)

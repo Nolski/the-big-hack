@@ -47,6 +47,9 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 - **OFFICER TWO** — live. Has the tablet. Helpful in a clerical way; genuinely tries to fix the record and cannot. **She is the one who apologises.**
 - **OFFICERS** — live, non-speaking. As many as production will pay for.
 
+> [!important] The counter is on the surface for this entire scene
+> Quiet, small, and never referred to by anybody. **They are arresting one man for something that is still happening while they arrest him**, and the number behind them keeps climbing through the door coming in, the takedown, the handcuffs and the form. **Nobody looks at it. Nobody in the play ever looks at it.** See [[Rework — Brendan Goes Dark]] §D.
+
 > [!note] Planes
 > Live bodies and two screens. **Marcus's call runs unbroken from before the door to after the flat is empty, and nobody in the room ever acknowledges him.** He is never in the room and never can be — and, crucially, **Liam never gets to close the laptop**, which is why the footage exists.
 
