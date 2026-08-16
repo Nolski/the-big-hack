@@ -160,7 +160,7 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 
 *(He plugs it in.)*
 
-*(It wakes on his wallpaper — a photograph of a mountain he has never been to. Everything is still on it.)*
+*(It wakes on his wallpaper — the same ThePrimeagen meme. Everything is still on it.)*
 
 *(He sits down and goes back to the eleventh application.)*
 
