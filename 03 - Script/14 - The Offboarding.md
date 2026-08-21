@@ -17,7 +17,7 @@ tags:
 # Scene 14 — The Offboarding
 
 > [!info] Beat
-> He is laid off, and he does not see it coming for one second. A scored headcount reduction ran in another part of the building off a snapshot of tracked fields, and his name came out under the line. Nobody in the scene decides anything, nobody is cruel, and nobody can tell him who selected him, because there is no who. **The un-revoked access gets planted here, as a kindness.** Machinery from [[Performance Management — How It Actually Works]] §6–7.
+> He is laid off, and he does not see it coming for one second. A scored headcount reduction ran in another part of the building off a snapshot of tracked fields, and his name came out under the line. Nobody in the scene decides anything, nobody is cruel, and nobody can tell him who selected him, because there is no who — and the People Partner, reading a mandated script and steering everything else back to process, cannot say so even as a kindness. **The un-revoked access gets planted here, as ordinary policy.** Machinery from [[Performance Management — How It Actually Works]] §6–7.
 
 ## Purpose
 The firing must not make sense — and must be completely mechanical, so the audience cannot find a villain to be angry at instead of the machine.
@@ -36,7 +36,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 **Kristina is not in this scene and her absence is load-bearing.** She delivered the review; she is not here for the consequence. Liam asks about it once and accepts the answer.
 
 > [!warning] The ring — the scene's one spectacle beat
-> When the sentence lands, a **high thin tone** comes up and **Dana's audio drops to muffle** — she is still talking, still warm, still kind, and unintelligible. It runs for a long time. Liam does not move. Under it the screens keep working. Then it thins out and she is somewhere much further along, and he has lost the middle of it.
+> When the read-out lands and she moves straight on to the pack, a **high thin tone** comes up and **Dana's audio drops to muffle** — she is still talking, still even, still moving through it, and unintelligible. It runs for a long time. Liam does not move. Under it the screens keep working. Then it thins out and she is somewhere much further along, and he has lost the middle of it.
 >
 > **Version this assumes: sound design only.** A tone plus a lowpass on the pre-rendered `AIV-074` clip, and a light state that does not change. No live line lands inside the muffle, so nothing has to interlock — the operator can hold it as long as the room can stand. There is no live-physical or sound-and-light version required and none should be built.
 >
@@ -52,7 +52,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-076]] — The reduction (screen graphic, no voice):** the wordless prologue, and the scene's whole argument. A spreadsheet — *"Q3 Organisational Review — Engineering."* Column headers, rows of names, a composite score, sorted, and a rule drawn across it two thirds down. **The columns are the point and must be readable.** There is no column for reviews. Liam's row is four rows under the line and every figure on it is a true number pointed the wrong way. **Brendan is under the line too** — tickets closed, nine, because he moved to Linear — and **Marcus is well above it**, because he files everything. Three men on one sheet; the most legible one survives.
 - **[[AI Video Production Tracker|AIV-073]] — The improvement plan (screen graphic, no voice):** carried over from [[13b - The Plan]]. Four criteria green, the fifth's "Manager assessment" field still empty. Under the ring, the document's status changes to **Closed** and the empty field greys out. Nobody ever filled it in and now nobody can. **It gets four seconds and no comment.**
-- **[[AI Video Production Tracker|AIV-074]] — People Partner (the offboarding):** her only appearance. **Warm, rehearsed, immovable, and genuinely decent.** She reads a script because she has to and then comes off it and is honest, and the honest part is worse. Not brisk, not corporate-cold, no smirk anywhere. **If she reads as a villain the scene has failed.** Locked voice, same as `AIV-065`'s retired entry (`hr`). The clip must render clean; the muffle is applied at the desk.
+- **[[AI Video Production Tracker|AIV-074]] — People Partner (the offboarding):** her only appearance. **Even, rehearsed, immovable, and closed.** She is getting through a required conversation with the least possible exposure — she reads the mandated part and, every time Liam opens something real, closes it gently and returns to the pack and the next steps. **She is not cruel and never smirks; she is also not his advocate, and she gives him nothing about the decision.** The kindnesses are procedural, not personal. **If she reads as either a villain or a friend, the scene has failed** — the horror is that she is neither, just the company's script with a face on it. Locked voice, same as `AIV-065`'s retired entry (`hr`). The clip must render clean; the muffle is applied at the desk.
 - **[[AI Video Production Tracker|AIV-075]] — The exit screens (screen graphic, no voice):** the all-hands slide — Q3 promotions, Brendan's name on it, under the launch applause clip from [[10 - The Win We Needed]], **heard through the ring**; the HRIS record with "Eligible for rehire" flipping to **No**; and a Slack notification in #general with forty-one reactions.
 
 ---
@@ -107,15 +107,15 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: …Sure.
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(reading it, and the warmth is real and it is sitting on top of a script)*
+> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(reading it — flat, printed, the mandated words, and you can hear that they are printed)*
 > The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be the thirty-first.
 
 *(A beat.)*
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(off the script now, and this is her own voice)*
-> I'm sorry, Liam. I know that's a lot to hear like that.
+> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(even, moving straight on)*
+> I know that's a lot to take in. There's a pack that covers all of it, and we'll go through the main points now.
 
-*(**The tone comes up.** Her audio goes under it — still moving, still kind, unintelligible. LIAM does not move. He does not look away from the screen and he does not look at it either.)*
+*(**The tone comes up.** Her audio goes under it — still moving, still even, unintelligible. LIAM does not move. He does not look away from the screen and he does not look at it either.)*
 
 *(The screens keep working. `AIV-073`: the improvement plan, four green. Its status changes from "In progress" to **Closed.** Reason: "No longer applicable — see HRIS." The "Manager assessment" field is still empty. It greys out. Nobody ever filled it in and now nobody can.)*
 
@@ -146,20 +146,20 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: *(beat)* So somebody picked.
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(carefully — she is going to be honest with him)*
-> There's a set of selection criteria and it's scored. It's built that way deliberately, so it's consistent across the org, and so it isn't one person sitting there making a call about a person.
+> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
+> The selection was made against a consistent set of criteria, applied across the whole org. It's designed that way on purpose — so it isn't any one person making a call about an individual.
 
 **LIAM** *(live)*: What's in it.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> I don't have that in front of me. What I have is a line saying the role is in scope, and a date.
+> That's not something I'm able to share, I'm afraid. What I have is that the role's in scope, and the date.
 
 **LIAM** *(live)*: Who does have it.
 
 *(A beat.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> I don't know that it's a who.
+> It's a process — it isn't really something that sits with a person. There's detail on how it works in the pack, if you want it.
 
 *(He sits with that. Then he starts, very slowly, to look for the reason, because there is always a reason and he has never once failed to find one.)*
 
@@ -170,8 +170,8 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: There's a plan. *(beat)* There's a plan with dates on it, I'm—
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(gently)*
-> I know. That's also separate.
+> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
+> That's a separate process as well.
 
 **LIAM** *(live)*: *(beat)* They're separate.
 
@@ -180,17 +180,17 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: But it's the same company.
 
-*(She doesn't have anything for that.)*
+*(She doesn't take that up.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> …Yes.
+> They're run separately. This is the one I can speak to.
 
 *(A long beat. He is not angry. He is trying to make an arithmetic come out and it will not.)*
 
 **LIAM** *(live)*: I've been like this for twenty-five years.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> …I know.
+> …I hear you.
 
 **LIAM** *(live)*: No, I mean — *(beat)* People have been telling me I'm hard work since I was twenty-three. It's not new information. *(beat)* I got promoted four times. *(beat)* Same person.
 
@@ -204,15 +204,15 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: Four years. *(beat)* We've never had a bad Saturday. Not once. *(beat)* That's — someone's reading every line. That's what that is.
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(quietly)*
-> I know.
+> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(after a moment, even)*
+> I'm not able to get into the specifics of the decision, Liam.
 
 **LIAM** *(live)*: *(beat)* Is there a field for that.
 
-*(She doesn't lie to him.)*
+*(She doesn't take the question.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> …No.
+> The criteria aren't something we go through individually. *(beat)* I know that's frustrating.
 
 *(A long beat. Then he opens a notes file, because that is what he does, and types the date at the top of it.)*
 
@@ -242,18 +242,18 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: There's a USB-C to ethernet adapter that isn't on the asset register. I expensed it, it got rejected, so I paid for it myself.
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(a small beat — she is not being funny)*
-> Then that one's yours.
+> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
+> If it isn't on the asset register, it isn't something we'd need back.
 
 **LIAM** *(live)*: *(beat)* Okay. *(beat)* I'll put it in the box.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> One more thing, and then I'll let you go. Your access stays live until Friday. We don't do the same-day lockout here — people have handover, and there are things they want to save. *(beat)* We're not going to be weird about it.
+> One more thing, and then I'll let you go. Your access stays active until Friday. There's a handover window — we don't do same-day lockouts, so anything you need to hand over or save, you'll have time for.
 
 **LIAM** *(live)*: …Thank you.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> And I want to say this because I mean it and not because it's in the pack — none of this is a reflection of your value. Kristina has been very clear with me about the quality of your work. *(beat)* We'd love to stay in touch.
+> There's information in the pack on the outplacement support and on the alumni network. *(beat)* And, again — none of this is a reflection of your value or your contribution.
 
 *(On a screen nobody in the meeting can see — `AIV-075` — the HRIS record. A field marked "Eligible for rehire" changes from Yes to No. It is a dropdown with two options. It is the same click as the last one.)*
 
@@ -261,10 +261,10 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: Can I ask you one thing. *(beat)* I'm not going to argue. I'm not— *(beat)* What could I have done differently.
 
-*(She doesn't answer straight away. She is a decent person, and she has done this many times, and she is about to tell him the truth.)*
+*(She doesn't answer straight away. She has done this many times, and there is a version of the answer she is allowed to give.)*
 
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(carefully, and meaning all of it)*
-> People always ask me that, and I can usually find them something, because there's usually something. *(beat)* I read your whole file this morning. *(beat)* I don't think there was anything.
+> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(even, not unkind)*
+> That's not really something the process is set up to answer — it's criteria-based, and the decision's final. *(beat)* There's good material in the pack on next steps, and the outplacement provider can talk options through with you.
 
 **LIAM** *(live)*: *(beat)* …Okay.
 
@@ -272,15 +272,15 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: Is it — *(beat)* I know people find me — I know I'm not— *(beat)* Should I have been in more rooms? Should I have been friendlier?
 
-*(This is the kindest and the worst thing she says.)*
+*(She does not take it.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> I don't think it would have changed the number.
+> I'm really not able to speak to that.
 
 *(A beat. He does not write it down.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> Take the rest of today. Genuinely — log off, go outside. *(beat)* And if you want to put me down as a reference, I'll take the call. That isn't a standard offer.
+> You don't need to do anything else today. It's all in the pack, and the transition team will be in touch. *(beat)* I'm sorry we couldn't have this conversation under better circumstances.
 
 **LIAM** *(live)*: Thanks. *(beat)* Thank you, Dana.
 
@@ -304,25 +304,25 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 - **He is not braced, and that is the whole scene.** Earlier drafts had him walk in prepared — a document, a case, a ninety-day pack — and a prepared man is a man who already knows. **Refuse it.** He arrives busy, cheerful and mid-problem, and the first thirty seconds must be genuinely light. The audience should be enjoying him.
 - **The friction is a constant, and a constant explains nothing.** He has been told he is difficult for his entire career, by everyone, continuously, and it has never cost him a thing — he got promoted four times being exactly this person. That is not denial; it is a correct reading of twenty-five years of evidence. **Nothing in this scene should suggest he had it coming or should have known.** The horror is that the variable that changed is not in him.
 - **"I've been like this for twenty-five years."** The centre of the scene. It is not a defence and must not be played as one — he is stating a fact about the world that has just stopped being true, and hearing how strange it sounds. Follow it with the four promotions and *"same person,"* flat, and let Dana leave the silence alone.
-- **The firing does not make sense, and that is the design, not a gap.** A scored reduction ran in another part of the building off tracked fields. **Do not let any character explain it** — Dana can only say "they're separate processes," which is true, complete and useless, and "I don't know that it's a who," which is the honest answer. The prologue does the explaining and Liam never sees it.
+- **The firing does not make sense, and that is the design, not a gap.** A scored reduction ran in another part of the building off tracked fields. **Do not let any character explain it** — Dana can only say "they're separate processes," which is true, complete and useless, and deflect the rest ("it isn't something that sits with a person," "that's not something I'm able to share"). She is not withholding the answer to be cruel; the process is built so that there is no answer she is allowed to give, and getting through it cleanly is the whole of her job. The prologue does the explaining and Liam never sees it.
 - **"Is it everyone?" / "It isn't everyone, no." / "So somebody picked."** The hinge. A whole-company layoff would make sense; being selected out of a group does not. And the answer to *somebody picked* is that the process exists precisely so that nobody did.
 - **The prologue is the scene.** `AIV-076` must be readable — the audience has to *see the columns* and register that reviews are not among them. Both figures on Liam's row are adjustments he made for good reasons: the 3% is him following a security policy he wrote and which is still in force, and the authored-changes arrow points down because he took Brendan's advice in [[12 - Below Expectations]] and started clearing his queue. **He corrected himself, twice, sincerely, and both corrections are on the sheet as deficits.** Hold the authored-changes cell a beat longer than the others and underline it no other way.
 - **Three men on one sheet, and Liam never sees it.** Brendan is under the line for the same kind of reason Liam is — his work is in Linear and the pull was from Jira — and Marcus is safely above it because he files tickets. **The audience gets all of this wordlessly, in the prologue, and neither the scene nor Liam ever mentions it.** It is what makes "congrats!!" unbearable in the moment rather than only in retrospect, and it is the setup for [[Rework — Brendan Goes Dark]]. Do not let Dana know it, do not let Liam ask about it, and do not put Brendan's name in any line of dialogue.
 - **The plan gets four seconds and no argument.** He reaches for it late, cannot make a case out of it, and is told it's separate. **Do not reinstate the criteria recital or the calendar arithmetic** — a man itemising his own metrics is a man who was expecting this, and the whole rewrite is that he wasn't. The document closing itself under the ring is all the payoff [[13b - The Plan]] needs.
 - **He does not break, and this time that means static, not composure.** No shouting, no pleading. He asks things to be repeated, loses the middle of the meeting, and says "sorry" four times. The performance is a man continuing to operate a procedure with nothing behind his eyes.
-- **The ring.** It starts on "I'm sorry, Liam" and runs long — longer than is comfortable, which is the whole instrument. No live line inside it. The applause clip coming through it is the play's warmest sound heard as tinnitus and it costs nothing. **Do not add a light change, do not add music, and do not let the actor act during it.** He is not doing grief; he has stopped.
+- **The ring.** It starts as the read-out lands and she moves straight on to the pack — the instrument is the decision, not her sympathy — and it runs long, longer than is comfortable, which is the whole point. No live line inside it. The applause clip coming through it is the play's warmest sound heard as tinnitus and it costs nothing. **Do not add a light change, do not add music, and do not let the actor act during it.** He is not doing grief; he has stopped.
 - **"Can you go back." / "Which part?" / "…I don't know."** The most important three lines in the scene. Liam always knows which part. Play it flat and let it be as short as it looks.
 - **The unfinished sentence at the top is the one to protect.** *"I've just found a—"* and he stops himself, because he has learned that people don't want the rest of it. It is the note he took in [[12 - Below Expectations]] being actioned, thirty seconds before this, and it costs him the last thing that would have made him happy to say. **Nobody in the play ever hears what he found.**
 - **The notes file is the inversion.** In [[12 - Below Expectations]] he takes a note and actions it; here he opens the file out of reflex, types the date, and never types another character — including when she answers the question he asked. **The audience should clock the empty file at the end.** Do not have him close it.
 - **"Four years. We've never had a bad Saturday."** He arrives, in pieces and badly, at the exact argument Kristina typed into a comment box and deleted a character at a time in the prologue to [[13 - The Performance Review]]. Neither of them will ever know. **He cannot finish the thought and must not be allowed to** — the moment it becomes a fluent speech the play is narrating itself. Per [[Liam]]: he grieves in the one dialect nobody around him speaks.
-- **"Is there a field for that." / "…No."** Dana's most useful sentence and the thesis of the scene. She is not being bleak; she is answering a factual question factually, because she does not lie to him at any point.
-- **Dana is not a villain and is the most useful person in the play.** She reads a script because legal requires it and comes off it the moment she can. She tells him she can't say who selected him and doesn't think it's a who. She reads his file the morning of. She offers a reference she doesn't have to offer. **Every one of those is a kindness and every one of them is also the process running correctly.** If a draft gives her smugness, coldness or relief, cut it. Per [[Performance Management — How It Actually Works]]: "keep HR unvillainous."
-- **"There was nothing" is the answer, and it is worse than a lesson.** Liam has spent the play believing that if he can find the defect he can fix it. The honest answer removes the defect. Then he supplies the real diagnosis himself — rooms, friendliness — arriving at genuine self-knowledge for the first and only time in his life, and it is worth nothing, because the process that removed him did not look at that either. **"I don't think it would have changed the number" is the cruellest line in the play and it is said kindly by the nicest person in it.** He does not write it down. That is the whole ending of the character.
+- **"Is there a field for that." / "The criteria aren't something we go through individually."** The centre of the exchange, and the register in one beat. He asks the most naked question in the play and she routes it to process — not to wound him, but because engaging the merits is the one thing the conversation is built to avoid. The thesis (there is no field for what he actually does) is not spoken by anyone; it lives in the prologue sheet, which has no column for reviews, and in Liam's own "there's no column for it" in [[19 - Nine Tickets]]. **Let the spreadsheet carry the argument; do not let Dana say it for the audience.**
+- **Dana is not a villain and not a friend — she is the script with a face on it.** She reads the mandated part, deflects everything else to the pack and the transition team, withholds the criteria, and offers only the kindnesses that are company policy (the handover window, the outplacement provider). **None of it is smug, cold-as-in-cruel, or relieved** — she is a decent enough person doing a job whose entire design is to get through this with minimal exposure. **She never advocates for him and never gives him a straight answer about the decision.** If a draft gives her warmth, honesty about his worth, or a personal offer, cut it — that was the old register and it is retired. Per [[Performance Management — How It Actually Works]]: HR is the euphemism engine, not the cruelty; hold that line.
+- **The unanswerable question routed to a PDF.** Liam has spent the play believing that if he can find the defect he can fix it, and he asks the biggest question of his life — *what could I have done differently* — and gets pointed at the pack and the outplacement provider. Then he supplies the real diagnosis himself — rooms, friendliness — arriving at genuine self-knowledge for the first and only time in his life, and she can't speak to that either. **The cruelty is entirely structural: the nicest thing available to her is a routing, and the routing is the answer.** He does not write it down. That is the whole ending of the character.
 - **Four weeks.** He does not raise the nine, and the stage direction carries it — the number he looked up in June to prove nine was generous was four. Brendan warned him twice in [[13b - The Plan]] and could not finish either sentence. He says **"right, no, that makes sense"** about the single least sensible thing that happens to him, and goes straight on to the returns label. Underplay it.
-- **The kindness that destroys him.** *"Your access stays live until Friday… we're not going to be weird about it"* is the offboarding's warmest moment and it is the mechanism of the hack. It is planted here and paid off in Movement III. **Do not flag it, do not hold on it, and do not let the lighting notice.** Logged in [[Themes & Motifs]].
-- **The rehire flag is the "Non-regretted" rhyme.** A two-option dropdown, changed by nobody visible, while a person is being told none of this reflects their value. Same staging as the classification field in the prologue to [[13 - The Performance Review]]; same rule — no music, nobody notices. **"We'd love to stay in touch"** sits directly against it and means, in the euphemism glossary, that the flag exists. She is not being sarcastic; she does not know.
+- **The policy that destroys him.** *"Your access stays active until Friday… anything you need to hand over or save, you'll have time for"* is not a personal kindness — it is the handover window, stated as company policy — and it is the mechanism of the hack. It is planted here and paid off in Movement III. **That it is procedure and not warmth is now the point:** the hack is enabled by the process running normally, not by one decent person bending a rule. **Do not flag it, do not hold on it, and do not let the lighting notice.** Logged in [[Themes & Motifs]].
+- **The rehire flag is the "Non-regretted" rhyme.** A two-option dropdown, changed by nobody visible, while a person is being read a line about none of this reflecting his value. Same staging as the classification field in the prologue to [[13 - The Performance Review]]; same rule — no music, nobody notices. The rote **"none of this is a reflection of your value or your contribution"** — the second time she says a version of it — sits directly against the flag and means, in the euphemism glossary, that the flag exists. She is not being sarcastic; she does not know.
 - **Brendan's promotion is the applause curdle, and Liam misses it.** The slide plays under the ring, so he never sees it and never hears the clip. He gets the Slack post at the end and congratulates him and **means it** — do not let this play as bitter, and do not give Brendan a reply.
-- **Kristina's absence.** She delivered the review and is not here. Liam asks once, is told plainly, and accepts it. Don't explain it and don't have Dana apologise for it; it is normal practice and that is the point.
+- **Kristina's absence.** She delivered the review and is not here. Liam asks once, is told plainly, and accepts it. Don't explain it and don't have Dana apologise for it; it is normal practice and that is the point. **With Dana no longer his advocate, Kristina's absence reads harder** — there is now nobody in the room who is on his side, which is the accurate shape of the thing.
 - **He goes back to the bug.** The last image is the seed, not the payoff — the thing he was delighted about ninety seconds before the call, still open in a tab, still wrong, and he fixes it because there is nothing else to do with his hands. [[19 - The Empty Apartment]] does this in full: the work was the self, and nobody has told the self. It is also, exactly and unfortunately, how the hack happens.
-- **Strings that must not drift.** *"We're not going to be weird about it"* is quoted in [[Liam Arc]] and is the access plant. *"Not a reflection of your value"* now appears twice in one scene — once inside the read-out script and once meant — and rhymes with `AIV-070` in [[13 - The Performance Review]]; keep all three near-identical, because the joke is that Kristina's sincere version was printed on a page all along.
+- **Strings that must not drift.** The access plant is now *"your access stays active until Friday… anything you need to hand over or save, you'll have time for"* — quoted in [[Liam Arc]]; keep it procedural, never warm. *"Not a reflection of your value / your contribution"* appears twice in this scene — once inside the read-out script and once as Dana's rote closer — and rhymes with `AIV-070` in [[13 - The Performance Review]]; keep all three near-identical. **The joke sharpens in the rewrite:** HR now says it twice and means it neither time, so Kristina's sincere version — printed on a page in the calibration prologue — is the only true instance of the sentence anywhere in the play.
 - **Runtime.** ~4.5 min spoken plus the ring, which reads long on stage and measures as nothing. If it has to come down, the cuts in order are: the health-cover line, then "Is this about the Q4 staffing thing." **Do not cut the prologue, the unfinished sentence at the top, the dongle, the notes file, or the last question.**

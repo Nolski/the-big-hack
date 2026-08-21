@@ -27,7 +27,7 @@ The scene has one job above the others: **stage the break.** Liam can end this w
 **It must not read as sacrifice.** He is not protecting Brendan; he has stopped believing that saying true things does anything, and the play has proved him right seven times. See the break in [[Concept & Thesis]] and the second turn in [[Liam Arc]]. **He will let everyone in the room think it was mercy. It is exhaustion.**
 
 ## Setting / Staging
-A courtroom assembled entirely from screens and one live body. **Liam is live, in the dock, and he is the only person on stage who is on trial.** The judge and the prosecutor are AI video on separate surfaces — the register of [[14 - The Offboarding]]'s People Partner escalated two notches, which is to say **warmer, slower and more courteous than any of it deserves**.
+A courtroom assembled entirely from screens and one live body. **Liam is live, in the dock, and he is the only person on stage who is on trial.** The judge and the prosecutor are AI video on separate surfaces — the same immovable-institution register as [[14 - The Offboarding]]'s People Partner, but **thawed and slowed: warmer, more courteous and more patient than any of it deserves** (the warmth is the court's, not hers).
 
 **Brendan is live, in the gallery, and never speaks in the scene.** He narrates it to the house — the procedure, the statute, the arithmetic of the counts — from a seat in the room where it is happening. **He is the only character who could stop it and the only one addressing the audience.**
 

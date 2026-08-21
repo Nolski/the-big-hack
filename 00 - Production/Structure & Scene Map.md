@@ -33,12 +33,12 @@ The decision record for this structure — including the questions still open �
 >
 > **The storyboard playback length is not the stage length and will mislead you.** The app has the narrator read every stage direction aloud, which adds 2–4 minutes per scene and is an artifact of the medium — `13b` plays back at 4.6 min against 2.2 min of dialogue, `14` at 6.6 against 4.3, and the wordless calibration prologue in `13` reads as three minutes of narration that will play as about one minute of images. Judge pacing from the spoken column, never from the player.
 >
-> Against the table above: **Movement I is on budget** (~17 min spoken, before 1e). **Movement II is not** — ~35 min spoken against a ~22 min allowance. The fat is in `11b` (7.0m, the longest scene in the show) and `12` (6.3m), not in the cold-open block the earlier note flagged. Decide the cut before Movements IV–V get written, not after.
+> Against the table above: **Movement I is on budget** (~17 min spoken, before 1e). **Movement II is not** — ~35 min spoken against a ~22 min allowance, and now **+~1.5 min for the unrendered CEO/Kara reduction coda added to `10`** (see below). The fat is in `11b` (7.0m, the longest scene in the show) and `12` (6.3m), not in the cold-open block the earlier note flagged. Decide the cut before Movements IV–V get written, not after.
 
 | Movement | Spoken (measured) | Budget |
 |---|---|---|
 | I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
-| II — `6` through `13b` | 34.6 min | ~22 min |
+| II — `6` through `13b` | 34.6 min *(+~1.5 est., unrendered `10` coda)* | ~22 min |
 | III — `14`, `19`, `20`, `20b` | 13.8 min | ~12 min |
 | IV — `22` only; `21` unwritten | 2.8 min | ~10 min |
 | V — `23`, `24` | 5.3 min | ~10 min |
@@ -53,7 +53,7 @@ All figures are measured off rendered line audio, not estimated. Re-measure afte
 >
 > **Judge `20` on a clock in rehearsal, never from this column and never from the storyboard player.** Best current estimate for Movement III as staged is **16–18 minutes**, not 11.9.
 >
-> **Movement II is still ~13 min over and no decision has been made.** The fat is in `11b` (7.0) and `12` (6.3). With Movements IV and V still unwritten, that is the largest open problem in the show.
+> **Movement II is still ~13 min over (now ~14.5 with the new `10` coda) and no decision has been made.** The fat is in `11b` (7.0) and `12` (6.3). With Movements IV and V still unwritten, that is the largest open problem in the show. **The `10` coda is written to survive being lifted into its own slot** if the folding proves too heavy for the scene or the movement's budget.
 
 ## Scene running order
 

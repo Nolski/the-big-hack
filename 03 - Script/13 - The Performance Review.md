@@ -46,7 +46,7 @@ A 1:1. **Liam** (live, Speaker A) at a bare meeting-room laptop — and this tim
 
 *(A reply the next morning, from Kara: "I don't disagree with any of that. But I hand the distribution in on Thursday, and there's no field on it for a Saturday that didn't happen.")*
 
-*(Under it, a third comment from a name Liam has never heard — the People Partner attached to the team. It is plainly a paragraph they paste often: if the second axis is going to Below, there needs to be a plan behind it before anyone sits down with him. Thirty, sixty, ninety. Written criteria, dates. The last sentence is theirs and is meant: **"I don't want the first written thing in someone's file to be the last one."**)*
+*(Under it, a third comment from a name Liam has never heard — the People Partner attached to the team. It is plainly a paragraph they paste often: if the second axis is going to Below, there needs to be a plan behind it before anyone sits down with him. Thirty, sixty, ninety. Written criteria, dates. The last sentence is boilerplate too, and it is the kind that sounds like someone meant it: **"I don't want the first written thing in someone's file to be the last one."**)*
 
 *(Then, at the top of the thread, **Resolve.** The whole exchange folds shut and leaves the document.)*
 

@@ -46,7 +46,7 @@ On screen, **COUNSEL**, tired and decent and doing a competent job. Beside them,
 - **BRENDAN** — live, Speaker B, one line of narration at the top, offstage or apart. **He does not appear in the room, does not speak again, and does not get a last word.**
 
 ## AI Video Cues
-- **[[AI Video Production Tracker|AIV-089]] — Defence counsel:** tired, decent, competent, and out of moves. **Not a villain and not a hack** — they have got him a genuinely good outcome and they know what it costs him. The register of Dana (`AIV-074`) at the end of a long week.
+- **[[AI Video Production Tracker|AIV-089]] — Defence counsel:** tired, decent, competent, and out of moves. **Not a villain and not a hack** — they have got him a genuinely good outcome and they know what it costs him. The People Partner's immovable-institution register from `AIV-074`, but **warmed by exhaustion and real respect** — at the end of a long week.
 - **[[AI Video Production Tracker|AIV-093]] — The agreement (screen graphic, no voice):** the plea agreement, scrolled. The term. The counts being dropped. Then the **Statement of Facts**, and one sentence in it with the word **"knowingly"** in it. Then a signature block. Then, last, **the court calendar: the entry for the fourteenth, and the entry going.**
 
 ---
