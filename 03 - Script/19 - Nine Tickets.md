@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Liam Arc]] — the handover"
 status: drafted
-runtime_estimate: ~5 min
 live_cast: "Liam, Brendan"
 ai_video_assets: "none — no video, no screens, no operator cues"
 tags:
@@ -119,11 +118,19 @@ Two beers. Nobody is drinking fast until they are.
 
 **LIAM** *(live)*: You don't use Jira.
 
-**BRENDAN** *(live)*: *Nobody* uses Jira. I moved the whole team onto Linear a year ago — you were there, I did the demo, Kristina signed it off in the same meeting.
+**BRENDAN** *(live)*: I've never used Jira. *(beat)* I asked about it. First month I was here — I asked Kristina whether I should move it all across, and she said work however I want.
 
-**LIAM** *(live)*: I remember. You were pleased with yourself.
+**LIAM** *(live)*: I remember you saying.
 
-**BRENDAN** *(live)*: I was right. *(beat)* We ship twice as much as we used to and everyone knows where everything is.
+**BRENDAN** *(live)*: She said she'd pull it in her end.
+
+*(A beat.)*
+
+**LIAM** *(live)*: *(beat)* Did she?
+
+*(A beat.)*
+
+**BRENDAN** *(live)*: *(beat)* I don't know.
 
 **LIAM** *(live)*: So what's the number.
 
@@ -290,6 +297,8 @@ Two beers. Nobody is drinking fast until they are.
 - **Liam stops thinking about himself the second he finds out, and never resumes.** This is the only sustained stretch of the play where he is generous, useful and good with a person, and every bit of it is aimed at Brendan. **Do not let the actor play grief under it.** He is not being brave; he has simply found a problem he knows how to work, which is the same thing that has happened to him in every scene — it is just, for once, somebody else's.
 - **Do not make the advice wise.** It is specific, slightly bossy, and practical to the point of being unromantic: don't take the first offer, say "role was cut," write everything down tomorrow. It is good advice. It will not help. Nobody in the scene knows that.
 - **The dot-com anecdote is thrown away and must stay that way.** A dead company nobody has heard of, six weeks fixing printers, and one flat sentence about what came after. **No meaning is attached to it and Liam does not attach any.** Per CLAUDE.md, he does not narrate his own history — he answers a question and moves on. If a draft gives it a lesson, cut the lesson.
+- **"Did she?" / "I don't know." — and nobody ever finds out.** Kristina told him in [[01b - The Cursor Demo]] to send her the board and she'd pull it in her end. She meant it. **The play never says whether she did, and never returns to it.** Play both lines flat and short; Liam is not making an accusation and Brendan is not making an excuse — he is answering a factual question he has genuinely never thought about. **Do not add a third line, do not let either man draw the conclusion, and never bring Kristina back to it.** She belongs to the group of people in this play who never learn what they cost somebody.
+- **His Linear use is personal, not a team migration.** He tracks *his own* work in Linear, he asked permission for it in his first month, and he was told to work however he liked. **An earlier draft had him move the whole team onto it, which contradicted Marcus filing Jira tickets on that same team** — that version is retired. It also matters that he *asked*: the deference is what makes it unbearable, and it is set up in [[01b - The Cursor Demo]].
 - **The three-way is assembled by the audience, not stated.** Liam has no column, Brendan has the wrong column, Marcus files everything and is fine. **"Marcus files everything" is the last word on it from anybody.** Neither man draws the conclusion, and Liam's *"they couldn't see you"* is him describing his own row without recognising it. Do not let him get there.
 - **"Don't." — Liam refuses the confession.** Brendan's third and final attempt to tell him ([[12 - Below Expectations]]: *"I want to be clear that I'm not—"*; [[13b - The Plan]]: *"the nine weeks is there now"*), and this time he is stopped by the kindness of the man he is trying to confess to. **"You didn't do anything"** is the worst sentence in the scene and Liam means it completely. **This closes the peer-feedback confession permanently — do not add a fourth attempt at it anywhere in the play.** He finishes his beer instead, and that is the seed of everything that follows. *(The backspace in [[20 - The Audit]] is a different thing and is not a fourth attempt: it is the first and only time he tries to* warn *him, and it fails the same way.)*
 - **"Nah. Fuck it. I'm not giving them shit."** Liam's only swear in the show, and it should be quiet rather than defiant — a man who three weeks earlier offered to put a dongle he owned into the returns box, out of consideration for whoever opens it. **It is also the last free choice anybody in this play makes.** Play it as a shrug. It destroys everything.
@@ -299,7 +308,7 @@ Two beers. Nobody is drinking fast until they are.
 - **"Don't go quiet."** The last line of dialogue, and the play's subject said out loud, by accident, to the one person it is about to be true of — except that what Brendan does instead of going quiet is much worse. **No emphasis, no pause after it.** Logged in [[Themes & Motifs]].
 - **The empty apartment is four beats at the end, not a scene.** The clean rectangle in the dust, two bottles carried to the kitchen because that is what you do, and the box still by the door. **Resist adding anything.** The old slot-19 "Empty Apartment" scene is absorbed here — a whole scene of Liam alone would be the play explaining its own ending, and this does it in twenty seconds with a man tidying up.
 - **The jingle stays out of this scene.** [[Themes & Motifs]] promises the standup jingle over the empty office; per [[Rework — Brendan Goes Dark]] §E it is wanted under the counter in Scene 20. Using it twice spends it.
-- **Runtime.** **4.8 min spoken, measured off the rendered line audio** — shorter than it reads, because it is almost entirely short exchanges. If it has to come down, cut the "glasses" exchange and shorten the three pieces of advice to two. **Do not cut the six days, the nine, "Marcus files everything," "Don't," the swear, the handover, or "don't go quiet."**
+- **If it has to come down,** cut the "glasses" exchange and shorten the three pieces of advice to two. **The first place to look is the working-out** — with the layoff now staged in [[14b - Three Weeks]] and the Linear plant plainly in [[01b - The Cursor Demo]], establishing *that* Brendan was cut is the third time the audience is being told. **Do not cut the six days, the nine, "Marcus files everything," "Don't," the swear, the handover, or "don't go quiet."**
 
 > [!warning] Continuity — Liam's age changed to make this scene possible
 > The dot-com beat requires Liam to have been working in 2001. [[Liam]] had him at **~38**, which makes him about thirteen. He is now **~48** — consistent with *"telling me I'm hard work since I was twenty-three"* plus the twenty-five years he cites in [[14 - The Offboarding]], and with roughly thirty years at the craft.

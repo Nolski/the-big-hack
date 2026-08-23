@@ -112,6 +112,13 @@ The signature device: a laugh in Act I returns without the laugh in Act II–III
 
 > Add a row whenever you plant a joke. A setup with no payoff is a wasted bullet; a payoff with no setup won't land.
 
+> [!note] The Linear plant — setup in Movement I, payoff in Movements II and III
+> **Setup ([[01b - The Cursor Demo]]):** Kristina needs a live ticket to test the new bot on, asks Brendan for one of his, and he hasn't got any — he tracks his own work in Linear. He apologises, offers her the board, and **offers twice to move it all back into Jira.** She tells him not to: *"work however makes you most productive… I'll pull it in, I'll figure it out my end. That's what matters, and that's what gets you noticed."* **She is being generous and she is right to be.**
+>
+> **Payoff, three times, and nobody ever connects them.** Kara picks the reduction metric in [[10 - The Win We Needed]] — *"everyone's work is in Jira"* — and **nobody in the room corrects her**; the sheet in [[14 - The Offboarding]] reads *Tickets closed (Jira): 9*; and in [[19 - Nine Tickets]] Brendan finds out why from Priya, eight days after the fact. **The audience is the only party who ever holds both ends of it**, which is the whole design: the firing is arbitrary and completely determined at the same time.
+>
+> **The loose end that is never tied — the promise.** *"I'll pull it in, I'll figure it out my end."* Liam asks the only question anybody ever asks about it, in [[19 - Nine Tickets]]: **"Did she?" / "I don't know."** The play never answers it and Kristina never returns to it. She joins Marcus and Brendan himself in the set of people who never learn what they cost somebody — the difference being that hers was a kindness she simply forgot to finish.
+
 > [!note] Two additions from [[14b - Three Weeks]]
 > **The script itself is now a setup and a payoff.** Dana's mandated read-out, her deflections and her next-steps sequence land as an individual tragedy in [[14 - The Offboarding]] and as a **machine** five days later, delivered word for word to a man with the opposite case. *"It is not a reflection of your value or your contribution"* is said **four times across the two scenes**, and the only sincere instance of the sentence anywhere in the play is the one Kristina typed into a comment box in the calibration prologue.
 >

@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)]]"
 status: drafted
-runtime_estimate: ~4 min
 live_cast: Brendan
 ai_video_assets: "[[AI Video Production Tracker|AIV-010 Kristina — Standup]], [[AI Video Production Tracker|AIV-014 Cursor demo — on-screen UI]]"
 tags:
@@ -107,8 +106,28 @@ Continuous with the cold open — the standup grid has emptied to just two tiles
 
 **BRENDAN** *(live)*: There — it's live in your Slack now. Go on — close a real one.
 
+> [!screen] VIDEO — KRISTINA · `AIV-010`
+> Right. Give me one of yours — what have you got open?
+
+**BRENDAN** *(live)*: Oh — *(beat)* sorry, I haven't got any in there. I've been tracking my stuff in Linear.
+
+> [!screen] VIDEO — KRISTINA · `AIV-010`
+> …Linear.
+
+**BRENDAN** *(live)*: It's another one of these — same idea, but the AI's built into it, it triages and links things up by itself. *(quickly)* I'll send you the board, it's all on there. And I can move it across to Jira if you'd rather, genuinely, it's no bother — I just found it fits how I work a bit better.
+
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(waving it off, entirely warm)*
+> God, no, don't do that. Work however makes you most productive — that's the whole point of any of this.
+
+**BRENDAN** *(live)*: *(beat)* Are you sure that's alright? Because I'm still fairly new, and if there's a process thing I'm supposed to—
+
+> [!screen] VIDEO — KRISTINA · `AIV-010`
+> Brendan. Honestly. *(beat)* Send me the board and I'll pull it in — I'll figure it out my end. Do the work in whatever gets you moving fastest. *(warm)* That's what matters, and that's what gets you noticed.
+
+**BRENDAN** *(live)*: *(beat)* …Okay. Thanks.
+
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(typing into Slack, narrating)*
-> Okay… slash, jira, done, P-R-O-J four-twelve…
+> I'll use one of mine, then. Okay… slash, jira, done, P-R-O-J four-twelve…
 
 *(She hits enter. Instead of a confirmation, Slack throws back a red error — a permissions failure the sandbox never saw.)*
 
@@ -167,6 +186,19 @@ Continuous with the cold open — the standup grid has emptied to just two tiles
 - **The error has to be earned.** Because Brendan has it write and pass its own sandbox tests, a build-time failure would just get auto-fixed and mean nothing. The failure that lands is the *live* one — she runs `/jira done` for real and hits a permissions error the sandbox never saw. Works-in-test-breaks-in-prod: real, and it makes the fix (paste the error back) legible.
 - **Kristina is not naive.** She lives with these tools and knows the theory of vibe-coding; she just hasn't driven one herself. Keep her sharp — no "do I say please," no "I can't code," no "five-minute version." Her skepticism is pointed (the time-saving challenge), and she concedes fairly when Brendan answers it.
 - **Liam was half-right.** The tool inventing an endpoint and hardcoding a token is the deliberate payoff of Liam's standup meme ("it confidently lies to you," [[01 - Cold Open — The Standup]]). Let the recognition land — *he wasn't wrong* — without making Kristina a skeptic. The friction is with the tool; it deepens her respect for the person who's learned to tame it.
+> [!important] The Linear plant — the quietest kill in the play
+> **She needs a live ticket to test the bot on, asks him for one, and he hasn't got any.** That is the whole plant, and it is load-bearing for the entire second half. Brendan tracks his own work in Linear because the AI is built into it and it suits him; he is apologetic about it, offers the board, and **offers twice to move everything back into Jira.** Kristina tells him not to, means it, and is right to: *"work however makes you most productive"* is good management, and *"I'll pull it in — I'll figure it out my end"* is a manager taking an admin burden off a junior engineer. **Nobody is careless and nobody is wrong.**
+>
+> It is also what fires him. In [[10 - The Win We Needed]] Kara picks the reduction metric — *"everyone's work is in Jira"* — and **no one corrects her, because no one in that room knows otherwise.** The sheet in [[14 - The Offboarding]] reads *Tickets closed (Jira): 9*. He is read the same page as Liam in [[14b - Three Weeks]], and learns why from Priya in [[19 - Nine Tickets]], eight days late.
+>
+> **He asks permission twice and gets it twice, and that is the point.** *"Are you sure that's alright? Because I'm still fairly new"* is a young engineer doing exactly the right thing — checking, deferring, offering to comply — and being waved off by someone with authority who is being generous. **Do not let him seem lazy, do not let him seem cocky, and do not let Kristina seem dismissive.** She is doing him a kindness. The kindness is the mechanism.
+>
+> **"That's what gets you noticed."** The one line in the beat that is allowed to be pointed, and it must still be thrown away — warm, offhand, a manager encouraging someone she rates. It is the play's thesis said by accident to the person it is about to be false of, in the same register as *"don't go quiet"* in [[19 - Nine Tickets]]. **One flag only** — an earlier draft also had her say "nobody's counting tickets," which is a second flag in the same speech and was cut. Do not put it back.
+>
+> **Play the rest as nothing.** No pause, no emphasis, no light change, and **nobody mentions tracking, tickets or velocity again in Movement I.** The audience should not be able to point at this afterwards and say they were told. **Kristina never follows up on the board** — she means to pull it in and never does, and the play never says so; Liam's *"did she?"* in [[19 - Nine Tickets]] is the only time anyone asks, and nobody ever finds out. Logged in [[Themes & Motifs]].
+>
+> **Continuity — this is the canonical version.** Brendan's Linear use is **personal, not a team migration.** [[Brendan]] and [[Rework — Brendan Goes Dark]] §B both always described it that way ("his work lived in Linear"); Scene 19's old *"I moved the whole team onto Linear"* was the outlier and never squared with Marcus filing Jira tickets on the same team. **That line is now rewritten to match this scene.**
+
 - **The unowned mistake:** the bot silently resolves three linked issues nobody asked it to. Neither of them reads it. Plants the blast-radius / tech-debt cost live, without a speech — the explicit caution stays in [[01d - The Future]].
 - **HR beat / nobody owns the harm:** Kristina nearly reports the degree line and is talked down ("you learn to work around him"). The harm goes unrepaired — the same diffusion of responsibility that later makes the layoff nobody's fault.
 - **Muted, not gushing.** No "most incredible thing I've ever seen," no "faster than ChatGPT," no eruption of code. Cut the superlatives; keep the brands (Cursor, Claude, Slack, Jira, Vault). The dread comes from how reasonable every small step feels — and from the career-bet subtext left unspoken: she never finishes the thought about Liam being on the wrong side of this.

@@ -56,7 +56,7 @@ He narrates from **after** — retrospectively, knowing how it ends. That hands 
 
 ## Arc
 
-1. **Movement I** — the decent man who gets stepped on. Shipped the thing, offers to walk Liam through it, is talked over. The audience adopts him immediately.
+1. **Movement I** — the decent man who gets stepped on. Shipped the thing, offers to walk Liam through it, is talked over. The audience adopts him immediately. **In [[01b - The Cursor Demo]], asked for one of his tickets, he hasn't got any** — he tracks his own work in Linear, because the AI is built into it and it suits how he works. He apologises for it, offers the board, offers twice to move everything back into Jira, and asks twice whether it's really alright *because he's still fairly new*. Kristina tells him not to bother and to work however makes him most productive: **"that's what gets you noticed."** She means it and she is right. **It is the thing that fires him**, it costs half a minute, and nobody in the play ever connects the two.
 2. **[[06 - Good Instinct]]** — uses the tool carefully, because he actually heard Liam's one legitimate objection. Quietly solves Liam's race condition and lets Liam credit his own instinct. First flicker of guilt he can't name.
 3. **[[07 - Heads Together]]** — can't take credit, and being honest to a fault, half-exposes Liam to Kristina anyway. Deletes Claude's branch — live hand, live keyboard.
 4. **[[11b - Best Practices]]** — the three deletions: the policy message, "I don't know if liam is ever going to—", the finished patch. Live, this is a man holding backspace while another man talks.
