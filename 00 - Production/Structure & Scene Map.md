@@ -22,7 +22,7 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus, the Luddites as a bit, and the credential jab at Kristina he calls out and helps nobody by calling out. | ~20 min |
 | **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. | ~22 min |
-| **III** | Offboarding → the empty apartment → **the hack**. The agent, still holding a token minted in his name, does it while he's asleep. | ~12 min |
+| **III** | Offboarding → **Brendan was cut too** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. | ~12 min |
 | **IV** | The press invents him → the arrest. Procedurally polite officers, a form to sign, a name mispronounced. | ~10 min |
 | **V** | The trial → **the removal**. The verdict never comes. | ~14 min |
 
@@ -39,10 +39,17 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
 | II — `6` through `13b` | 34.6 min | ~22 min |
-| III — `14` only so far | 4.3 min | ~12 min |
-| **Drafted total** | **55.7 min** | |
+| III — `14`, `19` | 9.5 min | ~12 min |
+| **Drafted total** | **60.9 min** | |
 
-All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered.
+All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 19 render — `14` and `19` are both fully rendered and orphan-free.**
+
+> [!note] Movement III is the only one on budget, and it isn't finished
+> `14` measures **4.6 min** spoken and `19` measures **4.8 min**, against a ~12 min allowance — but Scene 20 (the hack) is still unwritten, and it is mostly wordless, so it will add stage time without adding much to the spoken column. **Judge that scene by the clock in rehearsal, not by this table.**
+>
+> Two scenes carry long wordless sequences that measure as nothing here and play as real time: the **ring** in `14` (thirty to forty seconds) and, when written, the counter sequence in `20`. Neither shows up in the spoken figure.
+>
+> **Movement II is still ~13 min over and no decision has been made.** The fat is in `11b` (7.0) and `12` (6.3). That is now the largest open problem in the show.
 
 ## Scene running order
 
@@ -65,7 +72,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 13 | [[13 - The Performance Review\|The Performance Review]] | II | ✏️ |
 | 13b | [[13b - The Plan\|The Plan]] | II | ✏️ |
 | 14 | [[14 - The Offboarding\|The Offboarding]] | III | ✏️ |
-| 19 | The Empty Apartment *(to write)* | III | ⬜ |
+| 19 | [[19 - Nine Tickets\|Nine Tickets]] | III | ✏️ |
 | 20 | The Hack *(to write)* | III | ⬜ |
 | 21 | The Press Invents Him *(to write)* | IV | ⬜ |
 | 22 | The Arrest *(to write)* | IV | ⬜ |
