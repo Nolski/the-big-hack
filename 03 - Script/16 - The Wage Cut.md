@@ -5,7 +5,7 @@ title: The Wage Cut
 world: historical
 arc: john-arc
 beat: "[[Beat Sheet — Parallel Intercut#B7 — He fights it the only way he knows (and it backfires)]]"
-status: drafted
+status: cut
 runtime_estimate: ~4 min
 live_cast: John
 ai_video_assets: "[[AI Video Production Tracker|AIV-080 Cartwright — the wage cut]], [[AI Video Production Tracker|AIV-002 Steam looms (through the window) — ambient]]"
@@ -15,6 +15,9 @@ tags:
 ---
 
 # Scene 16 — The Wage Cut
+
+> [!danger] CUT from the running order
+> John is cut from the show ([[Rework — The Escalation Pass]] §A2), so this scene is not performed. It stays as **Marcus's argument bank**: Cartwright's case — *I don't set the price, the market does* — is the steelman Marcus has to answer every time someone tells him the layoffs were unavoidable, and the petition that fails is the beat he keeps citing. Its storyboard artifacts (`s16`) are left in place; nothing in [[Structure & Scene Map]] plays it.
 
 > [!info] Beat
 > Dramatizes **[[Beat Sheet — Parallel Intercut#B7 — He fights it the only way he knows (and it backfires)|B7 — He fights it the only way he knows]]**. John petitions *lawfully* and is answered with a deeper cut and an offer that's worse than the cut. Mirror twin scene: **[[13 - The Performance Review]]** (Liam, same beat). The curdle of his B2 line in [[02 - The Loom and the Guild — John half]] — *"sign a petition, it gets sorted"* — pays off here: it doesn't.

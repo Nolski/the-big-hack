@@ -7,85 +7,85 @@ tags:
 
 # Structure & Scene Map
 
-~60 minutes, **braided structure** (not beat-level intercut). We stay in **one story for a whole movement**, build it to a near-climax, **cut away at the tension peak**, then build the other thread to its own peak — and the two finally **converge** in the last movement. The thematic mirror still governs *which* beats rhyme (see [[Beat Sheet — Parallel Intercut]]); the technique and exemplars are in [[Braided Structure — Reference]].
+~75 minutes, **one thread, five movements**. The play follows Liam forward in a straight line from an ordinary standup to a removal order. What escalates is not the story's shape but its **institutions**: HR, the press, the officers and the court each detach from reality one notch per movement while Liam stays a literal, exact, recognisable man being processed by increasingly unreal machinery.
 
-> [!important] This replaced the old side-by-side intercut
-> Previously the running order alternated every beat (Liam scene / John scene). Now it alternates in
-> **multi-scene movements** with cliffhanger hand-offs — the Godfather Part II / Cloud Atlas / Cloud Nine shape. The scene *content* is unchanged; the **order and grouping** changed.
+The decision record for this structure — including the questions still open — is [[Rework — The Escalation Pass]]. The escalation contract that keeps "it gets crazier" from becoming "it gets random" is §G of that note, and it should be written before any new scene.
+
+> [!important] This replaced the braided two-century structure
+> Earlier drafts ran Liam's story against a Yorkshire weaver's in alternating movements, converging at the end. **That is retired and John is cut.** The Luddite material survives entirely in **Marcus's** mouth — an engineer on the team who is politics-obsessed the way Liam is tech-obsessed, and who drags the history into standups nobody asked him to. He is wrong about the details and right about the shape; Liam corrects him; the audience gets accurate history through the argument. See [[Character Mirror Map]] and [[Modern World — Supporting]].
+>
+> The runtime the braid used to spend on 1812 now buys a **second half the play never had**: the accidental hack, the press, the arrest, the trial, the removal.
 
 ## The movement structure
-The show **opens cold inside Liam's world** — no dual prologue — then **rewinds 200 years and cuts straight to John's world after a single cold-open scene.** The braid runs from there. Each thread (Liam / John) runs chronologically across its movements; we cut between them at near-climaxes. Because the prologue is gone, the establishing work it used to do is absorbed: **Liam** is established by the cold-open standup (where the AI coding tool first shows up alongside him), and **John** is established from scratch at the top of Movement II — the rewind — where the steam looms first make themselves heard.
 
-> [!important] Restructure — Movement I is now just the cold open
-> The earlier plan ran three more Liam scenes (the demo / his "last good day" / the reorg) before the first cut to John. **Those now move into Movement III** so we reach John's warm world *immediately* after the abrasive cold open — which is also where the audience's sympathy gets banked (see the consequence note below). Liam's chronology is unchanged, just regrouped: his B3–B5 (the demo, the unsolvable, adopt-the-agent) now open his squeeze movement.
+| Movement | Content | Approx |
+|---|---|---|
+| **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus, the Luddites as a bit, and the credential jab at Kristina he calls out and helps nobody by calling out. | ~20 min |
+| **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. | ~22 min |
+| **III** | Offboarding → the empty apartment → **the hack**. The agent, still holding a token minted in his name, does it while he's asleep. | ~12 min |
+| **IV** | The press invents him → the arrest. Procedurally polite officers, a form to sign, a name mispronounced. | ~10 min |
+| **V** | The trial → **the removal**. The verdict never comes. | ~14 min |
 
-| Movement | Thread | Builds from → to (cut at the peak) | Approx |
-|---|---|---|---|
-| **I** | 🟦 Liam | **Cold open — four short scenes:** the abrasive standup → the Cursor demo → the PR review → the future. Establish Liam + the machine (by reference), then quietly hand the method — and the case against him — to the people who'll use it. *Cut on the loom-knock, straight into the rewind.* | ~18 min |
-| **II** | 🟫 John | (Rewind 200 yrs — neutral narrator V.O.) **Establish John at his loom + the guild** → the loom marvel → his finest cloth → **the factory opens, the rate collapses**. *Cut on the sting.* | ~10 min |
-| **III** | 🟦 Liam | The day-two standup and debrief (the machine quietly solves his bug; the adopters clock what that means) → the demo → his "last good day" → the reorg → the squeeze: coworkers go quiet → the review → **managed out**. *Cut at the gut-punch, on the threshold of the empty apartment.* | ~14 min |
-| **IV** | 🟫 John | The squeeze: neighbours take the jobs → the petition fails → the bailiff → **the cold hearth, Mary breaks**. *Cut as the oath becomes thinkable.* | ~9 min |
-| **V** | 🟦 Liam | The break: isolation → the forum → the decision → **his hand hovering over the keys**. *Cut at the brink.* | ~9 min |
-| **VI** | 🟫 John → **both** | The oath → the march → hammer raised — and the two threads **collapse into one** (the [[Arcadia — Structural Technique|Arcadia]]/Nolan convergence). Hold on the moment *before*. Black. | ~12 min |
+**Runtime is over the original 60-minute budget and that is a known cost.** Either accept ~75–80, or cut from Movement I — 01b–01d were flagged early as the liftable scenes.
 
-The rhythm: **G · J · G · J · G · (J→both)** — we open cold inside Liam's world (one scene, no prologue), then rewind to John. Five switches, each on a cliffhanger; the threads stay separate until Movement VI. (Movement I is split into four short, individually-navigable scenes — standup / demo / PR review / future — still front-loaded so John's warmth arrives soon after.)
+> [!warning] Measured runtime — the overrun is in Movement II, not Movement I
+> Spoken audio only (stage directions excluded), measured off the rendered line wavs: the drafted run through Scene 14 is **55.7 min of dialogue**. TTS renders at 176 wpm, which is brisk for naturalistic stage delivery with this much `*(beat)*` in it — at 145–155 wpm plus the wordless business, **the drafted run is realistically 66–72 minutes staged**, with five scenes still to write.
+>
+> **The storyboard playback length is not the stage length and will mislead you.** The app has the narrator read every stage direction aloud, which adds 2–4 minutes per scene and is an artifact of the medium — `13b` plays back at 4.6 min against 2.2 min of dialogue, `14` at 6.6 against 4.3, and the wordless calibration prologue in `13` reads as three minutes of narration that will play as about one minute of images. Judge pacing from the spoken column, never from the player.
+>
+> Against the table above: **Movement I is on budget** (~17 min spoken, before 1e). **Movement II is not** — ~35 min spoken against a ~22 min allowance. The fat is in `11b` (7.0m, the longest scene in the show) and `12` (6.3m), not in the cold-open block the earlier note flagged. Decide the cut before Movements IV–V get written, not after.
 
-## Scene running order (regrouped into movements)
-Drafting has started — **Scene 1 is the drafted cold open** ([[01 - Cold Open — The Standup]]); the rest is the planned running order to write into `03 - Script/` (using the Scene template). Titles are working names; status updates as scenes get written.
+| Movement | Spoken (measured) | Budget |
+|---|---|---|
+| I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
+| II — `6` through `13b` | 34.6 min | ~22 min |
+| III — `14` only so far | 4.3 min | ~12 min |
+| **Drafted total** | **55.7 min** | |
+
+All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered.
+
+## Scene running order
+
 Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 
-| Order | Scene (working title) | Movement | Beat | Status |
-|---|---|---|---|---|
-| 1 | [[01 - Cold Open — The Standup\|Cold Open — The Standup]] | I · Liam | B2 (+B1 by ref) | ✏️ |
-| 1b | [[01b - The Cursor Demo\|The Cursor Demo]] | I · Liam | B2 (seeds B5/B6) | ✏️ |
-| 1c | [[01c - The PR Review\|The PR Review]] | I · Liam | B2 (seeds B5/B6/B7) | ✏️ |
-| 1d | [[01d - The Future\|The Future]] | I · Liam | B2 (seeds B6/B7/B8) | ✏️ |
-| 2 | [[02 - The Loom and the Guild — John half\|The Loom and the Guild — John half]] | II · John | B1+B2 | ✏️ |
-| 3 | The Demo → *John half* | II · John | B3 | ⬜ |
-| 4 | The Loom Arrives | II · John | B4 | ⬜ |
-| 5 | The Factory Opens | II · John | B5 | ⬜ |
-| 6 | [[06 - Good Instinct\|Good Instinct]] | III · Liam | B2 (day two; seeds B3/B4) | ✏️ |
-| 7 | [[07 - Heads Together\|Heads Together]] | III · Liam | B2 (day two; seeds B5/B6) | ✏️ |
-| 8 | The Demo → *Liam half* | III · Liam | B3 | ⬜ |
-| 9 | Liam Solves the Unsolvable | III · Liam | B4 | ⬜ |
-| 10 | [[10 - The Win We Needed\|The Win We Needed]] | III · Liam | B5 | ✏️ |
-| 10a | [[08 - The One-on-One\|The One-on-One]] *(file `08`)* | III · Liam | B5 (seeds B6/B7) | ✏️ |
-| 11 | Adopt the Agent (All-Hands) | III · Liam | B5 | ⬜ |
-| 11b | [[11b - Best Practices\|Best Practices]] | III · Liam | B5 (seeds B6/B7) | ✏️ |
-| 11c | [[11c - The Latest Model\|The Latest Model]] | III · Liam | B5 (seeds B6/B7) | ✏️ |
-| 12 | The Coworkers Go Quiet | III · Liam | B6 | ⬜ |
-| 13 | [[13 - The Performance Review\|The Performance Review]] | III · Liam | B7 | ✏️ |
-| 14 | HR Offboarding | III · Liam | B8 | ⬜ |
-| 15 | The Weavers Take the Jobs | IV · John | B6 | ⬜ |
-| 16 | [[16 - The Wage Cut\|The Wage Cut]] | IV · John | B7 | ✏️ |
-| 17 | The Bailiff | IV · John | B8 | ⬜ |
-| 18 | The Cold Hearth | IV · John | B9 | ⬜ |
-| 19 | The Empty Apartment | V · Liam | B9 | ⬜ |
-| 20 | The Forum | V · Liam | B10 | ⬜ |
-| 21 | Liam Decides | V · Liam | B11 | ⬜ |
-| 22 | The Tavern Oath | VI · John | B10 | ⬜ |
-| 23 | John Marches | VI · John | B11 | ⬜ |
-| 24 | Both Hands on the Machine | VI · both (converge) | B12 | ⬜ |
+| Order | Scene | Movement | Status |
+|---|---|---|---|
+| 1 | [[01 - Cold Open — The Standup\|Cold Open — The Standup]] | I | ✏️ |
+| 1b | [[01b - The Cursor Demo\|The Cursor Demo]] | I | ✏️ |
+| 1c | [[01c - The PR Review\|The PR Review]] | I | ✏️ |
+| 1d | [[01d - The Future\|The Future]] | I | ✏️ |
+| 1e | Marcus Established *(to write)* | I | ⬜ |
+| 6 | [[06 - Good Instinct\|Good Instinct]] | II | ✏️ |
+| 7 | [[07 - Heads Together\|Heads Together]] | II | ✏️ |
+| 10 | [[10 - The Win We Needed\|The Win We Needed]] | II | ✏️ |
+| 10a | [[08 - The One-on-One\|The One-on-One]] *(file `08`)* | II | ✏️ |
+| 11b | [[11b - Best Practices\|Best Practices]] | II | ✏️ |
+| 11c | [[11c - The Latest Model\|The Latest Model]] | II | ✏️ |
+| 12 | [[12 - Below Expectations\|Below Expectations]] | II | ✏️ |
+| 13 | [[13 - The Performance Review\|The Performance Review]] | II | ✏️ |
+| 13b | [[13b - The Plan\|The Plan]] | II | ✏️ |
+| 14 | [[14 - The Offboarding\|The Offboarding]] | III | ✏️ |
+| 19 | The Empty Apartment *(to write)* | III | ⬜ |
+| 20 | The Hack *(to write)* | III | ⬜ |
+| 21 | The Press Invents Him *(to write)* | IV | ⬜ |
+| 22 | The Arrest *(to write)* | IV | ⬜ |
+| 23 | The Trial *(to write)* | V | ⬜ |
+| 24 | The Removal *(to write)* | V | ⬜ |
 
-> [!note] Movement III — number/order drift (read before renumbering)
-> Drafted scene *files* carry `scene_number`s that no longer line up cleanly with these running-order slots: `06`/`07` (B2), **`08` = The One-on-One (B5)**, `10`/`13`. This **table is the source of truth for ORDER**; a scene's `scene_number` frontmatter is the source of truth for its **storyboard id** (`s08`, `s10`, `s11b`, …). To avoid renumber/artifact-rename churn, new insertions use **letter suffixes** (the `1b/1c/1d` precedent): the new Liam-adopts-badly scene is **`11b` → `s11b`**, and The One-on-One is shown at order `10a` though its file is `08`. The undrafted B3/B4 Liam scenes (Demo → *Liam half*, Liam Solves the Unsolvable) still hold slots 8–9 as *intended order* and need their own numbers when written — reconcile deliberately, don't auto-renumber.
+**Out of the running order, kept in the vault:** [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Both are cut from the show and both stay as source material for Marcus's arguments and for verbatim inserts.
 
-> [!note] Mirror asymmetry — "adopts, but badly" has no clean John twin
-> [[11b - Best Practices]] rhymes *loosely* with John's **B5→B6** (the factory opens; neighbours take the jobs; the craftsman left out as the community reorganises around the machine). But per [[Character Mirror Map]] the rhyme is **deliberately incomplete**: John is never *offered* the loom — he's offered destitution, and the "refuse and die anyway" seat is Old Hilse's. Liam's distinctly-modern cruelty is that he *is* expected to adopt and retrain, and — doing it badly — hands the system its own justification. Log as an **asymmetry**, not a forced twin scene.
+> [!note] Numbering — read before renumbering anything
+> Scene *files* carry `scene_number`s that no longer line up with running-order slots, and that is deliberate. This **table is the source of truth for ORDER**; a scene's `scene_number` frontmatter is the source of truth for its **storyboard id** (`s08`, `s10`, `s11b`, …), which is what `storyboard/artifacts/` is named against. Renumbering a drafted file silently orphans its rendered audio and sketches.
+>
+> New insertions use **letter suffixes** — the `1b/1c/1d` precedent, extended to `1e` for the new Marcus scene. The undrafted second-half scenes hold slots 14 and 19–24 as *intended order*; give them numbers deliberately when written, and don't reuse 15, 17 or 18 (they were John's).
 
-> [!note] Movement I is now four short scenes (split for navigation + clarity)
-> The cold open is broken into four individually-navigable scenes so each part stands on its own: **[[01 - Cold Open — The Standup|standup]] → [[01b - The Cursor Demo|the Cursor demo]] → [[01c - The PR Review|the PR review]] → [[01d - The Future|the future]]**. The **methodology moved** out of the PR review (where Liam steamrolls Brendan and never lets him explain) into the final scene, where Brendan teaches it to Kristina on a call — the person who most needs the lesson refuses it; the person who'll later manage Liam out receives it eagerly. The loom-knock hand-off lives at the end of **01d**. Runtime is now ~18 min, which delays John's warm establishment — if that becomes a problem, 01b–01d are the natural candidates to lift into **Movement III**.
+> [!note] The B1–B12 beat numbering is retired
+> Drafted scenes still carry `beat:` frontmatter pointing at the old parallel-intercut beat sheet. Those references are stale — half the beats described John, and the other half now sit in a different structure. **Don't draft against them.** They are left in the files rather than stripped so nothing silently changes in the storyboard parser; treat this table as the running order and [[Liam Arc]] as the throughline.
 
-> [!note] Drafting note
-> The wordless dual prologue ("Cold Open — Two Workshops") was **cut**; the show opens cold on Liam's standup ([[01 - Cold Open — The Standup]]) and runs three more short scenes (demo / PR review / future) before **rewinding straight to John** ([[02 - The Loom and the Guild — John half]]). **The Demo** is still *split* across movements (John half in Movement II, Liam half in Movement III). This table is the source of truth for order; beats map to [[Beat Sheet — Parallel Intercut]].
+## Rules of thumb for the new shape
 
-> [!warning] Two consequences of the cut-to-John-now structure — watch these
-> 1. **Sympathy load — now answered fast.** We meet Liam abrasive-first, with no warm "in-flow joy" (old B1) to bank goodwill. The fix in this restructure: **John's warm establishment arrives immediately** ([[02 - The Loom and the Guild — John half]]) — he faces the audience open-faced where Liam stayed a black square, and *that* is the early foothold (alongside Brendan). Protect John's warmth in Movement II; it's load-bearing.
-> 2. **John's establishment carries the rewind.** Establishing John (and the first distant sound of the steam looms) was the prologue's job; it now opens Movement II on a neutral narrator V.O. (the 200-year rewind), marked B1+B2 — drafted in [[02 - The Loom and the Guild — John half]]. Without it the rewind has no ground.
-
-## Braided rules of thumb
-- **Cut at the peak.** End every movement on a near-climax / open question, then switch. See [[Braided Structure — Reference]].
-- **Rhyme the altitude.** Cut from Liam to John when John is heading into an *equivalent* emotional peak (the Godfather II thematic-spine trick).
-- **Stay put long enough.** A movement is several scenes — let the audience sink into one world before the wrench away.
-- **Converge only at the end.** Keep threads separate until Movement VI, then collapse them ([[Arcadia — Structural Technique]] + Nolan).
-- **Hand-off, don't blackout.** Carry each switch on the keyboard-clack ↔ loom-clack motif so the braid feels woven. See [[Staging — Two Speakers]].
+- **The institutions go absurd; Liam stays naturalistic.** He remains a literal, exact man. The audience's anchor must stay real or nothing lands. Study *Sorry to Bother You*'s ladder before writing ours ([[Inspiration — Tone & Form]]).
+- **Nothing new arrives late.** Every device in the second half pays off something planted in the drafted scenes. If a beat needs a new mechanism in Movement IV, plant it in Movement I or cut it.
+- **No villains, even at maximum absurdity.** Every absurd functionary is doing their job sincerely; the horror stays in the sum. This is hardest and most necessary in Movements IV and V.
+- **Space the insufferable.** Liam and Marcus are both hard to be around and carry most of Movements I–II. Brendan is the designated relief — no long stretch of the two of them without him in it.
+- **Mark every spectacle beat with the version it assumes** — screen event, sound-and-light event, or live physical event — so production can price it. Write the screen version first; the show's grammar is already on-screen UI and video.

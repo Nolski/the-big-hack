@@ -12,7 +12,10 @@ tags:
 
 # Historical World — Supporting Cast (AI Video)
 
-John's world, early 1810s English North. All **AI-generated video characters** here (see [[AI Video Production Tracker]]) mirror a modern counterpart — see [[Character Mirror Map]]. Grounded in [[Luddites — History]] and [[The Weavers — Pulled Passages]].
+> [!danger] CUT — not in the show
+> The historical world was cut in [[Rework — The Escalation Pass]] §A2. **None of these are cast and none of their clips will be generated.** The file stays as character-level detail behind the history Marcus argues about — Cartwright's improvement patter, the magistrate, Old Hilse dying at his loom are all things he can cite. Nothing in the running order depends on them.
+
+John's world, early 1810s English North, as it was planned. Grounded in [[Luddites — History]] and [[The Weavers — Pulled Passages]].
 
 ## Mary — John's wife *(the stake made flesh)*
 - **Function:** the household. Her hunger and the children's are what turn John. Where Liam loses his *self*, John loses his ability to feed *her*. The emotional engine of his arc.
@@ -33,9 +36,8 @@ John's world, early 1810s English North. All **AI-generated video characters** h
 - **Beats:** B6, B10 (the tavern oath), B11.
 
 ## The neighbours / fellow weavers *(the passive betrayal)*
-- **Function:** the men and women who take the factory work to survive. Not villains — the Sams of
-  1812. They can't meet John's eye on the lane. Survival reads as abandonment.
-- **Mirror:** [[Modern World — Supporting|Sam]] and the dev coworkers.
+- **Function:** the men and women who take the factory work to survive. Not villains — the Brendans of 1812. They can't meet John's eye on the lane. Survival reads as abandonment.
+- **Mirror:** [[Modern World — Supporting|Brendan]] and the dev coworkers. Keep the asymmetry logged in [[Character Mirror Map]]: John's neighbours have to walk past him; Liam's colleague answers a form.
 - **Beats:** B6, B9.
 
 ## The Magistrate / the Bailiff — the system

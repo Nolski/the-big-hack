@@ -9,7 +9,10 @@ tags:
 
 # John Arc
 
-The historical throughline on its own. Pairs beat-for-beat with [[Liam Arc]] in [[Beat Sheet — Parallel Intercut]]. Character in [[John]]; history in [[Luddites — History]]; voice + passages in [[The Weavers — Pulled Passages]].
+> [!danger] CUT — not in the show
+> The John thread was cut in [[Rework — The Escalation Pass]] §A2. **This is no longer a throughline the play dramatises.** It is kept as part of **Marcus's argument bank**: the beats below are the shape he insists on in standups — the wage cut, the petition that fails, the bailiff, the cold hearth — and the material he gets half-right. Read it as what an indignant man believes, not as a running order.
+
+The historical throughline as it was drafted. Character detail in [[John]]; history in [[Luddites — History]]; voice + passages in [[The Weavers — Pulled Passages]].
 
 ## The line in one breath
 A decent man who believes *fairness is owed to honest work* watches the bargain he built his life on get quietly withdrawn — the machine, the wage cut, the law — until he cannot feed his family, and the brotherhood he once counselled against becomes the only door left.

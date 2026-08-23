@@ -7,8 +7,8 @@ arc: liam-arc
 beat: "[[Beat Sheet — Parallel Intercut#B5 — Adopt the machine (the reorg)]]"
 status: drafted
 runtime_estimate: ~5 min
-live_cast: Liam
-ai_video_assets: "[[AI Video Production Tracker|AIV-050 Kristina — Standup (agent-first)]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-051 Brendan — Standup]], [[AI Video Production Tracker|AIV-055 Marcus — Standup]], [[AI Video Production Tracker|AIV-052 Brendan — Huddle]], [[AI Video Production Tracker|AIV-053 Liam's screen — the rig]], [[AI Video Production Tracker|AIV-054 Brendan's screen — the plain session]]"
+live_cast: Liam, Brendan
+ai_video_assets: "[[AI Video Production Tracker|AIV-050 Kristina — Standup (agent-first)]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-055 Marcus — Standup]], [[AI Video Production Tracker|AIV-053 Liam's screen — the rig]], [[AI Video Production Tracker|AIV-054 Brendan's screen — the plain session]]"
 tags:
   - scene
   - liam-arc
@@ -23,14 +23,20 @@ tags:
 Show Liam trying to get on board and turning every good instinct into a liability. He is correct that you don't pipe a proprietary codebase into a third party. He is correct that the mandate and the security policy contradict each other, and that his local rig is the only setup that satisfies both. His best moment is a genuine score off Marcus: concede the backdoor premise entirely, then point out that a backdoored model with no network and no tools can't do anything about it — while Claude Code runs commands, installs whatever it decides it needs, and browses the web on every laptop in the building. He may even be correct about copyright. None of it matters, because the room stopped listening two exchanges in, and Marcus fires back just as well (a backdoor can be one character long). **Marcus** is not a grand figure — just another engineer on the team, the one whose name Liam invoked, who unmutes to defend himself and turns out to be exactly annoying enough to keep the fight alive. Kristina tries to break it up early and often, gets spoken over every time, and handles it the way PMs learn to — but she hates it, and the house sees her literally bite her tongue: she takes the minutes every week, and emails them out every week, while Liam announces that nobody takes minutes. Brendan watches and quietly clocks two things. First, the practical one: Liam is *technically right*, the policy is one obviously-outdated paragraph, and nobody, including Brendan, will spend the capital to change it. Second, the deeper one, which stays in stage directions: the security case is the *stated* reason. What Liam has actually built is a machine that can't threaten him — no tool calls, no agency, stubs only, every line finished by Liam. He calls it fancy autocomplete, uses it like fancy autocomplete, and gets autocomplete out of it, which proves him right every single day. Plant the "won't get on board / bottleneck" evidence that the org itemises, un-funny, in the review (B7).
 
 ## Setting / Staging
-The same desk, a few weeks on from the reorg. The agent-first mandate is now just how the team works. **Liam** (live, Speaker A) is at the dual-monitor desk; the standup grid runs on the second monitor, his tile the same camera-off black square, "Liam." New on the desk since last scene: a small silver cube of a computer, expensive, still with the film on one corner. The big monitor is his **rig**: a terminal where an 80-billion-parameter local model crawls out tokens, and a git diff thick with his own hand rewrites. After the standup, a Slack huddle with **Brendan**: Liam shares his screen, and, set apart, angled to the house where the call can't see it, **Brendan's own laptop**, where the plain hosted tool does the same job in seconds. Same spatial rule as Scene 06: two screens, one truth on each, only the house sees both. Liam never crosses onto the video plane. The machine (his local rig, Brendan's session) is on-screen UI only, no voice, written as stage direction. Cool monitor-blue; John's loom half of the stage stays dark. Mid-Movement III; no loom-knock hand-off, it closes on its own image.
+The same desk, a few weeks on from the reorg. The agent-first mandate is now just how the team works. **Liam** (live, Speaker A) is at the dual-monitor desk; the standup grid runs on the second monitor, his tile the same camera-off black square, "Liam." New on the desk since last scene: a small silver cube of a computer, expensive, still with the film on one corner. The big monitor is his **rig**: a terminal where an 80-billion-parameter local model crawls out tokens, and a git diff thick with his own hand rewrites. After the standup, a Slack huddle with **Brendan** — live (Speaker B) at his own desk: Liam shares his screen, and, angled to the house where the call can't see it, **Brendan's own laptop**, where the plain hosted tool does the same job in seconds. Same spatial rule as Scene 06: two screens, one truth on each, only the house sees both. **The three deletions are now played by a live body** — the audience watches a man hold backspace, twice, while the other man talks, and hold delete on the finished patch at the end. That is the scene's engine and it is worth the whole staging change on its own. The two live men are on a call, never in a room — no contact. The machine (his local rig, Brendan's session) is on-screen UI only, no voice, written as stage direction. Cool monitor-blue; John's loom half of the stage stays dark. Mid-Movement III; no loom-knock hand-off, it closes on its own image.
+
+## Live Cast
+
+- **BRENDAN** — live, Speaker B (standup): visibly worn down by the argument but professional about it; after Kristina closes, offers to hop on about "the actual webhook thing."
+- **BRENDAN** — live, Speaker B (huddle): honestly impressed by the machine before he clocks what it costs; asks the two questions that matter (tokens per second, time to first token) and lets the answers speak; never gloats when his own screen wins; lets it go at the end with the Scene 06 flicker, older now. Cut to leave gaps for Liam's live lines.
+
+> [!note] Live/video plane
+> Brendan plays these scenes **live at his own desk**, diegetically on the call — he and Liam are remote colleagues, so they share no props and never touch. Everyone else stays on the video plane.
 
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-050]] — Kristina (PM):** runs the agent-first standup; tries to break up the Liam–Marcus fight early ("this feels like a thread—") and repeatedly, and gets flattened every time; hates being spoken over and shows it to nobody — the tongue-bite beat carries it (she takes the minutes every week; Liam just said nobody does); finally gets a full sentence, parks the debate, and still lands the gentle, load-bearing note: "I just need you on board." Same locked look/voice as `AIV-010`.
 - **[[AI Video Production Tracker|AIV-011]] — Standup grid (ambient loop, reused from Scene 1):** the coworker tiles, closing tickets and half-listening; during the argument a couple of tiles go very still, the stillness of people muting themselves to sigh.
-- **[[AI Video Production Tracker|AIV-051]] — Brendan (standup):** visibly worn down by the argument but professional about it; after Kristina closes, offers to hop on about "the actual webhook thing." Same locked look/voice as `AIV-012`.
 - **[[AI Video Production Tracker|AIV-055]] — Marcus (standup):** another engineer on the team — the one Liam just named. Unmutes to defend himself and turns out to be every bit as stubborn as Liam, pointed the opposite direction: Chinese models, poisoned weights, one-character backdoors; talks over Kristina; wants his objection "noted"; garbles the copyright case. In this moment: condescending, nasal, relentless, never quite rude enough to sanction. **Voice: exceptionally annoying by design.**
-- **[[AI Video Production Tracker|AIV-052]] — Brendan (huddle):** honestly impressed by the machine before he clocks what it costs; asks the two questions that matter (tokens per second, time to first token) and lets the answers speak; never gloats when his own screen wins; lets it go at the end with the Scene 06 flicker, older now. Cut to leave gaps for Liam's live lines.
 - **[[AI Video Production Tracker|AIV-053]] — Liam's screen (screen graphic, no voice — the rig):** a terminal where the local model emits tokens at a visible crawl; a context-loading progress bar that takes minutes; the autocomplete workflow — he asks for a stub, gets a stub (with a call to a helper that doesn't exist), deletes the imaginary part and hand-fills the body — and a git diff thickening with his own rewrites. No agent panel, no tool calls, no network icon. Screen only, written as stage direction.
 - **[[AI Video Production Tracker|AIV-054]] — Brendan's screen (on-screen UI, no voice — audience only):** the cloud agent — the kind with tool calls — given one plain sentence, opens the handler itself, writes the diff itself, runs the test itself: green in seconds. Then the security-policy page (owner: Liam, last reviewed 14 months ago); then two half-typed messages to Kristina, each deleted with held backspace — the policy question, then "I don't know if liam is ever going to—"; at the end, the finished patch deleted the same way. The contrast and the choices Liam never sees. Mirror of `AIV-044`.
 
@@ -88,7 +94,7 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 **LIAM** *(live)*: Noted where, Marcus? Nobody's taking minutes. It's a standup.
 
-*(On the grid, a couple of tiles have gone very still — the stillness of people muting themselves to sigh. BRENDAN's tile, camera on, is looking at something off-screen. His own board, probably. On KRISTINA's tile: she is, literally, biting her tongue. She takes the minutes every week. She emails them out every week. The smile does not move.)*
+*(On the grid, a couple of tiles have gone very still — the stillness of people muting themselves to sigh. BRENDAN, live at his desk, camera on, is looking at something off to the side. His own board, probably. On KRISTINA's tile: she is, literally, biting her tongue. She takes the minutes every week. She emails them out every week. The smile does not move.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(a full sentence, at last; the patience is professional-grade)*
 > It is a standup. So — Liam, Marcus — take the model debate to a thread. I'd honestly love a doc, it sounds like there's real stuff in there. Not here.
@@ -119,44 +125,37 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(a breath; the warmth is real, which is somehow worse)*
 > Thread. *(beat)* Liam — I hear the compliance point. I'll chase the policy question, that's my job, let me do it. In the meantime I just need you on board with how the team's working. That's all. *(bright, done)* Thanks everyone — that's standup.
 
-> [!screen] VIDEO — BRENDAN · `AIV-051` *(tired around the eyes, still warm)*
-> Liam — want me to hop on for twenty about the actual webhook thing? *(beat)* Just the webhook thing.
+**BRENDAN** *(live, tired around the eyes, still warm)*: Liam — want me to hop on for twenty about the actual webhook thing? *(beat)* Just the webhook thing.
 
 **LIAM** *(live, a beat — then, almost warm)*: …Yeah. Alright. Come see the setup, actually. You'll like it.
 
-*(The grid blinks out. [MUSIC: music/slackhuddle.mp3] A Slack huddle opens. On the big shared monitor — `AIV-053` — LIAM's rig. BRENDAN's tile in the corner. And, set apart, angled to the house where the call can't see it, BRENDAN's own laptop, lid half open. LIAM is sharing out; he has no idea what's on Brendan's other screen. The audience sees both.)*
+*(The grid blinks out. [MUSIC: music/slackhuddle.mp3] A Slack huddle opens. On the big shared monitor — `AIV-053` — LIAM's rig. BRENDAN lit at his own desk. And, angled to the house where the call can't see it, BRENDAN's own laptop, lid half open. LIAM is sharing out; he has no idea what's on Brendan's other screen. The audience sees both.)*
 
 **LIAM** *(live, showing off the good version of himself — the craftsman; he pats the silver cube once, like a fender)*: Okay. So. Mac Studio, a hundred and twenty-eight gigs of unified memory. The eighty-billion Qwen just fits, quantized, resident the whole time, and nothing leaves the room. Cost this company half the price of a used car — which is the AI-adoption price nobody puts on a slide.
 
-> [!screen] VIDEO — BRENDAN · `AIV-052` *(genuinely taken with it, for a second)*
-> And they approved that?
+**BRENDAN** *(live, genuinely taken with it, for a second)*: And they approved that?
 
 **LIAM** *(live, a dry little shrug)*: I wrote "AI" on the expense report. Approved within the hour, no questions. *(beat)* Which is silly. But it's the policy, and I'm inside it.
 
-> [!screen] VIDEO — BRENDAN · `AIV-052` *(honest, then careful)*
-> It's a beautiful machine, honestly. *(beat)* What's it giving you — tokens a second?
+**BRENDAN** *(live, honest, then careful)*: It's a beautiful machine, honestly. *(beat)* What's it giving you — tokens a second?
 
 **LIAM** *(live, unbothered)*: Two to five.
 
-> [!screen] VIDEO — BRENDAN · `AIV-052`
-> And time to first token? With the codebase in context.
+**BRENDAN** *(live)*: And time to first token? With the codebase in context.
 
 *(A pause with a shape to it.)*
 
 **LIAM** *(live)*: It varies.
 
-> [!screen] VIDEO — BRENDAN · `AIV-052`
-> Liam.
+**BRENDAN** *(live)*: Liam.
 
 **LIAM** *(live)*: Six minutes. Sometimes eight. It's reading four hundred files — it's allowed to take longer than a search box. I batch my questions. You learn to think before you prompt, which would do some people on that call a world of good.
 
-> [!screen] VIDEO — BRENDAN · `AIV-052` *(no fight in it, just arithmetic)*
-> Sure. It's just — six minutes in, five tokens a second out. On the webhook ticket. How much of your day is watching it type?
+**BRENDAN** *(live, no fight in it, just arithmetic)*: Sure. It's just — six minutes in, five tokens a second out. On the webhook ticket. How much of your day is watching it type?
 
 **LIAM** *(live, and the honesty is the problem)*: Less than you'd think. *(beat)* Some.
 
-> [!screen] VIDEO — BRENDAN · `AIV-052`
-> How many do you run at once? Agents.
+**BRENDAN** *(live)*: How many do you run at once? Agents.
 
 **LIAM** *(live — the question doesn't parse)*: …One. It's one model. What would I want two for?
 
@@ -166,13 +165,11 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 **LIAM** *(live, warming up — this is the part he likes)*: Watch the workflow, though. This is the part everyone skips. *(he types: "Stub a retry wrapper for the webhook delivery call. Signature and skeleton only." The model thinks. Thinks. A method assembles itself one token at a time — a clean stub, and inside it, a call to a helper that does not exist anywhere in the repo.)* There. Gave me the shape, and invented a method that doesn't exist. Looked me dead in the eye while it did it. *(no anger — he deletes the imaginary helper and starts filling in the body himself, comfortable, quick, home)* And that's fine. Because I don't ask it to be right, I ask it to type the boring part. Then I do the job. It's autocomplete, Brendan. Fancy autocomplete. That's all any of this is under the hood.
 
-> [!screen] VIDEO — BRENDAN · `AIV-052` *(careful)*
-> You could let it do more than stub, though. Let it run its own code — install the dependencies, run the tests, see what fails— *(he stops)*
+**BRENDAN** *(live, careful)*: You could let it do more than stub, though. Let it run its own code — install the dependencies, run the tests, see what fails— *(he stops)*
 
 **LIAM** *(live)*: No. Were you not listening at standup? You've seen the stories — rogue agents deleting production databases because somebody let them run whatever they wanted. I don't give it tool calls. It writes text. I decide what the text is worth.
 
-> [!screen] VIDEO — BRENDAN · `AIV-052` *(one more try, gentle)*
-> The hosted ones sandbox all of that now. The agent can only touch its own branch, it can't—
+**BRENDAN** *(live, one more try, gentle)*: The hosted ones sandbox all of that now. The agent can only touch its own branch, it can't—
 
 **LIAM** *(live, batting it away — reasonable, certain)*: On somebody else's computer, through a black box that changes under me on a Tuesday. No. Local, I pin the weights. What I ran in January is what I run in March. That's not paranoia, that's engineering.
 
@@ -184,12 +181,11 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 *(A silence. BRENDAN doesn't win this. He can't — Liam isn't wrong that he's slower. The house can see the six-minute load bar, the five tokens a second, the struck-out diff, the beautiful expensive box doing beautifully expensive almost-nothing. Liam can't. He's looking at a true number and reading the wrong cause off it.)*
 
-> [!screen] VIDEO — BRENDAN · `AIV-052` *(a beat too long — then he lets it go, older than he was in Scene 06)*
-> …Yeah. No, I hear you. *(beat)* I should get back to it. Ping me if the webhook one gets gnarly?
+**BRENDAN** *(live, a beat too long — then he lets it go, older than he was in Scene 06)*: …Yeah. No, I hear you. *(beat)* I should get back to it. Ping me if the webhook one gets gnarly?
 
 **LIAM** *(live, softening — he thinks he's been heard)*: Will do. Thanks, Brendan. *(a real, small warmth)* Good — you get it. Nobody else even looks at the code anymore.
 
-*(BRENDAN's tile winks out. On his laptop — `AIV-054`, the audience only — the finished retry diff sits green a moment longer, above the empty message box where the policy fix used to be. He selects the patch and holds delete, the same way he held backspace, until it's gone too. The lid closes on an empty session. LIAM turns back to his rig, satisfied, the last serious man in the room. The model puts out the next token. Then, in its own time, the one after. On the standup grid, still up in the corner, a tile marks another ticket Done — not his. He watches his machine type, patient, certain, sinking.)*
+*(BRENDAN drops the huddle. On his laptop — `AIV-054`, the audience only — the finished retry diff sits green a moment longer, above the empty message box where the policy fix used to be. He selects the patch and holds delete, the same way he held backspace, until it's gone too. The lid closes on an empty session. LIAM turns back to his rig, satisfied, the last serious man in the room. The model puts out the next token. Then, in its own time, the one after. On the standup grid, still up in the corner, a tile marks another ticket Done — not his. He watches his machine type, patient, certain, sinking.)*
 
 *(Hold on the two screens — his, grinding and honest and slow; the closed lid beside it, finished twice over. The monitor-blue eases down.)*
 

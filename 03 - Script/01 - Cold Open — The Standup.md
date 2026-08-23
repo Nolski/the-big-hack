@@ -7,8 +7,8 @@ arc: liam-arc
 beat: "[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)]]"
 status: drafted
 runtime_estimate: ~5 min
-live_cast: Liam
-ai_video_assets: "[[AI Video Production Tracker|AIV-010 Kristina — Standup]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-012 Brendan — Standup]], [[AI Video Production Tracker|AIV-013 The PR — screen share]]"
+live_cast: Liam, Brendan
+ai_video_assets: "[[AI Video Production Tracker|AIV-010 Kristina — Standup]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-013 The PR — screen share]]"
 tags:
   - scene
   - liam-arc
@@ -23,12 +23,18 @@ tags:
 Open the show inside Liam's world and his worst habit at once: a brilliant, contemptuous craftsman, needled by a celebration he isn't at the centre of, tears down a *shipped, beloved* product after the fact — humiliating the junior who built it **and** the PM who steps in to shield him. Plant the pedantry and contempt-for-non-engineers that become the documented case against him.
 
 ## Setting / Staging
-Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrobe, barely out of bed: one monitor is a wall of **Reddit anti-AI memes** he scrolls with the mouse, the other holds the **Zoom standup grid** of coworker tiles. His own tile is a **camera-off black square labeled "Liam"** — and it *stays* black, even through the cruelty: the audience sees the man the call cannot. The memes are up *first* and large; the house reads them and laughs along before they even find the man underneath, and he keeps scrolling them through the meeting. The joke he's enjoying — that AI "confidently lies to you" — is the exact thing he weaponises minutes later against Brendan's AI-written code. Light: cool monitor-blue; the warm/analog half of the stage (John's loom) stays dark for now.
+Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrobe, barely out of bed: one monitor is a wall of **Reddit anti-AI memes** he scrolls with the mouse, the other holds the **Zoom standup grid** of coworker tiles. His own tile is a **camera-off black square labeled "Liam"** — and it *stays* black, even through the cruelty: the audience sees the man the call cannot. The memes are up *first* and large; the house reads them and laughs along before they even find the man underneath, and he keeps scrolling them through the meeting. The joke he's enjoying — that AI "confidently lies to you" — is the exact thing he weaponises minutes later against Brendan's AI-written code. Light: cool monitor-blue; the warm/analog half of the stage (John's loom) stays dark for now. **Brendan** (live, Speaker B) is at his own desk in a separate pool of light, camera *on* — the audience's first sight of a face that isn't hiding. The two live men are on the same call and never in the same room: no shared props, no contact, all morning.
+
+## Live Cast
+
+- **BRENDAN** — live, Speaker B: modest glow → honest about skimming but having tests → reveals he fed Liam's memo to Claude (which implemented the JWTs).
+
+> [!note] Live/video plane
+> Brendan plays these scenes **live at his own desk**, diegetically on the call — he and Liam are remote colleagues, so they share no props and never touch. Everyone else stays on the video plane.
 
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-011]] — Standup grid (ambient loop):** the half-listening coworker tiles; runs under the standup, nodding through the whole blow-up having heard none of it.
 - **[[AI Video Production Tracker|AIV-010]] — Kristina (PM):** runs the standup; celebrates the shipped API developer portal; thanks Brendan for the weekend; is humiliated by the degree line and left speechless; recovers to wrap the standup.
-- **[[AI Video Production Tracker|AIV-012]] — Brendan:** modest glow → honest about skimming but having tests → reveals he fed Liam's memo to Claude (which implemented the JWTs).
 - **[[AI Video Production Tracker|AIV-013]] — The PR (screen share):** the merged ~800-LOC PR — "+812 / −4", a green **Merged** badge — that Liam pulls up himself and scrolls.
 
 ---
@@ -50,8 +56,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(turning to one tile in particular)*
 > And that's so much down to Brendan — who, I happen to know, put most of his weekend into getting it over the line. So. Thank you, genuinely. It did not go unnoticed.
 
-> [!screen] VIDEO — BRENDAN · `AIV-012` *(a modest glow, ducking it)*
-> Oh — thanks, that's — yeah. It kind of came together. I'm really happy with how it landed.
+**BRENDAN** *(live, a modest glow, ducking it)*: Oh — thanks, that's — yeah. It kind of came together. I'm really happy with how it landed.
 
 *(On "his weekend," LIAM's hand goes still on the mouse. He doesn't look up right away. Then he does.)*
 
@@ -64,18 +69,15 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 
 **LIAM** *(live, the first real attention he's paid all morning)*: Hang on. This *shipped?* This is the developer portal — live, in front of partners, right now? *(scrolling, fast)* Eight hundred lines in one PR. Who reviewed this?
 
-> [!screen] VIDEO — BRENDAN · `AIV-012` *(still gamely)*
-> I mean — it's been live since Thursday, totally stable, partners are already on it, so—
+**BRENDAN** *(live, still gamely)*: I mean — it's been live since Thursday, totally stable, partners are already on it, so—
 
 **LIAM** *(live)*: Did you read all this?
 
-> [!screen] VIDEO — BRENDAN · `AIV-012` *(a beat, honest)*
-> …Well — I skimmed it. But I made sure there's a really robust set of tests. The whole suite's green—
+**BRENDAN** *(live, a beat, honest)*: …Well — I skimmed it. But I made sure there's a really robust set of tests. The whole suite's green—
 
 **LIAM** *(live, pouncing)*: You *skimmed* it. Eight hundred lines of client-facing API and you skimmed it. *(scrolling, faster)* You vibecoded this — pointed Claude at it and hit accept.
 
-> [!screen] VIDEO — BRENDAN · `AIV-012` *(reaching)*
-> I used Claude Code, Opus 4.8 — but I went back and forth with it, and the tests all pass, the partners haven't hit a single—
+**BRENDAN** *(live, reaching)*: I used Claude Code, Opus 4.8 — but I went back and forth with it, and the tests all pass, the partners haven't hit a single—
 
 **LIAM** *(live, riding his own certainty — the meme energy, out loud now)*: The tests pass. *(a short, mirthless laugh)* The AI wrote the code *and* the AI wrote the tests that say the code's fine. It doesn't understand a line of it — it just sounds sure of itself. *(a flick of the eyes to his own memes)* That's the whole joke, right there. It'll lie straight to your face.
 
@@ -83,13 +85,11 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 
 **LIAM** *(live)*: …Wait. Hold on. Are these — are these *long-lived* API tokens?
 
-> [!screen] VIDEO — BRENDAN · `AIV-012` *(careful)*
-> …Yeah. The keys are long-lived.
+**BRENDAN** *(live, careful)*: …Yeah. The keys are long-lived.
 
 **LIAM** *(live, genuinely affronted, the real engineer surfacing)*: Did nobody read my memo? I wrote an entire memo on this. You use JWTs. They're *stateless* — you verify the signature, you're not hitting the database on every single request. They *expire* on their own. It's all in there, with diagrams. *(a sneer — certain he's found his culprit)* But no. Of course. Of course the *AI* didn't read my memo.
 
-> [!screen] VIDEO — BRENDAN · `AIV-012` *(quiet — then, honest)*
-> …Actually, it did. I fed your memo into Claude before I started. It read the whole thing — that's why the first cut *was* JWTs. Stateless, expiring, the works. It implemented your memo basically line for line. I can pull up the first commit, it's exactly what you—
+**BRENDAN** *(live, quiet — then, honest)*: …Actually, it did. I fed your memo into Claude before I started. It read the whole thing — that's why the first cut *was* JWTs. Stateless, expiring, the works. It implemented your memo basically line for line. I can pull up the first commit, it's exactly what you—
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(stepping in — to take the heat off Brendan, and to be straight)*
 > —and then I'm the one who had him pull them back out. That part's on me, Liam. Not Brendan, and not the AI. The JWTs were your design, Brendan built them, Claude followed your memo. The switch to long-lived keys was my call.

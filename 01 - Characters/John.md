@@ -14,6 +14,9 @@ tags:
 
 # John
 
+> [!danger] CUT — not in the show
+> John, his world and the whole two-century braid were cut in [[Rework — The Escalation Pass]] §A2. **He is not a character in the play and nothing should link to him as one.** The file is kept because the research underneath it is good and because Marcus quotes from this material — treat it as source, not cast. The warmth John used to carry is now Brendan's job ([[Brendan]]).
+
 > [!abstract] One-line
 > A skilled handloom weaver and steady family man in the early-1810s English North, whose trade, town, and household are unmade by the power loom — and who is pulled, against his nature, toward breaking it.
 
