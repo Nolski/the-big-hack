@@ -57,7 +57,14 @@ A remote one-on-one, late morning: **Brendan live (Speaker B)** at his desk, **K
 **BRENDAN** *(live)*: I've been staying out of the comments.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
-> Wise.
+> Wise. *(beat, dry)* Four of the eleven pages are about Yorkshire.
+
+**BRENDAN** *(live)*: Yeah. I saw that.
+
+> [!screen] VIDEO — KRISTINA · `AIV-056` *(without any heat in it; a thing she has decided not to mind)*
+> And Marcus has now explained my own meeting to me twice. *(a small shrug)* He means well. He's the only one who said anything when Liam did the degree thing, so.
+
+**BRENDAN** *(live, not sure what to do with that)*: Right.
 
 *(A beat. Kristina glances off, then back — she's been carrying this since Friday.)*
 
@@ -154,6 +161,7 @@ A remote one-on-one, late morning: **Brendan live (Speaker B)** at his desk, **K
 - **She wins the argument and loses the belief.** The engine of the scene: Kristina's defense of Liam is sincere, well-argued, and correct about Brendan (his fluency *is* invisible experience) — and one private experiment later she stops believing it applies to Liam. Nothing is said; the defense simply never gets made again. When the review (B7, [[13 - The Performance Review]]) frames him as "not on board," the audience should remember the day his best advocate quietly closed the case.
 - **Brendan's "Yeah. Maybe." is B6 in miniature.** It's the third form of the message he deleted twice in [[11b - Best Practices]] ("I don't know if liam is ever going to—"): started, swallowed, filed. He's right, he knows he's right, and he stops saying it. That's the coworkers-go-quiet mechanic, one scene early, in the mouth of the kindest person in the show.
 - **The Vault question is the load-bearing rhyme.** In [[01b - The Cursor Demo]] the tool invented an endpoint and tried to hardcode the token, and Kristina had to type the correction herself ("keep the token in Vault, nothing hardcoded"). Here the machine asks her that question, unprompted, having read the repo. Don't decorate it; the stage direction states the fact and moves on. Her one skill in the loop — catching it — finds no work, and that, not the speed, is the startle.
+- **She excuses Marcus with the one true thing he has, and it settles nothing.** "He means well… he's the only one who said anything" is a manager doing the arithmetic that keeps a team working, out loud, and it costs her nothing to say and buys her nothing either. Brendan has no idea what to do with it, so he says "right," which is what he says. **Play the four-pages-about-Yorkshire line completely dry** — it is the funniest line in the scene and it must not be sold. It is also the last time anyone finds Marcus's material funny.
 - **The bot is a standup bot.** She automates the thing she opened the scene complaining about, and its first output is formatted better than the minutes she bites her tongue to keep taking ([[11b - Best Practices]]). Nobody points this out, including her. Play it as a detail, not a beat.
 - **Both of them are right.** Brendan is right that the scaffolding era is ending and that Liam's method is a beautifully engineered dead end. Kristina is right that Brendan can't see his own hands anymore. The scene never adjudicates; the four minutes at the end adjudicate.
 - **Play the shudder small.** One breath, gone. No music sting, no hold. The calendar chime is the scene's actual ending — the day continues, which is the point.

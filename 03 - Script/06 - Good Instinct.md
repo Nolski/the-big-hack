@@ -7,7 +7,7 @@ arc: liam-arc
 beat: "[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)]]"
 status: drafted
 live_cast: Liam, Brendan
-ai_video_assets: "[[AI Video Production Tracker|AIV-040 Kristina — Standup day two]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-043 Liam's screen — session handler]], [[AI Video Production Tracker|AIV-044 Brendan's screen — Claude session]]"
+ai_video_assets: "[[AI Video Production Tracker|AIV-040 Kristina — Standup day two]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-048 Marcus — Standup day two]], [[AI Video Production Tracker|AIV-043 Liam's screen — session handler]], [[AI Video Production Tracker|AIV-044 Brendan's screen — Claude session]]"
 tags:
   - scene
   - liam-arc
@@ -35,6 +35,7 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-040]] — Kristina (PM):** runs the day-two standup; pushes Liam for a direction on the still-open race condition using support-volume arithmetic (four reports versus other tickets affecting hundreds); takes his fair correction that cross-account access is a security problem, not a ticket-volume problem; blesses the pairing.
 - **[[AI Video Production Tracker|AIV-011]] — Standup grid (ambient loop, reused from Scene 1):** the half-listening coworker tiles under the standup.
+- **[[AI Video Production Tracker|AIV-048]] — Marcus (standup day two):** finishes the tangent Liam cut him off on yesterday. Mentions his three merged tickets first. Asks for thirty seconds and takes about twenty, clearly and accurately, and finishes by pointing it at Brendan's shipped PR without saying Brendan's name. Same locked look and voice as `AIV-019` and `AIV-055`.
 - **[[AI Video Production Tracker|AIV-043]] — Liam's shared screen (screen graphic, no voice):** the session handler / `getOrCreateSession`, the "#incident — logged in as someone else" thread, the token-RNG dead ends he has been chasing.
 - **[[AI Video Production Tracker|AIV-044]] — Brendan's private screen (on-screen UI, no voice — the machine):** Claude Code already has the full repository. Brendan directs it to investigate the signup/session race without pasting code or prod data. It traces the flow across the repo, writes a deterministic local repro harness, runs two concurrent signups, and returns the diagnosis with logs plus screenshots showing one local user briefly inside the other's account. The one-line fix and shared-store smell sit underneath. The audience sees the proof; Liam never does. The machine's first real engineering turn; mirror of the steam looms.
 
@@ -44,8 +45,29 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 
 *(The same desk, the morning after. No memes today. LIAM is actually working — hunched in, headphones half-on, the session-handler code filling the big monitor, coffee cups stacked at his elbow. He has been at this a while and it shows. On the second monitor the standup grid is already running; his tile is the same black square, "Liam — camera off." He is not really in the meeting. He is in the bug.)*
 
-> [!screen] VIDEO — KRISTINA (PM) · `AIV-040` *(runs ~14s, Liam plays against it)*
-> *Brisk, running the board.* …lovely, thanks Priya. Okay — Liam. You're still on the signup race condition, yeah? Where are we with that one?
+> [!screen] VIDEO — KRISTINA (PM) · `AIV-040` *(brisk, running the board)*
+> …lovely, thanks Priya. Marcus, anything blocking you?
+
+> [!screen] VIDEO — MARCUS · `AIV-048`
+> Nothing blocking. Three tickets, all merged. *(beat)* Can I say one thing that isn't a ticket? It's quick.
+
+> [!screen] VIDEO — KRISTINA · `AIV-040` *(the pause of a woman who has been here before)*
+> Is it quick.
+
+> [!screen] VIDEO — MARCUS · `AIV-048`
+> It's quick. So I went and read about the Luddites last night, after yesterday. And the thing nobody tells you is that they weren't against machines. They'd smash one machine and leave the one next to it alone. What they went after were the ones being used to turn out cheap rubbish, fast, by people who'd never been trained to do the work. The cloth got cheaper and it fell apart, and the men who could tell the difference were the ones who lost their jobs over it. *(beat)* And we shipped eight hundred lines on Thursday that nobody read.
+
+*(Nothing on the grid. Tiles nodding, closing tickets. Somewhere in there is BRENDAN, who wrote those eight hundred lines, saying nothing.)*
+
+**LIAM** *(live, headphones half on, eyes still on the code)*: They lost, by the way.
+
+> [!screen] VIDEO — MARCUS · `AIV-048`
+> Sorry?
+
+**LIAM** *(live)*: The Luddites. They lost. They got hanged and the machines stayed. *(beat)* I'm reading the code, please stop talking.
+
+> [!screen] VIDEO — KRISTINA · `AIV-040` *(pleasant, immovable, moving the board on)*
+> Okay. Marcus, write it up and send it round and I'll read it properly. *(brisk)* Liam. You're still on the signup race condition, yeah? Where are we with that one?
 
 **LIAM** *(live, not looking up, still reading code)*: Still on it. No blockers.
 
@@ -128,6 +150,12 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 ---
 
 ## Notes
+- **The Marcus beat is the allegory, not a history lesson.** Everything he says is accurate and none of it is trivia. The Luddites broke some machines and left others standing in the same room; what they attacked were machines being used to turn out cheap goods fast by people who had never been trained; the cloth got worse and the men who could tell got laid off. He says all of that in plain words, in about twenty seconds, and then lands it on the thing that actually happened in this room yesterday: eight hundred lines shipped that nobody read. **The audience should come out of it understanding the Luddites better, and should also be slightly embarrassed for him.**
+- **He uses Brendan's PR to make his point, on a call Brendan is on, four days after Kristina thanked him for it.** Nobody names it. That is the small unbearable thing this beat owes the guard rule in [[Modern World — Supporting]].
+- **Liam is not a Luddite expert and must never sound like one.** He knows one thing, which is the thing everybody knows: they lost. He is not correcting Marcus, he is trying to get him to stop talking so he can read. **If a draft ever gives Liam a date, a statute or a troop number, cut it** — his whole position is that none of this is his subject, and the play needs that to be true so the refusal in [[11b - Best Practices]] means something.
+- **"They lost, by the way" is a plant.** Say it flat and throw it away. Nobody reacts, and Kristina moves the board on top of it. It is the line the back half hands back to him, and it must not sound like a theme when he says it. **Do not add a beat, a pause or a light change.**
+- **Kristina's "write it up and send it round" is a management reflex and a setup.** He writes it. It comes to eleven pages, and they fight in the comments ([[11c - The Latest Model]]).
+- **If it has to come down,** this is the first thing to cut in Movement I after `01b`–`01d`. What would be lost is "they lost, by the way," which would need a home in [[11b - Best Practices]].
 - **Tone: the likeable trap.** After the cold open's cruelty, play Liam *sympathetic* here — actually working, actually good, briefly a warm mentor. The horror is structural, not behavioural: he does nothing wrong in this scene and is lapped anyway. Don't let him be a jerk in the huddle. The tenderness of "good instinct, kid" is the whole point.
 - **He really does solve it.** The realization is his, live, on stage — trace it beat by beat so the audience feels twenty years of craft click into place. The tragedy only lands if his skill is *real*. The machine got there first; it did not get there *better*. Both are true, and the scene needs both.
 - **The three refusals are half-right — don't strawman him.** (1) LLM concurrency reasoning genuinely is shaky; (2) a non-deterministic one-in-fifty-thousand bug really has no existing red test to hand it; (3) pasting prod session logs / PII into a third-party model really is an incident. Each is a fair point *and* a locked door. Brendan's screen quietly refutes the conclusion: with full repo access, the tool traces the flow, creates its own deterministic local repro, and proves the bug without touching production data.
