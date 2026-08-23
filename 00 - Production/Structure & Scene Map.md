@@ -22,9 +22,9 @@ The decision record for this structure — including the questions still open �
 |---|---|
 | **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus, the Luddites as a bit, and the credential jab at Kristina he calls out and helps nobody by calling out. |
 | **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. |
-| **III** | Offboarding → **Brendan gets the same call** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. |
+| **III** | Offboarding → **the call where Marcus names it and Liam won't have it** → **Brendan gets the same call** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. |
 | **IV** | The press invents him → the arrest. Procedurally polite officers, a form, a name mispronounced, and a takedown triggered by a man trying to correct a record. **Cast goes to four live actors here** — see [[22 - Current Employer]]. |
-| **V** | The trial → **the plea**. The verdict never comes because there is no trial: he signs. **The immigration ending is cut** — [[Rework — The Escalation Pass]] §A3. |
+| **V** | The trial → **the last conversation** → **the plea**. The verdict never comes because there is no trial: he signs. **The immigration ending is cut** — [[Rework — The Escalation Pass]] §A3. |
 
 **The show is longer than the original 60-minute pitch and that is a known, accepted cost.** Where to take it back is a question for the timing pass after the draft is complete, not a constraint on writing it — but 01b–01d were flagged early as the liftable scenes in Movement I.
 
@@ -45,7 +45,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 1b | [[01b - The Cursor Demo\|The Cursor Demo]] | I | ✏️ |
 | 1c | [[01c - The PR Review\|The PR Review]] | I | ✏️ |
 | 1d | [[01d - The Future\|The Future]] | I | ✏️ |
-| 1e | Marcus Established *(to write)* | I | ⬜ |
+| 1e | Marcus Established — *probably not needed; see note below* | I | ⬜ |
 | 6 | [[06 - Good Instinct\|Good Instinct]] | II | ✏️ |
 | 7 | [[07 - Heads Together\|Heads Together]] | II | ✏️ |
 | 10 | [[10 - The Win We Needed\|The Win We Needed]] | II | ✏️ |
@@ -56,6 +56,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 13 | [[13 - The Performance Review\|The Performance Review]] | II | ✏️ |
 | 13b | [[13b - The Plan\|The Plan]] | II | ✏️ |
 | 14 | [[14 - The Offboarding\|The Offboarding]] | III | ✏️ |
+| 14a | [[14a - Checking In\|Checking In]] | III | ✏️ |
 | 14b | [[14b - Three Weeks\|Three Weeks]] | III | ✏️ |
 | 19 | [[19 - Nine Tickets\|Nine Tickets]] | III | ✏️ |
 | 20 | [[20 - The Audit\|The Audit]] | III | ✏️ |
@@ -63,7 +64,11 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 21 | The Press Invents Him *(to write)* | IV | ⬜ |
 | 22 | [[22 - Current Employer\|Current Employer]] | IV | ✏️ |
 | 23 | [[23 - The Trial\|The Trial]] | V | ✏️ |
+| 23b | [[23b - Continuity\|Continuity]] | V | ✏️ |
 | 24 | [[24 - Statement of Facts\|Statement of Facts]] | V | ✏️ |
+
+> [!note] Slot 1e may be redundant now
+> The Marcus pass put him on-mic **three times before the mandate** — the refused alliance and the credential callout in [[01 - Cold Open — The Standup]], the Luddite tangent Liam corrects in [[06 - Good Instinct]], and the long fight in [[11b - Best Practices]] — which is what a dedicated "Marcus Established" scene was for. **Recommend cutting 1e** unless the timing pass finds Movement I is short, which it will not. Leave the row until the draft is complete, then delete it rather than writing into it.
 
 **Out of the running order, kept in the vault:** [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Both are cut from the show and both stay as source material for Marcus's arguments and for verbatim inserts.
 
