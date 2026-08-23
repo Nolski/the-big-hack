@@ -20,6 +20,7 @@ body {
   font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
+  -webkit-text-size-adjust: 100%;
 }
 
 .topbar {
@@ -29,8 +30,12 @@ body {
   padding: 12px 20px;
   display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px;
 }
+/* On desktop the bar's children lay out as direct flex items of .topbar, so the
+   wrapper is invisible to layout and nothing about the wide view changes. */
+.bar { display: contents; }
+.menu-toggle { display: none; }
+
 .topbar .back { color: var(--muted); text-decoration: none; font-size: 13px; padding: 4px 8px; border: 1px solid var(--border); border-radius: 6px; }
-.topbar .back:hover { color: var(--text); border-color: var(--accent); }
 .topbar h1 { font-size: 16px; margin: 0; letter-spacing: .3px; }
 .controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .controls label { color: var(--muted); font-size: 12px; display: flex; flex-direction: column; gap: 3px; }
@@ -39,16 +44,22 @@ body {
 select {
   background: var(--panel2); color: var(--text);
   border: 1px solid var(--border); border-radius: 6px;
-  padding: 6px 8px; font-size: 13px; min-width: 220px;
+  padding: 6px 8px; font-size: 13px; min-width: 220px; max-width: 100%;
 }
 button {
   background: var(--panel2); color: var(--text);
   border: 1px solid var(--border); border-radius: 6px;
   padding: 6px 12px; font-size: 13px; cursor: pointer;
 }
-button:hover { border-color: var(--accent); }
 button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-button.primary:hover { filter: brightness(1.08); }
+
+/* Hover styling only where a real pointer exists — on touch these stick after a tap. */
+@media (hover: hover) {
+  .topbar .back:hover { color: var(--text); border-color: var(--accent); }
+  button:hover { border-color: var(--accent); }
+  button.primary:hover { filter: brightness(1.08); }
+  .scene-head:hover { background: var(--panel2); }
+}
 
 .legend { display: flex; gap: 8px; margin-left: auto; }
 .lg { font-size: 11px; padding: 2px 8px; border-radius: 10px; border: 1px solid var(--border); }
@@ -75,7 +86,6 @@ main { padding: 8px 20px 120px; display: flex; flex-direction: column; gap: 14px
   display: flex; align-items: center; gap: 12px;
   padding: 12px 16px; cursor: pointer; user-select: none;
 }
-.scene-head:hover { background: var(--panel2); }
 .badge {
   font-size: 10px; font-weight: 700; letter-spacing: .5px;
   padding: 3px 8px; border-radius: 5px; text-transform: uppercase;
@@ -123,7 +133,7 @@ main { padding: 8px 20px 120px; display: flex; flex-direction: column; gap: 14px
 .cell .who { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: .3px; }
 .cell .who.dir { color: var(--muted); font-weight: 600; }
 .cell .dir { font-style: italic; color: var(--muted); font-size: 12px; }
-.cell .txt { white-space: pre-wrap; }
+.cell .txt { white-space: pre-wrap; overflow-wrap: anywhere; }
 .cell .cue { font-size: 11px; color: var(--modified); }
 .cell .play {
   align-self: flex-start; margin-top: 2px; padding: 2px 10px; font-size: 12px;
@@ -146,3 +156,123 @@ main { padding: 8px 20px 120px; display: flex; flex-direction: column; gap: 14px
 #npLabel { font-size: 12px; color: var(--muted); }
 
 .hidden { display: none; }
+
+/* --------------------------------------------------------------------------- */
+/* Phone / narrow tablet. The side-by-side diff becomes a stacked one: each row  */
+/* shows before above after, labelled per cell, with empty placeholder cells     */
+/* dropped entirely so a pure addition reads as one block instead of two.        */
+/* --------------------------------------------------------------------------- */
+@media (max-width: 760px) {
+  .topbar { padding: 10px 12px; gap: 8px 10px; }
+  .topbar h1 { font-size: 15px; }
+
+  /* Collapsible options. The status line lives outside the header and keeps
+     showing "<before> → <after> · counts", so nothing is lost when it's shut. */
+  .bar { display: flex; align-items: center; gap: 10px; width: 100%; }
+  .bar h1 { flex: 1; min-width: 0; }
+  .menu-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 38px; padding: 8px 12px; font-size: 13px; white-space: nowrap;
+  }
+  .topbar.collapsed .controls { display: none; }
+
+  .controls { width: 100%; gap: 8px; }
+  .controls label:not(.chk) { flex: 1 1 100%; gap: 4px; }
+  .controls select { width: 100%; min-width: 0; font-size: 16px; padding: 10px 8px; }
+  .controls .arrow { display: none; }
+  #compare { flex: 1 1 100%; padding: 12px; font-size: 15px; }
+  .controls label.chk { flex: 1 1 42%; font-size: 13px; padding: 4px 0; }
+  .controls label.chk input { width: 18px; height: 18px; }
+
+  /* Decorative on a phone — the badges and cell labels already carry the colour. */
+  .legend { display: none; }
+
+  .status { padding: 8px 12px; font-size: 12px; }
+  main { padding: 8px 10px 130px; gap: 10px; }
+
+  /* Scene header reflows to: [badge][id]…[caret] / title / count / actions */
+  .scene-head { flex-wrap: wrap; padding: 10px 12px; gap: 6px 8px; }
+  .scene-head .spacer { display: none; }
+  .badge { order: 1; }
+  .sid { order: 2; }
+  .caret { order: 3; margin-left: auto; font-size: 16px; padding: 0 4px; }
+  .stitle { order: 4; flex: 1 1 100%; }
+  .nchg { order: 5; flex: 1 1 100%; }
+  .scene-actions { order: 6; flex: 1 1 100%; gap: 8px; }
+  .scene-actions button { flex: 1; padding: 10px 8px; font-size: 13px; }
+
+  .scene-body { padding: 4px 10px 12px; }
+
+  .sketches { gap: 10px; }
+  .sketches figure { flex: 1 1 100%; }
+  .sketches img { width: 100%; max-width: none; max-height: none; height: auto; }
+
+  .setting-cols { grid-template-columns: 1fr; }
+
+  /* The diff, stacked. */
+  .colhead { display: none; }
+  .rows { gap: 8px; }
+  .row { grid-template-columns: 1fr; gap: 4px; }
+
+  /* A missing side is a dashed ghost box on desktop; on a phone it's just noise. */
+  .cell.empty { display: none; }
+
+  /* .cell is a flex column, so ::before flows as the first item — no offset hacks. */
+  .cell.before::before,
+  .cell.after::before {
+    font-size: 10px; font-weight: 700; letter-spacing: .6px;
+    color: var(--muted); text-transform: uppercase;
+  }
+  .cell.before::before { content: "before"; }
+  .cell.after::before { content: "after"; }
+  .row.added .cell.after::before { color: var(--added); }
+  .row.removed .cell.before::before { color: var(--removed); }
+  .row.modified .cell.before::before,
+  .row.modified .cell.after::before { color: var(--modified); }
+
+  /* Unchanged lines are identical on both sides — show one, not two. */
+  .row.equal .cell.before { display: none; }
+  .row.equal .cell.after::before { content: "unchanged"; }
+
+  /* Touch targets. */
+  .cell .play {
+    min-height: 40px; min-width: 64px;
+    padding: 8px 18px; font-size: 15px; margin-top: 4px;
+  }
+
+  .nowplaying {
+    left: 10px; right: 10px; transform: none;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    justify-content: space-between; border-radius: 14px;
+  }
+  #npLabel { font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #npStop { padding: 10px 16px; font-size: 14px; flex: 0 0 auto; }
+}
+
+/* --- inline editing (working-tree side only) ------------------------------ */
+body.editable .cell.after.can-edit { cursor: text; }
+body.editable .cell.after.can-edit:hover {
+  outline: 1px solid var(--edge, #3a4252);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.editor { display: flex; flex-direction: column; gap: 6px; }
+.editor textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: inherit;
+  background: rgba(0, 0, 0, .25);
+  border: 1px solid #4a5262;
+  border-radius: 4px;
+  padding: 8px;
+  resize: vertical;
+}
+.editor-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.editor-bar button { font-size: 12px; padding: 3px 10px; }
+.editor-note { font-size: 11px; opacity: .6; }
+.editor-note.err { opacity: 1; color: #ff9a9a; }

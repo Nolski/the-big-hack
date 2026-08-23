@@ -72,6 +72,44 @@ def section(body, name):
     return "\n".join(out).strip()
 
 
+def section_span(text, name):
+    """Absolute 0-based `[start, end)` line span of a `## <name>` section body
+    within the whole file, trimmed of leading/trailing blank lines exactly the
+    way `section()` trims them.
+
+    `section()` returns the section's *text*, which is all the parser needs, but
+    writing an edit back needs to know which lines of the file that text came
+    from. Keeping both in one module means they cannot drift apart. Returns
+    None if the section isn't there.
+    """
+    _, body = split_frontmatter(text)
+    offset = len(text.splitlines()) - len(body.splitlines())
+    blines = body.splitlines()
+    target = name.strip().lower()
+    start = end = None
+    for idx, ln in enumerate(blines):
+        if ln.startswith("## "):
+            head = ln[3:].strip().lower()
+            if head == target or head.startswith(target):
+                start, end = idx + 1, None
+            elif start is not None and end is None:
+                end = idx
+                break
+            continue
+        if start is not None and end is None and ln.strip() == "---":
+            end = idx
+            break
+    if start is None:
+        return None
+    if end is None:
+        end = len(blines)
+    while start < end and not blines[start].strip():
+        start += 1
+    while end > start and not blines[end - 1].strip():
+        end -= 1
+    return start + offset, end + offset
+
+
 # --------------------------------------------------------------------------- #
 # Text cleaning
 # --------------------------------------------------------------------------- #
@@ -228,7 +266,7 @@ def _is_pure_visual(body):
 def parse_script(script_text, name_index):
     lines, counter = [], 0
 
-    def add(kind, speaker, text, direction=""):
+    def add(kind, speaker, text, direction="", src=None):
         nonlocal counter
         # Optional inline music cue: [MUSIC: music/slackhuddle.mp3] (or "scene").
         music = None
@@ -246,6 +284,11 @@ def parse_script(script_text, name_index):
         }
         if music:
             item["music"] = music
+        if src is not None:
+            # Inclusive 0-based line range within the (trimmed) Script section
+            # that this beat was parsed from, so an edit can be written back to
+            # exactly those lines. Pair with `section_span` to get file offsets.
+            item["src_start"], item["src_end"] = src
         lines.append(item)
 
     raw = script_text.splitlines()
@@ -256,6 +299,8 @@ def parse_script(script_text, name_index):
         if not s:
             i += 1
             continue
+
+        start = i
 
         # --- video callout block (one [!screen] header + following '>' lines) --
         if s.startswith(">") and "[!screen]" in s:
@@ -278,15 +323,15 @@ def parse_script(script_text, name_index):
             if _is_pure_visual(body) or not rest:
                 # purely a screen visual (e.g. the merged PR) — show, don't voice
                 vis = clean_direction(body) or clean_direction(rest)
-                add("direction", "", vis, direction)
+                add("direction", "", vis, direction, src=(start, i - 1))
             else:
                 spk = resolve_speaker(name, name_index)
-                add("video", spk, clean_spoken(rest), direction)
+                add("video", spk, clean_spoken(rest), direction, src=(start, i - 1))
             continue
 
         # --- a stray '>' continuation we didn't consume -> treat as direction ---
         if s.startswith(">"):
-            add("direction", "", clean_direction(s.lstrip("> ")), "")
+            add("direction", "", clean_direction(s.lstrip("> ")), "", src=(start, start))
             i += 1
             continue
 
@@ -297,20 +342,21 @@ def parse_script(script_text, name_index):
             direction = (m.group("dir") or "").strip()
             text = clean_spoken(m.group("text"))
             if normalize_name(name) == "narrator" or "v.o." in direction.lower():
-                add("narration", "narrator", text, direction)
+                add("narration", "narrator", text, direction, src=(start, start))
             else:
-                add("live", resolve_speaker(name, name_index), text, direction)
+                add("live", resolve_speaker(name, name_index), text, direction,
+                    src=(start, start))
             i += 1
             continue
 
         # --- standalone stage direction *(...)* (may wrap one line) ------------
         if s.startswith("*"):
-            add("direction", "", clean_direction(s), "")
+            add("direction", "", clean_direction(s), "", src=(start, start))
             i += 1
             continue
 
         # --- any other prose line: keep as a direction beat so nothing is lost -
-        add("direction", "", clean_direction(s), "")
+        add("direction", "", clean_direction(s), "", src=(start, start))
         i += 1
 
     return lines

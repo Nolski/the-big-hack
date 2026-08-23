@@ -80,10 +80,52 @@ function playFrom(seq, idx, label) {
 $("#npStop").addEventListener("click", stopAudio);
 
 // --------------------------------------------------------------------------- //
+// url state
+// --------------------------------------------------------------------------- //
+// The comparison lives in the query string (`?before=…&after=…`) so a review is
+// a link you can paste to somebody: they open it and see the same diff, without
+// touching the dropdowns. The two view toggles ride along, omitted when off so
+// the common URL stays short.
+function readParams() {
+  const q = new URLSearchParams(location.search);
+  return {
+    before: q.get("before") || "",
+    after: q.get("after") || "",
+    unchanged: q.get("unchanged") === "1",
+    equalLines: q.get("equal") === "1",
+  };
+}
+
+// `replaceState`, not `push` — toggling a checkbox shouldn't stack up history
+// entries you then have to back out of one at a time.
+function writeParams() {
+  const q = new URLSearchParams();
+  q.set("before", $("#before").value);
+  q.set("after", $("#after").value);
+  if ($("#showUnchanged").checked) q.set("unchanged", "1");
+  if ($("#showEqualLines").checked) q.set("equal", "1");
+  history.replaceState(null, "", `${location.pathname}?${q}`);
+}
+
+// A ref from the URL may not be in the dropdown — a sha, a branch that's since
+// been deleted, or `working` on the before side. The API takes any rev git
+// takes, so add it as an option rather than silently falling back to a default
+// and showing a diff the link didn't ask for.
+function ensureOption(sel, value, label) {
+  if (!value) return;
+  if ([...sel.options].some((o) => o.value === value)) return;
+  const opt = el("option");
+  opt.value = value;
+  opt.textContent = label || value;
+  sel.appendChild(opt);
+}
+
+// --------------------------------------------------------------------------- //
 // data
 // --------------------------------------------------------------------------- //
 async function loadRefs() {
   const r = await fetch("/api/review/refs").then((x) => x.json());
+  if (r.working) WORKING = r.working;
   if (r.error || r.detail) {
     $("#status").textContent = `Review unavailable: ${r.error || r.detail}`;
     return false;
@@ -107,8 +149,15 @@ async function loadRefs() {
   };
   opts(before, []);
   opts(after, [{ value: r.working, label: "working tree (uncommitted)" }]);
-  before.value = r.refs.includes("main") ? "main" : r.current || r.refs[0];
-  after.value = r.working;
+
+  const p = readParams();
+  const workingLabel = "working tree (uncommitted)";
+  ensureOption(before, p.before, p.before === r.working ? workingLabel : null);
+  ensureOption(after, p.after, p.after === r.working ? workingLabel : null);
+  before.value = p.before || (r.refs.includes("main") ? "main" : r.current || r.refs[0]);
+  after.value = p.after || r.working;
+  $("#showUnchanged").checked = p.unchanged;
+  $("#showEqualLines").checked = p.equalLines;
   return true;
 }
 
@@ -116,6 +165,7 @@ async function compare() {
   const before = $("#before").value;
   const after = $("#after").value;
   if (!before || !after) return;
+  writeParams();
   $("#status").textContent = `Comparing ${before} → ${after} … (reading git)`;
   $("#results").innerHTML = "";
   try {
@@ -131,9 +181,72 @@ async function compare() {
 }
 
 // --------------------------------------------------------------------------- //
+// editing
+// --------------------------------------------------------------------------- //
+// Only the working tree is editable. A committed ref has nothing to write to,
+// so when the after side is a branch or a sha the page is read-only and says so.
+let editable = false;
+let WORKING = "working";
+
+// The editor holds the beat's *markdown*, not the text the diff renders. The
+// displayed text has had wikilinks and music cues cleaned out of it, so saving
+// that back would quietly delete them. What you click into is what's in the file.
+function openEditor(cell, line, sceneId, onSaved) {
+  if (cell.querySelector(".editor")) return;
+  const prev = cell.innerHTML;
+  const box = el("div", "editor");
+  const ta = el("textarea");
+  ta.value = line.raw;
+  ta.rows = Math.min(12, line.raw.split("\n").length + 1);
+  const bar = el("div", "editor-bar");
+  const save = el("button", "primary", "Save");
+  const cancel = el("button", null, "Cancel");
+  const note = el("span", "editor-note", "⌘/Ctrl+Enter to save · Esc to cancel");
+  bar.append(save, cancel, note);
+  box.append(ta, bar);
+  cell.innerHTML = "";
+  cell.appendChild(box);
+  ta.focus();
+  ta.setSelectionRange(ta.value.length, ta.value.length);
+
+  const close = () => { cell.innerHTML = prev; };
+  const commit = async () => {
+    const text = ta.value;
+    if (text === line.raw) return close();
+    save.disabled = cancel.disabled = true;
+    note.textContent = "saving…";
+    try {
+      const res = await fetch("/api/review/line", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          scene: sceneId, line: line.lid, text, expect: line.raw,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || data.error || `HTTP ${res.status}`);
+      onSaved();
+    } catch (e) {
+      save.disabled = cancel.disabled = false;
+      note.textContent = e.message;
+      note.classList.add("err");
+    }
+  };
+
+  save.addEventListener("click", commit);
+  cancel.addEventListener("click", close);
+  ta.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { e.preventDefault(); close(); }
+    if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); commit(); }
+  });
+}
+
+// --------------------------------------------------------------------------- //
 // render
 // --------------------------------------------------------------------------- //
 function render(data) {
+  editable = data.after === WORKING;
+  document.body.classList.toggle("editable", editable);
   const showUnchanged = $("#showUnchanged").checked;
   const scenes = data.scenes.filter(
     (s) => showUnchanged || s.status !== "unchanged"
@@ -143,7 +256,9 @@ function render(data) {
     `${data.before} → ${data.after}   ·   ` +
     ["added", "removed", "modified", "unchanged"]
       .map((k) => `${counts[k] || 0} ${k}`)
-      .join("  ·  ");
+      .join("  ·  ") +
+    (editable ? "   ·   click a line on the right to edit it"
+              : "   ·   read-only (the after side is a commit)");
 
   const root = $("#results");
   root.innerHTML = "";
@@ -165,6 +280,7 @@ function sceneCard(s) {
   const seqs = {
     before: [], after: [], changedAfter: [],
     labelBefore: `${s.id} before`, labelAfter: `${s.id} after`,
+    sceneId: s.id,
   };
 
   if (s.title_before != null && s.title_after != null && s.title_before !== s.title_after) {
@@ -258,11 +374,20 @@ function wordHtml(words, sideKey) {
 // `seq` is the running list of playable clips for this side of this scene, in
 // row order. Each play button records its own index in it so a click can queue
 // itself plus everything after it.
-function cellEl(line, sideClass, words, sideKey, seq, seqLabel) {
+function cellEl(line, sideClass, words, sideKey, seq, seqLabel, sceneId) {
   const cell = el("div", `cell ${sideClass}`);
   if (!line) {
     cell.classList.add("empty");
     return cell;
+  }
+  if (sideKey === "b" && editable && line.raw && line.lid) {
+    cell.classList.add("can-edit");
+    cell.title = "click to edit this beat";
+    cell.addEventListener("click", (e) => {
+      // the play button lives in here too, and it is not an edit gesture
+      if (e.target.closest("button") || cell.querySelector(".editor")) return;
+      openEditor(cell, line, sceneId, () => compare());
+    });
   }
   const isDir = line.type === "direction" || !line.label;
   const who = el("div", "who" + (isDir ? " dir" : ""));
@@ -287,9 +412,11 @@ function cellEl(line, sideClass, words, sideKey, seq, seqLabel) {
 function rowEl(r, seqs) {
   const row = el("div", `row ${r.type}`);
   if (r.type === "equal" && !$("#showEqualLines").checked) row.classList.add("hide");
-  row.appendChild(cellEl(r.before, "before", r.words, "a", seqs.before, seqs.labelBefore));
+  row.appendChild(cellEl(r.before, "before", r.words, "a", seqs.before,
+                         seqs.labelBefore, seqs.sceneId));
   const nAfter = seqs.after.length;
-  row.appendChild(cellEl(r.after, "after", r.words, "b", seqs.after, seqs.labelAfter));
+  row.appendChild(cellEl(r.after, "after", r.words, "b", seqs.after,
+                         seqs.labelAfter, seqs.sceneId));
   if ((r.type === "added" || r.type === "modified") && seqs.after.length > nAfter) {
     seqs.changedAfter.push(seqs.after[seqs.after.length - 1]);
   }
@@ -297,14 +424,49 @@ function rowEl(r, seqs) {
 }
 
 // --------------------------------------------------------------------------- //
+// collapsible options (mobile only — the CSS rule is inside a media query, so
+// leaving the class on at desktop width is harmless)
+// --------------------------------------------------------------------------- //
+const MENU_KEY = "review.menuCollapsed";
+const isNarrow = () => window.matchMedia("(max-width: 760px)").matches;
+
+function setMenu(collapsed) {
+  $("#topbar").classList.toggle("collapsed", collapsed);
+  const btn = $("#menuToggle");
+  btn.setAttribute("aria-expanded", String(!collapsed));
+  btn.textContent = collapsed ? "☰ Options" : "✕ Options";
+  try {
+    localStorage.setItem(MENU_KEY, collapsed ? "1" : "0");
+  } catch (e) {
+    /* private mode — the toggle still works, it just won't persist */
+  }
+}
+
+$("#menuToggle").addEventListener("click", () =>
+  setMenu(!$("#topbar").classList.contains("collapsed"))
+);
+
+// Default to collapsed: the common case is the default comparison, and the
+// status line already says which one it is.
+let startCollapsed = true;
+try {
+  startCollapsed = localStorage.getItem(MENU_KEY) !== "0";
+} catch (e) { /* ignore */ }
+setMenu(startCollapsed);
+
+// --------------------------------------------------------------------------- //
 // wiring
 // --------------------------------------------------------------------------- //
-$("#compare").addEventListener("click", compare);
+$("#compare").addEventListener("click", async () => {
+  await compare();
+  if (isNarrow()) setMenu(true);   // get out of the way once you've asked for it
+});
 $("#showUnchanged").addEventListener("change", () => compare());
 $("#showEqualLines").addEventListener("change", () => {
   document.querySelectorAll(".row.equal").forEach((r) =>
     r.classList.toggle("hide", !$("#showEqualLines").checked)
   );
+  writeParams();
 });
 
 loadRefs().then((ok) => { if (ok) compare(); });

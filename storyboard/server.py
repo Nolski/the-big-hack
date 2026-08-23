@@ -821,6 +821,37 @@ def _ref_artifact_set(ref):
     return {ln.strip() for ln in r.stdout.splitlines() if ln.strip()}
 
 
+def _scene_script_lines(path):
+    """(all file lines, absolute index of the Script section's first line)."""
+    text = Path(path).read_text(encoding="utf-8")
+    span = script_parser.section_span(text, "Script")
+    if span is None:
+        return None, None
+    return text.splitlines(), span[0]
+
+
+def _attach_raw(scene):
+    """Hang each beat's verbatim markdown off it, so the review page can offer
+    to edit the real source rather than the cleaned display text. Beats without
+    a source span (anything an override replaced) simply stay uneditable."""
+    src = scene.get("source_file")
+    if not src or not Path(src).exists():
+        return
+    try:
+        flines, base = _scene_script_lines(src)
+    except OSError:
+        return
+    if flines is None:
+        return
+    for ln in scene.get("lines", []):
+        a, b = ln.get("src_start"), ln.get("src_end")
+        if a is None or b is None:
+            continue
+        chunk = flines[base + a: base + b + 1]
+        if chunk:
+            ln["_raw"] = "\n".join(chunk)
+
+
 def _review_side(ref):
     """Return scenes for a side with `_audio`/`_sketch` artifact-relative paths."""
     if ref == REVIEW_WORKING:
@@ -829,6 +860,7 @@ def _review_side(ref):
             s["_sketch"] = (s.get("sketch") or {}).get("image")
             for ln in s.get("lines", []):
                 ln["_audio"] = ln.get("audio")
+            _attach_raw(s)
         return scenes
     scenes = script_parser.load_scenes(
         _ref_scripts_dir(ref), characters(), CFG.get("aliases"))
@@ -871,6 +903,66 @@ def api_review_diff(before: str = "main", after: str = REVIEW_WORKING):
                                   _review_sketch_hash)
 
 
+@app.put("/api/review/line")
+def api_review_line(payload: dict = Body(...)):
+    """Write one beat's markdown back to its scene file.
+
+    Only the working tree is editable — the other side of a diff is a committed
+    ref and there is nothing sensible to write to. The client sends the text it
+    opened the editor with as `expect`; if the file no longer matches, the save
+    is refused rather than silently overwriting whatever changed underneath.
+    """
+    if not _review_enabled():
+        raise HTTPException(503, "review disabled: SB_GIT_DIR not mounted")
+    sid = (payload.get("scene") or "").strip()
+    lid = (payload.get("line") or "").strip()
+    text = payload.get("text")
+    expect = payload.get("expect")
+    if not sid or not lid or text is None:
+        raise HTTPException(400, "scene, line and text are required")
+
+    text = text.replace("\r\n", "\n").rstrip("\n")
+    if not text.strip():
+        raise HTTPException(
+            400, "a beat can't be saved empty — delete it in the file instead")
+    # The scene parser ends the Script section at the first bare `---`, so one
+    # pasted into a beat silently truncates everything after it, with no error
+    # anywhere. It has cost this project a scene's entire back half before.
+    if any(l.strip() == "---" for l in text.split("\n")):
+        raise HTTPException(
+            400, "a line of just `---` ends the Script section — "
+                 "use a stage direction or a blank line for a beat break")
+
+    # Parse from disk rather than build_scenes(): overrides would hand back
+    # lines that never existed in the file, which is not what we're editing.
+    scenes = script_parser.load_scenes(
+        scripts_dir(), characters(), CFG.get("aliases"))
+    scene = next((s for s in scenes if s["id"] == sid), None)
+    if scene is None:
+        raise HTTPException(404, f"unknown scene: {sid}")
+    line = next((l for l in scene.get("lines", []) if l.get("id") == lid), None)
+    if line is None:
+        raise HTTPException(404, f"unknown line: {lid}")
+    a, b = line.get("src_start"), line.get("src_end")
+    if a is None or b is None:
+        raise HTTPException(409, "that beat has no source span and can't be edited")
+
+    path = Path(scene["source_file"])
+    flines, base = _scene_script_lines(path)
+    if flines is None:
+        raise HTTPException(409, "scene file has no Script section any more")
+    lo, hi = base + a, base + b + 1
+    current = "\n".join(flines[lo:hi])
+    if expect is not None and expect.replace("\r\n", "\n") != current:
+        raise HTTPException(
+            409, "the file changed under this edit — reload the comparison")
+
+    flines[lo:hi] = text.split("\n")
+    trailing = "\n" if path.read_text(encoding="utf-8").endswith("\n") else ""
+    path.write_text("\n".join(flines) + trailing, encoding="utf-8")
+    return {"ok": True, "scene": sid, "line": lid, "raw": text}
+
+
 @app.get("/api/review/media")
 def api_review_media(ref: str, path: str):
     if not _review_enabled():
@@ -894,6 +986,25 @@ def api_review_media(ref: str, path: str):
 # --------------------------------------------------------------------------- #
 # Static + artifacts
 # --------------------------------------------------------------------------- #
+@app.middleware("http")
+async def _no_cache(request, call_next):
+    """Regenerated artifacts reuse their filenames, so a browser that cached the
+    old bytes (media caches ignore query-string busting under Range requests)
+    keeps playing stale audio. Force revalidation for everything under
+    /artifacts so a re-render is always heard.
+
+    The HTML documents get the same treatment. They carry the `?v=` tags that
+    bust the js/css, so a cached *document* pins stale js/css indefinitely — and
+    since review.html reads its comparison out of the query string, a stale copy
+    silently ignores a shared review link and shows the default diff instead.
+    The documents are a few KB; revalidating them costs nothing."""
+    response = await call_next(request)
+    path = request.url.path
+    if path.startswith("/artifacts/") or path == "/" or path.endswith(".html"):
+        response.headers["Cache-Control"] = "no-store, must-revalidate"
+    return response
+
+
 app.mount("/artifacts", StaticFiles(directory=str(ARTIFACTS)), name="artifacts")
 app.mount("/", StaticFiles(directory=str(STATIC), html=True), name="static")
 
