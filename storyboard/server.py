@@ -894,6 +894,25 @@ def api_review_media(ref: str, path: str):
 # --------------------------------------------------------------------------- #
 # Static + artifacts
 # --------------------------------------------------------------------------- #
+@app.middleware("http")
+async def _no_cache(request, call_next):
+    """Regenerated artifacts reuse their filenames, so a browser that cached the
+    old bytes (media caches ignore query-string busting under Range requests)
+    keeps playing stale audio. Force revalidation for everything under
+    /artifacts so a re-render is always heard.
+
+    The HTML documents get the same treatment. They carry the `?v=` tags that
+    bust the js/css, so a cached *document* pins stale js/css indefinitely — and
+    since review.html reads its comparison out of the query string, a stale copy
+    silently ignores a shared review link and shows the default diff instead.
+    The documents are a few KB; revalidating them costs nothing."""
+    response = await call_next(request)
+    path = request.url.path
+    if path.startswith("/artifacts/") or path == "/" or path.endswith(".html"):
+        response.headers["Cache-Control"] = "no-store, must-revalidate"
+    return response
+
+
 app.mount("/artifacts", StaticFiles(directory=str(ARTIFACTS)), name="artifacts")
 app.mount("/", StaticFiles(directory=str(STATIC), html=True), name="static")
 

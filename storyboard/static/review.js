@@ -80,6 +80,47 @@ function playFrom(seq, idx, label) {
 $("#npStop").addEventListener("click", stopAudio);
 
 // --------------------------------------------------------------------------- //
+// url state
+// --------------------------------------------------------------------------- //
+// The comparison lives in the query string (`?before=…&after=…`) so a review is
+// a link you can paste to somebody: they open it and see the same diff, without
+// touching the dropdowns. The two view toggles ride along, omitted when off so
+// the common URL stays short.
+function readParams() {
+  const q = new URLSearchParams(location.search);
+  return {
+    before: q.get("before") || "",
+    after: q.get("after") || "",
+    unchanged: q.get("unchanged") === "1",
+    equalLines: q.get("equal") === "1",
+  };
+}
+
+// `replaceState`, not `push` — toggling a checkbox shouldn't stack up history
+// entries you then have to back out of one at a time.
+function writeParams() {
+  const q = new URLSearchParams();
+  q.set("before", $("#before").value);
+  q.set("after", $("#after").value);
+  if ($("#showUnchanged").checked) q.set("unchanged", "1");
+  if ($("#showEqualLines").checked) q.set("equal", "1");
+  history.replaceState(null, "", `${location.pathname}?${q}`);
+}
+
+// A ref from the URL may not be in the dropdown — a sha, a branch that's since
+// been deleted, or `working` on the before side. The API takes any rev git
+// takes, so add it as an option rather than silently falling back to a default
+// and showing a diff the link didn't ask for.
+function ensureOption(sel, value, label) {
+  if (!value) return;
+  if ([...sel.options].some((o) => o.value === value)) return;
+  const opt = el("option");
+  opt.value = value;
+  opt.textContent = label || value;
+  sel.appendChild(opt);
+}
+
+// --------------------------------------------------------------------------- //
 // data
 // --------------------------------------------------------------------------- //
 async function loadRefs() {
@@ -107,8 +148,15 @@ async function loadRefs() {
   };
   opts(before, []);
   opts(after, [{ value: r.working, label: "working tree (uncommitted)" }]);
-  before.value = r.refs.includes("main") ? "main" : r.current || r.refs[0];
-  after.value = r.working;
+
+  const p = readParams();
+  const workingLabel = "working tree (uncommitted)";
+  ensureOption(before, p.before, p.before === r.working ? workingLabel : null);
+  ensureOption(after, p.after, p.after === r.working ? workingLabel : null);
+  before.value = p.before || (r.refs.includes("main") ? "main" : r.current || r.refs[0]);
+  after.value = p.after || r.working;
+  $("#showUnchanged").checked = p.unchanged;
+  $("#showEqualLines").checked = p.equalLines;
   return true;
 }
 
@@ -116,6 +164,7 @@ async function compare() {
   const before = $("#before").value;
   const after = $("#after").value;
   if (!before || !after) return;
+  writeParams();
   $("#status").textContent = `Comparing ${before} → ${after} … (reading git)`;
   $("#results").innerHTML = "";
   try {
@@ -339,6 +388,7 @@ $("#showEqualLines").addEventListener("change", () => {
   document.querySelectorAll(".row.equal").forEach((r) =>
     r.classList.toggle("hide", !$("#showEqualLines").checked)
   );
+  writeParams();
 });
 
 loadRefs().then((ok) => { if (ok) compare(); });
