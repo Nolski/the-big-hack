@@ -68,6 +68,11 @@ def _line_view(ln, ref, media_base):
         "direction": strip_plane(ln.get("direction")),
         "music": ln.get("music"),
         "audio": (f"{media_base}?ref={ref}&path={ln['_audio']}" if ln.get("_audio") else None),
+        # Set by the caller for an editable side only (the working tree). `raw`
+        # is the beat's verbatim markdown; the displayed text has been cleaned
+        # of wikilinks and music cues, so it is not what an edit writes back.
+        "lid": ln.get("id"),
+        "raw": ln.get("_raw"),
     }
 
 

@@ -9,8 +9,9 @@ services:
     volumes:
       # App code + storyboard.yaml + generated artifacts (persisted to the repo).
       - ./:/app
-      # The play's scene scripts (source of truth for scenes), read-only.
-      - "../03 - Script:/scripts:ro"
+      # The play's scene scripts (source of truth for scenes). Writable, because
+      # the review page edits beats in place and writes them back to the .md.
+      - "../03 - Script:/scripts"
       # The repo's git dir, READ-ONLY, for the in-app Scene Review (diff two
       # refs / a ref vs the working tree). Only read-only git plumbing is run.
       - "../.git:/gitdir:ro"
