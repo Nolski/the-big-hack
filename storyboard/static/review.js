@@ -125,6 +125,7 @@ function ensureOption(sel, value, label) {
 // --------------------------------------------------------------------------- //
 async function loadRefs() {
   const r = await fetch("/api/review/refs").then((x) => x.json());
+  if (r.working) WORKING = r.working;
   if (r.error || r.detail) {
     $("#status").textContent = `Review unavailable: ${r.error || r.detail}`;
     return false;
@@ -180,9 +181,72 @@ async function compare() {
 }
 
 // --------------------------------------------------------------------------- //
+// editing
+// --------------------------------------------------------------------------- //
+// Only the working tree is editable. A committed ref has nothing to write to,
+// so when the after side is a branch or a sha the page is read-only and says so.
+let editable = false;
+let WORKING = "working";
+
+// The editor holds the beat's *markdown*, not the text the diff renders. The
+// displayed text has had wikilinks and music cues cleaned out of it, so saving
+// that back would quietly delete them. What you click into is what's in the file.
+function openEditor(cell, line, sceneId, onSaved) {
+  if (cell.querySelector(".editor")) return;
+  const prev = cell.innerHTML;
+  const box = el("div", "editor");
+  const ta = el("textarea");
+  ta.value = line.raw;
+  ta.rows = Math.min(12, line.raw.split("\n").length + 1);
+  const bar = el("div", "editor-bar");
+  const save = el("button", "primary", "Save");
+  const cancel = el("button", null, "Cancel");
+  const note = el("span", "editor-note", "⌘/Ctrl+Enter to save · Esc to cancel");
+  bar.append(save, cancel, note);
+  box.append(ta, bar);
+  cell.innerHTML = "";
+  cell.appendChild(box);
+  ta.focus();
+  ta.setSelectionRange(ta.value.length, ta.value.length);
+
+  const close = () => { cell.innerHTML = prev; };
+  const commit = async () => {
+    const text = ta.value;
+    if (text === line.raw) return close();
+    save.disabled = cancel.disabled = true;
+    note.textContent = "saving…";
+    try {
+      const res = await fetch("/api/review/line", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          scene: sceneId, line: line.lid, text, expect: line.raw,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || data.error || `HTTP ${res.status}`);
+      onSaved();
+    } catch (e) {
+      save.disabled = cancel.disabled = false;
+      note.textContent = e.message;
+      note.classList.add("err");
+    }
+  };
+
+  save.addEventListener("click", commit);
+  cancel.addEventListener("click", close);
+  ta.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { e.preventDefault(); close(); }
+    if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); commit(); }
+  });
+}
+
+// --------------------------------------------------------------------------- //
 // render
 // --------------------------------------------------------------------------- //
 function render(data) {
+  editable = data.after === WORKING;
+  document.body.classList.toggle("editable", editable);
   const showUnchanged = $("#showUnchanged").checked;
   const scenes = data.scenes.filter(
     (s) => showUnchanged || s.status !== "unchanged"
@@ -192,7 +256,9 @@ function render(data) {
     `${data.before} → ${data.after}   ·   ` +
     ["added", "removed", "modified", "unchanged"]
       .map((k) => `${counts[k] || 0} ${k}`)
-      .join("  ·  ");
+      .join("  ·  ") +
+    (editable ? "   ·   click a line on the right to edit it"
+              : "   ·   read-only (the after side is a commit)");
 
   const root = $("#results");
   root.innerHTML = "";
@@ -214,6 +280,7 @@ function sceneCard(s) {
   const seqs = {
     before: [], after: [], changedAfter: [],
     labelBefore: `${s.id} before`, labelAfter: `${s.id} after`,
+    sceneId: s.id,
   };
 
   if (s.title_before != null && s.title_after != null && s.title_before !== s.title_after) {
@@ -307,11 +374,20 @@ function wordHtml(words, sideKey) {
 // `seq` is the running list of playable clips for this side of this scene, in
 // row order. Each play button records its own index in it so a click can queue
 // itself plus everything after it.
-function cellEl(line, sideClass, words, sideKey, seq, seqLabel) {
+function cellEl(line, sideClass, words, sideKey, seq, seqLabel, sceneId) {
   const cell = el("div", `cell ${sideClass}`);
   if (!line) {
     cell.classList.add("empty");
     return cell;
+  }
+  if (sideKey === "b" && editable && line.raw && line.lid) {
+    cell.classList.add("can-edit");
+    cell.title = "click to edit this beat";
+    cell.addEventListener("click", (e) => {
+      // the play button lives in here too, and it is not an edit gesture
+      if (e.target.closest("button") || cell.querySelector(".editor")) return;
+      openEditor(cell, line, sceneId, () => compare());
+    });
   }
   const isDir = line.type === "direction" || !line.label;
   const who = el("div", "who" + (isDir ? " dir" : ""));
@@ -336,9 +412,11 @@ function cellEl(line, sideClass, words, sideKey, seq, seqLabel) {
 function rowEl(r, seqs) {
   const row = el("div", `row ${r.type}`);
   if (r.type === "equal" && !$("#showEqualLines").checked) row.classList.add("hide");
-  row.appendChild(cellEl(r.before, "before", r.words, "a", seqs.before, seqs.labelBefore));
+  row.appendChild(cellEl(r.before, "before", r.words, "a", seqs.before,
+                         seqs.labelBefore, seqs.sceneId));
   const nAfter = seqs.after.length;
-  row.appendChild(cellEl(r.after, "after", r.words, "b", seqs.after, seqs.labelAfter));
+  row.appendChild(cellEl(r.after, "after", r.words, "b", seqs.after,
+                         seqs.labelAfter, seqs.sceneId));
   if ((r.type === "added" || r.type === "modified") && seqs.after.length > nAfter) {
     seqs.changedAfter.push(seqs.after[seqs.after.length - 1]);
   }

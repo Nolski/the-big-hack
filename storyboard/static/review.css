@@ -248,3 +248,31 @@ main { padding: 8px 20px 120px; display: flex; flex-direction: column; gap: 14px
   #npLabel { font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   #npStop { padding: 10px 16px; font-size: 14px; flex: 0 0 auto; }
 }
+
+/* --- inline editing (working-tree side only) ------------------------------ */
+body.editable .cell.after.can-edit { cursor: text; }
+body.editable .cell.after.can-edit:hover {
+  outline: 1px solid var(--edge, #3a4252);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.editor { display: flex; flex-direction: column; gap: 6px; }
+.editor textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: inherit;
+  background: rgba(0, 0, 0, .25);
+  border: 1px solid #4a5262;
+  border-radius: 4px;
+  padding: 8px;
+  resize: vertical;
+}
+.editor-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.editor-bar button { font-size: 12px; padding: 3px 10px; }
+.editor-note { font-size: 11px; opacity: .6; }
+.editor-note.err { opacity: 1; color: #ff9a9a; }
