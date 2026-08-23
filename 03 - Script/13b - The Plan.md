@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Liam Arc]] — the fork, and the ninety days"
 status: drafted
-runtime_estimate: ~3 min
 live_cast: "Liam, Brendan"
 ai_video_assets: "[[AI Video Production Tracker|AIV-072 The fork — email and two attachments, screen]], [[AI Video Production Tracker|AIV-073 The improvement plan — screen]]"
 tags:
@@ -144,4 +143,4 @@ The back half is a **passage of time**, not a sequence of events: ninety days of
 - **The empty field held for eleven days** is the scene's last image and the only place to hold. It is not sinister and nobody is sitting on it maliciously — a manager is busy and a form is open. That is worse. **It stays empty forever**, which is the point of holding on it.
 - **Everything he does here counts against him somewhere he cannot see.** The ninety days of reviewing that fixes criteria one and two lowers his authored-changes figure, and authored changes is a column on the reduction sheet in [[14 - The Offboarding]] while reviews are not. Play the passage of time as straightforward competence — **the scene must not know this** — but it is why the sequence has to stay in the show.
 - **He stops arguing about the tooling.** The adoption cell climbing off 3% is him conceding the fight he was right about in [[11b - Best Practices]], quietly, without comment, because the plan asked him to. Nobody notices and nobody thanks him. It is the largest concession any character makes in the play and it takes four words of stage direction.
-- **Runtime.** ~3 min spoken. This scene exists to buy [[14 - The Offboarding]] its meaning; if the show has to lose time, cut *into* it rather than losing it — the fork can survive losing the median-severance line and the plan passage can lose sixty days.
+- **If it has to come down.** This scene exists to buy [[14 - The Offboarding]] its meaning; if the show has to lose time, cut *into* it rather than losing it — the fork can survive losing the median-severance line and the plan passage can lose sixty days.

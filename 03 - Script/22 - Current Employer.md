@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Liam Arc]] — the arrest"
 status: drafted
-runtime_estimate: ~8 min
 live_cast: "Liam, Officer One, Officer Two, (officers — see cast note)"
 ai_video_assets: "[[AI Video Production Tracker|AIV-055 Marcus]], [[AI Video Production Tracker|AIV-088 The form — screen]]"
 tags:
@@ -256,4 +255,4 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 - **"Somebody straightens his shirt for him, which is worse than nobody doing it."** In the earlier draft he did it himself. **The new version is the better cruelty** — he is cuffed and cannot, and someone is kind to him about it.
 - **Brendan is not in this scene.** His silent-witness beat is at the trial, where speaking is formally invited.
 - **The last image.** A door that doesn't shut, a table on its side, a returns box nobody touched, and a video call still connected to nobody, still talking, still recording. **No music. Let Marcus run a few seconds past comfort and go out on "Liam?"**
-- **Runtime.** ~8 min, and it should feel like the biggest scene in the second half. If it has to come down, cut the date-of-birth exchange. **Do not cut Marcus's opening, "I've still got a job," the two beats after the door, the reach, the takedown, "you moved and we don't know you," the employer field, "that's not something I'd be able to tell you," the phone-call question, or "mind the step."**
+- **It should feel like the biggest scene in the second half.** If it has to come down, cut the date-of-birth exchange. **Do not cut Marcus's opening, "I've still got a job," the two beats after the door, the reach, the takedown, "you moved and we don't know you," the employer field, "that's not something I'd be able to tell you," the phone-call question, or "mind the step."**

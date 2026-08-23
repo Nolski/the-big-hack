@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Liam Arc]] — the machine goes back"
 status: drafted
-runtime_estimate: ~4 min
 live_cast: "Liam, Brendan"
 ai_video_assets: "none — no video, no screens until the last beat"
 tags:
@@ -179,7 +178,7 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 - **"It takes him slightly longer than it needs to."** The only physical tell in the scene, on a jacket, and it is the closest thing to a confession he produces. **Nothing else.** No pause at the door, no unfinished sentence — [[20 - The Audit]] already spent the last backspace, and repeating the gesture here would turn a pattern into a tic.
 - **He is never charged, and nothing in the play ever explains why.** The audit trail carries Liam's name, the machine is in Liam's flat, Liam has motive and Liam's own words are on the record. Brendan is invisible to the process for the same reason he was invisible to the reduction: **nothing he does generates a row anywhere.**
 - **The last image is the machine going back into the rectangle it left**, which is exactly the right size, and Liam plugging it in because that is what you do with a machine. **No music, no hold on the screen, no reaction.** He goes back to a job application.
-- **Runtime.** ~4 min spoken. If it has to come down, cut the tea and the two same-day rejections. **Do not cut the half-reach, "every single thing it did it was allowed to do," the Priya email, or the plug.**
+- **If it has to come down,** cut the tea and the two same-day rejections. **Do not cut the half-reach, "every single thing it did it was allowed to do," the Priya email, or the plug.**
 
 > [!question] Open, and Movements IV–V depend on it
 > **Does Liam ever say "I lent that machine to Brendan"?** He knows he did. One sentence would put an investigator in Brendan's flat.

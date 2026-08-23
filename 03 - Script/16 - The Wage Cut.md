@@ -6,7 +6,6 @@ world: historical
 arc: john-arc
 beat: "[[Beat Sheet — Parallel Intercut#B7 — He fights it the only way he knows (and it backfires)]]"
 status: cut
-runtime_estimate: ~4 min
 live_cast: John
 ai_video_assets: "[[AI Video Production Tracker|AIV-080 Cartwright — the wage cut]], [[AI Video Production Tracker|AIV-002 Steam looms (through the window) — ambient]]"
 tags:

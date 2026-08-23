@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Liam Arc]] — the break"
 status: drafted
-runtime_estimate: ~9 min
 live_cast: "Liam, Brendan"
 ai_video_assets: "[[AI Video Production Tracker|AIV-085 The prosecutor]], [[AI Video Production Tracker|AIV-086 The judge]], [[AI Video Production Tracker|AIV-087 The exhibits — screen]], [[AI Video Production Tracker|AIV-055 Marcus]]"
 tags:
@@ -227,7 +226,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 - **Guard the cheer.** Marcus in the witness box is the last big laugh in the play and the audience should have it. **It is taken back in the same exchange**, when the friction line is read and he agrees with it.
 - **Dependencies.** [[22 - Current Employer]] is now written and consistent with this scene: procedurally polite officers, the device seized from his home, and **Brendan not present at the arrest** — his silent-witness beat belongs here, where speaking is formally invited, and doing it twice would halve it. Still assumed and still unwritten: **the press ran Liam's own [[11b - Best Practices]] line verbatim** (`21`). **If `21` lands differently, come back here.**
 - **The em-dash line renders as nothing, and that is correct.** Brendan's *"—"* after the break has no audio and never will: the pipeline only voices text containing a letter or a number, so it holds on screen as silence. **Do not "fix" this by giving him a word.** The line is the absence.
-- **Runtime.** **3.7 min spoken, measured** — well under the ~9 min I first estimated, because the scene is mostly short exchanges and thirty of its sixty-six lines are stage direction. **Staged it is longer**: the count list, the pauses either side of the break, and the silence on the em-dash all read as real time and measure as nothing. Judge it on a clock. If it has to come down, cut Marcus's second answer and shorten the count list to twelve. **Do not cut the *Van Buren* exchange, the friction line, "He had the—", or the calendar.**
+- **On the page it reads short** — mostly short exchanges, with thirty of its sixty-six lines stage direction. **Staged it is longer**: the count list, the pauses either side of the break, and the silence on the em-dash all read as real time and measure as nothing. Judge it on a clock. If it has to come down, cut Marcus's second answer and shorten the count list to twelve. **Do not cut the *Van Buren* exchange, the friction line, "He had the—", or the calendar.**
 
 > [!warning] Surnames — invented here, and Liam's is a real decision
 > **No surname existed anywhere in the vault before this scene**, and a courtroom cannot address a man by his first name. This draft uses **Liam Mkrtchyan** and **Marcus Ehrlich**. Both are placeholders and neither is load-bearing yet — **change them now rather than after Movement IV is written.**

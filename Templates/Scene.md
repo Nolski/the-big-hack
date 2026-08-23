@@ -6,7 +6,6 @@ world: # modern | historical
 arc: # liam-arc | john-arc | both
 beat: # link to the beat this scene dramatizes, e.g. "[[Beat Sheet — Parallel Intercut#B3 The Betrayal]]"
 status: stub # stub | drafted | revised | locked
-runtime_estimate: # minutes
 live_cast: # which speaker(s) are live: Liam / John
 ai_video_assets: # list of [[AI clip]] notes used in this scene
 tags:

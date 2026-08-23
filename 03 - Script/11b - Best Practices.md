@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Beat Sheet — Parallel Intercut#B5 — Adopt the machine (the reorg)]]"
 status: drafted
-runtime_estimate: ~5 min
 live_cast: Liam, Brendan
 ai_video_assets: "[[AI Video Production Tracker|AIV-050 Kristina — Standup (agent-first)]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-055 Marcus — Standup]], [[AI Video Production Tracker|AIV-053 Liam's screen — the rig]], [[AI Video Production Tracker|AIV-054 Brendan's screen — the plain session]]"
 tags:

@@ -11,7 +11,7 @@ tags:
 
 **Logline.** As AI coding agents eat the craft he lives for, a brilliant, prickly software developer named **Liam** is managed out of his job by a peer feedback form — then the agent still holding his access takes the company down while he sleeps. The press invents him, officers put him on the floor, and a trial gets underway that never finishes. Telling the story is **Brendan**, the decent young colleague who wrote the four true paragraphs that ended him.
 
-**Form.** ~75 minutes. Darkly comic / satirical, escalating. **Single thread, five movements** — the institutions detach from reality one notch per movement while Liam stays naturalistic (see [[Structure & Scene Map]]). Two live speakers: Liam and Brendan, who also narrates. Everyone else is an AI-generated video character. The Luddite history is carried by **Marcus**, an engineer on the team who is right about everything and unbearable about it — the history arrives as argument, never as a lecture.
+**Form.** Darkly comic / satirical, escalating. **Single thread, five movements** — the institutions detach from reality one notch per movement while Liam stays naturalistic (see [[Structure & Scene Map]]). Two live speakers: Liam and Brendan, who also narrates. Everyone else is an AI-generated video character. The Luddite history is carried by **Marcus**, an engineer on the team who is right about everything and unbearable about it — the history arrives as argument, never as a lecture.
 
 ---
 
@@ -21,7 +21,7 @@ tags:
 - [[Rework — The Escalation Pass]] — the decision record for the current shape: John cut, the Luddites moved into Marcus's arguments, Brendan live and narrating, and the new second half. Read before drafting anything new; the open questions are still listed there.
 - [[Concept & Thesis]] — what the play is *about*, the satire, the ending
 - [[CFP Submission]] — the in-character talk title + abstract for the Kiwicon slot, and what the organisers need told
-- [[Structure & Scene Map]] — the movement order, runtime budget, scene-by-scene status
+- [[Structure & Scene Map]] — the movement order and scene-by-scene status
 - [[Staging — Two Speakers]] — how the live actors + AI video share the stage
 - [[AI Video Production Tracker]] — every AI clip to generate, with prompts + status
 

@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Beat Sheet — Parallel Intercut#B2 — The community (where he has standing)]]"
 status: drafted
-runtime_estimate: ~5 min
 live_cast: Liam, Brendan
 ai_video_assets: "[[AI Video Production Tracker|AIV-010 Kristina — Standup]], [[AI Video Production Tracker|AIV-011 Standup grid — ambient]], [[AI Video Production Tracker|AIV-013 The PR — screen share]]"
 tags:

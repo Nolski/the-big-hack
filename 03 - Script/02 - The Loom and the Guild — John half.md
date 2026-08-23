@@ -6,7 +6,6 @@ world: historical
 arc: john-arc
 beat: "[[Beat Sheet — Parallel Intercut#B1 — At the height of the craft]]"
 status: cut
-runtime_estimate: ~3 min
 live_cast: John
 ai_video_assets: "[[AI Video Production Tracker|AIV-030 Mary — kitchen window]], [[AI Video Production Tracker|AIV-032 Young weaver — the lane]], [[AI Video Production Tracker|AIV-002 Steam looms (distant) — ambient]]"
 tags:

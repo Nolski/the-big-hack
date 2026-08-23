@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "B5 (seeds B6/B7)"
 status: drafted
-runtime_estimate: ~5 min
 live_cast: "— (no live speaker; both parties AI video)"
 ai_video_assets: "[[AI Video Production Tracker|AIV-047 Kara — the 1:1]], [[AI Video Production Tracker|AIV-048 Kristina — the 1:1]], [[AI Video Production Tracker|AIV-049 The CEO — memo voice-over]]"
 tags:

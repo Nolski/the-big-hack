@@ -253,9 +253,14 @@ The single biggest craft risk in the rework is that "it gets crazier" becomes "i
 
 ---
 
-## H · Structure and runtime
+## H · Structure
 
-- [ ] **Redraft [[Structure & Scene Map]] entirely.** Six braided movements become a single-thread escalation. Straw proposal:
+- [x] **Redraft [[Structure & Scene Map]] entirely.** Six braided movements become a single-thread escalation. **Done — the scene map is the live document; the straw proposal below is kept as the decision record only.**
+
+> [!warning] The minute columns below are historical and must not be used
+> They are what was *guessed* at the time of this rework, before anything was drafted. **Timing is not tracked in this vault until the first draft is complete** — see the note at the top of [[Structure & Scene Map]]. Read this table for the movement shape and the scene sources, never for the numbers.
+
+Straw proposal, as it stood:
 
 | Movement | Content | Source | Approx |
 |---|---|---|---|
@@ -265,7 +270,7 @@ The single biggest craft risk in the rework is that "it gets crazier" becomes "i
 | **IV** | The press invents him → the arrest | new | ~10 min |
 | **V** | The trial → **the removal** (the verdict never comes) | new | ~14 min |
 
-- [ ] **Runtime almost certainly goes past 60 minutes.** The straw plan is ~78. Either accept ~75–80, or cut from Movement I (which [[Structure & Scene Map]] already flags as the natural place — 01b–01d were identified as liftable).
+- [x] **The show goes past the 60-minute pitch.** Accepted as a known cost. **Where to take it back is deferred to a single timing pass after the draft is complete** — 01b–01d remain the flagged liftable scenes in Movement I.
 - [ ] Retire the movement letters and the `B1–B12` beat numbering, or remap them. Half the beats no longer exist and the other half now mean something else; leaving them will silently corrupt every scene's frontmatter.
 - [ ] Keep the **letter-suffix numbering discipline** already established (`11b`, `11c`) for anything inserted into the drafted run — do not renumber existing files, and do not break storyboard ids.
 - [ ] Mark [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]] as out of the running order without deleting them — per **A2** they are cut from the show, but they stay in the vault as Marcus's argument bank and as source for the verbatim inserts.

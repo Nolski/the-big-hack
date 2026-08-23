@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Beat Sheet — Parallel Intercut#B7 — He fights it the only way he knows (and it backfires)]]"
 status: drafted
-runtime_estimate: ~5 min
 live_cast: Liam
 ai_video_assets: "[[AI Video Production Tracker|AIV-066 The calibration sheet and thread — screen]], [[AI Video Production Tracker|AIV-070 Kristina — the review]], [[AI Video Production Tracker|AIV-071 Performance summary — screen]]"
 tags:

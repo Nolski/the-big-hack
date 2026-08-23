@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "B5 (seeds B6/B7)"
 status: drafted
-runtime_estimate: ~4 min
 live_cast: Brendan
 ai_video_assets: "[[AI Video Production Tracker|AIV-056 Kristina — the follow-up 1:1]], [[AI Video Production Tracker|AIV-058 Kristina's screen — the new bot]]"
 tags:

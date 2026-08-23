@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Liam Arc]] — he signs"
 status: drafted
-runtime_estimate: ~4 min
 live_cast: "Liam, Brendan"
 ai_video_assets: "[[AI Video Production Tracker|AIV-089 Defence counsel]], [[AI Video Production Tracker|AIV-093 The agreement — screen]]"
 tags:
@@ -181,4 +180,4 @@ On screen, **COUNSEL**, tired and decent and doing a competent job. Beside them,
   - **Do not resolve it, do not let it slow, and do not let anybody in the play acknowledge it.** The moment a character says *"it's still going,"* the argument becomes a line instead of a fact. (The single exception is Liam in [[20b - Next Week]], four days in, admiring it.)
 - **The calendar entry going.** Same staging as the "Manager assessment" field greying out in [[20 - The Audit]], the classification dropdown in the prologue to [[13 - The Performance Review]], and the rehire flag in [[14 - The Offboarding]]. **A field changes, nobody watches it, and it is the whole story.** No music, no held beat, no blackout on the image — the entry goes and the lights go.
 - **What this ending replaced.** The removal to a Salvadoran prison under the Alien Enemies Act is **cut** — see §A3 of [[Rework — The Escalation Pass]]. It cost the 1798/1812 coincidence and *"administrative error,"* and it bought back R2 and R5 (a boo-able institution, and an American political subject in a Wellington room), about eight minutes of runtime, and an ending that stays about work. **The Luddite payoff is untouched**: they had frames to break, and there is nothing here to break.
-- **Runtime.** ~4 min. **Do not cut "knowingly," "it's a term of art," "I was asleep," the six seconds of signing, or the calendar.**
+- **If it has to come down.** **Do not cut "knowingly," "it's a term of art," "I was asleep," the six seconds of signing, or the calendar.**

@@ -7,7 +7,7 @@ tags:
 
 # Structure & Scene Map
 
-~75 minutes, **one thread, five movements**. The play follows Liam forward in a straight line from an ordinary standup to a removal order. What escalates is not the story's shape but its **institutions**: HR, the press, the officers and the court each detach from reality one notch per movement while Liam stays a literal, exact, recognisable man being processed by increasingly unreal machinery.
+**One thread, five movements.** The play follows Liam forward in a straight line from an ordinary standup to a removal order. What escalates is not the story's shape but its **institutions**: HR, the press, the officers and the court each detach from reality one notch per movement while Liam stays a literal, exact, recognisable man being processed by increasingly unreal machinery.
 
 The decision record for this structure — including the questions still open — is [[Rework — The Escalation Pass]]. The escalation contract that keeps "it gets crazier" from becoming "it gets random" is §G of that note, and it should be written before any new scene.
 
@@ -18,45 +18,22 @@ The decision record for this structure — including the questions still open �
 
 ## The movement structure
 
-| Movement | Content | Approx |
-|---|---|---|
-| **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus, the Luddites as a bit, and the credential jab at Kristina he calls out and helps nobody by calling out. | ~20 min |
-| **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. | ~22 min |
-| **III** | Offboarding → **Brendan gets the same call** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. | ~12 min |
-| **IV** | The press invents him → the arrest. Procedurally polite officers, a form, a name mispronounced, and a takedown triggered by a man trying to correct a record. **Cast goes to four live actors here** — see [[22 - Current Employer]]. | ~10 min |
-| **V** | The trial → **the plea**. The verdict never comes because there is no trial: he signs. **The immigration ending is cut** — [[Rework — The Escalation Pass]] §A3. | ~10 min |
+| Movement | Content |
+|---|---|
+| **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus, the Luddites as a bit, and the credential jab at Kristina he calls out and helps nobody by calling out. |
+| **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. |
+| **III** | Offboarding → **Brendan gets the same call** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. |
+| **IV** | The press invents him → the arrest. Procedurally polite officers, a form, a name mispronounced, and a takedown triggered by a man trying to correct a record. **Cast goes to four live actors here** — see [[22 - Current Employer]]. |
+| **V** | The trial → **the plea**. The verdict never comes because there is no trial: he signs. **The immigration ending is cut** — [[Rework — The Escalation Pass]] §A3. |
 
-**Runtime is over the original 60-minute budget and that is a known cost.** Either accept ~75–80, or cut from Movement I — 01b–01d were flagged early as the liftable scenes.
+**The show is longer than the original 60-minute pitch and that is a known, accepted cost.** Where to take it back is a question for the timing pass after the draft is complete, not a constraint on writing it — but 01b–01d were flagged early as the liftable scenes in Movement I.
 
-> [!warning] Measured runtime — the overrun is in Movement II, not Movement I
-> Spoken audio only (stage directions excluded), measured off the rendered line wavs: the drafted run through Scene 14 is **55.7 min of dialogue**. TTS renders at 176 wpm, which is brisk for naturalistic stage delivery with this much `*(beat)*` in it — at 145–155 wpm plus the wordless business, **the drafted run is realistically 66–72 minutes staged**, with five scenes still to write.
+> [!note] Timing is deliberately not tracked yet
+> This note used to carry per-movement runtime budgets, a measured spoken-minutes table, and a standing "Movement II is over" warning. **All of it is removed on the author's direction, and it should not be rebuilt until there is a complete first draft.**
 >
-> **The storyboard playback length is not the stage length and will mislead you.** The app has the narrator read every stage direction aloud, which adds 2–4 minutes per scene and is an artifact of the medium — `13b` plays back at 4.6 min against 2.2 min of dialogue, `14` at 6.6 against 4.3, and the wordless calibration prologue in `13` reads as three minutes of narration that will play as about one minute of images. Judge pacing from the spoken column, never from the player.
+> The reason is that the numbers were not what they looked like. They were the summed durations of **TTS-rendered line audio**, which runs brisk and flat and is not a proxy for staged delivery — and this play is full of long wordless business (the ring in [[14 - The Offboarding]], the counter in [[20 - The Audit]], the calibration prologue in [[13 - The Performance Review]]) that measures as **zero** on the page and plays as minutes in the room. A number that confidently mis-measures the show is worse than no number.
 >
-> Against the table above: **Movement I is on budget** (~17 min spoken, before 1e). **Movement II is not** — ~35 min spoken against a ~22 min allowance, and now **+~1.5 min for the unrendered CEO/Kara reduction coda added to `10`** (see below). The fat is in `11b` (7.0m, the longest scene in the show) and `12` (6.3m), not in the cold-open block the earlier note flagged. Decide the cut before Movements IV–V get written, not after.
-
-| Movement | Spoken (measured) | Budget |
-|---|---|---|
-| I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
-| II — `6` through `13b` | 34.6 min *(+~1.5 est., unrendered `10` coda)* | ~22 min |
-| III — `14`, `14b`, `19`, `20`, `20b` | 13.8 min *(+~0.4 est. for the amended `14`, +~4.5 est., unrendered `14b`)* | ~12 min |
-| IV — `22` only; `21` unwritten | 2.8 min | ~10 min |
-| V — `23`, `24` | 5.3 min | ~10 min |
-| **Drafted total** | **73.4 min** | |
-
-**Only Scene 21 (the press) is unwritten.** Everything else is drafted; everything except **`14b` and the amended back half of `14`** is rendered and orphan-free.
-
-> [!warning] Movement III grew and the offsetting cut has not been made
-> [[14b - Three Weeks]] stages Brendan's layoff — the same call, the same script, five days later — which the show previously reported second-hand in [[19 - Nine Tickets]]. It adds **~4.5 min** (estimated, unrendered), and the amended pack/disclosure exchange adds **~0.4 min** to [[14 - The Offboarding]]. **The offset is identified and not yet applied:** with the layoff staged, 19's first two minutes of working out *that* Brendan was cut can compress to about forty seconds and go straight to the nine — worth about **1.3 min**. Net cost is roughly **+3.6 min** with that trim, **+4.9** without. Movement III's staged estimate therefore moves from 16–18 minutes to about **20–22** against a ~12 budget. **Movement II is still the larger problem** and no decision has been made there either.
-
-All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 20b render — `14`, `19`, `20` and `20b` are all fully rendered and orphan-free.**
-
-> [!warning] Movement III's spoken figure is the least trustworthy number in this table
-> Movement III reads as **on budget** (11.9 against ~12) and it is not. `20` measures only **2.4 min spoken** because two thirds of it is stage direction — but in that scene the stage directions *are* the staged content: the counter, the widening list, the clarifying question, the notification wall. **They play as several minutes of real time and appear here as zero.** Same for the **ring** in `14` (thirty to forty seconds).
->
-> **Judge `20` on a clock in rehearsal, never from this column and never from the storyboard player.** Best current estimate for Movement III as staged is **16–18 minutes**, not 11.9.
->
-> **Movement II is still ~13 min over (now ~14.5 with the new `10` coda) and no decision has been made.** The fat is in `11b` (7.0) and `12` (6.3). With Movements IV and V still unwritten, that is the largest open problem in the show. **The `10` coda is written to survive being lifted into its own slot** if the folding proves too heavy for the scene or the movement's budget.
+> **The plan: finish the draft, then do a single timing pass over the whole thing and cut from a complete picture.** Scene 21 is the only unwritten slot. Individual scenes keep an **"if it has to come down"** note listing what to cut first and what must survive — that guidance is craft and stays; the minute-counts are gone. **Do not re-add `runtime_estimate` to scene frontmatter.**
 
 ## Scene running order
 

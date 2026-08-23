@@ -6,7 +6,6 @@ world: modern
 arc: liam-arc
 beat: "[[Liam Arc]] — the record gets manufactured"
 status: drafted
-runtime_estimate: ~7 min
 live_cast: "Liam, Brendan"
 ai_video_assets: "[[AI Video Production Tracker|AIV-060 The feedback form — screen]], [[AI Video Production Tracker|AIV-062 Marcus — the feedback round]]"
 tags:
