@@ -112,6 +112,11 @@ The signature device: a laugh in Act I returns without the laugh in Act II–III
 
 > Add a row whenever you plant a joke. A setup with no payoff is a wasted bullet; a payoff with no setup won't land.
 
+> [!note] Two additions from [[14b - Three Weeks]]
+> **The script itself is now a setup and a payoff.** Dana's mandated read-out, her deflections and her next-steps sequence land as an individual tragedy in [[14 - The Offboarding]] and as a **machine** five days later, delivered word for word to a man with the opposite case. *"It is not a reflection of your value or your contribution"* is said **four times across the two scenes**, and the only sincere instance of the sentence anywhere in the play is the one Kristina typed into a comment box in the calibration prologue.
+>
+> **The congratulations thread.** Liam types *"congrats!!"* into #general and sends it and means it, at the end of the worst hour of his life. Five days later Brendan types *"thanks everyone"* into the same thread, holds backspace, and closes the tab. **Same thread, same forty-one reactions, opposite gesture, no comment from anybody.** It is also the ninth and quietest of his deletions.
+
 ## Recurring motifs / images
 - **Hands.** Liam's on the keys — skilled, then idle, then held out for a form to be signed and finally for something worse. He never raises them.
 - **Backspace.** Brendan holding it down: the policy message, the half-typed sentence about Liam, the finished patch. The one time he doesn't is the one that ends him.

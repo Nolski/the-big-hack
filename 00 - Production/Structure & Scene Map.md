@@ -22,7 +22,7 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus, the Luddites as a bit, and the credential jab at Kristina he calls out and helps nobody by calling out. | ~20 min |
 | **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. | ~22 min |
-| **III** | Offboarding → **Brendan was cut too** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. | ~12 min |
+| **III** | Offboarding → **Brendan gets the same call** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. | ~12 min |
 | **IV** | The press invents him → the arrest. Procedurally polite officers, a form, a name mispronounced, and a takedown triggered by a man trying to correct a record. **Cast goes to four live actors here** — see [[22 - Current Employer]]. | ~10 min |
 | **V** | The trial → **the plea**. The verdict never comes because there is no trial: he signs. **The immigration ending is cut** — [[Rework — The Escalation Pass]] §A3. | ~10 min |
 
@@ -39,12 +39,15 @@ The decision record for this structure — including the questions still open �
 |---|---|---|
 | I — through `1d`, `1e` unwritten | 16.8 min | ~20 min |
 | II — `6` through `13b` | 34.6 min *(+~1.5 est., unrendered `10` coda)* | ~22 min |
-| III — `14`, `19`, `20`, `20b` | 13.8 min | ~12 min |
+| III — `14`, `14b`, `19`, `20`, `20b` | 13.8 min *(+~0.4 est. for the amended `14`, +~4.5 est., unrendered `14b`)* | ~12 min |
 | IV — `22` only; `21` unwritten | 2.8 min | ~10 min |
 | V — `23`, `24` | 5.3 min | ~10 min |
 | **Drafted total** | **73.4 min** | |
 
-**Only Scene 21 (the press) is unwritten.** Everything else is drafted, rendered and orphan-free.
+**Only Scene 21 (the press) is unwritten.** Everything else is drafted; everything except **`14b` and the amended back half of `14`** is rendered and orphan-free.
+
+> [!warning] Movement III grew and the offsetting cut has not been made
+> [[14b - Three Weeks]] stages Brendan's layoff — the same call, the same script, five days later — which the show previously reported second-hand in [[19 - Nine Tickets]]. It adds **~4.5 min** (estimated, unrendered), and the amended pack/disclosure exchange adds **~0.4 min** to [[14 - The Offboarding]]. **The offset is identified and not yet applied:** with the layoff staged, 19's first two minutes of working out *that* Brendan was cut can compress to about forty seconds and go straight to the nine — worth about **1.3 min**. Net cost is roughly **+3.6 min** with that trim, **+4.9** without. Movement III's staged estimate therefore moves from 16–18 minutes to about **20–22** against a ~12 budget. **Movement II is still the larger problem** and no decision has been made there either.
 
 All figures are measured off rendered line audio, not estimated. Re-measure after any scene is re-rendered. **Current as of the Scene 20b render — `14`, `19`, `20` and `20b` are all fully rendered and orphan-free.**
 
@@ -76,6 +79,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 13 | [[13 - The Performance Review\|The Performance Review]] | II | ✏️ |
 | 13b | [[13b - The Plan\|The Plan]] | II | ✏️ |
 | 14 | [[14 - The Offboarding\|The Offboarding]] | III | ✏️ |
+| 14b | [[14b - Three Weeks\|Three Weeks]] | III | ✏️ |
 | 19 | [[19 - Nine Tickets\|Nine Tickets]] | III | ✏️ |
 | 20 | [[20 - The Audit\|The Audit]] | III | ✏️ |
 | 20b | [[20b - Next Week\|Next Week]] | III | ✏️ |

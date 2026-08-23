@@ -96,6 +96,45 @@ The non-disparagement clause is worth flagging for [[19 - The Empty Apartment]]:
 
 By the time the meeting happens: the rating is locked, the wording is reviewed by a People Partner, the manager has been given talking points and told not to negotiate or apologise, IT has a scheduled task, and there is a calendar invite with a deliberately bland title. The manager's job in the room is to **deliver the message, absorb the reaction, and not reopen the decision.** Kristina's *"I hear you. Let's get time with your People Partner this week"* is precisely that manoeuvre, executed well and warmly. There is no version of that meeting Liam could have argued his way out of, because arguing is not one of the meeting's available functions.
 
+### 8. The layoff conversation, as it is actually scripted (US / California)
+
+> [!warning] Verify before staging
+> Everything in this section is US federal law plus California statute as reported in mid-2026. It is accurate to the best of the research done for [[14 - The Offboarding]] and [[14b - Three Weeks]], and it should be re-checked against primary sources before the show is staged. Sources at the bottom of this note.
+
+§7 covers the *performance* exit. A **reduction in force** is a different conversation with a different script, and it is the one Dana runs twice. What follows is what the outplacement industry actually trains people to do, and what the law actually requires — which is why the scenes are built out of it rather than out of invented corporate noise.
+
+**The meeting itself.** Guidance is remarkably consistent across the outplacement firms: keep it to **ten to twenty minutes**, because anything longer "opens up the possibility of derailing the conversation and encouraging debate." Do it one-to-one, in person or on a private video call. **Lead with the decision inside the first thirty seconds** — no warm-up, no small talk about the weather. Use the past tense and the passive voice: *the decision has been taken*, *your role has been identified as in scope*. Say **"this decision is final."** Deliver the business reason for the *reduction* and **never the reason for selecting the individual** — trainers explicitly warn against being drawn on "why me and not him." Do not apologise for the decision (an apology implies it was wrong, which is a litigation risk). Do not say you know how they feel. **Allow silence.** Then hand off to logistics: severance, benefits, equipment, a named contact, and a document pack. The subject is expected to lead the back half of the conversation, and the notifier's job is to absorb it without reopening anything.
+
+**Read the register off that list and it is exactly Dana.** She is not cold because she is a cold person. She is executing a well-designed, widely-taught procedure whose entire purpose is to end the conversation without creating a record. The euphemism is not affect; it is the output of the procedure.
+
+**The pack, in California, is not optional.** Every discharged or laid-off employee gets:
+
+- a written **Notice to Employee as to Change in Relationship** (Unemployment Insurance Code §1089), stating the date and the nature of the change — required *immediately upon termination*;
+- the EDD's **"For Your Benefit" pamphlet (DE 2320)**, the state's unemployment-programmes booklet, no later than the effective date of the layoff. This is the pamphlet in [[14b - Three Weeks]], and Dana's *"it's required, everybody gets one"* is literally true;
+- **COBRA / Cal-COBRA continuation notices** and the HIPP notice;
+- **final pay, immediately, at the time of termination** — Labor Code §201, one of the strictest deadlines in the country. Accrued vacation/PTO counts as earned wages (§227.3) and must be paid out; California prohibits "use it or lose it." Late final pay incurs **waiting-time penalties** of a day's wages per day, capped at thirty days (§203).
+
+Since SB 657 (2022) the notices may be delivered electronically if the employee has opted in — which is how a pack becomes a PDF and a PDF becomes the place questions get routed to.
+
+**Severance is not required by law, and that is the point of it.** It is bought, and what it buys is a **general release of claims** (see §6). The price is set by a formula so that no one can allege the formula was aimed at them — *"it's calculated on tenure"* is both a deflection and a genuine liability control. One week per year of service is an ordinary shape, and it produces the arithmetic in both scenes: **Liam, four years, four weeks; Brendan, three years, three weeks** — after nine weeks was on the table in [[13b - The Plan]] and refused.
+
+**The age rules are where the two scenes legally diverge, and it is real.** Under the **ADEA as amended by the OWBPA**, a release of age claims is only valid if the employee is given time and information:
+
+| | Employee **40 or over** | Employee **under 40** |
+|---|---|---|
+| Time to consider (individual exit) | 21 days | no statutory minimum |
+| Time to consider (**group** termination / RIF) | **45 days** | no statutory minimum |
+| Revocation after signing | **7 days**, non-waivable | none |
+| **Decisional-unit disclosure** | **Required**: the class/unit covered, the eligibility factors, the time limits, and **the job titles and ages of every individual selected and not selected** | none |
+
+**Liam is forty-eight and Brendan is twenty-eight, so the same company hands one of them a list of everybody's ages and gives the other a week.** Neither man is told this is why. The disclosure is the closest thing to the reduction sheet that anyone in the play is ever legally entitled to see — and it carries **titles and ages and nothing else**: no criteria, no scores, no reasons. It cannot answer the question he asks. **This is the strongest single thing the research bought and it must never be explained by a character.** The play does not say the word "ageism"; it hands him the list and moves on.
+
+**Cal-WARN, and why the two calls are five days apart.** California's WARN Act (Labor Code §§1400–1408) covers employers with **75+** employees and is triggered by, among other things, a layoff of **50 or more employees in a 30-day period**; it requires **60 days' written notice** to the employees, the EDD, and local officials, with penalties up to **$500/day** plus back pay and benefits. **SB 617**, effective 1 January 2026, adds required content to the notice (CalFresh information, employer contact details, local workforce board coordination).
+
+The consequence for the play is quiet and useful: a well-advised employer **staggers a reduction across rolling 30-day windows, or splits it by establishment, to stay under the trigger.** That is ordinary, lawful, and boring, and it is a perfectly good silent reason why Liam is processed on one day and Brendan the following Tuesday, and why nobody involved can say so. **No character states this and no scene needs it** — it is here so that the timeline is defensible if anyone asks.
+
+**Also worth knowing (do not state as law).** **SB 951** would require employers with more than 100 employees to give **90 days' notice when AI or automation eliminates 25 or more jobs**, and to notify the state when a role stops being hired for because automation absorbed it. As of the research date this is **proposed legislation, not law.** It is exactly the play's subject and it should not be put in anybody's mouth as though it existed.
+
 ## What's different for a senior engineer
 
 Liam is ~48, staff-ish, thirty years in, **no direct reports by choice** ([[Liam]]). Every one of those facts changes the mechanics.
@@ -204,6 +243,15 @@ How the machinery actually reaches Liam, in the order it happens. Roughly one re
 > **The call:** the company is explicitly **US-domiciled and Liam is on a US contract**, consistent with the CEO/board register already established. The vocabulary is therefore unrestricted — PIP, at-will, 30/60/90, release of claims, non-regretted attrition, do-not-rehire — and a Kiwicon crowd recognises all of it from reporting and watches from one step outside. Don't hedge it back toward neutrality in later scenes; the specificity is the point. First cashed out in [[12 - Below Expectations]] (calibration, the documented plan, the regretted/non-regretted field).
 
 ## Sources / threads to verify before staging
+
+**Layoff practice and California/US law (§8) — all secondary; check the statutes themselves before staging.**
+
+- Layoff notification meeting scripts and the "10–20 minutes, don't debate the decision" guidance — [Mercer, *How to Conduct a Layoff Notification Meeting*](https://www.mercer.com/content/dam/mercer/attachments/global/Career/gl-2017-career-how-to-conduct-layoff-notification-meeting-guide-mercer.pdf), [Intoo](https://www.intoo.com/us/blog/how-to-lay-off-employees-script-what-to-say/), [Careerminds](https://careerminds.com/blog/layoff-communication-hr), [Keystone Partners](https://www.keystonepartners.com/resources/conducting-effective-rif-notice-layoff-reduction-in-force/).
+- California required notices at termination — DE 2320 "For Your Benefit" and the Notice as to Change in Relationship (UI Code §1089) — [EDD, Required Notices and Pamphlets](https://edd.ca.gov/en/payroll_taxes/required_notices_and_pamphlets/), [Maier Law Group](https://maierlawgroup.com/blog/whats-required-when-you-terminate-employees-in-california), [Onwards HR](https://www.onwardshr.com/blog/california-separation-notice).
+- Final pay immediately at termination, accrued vacation as wages, waiting-time penalties — Labor Code §§201/203/227.3 — [California DIR](https://www.dir.ca.gov/dlse/faq_paydays.htm) and [DLSE final pay guidance](https://www.dir.ca.gov/dlse/finalpay.pdf).
+- ADEA/OWBPA waiver rules — 21/45 days, 7-day revocation, decisional-unit disclosure of job titles and ages — [Onwards HR](https://www.onwardshr.com/blog/age-discrimination), [Wilentz, *21 vs 45 Days*](https://www.wilentz.com/blog/employment/2025-08-12-21-days-or-45-days-how-many-days-does-an-employee-have-to-review-a-separation-agreement), [Hirschler](https://www.hirschlerlaw.com/newsroom-publications-1492). **Confirm against 29 U.S.C. §626(f) directly.**
+- California WARN Act thresholds, 60-day notice, penalties, and the SB 617 additions effective 1 Jan 2026 — [CDF Labor Law](https://www.cdflaborlaw.com/blog/californias-2026-updated-notice-requirements-for-mass-layoffs-relocations-or-terminations), [Duane Morris](https://www.duanemorris.com/alerts/california_amends_refines_laws_regarding_mass_layoffs_pay_transparency_equal_pay_claims_1025.html).
+- **SB 951 — 90 days' notice for AI/automation-driven job loss. PROPOSED, NOT LAW.** [Ogletree](https://ogletree.com/insights-resources/blog-posts/california-legislature-proposes-90-day-layoff-notice-requirement-due-to-employers-ai-use/), [Shaw Law Group](https://shawlawgroup.com/2026/06/ai-layoffs-are-coming-watch-for-new-notice-obligations/). Do not put this in a character's mouth as existing law.
 
 - METR, *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity* (July 2025) — the 19%-slower / 20%-faster RCT. [metr.org](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) — the primary source, and METR's own "historical" caveat matters.
 - Meta grading performance on AI-driven impact from the 2026 cycle — [winbuzzer](https://winbuzzer.com/2026/02/04/meta-ties-employee-performance-reviews-ai-usage-2026-xcxwbn/). Secondary; find the primary reporting.

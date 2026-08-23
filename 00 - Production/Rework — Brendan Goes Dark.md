@@ -16,6 +16,9 @@ tags:
 
 ## The twist in one breath
 
+> [!note] The layoff is now staged, not reported — [[14b - Three Weeks]]
+> This note assumed Brendan's cut happened offstage and reached the audience second-hand in [[19 - Nine Tickets]]. **It is now a scene**: five days after Liam, the same People Partner reads the same page, and Brendan — promoted the previous Thursday — argues with all of it and gets exactly the conversation Liam got. **The repetition is the argument**; the reduction has no opinion about either man. It also converts 19's reveal from surprise to dramatic irony, which is the play's normal mode, and it means **the one time Brendan speaks up in the whole show is for himself, and it does nothing.**
+
 **Brendan gets laid off too, in the same reduction, for the same kind of reason.** He tracked his work in **Linear**; the reduction pulled ticket throughput out of **Jira**; his row reads close to zero. **Marcus keeps his job because Marcus files Jira tickets properly.** Liam doesn't know any of this at the end of [[14 - The Offboarding]] — he sees Brendan's promotion slide and sends "congrats!!" and a party emoji and means it.
 
 Then the two of them find out together, share the frustration, and Liam — who came through the dot-com layoffs and survived them — tries to mentor a man twelve years younger through it. Liam refuses to return his equipment. Brendan asks to borrow it to rebuild his portfolio. **Liam hands it over — the first physical contact in the play.** Brendan gets drunk, gets angry, and points an open-weights model at his former employer to get his own work back. It does that, and then it keeps going.
