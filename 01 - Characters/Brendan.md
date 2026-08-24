@@ -73,7 +73,7 @@ He narrates from **after** — retrospectively, knowing how it ends. That hands 
 14. **The removal** — Liam goes. Brendan does not say the sentence. **He never says it, to anyone, including the audience.**
 
 > [!important] This is an evil arc in which he never does one evil thing
-> He never lies, never schemes, never frames anybody and never acts against Liam. **He declines to speak, eight times, each time for a reason the audience can sympathise with**, and a man ends up in a Salvadoran prison. Liam spent the play investing in him — crediting him, mentoring him, handing him the machine, recommending him for a job by name — and the return on that investment is silence.
+> He never lies, never schemes, never frames anybody and never acts against Liam. **He declines to speak, eight times, each time for a reason the audience can sympathise with**, and a man signs a confession to a federal crime he did not commit. Liam spent the play investing in him — crediting him, mentoring him, handing him the machine, recommending him for a job by name — and the return on that investment is silence.
 >
 > **Do not let a draft give him a moment of decision.** There is no scene where he weighs it up and chooses himself. If the audience ever sees him calculate, he becomes a villain and the play's argument — that nobody in it does anything unreasonable — dies with him.
 
