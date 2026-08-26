@@ -39,7 +39,7 @@ Continuous — Brendan takes Liam's Slack huddle. **Liam** is live at the same d
 
 ## Script
 
-*(BRENDAN takes the huddle. On LIAM's big monitor the merged PR is already up — `AIV-016` — the diff open, scrolled halfway, the memes gone. LIAM has been sitting with this. No hello. [MUSIC: music/slackhuddle.mp3])*
+*(BRENDAN takes the huddle. On LIAM's big monitor the merged PR is already up — `AIV-016` — the diff open, scrolled halfway, the memes gone. LIAM has been sitting with this. No hello. TIMERTEST [MUSIC: music/slackhuddle.mp3])*
 
 **LIAM** *(live, gruff — not his comfort zone, getting it out of the way first)*: Before anything. The Kristina thing this morning — the degree line. *(a beat; this is hard for him)* That landed like shit. I know. I shouldn't have said it like that.
 
