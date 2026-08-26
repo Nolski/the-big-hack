@@ -43,90 +43,95 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 
 ## Script
 
-*(Up first, before we even find LIAM: one of his two monitors, big, angled out to the house — a Reddit feed, r/programminghumor, scrolling. A meme fills it: two old men hunched at a library computer, "THIS HERE IS CALLED AI. YOU ASK IT QUESTIONS, AND IT CONFIDENTLY LIES TO YOU." The audience laughs. He scrolls — another, then another, each a dunk on AI slop, and the laughs keep coming. He's clearly been at this a while. Only now does the light find the man under the monitors: LIAM, bathrobe, hair flat from the pillow, slumped at the desk, one hand on the mouse. This is what he was doing before work, and it's what he's still doing. The keyboard-clack motif runs, but he isn't typing. On the second monitor, off to the side, a Zoom standup grid of coworker tiles waits; his own tile is a black square: "Liam — camera off.")*
+*(A Reddit feed, r/programminghumor, scrolling. A meme fills it: "THIS HERE IS CALLED AI. YOU ASK IT QUESTIONS, AND IT CONFIDENTLY LIES TO YOU.". He chuckles and scrolls, another, then another, each a dunk on AI slop, and he keeps chuckling. He's clearly been at this a while. LIAM, bathrobe, hair flat from the pillow, slumped at the desk, one hand on the mouse. This is what he was doing before work, and it's what he's still doing. On the second monitor, off to the side, a Zoom standup grid of coworker tiles starts up; his own tile is a black square: his camera is off.)*
 
 > [!screen] VIDEO — KRISTINA (PM) · `AIV-010` *(runs ~12s, Liam plays against it)*
-> *Bright, brisk, a standup she has run a thousand times.* Morning, everyone — let's keep it tight, lots on today. Liam, you're on mute, I think? And… camera?
+> *Bright, brisk, a standup she has run a thousand times.* Morning, everyone, I'd like to remind you all of the time limits on updates we agreed to last time so we can get through standup more effeciently. Liam, you're on mute, I think? And… your camera is off?
 
-**LIAM** *(live, not looking up, still scrolling)*: Yeah I'm eating, camera off.
+**LIAM** *(live, not looking up, still scrolling)*: Yeah sorry, I'm eating, so my camera's off today.
 
-*(He is very obviously not eating. He doesn't so much as glance at the call — the memes keep scrolling on the big monitor, the house still half-laughing at them while the standup tries to start underneath.)*
+*(He is very obviously not eating. He doesn't so much as glance at the call, the memes keep scrolling on the big monitor, he keeps chuckling at reddit.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> *Warm, and she means it.* No worries. Okay — before tickets, one thing, because I'm not letting it slide by. The API developer portal. It went live Thursday, and — honestly? The feedback's been *incredible.* Two of our biggest integration partners shipped on it over the weekend. Support's quiet, adoption's climbing, people posting about it unprompted. Best launch we've had in ages.
+> *Warm, and she means it.* No worries. Okay we start, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been *incredible.* Two of our biggest integration partners shipped on it over the weekend. Support's quiet, adoption's climbing. Best launch we've had in ages.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(turning to one tile in particular)*
-> And that's so much down to Brendan — who, I happen to know, put most of his weekend into getting it over the line. So. Thank you, genuinely. It did not go unnoticed.
+> And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. So. Thank you, genuinely. It did not go unnoticed.
 
-**BRENDAN** *(live, a modest glow, ducking it)*: Oh — thanks, that's — yeah. It kind of came together. I'm really happy with how it landed.
+**BRENDAN** *(live, a modest glow, ducking it)*: Oh thanks, that's... yeah. It kind of came together. I'm really happy with how it landed.
 
-*(On "his weekend," LIAM's hand goes still on the mouse. He doesn't look up right away. Then he does.)*
+*(On "his weekend," LIAM's hand goes still on the mouse. For the first time he pauses scrolling and looks up.)*
 
-**LIAM** *(live, flat, to no one)*: …He worked the weekend.
+**LIAM** *(live, flat, to no one)*: …He worked the weekend...?
 
-*(A beat. Something has curdled. He clicks off the memes and drags the merged PR up onto his screen-share — uninvited. The shared grid fills with it: the memes gone, replaced by a wall of green.)*
+*(He clicks off the memes and drags the merged PR up, and starts sharing his screen uninvited.)*
 
 > [!screen] VIDEO — THE PR (screen share) · `AIV-013`
 > *The merged pull request. A wall of additions, the file tree scrolling on. "+812 / −4" sits at the top like a dare. A green **Merged** badge beside it.*
 
-**LIAM** *(live, the first real attention he's paid all morning)*: Hang on. This *shipped?* This is the developer portal — live, in front of partners, right now? *(scrolling, fast)* Eight hundred lines in one PR. Who reviewed this?
+**LIAM** *(live, the first real attention he's paid all morning)*: Hang on. This *shipped?* This is the developer portal... live? In front of partners, right now? *(scrolling, fast)* Eight hundred lines in one PR. Who reviewed this?
 
-**BRENDAN** *(live, still gamely)*: I mean — it's been live since Thursday, totally stable, partners are already on it, so—
+**BRENDAN** *(live, still gamely)*: I mean it's been live since last Thursday, totally stable, partners are already on it, so...
 
-**LIAM** *(live)*: Did you read all this?
+**LIAM** *(live)*: Who reviewed all this code?
 
-**BRENDAN** *(live, a beat, honest)*: …Well — I skimmed it. But I made sure there's a really robust set of tests. The whole suite's green—
+**BRENDAN** *(live, a beat, honest)*: …Well I skimmed it. But I made sure there's a really robust set of tests and I eval'ed the functionality. The whole suite's green...
 
-**LIAM** *(live, pouncing)*: You *skimmed* it. Eight hundred lines of client-facing API and you skimmed it. *(scrolling, faster)* You vibecoded this — pointed Claude at it and hit accept.
+**LIAM** *(live, pouncing)*: You skimmed it..? What are you talking about, didn't you write this code?You vibecoded this, didn't you?
 
-**BRENDAN** *(live, reaching)*: I used Claude Code, Opus 4.8 — but I went back and forth with it, and the tests all pass, the partners haven't hit a single—
+**BRENDAN** *(live, reaching)*: I used Claude Code, Opus 4.5 but I went back and forth with it, and the tests all pass, the partners haven't hit a single...
 
-**LIAM** *(live, riding his own certainty — the meme energy, out loud now)*: The tests pass. *(a short, mirthless laugh)* The AI wrote the code *and* the AI wrote the tests that say the code's fine. It doesn't understand a line of it — it just sounds sure of itself. *(a flick of the eyes to his own memes)* That's the whole joke, right there. It'll lie straight to your face.
+**KRISTINA**: … Liam can we take this offline so we can get through standup?
+
+**LIAM** *(live, riding his own certainty — the meme energy, out loud now)*: The tests pass...? *(a short, mirthless laugh)* The AI wrote the code *and* the AI wrote the tests that say the code's fine. It doesn't understand any of it, it's just a next word predictor, it just sounds sure of itself.. It'll lie straight to your face.
 
 > [!screen] VIDEO — MARCUS · `AIV-019` *(a tile unmutes; he has been waiting months for somebody to say this)*
-> Thank you. Thank you, Liam. That is exactly what I keep saying and everyone looks at me like I'm the office crank. Nobody wants to talk about why we bought it. Somebody worked out that four of us could do the work of six, and now we're all sitting here clapping about a weekend.
+> Thank you. Thank you, Liam. That is exactly what I keep saying... Nobody wants to talk about it... the AI is coming for our jobs, and the code it writes keeps getting better and better
 
-**LIAM** *(live, not looking up)*: That's not what I said. I said the code is bad.
+**LIAM** *(live, not looking up)*: That's not what I said at all... I said the code is bad... what?
 
 > [!screen] VIDEO — MARCUS · `AIV-019`
-> It's the same argument.
+> But it's getting better though, that's my point
 
 **LIAM** *(live)*: It really isn't.
 
 > [!screen] VIDEO — MARCUS · `AIV-019` *(carrying on regardless, perfectly pleasant)*
-> And people throw the word Luddite around like it means somebody who's frightened of technology. It doesn't. They were the most skilled workers in the country. What they actually wanted was—
+> Do you all know the story of the luddites? Textile workers in the 1700's who kept saying the factory produced clothes would never be as good as their work, until one day it was....
+
+> [!screen] VIDEO — KRISTINA ·
+> Marcus, you bring up some good points but can we get through standup and then I promise I'll give you an opportunity to share your concerns
 
 *(He has lost LIAM completely. Something on the diff has him.)*
 
-**LIAM** *(live)*: …Wait. Hold on. Are these — are these *long-lived* API tokens?
+**LIAM** *(live)*: …Wait. Hold on. Are these, are these *long-lived* API tokens?
 
 **BRENDAN** *(live, careful)*: …Yeah. The keys are long-lived.
 
-**LIAM** *(live, genuinely affronted, the real engineer surfacing)*: Did nobody read my memo? I wrote an entire memo on this. You use JWTs. They're *stateless* — you verify the signature, you're not hitting the database on every single request. They *expire* on their own. It's all in there, with diagrams. *(a sneer — certain he's found his culprit)* But no. Of course. Of course the *AI* didn't read my memo.
+**LIAM** *(live, genuinely affronted, the real engineer surfacing)*: Did nobody read my memo? I wrote an entire memo on this. We should only be using JWTs. They're *stateless*, you verify the signature, you're not hitting the database on every single request. They *expire* on their own. It's all in there, with diagrams. *(a sneer — certain he's found his culprit)* But no. Of course. Of course the *AI* didn't read my memo.
 
-**BRENDAN** *(live, quiet — then, honest)*: …Actually, it did. I fed your memo into Claude before I started. It read the whole thing — that's why the first cut *was* JWTs. Stateless, expiring, the works. It implemented your memo basically line for line. I can pull up the first commit, it's exactly what you—
+**BRENDAN** *(live, quiet — then, honest)*: …Actually, it did. I fed your memo into Claude before I started. It read the whole thing and the first version *did have* JWT's. I can pull up the first commit, it's exactly what you recommended in your memo
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(stepping in — to take the heat off Brendan, and to be straight)*
-> —and then I'm the one who had him pull them back out. That part's on me, Liam. Not Brendan, and not the AI. The JWTs were your design, Brendan built them, Claude followed your memo. The switch to long-lived keys was my call.
+> and then I'm the one who had him remove the JWT's. That part's on me, Liam. Not Brendan, and not the AI. The switch to long-lived keys was my call.
 
 **LIAM** *(live, rounding on her instead)*: …Why on earth would you do that.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(even; she has the receipts)*
-> Because we user-tested it. The JWT flow — the refresh, the expiry — confused every integration partner we put it in front of; half of them dropped off right at token refresh. The expirations *tanked* adoption. Long-lived keys, paste-and-go — adoption doubled. It's a tradeoff, and we made it on the data.
+> Because we user-tested it. The JWT flow, the refresh, the expiry, it confused every integration partner we put it in front of; half of them dropped off right at token refresh. The expirations *tanked* adoption. Long-lived keys, are just easier to understand. It's a tradeoff, and I made the call.
 
-*(A beat. He could argue the security tradeoff on its merits — the AI followed his memo; a person overruled it, for real, measured reasons. Instead he goes somewhere else.)*
+*(This comment fueled him... he knew exactly how he'd spend the next part of standup arguing)*
 
-**LIAM** *(live, patient, awful — explaining gravity to a child)*: …See, that's the problem. That's not a product call. That's an engineering decision — and you made it in a *user study.* *(a small, terrible beat)* If you had a degree in any of this, Kristina, you'd understand why that was never yours to override.
+**LIAM** *(live, patient, awful — explaining gravity to a child)*: That's not a product call. That's a cyber security decision, and you made it in a *user study.* *(a small, terrible beat)* If you had a software engineering degree, Kristina, you'd understand why that was never yours to override.
 
-*(Silence on the call. The ambient grid keeps nodding, half-listening, having heard none of it. And for the first time all morning, KRISTINA has no line — the bright standup-runner cadence just stops. Her mouth opens. Nothing comes. The "+812" sits there. The **Merged** badge sits there.)*
+*(Silence on the call. For the first time all morning, KRISTINA holds her tongue, the bright standup-runner cadence just stops. Her mouth opens. Nothing comes. The "+812" sits there. The **Merged** badge sits there.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(the deflection, for once, won't come)*
 > *A breath that does not become a word.* …
 
-*(A second of dead air. Then a tile unmutes, and it isn't hers.)*
+*(Just dead air)*
 
 > [!screen] VIDEO — MARCUS · `AIV-019` *(level, unhurried, taking his time about it)*
-> I don't think we should move past that. Liam, you just asked a woman on this call whether she's qualified to have an opinion. In front of everyone.
+> Liam, you just asked a woman on this call whether she's qualified to have an opinion. In front of everyone.
 
 **LIAM** *(live, honestly puzzled)*: I'd have asked you the same thing.
 
@@ -141,22 +146,22 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 > [!screen] VIDEO — MARCUS · `AIV-019` *(finishing it anyway)*
 > I'd just like it noted that somebody said something.
 
-*(She lets that sit for a second. Then the bright standup cadence clicks back into place as if nothing happened, which is hers to do, again.)*
+*(She lets that sit for a second... Marcus spoke out to give himself credit..)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(brisk, moving us along)*
-> Right. Liam, quick one. What are you on this week, and is anything blocking you?
+> Right. Liam, anyway, what are you on this week, and is anything blocking you?
 
 **LIAM** *(live, back to scrolling, bored)*: Still chasing the race condition in the signup flow. No blockers.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> Great. Points on it? Just a rough number for the board.
+> Great. What's your estimate to completion? Just a rough number.
 
 **LIAM** *(live, flat)*: It's a race condition. Could be a one-line fix, could be a rewrite of the whole session handler. I'm not going to invent a number so a spreadsheet feels better.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(not taking the bait, typing)*
-> …Sure. I'll put two weeks. Thanks, everyone — that's standup.
+> …Sure. I'll put two weeks. Thanks, everyone, that's standup.
 
-*(Tiles start to blink out. LIAM drops off without a word and slumps back to his memes. The call shrinks to the two people who stayed behind.)*
+*(Kristina didn't have a chance to get through everyone's updates but also, didn't really want to after Liam's comment about her degree. Liam goes back to looking at reddit memes.)*
 
 ---
 
