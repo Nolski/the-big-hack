@@ -4,12 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>The Big Hack — Review changes</title>
-  <link rel="stylesheet" href="review.css?v=20260823-edit" />
+  <link rel="stylesheet" href="review.css?v=20260825-blocks" />
 </head>
 <body>
   <header class="topbar" id="topbar">
     <div class="bar">
       <a class="back" href="/">← Storyboard</a>
+      <a class="back" href="/proof.html">Proofread</a>
       <h1>Review changes</h1>
       <button id="menuToggle" class="menu-toggle" aria-expanded="true" aria-controls="controls">☰ Options</button>
     </div>
@@ -24,6 +25,7 @@
       <button id="compare" class="primary">Compare</button>
       <label class="chk"><input type="checkbox" id="showUnchanged" /> show unchanged scenes</label>
       <label class="chk"><input type="checkbox" id="showEqualLines" /> show unchanged lines</label>
+      <button data-speed-toggle class="speed" type="button"></button>
     </div>
     <div class="legend">
       <span class="lg added">added</span>
@@ -38,9 +40,11 @@
 
   <div id="nowplaying" class="nowplaying hidden">
     <span id="npLabel"></span>
+    <button data-speed-toggle class="speed" type="button"></button>
     <button id="npStop">■ stop</button>
   </div>
 
-  <script src="review.js?v=20260823-edit"></script>
+  <script src="playback.js?v=20260825-blocks"></script>
+  <script src="review.js?v=20260825-blocks"></script>
 </body>
 </html>

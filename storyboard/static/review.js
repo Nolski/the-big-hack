@@ -16,7 +16,7 @@ const esc = (s) =>
 // --------------------------------------------------------------------------- //
 // audio: one shared player, optional queue
 // --------------------------------------------------------------------------- //
-const player = new Audio();
+const player = window.Playback ? Playback.register(new Audio()) : new Audio();
 let activeBtn = null;
 let queue = [];
 let queueIdx = 0;
@@ -188,57 +188,170 @@ async function compare() {
 let editable = false;
 let WORKING = "working";
 
+const AUTOSAVE_MS = 700;
+
+// Every open editor whose text is not on disk yet. Reading the play end to end
+// means a dozen beats can be open at once across a very long page, so "did all
+// of that land?" has to be answerable for the page as a whole.
+const unsaved = new Set();
+
+window.addEventListener("beforeunload", (e) => {
+  if (!unsaved.size) return;
+  e.preventDefault();
+  e.returnValue = "";
+});
+
+// A closing lid or a switched tab fires pagehide/visibilitychange and may never
+// run script again, so the last write goes out with `keepalive` — the browser
+// finishes it after the document is gone.
+const flushAll = () => unsaved.forEach((flush) => flush({ keepalive: true }));
+window.addEventListener("pagehide", flushAll);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") flushAll();
+});
+
 // The editor holds the beat's *markdown*, not the text the diff renders. The
 // displayed text has had wikilinks and music cues cleaned out of it, so saving
 // that back would quietly delete them. What you click into is what's in the file.
-function openEditor(cell, line, sceneId, onSaved) {
+//
+// It writes itself to disk: a pause in typing, clicking away, or leaving the
+// page all save. The buttons remain, but nothing depends on reaching them — a
+// beat edited three hundred lines into a scene is safe the moment you stop
+// typing, which is the only way this is usable on a scene the length of s20.
+function openEditor(cell, line, sceneId, onChanged) {
   if (cell.querySelector(".editor")) return;
   const prev = cell.innerHTML;
+  const opened = line.raw;   // what Revert puts back
+  let onDisk = line.raw;     // what the file holds, as far as we know
+  let timer = null;
+  let chain = Promise.resolve();
+  let closed = false;
+
   const box = el("div", "editor");
   const ta = el("textarea");
   ta.value = line.raw;
-  ta.rows = Math.min(12, line.raw.split("\n").length + 1);
+  ta.rows = Math.min(16, line.raw.split("\n").length + 1);
   const bar = el("div", "editor-bar");
   const save = el("button", "primary", "Save");
-  const cancel = el("button", null, "Cancel");
-  const note = el("span", "editor-note", "⌘/Ctrl+Enter to save · Esc to cancel");
-  bar.append(save, cancel, note);
+  const revert = el("button", null, "Revert");
+  const note = el("span", "editor-note", "saves as you type · Esc to close");
+  bar.append(save, revert, note);
   box.append(ta, bar);
   cell.innerHTML = "";
   cell.appendChild(box);
   ta.focus();
   ta.setSelectionRange(ta.value.length, ta.value.length);
 
-  const close = () => { cell.innerHTML = prev; };
-  const commit = async () => {
-    const text = ta.value;
-    if (text === line.raw) return close();
-    save.disabled = cancel.disabled = true;
-    note.textContent = "saving…";
-    try {
-      const res = await fetch("/api/review/line", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          scene: sceneId, line: line.lid, text, expect: line.raw,
-        }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.detail || data.error || `HTTP ${res.status}`);
-      onSaved();
-    } catch (e) {
-      save.disabled = cancel.disabled = false;
-      note.textContent = e.message;
-      note.classList.add("err");
-    }
+  const setNote = (msg, cls) => {
+    note.textContent = msg;
+    note.className = "editor-note" + (cls ? ` ${cls}` : "");
   };
 
-  save.addEventListener("click", commit);
-  cancel.addEventListener("click", close);
+  // Saves run one at a time and in order: each waits for the last so `expect`
+  // is read after the previous write has moved it, rather than racing it.
+  const flush = ({ keepalive = false } = {}) => {
+    clearTimeout(timer);
+    const text = ta.value;
+    if (text === onDisk) {
+      unsaved.delete(flush);
+      return chain;
+    }
+    setNote("saving…");
+    chain = chain.then(async () => {
+      if (text === onDisk) return;
+      try {
+        const res = await fetch("/api/review/line", {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            scene: sceneId, line: line.lid, text, expect: onDisk,
+          }),
+          keepalive,
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || data.error || `HTTP ${res.status}`);
+        onDisk = text;
+        line.raw = text;   // so the next `expect`, and a reopen, are current
+        if (ta.value === onDisk) unsaved.delete(flush);
+        setNote(`saved ${new Date().toLocaleTimeString()}`, "ok");
+      } catch (e) {
+        setNote(e.message, "err");   // stays unsaved: nothing reached the file
+      }
+    });
+    return chain;
+  };
+
+  // Closing is never allowed to drop text. If the write failed the box stays
+  // open with the error and the typing still in it.
+  const close = async () => {
+    if (closed) return;
+    await flush();
+    if (ta.value !== onDisk) return;
+    closed = true;
+    unsaved.delete(flush);
+    if (onDisk !== opened) staleScenes.add(sceneId);
+    // Put the beat back before asking for a refresh, so this editor isn't the
+    // one that looks like an edit in progress.
+    cell.innerHTML = prev;
+    onChanged();
+  };
+
+  ta.addEventListener("input", () => {
+    unsaved.add(flush);
+    setNote("editing…");
+    clearTimeout(timer);
+    timer = setTimeout(flush, AUTOSAVE_MS);
+  });
+
+  // Clicking away saves and closes. The bar swallows its own mousedown so its
+  // buttons don't read as clicking away — otherwise Revert would race a save of
+  // the very text it is meant to undo.
+  bar.addEventListener("mousedown", (e) => e.preventDefault());
+  ta.addEventListener("blur", () => close());
+
+  save.addEventListener("click", () => close());
+  revert.addEventListener("click", () => {
+    ta.value = opened;
+    close();
+  });
   ta.addEventListener("keydown", (e) => {
     if (e.key === "Escape") { e.preventDefault(); close(); }
-    if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); commit(); }
+    if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); close(); }
   });
+}
+
+// Scenes holding a beat that has been written to disk but is still rendered
+// from the text it had when the page was drawn.
+const staleScenes = new Set();
+
+// Re-render one scene in place. Saving used to re-run the whole comparison,
+// which rebuilt all 25 cards, collapsed every one of them and dropped you at
+// the top of the page — losing your place in the read after every single edit.
+async function refreshScene(sceneId) {
+  if (!staleScenes.has(sceneId)) return;
+  const card0 = document.querySelector(`.scene[data-sid="${CSS.escape(sceneId)}"]`);
+  // Another beat in this scene is mid-edit. Replacing the card would tear that
+  // editor out from under the typing; whichever editor closes last refreshes.
+  if (!card0 || card0.querySelector(".editor")) return;
+  staleScenes.delete(sceneId);
+  const before = $("#before").value;
+  const after = $("#after").value;
+  try {
+    const res = await fetch(
+      `/api/review/diff?before=${encodeURIComponent(before)}&after=${encodeURIComponent(after)}`
+    );
+    const data = await res.json();
+    const s = (data.scenes || []).find((x) => x.id === sceneId);
+    const old = document.querySelector(`.scene[data-sid="${CSS.escape(sceneId)}"]`);
+    if (!s || !old) return;
+    const card = sceneCard(s);
+    if (old.classList.contains("open")) card.classList.add("open");
+    old.replaceWith(card);
+  } catch (e) {
+    // The beat is already on disk; only the rendering is behind. Leave the
+    // scene marked so the next close tries again.
+    staleScenes.add(sceneId);
+  }
 }
 
 // --------------------------------------------------------------------------- //
@@ -257,7 +370,7 @@ function render(data) {
     ["added", "removed", "modified", "unchanged"]
       .map((k) => `${counts[k] || 0} ${k}`)
       .join("  ·  ") +
-    (editable ? "   ·   click a line on the right to edit it"
+    (editable ? "   ·   click a line on the right to edit it — edits save themselves"
               : "   ·   read-only (the after side is a commit)");
 
   const root = $("#results");
@@ -267,11 +380,25 @@ function render(data) {
     return;
   }
   scenes.forEach((s) => root.appendChild(sceneCard(s)));
+
+  // `…#s12` — how the Storyboard page hands a scene over to be edited here.
+  const want = decodeURIComponent(location.hash.slice(1));
+  if (want) {
+    const card = root.querySelector(`.scene[data-sid="${CSS.escape(want)}"]`);
+    if (card) {
+      card.classList.add("open");
+      card.scrollIntoView({ block: "start" });
+    }
+  }
 }
 
 function sceneCard(s) {
   const card = el("div", `scene ${s.status}`);
-  if (s.status !== "unchanged") card.classList.add("open");
+  card.dataset.sid = s.id;
+  // Unchanged scenes stay shut in a diff — but if you've asked to see them you
+  // are reading rather than reviewing, and a wall of collapsed headers is not a
+  // read-through.
+  if (s.status !== "unchanged" || $("#showUnchanged").checked) card.classList.add("open");
 
   const title = esc(s.title_after || s.title_before || "");
   const body = el("div", "scene-body");
@@ -386,7 +513,7 @@ function cellEl(line, sideClass, words, sideKey, seq, seqLabel, sceneId) {
     cell.addEventListener("click", (e) => {
       // the play button lives in here too, and it is not an edit gesture
       if (e.target.closest("button") || cell.querySelector(".editor")) return;
-      openEditor(cell, line, sceneId, () => compare());
+      openEditor(cell, line, sceneId, () => refreshScene(sceneId));
     });
   }
   const isDir = line.type === "direction" || !line.label;

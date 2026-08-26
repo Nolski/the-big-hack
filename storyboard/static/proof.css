@@ -1,0 +1,301 @@
+/* The proofreading pass: a page built for reading the play straight through
+   and fixing the words as they go past. It shares the storyboard's palette but
+   not its layout — a production tool wants density, a read-through wants a
+   column of text at a comfortable measure and nothing moving on its own. */
+:root {
+  --bg: #0c0d10;
+  --panel: #15171c;
+  --panel-2: #1c1f26;
+  --line: #2a2e38;
+  --text: #e7e9ee;
+  --muted: #9aa1ad;
+  --faint: #6b7280;
+  --accent: #e8b84b;
+  --accent-2: #6ea8fe;
+  --danger: #e0604f;
+  --ok: #66c08a;
+  --flag: #e08a4f;
+  --ui: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-family: var(--ui);
+}
+
+* { box-sizing: border-box; }
+/* The finder and the help sheet are laid out with flex, which outranks the
+   `hidden` attribute's display:none — without this they keep swallowing clicks
+   meant for the page behind them while invisible. */
+[hidden] { display: none !important; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--bg); color: var(--text); overflow: hidden; }
+
+/* ---------------------------------------------------------------- top bar */
+.bar {
+  display: flex; align-items: center; gap: 14px;
+  height: 52px; padding: 0 16px;
+  background: linear-gradient(180deg, #16181d, #101216);
+  border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: baseline; gap: 8px; }
+.brand-title { font-weight: 800; letter-spacing: 2.5px; font-size: 13px; }
+.brand-sub {
+  color: var(--muted); font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.grow-space { flex: 1; }
+
+.scene-nav { display: flex; align-items: center; gap: 6px; margin-left: 10px; }
+.where {
+  min-width: 190px; text-align: center; font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.where b { font-weight: 600; }
+.where .of { color: var(--muted); }
+
+.progress { display: flex; align-items: center; gap: 8px; }
+.progress-bar {
+  width: 120px; height: 5px; border-radius: 3px; background: var(--panel-2);
+  border: 1px solid var(--line); overflow: hidden;
+}
+.progress-fill { height: 100%; width: 0; background: var(--ok); transition: width .2s; }
+.progress-num {
+  font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums;
+  min-width: 62px;
+}
+
+.saved {
+  font-size: 11px; color: var(--muted); min-width: 96px; text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.saved.busy { color: var(--accent); }
+.saved.ok { color: var(--ok); }
+.saved.err { color: var(--danger); }
+
+button.btn, .btn {
+  background: var(--panel-2); color: var(--text); border: 1px solid var(--line);
+  padding: 6px 11px; border-radius: 8px; cursor: pointer; font-size: 13px;
+  font-family: inherit; text-decoration: none; display: inline-block;
+}
+button.btn:hover, .btn:hover { border-color: var(--accent); }
+button.btn.ghost, .btn.ghost { background: none; }
+button.btn.icon { padding: 6px 9px; }
+button.btn:disabled { opacity: .45; cursor: default; }
+button.btn.primary { background: var(--accent); color: #1a1a1a; border-color: var(--accent); font-weight: 600; }
+.speed { min-width: 42px; font-variant-numeric: tabular-nums; }
+.speed.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+/* ------------------------------------------------------------------ shell */
+.shell { display: grid; grid-template-columns: 246px 1fr; height: calc(100vh - 52px); }
+/* With the finder open the column narrows instead of hiding behind it — the
+   whole point of a result is the beat it takes you to. */
+body.finding .shell { padding-right: 380px; }
+
+/* -------------------------------------------------------------- scene rail */
+.rail {
+  border-right: 1px solid var(--line); overflow-y: auto; background: #101216;
+  padding: 8px 0 40px;
+}
+.rail-head {
+  padding: 10px 14px 6px; font-size: 10px; letter-spacing: 1.4px;
+  text-transform: uppercase; color: var(--faint);
+}
+.rail-item {
+  display: grid; grid-template-columns: 16px 1fr auto; gap: 8px;
+  align-items: baseline; padding: 7px 12px; cursor: pointer;
+  border-left: 2px solid transparent; font-size: 13px; line-height: 1.35;
+}
+.rail-item:hover { background: var(--panel); }
+.rail-item.here { background: var(--panel-2); border-left-color: var(--accent); }
+.rail-item .tick { color: var(--ok); font-size: 11px; }
+.rail-item.done .t { color: var(--muted); }
+.rail-item .n { color: var(--faint); font-size: 11px; font-variant-numeric: tabular-nums; }
+.rail-item .t { display: block; }
+.rail-item .sub { color: var(--faint); font-size: 11px; }
+.rail-item .flagged { color: var(--flag); font-size: 11px; }
+
+/* --------------------------------------------------------------- the page */
+.page { overflow-y: auto; padding: 0 0 45vh; scroll-behavior: auto; }
+.scene-head { padding: 26px 40px 10px; max-width: 900px; }
+.scene-kicker {
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--muted);
+}
+.scene-kicker .w-modern { color: var(--accent-2); }
+.scene-kicker .w-historical { color: #d9954a; }
+.scene-kicker .w-both, .scene-kicker .w-frame { color: var(--accent); }
+.scene-title { font-family: var(--serif); font-size: 27px; margin: 5px 0 0; font-weight: 600; }
+.scene-sub { color: var(--faint); font-size: 12px; margin-top: 6px; }
+.context {
+  margin: 12px 0 0; font-size: 13px; color: var(--muted);
+  border-left: 2px solid var(--line); padding-left: 12px;
+}
+.context summary { cursor: pointer; color: var(--faint); font-size: 11px;
+  letter-spacing: 1.2px; text-transform: uppercase; }
+.context p { font-family: var(--serif); line-height: 1.6; margin: 8px 0 0; }
+
+/* ---------------------------------------------------------------- a beat */
+.beats { padding: 8px 40px 0; max-width: 900px; }
+.beat {
+  display: grid; grid-template-columns: 132px minmax(0, 1fr) 30px;
+  gap: 0 16px; align-items: start;
+  border-radius: 8px; border: 1px solid transparent;
+  padding: 3px 4px 3px 6px; scroll-margin: 90px 0;
+}
+.beat:focus-within { border-color: #33384522; background: #ffffff05; }
+.beat.flagged { border-left: 2px solid var(--flag); }
+.beat.gone { opacity: .35; }
+
+/* the gutter: who is speaking, and what kind of beat it is */
+.who { padding-top: 7px; text-align: right; }
+.who select {
+  background: none; border: 1px solid transparent; color: var(--accent);
+  font-family: var(--ui); font-size: 11px; letter-spacing: 1.6px;
+  text-transform: uppercase; font-weight: 600; text-align: right;
+  padding: 1px 2px; border-radius: 5px; cursor: pointer;
+  max-width: 100%; appearance: none; direction: rtl;
+}
+.who select:hover { border-color: var(--line); background: var(--panel-2); }
+.who select:focus { outline: none; border-color: var(--accent); }
+.who select:disabled { opacity: 1; cursor: default; color: var(--faint); }
+.beat.t-video .who select { color: var(--accent-2); }
+.beat.t-narration .who select { color: var(--muted); }
+.who .kind {
+  display: block; font-size: 9.5px; letter-spacing: 1.3px; text-transform: uppercase;
+  color: var(--faint); margin-top: 1px;
+}
+.who .bid { color: #454b57; font-size: 10px; font-variant-numeric: tabular-nums; }
+
+/* the words. A textarea that is exactly as tall as its text: the mirror
+   ::after grows the grid cell, so nothing is ever measured or scrolled and
+   the caret cannot be bumped by a resize. */
+.grow { display: grid; }
+.grow::after {
+  content: attr(data-value) " ";
+  visibility: hidden; white-space: pre-wrap; overflow-wrap: break-word;
+}
+.grow > textarea, .grow::after {
+  grid-area: 1 / 1 / 2 / 2;
+  font: inherit; line-height: inherit; letter-spacing: inherit;
+  padding: 5px 8px; border: 1px solid transparent; border-radius: 6px;
+  background: none; color: inherit; margin: 0;
+  overflow: hidden; resize: none; overflow-wrap: break-word;
+}
+.grow > textarea { width: 100%; }
+.grow > textarea:hover { border-color: #2a2e3888; }
+.grow > textarea:focus { outline: none; border-color: #e8b84b77; background: #ffffff08; }
+.grow > textarea::placeholder { color: #4a505c; }
+
+.words {
+  font-family: var(--serif); font-size: 16.5px; line-height: 1.6;
+  max-width: 62ch;
+}
+.beat.t-direction .words { font-style: italic; color: #c3c8d2; }
+.dir {
+  font-family: var(--serif); font-size: 13px; line-height: 1.5;
+  font-style: italic; color: var(--muted); max-width: 62ch;
+}
+/* A beat with no delivery note doesn't need a box for one taking up the page —
+   but reaching for the beat should still offer somewhere to put one. */
+.dir.empty { display: none; }
+.beat:hover .dir.empty, .beat:focus-within .dir.empty { display: grid; }
+/* The few parentheticals this page can only show, not write. */
+.dir.ro { padding: 5px 9px; color: var(--faint); cursor: help; }
+.md {
+  font-family: var(--mono); font-size: 12.5px; line-height: 1.55;
+  white-space: pre-wrap;
+}
+.beat .note { grid-column: 2; font-size: 11.5px; padding: 1px 9px 3px; }
+.beat .note.err { color: var(--danger); }
+.beat .note.ok { color: var(--ok); }
+.beat .note.warn { color: var(--accent); }
+.beat audio { grid-column: 2; height: 26px; width: min(340px, 100%); margin: 2px 0 4px;
+  filter: invert(.9) hue-rotate(180deg); }
+
+/* the tools column: quiet until the beat is in play */
+.tools {
+  display: flex; flex-direction: column; gap: 2px; align-items: center;
+  padding-top: 5px; opacity: 0; transition: opacity .1s;
+}
+.beat:hover .tools, .beat:focus-within .tools { opacity: 1; }
+.beat.flagged .tools { opacity: 1; }
+.tools button {
+  background: none; border: none; color: var(--faint); cursor: pointer;
+  font-size: 11px; padding: 2px 3px; border-radius: 4px; line-height: 1;
+}
+.tools button:hover { color: var(--text); background: var(--panel-2); }
+.tools button.on { color: var(--flag); }
+
+/* the gap between beats, with a + in it */
+.adder {
+  display: flex; align-items: center; justify-content: center; height: 14px;
+  opacity: 0; transition: opacity .1s;
+}
+.adder:hover, .adder:focus-within { opacity: 1; }
+.adder::before, .adder::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.adder button {
+  margin: 0 10px; padding: 0 9px; line-height: 16px; font-size: 12px;
+  font-weight: 700; background: var(--panel-2); color: var(--muted);
+  border: 1px solid var(--line); border-radius: 20px; cursor: pointer;
+}
+.adder button:hover { color: var(--text); border-color: var(--accent); }
+
+/* end of scene */
+.scene-foot {
+  padding: 26px 40px 60px; max-width: 900px;
+  display: flex; align-items: center; gap: 12px;
+}
+.scene-foot .hint { color: var(--faint); font-size: 12px; }
+
+/* --------------------------------------------------------------- finder */
+.finder {
+  position: fixed; top: 52px; right: 0; bottom: 0; width: 380px;
+  background: #101216; border-left: 1px solid var(--line);
+  display: flex; flex-direction: column; gap: 8px; padding: 14px; z-index: 40;
+}
+.finder-head { display: flex; align-items: center; justify-content: space-between; }
+.finder input.in {
+  width: 100%; background: var(--panel-2); border: 1px solid var(--line);
+  color: var(--text); padding: 8px 10px; border-radius: 8px;
+  font-size: 13px; font-family: inherit;
+}
+.finder input.in:focus { outline: none; border-color: var(--accent); }
+.check { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.finder-actions { display: flex; align-items: center; gap: 10px; }
+.finder-count { font-size: 12px; color: var(--muted); flex: 1; }
+.finder-results { overflow-y: auto; flex: 1; margin: 0 -6px; }
+.hit {
+  padding: 7px 10px; border-radius: 6px; cursor: pointer; font-size: 12.5px;
+  line-height: 1.45; border-bottom: 1px solid #1c1f2688;
+}
+.hit:hover { background: var(--panel-2); }
+.hit .loc { color: var(--faint); font-size: 10.5px; letter-spacing: .6px;
+  text-transform: uppercase; display: block; margin-bottom: 2px; }
+.hit mark { background: #6b5a1e; color: #ffe9a8; border-radius: 2px; padding: 0 1px; }
+.finder-more { color: var(--faint); font-size: 11px; padding: 8px 10px; }
+
+/* ----------------------------------------------------------------- help */
+.sheet {
+  position: fixed; inset: 0; background: rgba(0,0,0,.6); z-index: 60;
+  display: flex; align-items: center; justify-content: center;
+}
+.sheet-box {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+  padding: 20px 24px; width: min(620px, 92vw); max-height: 86vh; overflow-y: auto;
+}
+.sheet-head { display: flex; justify-content: space-between; align-items: center; }
+.sheet-note { color: var(--muted); font-size: 13px; line-height: 1.6; }
+.keys { display: grid; grid-template-columns: 140px 1fr; gap: 7px 14px; margin: 14px 0 0; font-size: 13px; }
+.keys dt { color: var(--accent); font-family: var(--mono); font-size: 12px; }
+.keys dd { margin: 0; color: var(--muted); }
+code { font-family: var(--mono); font-size: .92em; color: var(--muted); }
+
+/* ---------------------------------------------------------------- toast */
+.toast {
+  position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%);
+  background: var(--panel-2); border: 1px solid var(--line); color: var(--text);
+  padding: 10px 18px; border-radius: 8px; opacity: 0; transition: opacity .18s;
+  z-index: 200; pointer-events: none; max-width: 80vw; font-size: 13px;
+}
+.toast.show { opacity: 1; }
+.toast.err { border-color: var(--danger); }
+.empty { color: var(--faint); padding: 60px 40px; }

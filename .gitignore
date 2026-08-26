@@ -11,3 +11,9 @@ drive-download-*.zip
 
 # Raw feedback scratch notes — local only
 feedback.md
+
+# Previous version of every script edit made by the reader — local safety net
+storyboard/.edits/
+
+# How far the proofreading pass has got, and which beats were flagged
+storyboard/proof.json

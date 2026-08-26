@@ -20,6 +20,7 @@ operator can run their own models without editing any file:
 import os
 import json
 import base64
+import datetime as _dt
 import subprocess
 from pathlib import Path
 
@@ -35,6 +36,8 @@ YAML_PATH = HERE / "storyboard.yaml"
 ARTIFACTS = HERE / "artifacts"
 STATIC = HERE / "static"
 OVERRIDES_PATH = HERE / "overrides.json"
+EDITS = HERE / ".edits"          # previous version of every script write
+PROOF_PATH = HERE / "proof.json"  # how far the copy-edit pass has got
 REMOTE_SCRIPT = HERE / "remote" / "tts_batch.py"
 EXTRACT_SCRIPT = HERE / "remote" / "extract_vectors.py"
 MUSIC_SCRIPT = HERE / "remote" / "music_gen.py"
@@ -407,11 +410,17 @@ def gen_image(prompt, out_relpath):
 # --------------------------------------------------------------------------- #
 @app.get("/api/storyboard")
 def get_storyboard():
+    scenes = build_scenes()
+    # Hang each beat's verbatim markdown off it so the storyboard page can edit
+    # the script itself, through the same write path the review page uses,
+    # rather than shadowing it with an override.
+    for s in scenes:
+        _attach_raw(s)
     return {
         "meta": json.loads(json.dumps(CFG.get("meta", {}))),
         "settings": settings(),
         "characters": json.loads(json.dumps(characters())),
-        "scenes": build_scenes(),
+        "scenes": scenes,
     }
 
 
@@ -908,12 +917,15 @@ def api_review_line(payload: dict = Body(...)):
     """Write one beat's markdown back to its scene file.
 
     Only the working tree is editable — the other side of a diff is a committed
-    ref and there is nothing sensible to write to. The client sends the text it
+    ref and there is nothing sensible to write to.     The client sends the text it
     opened the editor with as `expect`; if the file no longer matches, the save
     is refused rather than silently overwriting whatever changed underneath.
+
+    Writing a beat touches the scripts and nothing else, so unlike the rest of
+    /api/review this does not need git — the storyboard page writes through it
+    too, and an editor that stops working because a git dir wasn't mounted is
+    a trap rather than a safeguard.
     """
-    if not _review_enabled():
-        raise HTTPException(503, "review disabled: SB_GIT_DIR not mounted")
     sid = (payload.get("scene") or "").strip()
     lid = (payload.get("line") or "").strip()
     text = payload.get("text")
@@ -924,7 +936,7 @@ def api_review_line(payload: dict = Body(...)):
     text = text.replace("\r\n", "\n").rstrip("\n")
     if not text.strip():
         raise HTTPException(
-            400, "a beat can't be saved empty — delete it in the file instead")
+            400, "a beat can't be saved empty — use the beat's 🗑 to remove it")
     # The scene parser ends the Script section at the first bare `---`, so one
     # pasted into a beat silently truncates everything after it, with no error
     # anywhere. It has cost this project a scene's entire back half before.
@@ -933,6 +945,211 @@ def api_review_line(payload: dict = Body(...)):
             400, "a line of just `---` ends the Script section — "
                  "use a stage direction or a blank line for a beat break")
 
+    path, flines, lo, hi = _locate_beat(sid, lid, expect)
+    flines[lo:hi] = text.split("\n")
+    _write_lines(path, flines)
+    beats = _scene_beats(sid)
+    now = next((b for b in beats if b["id"] == lid), None)
+    return {"ok": True, "scene": sid, "line": lid, "raw": text,
+            "text": (now or {}).get("text", ""), "beats": beats}
+
+
+@app.put("/api/review/line/text")
+def api_review_line_text(payload: dict = Body(...)):
+    """Write a beat's words back, without asking the author to touch markdown.
+
+    The words are only part of a beat: the speaker, the parenthetical, the clip
+    reference and any wikilinks live in the same line and are none of the
+    author's business while they're rewriting a sentence. Those are kept and
+    only the wording is replaced.
+    """
+    sid = (payload.get("scene") or "").strip()
+    lid = (payload.get("line") or "").strip()
+    text = payload.get("text")
+    if not sid or not lid or text is None:
+        raise HTTPException(400, "scene, line and text are required")
+    # A beat is one paragraph on one line; a stray newline isn't a beat break
+    # here, it's just typing. Breaking a beat in two is a markdown edit.
+    text = " ".join(text.split())
+    if not text:
+        raise HTTPException(
+            400, "a beat can't be saved empty — use the beat's 🗑 to remove it")
+
+    path, flines, lo, hi = _locate_beat(sid, lid, payload.get("expect"))
+    current = "\n".join(flines[lo:hi])
+    name_index = script_parser.build_name_index(characters(), CFG.get("aliases"))
+    rewritten = script_parser.rewrite_beat_text(current, text, name_index)
+    if rewritten is None:
+        raise HTTPException(
+            409, "couldn't fit that wording back into this beat — edit it as markdown")
+
+    flines[lo:hi] = rewritten.split("\n")
+    _write_lines(path, flines)
+    return {"ok": True, "scene": sid, "line": lid, "raw": rewritten, "text": text,
+            "beats": _scene_beats(sid)}
+
+
+@app.put("/api/review/line/direction")
+def api_review_line_direction(payload: dict = Body(...)):
+    """Rewrite a beat's parenthetical — the delivery note, not the words."""
+    sid = (payload.get("scene") or "").strip()
+    lid = (payload.get("line") or "").strip()
+    direction = payload.get("direction")
+    if not sid or not lid or direction is None:
+        raise HTTPException(400, "scene, line and direction are required")
+
+    path, flines, lo, hi = _locate_beat(sid, lid, payload.get("expect"))
+    name_index = script_parser.build_name_index(characters(), CFG.get("aliases"))
+    rewritten = script_parser.rewrite_beat_direction(
+        "\n".join(flines[lo:hi]), direction, name_index)
+    if rewritten is None:
+        raise HTTPException(
+            409, "this beat's parenthetical can't be edited on its own — "
+                 "open its markdown")
+
+    flines[lo:hi] = rewritten.split("\n")
+    _write_lines(path, flines)
+    beats = _scene_beats(sid)
+    now = next((b for b in beats if b["id"] == lid), None)
+    return {"ok": True, "scene": sid, "line": lid, "raw": rewritten,
+            "text": (now or {}).get("text", ""),
+            "direction": (now or {}).get("direction", ""), "beats": beats}
+
+
+def _character_name(cid):
+    _, char = find(characters(), cid or "")
+    return (char or {}).get("name", "")
+
+
+def _reshape(current, kind, speaker, name_index):
+    """This beat, rewritten as a different kind of beat or a different mouth.
+
+    Everything the new shape has room for is carried over: the words always,
+    the parenthetical and clip reference where the target shape keeps them.
+    """
+    was = script_parser.parse_script(current, name_index)
+    if len(was) != 1:
+        raise HTTPException(409, "that beat doesn't read as a single beat any more")
+    b = was[0]
+    asked = kind
+    kind = kind or b["type"]
+    speaker = b["speaker"] if speaker is None else speaker
+
+    # In the house format the narrator and narration are the same thing: a
+    # `**NARRATOR**:` line reads back as narration whatever it was before. So
+    # moving a line into the narrator's mouth makes it narration, and moving
+    # narration into anyone else's makes it a spoken line, rather than the two
+    # controls refusing each other.
+    if asked is None:
+        if speaker == "narrator" and kind in ("live", "video"):
+            kind = "narration"
+        elif kind == "narration" and speaker != "narrator":
+            kind = "live"
+    elif asked in ("live", "video") and speaker == "narrator":
+        raise HTTPException(
+            409, f"a {asked} beat needs a speaker other than the Narrator — "
+                 "change the speaker first")
+    # `V.O.` is the other half of what makes a beat narration. Carried into a
+    # spoken line it would be read straight back as narration, so it leaves
+    # with the narrator.
+    direction = b.get("direction", "")
+    if kind != "narration":
+        direction = ", ".join(
+            p for p in (x.strip() for x in direction.split(","))
+            if p and p.lower().rstrip(".") not in ("v.o", "vo"))
+
+    out = script_parser.compose_beat(
+        kind, _character_name(speaker), direction, b.get("text", ""),
+        script_parser.beat_clip(current))
+    got = script_parser.parse_script(out, name_index)
+    if len(got) != 1 or got[0]["type"] != kind or got[0]["text"] != b.get("text", ""):
+        raise HTTPException(409, "that combination doesn't read back as a beat")
+    return out
+
+
+@app.put("/api/review/line/shape")
+def api_review_line_shape(payload: dict = Body(...)):
+    """Change who says a beat, or whether it's spoken at all."""
+    sid = (payload.get("scene") or "").strip()
+    lid = (payload.get("line") or "").strip()
+    if not sid or not lid:
+        raise HTTPException(400, "scene and line are required")
+
+    path, flines, lo, hi = _locate_beat(sid, lid, payload.get("expect"))
+    name_index = script_parser.build_name_index(characters(), CFG.get("aliases"))
+    out = _reshape("\n".join(flines[lo:hi]), payload.get("type"),
+                   payload.get("speaker"), name_index)
+    flines[lo:hi] = out.split("\n")
+    _write_lines(path, flines)
+    beats = _scene_beats(sid)
+    now = next((b for b in beats if b["id"] == lid), None)
+    return {"ok": True, "scene": sid, "line": lid, "raw": out,
+            "text": (now or {}).get("text", ""), "beats": beats}
+
+
+@app.post("/api/review/line/insert")
+def api_review_line_insert(payload: dict = Body(...)):
+    """Add a beat after the given one, or at the top of the scene."""
+    sid = (payload.get("scene") or "").strip()
+    after = (payload.get("after") or "").strip()
+    if not sid:
+        raise HTTPException(400, "scene is required")
+
+    before = [b["id"] for b in _scene_beats(sid)]
+    block = script_parser.compose_beat(
+        payload.get("type") or "live", _character_name(payload.get("speaker")),
+        "", payload.get("text") or "\u2026")
+
+    if after:
+        path, flines, _, hi = _locate_beat(sid, after, payload.get("expect"))
+        # The blank line goes in front: beats are separated by one, and the
+        # one already behind this beat now separates the new beat from the next.
+        flines[hi:hi] = [""] + block.split("\n")
+    else:
+        scenes = script_parser.load_scenes(
+            scripts_dir(), characters(), CFG.get("aliases"))
+        scene = next((s for s in scenes if s["id"] == sid), None)
+        if scene is None:
+            raise HTTPException(404, f"unknown scene: {sid}")
+        path = Path(scene["source_file"])
+        flines, base = _scene_script_lines(path)
+        if flines is None:
+            raise HTTPException(409, "scene file has no Script section any more")
+        flines[base:base] = block.split("\n") + [""]
+
+    _write_lines(path, flines)
+    return {"ok": True, "scene": sid,
+            "index": before.index(after) + 1 if after in before else 0,
+            "beats": _scene_beats(sid)}
+
+
+@app.post("/api/review/line/delete")
+def api_review_line_delete(payload: dict = Body(...)):
+    """Remove one beat from its scene file.
+
+    Deleting is its own request rather than a save of an empty box: with
+    autosave running, a stray select-all would otherwise be enough to lose a
+    beat. It still refuses if the file moved under the editor.
+    """
+    sid = (payload.get("scene") or "").strip()
+    lid = (payload.get("line") or "").strip()
+    if not sid or not lid:
+        raise HTTPException(400, "scene and line are required")
+
+    path, flines, lo, hi = _locate_beat(sid, lid, payload.get("expect"))
+    removed = "\n".join(flines[lo:hi])
+    del flines[lo:hi]
+    # Beats are separated by a blank line; taking one out leaves two in a row.
+    if 0 < lo < len(flines) and not flines[lo].strip() and not flines[lo - 1].strip():
+        del flines[lo]
+    _write_lines(path, flines)
+    return {"ok": True, "scene": sid, "line": lid, "removed": removed,
+            "beats": _scene_beats(sid)}
+
+
+def _locate_beat(sid, lid, expect):
+    """Find one beat's span in its file, refusing if it isn't where the client
+    last saw it. Returns the file's lines so the caller can splice them."""
     # Parse from disk rather than build_scenes(): overrides would hand back
     # lines that never existed in the file, which is not what we're editing.
     scenes = script_parser.load_scenes(
@@ -956,11 +1173,98 @@ def api_review_line(payload: dict = Body(...)):
     if expect is not None and expect.replace("\r\n", "\n") != current:
         raise HTTPException(
             409, "the file changed under this edit — reload the comparison")
+    return path, flines, lo, hi
 
-    flines[lo:hi] = text.split("\n")
+
+def _write_lines(path, flines):
+    """Write a scene file, keeping the version it replaces.
+
+    This tool autosaves, and nothing it writes is committed, so git is not a
+    safety net here — an editor that only ever overwrites is one stray command
+    away from losing an afternoon. Every write leaves the previous version in
+    `storyboard/.edits/`, newest last.
+    """
+    _keep_previous(path)
     trailing = "\n" if path.read_text(encoding="utf-8").endswith("\n") else ""
     path.write_text("\n".join(flines) + trailing, encoding="utf-8")
-    return {"ok": True, "scene": sid, "line": lid, "raw": text}
+
+
+def _keep_previous(path, limit=400):
+    try:
+        prev = path.read_bytes()
+    except OSError:
+        return
+    box = EDITS / path.stem
+    box.mkdir(parents=True, exist_ok=True)
+    kept = sorted(box.glob(f"*{path.suffix}"))
+    if kept and kept[-1].read_bytes() == prev:
+        return                                   # nothing changed since last time
+    stamp = _dt.datetime.now().strftime("%Y%m%d-%H%M%S-%f")
+    (box / f"{stamp}{path.suffix}").write_bytes(prev)
+    for stale in kept[:-limit]:
+        stale.unlink(missing_ok=True)
+
+
+def _scene_beats(sid):
+    """The scene's beats as they now sit on disk: id and verbatim markdown.
+
+    An edit that adds or removes a beat renumbers every beat after it, so an
+    open editor that kept writing against the ids it loaded with would start
+    saving into its neighbours. Every write hands back the new numbering so the
+    page can re-point itself instead.
+
+    Each beat comes with both faces: the markdown to edit, and the parsed text
+    to show when nobody is editing it.
+    """
+    scenes = script_parser.load_scenes(
+        scripts_dir(), characters(), CFG.get("aliases"))
+    scene = next((s for s in scenes if s["id"] == sid), None)
+    if scene is None:
+        return []
+    _attach_raw(scene)
+    keep = ("id", "type", "speaker", "text", "direction")
+    return [dict({k: l.get(k) for k in keep}, raw=l.get("_raw"))
+            for l in scene.get("lines", [])]
+
+
+# --------------------------------------------------------------------------- #
+# Proofreading pass: where the read-through has got to
+# --------------------------------------------------------------------------- #
+# Reading the play end to end is hours of work across many sittings, so which
+# scenes are done, which beats were flagged to come back to and where the eye
+# left off all outlive the tab they were made in. This is a note *about* the
+# script rather than part of it, so it lives beside the app and never near the
+# markdown.
+@app.get("/api/proof")
+def api_proof_get():
+    if not PROOF_PATH.exists():
+        return {"scenes": {}, "at": None}
+    try:
+        data = json.loads(PROOF_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {"scenes": {}, "at": None}
+    return data if isinstance(data, dict) else {"scenes": {}, "at": None}
+
+
+@app.put("/api/proof")
+def api_proof_put(payload: dict = Body(...)):
+    """Replace the pass state. Small enough to send whole on every change."""
+    if not isinstance(payload.get("scenes"), dict):
+        raise HTTPException(400, "scenes must be an object keyed by scene id")
+    slim = {
+        "at": payload.get("at") or None,
+        "scenes": {
+            str(sid): {
+                "done": bool(v.get("done")),
+                "at": v.get("at") or None,
+                "flags": sorted({str(f) for f in (v.get("flags") or [])}),
+            }
+            for sid, v in payload["scenes"].items() if isinstance(v, dict)
+        },
+        "saved": _dt.datetime.now().isoformat(timespec="seconds"),
+    }
+    PROOF_PATH.write_text(json.dumps(slim, indent=2), encoding="utf-8")
+    return slim
 
 
 @app.get("/api/review/media")

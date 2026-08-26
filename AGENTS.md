@@ -2,6 +2,15 @@
 
 Read [[CLAUDE.md]] first for formatting and vault conventions (no hard wraps, frontmatter, wikilinks, scene status). This file covers one thing: keeping the tells of AI-generated writing out of the scripts and notes. It condenses the Humanizer guide ([github.com/blader/humanizer](https://github.com/blader/humanizer), built on Wikipedia's "Signs of AI writing"), adapted to this repo.
 
+## Never discard the author's working tree
+
+The script files under `03 - Script/` are a live editing surface: the storyboard server writes the author's saves straight into them, and those saves are not committed. Anything that resets the working tree throws that work away with no warning and no undo.
+
+- **Never run `git checkout -- <path>`, `git restore`, `git reset --hard`, `git clean`, or `git stash` against `03 - Script/`.** Not as test setup, not as cleanup, not "just to be safe".
+- **Tests that write to script files must undo their own writes** by putting the original bytes back through the same API, and must verify the file is byte-identical afterwards.
+- **Before any operation that could touch those files, check whether the server is running** (`lsof -nP -iTCP:8020 -sTCP:LISTEN`). If it is, the author may be typing into it right now.
+- Every write through the server keeps the previous version in `storyboard/.edits/`. That is the recovery path — see `Undo an edit.command`. It does not cover damage done outside the server.
+
 ## Content taboos
 
 - **No inflated significance.** Nothing "marks a pivotal moment," "underscores," "serves as a testament," "reflects broader trends," or "sets the stage." State the fact and stop.

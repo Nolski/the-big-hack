@@ -272,7 +272,18 @@ body.editable .cell.after.can-edit:hover {
   padding: 8px;
   resize: vertical;
 }
-.editor-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+/* Pinned to the bottom of the viewport while a tall beat is being edited, so
+   the buttons and the save state are in reach without scrolling the page. */
+.editor-bar {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  position: sticky; bottom: 0;
+  background: var(--panel2); padding: 6px 0 2px;
+}
 .editor-bar button { font-size: 12px; padding: 3px 10px; }
 .editor-note { font-size: 11px; opacity: .6; }
 .editor-note.err { opacity: 1; color: #ff9a9a; }
+.editor-note.ok { opacity: 1; color: #8fd694; }
+
+/* --- playback speed toggle ------------------------------------------------ */
+.speed { min-width: 44px; font-variant-numeric: tabular-nums; }
+.speed.on { background: var(--accent); color: #fff; border-color: var(--accent); }

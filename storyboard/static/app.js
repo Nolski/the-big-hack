@@ -2,6 +2,12 @@
 let SB = null;
 let TAB = "storyboard";
 
+// Scenes are parsed from the script markdown, so the script is the only place
+// a beat can be edited and have it mean anything. The Review page writes each
+// beat back to its own .md; this page reads. The trailing "#" takes a scene id.
+const REVIEW_LINK =
+  "/review.html?before=working&after=working&unchanged=1&equal=1#";
+
 const $ = (sel, root = document) => root.querySelector(sel);
 const view = () => document.getElementById("view");
 
@@ -137,11 +143,22 @@ function drawer(html) {
   return back;
 }
 let drawerAudio = null, drawerMusic = null;
+// A drawer that holds unwritten edits registers a flush here. Closing one is a
+// click on the backdrop away, so it must never be the thing that loses typing.
+let drawerFlush = null;
 function closeDrawer() {
   if (drawerAudio) { drawerAudio.pause(); drawerAudio.onended = null; drawerAudio = null; }
   if (drawerMusic) { drawerMusic.pause(); drawerMusic = null; }
+  const flush = drawerFlush;
+  drawerFlush = null;
+  if (flush) flush();
   document.querySelector(".drawer-backdrop")?.remove();
 }
+window.addEventListener("beforeunload", () => { if (drawerFlush) drawerFlush(); });
+// Beats holding unwritten typing. A closing tab won't wait on a normal fetch,
+// so on the way out each one re-sends itself as a keepalive request.
+const DIRTY_BEATS = new Set();
+window.addEventListener("pagehide", () => DIRTY_BEATS.forEach((f) => f.beacon()));
 
 function openScene(id) {
   const scene = SB.scenes.find((s) => s.id === id);
@@ -159,35 +176,54 @@ function openScene(id) {
         <h3>Scene ${esc(scene.display_number || scene.number)} — Edit</h3>
         <div class="btn-row">
           <button class="btn mini" id="playScene">▶ Play scene</button>
+          <button class="btn mini speed" data-speed-toggle type="button"></button>
           <button class="btn ghost" id="x">✕</button>
         </div>
       </div>
+      <div class="readonly-note">
+        <strong>Reading the play through?</strong>
+        <a href="/proof.html">The proofreading page</a> is built for it — every
+        line is already a box, nothing opens or closes, and it keeps your place
+        across the whole script. This drawer is for one-off fixes next to the
+        audio and the sketch.
+        <br><br>
+        <strong>Click a line to rewrite it.</strong>
+        You type the words, not the markdown — the speaker, the parenthetical and
+        the clip reference stay where they are, and
+        <code>${esc(scene.source_file ? scene.source_file.split("/").pop() : "03 - Script/")}</code>
+        is written a moment after you stop typing.
+        <code>&lt;/&gt;</code> on a line opens its markdown if you need it. The
+        fields above the lines are read-only here — change them in the
+        <code>.md</code> or on the
+        <a href="${REVIEW_LINK}${esc(scene.id)}">Review page</a>.
+      </div>
+
       <label class="field">Title</label>
-      <input class="in" id="f-title" value="${esc(edit.title)}">
+      <input class="in" id="f-title" value="${esc(edit.title)}" readonly>
       <div class="row2">
         <div><label class="field">Movement</label>
-          <input class="in" id="f-movement" value="${esc(edit.movement || "")}"></div>
+          <input class="in" id="f-movement" value="${esc(edit.movement || "")}" readonly></div>
         <div><label class="field">Beat</label>
-          <input class="in" id="f-beat" value="${esc(edit.beat || "")}"></div>
+          <input class="in" id="f-beat" value="${esc(edit.beat || "")}" readonly></div>
       </div>
       <div class="row2">
         <div><label class="field">World</label>
-          <select class="in" id="f-world">
+          <select class="in" id="f-world" disabled>
             ${["modern", "historical", "both", "frame"].map((w) =>
               `<option ${edit.world === w ? "selected" : ""}>${w}</option>`).join("")}
           </select></div>
         <div><label class="field">Status</label>
-          <select class="in" id="f-status">
+          <select class="in" id="f-status" disabled>
             ${["stub", "drafted", "revised", "locked"].map((w) =>
               `<option ${edit.status === w ? "selected" : ""}>${w}</option>`).join("")}
           </select></div>
       </div>
       <label class="field">Setting / staging</label>
-      <textarea class="in" id="f-setting" rows="2">${esc(edit.setting || "")}</textarea>
+      <textarea class="in" id="f-setting" rows="2" readonly>${esc(edit.setting || "")}</textarea>
 
       <hr class="sep">
       <label class="field">Narrator framing (V.O.)</label>
-      <textarea class="in" id="f-narration" rows="2">${esc(edit.narration || "")}</textarea>
+      <textarea class="in" id="f-narration" rows="2" readonly>${esc(edit.narration || "")}</textarea>
       <div class="btn-row" style="margin-top:6px">
         <button class="btn mini" id="genNarr">🔊 Generate narration</button>
       </div>
@@ -195,7 +231,7 @@ function openScene(id) {
 
       <hr class="sep">
       <label class="field">Sketch prompt</label>
-      <textarea class="in" id="f-sketch" rows="3">${esc(edit.sketch.prompt || "")}</textarea>
+      <textarea class="in" id="f-sketch" rows="3" readonly>${esc(edit.sketch.prompt || "")}</textarea>
       <div class="btn-row" style="margin-top:6px">
         <button class="btn mini" id="genSketch">🎨 Generate sketch</button>
       </div>
@@ -204,7 +240,7 @@ function openScene(id) {
 
       <hr class="sep">
       <label class="field">Background music prompt (period-accurate)</label>
-      <textarea class="in" id="f-music" rows="2" placeholder="(blank = derive from this scene's world)">${esc(edit.music.prompt || "")}</textarea>
+      <textarea class="in" id="f-music" rows="2" readonly placeholder="(blank = derive from this scene's world)">${esc(edit.music.prompt || "")}</textarea>
       <div class="btn-row" style="margin-top:6px">
         <button class="btn mini" id="genMusic">🎵 Generate music</button>
       </div>
@@ -213,18 +249,15 @@ function openScene(id) {
       <hr class="sep">
       <div class="btn-row" style="justify-content:space-between">
         <label class="field" style="margin:0">Lines</label>
-        <button class="btn mini" id="addLine">+ line</button>
       </div>
       <div id="lines"></div>
 
       <hr class="sep">
       <div class="btn-row">
-        <button class="btn primary" id="save">Save</button>
+        <a class="btn" id="editReview" href="${REVIEW_LINK}${esc(scene.id)}">↗ Open in Review</a>
         <button class="btn" id="genAudio">🔊 Generate all scene audio</button>
-        <span class="spacer" style="flex:1"></span>
-        <button class="btn danger" id="del">Delete scene</button>
       </div>
-      <p class="hint">Generation auto-saves the scene first, then renders on the GPU box / image API. This can take ~20–40s.</p>`;
+      <p class="hint">Generation reads the scene straight from the script and renders on the GPU box / image API. This can take ~20–40s.</p>`;
 
     $("#x", root).onclick = closeDrawer;
     $("#playScene", root).onclick = playScene;
@@ -254,6 +287,7 @@ function openScene(id) {
       if (drawerMusic) { drawerMusic.pause(); drawerMusic = null; }
       if (src) {
         drawerMusic = new Audio(bust(src));
+        drawerMusic.dataset.norate = "";   // the bed keeps its own tempo
         drawerMusic.loop = true; drawerMusic.volume = 0.18;
         drawerMusic.play().catch(() => {});
       }
@@ -265,7 +299,7 @@ function openScene(id) {
       btn.textContent = "▶ Play scene"; btn.onclick = playScene; hl(-1);
       if (drawerMusic) { drawerMusic.pause(); drawerMusic = null; }
     };
-    const dram = (drawerAudio = new Audio());
+    const dram = (drawerAudio = Playback.register(new Audio()));
     let k = 0;
     const step = () => {
       if (k >= seq.length) return reset();
@@ -284,78 +318,298 @@ function openScene(id) {
   }
 
   function bindScene() {
-    $("#f-title", root).oninput = (e) => (edit.title = e.target.value);
-    $("#f-movement", root).oninput = (e) => (edit.movement = e.target.value);
-    $("#f-beat", root).oninput = (e) => (edit.beat = e.target.value);
-    $("#f-world", root).onchange = (e) => (edit.world = e.target.value);
-    $("#f-status", root).onchange = (e) => (edit.status = e.target.value);
-    $("#f-setting", root).oninput = (e) => (edit.setting = e.target.value);
-    $("#f-narration", root).oninput = (e) => (edit.narration = e.target.value);
-    $("#f-sketch", root).oninput = (e) => (edit.sketch.prompt = e.target.value);
-    $("#f-music", root).oninput = (e) => (edit.music.prompt = e.target.value);
     $("#genMusic", root).onclick = () => gen("#genMusic", `/api/generate/music/${scene.id}`);
-    $("#addLine", root).onclick = () => {
-      const n = edit.lines.length + 1;
-      edit.lines.push({ id: "l" + n + "_" + Date.now().toString(36),
-        type: "live", speaker: "", text: "", direction: "" });
-      paintLines();
-    };
-    $("#save", root).onclick = saveScene;
-    $("#del", root).onclick = delScene;
     $("#genNarr", root).onclick = () => gen("#genNarr", `/api/generate/narration/${scene.id}`);
     $("#genSketch", root).onclick = () => gen("#genSketch", `/api/generate/sketch/${scene.id}`);
     $("#genAudio", root).onclick = () => gen("#genAudio", `/api/generate/scene-audio/${scene.id}`, true);
   }
 
+  // Beats with unwritten typing in them. The drawer closes on a stray backdrop
+  // click, so closing (and leaving the page) has to push these first.
+  const dirty = DIRTY_BEATS;
+  drawerFlush = () => Promise.all([...dirty].map((f) => f()));
+  let wired = [];    // one handle per editable beat, in the order they're shown
+  let openBeat = null;   // the one beat currently showing its markdown
+
   function paintLines() {
     const wrap = $("#lines", root);
     wrap.innerHTML = "";
+    wired = [];
+    openBeat = null;
     const charOpts = (sel) => SB.characters.map((c) =>
       `<option value="${c.id}" ${sel === c.id ? "selected" : ""}>${esc(c.name)}</option>`).join("");
     edit.lines.forEach((ln, i) => {
       const saved = (scene.lines || []).find((l) => l.id === ln.id);
+      const raw = ln._raw;
       const div = document.createElement("div");
       div.className = "line";
       div.innerHTML = `
         <div class="line-head">
-          <select class="in mini type" style="width:auto">
+          <select class="in mini type" style="width:auto" ${raw == null ? "disabled" : ""}>
             ${["live", "video", "narration", "direction"].map((t) =>
               `<option ${ln.type === t ? "selected" : ""}>${t}</option>`).join("")}
           </select>
-          <select class="in mini spk" style="width:auto" ${ln.type === "direction" ? "disabled" : ""}>
+          <select class="in mini spk" style="width:auto"
+                  ${raw == null || ln.type === "direction" ? "disabled" : ""}>
             <option value="">— speaker —</option>${charOpts(ln.speaker)}
           </select>
           <span class="spacer" style="flex:1"></span>
+          <span class="save-state"></span>
+          ${raw == null ? "" : `<button class="btn mini md" title="Edit this beat's markdown">&lt;/&gt;</button>`}
           ${ln.type !== "direction" ? `<button class="btn mini regen">🔊</button>` : ""}
-          <button class="btn mini danger rm">✕</button>
+          ${raw == null ? "" : `<button class="btn mini drop" title="Remove this beat">🗑</button>`}
         </div>
-        <textarea class="in txt" rows="2" placeholder="line text">${esc(ln.text)}</textarea>
-        <input class="in dir mini" style="margin-top:6px" placeholder="(stage / video direction)" value="${esc(ln.direction || "")}">
+        <div class="beat"></div>
+        ${raw == null ? `<p class="hint">No source span for this beat — edit it in the <code>.md</code>.</p>` : ""}
         ${saved && saved.audio ? `<audio controls src="${bust(saved.audio)}"></audio>` : ""}`;
-      $(".type", div).onchange = (e) => { ln.type = e.target.value; paintLines(); };
-      $(".spk", div).onchange = (e) => (ln.speaker = e.target.value);
-      $(".txt", div).oninput = (e) => (ln.text = e.target.value);
-      $(".dir", div).oninput = (e) => (ln.direction = e.target.value);
-      $(".rm", div).onclick = () => { edit.lines.splice(i, 1); paintLines(); };
       const rg = $(".regen", div);
       if (rg) rg.onclick = async () => {
         rg.disabled = true; rg.innerHTML = '<span class="spin"></span>';
         try {
-          await persist();
+          await drawerFlush();
           await api("POST", `/api/generate/line/${scene.id}/${ln.id}`);
           await refresh();
         } catch (e) { toast(e.message, true); rg.disabled = false; rg.textContent = "🔊"; }
       };
+      const drop = $(".drop", div);
+      if (drop) drop.onclick = async () => {
+        const gist = (ln.text || ln._raw || "").replace(/\s+/g, " ").slice(0, 70);
+        if (!confirm(`Remove this beat?\n\n${gist}…`)) return;
+        // Drop any queued save first: once the beat is gone its id belongs to
+        // the beat that follows, and a late write would land in that one.
+        if (ln._cancel) ln._cancel();
+        try {
+          const r = await api("POST", "/api/review/line/delete",
+                              { scene: scene.id, line: ln.id, expect: ln._raw });
+          await resync(r.beats);
+        } catch (e) { toast(e.message, true); }
+      };
+      wireShape(div, ln);
+      wrap.appendChild(adder(i === 0 ? "" : edit.lines[i - 1].id));
       wrap.appendChild(div);
+      if (raw == null) $(".beat", div).textContent = ln.text || "";
+      else wireBeat(div, ln);
     });
+    const last = edit.lines[edit.lines.length - 1];
+    if (last) wrap.appendChild(adder(last.id));
   }
 
-  async function persist() {
-    const saved = await api("PUT", `/api/scene/${scene.id}`, edit);
-    Object.assign(scene, saved);
-    const idx = SB.scenes.findIndex((s) => s.id === scene.id);
-    SB.scenes[idx] = scene;
+  // The gap between two beats, with a + in it. New beats inherit the speaker
+  // above them, because the next thing written is usually the reply.
+  function adder(afterId) {
+    const prev = edit.lines.find((l) => l.id === afterId);
+    const row = document.createElement("div");
+    row.className = "adder";
+    row.innerHTML = `<button class="btn mini plus" title="Add a line here">+</button>`;
+    $(".plus", row).onclick = async () => {
+      await drawerFlush();
+      try {
+        const r = await api("POST", "/api/review/line/insert", {
+          scene: scene.id, after: afterId, expect: prev ? prev._raw : null,
+          type: prev && prev.type !== "direction" ? prev.type : "live",
+          speaker: prev ? prev.speaker : "",
+        });
+        await refresh();
+        // Open it straight away with the placeholder selected, so the first
+        // thing typed replaces it.
+        const beat = wired[r.index];
+        if (!beat) return;
+        beat.write();
+        beat.ta.select();
+      } catch (e) { toast(e.message, true); }
+    };
+    return row;
   }
+
+  function wireShape(div, ln) {
+    const send = async (patch) => {
+      if (ln._cancel) ln._cancel();
+      try {
+        const r = await api("PUT", "/api/review/line/shape",
+                            Object.assign({ scene: scene.id, line: ln.id, expect: ln._raw }, patch));
+        ln._raw = r.raw; ln.text = r.text;
+        await refresh();
+      } catch (e) { toast(e.message, true); await refresh(); }
+    };
+    const type = $(".type", div), spk = $(".spk", div);
+    if (type && !type.disabled) type.onchange = () => send({ type: type.value });
+    if (spk && !spk.disabled) spk.onchange = () => send({ speaker: spk.value });
+  }
+
+  // A beat is read here as much as edited, so the box shows all of it rather
+  // than making a long stage direction into a two-line porthole.
+  function grow(ta) {
+    if (!ta) return;
+    ta.style.height = "auto";
+    ta.style.height = ta.scrollHeight + "px";
+  }
+
+  // Every write hands back the scene's new beat numbering. Usually it matches
+  // what's on screen and there is nothing to do; when a beat was split or
+  // merged, everything after it has been renumbered and the drawer has to
+  // re-read the scene rather than keep writing against ids that have moved.
+  async function resync(beats) {
+    const at = wired.findIndex((w) => w.ta === document.activeElement);
+    if (beats.map((b) => b.id).join() === edit.lines.map((l) => l.id).join()) {
+      beats.forEach(({ raw, ...rest }, i) => Object.assign(edit.lines[i], rest, { _raw: raw }));
+      wired.forEach((w) => w.rebase());
+      return;
+    }
+    const caret = at >= 0 ? wired[at].ta.selectionStart : 0;
+    const note = at >= 0 ? wired[at].ta.closest(".line").querySelector(".save-state").textContent : "";
+    await refresh();
+    if (at < 0 || !wired[at]) return;
+    wired[at].write(caret);
+    // The repaint threw away the confirmation along with the old box. Put it
+    // back, or the save looks like it never happened.
+    wired[at].mark(note, "ok");
+  }
+
+  // A beat has three faces: the scene as it reads, the words on their own to
+  // rewrite, and — only if asked for — the markdown underneath. Editing is the
+  // middle one, so changing a line never means editing syntax.
+  function wireBeat(div, ln) {
+    const host = $(".beat", div);
+    const state = $(".save-state", div);
+    let ta = null, md = false, timer = null, chain = Promise.resolve();
+    let onRaw = ln._raw;                       // what the file holds, for `expect`
+    const shown = () => (md ? onRaw : ln.text || "");
+    const mark = (t, cls) => { state.textContent = t; state.className = "save-state " + (cls || ""); };
+
+    const read = () => {
+      ta = null;
+      host.innerHTML = "";
+      const p = document.createElement("div");
+      p.className = "read" + (ln.type === "direction" ? " dir" : "");
+      p.title = "click to edit this line";
+      if (ln.direction && ln.type !== "direction") {
+        const d = document.createElement("span");
+        d.className = "beat-dir";
+        d.textContent = `(${ln.direction}) `;
+        p.appendChild(d);
+      }
+      p.appendChild(document.createTextNode(ln.text || ""));
+      p.onclick = () => write();
+      host.appendChild(p);
+    };
+
+    const write = (caret) => {
+      // Close the last one only now, inside this click. Collapsing it on its
+      // own blur would reflow the drawer between mousedown and click, and the
+      // beat you aimed at would have moved out from under the cursor.
+      if (openBeat && openBeat !== self) openBeat.close();
+      openBeat = self;
+      host.innerHTML = "";
+      // In plain-words mode the parenthetical isn't part of what you're
+      // rewriting, but you still need to see what you're writing under.
+      if (!md && ln.direction && ln.type !== "direction") {
+        const d = document.createElement("div");
+        d.className = "beat-dir aside";
+        d.textContent = `(${ln.direction})`;
+        host.appendChild(d);
+      }
+      ta = document.createElement("textarea");
+      ta.className = "in txt" + (md ? " mono" : "");
+      ta.spellcheck = true;
+      ta.value = shown();
+      host.appendChild(ta);
+      grow(ta);
+      ta.focus();
+      const c = caret == null ? ta.value.length : Math.min(caret, ta.value.length);
+      ta.setSelectionRange(c, c);
+      ta.scrollIntoView({ block: "nearest" });
+      ta.addEventListener("input", () => {
+        grow(ta);
+        dirty.add(flush); mark("editing…");
+        clearTimeout(timer); timer = setTimeout(flush, 700);
+      });
+      ta.addEventListener("blur", flush);
+    };
+
+    // Put the readable face back, unless there's typing that hasn't landed —
+    // a failed write keeps its text on screen rather than hiding it.
+    const close = async () => {
+      await flush();
+      if (!ta || ta.value !== shown()) return;
+      if (openBeat === self) openBeat = null;
+      md = false;
+      read();
+    };
+
+    const toggleMd = async () => {
+      await flush();
+      if (ta && ta.value !== shown()) return;   // unsaved: don't swap under it
+      md = !md;
+      write();
+    };
+
+    // Take the file's word for this beat, but never over live typing, and
+    // never into the box the caret is sitting in.
+    const rebase = () => {
+      if (!ta) return read();
+      if (ta.value === shown()) {
+        onRaw = ln._raw;
+        if (document.activeElement !== ta) { ta.value = shown(); grow(ta); }
+      }
+    };
+
+    const flush = () => {
+      if (!ta) return chain;
+      clearTimeout(timer);
+      // Typed and then typed back: nothing to write. Only clear the note if it
+      // was mid-edit, so a "saved" confirmation survives clicking away.
+      if (ta.value === shown()) { if (dirty.delete(flush)) mark(""); return chain; }
+      mark("saving…");
+      chain = chain.then(async () => {
+        if (ta.value === shown()) return;
+        const sent = ta.value, asMd = md;
+        try {
+          const r = await api("PUT", asMd ? "/api/review/line" : "/api/review/line/text",
+                              { scene: scene.id, line: ln.id, text: sent, expect: onRaw });
+          onRaw = ln._raw = r.raw;
+          ln.text = r.text;
+          const line = (scene.lines || []).find((l) => l.id === ln.id);
+          if (line) { line._raw = r.raw; line.text = r.text; }
+          if (ta.value !== sent) {
+            flush();   // typing landed mid-save; that write carries the resync
+            return;
+          }
+          // The file may hold a tidied version of what was typed — show that,
+          // so the box and the script never quietly disagree. Not while the
+          // caret is in the box: assigning to a textarea's value drops the
+          // selection to the end, which reads as the cursor jumping mid-sentence.
+          if (ta.value !== shown() && document.activeElement !== ta) {
+            ta.value = shown(); grow(ta);
+          }
+          dirty.delete(flush);
+          mark("saved " + new Date().toLocaleTimeString(), "ok");
+          if (r.beats) await resync(r.beats);
+        } catch (e) { mark(e.message, "err"); }
+      });
+      return chain;
+    };
+    const self = { rebase, write, close, mark, get ta() { return ta; } };
+    wired.push(self);
+    wireButton(div, ".md", toggleMd);
+    ln._cancel = () => { clearTimeout(timer); dirty.delete(flush); flush.beacon = () => {}; };
+
+    flush.beacon = () => {
+      if (!ta || ta.value === shown()) return;
+      fetch(md ? "/api/review/line" : "/api/review/line/text", {
+        method: "PUT", keepalive: true,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ scene: scene.id, line: ln.id, text: ta.value, expect: onRaw }),
+      }).catch(() => {});
+    };
+
+    read();
+  }
+
+  function wireButton(div, sel, fn) {
+    const b = $(sel, div);
+    if (b) b.onclick = fn;
+  }
+
   async function refresh() {
     SB = await api("GET", "/api/storyboard");
     Object.assign(scene, SB.scenes.find((s) => s.id === scene.id));
@@ -364,21 +618,11 @@ function openScene(id) {
     edit.lines = edit.lines || [];
     paint();
   }
-  async function saveScene() {
-    try { await persist(); renderStoryboard(); toast("Saved."); }
-    catch (e) { toast(e.message, true); }
-  }
-  async function delScene() {
-    if (!confirm("Delete this scene?")) return;
-    await api("DELETE", `/api/scene/${scene.id}`);
-    closeDrawer(); await load();
-  }
   async function gen(btnSel, path, isBatch) {
     const btn = $(btnSel, root);
     btn.disabled = true; const orig = btn.innerHTML;
     btn.innerHTML = '<span class="spin"></span> working…';
     try {
-      await persist();
       const r = await api("POST", path);
       await refresh();
       toast(isBatch ? `Generated ${r.generated}/${r.total} clips.` : "Done.");
@@ -508,13 +752,13 @@ function openChar(id) {
       ${c.portrait ? `<img class="sketch-preview" src="${bust(c.portrait)}">` : ""}`;
     $("#x", root).onclick = closeDrawer;
     paintMode();
-    $("#f-name", root).oninput = (e) => (edit.name = e.target.value);
-    $("#f-world", root).onchange = (e) => (edit.world = e.target.value);
-    $("#f-role", root).oninput = (e) => (edit.role = e.target.value);
-    $("#f-desc", root).oninput = (e) => (edit.description = e.target.value);
-    $("#f-mode", root).onchange = (e) => { edit.voice.mode = e.target.value; paintMode(); };
-    $("#f-seed", root).oninput = (e) => (edit.voice.seed = parseInt(e.target.value || "0"));
-    $("#f-sample", root).oninput = (e) => (edit.voice.sample_text = e.target.value);
+    $("#f-name", root).oninput = (e) => { edit.name = e.target.value; queueSave(); };
+    $("#f-world", root).onchange = (e) => { edit.world = e.target.value; queueSave(); };
+    $("#f-role", root).oninput = (e) => { edit.role = e.target.value; queueSave(); };
+    $("#f-desc", root).oninput = (e) => { edit.description = e.target.value; queueSave(); };
+    $("#f-mode", root).onchange = (e) => { edit.voice.mode = e.target.value; queueSave(); paintMode(); };
+    $("#f-seed", root).oninput = (e) => { edit.voice.seed = parseInt(e.target.value || "0"); queueSave(); };
+    $("#f-sample", root).oninput = (e) => { edit.voice.sample_text = e.target.value; queueSave(); };
     $("#save", root).onclick = save;
     $("#del", root).onclick = del;
     $("#genVoice", root).onclick = () => gen("#genVoice", `/api/generate/voice/${c.id}`);
@@ -527,18 +771,37 @@ function openChar(id) {
         New lines render in this exact voice. The description below is kept for provenance / re-deriving the vector.</p>
         <label class="field">Voice description (instruct, for reference)</label>
         <textarea class="in" id="f-inst" rows="3">${esc(edit.voice.instruct || "")}</textarea>`;
-      $("#f-inst", root).oninput = (e) => (edit.voice.instruct = e.target.value);
+      $("#f-inst", root).oninput = (e) => { edit.voice.instruct = e.target.value; queueSave(); };
     } else if (edit.voice.mode === "clone") {
       m.innerHTML = `<label class="field">Reference wav (path on GPU host)</label>
         <input class="in" id="f-ref" value="${esc(edit.voice.ref_audio || "")}">
         <p class="hint">e.g. /path/on/host/ref.wav</p>`;
-      $("#f-ref", root).oninput = (e) => (edit.voice.ref_audio = e.target.value);
+      $("#f-ref", root).oninput = (e) => { edit.voice.ref_audio = e.target.value; queueSave(); };
     } else {
       m.innerHTML = `<label class="field">Voice description (instruct)</label>
         <textarea class="in" id="f-inst" rows="4">${esc(edit.voice.instruct || "")}</textarea>`;
-      $("#f-inst", root).oninput = (e) => (edit.voice.instruct = e.target.value);
+      $("#f-inst", root).oninput = (e) => { edit.voice.instruct = e.target.value; queueSave(); };
     }
   }
+
+  // Autosave: a pause in typing, or closing the drawer, writes to
+  // storyboard.yaml. The Save button stays, but nothing depends on it.
+  let saveTimer = null;
+  let dirty = false;
+  const queueSave = () => {
+    dirty = true;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(autosave, 700);
+  };
+  async function autosave() {
+    clearTimeout(saveTimer);
+    if (!dirty) return;
+    dirty = false;
+    try { await persist(); renderCast(); }
+    catch (e) { dirty = true; toast(e.message, true); }
+  }
+  drawerFlush = autosave;
+
   async function persist() {
     const saved = await api("PUT", `/api/character/${c.id}`, edit);
     Object.assign(c, saved);
@@ -572,8 +835,17 @@ function openChar(id) {
 // PLAYER
 // --------------------------------------------------------------------------
 const Player = {
-  beats: [], idx: 0, playing: false, audio: new Audio(),
-  music: Object.assign(new Audio(), { loop: true }), _musicSrc: null,
+  beats: [], idx: 0, playing: false,
+  audio: Playback.register(new Audio()),
+  // The bed plays under the dialogue, not instead of it, so it keeps its own
+  // tempo however fast the lines are running.
+  music: (() => {
+    const a = new Audio();
+    a.loop = true;
+    a.dataset.norate = "";
+    return a;
+  })(),
+  _musicSrc: null,
   setMusic(b) {
     // Each beat carries its effective music src (scene bed, or a [MUSIC:] cue).
     const want = (b && b.music) || null;
@@ -687,6 +959,7 @@ function renderPlayer() {
           <button class="btn" id="prevBtn">⏮</button>
           <button class="btn primary big" id="playBtn">▶</button>
           <button class="btn" id="nextBtn">⏭</button>
+          <button class="btn speed" data-speed-toggle type="button"></button>
           <span class="spacer" style="flex:1"></span>
           <span class="status" id="sceneLabel"></span>
         </div>
