@@ -39,7 +39,7 @@ Continuous with the cold open — the standup grid has emptied to just two tiles
 
 ## Script
 
-*(The standup grid is down to two tiles now: KRISTINA and BRENDAN. Below them LIAM's desk sits dark and empty — he's gone. The instant the room is just the two of them, KRISTINA's bright standup-runner brightness drops away. A smaller, realer voice. [MUSIC: music/slackhuddle.mp3])*
+*(The standup grid is down to two tiles now: KRISTINA and BRENDAN. Below them LIAM's desk sits dark and empty — he's gone. The instant the room is just the two of them, KRISTINA's bright standup-runner brightness drops away. A smaller, realer voice. CHECKPOINTTEST [MUSIC: music/slackhuddle.mp3])*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(quiet, just to Brendan now)*
 > …Hey. Off the record — was that out of line, or is it just me? The degree thing. *(a breath)* I've been sitting here half-deciding whether it's an HR conversation.
