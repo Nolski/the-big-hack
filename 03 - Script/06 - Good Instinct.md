@@ -43,109 +43,107 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 
 ## Script
 
-*(The same desk, the morning after. No memes today. LIAM is actually working — hunched in, headphones half-on, the session-handler code filling the big monitor, coffee cups stacked at his elbow. He has been at this a while and it shows. On the second monitor the standup grid is already running; his tile is the same black square, "Liam — camera off." He is not really in the meeting. He is in the bug.)*
+*(At Liam's desk, the morning after. No memes today. LIAM is actually working hunched in, headphones half-on. He has been at this a while and it shows. On the second monitor the standup grid is already running; his tile is the same black square, camera still off. He is not really in the meeting. He is in the race condition he's tasked with fixing.)*
 
 > [!screen] VIDEO — KRISTINA (PM) · `AIV-040` *(brisk, running the board)*
-> …lovely, thanks Priya. Marcus, anything blocking you?
+> …lovely, thanks Brandon. Marcus, anything blocking you?
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
 > Nothing blocking. Three tickets, all merged. *(beat)* Can I say one thing that isn't a ticket? It's quick.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(the pause of a woman who has been here before)*
-> Is it quick.
+> Is it quick? Remember we agreed to time limits Marcus...
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
-> It's quick. So I went and read about the Luddites last night, after yesterday. And the thing nobody tells you is that they weren't against machines. They'd smash one machine and leave the one next to it alone. What they went after were the ones being used to turn out cheap rubbish, fast, by people who'd never been trained to do the work. The cloth got cheaper and it fell apart, and the men who could tell the difference were the ones who lost their jobs over it. *(beat)* And we shipped eight hundred lines on Thursday that nobody read.
+> It's quick. So I went and read about the Luddites last night, after yesterday. And the thing nobody tells you is that they weren't against all machines. In fact a few decades earlier machines that put yard manufacturing ahead actually helped the luddites. Cheaper yarn meant more work for them. But when it came to garment making, not only where they more directly impacted, they took issue with the quality. The cloth got cheaper both in cost and quality, and the men who could tell the difference were the ones who lost their jobs over it. *(beat)* And we shipped eight hundred lines on Thursday that nobody read.
 
-*(Nothing on the grid. Tiles nodding, closing tickets. Somewhere in there is BRENDAN, who wrote those eight hundred lines, saying nothing.)*
+*(Somewhere in there is BRENDAN, who wrote those eight hundred lines, saying nothing.)*
 
 **LIAM** *(live, headphones half on, eyes still on the code)*: They lost, by the way.
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
 > Sorry?
 
-**LIAM** *(live)*: The Luddites. They lost. They got hanged and the machines stayed. *(beat)* I'm reading the code, please stop talking.
+**LIAM** *(live)*: The Luddites. They lost. They got hanged. Anyway *(beat)* I'm reading the code, please stop talking.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(pleasant, immovable, moving the board on)*
-> Okay. Marcus, write it up and send it round and I'll read it properly. *(brisk)* Liam. You're still on the signup race condition, yeah? Where are we with that one?
+> Okay. Marcus, you got your word in, thanks. *(brisk)* Liam. You're still on the signup race condition, yeah? Where are we with that one?
 
 **LIAM** *(live, not looking up, still reading code)*: Still on it. No blockers.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040`
-> *Gentle, but she needs something.* Right — that's what you said Tuesday, though. It's been open a while now. Is there any movement? Even a direction you're leaning?
+> *Gentle, but she needs something.* Right, that's what you said yesterday, though. It's been open a while now. Is there any movement? Any updates I can add to the ticket?
 
-**LIAM** *(live, the flat patience of a man explaining the obvious)*: It's a race condition, Kristina. I don't debug in a straight line. You don't "make progress" on one of these — you stare at it until it tells you the truth, and then it's an afternoon. *(beat)* It's not a burndown chart. It's a haunted house. I'm still finding the rooms.
+**LIAM** *(live, the flat patience of a man explaining the obvious)*: It's a race condition, Kristina. I don't debug in a straight line. You don't "make progress" on one of these, you stare at it until you figure it out, and then it's done. *(beat)* It's not a burndown chart. I'm still staring.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(not rising to it, typing)*
 > …Okay. I'm trying to make the tradeoff visible. We've had four reports in three months; behind it we've got tickets affecting hundreds of users. I need some sense of whether this is another day or another week.
 
-**LIAM** *(live, finally looking up — sharp, but right)*: Four people got dropped into somebody else's account. That's not a support-volume question. That's an account-isolation failure. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it.
+**LIAM** *(live, finally looking up — sharp, but right)*: Four people got dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(takes the correction; no defensiveness)*
-> Fair. You're right. Then anything that helps us close it safely — say the word.
+> Fair. You're right.
 
-**BRENDAN** *(live, easy, genuine — a hand up, not a challenge)*: I could jump on it with you if you want? I've had my head in the auth stuff all week anyway — happy to be a second pair of eyes.
+**BRENDAN** *(live, easy, genuine — a hand up, not a challenge)*: I could jump on it with you if you want? I've had my head in the auth stuff all week anyway, happy to be a second pair of eyes.
 
-**LIAM** *(live, a soft, kind-sounding condescension)*: …That's good of you. It's a concurrency bug, though — down in the session handler. It's a bit of a deep end. *(beat, not unkind)* No offence. It's just — this is the kind of thing that takes a while to even *see*.
+**LIAM** *(live, a soft, kind-sounding condescension)*: …That's good of you. It's a concurrency bug, though, down in the session handler. *(beat, not unkind)* No offence. It's just... this is the kind of thing that takes a while to even *see*.
 
-*(He hears himself say it. A beat. Something in him — the part that still loves this — turns it over.)*
+*(He hears himself say what he said outloud, and thinks back to yesterday...)*
 
-**LIAM** *(live, softening, almost warm)*: …Actually. No. Come look at it with me. *(beat)* You'll learn more from one real race condition than a month of tickets. Grab twenty minutes after this?
+**LIAM** *(live, softening, almost warm)*: …Actually. No. Come look at it with me. *(beat)* You'll learn more from one real race condition than a month of tickets. Free for twenty minutes after this?
 
-**BRENDAN** *(live, lighting up)*: Yeah — for sure. I'd love that, honestly. I'll ping you the second we're done.
+**BRENDAN** *(live, lighting up)*: Yeah for sure. I'd love that, honestly. I'll ping you the second we're done.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(pleased — a manager watching a good thing happen)*
-> Oh, I love that. Pair on it. *(brisk)* Right — that's the board. Thanks, everyone.
+> Oh, I love that. Pair on it. *(brisk)* Right, that's the board. Thanks, everyone.
 
-*(The grid blinks out tile by tile. LIAM pulls the headphones back on and drops straight into the code — already gone from the room. [MUSIC: music/slackhuddle.mp3] A Slack huddle request lights his screen: BRENDAN. He takes it without looking up.)*
+*(The grid blinks out tile by tile. [MUSIC: music/slackhuddle.mp3] A Slack huddle request lights Liam's screen: BRENDAN. He takes it without looking up.)*
 
-*(The huddle opens. On the big shared monitor — `AIV-043` — LIAM's screen: the session handler, and off to one side a Slack thread, "#incident — 'logged in as someone else' (×4)". BRENDAN comes up in his own light at his own desk. And — angled to the house, a surface the call cannot see — BRENDAN's laptop: a blank Claude Code prompt, the cursor blinking. LIAM is sharing *out*; he has no idea what is on Brendan's other screen. The audience can see both.)*
-
-**LIAM** *(live, in his element now — the version of him people like)*: Okay. So. Here's the ghost. *(scrolling the thread)* Four users in three months. Each one signs up, and for about a second they're… in someone else's account. Someone else's name, someone else's email, right there on the screen. Then it clears. *(beat)* And I cannot reproduce it. I have tried everything. Ten thousand signups in a loop, locally — nothing. It only ever happens out there. In prod. Under real traffic.
+**LIAM** *(live, in his element now — the version of him people like)*: Okay. So. *(scrolling the thread)* Four users in three months. Each one signs up, and for about a second they're… in someone else's account. Someone else's name, someone else's email, right there on the screen. Then it clears. *(beat)* And I cannot reproduce it. I have tried everything. Ten thousand signups in a loop, locally, nothing. It only ever happens out there. In prod. Under real traffic.
 
 **BRENDAN** *(live, leaning in, genuinely into it)*: Okay, that's kind of horrifying. *(beat)* Where've you been looking?
 
-**LIAM** *(live)*: Token generation. The session tokens. If two people ever got issued the same token, that would do it — so I've been pulling apart the RNG, the entropy source, the signing. *(beat, frustrated)* And it's all fine. It's textbook. That's what's killing me — the one place it should be, it just… isn't.
+**LIAM** *(live)*: Token generation. The session tokens. If two people ever got issued the same token, that would do it, so I've been pulling apart the RNG, the entropy source, the signing. *(beat, frustrated)* And it's all fine. It's textbook. That's what's killing me the one place it should be, it just… isn't.
 
-**BRENDAN** *(live, careful, offering)*: Can I ask a dumb thing? *(beat)* Have you tried pointing Claude at the repo and asking it to investigate the signup flow? No theory — just give it the symptom and let it trace the path.
+**BRENDAN** *(live, careful, offering)*: Can I ask a dumb thing? *(beat)* Have you tried pointing Claude at the repo and asking it to investigate the signup flow?
 
-*(On BRENDAN's own screen — `AIV-044`, the audience only — Claude Code is already open at the repository root with full repo access. He types: "Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user's account. No production data. Find a local repro and root cause." He hits enter. The tool starts traversing controllers, models, tests and the session store. No pasted handler, no logs, no voice; text on a screen LIAM cannot see.)*
+*(On BRENDAN's own screen Claude Code is already open at the repository root with full repo access. He types: "Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user's account. No production data. Find a local repro and root cause." He hits enter. The tool starts traversing controllers, models, tests and the session store. No pasted handler, no logs, no voice; text on a screen LIAM cannot see.)*
 
-**LIAM** *(live, a short laugh — not cruel, just certain)*: It can't. That's the thing everyone gets wrong about it. It can't *reason* about concurrency — it's autocomplete with good manners. It has no model of two threads interleaving. *(beat)* You point it at this, it sees the word "session," it pattern-matches to "add a mutex," and now I've got a lock on the hottest path in the app and a *deadlock* in prod instead of a race. No thanks.
+**LIAM** *(live, a short laugh — not cruel, just certain)*: It can't. That's the thing everyone gets wrong about it. It can't *reason* about concurrency, it's autocomplete with good manners. It has no model of two threads interleaving. *(beat)* You point it at this, it sees the word "session," it pattern-matches to "add a mutex," and now I've got a lock on the hottest path in the app and a *deadlock* in prod. No thanks.
 
-**BRENDAN** *(live, nodding, tries another door)*: Fair. What about — write a failing test first, then point it at that? Give it something red to chase.
+**BRENDAN** *(live, nodding, tries another door)*: Fair. What if you gave it reproduction steps first though so it has something to eval against?
 
-**LIAM** *(live)*: That's the whole problem, though. I can't make it fail on demand. It's one in fifty thousand signups, only under real load. *(beat)* There's no red test to hand it. And if I hand it a green one, it'll "fix" the bug, tell me it's solved, and be lying — same as it always is. And it'll sound completely sure while it does it.
+**LIAM** *(live)*: That's the whole problem, though. I can't make it fail on demand. It's one in fifty thousand signups, only under real load. *(beat)* There's no red test to hand it. And if I hand it a green one, it'll "fix" the bug, tell me it's solved, and be lying, same as it always is. And it'll sound completely sure while it does it.
 
-*(On BRENDAN's screen — `AIV-044` — the tool has stopped searching and started working. It writes a local repro script with a barrier that holds two signup transactions at the same pre-commit point, starts the app, launches two browser sessions and runs them together. Red output: `REPRODUCED`. Two screenshot thumbnails appear: in the first browser, ALICE's fresh signup briefly shows BOB's name and email; in the second, the inverse. Underneath, Claude walks back from `getOrCreateSession` to the pre-commit call and lights one line. BRENDAN's eyes move from the screenshots to the diagnosis, quick.)*
+*(On BRENDAN's screen claud has stopped searching and started working. It writes a local repro script with a barrier that holds two signup transactions at the same time, then it starts the app, launches two browser sessions and runs them together. `REPRODUCED`. Two screenshot thumbnails appear: in the first browser, ALICE's fresh signup briefly shows BOB's name and email. Underneath, Claude walks back from `getOrCreateSession` and lights one line. BRENDAN's eyes move from the screenshots to the diagnosis, quickly.)*
 
-**BRENDAN** *(live, one more, tentative)*: Okay — last idea, then I'll shut up. The incident thread's got the actual prod logs from when it happened. What if I dropped those in — the real ones — see if there's a—
+**BRENDAN** *(live, one more, tentative)*: Okay one last idea with claude, then I'll shut up. The incident thread's got the actual prod logs from when it happened. What if I dropped those in claude, the real ones and see if there's
 
-**LIAM** *(live, sharp — the one objection that's flat-out right)*: No. You do not paste production session data into a third-party model. Those logs have live tokens in them. Real users' emails. *(beat)* That's a PII incident and a security review all by itself — that's exactly the "just paste it in and see what happens" thinking that gets a company on the news. *(catching himself — Brendan built the portal — a beat)* …I'm not having a go. That one just actually matters.
+**LIAM** *(live, sharp — the one objection that's flat-out right)*: No! You do not paste production session data into a third-party model. Those logs have live tokens in them. Real users' emails. *(beat)* That's a PII incident and a security review all by itself, that's exactly the "just paste it in and see what happens" thinking that gets a company on the news. *(catching himself — Brendan built the portal — a beat)* …come on Brendan, you know better...
 
-**BRENDAN** *(live, quietly — and he means it)*: No — you're right. You are. Forget that one.
+**BRENDAN** *(live, quietly — and he means it)*: No, you're right. You are. Forget that one.
 
-*(On BRENDAN's screen — `AIV-044` — the answer sits there now, finished and proved: the deterministic repro script, paired browser screenshots, a short diagnosis, and one line of the controller lit up — the `getOrCreateSession` call, sitting *above* the commit. Beneath it: a one-line fix on a completed local branch, plus a second note flagging the shared session store as the deeper problem. He reads it twice. He now knows. Then he eases the lid half-shut, almost like hiding evidence, and turns back to the call.)*
+*(On BRENDAN's screen the answer sits there now, finished and proved: the deterministic repro script, paired browser screenshots, a short diagnosis, and one line of the controller lit up on the `getOrCreateSession` call. Beneath it: a one-line fix on a completed local branch, plus a second note flagging the shared session store as the deeper problem. He reads it twice. He now knows. He turns back to the call.)*
 
-**BRENDAN** *(live, offhand, like it just floated up — the dumb-question voice)*: …Okay, this is probably nothing. But — can you scroll up? To where signup actually calls the session thing. *(beat)* That `getOrCreateSession` — what's it keyed on?
+**BRENDAN** *(live, offhand, like it just floated up — the dumb-question voice)*: …Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. *(beat)* That `getOrCreateSession`, what's it keyed on?
 
 **LIAM** *(live, scrolling up, humouring him)*: The user id. It keys the session on the user id.
 
-**BRENDAN** *(live, carefully — leaving the door open, not walking through it)*: Right, but — that call's *before* the commit, isn't it? The row hasn't actually landed yet. *(beat)* So for that one beat… what's the id? Is it the real one yet?
+**BRENDAN** *(live, carefully — leaving the door open, not walking through it)*: Right, but that call's *before* the commit, isn't it? The database row hasn't actually landed yet. *(beat)* So for that one moment… what's the id? Is it the real one yet?
 
-*(LIAM stops. Actually stops. His eyes go to the top of the function, then down, then back up — tracing it. The cursor hovers. A long beat. When he speaks it's quiet, almost to himself.)*
+*(LIAM stops. Actually stops. His eyes go to the top of the function, then down, then back up tracing it. The cursor hovers. When he speaks it's quiet, almost to himself.)*
 
-**LIAM** *(live, slow)*: …It's zero. *(beat)* The id is zero until the transaction commits. It defaults to zero. *(faster now, up out of the chair)* So two signups in the same tick — they both call `getOrCreateSession` with id zero. They both key on zero. *(beat)* They get the *same* session. *(beat)* One of them gets handed the other one's login. *(quiet, stunned)* …It was never the tokens. It was never the crypto. It's a check-then-set on an id that isn't there yet. *(a breath)* One line. It's one line. It's been one line this whole time.
+**LIAM** *(live, slow)*: …It's zero. *(beat)* The id is zero until the transaction commits. It defaults to zero. *(faster now, up out of the chair)* So two signups in the same tick they both call `getOrCreateSession` with id zero. They both key on zero. *(beat)* They get the *same* session. *(beat)* One of them gets handed the other one's login. *(quiet, stunned)* …It was never the tokens. It was never the crypto. It's a check-then-set on an id that isn't there yet. *(a breath)* One line. It's one line. It's been one line this whole time.
 
-*(He turns — genuinely lit up, the most alive he has been all scene — and looks straight down the camera at BRENDAN, who is ten feet away and cannot be looked at.)*
+*(He turns genuinely lit up, the most alive he has been, and looks straight down the camera at BRENDAN.)*
 
-**LIAM** *(live, warm — no condescension left in it)*: …That's a hell of a catch, Brendan. *(beat)* How did you even — that's the *one* place I wasn't looking. That's real instinct. *(a real smile)* Good instinct, kid. Seriously.
+**LIAM** *(live, warm — no condescension left in it)*: …That's a hell of a catch, Brendan. *(beat)* How did you even.... that's the *one* place I wasn't looking. That's real instinct. *(a real smile)* Good instinct, kid. Seriously.
 
 **BRENDAN** *(live, a modest deflection — and something underneath he can't name)*: …I dunno. It just looked a bit off to me. *(a small, uneasy beat)* Lucky guess.
 
-*(LIAM is already dropping back into the code, buzzing, typing the one-line fix — happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop — `AIV-044`, the audience only — Claude's proof glows a second longer: `REPRODUCED`, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly closes the lid. He does not show Liam. The faintest flicker of something crosses his face — not quite guilt, not yet — the same thing he couldn't name yesterday. He lets the huddle go.)*
+*(LIAM is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: `REPRODUCED`, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show Liam. The faintest flicker of something crosses his face... not quite guilt, not yet.... He lets the huddle go.)*
 
-*(LIAM types on, warm and none the wiser. Hold a moment on the two screens — his, bright and moving, and the closed one beside it. The monitor-blue eases down.)*
+*(LIAM types on, warm and none the wiser. Hold a moment on the two screens, his, bright and moving, and on brandon's just a blinking cursor from a rolled back commit.)*
 
 ---
 

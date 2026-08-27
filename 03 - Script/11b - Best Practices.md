@@ -43,17 +43,17 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 ## Script
 
-*(The same desk, a few weeks later. The memes are gone. New on the desk: a small silver cube of a computer, the protective film still on one corner. On the big monitor a terminal crawls out tokens one… at… a… time, next to a git diff thick with strike-throughs where he's rewritten the machine by hand. On the second monitor the standup grid runs, tiles quietly closing tickets. His tile is the same black square, "Liam — camera off.")*
+*(Liam's desk, a few months later. The memes are gone. New on the desk: a small silver cube of a computer, the protective film still on one corner. On the big monitor a terminal crawls a few tokens… at… a… time, next to a git diff thick with strike-throughs where he's rewritten the machine by hand. On the second monitor the standup grid runs, tiles quietly closing tickets. His tile is the same black square, Liam's camera is on this time)*
 
 > [!screen] VIDEO — KRISTINA (PM) · `AIV-050` *(brisk, warm, moving down a fast board)*
-> …great, ship it. Okay — Liam. The billing-webhook retry ticket. That's been with you since Monday? Just checking it's not stuck.
+> …great, ship it. Okay Liam. The billing-webhook retry ticket. That's been with you since Monday? Just checking it's not stuck.
 
-**LIAM** *(live, even, a man doing it right)*: It's not stuck. It's in review. The model drafts, I rewrite what's wrong, it merges when I've read all of it.
+**LIAM** *(live, even, a man doing it right)*: It's not stuck. I'm just reviewing LLM generated code related to it
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(gentle)*
 > Okay. It's just Marcus had three of those out the door yesterday. Same shape of thing.
 
-**LIAM** *(live)*: Marcus pastes our source into a stranger's computer and hits accept. I run my model locally. The codebase never leaves this machine. Which, I'll point out, is what our own security policy requires.
+**LIAM** *(live)*: Marcus pastes our source into a stranger's computer and hits accept. I run my model locally and very carefully review the output. Which, I'll point out, is what our own security policy requires.
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(a tile unmutes; he heard his name)*
 > Since we're naming names. Do you know what those three tickets got me, Liam?
@@ -61,24 +61,24 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **LIAM** *(live)*: A closed sprint?
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Three more tickets. That's it. That retry loop you're sat on, six months ago that was a week's work, and it was a week's work for anybody. Now it's an afternoon. And the afternoon didn't come off my sprint. It got filled back up by Tuesday. So somebody got that week. It wasn't anyone on this call.
+> Three more tickets. Everyone talks about how AI will give us all this new free time, but it seems like all its doing is raising the expectations of how much we're supposed to deliver and making us work even harder
 
 **LIAM** *(live, honestly puzzled anyone is saying this out loud)*: What do you want, a slower model?
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> I want one person in this building to say out loud who the speed is actually for.
+> I want one person in this building to say out loud who the increased velocity is actually for... because it's not for me
 
-**LIAM** *(live)*: I don't have a view on that. I'm not a politician, I'm an engineer, and I have a threat model. You're pasting our source code into somebody else's datacentre because it's quick. That's my objection. It has nothing to do with who gets the afternoon.
+**LIAM** *(live)*: I don't have a view on that. I'm not a politician, I'm an engineer, and I have a threat model. You're pasting our source code into somebody else's datacentre because it's quick. That's my objection. It has nothing to do with how rich it makes the CEO
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(a beat; you can hear him decide to say it in the only language this room accepts)*
-> Fine. Let's do it your way, then. Which model are you running locally?
+> Which model are you running locally?
 
-**LIAM** *(live)*: Qwen. The eighty-B.
+**LIAM** *(live)*: Qwen. The 27b parameter one
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> The Chinese one.
+> One of the Chinese ones.
 
-**LIAM** *(live)*: The open one.
+**LIAM** *(live)*: One of the open ones.
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(here we go)*
 > It's Alibaba, Liam. You put a Chinese lab's model on our entire codebase, and I'm the reckless one?
@@ -86,40 +86,40 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **LIAM** *(live, conceding the premise like it costs him nothing)*: Sure. Fine. Say the weights are backdoored. What are they going to do about it? The box has no network. The model has no tools. It can't run a command, it can't open a socket, it can't touch a file I don't paste in. It types text into a window and I read the text.
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(trying, early)*
-> Okay — this feels like a thread—
+> Guys can we get back on track...
 
-**LIAM** *(live, not hearing her — the jab he's been saving)*: You'd have to be an idiot to worry about backdoored weights and then hand the model the internet and a shell. Which is what Claude Code does, by the way. It runs commands, it installs whatever it decides it needs, it browses the web — on every laptop in this building. If I wanted to exfiltrate a codebase I'd build exactly that, and I'd get everyone to love it.
+**LIAM** *(live, not hearing her — the jab he's been saving)*: You'd have to be an idiot to worry about backdoored weights and then hand the model the internet and a shell. Which is what Claude Code does, by the way. It runs commands, it installs whatever it decides it needs, it browses the web on every laptop in this building. If I wanted to exfiltrate a codebase I'd just put it up on pastebin, I'm sure that'd make us work faster from all the SSO logins saved.
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(patient, which is worse)*
-> The code is the attack surface, Liam. It doesn't need a socket if you merge what it types. There's a paper on this — a model can write clean code for a year and start slipping vulnerabilities in when it sees a trigger. Nobody can audit eighty billion numbers.
+> The code is the attack surface, Liam. It doesn't need a socket if you merge what it types. There's a paper on this , a model can write clean code for a year and start slipping vulnerabilities in when it sees a trigger. Nobody can audit 27 billion weights.
 
 **LIAM** *(live)*: Which is why I read every line before it merges.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> A backdoor can be one character long. One equals sign where there should be two. You'd read straight past it. Everyone reads straight past it — that's the whole reason it works.
+> A backdoor can be one character long. One equals sign where there should be two. You'd read straight past it. That's the whole reason it works.
 
-**LIAM** *(live)*: I've caught three of those in *human* code this year, so—
+**LIAM** *(live)*: I've caught three of those in *human* code this year, so...
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(trying again)*
-> Guys, I want to get through the—
+> Guys, I want to get through the..
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(over her)*
 > Sorry, Kristina, one more flag, because this actually matters. If anything from that model lands in the product, and it comes out later the weights were compromised, that's on everyone in this call. I want it noted that I flagged it.
 
 **LIAM** *(live)*: Noted where, Marcus? Nobody's taking minutes. It's a standup.
 
-*(On the grid, a couple of tiles have gone very still — the stillness of people muting themselves to sigh. BRENDAN, live at his desk, camera on, is looking at something off to the side. His own board, probably. On KRISTINA's tile: she is, literally, biting her tongue. She takes the minutes every week. She emails them out every week. The last person who talked to her like this got called out for it, by him. The smile does not move.)*
+*(A few people on the grid are muting themselves to sigh. KRISTINA's tile: she is, literally, biting her tongue. She takes the minutes every week. She emails them out every week. The last person who talked to her like this got called out for it, by him. The smile does not move.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(a full sentence, at last; the patience is professional-grade)*
-> It is a standup. So — Liam, Marcus — take the model debate to a thread. I'd honestly love a doc, it sounds like there's real stuff in there. Not here.
+> It is a standup. So Liam, Marcus, take the model debate to a thread. I'd honestly love a doc, it sounds like there's real stuff in there. Just not here.
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(patiently, to the woman who has run this meeting every morning for two years)*
 > Kristina, I know what a standup is. I'm saying this matters more than the standup does.
 
 > [!screen] VIDEO — KRISTINA · `AIV-050`
-> Noted. Thread.
+> Noted. Thanks. Let's move on.
 
-**LIAM** *(live)*: Fine. One thing though, since we're doing policy. The all-hands made AI-assisted development mandatory. The security policy says proprietary source does not go to third-party model providers. I wrote that policy. It's still in force. Local inference is the only setup that satisfies both sentences — so with respect to flags, I'm the only person on this call who's compliant.
+**LIAM** *(live)*: Fine. One thing though, since we're doing policy. The all-hands made AI-assisted development mandatory. The security policy says proprietary source does not go to third-party model providers. I wrote that policy. It's still in force. Local inference is the only setup that satisfies both requirements so with respect to flags, I'm the only person on this call who's compliant.
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(a short laugh with no joy in it)*
 > Liam. Procurement would never let us buy Chinese software.
@@ -127,7 +127,7 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **LIAM** *(live)*: It's open weights. Nobody's buying anything. *(beat)* At least we can agree not to use Grok.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Oh — don't get me started.
+> Oh, don't get me started.
 
 *(One second of peace. It is the only thing the two of them have agreed on in six weeks.)*
 
@@ -135,7 +135,7 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 > Can I say the thing I was trying to say twenty minutes ago? Thirty seconds.
 
 > [!screen] VIDEO — KRISTINA · `AIV-050`
-> Marcus.
+> Marcus we have to move on...
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(going anyway)*
 > There was a blacksmith in Yorkshire called Enoch Taylor. He built the machines that put the cloth finishers out of work. He also built their hammers, because that was the other thing he made. So when they went out at night to break the machines, they were swinging his hammers at his frames. And they had a saying about it. Enoch made them, Enoch shall break them.
@@ -143,47 +143,47 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **LIAM** *(live)*: Is there a point coming?
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> We're the blacksmith. All of us. We built it, we're the ones correcting it every day so it gets better at the job, and we're doing that at a company that has put it in writing that we have to.
+> We're the blacksmith. All of us. And we're doing that at a company that has put it in writing that we have to.
 
-*(A pause. It is, by some distance, the best thing anybody has said all morning. On the grid, a tile marks another ticket Done.)*
+*(No one is taking marcus seriously)*
 
-**LIAM** *(live)*: It's a retry loop, Marcus. It's four lines.
+**LIAM** *(live)*: Marcus if I had a nickel for every time you said the word Luddite...
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(calling it, warm and immovable)*
 > Okay. I'm calling it. Thread. Both of you.
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(over her, and hurt about it)*
-> With respect, Kristina, I'm the one who said something when he did the degree thing to you. In this meeting. So when I raise something I'd like a bit of the benefit of the doubt.
+> With respect, Kristina, I'm the one who said something when he made fun of your education. In this meeting. So when I raise something I'd like a bit of the benefit of the doubt.
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(flat; the only moment all morning the brightness isn't there)*
-> I know you did, Marcus. *(beat)* Thread.
+> Marcus *(beat)* I just want ONE STANDUP where we get through without...
 
-**LIAM** *(live, one hand up — last sentence, and it's material)*: Purely AI-generated code has no copyright. No human author, no protection. If the model writes the whole repo, it is genuinely unclear whether this company owns its own product. That's why nothing merges here unless I am materially involved in the creation. Someone should still be an author of the thing we sell.
+**MARCUS** *(live, one hand up — last sentence, and it's material)*: Purely AI-generated code has no copyright. No human author, no protection. If the model writes the whole repo, it is genuinely unclear whether this company owns its own product. That's why nothing merges here unless I am materially involved in the creation. Someone should still be an author of the thing we sell.
 
-> [!screen] VIDEO — MARCUS · `AIV-055`
+> [!screen] VIDEO — LIAM · `AIV-055`
 > That's the monkey-selfie case. It's about a monkey.
 
-**LIAM** *(live)*: It's the same principle.
+**MARCUS** *(live)*: It's the same principle.
 
-> [!screen] VIDEO — MARCUS · `AIV-055`
-> It's a monkey, Liam.
+> [!screen] VIDEO — LIAM · `AIV-055`
+> It's a monkey, Marcus.
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(a breath; the warmth is real, which is somehow worse)*
-> Thread. *(beat)* Liam — I hear the compliance point. I'll chase the policy question, that's my job, let me do it. In the meantime I just need you on board with how the team's working. That's all. *(bright, done)* Thanks everyone — that's standup.
+> *(beat)* Everyone listen to me. Liam I hear the compliance point. I'll chase the policy question, that's my job, let me do it. In the meantime I just need you on board with how the team's working. That's all. *(bright, done)* Thanks everyone that's standup.
 
-**BRENDAN** *(live, tired around the eyes, still warm)*: Liam — want me to hop on for twenty about the actual webhook thing? *(beat)* Just the webhook thing.
+**BRENDAN** *(live, tired around the eyes, still warm)*: Liam, want me to hop on for twenty about the actual webhook thing? *(beat)* Just the webhook thing.
 
 **LIAM** *(live, a beat — then, almost warm)*: …Yeah. Alright. Come see the setup, actually. You'll like it.
 
-*(The grid blinks out. [MUSIC: music/slackhuddle.mp3] A Slack huddle opens. On the big shared monitor — `AIV-053` — LIAM's rig. BRENDAN lit at his own desk. And, angled to the house where the call can't see it, BRENDAN's own laptop, lid half open. LIAM is sharing out; he has no idea what's on Brendan's other screen. The audience sees both.)*
+*(The grid blinks out. [MUSIC: music/slackhuddle.mp3] A Slack huddle opens.)*
 
-**LIAM** *(live, showing off the good version of himself — the craftsman; he pats the silver cube once, like a fender)*: Okay. So. Mac Studio, a hundred and twenty-eight gigs of unified memory. The eighty-billion Qwen just fits, quantized, resident the whole time, and nothing leaves the room. Cost this company half the price of a used car — which is the AI-adoption price nobody puts on a slide.
+**LIAM** *(live, showing off the good version of himself — the craftsman; he pats the silver cube once, like a fender)*: Okay. So. Mac Studio, a 64 gigs of unified memory. The 27b Qwen just fits, quantized. Cost this company half the price of a used car which is the AI-adoption price the CEO's memo didn't mention.
 
 **BRENDAN** *(live, genuinely taken with it, for a second)*: And they approved that?
 
 **LIAM** *(live, a dry little shrug)*: I wrote "AI" on the expense report. Approved within the hour, no questions. *(beat)* Which is silly. But it's the policy, and I'm inside it.
 
-**BRENDAN** *(live, honest, then careful)*: It's a beautiful machine, honestly. *(beat)* What's it giving you — tokens a second?
+**BRENDAN** *(live, honest, then careful)*: It's a beautiful machine, honestly. *(beat)* What's it giving you in tokens a second?
 
 **LIAM** *(live, unbothered)*: Two to five.
 
@@ -195,9 +195,9 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 **BRENDAN** *(live)*: Liam.
 
-**LIAM** *(live)*: Six minutes. Sometimes eight. It's reading four hundred files — it's allowed to take longer than a search box. I batch my questions. You learn to think before you prompt, which would do some people on that call a world of good.
+**LIAM** *(live)*: Six minutes. Sometimes eight. It's reading four hundred files, it's allowed to take longer than a search box. I batch my questions. You learn to think before you prompt, which would do some people on that call a world of good.
 
-**BRENDAN** *(live, no fight in it, just arithmetic)*: Sure. It's just — six minutes in, five tokens a second out. On the webhook ticket. How much of your day is watching it type?
+**BRENDAN** *(live, no fight in it, just arithmetic)*: Sure. It's just... six minutes in, five tokens a second out. On the webhook ticket. How much of your day is watching it type?
 
 **LIAM** *(live, and the honesty is the problem)*: Less than you'd think. *(beat)* Some.
 
@@ -207,33 +207,31 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 *(BRENDAN starts to answer, and stops. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it. There is too much in there to unpack.)*
 
-*(On BRENDAN's own screen — `AIV-054`, the audience only — he quietly types one line: "In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5." The cloud agent — the kind with tool calls — opens the handler itself, writes the diff itself, runs the test itself. Green. Done before Liam finishes his sentence. He says nothing.)*
+*(On BRENDAN's own screen he quietly types one line: "In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5." The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before Liam finishes his sentence. He says nothing.)*
 
-**LIAM** *(live, warming up — this is the part he likes)*: Watch the workflow, though. This is the part everyone skips. *(he types: "Stub a retry wrapper for the webhook delivery call. Signature and skeleton only." The model thinks. Thinks. A method assembles itself one token at a time — a clean stub, and inside it, a call to a helper that does not exist anywhere in the repo.)* There. Gave me the shape, and invented a method that doesn't exist. Looked me dead in the eye while it did it. *(no anger — he deletes the imaginary helper and starts filling in the body himself, comfortable, quick, home)* And that's fine. Because I don't ask it to be right, I ask it to type the boring part. Then I do the job. It's autocomplete, Brendan. Fancy autocomplete. That's all any of this is under the hood.
+**LIAM** *(live, warming up — this is the part he likes)*: Watch the workflow, though. This is the part everyone skips. *(he types: "Stub a retry wrapper for the webhook delivery call. Signature and skeleton only." The model thinks. Thinks. A method assembles itself one token at a time — a clean stub, and inside it, a call to a helper that does not exist anywhere in the repo.)* There. It invented a method that doesn't exist. *(no anger — he deletes the imaginary helper and starts filling in the body himself, comfortable, quick, home)* And that's fine. Because I don't ask it to be right, I ask it to type the boring part. Then I do the job. It's autocomplete, Brendan. Fancy autocomplete. That's all any of this is under the hood.
 
-**BRENDAN** *(live, careful)*: You could let it do more than stub, though. Let it run its own code — install the dependencies, run the tests, see what fails— *(he stops)*
+**BRENDAN** *(live, careful)*: You could let it do more than stub, though. Let it run its own code install the dependencies, run the tests, see what fails.... *(he stops)*
 
-**LIAM** *(live)*: No. Were you not listening at standup? You've seen the stories — rogue agents deleting production databases because somebody let them run whatever they wanted. I don't give it tool calls. It writes text. I decide what the text is worth.
+**LIAM** *(live)*: No. Were you not listening at standup? You've seen the stories, rogue agents deleting production databases because somebody let them run whatever they wanted. I don't give it tool calls. It writes text. I decide what the text is worth running.
 
-**BRENDAN** *(live, one more try, gentle)*: The hosted ones sandbox all of that now. The agent can only touch its own branch, it can't—
+**BRENDAN** *(live, one more try, gentle)*: The hosted ones sandbox all of that now. The agent can only touch its own branch, it can't...
 
-**LIAM** *(live, batting it away — reasonable, certain)*: On somebody else's computer, through a black box that changes under me on a Tuesday. No. Local, I pin the weights. What I ran in January is what I run in March. That's not paranoia, that's engineering.
+**LIAM** *(live, batting it away — reasonable, certain)*: On somebody else's computer, through a black box that changes under me on a Tuesday. No. Local, I pin the weights. What I ran in January is what I run in March. That's not paranoia, that's responsible engineering.
 
-*(On the shared screen the stub sits half machine, half Liam, the diff thickening with his handwriting — the part of the job that is still his. He asks it for stubs, so it gives him stubs, so it's a stub machine, so he was right about it all along. On Brendan's laptop, the cloud agent that has tool calls finished the whole ticket minutes ago. Brendan, again, does not say anything out loud, despite having, again, completed the task in the background.)*
+*(On BRENDAN's laptop a new tab: the security policy. "Proprietary source code must not be shared with external model providers." Owner: Liam. Last reviewed: fourteen months ago. He opens a message to Kristina and types: "re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang..." He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: "I don't know if liam is ever going to..." He stops. He holds backspace until that one is gone too.)*
 
-*(On BRENDAN's laptop — audience only — a new tab: the security policy. "Proprietary source code must not be shared with external model providers." Owner: Liam. Last reviewed: fourteen months ago. He opens a message to Kristina and types: "re: standup — the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang—" He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: "I don't know if liam is ever going to—" He stops. He holds backspace until that one is gone too.)*
+**LIAM** *(live, and here's the fact he's armed with)*: And before you say it, everyone keeps saying ten-x. I measured it. Two sprints, same kind of tickets, with the setup and without. I'm slower with it. Measurably. So either everyone else is not following the policy, or I'm the only one who checked how long feature delivery takes with the tooling the CEO is pushing.
 
-**LIAM** *(live, and here's the fact he's armed with)*: And before you say it — everyone keeps saying ten-x. I measured it. Two sprints, same kind of tickets, with the setup and without. I'm slower with it. Measurably. Not a vibe, a number. So either everyone else is measuring the applause, or I'm the only one who checked.
+*(A silence. BRENDAN doesn't win this. He can't, Liam isn't wrong that he's slower. Six-minute load bar, the five tokens a second, the struck-out diff, the beautiful expensive box doing beautifully expensive almost-nothing.)*
 
-*(A silence. BRENDAN doesn't win this. He can't — Liam isn't wrong that he's slower. The house can see the six-minute load bar, the five tokens a second, the struck-out diff, the beautiful expensive box doing beautifully expensive almost-nothing. Liam can't. He's looking at a true number and reading the wrong cause off it.)*
+**BRENDAN** *(live, a beat too long — then he lets it go, older than he was in Scene 06)*: …Yeah. No, I hear you. *(beat)* I should get back to it. Ping me if you need anything?
 
-**BRENDAN** *(live, a beat too long — then he lets it go, older than he was in Scene 06)*: …Yeah. No, I hear you. *(beat)* I should get back to it. Ping me if the webhook one gets gnarly?
+**LIAM** *(live, softening — he thinks he's been heard)*: Will do. Thanks, Brendan. *(a real, small warmth)* Good, you get it. Nobody else even looks at the code anymore.
 
-**LIAM** *(live, softening — he thinks he's been heard)*: Will do. Thanks, Brendan. *(a real, small warmth)* Good — you get it. Nobody else even looks at the code anymore.
+*(BRENDAN drops the huddle. On his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete, the same way he held backspace previously, until it's gone too. LIAM turns back to his rig, satisfied. The model puts out the next token. Then, in its own time, the one after. He watches his machine type, patient, certain, sinking.)*
 
-*(BRENDAN drops the huddle. On his laptop — `AIV-054`, the audience only — the finished retry diff sits green a moment longer, above the empty message box where the policy fix used to be. He selects the patch and holds delete, the same way he held backspace, until it's gone too. The lid closes on an empty session. LIAM turns back to his rig, satisfied, the last serious man in the room. The model puts out the next token. Then, in its own time, the one after. On the standup grid, still up in the corner, a tile marks another ticket Done — not his. He watches his machine type, patient, certain, sinking.)*
-
-*(Hold on the two screens — his, grinding and honest and slow; the closed lid beside it, finished twice over. The monitor-blue eases down.)*
+*(Liam's machine is grinding and honest and slow; Brandon's is finished twice over and sitting idol)*
 
 ---
 

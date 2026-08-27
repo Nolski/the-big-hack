@@ -39,59 +39,59 @@ Continuous — Brendan takes Liam's Slack huddle. **Liam** is live at the same d
 
 ## Script
 
-*(BRENDAN takes the huddle. On LIAM's big monitor the merged PR is already up — `AIV-016` — the diff open, scrolled halfway, the memes gone. LIAM has been sitting with this. No hello. [MUSIC: music/slackhuddle.mp3])*
+*(The slack huddle sound plays again... this time Liam is calling brandon... he noticed them in a huddle before... [MUSIC: music/slackhuddle.mp3])*
 
-**LIAM** *(live, gruff — not his comfort zone, getting it out of the way first)*: Before anything. The Kristina thing this morning — the degree line. *(a beat; this is hard for him)* That landed like shit. I know. I shouldn't have said it like that.
+**LIAM** *(live, gruff — not his comfort zone, getting it out of the way first)*: Before you say anything. The Kristina thing this morning, what I said about her degree. *(a beat; this is hard for him)* That landed like shit. I know. I shouldn't have said it like that.
 
 **BRENDAN** *(live, caught off guard he's saying it)*: …Okay. Yeah. It really did.
 
-**LIAM** *(live)*: But I wasn't *wrong* to be worried. I'm not trying to bully her — I think we're about to get burned and nobody in that room is listening, and it comes out of my mouth as… *(a small, helpless gesture)* …that. I'm bad at this. I know I'm bad at this.
+**LIAM** *(live)*: But I wasn't *wrong* to be worried. I'm not trying to bully her, I think we're about to get burned and nobody in that room is listening, and it comes out of my mouth as… *(a small, helpless gesture)* …that. I'm bad at this. I know I'm bad at this.
 
 **BRENDAN** *(live, gently)*: …Honestly? If you said it to *her* the way you just said it to me, it'd go a lot better.
 
-**LIAM** *(live, already moving on — can't stay in it)*: Yeah, well. *(beat)* Anyway. That's not why I called. The weekend. Since when do we work weekends?
+**LIAM** *(live, already moving on — can't stay in it)*: Yeah, well. *(beat)* Anyway. That's not why I called. The weekend.... Since when do we work weekends?
 
-**BRENDAN** *(live, level)*: It wasn't a weekend, Liam. It was maybe three hours Saturday because I was bored and messing around with the new Opus. Most of it happened while I was making coff—
+**BRENDAN** *(live, level)*: It wasn't a weekend, Liam. It was maybe three hours Saturday because I was bored and messing around with the new Opus. Most of it happened while I was making coffee
 
-**LIAM** *(live, rolling straight over him)*: Right. "Three hours, no big deal." That's how it always starts. Then it's the baseline. You set a precedent — you know that? Kristina was practically salivating over the idea that we'll all just give up our Saturdays now the second someone upstairs fumbles a deadline. *(certain, and he thinks this is kindness)* You'll grind yourself into the ground and call it fun, and in two years they'll have quietly rewritten what "normal" means, and you'll be on call every week for the code your agent wrote. I'm looking out for you here.
+**LIAM** *(live, rolling straight over him)*: Right. "Three hours, no big deal." That's how it always starts. Then it's the baseline. You set a precedent, you know that? Kristina was practically salivating over the idea that we'll all just give up our Saturdays. *(certain, and he thinks this is kindness)* You'll grind yourself into the ground and call it fun, and in two years they'll have quietly rewritten what "normal" means. I'm looking out for you here.
 
 **BRENDAN** *(live, a breath, choosing not to fight it)*: …Okay.
 
-**LIAM** *(live, the real reason, leaning in)*: But the code. Show me. Walk me through what you actually did — the whole thing, start to finish. I want to see how you wrote this.
+**LIAM** *(live, the real reason, leaning in)*: But the code. Show me. Walk me through what you actually did, the whole thing, start to finish. I want to see how you wrote this.
 
-**BRENDAN** *(live, easy, glad to — sharing his screen)*: Yeah, course. So — honestly the way I work now, I don't really start with the diff, I start with the plan. If you look at—
+**BRENDAN** *(live, easy, glad to — sharing his screen)*: Yeah, course. So, honestly the way I work now, I start with the cursor plan. If you look at...
 
-*(On the big monitor BRENDAN pulls something up — `AIV-017` — a plan-mode plan, then a long session transcript beginning to scroll. LIAM does not look at it. He has grabbed the diff back and is already scrolling.)*
+*(On the big monitor BRENDAN pulls something up, his cursor plan from Saturday. LIAM does not look at it. He has grabbed the diff back and is already scrolling.)*
 
-**LIAM** *(live, over him, jabbing at the screen)*: Eight hundred lines. One PR. The front-end, the key-issuance service, the auth, the deploy config — all jammed into one diff. How is anybody supposed to review this?
+**LIAM** *(live, over him, jabbing at the screen)*: Eight hundred lines. One PR. The front-end, the key-issuance service, the auth, the deploy config, all jammed into one diff. How is anybody supposed to review this?
 
-**BRENDAN** *(live)*: That's — okay, that's actually kind of my point, you don't review it by read—
+**BRENDAN** *(live)*: That's... okay, that's actually kind of my point, you don't review it by reading...
 
-**LIAM** *(live, cutting in)*: You don't review it at all, is the answer. You *can't.* Nobody read this. I could not, in good conscience, put my name on this — and I've been doing this twenty years. *(scrolling, faster)* Here. Line four hundred. This function. What does it do? Off the top of your head — what does it do and why is it shaped like this?
+**LIAM** *(live, cutting in)*: You don't review it at all, is the answer. You *can't.* Nobody read this. I could not, in good conscience, put my name on this, and I've been doing this twenty years. *(scrolling, faster)* Here. Line four hundred. This function. What does it do? Off the top of your head what does it do and why is it shaped like this?
 
-**BRENDAN** *(live, patient)*: I— I can tell you, but that's not really how I check it now, if you'd let me show you the—
+**BRENDAN** *(live, patient)*: I... I can tell you, but that's not really how I check it now, if you'd let me show you the process I follow...
 
 **LIAM** *(live, not hearing it — this is the thing he knows)*: Because *that's* what review is. You read it. Line by line. You hold the entire thing in your head at once. That's the job. That's the whole thing that separates an engineer from someone typing paragraphs at a chatbot and hitting accept.
 
-**BRENDAN** *(live, one real attempt — pulling the transcript up again)*: Liam — genuinely, give me two minutes. Let me actually show you how I reviewed it. There's the plan, there's the whole session, the tests I wrote, the way I—
+**BRENDAN** *(live, one real attempt — pulling the transcript up again)*: Liam, genuinely, give me two minutes. Let me actually show you how I reviewed it. There's the plan, there's the whole session, the tests I wrote, the way I...
 
-**LIAM** *(live, waving at the screen without looking)*: I don't need the guided tour, Brendan. I can read code. I was reading code before Cursor existed. *(flat — his standup line, back again)* And don't tell me the tests pass. The AI wrote the code *and* wrote the tests that say the code's fine. It's marking its own homework. I made this exact point three hours ago.
+**LIAM** *(live, waving at the screen without looking)*: I don't need the guided tour of Cursor, Brendan. I can read code. I was reading code before Cursor existed. *(flat — his standup line, back again)* And don't tell me the tests pass. The AI wrote the code *and* wrote the tests that say the code's fine. It's marking its own homework. I made this exact point three hours ago.
 
-**BRENDAN** *(live, quietly, the fourth time he's started a sentence he won't finish)*: …I wrote the integration tests myself, actually. Against the real partner sand—
+**BRENDAN** *(live, quietly, the fourth time he's started a sentence he won't finish)*: …I wrote the evals myself actually, against our staging env...
 
-**LIAM** *(live, over him again, certain)*: It's the same mistake everyone in that standup is making. You've all decided the thing is *smart* because it's *confident.* It is not smart. It's a very fast intern who has never once in its life said "I don't know." And you're letting it near production.
+**LIAM** *(live, over him again, certain)*: You've all decided the thing is *smart* because it's *confident.* It is not smart. It's a very fast intern who has never once in its life said "I don't know." And you're letting it near production.
 
-*(A beat. BRENDAN just… stops. He's realised he isn't going to get in. LIAM reads the silence as agreement.)*
+*(BRENDAN just… stops. He's realised he isn't going to get in. LIAM reads the silence as agreement.)*
 
-**LIAM** *(live, softening — and this is the worst part, because he means it)*: Look. I'm not doing this to be a dick. I'm trying to *help* you. You're good, Brendan — you're actually good, that's why I bother. Most of these people I wouldn't waste the breath on. I don't want to watch you turn into someone who can't work without the thing holding his hand.
+**LIAM** *(live, softening — and this is the worst part, because he means it)*: Look. I'm not doing this to be a dick. I'm trying to *help* you. You're good, Brendan, you're actually good, that's why I bother. Most of these people I wouldn't waste the breath on. I don't want to watch you turn into someone who can't work without the thing holding his hand.
 
 **BRENDAN** *(live, a long beat — he lets the whole thing go)*: …Yeah. Okay, Liam. *(quiet)* I hear you.
 
-**LIAM** *(live, satisfied, having registered none of it)*: Good. *(beat)* Split it into smaller PRs next time. And read your diffs — all of them, not the machine's summary. *(a small nod, almost warm)* You'll thank me for this in five years.
+**LIAM** *(live, satisfied, having registered none of it)*: Good. *(beat)* Split it into smaller PRs next time. And read your diffs, all of them, not the machine's summary. *(a small nod, almost warm)* You'll thank me for this in five years.
 
 **BRENDAN** *(live, flat, done trying — reaching for the door)*: …Sure. Thanks. I've gotta get back to it.
 
-*(BRENDAN drops the huddle and his light goes down — the plan and transcript still open on the screen behind where he was, unread. LIAM is alone at the desk with the diff. He scrolls it a while longer, hunting for the flaw that would prove him right. He doesn't find one. He doesn't look satisfied either.)*
+*(BRENDAN drops the huddle, the plan and transcript still open on the screen, unread. LIAM is alone at the desk with the diff. He scrolls it a while longer, hunting for the flaw that would prove him right. He doesn't find one. He doesn't look satisfied either.)*
 
 ---
 

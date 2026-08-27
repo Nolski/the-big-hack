@@ -38,52 +38,52 @@ A quick Slack call about twenty minutes later. **Brendan is live (Speaker B)** a
 
 ## Script
 
-*(A quick Slack call on the shared screen — KRISTINA in her tile, BRENDAN in his, mid-afternoon, coffee, the easy tone of two people who like each other. Below, unheard, LIAM at his desk: heads-down, half-smiling, typing — the one-line fix going in. He has no idea this call is happening.)*
+*(Later that afternoon we find Kristina and Brendan on yet another Slack huddle)*
 
-**BRENDAN** *(live, easy, pleased)*: Oh — quick thing before you drop. That signup race condition? The ghost one Liam's been chasing forever? It's done. We got it this morning.
+**BRENDAN** *(live, easy, pleased)*: Oh one more thing before you drop, that signup race condition? It's done. Liam and I got it this morning.
 
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(lighting up — genuinely glad)*
-> Stop it. The one he wouldn't put a number on? *(delighted)* Brendan, that's *brilliant.* See — this is exactly what I keep saying. You get the right two people in a huddle, you put your heads together, and the thing that's been stuck for a month just… falls out. That's the whole point of pairing. I'm made up.
+> Stop it. The one he wouldn't put a number on? *(delighted)* Brendan, that's *brilliant.* See, this is exactly what I keep saying. You get the right two people in a huddle, you put your heads together, and the thing that's been stuck for weeks just… falls out. Great work!
 
-**BRENDAN** *(live, a beat — he can't quite take that)*: …Yeah. I mean — honestly, though? It wasn't really heads-together. *(a little sheepish)* Claude already had the repo. I pointed it at the signup flow and gave it the symptom. It found the race, reproduced it locally, wrote a script for it — it even gave me screenshots of one test user inside the other's account. Then it made the fix on a branch. I basically just read the diagnosis back to him.
+**BRENDAN** *(live, a beat — he can't quite take that)*: …Yeah. I mean... honestly, though? It wasn't really heads-together. I pointed Claude at the signup flow and.... It found the race, reproduced it locally, wrote a script for it, it even gave me screenshots of one test user inside the other's account. Then it made the fix on a branch. I basically just read the diagnosis back to him.
 
-*(A small pause. Something recalibrates behind KRISTINA's eyes — not unkind, just fast.)*
+*(A small pause. Something recalibrates behind KRISTINA's eyes)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(slower now)*
-> …Wait. Hold on. *(working it out)* So — Liam. He's been on this how long? It's been sitting on the board for weeks.
+> …Wait. Hold on. *(working it out)* So Liam.... He's been on this how long? It's been sitting on the board for weeks.
 
 **BRENDAN** *(live, seeing where it's heading)*: …A while, yeah.
 
 > [!screen] VIDEO — KRISTINA · `AIV-046`
-> Weeks. And you — this morning — pointed the tool at the repo, and it found the bug, proved it and fixed it. First go.
+> Weeks. And you... this morning.... pointed Claude at the repo, and it found the bug, proved it and fixed it in one shot?
 
 **BRENDAN** *(live, quiet)*: …Kind of. Yeah.
 
-*(KRISTINA sits back. She's not gloating — if anything it unsettles her. But the number is the number, and she is a person whose whole job is the number.)*
+*(KRISTINA sits back. She's not happy like she was before with Cursor, if anything it unsettles her.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(half to herself)*
-> …Do you get how big that is, Brendan? *(not a dig — real)* That's not "a nice bit of pairing." That's the single hardest thing on our board — the thing we route to our most senior person and then just *wait* on — and it's minutes now. For anyone who knows how to use this properly. *(a breath)* That's… that changes a lot, actually.
+> *(a breath)* That's… that changes a lot, actually... it makes me think a little differently about Claude and Cursor too...
 
-**BRENDAN** *(live, stepping in for him — quick, protective)*: Okay, but — it's not like that, though. It found it fast, but the code was all laid out clean, the way *he'd* built it. Knowing the shape of it, knowing where to even look — that's the hard part, and that's all him. *(and he hears himself losing the thread)* …He's the best engineer here. That's real.
+**BRENDAN** *(live, stepping in for him — quick, protective)*: Okay, but, it's not like that, though. It found it fast, but the code was all laid out clean, the way *L*iam architected it. If the code quality and documentation wasn't as high as it was... and that's all him. *(and he hears himself losing the thread)* …He's the best engineer here, and he holds us all to a high standard of excellence
 
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(gently, not letting him off it)*
-> Would it have found it without him, though? If you'd handed it the file cold?
+> Would Claude have found it without him on the call, though? If you were working the problem by yourself?
 
-*(A beat. BRENDAN wants to say no. He fudged the truth with Liam easily enough; with KRISTINA, their relationship has room for a kind of openness he cannot bring himself to violate. He cannot lie to her the same way.)*
+*(BRENDAN wants to say no. He fudged the truth with Liam easily enough about how he diagnosed the bug; with KRISTINA, their relationship has room for a kind of openness he cannot bring himself to violate. He cannot lie to her the same way.)*
 
-**BRENDAN** *(live, reluctant)*: …Probably. Yeah. It just — saw it. *(quiet)* It didn't really need him for that part.
+**BRENDAN** *(live, reluctant)*: …Probably. Yeah. It worked pretty autonomously without much input. *(quiet)* It didn't really need him.
 
-*(That lands in the room. Neither of them says the next bit out loud. KRISTINA lets it settle — then the bright manager clicks back into place, with something new tucked behind it now.)*
+*(Neither of them says the next bit out loud. KRISTINA lets it settle, then the bright manager clicks back into place, with something new)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(brisk again, warm)*
-> Right. Well — however it got there, it's fixed, and that's genuinely great, and I get to tell my boss we have an extra engineer to work on new products this coming sprint. *(a beat)* And I want to properly get my head around this. Properly. There's something here.
+> Right. Well, however we got there, it's fixed, and that's genuinely great, and I get to tell my boss we have an extra engineer to work on new products this coming sprint.
 
-**BRENDAN** *(live, uneasy — one more, smaller)*: …Yeah. Just — do me a favour? Don't make it a thing. With Liam. He's genuinely made up we got it — happiest I've seen him in ages. Don't take that off him.
+**BRENDAN** *(live, uneasy — one more, smaller)*: …Yeah. Just, do me a favor? Don't make it a thing. With Liam. He's genuinely the happiest I've seen him in ages. I don't want to take that away from him.
 
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(stops — confused)*
 > …Wait, what do you mean? You told him you used Claude, right?
 
-**BRENDAN** *(live, caught)*: Well, no… He takes these things a little hard, you know? He put a lot of time into it.
+**BRENDAN** *(live, caught)*: Well, no… He takes these things a little hard, you know? He put a lot of time into the bug and just got so excited when we found the issue together...
 
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(not angry; genuinely challenging him)*
 > Brendan, how is Liam ever going to get better if you don't show him how to do this stuff?
@@ -95,7 +95,7 @@ A quick Slack call about twenty minutes later. **Brendan is live (Speaker B)** a
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(warm again — sincere)*
 > Well, God bless you for that. I know how thorny he is. *(a smile)* Nice work, Brendan. Really. A win is a win.
 
-*(Her tile blinks out, still smiling. BRENDAN sits a second in the quiet. Below, LIAM leans back from his desk, stretches, genuinely happy. He opens his one-line-fix branch for PR. He heard none of it. On the screen above, BRENDAN watches the empty call a moment; that same flicker crosses his face, the one he still can't name. Then he deletes his local branch — the branch Claude finished twenty minutes ago. The monitor-blue holds on the two of them: the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.)*
+*(Her tile blinks out. BRENDAN sits a second in the quiet. We now see LIAM leaning back from his desk, stretches, genuinely happy. He opens his one-line-fix branch for PR. On the screen above, BRENDAN deletes his local branch, the branch Claude finished twenty minutes ago. The monitor-blue holds on the two of them: the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.)*
 
 ---
 

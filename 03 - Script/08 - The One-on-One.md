@@ -33,10 +33,10 @@ A remote one-on-one, late afternoon: two tiles on the shared screen, Kristina in
 
 ## Script
 
-*(A remote one-on-one, late afternoon. Two tiles on the screen: KRISTINA in hers, and KARA — Head of Product, her boss — in the other, coffee in hand.)*
+*(A remote one-on-one, late afternoon. Two tiles on the screen: KRISTINA in hers, and KARA, Head of Product, her boss, in the other, coffee in hand.)*
 
 > [!screen] VIDEO — KARA · `AIV-047` *(in place of hello)*
-> Did you see what he vibe-coded this weekend?
+> Did you see what the CEO vibe-coded this weekend?
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
 > No.
@@ -78,10 +78,10 @@ A remote one-on-one, late afternoon: two tiles on the shared screen, Kristina in
 > [!screen] VIDEO — KRISTINA · `AIV-048`
 > Live. It shipped Thursday.
 
-*(A beat.)*
+*(A brief pause as Kara's confusion turns to curiosity)*
 
 > [!screen] VIDEO — KARA · `AIV-047`
-> I have it scheduled for next sprint, Kristina. It hasn't started.
+> I have it scheduled for next sprint, Kristina, what do you mean?
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
 > I know. It went early. Two of our biggest integration partners built on it over the weekend, and support has been quiet since launch. Honestly it's the best feedback we've had on anything we've shipped.
@@ -90,35 +90,35 @@ A remote one-on-one, late afternoon: two tiles on the shared screen, Kristina in
 > That's the portal launch everyone's been forwarding me?
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
-> The API service is most of what's under it.
+> Yeah, that's the API service
 
 > [!screen] VIDEO — KARA · `AIV-047`
 > Huh.
 
-*(She looks at the shared roadmap again, like it's lying to her.)*
+*(She looks at the shared roadmap again, already trying to calculate what that means for the coming sprints)*
 
 > [!screen] VIDEO — KARA · `AIV-047`
-> So what happens to the sprint I planned around it?
+> So the sprint I planned around it...
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
-> We pull the next thing forward. And we can actually staff it properly, because Liam finally closed out the signup work. He's free for the first time in a month.
+> We pull the next thing forward. And we can actually staff it properly, because Liam finally closed out the signup work. He's free for the first time in weeks.
 
 > [!screen] VIDEO — KARA · `AIV-047`
-> Then I want him in planning from day one. I'd rather have the argument on Monday than find out on Thursday the whole shape is wrong.
+> Oh... okay let's involve him early then, I'd rather have the argument before design starts than after we ship
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
-> Agreed.
+> Uh... yeah that makes sense
 
-*(Kara stops sharing. Her tile fills the screen again. She leans back.)*
+*(Kristina doesn't love how everyone has to work around Liam, but she also has a new found appreciation for him after chatting with Brandon)*
 
 > [!screen] VIDEO — KARA · `AIV-047`
-> What's going on over there?
+> What's going on?
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
 > What do you mean?
 
 > [!screen] VIDEO — KARA · `AIV-047`
-> I mean a month ago I couldn't get a button moved without a discovery phase. Now a service I scheduled for next sprint ships before it starts. Something changed. What do I point to?
+> I mean a month ago I couldn't get a button moved without weeks of work. Now a service I scheduled for next sprint ships before it starts.
 
 *(Kristina takes a moment. She thinks about Brendan's weekend, the demo he gave her, the memo the CEO sent the whole company about adopting AI. There are longer answers, and there are rooms where she wouldn't give them.)*
 
@@ -132,7 +132,7 @@ A remote one-on-one, late afternoon: two tiles on the shared screen, Kristina in
 > Cursor. Claude Code. That family of things.
 
 > [!screen] VIDEO — KARA · `AIV-047`
-> And that's the difference?
+> And that's making this big of a difference?
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
 > It's a big part of it. We have a real Claude power user on the team now.
@@ -152,13 +152,13 @@ A remote one-on-one, late afternoon: two tiles on the shared screen, Kristina in
 > Yeah.
 
 > [!screen] VIDEO — KARA · `AIV-047`
-> I'd like to hear more about that. Not the memo version. What he actually does all day.
+> I'd like to hear more about that. Not the AI adoption memo version the CEO wrote. What's actually working from boots on the ground.
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
 > I can set that up.
 
 > [!screen] VIDEO — KARA · `AIV-047`
-> Do. And be a little careful how this travels upstairs.
+> Do. And be a little careful how this travels upward.
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
 > Careful how?
@@ -169,7 +169,7 @@ A remote one-on-one, late afternoon: two tiles on the shared screen, Kristina in
 *(Kristina smiles at that. It's the joke she would have made herself a month ago. She doesn't add anything to it.)*
 
 > [!screen] VIDEO — KARA · `AIV-047`
-> I like him. That's not what I'm saying. I'm saying if you tell him "Brendan shipped a quarter of the roadmap in a weekend," the next thing you'll manage is everyone's weekend. Let me understand what's real first.
+> I like our CEO. That's not what I'm saying. I'm saying if you tell him "Brendan shipped a quarter of the roadmap in a weekend," the next thing you'll manage is everyone's weekend. Let me understand what's real first.
 
 > [!screen] VIDEO — KRISTINA · `AIV-048`
 > That makes sense.
@@ -179,7 +179,7 @@ A remote one-on-one, late afternoon: two tiles on the shared screen, Kristina in
 
 *(Her tile drops off. Kristina sits a moment in the empty call, then closes it.)*
 
-*(Later, at her desk, she searches her inbox and reopens the CEO's memo on adopting AI — the one he sent the whole company. On her screen: SUBJECT — AI AND HOW WE WORK.)*
+*(Later, at her desk, she searches her inbox and reopens the CEO's memo on adopting AI, the one he sent the whole company. On her screen: AI — HOW WE WORK.)*
 
 > [!screen] VIDEO — THE CEO · `AIV-049` *(memo voice-over, measured)*
 > AI is not an innovation project. It is becoming part of the job. Every team should be finding out, now, where these tools are useful and where they fail, because that knowledge is the advantage.

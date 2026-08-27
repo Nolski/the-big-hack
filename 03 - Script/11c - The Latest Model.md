@@ -42,17 +42,17 @@ A remote one-on-one, late morning: **Brendan live (Speaker B)** at his desk, **K
 *(A remote one-on-one, late morning. Two tiles: KRISTINA in one, BRENDAN in the other, mug in hand. A few days after the standup. [MUSIC: music/slackhuddle.mp3])*
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(working down a list, easy)*
-> …so comms are handled, the launch post goes out Thursday. That's my whole list. *(brighter)* Oh — and Liam closed the webhook ticket. Did you see?
+> Oh and Liam closed the webhook ticket. Did you see?
 
 **BRENDAN** *(live)*: I saw.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
-> A week, for a retry loop. I know. But it shipped, it works, and honestly? I'm just happy he's in. Six weeks ago he was posting memes about vibe-coding. Now he's expensed a whole computer and he comes to standup with opinions about inference. For Liam, that's a lot of progress — he's adopting new tooling.
+> It took a while but honestly? I'm just happy he's engaged. Six weeks ago he was posting memes about vibe-coding. Now he's expensed a whole computer and he comes to standup with opinions about inference. For Liam, that's a lot of progress, he's adopting new tooling.
 
 **BRENDAN** *(live, a small laugh)*: It's something.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(the but)*
-> I could do without standup turning into a panel discussion, though. Three this week. I asked for a doc — they wrote the doc. It's eleven pages, and now they're fighting in the comments.
+> I could do without standup turning into a panel discussion, though. Three this week. I asked for a doc, they wrote the doc. It's eleven pages, and now they're fighting in the comments.
 
 **BRENDAN** *(live)*: I've been staying out of the comments.
 
@@ -62,11 +62,11 @@ A remote one-on-one, late morning: **Brendan live (Speaker B)** at his desk, **K
 **BRENDAN** *(live)*: Yeah. I saw that.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(without any heat in it; a thing she has decided not to mind)*
-> And Marcus has now explained my own meeting to me twice. *(a small shrug)* He means well. He's the only one who said anything when Liam did the degree thing, so.
+> And Marcus has now explained my own meeting to me twice. *(a small shrug)* He means well. He can just be a little...
 
 **BRENDAN** *(live, not sure what to do with that)*: Right.
 
-*(A beat. Kristina glances off, then back — she's been carrying this since Friday.)*
+*(Kristina glances off, then back, she's been carrying this since Friday.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(lower)*
 > Can I tell you something? This stays here.
@@ -74,50 +74,50 @@ A remote one-on-one, late morning: **Brendan live (Speaker B)** at his desk, **K
 **BRENDAN** *(live)*: Always.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
-> I got let into a Zoom early on Friday — leadership thing — and the CEO was still wrapping his last call. Board member, I'm pretty sure. I don't think either of them clocked I was in the room. *(beat)* The board guy was so relaxed about it. He said — and this is close to word for word — "a lot of companies are going through the same challenges, and the reality is you probably need to performance manage a bunch of them out."
+> I got let into a Zoom early on Friday, leadership thing, and the CEO was still wrapping his last call with a board member, I'm pretty sure. I don't think either of them clocked he was off mute. *(beat)* The board guy was so relaxed about it. He said, and this is close to word for word, "a lot of companies are going through the same challenges, and the reality is you probably need to performance manage a bunch of them out."
 
 **BRENDAN** *(live)*: …Performance manage who out?
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > I don't know. The call ended about ten seconds after I joined. *(beat)* I don't know exactly what they were talking about, but it sounded AI-adoption related. *(a small, not-quite laugh)* Obviously you and Liam are going to be fine. But I'm worried about myself.
 
-*(A beat. Brendan starts to reassure her — and lands somewhere else.)*
+*(Brendan starts to reassure her and lands somewhere else.)*
 
 **BRENDAN** *(live, carefully)*: …Is Liam going to be fine?
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
-> What do you mean? He's adopting. You've seen it — he's in.
+> What do you mean? He's adopting. You've seen it, he's in.
 
-**BRENDAN** *(live)*: I don't think Liam's setup is really that productive. I sat with him for an hour — he walked me through the whole rig. And it's genuinely impressive. It's real engineering. *(beat)* And it's making him slower. He told me himself: he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something.
+**BRENDAN** *(live)*: I don't think Liam's setup is really that productive. I sat with him for an hour and he walked me through the whole rig. And it's genuinely impressive. It's real engineering. *(beat)* And it's making him slower. He told me himself: he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > Slower how? He's four weeks in.
 
-**BRENDAN** *(live, choosing the words)*: It's not the four weeks. The model that fits on that box is a year behind what the rest of the team is on, and he won't let it *do* anything. No tools, no tests, no network. He asks it for stubs, it gives him stubs, and he fills in the rest by hand. He calls it fancy autocomplete. He's proud that's all it is. *(beat)* He's trying, Kristina. Genuinely. But what he's built is a very expensive way of proving a point.
+**BRENDAN** *(live, choosing the words)*: It's not the four weeks. The model that fits on that box is a year behind what the rest of the team is on, and he won't let it *do* anything. No tools, no tests, no network. He asks it for code, it gives him bad code, and he fills in the rest by hand. He calls it fancy autocomplete. He's proud that's all it is. *(beat)* What he's built is a very expensive way of proving a point.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(pushing back, not unkind)*
-> Okay — but do you hear yourself, a little? You keep a document called "Things it gets wrong." You've got rules files older than some of our repos. You told me the whole skill was catching it — I watched you correct a made-up endpoint like you were marking a kid's homework. Nobody stood over *you* calling the tinkering unproductive. The tinkering is what sold me. He's doing exactly what you did. It's just pointed somewhere you wouldn't point it.
+> Okay but do you hear yourself, a little? You keep a document called "Things it gets wrong." You've got rules files older than some of our repos. You told me the whole skill was catching it when it makes mistakes, I watched you correct a made-up endpoint. Nobody stood over *you* calling the tinkering unproductive. The tinkering is what sold me. He's doing exactly what you did. It's just pointed somewhere you wouldn't point it.
 
 *(A pause. This is the part he's been sitting on.)*
 
 **BRENDAN** *(live)*: …Honest answer? I'm not sure the tinkering matters anymore.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
-> Meaning what?
+> What do you mean? Of course it does.
 
-**BRENDAN** *(live, like it costs him)*: I went into that doc last week to add an entry, and I ended up deleting half of it instead. Whole sections about problems I haven't seen since spring. The made-up endpoints — that was real, that was every week for a year. The new models just don't do it. Not unless you run the older models. *(beat)* I cut my rules file by a third last month, to see what would happen. Nothing got worse. *(quieter)* Most of my setup is instructions for a model that doesn't exist anymore. I keep it out of habit.
+**BRENDAN** *(live, like it costs him)*: I went into that doc last week to add an entry, and I ended up deleting half of it instead. Whole sections about problems I haven't seen since spring. The made-up endpoints... that was real. The new models just don't do it. Not unless you run the older models. *(beat)* I removed my rules file recently, to see what would happen. Nothing got worse. *(quieter)* Most of my setup is instructions for a model that I don't use anymore.
 
 > [!screen] VIDEO — KRISTINA · `AIV-056` *(a beat)*
 > Huh.
 
-**BRENDAN** *(live)*: And look — Liam being slow is Liam's sprint. We'd absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position — out loud, at standup, in an eleven-page doc — is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the new engineers decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. That could genuinely hurt us.
+**BRENDAN** *(live)*: And look, Liam being slow is normal Liam. We'll absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position, out loud, at standup, in an eleven-page doc, is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the new engineers decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. That could genuinely hurt us.
 
-*(Kristina sits with it. Then, leaning in — warm, and completely sure.)*
+*(Kristina sits with it. Then, leaning in warm, and completely sure.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-056`
-> Or flip it around. Maybe you're so far inside this stuff you can't see yourself doing it anymore. You say the new models don't need correcting — Brendan, I've watched you work. You know what to ask for. You know what to check, and when it's lying, and when to close the window and write it yourself. You think the model got smart. I think half of what you're calling "the model" is you, and you can't tell anymore, because it's automatic. *(beat)* Liam has that too. Twenty-something years of it. He just has to find his own road in, and he's not going to find it with the whole team watching through the window. Let him experiment. We asked him to get on the boat — he's on the boat. I'm not going to stand over him critiquing the rowing.
+> Or flip it around. Maybe you're so far inside this stuff you can't see yourself doing it anymore. You say the new models don't need correcting, Brendan, I've watched you work. You know what to ask for. You know what to check, and when it's lying, and when to close the window and write it yourself. You think the model got smart. I think half of what you're calling "the model" is you, and you can't tell anymore, because it's automatic. *(beat)* Liam has that too. Twenty-something years of it. He just has to find his own road in. Let him experiment. We asked him to get on the boat, he's on the boat. I'm not going to stand over him critiquing the rowing.
 
-*(A long beat. Brendan starts to say something — the sentence he's deleted twice — and puts it down again.)*
+*(Brendan starts to say something, the sentence he's deleted twice, and puts it down again.)*
 
 **BRENDAN** *(live)*: …Yeah. *(beat)* Maybe.
 
@@ -129,29 +129,27 @@ A remote one-on-one, late morning: **Brendan live (Speaker B)** at his desk, **K
 > [!screen] VIDEO — KRISTINA · `AIV-056`
 > Go. This was useful, honestly.
 
-*(BRENDAN drops the call and turns back to his own board — still lit, still there, already onto something else. Hers sits alone in the call for a moment. She won. She closes the window.)*
+*(BRENDAN drops the call and turns back to his own board still lit, still there, already onto something else. Hers sits alone in the call for a moment. She won. She closes the window.)*
 
-*(Her desk, after. The launch post is open in the next tab, waiting. She doesn't go to it.)*
-
-*(She opens Cursor instead. Finds the model dropdown — the one she needed help finding, once — and picks the newest Claude at the top of the list. Deliberately. Like she's checking something.)*
+*(Kristina opens cursor. Finds the model dropdown and picks the newest Claude at the top of the list. Deliberately. Like she's checking something.)*
 
 *(She types, in her own words, the way you'd brief a contractor: "Build a Slack bot that collects the team's standup updates before the meeting and posts one summary thread. Same workspace as the Jira bot.")*
 
-*(On screen — `AIV-058` — the plan writes itself out. A form, a scheduler, a summary post. She reads it the way Brendan taught her: slow, looking for the lie. Every endpoint in it is real. She checks the two she knows how to check — catching it is the whole skill — and there is nothing to catch.)*
+*(The plan writes itself out. A form, a scheduler, a summary post. She reads it the way Brendan taught her: slow, looking for the lie. Every endpoint in it is real. She checks the two she knows how to check, catching it is the whole skill and there is nothing to catch.)*
 
 *(Then the machine asks her a question. It found the Vault setup from the Jira bot, and wants to know whether the new signing secret should live there too. It is, almost word for word, the sentence she had to type at it six weeks ago. She looks at it for a second. She types "yes.")*
 
-*(It writes the tests. Runs them. Green. The install dialog — Approve / Deny. She approves. In a muted test channel, the bot posts its first summary — labeled EXAMPLE, drawn from nothing, formatted better than her minutes.)*
+*(It writes the tests. Runs them. Green. The install dialog Approve / Deny. She approves. In a muted test channel, the bot posts its first summary labeled EXAMPLE, drawn from nothing, formatted better than her minutes.)*
 
 *(Start to finish: about four minutes. The demo took longer than that, and the demo had Brendan in it.)*
 
-*(She sits back. Something is moving in her chest and she can't get a name on it. Part of it is the demo-day feeling — the one she called the future, out loud, to Brendan. The rest is colder, and she doesn't look at it straight.)*
+*(She sits back. Something is moving in her chest and she can't get a name on it. Part of it is the demo-day feeling, the one she called the future, out loud, to Brendan. The rest is colder, and she doesn't look at it straight.)*
 
-*(She thinks about Brendan deleting half his doc to see what would happen. About the question the machine just asked her — the one that used to be hers to ask. An hour ago she stood up for the tinkering, and won.)*
+*(She thinks about Brendan deleting his rules to see what would happen. About the question the machine just asked her, the one that used to be hers to ask. An hour ago she stood up for the tinkering, and won.)*
 
 *(For a second the sentence from Friday sits right next to the thing she just watched take four minutes, and they feel like the same shape. You probably need to performance manage a bunch of them out. She doesn't finish the thought.)*
 
-*(She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder — there and gone.)*
+*(She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.)*
 
 *(Her calendar chimes: the next thing. She mutes the test channel, straightens, and goes back to her day.)*
 

@@ -39,133 +39,133 @@ Continuous with the cold open — the standup grid has emptied to just two tiles
 
 ## Script
 
-*(The standup grid is down to two tiles now: KRISTINA and BRENDAN. Below them LIAM's desk sits dark and empty — he's gone. The instant the room is just the two of them, KRISTINA's bright standup-runner brightness drops away. A smaller, realer voice. [MUSIC: music/slackhuddle.mp3])*
+*(The slack huddle sound starts playing... Kristina is calling Brandon [MUSIC: music/slackhuddle.mp3])*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(quiet, just to Brendan now)*
-> …Hey. Off the record — was that out of line, or is it just me? The degree thing. *(a breath)* I've been sitting here half-deciding whether it's an HR conversation.
+> …Hey. Liam's comment about my Degree. *(a breath)* I've been sitting here half-deciding whether it's an HR conversation.
 
-**BRENDAN** *(live, caught between them, careful)*: …Honestly? The degree line wasn't okay. *(but)* But — he's not a bad guy. He's thorny. He's also the best engineer I've worked with — I've learned more from him than from anyone here. You just learn to work around the edges of him.
+**BRENDAN** *(live, caught between them, careful)*: …Honestly? It wasn't okay. *(but)* But he's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
 > "Work around him." That's the job, is it.
 
 **BRENDAN** *(live, a small, honest shrug)*: …Kind of? Sometimes. *(beat)* I don't think HR fixes him. I think it just makes the next standup worse for both of you.
 
-*(She sits with it. Lets it go — for now.)*
+*(She sits with it. Lets it go for now.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(changing the subject — and something underneath it)*
-> …Okay. Different thing. *(lighter, but the degree comment still sitting in her chest)* I've been meaning to actually try this stuff myself — Cursor, Claude, all of it. Everyone's shipping circles around me and I'm managing it from the outside. I don't love feeling behind on it. *(a beat, almost reluctant to ask)* Would you actually show me how you use it? Properly — not the demo version.
+> …Okay. *(lighter, but the degree comment still sitting in her chest)* I actually wanted to talk to you about something else.. vibe coding... It seems like recently when Opus 4.5 dropped something changed, and I haven't had a chance to tinker with any of it. Can you show me your setup?
 
-**BRENDAN** *(live, lighting up)*: Yeah — happily. *(honest)* Fair warning, it's rougher than the demos make it look. But it's honestly the most fun I've had in years. *(thinks)* Easiest way in is to build something real. That ChatOps bot you keep asking eng for — close a Jira ticket from Slack? Nobody's had time. Let's just… try it. Right now.
+**BRENDAN** *(live, lighting up)*: Yeah happily. *(honest)* Fair warning, it's rougher than you might think. But it's honestly the most fun I've had in years. *(thinks)* Let's build something real together. You know that ChatOps bot you keep saying we need, close a Jira ticket from Slack? Nobody's had time. Let's just… try it. Right now.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(skeptical, game)*
-> I mean — I've watched half of Twitter vibe-code a startup over a weekend. I've just never actually driven one of these myself.
+> I mean I've watched half of Twitter vibe-code a startup over a weekend.... your right, this is fun
 
-**BRENDAN** *(live)*: Perfect — that's kind of the point, you don't have to. Open Cursor. Top right — put it in plan mode. Then just tell it what you want, like you'd brief a contractor. Your own words.
+**BRENDAN** *(live)*: Perfect. Open Cursor. Top right, put it in plan mode. Then just tell it what you want, like you'd brief a contractor. Your own words.
 
-*(KRISTINA leans in, hunting the interface, narrating it like the machine might bite.)*
+*(KRISTINA leans in, hunting the interface...)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(lost for a second)*
-> …Wait, which one's plan mode? There's like four of these.
+> …help me out...
 
-**BRENDAN** *(live, easy)*: Ha — yeah, that trips everyone up. The dropdown, top. Not "agent" — the one under it. There.
+**BRENDAN** *(live, easy)*: Ha yeah, the UI trips everyone up. The dropdown, top. Not "agent", "Plan", the one under it. There.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(reading as she types)*
-> Okay… "Build a Slack bot so our team can close Jira tickets from a slash command — slash-jira-done — and post back a clean confirmation." *(looks up)* …and I just send it?
+> Okay… "Build a Slack bot so our team can close Jira tickets from a slash command, slash-jira-done, and post back a clean confirmation."
 
 **BRENDAN** *(live, grinning)*: Yep. Send it.
 
-*(She hits enter. A plan streams out on screen — steps, files, an architecture.)*
+*(She hits enter. A plan streams out on screen, steps, files, an architecture.)*
 
-*(On screen — `AIV-014` — the plan writes itself out: a Slack slash-command handler, a Jira client, a deploy config. It looks authoritative. At the foot of it, a prompt waits — "Proceed?")*
+*(The plan: Slack slash-command handler, a Jira client, a deploy config. It looks authoritative. At the foot of it, a prompt waits "Proceed?")*
 
-**BRENDAN** *(live, scanning it — the practiced eye, slowing her down)*: Okay — see, this is the part people skip. It looks confident, but it's guessing. *(points)* Look — it invented a Jira endpoint. "Tickets-slash-close." That's not a real call; that doesn't exist. And down here — it wants to paste the API token straight into the code.
+**BRENDAN** *(live, scanning it — the practiced eye, slowing her down)*: Okay see, this is the part people skip. It looks confident, but it's guessing. This is actually exactly what Liam was talking about. *(points)* Look, it invented a Jira endpoint. "Tickets-slash-close." That's not a real call; that doesn't exist. And down here, it wants to paste the API token straight into the code.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(deadpan, the penny dropping)*
-> …hardcode the credentials. *(a dry beat)* So Liam wasn't just being dramatic this morning. It literally just tried to do the exact thing.
+> …hardcode the credentials. *(a dry beat)* So Liam wasn't just being dramatic this morning....
 
-**BRENDAN** *(live, a small laugh)*: No — he's not wrong about this part. It'll say all of it with a completely straight face. That's the whole skill now: catching it. You don't rewrite it — you correct it. Tell it.
+**BRENDAN** *(live, a small laugh)*: No, he's not usually wrong ... but what he left off is the whole skill now is catching it.. Tell it.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(typing, getting it)*
-> "Use the real Jira REST API — verify the endpoints actually exist — and keep the token in Vault, nothing hardcoded." *(aside, dry)* See, I do listen on the security stuff.
+> "Research the real Jira REST API, verify the endpoints actually exist and keep the token in Vault, nothing hardcoded." *(aside, dry)* See, I do listen on the security stuff.
 
-**BRENDAN** *(live)*: Exactly. And make it check its own work — have it write tests and run them against the sandbox before it touches anything real. *(beat)* Okay — run it.
+**BRENDAN** *(live)*: Exactly. And make it check its own work; have it write tests and run them against the sandbox before it touches anything real. *(beat)* Okay... run it.
 
-*(They run it. Files build on screen — quick, steady. A row of sandbox tests goes green.)*
+*(They run it. very quickly hundreds of lines of code get generated)*
 
-**BRENDAN** *(live, nodding at the green)*: There — its own tests pass. Now it wants to install to your Slack.
+**BRENDAN** *(live, nodding at the green)*: There, its own tests pass. Now it wants to install to your Slack.
 
-*(A dialog box on screen — `AIV-014`: the Slack app and Jira integration are built. "Install the Slack app to your workspace now?" — buttons: Approve / Deny.)*
+*(A dialog box on screen the Slack app and Jira integration are built. "Install the Slack app to your workspace now?" buttons: Approve / Deny.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> …It's asking me. I just approve it?
+> …It's asking me. I just approve it without reading the code?
 
-**BRENDAN** *(live)*: Approve. It's your workspace.
+**BRENDAN** *(live)*: Yup..
 
 *(She clicks. A green check.)*
 
-**BRENDAN** *(live)*: There — it's live in your Slack now. Go on — close a real one.
+**BRENDAN** *(live)*: There, it's live in your Slack now. Try it out
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> Right. Give me one of yours — what have you got open?
+> Right. Give me one of yours, what have you got open?
 
-**BRENDAN** *(live)*: Oh — *(beat)* sorry, I haven't got any in there. I've been tracking my stuff in Linear.
+**BRENDAN** *(live)*: Oh *(beat)* sorry, I haven't got any in there. I've been tracking my stuff in Linear since the launch
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> …Linear.
+> …Linear...?
 
-**BRENDAN** *(live)*: It's another one of these — same idea, but the AI's built into it, it triages and links things up by itself. *(quickly)* I'll send you the board, it's all on there. And I can move it across to Jira if you'd rather, genuinely, it's no bother — I just found it fits how I work a bit better.
+**BRENDAN** *(live)*: Yeah I find it a little easier to use than Jira, I'm sorry if that messes our workflows up
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(waving it off, entirely warm)*
-> God, no, don't do that. Work however makes you most productive — that's the whole point of any of this.
+> Work however makes you most productive, that's the whole point of any of this...
 
-**BRENDAN** *(live)*: *(beat)* Are you sure that's alright? Because I'm still fairly new, and if there's a process thing I'm supposed to—
+**BRENDAN** *(live)*: *(beat)* Are you sure that's alright? Because I'm still fairly new, and if there's a process thing I'm supposed to follow...
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> Brendan. Honestly. *(beat)* Send me the board and I'll pull it in — I'll figure it out my end. Do the work in whatever gets you moving fastest. *(warm)* That's what matters, and that's what gets you noticed.
+> Brendan. Honestly. *(beat)* Send me the board and I'll cross post it into Jira, I'll figure it out my end. Do the work in whatever gets you moving fastest. *(warm)* That's what matters, and that's what gets you noticed.
 
 **BRENDAN** *(live)*: *(beat)* …Okay. Thanks.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(typing into Slack, narrating)*
-> I'll use one of mine, then. Okay… slash, jira, done, P-R-O-J four-twelve…
+> Anyway I'll use one of mine for the test, then. Okay… slash, jira, done, P-R-O-J four-twelve…
 
-*(She hits enter. Instead of a confirmation, Slack throws back a red error — a permissions failure the sandbox never saw.)*
+*(She hits enter. Instead of a confirmation, Slack throws back a red error , a permissions failure)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(a little vindicated)*
-> Ha. Okay — so it doesn't just work.
+> Ha. Okay so it doesn't just work.
 
-**BRENDAN** *(live, completely unbothered, almost cheerful)*: Nope — and *that's* the part the demos skip. It passed its own tests, then hit something only your real workspace has. *(he copies the whole error, pastes it straight back in)* Half the time you don't even read it — you just hand it back its own mess and tell it to fix it.
+**BRENDAN** *(live, completely unbothered, almost cheerful)*: Nope and *that's* the part the twitter vibe startups leave off. It passed its own tests, then hit something only your real workspace has. *(he copies the whole error, pastes it straight back in)* Half the time you don't even read it you just hand it back its own mess and tell it to fix it.
 
-*(On screen — `AIV-014` — the agent reads the error, adds the missing Slack permission, redeploys.)*
+*(She pastes the error, the agent reads the error, adds the missing Slack permission, redeploys.)*
 
-**BRENDAN** *(live)*: Okay — try it again.
+**BRENDAN** *(live)*: Okay, try it again.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(typing again)*
 > …slash, jira, done, four-twelve.
 
-*(She hits enter. This time Slack pings back: "PROJ-412 — Closed." Behind it, on the board, the card slides over to Done.)*
+*(She hits enter. This time Slack pings back: "PROJ-412 Closed." Behind it, on the board, the card slides over to Done.)*
 
-*(On screen — `AIV-014` — under the green confirmation, in small grey text neither of them reads: "…and 3 linked issues resolved." The board quietly shuffles three more cards to Done.)*
+*(under the green confirmation, in small grey text neither of them reads: "…and 3 linked issues resolved." The board quietly shuffles three more cards to Done.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(a stunned beat, then genuinely — but measured)*
-> …it actually closed it. From Slack. That's a real ticket. *(beat)* Okay. Yeah — I get why you like this.
+> …it actually closed it. *(beat)* Okay. Yeah, I get why you said this is fun
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(lightly challenging)*
-> …Although — if it face-plants like that on something this basic, how much time is it really saving you?
+> …Although if it face-plants like that on something this basic, how much time is it really saving you?
 
-**BRENDAN** *(live, easy, not defensive)*: …Think about it for a second. The whole thing — the plan, the build, the install, that error, the fix, the ticket — start to finish, that was maybe two minutes.
+**BRENDAN** *(live, easy, not defensive)*: …Think about it for a second. The whole thing, the plan, the build, the install, that error, the fix, the ticket, start to finish, that was maybe two minutes.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(a beat, then a small, conceding laugh)*
 > …Yeah. Okay. That was a dumb question.
 
-**BRENDAN** *(live)*: It's a fair question the first ten times.
+**BRENDAN** *(live)*: No it's a fair question, I feel like we spend half of standup arguing about it
 
-*(She glances over at his shared screen — really looks at it for the first time: pinned tabs, a session transcript, a long personal doc.)*
+*(She glances over at his shared screen, really looks at it for the first time: pinned tabs, a session transcript, a long personal doc.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(reading it off his screen)*
-> …wait. "Things it gets wrong." Is that — you keep a whole doc?
+> …wait. "Things it gets wrong." Is that a doc you're maintaining?
 
-**BRENDAN** *(live, a little sheepish, brushing past it)*: Oh — that. Yeah, it's nothing, just stuff I've hit—
+**BRENDAN** *(live, a little sheepish, brushing past it)*: Oh that. Yeah, it's nothing, just stuff I've hit, I feed it back into the model so it knows what to avoid
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(not letting it go — the realization is hers)*
 > Brendan, that's not nothing. Rules files, a checklist, that whole doc… *(it lands)* Everyone talks about this like it's a magic button. It's not, is it. You've put a *stupid* amount of work into making it look this easy.
@@ -173,11 +173,11 @@ Continuous with the cold open — the standup grid has emptied to just two tiles
 **BRENDAN** *(live, deflecting — genuinely, into the thing he loves)*: …I mean, it's the coolest thing I've ever gotten to do. I don't really think of it as work.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(quiet — half to herself, the thought landing)*
-> …It's obviously where all of this is going. *(a glance at LIAM's dark, empty tile)* And you got in early. That was smart of you.
+> …It's obviously where the industry is headed *(a glance at LIAM's dark, empty tile)* and you clearly have a head start on half the team.
 
-**BRENDAN** *(live, not catching the weight of it)*: …Anyway — I've gotta run, got some actual work to do. Later?
+**BRENDAN** *(live, not catching the weight of it)*: …Anyway, I've gotta run, got some work to do. Later?
 
-*(Her tile blinks out, still glowing — the thought about Liam left unfinished, hanging in the quiet. BRENDAN sits a moment — and then a Slack huddle request lights his screen. From LIAM.)*
+*(He drops. The thought about Liam left unfinished, hanging in the quiet.)*
 
 ---
 

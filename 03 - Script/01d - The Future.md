@@ -40,83 +40,79 @@ Straight off the PR review — **Brendan**, still sitting with how the Liam call
 
 ## Script
 
-*(BRENDAN, still sitting with how the Liam call went, rubs his face — then starts a Slack huddle. KRISTINA picks up, still glowing from the demo. [MUSIC: music/slackhuddle.mp3])*
+*(BRENDAN, still sitting with how the Liam call went, rubs his face, then starts a new Slack huddle. KRISTINA picks up, still glowing from the demo. [MUSIC: music/slackhuddle.mp3])*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(bright, still lit up)*
-> Hey! Okay, I've already closed four tickets from Slack, I am *obsessed,* I keep finding reasons to—
+> Hey! Okay, check this out, I just got the slackbot to work with github, so you can close a jira ticket and include the github PR...
 
-**BRENDAN** *(live, a tired half-smile)*: Ha — good. Listen, quick thing. About this morning. *(beat)* I talked to Liam after. For what it's worth — he actually felt bad. About the degree line. Brought it up himself, first thing, unprompted. Said he shouldn't have said it like that.
+**BRENDAN** *(live, a tired half-smile)*: Ha, good. Listen, quick thing. About what Liam said this morning. *(beat)* I talked to him. For what it's worth, he actually feels bad. About mentioning your education. Brought it up himself, first thing, unprompted. Said he shouldn't have said it.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(a beat, genuinely thrown)*
-> …Huh. *(beat)* Liam said that. Out loud. *(a small, dry laugh)* I honestly did not know "I was out of line" was in his vocabulary.
+> …Huh. *(beat)* Liam said that? Out loud? *(a small, dry laugh)* I honestly did not know empathy was something he was capable of.
 
-**BRENDAN** *(live)*: Yeah, it surprised me too. He's not *trying* to be a monster. He's just really bad at the part where other people are in the room.
+**BRENDAN** *(live)*: Yeah, it surprised me too. He's not *trying* to be a monster. He's just really bad at... well... you know... he's self aware though.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(softening, reconsidering)*
-> …Okay. That actually reframes it a little. *(beat)* Because — can I say something? The thing he said about the code. That it writes its own tests, so of course they pass. Marking its own homework. *(beat)* I dismissed it in the moment because of *how* he said it. But that's not nothing, is it? That sounds like a real concern. If he felt bad enough to walk the tone back, maybe I should actually be hearing the technical part.
+> …Okay. That actually reframes it a little. The thing he said about the code. That it writes its own tests, so of course they pass. Marking its own homework. *(beat)* I dismissed it in the moment because I *w*as obviously upset with him. But he's not wrong about it, is he? It sounds like a real concern. Maybe I should actually be hearing the technical part, it's just frustrating when every week it feels like we can't get through a normal standup.
 
-**BRENDAN** *(live, lighting up — this is the thing he's been dying to explain)*: Okay — so that is *exactly* the part I want to show you, because it's the most important bit and he's half right. You *can't* let it grade its own homework. But that's not how you're meant to do it. Can I show you how I actually review this stuff? Two minutes.
+**BRENDAN** *(live, lighting up — this is the thing he's been dying to explain)*: I'm actually really happy to hear you say that. It's important and he's half right. You *can't* let it grade its own homework. But that's not how you're meant to do it. Can I show you how I actually review this stuff? It'll take two minutes.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> Please. Yes. Show me everything.
+> Please. Yes. Show me.
 
-*(BRENDAN shares his screen — `AIV-017` — a plan-mode plan, then a session transcript scrolling.)*
+*(BRENDAN shares his screen, a plan-mode plan.)*
 
-**BRENDAN** *(live)*: So the thing everyone pictures is: you read eight hundred lines of AI code top to bottom. Nobody can do that — you go blind by line two hundred, human or machine. So you don't start with the code at all. You start *here* — *(the plan)* — this is the plan it wrote *before* it touched a single file. The architecture, the tradeoffs, where the secrets go. That's two pages, and that's where the real decisions live. I read *that* like a hawk.
+**BRENDAN** *(live)*: So the thing liam mention this morning: you read eight hundred lines of AI code top to bottom. Nobody can do that, you'd go blind by line two hundred, that's actually true regardless of who wrote it. So for years human written code was split into smaller patches that are easier to review. But imagine you joined a new company and needed to learn how a service worked. You wouldn't read all the code, you would start with the documentation. So when it comes to AI code, you don't start with the code at all. You start *here*, this is the plan it wrote *before* it touched a single file. It's the documentation, the architecture, the tradeoffs, where the secrets go. That's two pages, and that's where the real decisions live. I read *that* like a hawk.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(leaning in)*
-> …Oh. So you review the *thinking.* Not the typing.
+> …Oh. I didn't really *think* about it like that...
 
-**BRENDAN** *(live)*: Exactly that. *(beat)* Then the dangerous parts — the auth, the token handling, anything that can actually hurt someone — I read every line myself. Twice. That's maybe five percent of the diff. The boring ninety-five — the CRUD, the front-end — I skim, because if it's wrong, the tests catch it.
+**BRENDAN** *(live)*: Exactly that. *(beat)* Then the dangerous parts, the auth, the token handling, anything that can actually hurt someone, I read every line myself. Twice. That's maybe five percent of the diff. The boring ninety-five, the CRUD, the front-end, I skim, and I write evals so it can be tested against the plan, so if it's wrong, the tests catch it.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> But that's his whole point — the AI *writes* the tests—
+> But that's his whole point, the AI *writes* the tests...
 
-**BRENDAN** *(live, pulling up the dashboard — `AIV-018`)*: And *that's* the fix. The tests that actually matter — the integration tests — I write those myself. Real partner sandbox, real tokens. It never grades its own work on the stuff that counts. *(the rollout graph)* And then it ships behind a flag. Five percent of traffic first. If the error rate so much as twitches, it rolls itself back and nobody even gets paged. It only went to everyone once it sat clean on real traffic for a full day.
+**BRENDAN** *(live, pulling up the dashboard — `AIV-018`)*: The tests that actually matter, the integration tests, I write those into the plan, and review those carefully. Real partner sandbox, real tokens. *(the rollout graph)* And then it has access to any errors it generates, and part of the plan involves how to resolve and handle errors.
 
 > [!screen] VIDEO — CI / canary dashboard · `AIV-018` *(screen graphic — green integration suite against a partner sandbox; a 5%→100% rollout timeline; flat error / latency)*
-> *No voice. Green tests. The rollout graph steps up in two stages. The lines stay flat.*
+> *Christina reads the part of the plan that's about testing*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(quiet awe)*
-> …So the safety net isn't a person reading every line at midnight. It's the plan, and the tests *you* wrote, and the canary.
+> …So even though it wrote the tests, *you* architected them?
 
-**BRENDAN** *(live)*: That's the whole job now. You've got it in one.
+**BRENDAN** *(live)*: Yeah it's probably the most important part, telling it how to evaluate its work.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(the refrain, and she means it)*
-> Brendan — this is the *future.* Do you get that? This is the entire future of how we build things. *(beat)* Everyone still doing it the old way is about to look like they're carving stone tablets.
+> Brendan, this is the *future.* Do you get that? This is the entire future of how we build things. *(beat)* Everyone still doing it the old way is about to look like they're carving stone tablets.
 
-**BRENDAN** *(live, warm)*: …Yeah. Kind of. Yeah.
+**BRENDAN** *(live, warm)*: …You sound like Marcus
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(bright — the obvious thought)*
-> Did you show Liam this? Because if he's genuinely worried about the tests, this is the *answer* to his entire objection. He'd love it.
+> Marcus is a character isn't he... Did you show Liam this? Because if he's genuinely worried about the tests, this is the *answer* to his entire objection. He'd love it.
 
-**BRENDAN** *(live, a beat — the air changes)*: …I tried. *(beat)* I, uh — I couldn't really get it in front of him. *(carefully)* I think I just need to spend a bit more time with him. One on one. Get him to actually sit with it.
+**BRENDAN** *(live, a beat — the air changes)*: …I tried. *(beat)* I, uh, I couldn't really get it in front of him. *(carefully)* I think I just need to spend a bit more time with him. One on one. To get him to actually sit with it.
 
-*(A pause. The glow goes out of KRISTINA's face by degrees — the penny dropping.)*
+*(A pause. Kristina's excitement fades a little)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(slower)*
-> …Oh. *(beat)* You "tried." *(beat)* So it's not just that he had a rough morning and felt bad and he's, you know — reachable. *(quiet)* You couldn't get two minutes of this in front of him either. And you're the one person here he actually likes.
+> …Oh. *(beat)* You "tried." *(beat)* So you struggle with communicating with him too? And you're the one person here he actually likes.
 
-**BRENDAN** *(live, not wanting to bury him)*: …He'll come around. He's the smartest person on the team, Kristina, genuinely. He'd be incredible at this.
+**BRENDAN** *(live, not wanting to bury him)*: …He'll come around. He's the smartest person on the team, Kristina, genuinely. He'll be incredible at this when he finally warms up to it.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(half to herself, the manager surfacing)*
-> …Right. "Would be." *(a beat — something recalibrating behind her eyes)* …He's a bit of a problem, though. Isn't he. Not a bad person. Just — a problem. *(beat)* That's twice today I've had to route the whole team around one guy.
+> …Right. "Will be." *(a beat — something recalibrating behind her eyes)* …He's a bit of a challenge, though. Isn't he. Not a bad person. Just a challenge.
 
-*(She sits with it for a half-second — then pulls herself back up into the light, brightening on purpose.)*
+*(She sits with it for a half-second)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(the glow returning)*
-> …Anyway. God, though — look at what we just did in ten minutes. Imagine the whole team moving like this. Imagine what next quarter looks like. *(genuine)* I haven't been this excited about this job in years.
+> …Anyway. God, though, look at this slack bot, ten minutes of work. Imagine the whole team moving like this. Imagine what next quarter looks like. *(genuine)* I haven't been this excited about this job in years.
 
-**BRENDAN** *(live, a small, honest hedge — the one nobody wants)*: I mean — one thing, for the record. This was a Slack bot. It's small. I don't actually know how well this holds up on something *huge* — a giant legacy codebase, years of tangled stuff. And there's a real risk you spin up a mountain of code nobody deeply understands and just… bank the tech debt for later. It's not free. It's just moved—
+**BRENDAN** *(live, a small, honest hedge — the one nobody wants)*: I mean one thing, for the record. This was a Slack bot. It's small. I don't actually know how well this holds up on something *huge*, like a giant legacy codebase, years of tangled stuff. And there's a real risk you spin up a mountain of code nobody deeply understands and just… for whatever reason is struggles with larger code bases.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(warm, waving it off)*
-> —a problem for future us. Sure. *(smiling)* We'll figure that out when we're all shipping ten times faster. *(beat)* Right now this is the best day I've had at work in ages. Go — do your actual work. And Brendan? Thank you. Really.
+> Sure. *(smiling)* We'll figure that out when we're all shipping ten times faster. *(beat)* Right now this is the best day I've had at work in ages. Go, do your actual work. And Brendan? Thank you..
 
-*(Her tile blinks out, still glowing. BRENDAN sits alone in the quiet for a beat. Then — faint, under the hum of the huddle tone — the flat mechanical knock of a distant loom. It comes up, and closer. On the screen behind him the plan and the canary graph dim; the cool monitor-blue begins to fail toward warm. Two hundred years fall away.)*
-
-*(On screen — `AIV-017` — the plan and transcript dim out as the light changes; the last modern image to go.)*
-
-*(Hand-off into Movement II — [[02 - The Loom and the Guild — John half]]. The keyboard-clack has become loom-clack.)*
+*(Her tile blinks out, still glowing. BRENDAN sits alone.)*
 
 ---
 

@@ -50,27 +50,27 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 *(Late afternoon. A Slack huddle on the screen above BRENDAN's desk: his tile and MARCUS's, a diff open between them. Below, in his own pool of light, LIAM at his desk, reading. [MUSIC: music/slackhuddle.mp3])*
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(winding up, already half gone)*
-> —no, ship it. The migration's reversible. That's the whole point of the flag.
+> no, ship it. The migration's reversible. That's the whole point of the flag.
 
 **BRENDAN** *(live)*: Cool. Thanks for looking.
 
 > [!screen] VIDEO — MARCUS · `AIV-062`
-> Hey — did you do the feedback thing?
+> Hey, did you do the feedback thing?
 
 **BRENDAN** *(live)*: Which one?
 
 > [!screen] VIDEO — MARCUS · `AIV-062`
-> Half-year peer round. Closes Friday. They've been chasing me since Monday. I finally did it this morning.
+> Half-year peer review. It closes Friday, it's an oppertunity to give feedback to coworkers. I finally did it this morning.
 
-**BRENDAN** *(live)*: Not yet.
+**BRENDAN** *(live)*: Oh.. yeah i remember that email, no I haven't yet.
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(sharing his screen without being asked)*
-> Ten minutes. Less. Most of it's sliders.
+> It takes 10 minutes, you should do it.
 
-*(On the shared screen — `AIV-060` — the form. "H2 Peer Input." A deadline, a progress bar, a column of one-to-five sliders. At the bottom, one free-text box, and above it: "Is there anyone whose work made it harder for you to deliver this half? (Optional)")*
+*("H2 Peer Input." A deadline, a progress bar, a column of one-to-five sliders. At the bottom, one free-text box, and above it: "Is there anyone whose work made it harder for you to deliver this half? (Optional)")*
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(stopping on it)*
-> Okay, but — read that one. The bottom one.
+> Okay, but read that one. The bottom one.
 
 **BRENDAN** *(live)*: I'm reading it.
 
@@ -80,17 +80,17 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 **BRENDAN** *(live)*: Ha.
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(and he means it)*
-> No, but — nobody has ever asked me what's actually slowing me down. Three years. Not once. They ask you how you *feel* about it. *(beat)* And then somebody put that on there. Whoever wrote that one, genuinely — good. That's the only question on here that costs them anything.
+> No, but nobody has ever asked me what's actually slowing me down. Three years. Not once. Whoever wrote that one, genuinely good. That's the only question on here that matters.
 
-**BRENDAN** *(live)*: Did you put something?
+**BRENDAN** *(live)*: What did you put?
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(no heat in it at all)*
-> I put the nine days. And I like Liam, I'm not being funny about it. Four lines, nine days. That's just what happened, it's in the queue, anyone can go and look. *(beat)* And the standup thing. The model argument. I said thirty minutes. It was probably ten. Thirty's how it felt.
+> I put the nine days it took him to close the webhook ticket. And I like Liam, I'm not being funny about it. Four lines, nine days. That's just what happened, it's in the queue, anyone can go and look. *(beat)* And the standup thing. The model argument.... it adds up
 
 **BRENDAN** *(live, careful)*: Does it go to Kristina with your name on it?
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(scrolling up to show him)*
-> Aggregated. Says so at the top — "responses are anonymised and shared with managers in summary." *(beat)* Which is the whole reason anyone answers it straight. If my name was on it I'd type "no notes" like everybody else and we'd all keep having the same year forever.
+> No it's like an AI aggregation of everyone's. Says so at the top "responses are anonymised and shared with managers in summary." *(beat)* Which is the whole reason anyone answers it straight. If my name was on it I'd type "no notes" like everybody else and we'd all keep having the same year forever.
 
 **BRENDAN** *(live)*: Right.
 
@@ -106,11 +106,9 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 *(MARCUS's tile drops. BRENDAN stays where he is.)*
 
-*(He opens the form on his own screen. Below him, LIAM turns a page of the diff.)*
+*(He opens the form on his own screen.)*
 
-*(The sliders. He goes down the column at speed — a row of names, a row of numbers.)*
-
-**BRENDAN** *(live, to the screen, mild)*: "Rate this person's technical judgement." Four. "Rate this person's communication." *(he drags it)* Four. *(beat)* Four out of what, though. Four out of everyone I've ever met, or four out of— *(he drags the next one)* Four.
+**BRENDAN** *(live, to the screen, mild)*: "Rate this person's technical judgement." Four. "Rate this person's communication." *(he drags it)* Four.
 
 *(He reaches the bottom. The box. The question above it. The cursor blinks and he doesn't type anything.)*
 
@@ -122,7 +120,7 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 *(He types. He reads it as it goes.)*
 
-**BRENDAN** *(live)*: "No major concerns." *(beat, looking at it)* …That's not an answer. That's just — that's me not answering it.
+**BRENDAN** *(live)*: "No major concerns." *(beat, looking at it)* …That's not an answer. That's just, that's me not answering it.
 
 *(He sits back.)*
 
@@ -134,7 +132,7 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 *(He tries the other one out loud, testing it against the room.)*
 
-**BRENDAN** *(live)*: "Nobody's making it harder." *(beat)* …That's not true, though. That's a lie. It's a small one, but if I'm going to put something in the box and the thing I put in the box isn't— *(he stops)*
+**BRENDAN** *(live)*: "Nobody's making it harder." *(beat)* …That's not true, though. That's a lie. It's a small one, but if I'm going to put something in the box and the thing I put in the box isn't *(he stops)*
 
 *(He takes his hands off the keyboard.)*
 
@@ -158,7 +156,7 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 *(He leaves it.)*
 
-**BRENDAN** *(live, typing)*: "He's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself — he measured two sprints, with it and without it, and he was slower with it." *(beat, adding)* "He said it like it settled something."
+**BRENDAN** *(live, typing)*: "He's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it." *(beat, adding)* "He said it like it settled something."
 
 *(He reads that last sentence back. He takes it out.)*
 
@@ -182,19 +180,15 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 *(He reads the whole thing through. Four paragraphs. It's accurate, it's fair, and it has taken him twenty minutes. Underneath it there is a Submit button.)*
 
-**BRENDAN** *(live, out — to the house, the only time all scene)*: I want to be clear that I'm not—
+**BRENDAN** *(live, out — to the house, the only time all scene)*: I want to be clear that I'm not...
 
 *(He doesn't finish it. Nobody makes him stop; he just stops. He turns back to the screen. He doesn't hold backspace. He clicks Submit.)*
 
-*(The progress bar fills. "Thanks — your feedback has been recorded.")*
+*(The progress bar fills. "Thanks your feedback has been recorded.")*
 
-*(Somewhere else in the same hour, another response: the sliders left where they loaded, "no concerns" typed into the box, tab closed. Four seconds.)*
+*(Friday. The cycle closes. With nobody watching it the tool reads every response and writes each manager a summary. Under Liam's name, one bullet: "Multiple peers cite friction and slow review turnaround.")*
 
-*(Friday. The cycle closes. With nobody watching it — `AIV-060` — the tool reads every response and writes each manager a summary. Under Liam's name, one bullet: "Multiple peers cite friction and slow review turnaround.")*
-
-*(Nobody typed that sentence. Brendan's four paragraphs are in there somewhere, and so are the four seconds, and there is no way from the sentence back to either of them.)*
-
-*(A fortnight, or a bit more. The screen above the desks goes dark and stays dark. Two men, two desks, two pools of light. BRENDAN's laptop rings.)*
+*(Nobody typed that sentence. Brendan's four paragraphs are in there somewhere, and so are the four seconds, and there is no way from the sentence back to either of them.... A few days later Liam calls Brendan)*
 
 **BRENDAN** *(live)*: Hey.
 
@@ -206,17 +200,17 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 **BRENDAN** *(live)*: Sure.
 
-*(On LIAM's screen — `AIV-060` — his self-review packet. Near the top, a section headed "Peer input summary," and under it one line.)*
+*(his self-review packet. Near the top, a section headed "Peer input summary," and under it one line.)*
 
 **LIAM** *(live, reading it off, flat)*: "Multiple peers cite friction and slow review turnaround." *(beat)* That's it. That's the whole section.
 
 **BRENDAN** *(live)*: …Right.
 
-**LIAM** *(live)*: So. Two things. *(beat)* One — "multiple." Multiple is more than one, so it's two at minimum, and realistically three, because if it were two you'd say two. There are four engineers on this team, Brendan. One of them is me.
+**LIAM** *(live)*: So. Two things. *(beat)* One "multiple." Multiple is more than one, so it's two at minimum. There are four engineers on this team, Brendan. One of them is me.
 
 **BRENDAN** *(live, a beat too long)*: Yeah.
 
-**LIAM** *(live)*: It's a list of four names with one crossed off. That's not anonymous, that's just — they've arranged it so I can't ask. *(immediately, dismissing it)* Obviously not you. I mean the— you know what I mean.
+**LIAM** *(live)*: They've arranged it so I can't ask. *(immediately, dismissing it)* Obviously not you. I mean the, you know what I mean.
 
 **BRENDAN** *(live)*: …Yeah.
 
@@ -224,15 +218,15 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 **BRENDAN** *(live)*: Yeah.
 
-**LIAM** *(live, already moving on)*: Right, no — everyone did, it's basically mandatory. I mean did anyone actually *say* anything. Did anyone come to you about me.
+**LIAM** *(live, already moving on)*: Right, no, everyone did, it's basically mandatory. I mean did anyone actually *say* anything. Did anyone come to you about me.
 
 **BRENDAN** *(live, beat)*: …Nobody came to me.
 
-**LIAM** *(live)*: Okay. *(beat, then a burst)* Okay, so here's my problem. "Friction" isn't a thing. I can't reproduce it. If you file a bug that says "it's slow," I go and find out *what's* slow — which call, which query, which week. This says friction. Friction with what? On which PR? There's no reporter, there's no steps, there's no version. It's not a defect report. It's a mood.
+**LIAM** *(live)*: Okay. *(beat, then a burst)* Okay, so here's my problem. "Friction" isn't a thing. I can't reproduce it. If you file a bug that says "it's slow," I go and find out *what's* slow which call, which query, which week. This says friction. Friction with what? On which PR? There's no reporter, there's no steps, there's no version. It's not a defect report. It's a mood.
 
-**BRENDAN** *(live, careful)*: I don't think it's meant to be a—
+**BRENDAN** *(live, careful)*: I don't think it's meant to be a...
 
-**LIAM** *(live)*: I'm not angry. I want to fix it, that's the entire reason I'm calling. If somebody tells me what the thing is, I'll go and fix the thing. I'm good at that. That's the one thing I'm actually—
+**LIAM** *(live)*: I'm not angry. I want to fix it, that's the entire reason I'm calling. If somebody tells me what the thing is, I'll go and fix the thing. I'm good at that. That's the one thing I'm actually...
 
 *(He stops himself.)*
 
@@ -254,19 +248,19 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 **BRENDAN** *(live, quiet)*: Yeah.
 
-**LIAM** *(live, writing it down)*: No — I'll take that. I can do something with that. Anything under twenty lines goes out same day, and I flag the rest so people know where they are. *(beat)* That's a real thing. Thank you.
+**LIAM** *(live, writing it down)*: No, I'll take that. I can do something with that. Anything under twenty lines goes out same day, and I flag the rest so people know where they are. *(beat)* That's a real thing. Thank you.
 
-*(On LIAM's screen, the rest of the packet. He has already done the first axis — a paragraph and a half about the migration, with links.)*
+*(On LIAM's screen, the rest of the packet.)*
 
-*(He moves to the second one. "Collaboration." A dropdown. He opens it without slowing down and takes **Exceeds Expectations**, because he has never once in his life been the problem, and goes back to the paragraph he was writing.)*
+*(He moves to the second one. "Collaboration." he has never once in his life been the problem, and goes back to the paragraph he was writing.)*
 
-**LIAM** *(live, going)*: Right. Thanks. *(beat)* Seriously — thanks. You're the only one on this team who'll actually tell me anything.
+**LIAM** *(live, going)*: Right. Thanks. *(beat)* Seriously, thanks. You're the only one on this team who'll actually tell me anything.
 
 *(He hangs up. BRENDAN sits with his hand still on the trackpad.)*
 
 *(On LIAM's second monitor a calendar invite arrives: H2 check-in. Thirty minutes. Thursday. He clicks Accept without opening it and goes back to the diff. He has four more files to read and he's going to read all of them.)*
 
-*(The terminal puts out another token. The blue eases down.)*
+*(The terminal puts out another token.)*
 
 ---
 
