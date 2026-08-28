@@ -52,141 +52,103 @@ Two beers. Nobody is drinking fast until they are.
 
 ## Script
 
-*(LIAM's flat. No screens anywhere. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio.)*
+*(Brandon and Liam are in Liam's apartment. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio.)*
 
-*(LIAM and BRENDAN. Two beers. Both live, in the same room, for the first time.)*
+*(Two beers. They both sith, in the same room, for the first time.)*
 
 **LIAM** *(live)*: You want a glass?
 
-**BRENDAN** *(live)*: No, you're alright.
+**BRENDAN** *(live)*: No, I'm good with the can.
 
-**LIAM** *(live)*: I've got glasses. *(beat)* I'm not — I do own glasses.
+**LIAM** *(live)*: I've got glasses. *(beat)* I'm not.... I do own glasses.
 
 **BRENDAN** *(live)*: I know you do.
 
-*(A beat.)*
+*(Liam smiles)*
 
-**LIAM** *(live)*: Congratulations, by the way. *(beat)* I meant to say it properly. I put a thing in the channel but that isn't saying it.
+**LIAM** *(live)*: Brendan, nice work on the developer portal... I know I gave you some shit for it, but it truly is impressive how quick that came togehter
 
 **BRENDAN** *(live)*: …Thanks.
 
-**LIAM** *(live)*: No, I mean it. Staff. *(beat)* You did the portal in a weekend and everyone clapped, and then you did four more like it and nobody clapped, and that's the actual job. So.
+**LIAM** *(live)*: How did your call go with Kara and Dana?
 
-**BRENDAN** *(live)*: *(beat)* Liam.
+**BRENDAN** *(live)*: It was kinda bullshit
 
-**LIAM** *(live)*: What.
+*(LIAM puts his beer down... he's never heard Brendan use language like that)*
 
-**BRENDAN** *(live)*: *(beat)* They let me go as well.
+**BRENDAN** *(live)*: I've never met those people, and they were just so heartless, they have no idea what work we do, it's just... bullshit.
 
-*(A beat.)*
-
-**LIAM** *(live)*: …What?
-
-**BRENDAN** *(live)*: Tuesday. *(beat)* Same thing. Same woman on the call, the—
-
-**LIAM** *(live)*: Dana.
-
-**BRENDAN** *(live)*: Dana. Yeah.
-
-*(LIAM puts his beer down.)*
-
-**LIAM** *(live)*: You got promoted.
-
-**BRENDAN** *(live)*: Yeah.
-
-**LIAM** *(live)*: The slide went up on the Thursday.
-
-**BRENDAN** *(live)*: And I got the meeting on the Tuesday.
-
-**LIAM** *(live)*: *(working it)* So you were promoted and made redundant in six days. By the same company.
-
-**BRENDAN** *(live)*: Yeah.
-
-*(Neither of them laughs.)*
-
-**LIAM** *(live)*: Did they say why.
-
-**BRENDAN** *(live)*: She said it's scored. There's criteria and it's scored, and it's built like that so it isn't—
-
-**LIAM** *(live)*: —so it isn't one person sitting there making a call about a person.
-
-**BRENDAN** *(live)*: *(beat)* …Yeah. Word for word.
-
-**LIAM** *(live)*: I asked what was in it. She didn't have it.
-
-**BRENDAN** *(live)*: She didn't have it for me either. *(beat)* But Priya's still in, and she's seen the sheet, and there's a column on it for tickets closed. *(beat)* Out of Jira.
+**BRENDAN** *(live)*: You know... Marcus said they accidentally left the share settings open for the spreadsheet they were using, and there's a column on it for tickets closed. *(beat)* Out of Jira.
 
 **LIAM** *(live)*: You don't use Jira.
 
-**BRENDAN** *(live)*: I've never used Jira. *(beat)* I asked about it. First month I was here — I asked Kristina whether I should move it all across, and she said work however I want.
+**BRENDAN** *(live)*: I've never used Jira. *(beat)* I asked about it. I asked Kristina whether I should move it all across, and she said work however I want.
 
-**LIAM** *(live)*: I remember you saying.
+**LIAM** *(live)*: I remember you asking...
 
 **BRENDAN** *(live)*: She said she'd pull it in her end.
 
-*(A beat.)*
+*(Neither of them really had considered Kristina up to this point)*
 
 **LIAM** *(live)*: *(beat)* Did she?
 
-*(A beat.)*
+*(Neither of them spent enough time in Jira to know. Neither of them knew Kristina switched over to a vibe coded tool to do it either.)*
 
 **BRENDAN** *(live)*: *(beat)* I don't know.
-
-**LIAM** *(live)*: So what's the number.
 
 **BRENDAN** *(live)*: *(beat)* Nine.
 
 **LIAM** *(live)*: Nine what.
 
-**BRENDAN** *(live)*: That's it. That's the whole number. Tickets closed: nine. *(beat)* That's three years.
+**BRENDAN** *(live)*: Tickets closed: nine. *(beat)* That's what Marcus said mine said.
 
-*(A long beat.)*
+*(Liam realizes now, his own number, was higher than 9)*
 
-**LIAM** *(live)*: Marcus?
+**LIAM** *(live)*: How is marcus doing anyway?
 
 **BRENDAN** *(live)*: Marcus is fine.
 
 **LIAM** *(live)*: Course he is.
 
-**BRENDAN** *(live)*: *(beat)* Marcus files everything.
+**BRENDAN** *(live)*: *(beat)* Marcus files everything in Jira.
 
-*(Neither of them says anything about that, then or ever.)*
+*(They both just reflect on how stupid the process was... It was almost better when they didn't know how the decision was made.)*
 
-**LIAM** *(live, quietly)*: They couldn't see you.
+**LIAM** *(live, quietly)*: They couldn't see your actual impact
 
 **BRENDAN** *(live)*: What?
 
-**LIAM** *(live)*: There's no column for it. *(beat)* Whatever you actually did for three years, there's nowhere on the sheet it goes, so on the sheet you did nine things. *(beat)* That's — yeah.
+**LIAM** *(live)*: There's no column for it. *(beat)* Whatever you actually did for three years, there's nowhere on the sheet it goes, so on the sheet you did nine things. *(beat)* That's...
 
-**BRENDAN** *(live)*: That's what?
+**BRENDAN** *(live)*: Kinda bullshit.
 
-**LIAM** *(live)*: *(beat)* Nothing. Doesn't matter.
+**LIAM** *(live)*: *(beat)* Kinda... bullshit....
 
-*(He doesn't finish it. He has just described his own row and he does not know it.)*
+*(Liam finally has the numbers and clarity he was looking for the day he was let go.)*
 
 **BRENDAN** *(live)*: I don't know what to do.
 
-*(And LIAM comes alive — properly, the way he does over a hard bug, and it is all pointed at somebody else.)*
+*(And LIAM comes alive properly, the way he does over a hard bug, and it is all pointed at somebody else.)*
 
-**LIAM** *(live)*: Right. Okay. First thing — don't take the first offer. Everybody takes the first offer and the first offer is always about eight percent under.
+**LIAM** *(live)*: Right. Okay. First thing, polish off your resume, and update your linkedin... it may take a while to find a new job, but you can't get discouraged
 
-**BRENDAN** *(live)*: I haven't got an offer, I've got—
+**BRENDAN** *(live)*: I haven't got a resume...
 
-**LIAM** *(live)*: You will. *(beat)* Second thing, don't tell anybody you were made redundant, tell them your role was cut. It's the same sentence and it lands completely differently and I don't know why. *(beat)* Third thing — and do this tomorrow, not in three weeks — get everything out of your head and into a document while you can still remember it. The architecture, the incidents, why things are the way they are. Nobody can take that off you and in a month you won't be able to reconstruct it.
+**LIAM** *(live)*: You will. *(beat)* Second thing, don't tell anybody you were fired, tell them you were impacted by layoffs. It lands completely differently and I don't know why. *(beat)* Third thing, and do this tomorrow, get everything out of your head and into a document while you can still remember it about your accomplishments. You're going to speak to them in future interviews, put them on your resume and write them down so you don't forget.
 
-**BRENDAN** *(live)*: *(beat)* Okay.
+**BRENDAN** *(live)*: *(beat)* Okay... how do you know all this?
 
-**LIAM** *(live)*: I got done in oh-one. March.
+**LIAM** *(live)*: I was let go in April of 2000...
 
 **BRENDAN** *(live)*: …Really?
 
-**LIAM** *(live)*: Everyone did. It wasn't a distinction. *(beat)* Company called Netfold. Nobody's heard of it — it stopped existing about the May.
+**LIAM** *(live)*: Everyone was. *(beat)* The company called Netfold. Nobody's heard of it now, it stopped existing later that year.
 
 **BRENDAN** *(live)*: What did you do?
 
-**LIAM** *(live)*: Fixed printers at a law firm for six weeks. *(beat)* Then somebody needed someone who could read a stack trace, and it turned out that was still a thing people needed.
+**LIAM** *(live)*: I fixed printers at a law firm for a year. *(beat)* Then people started hiring engineers again, and it turned out that was still a thing people needed.
 
-*(A beat.)*
+*(Liam meant that as reassurance engineers will still be needed, but it didn't land that way for Brendan....)*
 
 **LIAM** *(live)*: You're twenty-eight and you're better than I was at twenty-eight and there is nothing wrong with you. *(beat)* We'll get through it. Both of us.
 
@@ -196,65 +158,47 @@ Two beers. Nobody is drinking fast until they are.
 
 **LIAM** *(live)*: Yeah.
 
-**BRENDAN** *(live)*: *(beat)* There's a thing I should probably— *(beat)* In the half-year round. The peer one. I—
+**BRENDAN** *(live)*: *(beat)* There's a thing I should probably... *(beat)* In the peer review. I...
 
 **LIAM** *(live, cutting him off, kindly)*: Don't.
 
-**BRENDAN** *(live)*: No, I—
+**BRENDAN** *(live)*: No, I...
 
 **LIAM** *(live, gently)*: Brendan. *(beat)* You don't have to do that. *(beat)* You didn't do anything.
 
-*(A beat.)*
+*(Liam's focus at this point is entirely on supporting Brendan.)*
 
 **BRENDAN** *(live)*: …Okay.
 
-*(BRENDAN finishes his beer. He has been nursing it all scene and he finishes it in one.)*
+*(BRENDAN finishes his beer.)*
 
-**BRENDAN** *(live, nodding at the box)*: Is that the returns?
+**BRENDAN** *(live, nodding at the box)*: Is that box your return equipment?
 
-**LIAM** *(live)*: Yeah.
+**LIAM** *(live)*: Yeah it's all the stuff IT asked for back
 
-**BRENDAN** *(live)*: It's got a label on it.
+**BRENDAN** *(live)*: Did the thought occur to you if you don't send it back, they probably won't come after you for it?
 
-**LIAM** *(live)*: It's had a label on it for eight days.
+**LIAM** *(live)*: Yeah...
 
 **BRENDAN** *(live)*: *(beat)* Are you going to send it?
 
-*(A beat.)*
+*(Liam is slowly remembering financially where he was at 28... he realizes small things like a laptop, a monitor, might be more meaningful to Brendan...)*
 
-**LIAM** *(live)*: No.
+**LIAM** *(live)*: Yeah, I am.
 
 **BRENDAN** *(live, a small laugh)*: Really?
 
-**LIAM** *(live)*: Nah. *(beat)* Fuck it. *(beat)* I'm not giving them shit.
+**LIAM** *(live)*: Yeah *(beat)* but I'll tell you what *(beat)* I'm not going to send back, all the stuff they didn't ask for...
 
-*(It is the only time in the play he swears, and it is the smallest available act of resistance from a man who offered, three weeks ago, to put a dongle he owned into that box.)*
+*(He points over to the super computer he expensed)*
 
 **BRENDAN** *(live)*: *(beat)* Can I borrow it?
 
-**LIAM** *(live)*: Borrow what?
-
-**BRENDAN** *(live)*: The laptop. *(beat)* I sent mine back the same day. Same afternoon, I didn't even think about it.
-
-**LIAM** *(live)*: You sent yours back.
-
-**BRENDAN** *(live)*: Course I sent it back.
-
-**LIAM** *(live)*: *(beat)* Right.
-
-**BRENDAN** *(live)*: I want to redo my portfolio, and there's two or three things I've been meaning to build for about a year, and I've got nothing to build them on.
+**BRENDAN** *(live)*: The AI workstation on your desk. I actually think a lot of the local model stuff you worked on is super cool, and now that I don't have money to spend on tokens anymore...
 
 *(LIAM thinks about it for less than a second.)*
 
-**LIAM** *(live)*: Don't take the laptop, the laptop's rubbish. *(beat)* Take the Studio.
-
-**BRENDAN** *(live)*: The—
-
-**LIAM** *(live)*: The Mac Studio. On the desk. *(beat)* It's already set up. There's a model on it, it's all local, you point it at a folder and go. It's four times the machine that laptop is.
-
-**BRENDAN** *(live)*: Liam, that's—
-
-**LIAM** *(live)*: They bought it. *(beat)* I expensed it. I wrote "AI" on the expense report and they approved it in nine minutes.
+**LIAM** *(live)*: Of course you can.
 
 **BRENDAN** *(live)*: *(beat)* Are you sure?
 
@@ -262,19 +206,19 @@ Two beers. Nobody is drinking fast until they are.
 
 *(He unplugs it. He puts it into BRENDAN's hands.)*
 
-*(It is the first time in this play that two people have touched. Every other human in it has been behind glass for seventy minutes. Neither of them notices. Nothing marks it.)*
+*(Their hands touch.... It might be the first time either of them have made any kind of physical contact with any of their coworkers....)*
 
 **BRENDAN** *(live)*: I'll bring it back next week.
 
 **LIAM** *(live)*: Keep it as long as you want.
 
-*(BRENDAN gets his jacket. At the door, holding a computer with both arms, he can't shake hands and doesn't try.)*
+*(BRENDAN gets his jacket. At the door, holding a computer)*
 
-**BRENDAN** *(live)*: Thanks. For — *(beat)* yeah.
+**BRENDAN** *(live)*: Thanks. For... *(beat)* yeah. And honestly Liam? Fuck them.
 
-**LIAM** *(live)*: Text me when you get a callback. Any of them, even the rubbish ones. *(beat)* I want to know.
+**LIAM** *(live)*: Text me if you land any interviews. Any of them, even the rubbish ones. *(beat)* I want to know, and I wanna help you practice.
 
-**BRENDAN** *(live)*: Yeah.
+**BRENDAN** *(live)*: Yeah. I will.
 
 **LIAM** *(live)*: *(beat)* I mean it. Don't go quiet.
 
@@ -284,9 +228,7 @@ Two beers. Nobody is drinking fast until they are.
 
 *(LIAM alone. On the desk, a clean rectangle where the Studio was.)*
 
-*(He picks up the two bottles and takes them through to the kitchen, because that is what you do.)*
-
-*(The box is still by the door.)*
+*(He picks up the two bottles and takes them through to the kitchen, and he considers something he didn't in 2000. Retirement.)*
 
 ---
 

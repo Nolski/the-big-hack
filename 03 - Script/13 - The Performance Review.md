@@ -33,39 +33,17 @@ A 1:1. **Liam** (live, Speaker A) at a bare meeting-room laptop — and this tim
 
 ## Script
 
-*(Before any of it. A dark stage and one screen — `AIV-066`. No faces and no voices for the next minute. An email, opened: **H2 calibration — ratings due Thursday.** A To: line of manager names with Kristina's among them. Distribution guidance attached. Nobody is going to meet about this.)*
-
-*(The attachment. A sheet: rows of names, a rating dropdown on each row, a counter along the top — "Exceeds — 3 of 4 used." She scrolls to Liam's row. Beside his name, the peer input, already summarised: "Multiple peers cite friction and slow review turnaround." Under it, a number somebody pulled off his review queue — a four-line change, nine days. In the tooling column, his cell reads 3%.)*
-
-*(There is nowhere on the sheet to ask which peers, and nobody to ask.)*
-
-*(A comment box opens on his row and fills in: "He's running a model locally, on hardware we bought him, because our own security policy says proprietary source doesn't go to outside providers. He wrote that policy. It's still in force. So technically he's the only person on this team who's actually—" It stops there. It sits on screen long enough to be read back — in writing, under her name, where it will stay as long as the company keeps its documents. Then it goes, a character at a time, until the box is empty.)*
-
-*(She starts again. "Every system that would take this company down if it broke, Liam built. We have never had a bad Saturday. Not once, in four years. That's one man reading every line, and there's no column for it, because the whole point of it is that nothing happens. If we're marking him down in the half where he was the only person checking anything, I'd like it written down somewhere that I said so." She doesn't delete this one. She clicks **Comment.**)*
-
-*(A reply the next morning, from Kara: "I don't disagree with any of that. But I hand the distribution in on Thursday, and there's no field on it for a Saturday that didn't happen.")*
-
-*(Under it, a third comment from a name Liam has never heard — the People Partner attached to the team. It is plainly a paragraph they paste often: if the second axis is going to Below, there needs to be a plan behind it before anyone sits down with him. Thirty, sixty, ninety. Written criteria, dates. The last sentence is boilerplate too, and it is the kind that sounds like someone meant it: **"I don't want the first written thing in someone's file to be the last one."**)*
-
-*(Then, at the top of the thread, **Resolve.** The whole exchange folds shut and leaves the document.)*
-
-*(Back on the sheet. The counter still reads "Exceeds — 3 of 4 used," and two of her names are still on the list. The cursor rests on Liam's empty dropdown. Then it moves down a row. Brendan: **Exceeds.** The counter goes to 4 of 4.)*
-
-*(Back up. Liam: **Meets.** And in the next column, Collaboration — the list opens, and she takes **Below Expectations.** One field left on the row, greyed out until the rating went in: "If exit — classification." Two options. She takes the second one: **Non-regretted.** It is a required field. There is nothing unusual about it and nobody sees her do it.)*
-
-*(The document dims. Thursday.)*
-
-*(A meeting room. LIAM live at a laptop — camera on, for once. On the shared screen, KRISTINA, and a document beside her: "H2 Performance Summary — Liam.")*
+*(It's time for manager lead performance review face to face conversations.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-070` *(warm, straight)*
-> Thanks for making time. I'm just going to be transparent with you — your technical bar is the highest on this team. That's not in question. Nobody writes code like you, and I've said that in every room I've been in.
+> Thanks for making time. I'm just going to be transparent with you, your technical bar is the highest on this team. That's not in question. Nobody writes code like you, and I've said that in every room I've been in.
 
 **LIAM** *(live)*: …Okay. *(waiting for it)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-070`
-> But the work changed this year. The part that used to be hard — the agent does that now. So what we need from someone senior is less building it yourself and more moving it along. Unblocking people. And that's where the signal's been tough.
+> But the work changed this year. The part that used to be hard, agents do that now. So what we need from someone senior is less building it yourself and more moving it along. Unblocking people. And that's where signal from you has been tough.
 
-**LIAM** *(live, careful)*: Tough how. Be specific — because I can be specific. If this is the Marcus PR, that had a race condition. It would have corrupted timestamps in prod, exactly like the thing we shipped in Q1, which I also flagged, and which—
+**LIAM** *(live, careful)*: Tough how. Be specific, because I can be specific. If this is the Marcus PR, that had a race condition. It would have corrupted timestamps in prod, exactly like the thing we shipped in Q1, which I also flagged, and which...
 
 > [!screen] VIDEO — KRISTINA · `AIV-070`
 > You were right about the race condition. *(she means it)* You're almost always right. That's not the problem. *(a breath)* It sat for nine days, Liam. A four-line fix sat for nine days, and three people came to me, and the word they used was "friction."
@@ -73,19 +51,19 @@ A 1:1. **Liam** (live, Speaker A) at a bare meeting-room laptop — and this tim
 **LIAM** *(live)*: I was *right*.
 
 > [!screen] VIDEO — KRISTINA · `AIV-070`
-> *(gently)* I know. I know you were. That's kind of the hard part.
+> *(gently)* I know. I know you were. No one's debating you on that.
 
-*(A beat. The thing he built his whole self on — being right — just got named as the liability, and he can't hear it.)*
+*(The thing he built his whole self on, being right, just got named as not enough, and he can't hear it.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-070`
-> I pushed back on this. I told them exactly what you're worth — I've been in your corner all year. But I can't be the only voice in the room. I want to help you land somewhere this actually fits you. None of this is a reflection of your value.
+> I've been in your corner all year. But I can't be the only voice in the room. I want to help you land somewhere constructive. None of this is a reflection of your value.
 
 **LIAM** *(live, quiet)*: You said the agent does the hard part now. *(a small, terrible beat)* I'm the one who fixes it when the agent is confidently wrong. That's the job. That's the *whole* job.
 
 > [!screen] VIDEO — KRISTINA · `AIV-070`
 > *(a pause — the kindness, and the wall right behind it)* I hear you. Let's get time with your People Partner this week. Okay?
 
-*(She's warm. She's not going to move. The summary doc sits on the screen. LIAM looks at his own camera tile — his face in it, on for once — and there is nothing it can do for him. Out.)*
+*(She's warm but firm. The summary doc sits on the screen.)*
 
 ---
 

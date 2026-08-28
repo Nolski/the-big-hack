@@ -133,13 +133,13 @@ A remote one-on-one, late morning: **Brendan live (Speaker B)** at his desk, **K
 
 *(Kristina opens cursor. Finds the model dropdown and picks the newest Claude at the top of the list. Deliberately. Like she's checking something.)*
 
-*(She types, in her own words, the way you'd brief a contractor: "Build a Slack bot that collects the team's standup updates before the meeting and posts one summary thread. Same workspace as the Jira bot.")*
+*(She types, in her own words, the way you'd brief a contractor: "Build a tool that cross posts Linear tickets into Jira." She had been doing this manually for Brandon.)*
 
-*(The plan writes itself out. A form, a scheduler, a summary post. She reads it the way Brendan taught her: slow, looking for the lie. Every endpoint in it is real. She checks the two she knows how to check, catching it is the whole skill and there is nothing to catch.)*
+*(The plan writes itself out. Every endpoint in it is real. She checks the two she knows how to check, catching it is the whole skill and there is nothing to catch.)*
 
 *(Then the machine asks her a question. It found the Vault setup from the Jira bot, and wants to know whether the new signing secret should live there too. It is, almost word for word, the sentence she had to type at it six weeks ago. She looks at it for a second. She types "yes.")*
 
-*(It writes the tests. Runs them. Green. The install dialog Approve / Deny. She approves. In a muted test channel, the bot posts its first summary labeled EXAMPLE, drawn from nothing, formatted better than her minutes.)*
+*(It writes the tests. Runs them. Green. The install dialog Approve / Deny. She approves. In Jira tickets start getting created.)*
 
 *(Start to finish: about four minutes. The demo took longer than that, and the demo had Brendan in it.)*
 
@@ -151,7 +151,7 @@ A remote one-on-one, late morning: **Brendan live (Speaker B)** at his desk, **K
 
 *(She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.)*
 
-*(Her calendar chimes: the next thing. She mutes the test channel, straightens, and goes back to her day.)*
+*(Her calendar chimes: the next thing. She straightens, and goes back to her day.)*
 
 ---
 

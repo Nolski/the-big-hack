@@ -42,9 +42,9 @@ The back half is a **passage of time**, not a sequence of events: ninety days of
 
 ## Script
 
-*(Two days after the review. LIAM at his desk. On the screen above, a new email — `AIV-072`.)*
+*(Two days after the review. LIAM at his desk. On the screen above, a new email)*
 
-*(From the People Partner. Subject: "Following up — options and next steps." Two attachments. **Performance Improvement Plan — 30/60/90.** And: **Separation Agreement and General Release.** The body is three lines long and the last one reads: "No pressure either way — take the week. Let me know by Friday which you'd like to proceed with.")*
+*(From the People Partner. Subject: "Following up options and next steps." Two attachments. **Performance Improvement Plan 30/60/90.** And: **Separation Agreement and General Release.** The body is three lines long and the last one reads: "No pressure either way, take the week. Let me know by Friday which you'd like to proceed with.")*
 
 *(He opens the second one first, because it's shorter.)*
 
@@ -52,85 +52,71 @@ The back half is a **passage of time**, not a sequence of events: ninety days of
 
 *(He reads the word "mutual" twice.)*
 
-*(He opens a call.)*
+*(He answers a slack huddle from Brendan)*
 
 **LIAM** *(live)*: Have you seen one of these before?
 
 **BRENDAN** *(live)*: One of what?
 
-**LIAM** *(live)*: Separation agreement. *(beat)* They sent me one. It's nine weeks.
+**LIAM** *(live)*: A choice between a performance plan and a separation agreement. *(beat)* They sent me one an option to quit. It comes with nine weeks of pay.
 
 **BRENDAN** *(live, careful)*: …Right.
 
-**LIAM** *(live)*: Nine is generous. Objectively. For a company this size nine is a real number — I looked it up, the median is four. *(beat)* Somebody argued for that.
+**LIAM** *(live)*: Nine is generous. Objectively. For a company this size nine is a real number, I looked it up, the median is four.
 
 **BRENDAN** *(live)*: Are you going to take it?
 
 **LIAM** *(live)*: There's a clause where I agree the separation is mutual.
 
-**BRENDAN** *(live)*: Yeah, that's — I think that's just standard.
+**BRENDAN** *(live)*: Yeah, that's... I think that's just standard.
 
-**LIAM** *(live)*: It isn't mutual, though. *(beat)* It's one party's decision and a piece of paper that says otherwise. And if I sign it, then in every record that outlives this, it was mutual. That's what the record says forever. Nobody's ever going to open the file and find me disagreeing.
+**LIAM** *(live)*: It isn't mutual, though. *(beat)* It's one party's decision. And if I sign it, then in every record that outlives this, it was mutual.
 
-**BRENDAN** *(live)*: …Yeah.
+**BRENDAN** *(live)*: …Yeah.... i mean I don't know that many people are going to...
 
-**LIAM** *(live)*: And there's a release. I give up any claim I've got, known or unknown. Which is fine — I don't have a claim, I'm not going to sue anybody, that's not — *(beat)* But you don't pay somebody nine weeks for a claim they haven't got.
+**LIAM** *(live)*: And there's a release. I give up any claim I've got, known or unknown. Which is fine, I don't have a claim, I'm not going to sue anybody, that's not... *(beat)* But I just don't like giving up rights to things.
 
 *(BRENDAN doesn't say anything.)*
 
-**LIAM** *(live)*: So either it's boilerplate, or somebody's already worked out what this looks like written down.
+**LIAM** *(live)*: So anyway... It feels icky even if it's generious
 
 **BRENDAN** *(live)*: What's the other attachment?
 
-**LIAM** *(live)*: A plan. Thirty, sixty, ninety. *(beat)* Five criteria, dates against each one, check-in every fortnight. *(beat)* It's good, actually.
+**LIAM** *(live)*: A plan. A performance improvement plan. *(beat)* It's good, actually.
 
 **BRENDAN** *(live)*: …It's good?
 
-**LIAM** *(live)*: It's the first document anyone's given me all year that has a number in it. *(beat)* All year it's been "the signal's been tough" and "friction" and "get on board," and I've been asking what that *means*, and now there's a page that says: median time to first review, under twenty-four hours. That I can do. That's a Tuesday.
+**LIAM** *(live)*: It's the first document anyone's given me all year that has a number in it. *(beat)* All year it's been "the signal's been tough" and "friction" and "get on board," and I've been asking what that *means*, and now there's a page that says: median time to first review, under twenty-four hours. That I can do.
 
 **BRENDAN** *(live)*: You're going to do the plan.
 
-**LIAM** *(live)*: Obviously I'm going to do the plan. Somebody hands you a spec, you build to the spec. *(beat)* That's not a decision, that's just — that's the job.
+**LIAM** *(live)*: Obviously I'm going to do the plan. Somebody hands you a spec, you build to the spec. *(beat)* That's not a decision, that's just, that's the job.
 
-**BRENDAN** *(live, and this is as close as he gets)*: Liam. *(beat)* The nine weeks is there now.
+**BRENDAN** *(live, and this is as close as he gets)*: Liam. *(beat)* The nine weeks is an attractive option. What if you can't hit the 24 hours, and they just end up firing you?
 
-**LIAM** *(live)*: I know. I read it.
+**LIAM** *(live)*: I know I can do this.
 
-**BRENDAN** *(live)*: No, I mean — *(beat)* It's there *now.*
+**BRENDAN** *(live)*: No, I mean... *(beat)* I don't doubt that, *just...*
 
-**LIAM** *(live)*: Why wouldn't it be there in three months?
+**LIAM** *(live)*: Brendan for the first time in a while I feel like I have clarity on what leadership wants from me
 
-*(BRENDAN doesn't answer that either.)*
+*(BRENDAN doesn't say anything.)*
 
-**LIAM** *(live)*: I'm not signing something that says I agree with them. *(beat)* If I'm wrong about the work, show me where and I'll fix it — I'll fix it in a week, I've never once not fixed something. And if I'm not wrong, I'm not paying nine weeks for a document that says I was. *(beat)* That's the whole thing. That's it.
+**LIAM** *(live)*: *(beat)* If I'm wrong about the work, show me where and I'll fix it, I'll fix it in a week, I've never once not fixed something. And if I'm not wrong, I'm not paying nine weeks for a document that says I was. *(beat)* That's the whole thing. That's that.
 
 **BRENDAN** *(live)*: …Okay.
 
-**LIAM** *(live)*: Thanks, though. For — yeah.
+**LIAM** *(live)*: Thanks, though. For.. yeah.
 
 *(The call ends.)*
 
 *(He replies to the email. One line: "I'd like to do the plan. Thank you for putting the criteria in writing." He means every word of it.)*
 
-*(The plan opens — `AIV-073`. Five criteria, dates against each.)*
-
 *(Median time to first review, under 24 hours. No open review older than 3 business days. Tooling adoption at or above team median. Attend and contribute to weekly planning. And, last: "Demonstrate improved collaboration and responsiveness to peer feedback.")*
 
-*(Four of them have a number next to them.)*
+*(Another box on his performance improvement plan has no number attached to it... . Beside it, one field: "Manager assessment.")*
 
-*(Thirty days. The first box ticks. His review-latency chart — a graph nobody has ever opened — comes down and stays down. Anything under twenty lines goes out the same day, the way he told Brendan it would.)*
-
-*(Sixty days. The second box. The third: his tooling cell moves off 3% and keeps climbing. He is using the corporate seats, on the corporate model, and he has stopped saying anything about it.)*
-
-*(Ninety. The fourth box. He went to planning every week and he spoke at every one of them.)*
-
-*(Every criterion with a number against it is green.)*
-
-*(The fifth one has no number against it. Beside it, one field: "Manager assessment.")*
-
-*(It is empty.)*
-
-*(It stays empty for eleven days.)*
+*(It is empty, to be filled in at the end of the performance period)*
 
 ---
 

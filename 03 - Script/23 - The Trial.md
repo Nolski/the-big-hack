@@ -49,99 +49,78 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 
 ## Script
 
-*(A courtroom. LIAM live in the dock. BRENDAN live in the gallery, three rows back, in a suit that is slightly too big for him.)*
+*(A courtroom. LIAM live in the dock. BRENDAN live in the gallery next to Marcus and Kristina, three rows back, in a suit that is slightly too big for him.)*
 
-**BRENDAN** *(to audience)*: The law they used is from 1986. It was written after a film came out about a teenager starting a nuclear war with a modem, and it has been amended eleven times, and none of the amendments were about this.
-
-*(beat)*
-
-**BRENDAN** *(to audience)*: It turns on one word. *Authorisation.* Whether you were allowed to be where you were.
+**BRENDAN** *(to audience)*: The law they used is from 1986. It was written after a film came out about a teenager starting a nuclear war with a modem...
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085` *(unhurried, reading a list of facts)*
-> Count one. Intentional access of a protected computer without authorisation. Count two, exceeding authorised access. Count three, transmission of a program causing damage. Count four—
+> Count one. Intentional access of a protected computer without authorisation. Count two, exceeding authorised access. Count three, transmission of a program causing damage. Count four...
 
-*(On screen — `AIV-087` — the counts enter, one row at a time.)*
-
-**BRENDAN** *(to audience)*: There are nineteen.
+*(The counts enter, one row at a time... there are 19)*
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
-> —counts eleven through fourteen, unauthorised access to a protected computer in furtherance of fraud. Counts fifteen and sixteen, damage to a protected computer. Count seventeen, aggravated identity theft.
+> counts eleven through fourteen, unauthorised access to a protected computer in furtherance of fraud. Counts fifteen and sixteen, damage to a protected computer. Count seventeen, aggravated identity theft.
 
 **BRENDAN** *(to audience)*: Most of them are the same act, counted differently.
 
-*(beat)*
+**BRENDAN** *(to audience)*: All nineteen of them are things that happened before four o'clock in the morning on one night in September.
 
-**BRENDAN** *(to audience)*: All nineteen of them are things that happened before four o'clock in the morning on one night in September. *(beat)* Nothing after that is on the indictment. *(beat)* There was no way to write it down.
-
-> [!screen] VIDEO — PROSECUTOR · `AIV-085`
-> Counts eighteen and nineteen relate to the published package.
-
-**BRENDAN** *(to audience)*: Added together, the maximum is fifty-one years. Nobody expects fifty-one years. **Nobody has to.** The number exists so that a person will agree to a smaller number without anybody having to prove anything.
-
-*(A beat.)*
+**BRENDAN** *(to audience)*: Added together, the maximum is one hundred and fifty-one years. Nobody expects one hundred and fifty-one years. The number exists so that a person will agree to a smaller number without anybody having to prove anything.
 
 **BRENDAN** *(to audience)*: He wouldn't agree to it.
 
-*(The room resumes.)*
-
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
-> The device was recovered from the defendant's home. The credentials used were issued to the defendant. Every action in the log was taken as the defendant. *(beat)* Eleven thousand, four hundred and thirty-one of them.
-
-*(On screen — `AIV-087` — the audit trail scrolls, exactly as it did in [[20 - The Audit]]. One name on every line.)*
+> The device was recovered from the defendant's home. The credentials used were issued to the defendant. Every action in the log was taken as the defendant.
 
 **LIAM** *(live)*: Can I say something about that?
 
 > [!screen] VIDEO — JUDGE · `AIV-086` *(patient)*
 > Through your counsel, Mr. Mkrtchyan.
 
-**LIAM** *(live)*: It's — it'll take nine seconds. *(beat)* It says "without authorisation." My access was never revoked. Nobody revoked it. There's a case, *Van Buren*, it's a Supreme Court case, and it's about exactly this — it's not about what you did with the access, it's about whether you had it. *(beat)* And I had it. They gave it to me and they never took it back. That's not a crime, that's their filing system.
+**LIAM** *(live)*: It's, it'll take nine seconds. *(beat)* It says "without authorisation." My access was never revoked. Nobody revoked it. There's a case, *Van Buren*, it's a Supreme Court case, and it's about exactly this, it's not about what you did with the access, it's about whether you had it. *(beat)* And I had it. They gave it to me and they never took it back. That's not a crime, that's their filing system.
 
-*(A pause. And here is the worst thing about this room: he is right, and it is heard, and it is considered.)*
+*(The judget looks annoyed)*
 
 > [!screen] VIDEO — JUDGE · `AIV-086` *(and she means it)*
-> That's a serious argument and your counsel has made it in writing. *(beat)* It's noted. We'll deal with it.
+> Mr Mkrtchyan, I strongly advice you to remain silent and let your attorney do the talking.
 
 **LIAM** *(live)*: …Okay.
 
-*(It is dealt with. It does not come up again.)*
+*(The question of his employer not revoking his access does not come up again.)*
 
-*(A recess. Or the next day. The room does not change.)*
+*(The next day.)*
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > The people call Marcus Ehrlich.
 
 **BRENDAN** *(to audience)*: He wasn't called by the defence.
 
-*(MARCUS — `AIV-055` — in a witness box, and delighted to be there.)*
+*(in a witness box, and delighted to be there.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Before I answer that, I want it noted that the Frame Breaking Act was 1812 and it took them eleven months. *(beat)* Eleven months, to make breaking a machine a hanging offence. *(beat)* They have never once moved that fast for a person. Not then, not now, not—
+> Before I answer that, I want it noted that all the *(beat)* luddites that were hung were victims of a system, the same system that's now brought Liam to trial, regardless of what...
 
 > [!screen] VIDEO — JUDGE · `AIV-086`
 > Mr. Ehrlich.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> I'm making a point about continuity.
+> I'm just trying to explain, even though an individual can do something that on its surface appears..
 
 > [!screen] VIDEO — JUDGE · `AIV-086` *(entirely without irony)*
-> Make it to the question.
+> Marcus, do not speak unless spoken to.
 
-*(LIAM puts his hand over his eyes. It is the most he moves all scene.)*
+*(LIAM puts his hand over his eyes.)*
 
-**BRENDAN** *(to audience)*: He was right about that. He'd been right about it for a year. *(beat)* Nobody in the room wrote it down.
+**BRENDAN** *(to audience)*: You know, we really didn't give Marcus enough credit...
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > Mr. Ehrlich. How would you describe working with the defendant?
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(and there is no malice in it at all)*
-> Liam? *(beat)* Liam's the best engineer I've ever worked with. *(beat)* He's difficult, obviously. Everyone knows that. But he's not — no, he's the best.
-
-*(Nobody in the room does anything with that.)*
+> Liam? *(beat)* Liam's the best engineer I've ever worked with. *(beat)* He's difficult, obviously. Everyone knows that. But he's not... no, he's the best.
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant.
-
-*(On screen — `AIV-087` — one line, in a typeface the audience last saw two hours ago.)*
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > *"Multiple peers cite friction and slow review turnaround."*
@@ -154,57 +133,32 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > [!screen] VIDEO — MARCUS · `AIV-055` *(after a moment, honestly)*
 > …I mean. *(beat)* Yeah. That's fair.
 
-**BRENDAN** *(to audience)*: Three people answered a form. A tool turned them into one sentence. Nobody typed it, nobody can be asked about it, and there is no way from it back to anybody.
-
-*(beat)*
-
-**BRENDAN** *(to audience)*: It was read into the record as evidence of character.
-
-*(A long beat. The room settles.)*
+*(The lights flicker... one of the rolling brownouts that's been in the news recently...)*
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085` *(and this is not a trap; she is closing a hole in her own case)*
-> One last matter. The device was in your sole possession from the thirty-first through to the day of the incident. *(beat)* Mr. Mkrtchyan — in that period, was the device at any point out of your control, or in the possession of any other person?
+> One last matter. Liam's name showed up in the AWS logs on the night in question, is that correct?
+
+> [!screen] VIDEO — MARCUS ·
+> .....yeah, but I don't think it's his fault, he's just a part of a system...
 
 *(Nothing in the room moves.)*
 
 *(BRENDAN, three rows back, does not move either.)*
 
-*(LIAM knows the answer. He worked it out in about four seconds, weeks ago, the way he works everything out, and he has been carrying it since.)*
+*(LIAM knows the answer. He worked it out in about four seconds, weeks ago, the way he works everything out, and he has been carrying it since...)*
 
-**LIAM** *(live)*: He had the—
-
-*(He stops.)*
-
-*(Nobody makes him stop. Nobody in the room is even looking at him yet.)*
-
-*(He does not look at the gallery. He has not looked at the gallery once.)*
-
-> [!screen] VIDEO — JUDGE · `AIV-086` *(gently)*
-> Take your time, Mr. Mkrtchyan.
-
-*(A long beat. He takes his time. It doesn't help.)*
-
-**LIAM** *(live)*: No. *(beat)* No, it was mine.
-
-> [!screen] VIDEO — PROSECUTOR · `AIV-085`
-> Thank you.
-
-*(And that is the end of it. She moves on, because there is nothing there to move on from.)*
+*(He does not look at the gallery. He has not looked at the gallery once. He can't bring himself to.)*
 
 *(BRENDAN is looking at the back of LIAM's head. He has not stopped.)*
 
-**BRENDAN** *(to audience)*: —
-
-*(He doesn't. The play does not let him.)*
+**BRENDAN** *(to audience)*: He's a good man.
 
 *(He looks at the floor, and then back up, and the trial goes on around both of them.)*
 
 > [!screen] VIDEO — JUDGE · `AIV-086`
 > We'll resume on the fourteenth.
 
-*(A date goes into a calendar.)*
-
-*(Nobody in this room will use it.)*
+*(A date goes into a manual calendar. The court hasn't been able to reliably use its computer systems for a few weeks now.)*
 
 ---
 

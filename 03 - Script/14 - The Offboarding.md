@@ -58,17 +58,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 ## Script
 
-*(Before any of it. A screen — `AIV-076`. No faces, no voices, and nobody in the room it happens in.)*
-
-*(A spreadsheet. **"Q3 Organisational Review — Engineering."** Rows of names. Along the top: Level. Time in role. Last cycle rating. Last cycle — second axis. Authored changes, trailing two quarters. Merged changes. Tickets closed, Jira. Incidents assigned. Tooling adoption, H2. A composite at the end, and the sheet is sorted by it.)*
-
-*(There is no column for reviews.)*
-
-*(A rule is drawn across the sheet two thirds of the way down. A note on the cell: "Line as of 14/08. Pending legal.")*
-
-*(Liam's row. Every number on it is true. Tooling adoption, H2: **3%** — the half he spent being the only person on the team complying with a security policy he wrote and which is still in force. Authored changes, trailing two quarters: a figure with a small red arrow beside it, because it has gone down, because he has been clearing his review queue ever since somebody told him the queue was the problem.)*
-
-*(He is four rows under the line. Two rows below him, BRENDAN — tickets closed, nine, because he has tracked his own work in Linear since the month he started, having asked and been told to work however he liked. Eleven rows above the line, MARCUS, who files everything.)*
+*(A couple months later there exists a spreadsheet put together by Kara and the CEO. Kristina was not involved. The spreadsheet is titled "Engineering productivity metrics" Every engineer is scored based on feature velocity. There's an arbitrary line 2/3rds of the way down the sheet. Liam is four rows under the line. Two rows below him, BRENDAN, who has very few features to his name. This is because he has tracked his own work in Linear, having been told to work however he liked. Kristina's vibe coded Linear to Jira converter never really worked properly. Eleven rows above the line, MARCUS, who files everything properly in Jira.)*
 
 *(A meeting room. LIAM live at a laptop, camera on, alone, waiting for a call to start. He is reading something else, and he has just found something.)*
 
@@ -76,18 +66,18 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 *(He reads it again. He is delighted.)*
 
-**LIAM** *(live)*: That's been in there since— *(he checks)* two years. That's been in there two years.
+**LIAM** *(live)*: That's been in there since... *(he checks)* two years. That's been in there two years.
 
 *(He looks up, to tell someone. There is nobody in the room.)*
 
 *(The call connects. On the screen, the PEOPLE PARTNER.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(warm)*
-> Hi Liam. It's Dana — I'm the People Partner for the team, we've emailed a few times. Thanks for making the time.
+> Hi Liam. It's Dana, I'm the People Partner for the team, we've emailed a few times. Thanks for making the time.
 
-**LIAM** *(live)*: Hi — sorry. Hi. *(beat)* Sorry, I'm in the middle of something. I've just found a—
+**LIAM** *(live)*: Hi... sorry. Hi. *(beat)* Sorry, I'm in the middle of something. I've just found a...
 
-*(He stops himself. He has learned that people don't want the rest of that sentence.)*
+*(He stops himself. He has learned that people don't always want the rest of that sentence.)*
 
 **LIAM** *(live)*: Doesn't matter. *(beat)* Sorry. Go ahead.
 
@@ -97,9 +87,9 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 **LIAM** *(live)*: Is Kristina joining?
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> She's not. It's just the two of us today.
+> She is not... Kara should be joining shortly though... here she is.
 
-**LIAM** *(live)*: Okay. *(entirely unbothered)* Is this about the Q4 staffing thing? Because I've got opinions, but I can send them, I don't need to—
+**LIAM** *(live)*: Okay. *(entirely unbothered)* Is this about the Q4 staffing thing? Because I've got opinions, but I can send them, I don't need to...
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > It isn't. *(beat)* I'm going to read you something, and then we'll talk properly, and you can stop me anywhere. Is that alright?
@@ -107,23 +97,17 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 **LIAM** *(live)*: …Sure.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(reading it — flat, printed, the mandated words, and you can hear that they are printed)*
-> The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be the thirty-first.
+> The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be today, and you will lose access to most systems at the end of this call
 
-*(A beat.)*
+*(He's speechless for a minute... it's not the first time this has happened in his career but nothing makes this easy to hear)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(even, moving straight on)*
 > I know that's a lot to take in. There's a pack that covers all of it, and we'll go through the main points now.
 
-*(**The tone comes up.** Her audio goes under it — still moving, still even, unintelligible. LIAM does not move. He does not look away from the screen and he does not look at it either.)*
-
-*(The screens keep working. `AIV-073`: the improvement plan, four green. Its status changes from "In progress" to **Closed.** Reason: "No longer applicable — see HRIS." The "Manager assessment" field is still empty. It greys out. Nobody ever filled it in and now nobody can.)*
-
-*(`AIV-075`: somewhere else in the building, an all-hands. The applause clip from the launch, the same one, over a slide — Q3 promotions, BRENDAN's name on it. **The applause is heard through the ring**, thin and far away and enormous.)*
-
-*(It goes on. Then it thins.)*
+*(She keeps talking but Liam isn't really processing it anymore. LIAM does not move. He does not look away from the screen and he does not look at it either.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(coming back up, mid-thought, much further along than he is)*
-> —and all of that's in the pack, so there's genuinely nothing you need to hold in your head right now. *(beat)* Liam? Are you still with me?
+> and all of that's in the packet, so there's genuinely nothing you need to hold in your head right now. *(beat)* Liam? Are you still with me?
 
 **LIAM** *(live)*: Yeah.
 
@@ -132,7 +116,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > Of course. Which part?
 
-*(A beat.)*
+*(his brain slowly starts to work again)*
 
 **LIAM** *(live)*: …I don't know.
 
@@ -146,31 +130,31 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 **LIAM** *(live)*: *(beat)* So somebody picked.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> The selection was scored against a consistent set of criteria, applied across the whole org. It's designed that way on purpose — so it isn't any one person making a call about an individual.
+> The selection was scored against a consistent set of criteria, applied across the whole org. It's designed that way on purpose, so it isn't any one person making a call about an individual.
 
 **LIAM** *(live)*: What's in it.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > That's not something I'm able to share, I'm afraid. What I have is that the role's in scope, and the date.
 
-**LIAM** *(live)*: Who does have it.
+**LIAM** *(live)*: Who else?
 
-*(A beat.)*
+*(Dana doesn't skip a beat, she's prepped for every question)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> It's a process — it isn't really something that sits with a person. There's detail on how it works in the pack, if you want it.
+> I can't share that with you at this time
 
 *(He sits with that. Then he starts, very slowly, to look for the reason, because there is always a reason and he has never once failed to find one.)*
 
-**LIAM** *(live)*: Is it the review? *(beat)* The collaboration thing. Is that—
+**LIAM** *(live)*: Is it the review? *(beat)* The collaboration thing. Is that...
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > That's a separate process. This isn't that.
 
-**LIAM** *(live)*: There's a plan. *(beat)* There's a plan with dates on it, I'm—
+**LIAM** *(live)*: There's a plan. *(beat)* There's a plan with dates on it, I'm....
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> That's a separate process as well.
+> That's a separate process, this is unrelated to callibration
 
 **LIAM** *(live)*: *(beat)* They're separate.
 
@@ -182,74 +166,62 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 *(She doesn't take that up.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> They're run separately. This is the one I can speak to.
+> They're run separately. This is the one I can speak to today.
 
-*(A long beat. He is not angry. He is trying to make an arithmetic come out and it will not.)*
+*(Liam's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.)*
 
-**LIAM** *(live)*: I've been like this for twenty-five years.
+**LIAM** *(live)*: I've been doing different flavors of this job for twenty-five years.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > …I hear you.
 
-**LIAM** *(live)*: No, I mean — *(beat)* People have been telling me I'm hard work since I was twenty-three. It's not new information. *(beat)* I got promoted four times. *(beat)* Same person.
+**LIAM** *(live)*: No, I mean, *(beat)* I just.... I know what this engineering team needs to succeed and without...
 
 *(She lets him have it. She doesn't fill it.)*
 
-*(Then he tries — and this is the only time in the play he tries to say what he is actually worth, and it comes apart in his hands.)*
+*(He sees Marcus has no meeting with Dana today. He sees Brandon does... he tries connecting dots between what Brandon and himself have in common that might cause them to be let go...)*
 
-**LIAM** *(live)*: There's a thing about the queue. *(beat)* When a review sits for nine days, that's a number. Somebody pulled that number, it's in my file, I've seen it. *(beat)* But when I read a change and there's nothing wrong with it and it goes out, that's not— there's no—
+**LIAM** *(live)*: There's a thing about the queue. *(beat)* When a review sits for nine days... Somebody pulled that number, it's in my file, I've seen it. *(beat)* But when I read a change and there's nothing wrong with it and it goes out, that's not... there's no...
 
 *(He stops. He starts it somewhere else.)*
 
-**LIAM** *(live)*: Four years. *(beat)* We've never had a bad Saturday. Not once. *(beat)* That's — someone's reading every line. That's what that is.
+**LIAM** *(live)*: Four years *(beat)* I've been with this company and never had an issue with performance until...
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(after a moment, even)*
 > I'm not able to get into the specifics of the decision, Liam.
 
-**LIAM** *(live)*: *(beat)* Is there a field for that.
+**LIAM** *(live)*: *(beat)* Just tell me what I could have done better
 
-*(She doesn't take the question.)*
+**KARA**: ...Well... the thing is
+
+*(Dana immediately cuts Kara off, Dana is a professional at this and knows Kara might step on a legal landmine.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > The criteria aren't something we go through individually. *(beat)* I know that's frustrating.
 
-*(A long beat. Then he opens a notes file, because that is what he does, and types the date at the top of it.)*
+*(Then he opens a notes file, because that is what he does, and types the date at the top of it.)*
 
-*(That is as far as he gets. He does not type anything else for the rest of the scene.)*
+*(That is as far as he gets. He does not type anything else. He isn't even sure if he'll be locked out of the computer in 10 minutes or not)*
 
-**LIAM** *(live, flat)*: Okay. *(beat)* When does health cover end.
-
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> End of the month following your last day.
-
-**LIAM** *(live)*: And there's — is there a—
+**LIAM** *(live, flat)*: Okay. *(beat)* When does healthcare end.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> There's a severance payment, yes. It's calculated on tenure. For you that's four weeks.
+> You'll get 2 months of Cobra with your severance
 
-**LIAM** *(live)*: *(beat)* Four.
+**LIAM** *(live)*: And there's.. there's a...
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> Four.
+> There's a severance payment, yes. It's 2 months of full pay.
 
-*(A beat. Somewhere behind his face is a number he looked up in June, and a conversation he had about it, and neither of them is any use to him.)*
+**LIAM** *(live)*: *(beat)* Two.
+
+> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
+> Two months.
 
 **LIAM** *(live)*: Right. *(beat)* No, that makes sense.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> Your final pay, including any accrued PTO, will be with you on your last day. In the pack there's a notice as to change in relationship, the state pamphlet on unemployment, the health continuation forms, and the separation agreement.
-
-**LIAM** *(live)*: *(beat)* Another one.
-
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> It's a different one. *(beat)* You've got forty-five days on it, and seven days after you sign to change your mind. There's a list attached at the back of it.
-
-**LIAM** *(live)*: A list of what.
-
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> Job titles and ages. Everybody in the group, selected and not selected. *(beat)* It's required.
-
-*(A beat. It is the closest anyone will ever come to showing him the sheet. It is legally mandatory, it contains no criteria and no reasons, and he does not open it.)*
+> Your final pay, including any accrued PTO, will be included at the end of the two months. In the pack there's a notice as to change in relationship, the state pamphlet on unemployment, the health continuation forms, and the separation agreement.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > IT will send you a returns label. It's the laptop, the monitor, the keyboard, and any dongles or adapters.
@@ -259,58 +231,24 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > If it isn't on the asset register, it isn't something we'd need back.
 
-**LIAM** *(live)*: *(beat)* Okay. *(beat)* I'll put it in the box.
+**LIAM** *(live)*: *(beat)* Okay.... I...
+
+*(He realizes his AI super computer isn't on the asset register)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> One more thing, and then I'll let you go. Your access stays active until Friday. There's a handover window — we don't do same-day lockouts, so anything you need to hand over or save, you'll have time for.
+> One more thing, and then I'll let you go. Your access will be terminated at the end of this call, so if you need anything you can email me from your personal email
+
+> [!screen] VIDEO — KARA ·
+> Liam I just want to thank you for all the years you put into this company
 
 **LIAM** *(live)*: …Thank you.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> There's information in the pack on the outplacement support and on the alumni network. *(beat)* And, again — none of this is a reflection of your value or your contribution.
+> There's information in the pack on the outplacement support. *(beat)* And, again, none of this is a reflection of your value or your contribution.
 
-*(On a screen nobody in the meeting can see — `AIV-075` — the HRIS record. A field marked "Eligible for rehire" changes from Yes to No. It is a dropdown with two options. It is the same click as the last one.)*
+*(After the call ends Kara and Dana hop on a debrief call. Together they fill out a field marked "Eligible for rehire" changes from Yes to No. This is the one part of this process that actually is related to the performance review cycle.)*
 
-*(A pause. It is the only place all scene where he stops before speaking.)*
-
-**LIAM** *(live)*: Can I ask you one thing. *(beat)* I'm not going to argue. I'm not— *(beat)* What could I have done differently.
-
-*(She doesn't answer straight away. She has done this many times, and there is a version of the answer she is allowed to give.)*
-
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(even, not unkind)*
-> That's not really something the process is set up to answer — it's criteria-based, and the decision's final. *(beat)* There's good material in the pack on next steps, and the outplacement provider can talk options through with you.
-
-**LIAM** *(live)*: *(beat)* …Okay.
-
-*(And then, twenty-five years too late, in the wrong room, he gets there on his own.)*
-
-**LIAM** *(live)*: Is it — *(beat)* I know people find me — I know I'm not— *(beat)* Should I have been in more rooms? Should I have been friendlier?
-
-*(She does not take it.)*
-
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> I'm really not able to speak to that.
-
-*(A beat. He does not write it down.)*
-
-> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> You don't need to do anything else today. It's all in the pack, and the transition team will be in touch. *(beat)* I'm sorry we couldn't have this conversation under better circumstances.
-
-**LIAM** *(live)*: Thanks. *(beat)* Thank you, Dana.
-
-*(The call ends. He is alone in the smallest room in the building with nothing of his in it.)*
-
-*(His notes file is open. It has the date on it and nothing else.)*
-
-*(On his second monitor a Slack notification: #general. "Huge congrats to Brendan on the step up!" Forty-one reactions.)*
-
-*(He looks at it. He types "congrats!!" and a party emoji, and sends it, and he means it.)*
-
-*(Then he goes back to the tab he was in when the call started. The thing he found is still there. It is still wrong, and he can still see why, and there is nobody to tell.)*
-
-*(He has until Friday. He starts fixing it.)*
-
-*(The tone is still there, underneath, and it does not go.)*
+*(The call obviously wasn't easy for Kara. No one could possibly get used to that. Except maybe Dana who's been doing it for her whole career.)*
 
 ---
 

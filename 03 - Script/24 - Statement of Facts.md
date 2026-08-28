@@ -52,116 +52,87 @@ On screen, **COUNSEL**, tired and decent and doing a competent job. Beside them,
 
 ## Script
 
-**BRENDAN** *(to audience)*: About ninety-seven percent of federal cases end without a trial. Everybody agrees to something. *(beat)* That is not a scandal, it is just the arithmetic — there aren't enough courtrooms, there were never going to be, and the system only works because almost nobody uses it.
-
-*(beat)*
-
-**BRENDAN** *(to audience)*: The trial you have been watching was always the unlikely outcome.
-
-*(A bare room. LIAM live at a table. On screen, COUNSEL, and the agreement — `AIV-093`.)*
+**BRENDAN** *(to audience)*: About ninety-seven percent of federal cases end without a trial. Everybody agrees to something. There aren't enough courtrooms or judges, there were never going to be, and the system only works if people take deals
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
 > They've come back at eighteen months.
 
-**LIAM** *(live)*: From fifty-one years.
+**LIAM** *(live)*: From one hundred and fifty-one years.
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
-> From fifty-one years. *(beat)* That's how it works. The fifty-one is so that eighteen sounds like something you'd take.
+> From one hundred fifty-one years. *(beat)* That's how it works. The one hundred and fifty-one is so that eighteen sounds like something you'd take.
 
 **LIAM** *(live)*: How much of it do I actually do?
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
-> With good conduct, about fourteen months. *(beat)* And they drop everything except counts one and fifteen.
+> With good conduct, about fifteen months. *(beat)* And they drop everything except counts one and fifteen.
 
 **LIAM** *(live)*: Okay.
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
 > There's a statement of facts attached to it. You have to agree that it's accurate. *(beat)* That's the part people find hard, so read it properly.
 
-*(On screen — `AIV-093` — the statement. It is four paragraphs long and it is mostly true.)*
-
 *(LIAM reads it. He reads it the way he reads everything, which is completely.)*
 
 **LIAM** *(live)*: *(reading)* "The defendant knowingly and intentionally accessed a protected computer without authorisation."
-
-*(A beat.)*
 
 **LIAM** *(live)*: "Knowingly."
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
 > I know.
 
-**LIAM** *(live)*: I didn't know anything. *(beat)* I was asleep.
-
-> [!screen] VIDEO — COUNSEL · `AIV-089`
-> I know. *(beat)* It's a term of art.
-
-*(A long beat.)*
+*(He thinks about Brendan, who had the computer the night the incident started.. and how of Brendan's life is still in front of him. He thinks about retirement in 14 months... he thinks about retirement in 1 month...)*
 
 **LIAM** *(live)*: Right.
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
-> If you don't sign it, we go on the fourteenth.
+> If you don't sign it, we go back to trial.
 
-**LIAM** *(live)*: And if we go on the fourteenth.
+**LIAM** *(live)*: And if we do...
 
 > [!screen] VIDEO — COUNSEL · `AIV-089` *(honestly, because they respect him)*
-> Then twelve people look at eleven thousand log lines with your name on them, and I stand up and explain *Van Buren* to them. *(beat)* I'd be doing my job properly and I would probably lose.
+> Then twelve people look at eleven thousand log lines with your name on them, who have gone with rolling brownouts, with food shortages, and a healthcare system that basically doesn't work anymore, with limited air travel, and they get a chance to send away the villain who in their eyes did all that to them.. *(beat)* I'm a good lawyer but... honestly I'm a little shocked at the deal they're offering you.
 
 **LIAM** *(live)*: *(beat)* Yeah.
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
-> You've been very clear with me that there's nothing else. Nobody else with access, nothing I haven't got.
+> You've been very clear with me right? There's nobody else with access to your account? No other avenue we haven't explored already?
 
 **LIAM** *(live)*: *(without any pause at all)* No. There's nothing.
 
-*(That is the last time anybody asks him.)*
+*(That is the last time anybody asks him that)*
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
-> Then I think you should take it, and I don't say that lightly.
+> Then I think you should sign it, and I don't say that lightly.
 
 *(LIAM looks at the statement of facts for a while.)*
 
-*(Somewhere two hours ago, a man read the word "mutual" twice and would not sign a piece of paper that said a thing about him that wasn't so.)*
-
-**LIAM** *(live)*: Where do I—
+**LIAM** *(live)*: Where do I...
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
 > Bottom of four, and initial each page.
 
 *(He signs it. It takes about six seconds. He initials each page, in order, neatly, because that is what was asked.)*
 
-**LIAM** *(live)*: *(finishing)* That's — sorry, is that everything?
+**LIAM** *(live)*: *(finishing)* That's... sorry, is that everything?
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
 > That's everything.
 
-**LIAM** *(live)*: Okay. *(beat)* Thank you. You've been— *(beat)* Thanks.
+**LIAM** *(live)*: Okay. *(beat)* Thank you. You've been... *(beat)* Thanks.
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`
 > Take care of yourself, Liam.
 
 *(The screen goes.)*
 
-*(LIAM sits in the bare room with a signed document, every word of which he agreed to, and one word of which is not true.)*
+*(LIAM sits in the bare room with a signed document, every word of which he agreed to, and not one word of which is not true.)*
 
-*(On screen — `AIV-093`, last state — a court calendar. The fourteenth. **HEARING — UNITED STATES v. MKRTCHYAN.**)*
+*(Nobody has switched it off for the worm that would become known as the Liam worm, or contained it from spreading, or explained how it's able to do half of what it's able to do, because there is nobody to charge of it.)*
 
-*(The entry greys out.)*
+**NARRATOR** *(V.O.)*: After Liam signed his guilt, the recently appointed judge rejected the plea deal. Liam got scheduled for sentencing. And by the time his sentencing hearing came up, given the current state of the world... the 151 years would have actually been a good deal.
 
-*(Then it goes.)*
-
-*(Nobody is watching it. It is the same click as all the others.)*
-
-*(And behind it, where it has been since the night in September — quietly, on the surface, through the flat and the doorway and the courtroom, unread by every single person in this play —)*
-
-*(— the counter.)*
-
-*(It is still going.)*
-
-*(Nobody has switched it off, or contained it, or explained it, or charged anybody with it, because there is nobody to charge and no field to put it in.)*
-
-*(One man signed a form about it.)*
+**NARRATOR** *(V.O.)*: Marcus was right. The system brought us here. Not any one person.
 
 ---
 

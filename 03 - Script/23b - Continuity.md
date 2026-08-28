@@ -50,7 +50,7 @@ Cold, low light. No music anywhere in this scene.
 
 ## Script
 
-*(Evening. LIAM's flat, and there is nothing in it. A bare desk. No box by the door. He is in the court suit with the jacket off. On a screen, MARCUS, somewhere with noise behind him.)*
+*(Evening. LIAM's apartment, and there is nothing in it. A bare desk. He is in the court suit with the jacket off. On a screen, MARCUS, taking an illicit call with Liam over a LORA radio, they both know they're not allowed to communicate. Candles are used to light the apartment.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
 > There he is. *(beat)* How are you? No, don't answer that. *(beat)* Liam, you were unbelievable in there.
@@ -58,55 +58,46 @@ Cold, low light. No music anywhere in this scene.
 **LIAM** *(live)*: I didn't say anything.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> That's what I mean. You sat there and you let it happen to you and you didn't give them a thing. That's a stance. People saw that.
+> You let the Jury see you. They'll know you're just a product of the system, we won't repeat the mistakes of past, we can do better this time....
 
-**LIAM** *(live)*: *(beat)* Which people.
-
-> [!screen] VIDEO — MARCUS · `AIV-099`
-> I've had four messages about it. Four. And that's before anybody's written anything proper. *(beat)* Listen, I've been thinking about this all afternoon and I think you have to take it all the way. I mean it. Your lawyer said it herself, the access was never revoked, and there's the Supreme Court thing—
-
-**LIAM** *(live)*: *Van Buren.*
+**LIAM** *(live)*: *(beat)* Marcus can you just for once...
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> *Van Buren.* Right. So you're not a hacker, you're a bloke whose employer forgot to press a button, and somebody has to make a court say that out loud, because right now nobody has and it's going to keep happening to people. *(beat)* You'd be the case. Genuinely. Ten years' time this is a case people cite.
+> I've had four messages about it. Everyone is making you out to be a myrter for the layoffs that are happening.. you've become kind of a symbol online
 
-*(A beat.)*
-
-**LIAM** *(live)*: I'm taking the deal.
+**LIAM** *(live)*: I'm taking a plea deal.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
 > *(beat)* What deal?
 
-**LIAM** *(live)*: Eighteen months. They came back at eighteen. I sign it Thursday.
+**LIAM** *(live)*: Eighteen months. They came down to eighteen.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
 > You're not signing that.
 
-**LIAM** *(live)*: I've read it. Four paragraphs, one of them isn't true, and I'm signing it. *(beat)* So that's where that is.
-
-*(A silence on the line. Behind MARCUS somebody laughs at something else.)*
+**LIAM** *(live)*: Marcus, I could either go to jail for the rest of my life, or take 18 months.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> Eighteen months. For a thing you were asleep for.
+> Eighteen months for prompting an AI agent...
 
-**LIAM** *(live)*: It's fourteen with good conduct. *(beat)* It's a low-security place, I've looked at it. There's a library. They do courses. *(beat)* People get longer than that for driving into somebody.
+**LIAM** *(live)*: It's fourteen with good conduct. *(beat)* It's a low-security place, I've looked at it. There's a library. They do courses.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> Liam.
+> Liam. You have a real chance of walking...
 
-**LIAM** *(live)*: I'll be fifty when I come out. *(beat)* That's not the end of anything. It's not that bad.
+**LIAM** *(live)*: No. I don't. *(beat)* The jury isn't made up of software engineers, it's made up of people frustrated their power doesn't work reliably anymore, and that planes don't fly reliably anymore...
 
 *(He has said all of that to himself several times before tonight.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-099` *(and he means every word of it)*
-> It is not fine. *(beat)* Do you know what they did to those men? They took something that was already a crime and they wrote a new law to make it a hanging offence. Eleven months, start to finish, that's all it took them. And then they hanged seventeen of them at York in one January. Fourteen on the same morning. *(beat)* For machines. For breaking machines.
+> *(beat)* Do you know what they did to those men? They hanged seventeen of them at York in one January. Fourteen on the same morning. *(beat)* For machines. For breaking machines. Don't let them hang you for breaking machines, Liam. No one could put all this on one person.
 
 *(LIAM says nothing.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> And it has gone that way ever since. Fast when it's the machine. Slow when it's a person. Two hundred years and it has never once gone the other way, not one time, and now they've put a number on you for something a computer did on its own at three in the morning. *(beat)* It's the same law, Liam. It's the same people it's for. You are the same case.
+> Two hundred years and it has never once gone the other way, not one time, and now there's a real chance it could. They've put charges on you for something a computer did, for an AI someone else created. Liam. It's the same system. You are the same case. We have to fight it.
 
-**LIAM** *(live)*: *(beat)* Okay.
+**LIAM** *(live)*: *(beat)* No Marcus.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
 > Don't say okay.
@@ -114,12 +105,12 @@ Cold, low light. No music anywhere in this scene.
 *(A beat. And then MARCUS asks him for it, plainly, and it is the most sincere he has ever been.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> Nobody has stood up and made a court say this out loud. Not once, not in all that time. And you've got it. You've actually got it, you've got the access thing and you've got the facts and you've got a lawyer who knows it, and you're going to hand it all back on Thursday morning for fourteen months. *(beat)* Be the one who doesn't. *(beat)* You could start something.
+> The whole world is watching you Liam. You can get on that stand and make a real statement. You've got an audience none of us will ever have. That the luddites never even had. You can point out how the system is what lead to this, not you individually...
 
 **LIAM** *(live)*: No.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> Liam—
+> Liam...
 
 **LIAM** *(live)*: No, Marcus.
 
@@ -129,7 +120,7 @@ Cold, low light. No music anywhere in this scene.
 *(Nobody says anything about that.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> I'll be in that gallery every day. Every single day, I mean it.
+> I'd be using the opportunity to educate the world every day. Every single day, I mean it.
 
 **LIAM** *(live)*: *(beat)* Okay.
 
@@ -142,9 +133,7 @@ Cold, low light. No music anywhere in this scene.
 
 *(LIAM alone, in the suit, at a bare desk, in a flat with nothing in it.)*
 
-*(After a while he takes out his phone and finds a page he has clearly found before. He reads it the way he reads everything, which is completely. The light off it is the only thing on his face.)*
-
-*(The light goes down on him sitting there.)*
+*(The city lights flicker off in the distance out his window. The stars appear more visible than he'd ever seen them.)*
 
 ---
 

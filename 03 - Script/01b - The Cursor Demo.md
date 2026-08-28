@@ -117,7 +117,7 @@ Continuous with the cold open — the standup grid has emptied to just two tiles
 **BRENDAN** *(live)*: Yeah I find it a little easier to use than Jira, I'm sorry if that messes our workflows up
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(waving it off, entirely warm)*
-> Work however makes you most productive, that's the whole point of any of this...
+> Work however makes you most productive, that's the whole point of any of this... Just give me access to your linear and I'll copy it over into Jira
 
 **BRENDAN** *(live)*: *(beat)* Are you sure that's alright? Because I'm still fairly new, and if there's a process thing I'm supposed to follow...
 

@@ -53,85 +53,75 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 
 ## Script
 
-*(LIAM's flat. The box is still by the door. On the desk, a clean rectangle where the Studio was.)*
+*(At Liam's apartment the same day...)*
 
-*(BRENDAN comes in carrying it with both arms.)*
+*(BRENDAN comes in carrying the computer.)*
 
-**LIAM** *(live)*: You didn't have to lug that all the way over.
+**LIAM** *(live)*: You really don't have to give it back so soon, you barely got to play with it...
 
-**BRENDAN** *(live)*: I said next week.
+**BRENDAN** *(live)*: That's okay, it turns out I don't have the patience for the slow token rate after all...
 
-*(He puts it down on the table. LIAM half-reaches to take it and there is nothing to take, so he doesn't.)*
+*(He puts it down on the table. and Liam chuckles)*
 
-**LIAM** *(live)*: How'd you get on with it?
+**LIAM** *(live)*: What did you use it for?
 
-**BRENDAN** *(live)*: *(beat)* Yeah. Good. Thanks.
+**BRENDAN** *(live)*: *(beat)* I had it do a cyber security audit... I was a little surprised it didn't refuse...
 
-**LIAM** *(live)*: Did you do the portfolio?
+**LIAM** *(live)*: Oh yeah, I don't know if I told you that part, I got tired of the refusals so I found an unlocked model
 
-**BRENDAN** *(live)*: Started it.
+**BRENDAN** *(live)*: Oh that makes sense...
 
-**LIAM** *(live)*: Good. *(beat)* Do you want a drink? I've got — I think I've got tea.
+**LIAM** *(live)*: *(beat)* Do you want a drink? I've got... coffee... tea...?
 
 **BRENDAN** *(live)*: I'm alright.
 
-*(LIAM sits. He is doing better than he was. There are three job applications open on a laptop that isn't the one on the table.)*
+*(LIAM sits. He's happy to see Brendan. He's happy Brendan seems to be doing well. Brendan seems to be taking things better than Liam did in 2000.)*
 
-**LIAM** *(live)*: I've sent out eleven. *(beat)* Two came back the same day, which — that's not a good sign, that's an automated thing, but it's movement.
+**LIAM** *(live)*: I've sent out eleven resume's today. *(beat)* Two came back as rejections on the same day, an automated thing, but the important thing is keeping the momentum up.
+
+*(He's lying... he just wanted to inspire Brendan to apply more. Retirement still lingers in his head.)*
 
 **BRENDAN** *(live)*: That's good.
 
-**LIAM** *(live)*: It's what I told you. It's the sending.
+**LIAM** *(live)*: It's what I told you. Just get them out.
 
-*(A beat.)*
+**LIAM** *(live)*: Have you checked hackernews today?
 
-**LIAM** *(live)*: Did you hear about— *(beat)* Obviously you heard.
+**BRENDAN** *(live)*: …No... why?
 
-**BRENDAN** *(live)*: …Yeah.
+**LIAM** *(live)*: There's some new malware that's going around, it seems pretty advanced
 
-**LIAM** *(live)*: Marcus has been in my DMs about it for two days. Two days. He's got a *theory*.
+**BRENDAN** *(live)*: *(beat)* Oh that sounds interesting.
 
-**BRENDAN** *(live)*: *(beat)* Right.
+**LIAM** *(live)*: Everyone's speculating about it, but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.
 
-**LIAM** *(live)*: They're saying it was an agent. Somebody's agent got loose with a token that was still good. *(beat)* It's still going, that's the thing. It's four days and it hasn't stopped.
+**BRENDAN** *(live)*: *(beat)* That does sound interesting... I wonder if that's related to the Ukraine or Iran war...
 
-**BRENDAN** *(live)*: *(beat)* That's what they're saying.
+*(Neither of them have any suspicion it's related to the computer in front of both of them.)*
 
-*(And LIAM lights up. He can't help it. It's a hard problem and it's in front of him.)*
-
-**LIAM** *(live)*: Do you know what's actually clever about it, though? *(beat)* It didn't break anything to get in. It didn't have to break anything. It just used what was there.
+**LIAM** *(live)*: Do you know what's actually clever about it, though? *(beat)* It seems to be using Long lived API keys to spread among other things.. you know, the thing I wrote about in my JWT memo?
 
 **BRENDAN** *(live)*: …Mm.
 
-**LIAM** *(live)*: Every single thing it did, it was *allowed* to do. That's the whole— *(beat)* There's no exploit. There's nothing to patch. You'd read the log and every line of it is a thing somebody said yes to at some point.
+*(BRENDAN breaths a sigh of relief he got rid of the computer... the headspace he was in last night, the unlocked model, he's happy he do didn't do more damage... at least he thinks he didn't.)*
 
-*(BRENDAN doesn't say anything.)*
-
-**LIAM** *(live)*: I'd love to see the log.
-
-*(A beat.)*
+**LIAM** *(live)*: I'd love to see the logs, it's a bummer I can't help do incident response..
 
 **BRENDAN** *(live)*: *(beat)* Yeah.
 
-**LIAM** *(live, going, half to himself)*: And there's a version of that in every company on the planet and nobody has ever once gone and looked. *(beat)* I said that for four years. I put it in writing twice.
-
-**BRENDAN** *(live)*: I know you did.
-
-**LIAM** *(live)*: *(a small laugh)* Bit late now.
+**LIAM** *(live)*: *(a small laugh)* Oh well...
 
 *(He gets up.)*
 
-**LIAM** *(live)*: Oh — I emailed Priya about you.
+**LIAM** *(live)*: Oh, I emailed my friend about you.
 
 **BRENDAN** *(live)*: …What?
 
-**LIAM** *(live)*: At the London thing. She's still in. *(beat)* I said you're the best engineer I've worked with in ten years and she should talk to you before somebody else does.
+**LIAM** *(live)*: *(beat)* I said you're the best engineer I've worked with in ten years and she should talk to you before somebody else does.
 
-*(A long beat.)*
+**BRENDAN** *(live)*: Oh Liam... you didn't have to do that.
 
-**BRENDAN** *(live)*: You didn't have to do that.
-
-**LIAM** *(live)*: I know. *(beat)* Let me know if she comes back to you. Even if it's a no. *(beat)* Especially if it's a no, actually, because then I'll ring her.
+**LIAM** *(live)*: I know. *(beat)* Let me know if she comes back to you. Even if it's a no. *(beat)* Especially if it's a no, actually, because then I'll call her.
 
 **BRENDAN** *(live)*: *(beat)* Okay.
 
@@ -139,7 +129,7 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 
 **LIAM** *(live)*: You alright?
 
-**BRENDAN** *(live)*: *(beat)* Yeah. *(beat)* Tired.
+**BRENDAN** *(live)*: *(beat)* Yeah. *(beat)* Maybe still hung over a bit from last night.
 
 **LIAM** *(live)*: Go home. Eat something.
 
@@ -155,13 +145,11 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 
 *(LIAM looks at the machine on the table for a moment, the way you look at something you're glad to have back.)*
 
-*(He carries it over to the desk and sets it in the clean rectangle, which is exactly the right size.)*
-
 *(He plugs it in.)*
 
-*(It wakes on his wallpaper — the same ThePrimeagen meme. Everything is still on it.)*
+*(It wakes on his wallpaper, the same ThePrimeagen meme.)*
 
-*(He sits down and goes back to the eleventh application.)*
+*(He loads up hackernews and reads more of the comments.)*
 
 ---
 

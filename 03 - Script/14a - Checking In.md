@@ -53,7 +53,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 
 ## Script
 
-*(Evening. A call, and not a good one. LIAM at his desk at home, dressed, the Mac Studio behind him, a flat-packed courier box against the wall by the door. BRENDAN at his own desk with a beer he isn't drinking. On a screen, MARCUS, lanyard still on, office lights behind him.)*
+*(Two weeks later Liam, Brandon and Marcus all catch up on a zoom together)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > Can you hear me? This is a terrible app.
@@ -61,33 +61,33 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 **BRENDAN** *(live)*: We can hear you.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Why are we on this?
+> Why are we on zoom?
 
 **LIAM** *(live)*: Because I'm not in Slack any more.
 
-*(A beat. Nobody says anything about that.)*
+*(A flash of guilt shoots over Marcus)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Right. Course. *(beat)* How are you doing?
+> Right... *(beat)* How are you doing?
 
-**LIAM** *(live)*: Fine, honestly. It's four weeks, which is statutory. I've got the pack. There's an outplacement provider, which is a website. *(beat)* I've been through worse ones.
-
-> [!screen] VIDEO — MARCUS · `AIV-098`
-> Four weeks. After how long?
-
-**LIAM** *(live)*: Eleven years.
+**LIAM** *(live)*: Fine, honestly. I get two months of severance. *(beat)* I've been through worse ones.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> *Eleven years.*
+> Two motnhs... After how long?
 
-**LIAM** *(live)*: It's tenure-banded. It's the same table for everyone, I looked it up. Brendan would get the same. *(beat)* It's not a slight, it's a table.
+**LIAM** *(live)*: Four years.
+
+> [!screen] VIDEO — MARCUS · `AIV-098`
+> *Four years.*
+
+**LIAM** *(live)*: It's the same for everyone. Brendan got the same.
 
 **BRENDAN** *(live)*: *(beat)* Yeah.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> And did they tell you why it was you?
+> And did they tell you why it was you ?
 
-**LIAM** *(live)*: It's scored. There's a set of criteria and it's scored across the org, and the sheet does the sorting, so nobody in the room is choosing a person. *(beat)* Which is actually the correct way to do it, if you think about it. The alternative is your manager likes you.
+**LIAM** *(live)*: It's scored. There's a set of criteria and it's scored across the org, and a google sheet did the sorting, so nobody is choosing anyone. *(beat)* Which is actually the correct way to do it, if you think about it. The alternative is your manager likes you or not.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > Did they show you the criteria?
@@ -102,64 +102,52 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > Liam. *(beat)* That's not a process. That's a thing that was done to you.
 
-*(A beat. LIAM does not like this at all.)*
+*(Liam thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself)*
 
-**LIAM** *(live)*: It's not done *to* anyone, that's the whole point of it. There's no one at the other end of it. It's a spreadsheet with a line drawn on it.
+**LIAM** *(live)*: It's not done *to* anyone. There's no one at the other end of it. It's a spreadsheet with a line drawn on it.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > Somebody chose the columns.
 
-**LIAM** *(live)*: Somebody chose the columns four months ago for a different reason, and then a different department used the sheet, and neither of them knows the other one exists. That's not malice, that's just how big things work. *(beat)* You're looking for a villain. There isn't one. I've been through it, there's genuinely nobody in it.
+**LIAM** *(live)*: Would you rather AI choose them?
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> That's worse.
+> That would be worse.
 
-**LIAM** *(live)*: *(beat)* It's not better or worse. It's what happened.
+**LIAM** *(live)*: *(beat)* What happened happened. I just wish I knew what I could have done better.
 
-*(A pause. MARCUS gathers himself, and what comes next he has clearly said in his head on the way to the kitchen.)*
+*(A pause. MARCUS gathers himself, and what comes next he has clearly said in his head in the shower.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Okay. Can I say a thing. *(beat)* There used to be an understanding. Not a law. Not a contract. An understanding, between people who made things and people who sold them, about what a fair rate was and what you owed somebody who'd done the work for twenty years. And it held for a very long time because everyone agreed it held. *(beat)* And then it just stopped. Nobody repealed it. There was nothing to repeal. One year it was there and the next year it wasn't, and if you stood up and said, hang on, we had an arrangement, the answer was that the market doesn't have arrangements.
+> Okay. Can I say a thing. *(beat)* There used to be an understanding. Not a law. Not a contract. An understanding, between people who made things and people who sold them, about what a fair rate was and what you owed somebody who'd done the work for twenty years. And it held for a very long time because everyone agreed it held. *(beat)* And then it just stopped. One year it was there and the next year it wasn't, and if you stood up and said, hang on, we had an arrangement, the answer was that the market doesn't have arrangements.
 
 **LIAM** *(live)*: This is the weaving thing again.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> It's not the weaving thing, it's your thing. *(beat)* Four years, right? Four years and not one bad Saturday. Nothing broke. Nobody got paged at three in the morning. That was you. And there's no line on their sheet where that goes, because the entire point of it is that nothing happened.
+> It's not the weaving thing, it's your thing. *(beat)* Four years, right? Four years of good reviews And there's no line on their sheet where that goes, because the entire point of it is that nothing happened.
 
-*(A beat. He is already working out why it isn't true.)*
-
-**LIAM** *(live)*: You can't put it on a sheet. There's no way to measure a thing not happening. I'm not sure that's a moral failing, I think that's just measurement.
+*(Marcus doesn't realize Liam was also on a performance improvement plan.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> And the policy?
-
-**LIAM** *(live)*: What about it.
-
-> [!screen] VIDEO — MARCUS · `AIV-098`
-> You wrote it. It's still the policy. Nobody's changed a word of it. And you were the only person on that team following it, and they marked you at three percent on tooling for it. *(beat)* You did know that.
-
-**LIAM** *(live)*: *(beat)* I saw the number.
-
-> [!screen] VIDEO — MARCUS · `AIV-098`
-> That's the bit. That's the exact bit. There's a rule, and the rule stops being convenient, so nobody says the rule is wrong, they just stop applying it, and then eventually the only person still holding it is the problem. *(beat)* That happened to a whole trade. There was a machine that had been illegal for two hundred years because it made worse cloth, and the mill owners just started running them anyway, and the men went to Parliament about it, properly, in writing, for years. And Parliament's answer was to get rid of the law.
+> It happened to a whole trade. There was a machine that had been illegal for two hundred years because it made worse cloth, and the mill owners just started running them anyway, and the men went to Parliament about it, properly, in writing, for years. And Parliament's answer was to get rid of the law.
 
 *(BRENDAN, off to one side, has stopped pretending to look at his other screen.)*
 
-**LIAM** *(live)*: And then what?
+**LIAM** *(live)*: The machines were illegal? And then what happened?
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > Then they weren't allowed to meet about it either. It was against the law for them to get together and talk about wages. *(beat)* So they stopped meeting about wages. They started meeting at night about machines.
 
-*(A silence, on a bad connection, three men in three rooms.)*
+*(For the first time, Liam and Brendan entertained Marcus)*
 
 **BRENDAN** *(live)*: Did it do anything?
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> *(beat)* It made the owners very frightened for about a year. They put soldiers in the valleys. *(beat)* So, yes and no.
+> *(beat)* It made the machine owners very frightened for about a year. They put soldiers in the valleys. *(beat)* So, yes and no.
 
 **BRENDAN** *(live)*: *(beat)* Right.
 
-*(Nobody follows it up. It is the second and last thing BRENDAN says in the scene, and nothing is decided by anybody.)*
+*(Nobody follows it up.)*
 
 **LIAM** *(live)*: Marcus.
 
@@ -173,7 +161,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 
 **LIAM** *(live)*: At who?
 
-*(A beat. MARCUS does not have an answer, and it is the only time all night he doesn't.)*
+*(MARCUS does not have an answer, and it is the only time all night he doesn't. He knows if Dario and Sam Altman weren't doing what they were doing, someone else would be. The problem wasn't with any one person)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > *(glancing off)* I've got a thing at five. *(beat)* Liam, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that.
@@ -181,30 +169,17 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 **LIAM** *(live)*: Thanks.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> And I flagged it. In the standup, about the tooling, months ago. I said at the time this would come back on somebody and it'd be the wrong somebody. *(beat)* I want that on the record.
-
-**LIAM** *(live)*: *(beat)* Sure.
-
-> [!screen] VIDEO — MARCUS · `AIV-098`
-> Send me your CV, I'll put it about.
+> Send me your CV, I'll share it with folks I know that are hiring.
 
 **LIAM** *(live)*: Yeah. I will.
 
 *(MARCUS's tile drops. He does not send anything to anybody and neither does Liam.)*
 
-*(The two live men, on a bad call, in two pools of light.)*
-
 **BRENDAN** *(live)*: *(beat)* He's a lot.
 
-**LIAM** *(live)*: He's alright. *(beat)* He'll be fine.
+**LIAM** *(live)*: He's alright.
 
-*(A pause. LIAM looks at the flat-packed box against the wall.)*
-
-**LIAM** *(live)*: Anyway. I've got to make that box up at some point.
-
-**BRENDAN** *(live)*: *(beat)* Yeah.
-
-*(Neither of them goes. Neither of them says anything else worth saying. The light on the desk end goes first.)*
+*(Brendan smiles. He's going to miss working with the two of them.)*
 
 ---
 

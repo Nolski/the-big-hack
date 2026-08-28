@@ -60,182 +60,166 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 
 ## Script
 
-*(LIAM's flat. Late morning. The returns box by the door. LIAM at the table with a laptop and a second screen, doing something else. On the laptop, MARCUS, going.)*
+*(A few days later, Liam on a call with Marcus)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> —no, but that's what I'm *saying*. That's exactly what I'm saying. Nobody was scared of a frame. Nobody in the history of the world has ever been frightened of a piece of wood. *(beat)* They were scared of what a frame let a man with six weeks' training do to a man with twenty years of it.
+> -no, but that's what I'm *saying*. Nobody in the history of the world has ever been frightened by a machine. *(beat)* They were scared of what a machine let a man with six weeks' training do to a man with twenty years of it.... the luddites didn't hate the machines, they hated the system that enabled them... they hated what the system did to them
 
 **LIAM** *(live, not looking up)*: Mm.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Which is *you*. That's you. That's literally you, and it's Brendan as well — two of you, same week, off the same spreadsheet.
+> Which is *you*. That's you. That's literally you, and it's Brendan as well, two of you, brought down by the system.
 
 **LIAM** *(live)*: I know, Marcus.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> And obviously I've still got a job, I'm aware of how that sounds, I'm not— *(straight past it)* but that's *part* of it, right? Because the ones they kept were always the ones who could be *counted*. Always. That's not a coincidence, that's the whole—
+> And obviously I've still got a job, I'm aware of how that sounds, I'm not... but that's part of it, right? Because the ones they kept were always the ones who.... Always. That's not a coincidence, that's the whole...
 
-**LIAM** *(live)*: I've got a thing at eleven.
+**LIAM** *(live)*: I've got a thing at eleven Marcus
+
+**NARRATOR** *(V.O.)*: Liam had no thing at eleven.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> They hanged seventeen men at York. In one morning. *(beat)* Seventeen. And not one mill owner ever stood in a dock. Not one, ever, anywhere. *(beat)* And two hundred years later there's a bloke sat in a flat with a laptop and it's *his* name on the—
+> They hanged seventeen men at York. In one morning. *(beat)* Seventeen. And not one mill owner ever stood in a dock. *(beat)* And two hundred years later...
 
 *(Four hard flat-handed bangs on the door. Not a knock.)*
 
 **OFFICER ONE** *(live, off, immediately)*: Federal agents! Warrant!
 
-*(LIAM is standing before he has decided to stand.)*
+*(LIAM stands up.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> —and the Frame Breaking Act got through Parliament in eleven months. *Eleven.* Which is quicker than they have ever moved for a—
+> and the Frame Breaking Act got through Parliament in eleven months. *Eleven.* Which is quicker than they have ever moved for a...
 
-*(**The door comes in.**)*
+*(**The door comes down off its hinges, the federal agents did not wait for Liam to open it.**)*
 
-*(OFFICERS. More of them than the room is built for, moving fast, filling it in about two seconds.)*
+*(The officers are either wearing street clothes, or wearing jackets that say ICE.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(still going, because he cannot see the room)*
-> —for a person. For an actual person. Ever.
+> ...for a person. For an actual person living through that....
 
-*(And LIAM — with four strangers in his home and a man he works with shouting about Parliament — reaches for the laptop to close it.)*
+*(LIAM with four strangers in his home and a man he works with shouting about Parliament, reaches for the laptop to close it.)*
 
-**OFFICER ONE** *(live, at volume)*: DON'T REACH — HANDS! SHOW ME YOUR HANDS!
+**OFFICER ONE** *(live, at volume)*: DON'T REACH, HANDS! SHOW ME YOUR HANDS!
 
 **OFFICER TWO** *(live)*: DON'T REACH!
 
-**LIAM** *(live)*: It's a lap—
+**LIAM** *(live)*: It's a laptop, what is oging on
 
-*(**He goes down.**)*
+*(**He's tackled to the ground.**)*
 
-*(It is fast, it is loud, and it is a great deal of contact. Somebody's knee, somebody's forearm, the table going, the second screen going with it.)*
+*(It is fast, it is loud, and it is a great deal of contact.)*
 
 **OFFICER ONE** *(live)*: HANDS! Give me your hands!
 
 *(He shows them his hands. Both of them. Palms out, flat on the floor of his own flat.)*
-
-*(He has never raised them at anybody in his life and he does not raise them now.)*
 
 **LIAM** *(live, into the floor, and it is the only thing he says)*: Okay. *(beat)* Okay.
 
 *(Cuffs. The room comes down out of it as fast as it went up.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(finally)*
-> …Liam? *(beat)* Liam, what's — what is that? What's happening? Is somebody— *(beat)* Oh. *(beat)* Oh, they've got him. They've got him, they've actually—
+> …Liam? *(beat)* Liam, what's... what is that? What's happening? Is somebody...
 
-*(A beat. And then, to nobody, in the voice of a man who has been waiting a year to be right:)*
+*(And then, to nobody, in the voice of a man who has been waiting a year to be right:)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> I said this. *(beat)* I said this was going to happen.
+> THEY'RE GOING TO HANG *(beat)* US ALL
 
-*(Nobody in the room hears him. Nobody in the room will ever hear him.)*
+*(Nobody in the room hears him.)*
 
-*(The laptop stays open. LIAM never got to it.)*
+*(The laptop stays open. LIAM never got to it. The agents take it. They take every piece of electronic equipment in the apartment.)*
 
-
-*(Two minutes later. The room is calm and very tidy for a room that just had a door come through it.)*
 
 *(LIAM sits on his own sofa in handcuffs. OFFICER TWO has a tablet.)*
 
-**OFFICER ONE** *(live, and this is a completely different man from ninety seconds ago, because he is now doing a different part of the job)*: Sorry about that. *(beat)* You moved and we don't know you.
+**OFFICER ONE** *(live, and this is a completely different man from ninety seconds ago, because he is now doing a different part of the job)*: Sorry about that. *(beat)* Maybe we should start over
 
-**LIAM** *(live)*: *(beat)* …No. *(beat)* That's fair.
+**LIAM** *(live)*: *(beat)* …Yeah.. *(beat)* let's start over, what are you doing in my apartment! Why are you taking my things?
 
 **OFFICER ONE** *(live)*: Are you hurt anywhere?
 
 **LIAM** *(live)*: I don't think so.
 
-**OFFICER ONE** *(live)*: Are you Liam Muh— *(he checks it)* — Muh-KURT-chan?
+**OFFICER ONE** *(live)*: Are you Liam Muh... Muh-KURT-chan?
 
-**LIAM** *(live)*: Mkrtchyan.
+**LIAM** *(live)*: McCutchen.
 
 **OFFICER ONE** *(live)*: Mkrtchyan. Sorry.
 
-**LIAM** *(live)*: It's fine. Everyone does it.
+**LIAM** *(live)*: Can you please explain to me what is happening?
 
 **OFFICER ONE** *(live)*: We've got a warrant for your arrest. I'm going to read you what's on it, and then go through the practical side, and you can stop me anywhere.
 
-*(A beat. He has heard that sentence before, in another room, from a kinder person, about a smaller thing.)*
+*(He has heard that sentence before only on TV. He remembers a youtuber saying to not say anything to the police...)*
 
 **LIAM** *(live)*: …Okay.
 
 **OFFICER TWO** *(live, the tablet — `AIV-088`)*: I've got some details to confirm. Date of birth?
 
-**LIAM** *(live)*: The fourteenth of March, nineteen seventy-eight.
+**LIAM** *(live)*: I... I want to exercise my right to...
 
-**OFFICER TWO** *(live)*: This address is current?
+**OFFICER TWO** *(live)*: Do not make this difficult... do you live here?
 
-**LIAM** *(live)*: Yes.
+**LIAM** *(live)*: I...
 
-**OFFICER TWO** *(live)*: And current employer.
+**OFFICER TWO** *(live)*: This is only going to get harder for you if you don't cooperate...
 
-*(A beat.)*
+*(Liam's heart is pounding... he's trying to process what is happening to him)*
 
-**LIAM** *(live)*: I don't have one.
+**LIAM** *(live)*: I don't understand.
 
-**OFFICER TWO** *(live, not challenging him — reading)*: I've got one on here.
+**OFFICER TWO** *(live, not challenging him — reading)*: I'll help you understand.. is this your current employer?
 
-**LIAM** *(live)*: *(beat)* What does it say?
+**LIAM** *(live)*: I... no... that's wrong. *(beat)* I was let go on the thirty-first. They did layoffs... *(beat)* You must have the wrong person.
 
-*(On screen — `AIV-088` — the field, pre-populated, with the company's name in it.)*
+**NARRATOR** *(V.O.)*: He should have remained quite... this sentence did not do him the favor he thought it would...
 
-**OFFICER TWO** *(live)*: It's pre-filled. It comes off the employer record.
+**OFFICER TWO** *(live)*: Okay...
 
-**LIAM** *(live)*: That's wrong. *(beat)* I was let go on the thirty-first. They did the whole thing — there was a call, there's a packet. *(beat)* They flagged my file. I'm not eligible for rehire, they've got a *field* for that. It's on the same record.
-
-**OFFICER TWO** *(live)*: Okay.
-
-**LIAM** *(live)*: So it's the same system. It knows I don't work there and it says I work there.
+**LIAM** *(live)*: They know I don't work there, just call them
 
 **OFFICER TWO** *(live, and she is being genuinely helpful)*: I can put a note on it.
 
 **LIAM** *(live)*: *(beat)* Yes. *(beat)* Please.
 
-*(She types two words into a free-text box. Nobody will read it.)*
+*(She writes down "Motive: Recently laid off")*
 
-*(On screen — `AIV-088` — "Corrections noted." The field above it does not change.)*
+**LIAM** *(live)*: Can I ask what this is actually about?
 
-**OFFICER TWO** *(live)*: We're taking the desktop and any drives. There'll be a receipt.
+**OFFICER ONE** *(live)*: You are under arrest for violating the computer fraud and abuse act. That's a federal law...
 
-**LIAM** *(live)*: It's been sat on that desk.
+**LIAM** *(live)*: No, I mean, *(beat)* who decided this? What did I do? Why are you wearing an ICE jacket? Doesn't the FBI handle... WHAT IS HAPPENING
 
-*(He does not finish the thought, because the thought has not arrived yet. It will arrive in about a week, in about four seconds.)*
+**OFFICER ONE** *(live, and he is not being evasive; he genuinely doesn't know)*: That's not something I'd be able to tell you right now
 
-**LIAM** *(live)*: Can I ask what this is actually about? *(beat)* Because I've read a thing online with my name in it and none of it's right.
-
-**OFFICER ONE** *(live)*: The detail's on the warrant and your attorney will have all of it today.
-
-**LIAM** *(live)*: No, I mean — *(beat)* who decided this? Somebody decided this. Who?
-
-**OFFICER ONE** *(live, and he is not being evasive; he genuinely doesn't know)*: That's not something I'd be able to tell you.
-
-*(LIAM stops. He has had this exact answer before and he recognises it, and there is nowhere to put that.)*
+*(LIAM stops. He remembers he's not supposed to say anything... he collects himself.)*
 
 **OFFICER ONE** *(live)*: Is there anyone you'd like us to call for you?
 
-*(A long beat. LIAM thinks about it properly. It is the worst question anybody asks him in the whole play and it is asked out of kindness.)*
+*(LIAM thinks about it properly. It is the worst question anybody asks him... because he doesn't.)*
 
 **LIAM** *(live)*: …No. *(beat)* No, there isn't.
 
 **OFFICER ONE** *(live)*: Okay. *(beat)* Up you come.
 
-*(They stand him up. Somebody straightens his shirt for him, which is worse than nobody doing it.)*
+*(They stand him up.)*
 
 **OFFICER ONE** *(live)*: Mind the step.
 
 *(They go.)*
 
-*(The flat. A door that doesn't shut. A table on its side. The returns box, untouched, still by the door.)*
-
-*(On the laptop, the call is still connected.)*
+*(Marcus heard most of that... the laptop was taken by ICE, but it was left open and unlocked, per their instructions to preserve evidence..)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Liam? *(beat)* Liam, are you— *(beat)* Did they take— *(beat)* Liam, mate, you *cannot* talk to them without a lawyer. That's the whole — that's literally the one thing.
+> Liam? *(beat)* Liam, are you.. *(beat)* Did they take... *(beat)* Liam, buddy, you *cannot* talk to them without a lawyer. That's the whole... that's literally the one thing.
 
-*(A beat.)*
+*(Silence..)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
 > Liam?
 
-*(The call keeps running in the empty room, recording.)*
+*(Marcus tries to process what he just watched.)*
 
 ---
 
