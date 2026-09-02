@@ -194,10 +194,13 @@ body.finding .shell { padding-right: 380px; }
   font-family: var(--serif); font-size: 13px; line-height: 1.5;
   font-style: italic; color: var(--muted); max-width: 62ch;
 }
-/* A beat with no delivery note doesn't need a box for one taking up the page —
-   but reaching for the beat should still offer somewhere to put one. */
+/* A beat with no delivery note doesn't need a box for one taking up the page.
+   It used to appear on :hover — but the note sits ABOVE the dialogue, so the
+   box opening pushed the very line you were reaching for down out from under
+   the pointer, and you clicked the wrong thing. The offer is now the ( ) tool
+   in the gutter, which fades in on opacity and moves nothing. */
 .dir.empty { display: none; }
-.beat:hover .dir.empty, .beat:focus-within .dir.empty { display: grid; }
+.dir.empty.open { display: grid; }
 /* The few parentheticals this page can only show, not write. */
 .dir.ro { padding: 5px 9px; color: var(--faint); cursor: help; }
 .md {

@@ -443,7 +443,19 @@ function beatRow(ln) {
       b.textContent = "⏹";
     });
   }
+  // Opening the empty delivery-note box is an explicit act, not something that
+  // happens because the pointer passed over the beat. See .dir.empty in the css.
+  if (dirF) tool("( )", "Delivery note", () => {
+    dirF.wrap.classList.add("open");
+    dirF.focus();
+  });
   if (ln._raw != null) tool("🗑", "Remove this beat (⌘⌫)", () => row.remove());
+
+  // Opened, left empty, walked away from: put it back rather than leaving a
+  // blank box sitting in the scene for the rest of the read.
+  if (dirF) dirF.ta.addEventListener("blur", () => {
+    if (!dirF.ta.value.trim()) dirF.wrap.classList.remove("open");
+  });
 
   const row = {
     ln, el, note,
@@ -728,6 +740,17 @@ document.addEventListener("keydown", (e) => {
     return;
   }
   if (meta && e.key === "Enter") { e.preventDefault(); markSceneDone(); return; }
+  // Deleting is global, not just inside a box. The help sheet promises ⌘⌫
+  // deletes this beat, and it used to sit below the `!ta` return — so reading
+  // a beat, hovering it, or clicking its gutter and pressing ⌘⌫ did nothing at
+  // all. `remove()` confirms before it touches anything, so there is no reason
+  // to require the caret be in a textarea first.
+  if (meta && (e.key === "Backspace" || e.key === "Delete")) {
+    e.preventDefault();
+    if (S.lastRow) S.lastRow.remove();
+    else toast("Click a beat first, then ⌘⌫.", true);
+    return;
+  }
 
   if (!ta) {
     if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
@@ -749,11 +772,6 @@ document.addEventListener("keydown", (e) => {
   if (e.altKey && e.key.toLowerCase() === "f") {
     e.preventDefault();
     if (S.lastRow) S.lastRow.toggleFlag();
-    return;
-  }
-  if (meta && (e.key === "Backspace" || e.key === "Delete")) {
-    e.preventDefault();
-    if (S.lastRow) S.lastRow.remove();
     return;
   }
   if (e.key === "Tab") {
