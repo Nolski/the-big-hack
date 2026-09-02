@@ -19,12 +19,14 @@ tags:
 |---|---|---|
 | **Obsession** | the technical | the political |
 | **Is he correct?** | usually, on the code | usually, on the system |
-| **How it comes out** | pedantic, cutting, certain — corrects people in public | indignant, procedural, faintly pleased with itself — "quick flag," "I want it noted that I flagged it" |
+| **How it comes out** | pedantic, cutting, certain — corrects people in public | earnest, procedural, four seconds behind the room — "quick flag," "I want it noted that I flagged it" |
 | **What he thinks protects him** | being the best engineer in the room | having named the problem out loud first |
-| **What he does to Kristina** | the credential jab in [[01 - Cold Open — The Standup]] | talks over her every week while defending women in rooms where it looks good |
-| **What it costs him** | everything | nothing |
+| **What he does to Kristina** | the credential jab in [[01 - Cold Open — The Standup]] | defends her sincerely, and talks over her every week doing it |
+| **What it costs him** | everything | nothing — which is the thing he cannot hold, and what radicalises him |
 
 The point of the pairing is the last row. They are the same animal pointed in opposite directions, which is why they cannot stop arguing — and only one of them is standing at the end. Neither of them helps anyone.
+
+**They are not rivals, and Marcus is not a point-scorer.** He thinks Liam is the best engineer he has ever worked with and says so twice, sincerely. He is simply odd, over-explains, and mistakes every disagreement for an invitation to keep going — so he ends up across the table from the one man on the team he actually admires, every single week. See [[Modern World — Supporting]] for the full register.
 
 > [!important] Marcus is the one who prices him
 > The whole thesis sits in one collision, and it is already staged. In [[12 - Below Expectations]] Marcus fills in the peer feedback form sincerely, encourages Brendan to do the same, writes something factually true, and is the reason the review has a number. By then he has spent an hour lecturing about solidarity and the Luddites. **The person who has correctly diagnosed the entire system is the person who ends Liam's job, via a survey, with no malice in it whatsoever.**
@@ -41,7 +43,7 @@ The point of the pairing is the last row. They are the same animal pointed in op
 | **The diagnosis nobody can use** | Marcus | right about everything, useless, and complicit |
 | **The system** (process with a face) | HR / "People Partner" | boilerplate that reads as protective at calibration, closed and procedural at the exit in person — the same institutional script, and neither one is advocacy |
 | **The pressure from above** | THE CEO | not greed, fear; a bad dashboard and a hard boardroom |
-| **The radicaliser** | Marcus, after the firing | a colleague aiming his anger is worse to watch than strangers doing it |
+| **The radicaliser** | Marcus, after the firing | a colleague aiming his anger is worse to watch than strangers doing it — and the anger is survivor guilt he cannot name |
 | **The bailiff** | the officers (Movement IV) | procedurally polite; the only bailiff the play has now that John is cut |
 
 ## The asymmetries worth keeping

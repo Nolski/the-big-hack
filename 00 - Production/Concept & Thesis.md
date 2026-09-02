@@ -13,7 +13,7 @@ As AI coding agents eat the craft he lives for, a brilliant, prickly developer n
 ## The shape
 - **Cast:** two live speakers — [[Liam]] (Speaker A) and [[Brendan]] (Speaker B, who also narrates). Everyone else — Marcus, Kristina, HR, the CEO, the press, the court, the officers — is an **AI-generated video character**, subject to the live-body question in [[Rework — The Escalation Pass]] §E/§I.
 - **Structure:** **one thread, five movements, escalating**. The institutions detach from reality a notch per movement; Liam does not. Running order in [[Structure & Scene Map]]; the contract that keeps the escalation from becoming randomness is the ladder in [[Rework — The Escalation Pass]] §G.
-- **The history:** the Luddites are in the play, but nobody visits 1812. **Marcus** — an engineer on the team, politics-obsessed the way Liam is tech-obsessed — drags them into standups nobody asked him to. He is right about the shape and wrong about the details, and Liam corrects him, so the audience gets accurate history through the argument instead of a lecture.
+- **The history:** the Luddites are in the play, but nobody visits 1812. **Marcus** — an engineer on the team, politics-obsessed the way Liam is tech-obsessed — drags them into standups nobody asked him to. **Everything he says is accurate, and the audience learns it from him** — but it arrives on a ramp rather than as a lecture: the word first, objected to and never explained; then one short piece of real history; then the whole shape of it, always landed on something that happened on this team this week.
 - **Tone:** darkly comic / satirical with real tech-industry teeth. The jokes are funny — and then the same jokes come back when the stakes are real and they aren't funny anymore.
 
 ## Thesis (what it's actually about)
@@ -61,6 +61,6 @@ It is the payoff of [[13b - The Plan]], where he refused a separation agreement 
 
 ## What this play is not
 - Not a lecture about AI safety or model capabilities.
-- Not pro- or anti-Luddite as a costume; the history is used honestly (see [[Luddites — History]]). Marcus gets the myths wrong on purpose and is corrected on stage, so the play never asserts them.
+- Not pro- or anti-Luddite as a costume; the history is used honestly (see [[Luddites — History]]). Marcus never states a myth, so nobody has to correct one, and the play never asserts them.
 - Not a tragedy that lets the audience off the hook with a villain to boo — the hardest rule to hold once ICE and a prosecutor are on stage.
 - Not a hero's story. A hacker audience will want to cheer the hack, the arrest and the courtroom stunt; decide per beat whether they're allowed the laugh, and where it gets taken back.

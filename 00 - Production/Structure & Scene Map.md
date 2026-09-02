@@ -12,7 +12,7 @@ tags:
 The decision record for this structure — including the questions still open — is [[Rework — The Escalation Pass]]. The escalation contract that keeps "it gets crazier" from becoming "it gets random" is §G of that note, and it should be written before any new scene.
 
 > [!important] This replaced the braided two-century structure
-> Earlier drafts ran Liam's story against a Yorkshire weaver's in alternating movements, converging at the end. **That is retired and John is cut.** The Luddite material survives entirely in **Marcus's** mouth — an engineer on the team who is politics-obsessed the way Liam is tech-obsessed, and who drags the history into standups nobody asked him to. He is wrong about the details and right about the shape; Liam corrects him; the audience gets accurate history through the argument. See [[Character Mirror Map]] and [[Modern World — Supporting]].
+> Earlier drafts ran Liam's story against a Yorkshire weaver's in alternating movements, converging at the end. **That is retired and John is cut.** The Luddite material survives entirely in **Marcus's** mouth — an engineer on the team who is politics-obsessed the way Liam is tech-obsessed, and who drags the history into standups nobody asked him to. **Everything he says is accurate** — the myths-and-corrections plan is retired ([[Rework — The Escalation Pass]] §B), Liam has no expertise and never gets a date or a statute, and the audience learns the history from Marcus directly. It arrives on a ramp: the *word* in Movement I, the first real history in [[06 - Good Instinct]], Enoch in [[11b - Best Practices]]. See [[Character Mirror Map]] and [[Modern World — Supporting]].
 >
 > The runtime the braid used to spend on 1812 now buys a **second half the play never had**: the accidental hack, the press, the arrest, the trial, the removal.
 
@@ -20,7 +20,7 @@ The decision record for this structure — including the questions still open �
 
 | Movement | Content |
 |---|---|
-| **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus, the Luddites as a bit, and the credential jab at Kristina he calls out and helps nobody by calling out. |
+| **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus: an ordinary workplace grievance, the *word* Luddite objected to and never explained, and the credential jab at Kristina he calls out and helps nobody by calling out. **No history yet.** |
 | **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. |
 | **III** | Offboarding → **the call where Marcus names it and Liam won't have it** → **Brendan gets the same call** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. |
 | **IV** | The press invents him → the arrest. Procedurally polite officers, a form, a name mispronounced, and a takedown triggered by a man trying to correct a record. **Cast goes to four live actors here** — see [[22 - Current Employer]]. |

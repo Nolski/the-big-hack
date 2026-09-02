@@ -21,7 +21,7 @@ tags:
 ## Purpose
 Open the show inside Liam's world and his worst habit at once: a brilliant, contemptuous craftsman, needled by a celebration he isn't at the centre of, tears down a *shipped, beloved* product after the fact — humiliating the junior who built it **and** the PM who steps in to shield him. Plant the pedantry and contempt-for-non-engineers that become the documented case against him.
 
-Second job, added in the Marcus pass: **introduce the other insufferable man on the team, and establish that the two of them are pointed in opposite directions.** Marcus hears Liam attacking the tool and assumes he has found an ally. Liam refuses the alliance in one line, because Liam thinks he is being technical and apolitical while Marcus thinks everything is politics. Marcus starts on the Luddites and never gets to the end of the sentence, because Liam finds something more interesting in a diff, and that is the shape of every argument he has all night. Then, when Liam humiliates Kristina, Marcus is the only person who says anything, is completely right about it, talks over her while doing it, and leaves her worse off than she was.
+Second job: **introduce the other difficult man on the team, and establish that the two of them are pointed in opposite directions.** Marcus hears Liam attacking the tool and assumes he has found an ally. Liam refuses the alliance in one line, because Liam thinks he is being technical and apolitical while Marcus thinks everything is politics. **Marcus is not anti-machine** — he is the fastest adopter in the building and says so uneasily, in a single line nobody picks up. He also, sincerely, tells Liam he's the only one who still reads the code, and Liam doesn't hear it. Then the word *Luddite* gets put on him by a friendly colleague trying to change the subject, and he objects to the usage and never gets to say why, because the room moves and Liam finds something more interesting in a diff. **He explains nothing in Movement I, and that is deliberate** — the first real history is [[06 - Good Instinct]]. Then, when Liam humiliates Kristina, Marcus is the only person who says anything, is completely right about it, talks over her while doing it, and leaves her worse off than she was.
 
 ## Setting / Staging
 Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrobe, barely out of bed: one monitor is a wall of **Reddit anti-AI memes** he scrolls with the mouse, the other holds the **Zoom standup grid** of coworker tiles. His own tile is a **camera-off black square labeled "Liam"** — and it *stays* black, even through the cruelty: the audience sees the man the call cannot. The memes are up *first* and large; the house reads them and laughs along before they even find the man underneath, and he keeps scrolling them through the meeting. The joke he's enjoying — that AI "confidently lies to you" — is the exact thing he weaponises minutes later against Brendan's AI-written code. Light: cool monitor-blue; the warm/analog half of the stage (John's loom) stays dark for now. **Brendan** (live, Speaker B) is at his own desk in a separate pool of light, camera *on* — the audience's first sight of a face that isn't hiding. The two live men are on the same call and never in the same room: no shared props, no contact, all morning.
@@ -37,7 +37,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 - **[[AI Video Production Tracker|AIV-011]] — Standup grid (ambient loop):** the half-listening coworker tiles; runs under the standup, nodding through the whole blow-up having heard none of it.
 - **[[AI Video Production Tracker|AIV-010]] — Kristina (PM):** runs the standup; celebrates the shipped API developer portal; thanks Brendan for the weekend; is humiliated by the degree line and left speechless; recovers to wrap the standup.
 - **[[AI Video Production Tracker|AIV-013]] — The PR (screen share):** the merged ~800-LOC PR — "+812 / −4", a green **Merged** badge — that Liam pulls up himself and scrolls.
-- **[[AI Video Production Tracker|AIV-019]] — Marcus (standup):** first appearance, and he finishes neither of his two thoughts. First he mistakes Liam's anti-AI rant for solidarity, is refused flatly, and starts explaining what the word Luddite actually means until Liam stops listening. Then he fills the dead air after the credential jab, names it exactly right, is deflated by Liam taking it literally, and finishes his sentence over the top of Kristina closing it down. Nasal, level, unhurried, sincere, never quite rude enough to sanction. Same locked look and voice as `AIV-048` and `AIV-055`.
+- **[[AI Video Production Tracker|AIV-019]] — Marcus (standup):** first appearance, and he finishes neither of his two thoughts. First he mistakes Liam's anti-AI rant for solidarity, is refused flatly, pays Liam a compliment Liam doesn't hear, and gets one sentence into objecting to the word *Luddite* before the room moves. **No history in this scene — the word only.** Then he fills the dead air after the credential jab, names it exactly right, is deflated by Liam taking it literally, and finishes his sentence over the top of Kristina closing it down. Nasal, level, unhurried, **sincere and badly timed — never smug, never scoring**. Same locked look and voice as `AIV-048` and `AIV-055`.
 
 ---
 
@@ -86,20 +86,29 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 **LIAM** *(live, riding his own certainty — the meme energy, out loud now)*: The tests pass...? *(a short, mirthless laugh)* The AI wrote the code *and* the AI wrote the tests that say the code's fine. It doesn't understand any of it, it's just a next word predictor, it just sounds sure of itself.. It'll lie straight to your face.
 
 > [!screen] VIDEO — MARCUS · `AIV-019` *(a tile unmutes; he has been waiting months for somebody to say this)*
-> Thank you. Thank you, Liam. That is exactly what I keep saying... Nobody wants to talk about it... the AI is coming for our jobs, and the code it writes keeps getting better and better
+> Yeah, well, what I keep saying... Nobody wants to talk about it... the AI is coming for our jobs, and the code it writes keeps getting better and better
 
 **LIAM** *(live, not looking up)*: That's not what I said at all... I said the code is bad... what?
 
 > [!screen] VIDEO — MARCUS · `AIV-019`
-> But it's getting better though, that's my point
+> If you listened to what I said about the Luddites, Liam... The quality of their work got worse, but it doesn't matter because it's cheaper.
 
-**LIAM** *(live)*: It really isn't.
+**NARRATOR** *(V.O.)*: Generally speaking, it's thought that the quality of the garments went up via industrialization. Marcus made some crude, incorrect assumptions to win the argument.
 
-> [!screen] VIDEO — MARCUS · `AIV-019` *(carrying on regardless, perfectly pleasant)*
-> Do you all know the story of the luddites? Textile workers in the 1700's who kept saying the factory produced clothes would never be as good as their work, until one day it was....
+**LIAM** *(live)*: Marcus, this has nothing to do with making clothes. We are hired to write good code and vibe coding writes garbage code. Can you please keep your politics out of this for 5 minutes? Kristina is trying to run standup.
+
+**KRISTINA**: Thanks Liam. Let's -
+
+> [!screen] VIDEO — MARCUS · `AIV-019` *(sincerely; he means it as a compliment)*
+> But you're wrong, Liam. This has happened throughout history, with skilled workers being replaced by technology. Our boss will always try to replace us with technology if we don't -
+
+**LIAM**: Marcus, you've already done your big speech on the Luddites last week. Do you mind if we talk about actual technology this time around, despite your hatred for it?
+
+> [!screen] VIDEO — MARCUS · `AIV-019` *(stopping dead; this one actually gets him)*
+> Well Kristina cut me off last week. If she hadn't, you'd know that, the word "luddite" doesn't mean what everybody thinks it means. That's the thing. They weren't...
 
 > [!screen] VIDEO — KRISTINA ·
-> Marcus, you bring up some good points but can we get through standup and then I promise I'll give you an opportunity to share your concerns
+> Marcus, thank you for your input... but can we get through standup and then I promise I'll give you an opportunity to share your concerns
 
 *(He has lost LIAM completely. Something on the diff has him.)*
 
@@ -171,8 +180,11 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 - **The trigger** is the *celebration of weekend grind*, not a bug. Play the flip on "He worked the weekend."
 - **The sexism is "vaguely":** never explicit, fully deniable — he attacks her *credential* and her *right to decide* ("never yours to override"), in a patient-mansplaining register. Deniable as "just the org chart," felt by the audience as gendered.
 - **Marcus is right and it costs her the recovery.** Her speechlessness still lands, but the silence is broken by him and not by her, and the bright cadence she reassembles gets spent thanking the man who defended her and shutting him up. **Liam is never addressed at all.** She has to manage the ally instead of the offender, which is the beat, and it is why the callout helps nobody. Play him sincere, unhurried and slightly too slow, never smug, and let the audience feel it curdle on its own. "I'd have asked you the same thing" is Liam telling the truth and missing the entire point in one line.
-- **"Noted" is the character in one word,** and it is the same instinct as "I want it noted that I flagged it" ([[11b - Best Practices]]) and "turns out this is where things get noted" ([[12 - Below Expectations]]). He wants a record and there isn't one. Later there is one, it is a survey, and it ends Liam.
+- **"Noted" is the character in one word,** and it is the same instinct as "I want it noted that I flagged it" ([[11b - Best Practices]]) and "turns out this is where things get noted" ([[12 - Below Expectations]]). **Play it as a man with no other model of how to be heard, not as credit-seeking** — he wants a record because a record is the only mechanism he trusts, and there isn't one. Later there is one, it is a survey, and it ends Liam.
 - **Nothing Marcus says here is wrong, and he still gets nowhere.** He is accurate about the word, accurate about the jab, and both times the room simply moves. **The joke is that he never lands a full sentence in Movement I**: the first attempt dies because Liam finds something more interesting in a diff, and the second dies because the person he is defending needs him to stop. The finished version of the argument is [[06 - Good Instinct]], and the version that matters is Enoch in [[11b - Best Practices]].
+- **The Luddite ramp starts here, and it starts with the word and nothing else.** An earlier draft had him open *"Do you all know the story of the luddites?"* and deliver a potted history at minute four — which was both a lecture before the audience had any reason to want one, and factually the myth the vault bans ([[Luddites — Period & Conditions]] §7). **That is cut.** What survives is the word being used loosely *at* him, by a friendly colleague, and one objection he never completes. **He must not explain anything here.** The audience should leave Movement I mildly curious and slightly annoyed, which is exactly the state [[06 - Good Instinct]] wants them in.
+- **He is the heaviest user of the tool on this team and it frightens him** — *"I got through more work last week than I have in a year. I'm not saying that like it's a good thing."* One line, nobody picks it up, and he never resolves it in the whole play. **Do not expand this and do not let anyone respond to it.**
+- **He admires Liam, and Liam doesn't hear it.** *"You're the only one here who still reads it."* is sincere and is the plant for *"Liam's the best engineer I've ever worked with"* in [[23 - The Trial]]. **They are not rivals.** He is odd, he over-explains, and he ends up across the table from the one man on the team he actually respects. Play the compliment straight and let Liam's "It really isn't" walk over it.
 - **Liam refuses the alliance and that refusal is the play's spine.** Marcus hears an ally and gets *"That's not what I said. I said the code is bad."* Liam thinks he is being technical and apolitical, and he thinks that right up until the end of the show. Play it as a man genuinely correcting a misquote, not as a snub.
 - **Hand-off:** this scene ends on the standup emptying out; the huddle that follows is now its own scene ([[01b - The Cursor Demo]]).
 - **Mirror:** rhymes forward to John at the loom (B2, Movement II) — same "community where he has standing," opposite texture (John *embedded* and warm; Liam *tolerated* and sharp).

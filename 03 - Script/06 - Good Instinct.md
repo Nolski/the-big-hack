@@ -35,7 +35,7 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-040]] — Kristina (PM):** runs the day-two standup; pushes Liam for a direction on the still-open race condition using support-volume arithmetic (four reports versus other tickets affecting hundreds); takes his fair correction that cross-account access is a security problem, not a ticket-volume problem; blesses the pairing.
 - **[[AI Video Production Tracker|AIV-011]] — Standup grid (ambient loop, reused from Scene 1):** the half-listening coworker tiles under the standup.
-- **[[AI Video Production Tracker|AIV-048]] — Marcus (standup day two):** finishes the tangent Liam cut him off on yesterday. Mentions his three merged tickets first. Asks for thirty seconds and takes about twenty, clearly and accurately, and finishes by pointing it at Brendan's shipped PR without saying Brendan's name. Same locked look and voice as `AIV-019` and `AIV-055`.
+- **[[AI Video Production Tracker|AIV-048]] — Marcus (standup day two):** **the first real history in the play, and it arrives grievance-first.** Opens on his own three merged tickets and the fact that he couldn't tell you what's in them — thrown away, taken as a joke. Then a plain complaint about the quality of what this team is shipping, and only *then*, when Kristina tries to move on, the history, as evidence for the complaint. **He never says the word; Liam supplies it.** About twenty seconds, clear and accurate, finishing on Brendan's shipped PR without saying Brendan's name. Same locked look and voice as `AIV-019` and `AIV-055`.
 - **[[AI Video Production Tracker|AIV-043]] — Liam's shared screen (screen graphic, no voice):** the session handler / `getOrCreateSession`, the "#incident — logged in as someone else" thread, the token-RNG dead ends he has been chasing.
 - **[[AI Video Production Tracker|AIV-044]] — Brendan's private screen (on-screen UI, no voice — the machine):** Claude Code already has the full repository. Brendan directs it to investigate the signup/session race without pasting code or prod data. It traces the flow across the repo, writes a deterministic local repro harness, runs two concurrent signups, and returns the diagnosis with logs plus screenshots showing one local user briefly inside the other's account. The one-line fix and shared-store smell sit underneath. The audience sees the proof; Liam never does. The machine's first real engineering turn; mirror of the steam looms.
 
@@ -49,20 +49,32 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 > …lovely, thanks Brandon. Marcus, anything blocking you?
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
-> Nothing blocking. Three tickets, all merged. *(beat)* Can I say one thing that isn't a ticket? It's quick.
+> Nothing blocking. Three tickets, all merged by Claude.
+
+> [!screen] VIDEO — KRISTINA · `AIV-040` *(taking it as a joke, moving on)*
+> Ha. Great. Liam...
+
+> [!screen] VIDEO — MARCUS · `AIV-048`
+> Sorry, can I say one thing that isn't a ticket? It's quick.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(the pause of a woman who has been here before)*
 > Is it quick? Remember we agreed to time limits Marcus...
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
-> It's quick. So I went and read about the Luddites last night, after yesterday. And the thing nobody tells you is that they weren't against all machines. In fact a few decades earlier machines that put yard manufacturing ahead actually helped the luddites. Cheaper yarn meant more work for them. But when it came to garment making, not only where they more directly impacted, they took issue with the quality. The cloth got cheaper both in cost and quality, and the men who could tell the difference were the ones who lost their jobs over it. *(beat)* And we shipped eight hundred lines on Thursday that nobody read.
+> It's quick. It's true that shipping features faster than we ever have, but we're just getting turned into sweat shop workers hitting approve on Claude.
+
+> [!screen] VIDEO — KRISTINA · `AIV-040`
+> Marcus, we agreed on bringing this up during standup...
+
+> [!screen] VIDEO — MARCUS · `AIV-048` *(going anyway, and this is the first real history in the play)*
+> No, because this has all happened before. In the 1700's there were power looms driven by steam that were unsafe to operate but could make textiles way faster than the workers of the time, who used to work from home and were well compensated...
 
 *(Somewhere in there is BRENDAN, who wrote those eight hundred lines, saying nothing.)*
 
 **LIAM** *(live, headphones half on, eyes still on the code)*: They lost, by the way.
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
-> Sorry?
+> ...What?
 
 **LIAM** *(live)*: The Luddites. They lost. They got hanged. Anyway *(beat)* I'm reading the code, please stop talking.
 
@@ -148,7 +160,10 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 ---
 
 ## Notes
-- **The Marcus beat is the allegory, not a history lesson.** Everything he says is accurate and none of it is trivia. The Luddites broke some machines and left others standing in the same room; what they attacked were machines being used to turn out cheap goods fast by people who had never been trained; the cloth got worse and the men who could tell got laid off. He says all of that in plain words, in about twenty seconds, and then lands it on the thing that actually happened in this room yesterday: eight hundred lines shipped that nobody read. **The audience should come out of it understanding the Luddites better, and should also be slightly embarrassed for him.**
+- **The Marcus beat is the allegory, not a history lesson, and the order is the whole thing.** **Grievance first, history second.** He opens on something that is happening *now*, on this team, that anyone in the audience recognises — the work going out isn't as good, everyone has noticed, nobody says it — and the history arrives only when Kristina tries to move him on, as *evidence for a complaint he was already making*. An earlier draft opened *"So I went and read about the Luddites last night"*, which made it homework and made him a teacher. **Cut that framing wherever it reappears.**
+- **He never says the word in this scene. Liam does.** Marcus tells the whole thing without naming them, and Liam supplies the name and the only fact he owns in the same breath: *"The Luddites. They lost."* That pays off the objection Marcus never finished in [[01 - Cold Open — The Standup]] and it is much better than Marcus announcing his own subject.
+- **Everything he says is accurate and none of it is trivia.** They weren't against machines; cheaper yarn meant more work for them; what they went after were the frames turning out bad cloth fast in untrained hands; the cloth did get worse and the men who could tell were the ones let go. Plain words, about twenty seconds, then landed on the thing that actually happened in this room yesterday: eight hundred lines shipped that nobody read. **The audience should come out of it understanding the Luddites better, and should also be slightly embarrassed for him.**
+- **"I couldn't tell you what's in any of them" is the adopter thread and it must be thrown away.** He is the fastest person on this team and it unsettles him, and he says so once, as a joke he isn't entirely making. **Kristina takes it as a joke and moves on. Nobody follows it up, here or ever.** Do not expand it, do not give it a beat, and do not let Liam hear it.
 - **He uses Brendan's PR to make his point, on a call Brendan is on, four days after Kristina thanked him for it.** Nobody names it. That is the small unbearable thing this beat owes the guard rule in [[Modern World — Supporting]].
 - **Liam is not a Luddite expert and must never sound like one.** He knows one thing, which is the thing everybody knows: they lost. He is not correcting Marcus, he is trying to get him to stop talking so he can read. **If a draft ever gives Liam a date, a statute or a troop number, cut it** — his whole position is that none of this is his subject, and the play needs that to be true so the refusal in [[11b - Best Practices]] means something.
 - **"They lost, by the way" is a plant.** Say it flat and throw it away. Nobody reacts, and Kristina moves the board on top of it. It is the line the back half hands back to him, and it must not sound like a theme when he says it. **Do not add a beat, a pause or a light change.**

@@ -195,17 +195,19 @@ characters:
   role: supporting
   medium: ai-video
   live: false
-  description: Another engineer on the team. Ships fast by accepting what the agent writes; in the Scene 11b standup he unmutes to defend himself and turns out to be exactly as stubborn as Liam, and far more annoying.
+  description: The second lead. Another engineer on the team, and the fastest adopter on it — he ships more than anyone and is quietly uneasy about how easy it has got. Obsessed with the politics of the work the way Liam is obsessed with the technical, sincere, accurate, badly timed, and never listened to. He genuinely admires Liam and cannot get through a meeting without ending up across the table from him.
   voice:
     mode: xvector
     seed: 909
     instruct: >-
-      An insufferably condescending male software engineer, late forties, American.
-      Nasal, adenoidal, pinched voice, slightly congested. Patronizing sing-song
-      delivery where every sentence lands like a correction. Smug, unhurried,
-      faux-polite, whiny, grating. Never raises his volume, which makes it worse.
-      The coworker everyone mutes.
-    sample_text: Sorry — quick flag. I'm just going to say it. Nobody can audit eighty billion numbers, Liam. Nobody. And I want it noted that I flagged it.
+      An earnest, socially miscalibrated male software engineer, late forties,
+      American. Nasal, adenoidal, pinched voice, slightly congested. Sincere and
+      warm and completely unaware of how he lands — he explains things nobody
+      asked him to explain, at the wrong moment, at an unvarying volume. Never
+      smug, never sarcastic, never scoring a point on purpose. He believes what
+      he is saying and he believes that saying it helps. The coworker everyone
+      mutes, who would be genuinely hurt to find that out.
+    sample_text: Sorry — can I say one thing? It's quick. I'm not having a go at anybody, I just think somebody should say it out loud, and nobody has.
     sample: voices/marcus.wav
     vector: vectors/marcus.npy
   portrait: portraits/marcus.png
