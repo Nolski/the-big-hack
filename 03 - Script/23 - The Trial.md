@@ -98,7 +98,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 *(in a witness box. He has spent a year asking for somewhere that things get said properly, and has finally been handed one.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Before I answer that, I want it noted that it took them eleven months. To make breaking a machine a hanging offence. Eleven months, start to finish, and they have never once moved that fast for a person, not in two hundred...
+> Before I answer that, I want it noted that it took the British parliament eleven months. To make breaking a machine a hanging offence. Eleven months, start to finish, and they have never once moved that fast for a person, not in two hundred...
 
 > [!screen] VIDEO — JUDGE · `AIV-086`
 > Mr. Ehrlich.
@@ -120,7 +120,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > Liam? *(beat)* Liam's the best engineer I've ever worked with. *(beat)* He's difficult, obviously. Everyone knows that. But he's not... no, he's the best.
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
-> Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant.
+> Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant. "Liam is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something"
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > *"Multiple peers cite friction and slow review turnaround."*
@@ -131,7 +131,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > Is that consistent with your experience?
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(after a moment, honestly)*
-> …I mean. *(beat)* Yeah. That's fair.
+> …I mean. *(beat)* Yeah, but -
 
 *(The lights flicker... one of the rolling brownouts that's been in the news recently...)*
 

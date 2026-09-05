@@ -53,22 +53,22 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(gentle)*
 > Okay. It's just Marcus had three of those out the door yesterday. Same shape of thing.
 
-**LIAM** *(live)*: Marcus pastes our source into a stranger's computer and hits accept. I run mine locally and I read what comes back. *(beat)* Which is what our own security policy requires, incidentally. The all-hands made the tooling mandatory. The policy says proprietary source doesn't leave the building. I wrote it, it's still in force, and local inference is the only setup that satisfies both. So I'm the only person on this call who's inside both rules.
+**LIAM** *(live)*: Marcus pastes our source into a stranger's computer and hits accept. I run mine locally AND I read what comes back. *(beat)* Which is what our own security policy requires, in case you all forgot to read it... So because they made these tools mandatory at the All Hands, local inference is the only setup that satisfies both policies... So I'm the only person on this call who's actually following the rules.
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(a tile unmutes; he heard his name)*
-> Yeah Liam. It's not my fault that workers have lost autonomy in their workplace. Have you ever heard of the term "alienation" Liam? Karl Marx used this term to explain how workers become disconnected from the products of their labour. You should maybe read up on it rather than another book on esoteric race conditions. you might find it useful.
+> I'm just doing what they asked Liam and rather than dragging my feet by using some crappy open source model I got my work done. No wonder you think this technology sucks. You really are like the Luddites. They also complained about losing their craft, even though the power loom was the way of the future. You should try reading about it sometime.
 
-**LIAM** *(live, thrown for exactly one beat)*: …Okay.
+**LIAM** *(Sarcastically)*: …Okay Marcus.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> So since we're naming names. Do you know what those three tickets got me, Liam?
+> And since we're pointing fingers. Do you know what those three tickets got me, Liam?
 
 **LIAM** *(live)*: A closed sprint?
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Three more tickets. *(beat)* I saved about a week last quarter. It was full again by the Tuesday.
+> Three more tickets. That's the job. I feel like I'm the only one who understands what we're actually hired to do. They want us to use the fast model so we can work ourselves faster.
 
-**LIAM** *(live, honestly puzzled anyone is saying this out loud)*: What do you want, a slower model?
+**LIAM** *(live, honestly puzzled anyone is saying this out loud)*: What do you want, a slower model so you can work slower?
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
 > I want one person in this building to say out loud who the speed is actually for. *(beat)* Because it isn't me.
@@ -78,17 +78,17 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 *(A pause with a decision in it. He came here to talk about who the work is for. Nobody is going to have that conversation, so he starts one they will.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> …You keep saying you read every line.
+> So you're going to waste time upsetting your boss and everyone else. You keep saying you read every line.
 
 **LIAM** *(live)*: Because I do.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> I don't. *(beat)* I merged 3 PRs yesterday. I couldn't tell you what's in any of them. *(beat)* I'm not confessing, Liam, I'm telling you what the job is now.
+> Well, I don't. *(beat)* I merged 3 PRs yesterday. I couldn't tell you what's in any of them. *(beat)* That's what the job is now.
 
 **LIAM** *(live)*: Right. And that's the difference between us.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Yeah, but you're using the same technology. Only now, you're using some Chinese model on some overpriced machine that isn't even half as good and is probably backdooring our codebase...
+> Yeah, but you're using the same technology. Only now, you're using some crappy Chinese model on some overpriced machine that isn't even half as good and is probably backdooring our codebase...
 
 **LIAM** *(live)*: Which is why I read every line before it merges.
 
@@ -97,7 +97,7 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 *(That one lands. Nobody says so.)*
 
-**LIAM** *(live)*: I've caught three of those in *human* code this year, so.
+**LIAM** *(live)*: I've caught plenty of bugs by reading code this year.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
 > In code a person wrote. On purpose. *(beat)* You caught it because there was somebody in there to catch.
@@ -109,46 +109,29 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(trying, early)*
 > Guys, can we get back on...
 
-**LIAM** *(live, not hearing her — the jab he's been saving)*: You'd have to be an idiot to worry about poisoned weights and then hand the thing a shell and the internet. Which is what Claude Code does. It runs commands, it installs whatever it decides it needs, it browses the web, on every laptop in this building. *(beat)* Including yours.
-
-*(Which is true, and it is not what Marcus was talking about, and Marcus does not notice that he has been moved.)*
-
-> [!screen] VIDEO — MARCUS · `AIV-055`
-> Fine. Then answer the other half of it. *(beat)* You didn't write it. I didn't write it. Who did?
-
-**LIAM** *(live)*: It's a tool. Nobody asks who wrote the compiler.
-
-> [!screen] VIDEO — MARCUS · `AIV-055`
-> The law does. Purely AI-generated code has no human author, so it has no protection. If the model writes the whole repo it is genuinely unclear whether this company owns its own product. *(beat)* That's why I'm still in every diff. Somebody should be an author of the thing we sell.
-
-**LIAM** *(live)*: That's the monkey-selfie case. It's about a monkey.
-
-> [!screen] VIDEO — MARCUS · `AIV-055`
-> It's the same principle.
-
-**LIAM** *(live)*: It's a monkey, Marcus.
+**LIAM** *(live, not hearing her — the jab he's been saving)*: You'd have to be an idiot to worry about poisoned weights and then hand the thing a shell and the internet. Which is what Claude does. It runs commands, it installs whatever it decides it needs, it browses the web, on every laptop in this building. *(beat)* Including yours.
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(trying again)*
 > Guys, I want to get through the...
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(over her)*
-> Sorry, Kristina, one more flag, because this actually matters. If anything off that model lands in the product, and it comes out later the weights were compromised, that's on everyone on this call. I want it noted that I flagged it.
+> Sorry, Kristina, one more flag, because this actually matters. If anything off that Chinese model Liam is using lands in the product, and it comes out later the weights were compromised, that's on everyone on this call. I want it noted that I flagged it.
 
 **LIAM** *(live)*: Noted where, Marcus? Nobody's taking minutes. It's a standup.
 
-*(A few people on the grid are muting themselves to sigh. KRISTINA's tile: she is, literally, biting her tongue. She takes the minutes every week. She emails them out every week. The last person who talked to her like this got called out for it, by him. The smile does not move.)*
+**NARRATOR** *(V.O.)*: Kristina takes the minutes every day during standup. She emails them out as part of a nicely styled report to the whole team every week.
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(a full sentence, at last; the patience is professional-grade)*
-> It is a standup. So — Liam, Marcus, take the model debate to a thread. I'd honestly love a doc, it sounds like there's real stuff in there. Just not here.
+> Liam, Marcus, take the model debate to a thread. I'd honestly love a doc, it sounds like there's real stuff in there. Just not in our standup
 
-> [!screen] VIDEO — MARCUS · `AIV-055` *(patiently, to the woman who has run this meeting every morning for two years)*
-> Kristina, I know what a standup is. I'm saying this matters more than the standup does.
+> [!screen] VIDEO — MARCUS · `AIV-055` *(frustrated)*
+> I know what a standup is. I'm saying this matters more than the standup does.
 
 > [!screen] VIDEO — KRISTINA · `AIV-050`
 > Noted. Thanks. Let's move on.
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(over her, and hurt about it)*
-> With respect, I'm the one who said something when he made fun of your education. In this meeting. So when I raise something I'd like a bit of the benefit of the doubt.
+> With respect, I'm the one who said something when he made fun of your education...
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(flat; the only moment all morning the brightness isn't there)*
 > Marcus *(beat)* I just want ONE STANDUP where we get through without...
@@ -158,28 +141,8 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 > [!screen] VIDEO — MARCUS · `AIV-055`
 > Oh, don't get me started.
 
-*(One second of peace. It is the only thing the two of them have agreed on in six weeks.)*
-
-> [!screen] VIDEO — MARCUS · `AIV-055` *(back where he started, because he never actually left)*
-> Can I say the thing I was trying to say twenty minutes ago? Thirty seconds.
-
-> [!screen] VIDEO — KRISTINA · `AIV-050`
-> Marcus we have to move on...
-
-> [!screen] VIDEO — MARCUS · `AIV-055` *(going anyway)*
-> I know Kristina, but this is important.
-
-**LIAM** *(live)*: Is there a point coming?
-
-> [!screen] VIDEO — MARCUS · `AIV-055`
-> We're the blacksmith. All of us. *(a tile on the grid marks a ticket Done)* And we're doing that at a company that has put it in writing that we have to.
-
-*(No one is taking marcus seriously)*
-
-**LIAM** *(live)*: Marcus, it's a retry loop. It's four lines.
-
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(calling it, warm and immovable)*
-> Okay. I'm calling it. *(a breath; the warmth is real, which is somehow worse)* Liam, I hear the compliance point. I'll chase the policy question, that's my job, let me do it. In the meantime I just need you on board with how the team's working. That's all. *(bright, done)* Thanks everyone, that's standup.
+> Okay. Agreement! Finally... Any other blockers?
 
 **BRENDAN** *(live, tired around the eyes, still warm)*: Liam, want me to hop on for twenty about the actual webhook thing? *(beat)* Just the webhook thing.
 

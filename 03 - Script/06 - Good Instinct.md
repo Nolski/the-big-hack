@@ -49,7 +49,7 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 > …lovely, thanks Brandon. Marcus, anything blocking you?
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
-> Nothing blocking. Three tickets, all merged by Claude.
+> Nothing blocking. Three tickets, all merged... by Claude.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(taking it as a joke, moving on)*
 > Ha. Great. Liam...
@@ -61,22 +61,20 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 > Is it quick? Remember we agreed to time limits Marcus...
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
-> It's quick. It's true that shipping features faster than we ever have, but we're just getting turned into sweat shop workers hitting approve on Claude.
+> It's quick. It's true that shipping features faster than we ever have, but we're also just getting turned into sweat shop workers hitting approve on Claude.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040`
 > Marcus, we agreed on bringing this up during standup...
 
 > [!screen] VIDEO — MARCUS · `AIV-048` *(going anyway, and this is the first real history in the play)*
-> No, because this has all happened before. In the 1700's there were power looms driven by steam that were unsafe to operate but could make textiles way faster than the workers of the time, who used to work from home and were well compensated...
-
-*(Somewhere in there is BRENDAN, who wrote those eight hundred lines, saying nothing.)*
+> No Kristina, because this has all happened before. In the 1700's there were power looms driven by steam that were unsafe to operate but could make textiles way faster than the workers of the time, who used to work from home and were well compensated...
 
 **LIAM** *(live, headphones half on, eyes still on the code)*: They lost, by the way.
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
 > ...What?
 
-**LIAM** *(live)*: The Luddites. They lost. They got hanged. Anyway *(beat)* I'm reading the code, please stop talking.
+**LIAM** *(live)*: The Luddites. They lost. They got hanged. Anyway, *(beat)* I'm trying to read this code. Please stop talking.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(pleasant, immovable, moving the board on)*
 > Okay. Marcus, you got your word in, thanks. *(brisk)* Liam. You're still on the signup race condition, yeah? Where are we with that one?

@@ -63,51 +63,39 @@ Cold, low light. No music anywhere in this scene.
 **LIAM** *(live)*: *(beat)* Marcus can you just for once...
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> I've had four messages about it. Everyone is making you out to be a myrter for the layoffs that are happening.. you've become kind of a symbol online
+> I've had four messages about it. People never text me about this stuff. Everyone is making you out to be a martyr for the layoffs that are happening. You've become kind of a symbol online
 
 **LIAM** *(live)*: I'm taking a plea deal.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> *(beat)* What deal?
+> *(beat)* ...What?
 
 **LIAM** *(live)*: Eighteen months. They came down to eighteen.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> You're not signing that.
+> No dude. You're not signing that.
 
 **LIAM** *(live)*: Marcus, I could either go to jail for the rest of my life, or take 18 months.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> Eighteen months for prompting an AI agent...
+> Eighteen months for prompting an AI agent... Liam, you didn't even smash anything.
 
 **LIAM** *(live)*: It's fourteen with good conduct. *(beat)* It's a low-security place, I've looked at it. There's a library. They do courses. *(beat)* It's not that bad.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> Liam. You have a real chance of walking...
+> Liam. You could be like Luigi Manggioni! You're a symbol of hope for guys like me everywhere.
 
-**LIAM** *(live)*: No. I don't. *(beat)* The jury isn't made up of software engineers, it's made up of people frustrated their power doesn't work reliably anymore, and that planes don't fly reliably anymore...
+**LIAM** *(live)*: Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their power doesn't work reliably anymore, and that planes don't fly reliably anymore...
 
 *(He has said all of that to himself several times before tonight.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-099` *(and he means every word of it)*
 > *(beat)* Do you know what they did to those men? They hanged seventeen of them at York in one January. Fourteen on the same morning. *(beat)* For machines. For breaking machines. Don't let them hang you for breaking machines, Liam. No one could put all this on one person.
 
-**LIAM** *(live, not unkindly; he is genuinely asking)*: What were their names?
+**LIAM** *(live, not unkindly; he is genuinely asking)*: They aren't going to hang me Marcus.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> *(beat)* Mellor. George Mellor.
-
-**LIAM** *(live)*: And the other sixteen?
-
-*(A pause. It is the only thing all night he does not have.)*
-
-> [!screen] VIDEO — MARCUS · `AIV-099`
-> *(beat)* I'd have to look.
-
-*(LIAM says nothing. He does not make anything of it. Neither does MARCUS.)*
-
-> [!screen] VIDEO — MARCUS · `AIV-099`
-> Two hundred years and it has never once gone the other way, not one time, and now there's a real chance it could. They've put charges on you for something a computer did, for an AI someone else created. Liam. It's the same system. You are the same case. We have to fight it.
+> *(beat)* You never know... They've put charges on you for something a computer did, for an AI someone else created. Liam. It's the same system. You are the same case. We have to fight it
 
 **LIAM** *(live)*: *(beat)* No Marcus.
 
@@ -116,15 +104,7 @@ Cold, low light. No music anywhere in this scene.
 
 *(A beat. And then MARCUS asks him for it, plainly, and it is the most sincere he has ever been.)*
 
-> [!screen] VIDEO — MARCUS · `AIV-099`
-> The whole world is watching you Liam. You can get on that stand and make a real statement. You've got an audience none of us will ever have. That the luddites never even had. You can point out how the system is what lead to this, not you individually...
-
-**LIAM** *(live)*: No.
-
-> [!screen] VIDEO — MARCUS · `AIV-099`
-> Liam...
-
-**LIAM** *(live)*: No, Marcus.
+**LIAM** *(live)*: I've made up my mind
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
 > If it was me I'd do it. I'm not being funny about it. If it was me I would do it.

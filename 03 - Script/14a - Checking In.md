@@ -58,19 +58,19 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 *(Two weeks later Liam, Brandon and Marcus all catch up on a zoom together)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Can you hear me? This is a terrible app.
+> Can you hear me? This is a terrible app. What the hell is Jit SEE?
 
 **BRENDAN** *(live)*: We can hear you.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Why are we on zoom?
+> Why can't we use something that works?
 
-**LIAM** *(live)*: Because I'm not in Slack any more.
+**LIAM** *(live)*: Because I'm not in Slack any more. and Jitsi is open source and preserves our privacy.
 
 *(A flash of guilt shoots over MARCUS, and it does not leave for the rest of the scene. He has no idea what to do with it, so he will talk.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Right... *(beat)* How are you doing?
+> Right... *(beat)* Well, how are you doing?
 
 **LIAM** *(live)*: Fine, honestly. I get two months of severance. *(beat)* I've been through worse ones.
 
@@ -109,19 +109,23 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 **LIAM** *(live)*: It's not done *to* anyone. There's no one at the other end of it. It's a spreadsheet with a line drawn on it.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Somebody chose the columns.
+> No, you still don't understand. Nothing has changed 300 years. Someone chose the criteria to fire you. And just like before, it was probably bogus. Do you think all of the luddites who were hung...
+
+**NARRATOR** *(V.O.)*: Most were sent to Australia
+
+**MARCUS**: ... were really guilty of single handedly smashing the power looms? No, a lot were just caught up in over eager bosses smashing down any sort of protest.
 
 **LIAM** *(live)*: Would you rather AI choose them?
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> That would be worse.
+> That would be worse!
 
 **LIAM** *(live)*: *(beat)* What happened happened. I just wish I knew what I could have done better.
 
 *(A pause. MARCUS gathers himself, and what comes next he has clearly said in his head in the shower. It is not the thing he wants to say. He does not have the thing he wants to say.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Okay. Can I say a thing. *(beat)* There used to be an understanding. Not a law. Not a contract. An understanding, between people who made things and people who sold them, about what a fair rate was and what you owed somebody who'd done the work for twenty years. And it held for a very long time because everyone agreed it held. *(beat)* And then it just stopped. One year it was there and the next year it wasn't, and if you stood up and said, hang on, we had an arrangement, the answer was that the market doesn't have arrangements.
+> Okay. Can I say a thing? *(beat)* There used to be an understanding. Not a law. Not a contract. An understanding, between people who made things and people who sold them, about what a fair rate was and what you owed somebody who'd done the work for twenty years. The people doing the making had this sort of agency in their work and this craft, and it wasn't something that was protected by law or whatever; it was just cultural. And then one day, these factories came about and suddenly all of that agency, and understanding, and happy crafting of shirts or whateverthefuck dissapeared.
 
 **LIAM** *(live)*: This is the weaving thing again.
 
@@ -138,7 +142,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 **LIAM** *(live)*: The machines were illegal? And then what happened?
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Then they weren't allowed to meet about it either. It was against the law for them to get together and talk about wages. *(beat)* So they stopped meeting about wages. They started meeting at night about machines.
+> Then they weren't allowed to meet about it either. It was against the law for them to get together and talk about wages. *(beat)* So they stopped meeting about wages. So they started meeting at night and smashing machines and stuff.
 
 *(For the first time, Liam and Brendan entertained Marcus)*
 
@@ -166,7 +170,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 *(MARCUS does not have an answer, and it is the only time all night he doesn't. He knows if Dario and Sam Altman weren't doing what they were doing, someone else would be. The problem wasn't with any one person)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> *(glancing off, and taking the excuse with both hands)* I've got a thing at five. *(beat)* Liam, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that.
+> *(glancing off, and taking the excuse with both hands)* The machine owners! The system! Not the code or whatever it is you always seem to obsess about... - sigh - I've got a thing at five. Liam, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that.
 
 **LIAM** *(live)*: Thanks.
 

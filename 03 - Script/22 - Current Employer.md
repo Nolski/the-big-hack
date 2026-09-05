@@ -63,17 +63,17 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 *(A few days later, Liam on a call with Marcus)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> -no, but that's what I'm *saying*. Nobody in the history of the world has ever been frightened by a machine. *(beat)* They were scared of what a machine let a man with six weeks' training do to a man with twenty years of it.... the luddites didn't hate the machines, they hated the system that enabled them... they hated what the system did to them
+> -no, but that's what I'm *saying*. Nobody in the history of the world has ever been frightened by a machine. *(beat)* They were scared about the economics of it or whatever, not getting to do their craft and get paid shit like the rest of the peasants.... the luddites didn't hate the machines, they hated the system that enabled them... they hated what the system did to them
 
 **LIAM** *(live, not looking up)*: Mm.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Which is *you*. That's you. That's literally you, and it's Brendan as well, two of you, brought down by the system.
+> Which is *you*. That's you. That's literally you, and it's Brendan as well, two of you, brought down by the system. Like... Sure. Some of us still get paid well but... They're putting you guys down. The system is.
 
 **LIAM** *(live)*: I know, Marcus.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> And obviously I've still got a job, I'm aware of how that sounds, I'm not... but that's part of it, right? Because the ones they kept were always the ones who.... Always. That's not a coincidence, that's the whole...
+> And obviously I've still got a job, I'm aware of how that sounds, I'm not... but that's part of it, right? Because the ones they kept were always the ones who.... Kind of got how things worked. That's not a coincidence, that's the whole...
 
 **LIAM** *(live)*: I've got a thing at eleven Marcus
 
@@ -88,14 +88,14 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 
 *(LIAM stands up.)*
 
-> [!screen] VIDEO — MARCUS · `AIV-055`
+> [!screen] VIDEO — MARCUS · `AIV-055` *(muffled)*
 > and the Frame Breaking Act got through Parliament in eleven months. *Eleven.* Which is quicker than they have ever moved for a...
 
 *(**The door comes down off its hinges, the federal agents did not wait for Liam to open it.**)*
 
 *(The officers are either wearing street clothes, or wearing jackets that say ICE.)*
 
-> [!screen] VIDEO — MARCUS · `AIV-055` *(still going, because he cannot see the room)*
+> [!screen] VIDEO — MARCUS · `AIV-055` *(muffled)*
 > ...for a person. For an actual person living through that....
 
 *(LIAM with four strangers in his home and a man he works with shouting about Parliament, reaches for the laptop to close it.)*
@@ -104,7 +104,7 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 
 **OFFICER TWO** *(live)*: DON'T REACH!
 
-**LIAM** *(live)*: It's a laptop, what is oging on
+**LIAM** *(live)*: It's a laptop, what is going on?
 
 *(**He's tackled to the ground.**)*
 
@@ -114,7 +114,7 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 
 *(He shows them his hands. Both of them. Palms out, flat on the floor of his own flat.)*
 
-**LIAM** *(live, into the floor, and it is the only thing he says)*: Okay. *(beat)* Okay.
+**LIAM** *(live, into the floor, and it is the only thing he says)*: Okay. *(beat)* Okay! Jeeze!
 
 *(Cuffs. The room comes down out of it as fast as it went up.)*
 
@@ -124,10 +124,10 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 *(And then, to nobody. It is not triumph. It is a frightened man reaching for the only sentence he has.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> I said this. *(beat)* I said this was going to happen.
+> I said this! *(beat)* I said this was going to happen.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> THEY'RE GOING TO HANG *(beat)* US ALL
+> THIS IS IT LIAM! I TOLD YOU!
 
 *(Nobody in the room hears him.)*
 
@@ -136,9 +136,9 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 
 *(LIAM sits on his own sofa in handcuffs. OFFICER TWO has a tablet.)*
 
-**OFFICER ONE** *(live, and this is a completely different man from ninety seconds ago, because he is now doing a different part of the job)*: Sorry about that. *(beat)* Maybe we should start over
+**OFFICER ONE** *(live, and this is a completely different man from ninety seconds ago, because he is now doing a different part of the job)*: We're going to have to ask you a few questions before we take you in. You have the right to remain silent. Anything you say can and will be used against you in a court of law.
 
-**LIAM** *(live)*: *(beat)* …Yeah.. *(beat)* let's start over, what are you doing in my apartment! Why are you taking my things?
+**LIAM** *(live)*: *(beat)* It's fine, what are you doing in my apartment? Why are you taking my things?
 
 **OFFICER ONE** *(live)*: Are you hurt anywhere?
 
@@ -150,9 +150,9 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 
 **OFFICER ONE** *(live)*: Mkrtchyan. Sorry.
 
-**LIAM** *(live)*: Can you please explain to me what is happening?
+**LIAM** *(sighing)*: Can you please explain to me what is happening?
 
-**OFFICER ONE** *(live)*: We've got a warrant for your arrest. I'm going to read you what's on it, and then go through the practical side, and you can stop me anywhere.
+**OFFICER ONE** *(live)*: We've got a warrant for your arrest. I'm going to read you what's on it, and then go through the practical side.
 
 *(He has heard that sentence before only on TV. He remembers a youtuber saying to not say anything to the police...)*
 
@@ -172,7 +172,7 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 
 **LIAM** *(live)*: I don't understand.
 
-**OFFICER TWO** *(live, not challenging him — reading)*: I'll help you understand.. is this your current employer?
+**OFFICER TWO** *(live, not challenging him — reading)*: Is this "Malus Corp" your current employer?
 
 **LIAM** *(live)*: I... no... that's wrong. *(beat)* I was let go on the thirty-first. They did layoffs... *(beat)* You must have the wrong person.
 

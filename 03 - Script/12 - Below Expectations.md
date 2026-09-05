@@ -65,39 +65,38 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 **BRENDAN** *(live)*: Oh.. yeah i remember that email, no I haven't yet.
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(sharing his screen without being asked)*
-> It takes 10 minutes, you should do it.
+> It takes 10 minutes; you should do it. You should check out the new question they added.
 
 *("H2 Peer Input." A deadline, a progress bar, a column of one-to-five sliders. At the bottom, one free-text box, and above it: "Is there anyone whose work made it harder for you to deliver this half? (Optional)")*
 
-> [!screen] VIDEO — MARCUS · `AIV-062` *(stopping on it)*
-> Okay, but read that one. The bottom one.
-
-**BRENDAN** *(live)*: I'm reading it.
+**BRENDAN** *(live)*: The one about whose work has made it harder to deliver?
 
 > [!screen] VIDEO — MARCUS · `AIV-062`
-> Every survey this company has ever sent me is "do you feel valued." "Do you have the tools you need to succeed." Do I feel *valued*. On a scale of one to five.
+> Yeah man, the snitch box.
 
 **BRENDAN** *(live)*: Ha.
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(and he means it)*
-> No, but nobody has ever asked me what's actually slowing me down. Three years. Not once. Whoever wrote that one, genuinely good. That's the only question on here that matters. *(beat)* I like this job, by the way. I know how I sound. I'd just like it to be good.
+> But seriously, nobody has ever asked me what's actually slowing me down. Three years. Not once. You know, when one person kicks up a fuss and drags his feet, we all get associated with it.
 
 **BRENDAN** *(live)*: What did you put?
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(no heat in it at all)*
-> I put the nine days it took him to close the webhook ticket. And I like Liam, I'm not being funny about it. Four lines, nine days. That's just what happened, it's in the queue, anyone can go and look. *(beat)* And the standup thing. The model argument.... it adds up
+> I mentioned the nine days it took Liam to close the webhook ticket that I did in an afternoon. I mean, I like Liam, but that's just what happened. I don't want to get penalized because he doesn't understand we're all getting sent off to the AI SlopShops just like our forefathers.
 
 **BRENDAN** *(live, careful)*: Does it go to Kristina with your name on it?
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(scrolling up to show him)*
-> No it's like an AI aggregation of everyone's. Says so at the top "responses are anonymised and shared with managers in summary." *(beat)* Which is the whole reason anyone answers it straight. If my name was on it I'd type "no notes" like everybody else and we'd all keep having the same year forever.
+> No it's like an AI aggregation of everyone's. Says so at the top "responses are anonymised and shared with managers in summary." *(beat)* Which is the whole reason anyone answers it straight. If my name was on it I'd type "no notes" like everybody else.
 
 **BRENDAN** *(live)*: Right.
 
 > [!screen] VIDEO — MARCUS · `AIV-062`
-> I said in standup I wanted it noted. Nobody was taking minutes. *(beat)* Turns out this is where things get noted.
+> At least it'll be recorded this time around, unlike standup.
 
-**BRENDAN** *(live)*: Yeah.
+**NARRATOR** *(V.O.)*: Kristina's weekly standup digest landed in his inbox an hour ago. It detailed the inane argument between Marcus and Liam about whether the Luddites were hanged or sent on holiday to Australia.
+
+**BRENDAN** *(live)*: ...Yeah.
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(on his way out, genuinely trying to help)*
 > Put something, though. Actually put something. It's the only place it goes. *(beat)* Otherwise nothing changes and we all complain in DMs for another six months.

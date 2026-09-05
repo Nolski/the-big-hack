@@ -66,7 +66,7 @@ Two beers. Nobody is drinking fast until they are.
 
 *(Liam smiles)*
 
-**LIAM** *(live)*: Brendan, nice work on the developer portal... I know I gave you some shit for it, but it truly is impressive how quick that came togehter
+**LIAM** *(live)*: I just want to say... nice work on the developer portal... I know I gave you some shit for it, but it truly is impressive how quick that came togehter
 
 **BRENDAN** *(live)*: …Thanks.
 
