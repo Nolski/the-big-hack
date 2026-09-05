@@ -80,7 +80,7 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 **NARRATOR** *(V.O.)*: Liam had no thing at eleven.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> They hanged seventeen men at York. In one morning. *(beat)* Seventeen. And not one mill owner ever stood in a dock. *(beat)* And two hundred years later...
+> They hanged seventeen men at York. In one morning. *(beat)* Seventeen. And two hundred years later...
 
 *(Four hard flat-handed bangs on the door. Not a knock.)*
 
@@ -89,14 +89,14 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 *(LIAM stands up.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(muffled)*
-> and the Frame Breaking Act got through Parliament in eleven months. *Eleven.* Which is quicker than they have ever moved for a...
+> Liam? What was that?
 
 *(**The door comes down off its hinges, the federal agents did not wait for Liam to open it.**)*
 
-*(The officers are either wearing street clothes, or wearing jackets that say ICE.)*
+*(The officers are either wearing street clothes, or wearing jackets that say FBI.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(muffled)*
-> ...for a person. For an actual person living through that....
+> Is that your TV on in the background?
 
 *(LIAM with four strangers in his home and a man he works with shouting about Parliament, reaches for the laptop to close it.)*
 
@@ -139,10 +139,6 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 **OFFICER ONE** *(live, and this is a completely different man from ninety seconds ago, because he is now doing a different part of the job)*: We're going to have to ask you a few questions before we take you in. You have the right to remain silent. Anything you say can and will be used against you in a court of law.
 
 **LIAM** *(live)*: *(beat)* It's fine, what are you doing in my apartment? Why are you taking my things?
-
-**OFFICER ONE** *(live)*: Are you hurt anywhere?
-
-**LIAM** *(live)*: I don't think so.
 
 **OFFICER ONE** *(live)*: Are you Liam Muh... Muh-KURT-chan?
 
@@ -215,7 +211,7 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 *(Marcus heard most of that... the laptop was taken by ICE, but it was left open and unlocked, per their instructions to preserve evidence..)*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Liam? *(beat)* Liam, are you.. *(beat)* Did they take... *(beat)* Liam, buddy, you *cannot* talk to them without a lawyer. That's the whole... that's literally the one thing.
+> Liam? *(beat)* Liam, are you.. *(beat)* Did they take... *(beat)* Liam, buddy, you *cannot* talk to them without a lawyer. That's the whole... that's literally the one thing. Dude, they're gonna fuckin hang you!
 
 *(Silence..)*
 

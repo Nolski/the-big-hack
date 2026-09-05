@@ -51,27 +51,27 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **LIAM** *(live, even, a man doing it right)*: It's not stuck. I'm reviewing what the model wrote, line by line.
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(gentle)*
-> Okay. It's just Marcus had three of those out the door yesterday. Same shape of thing.
+> Okay. It's just that Marcus had three tickets related to webhooks completed yesterday... Would it be helpful for you to pair with Marcus on this one?
 
 **LIAM** *(live)*: Marcus pastes our source into a stranger's computer and hits accept. I run mine locally AND I read what comes back. *(beat)* Which is what our own security policy requires, in case you all forgot to read it... So because they made these tools mandatory at the All Hands, local inference is the only setup that satisfies both policies... So I'm the only person on this call who's actually following the rules.
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(a tile unmutes; he heard his name)*
-> I'm just doing what they asked Liam and rather than dragging my feet by using some crappy open source model I got my work done. No wonder you think this technology sucks. You really are like the Luddites. They also complained about losing their craft, even though the power loom was the way of the future. You should try reading about it sometime.
+> I'm just doing what the CEO wants Liam. Don't you remember his memo? And rather than dragging my feet by using some crappy open source model, I got my work done. No wonder you think this technology sucks. You really are like the Luddites. They also complained about losing their craft, even though the power loom was the way of the future. You should try reading about it sometime.
 
 **LIAM** *(Sarcastically)*: …Okay Marcus.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
 > And since we're pointing fingers. Do you know what those three tickets got me, Liam?
 
-**LIAM** *(live)*: A closed sprint?
+**LIAM** *(live)*: What?
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Three more tickets. That's the job. I feel like I'm the only one who understands what we're actually hired to do. They want us to use the fast model so we can work ourselves faster.
+> Three more tickets. Because we have an endless supply of work. I feel like I'm the only one who understands what we're actually hired to do. They want us to use the fast model so we can produce more and more and more and never satisfy them.
 
 **LIAM** *(live, honestly puzzled anyone is saying this out loud)*: What do you want, a slower model so you can work slower?
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> I want one person in this building to say out loud who the speed is actually for. *(beat)* Because it isn't me.
+> I want one person at this company to say out loud who the speed is actually for. *(beat)* Because it isn't me.
 
 **LIAM** *(live)*: I don't have a view on that. I'm not a politician, I'm an engineer, and I have a threat model. You're pasting our source into somebody else's datacentre because it's quick. That's my objection. It's got nothing to do with how rich it makes the CEO.
 
@@ -83,12 +83,12 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **LIAM** *(live)*: Because I do.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Well, I don't. *(beat)* I merged 3 PRs yesterday. I couldn't tell you what's in any of them. *(beat)* That's what the job is now.
+> Well, I don't. *(beat)* I merged 3 PRs yesterday, and honestly, I think the AI does a better job at the review than I do. *(beat)* That's what the job is now.
 
-**LIAM** *(live)*: Right. And that's the difference between us.
+**LIAM** *(live)*: Right. Maybe AI does do a better job than you, and that's the difference between us.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Yeah, but you're using the same technology. Only now, you're using some crappy Chinese model on some overpriced machine that isn't even half as good and is probably backdooring our codebase...
+> Yeah, but you're not using the same technology as the rest of us. Instead, you're using some crappy Chinese model on some overpriced machine that isn't even half as good and is probably backdooring our codebase...
 
 **LIAM** *(live)*: Which is why I read every line before it merges.
 
@@ -100,7 +100,7 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **LIAM** *(live)*: I've caught plenty of bugs by reading code this year.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> In code a person wrote. On purpose. *(beat)* You caught it because there was somebody in there to catch.
+> Yeah, bugs, but not a CHINESE backdoor designed to be hard to detect.
 
 *(And LIAM does not have the answer to that one, so he answers a different question, quickly, and well.)*
 
@@ -139,7 +139,7 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **LIAM** *(live, and it is almost generous)*: At least we can all agree not to use Grok.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Oh, don't get me started.
+> Oh, don't get me started -
 
 > [!screen] VIDEO — KRISTINA · `AIV-050` *(calling it, warm and immovable)*
 > Okay. Agreement! Finally... Any other blockers?

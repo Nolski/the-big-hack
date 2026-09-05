@@ -63,7 +63,7 @@ Cold, low light. No music anywhere in this scene.
 **LIAM** *(live)*: *(beat)* Marcus can you just for once...
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> I've had four messages about it. People never text me about this stuff. Everyone is making you out to be a martyr for the layoffs that are happening. You've become kind of a symbol online
+> I've had four messages about it. Everyone is making you out to be a martyr for the layoffs that are happening. You've become kind of a symbol online
 
 **LIAM** *(live)*: I'm taking a plea deal.
 
@@ -83,44 +83,42 @@ Cold, low light. No music anywhere in this scene.
 **LIAM** *(live)*: It's fourteen with good conduct. *(beat)* It's a low-security place, I've looked at it. There's a library. They do courses. *(beat)* It's not that bad.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> Liam. You could be like Luigi Manggioni! You're a symbol of hope for guys like me everywhere.
+> Liam. You could be a better version Luigi Manggioni! You're a symbol of hope for guys like me everywhere.
 
-**LIAM** *(live)*: Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their power doesn't work reliably anymore, and that planes don't fly reliably anymore...
+**LIAM** *(live)*: Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their electicity doesn't work reliably anymore, and that planes don't fly reliably anymore...
 
 *(He has said all of that to himself several times before tonight.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-099` *(and he means every word of it)*
-> *(beat)* Do you know what they did to those men? They hanged seventeen of them at York in one January. Fourteen on the same morning. *(beat)* For machines. For breaking machines. Don't let them hang you for breaking machines, Liam. No one could put all this on one person.
+> *(beat)* Do you know what life was like in Australia for the Luddites who got caught but weren't hung? Some say the hanging was the better option.
 
-**LIAM** *(live, not unkindly; he is genuinely asking)*: They aren't going to hang me Marcus.
+**LIAM** *(live, not unkindly; he is genuinely asking)*: They were going to hit me with treason charges, which can be a death penalty case. That's why I took the deal.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> *(beat)* You never know... They've put charges on you for something a computer did, for an AI someone else created. Liam. It's the same system. You are the same case. We have to fight it
+> *(beat)* Look, they've put charges on you for something a computer did, for an AI someone else created. Liam. It's the same system. You are the same case. If you fight it, at least it'll mean something
 
 **LIAM** *(live)*: *(beat)* No Marcus.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> Don't say okay.
-
-*(A beat. And then MARCUS asks him for it, plainly, and it is the most sincere he has ever been.)*
+> You have an opportunity to make a real difference Liam.
 
 **LIAM** *(live)*: I've made up my mind
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> If it was me I'd do it. I'm not being funny about it. If it was me I would do it.
+> If it was me I'd fight it. I'm not being funny about it. If it was me I would do it.
 
 *(Nobody says anything about that.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> I'd be using the opportunity to educate the world every day. Every single day, I mean it. *(beat)* And I'd be there. I will sit in that gallery every single day, Liam, I'm telling you that now.
+> I'd be using the opportunity to educate the world every day. Every single day, I mean it. *(beat)* And I'd be there. We could make you famous Liam, I'm telling you that now.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> They all went quietly in the end. Every one of them. *(beat)* Be the one who doesn't.
+> They all went quietly in the end. When the Luddites were hung, social media wasn't around. We can change things this time around.
 
-**LIAM** *(live)*: *(beat)* Okay.
+**LIAM** *(live)*: *(beat)* Marcus.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
-> *(beat)* That's it? Okay?
+> *(beat)* That's it?
 
 **LIAM** *(live)*: *(beat)* I'm going to go.
 

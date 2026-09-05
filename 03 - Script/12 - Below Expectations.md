@@ -50,7 +50,7 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 *(Late afternoon. A Slack huddle on the screen above BRENDAN's desk: his tile and MARCUS's, a diff open between them. Below, in his own pool of light, LIAM at his desk, reading. [MUSIC: music/slackhuddle.mp3])*
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(winding up, already half gone)*
-> no, ship it. The migration's reversible. That's the whole point of the flag.
+> ...no, ship it. The migration's reversible. That's the whole point of the flag.
 
 **BRENDAN** *(live)*: Cool. Thanks for looking.
 
@@ -82,7 +82,7 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 **BRENDAN** *(live)*: What did you put?
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(no heat in it at all)*
-> I mentioned the nine days it took Liam to close the webhook ticket that I did in an afternoon. I mean, I like Liam, but that's just what happened. I don't want to get penalized because he doesn't understand we're all getting sent off to the AI SlopShops just like our forefathers.
+> I mentioned the nine days it took Liam to close the webhook ticket that I did in an afternoon. I mean, I like Liam, but that's just what happened. I don't want to get penalized because he doesn't understand that the power looms are already here and we're never going back.
 
 **BRENDAN** *(live, careful)*: Does it go to Kristina with your name on it?
 
@@ -92,7 +92,7 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 **BRENDAN** *(live)*: Right.
 
 > [!screen] VIDEO — MARCUS · `AIV-062`
-> At least it'll be recorded this time around, unlike standup.
+> At least it'll be recorded this time around, unlike all the concerns that I bring up at standup.
 
 **NARRATOR** *(V.O.)*: Kristina's weekly standup digest landed in his inbox an hour ago. It detailed the inane argument between Marcus and Liam about whether the Luddites were hanged or sent on holiday to Australia.
 

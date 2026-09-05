@@ -107,11 +107,13 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > I'm just trying to explain, because it's the same system, and an individual can do something that on the surface appears..
 
 > [!screen] VIDEO — JUDGE · `AIV-086` *(entirely without irony)*
-> Mr. Ehrlich. Make it to the question.
+> Mr. Ehrlich. You are here to answer questions. Not to lecture us.
 
 *(LIAM puts his hand over his eyes.)*
 
 **BRENDAN** *(to audience)*: You know, we really didn't give Marcus enough credit...
+
+**KRISTINA**: It's kind of fun to watch him interrupt someone else for a change
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > Mr. Ehrlich. How would you describe working with the defendant?
@@ -128,10 +130,10 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 *(MARCUS does not react, because he has no reason to. He does not know he wrote it. He is never going to know.)*
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
-> Is that consistent with your experience?
+> Is this what you wrote in your evaluation of Mr. Mikurchan?
 
 > [!screen] VIDEO — MARCUS · `AIV-055` *(after a moment, honestly)*
-> …I mean. *(beat)* Yeah, but -
+> …I mean. *(beat)* Yeah, but we were told that nobody would be able to see the raw feedback...
 
 *(The lights flicker... one of the rolling brownouts that's been in the news recently...)*
 
@@ -139,7 +141,10 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > One last matter. Liam's name showed up in the AWS logs on the night in question, is that correct?
 
 > [!screen] VIDEO — MARCUS ·
-> .....yeah, but I don't think it's his fault, he's just a part of a system...
+> .....yeah, but didn't cause the fucking world to end. Sure, he should have listened to me about not using the Chinese AI, but really, it was all the Chinese AI that did the hacking, not -.
+
+> [!screen] VIDEO — THE PROSECUTOR ·
+> Thank you. No further questions
 
 *(Nothing in the room moves.)*
 
@@ -151,7 +156,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 
 *(BRENDAN is looking at the back of LIAM's head. He has not stopped.)*
 
-**BRENDAN** *(to audience)*: He's a good man.
+**BRENDAN** *(to audience)*: I didn't think Liam was gonna get in trouble over this stuff... Do you think he's actually gonna get blamed for everything?
 
 *(He looks at the floor, and then back up, and the trial goes on around both of them.)*
 

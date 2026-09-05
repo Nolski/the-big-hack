@@ -46,7 +46,7 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 *(At Liam's desk, the morning after. No memes today. LIAM is actually working hunched in, headphones half-on. He has been at this a while and it shows. On the second monitor the standup grid is already running; his tile is the same black square, camera still off. He is not really in the meeting. He is in the race condition he's tasked with fixing.)*
 
 > [!screen] VIDEO — KRISTINA (PM) · `AIV-040` *(brisk, running the board)*
-> …lovely, thanks Brandon. Marcus, anything blocking you?
+> …lovely, thanks Brendon. Marcus, anything blocking you?
 
 > [!screen] VIDEO — MARCUS · `AIV-048`
 > Nothing blocking. Three tickets, all merged... by Claude.
@@ -64,7 +64,7 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 > It's quick. It's true that shipping features faster than we ever have, but we're also just getting turned into sweat shop workers hitting approve on Claude.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040`
-> Marcus, we agreed on bringing this up during standup...
+> Marcus, we agreed on not bringing this up during standup...
 
 > [!screen] VIDEO — MARCUS · `AIV-048` *(going anyway, and this is the first real history in the play)*
 > No Kristina, because this has all happened before. In the 1700's there were power looms driven by steam that were unsafe to operate but could make textiles way faster than the workers of the time, who used to work from home and were well compensated...
@@ -74,7 +74,7 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 > [!screen] VIDEO — MARCUS · `AIV-048`
 > ...What?
 
-**LIAM** *(live)*: The Luddites. They lost. They got hanged. Anyway, *(beat)* I'm trying to read this code. Please stop talking.
+**LIAM** *(live)*: The Luddites. They lost. They got hanged by the British army. Anyway, *(beat)* I'm trying to read this code. Please stop talking about the Luddites.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(pleasant, immovable, moving the board on)*
 > Okay. Marcus, you got your word in, thanks. *(brisk)* Liam. You're still on the signup race condition, yeah? Where are we with that one?

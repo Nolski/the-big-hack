@@ -55,7 +55,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 
 ## Script
 
-*(Two weeks later Liam, Brandon and Marcus all catch up on a zoom together)*
+*(Two weeks later Liam, Brandon and Marcus all catch up on a jitsi meet together)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > Can you hear me? This is a terrible app. What the hell is Jit SEE?
@@ -63,9 +63,9 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 **BRENDAN** *(live)*: We can hear you.
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> Why can't we use something that works?
+> Why can't we use Zoom?
 
-**LIAM** *(live)*: Because I'm not in Slack any more. and Jitsi is open source and preserves our privacy.
+**LIAM** *(live)*: Because Jitsi is open source and preserves our privacy.
 
 *(A flash of guilt shoots over MARCUS, and it does not leave for the rest of the scene. He has no idea what to do with it, so he will talk.)*
 
@@ -108,19 +108,13 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 
 **LIAM** *(live)*: It's not done *to* anyone. There's no one at the other end of it. It's a spreadsheet with a line drawn on it.
 
-> [!screen] VIDEO — MARCUS · `AIV-098`
-> No, you still don't understand. Nothing has changed 300 years. Someone chose the criteria to fire you. And just like before, it was probably bogus. Do you think all of the luddites who were hung...
+**MARCUS**: No, you still don't understand. Nothing has changed in 300 years. Someone chose the criteria to fire you. And just like before, they don't need a good reason to remove anyone who doesn't suit their needs. Do you think the Luddites who were all hanged...
 
-**NARRATOR** *(V.O.)*: Most were sent to Australia
+**NARRATOR** *(V.O.)*: 35 were hanged, around 70 were sent to Australia, and the rest were acquitted.
 
 **MARCUS**: ... were really guilty of single handedly smashing the power looms? No, a lot were just caught up in over eager bosses smashing down any sort of protest.
 
-**LIAM** *(live)*: Would you rather AI choose them?
-
-> [!screen] VIDEO — MARCUS · `AIV-098`
-> That would be worse!
-
-**LIAM** *(live)*: *(beat)* What happened happened. I just wish I knew what I could have done better.
+**LIAM** *(live)*: *(beat)* I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.
 
 *(A pause. MARCUS gathers himself, and what comes next he has clearly said in his head in the shower. It is not the thing he wants to say. He does not have the thing he wants to say.)*
 
@@ -135,21 +129,12 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 *(Marcus doesn't realize Liam was also on a performance improvement plan.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> It happened to a whole trade. There was a machine that had been illegal for two hundred years because it made worse cloth, and the mill owners just started running them anyway, and the men went to Parliament about it, properly, in writing, for years. And Parliament's answer was to get rid of the law.
-
-*(BRENDAN, off to one side, has stopped pretending to look at his other screen.)*
-
-**LIAM** *(live)*: The machines were illegal? And then what happened?
-
-> [!screen] VIDEO — MARCUS · `AIV-098`
-> Then they weren't allowed to meet about it either. It was against the law for them to get together and talk about wages. *(beat)* So they stopped meeting about wages. So they started meeting at night and smashing machines and stuff.
-
-*(For the first time, Liam and Brendan entertained Marcus)*
+> It happened to entire trades all throughout history. The reason I always bring up the Luddites is that they actually tried to do something about it, rather than roll over and take it. They actually tried to fight for greater control over their workplace.
 
 **BRENDAN** *(live)*: Did it do anything?
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> *(beat)* It made the machine owners very frightened for about a year. They put soldiers in the valleys. *(beat)* So, yes and no.
+> *(beat)* After they started smashing the looms, it made the machine owners very frightened for about a year. They put soldiers in the valleys which ultimately caught *(beat)* most of them... So, yes and no.
 
 **BRENDAN** *(live)*: *(beat)* Right.
 
@@ -170,7 +155,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 *(MARCUS does not have an answer, and it is the only time all night he doesn't. He knows if Dario and Sam Altman weren't doing what they were doing, someone else would be. The problem wasn't with any one person)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> *(glancing off, and taking the excuse with both hands)* The machine owners! The system! Not the code or whatever it is you always seem to obsess about... - sigh - I've got a thing at five. Liam, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that.
+> *(glancing off, and taking the excuse with both hands)* At OpenAI and Anthropic! The system! Not the code or whatever it is you always seem to obsess about... - sigh - I've got a thing at five. Liam, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that.
 
 **LIAM** *(live)*: Thanks.
 
