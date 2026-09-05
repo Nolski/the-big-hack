@@ -248,6 +248,8 @@ body.finding .shell { padding-right: 380px; }
   display: flex; align-items: center; gap: 12px;
 }
 .scene-foot .hint { color: var(--faint); font-size: 12px; }
+.scene-foot #dropScene { margin-left: auto; color: var(--faint); border-color: transparent; }
+.scene-foot #dropScene:hover, .scene-foot #dropScene.armed { color: var(--danger); border-color: var(--danger); }
 
 /* --------------------------------------------------------------- finder */
 .finder {

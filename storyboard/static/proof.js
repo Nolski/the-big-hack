@@ -184,8 +184,8 @@ function field(cls, value, opts) {
       if (wasClean) show(v);
       else { DIRTY.add(h); paintSaved(); }
     },
-    focus(caret) {
-      ta.focus();
+    focus(caret, opts) {
+      ta.focus(opts);
       const at = caret == null ? ta.value.length : Math.min(caret, ta.value.length);
       ta.setSelectionRange(at, at);
     },
@@ -253,8 +253,6 @@ function render() {
 
   const head = document.createElement("div");
   head.className = "scene-head";
-  const words = (s.lines || []).reduce(
-    (n, l) => n + (l.text || "").split(/\s+/).filter(Boolean).length, 0);
   head.innerHTML = `
     <div class="scene-kicker">
       Scene ${esc(s.display_number || s.number)}
@@ -264,10 +262,7 @@ function render() {
       · ${esc(s.status || "stub")}
     </div>
     <h1 class="scene-title">${esc(s.title)}</h1>
-    <div class="scene-sub">
-      ${(s.lines || []).length} beats · ${words} words ·
-      <code>${esc((s.source_file || "").split("/").pop())}</code>
-    </div>
+    <div class="scene-sub">${subline(s)}</div>
     ${s.setting ? `<details class="context"><summary>Setting the narrator reads</summary>
        <p>${esc(s.setting)}</p></details>` : ""}`;
   page.appendChild(head);
@@ -277,13 +272,13 @@ function render() {
   page.appendChild(beats);
 
   (s.lines || []).forEach((ln, i) => {
-    beats.appendChild(adder(i === 0 ? "" : s.lines[i - 1].id));
+    beats.appendChild(adder(i === 0 ? null : s.lines[i - 1]));
     const row = beatRow(ln);
     S.rows.push(row);
     beats.appendChild(row.el);
   });
   const last = (s.lines || [])[(s.lines || []).length - 1];
-  if (last) beats.appendChild(adder(last.id));
+  if (last) beats.appendChild(adder(last));
 
   const foot = document.createElement("div");
   foot.className = "scene-foot";
@@ -291,21 +286,35 @@ function render() {
   foot.innerHTML = `
     <button class="btn ${done ? "" : "primary"}" id="markDone">
       ${done ? "✓ Proofed — mark unread" : "✓ Mark proofed → next scene"}</button>
-    <span class="hint">${done ? "This scene is marked proofed." : "⌘Enter"}</span>`;
+    <span class="hint">${done ? "This scene is marked proofed." : "⌘Enter"}</span>
+    <button class="btn ghost danger" id="dropScene" title="Remove this scene's file from the script">
+      Delete this scene</button>`;
   $("#markDone", foot).onclick = () => (done ? unmarkScene() : markSceneDone());
+  armed($("#dropScene", foot), "Delete this scene", "Click again to delete", deleteScene);
   page.appendChild(foot);
 
   paintChrome();
 }
 
-function adder(afterId) {
+// "N beats · N words · file", kept current when a beat goes without a redraw.
+function subline(s) {
+  const words = (s.lines || []).reduce(
+    (n, l) => n + (l.text || "").split(/\s+/).filter(Boolean).length, 0);
+  return `${(s.lines || []).length} beats · ${words} words ·
+      <code>${esc((s.source_file || "").split("/").pop())}</code>`;
+}
+
+// The "+" between beats. It holds the beat it sits after, not that beat's id:
+// removing a beat renumbers everything below it in place, and an id captured
+// here would then point at the wrong line.
+function adder(after) {
   const row = document.createElement("div");
   row.className = "adder";
   const b = document.createElement("button");
   b.type = "button";
   b.textContent = "+";
   b.title = "Add a beat here";
-  b.onclick = () => insertAfter(afterId);
+  b.onclick = () => insertAfter(after ? after.id : "");
   row.appendChild(b);
   return row;
 }
@@ -460,7 +469,7 @@ function beatRow(ln) {
   const row = {
     ln, el, note,
     get fields() { return mdF ? [mdF] : dirF ? [dirF, wordsF] : [wordsF]; },
-    focus(caret) { this.fields[this.fields.length - 1].focus(caret); },
+    focus(caret, opts) { this.fields[this.fields.length - 1].focus(caret, opts); },
 
     // The file's word for this beat after somebody's save.
     sync(b) {
@@ -528,15 +537,35 @@ function beatRow(ln) {
       mdF.focus(0);
     },
 
+    // No "are you sure": the file is under git, and the toast says so.
     async remove() {
-      const gist = (ln.text || ln._raw || "").replace(/\s+/g, " ").slice(0, 80);
-      if (!confirm(`Remove this beat?\n\n${gist}`)) return;
       if (!(await flushAll())) return toast("Something hasn't saved yet.", true);
       const at = S.rows.indexOf(row);
       try {
-        await api("POST", "/api/review/line/delete",
+        const r = await api("POST", "/api/review/line/delete",
           { scene: scene().id, line: ln.id, expect: ln._raw });
-        await reload({ focus: Math.max(0, at - 1) });
+        // Take the row out where it stands rather than redrawing the scene.
+        // A redraw throws away the scroll position and every box on the page,
+        // and putting both back is exactly the kind of thing that ends up at
+        // the top of the page. Nothing here moves except the beats below.
+        const s = scene();
+        const beats = r.beats;
+        if (!beats || at < 0 || beats.length !== S.rows.length - 1) {
+          await reload({ focus: Math.max(0, at - 1) });
+        } else {
+          const next = el.nextElementSibling;
+          if (next && next.classList.contains("adder")) next.remove();
+          el.remove();
+          S.rows.splice(at, 1);
+          s.lines.splice(s.lines.indexOf(ln), 1);
+          beats.forEach((b, i) => S.rows[i].sync(b));
+          const sub = $(".scene-sub", $("#page"));
+          if (sub) sub.innerHTML = subline(s);
+          const near = S.rows[Math.max(0, at - 1)];
+          S.lastRow = near || null;
+          if (near) near.focus(null, { preventScroll: true });
+          paintChrome();
+        }
         toast("Beat removed. Undo an edit.command has the previous version.");
       } catch (e) { note(e.message, "err"); }
     },
@@ -613,9 +642,38 @@ async function insertAfter(afterId) {
       type: prev && prev.type !== "direction" ? prev.type : "live",
       speaker: prev ? prev.speaker : "",
     });
-    await reload({ focus: r.index, caret: 0 });
-    const row = S.rows[r.index];
-    if (row) row.fields[row.fields.length - 1].ta.select();
+    // Slot the new beat in where it goes rather than redrawing the scene, for
+    // the same reason `remove()` doesn't: a redraw loses the reader's place.
+    const s = scene();
+    const beats = r.beats;
+    const at = r.index;
+    if (!beats || beats.length !== S.rows.length + 1 || !beats[at]) {
+      await reload({ focus: at, caret: 0 });
+      const row = S.rows[at];
+      if (row) row.fields[row.fields.length - 1].ta.select();
+      return;
+    }
+    const b = beats[at];
+    const ln = { id: b.id, _raw: b.raw, type: b.type, speaker: b.speaker,
+                 text: b.text, direction: b.direction, audio: null };
+    s.lines.splice(at, 0, ln);
+    const row = beatRow(ln);
+    S.rows.splice(at, 0, row);
+    // The page reads: adder(before row 0), row 0, adder(after row 0), row 1 ...
+    // so the new row and its own adder go right after the adder that follows
+    // the beat it was added under.
+    const beatsEl = $(".beats", $("#page"));
+    if (!beatsEl.firstElementChild) beatsEl.appendChild(adder(null));
+    const prevRow = S.rows[at - 1];
+    const anchor = prevRow ? prevRow.el.nextElementSibling : beatsEl.firstElementChild;
+    anchor.after(row.el, adder(ln));
+    beats.forEach((x, i) => S.rows[i].sync(x));
+    const sub = $(".scene-sub", $("#page"));
+    if (sub) sub.innerHTML = subline(s);
+    paintChrome();
+    row.focus(0, { preventScroll: true });
+    row.el.scrollIntoView({ block: "nearest" });
+    row.fields[row.fields.length - 1].ta.select();
   } catch (e) { toast(e.message, true); }
 }
 
@@ -690,6 +748,40 @@ async function markSceneDone() {
   else toast("That was the last scene. The whole play is marked proofed.");
 }
 
+// A button that wants a second click, not a dialog. Dialogs steal the focus
+// and the scroll; this one just changes its label for a few seconds.
+function armed(btn, label, ask, fn) {
+  let t = null;
+  const disarm = () => { clearTimeout(t); t = null; btn.textContent = label; btn.classList.remove("armed"); };
+  btn.onclick = () => {
+    if (t) { disarm(); fn(); return; }
+    btn.textContent = ask;
+    btn.classList.add("armed");
+    t = setTimeout(disarm, 4000);
+  };
+}
+
+// The scene's file leaves the scripts folder. The server shelves its last
+// contents in storyboard/.edits/ first, and the toast says where.
+async function deleteScene() {
+  if (!(await flushAll())) return toast("Something hasn't saved yet.", true);
+  const s = scene();
+  try {
+    const r = await api("POST", "/api/review/scene/delete", { scene: s.id });
+    delete S.proof.scenes[s.id];
+    if (S.proof.at && S.proof.at.scene === s.id) S.proof.at = null;
+    saveProof();
+    const sb = await api("GET", "/api/storyboard");
+    S.scenes = sb.scenes || [];
+    S.chars = sb.characters || [];
+    S.i = Math.min(S.i, Math.max(0, S.scenes.length - 1));
+    S.lastRow = null;
+    render();
+    $("#page").scrollTop = 0;
+    toast(`Scene removed: ${r.file}.` + (r.kept ? ` A copy is at ${r.kept}.` : ""));
+  } catch (e) { toast(e.message, true); }
+}
+
 function unmarkScene() {
   proofOf(scene().id).done = false;
   saveProof();
@@ -743,8 +835,7 @@ document.addEventListener("keydown", (e) => {
   // Deleting is global, not just inside a box. The help sheet promises ⌘⌫
   // deletes this beat, and it used to sit below the `!ta` return — so reading
   // a beat, hovering it, or clicking its gutter and pressing ⌘⌫ did nothing at
-  // all. `remove()` confirms before it touches anything, so there is no reason
-  // to require the caret be in a textarea first.
+  // all. There is no reason to require the caret be in a textarea first.
   if (meta && (e.key === "Backspace" || e.key === "Delete")) {
     e.preventDefault();
     if (S.lastRow) S.lastRow.remove();

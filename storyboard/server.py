@@ -1147,6 +1147,34 @@ def api_review_line_delete(payload: dict = Body(...)):
             "beats": _scene_beats(sid)}
 
 
+@app.post("/api/review/scene/delete")
+def api_review_scene_delete(payload: dict = Body(...)):
+    """Remove a whole scene: its markdown file leaves the scripts folder.
+
+    The file's last contents are kept in `storyboard/.edits/<stem>/` first,
+    the same shelf every beat edit leaves its previous version on, so a wrong
+    click costs a copy back rather than an afternoon.
+    """
+    sid = (payload.get("scene") or "").strip()
+    if not sid:
+        raise HTTPException(400, "scene is required")
+    scenes = script_parser.load_scenes(
+        scripts_dir(), characters(), CFG.get("aliases"))
+    scene = next((s for s in scenes if s["id"] == sid), None)
+    if scene is None:
+        raise HTTPException(404, f"unknown scene: {sid}")
+    path = Path(scene["source_file"]).resolve()
+    root = scripts_dir().resolve()
+    if root not in path.parents:
+        raise HTTPException(409, "that scene's file isn't in the scripts folder")
+    _keep_previous(path)
+    kept = sorted((EDITS / path.stem).glob(f"*{path.suffix}"))
+    path.unlink()
+    return {"ok": True, "scene": sid, "file": path.name,
+            "kept": str(kept[-1].relative_to(HERE)) if kept else None,
+            "remaining": [s["id"] for s in scenes if s["id"] != sid]}
+
+
 def _locate_beat(sid, lid, expect):
     """Find one beat's span in its file, refusing if it isn't where the client
     last saw it. Returns the file's lines so the caller can splice them."""
