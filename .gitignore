@@ -17,3 +17,6 @@ storyboard/.edits/
 
 # How far the proofreading pass has got, and which beats were flagged
 storyboard/proof.json
+
+# Generated PDF exports — regenerate with tools/export_script.py
+exports/
