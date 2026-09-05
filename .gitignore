@@ -20,3 +20,6 @@ storyboard/proof.json
 
 # Generated PDF exports — regenerate with tools/export_script.py
 exports/
+
+# Python bytecode
+__pycache__/
