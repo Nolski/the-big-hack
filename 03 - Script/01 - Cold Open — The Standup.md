@@ -93,7 +93,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 > [!screen] VIDEO — MARCUS · `AIV-019`
 > If you listened to what I said about the Luddites, Liam... The quality of their work got worse, but it doesn't matter because it's cheaper.
 
-**NARRATOR** *(V.O.)*: Generally speaking, it's thought that the quality of the garments went up via industrialization. Marcus made some crude, incorrect assumptions to win the argument.
+**NARRATOR** *(V.O.)*: Generally speaking, it's thought that the quality of the garments went up via industrialization. It was the gig mill, the machine that automated the creation of wool that had quality issues during it's early days.
 
 **LIAM** *(live)*: Marcus, this has nothing to do with making clothes. We are hired to write good code and vibe coding writes garbage code. Can you please keep your politics out of this for 5 minutes? Kristina is trying to run standup.
 
