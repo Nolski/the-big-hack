@@ -1,0 +1,7 @@
+Give the receiving agent AGENT_HANDOFF.md first. It explains what this is and how to run it.
+
+Unzip the whole folder, then double-click Start The Big Hack.command on a Mac with Python 3 and Chrome. Alternatively, run:
+
+python3 serve.py --host 127.0.0.1 --port 8040
+
+Open http://127.0.0.1:8040/ in a browser. Keep the server terminal open. Playback needs no API key or Internet connection.

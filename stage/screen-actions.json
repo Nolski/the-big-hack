@@ -1,0 +1,819 @@
+{
+  "version": 1,
+  "actions": {
+    "key-issuance": {
+      "scene": "s01c",
+      "start": 13,
+      "end": 16,
+      "side": "right",
+      "view": "chatgpt",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.7
+        },
+        {
+          "op": "type",
+          "text": "what is a key-issuance service? explain it without using more words i have to look up",
+          "seconds": 6.538461538461538
+        },
+        {
+          "op": "hold",
+          "seconds": 1.8
+        },
+        {
+          "op": "submit",
+          "seconds": 0.35
+        },
+        {
+          "op": "answer",
+          "text": "It creates API keys: credentials that let another program access an API. It also needs rules for who can get a key and what that key can access.",
+          "seconds": 3.4285714285714284
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "b443d300158bef99d91e21d53329efe850aa0fd7329e0d23d4956d82c259c53a",
+      "question": "what is a key-issuance service? explain it without using more words i have to look up",
+      "context": "",
+      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+    },
+    "race-condition": {
+      "scene": "s06",
+      "start": 16,
+      "end": 24,
+      "side": "right",
+      "view": "chatgpt",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.7
+        },
+        {
+          "op": "type",
+          "text": "what is a race condition? why would it only happen sometimes?",
+          "seconds": 4.6923076923076925
+        },
+        {
+          "op": "hold",
+          "seconds": 1.8
+        },
+        {
+          "op": "submit",
+          "seconds": 0.35
+        },
+        {
+          "op": "answer",
+          "text": "Two operations overlap, and the result depends on their timing. It can disappear when you test slowly, then return when real traffic runs things at the same time.",
+          "seconds": 3.857142857142857
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "f22892275c1d737a23fd4d6d333437df2adcbcc905d2d880cd7f058fae0f030a",
+      "question": "what is a race condition? why would it only happen sometimes?",
+      "context": "",
+      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+    },
+    "rng-entropy": {
+      "scene": "s06",
+      "start": 29,
+      "end": 30,
+      "side": "right",
+      "view": "chatgpt",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.7
+        },
+        {
+          "op": "type",
+          "text": "RNG, entropy source, signing. what are those in session tokens? one at a time please",
+          "seconds": 6.461538461538462
+        },
+        {
+          "op": "hold",
+          "seconds": 1.8
+        },
+        {
+          "op": "submit",
+          "seconds": 0.35
+        },
+        {
+          "op": "answer",
+          "text": "RNG: a random-number generator.\n\nEntropy source: the unpredictable input used to help generate random values.\n\nSigning: adding a cryptographic check so a changed token can be detected.",
+          "seconds": 4.380952380952381
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "c66ddf4719ce55a571e77fd58baf07035101dfb107e1f5c7126151ae5177e541",
+      "question": "RNG, entropy source, signing. what are those in session tokens? one at a time please",
+      "context": "",
+      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+    },
+    "mutex-deadlock": {
+      "scene": "s06",
+      "start": 32,
+      "end": 34,
+      "side": "right",
+      "view": "chatgpt",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.7
+        },
+        {
+          "op": "type",
+          "text": "what is a mutex? and how does that turn into a deadlock?",
+          "seconds": 4.3076923076923075
+        },
+        {
+          "op": "hold",
+          "seconds": 1.8
+        },
+        {
+          "op": "submit",
+          "seconds": 0.35
+        },
+        {
+          "op": "answer",
+          "text": "A mutex lets one operation use a shared resource at a time. A deadlock can happen when operations wait on each other and none can continue. Adding a lock does not automatically fix the underlying bug.",
+          "seconds": 4.761904761904762
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "bc27d6b2c04a1a8155b4379d027ca006f92307dd009e387738084ae3d89bdc25",
+      "question": "what is a mutex? and how does that turn into a deadlock?",
+      "context": "Claude Code · investigating signup/session flow in another tab",
+      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+    },
+    "quantized-model": {
+      "scene": "s11b",
+      "start": 44,
+      "end": 46,
+      "side": "right",
+      "view": "chatgpt",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.7
+        },
+        {
+          "op": "type",
+          "text": "what does quantized mean? how does that make a model fit in memory?",
+          "seconds": 5.153846153846154
+        },
+        {
+          "op": "hold",
+          "seconds": 1.8
+        },
+        {
+          "op": "submit",
+          "seconds": 0.35
+        },
+        {
+          "op": "answer",
+          "text": "The model’s numbers are stored with fewer bits. That uses less memory, with a possible loss of accuracy. It can make a large model fit on a smaller machine.",
+          "seconds": 3.7142857142857144
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "9fe244199c0b659090c607d92d35802c86cabd35c59b8114a117fc03c7ed77ca",
+      "question": "what does quantized mean? how does that make a model fit in memory?",
+      "context": "",
+      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+    },
+    "pin-weights": {
+      "scene": "s11b",
+      "start": 64,
+      "end": 64,
+      "side": "right",
+      "view": "chatgpt",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.7
+        },
+        {
+          "op": "type",
+          "text": "when he says pin the weights does he just mean keep the same model?",
+          "seconds": 5.153846153846154
+        },
+        {
+          "op": "hold",
+          "seconds": 1.8
+        },
+        {
+          "op": "submit",
+          "seconds": 0.35
+        },
+        {
+          "op": "answer",
+          "text": "Yes: keep using a specific set of model weights instead of silently switching to an updated set. The surrounding software and settings matter too.",
+          "seconds": 3.4761904761904763
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "0f8a215abfb280371eaf91d48561da0b0030a0d990f36c5c506b18ebdcd79422",
+      "question": "when he says pin the weights does he just mean keep the same model?",
+      "context": "",
+      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+    },
+    "investigate-signup": {
+      "scene": "s06",
+      "start": 31,
+      "end": 31,
+      "side": "right",
+      "view": "agent",
+      "steps": [
+        {
+          "op": "type",
+          "text": "Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user’s account. No production data. Find a local repro and root cause.",
+          "seconds": 6
+        },
+        {
+          "op": "hold",
+          "seconds": 0.8
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "Reading controllers…\nReading models and tests…\nInspecting shared session store…",
+          "seconds": 4
+        }
+      ],
+      "sourceTextSha256": "e05a65af9425a64ad72967d23ba6be56c3e862003372bd05d74a2200f13dd6c5",
+      "title": "Claude Code",
+      "context": "Repository root · local investigation",
+      "note": "Show the investigation request being typed before Claude starts reading the repository."
+    },
+    "checkout-main": {
+      "scene": "s06",
+      "start": 48,
+      "end": 49,
+      "side": "right",
+      "view": "terminal",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.6
+        },
+        {
+          "op": "type",
+          "text": "git switch main",
+          "seconds": 2.8
+        },
+        {
+          "op": "hold",
+          "seconds": 0.9
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "Switched to branch main\n\nfix/signup-session remains on the local machine.",
+          "seconds": 1
+        }
+      ],
+      "sourceTextSha256": "a4008d4fab46c9b13edfd8c41b698bf667ba5b78cc06a90ffd7021bfd884de87",
+      "title": "Brendan / local repository",
+      "note": "The command is typed, executed, then held. The fix stays on its branch."
+    },
+    "delete-branch": {
+      "scene": "s07",
+      "start": 25,
+      "end": 25,
+      "side": "right",
+      "view": "terminal",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 1
+        },
+        {
+          "op": "type",
+          "text": "git branch -D fix/signup-session",
+          "seconds": 4
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "Deleted branch fix/signup-session.",
+          "seconds": 0.5
+        }
+      ],
+      "sourceTextSha256": "0f61d2813f38090ff25ca83e18bab7f4782999cdd90b8e8fa82868d3e81563bb",
+      "title": "Brendan / local branches",
+      "note": "Type the branch-delete command, pause on it, then execute. Liam’s PR stays visible on the other display."
+    },
+    "cloud-prompt": {
+      "scene": "s11b",
+      "start": 59,
+      "end": 63,
+      "side": "right",
+      "view": "agent",
+      "steps": [
+        {
+          "op": "type",
+          "text": "In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5.",
+          "seconds": 4.5
+        },
+        {
+          "op": "hold",
+          "seconds": 0.5
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "Opened billing/webhooks.rb\nWrote retry wrapper\nRan webhook delivery test\n\n✓ Test passed · patch ready",
+          "seconds": 4
+        }
+      ],
+      "sourceTextSha256": "686f6b877a663cf08fe16ba82e967623dc50a870c7a9bd896b476e3b7b1b3aae",
+      "title": "Cloud agent",
+      "context": "billing/webhooks.rb",
+      "note": "Brendan types the request; the agent then opens the file, writes the change and passes the test. Hold the finished result."
+    },
+    "policy-drafts": {
+      "scene": "s11b",
+      "start": 65,
+      "end": 66,
+      "side": "right",
+      "view": "message",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 1
+        },
+        {
+          "op": "type",
+          "text": "re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang...",
+          "seconds": 10
+        },
+        {
+          "op": "hold",
+          "seconds": 3.5
+        },
+        {
+          "op": "delete",
+          "to": "",
+          "seconds": 4.5
+        },
+        {
+          "op": "hold",
+          "seconds": 1.5
+        },
+        {
+          "op": "type",
+          "text": "I don't know if liam is ever going to...",
+          "seconds": 4.5
+        },
+        {
+          "op": "hold",
+          "seconds": 3.5
+        },
+        {
+          "op": "delete",
+          "to": "",
+          "seconds": 3
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "a8d96a8c9913f0c78c9a42135b7fffd720636c68adce590be630b8e32577707e",
+      "title": "Kristina",
+      "context": "Security policy · Owner: Liam · Last reviewed 14 months ago",
+      "reference": "Proprietary source code must not be shared with external model providers.",
+      "secondary": "Sprint board: 5 tickets · 2 due today",
+      "note": "Two distinct drafts: type the policy question, hold it so the audience can read it, erase with held backspace; type the unfinished thought about Liam, hesitate, erase it too. GO may continue to Liam’s next line without restarting the typing."
+    },
+    "delete-patch": {
+      "scene": "s11b",
+      "start": 70,
+      "end": 71,
+      "side": "right",
+      "view": "editor",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 2.5
+        },
+        {
+          "op": "select",
+          "seconds": 1.5
+        },
+        {
+          "op": "delete",
+          "to": "",
+          "seconds": 6.5
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "7869d0d60bee9dda3b58cba4896419f3ce16a7b05a32aa1dd51a0babb2f6c78b",
+      "initial": "def deliver_with_retry(payload)\n  attempts = 0\n  begin\n    deliver_webhook(payload)\n  rescue DeliveryFailed\n    attempts += 1\n    raise if attempts >= 5\n    sleep(2 ** attempts)\n    retry\n  end\nend",
+      "title": "billing/webhooks.rb · unsent local patch",
+      "context": "The message to Kristina is still empty.",
+      "note": "Show the completed patch first. Select it, visibly erase it, and hold the empty editor. Liam’s local model keeps crawling on the other display."
+    },
+    "no-major-concerns": {
+      "scene": "s12",
+      "start": 31,
+      "end": 34,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.6
+        },
+        {
+          "op": "type",
+          "text": "No major concerns.",
+          "seconds": 3
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "dbaf43ece4700f88955c68693235d4bbcdec9f45e06cb03464c27efd991866a6",
+      "note": "The first answer appears character by character. Hold it while Brendan tries to justify it."
+    },
+    "clear-first-answer": {
+      "scene": "s12",
+      "start": 35,
+      "end": 42,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 1
+        },
+        {
+          "op": "delete",
+          "to": "",
+          "seconds": 2.8
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "505618a044d0862fe6c0eeea485fb3c1d6d2182a43ca5a419307773d17323424",
+      "initial": "No major concerns.",
+      "note": "Visibly clear the first draft, then leave the cursor in the empty optional field."
+    },
+    "feedback-first": {
+      "scene": "s12",
+      "start": 46,
+      "end": 49,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "type",
+          "text": "Liam is the strongest engineer on this team.",
+          "seconds": 4.5
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "5738453e8a05bf02a6d9383d8b78fa8a9fd1b3115151de97fdab682cc9b9559a",
+      "note": "Type the first sentence as Brendan reads it aloud; hold it through his hesitation."
+    },
+    "feedback-local": {
+      "scene": "s12",
+      "start": 50,
+      "end": 50,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "type",
+          "text": "\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.",
+          "seconds": 12
+        },
+        {
+          "op": "hold",
+          "seconds": 1
+        },
+        {
+          "op": "type",
+          "text": " He said it like it settled something.",
+          "seconds": 3.5
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "d524828733c814aecf8fc63aedff494793f880676136119f03feee52790448b2",
+      "initial": "Liam is the strongest engineer on this team.",
+      "note": "Append the local-model paragraph, including the last sentence he will reconsider. Both must be visible before the next cue."
+    },
+    "feedback-retract": {
+      "scene": "s12",
+      "start": 51,
+      "end": 52,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 2.5
+        },
+        {
+          "op": "delete",
+          "to": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.",
+          "seconds": 2.5
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "bcd6bec720812b20c66025f339fe1103ae2d1c928525bcb894c8eab3a22f1752",
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it. He said it like it settled something.",
+      "note": "Erase only “He said it like it settled something.” Keep every earlier sentence intact."
+    },
+    "feedback-queue": {
+      "scene": "s12",
+      "start": 53,
+      "end": 54,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "type",
+          "text": "\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.",
+          "seconds": 12
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "20f5df2abfce998ae9fdfc523f826587353dc8cb4780bdb922c3c6e8c7b9eec7",
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.",
+      "note": "Append the review-queue paragraph as Brendan reads it."
+    },
+    "feedback-careful": {
+      "scene": "s12",
+      "start": 55,
+      "end": 57,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "type",
+          "text": "\n\nThe newer engineers have started treating his position on the tooling as the careful one.",
+          "seconds": 7
+        },
+        {
+          "op": "hold",
+          "seconds": 3
+        }
+      ],
+      "sourceTextSha256": "eb584f744ed3dc6fd6cca28631b326fe0f4f7ccc4728eb4286ec0eea23a004ba",
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.",
+      "note": "Type the tooling sentence, then hold it through the double reading."
+    },
+    "feedback-hedge": {
+      "scene": "s12",
+      "start": 58,
+      "end": 59,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "type",
+          "text": " I don't think it is any more. I might be wrong about that.",
+          "seconds": 5
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "6da8f98bcf9dae98728de45a4762532ce52fa3e23cd2cfd1cbd304a560eca133",
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one.",
+      "note": "Append the hedge without changing the previous paragraphs."
+    },
+    "feedback-race": {
+      "scene": "s12",
+      "start": 60,
+      "end": 62,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "type",
+          "text": " He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.",
+          "seconds": 9
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "93404c626dc8f77ac3be92b90d8b68016ae6a390e81baa07c04326beb96a73bb",
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. I don't think it is any more. I might be wrong about that.",
+      "note": "Append the race-condition credit. Hold all four paragraphs through Brendan’s unfinished spoken line."
+    },
+    "feedback-submit": {
+      "scene": "s12",
+      "start": 63,
+      "end": 64,
+      "side": "left",
+      "view": "feedback",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 2
+        },
+        {
+          "op": "submit",
+          "seconds": 0.4
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "fc29093c8161052ad2c2ca1eabfd74b2b5a372d5970111170d20445863d97fce",
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. I don't think it is any more. I might be wrong about that. He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.",
+      "note": "Submit the completed four paragraphs. No deletion on this cue."
+    },
+    "promotion-empty": {
+      "scene": "s14b",
+      "start": 93,
+      "end": 94,
+      "side": "right",
+      "view": "promotion",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 1
+        }
+      ],
+      "sourceTextSha256": "966e44bf76e761f3a1d7c4cae8aef759cd3c58b67f90afc899dded173b63b817",
+      "note": "The promotion thread remains open, with an empty reply box while Brendan packs."
+    },
+    "promotion-thanks": {
+      "scene": "s14b",
+      "start": 95,
+      "end": 96,
+      "side": "right",
+      "view": "promotion",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 1
+        },
+        {
+          "op": "type",
+          "text": "thanks everyone.",
+          "seconds": 3.2
+        },
+        {
+          "op": "hold",
+          "seconds": 4
+        }
+      ],
+      "sourceTextSha256": "9e2c18499e2b6c4edf4268a306fe16b511a5c64586dbba14236f5efe7e7230ec",
+      "note": "Type “thanks everyone.” character by character. Hold the unsent reply."
+    },
+    "promotion-delete": {
+      "scene": "s14b",
+      "start": 97,
+      "end": 97,
+      "side": "right",
+      "view": "promotion",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 2
+        },
+        {
+          "op": "delete",
+          "to": "",
+          "seconds": 3.5
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "sourceTextSha256": "5feab8286eef6c2d535bb6a6801695e7792203e5179936727217111974bf9835",
+      "initial": "thanks everyone.",
+      "note": "Hold backspace until the unsent thank-you is gone. Leave the empty box visible until GO."
+    },
+    "phone-read": {
+      "scene": "s20",
+      "start": 73,
+      "end": 74,
+      "side": "left",
+      "view": "phone",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 1
+        }
+      ],
+      "sourceTextSha256": "595f3d57ebc409bafa6fd36b2412762684b0b75b84818213300fec75dc36f201",
+      "incoming": "morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..",
+      "note": "Show Liam’s 06:02 message on Brendan’s phone. The reply is still empty."
+    },
+    "phone-warning": {
+      "scene": "s20",
+      "start": 75,
+      "end": 76,
+      "side": "left",
+      "view": "phone",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 1
+        },
+        {
+          "op": "type",
+          "text": "liam, about the machine. last night i tried something and i think i need to tell you before you...",
+          "seconds": 8
+        },
+        {
+          "op": "hold",
+          "seconds": 4
+        }
+      ],
+      "sourceTextSha256": "f881ae87648076ae26f1d96ba720ea3d2dc8581d6e8701861d85e55dd34c73ae",
+      "incoming": "morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..",
+      "note": "Type an unfinished warning over roughly a line and a half, then hesitate. This screen-only draft is an adaptation: the script specifies its length and deletion but not its words.",
+      "textOrigin": "New screen-only unfinished draft; no added spoken dialogue."
+    },
+    "phone-delete": {
+      "scene": "s20",
+      "start": 77,
+      "end": 78,
+      "side": "left",
+      "view": "phone",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 2
+        },
+        {
+          "op": "delete",
+          "to": "",
+          "seconds": 5
+        },
+        {
+          "op": "hold",
+          "seconds": 3
+        }
+      ],
+      "sourceTextSha256": "eeea85bbfbf6b55b2e1ffc4e725ff20d34fe3d53bab9d3ba3fbe42a26b358d39",
+      "initial": "liam, about the machine. last night i tried something and i think i need to tell you before you...",
+      "incoming": "morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..",
+      "note": "The same unfinished warning is visibly erased with held backspace. It is never sent."
+    }
+  }
+}
