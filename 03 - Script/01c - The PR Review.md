@@ -15,6 +15,9 @@ tags:
 
 # Scene 01c — The PR Review
 
+> [!warning] Cut from the running order in the cut pass
+> Kept in the vault as source material, like [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Where it went: the apology moved to the top of the huddle in [[06 - Good Instinct]]; nothing else survives.
+
 > [!info] Beat
 > Third Movement I opener. Liam pulls Brendan into a one-to-one to litigate the merged portal (Liam started the huddle). He opens with a clumsy, real apology for the degree line — then relentlessly steamrolls the actual review, unable to let Brendan explain how he now works. Seeds B5/B6/B7: the careful-line-reader identity that is about to be automated out from under him, defended at the top of his lungs.
 

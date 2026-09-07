@@ -43,8 +43,6 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 |---|---|---|---|
 | 1 | [[01 - Cold Open — The Standup\|Cold Open — The Standup]] | I | ✏️ |
 | 1b | [[01b - The Cursor Demo\|The Cursor Demo]] | I | ✏️ |
-| 1c | [[01c - The PR Review\|The PR Review]] | I | ✏️ |
-| 1d | [[01d - The Future\|The Future]] | I | ✏️ |
 | 1e | Marcus Established — *probably not needed; see note below* | I | ⬜ |
 | 6 | [[06 - Good Instinct\|Good Instinct]] | II | ✏️ |
 | 7 | [[07 - Heads Together\|Heads Together]] | II | ✏️ |
@@ -70,7 +68,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 > [!note] Slot 1e may be redundant now
 > The Marcus pass put him on-mic **three times before the mandate** — the refused alliance and the credential callout in [[01 - Cold Open — The Standup]], the Luddite tangent Liam corrects in [[06 - Good Instinct]], and the long fight in [[11b - Best Practices]] — which is what a dedicated "Marcus Established" scene was for. **Recommend cutting 1e** unless the timing pass finds Movement I is short, which it will not. Leave the row until the draft is complete, then delete it rather than writing into it.
 
-**Out of the running order, kept in the vault:** [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Both are cut from the show and both stay as source material for Marcus's arguments and for verbatim inserts.
+**Out of the running order, kept in the vault:** [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Both are cut from the show and both stay as source material for Marcus's arguments and for verbatim inserts. **Cut pass:** [[01c - The PR Review]] (apology moved into [[06 - Good Instinct]]) and [[01d - The Future]] (back half merged into [[01b - The Cursor Demo]]).
 
 > [!note] Numbering — read before renumbering anything
 > Scene *files* carry `scene_number`s that no longer line up with running-order slots, and that is deliberate. This **table is the source of truth for ORDER**; a scene's `scene_number` frontmatter is the source of truth for its **storyboard id** (`s08`, `s10`, `s11b`, …), which is what `storyboard/artifacts/` is named against. Renumbering a drafted file silently orphans its rendered audio and sketches.

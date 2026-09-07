@@ -63,21 +63,12 @@ Continuous with the cold open — the standup grid has emptied to just two tiles
 
 **BRENDAN** *(live)*: Perfect. Open Cursor. Top right, put it in plan mode. Then just tell it what you want, like you'd brief a contractor. Your own words.
 
-*(KRISTINA leans in, hunting the interface...)*
-
-> [!screen] VIDEO — KRISTINA · `AIV-010` *(lost for a second)*
-> …help me out...
-
-**BRENDAN** *(live, easy)*: Ha yeah, the UI trips everyone up. The dropdown, top. Not "agent", "Plan", the one under it. There.
-
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(reading as she types)*
 > Okay… "Build a Slack bot so our team can close Jira tickets from a slash command, slash-jira-done, and post back a clean confirmation."
 
 **BRENDAN** *(live, grinning)*: Yep. Send it.
 
-*(She hits enter. A plan streams out on screen, steps, files, an architecture.)*
-
-*(The plan: Slack slash-command handler, a Jira client, a deploy config. It looks authoritative. At the foot of it, a prompt waits "Proceed?")*
+*(She hits enter. A plan streams out on screen, steps, files, an architecture. It looks authoritative. At the foot of it, a prompt waits "Proceed?")*
 
 **BRENDAN** *(live, scanning it — the practiced eye, slowing her down)*: Okay see, this is the part people skip. It looks confident, but it's guessing. This is actually exactly what Liam was talking about. *(points)* Look, it invented a Jira endpoint. "Tickets-slash-close." That's not a real call; that doesn't exist. And down here, it wants to paste the API token straight into the code.
 
@@ -129,59 +120,71 @@ Continuous with the cold open — the standup grid has emptied to just two tiles
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(typing into Slack, narrating)*
 > Anyway I'll use one of mine for the test, then. Okay… slash, jira, done, P-R-O-J four-twelve…
 
-*(She hits enter. Instead of a confirmation, Slack throws back a red error , a permissions failure)*
-
-> [!screen] VIDEO — KRISTINA · `AIV-010` *(a little vindicated)*
-> Ha. Okay so it doesn't just work.
-
-**BRENDAN** *(live, completely unbothered, almost cheerful)*: Nope and *that's* the part the twitter vibe startups leave off. It passed its own tests, then hit something only your real workspace has. *(he copies the whole error, pastes it straight back in)* Half the time you don't even read it you just hand it back its own mess and tell it to fix it.
-
-*(She pastes the error, the agent reads the error, adds the missing Slack permission, redeploys.)*
-
-**BRENDAN** *(live)*: Okay, try it again.
-
-> [!screen] VIDEO — KRISTINA · `AIV-010` *(typing again)*
-> …slash, jira, done, four-twelve.
-
-*(She hits enter. This time Slack pings back: "PROJ-412 Closed." Behind it, on the board, the card slides over to Done.)*
+*(She hits enter. Slack pings back: "PROJ-412 Closed." Behind it, on the board, the card slides over to Done.)*
 
 *(under the green confirmation, in small grey text neither of them reads: "…and 3 linked issues resolved." The board quietly shuffles three more cards to Done.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(a stunned beat, then genuinely — but measured)*
 > …it actually closed it. *(beat)* Okay. Yeah, I get why you said this is fun
 
-> [!screen] VIDEO — KRISTINA · `AIV-010` *(lightly challenging)*
-> …Although if it face-plants like that on something this basic, how much time is it really saving you?
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(the thing that's been sitting there since standup)*
+> The thing Liam said about the code, though. That it writes its own tests, so of course they pass. Marking its own homework. *(beat)* He's not wrong about it, is he?
 
-**BRENDAN** *(live, easy, not defensive)*: …Think about it for a second. The whole thing, the plan, the build, the install, that error, the fix, the ticket, start to finish, that was maybe two minutes.
+**BRENDAN** *(live, lighting up — this is the thing he's been dying to explain)*: I'm actually really happy to hear you say that. It's important and he's half right. You *can't* let it grade its own homework. But that's not how you're meant to do it. Can I show you how I actually review this stuff? It'll take two minutes.
 
-> [!screen] VIDEO — KRISTINA · `AIV-010` *(a beat, then a small, conceding laugh)*
-> …Yeah. Okay. That was a dumb question.
+> [!screen] VIDEO — KRISTINA · `AIV-010`
+> Please. Yes. Show me.
 
-**BRENDAN** *(live)*: No it's a fair question, I feel like we spend half of standup arguing about it
+*(BRENDAN shares his screen, a plan-mode plan.)*
 
-*(She glances over at his shared screen, really looks at it for the first time: pinned tabs, a session transcript, a long personal doc.)*
+**BRENDAN** *(live)*: So the thing liam mention this morning: you read eight hundred lines of AI code top to bottom. Nobody can do that, you'd go blind by line two hundred, that's actually true regardless of who wrote it. So for years human written code was split into smaller patches that are easier to review. But imagine you joined a new company and needed to learn how a service worked. You wouldn't read all the code, you would start with the documentation. So when it comes to AI code, you don't start with the code at all. You start *here*, this is the plan it wrote *before* it touched a single file. It's the documentation, the architecture, the tradeoffs, where the secrets go. That's two pages, and that's where the real decisions live. I read *that* like a hawk.
 
-> [!screen] VIDEO — KRISTINA · `AIV-010` *(reading it off his screen)*
-> …wait. "Things it gets wrong." Is that a doc you're maintaining?
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(leaning in)*
+> …Oh. I didn't really *think* about it like that...
 
-**BRENDAN** *(live, a little sheepish, brushing past it)*: Oh that. Yeah, it's nothing, just stuff I've hit, I feed it back into the model so it knows what to avoid
+**BRENDAN** *(live)*: Exactly that. *(beat)* Then the dangerous parts, the auth, the token handling, anything that can actually hurt someone, I read every line myself. Twice. That's maybe five percent of the diff. The boring ninety-five, the CRUD, the front-end, I skim, and I write evals so it can be tested against the plan, so if it's wrong, the tests catch it.
 
-> [!screen] VIDEO — KRISTINA · `AIV-010` *(not letting it go — the realization is hers)*
-> Brendan, that's not nothing. Rules files, a checklist, that whole doc… *(it lands)* Everyone talks about this like it's a magic button. It's not, is it. You've put a *stupid* amount of work into making it look this easy.
+> [!screen] VIDEO — KRISTINA · `AIV-010`
+> But that's his whole point, the AI *writes* the tests...
 
-**BRENDAN** *(live, deflecting — genuinely, into the thing he loves)*: …I mean, it's the coolest thing I've ever gotten to do. I don't really think of it as work.
+**BRENDAN** *(live, scrolling to the testing section of the plan)*: The tests that actually matter, the integration tests, I write those into the plan, and review those carefully. Real partner sandbox, real tokens. And then it has access to any errors it generates, and part of the plan involves how to resolve and handle errors.
 
-> [!screen] VIDEO — KRISTINA · `AIV-010` *(quiet — half to herself, the thought landing)*
-> …It's obviously where the industry is headed *(a glance at LIAM's dark, empty tile)* and you clearly have a head start on half the team.
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(quiet awe)*
+> …So even though it wrote the tests, *you* architected them?
 
-**BRENDAN** *(live, not catching the weight of it)*: …Anyway, I've gotta run, got some work to do. Later?
+**BRENDAN** *(live)*: Yeah it's probably the most important part, telling it how to evaluate its work.
 
-*(He drops. The thought about Liam left unfinished, hanging in the quiet.)*
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(the refrain, and she means it)*
+> Brendan, this is the *future.* Do you get that? This is the entire future of how we build things. *(beat)* Everyone still doing it the old way is about to look like they're carving stone tablets.
+
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(bright — the obvious thought)*
+> Did you show Liam this? Because if he's genuinely worried about the tests, this is the *answer* to his entire objection. He'd love it.
+
+**BRENDAN** *(live, a beat — the air changes)*: …I tried. *(beat)* I, uh, I couldn't really get it in front of him. *(carefully)* I think I just need to spend a bit more time with him. One on one. To get him to actually sit with it.
+
+*(A pause. Kristina's excitement fades a little)*
+
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(slower)*
+> …Oh. *(beat)* You "tried." *(beat)* So you struggle with communicating with him too? And you're the one person here he actually likes.
+
+**BRENDAN** *(live, not wanting to bury him)*: …He'll come around. He's the smartest person on the team, Kristina, genuinely. He'll be incredible at this when he finally warms up to it.
+
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(half to herself, the manager surfacing)*
+> …Right. "Will be." *(a beat — something recalibrating behind her eyes)* …He's a bit of a challenge, though. Isn't he. Not a bad person. Just a challenge.
+
+*(She sits with it for a half-second)*
+
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(the glow returning)*
+> …Anyway. God, though, look at this slack bot, ten minutes of work. Imagine the whole team moving like this. Imagine what next quarter looks like. *(genuine)* I haven't been this excited about this job in years. *(beat)* Go, do your actual work. And Brendan? Thank you..
+
+*(Her tile blinks out, still glowing. BRENDAN sits alone.)*
 
 ---
 
 ## Notes
+> [!important] Cut pass — this scene now carries [[01d - The Future]] and [[01c - The PR Review]] is cut
+> The demo (01b) and the method (01d) were one conversation split across two calls; they are now one call. Everything below "I get why you said this is fun" is 01d's back half, moved verbatim. **Gone:** the live permissions error and paste-back, the "how much time is it really saving" challenge, the "things it gets wrong" doc (it only paid off in 11c, also cut), "you sound like Marcus," Brendan's scaling caution, and the "he felt bad" opener (01c is cut, so the apology now happens in [[06 - Good Instinct]], the next morning). **Lines changed rather than moved, for review:** (1) Kristina's "marking its own homework" line lost its "I dismissed it in the moment because I was upset" clause, because the apology hasn't happened yet; (2) "Did you show Liam this?" lost the "Marcus is a character" half; (3) her closing line lost "Sure. We'll figure that out when we're all shipping ten times faster," which answered the cut caution. Nothing else was reworded.
+
 - **This scene is the real engine — but it's not a commercial.** The tools Liam mocks win over the woman he humiliated, played for wonder *earned through friction*: the tool fumbles, is confidently wrong, passes its own tests and then breaks on the real workspace. What seduces her is **Brendan's depth** — but he never sells it; *she* uncovers it (the rules files, the "things it gets wrong" doc) and says it out loud, while he deflects into how cool it all is. That's the seed of the velocity-worship that later reframes Liam as "friction" (→ [[10 - The Win We Needed]], [[13 - The Performance Review]]). Mirror of the steam looms arriving in John's valley — marvelous, and not to be trusted blindly.
 - **The error has to be earned.** Because Brendan has it write and pass its own sandbox tests, a build-time failure would just get auto-fixed and mean nothing. The failure that lands is the *live* one — she runs `/jira done` for real and hits a permissions error the sandbox never saw. Works-in-test-breaks-in-prod: real, and it makes the fix (paste the error back) legible.
 - **Kristina is not naive.** She lives with these tools and knows the theory of vibe-coding; she just hasn't driven one herself. Keep her sharp — no "do I say please," no "I can't code," no "five-minute version." Her skepticism is pointed (the time-saving challenge), and she concedes fairly when Brendan answers it.

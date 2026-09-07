@@ -15,6 +15,9 @@ tags:
 
 # Scene 01d — The Future
 
+> [!warning] Cut from the running order in the cut pass
+> Kept in the vault as source material, like [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Where it went: the back half moved verbatim into [[01b - The Cursor Demo]], which now runs demo → method → reclassification in one call.
+
 > [!info] Beat
 > Last Movement I opener. Brendan calls Kristina to tell her Liam actually felt bad — and the call turns, without anyone deciding it, into the two things that doom Liam: Kristina falls in love with the new way of working (Brendan finally gets to *teach the method* to someone who'll listen), and she quietly reclassifies Liam from "difficult person" to "problem to be managed." Ends on the loom-knock hand-off into the 200-year rewind. Seeds B6/B7/B8.
 

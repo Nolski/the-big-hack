@@ -109,6 +109,12 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 
 *(The grid blinks out tile by tile. [MUSIC: music/slackhuddle.mp3] A Slack huddle request lights Liam's screen: BRENDAN. He takes it without looking up.)*
 
+**LIAM** *(live, gruff — not his comfort zone, getting it out of the way first)*: Before you say anything. The Kristina thing yesterday, what I said about her degree. *(a beat; this is hard for him)* That landed like shit. I know. I shouldn't have said it like that.
+
+**BRENDAN** *(live, caught off guard he's saying it)*: …Okay. Yeah. It really did.
+
+**LIAM** *(live, already moving on — can't stay in it)*: Yeah, well. *(beat)* Anyway.
+
 **LIAM** *(live, in his element now — the version of him people like)*: Okay. So. *(scrolling the thread)* Four users in three months. Each one signs up, and for about a second they're… in someone else's account. Someone else's name, someone else's email, right there on the screen. Then it clears. *(beat)* And I cannot reproduce it. I have tried everything. Ten thousand signups in a loop, locally, nothing. It only ever happens out there. In prod. Under real traffic.
 
 **BRENDAN** *(live, leaning in, genuinely into it)*: Okay, that's kind of horrifying. *(beat)* Where've you been looking?
@@ -158,6 +164,9 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 ---
 
 ## Notes
+> [!important] Cut pass — the apology from [[01c - The PR Review]] now opens the huddle
+> 01c is cut. Its one load-bearing beat, Liam's clumsy real apology for the degree line, is the first thing he says when Brendan's huddle connects. Three lines, moved verbatim except **"this morning" → "yesterday."** It lands the likeable trap harder: he apologises, then is warm, then is lapped anyway.
+
 - **The Marcus beat is the allegory, not a history lesson, and the order is the whole thing.** **Grievance first, history second.** He opens on something that is happening *now*, on this team, that anyone in the audience recognises — the work going out isn't as good, everyone has noticed, nobody says it — and the history arrives only when Kristina tries to move him on, as *evidence for a complaint he was already making*. An earlier draft opened *"So I went and read about the Luddites last night"*, which made it homework and made him a teacher. **Cut that framing wherever it reappears.**
 - **He never says the word in this scene. Liam does.** Marcus tells the whole thing without naming them, and Liam supplies the name and the only fact he owns in the same breath: *"The Luddites. They lost."* That pays off the objection Marcus never finished in [[01 - Cold Open — The Standup]] and it is much better than Marcus announcing his own subject.
 - **Everything he says is accurate and none of it is trivia.** They weren't against machines; cheaper yarn meant more work for them; what they went after were the frames turning out bad cloth fast in untrained hands; the cloth did get worse and the men who could tell were the ones let go. Plain words, about twenty seconds, then landed on the thing that actually happened in this room yesterday: eight hundred lines shipped that nobody read. **The audience should come out of it understanding the Luddites better, and should also be slightly embarrassed for him.**
