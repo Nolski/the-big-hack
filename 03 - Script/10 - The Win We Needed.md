@@ -45,12 +45,6 @@ The show's **first scene with no live speaker** — every character is AI video,
 > [!screen] VIDEO — KRISTINA · `AIV-090`
 > You're reading them right. The portal's the best launch we've had — activation up nineteen points, support tickets actually *down*, people posting about it without us asking. I haven't seen sentiment like this on anything we've shipped.
 
-> [!screen] VIDEO — THE CEO · `AIV-091` *(letting it land)*
-> Nineteen points. You know the quarter we've been having. I've walked into that boardroom with my hands open for six months. This is the first thing I get to put on the table that isn't an apology.
-
-> [!screen] VIDEO — KRISTINA · `AIV-090`
-> Then put it on the table. It's real.
-
 > [!screen] VIDEO — THE CEO · `AIV-091`
 > And this was one person? Brendan, one weekend?
 
@@ -128,6 +122,9 @@ The show's **first scene with no live speaker** — every character is AI video,
 ---
 
 ## Notes
+> [!important] Cut pass — one exchange trimmed from the first half
+> Gone: the CEO's "six months with my hands open" speech and Kristina's "Then put it on the table. It's real." The numbers, her hedge, the runway fear and "I need this to be who we are now" all stay. Nothing was reworded. The scene's own note flags that the first half's caution ("some of the senior people are more cautious") is Liam's cold-open concern named in a room he isn't in; that survives intact.
+
 - **Steelman check (both of them).** The CEO names the concerns as legitimate ("I don't want a company that ships garbage quickly") and is driven by real fear, not greed (runway, the board, six months of apologies). Kristina honestly defends the engineers — she's the opposite of a shill here. The audience should grant the company its need for the win *before* they clock that the mandate is the thing that will ruin Liam. If either reads as a villain, soften. See [[Writing Didactic Drama — Craft Notes]].
 - **It's the cause of the squeeze.** "Get everyone working like that one engineer" is the seed of the agent-first reorg (B5 all-hands) and, downstream, Kristina's calibration pressure and the "friction" framing in [[13 - The Performance Review]]. Nobody decides to hurt Liam; the pressure just rolls downhill.
 - **Dramatic irony (the staging payoff).** With Liam silent below, the room literally names *his* cold-open concern — the long-lived keys he was mocked for raising in [[01 - Cold Open — The Standup]] — agrees it's legitimate, and overrides it for the metric. He's not in the room where his worth is redefined. ("The room decides his fate, not the code" — and he isn't even in it.)
