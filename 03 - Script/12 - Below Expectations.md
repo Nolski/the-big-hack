@@ -7,7 +7,7 @@ arc: liam-arc
 beat: "[[Liam Arc]] — the record gets manufactured"
 status: drafted
 live_cast: "Liam, Brendan"
-ai_video_assets: "[[AI Video Production Tracker|AIV-060 The feedback form — screen]], [[AI Video Production Tracker|AIV-062 Marcus — the feedback round]]"
+ai_video_assets: "[[AI Video Production Tracker|AIV-058 Kristina's screen — the new bot]], [[AI Video Production Tracker|AIV-060 The feedback form — screen]], [[AI Video Production Tracker|AIV-062 Marcus — the feedback round]]"
 tags:
   - scene
   - liam-arc
@@ -39,6 +39,7 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 > Both live men play at their own desks, diegetically on a call — no shared props, no contact. Marcus is the only character on the video plane and he is gone before the second movement starts. **The third movement needs no video asset at all.**
 
 ## AI Video Cues
+- **[[AI Video Production Tracker|AIV-058]] — Kristina's screen — the new bot (screen graphic, no voice):** the wordless prologue, moved here from the cut [[11c - The Latest Model]]: the model dropdown, a plain-words prompt for the Linear-to-Jira tool, a plan with nothing to catch, the machine asking her the Vault question, green tests, Approve, tickets appearing. Screen only, written as stage direction.
 - **[[AI Video Production Tracker|AIV-060]] — The feedback form (screen graphic, no voice):** three states. **(1)** "H2 Peer Input" — a deadline, a progress bar, a column of 1–5 sliders, and one optional free-text box under the question *"Is there anyone whose work made it harder for you to deliver this half?"*; the anonymity notice along the top. **(2)** After the cycle closes: the generated manager summary under Liam's name, one bullet. **(3)** Liam's own self-review packet a fortnight later — the peer input section with that bullet in it, and the two-axis self-rating below. Screen only, written as stage direction.
 - **[[AI Video Production Tracker|AIV-062]] — Marcus (the feedback round):** helpful, unbothered, entirely sincere. No malice anywhere in it — he did the form this morning, he thinks it is a good form, and he encourages Brendan because otherwise nothing changes. **The `AIV-055` register with the aggression taken out:** he is enthusiastic rather than annoyed, which is a warmer setting and not a quieter one, and there is nothing to score off anybody here. He is being a decent colleague and he is right about almost everything he says. Same locked look and voice.
 - **[[AI Video Production Tracker|AIV-011]]** — standup grid, optional ambient reuse for the four-second response.
@@ -46,6 +47,26 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 ---
 
 ## Script
+
+*(Before any of it: KRISTINA alone at her desk, between meetings, her screen above her. `AIV-058`.)*
+
+*(Kristina opens cursor. Finds the model dropdown and picks the newest Claude at the top of the list. Deliberately. Like she's checking something.)*
+
+*(She types, in her own words, the way you'd brief a contractor: "Build a tool that cross posts Linear tickets into Jira." She had been doing this manually for Brandon.)*
+
+*(The plan writes itself out. Every endpoint in it is real. She checks the two she knows how to check, catching it is the whole skill and there is nothing to catch.)*
+
+*(Then the machine asks her a question. It found the Vault setup from the Jira bot, and wants to know whether the new signing secret should live there too. It is, almost word for word, the sentence she had to type at it six weeks ago. She looks at it for a second. She types "yes.")*
+
+*(It writes the tests. Runs them. Green. The install dialog Approve / Deny. She approves. In Jira tickets start getting created.)*
+
+*(Start to finish: about four minutes. The demo took longer than that, and the demo had Brendan in it.)*
+
+*(She sits back. Something is moving in her chest and she can't get a name on it. Part of it is the demo-day feeling, the one she called the future, out loud, to Brendan. The rest is colder, and she doesn't look at it straight.)*
+
+*(She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.)*
+
+*(Her calendar chimes: the next thing. She straightens, and goes back to her day.)*
 
 *(Late afternoon. A Slack huddle on the screen above BRENDAN's desk: his tile and MARCUS's, a diff open between them. Below, in his own pool of light, LIAM at his desk, reading. [MUSIC: music/slackhuddle.mp3])*
 
@@ -264,7 +285,10 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 ---
 
 ## Notes
-- **The betrayal is a form, and the form works exactly as designed.** Nobody goes behind Liam's back. Brendan writes the same case he already argued to Kristina's face in [[11c - The Latest Model]]; Marcus writes what literally happened and can point at the row in the queue. The cruelty is structural: the question is leading, the answers are stripped of their authors, and a summary generated by nobody arrives in a document as evidence. **Don't let any character notice this. The staging notices it.**
+> [!important] Cut pass — the wordless build from [[11c - The Latest Model]] now opens this scene
+> 11c is cut. Its call (Brendan's case against Liam's rig, the overheard board call, Kristina's winning defence) is gone; Brendan's case is restated in the form drafting below. What survives is Kristina alone building the Linear-to-Jira tool in four minutes, moved here verbatim as stage direction with no dialogue. **Dropped from it:** the three directions that referred to the cut call (Brendan deleting his rules, "an hour ago she stood up for the tinkering," the board sentence from Friday). **Line added:** one framing direction, "Before any of it: KRISTINA alone at her desk, between meetings." Nothing else was reworded.
+
+- **The betrayal is a form, and the form works exactly as designed.** Nobody goes behind Liam's back. Brendan writes the case he argued to Kristina's face in [[11c - The Latest Model]] (scene now cut; the form is the first time he says it); Marcus writes what literally happened and can point at the row in the queue. The cruelty is structural: the question is leading, the answers are stripped of their authors, and a summary generated by nobody arrives in a document as evidence. **Don't let any character notice this. The staging notices it.**
 - **Brendan doesn't delete — except once, and he deletes the kind thing.** In [[11b - Best Practices]] he holds backspace three times. Here he submits. The one sentence he does take out ("he said it like it settled something") is the only cruel one in the whole answer, and removing it makes the rest cleaner and more quotable. He is curating toward kindness and the result is a better weapon. That is the whole mechanic in one gesture, and it is *honesty* doing the damage, which is worse than cowardice and much harder to hate him for.
 - **The one direct address is deliberate and it is the only one.** *"I want to be clear that I'm not—"* is the single place in the play where Brendan starts to explain himself, and the play does not let him finish the sentence. It is not a confession and it is not narration; it is an apology he is denied. The rule in [[Brendan]] — he narrates the world, never himself — holds precisely because this is the exception that gets cut off. **Do not extend this line and do not add a second one.** If a later pass "fixes" the unfinished sentence, the device is gone.
 - **Marcus is being a good colleague and he is right.** Dial the `AIV-055` aggression out — enthusiasm, not annoyance. Nobody has ever asked him what slows him down; that is true, and it is a reasonable thing to be pleased about. **This is the scene where the register is easiest to hear and hardest to get wrong** — there is nothing to score off anybody here, and there must be no trace of it in the read.

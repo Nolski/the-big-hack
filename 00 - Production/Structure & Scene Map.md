@@ -48,9 +48,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 6 | [[06 - Good Instinct\|Good Instinct]] | II | ✏️ |
 | 7 | [[07 - Heads Together\|Heads Together]] | II | ✏️ |
 | 10 | [[10 - The Win We Needed\|The Win We Needed]] | II | ✏️ |
-| 10a | [[08 - The One-on-One\|The One-on-One]] *(file `08`)* | II | ✏️ |
 | 11b | [[11b - Best Practices\|Best Practices]] | II | ✏️ |
-| 11c | [[11c - The Latest Model\|The Latest Model]] | II | ✏️ |
 | 12 | [[12 - Below Expectations\|Below Expectations]] | II | ✏️ |
 | 13 | [[13 - The Performance Review\|The Performance Review]] | II | ✏️ |
 | 13b | [[13b - The Plan\|The Plan]] | II | ✏️ |
@@ -69,7 +67,7 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 > [!note] Slot 1e may be redundant now
 > The Marcus pass put him on-mic **three times before the mandate** — the refused alliance and the credential callout in [[01 - Cold Open — The Standup]], the Luddite tangent Liam corrects in [[06 - Good Instinct]], and the long fight in [[11b - Best Practices]] — which is what a dedicated "Marcus Established" scene was for. **Recommend cutting 1e** unless the timing pass finds Movement I is short, which it will not. Leave the row until the draft is complete, then delete it rather than writing into it.
 
-**Out of the running order, kept in the vault:** [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Both are cut from the show and both stay as source material for Marcus's arguments and for verbatim inserts. **Cut pass:** [[01d - The Future]] (back half merged into [[01b - The Cursor Demo]]). [[01c - The PR Review]] was cut in the first pass and restored: it now runs **before** 01b.
+**Out of the running order, kept in the vault:** [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Both are cut from the show and both stay as source material for Marcus's arguments and for verbatim inserts. **Cut pass:** [[01d - The Future]] (back half merged into [[01b - The Cursor Demo]]). [[01c - The PR Review]] was cut in the first pass and restored: it now runs **before** 01b. Cut from Movement II: [[08 - The One-on-One]] (nothing moves; Kara's first appearance is now the reduction coda in [[10 - The Win We Needed]]). [[11c - The Latest Model]] (the call is gone; Kristina's wordless four-minute build now opens [[12 - Below Expectations]]).
 
 > [!important] Cut pass — three things no cut may remove
 > **1.** Brendan earnestly trying to show Liam how excited he is about agentic coding, and it going straight over Liam's head because of Liam's arrogance ([[01c - The PR Review]], the refused doors in [[06 - Good Instinct]]). **2.** Kristina buying into AI by using it, shown on stage ([[01b - The Cursor Demo]]; the wordless solo build from [[11c - The Latest Model]]). **3.** The comedy of arguments and people talking over Kristina, the strongest comedy in the play (the [[06 - Good Instinct]] and [[11b - Best Practices]] standups, the cold open). Some of 3 may go if absolutely necessary, and every line of it cut is a known loss.

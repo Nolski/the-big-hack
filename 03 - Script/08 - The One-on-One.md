@@ -15,6 +15,9 @@ tags:
 
 # Scene 08 — The One-on-One
 
+> [!warning] Cut from the running order in the cut pass
+> Kept in the vault as source material, like [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Nothing moves: Kara needs no introduction before the reduction coda in [[10 - The Win We Needed]], Marcus already names "his memo" in [[11b - Best Practices]], and the CEO memo is now first heard there.
+
 > [!info] Beat
 > Kristina's regular 1:1 with **Kara**, Head of Product — the first time the new velocity is visible from one level up, and the first time the audience meets **the CEO's company-wide memo on adopting AI**. Sits between [[07 - Heads Together]] (Kristina: "I get to tell my boss we have an extra engineer") and [[10 - The Win We Needed]] (the story travels upstairs anyway). **Seeds B6/B7:** Kara's warning — "one engineer has a good weekend and by Friday it's an operating model" — is exactly what happens.
 

@@ -15,6 +15,9 @@ tags:
 
 # Scene 11c — The Latest Model
 
+> [!warning] Cut from the running order in the cut pass
+> Kept in the vault as source material, like [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Where it went: the closing solo build (`AIV-058`) opens [[12 - Below Expectations]] as wordless stage direction. The call itself is gone: Brendan's case is restated in the 12 form drafting, and the board wanting run-rate down is already in the coda of [[10 - The Win We Needed]]. The overheard board call and Kristina's winning defence of Liam do not survive.
+
 > [!info] Beat
 > Kristina's check-in with **Brendan**, a few days after [[11b - Best Practices]]. Brendan finally says out loud a soft version of the sentence he deleted twice — Liam's way of using the tool isn't productive, and worse, it's contagious — and Kristina defends Liam and **wins the argument**. Then, alone, she quietly runs the experiment that tells her Brendan was probably right. **Seeds B6/B7:** Brendan's "Yeah. Maybe." is the coworkers-go-quiet beat in miniature, and Kristina's private verification is the day her defense of Liam dies — months before the review quotes its corpse. **Also seeds the squeeze from above:** in confidence, Kristina repeats the sentence she overheard on the CEO's call — a board member, flippant: "you probably need to performance manage a bunch of them out" — and files the risk under herself. The layoffs get their language months before they get names.
 
