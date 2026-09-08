@@ -15,11 +15,8 @@ tags:
 
 # Scene 01c — The PR Review
 
-> [!warning] Cut from the running order in the cut pass
-> Kept in the vault as source material, like [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Where it went: the apology moved to the top of the huddle in [[06 - Good Instinct]]; nothing else survives.
-
 > [!info] Beat
-> Third Movement I opener. Liam pulls Brendan into a one-to-one to litigate the merged portal (Liam started the huddle). He opens with a clumsy, real apology for the degree line — then relentlessly steamrolls the actual review, unable to let Brendan explain how he now works. Seeds B5/B6/B7: the careful-line-reader identity that is about to be automated out from under him, defended at the top of his lungs.
+> Second Movement I opener, straight off the standup. Liam pulls Brendan into a one-to-one to litigate the merged portal (Liam started the huddle). He opens with a clumsy, real apology for the degree line — then relentlessly steamrolls the actual review, unable to let Brendan explain how he now works. Seeds B5/B6/B7: the careful-line-reader identity that is about to be automated out from under him, defended at the top of his lungs.
 
 ## Purpose
 Showcase Liam at full, unfiltered intensity — brilliant, rigid, monologuing, socially airtight in the worst way. He *does* half-apologise (he's not a monster), and his surface complaints — weekend-grind-as-precedent, an unreviewable 800-line PR — are *real*. But the tragedy is procedural: Brendan has a genuinely better way to review this, tries four times to show him, and **cannot get a word in**. Liam pattern-matches everything to twenty years of line-by-line review, mistakes steamrolling for mentorship, and never once registers that the junior has already thought past him. He wins the room and loses the future in the same breath.
@@ -42,7 +39,7 @@ Continuous — Brendan takes Liam's Slack huddle. **Liam** is live at the same d
 
 ## Script
 
-*(The slack huddle sound plays again... this time Liam is calling brandon... he noticed them in a huddle before... [MUSIC: music/slackhuddle.mp3])*
+*(The standup has just cleared. The slack huddle sound plays... Liam is calling brandon... [MUSIC: music/slackhuddle.mp3])*
 
 **LIAM** *(live, gruff — not his comfort zone, getting it out of the way first)*: Before you say anything. The Kristina thing this morning, what I said about her degree. *(a beat; this is hard for him)* That landed like shit. I know. I shouldn't have said it like that.
 
@@ -55,10 +52,6 @@ Continuous — Brendan takes Liam's Slack huddle. **Liam** is live at the same d
 **LIAM** *(live, already moving on — can't stay in it)*: Yeah, well. *(beat)* Anyway. That's not why I called. The weekend.... Since when do we work weekends?
 
 **BRENDAN** *(live, level)*: It wasn't a weekend, Liam. It was maybe three hours Saturday because I was bored and messing around with the new Opus. Most of it happened while I was making coffee
-
-**LIAM** *(live, rolling straight over him)*: Right. "Three hours, no big deal." That's how it always starts. Then it's the baseline. You set a precedent, you know that? Kristina was practically salivating over the idea that we'll all just give up our Saturdays. *(certain, and he thinks this is kindness)* You'll grind yourself into the ground and call it fun, and in two years they'll have quietly rewritten what "normal" means. I'm looking out for you here.
-
-**BRENDAN** *(live, a breath, choosing not to fight it)*: …Okay.
 
 **LIAM** *(live, the real reason, leaning in)*: But the code. Show me. Walk me through what you actually did, the whole thing, start to finish. I want to see how you wrote this.
 
@@ -99,8 +92,11 @@ Continuous — Brendan takes Liam's Slack huddle. **Liam** is live at the same d
 ---
 
 ## Notes
+> [!important] Cut pass — restored to the running order, before [[01b - The Cursor Demo]]
+> An earlier cut removed this scene and moved the apology into [[06 - Good Instinct]]. That was reversed: this is the only scene where Brendan earnestly tries to show Liam the method and cannot finish a sentence, and the play cannot lose it. It now sits **second**, straight off the standup, so Kristina's "Did you show Liam this? / I tried" in 01b lands on something the audience has seen. **Cut here:** Liam's second precedent speech ("That's how it always starts… I'm looking out for you here") and Brendan's "…Okay" under it. **Line changed rather than moved:** the opening stage direction, which no longer refers to a huddle Liam noticed. "Line four hundred" and the intern line stay, because removing either would mean rewriting the aborted attempt next to it.
+
 - **The autism is played straight and with dignity — never as a punchline or a diagnosis.** Show it in *behaviour*: the monologue that doesn't yield the floor; the literal fixation ("line four hundred — what does it do"); the twenty-years pattern-match applied to a situation that no longer fits; the total miss on Brendan's four aborted attempts to speak; reading silence as agreement; and the genuine, mis-delivered care ("I'm trying to help you"). He is not being cruel here — he thinks this *is* mentorship. That's the tragedy, not a flaw to fix.
 - **He's right on the surface, blind underneath.** The precedent risk and the un-splittable 800-line PR are legitimate — keep them legitimate. His blind spot is that Brendan has already solved the review problem a better way and cannot get two sentences out to say so.
-- **The methodology is deliberately withheld here.** Brendan never lands it — Liam won't let him. The actual explanation (plan-over-diff, transcript-as-artifact, risk-based reading, human integration tests, canary/observability) moves to [[01d - The Future]], where Kristina *does* let him talk. The contrast is the point: the person who needs it most refuses the lesson; the person who'll wield it against him receives it eagerly.
+- **The methodology is deliberately withheld here.** Brendan never lands it — Liam won't let him. The actual explanation (plan-over-diff, transcript-as-artifact, risk-based reading, human integration tests, canary/observability) lands in [[01b - The Cursor Demo]], where Kristina *does* let him talk. The contrast is the point: the person who needs it most refuses the lesson; the person who'll wield it against him receives it eagerly.
 - **Play the aborted sentences.** Count them in performance — Brendan starts and is cut off at least four times before he stops trying. The deflation should be visible.
-- **Hand-off:** ends on Liam alone and unsatisfied — no rewind here. The loom hand-off into Movement II lives at the end of the last opener, [[01d - The Future]].
+- **Hand-off:** ends on Liam alone and unsatisfied — no rewind here. Kristina's call to Brendan ([[01b - The Cursor Demo]]) follows, and her "Did you show Liam this? / I tried" pays off what the house just watched.
