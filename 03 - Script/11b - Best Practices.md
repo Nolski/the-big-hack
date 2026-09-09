@@ -83,12 +83,12 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **LIAM** *(live)*: Because I do.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Well, I don't. *(beat)* I merged 3 PRs yesterday, and honestly, I think the AI does a better job at the review than I do. *(beat)* That's what the job is now.
+> Well, I don't. *(beat)* I merged 3 PRs yesterday, and honestly, I think the AI does a better job at the review than I do. *(beat)* That's what the job is now. Hitting approve. Faster.
 
-**LIAM** *(live)*: Right. Maybe AI does do a better job than you, and that's the difference between us.
+**LIAM** *(live)*: Right. Maybe AI does do a better job than YOU, and that's the difference between US.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
-> Yeah, but you're not using the same technology as the rest of us. Instead, you're using some crappy Chinese model on some overpriced machine that isn't even half as good and is probably backdooring our codebase...
+> Yeah, but you're not using the same technology as the rest of us. Instead, you're using some crappy CHINESE model on some overpriced machine that isn't even half as good and is probably backdooring our codebase...
 
 **LIAM** *(live)*: Which is why I read every line before it merges.
 
@@ -178,7 +178,15 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 **LIAM** *(live — the question doesn't parse)*: …One. It's one model. What would I want two for?
 
-*(BRENDAN starts to answer, and stops. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it. There is too much in there to unpack.)*
+**BRENDAN** *(live)*: They can talk to each other. If you let them.
+
+**LIAM** *(live, flat)*: Talk to each other.
+
+**BRENDAN** *(live)*: Share notes. Split the work up between them.
+
+**LIAM** *(live)*: No.
+
+*(BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it. There is too much in there to unpack.)*
 
 *(On BRENDAN's own screen he quietly types one line: "In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5." The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before Liam finishes his sentence. He says nothing.)*
 
@@ -191,6 +199,8 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 **BRENDAN** *(live, one more try, gentle)*: The hosted ones sandbox all of that now. The agent can only touch its own branch, it can't...
 
 **LIAM** *(live, batting it away — reasonable, certain)*: On somebody else's computer, through a black box that changes under me on a Tuesday. No. Local, I pin the weights. What I ran in January is what I run in March. That's not paranoia, that's responsible engineering.
+
+**BRENDAN** *(live, half to himself)*: I used to keep a doc. Things it gets wrong. *(beat)* I stopped. It stopped getting them wrong.
 
 *(On BRENDAN's laptop a new tab: the security policy. "Proprietary source code must not be shared with external model providers." Owner: Liam. Last reviewed: fourteen months ago. He opens a message to Kristina and types: "re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang..." He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: "I don't know if liam is ever going to..." He stops. He holds backspace until that one is gone too.)*
 
@@ -256,7 +266,10 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 - **The interruptions escalate and then they stop, and that ordering is load-bearing.** She tries twice and is flattened, gets one full sentence, gives him "Noted. Thread," gives him his name on its own, and then calls it. **Nothing long happens after "I'm calling it."** Marcus's copyright grab is a single hand-up and Liam's monkey reply is four words. If a future draft wants to add Marcus material to this scene it goes *before* she calls it, not after, or the scene stops making sense as a meeting.
 - **"I'm the one who said something when he did the degree thing to you."** The character in one line: a true claim, over the top of the person it was supposedly for. **He is not claiming credit — he thinks he has earned standing and is asking to use it**, and he has no idea how it sounds. That reading is warmer and lands worse, which is the point. Kristina's *"I know you did, Marcus. Thread."* is the only unbright line she has all morning, two seconds long, and then the brightness is back and stays back. **Don't play her as hurt and don't let the audience be told she is.** The tongue-bite direction names it to the reader, not to the room.
 - **The technical argument stays competent on both sides, and it is no longer arbitrary.** Liam's air-gap point is real and Marcus's one-character-backdoor point is real. It is still bikeshedding as far as the *room* is concerned — none of it gets a retry loop out the door and neither Kristina nor the CEO could care less — **but it is no longer trivia to the audience**, because every beat of it is about whether anybody is still the author of this company's product, which is the thing the play is about. Nobody wins and nobody gets sanctioned. It isn't misconduct, it's friction, and friction is what gets itemised later (B7). The flash of peace over Grok is the funniest and saddest beat in the fight, so play it dry, and note that it lasts one line before he starts on Enoch.
-- **If it has to come down,** cut the Grok exchange first, then the copyright and monkey exchange, then the *"I've caught three in human code"* pair. **The alienation opener, the three-tickets arithmetic, "I have a threat model," the one-character backdoor, and "we're the blacksmith" are the scene** and none of them can go. **Do not cut the backdoor beat to save the copyright beat** — the backdoor is the only hit Marcus lands all morning, and without it the switch into Liam's language costs him nothing.
+> [!warning] These notes are behind the script (checked 2026-09-09)
+> The alienation opener, the copyright and monkey exchange, Enoch Taylor and "we're the blacksmith" are referenced in the Purpose, the `AIV-055` cue and the question callout above, and none of them is in the Script section any more. The script is the source of truth. The "What would I want two for?" refusal was extended by four lines on the same date: Brendan says the agents can talk to each other and split the work, Liam says no. It is the plant for the swarm in [[20 - The Audit]] and Liam gets no foresight from it, only a refusal.
+
+- **If it has to come down,** cut the Grok exchange first. **The three-tickets arithmetic, "I have a threat model," the one-character backdoor, "That's what the job is now," the measurement, and the four-line "What would I want two for?" refusal are the scene** and none of them can go. **Do not cut the backdoor beat**: it is the only hit Marcus lands all morning, and without it the switch into Liam's language costs him nothing.
 - **Kristina gets spoken over and absorbs it.** She's used to it; her patience is a skill, not a weakness. She parks the fight twice, promises to chase the policy question, and still lands "I just need you on board" — the line the review will quote back. Don't play her as flustered. Play her as a professional filing this standup away.
 - **The 1:1 is throughput and quality, nothing else.** No orchestration talk. Three numbers carry the scene: six minutes to first token, two-to-five tokens a second, one agent. Brendan asks, Liam answers honestly, and the honesty convicts him. The "how many do you run at once?" beat is the widest gulf in the play so far: Brendan ran five in parallel before the call, Liam can't parse why anyone would want two — and Brendan *sits on it*, because there's too much in there to unpack. The hallucinated helper is the quality beat: a quantized 80B open model on a Mac is still not the frontier model, and the gap shows up as a method that doesn't exist. Liam reads it as confirmation of the workflow; the house reads it as the machine he chose. The expense beat matters too: he wrote "AI" on the report and it sailed through in an hour — he's genuinely inside policy, and finds the ease of it silly, and takes the money anyway.
 - **The self-fulfilling prophecy.** Liam believes it's fancy autocomplete, so he uses it as autocomplete: stubs only, no tool calls, no tests, one model, one window. Used that way, it *performs* like autocomplete, which proves him right, every day, forever. Play his hand-editing as pleasure, not chore — filling in the body is the part of the job that's still his, and he's fast at it, and that comfort is exactly what's being priced against him. Brendan names the door once ("let it run its own code — install the dependencies, run the tests") and Liam shuts it with the standup still in his mouth: rogue agents, deleted databases, "I don't give it tool calls."

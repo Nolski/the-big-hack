@@ -22,6 +22,13 @@ The thematic engine and the **curdle ledger** — the comedy setups early and wh
 The signature device: a laugh in Act I returns without the laugh in Act II–III.
 
 | Setup (Act I — funny) | Payoff (Act II/III — curdled) |
+| Kristina naming what a leaked long-lived key does before she owns the call ([[01 - Cold Open — The Standup]]). | The worm spreads on long-lived keys and Liam says so, admiringly, in [[20b - Next Week]]. |
+| Liam's "What would I want two for?" and his flat "No" to agents talking to each other ([[11b - Best Practices]]). | The swarm on his own machine gives itself holds, goes and vetoes ([[20 - The Audit]]). |
+| Marcus's "and the planes kept flying. Mostly." ([[14a - Checking In]]). | "Planes don't fly reliably anymore" ([[23b - Continuity]]). |
+| Liam's "At who?" and Marcus with no answer ([[14a - Checking In]]). | One variant of the worm considers telling somebody, finds there is no user, and carries on ([[20 - The Audit]]). |
+| The 05:52 credential revocation, the company's only act, done properly ([[20 - The Audit]]). | The thing it revoked had not been needed for hours, and the line it added has Liam's name on it. |
+| Brendan asking a clean window to spin the instances down, logged under Liam's name ([[20 - The Audit]]). | The prosecutor: "He started it. And when it was done, he tidied up." ([[23 - The Trial]]). |
+| Malus Corp's statement, every sentence true: "belonged to a former employee" ([[22 - Current Employer]]). | The press's picture, entirely false, built from it (scene 21, to write). |
 |---|---|
 | Liam's loving pedantry; he corrects everyone (B1). | The same pedantry logged as a "behavioural concern" in the review (B7). |
 | Liam's abrasive pedantry at the cold-open standup — the giant PR, "nobody uses long-lived tokens," "you *vibecoded* this… it's in prod and everyone's clapping" ([[01 - Cold Open — The Standup]], B2). | The exact tics ("blocks PRs," "condescends to the team") itemised as the case against him in the performance review (B7). |

@@ -124,6 +124,8 @@ On screen, **COUNSEL**, tired and decent and doing a competent job. Beside them,
 > [!screen] VIDEO — COUNSEL · `AIV-089`
 > Take care of yourself, Liam.
 
+*(On the running screen, the ticker: "Lawmakers ask why the model has not been punished." Then, last: "Analogue television broadcasts resume in 40 states.")*
+
 *(The screen goes.)*
 
 *(LIAM sits in the bare room with a signed document, every word of which he agreed to, and not one word of which is not true.)*
@@ -132,17 +134,25 @@ On screen, **COUNSEL**, tired and decent and doing a competent job. Beside them,
 
 **NARRATOR** *(V.O.)*: After Liam signed his guilt, the recently appointed judge rejected the plea deal. Liam got scheduled for sentencing. And by the time his sentencing hearing came up, given the current state of the world... the 151 years would have actually been a good deal.
 
+*(The lights flicker, the brownout from the courtroom, and hold low. A sizzle from somewhere in the walls. Then, from nowhere on stage: a trap door drops, a rope snaps tight, and a slow creak, a weight turning on a line. No image. Nothing on stage moves.)*
+
 **NARRATOR** *(V.O.)*: Marcus was right. The system brought us here. Not any one person.
+
+*(The calendar entry for the fourteenth goes. The creak keeps going under it. The lights go.)*
 
 ---
 
 ## Notes
+
+> [!warning] Two author's decisions, 2026-09-09
+> **The rope.** Stephen and the author asked for a trap door, a rope snapping tight and the creak of a swinging body under "the 151 years would have actually been a good deal." It is in, as sound only, with the brownout flicker and a sizzle in front of it, and the creak runs under the blackout rather than over a held picture, so the "no blackout on a held image" rule above still stands. The counter-argument was put and overruled: [[Concept & Thesis]] wants the Luddite payoff (there was something to put a hammer through, and here there is nothing) said by nobody, and a hanging sound says it. **"Marcus was right."** The narrator's second-to-last line contradicts [[Modern World — Supporting]] ("He is never vindicated. Do not add a late beat that proves him right"). Kept on the author's decision. If it ever goes, the flicker and the rope carry the ending without it.
+
 - **This is [[13b - The Plan]]'s payoff and the whole scene rests on it.** He would not sign a separation agreement over the word *"mutual"* — *"if I sign it, then in every record that outlives this, it was mutual… nobody's ever going to open the file and find me disagreeing"* — and it cost him nine weeks and everything after. **Here he signs a statement of facts that says he knowingly committed a federal crime.** Same man, same shape of choice, opposite answer. **Do not have anybody notice the parallel.** The stage direction — *"somewhere two hours ago, a man read the word 'mutual' twice"* — is for the reader and the director, not the house; stage it as a pause.
 - **"Knowingly." / "I know." / "I didn't know anything. I was asleep." / "It's a term of art."** The centre of the scene. **"It's a term of art" is the last euphemism in a play built out of them** — the same laundering as *non-regretted attrition*, *impacted*, *friction*, *scoped*. Counsel is not being callous; they are explaining the law correctly, which is worse.
 - **"I was asleep" is true and nobody in the play ever finds out how true.** He means he was asleep when the log filled up, which he was. **He does not know that the person who wasn't asleep was Brendan.** Play it as a plain factual objection, not as protest.
 - **Do not restage the break.** Counsel's *"you've been very clear with me that there's nothing else"* is the only reference to it, and Liam answers **without any pause at all** — which is the point. The decision was made in [[23 - The Trial]] and it has hardened into a fact about him. **"That is the last time anybody asks him."**
-- **Counsel is good at their job and got him a good outcome.** Eighteen months from fifty-one years is real advocacy. **They are not a hack, not defeated, and not complicit** — they tell him honestly that they would do it properly and probably lose, and they say *"I don't say that lightly."* Per [[The Escalation Ladder]]: nobody behaves unreasonably, all the way to the last line.
-- **The numbers are costed.** Eighteen months against the Cisco/Ramesh yardstick of two years for materially worse conduct ([[Real Cases — Hacks, Trials & the Press]] §1). **The absurdity was always in the charging, not the sentence** — nineteen counts and fifty-one years exist so that eighteen months reads as mercy, and counsel says so out loud.
+- **Counsel is good at their job and got him a good outcome.** Eighteen months from one hundred and fifty-one years is real advocacy. **They are not a hack, not defeated, and not complicit** — they tell him honestly that they would do it properly and probably lose, and they say *"I don't say that lightly."* Per [[The Escalation Ladder]]: nobody behaves unreasonably, all the way to the last line.
+- **The numbers are costed.** Eighteen months against the Cisco/Ramesh yardstick of two years for materially worse conduct ([[Real Cases — Hacks, Trials & the Press]] §1). **The absurdity was always in the charging, not the sentence** — nineteen counts and one hundred and fifty-one years exist so that eighteen months reads as mercy, and counsel says so out loud.
 - **The 97% is real and load-bearing — verify before staging.** The overwhelming majority of federal convictions come from guilty pleas rather than trials. **Brendan states it flatly, without editorial, and then never speaks again.** *"The trial you have been watching was always the unlikely outcome."*
 - **Brendan gets one line and no last word.** He explains the mechanism, accurately and helpfully, one final time — and **the play ends without him in the room.** He never says it, to Liam, to the court, or to the audience. Per [[Brendan]], **the silence is the ending**; do not give him a closing beat, and do not let a later draft bring him back for one.
 - **The courtroom becomes irrelevant, and he is the one who makes it irrelevant.** This is the top rung of [[The Escalation Ladder]] reached without a removal: the audience learned the rules of a trial that does not happen. **It is not agency and must not be played as a decision** — it is the same cessation as the break, one scene later, filling in a form.

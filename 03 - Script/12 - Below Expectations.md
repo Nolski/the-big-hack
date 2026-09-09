@@ -120,7 +120,7 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 **BRENDAN** *(live)*: ...Yeah.
 
 > [!screen] VIDEO — MARCUS · `AIV-062` *(on his way out, genuinely trying to help)*
-> Put something, though. Actually put something. It's the only place it goes. *(beat)* Otherwise nothing changes and we all complain in DMs for another six months.
+> Put something, though. Most people leave it blank. Actually put something. It's the only place it goes. *(beat)* Otherwise nothing changes and we all complain in DMs for another six months.
 
 **BRENDAN** *(live)*: Yeah. *(beat)* No, I will.
 
@@ -136,19 +136,13 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 *(He scrolls up. He scrolls back down. It's still there.)*
 
-**BRENDAN** *(live)*: It says optional.
-
 *(He types. He reads it as it goes.)*
 
 **BRENDAN** *(live)*: "No major concerns." *(beat, looking at it)* …That's not an answer. That's just, that's me not answering it.
 
 *(He sits back.)*
 
-**BRENDAN** *(live)*: If I leave it blank, that's fine. Loads of people leave it blank. *(beat)* Marcus said most people leave it blank.
-
-*(He looks at the empty box.)*
-
-**BRENDAN** *(live)*: Marcus didn't leave it blank.
+**BRENDAN** *(live)*: If I leave it blank, that's fine. Loads of people leave it blank.
 
 *(He tries the other one out loud, testing it against the room.)*
 

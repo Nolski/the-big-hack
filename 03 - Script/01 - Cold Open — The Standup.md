@@ -53,7 +53,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 *(He is very obviously not eating. He doesn't so much as glance at the call, the memes keep scrolling on the big monitor, he keeps chuckling at reddit.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010`
-> *Warm, and she means it.* No worries. Okay we start, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been *incredible.* Two of our biggest integration partners shipped on it over the weekend. Support's quiet, adoption's climbing. Best launch we've had in ages.
+> *Warm, and she means it.* No worries. Okay, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been *incredible.* Two of our biggest integration partners shipped on it over the weekend. Support's quiet, adoption's climbing. Best launch we've had in ages.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(turning to one tile in particular)*
 > And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. So. Thank you, genuinely. It did not go unnoticed.
@@ -62,7 +62,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 
 *(On "his weekend," LIAM's hand goes still on the mouse. For the first time he pauses scrolling and looks up.)*
 
-**LIAM** *(live, flat, to no one)*: …He worked the weekend...?
+**LIAM** *(live, flat, to no one)*: …He shipped this feature on the weekend?
 
 *(He clicks off the memes and drags the merged PR up, and starts sharing his screen uninvited.)*
 
@@ -83,10 +83,10 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 
 **KRISTINA**: … Liam can we take this offline so we can get through standup?
 
-**LIAM** *(live, riding his own certainty — the meme energy, out loud now)*: The tests pass...? *(a short, mirthless laugh)* The AI wrote the code *and* the AI wrote the tests that say the code's fine. It doesn't understand any of it, it's just a next word predictor, it just sounds sure of itself.. It'll lie straight to your face.
+**LIAM** *(live, riding his own certainty — the meme energy, out loud now)*: The tests pass...? *(a short, mirthless laugh)* The AI wrote the code *and* the AI wrote the tests that say the code's fine. It doesn't understand any of it, it's just a next word predictor.
 
 > [!screen] VIDEO — MARCUS · `AIV-019` *(a tile unmutes; he has been waiting months for somebody to say this)*
-> Yeah, well, what I keep saying... Nobody wants to talk about it... the AI is coming for our jobs, and the code it writes keeps getting better and better
+> Yeah, well, what I keep saying... Nobody wants to talk about it... the AI is coming for our jobs.
 
 **LIAM** *(live, not looking up)*: That's not what I said at all... I said the code is bad... what?
 
@@ -126,7 +126,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 **LIAM** *(live, rounding on her instead)*: …Why on earth would you do that.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(even; she has the receipts)*
-> Because we user-tested it. The JWT flow, the refresh, the expiry, it confused every integration partner we put it in front of; half of them dropped off right at token refresh. The expirations *tanked* adoption. Long-lived keys, are just easier to understand. It's a tradeoff, and I made the call.
+> Because we user-tested it. The JWT flow, the refresh, the expiry, it confused every integration partner we put it in front of; half of them dropped off right at token refresh. The expirations *tanked* adoption. Long-lived keys, are just easier to understand. And yes, I know what a leaked key does. It's live until somebody rotates it. It's a tradeoff, and I made the call.
 
 *(This comment fueled him... he knew exactly how he'd spend the next part of standup arguing)*
 
@@ -187,4 +187,5 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 - **He admires Liam, and Liam doesn't hear it.** *"You're the only one here who still reads it."* is sincere and is the plant for *"Liam's the best engineer I've ever worked with"* in [[23 - The Trial]]. **They are not rivals.** He is odd, he over-explains, and he ends up across the table from the one man on the team he actually respects. Play the compliment straight and let Liam's "It really isn't" walk over it.
 - **Liam refuses the alliance and that refusal is the play's spine.** Marcus hears an ally and gets *"That's not what I said. I said the code is bad."* Liam thinks he is being technical and apolitical, and he thinks that right up until the end of the show. Play it as a man genuinely correcting a misquote, not as a snub.
 - **Hand-off:** this scene ends on the standup emptying out; the huddle that follows is now its own scene ([[01b - The Cursor Demo]]).
+- **The JWT clause is a plant.** Kristina names the cost of a long-lived key (live until somebody rotates it) before she owns the call. In [[20b - Next Week]] the worm spreads on long-lived keys and Liam says so. She knew exactly what she traded, which is what makes it a decision and not a mistake.
 - **Mirror:** rhymes forward to John at the loom (B2, Movement II) — same "community where he has standing," opposite texture (John *embedded* and warm; Liam *tolerated* and sharp).

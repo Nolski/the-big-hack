@@ -95,11 +95,17 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 
 **LIAM** *(live)*: Everyone's speculating about it, but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.
 
+**LIAM** *(live)*: Somebody wiped a whole cluster and rebuilt it from backup, and it came back inside the hour. They think the backups were already carrying it.
+
 **BRENDAN** *(live)*: *(beat)* That does sound interesting... I wonder if that's related to the Ukraine or Iran war...
 
 *(Neither of them have any suspicion it's related to the computer in front of both of them.)*
 
+*(On the running screen, under the counter, the first news chyron: "Kazakhstan power outage enters third day. Analysts cite ageing infrastructure." Text only. Nobody looks at it.)*
+
 **LIAM** *(live)*: Do you know what's actually clever about it, though? *(beat)* It seems to be using Long lived API keys to spread among other things.. you know, the thing I wrote about in my JWT memo?
+
+**LIAM** *(live)*: It didn't break anything to get in, that's the thing. Every single thing it did, it was allowed to do.
 
 **BRENDAN** *(live)*: …Mm.
 
@@ -160,13 +166,14 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 - **"Especially if it's a no, actually, because then I'll ring her."** The most generous line Liam has in the play. Throw it away.
 - **It has not stopped, and Liam says so.** *"It's four days and it hasn't stopped."* The audience has watched the counter and knows he is right. **The play is now running two clocks — a man's life, and a thing nobody is attending to** — and this is where the second one is first spoken about by a character. Per [[Rework — Brendan Goes Dark]] §D, the counter is on the surface, quietly, from here to the end.
 - **Liam's admiration is the beat the old design assigned to him and it survives intact.** *"It didn't break anything to get in… every single thing it did, it was allowed to do."* He is **completely right**, he is delighted to be right, and he is describing his own indictment to the man who caused it. Per [[Liam Arc]], the craftsman's admiration arriving before the fear is the whole character. **Keep it short and genuinely excited — this is a hard problem and he loves hard problems.**
+- **Two lines added 2026-09-09, both his, both admiring.** The wiped cluster that came back from its own backups is Pillar 2 of [[The Worm — Mechanism & Escalation]] said aloud once, and it is how the real one went (a self-respawning fleet that survived a cluster rebuild, per [[Warning Shot — Cotra on the Hugging Face Swarm]]). "Every single thing it did, it was allowed to do" was in these notes and not in the script; it is back, because it is his whole Van Buren argument in [[23 - The Trial]] said a week early to the one person who knows why it is true. The first ticker chyron also lands here; the ticker is described in [[20 - The Audit]].
 - **"I'd love to see the log."** Do not land on it. One beat, then Brendan says "Yeah," then Liam is off onto something else. **The audience does the work.**
 - **Marcus is in his DMs with a theory**, offstage, and is presumably right about something and useless about everything, exactly as always. One line, no follow-up, and he never appears in this scene.
 - **They do not touch — see the staging callout.** Brendan sets it down; Liam half-reaches; nothing happens. The play's one contact remains the single moment in [[19 - Nine Tickets]], given by the man who goes to prison and never returned.
 - **"It takes him slightly longer than it needs to."** The only physical tell in the scene, on a jacket, and it is the closest thing to a confession he produces. **Nothing else.** No pause at the door, no unfinished sentence — [[20 - The Audit]] already spent the last backspace, and repeating the gesture here would turn a pattern into a tic.
 - **He is never charged, and nothing in the play ever explains why.** The audit trail carries Liam's name, the machine is in Liam's flat, Liam has motive and Liam's own words are on the record. Brendan is invisible to the process for the same reason he was invisible to the reduction: **nothing he does generates a row anywhere.**
 - **The last image is the machine going back into the rectangle it left**, which is exactly the right size, and Liam plugging it in because that is what you do with a machine. **No music, no hold on the screen, no reaction.** He goes back to a job application.
-- **If it has to come down,** cut the tea and the two same-day rejections. **Do not cut the half-reach, "every single thing it did it was allowed to do," the Priya email, or the plug.**
+- **If it has to come down,** cut the tea and the two same-day rejections. **Do not cut the half-reach, "every single thing it did, it was allowed to do," the wiped-cluster line, the friend email, or the plug.**
 
 > [!question] Open, and Movements IV–V depend on it
 > **Does Liam ever say "I lent that machine to Brendan"?** He knows he did. One sentence would put an investigator in Brendan's flat.

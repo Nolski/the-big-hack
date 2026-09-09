@@ -72,17 +72,22 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > The device was recovered from the defendant's home. The credentials used were issued to the defendant. Every action in the log was taken as the defendant.
 
+> [!screen] VIDEO — PROSECUTOR · `AIV-085`
+> At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them. *(beat)* He started it. And when it was done, he tidied up.
+
+*(LIAM hears the second timestamp. He goes still and his hands stop. He knows where the machine was at 09:14 and who was sitting at it. He says nothing.)*
+
 **LIAM** *(live)*: Can I say something about that?
 
 > [!screen] VIDEO — JUDGE · `AIV-086` *(patient)*
 > Through your counsel, Mr. Mkrtchyan.
 
-**LIAM** *(live)*: It's, it'll take nine seconds. *(beat)* It says "without authorisation." My access was never revoked. Nobody revoked it. There's a case, *Van Buren*, it's a Supreme Court case, and it's about exactly this, it's not about what you did with the access, it's about whether you had it. *(beat)* And I had it. They gave it to me and they never took it back. That's not a crime, that's their filing system.
+**LIAM** *(live)*: It's, it'll take nine seconds. *(beat)* It says "without authorisation." My access was never revoked. Nobody revoked it. There's a case, *Van Buren*, it's a Supreme Court case, and it's about exactly this, it's not about what you did with the access, it's about whether you had it. *(beat)* And I had it. They gave it to me and they never took it back. That's not a crime, that's their filing system. *(beat)* And nobody read eleven thousand lines. A model read them and wrote you a summary. It says what the tool said it ran. Not what it ran.
 
 *(The judget looks annoyed)*
 
 > [!screen] VIDEO — JUDGE · `AIV-086` *(and she means it)*
-> Mr Mkrtchyan, I strongly advice you to remain silent and let your attorney do the talking.
+> The log says what it says. Mr Mkrtchyan, I strongly advice you to remain silent and let your attorney do the talking.
 
 **LIAM** *(live)*: …Okay.
 
@@ -135,7 +140,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > [!screen] VIDEO — MARCUS · `AIV-055` *(after a moment, honestly)*
 > …I mean. *(beat)* Yeah, but we were told that nobody would be able to see the raw feedback...
 
-*(The lights flicker... one of the rolling brownouts that's been in the news recently...)*
+*(The lights flicker... one of the rolling brownouts that's been in the news recently... On the running screen, the ticker: "Congress bans onboard computers in new vehicles.")*
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085` *(and this is not a trap; she is closing a hole in her own case)*
 > One last matter. Liam's name showed up in the AWS logs on the night in question, is that correct?
@@ -168,8 +173,12 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 ---
 
 ## Notes
+
+> [!warning] The break is designed and not drafted (checked 2026-09-09)
+> The bullets below describe "He had the..." and "No. It was mine." The script has no such exchange: the prosecutor never asks whether anyone else had the device. It belongs with the open question in [[20b - Next Week]]'s notes (does Liam ever say he lent it) and was deliberately not drafted in the Warning Shot pass. What was added instead: the prosecutor's 01:58 / 09:14 line, which pays off the CloudTrail spin-down in [[20 - The Audit]] (Brendan's clean-up, logged as Liam), and Liam's summary-not-log point in the Van Buren breath, which is true and does nothing, like everything else he says in this room.
+
 - **Nobody in this room does anything wrong, and the whole scene depends on it.** The prosecutor is competent and sincere; the judge is patient and fair and gives the defence every latitude; the argument Liam makes is a good one and is *genuinely heard.* **The false premise arrived before anybody entered the building.** Per [[The Escalation Ladder]] Movement V: the court is completely correct, and that is the horror. **If the audience finds anyone to boo, the scene has failed.**
-- **The count list needs no exaggeration.** Nineteen counts, most of them the same act counted differently, stacking to a theoretical fifty-one years. Anchored on the Swartz charging practice in [[Real Cases — Hacks, Trials & the Press]] §1 — thirteen counts, eleven CFAA, a reported maximum of thirty-five and then fifty. **Take the practice, not the man; do not dramatise Swartz and do not reference his death.** Brendan's *"nobody expects fifty-one years — nobody has to"* is the only gloss the list gets.
+- **The count list needs no exaggeration.** Nineteen counts, most of them the same act counted differently, stacking to a theoretical one hundred and fifty-one years. Anchored on the Swartz charging practice in [[Real Cases — Hacks, Trials & the Press]] §1 — thirteen counts, eleven CFAA, a reported maximum of thirty-five and then fifty. **Take the practice, not the man; do not dramatise Swartz and do not reference his death.** Brendan's *"nobody expects fifty-one years — nobody has to"* is the only gloss the list gets.
 - **Liam's *Van Buren* argument is correct and it is the third time the play has run this move** — the phone call in [[12 - Below Expectations]], the reduction arithmetic in [[14 - The Offboarding]], and here. **The difference is that this time it is formally received.** "That's a serious argument… it's noted. We'll deal with it." It is dealt with. It never comes up again. **Being right inside a correct process is the last and worst version of being right.**
 - **This is stage three-and-a-half of the guilt arc, in a room where he has to answer for it.** He is here because he still has a job, giving evidence about the man who doesn't, and the first thing out of his mouth is a fact about 1812. **Do not play him as enjoying it.** He is doing the only thing he knows how to do in a room he should not be in.
 - **Marcus is called by the prosecution, not the defence.** He never realises what he is for. He says Liam is the best engineer he has ever worked with, sincerely, and it lands nowhere; then he agrees the friction line is fair, sincerely, and that lands. **He does not know he wrote it and he is never going to know** — hold that rule, it has survived since [[12 - Below Expectations]].

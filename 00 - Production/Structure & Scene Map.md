@@ -22,7 +22,7 @@ The decision record for this structure — including the questions still open �
 |---|---|
 | **I** | The cold-open block. Establish Liam, the team, and the machine — then Marcus: an ordinary workplace grievance, the *word* Luddite objected to and never explained, and the credential jab at Kristina he calls out and helps nobody by calling out. **No history yet.** |
 | **II** | The squeeze. The machine quietly outgrows him, the mandate lands, and a peer feedback form prices him. Ends on the review. |
-| **III** | Offboarding → **the call where Marcus names it and Liam won't have it** → **Brendan gets the same call** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. |
+| **III** | Offboarding → **Brendan gets the same call** → **the call where Marcus names it and Liam won't have it** → the handover → **the hack**. Both men are eaten by the same sheet; Liam gives Brendan the rig; Brendan gets drunk and points an open-weights model at the company. See [[Rework — Brendan Goes Dark]]. |
 | **IV** | The press invents him → the arrest. Procedurally polite officers, a form, a name mispronounced, and a takedown triggered by a man trying to correct a record. **Cast goes to four live actors here** — see [[22 - Current Employer]]. |
 | **V** | The trial → **the last conversation** → **the plea**. The verdict never comes because there is no trial: he signs. **The immigration ending is cut** — [[Rework — The Escalation Pass]] §A3. |
 
@@ -53,8 +53,8 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 | 13 | [[13 - The Performance Review\|The Performance Review]] | II | ✏️ |
 | 13b | [[13b - The Plan\|The Plan]] | II | ✏️ |
 | 14 | [[14 - The Offboarding\|The Offboarding]] | III | ✏️ |
-| 14a | [[14a - Checking In\|Checking In]] | III | ✏️ |
 | 14b | [[14b - Three Weeks\|Three Weeks]] | III | ✏️ |
+| 14a | [[14a - Checking In\|Checking In]] | III | ✏️ |
 | 19 | [[19 - Nine Tickets\|Nine Tickets]] | III | ✏️ |
 | 20 | [[20 - The Audit\|The Audit]] | III | ✏️ |
 | 20b | [[20b - Next Week\|Next Week]] | III | ✏️ |
@@ -68,6 +68,9 @@ Status legend: ⬜ to draft · ✏️ drafted · 🔁 revised · ✅ locked
 > The Marcus pass put him on-mic **three times before the mandate** — the refused alliance and the credential callout in [[01 - Cold Open — The Standup]], the Luddite tangent Liam corrects in [[06 - Good Instinct]], and the long fight in [[11b - Best Practices]] — which is what a dedicated "Marcus Established" scene was for. **Recommend cutting 1e** unless the timing pass finds Movement I is short, which it will not. Leave the row until the draft is complete, then delete it rather than writing into it.
 
 **Out of the running order, kept in the vault:** [[02 - The Loom and the Guild — John half]] and [[16 - The Wage Cut]]. Both are cut from the show and both stay as source material for Marcus's arguments and for verbatim inserts. **Cut pass:** [[01d - The Future]] (back half merged into [[01b - The Cursor Demo]]). [[01c - The PR Review]] was cut in the first pass and restored: it now runs **before** 01b. Cut from Movement II: [[08 - The One-on-One]] (nothing moves; Kara's first appearance is now the reduction coda in [[10 - The Win We Needed]]). [[11c - The Latest Model]] (the call is gone; Kristina's wordless four-minute build now opens [[12 - Below Expectations]]).
+
+> [!note] 14b now runs before 14a (2026-09-09)
+> [[14a - Checking In]] is a three-hander two weeks after Liam's offboarding, and its dialogue assumes Brendan has already been let go. Running it before [[14b - Three Weeks]] contradicted that. The order is now 14 → 14b → 14a → 19. Files and `scene_number`s are unchanged.
 
 > [!important] Cut pass — three things no cut may remove
 > **1.** Brendan earnestly trying to show Liam how excited he is about agentic coding, and it going straight over Liam's head because of Liam's arrogance ([[01c - The PR Review]], the refused doors in [[06 - Good Instinct]]). **2.** Kristina buying into AI by using it, shown on stage ([[01b - The Cursor Demo]]; the wordless solo build from [[11c - The Latest Model]]). **3.** The comedy of arguments and people talking over Kristina, the strongest comedy in the play (the [[06 - Good Instinct]] and [[11b - Best Practices]] standups, the cold open). Some of 3 may go if absolutely necessary, and every line of it cut is a known loss.

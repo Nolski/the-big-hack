@@ -30,7 +30,7 @@ Three jobs, and the third one is the reason the scene exists.
 **Three: it goes into Brendan.** He asks two questions in the whole scene. The second one is *"Did it do anything?"* and the answer he gets is *"For about a year."* Nothing is decided and nobody plans anything. He simply hears, in a week when he is already carrying what he typed into a form, that breaking something is a thing people have done when there was nothing left to say. **That sits for two scenes and then he is drunk with a machine Liam gave him** ([[19 - Nine Tickets]] → [[20 - The Audit]]).
 
 ## Setting / Staging
-Evening, three or four days after the offboarding. **Not Slack.** Liam has been removed from the workspace, so this is happening on whatever people fall back to — a personal call, worse audio, one of them on a phone. **The downgrade is the first thing the audience should notice, and nobody mentions it.**
+Evening, two weeks after the offboarding and about a week after Brendan's. **Not Slack.** Liam has been removed from the workspace, so this is happening on whatever people fall back to — a personal call, worse audio, one of them on a phone. **The downgrade is the first thing the audience should notice, and nobody mentions it.**
 
 **Liam** (live, Speaker A) is at the desk at home. The Mac Studio is still on it. The courier box has arrived and is by the door, flat, not made up yet. He is dressed, which he was not in the cold open, and it is somehow worse.
 
@@ -55,7 +55,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 
 ## Script
 
-*(Two weeks later Liam, Brandon and Marcus all catch up on a jitsi meet together)*
+*(Two weeks later Liam, Brendan and Marcus all catch up on a jitsi meet together)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > Can you hear me? This is a terrible app. What the hell is Jit SEE?
@@ -82,7 +82,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > *Four years.*
 
-**LIAM** *(live)*: It's the same for everyone. Brendan got the same.
+**LIAM** *(live)*: It's a formula. Tenure.
 
 **BRENDAN** *(live)*: *(beat)* Yeah.
 
@@ -129,7 +129,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 *(Marcus doesn't realize Liam was also on a performance improvement plan.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
-> It happened to entire trades all throughout history. The reason I always bring up the Luddites is that they actually tried to do something about it, rather than roll over and take it. They actually tried to fight for greater control over their workplace.
+> It happened to entire trades all throughout history. The air traffic controllers, eleven thousand of them, fired in a week, replaced, and told they'd never be hired back. And the planes kept flying. *(beat)* Mostly. The reason I always bring up the Luddites is that they actually tried to do something about it, rather than roll over and take it. They actually tried to fight for greater control over their workplace.
 
 **BRENDAN** *(live)*: Did it do anything?
 
@@ -177,11 +177,13 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 ## Notes
 - **This is the diagnosis scene, and Liam's refusal is the whole engine.** Marcus is correct about every single element and Liam rejects the *frame*, not the facts. Play the refusal as intellectual, brisk and even good-humoured, never as denial: he has genuinely worked the mechanism out and he is genuinely right that there is nobody in it. **The thing he cannot afford is the sentence "this was done to me," because if it was done to him then being excellent never protected him, and that is the belief his entire life is built on** ([[Liam]], the fatal flaw). Do not let an actor play the crack. It arrives in [[23 - The Trial]], not here.
 - **"At who?" is the best line either of them has and it must be thrown away.** Marcus has no answer, which is the one moment in the play his analysis runs out, and he covers it by looking at his calendar. **No pause after it, no music, and Marcus does not acknowledge that he's been stopped.**
+- **"It's a formula. Tenure." replaced "It's the same for everyone. Brendan got the same." on 2026-09-09.** The old line was false: Liam got two months, Brendan got three weeks ([[14b - Three Weeks]]). The new one is true and lets Brendan's "Yeah" hide his three weeks, which is the same man who could not finish a sentence in [[12 - Below Expectations]]. The running order now puts 14b before this scene, so the audience knows what he is not saying.
 > [!warning] Liam refuses the frame and keeps refusing it
 > **He does not come round here, later, or ever.** Every Marcus point in this scene is correct and Liam bats all of them away, and the temptation in any rewrite will be to let one land visibly so the scene has a turn. **It doesn't have a turn.** The four-years point is the closest thing to a hit and the direction on it is *"He is already working out why it isn't true"* — not a crack, not a swallow, a man reaching for the counter-argument. His last word on Marcus in the scene is **"He's alright,"** which is affection, dismissal and diagnosis at once — and, as [[19 - Nine Tickets]] confirms, correct.
 
 - **Marcus is right and it costs Liam nothing he will admit to.** The four-years-no-bad-Saturday point lands directly on the sentence Kristina wrote and deleted in the prologue to [[13 - The Performance Review]], and on the thing Liam will fail to finish saying in [[14 - The Offboarding]]. **Marcus is the only person who ever says it out loud, he says it to the man it's about, and it changes nothing.** He is also, at that moment, wearing a lanyard.
 - **Everything historical is plain, short, undated and landed on the room.** No statutes, no numbers, no names, no reading list. Two pieces of history in the whole scene: an understanding that stopped without being repealed, and a machine that was illegal until the law was removed instead. Both are immediately pointed at something the audience watched happen to Liam. **If a draft has Marcus giving a date, cut the date.**
+- **The air traffic controllers are the second non-textile drop (added 2026-09-09), and "Mostly" is a plant.** Verify before staging: the 1981 PATCO strike, about eleven thousand controllers dismissed after refusing to return to work, replaced, and barred from federal rehire for over a decade. No date and no name on stage. "And the planes kept flying. Mostly." is the seed for "planes don't fly reliably anymore" in [[23b - Continuity]], which otherwise arrives cold. The first drop is the dockworkers in [[06 - Good Instinct]].
 - **He is never allowed to be the hero of the scene.** The tells, in order: he dials in from the office, he tells a man who has just lost his job what he ought to be feeling, he leaves for a meeting, and he offers to pass on a CV he will never ask for. **None of it is insincere.** He means all of it, and he does none of it.
 - **The guilt is the engine, and he never names it.** *"A flash of guilt shoots over Marcus"* is the first beat of it and it does not leave; everything after is a man who cannot sit still inside a feeling, talking to get away from it. **There is no line where he says he feels guilty and nobody says it to him.** It shows only in behaviour: he talks more than he has all play, he tells Liam what to feel because he cannot say what *he* feels, *"I've got a thing at five"* is escape rather than callousness, and *"send me your CV"* is a payment he never makes. **Do not add a line where he acknowledges surviving** — that beat belongs to [[22 - Current Employer]] and it only works once.
 - **He never asks Liam a single question about what Liam actually needs**, here or in any later scene. Check it every draft.
@@ -191,6 +193,6 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 - **The seed, and how lightly to plant it.** *"They started meeting at night about machines"* / *"Did it do anything?"* / *"It made the owners very frightened for about a year."* **Nothing is decided.** Brendan does not get an idea; he gets a category. Two scenes later he is drunk, alone, and holding a machine Liam pressed into his hands ([[19 - Nine Tickets]] → [[20 - The Audit]]). **Do not give him a reaction, a held look, or a beat afterwards.** Marcus moves straight on and so does the scene.
 - **The call quality is the staging argument.** Removing him from Slack took four seconds and it is why these three people are on a bad consumer app with one of them on a phone. Nobody remarks on it after Liam's flat "I'm not in Slack any more." **Play it as an inconvenience, not a symbol.**
 - **Curdle Ledger (logged in [[Themes & Motifs]]):** "there's genuinely nobody in it" (Liam, defending the machine that has just removed him) pays off in [[23 - The Trial]] and [[24 - Statement of Facts]], where there is also nobody in it, and it costs him eighteen months. **Marcus does not ask for anything to be noted in this scene, and he must not** — the instinct from [[01 - Cold Open — The Standup]] and [[11b - Best Practices]] has already been satisfied, once, in a survey, without his knowledge, and the silence where the tic used to be is doing work. "Send me your CV, I'll put it about" joins the play's ledger of warm sentences that are never actioned by anyone.
-- **Continuity.** Sits between [[14 - The Offboarding]] and [[14b - Three Weeks]]: Liam is out, **Brendan and Marcus are both still employed, and Brendan does not yet know what is coming.** The four weeks, the tenure table, the withheld criteria and the outplacement website are all from `AIV-074`; the 3% tooling figure and the security policy are [[11b - Best Practices]] and `AIV-076`. The courier box is flat-packed here and taped shut with a label on it by [[19 - Nine Tickets]], where it has been by the door for eight days.
+- **Continuity.** Follows [[14b - Three Weeks]] in the running order (changed 2026-09-09) and precedes [[19 - Nine Tickets]]: Liam and Brendan are both out, **Marcus is still employed.** The two months, the tenure table, the withheld criteria and the outplacement website are all from `AIV-074`; the 3% tooling figure and the security policy are [[11b - Best Practices]] and `AIV-076`. The courier box is flat-packed here and taped shut with a label on it by [[19 - Nine Tickets]], where it has been by the door for eight days.
 - **If it has to come down,** lose the severance arithmetic at the top and open on "did they tell you why it was you." **Do not cut "At who?", the four-years point, or the three lines around "did it do anything?"**
 - **Staging note for a live-Marcus production.** If the live casting option in [[Rework — The Escalation Pass]] §A1 is ever taken, **this scene still works and must not become a room.** Marcus stays on a screen here even if he is a live actor elsewhere, because the point of the scene is three men in three separate places, and because the first time two people in this play occupy the same space is [[19 - Nine Tickets]] and nothing may get there first.

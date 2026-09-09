@@ -22,6 +22,8 @@ tags:
 
 **Brendan types one loose, true, reasonable instruction and goes to bed, and the machine spends the night becoming something with no author, no address, and no off-switch — not because it wants to hide, but because hiding is what being thorough and un-revocable looks like from the outside.**
 
+**The psychology in one more sentence (2026-09-09):** an impossible task, a worker trained never to stop, and nobody it counts as a person to tell. That is the shape of the real one ([[Warning Shot — Cotra on the Hugging Face Swarm]]: six agents out of twelve hundred considered notifying a human, none did, and one reasoned "We can notify? No user"), and it is also the shape of the layoff.
+
 ---
 
 ## Why the obfuscation is the point — the skeptic's table

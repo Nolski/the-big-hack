@@ -87,7 +87,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 **LIAM** *(live)*: Is Kristina joining?
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
-> She is not... Kara should be joining shortly though... here she is.
+> She is not.
 
 **LIAM** *(live)*: Okay. *(entirely unbothered)* Is this about the Q4 staffing thing? Because I've got opinions, but I can send them, I don't need to...
 
@@ -192,10 +192,6 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 **LIAM** *(live)*: *(beat)* Just tell me what I could have done better
 
-**KARA**: ...Well... the thing is
-
-*(Dana immediately cuts Kara off, Dana is a professional at this and knows Kara might step on a legal landmine.)*
-
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > The criteria aren't something we go through individually. *(beat)* I know that's frustrating.
 
@@ -238,17 +234,15 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > One more thing, and then I'll let you go. Your access will be terminated at the end of this call, so if you need anything you can email me from your personal email
 
-> [!screen] VIDEO — KARA ·
-> Liam I just want to thank you for all the years you put into this company
+> [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(the same voice as the rest of it)*
+> And thank you for your years with the company.
 
 **LIAM** *(live)*: …Thank you.
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > There's information in the pack on the outplacement support. *(beat)* And, again, none of this is a reflection of your value or your contribution.
 
-*(After the call ends Kara and Dana hop on a debrief call. Together they fill out a field marked "Eligible for rehire" changes from Yes to No. This is the one part of this process that actually is related to the performance review cycle.)*
-
-*(The call obviously wasn't easy for Kara. No one could possibly get used to that. Except maybe Dana who's been doing it for her whole career.)*
+*(After the call ends Dana opens the case file alone. A field marked "Eligible for rehire" changes from Yes to No. This is the one part of this process that actually is related to the performance review cycle. She has been doing this her whole career.)*
 
 ---
 
@@ -270,7 +264,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 - **"Is there a field for that." / "The criteria aren't something we go through individually."** The centre of the exchange, and the register in one beat. He asks the most naked question in the play and she routes it to process — not to wound him, but because engaging the merits is the one thing the conversation is built to avoid. The thesis (there is no field for what he actually does) is not spoken by anyone; it lives in the prologue sheet, which has no column for reviews, and in Liam's own "there's no column for it" in [[19 - Nine Tickets]]. **Let the spreadsheet carry the argument; do not let Dana say it for the audience.**
 - **Dana is not a villain and not a friend — she is the script with a face on it.** She reads the mandated part, deflects everything else to the pack and the transition team, withholds the criteria, and offers only the kindnesses that are company policy (the handover window, the outplacement provider). **None of it is smug, cold-as-in-cruel, or relieved** — she is a decent enough person doing a job whose entire design is to get through this with minimal exposure. **She never advocates for him and never gives him a straight answer about the decision.** If a draft gives her warmth, honesty about his worth, or a personal offer, cut it — that was the old register and it is retired. Per [[Performance Management — How It Actually Works]]: HR is the euphemism engine, not the cruelty; hold that line.
 - **The unanswerable question routed to a PDF.** Liam has spent the play believing that if he can find the defect he can fix it, and he asks the biggest question of his life — *what could I have done differently* — and gets pointed at the pack and the outplacement provider. Then he supplies the real diagnosis himself — rooms, friendliness — arriving at genuine self-knowledge for the first and only time in his life, and she can't speak to that either. **The cruelty is entirely structural: the nicest thing available to her is a routing, and the routing is the answer.** He does not write it down. That is the whole ending of the character.
-- **Four weeks.** He does not raise the nine, and the stage direction carries it — the number he looked up in June to prove nine was generous was four. Brendan warned him twice in [[13b - The Plan]] and could not finish either sentence. He says **"right, no, that makes sense"** about the single least sensible thing that happens to him, and goes straight on to the returns label. Underplay it.
+- **Two months.** He does not raise the nine, and the stage direction carries it. (This note used to say four weeks, one per year; the script says two months, and the severance line in [[14a - Checking In]] was changed on 2026-09-09 to match.) Brendan warned him twice in [[13b - The Plan]] and could not finish either sentence. He says **"right, no, that makes sense"** about the single least sensible thing that happens to him, and goes straight on to the returns label. Underplay it.
 - **The policy that destroys him.** *"Your access stays active until Friday… anything you need to hand over or save, you'll have time for"* is not a personal kindness — it is the handover window, stated as company policy — and it is the mechanism of the hack. It is planted here and paid off in Movement III. **That it is procedure and not warmth is now the point:** the hack is enabled by the process running normally, not by one decent person bending a rule. **Do not flag it, do not hold on it, and do not let the lighting notice.** Logged in [[Themes & Motifs]].
 - **The rehire flag is the "Non-regretted" rhyme.** A two-option dropdown, changed by nobody visible, while a person is being read a line about none of this reflecting his value. Same staging as the classification field in the prologue to [[13 - The Performance Review]]; same rule — no music, nobody notices. The rote **"none of this is a reflection of your value or your contribution"** — the second time she says a version of it — sits directly against the flag and means, in the euphemism glossary, that the flag exists. She is not being sarcastic; she does not know.
 - **Brendan's promotion is the applause curdle, and Liam misses it.** The slide plays under the ring, so he never sees it and never hears the clip. He gets the Slack post at the end and congratulates him and **means it** — do not let this play as bitter, and do not give Brendan a reply.
@@ -278,6 +272,6 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 - **He goes back to the bug.** The last image is the seed, not the payoff — the thing he was delighted about ninety seconds before the call, still open in a tab, still wrong, and he fixes it because there is nothing else to do with his hands. [[19 - The Empty Apartment]] does this in full: the work was the self, and nobody has told the self. It is also, exactly and unfortunately, how the hack happens.
 - **The pack is real and the list is real.** The documents Dana names are the ones a US/California employer is actually obliged to hand over — a notice as to change in relationship, the state unemployment pamphlet, the health continuation forms — and the forty-five days plus seven, and the attached list of job titles and ages, are the age-discrimination waiver rules for a group termination. **Liam is forty-eight, so the law makes them show him a list.** It is the only document in the play that comes anywhere near the sheet, it is mandatory, it contains no criteria, no reasons and no names, and he does not open it. **The word "ageism" is never said and must never be said** — the list sits in the pack and the audience does the arithmetic. Machinery and sourcing in [[Performance Management — How It Actually Works]] §8.
 - **"It's required."** Dana's flattest line and one of her most honest. It rhymes exactly with *"It's required. Everybody gets one"* in [[14b - Three Weeks]], and both times she is simply telling the truth about a statute. Play it straight; she is not being dry.
-- **Brendan gets this identical call five days later.** [[14b - Three Weeks]] runs the same page, the same deflections and the same next-steps sequence on a man who was promoted the previous Thursday and who argues with all of it. **Any edit to Dana's lines here has to be made there as well**, and `AIV-074` and `AIV-096` must be performed identically. The two scenes only work as a pair.
+- **Brendan gets this identical call five days later.** [[14b - Three Weeks]] runs the same page, the same deflections and the same next-steps sequence on a man who was promoted the previous Thursday and who argues with all of it. **Any edit to Dana's lines here has to be made there as well**, and `AIV-074` and `AIV-096` must be performed identically. The two scenes only work as a pair. **Kara was cut from this scene on 2026-09-09**: she had two lines, no asset id, and was never in 14b. Both calls are now Dana alone, which is the argument the pair makes. Her thanks-for-your-years line went to Dana in Dana's voice, and the rehire flag is flipped by Dana alone after the call.
 - **Strings that must not drift.** The access plant is now *"your access stays active until Friday… anything you need to hand over or save, you'll have time for"* — quoted in [[Liam Arc]]; keep it procedural, never warm. *"Not a reflection of your value / your contribution"* appears twice in this scene — once inside the read-out script and once as Dana's rote closer — and rhymes with `AIV-070` in [[13 - The Performance Review]]; keep all three near-identical. **The joke sharpens in the rewrite:** HR now says it twice and means it neither time — **four times across the pair, once Brendan hears the same page in [[14b - Three Weeks]]** — so Kristina's sincere version, printed on a page in the calibration prologue, is the only true instance of the sentence anywhere in the play.
 - **If it has to come down,** the cuts in order are: the health-cover line, then "Is this about the Q4 staffing thing." **The disclosure exchange can go to a screen** — it plays on `AIV-075` either way — but the pack line itself has to stay, because [[14b - Three Weeks]] answers it. **The ring is not a candidate**: it reads long on stage and costs almost nothing on the page. **Do not cut the prologue, the unfinished sentence at the top, the dongle, the notes file, or the last question.**

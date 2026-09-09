@@ -20,6 +20,7 @@ tags:
 ### 00 — Production
 - [[Rework — The Escalation Pass]] — the decision record for the current shape: John cut, the Luddites moved into Marcus's arguments, Brendan live and narrating, and the new second half. Read before drafting anything new; the open questions are still listed there.
 - [[Concept & Thesis]] — what the play is *about*, the satire, the ending
+- [[Rework — The Warning Shot Pass]] — the September 2026 edit plan: Stephen's page notes, the chat, and the Cotra podcast ([[Warning Shot — Cotra on the Hugging Face Swarm]]) mapped onto scenes. Nothing in it is drafted yet.
 - [[CFP Submission]] — the in-character talk title + abstract for the Kiwicon slot, and what the organisers need told
 - [[Structure & Scene Map]] — the movement order and scene-by-scene status
 - [[Staging — Two Speakers]] — how the live actors + AI video share the stage

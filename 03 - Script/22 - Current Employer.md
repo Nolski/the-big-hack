@@ -7,7 +7,7 @@ arc: liam-arc
 beat: "[[Liam Arc]] — the arrest"
 status: drafted
 live_cast: "Liam, Officer One, Officer Two, (officers — see cast note)"
-ai_video_assets: "[[AI Video Production Tracker|AIV-055 Marcus]], [[AI Video Production Tracker|AIV-088 The form — screen]]"
+ai_video_assets: "[[AI Video Production Tracker|AIV-055 Marcus]], [[AI Video Production Tracker|AIV-088 The form — screen]], [[AI Video Production Tracker|AIV-100 The statement — screen]]"
 tags:
   - scene
   - liam-arc
@@ -55,12 +55,15 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 ## AI Video Cues
 - **[[AI Video Production Tracker|AIV-055]] — Marcus:** locked look and voice, on a laptop, for the whole scene. **At full tilt, right about everything, and unbearable.** Keeps talking for two beats after the door goes because he cannot see the room. **The footage that survives this scene is his**, and his voice is on it.
 - **[[AI Video Production Tracker|AIV-088]] — The form (screen graphic, no voice):** the fields, filled in as they are spoken. Name, spelled twice. Address. **Current employer**, pre-populated off the employer record. A "corrections noted" free-text box that gets two words typed into it and is never read by anybody.
+- **[[AI Video Production Tracker|AIV-100]] — The statement (screen graphic, no voice):** Malus Corp's three sentences, press-release register, on the running screen before the first line. Detected and contained within hours; a former employee's credentials, revoked; cooperating fully. **Every sentence is true and the picture it makes is false.** It is the company's only public act in the play and it is how the press gets the name. Two ticker chyrons run under this scene.
 
 ---
 
 ## Script
 
 *(A few days later, Liam on a call with Marcus)*
+
+*(Before anyone speaks, on the running screen, a statement in a company's own typeface. Malus Corp: "We detected and contained unauthorised activity on our systems within hours. The credentials involved belonged to a former employee and have been revoked. We are cooperating fully with law enforcement." Every sentence of it is true. Under it the ticker: "Senators call attack 'clearly state-sponsored'." Later in the scene, at no particular moment, the ticker again: "Smart appliances implicated in bank intrusions.")*
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
 > -no, but that's what I'm *saying*. Nobody in the history of the world has ever been frightened by a machine. *(beat)* They were scared about the economics of it or whatever, not getting to do their craft and get paid shit like the rest of the peasants.... the luddites didn't hate the machines, they hated the system that enabled them... they hated what the system did to them
@@ -227,6 +230,7 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 - **The design is the swing, not the volume.** Thirty seconds of real violence, then a clipboard on a sofa. **The same institution does both, four minutes apart, and neither half acknowledges the other.** *"Sorry about that. You moved and we don't know you"* is the hinge and it should be delivered by a man who has completely changed gear. **Protect the contrast above everything else in the scene.**
 - **Nobody is a villain, including during the takedown.** Shouted commands are procedure. *"Don't reach — hands!"* is what trained people say to somebody moving toward an object during a warrant execution, and the volume is the training. **No sneer, no contempt, no pleasure, no line that goes past what the moment calls for.** Per [[The Escalation Ladder]] and §G: this is exactly where the no-villains rule is hardest and it is not negotiable.
 - **Marcus causes it, and never finds out.** The chain is exact: **he will not stop talking → Liam reaches to close the laptop → the reach is what gets him taken down → the laptop stays open → the footage exists → the press uses it.** Nothing in the scene remarks on any of it. He is right about every single thing he says and he is the proximate cause of the worst thirty seconds of another man's life.
+- **The company statement (added 2026-09-09) is where the company gets its share, and it is a share of accuracy.** Malus Corp does not keep quiet. Its incident team finds one credential on every line, revokes it, and says so, and "a former employee" is what their logs say. This is the real shape ([[Warning Shot — Cotra on the Hugging Face Swarm]]): the outsider announced the attack, the lab found its own compromise days later, and nobody outside would have known at all if the thing had stayed inside. Scene 21, when written, builds the press's false picture out of this true statement. No villain: a form filled in correctly.
 - **He keeps talking for two beats after the door goes**, because he is on a screen and cannot see the room. *"—for a person. For an actual person. Ever."* over four officers coming through a door. **Do not cut this and do not shorten it to one beat.**
 - **"And obviously I've still got a job, I'm aware of how that sounds, I'm not..."** and he swerves straight past it into *"the ones they kept were always the ones who...."* **He is describing himself, accurately, and does not notice.** It is the tickets-and-Jira argument from [[19 - Nine Tickets]] in the mouth of the man it exonerates. **Play it fast; if he lands on it, it's gone.**
 - **This is stage three of the guilt arc and the only place he comes near naming it.** Since [[14a - Checking In]] the survivor guilt has hardened into a worldview, and this is the closest it ever gets to the surface — one half-sentence, immediately converted into theory. **Protect the swerve. Do not let a rewrite finish the thought.** *"THEY'RE GOING TO HANG US ALL"* is the same mechanism at full volume: a man writing himself into a punishment he escaped. See [[Modern World — Supporting]] for the ladder.

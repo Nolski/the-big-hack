@@ -50,7 +50,7 @@ Cold, low light. No music anywhere in this scene.
 
 ## Script
 
-*(Evening. LIAM's apartment, and there is nothing in it. A bare desk. He is in the court suit with the jacket off. On a screen, MARCUS, taking an illicit call with Liam over a LORA radio, they both know they're not allowed to communicate. Candles are used to light the apartment.)*
+*(Evening. LIAM's apartment, and there is nothing in it. A bare desk. He is in the court suit with the jacket off. On a screen, MARCUS, taking an illicit call with Liam over a LORA radio, they both know they're not allowed to communicate. Candles are used to light the apartment. On the running screen behind him, the ticker: "Water and power utilities ordered to disconnect.")*
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
 > There he is. *(beat)* How are you? No, don't answer that. *(beat)* Liam, you were unbelievable in there.
@@ -89,10 +89,13 @@ Cold, low light. No music anywhere in this scene.
 
 *(He has said all of that to himself several times before tonight.)*
 
+> [!screen] VIDEO — MARCUS · `AIV-099`
+> And the company? A fine. The share price went up after the statement, I checked. They've put the model into evidence and encrypted it. *(beat)* That's the only thing anybody's locked up that actually did anything.
+
 > [!screen] VIDEO — MARCUS · `AIV-099` *(and he means every word of it)*
 > *(beat)* Do you know what life was like in Australia for the Luddites who got caught but weren't hung? Some say the hanging was the better option.
 
-**LIAM** *(live, not unkindly; he is genuinely asking)*: They were going to hit me with treason charges, which can be a death penalty case. That's why I took the deal.
+**LIAM** *(live)*: Eighteen months, Marcus. Against a hundred and fifty-one. That's why I took the deal.
 
 > [!screen] VIDEO — MARCUS · `AIV-099`
 > *(beat)* Look, they've put charges on you for something a computer did, for an AI someone else created. Liam. It's the same system. You are the same case. If you fight it, at least it'll mean something
@@ -133,6 +136,7 @@ Cold, low light. No music anywhere in this scene.
 ## Notes
 - **This is the last human conversation in the play and it is a man being recruited.** Marcus is not consoling him. He is asking him for something, and what he is asking for is that Liam go to prison on purpose so that a court has to say a true thing out loud. **He is completely sincere and he is not wrong about the injustice.** He is also safe, employed, slightly drunk, and doing it down a phone line at somebody who signs on Thursday.
 - **Stage four of the guilt arc, and the top of it.** Everything since [[14 - The Offboarding]] has been a man who survived and cannot hold it. Here the guilt finally asks somebody else to pay it: **he needs Liam to fight so that his own survival means something**, and he does not know that is what he is asking. *"If it was me I'd do it"* is not bravado, it is the arithmetic of a man who was not chosen, said out loud to the man who was. **Nobody in the play ever names this, including him.** See [[Modern World — Supporting]] for the full ladder.
+- **Changes 2026-09-09.** The treason line is cut: it was the only mention of treason in the play, nothing planted it, and the 151 carries the deal on its own ("Eighteen months, Marcus. Against a hundred and fifty-one."). Marcus gets one observation about the company, a fine, a share price, and a model encrypted in evidence, which is the real one's ending ([[Warning Shot — Cotra on the Hugging Face Swarm]]: the model was shuttered and encrypted). It is an observation, not a vindication, and it follows the scene's rule that he is right and it changes nothing. **The names exchange in the notes above is not in the script**; the cut list still names it and should be read as design, not draft.
 - **The undercut is one line, and it must be thrown away.** *"If it was me I'd do it. I'm not being funny about it. If it was me I would do it."* **Nobody says anything about it, then or ever.** He would not. He files everything and he'll be fine, which two other scenes have already told the audience. No pause on it, no reaction from Liam, and the play never returns to it.
 - **He is never vindicated, and this is where the promise is kept.** [[Modern World — Supporting]] and [[Rework — The Escalation Pass]] §A3 both require that nothing in the play ever confirms Marcus. He has been right about the machinery for two hours. Here he is right about the largest thing in the show — that the law has always moved fast for the machine and slow for the person, and that a number has been put on a man for something a computer did while he slept — **and it does not move Liam an inch, and the play ends four minutes later with a signature.** Do not add a later beat that says he was heard.
 - **He said "eleven months" in the witness box that morning** and was told to make it to the question ([[23 - The Trial]]). **He does not repeat it here** — an earlier version of this note claimed he did, and the scene is better without it: by evening the statute has been replaced by the hangings, which is a bigger and more desperate card. **Play him as a man who has one good argument and no way to place it, reaching for a louder version of it.**

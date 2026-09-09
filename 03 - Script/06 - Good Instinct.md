@@ -76,6 +76,15 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 
 **LIAM** *(live)*: The Luddites. They lost. They got hanged by the British army. Anyway, *(beat)* I'm trying to read this code. Please stop talking about the Luddites.
 
+> [!screen] VIDEO — MARCUS · `AIV-048` *(not done)*
+> It isn't only them. Do you know how a port worked before the shipping container? Hundreds of men would take a whole week to unload one ship. Then somebody puts the whole cargo in a steel box, a crane lifts the box, and the ship is done in a day. Do you think that wouldn't affect the dock workers and their daily workout?
+
+> [!screen] VIDEO — KRISTINA · `AIV-040` *(trying)*
+> Marcus...
+
+> [!screen] VIDEO — MARCUS · `AIV-048` *(going anyway)*
+> The dockworkers on the West Coast saw it coming, and they didn't smash the cranes. They made a deal. The companies got the box, and every man the box replaced kept getting paid anyway, out of the money the box saved, until he retired. It worked. *(beat)* It worked because nothing moved through that port without them. What have we got?
+
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(pleasant, immovable, moving the board on)*
 > Okay. Marcus, you got your word in, thanks. *(brisk)* Liam. You're still on the signup race condition, yeah? Where are we with that one?
 
@@ -165,6 +174,7 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 - **He uses Brendan's PR to make his point, on a call Brendan is on, four days after Kristina thanked him for it.** Nobody names it. That is the small unbearable thing this beat owes the guard rule in [[Modern World — Supporting]].
 - **Liam is not a Luddite expert and must never sound like one.** He knows one thing, which is the thing everybody knows: they lost. He is not correcting Marcus, he is trying to get him to stop talking so he can read. **If a draft ever gives Liam a date, a statute or a troop number, cut it** — his whole position is that none of this is his subject, and the play needs that to be true so the refusal in [[11b - Best Practices]] means something.
 - **"They lost, by the way" is a plant.** Say it flat and throw it away. Nobody reacts, and Kristina moves the board on top of it. It is the line the back half hands back to him, and it must not sound like a theme when he says it. **Do not add a beat, a pause or a light change.**
+- **The dockworkers beat is the one non-textile drop before the mandate, and it is the counterexample.** Verify before staging: the 1960 West Coast longshore Mechanization and Modernization Agreement (the ILWU and the Pacific Maritime Association). The union accepted containers and other machinery; the employers paid into a fund that guaranteed registered men their hours and paid for early retirement, so the work shrank without the men being sacked. Two short blocks with Kristina talked over between them (the talked-over-Kristina comedy is a cut-pass guardrail), no dates, no names, and it lands on the room. Expanded 2026-09-09 on the author's note that it needed more explanation: what a port was before the box, what the box did, what the deal was, why it held. It does not vindicate him: the answer to "what have we got?" is nothing, and nobody gives it. Added 2026-09-09 on Stephen's note that Marcus needs more than the Luddites; the second drop is in [[14a - Checking In]].
 - **Kristina's "write it up and send it round" is a management reflex and a setup.** He writes it. It comes to eleven pages, and they fight in the comments ([[11c - The Latest Model]], now cut; the doc is never mentioned on stage).
 - **If it has to come down,** this is the first thing to cut in Movement I after `01b`–`01d`. What would be lost is "they lost, by the way," which would need a home in [[11b - Best Practices]].
 - **Tone: the likeable trap.** After the cold open's cruelty, play Liam *sympathetic* here — actually working, actually good, briefly a warm mentor. The horror is structural, not behavioural: he does nothing wrong in this scene and is lapped anyway. Don't let him be a jerk in the huddle. The tenderness of "good instinct, kid" is the whole point.
