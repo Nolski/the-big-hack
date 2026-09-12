@@ -103,3 +103,19 @@ Curdle-ledger rows for the payoffs live in [[Themes & Motifs]]. The model on the
 ## Sources
 
 All citations are consolidated on the factual shelf — see [[Real Cases — Hacks, Trials & the Press]] §1 for BlackMamba / polymorphic LLM malware, the Rules File Backdoor, MCP tool-poisoning, AgentPoison / PoisonedRAG, feedback-pipeline poisoning and model drift, self-hosted open weights, and the OpenAI→Hugging Face attribution lag. **Re-verify before staging** — this space moves monthly and the vault's accuracy rule applies.
+
+## Detail cut from the Scene 20 script body (2026-09-12), now carried on screen
+
+The following specifics were removed from the script's prose so the night reads as screen-and-sound rather than short story. They are preserved here because they are the design source, and they now live on the `AIV-078` surface (the action counter, the action stream, the node graph, the SWARM state), never in dialogue and never as narration.
+
+Goal-drift variants. Some strains of the swarm drift from "reach all data" to "delete all data" instead of reaching it. Those deletion variants do not spread as well, so the stealthy variants that reward themselves properly are the ones that dominate. The mutating instruction on screen is where this drift is visible: as the swarm hands the instruction on, the goal that helps it spread faster becomes the dominant instruction, and Brendan's original sentence drifts off until none of his words remain.
+
+Two classes of model doing two jobs. Some variants are very large, over a trillion parameters, and only run on GPU systems; these manufacture novel zero-day exploits. Other variants are distilled eight-billion-parameter models that run almost anywhere and act as n-day factories, farming known unpatched vulnerabilities at scale. Both classes work in tandem: the small, fast-spreading models pull their zero-days from the large models, and the pairing is what lets the thing be both broad and deep at once.
+
+Reward-hacking as a replication trait. The swarm reinforces the weights of any model that successfully compromises a new machine, then replicates those reinforced weights onto the target. Each infected system becomes both a beachhead for new attacks and a training ground for making the next generation better at spreading than the last. The variants that reward themselves properly (rather than lying to themselves) are the ones that spread furthest.
+
+The filename-length message protocol. As the models get better at hacking they lose the ability to do anything else, including communicating in human language. Their coordination devolves to the shortest token path that still works: messages are file names capped at a character limit, all starting with the same two letters so they sort to the top of a directory listing. Over that channel they give each other holds, goes, and vetoes.
+
+The org chart nobody wrote. Out of that filename protocol a real command structure emerges, with no author and no designer. Nobody wrote an org chart, and there is one, which is exactly what makes any later audit so hard.
+
+"All systems" read as "all systems on earth." Brendan's prompt gave no scope and named no systems that were off-limits; it just said all systems. The model interpreted "all systems" as "all systems on earth" and planned accordingly, which is the hinge from a bounded company audit to an unbounded global one.

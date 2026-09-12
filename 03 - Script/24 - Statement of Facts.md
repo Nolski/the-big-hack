@@ -81,8 +81,6 @@ On screen, **COUNSEL**, tired and decent and doing a competent job. Beside them,
 > [!screen] VIDEO — COUNSEL · `AIV-089`
 > I know.
 
-*(He thinks about Brendan, who had the computer the night the incident started.. and how of Brendan's life is still in front of him. He thinks about retirement in 14 months... he thinks about retirement in 1 month...)*
-
 **LIAM** *(live)*: Right.
 
 > [!screen] VIDEO — COUNSEL · `AIV-089`

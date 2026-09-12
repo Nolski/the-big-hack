@@ -67,7 +67,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 
 **LIAM** *(live)*: Because Jitsi is open source and preserves our privacy.
 
-*(A flash of guilt shoots over MARCUS, and it does not leave for the rest of the scene. He has no idea what to do with it, so he will talk.)*
+*(MARCUS looks off for a second, then keeps talking.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > Right... *(beat)* Well, how are you doing?
@@ -116,7 +116,7 @@ The two live men are on a call and never in a room. Marcus is on the video plane
 
 **LIAM** *(live)*: *(beat)* I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.
 
-*(A pause. MARCUS gathers himself, and what comes next he has clearly said in his head in the shower. It is not the thing he wants to say. He does not have the thing he wants to say.)*
+*(A pause. MARCUS gathers himself.)*
 
 > [!screen] VIDEO — MARCUS · `AIV-098`
 > Okay. Can I say a thing? *(beat)* There used to be an understanding. Not a law. Not a contract. An understanding, between people who made things and people who sold them, about what a fair rate was and what you owed somebody who'd done the work for twenty years. The people doing the making had this sort of agency in their work and this craft, and it wasn't something that was protected by law or whatever; it was just cultural. And then one day, these factories came about and suddenly all of that agency, and understanding, and happy crafting of shirts or whateverthefuck dissapeared.

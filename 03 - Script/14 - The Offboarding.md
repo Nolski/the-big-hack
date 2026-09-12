@@ -58,7 +58,11 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 
 ## Script
 
-*(A couple months later there exists a spreadsheet put together by Kara and the CEO. Kristina was not involved. The spreadsheet is titled "Engineering productivity metrics" Every engineer is scored based on feature velocity. There's an arbitrary line 2/3rds of the way down the sheet. Liam is four rows under the line. Two rows below him, BRENDAN, who has very few features to his name. This is because he has tracked his own work in Linear, having been told to work however he liked. Kristina's vibe coded Linear to Jira converter never really worked properly. Eleven rows above the line, MARCUS, who files everything properly in Jira.)*
+*(On the screen, the reduction spreadsheet from `AIV-076`: "Q3 Organisational Review — Engineering," every engineer sorted by tickets closed, a line drawn two thirds of the way down. Liam's row is four under the line. Brendan's is two under. Marcus's is eleven above.)*
+
+**NARRATOR** *(V.O.)*: The sheet ranks every engineer by how many tickets they closed. There is no column for code review, and none for anything that never became a ticket. Brendan tracked his work somewhere the sheet cannot see, so on the sheet he did almost nothing. Marcus files everything, so he sits near the top. Liam is under the line.
+
+*(Kristina was not involved. Kara and the CEO built it.)*
 
 *(A meeting room. LIAM live at a laptop, camera on, alone, waiting for a call to start. He is reading something else, and he has just found something.)*
 
@@ -99,7 +103,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(reading it — flat, printed, the mandated words, and you can hear that they are printed)*
 > The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be today, and you will lose access to most systems at the end of this call
 
-*(He's speechless for a minute... it's not the first time this has happened in his career but nothing makes this easy to hear)*
+*(He's speechless for a minute.)*
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074` *(even, moving straight on)*
 > I know that's a lot to take in. There's a pack that covers all of it, and we'll go through the main points now.
@@ -242,7 +246,7 @@ The room is the smallest and barest space in the play. No desk clutter, no secon
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-074`
 > There's information in the pack on the outplacement support. *(beat)* And, again, none of this is a reflection of your value or your contribution.
 
-*(After the call ends Dana opens the case file alone. A field marked "Eligible for rehire" changes from Yes to No. This is the one part of this process that actually is related to the performance review cycle. She has been doing this her whole career.)*
+*(After the call ends Dana opens the case file alone. A field marked "Eligible for rehire" changes from Yes to No.)*
 
 ---
 

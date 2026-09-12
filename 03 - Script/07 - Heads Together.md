@@ -26,7 +26,7 @@ A quick Slack call about twenty minutes later. **Brendan is live (Speaker B)** a
 
 ## Live Cast
 
-- **BRENDAN** — live, Speaker B (the debrief): brings the good news, then can't take the credit — honest that Claude had full repo access, found the cause, reproduced it locally with a script and screenshots, and completed the fix branch; admits he did not tell Liam; accepts that shielding Liam also keeps him from learning, but insists he has to ease him into it. The flicker of guilt from [[06 - Good Instinct]], now with words attached.
+- **BRENDAN** — live, Speaker B (the debrief): brings the good news, then can't take the credit — honest that Claude had full repo access, found the cause, reproduced it locally with a script and screenshots, and completed the fix branch; admits he did not tell Liam; accepts that shielding Liam also keeps him from learning, but insists he has to ease him into it. He could fudge the truth with Liam easily enough about how he diagnosed the bug, but he cannot lie to Kristina the same way: their relationship has room for an openness he won't violate. The flicker of guilt from [[06 - Good Instinct]], now with words attached.
 
 > [!note] Live/video plane
 > Brendan plays these scenes **live at his own desk**, diegetically on the call — he and Liam are remote colleagues, so they share no props and never touch. Everyone else stays on the video plane.
@@ -47,7 +47,7 @@ A quick Slack call about twenty minutes later. **Brendan is live (Speaker B)** a
 
 **BRENDAN** *(live, a beat — he can't quite take that)*: …Yeah. I mean... honestly, though? It wasn't really heads-together. I pointed Claude at the signup flow and.... It found the race, reproduced it locally, wrote a script for it, it even gave me screenshots of one test user inside the other's account. Then it made the fix on a branch. I basically just read the diagnosis back to him.
 
-*(A small pause. Something recalibrates behind KRISTINA's eyes)*
+*(A small pause.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(slower now)*
 > …Wait. Hold on. *(working it out)* So Liam.... He's been on this how long? It's been sitting on the board for weeks.
@@ -59,7 +59,7 @@ A quick Slack call about twenty minutes later. **Brendan is live (Speaker B)** a
 
 **BRENDAN** *(live, quiet)*: …Kind of. Yeah.
 
-*(KRISTINA sits back. She's not happy like she was before with Cursor, if anything it unsettles her.)*
+*(KRISTINA sits back.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(half to herself)*
 > *(a breath)* That's… that changes a lot, actually... it makes me think a little differently about Claude and Cursor too...
@@ -69,7 +69,7 @@ A quick Slack call about twenty minutes later. **Brendan is live (Speaker B)** a
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(gently, not letting him off it)*
 > Would Claude have found it without him on the call, though? If you were working the problem by yourself?
 
-*(BRENDAN wants to say no. He fudged the truth with Liam easily enough about how he diagnosed the bug; with KRISTINA, their relationship has room for a kind of openness he cannot bring himself to violate. He cannot lie to her the same way.)*
+*(BRENDAN doesn't want to say it.)*
 
 **BRENDAN** *(live, reluctant)*: …Probably. Yeah. It worked pretty autonomously without much input. *(quiet)* It didn't really need him.
 
@@ -88,7 +88,7 @@ A quick Slack call about twenty minutes later. **Brendan is live (Speaker B)** a
 > [!screen] VIDEO — KRISTINA · `AIV-046` *(not angry; genuinely challenging him)*
 > Brendan, how is Liam ever going to get better if you don't show him how to do this stuff?
 
-*(They look at each other. A mutual, uncomfortable recognition: she is right about the lesson; he knows more than she does about the cost of teaching it.)*
+*(They look at each other.)*
 
 **BRENDAN** *(live, conceding, careful)*: You're not… wrong. I just have to ease him into some of it.
 

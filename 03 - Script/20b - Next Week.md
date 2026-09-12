@@ -79,8 +79,6 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 
 **LIAM** *(live)*: I've sent out eleven resume's today. *(beat)* Two came back as rejections on the same day, an automated thing, but the important thing is keeping the momentum up.
 
-*(He's lying... he just wanted to inspire Brendan to apply more. Retirement still lingers in his head.)*
-
 **BRENDAN** *(live)*: That's good.
 
 **LIAM** *(live)*: It's what I told you. Just get them out.
@@ -109,7 +107,7 @@ The scene has to hold two things at once. **Liam is at his best**: recovering, f
 
 **BRENDAN** *(live)*: …Mm.
 
-*(BRENDAN breaths a sigh of relief he got rid of the computer... the headspace he was in last night, the unlocked model, he's happy he do didn't do more damage... at least he thinks he didn't.)*
+*(BRENDAN breathes out.)*
 
 **LIAM** *(live)*: I'd love to see the logs, it's a bummer I can't help do incident response..
 

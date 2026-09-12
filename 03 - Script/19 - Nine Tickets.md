@@ -88,11 +88,9 @@ Two beers. Nobody is drinking fast until they are.
 
 **BRENDAN** *(live)*: She said she'd pull it in her end.
 
-*(Neither of them really had considered Kristina up to this point)*
-
 **LIAM** *(live)*: *(beat)* Did she?
 
-*(Neither of them spent enough time in Jira to know. Neither of them knew Kristina switched over to a vibe coded tool to do it either.)*
+**NARRATOR** *(V.O.)*: Kristina had said she would copy Brendan's tickets across from Linear herself. She built a tool to do it. Like the rest of it, she vibe coded the tool, and it never actually worked. Neither of them ever knew.
 
 **BRENDAN** *(live)*: *(beat)* I don't know.
 
@@ -101,8 +99,6 @@ Two beers. Nobody is drinking fast until they are.
 **LIAM** *(live)*: Nine what.
 
 **BRENDAN** *(live)*: Tickets closed: nine. *(beat)* That's what Marcus said mine said.
-
-*(Liam realizes now, his own number, was higher than 9)*
 
 **LIAM** *(live)*: How is marcus doing anyway?
 
@@ -123,8 +119,6 @@ Two beers. Nobody is drinking fast until they are.
 **BRENDAN** *(live)*: Kinda bullshit.
 
 **LIAM** *(live)*: *(beat)* Kinda... bullshit....
-
-*(Liam finally has the numbers and clarity he was looking for the day he was let go.)*
 
 **BRENDAN** *(live)*: I don't know what to do.
 
@@ -228,7 +222,7 @@ Two beers. Nobody is drinking fast until they are.
 
 *(LIAM alone. On the desk, a clean rectangle where the Studio was.)*
 
-*(He picks up the two bottles and takes them through to the kitchen, and he considers something he didn't in 2000. Retirement.)*
+*(He picks up the two bottles and takes them through to the kitchen.)*
 
 ---
 

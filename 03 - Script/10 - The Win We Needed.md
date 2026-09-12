@@ -72,7 +72,7 @@ The show's **first scene with no live speaker** — every character is AI video,
 > [!screen] VIDEO — THE CEO · `AIV-091` *(warm, certain, not unkind)*
 > I need this to be who we are now. Not Brendan's good weekend — the way we work. Get me a plan to get everyone there, and I'll back it all the way up. *(a real smile)* This is the one we needed, Kristina.
 
-*(KRISTINA nods. She believes about half of it, and the half she doesn't believe she'll carry out anyway. Below, LIAM closes a ticket, stretches, and has no idea. Out.)*
+*(KRISTINA nods. Below, LIAM closes a ticket, stretches, and has no idea. Out.)*
 
 *(Later — weeks on, a different quarter's light. THE CEO's office again. Across from him now, KARA, Head of Product. Below, LIAM is still at his desk, in a session, hearing none of this either.)*
 

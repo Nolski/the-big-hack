@@ -128,8 +128,6 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(even; she has the receipts)*
 > Because we user-tested it. The JWT flow, the refresh, the expiry, it confused every integration partner we put it in front of; half of them dropped off right at token refresh. The expirations *tanked* adoption. Long-lived keys, are just easier to understand. And yes, I know what a leaked key does. It's live until somebody rotates it. It's a tradeoff, and I made the call.
 
-*(This comment fueled him... he knew exactly how he'd spend the next part of standup arguing)*
-
 **LIAM** *(live, patient, awful — explaining gravity to a child)*: That's not a product call. That's a cyber security decision, and you made it in a *user study.* *(a small, terrible beat)* If you had a software engineering degree, Kristina, you'd understand why that was never yours to override.
 
 *(Silence on the call. For the first time all morning, KRISTINA holds her tongue, the bright standup-runner cadence just stops. Her mouth opens. Nothing comes. The "+812" sits there. The **Merged** badge sits there.)*
@@ -170,7 +168,7 @@ Morning. **Liam** (live, Speaker A) sits at a **dual-monitor desk** in a bathrob
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(not taking the bait, typing)*
 > …Sure. I'll put two weeks. Thanks, everyone, that's standup.
 
-*(Kristina didn't have a chance to get through everyone's updates but also, didn't really want to after Liam's comment about her degree. Liam goes back to looking at reddit memes.)*
+*(Liam goes back to looking at the reddit memes.)*
 
 ---
 

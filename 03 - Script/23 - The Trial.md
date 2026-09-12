@@ -132,7 +132,7 @@ A courtroom assembled entirely from screens and one live body. **Liam is live, i
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > *"Multiple peers cite friction and slow review turnaround."*
 
-*(MARCUS does not react, because he has no reason to. He does not know he wrote it. He is never going to know.)*
+*(MARCUS does not react.)*
 
 > [!screen] VIDEO — PROSECUTOR · `AIV-085`
 > Is this what you wrote in your evaluation of Mr. Mikurchan?

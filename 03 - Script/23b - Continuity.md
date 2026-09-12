@@ -87,8 +87,6 @@ Cold, low light. No music anywhere in this scene.
 
 **LIAM** *(live)*: Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their electicity doesn't work reliably anymore, and that planes don't fly reliably anymore...
 
-*(He has said all of that to himself several times before tonight.)*
-
 > [!screen] VIDEO — MARCUS · `AIV-099`
 > And the company? A fine. The share price went up after the statement, I checked. They've put the model into evidence and encrypted it. *(beat)* That's the only thing anybody's locked up that actually did anything.
 

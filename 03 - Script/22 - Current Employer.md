@@ -211,7 +211,9 @@ Liam's flat, late morning. **The returns box is still by the door with the couri
 
 *(They go.)*
 
-*(Marcus heard most of that... the laptop was taken by ICE, but it was left open and unlocked, per their instructions to preserve evidence..)*
+*(Marcus heard most of that.)*
+
+**NARRATOR** *(V.O.)*: They took the laptop still open and unlocked, the way they are trained to, so the evidence on the screen would be preserved. Marcus's call was still running on it. That is why the footage of all this exists.
 
 > [!screen] VIDEO — MARCUS · `AIV-055`
 > Liam? *(beat)* Liam, are you.. *(beat)* Did they take... *(beat)* Liam, buddy, you *cannot* talk to them without a lawyer. That's the whole... that's literally the one thing. Dude, they're gonna fuckin hang you!

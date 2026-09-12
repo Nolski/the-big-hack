@@ -162,7 +162,7 @@ Straight after Liam's call ([[01c - The PR Review]]) — two tiles, **Kristina**
 
 **BRENDAN** *(live, a beat — the air changes)*: …I tried. *(beat)* I, uh, I couldn't really get it in front of him. *(carefully)* I think I just need to spend a bit more time with him. One on one. To get him to actually sit with it.
 
-*(A pause. Kristina's excitement fades a little)*
+*(A pause. Kristina's tile stills.)*
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(slower)*
 > …Oh. *(beat)* You "tried." *(beat)* So you struggle with communicating with him too? And you're the one person here he actually likes.
@@ -170,11 +170,11 @@ Straight after Liam's call ([[01c - The PR Review]]) — two tiles, **Kristina**
 **BRENDAN** *(live, not wanting to bury him)*: …He'll come around. He's the smartest person on the team, Kristina, genuinely. He'll be incredible at this when he finally warms up to it.
 
 > [!screen] VIDEO — KRISTINA · `AIV-010` *(half to herself, the manager surfacing)*
-> …Right. "Will be." *(a beat — something recalibrating behind her eyes)* …He's a bit of a challenge, though. Isn't he. Not a bad person. Just a challenge.
+> …Right. "Will be." *(a beat)* …He's a bit of a challenge, though. Isn't he. Not a bad person. Just a challenge.
 
 *(She sits with it for a half-second)*
 
-> [!screen] VIDEO — KRISTINA · `AIV-010` *(the glow returning)*
+> [!screen] VIDEO — KRISTINA · `AIV-010` *(brightening again)*
 > …Anyway. God, though, look at this slack bot, ten minutes of work. Imagine the whole team moving like this. Imagine what next quarter looks like. *(genuine)* I haven't been this excited about this job in years. *(beat)* Go, do your actual work. And Brendan? Thank you..
 
 *(Her tile blinks out, still glowing. BRENDAN sits alone.)*

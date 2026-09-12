@@ -83,7 +83,7 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 > Marcus...
 
 > [!screen] VIDEO — MARCUS · `AIV-048` *(going anyway)*
-> The dockworkers on the West Coast saw it coming, and they didn't smash the cranes. They made a deal. The companies got the box, and every man the box replaced kept getting paid anyway, out of the money the box saved, until he retired. It worked. *(beat)* It worked because nothing moved through that port without them. What have we got?
+> The dockworkers on the West Coast saw it coming. They made a deal that they'd all still work but the companies would get to use the shipping containers. The savings paid them! It worked. *(beat)* It worked because nothing moved through that port without them. But what have we got? This website barely needs us to keep going.
 
 > [!screen] VIDEO — KRISTINA · `AIV-040` *(pleasant, immovable, moving the board on)*
 > Okay. Marcus, you got your word in, thanks. *(brisk)* Liam. You're still on the signup race condition, yeah? Where are we with that one?
@@ -154,13 +154,13 @@ The same desk as the cold open, the next morning — but no memes today. **Liam*
 
 **LIAM** *(live, slow)*: …It's zero. *(beat)* The id is zero until the transaction commits. It defaults to zero. *(faster now, up out of the chair)* So two signups in the same tick they both call `getOrCreateSession` with id zero. They both key on zero. *(beat)* They get the *same* session. *(beat)* One of them gets handed the other one's login. *(quiet, stunned)* …It was never the tokens. It was never the crypto. It's a check-then-set on an id that isn't there yet. *(a breath)* One line. It's one line. It's been one line this whole time.
 
-*(He turns genuinely lit up, the most alive he has been, and looks straight down the camera at BRENDAN.)*
+*(He turns genuinely lit up, the most alive he has been, and looks into the webcam at BRENDAN.)*
 
 **LIAM** *(live, warm — no condescension left in it)*: …That's a hell of a catch, Brendan. *(beat)* How did you even.... that's the *one* place I wasn't looking. That's real instinct. *(a real smile)* Good instinct, kid. Seriously.
 
 **BRENDAN** *(live, a modest deflection — and something underneath he can't name)*: …I dunno. It just looked a bit off to me. *(a small, uneasy beat)* Lucky guess.
 
-*(LIAM is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: `REPRODUCED`, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show Liam. The faintest flicker of something crosses his face... not quite guilt, not yet.... He lets the huddle go.)*
+*(LIAM is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: `REPRODUCED`, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show Liam. He lets the huddle go.)*
 
 *(LIAM types on, warm and none the wiser. Hold a moment on the two screens, his, bright and moving, and on brandon's just a blinking cursor from a rolled back commit.)*
 

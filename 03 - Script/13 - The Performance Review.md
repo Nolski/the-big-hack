@@ -53,8 +53,6 @@ A 1:1. **Liam** (live, Speaker A) at a bare meeting-room laptop — and this tim
 > [!screen] VIDEO — KRISTINA · `AIV-070`
 > *(gently)* I know. I know you were. No one's debating you on that.
 
-*(The thing he built his whole self on, being right, just got named as not enough, and he can't hear it.)*
-
 > [!screen] VIDEO — KRISTINA · `AIV-070`
 > I've been in your corner all year. But I can't be the only voice in the room. I want to help you land somewhere constructive. None of this is a reflection of your value.
 

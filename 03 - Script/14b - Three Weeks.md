@@ -135,8 +135,6 @@ tags:
 
 **BRENDAN** *(live, going)*: In May. When payments went down. *(beat)* Do you know who was on the phone to the customer for four hours on a Saturday? Not on a bridge call — on the actual phone, to the actual person, saying it's alright, we've got it. *(beat)* There's no— that's not a ticket. There is no ticket for that.
 
-*(He is not making a case any more. He is emptying his pockets.)*
-
 **BRENDAN** *(live)*: I'm the— *(beat)* I do the human bit. I'm the human element, or whatever it's— I'm the—
 
 *(He hears it. He stops.)*
@@ -146,7 +144,7 @@ tags:
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-096`
 > It didn't.
 
-*(It is the kindest thing she says all scene. It is two words and it is not an answer to anything.)*
+*(A beat.)*
 
 *(A beat. He tries the last door.)*
 
@@ -256,8 +254,6 @@ tags:
 
 > [!screen] VIDEO — PEOPLE PARTNER · `AIV-096`
 > There's information in the pack on the outplacement support and on the alumni network. *(beat)* And, again — none of this is a reflection of your value or your contribution.
-
-*(Fourth time in two scenes. It is the same sentence every time and nobody in the play ever notices it.)*
 
 **BRENDAN** *(live)*: *(beat)* Okay.
 

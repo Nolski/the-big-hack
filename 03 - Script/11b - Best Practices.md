@@ -186,7 +186,7 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 **LIAM** *(live)*: No.
 
-*(BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it. There is too much in there to unpack.)*
+*(BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it.)*
 
 *(On BRENDAN's own screen he quietly types one line: "In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5." The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before Liam finishes his sentence. He says nothing.)*
 
@@ -206,7 +206,7 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 **LIAM** *(live, and here's the fact he's armed with)*: And before you say it, everyone keeps saying ten-x. I measured it. Two sprints, same kind of tickets, with the setup and without. I'm slower with it. Measurably. So either everyone else is not following the policy, or I'm the only one who checked how long feature delivery takes with the tooling the CEO is pushing.
 
-*(A silence. BRENDAN doesn't win this. He can't, Liam isn't wrong that he's slower. Six-minute load bar, the five tokens a second, the struck-out diff, the beautiful expensive box doing beautifully expensive almost-nothing.)*
+*(A silence. The six-minute load bar, the five tokens a second, the struck-out diff, the beautiful expensive box doing beautifully expensive almost-nothing.)*
 
 **BRENDAN** *(live, a beat too long — then he lets it go, older than he was in Scene 06)*: …Yeah. No, I hear you. *(beat)* I should get back to it. Ping me if you need anything?
 
@@ -214,7 +214,7 @@ The same desk, a few weeks on from the reorg. The agent-first mandate is now jus
 
 *(BRENDAN drops the huddle. On his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete, the same way he held backspace previously, until it's gone too. LIAM turns back to his rig, satisfied. The model puts out the next token. Then, in its own time, the one after. He watches his machine type, patient, certain, sinking.)*
 
-*(Liam's machine is grinding and honest and slow; Brandon's is finished twice over and sitting idol)*
+*(Liam's machine is grinding and honest and slow; Brandon's is finished twice over and sitting idle)*
 
 ---
 

@@ -62,9 +62,9 @@ Cool monitor-blue throughout. The screen above the desks carries the form, then 
 
 *(Start to finish: about four minutes. The demo took longer than that, and the demo had Brendan in it.)*
 
-*(She sits back. Something is moving in her chest and she can't get a name on it. Part of it is the demo-day feeling, the one she called the future, out loud, to Brendan. The rest is colder, and she doesn't look at it straight.)*
+*(She sits back.)*
 
-*(She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.)*
+*(She sits with it a second, then closes the laptop.)*
 
 *(Her calendar chimes: the next thing. She straightens, and goes back to her day.)*
 

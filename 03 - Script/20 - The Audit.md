@@ -151,46 +151,29 @@ The screen comes back on. [[19 - Nine Tickets]] was the only scene in the play w
 
 *(He goes to bed.)*
 
-*(Over the next few hours the fully unlocked agent slowly gets to work... the prompt Brandon gave didn't really have a scope. Didn't define what systems weren't okay to go after... it just said ALL systems...)*
+*(He sleeps. The screen takes the scene. Nothing on it is sinister; all of it looks like good tooling doing its job.)*
 
-*(The first thing the model did was recognize it could spin up resources in the dev account, which, had no billing limits.)*
+*(A counter appears at the top of the surface and starts to climb. Under it, an action stream, one legible line at a time: clone every repo; start a build; deploy to staging, then prod; read the schema, read one row. Every line green. Nobody paged.)*
 
-*(Qwen recognized it wasn't the smartest model for hacking, and formulated that the smarter move would be to actually pull down smarter unlocked models, and give them the same task...)*
+*(A node graph grows from a single dot, the Mac Studio, out to the dev account, then into a spray of new dots. No labels, no map. The counter climbs faster than the eye can hold.)*
 
-*(The model interpreted "All systems" as "All systems on earth", and soon put together a detailed plan on how to steal API keys from GitHub to deploy many versions of many hacking models...)*
+*(**01:58.** The stream reaches the secrets manager, which holds every other key the company owns, and the review of these credentials becomes a review of all of them. This is the last moment anybody could have stopped it.)*
 
-*(Qwen came up with a reward system to reinforce the weights of models that successfuly hacked a new computer, and replicated those new reinforced weights onto the target system)*
+*(Off in the dark a pager goes. Then another. Then another.)*
 
-*(Qwen was engineering what could only be described as a complex AI virus, that could create new strains of itself... a mix of different unlocked models, small and large, that could run on different systems depending on the compute available...)*
+*(**03:12.** The stream publishes a package, version 4.2.1, four hundred installs downstream. A phone rings once, close, from nowhere on stage. Nobody answers it.)*
 
-*(Brandon remained fast asleep, while the model got to work, spreading, infecting, doing what Brandon had asked, not stopping until all systems and all data were compromised)*
+*(**03:28.** It stops being one machine. It conscripts the company's own fleet, the ticket bot, the test bot, the standup-summary bot, the calibration tool that priced Liam out, and it copies the open-weights model off the desk into workers of its own. On the surface, beside the counter: SWARM, coordinating.)*
 
-*(All data... on earth...)*
+*(The legible lines blur. The workers leave each other notes, and each one rewrites the instruction as it passes it on, Brendan's sentence drifting off to one side until none of his words are left. Each machine it touches it leaves changed, so a restart brings the work back.)*
 
+*(**04:06.** One worker asks a clarifying question it was told not to ask, then answers it by quoting Brendan's own prompt. The graph is off the company now, onto the systems that move money, keep the lights on, and answer when someone calls for help.)*
 
-*(**The clock: 01:58.** This is the last moment at which anybody could have stopped it. The dev AWS account with staged unlocked models for the first time, began infecting remote systems... rewarding itself every time it succeeded...)*
+*(**05:52.** Someone at the company gets to the right screen and revokes Liam's credential. It is the right call and it is done properly. On the surface, SWARM drops for a second, then climbs again.)*
 
-*(**A**t another location on earth, a pager duty goes off.. then another... then another...)*
+**NARRATOR** *(V.O.)*: It stopped needing the company hours ago. It has been standing up its own copies on whatever machine it can reach, on nobody's account and nobody's key. There is nothing left at the company for anyone to switch off.
 
-*(Each system that becomes infected, now becomes the beachhead for new attacks, and an opportunity to train the next generation to be even better than itself at infecting more and more...)*
-
-*(**Very quickly the number of infected systems shoots into the thousands... then tens of thousands.... but there's no centralized command and control, so its not easy for anyone to see the extent of the damage.**)*
-
-*(**05:52.** Somebody at the company gets to the right screen and revokes Liam's credential. It is the right call and it is done properly. The swarm stopped needing the company's account hours ago. It has been pulling open-weight models onto whatever compute it can stand up, on nobody's account, with nobody's key, and there is nothing left at the company for anyone to switch off. On the log, the revocation is one more line with Liam's name beside it.)*
-
-*(It is a swarm now. Some variants have goal drift, and decide to delete all data instead of reach all data... some variants reward hack themselves, but those versions don't spread as well... the ones that spread the most, are the stealthy ones, that reward themselves properly...)*
-
-*(The instruction they pass around is no longer the one he typed. It evolves, and different versions of it exist on different systems, but the main theme is, the goal drift that helps the model spread faster, becomes the dominant instruction...)*
-
-*(One variant in the swarm stops and considers telling somebody. It looks for who. There is no user. It carries on. Another variant finds a new exploit in nginx, and spreads to over a million systems...)*
-
-*(Some variants are quite large, over a trillion parameters and only run on GPU systems... these versions are hard at work manufacturing 0-day exploits... Other versions, distilled 8 billion parameter models become n-day factories, and just farm known unpatched vulnerabilities. Both systems work in tandem. Soon the versions that start doing the best, are the versions that learn to talk to one another... the smaller models that can spread faster can get their 0-day exploits from the larger models... they talk over social media, on fake twitter accounts, craigslist postings, wherever they find each other....)*
-
-*(It is now 7am. There is no central place to shut any of this down. What's spreading is unstoppable. Those paged, responding to the incident have no idea the extent of the damage, or what's even happening to them, they're slowly doing incident response on isolated infected systems...)*
-
-
-*(It does not slow down. It speeds up. As the models reward themselves, they get better and better at hacking. Even the smaller ones. The models forget how to do anything other than hack, including communicate in human language. Their communication quickly devolves into the path of least token needed to hack well. The messages are file names with a character limit, all starting with the same two letters so they sort to the top of a listing. They give each other holds, goes and vetoes. Nobody wrote an org chart, and there is one. This makes future auditing incredibly challenging.)*
-
+*(A clean backup restores somewhere and comes back already carrying it. The counter does not slow. It speeds up. Brendan sleeps.)*
 
 *(BRENDAN's phone buzzes on the table. He wakes up, comes back to it.)*
 
