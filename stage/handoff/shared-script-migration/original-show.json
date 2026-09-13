@@ -1050,8 +1050,7 @@
       "start": 0,
       "count": 1,
       "mode": "montage",
-      "cast": [],
-      "storyboard": {}
+      "cast": []
     },
     {
       "id": "s01",
@@ -1066,19 +1065,7 @@
         "brendan",
         "marcus",
         "liam"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "B2",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "Cold Open — The Standup. Morning. Liam sits at a dual-monitor desk in a bathrobe, barely out of bed: one monitor is a wall of Reddit anti-AI memes he scrolls with the mouse, the other holds the Zoom standup grid of coworker tiles. His own tile is a camera-off black square labeled \"Liam\" — and it stays black, even through the cruelty: the audience sees the man the call cannot."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "Morning. Liam sits at a dual-monitor desk in a bathrobe, barely out of bed: one monitor is a wall of Reddit anti-AI memes he scrolls with the mouse, the other holds the Zoom standup grid of coworker tiles."
-      }
+      ]
     },
     {
       "id": "s01b",
@@ -1091,19 +1078,7 @@
       "cast": [
         "kristina",
         "brendan"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "B2",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "The Cursor Demo. Continuous with the cold open — the standup grid has emptied to just two tiles, Kristina and Brendan, in a quiet post-standup huddle; Liam is gone. The screens stay with them: two coworker tiles, and then a shared screen as Brendan walks Kristina through Cursor live — plan mode, a plan that looks confident but is guessing, an invented Jira endpoint and a hardcoded token they catch and correct, a build that passes its own sandbox tests, an Approve/Deny install dialog, then a live /jira done in Slack that fails on a real permissions error nobody could have seen — fixed by pasting the trace straight back — before the ticket finally closes itself, and, unread, quietly closes three more. Behind it all, glimpsed on Brendan's screen: pinned tabs, a session transcript, a long personal doc — the quiet evidence of how much he's invested."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "Continuous with the cold open — the standup grid has emptied to just two tiles, Kristina and Brendan, in a quiet post-standup huddle; Liam is gone. The screens stay with them: two coworker tiles, and then a shared screen as Brendan walks Kristina through Cursor live — plan mode, a plan that looks confident but is…"
-      }
+      ]
     },
     {
       "id": "s01c",
@@ -1116,19 +1091,7 @@
       "cast": [
         "liam",
         "brendan"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "B2",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "The PR Review. Continuous — Brendan takes Liam's Slack huddle. Liam is live at the same dual-monitor desk, still in the bathrobe, the memes finally gone: he's dragged the merged portal diff back up onto the big monitor and he's been stewing. Brendan is live at his own desk, on the other end of the huddle."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "Continuous — Brendan takes Liam's Slack huddle. Liam is live at the same dual-monitor desk, still in the bathrobe, the memes finally gone: he's dragged the merged portal diff back up onto the big monitor and he's been stewing."
-      }
+      ]
     },
     {
       "id": "s01d",
@@ -1141,19 +1104,7 @@
       "cast": [
         "kristina",
         "brendan"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "B2",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "The Future. Straight off the PR review — Brendan, still sitting with how the Liam call went, starts a Slack huddle with Kristina, who's still glowing from the Cursor demo. Two coworker tiles, then a shared screen as Brendan teaches her the review method for real: the plan-mode plan, the session transcript, the CI / canary dashboard. Warm, intimate, fast — the whole scene is one phone call that quietly decides a man's future while talking about how bright everything looks."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "Straight off the PR review — Brendan, still sitting with how the Liam call went, starts a Slack huddle with Kristina, who's still glowing from the Cursor demo. Two coworker tiles, then a shared screen as Brendan teaches her the review method for real: the plan-mode plan, the session transcript, the CI / canary…"
-      }
+      ]
     },
     {
       "id": "s06",
@@ -1168,19 +1119,7 @@
         "brendan",
         "marcus",
         "liam"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "B2",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "Good Instinct. The same desk as the cold open, the next morning — but no memes today. Liam is actually working: deep in the session-handler code on the big monitor, headphones half-on, a scatter of coffee cups. He has been at this a while and it shows."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "The same desk as the cold open, the next morning — but no memes today. Liam is actually working: deep in the session-handler code on the big monitor, headphones half-on, a scatter of coffee cups."
-      }
+      ]
     },
     {
       "id": "s07",
@@ -1193,19 +1132,7 @@
       "cast": [
         "kristina",
         "brendan"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "B2",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "Heads Together. A quick Slack call about twenty minutes later. Brendan is live at his desk; Kristina answers from her tile on the shared screen, so the scene is cued live against a clip. Liam is on stage below the whole time, heads-down, genuinely happy — finishing the same one-line fix Claude already completed on Brendan's private branch — hearing none of it."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "A quick Slack call about twenty minutes later. Brendan is live at his desk; Kristina answers from her tile on the shared screen, so the scene is cued live against a clip."
-      }
+      ]
     },
     {
       "id": "s08",
@@ -1218,19 +1145,7 @@
       "cast": [
         "kristina",
         "kara"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "B5",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "The One-on-One. A remote one-on-one, late afternoon: two tiles on the shared screen, Kristina in one, and in the other her boss Kara, the Head of Product. Coffee, calendars, the easy shorthand of a standing meeting. Both parties AI video, the same monitor-blue register as 07 - Heads Together; Kara screen-shares the roadmap mid-scene."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "A remote one-on-one, late afternoon: two tiles on the shared screen, Kristina in one, and in the other her boss Kara, the Head of Product. Coffee, calendars, the easy shorthand of a standing meeting."
-      }
+      ]
     },
     {
       "id": "s11b",
@@ -1245,19 +1160,7 @@
         "liam",
         "marcus",
         "brendan"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "B5",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "Best Practices. The same desk, a few weeks on from the reorg. The agent-first mandate is now just how the team works. Liam is at the dual-monitor desk; the standup grid runs on the second monitor, his tile the same camera-off black square, \"Liam.\" New on the desk since last scene: a small silver cube of a computer, expensive, still with the film on one corner."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "The same desk, a few weeks on from the reorg. The agent-first mandate is now just how the team works."
-      }
+      ]
     },
     {
       "id": "s11c",
@@ -1270,19 +1173,7 @@
       "cast": [
         "kristina",
         "brendan"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "B5",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "The Latest Model. A remote one-on-one, late morning: Brendan live at his desk, Kristina in her tile on the shared screen — the same monitor-blue register as 08 - The One-on-One. After the call, the closing movement is Kristina alone at her desk with her own screen, the machine's side written entirely as stage direction; Brendan stays lit through it, back at his own board, so the house watches him not know what she's just found out. Recommended framing: Liam heads-down at his rig, unaware, per the running mirror."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "A remote one-on-one, late morning: Brendan live at his desk, Kristina in her tile on the shared screen — the same monitor-blue register as 08 - The One-on-One. After the call, the closing movement is Kristina alone at her desk with her own screen, the machine's side written entirely as stage direction; Brendan stays…"
-      }
+      ]
     },
     {
       "id": "s12",
@@ -1295,19 +1186,7 @@
       "cast": [
         "marcus",
         "brendan"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "Below Expectations. Three pictures, in order. A huddle: Brendan live at his desk with Marcus on the screen above him, winding down off a code review. A man alone with a box: Brendan at the same desk, the screen behind him now only a form, talking himself through twenty minutes of writing."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "Three pictures, in order. A huddle: Brendan live at his desk with Marcus on the screen above him, winding down off a code review."
-      }
+      ]
     },
     {
       "id": "s14",
@@ -1321,19 +1200,7 @@
         "hr",
         "kara",
         "liam"
-      ],
-      "storyboard": {
-        "world": "modern",
-        "beat": "",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "The Offboarding. A meeting room, and for once Liam is the only body on stage. He is live, camera on, at a laptop — the same exposure as 13 - The Performance Review, with nobody in the room to see it. On the screen, the People Partner, whose face the audience has never seen before and will not see again."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "A meeting room, and for once Liam is the only body on stage. He is live, camera on, at a laptop — the same exposure as 13 - The Performance Review, with nobody in the room to see it."
-      }
+      ]
     },
     {
       "id": "s14a",
@@ -1347,8 +1214,7 @@
         "liam",
         "brendan",
         "marcus"
-      ],
-      "storyboard": {}
+      ]
     },
     {
       "id": "s19",
@@ -1358,19 +1224,7 @@
       "start": 638,
       "count": 75,
       "mode": "apartment",
-      "cast": [],
-      "storyboard": {
-        "world": "modern",
-        "beat": "",
-        "status": "drafted",
-        "sketch": {
-          "prompt": "Nine Tickets. Liam's flat. The first room in the play that is not an office, and the only scene in the show with no screen in it — no monitors, no projection, no operator cue, no video asset. After seventy minutes of glass, the surface goes dark and stays dark."
-        },
-        "music": {
-          "prompt": ""
-        },
-        "productionSetting": "Liam's flat. After seventy minutes of glass, the surface goes dark and stays dark."
-      }
+      "cast": []
     },
     {
       "id": "s20",
@@ -1380,8 +1234,7 @@
       "start": 713,
       "count": 72,
       "mode": "apartment",
-      "cast": [],
-      "storyboard": {}
+      "cast": []
     },
     {
       "id": "s20b",
@@ -1391,8 +1244,7 @@
       "start": 785,
       "count": 51,
       "mode": "apartment",
-      "cast": [],
-      "storyboard": {}
+      "cast": []
     },
     {
       "id": "s22",
@@ -1407,8 +1259,7 @@
         "liam",
         "officer one",
         "officer two"
-      ],
-      "storyboard": {}
+      ]
     },
     {
       "id": "s23",
@@ -1423,8 +1274,7 @@
         "judge",
         "marcus",
         "kristina"
-      ],
-      "storyboard": {}
+      ]
     },
     {
       "id": "s23b",
@@ -1437,8 +1287,7 @@
       "cast": [
         "marcus",
         "liam"
-      ],
-      "storyboard": {}
+      ]
     },
     {
       "id": "s24",
@@ -1451,8 +1300,7 @@
       "cast": [
         "counsel",
         "liam"
-      ],
-      "storyboard": {}
+      ]
     }
   ],
   "cues": [

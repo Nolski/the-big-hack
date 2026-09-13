@@ -1,7 +1,7 @@
 import {isWorm,drawWorm} from './worm.js';
 import {renderVisual,backgroundFor,counterProfile} from './visuals.js?v=author-pass-20260912';
 import {screenLabel,drawScreenAction} from './screen-actions.js?v=author-pass-20260912';
-const params=new URLSearchParams(location.search),side=params.get('side')==='right'?'right':'left',preview=params.has('preview'),channel=new BroadcastChannel('big-hack-stage-v1');
+const params=new URLSearchParams(location.search),side=params.get('side')==='right'?'right':'left',preview=params.has('preview'),channel=new BroadcastChannel('big-hack-stage-v2:'+(params.get('controller')||localStorage.getItem('big-hack-display-controller')||'unbound'));
 const frame=document.getElementById('frame'),visual=document.getElementById('visual'),bg=document.getElementById('backgroundVideo'),replacement=document.getElementById('replacementVideo'),black=document.getElementById('black'),counter=document.getElementById('counter');
 let state=null,key='',lastHeartbeat=0,ownedController=null,renderOnly=params.has('cue');
 document.body.classList.toggle('preview',preview);document.title='The Big Hack · '+side.toUpperCase();

@@ -23,7 +23,7 @@ export function readSettings(show, saved = {}) {
 export function playbackShow(source, settings, recordings = {}) {
   const cues = source.cues.map(c => {
     const recording = recordings[c.id];
-    const matched = recording?.text === c.text && recording?.speaker === c.speaker;
+    const matched = recording?.text === c.text && recording?.speaker === c.speaker && recording?.voiceProfile === c.voiceProfile;
     const spoken = !!c.speaker && c.kind !== 'stage';
     return {...c, kind: spoken ? (settings.modes[c.speaker] === 'live' ? 'live' : 'voice') : c.kind,
       audio: matched ? recording.audio : ((source.audioManifestRequired || recording) ? null : c.audio),

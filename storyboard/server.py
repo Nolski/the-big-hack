@@ -31,6 +31,12 @@ from ruamel.yaml import YAML
 import script_parser
 
 HERE = Path(__file__).resolve().parent
+# Both applications use this store; storyboard.yaml retains cast/generator settings.
+import sys
+STAGE_ROOT = Path(os.environ.get("SB_STAGE_DIR", str(HERE.parent / "stage")))
+sys.path.insert(0,str(STAGE_ROOT))
+from script_store import ScriptStore, Conflict, raw_line
+STORE = ScriptStore(STAGE_ROOT)
 YAML_PATH = HERE / "storyboard.yaml"
 ARTIFACTS = HERE / "artifacts"
 STATIC = HERE / "static"
@@ -101,7 +107,18 @@ def scripts_dir():
 
 
 def characters():
-    return CFG.setdefault("characters", [])
+    cast=CFG.setdefault("characters", [])
+    ids={c['id'] for c in cast}
+    for cue in STORE.read()['cues']:
+        cid=cue.get('speaker')
+        if cid and cue['kind']!='stage' and cid not in ids:
+            cast.append({'id':cid,'name':cue.get('name') or cid,'desc':'Existing stage role; current recordings are preserved. Configure a voice before creating new recordings.','voice':{'mode':'unconfigured'}});ids.add(cid)
+    narrator=next((c for c in cast if c['id']=='narrator'),None)
+    if narrator and not any(c.get('voiceProfile') for c in STORE.read()['cues'] if c.get('speaker')=='narrator'):
+        if narrator.get('voice',{}).get('mode')!='approved_prompt':
+            narrator['legacy_voice']=narrator.get('voice',{})
+            narrator['voice']={'mode':'approved_prompt','seed':1618}
+    return cast
 
 
 def find(seq, _id):
@@ -115,7 +132,7 @@ def char_by_id(cid):
     return find(characters(), cid)[1]
 
 
-VOICED = ("live", "video", "narration", "direction")
+VOICED = ("live", "video", "narration")
 
 
 def is_voiceable(text):
@@ -191,9 +208,22 @@ def _resolve_artifacts(scenes):
 
 
 def build_scenes():
-    base = script_parser.load_scenes(
-        scripts_dir(), characters(), CFG.get("aliases"))
-    return _resolve_artifacts(_apply_overrides(base))
+    scenes = STORE.scenes()
+    for scene in scenes:
+        sid=scene['id']
+        for kind,field,ext in [('sketches','sketch','png'),('music','music','wav')]:
+            rel=f"{kind}/{sid}.{ext}"
+            if (ARTIFACTS/rel).exists(): scene[field]['image' if field=='sketch' else 'audio']=rel
+    return scenes
+
+
+def shared_write(action):
+    try: return action()
+    except Conflict as e: raise HTTPException(409,str(e))
+    except (ValueError,KeyError,StopIteration) as e: raise HTTPException(400,str(e) or 'Unknown scene or cue')
+
+
+def cast_names(): return {c['id']:c['name'] for c in characters()}
 
 
 def get_scene(sid):
@@ -237,6 +267,19 @@ def _ssh_base(host):
 def run_tts(items):
     if not items:
         return {}
+    generation={}
+    current={line['id']:line for scene in build_scenes() for line in scene['lines']}
+    cues={c['id']:c for c in STORE.read()['cues']}
+    import uuid
+    for it in items:
+        if it['out'].startswith('lines/'):
+            lid=next((cid for cid in cues if it['out'].endswith('_'+cid+'.wav')),None)
+            if lid:
+                c=cues[lid];generation[it['out']]={'id':lid,'text':it['text'],'speaker':c['speaker'],'profile':c.get('voiceProfile')}
+    # A per-job remote output folder prevents simultaneous generations overwriting each other.
+    original={}
+    for it in items:
+        old=it['out'];it['out']='jobs/'+uuid.uuid4().hex+'/'+old;original[it['out']]=old
     s = settings()["tts"]
     host = s["host"]
     workdir = s["workdir"]
@@ -245,6 +288,11 @@ def run_tts(items):
     subprocess.run(["scp", "-q", *SSH_OPTS, str(REMOTE_SCRIPT), f"{host}:{remote_script}"],
                    check=True, timeout=60)
 
+    for it in items:
+        if it.get('mode')=='approved_prompt':
+            remote=f"{workdir}/_sb_cowboy_C.pt"
+            subprocess.run(['scp','-q',*SSH_OPTS,str(STAGE_ROOT/'handoff/narrator-approved-C/prompt.pt'),f'{host}:{remote}'],check=True,timeout=60)
+            it['prompt_path']=remote
     pushed = set()
     for it in items:
         if it.get("mode") == "xvector":
@@ -301,12 +349,27 @@ def run_tts(items):
 
     if not results and proc.returncode != 0:
         raise HTTPException(500, f"Remote TTS failed: {proc.stderr[-800:]}")
-    return results
+    mapped={}
+    for out,r in results.items():
+        old=original.get(out,out)
+        if r.get('ok') and old in generation:
+            g=generation[old]
+            try: STORE.register_audio(g['id'],g['text'],g['speaker'],g['profile'],ARTIFACTS/out,r.get('dur',0))
+            except Conflict as e: r={**r,'ok':False,'error':str(e)}
+        elif r.get('ok'):
+            import shutil
+            target=ARTIFACTS/old;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ARTIFACTS/out,target)
+        mapped[old]=r
+    return mapped
 
 
 def voice_item(out, char, text):
+    if (char or {}).get('voice',{}).get('mode')=='approved_prompt':
+        profile=json.loads((STAGE_ROOT/'handoff/narrator-approved-C/profile.json').read_text())
+        return {'out':out,'mode':'approved_prompt','text':text,'seed':profile['seed'],'clone_settings':profile['settings']}
     v = (char or {}).get("voice", {})
     mode = v.get("mode", "design")
+    if mode=="unconfigured": raise HTTPException(400,"Configure a voice for this role before generating new recordings. Existing recordings remain available.")
     item = {"out": out, "mode": mode, "text": text, "seed": v.get("seed")}
     if mode == "xvector":
         item["vector_id"] = char["id"]
@@ -412,6 +475,7 @@ def get_storyboard():
         "settings": settings(),
         "characters": json.loads(json.dumps(characters())),
         "scenes": build_scenes(),
+        "revision": STORE.revision(),
     }
 
 
@@ -420,6 +484,13 @@ def update_character(cid: str, payload: dict = Body(...)):
     idx, char = find(characters(), cid)
     if char is None:
         raise HTTPException(404, "character not found")
+    if 'voice' in payload and payload['voice']!=char.get('voice'):
+        from script_store import digest
+        fingerprint=digest(payload['voice'])
+        def invalidate(show):
+            for cue in show['cues']:
+                if cue.get('speaker')==cid:cue['voiceProfile']=fingerprint;cue['audio']=None;cue['audioDuration']=0
+        shared_write(lambda: STORE.transaction(STORE.revision(),invalidate))
     for k, v in payload.items():
         if k == "id":
             continue
@@ -441,6 +512,7 @@ def add_character(payload: dict = Body(...)):
 
 @app.delete("/api/character/{cid}")
 def delete_character(cid: str):
+    if any(c.get('speaker')==cid for c in STORE.read()['cues']): raise HTTPException(400,'This role is used in the shared script. Reassign its lines before removing it.')
     idx, char = find(characters(), cid)
     if char is None:
         raise HTTPException(404, "not found")
@@ -451,40 +523,27 @@ def delete_character(cid: str):
 
 @app.put("/api/scene/{sid}")
 def update_scene(sid: str, payload: dict = Body(...)):
-    payload.pop("id", None)
-    OVR.setdefault("scenes", {})[sid] = payload
-    save_overrides()
+    shared_write(lambda: STORE.update_scene(sid,payload,cast_names()))
     return get_scene(sid)
-
 
 @app.post("/api/scene")
 def add_scene(payload: dict = Body(...)):
-    nums = [s.get("number", 0) for s in build_scenes()]
-    n = (max(nums) if nums else 0) + 1
-    payload.setdefault("id", f"s{n:02d}")
-    payload.setdefault("number", n)
-    payload.setdefault("lines", [])
-    OVR.setdefault("added", []).append(payload)
-    save_overrides()
-    return payload
-
+    sid=shared_write(lambda: STORE.add_scene(payload,cast_names()))
+    return get_scene(sid)
 
 @app.delete("/api/scene/{sid}")
-def delete_scene(sid: str):
-    OVR.setdefault("deleted", [])
-    if sid not in OVR["deleted"]:
-        OVR["deleted"].append(sid)
-    OVR.get("scenes", {}).pop(sid, None)
-    OVR["added"] = [s for s in OVR.get("added", []) if s.get("id") != sid]
-    save_overrides()
-    return {"ok": True}
-
+def delete_scene(sid: str, payload: dict = Body(...)):
+    shared_write(lambda: STORE.delete_scene(sid,payload.get('revision')))
+    return {'ok':True}
 
 @app.post("/api/scenes/reorder")
 def reorder_scenes(payload: dict = Body(...)):
-    # Scene order follows the scripts' scene_number; reordering is a no-op.
-    return {"ok": True}
+    shared_write(lambda: STORE.reorder(payload.get('ids',[]),payload.get('revision')))
+    return {'ok':True}
 
+@app.get("/api/script/export")
+def export_script():
+    return Response(STORE.export_markdown(),media_type='text/markdown',headers={'Content-Disposition':'attachment; filename="The-Big-Hack.md"'})
 
 # --------------------------------------------------------------------------- #
 # API: generation
@@ -603,6 +662,7 @@ def generate_line(sid: str, lid: str):
     line = next((l for l in scene.get("lines", []) if l["id"] == lid), None)
     if line is None:
         raise HTTPException(404, "line not found")
+    if line.get("type") not in VOICED: raise HTTPException(400,"Stage directions are silent; change the line to narration to voice it.")
     char = speaker_for_line(line)
     if not char:
         raise HTTPException(400, "line has no valid speaker")
@@ -860,7 +920,17 @@ def _review_side(ref):
             s["_sketch"] = (s.get("sketch") or {}).get("image")
             for ln in s.get("lines", []):
                 ln["_audio"] = ln.get("audio")
-            _attach_raw(s)
+            # Shared store supplies exact editable beat text.
+        return scenes
+    compiled=_git('show',f'{ref}:stage/show.json')
+    if compiled.returncode==0:
+        manifest=_git('show',f'{ref}:stage/generated-voices.json')
+        recordings=json.loads(manifest.stdout).get('recordings',{}) if manifest.returncode==0 else {}
+        scenes=STORE.scenes(json.loads(compiled.stdout),recordings)
+        for scene in scenes:
+            for line in scene['lines']:
+                line['_audio']=line.get('audio')
+                line.pop('_raw',None)
         return scenes
     scenes = script_parser.load_scenes(
         _ref_scripts_dir(ref), characters(), CFG.get("aliases"))
@@ -912,61 +982,33 @@ def api_review_line(payload: dict = Body(...)):
     opened the editor with as `expect`; if the file no longer matches, the save
     is refused rather than silently overwriting whatever changed underneath.
     """
-    if not _review_enabled():
-        raise HTTPException(503, "review disabled: SB_GIT_DIR not mounted")
-    sid = (payload.get("scene") or "").strip()
-    lid = (payload.get("line") or "").strip()
-    text = payload.get("text")
-    expect = payload.get("expect")
-    if not sid or not lid or text is None:
-        raise HTTPException(400, "scene, line and text are required")
-
-    text = text.replace("\r\n", "\n").rstrip("\n")
-    if not text.strip():
-        raise HTTPException(
-            400, "a beat can't be saved empty — delete it in the file instead")
-    # The scene parser ends the Script section at the first bare `---`, so one
-    # pasted into a beat silently truncates everything after it, with no error
-    # anywhere. It has cost this project a scene's entire back half before.
-    if any(l.strip() == "---" for l in text.split("\n")):
-        raise HTTPException(
-            400, "a line of just `---` ends the Script section — "
-                 "use a stage direction or a blank line for a beat break")
-
-    # Parse from disk rather than build_scenes(): overrides would hand back
-    # lines that never existed in the file, which is not what we're editing.
-    scenes = script_parser.load_scenes(
-        scripts_dir(), characters(), CFG.get("aliases"))
-    scene = next((s for s in scenes if s["id"] == sid), None)
-    if scene is None:
-        raise HTTPException(404, f"unknown scene: {sid}")
-    line = next((l for l in scene.get("lines", []) if l.get("id") == lid), None)
-    if line is None:
-        raise HTTPException(404, f"unknown line: {lid}")
-    a, b = line.get("src_start"), line.get("src_end")
-    if a is None or b is None:
-        raise HTTPException(409, "that beat has no source span and can't be edited")
-
-    path = Path(scene["source_file"])
-    flines, base = _scene_script_lines(path)
-    if flines is None:
-        raise HTTPException(409, "scene file has no Script section any more")
-    lo, hi = base + a, base + b + 1
-    current = "\n".join(flines[lo:hi])
-    if expect is not None and expect.replace("\r\n", "\n") != current:
-        raise HTTPException(
-            409, "the file changed under this edit — reload the comparison")
-
-    flines[lo:hi] = text.split("\n")
-    trailing = "\n" if path.read_text(encoding="utf-8").endswith("\n") else ""
-    path.write_text("\n".join(flines) + trailing, encoding="utf-8")
-    return {"ok": True, "scene": sid, "line": lid, "raw": text}
+    sid=payload.get('scene'); lid=payload.get('line')
+    scene=get_scene(sid)
+    line=next((l for l in scene['lines'] if l['id']==lid),None)
+    if not line: raise HTTPException(404,'Unknown cue')
+    if payload.get('expect')!=line['_raw']: raise HTTPException(409,'The cue changed. Reload before saving.')
+    text=payload.get('text','')
+    if any(l.strip()=='---' for l in text.splitlines()): raise HTTPException(400,'A separator is not a script beat.')
+    parsed=script_parser.parse_script(text,script_parser.build_name_index(characters(),CFG.get('aliases')))
+    if len(parsed)!=1: raise HTTPException(400,'Edit one beat here; add or remove beats in the storyboard editor.')
+    shared_write(lambda: STORE.update_cue(lid,{**parsed[0],'revision':scene['revision']},cast_names()))
+    return {'ok':True,'scene':sid,'line':lid,'raw':get_scene(sid)['lines'][next(i for i,l in enumerate(scene['lines']) if l['id']==lid)]['_raw']}
 
 
 @app.get("/api/review/media")
 def api_review_media(ref: str, path: str):
     if not _review_enabled():
         raise HTTPException(503, "review disabled")
+    if path.startswith('/stage/'):
+        rel=path[len('/stage/'):]
+        if '..' in rel.split('/') or not rel.startswith('assets/'): raise HTTPException(400,'bad path')
+        if ref==REVIEW_WORKING:
+            target=(STAGE_ROOT/rel).resolve()
+            if not target.is_relative_to(STAGE_ROOT.resolve()) or not target.is_file(): raise HTTPException(404,'not found')
+            return FileResponse(target)
+        r=_git('show',f'{ref}:stage/{rel}',binary=True)
+        if r.returncode: raise HTTPException(404,'not found')
+        return Response(r.stdout,media_type=_mimetypes.guess_type(rel)[0] or 'application/octet-stream')
     rel = path.lstrip("/")
     if ".." in rel.split("/") or rel.startswith("/"):
         raise HTTPException(400, "bad path")
@@ -1005,6 +1047,7 @@ async def _no_cache(request, call_next):
     return response
 
 
+app.mount("/stage/assets", StaticFiles(directory=str(STAGE_ROOT/"assets")), name="stage-assets")
 app.mount("/artifacts", StaticFiles(directory=str(ARTIFACTS)), name="artifacts")
 app.mount("/", StaticFiles(directory=str(STATIC), html=True), name="static")
 

@@ -1,3 +1,7 @@
+## Current shared-script source (September 13, 2026)
+
+Read `SHARED_SCRIPT.md` at the repository root before editing script content. `stage/show.json` is the single current source for both apps; use `stage/script_store.py` for writes. Preserve cue IDs. Markdown scripts and storyboard overrides are historical only. This supersedes older source-of-truth and write-path instructions below; model, container and SSH constraints still apply.
+
 # AGENTS.md — Storyboard generation contracts
 
 This file is for **agents** (human or automated) that operate or extend the

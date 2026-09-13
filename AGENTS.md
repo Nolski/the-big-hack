@@ -1,3 +1,7 @@
+## Current shared-script source (September 13, 2026)
+
+Read `SHARED_SCRIPT.md` at the repository root before editing script content. `stage/show.json` is the single current source for both apps; use `stage/script_store.py` for writes. Preserve cue IDs. Markdown scripts and storyboard overrides are historical only. This supersedes older source-of-truth and write-path instructions below; model, container and SSH constraints still apply.
+
 # AGENTS.md — Writing rules for this vault
 
 Read [[CLAUDE.md]] first for formatting and vault conventions (no hard wraps, frontmatter, wikilinks, scene status). This file covers one thing: keeping the tells of AI-generated writing out of the scripts and notes. It condenses the Humanizer guide ([github.com/blader/humanizer](https://github.com/blader/humanizer), built on Wikipedia's "Signs of AI writing"), adapted to this repo.

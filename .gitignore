@@ -4,3 +4,8 @@
 .trash/
 .DS_Store
 .playwright-mcp/
+
+# Runtime locks and local pre-edit script recovery snapshots
+__pycache__/
+stage/.script.lock
+stage/script-history/

@@ -1,13 +1,17 @@
-import {castFor,readSettings,playbackShow,cueAudio,playbackRate} from './playback-settings.js?v=author-pass-20260912';
-import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=author-pass-20260912';
-import {screenLabel,actionDuration,actions,sampleAction} from './screen-actions.js?v=author-pass-20260912';
-const $=id=>document.getElementById(id), channel=new BroadcastChannel('big-hack-stage-v1');
-const sourceShow=await fetch('show.json',{cache:'no-store'}).then(r=>r.json());
-const voiceManifest=await fetch('generated-voices.json',{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({}));
+import {castFor,readSettings,playbackShow,cueAudio,playbackRate} from './playback-settings.js?v=shared-script-20260913';
+import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=shared-script-20260913';
+import {screenLabel,actionDuration,actions,sampleAction} from './screen-actions.js?v=shared-script-20260913';
+const $=id=>document.getElementById(id), controller=controllerId();
+localStorage.setItem('big-hack-display-controller',controller);
+const channel=new BroadcastChannel('big-hack-stage-v2:'+controller);
+for(const side of ['left','right'])$(side+'Preview').src='display.html?side='+side+'&preview=1&controller='+encodeURIComponent(controller);
+const initialSnapshot=await fetch('/api/script',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);
+let sourceShow=initialSnapshot?.show||await fetch('show.json',{cache:'no-store'}).then(r=>r.json());
+let voiceManifest=await fetch('generated-voices.json',{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({}));
 let savedSettings;try{savedSettings=JSON.parse(localStorage.getItem('big-hack-playback')||'{}')}catch{}
 let settings=readSettings(sourceShow,savedSettings);
 let show=playbackShow(sourceShow,settings,voiceManifest.recordings||{});
-const cast=castFor(sourceShow);
+let cast=castFor(sourceShow);
 let overrides=await fetch('overrides.json').then(r=>r.ok?r.json():{}).catch(()=>({}));
 let saved;try{saved=JSON.parse(localStorage.getItem('big-hack-cue-'+(sourceShow.scriptRevision||'legacy'))||'null')}catch{}
 let state={index:Math.max(0,show.cues.findIndex(c=>c.id===saved?.id)),running:false,blackout:false,serial:0,elapsed:0,screenBase:{left:0,right:0},anchor:Date.now(),volume:.85,rate:settings.rate};
@@ -19,7 +23,7 @@ function controllerId(){
  if(typeof crypto?.getRandomValues==='function')return Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>b.toString(16).padStart(2,'0')).join('');
  return 'stage-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
 }
-let audio=new Audio(),sfx=[],elapsedShow=0,timerStart=0,lastScene='',lastRail='',lastAudio='',heartbeat={},notesSize=Number(localStorage.getItem('big-hack-notes-size')||32),controller=controllerId();
+let audio=new Audio(),sfx=[],elapsedShow=0,timerStart=0,lastScene='',lastRail='',lastAudio='',heartbeat={},notesSize=Number(localStorage.getItem('big-hack-notes-size')||32);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cue=()=>show.cues[state.index];
 const effectiveRate=()=>cue().montage?1:state.rate;
@@ -56,7 +60,7 @@ $('sceneList').onclick=$('cueList').onclick=e=>{const b=e.target.closest('[data-
 $('search').oninput=renderRail;$('go').onclick=()=>{if(nextIndex()>=show.cues.length){blackout();status('End of show');return}if(!timerStart)timerStart=Date.now();navigate(nextIndex(),true)};$('previous').onclick=()=>navigate(show.performanceStarts.filter(i=>i<state.index).at(-1)??0,false);$('play').onclick=toggle;$('replay').onclick=()=>navigate(state.index,true);$('blackout').onclick=blackout;
 $('volume').oninput=e=>{state.volume=Number(e.target.value);audio.volume=state.volume;sfx.forEach(a=>a.volume=state.volume*Number(a.dataset.level||.35));broadcast()};
 for(const delta of [-2,2])$(delta<0?'notesSmaller':'notesLarger').onclick=()=>{notesSize=Math.max(18,Math.min(48,notesSize+delta));localStorage.setItem('big-hack-notes-size',notesSize);render()};
-for(const side of ['left','right']){const name=side[0].toUpperCase()+side.slice(1);$('open'+name).onclick=()=>{const w=window.open('display.html?side='+side,'big-hack-'+side,'popup,width=1280,height=720');if(!w)status('Allow popups to open display',true)};$(side+'File').onchange=async e=>{const file=e.target.files[0];if(!file)return;const id=cue().id;$('editStatus').textContent='Saving clip…';try{const r=await fetch(`/api/clip?cue=${encodeURIComponent(id)}&side=${side}&ext=${encodeURIComponent(file.name.split('.').pop())}`,{method:'POST',headers:{'Content-Type':file.type},body:file});if(!r.ok)throw Error(await r.text());const d=await r.json();overrides=d;render();broadcast();status('Clip saved')}catch(err){$('editStatus').textContent=err.message}e.target.value=''}}
+for(const side of ['left','right']){const name=side[0].toUpperCase()+side.slice(1);$('open'+name).onclick=()=>{const w=window.open('display.html?side='+side+'&controller='+encodeURIComponent(controller),'big-hack-'+side,'popup,width=1280,height=720');if(!w)status('Allow popups to open display',true)};$(side+'File').onchange=async e=>{const file=e.target.files[0];if(!file)return;const id=cue().id;$('editStatus').textContent='Saving clip…';try{const r=await fetch(`/api/clip?cue=${encodeURIComponent(id)}&side=${side}&ext=${encodeURIComponent(file.name.split('.').pop())}`,{method:'POST',headers:{'Content-Type':file.type},body:file});if(!r.ok)throw Error(await r.text());const d=await r.json();overrides=d;render();broadcast();status('Clip saved')}catch(err){$('editStatus').textContent=err.message}e.target.value=''}}
 async function saveOverride(reset=false){const id=cue().id,data=reset?null:{...(overrides[id]||{}),audioSource:$('audioSource').value,behavior:$('videoBehavior').value,loopStart:Math.max(0,Number($('loopStart').value)||0)};try{const r=await fetch('/api/cue',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,value:data})});if(!r.ok)throw Error(await r.text());overrides=await r.json();navigate(state.index,false);$('editStatus').textContent='Saved'}catch(e){$('editStatus').textContent=e.message}}
 $('saveCue').onclick=()=>saveOverride();$('resetCue').onclick=()=>saveOverride(true);
 $('exportCues').onclick=()=>{const text=show.cues.map(c=>`${c.id}\t${c.scene}\t${c.kind}\t${c.name}\t${c.state}\t${c.text.replaceAll('\t',' ')}\t${c.direction}\t${(c.sourceText||'').replaceAll('\t',' ')}\t${[screenLabel(c,'left'),screenLabel(c,'right')].join(' / ')}\t${(c.screenNotes||'').replaceAll('\t',' ').replaceAll('\n',' ')}`).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['Cue\tScene\tType\tSpeaker\tVisual\tLine\tDirection\tOriginal stage direction\tComputer owners\tScreen performance\n'+text],{type:'text/tab-separated-values'}));a.download='the-big-hack-cues.tsv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
@@ -129,3 +133,51 @@ function updateTypingSound(){
  if(isTyping){if(typingSound.paused)typingSound.play().catch(()=>{});}else typingSound.pause();
 }
 setInterval(updateTypingSound,80);
+
+// Authoring never changes a running performance. A revision is loaded explicitly.
+let scriptRevision=initialSnapshot?.revision||null, editRevision=null;
+const updateButton=$('loadScriptUpdate');
+async function scriptCheck(){
+ try {const r=await fetch('/api/script/revision',{cache:'no-store'});if(!r.ok)return;
+ const data=await r.json();if(scriptRevision===null)scriptRevision=data.revision;
+ updateButton.hidden=data.revision===scriptRevision;
+ updateButton.disabled=state.running;
+ updateButton.title=state.running?'Pause before loading the updated script':'';
+ } catch {}
+}
+async function loadScript(){
+ if(state.running){status('Pause before loading script changes');return;}
+ const id=cue().id;
+ const snapshot=await fetch('/api/script',{cache:'no-store'}).then(r=>r.json());
+ sourceShow=snapshot.show;
+ voiceManifest=await fetch('generated-voices.json',{cache:'no-store'}).then(r=>r.json());
+ settings=readSettings(sourceShow,settings);cast=castFor(sourceShow);
+ show=playbackShow(sourceShow,settings,voiceManifest.recordings||{});
+ scriptRevision=snapshot.revision;lastScene='';
+ renderCast();navigate(Math.max(0,show.cues.findIndex(c=>c.id===id)),false);
+ updateButton.hidden=true;status('Updated script loaded · paused');
+}
+updateButton.onclick=()=>loadScript().catch(e=>status(e.message,true));
+$('editScriptCue').onclick=async()=>{
+ if(state.running)toggle();
+ try {
+ const snapshot=await fetch('/api/script',{cache:'no-store'}).then(r=>r.json());
+ const line=snapshot.scenes.flatMap(s=>s.lines).find(l=>l.id===cue().id);
+ if(!line)throw Error('This cue was removed. Load the updated script.');
+ editRevision=snapshot.revision;
+ $('scriptText').value=line.text;$('scriptDirection').value=line.direction;
+ $('scriptType').value=line.type;
+ $('scriptSpeaker').innerHTML='<option value="">Stage direction</option>'+cast.map(c=>`<option value="${esc(c.id)}">${esc(c.name)}</option>`).join('');
+ $('scriptSpeaker').value=line.speaker;
+ $('scriptSaveStatus').textContent='Changes are shared with the storyboard. Changed speech needs a new recording.';
+ $('scriptEditDialog').showModal();
+ }catch(e){status(e.message,true)}
+};
+$('saveScriptCue').onclick=async()=>{
+ try {
+ const r=await fetch('/api/script/cue',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:cue().id,revision:editRevision,type:$('scriptType').value,speaker:$('scriptSpeaker').value,text:$('scriptText').value,direction:$('scriptDirection').value})});
+ if(!r.ok)throw Error(r.status===409?'The script changed elsewhere. Close and reopen this editor before saving.':'Could not save. Check the speaker and cue type.');
+ $('scriptEditDialog').close();await loadScript();
+ }catch(e){$('scriptSaveStatus').textContent=e.message;}
+};
+scriptCheck();setInterval(scriptCheck,2500);

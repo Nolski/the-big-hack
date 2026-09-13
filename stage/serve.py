@@ -5,6 +5,8 @@ from pathlib import Path
 from urllib.parse import urlparse,parse_qs,unquote
 import argparse,json,re,threading,uuid
 ROOT=Path(__file__).resolve().parent
+from script_store import ScriptStore, Conflict
+STORE=ScriptStore(ROOT)
 LOCK=threading.Lock()
 class Handler(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
@@ -40,6 +42,23 @@ class Handler(SimpleHTTPRequestHandler):
   except (BrokenPipeError,ConnectionResetError):pass
  def json_response(self,data):
   raw=json.dumps(data,indent=2).encode();self.send_response(200);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(raw)));self.end_headers();self.wfile.write(raw)
+ def do_GET(self):
+  route=urlparse(self.path).path
+  if route=='/api/script':return self.json_response((lambda s:{'revision':__import__('script_store').digest(s),'scenes':STORE.scenes(s),'show':s})(STORE.read()))
+  if route=='/api/script/revision':return self.json_response({'revision':STORE.revision()})
+  return super().do_GET()
+ def do_PUT(self):
+  origin=self.headers.get('Origin')
+  if origin and origin!=f'http://{self.headers.get("Host")}':self.send_error(403);return
+  if urlparse(self.path).path!='/api/script/cue':self.send_error(404);return
+  try:
+   length=int(self.headers.get('Content-Length','0'))
+   if length<1 or length>100000:raise ValueError('Invalid edit size')
+   payload=json.loads(self.rfile.read(length))
+   revision=STORE.update_cue(payload['id'],payload)
+   self.json_response({'revision':revision})
+  except Conflict as e:self.send_error(409,str(e))
+  except (ValueError,KeyError,StopIteration) as e:self.send_error(400,str(e))
  def do_POST(self):
   origin=self.headers.get('Origin')
   if origin and origin!=f'http://{self.headers.get("Host")}':self.send_error(403);return
