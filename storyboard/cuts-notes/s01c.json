@@ -1,0 +1,87 @@
+{
+  "sceneId": "s01c",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "1b0ed7e1eedc75b0",
+  "grade": "protected",
+  "protected": {
+    "yes": true,
+    "why": "Guardrail 1: Brendan earnestly tries to show Liam his process and it goes over Liam's head four times because of Liam's arrogance. A first cut pass removed this scene and had to be reversed."
+  },
+  "function": {
+    "plot": "Liam demands to see how the portal was built, refuses to look at the plan or transcript, and Brendan stops trying to show him; the apology to Kristina is relayed only in s01d, which is listed as cut per scope.",
+    "liam": "Seeds the hubris (read every line, marking its own homework, I was reading code before Cursor existed) that the review, the nine-day queue and the trial's machine-written summary later price against him, and shows his difficultness is sincere (I'm trying to help you).",
+    "others": "Brendan's four aborted attempts are the origin of his learned silence: the deleted branch in s07, the shut-down doors in s06, the held backspace in s11b.",
+    "comedy": "Liam grilling line four hundred, the guided tour of Cursor line, the very fast intern line, and the softening speech delivered having registered nothing.",
+    "spectacle": "The plan and transcript sit open and unread while Liam scrolls the diff hunting for a flaw he does not find; the chat_keys ChatGPT lookup.",
+    "setupPayoff": [
+      "Brendan's offered hand withdrawn (Brendan among the coworkers who go quiet)",
+      "Liam's loving pedantry logged as a behavioural concern",
+      "read your diffs, not the machine's summary (pays at s23_l15 and s12_l60)",
+      "that's why I bother (pays at s12_l106 and s19_l8)",
+      "you can't work without the thing holding its hand (pays at s11b_l64 fancy autocomplete)",
+      "Liam's apology relayed in s01d (orphaned while s01d is cut)"
+    ]
+  },
+  "turnsAt": "s01c_l22",
+  "ifRemoved": "Guardrail 1 forbids it. If it went anyway, s01b_l51 (I tried, I couldn't get it in front of him) would point at nothing, and Brendan's habit of not showing Liam (s06_l51, s07_l18 to s07_l23, s11b_l62) would have no origin. s06_l23 to s06_l26 could carry Liam's condescension toward Brendan's help but not the refusal to look at the process, and no earlier scene states Liam's line-by-line creed before s11b_l3 needs it. s19_l8 (nice work on the developer portal, I know I gave you some shit for it) would lose its setup.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s01c-1",
+      "kind": "cut-beat",
+      "cueIds": ["s01c_l19"],
+      "savingSeconds": 10.3,
+      "priority": 1,
+      "note": "Third dismissive aphorism in a row after s01c_l15 and s01c_l17; the same idea returns as autocomplete with good manners at s06_l35 and fancy autocomplete at s11b_l64. Keep s01c_l18 so the aborted-attempt count holds, and let s01c_l20 read Brendan's trailing sentence as the stop."
+    },
+    {
+      "id": "s01c-2",
+      "kind": "trim",
+      "cueIds": ["s01c_l4", "s01c_l5"],
+      "savingSeconds": 20.2,
+      "priority": 2,
+      "note": "Enter later. Keep s01c_l2 and s01c_l3 as the apology, cut Liam's I'm bad at this, I know I'm bad at this and Brendan's reply. The arc withholds Liam's self-knowledge until the offboarding, and the getting burned worry is already planted by the memo at s01_l33."
+    },
+    {
+      "id": "s01c-3",
+      "kind": "compress-speech",
+      "cueIds": ["s01c_l17"],
+      "savingSeconds": 6.0,
+      "priority": 3,
+      "note": "Cut the restated marking its own homework argument; the audience heard it at s01_l19 and again from Kristina at s01b_l38. Keep the guided tour of Cursor lines and the tag I made that point three hours ago, which is the joke."
+    },
+    {
+      "id": "s01c-4",
+      "kind": "compress-speech",
+      "cueIds": ["s01c_l13"],
+      "savingSeconds": 6.0,
+      "priority": 4,
+      "note": "Cut I could not, in good conscience, put my name on this, and I've been doing this twenty years. Nobody read this plus the line four hundred challenge carries the beat, and the twenty years figure clashes with twenty-five at s14_l51."
+    },
+    {
+      "id": "s01c-5",
+      "kind": "trim",
+      "cueIds": ["s01c_l6"],
+      "savingSeconds": 6.6,
+      "priority": 5,
+      "note": "Fold That's not why I called into s01c_l8 and drop the weekend question; the weekend was already the trigger at s01_l9. Keep s01c_l7 (three hours Saturday, most of it making coffee), which is the truth Kara's one good weekend line at s08_l47 rests on."
+    },
+    {
+      "id": "s01c-6",
+      "kind": "compress-speech",
+      "cueIds": ["s01c_l11"],
+      "savingSeconds": 5.0,
+      "priority": 6,
+      "note": "Cut the component list (front-end, key-issuance service, auth, deploy config); eight hundred lines in one PR was already said at s01_l12. The chat_keys lookup that follows is uncounted stage time and should be timed in rehearsal."
+    },
+    {
+      "id": "s01c-7",
+      "kind": "trim",
+      "cueIds": ["s01c_l2", "s01c_l3", "s01c_l4", "s01c_l5"],
+      "savingSeconds": 32.5,
+      "priority": 7,
+      "note": "Alternative to s01c-2, not alongside it: drop the whole apology block and open on the call itself. Only safe while s01d stays cut, because s01d_l3 is the apology's only plot payoff; if s01d returns, keep s01c_l2 and s01c_l3."
+    }
+  ],
+  "recommendedSavingSeconds": 49.1
+}

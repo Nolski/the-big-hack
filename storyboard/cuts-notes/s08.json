@@ -1,0 +1,183 @@
+{
+  "sceneId": "s08",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "245bf2dfac2571ee",
+  "grade": "liftable",
+  "protected": {
+    "yes": false,
+    "why": null
+  },
+  "function": {
+    "plot": "Kara learns the portal shipped early because the team adopted Cursor and Claude Code with Brendan as the power user, asks for a briefing, and warns Kristina to keep the story from reaching the CEO as an operating model.",
+    "liam": "Liam is mentioned once as finally free of the signup bug and as someone Kara would rather argue with before design than after shipping; he is otherwise absent.",
+    "others": "Kara gets her only face and voice in the play, Kristina credits Brendan's method upward, and the CEO exists as a man who vibe-codes PRDs overnight and wrote the adoption memo.",
+    "comedy": "The six overnight PRDs and Kara's line about one good weekend becoming an operating model with a slide deck; the strongest laughs in the scene are the first ten cues and cue 47.",
+    "spectacle": "none (the memo on screen at the end is narrated reading, not business)",
+    "setupPayoff": [
+      "Kara's caution: let me understand what's real first (payoff is the calibration prologue of s13, which is not in the current running order; the only staged echo is Kara's name on the reduction sheet in s14_l1)",
+      "CEO memo AI HOW WE WORK (referenced by Marcus in s11b_l6 and by Liam in s11b_l44)",
+      "Kristina's conversion middle step, narrated (s07_l11 before it, s11c_l39 to s11c_l49 after it)"
+    ]
+  },
+  "turnsAt": "s08_l39",
+  "ifRemoved": "Kara stops being a face and becomes a name, so s14_l1 needs one clause (Kara, the director of engineering) and s19_l10 reads cold but clear. The CEO memo arrives by reference only in s11b_l6 and s11b_l44, which stand on their own. Kristina's buy-in still runs s01b demo, s07_l11 second thoughts, s11c solo build, which is the path guardrail 2 protects; the narrated memo re-read here is not that path. The Author-Pass Reconciliation already lists s08 as cut per scope. Loss: the CEO PRDs joke, and the audience no longer knows the person who drew the line in s14 was the careful one.",
+  "mergeInto": {
+    "sceneId": "s14",
+    "carry": [
+      "s08_l1"
+    ],
+    "note": "Only the Kara introduction needs a home: fold director of engineering into the s14_l1 narration; everything else in s08 is either already on stage elsewhere or pays into scenes not in the running order."
+  },
+  "suggestions": [
+    {
+      "id": "s08-1",
+      "kind": "cut-beat",
+      "cueIds": [
+        "s08_l52",
+        "s08_l53",
+        "s08_l54",
+        "s08_l55",
+        "s08_l56",
+        "s08_l57",
+        "s08_l58",
+        "s08_l59",
+        "s08_l60"
+      ],
+      "savingSeconds": 66.4,
+      "priority": 1,
+      "note": "Leave early on Kara's I'm two minutes late (s08_l51). The memo coda is the narrator reading Kristina's thoughts, which the style rules forbid, and her conversion is already shown at her own keyboard in s11c. The memo survives by name in s11b_l6 and s11b_l44."
+    },
+    {
+      "id": "s08-2",
+      "kind": "redundant",
+      "cueIds": [
+        "s08_l32"
+      ],
+      "savingSeconds": 12.3,
+      "priority": 2,
+      "note": "Narrated interior thought before The team adopted some new tooling. The pause plays itself; the audience watched the weekend, the demo and knows there are rooms where she would not say more."
+    },
+    {
+      "id": "s08-3",
+      "kind": "compress-speech",
+      "cueIds": [
+        "s08_l39"
+      ],
+      "savingSeconds": 12.0,
+      "priority": 3,
+      "note": "Keep Brendan. He built most of the API service with it, and he's built a whole method around it. Cut the plan, dangerous parts, integration tests recap: the audience watched all three in s01b_l42 to s01b_l48."
+    },
+    {
+      "id": "s08-4",
+      "kind": "compress-speech",
+      "cueIds": [
+        "s08_l19"
+      ],
+      "savingSeconds": 9.0,
+      "priority": 4,
+      "note": "Keep I know. It went early. The partners, quiet support and best feedback lines repeat s01_l5 almost word for word; s08_l20 already confirms it is the portal launch."
+    },
+    {
+      "id": "s08-5",
+      "kind": "cut-beat",
+      "cueIds": [
+        "s08_l43",
+        "s08_l44",
+        "s08_l49",
+        "s08_l50"
+      ],
+      "savingSeconds": 23.8,
+      "priority": 5,
+      "note": "Only if s13 and s10 stay out of the running order. The briefing request sets up s10 and Let me understand what's real first is the ledger setup for the s13 calibration prologue; neither is staged. Keeps s08_l45 to s08_l47 for the slide deck joke."
+    },
+    {
+      "id": "s08-6",
+      "kind": "trim",
+      "cueIds": [
+        "s08_l2",
+        "s08_l3",
+        "s08_l4",
+        "s08_l5",
+        "s08_l6",
+        "s08_l7",
+        "s08_l8",
+        "s08_l9",
+        "s08_l10",
+        "s08_l11"
+      ],
+      "savingSeconds": 25.3,
+      "priority": 6,
+      "note": "Enter late at the roadmap (s08_l12). Known loss: the six PRDs bit is the scene's only pure comedy and the CEO's only appearance as a person, and it feeds you know how he can be in s08_l47. Take this last, and only if the scene stays."
+    },
+    {
+      "id": "s08-7",
+      "kind": "cut-scene",
+      "cueIds": [
+        "s08_l1",
+        "s08_l2",
+        "s08_l3",
+        "s08_l4",
+        "s08_l5",
+        "s08_l6",
+        "s08_l7",
+        "s08_l8",
+        "s08_l9",
+        "s08_l10",
+        "s08_l11",
+        "s08_l12",
+        "s08_l13",
+        "s08_l14",
+        "s08_l15",
+        "s08_l16",
+        "s08_l17",
+        "s08_l18",
+        "s08_l19",
+        "s08_l20",
+        "s08_l21",
+        "s08_l22",
+        "s08_l23",
+        "s08_l24",
+        "s08_l25",
+        "s08_l26",
+        "s08_l27",
+        "s08_l28",
+        "s08_l29",
+        "s08_l30",
+        "s08_l31",
+        "s08_l32",
+        "s08_l33",
+        "s08_l34",
+        "s08_l35",
+        "s08_l36",
+        "s08_l37",
+        "s08_l38",
+        "s08_l39",
+        "s08_l40",
+        "s08_l41",
+        "s08_l42",
+        "s08_l43",
+        "s08_l44",
+        "s08_l45",
+        "s08_l46",
+        "s08_l47",
+        "s08_l48",
+        "s08_l49",
+        "s08_l50",
+        "s08_l51",
+        "s08_l52",
+        "s08_l53",
+        "s08_l54",
+        "s08_l55",
+        "s08_l56",
+        "s08_l57",
+        "s08_l58",
+        "s08_l59",
+        "s08_l60"
+      ],
+      "savingSeconds": 246.2,
+      "priority": 7,
+      "note": "Lift the scene. It has no live actor, no Liam, and every function is either on stage elsewhere (s01_l5, s01b_l42, s07_l11, s11c_l39) or pays into s10 and s13, which are not staged. Carry Kara's title into s14_l1. Supersedes s08-1 to s08-6."
+    }
+  ],
+  "recommendedSavingSeconds": 246.2
+}

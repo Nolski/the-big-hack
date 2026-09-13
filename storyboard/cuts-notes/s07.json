@@ -1,0 +1,83 @@
+{
+  "sceneId": "s07",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "740db397269c57b1",
+  "grade": "trimmable",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "Kristina learns that Claude, not Liam, found and fixed the race condition, learns Liam has not been told, and starts counting him as spare capacity; Brendan deletes the branch that proves it.",
+    "liam": "His last good day (s06) is hollowed out offstage while he is still happy: the credit he was handed is quietly re-routed past him, which is the seed of the bottleneck framing.",
+    "others": "Kristina's manager math starts here (weeks of the best engineer against one prompt), and Brendan's protective concealment is named out loud and challenged, which sets up his failed attempts to show Liam in s11b and s11c.",
+    "comedy": "Light and ironic only: the warm 'you put your heads together' praise for a fix nobody's heads were in, and 'God bless you for that, I know how thorny he is'.",
+    "spectacle": "The closing split screen: Liam proudly opens his one-line PR while Brendan deletes the local branch Claude finished twenty minutes earlier (screen delete-branch).",
+    "setupPayoff": [
+      "Plants: Kristina's 'you put your heads together' (pays as bottleneck / friction at the review)",
+      "Plants: 'that changes a lot' / extra engineer (seed of the agent-first mandate and the all-hands tooling order in s11b)",
+      "Plants: Brendan deletes Claude's branch (rhymed by the three backspace deletions in s11b and the phone delete in s20)",
+      "Plants: Kristina's 'how is Liam going to get better if you don't show him' (pays as 'we asked him to get on the boat' in s11c and 'not on board' later)",
+      "Plants: 'I get to tell my boss we have an extra engineer' (paid only in s08_l25, which is cut per scope, so that clause is now an orphan)"
+    ]
+  },
+  "turnsAt": "s07_l15",
+  "ifRemoved": "Kristina never learns on stage that the machine and not Liam closed the race condition, so her warm defence of Liam in s11c has no reversal underneath it, and the 'heads together' ledger row loses its setup. The branch deletion, the first of Brendan's erasures, goes with it. The admission could only move to the webhook beat at s11c_l2 to s11c_l4 as one line from Brendan, months late; with s08 cut there is no other Kristina scene between s06 and s11b, and this is also the only rest from Liam and Marcus in that stretch.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s07-1",
+      "kind": "compress-speech",
+      "cueIds": ["s07_l4"],
+      "savingSeconds": 10.0,
+      "priority": 1,
+      "note": "Cut the itemised list of what Claude did (found it, reproduced it, script, screenshots, branch). The audience watched all of that in s06_l42 and s06_l51. Keep 'I pointed Claude at the signup flow, it found it and fixed it on a branch, I basically read the diagnosis back to him'. About half of 19.7 s."
+    },
+    {
+      "id": "s07-2",
+      "kind": "redundant",
+      "cueIds": ["s07_l6", "s07_l7"],
+      "savingSeconds": 7.9,
+      "priority": 2,
+      "note": "Kristina does the weeks-versus-this-morning math twice. s07_l8 states the contrast on its own ('Weeks. And you, this morning, pointed Claude at the repo'), so the first pass and Brendan's 'A while, yeah' can go. Go straight from the small pause at s07_l5 to s07_l8."
+    },
+    {
+      "id": "s07-3",
+      "kind": "compress-speech",
+      "cueIds": ["s07_l12"],
+      "savingSeconds": 8.0,
+      "priority": 3,
+      "note": "Keep the new content (it found it fast because the code was laid out clean, the way Liam built it). Drop 'He's the best engineer here, and he holds us all to a high standard', which Brendan already said in s01b_l3 and s01b_l54 and says again in s11c and s12. Under half of 18.2 s."
+    },
+    {
+      "id": "s07-4",
+      "kind": "compress-speech",
+      "cueIds": ["s07_l20"],
+      "savingSeconds": 6.0,
+      "priority": 4,
+      "note": "The answer to 'You told him you used Claude, right?' only needs 'Well, no.' and one clause. The excuse that follows (he put a lot of time in, he got so excited) restates s07_l18 word for word in spirit. Cut about 6 of 9.7 s."
+    },
+    {
+      "id": "s07-5",
+      "kind": "trim",
+      "cueIds": ["s07_l23", "s07_l24"],
+      "savingSeconds": 11.3,
+      "priority": 5,
+      "note": "Leave early. End the dialogue on Kristina's challenge at s07_l21 and the look at s07_l22, then go to the split screen. Brendan's 'I just have to ease him into it' repeats s01b_l51, and the warm 'God bless you' button softens the sharpest line in the scene. Known small loss: the 'thorny' callback to s01b_l3."
+    },
+    {
+      "id": "s07-6",
+      "kind": "trim",
+      "cueIds": ["s07_l5", "s07_l10", "s07_l14", "s07_l16"],
+      "savingSeconds": 0.0,
+      "priority": 6,
+      "note": "Density only. Five pause directions in a 2.5 minute scene; the staged estimate charges about 1.5 s each. Keep s07_l22 (the look before the deletion) and fold the other four into the delivery notes on the next line. Counted as 0 here because directions carry no audio; the real saving is about 6 s of staged time."
+    },
+    {
+      "id": "s07-7",
+      "kind": "compress-speech",
+      "cueIds": ["s07_l25"],
+      "savingSeconds": 0.0,
+      "priority": 7,
+      "note": "The 27.4 s narrator run is storyboard playback, not stage time; on stage it is a wordless split screen. It is also author-pass rewrite #40, so ask before touching the wording. If the playback matters, reduce the read to the two actions (Liam opens the PR, Brendan deletes the branch) and let the image hold. Zero stage seconds either way."
+    }
+  ],
+  "recommendedSavingSeconds": 43.2
+}

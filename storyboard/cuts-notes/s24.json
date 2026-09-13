@@ -1,0 +1,76 @@
+{
+  "sceneId": "s24",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "a3601e44c444d12c",
+  "grade": "trimmable",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "Liam signs the statement of facts, agreeing that he knowingly accessed a protected computer without authorisation; the narrator then reveals the judge rejected the plea, and the trap door drops.",
+    "liam": "He reads the false word completely, argues nothing, and when asked for the last time whether anyone else had access to his account says no, protecting Brendan as he did in s19; the defence that was right is never used.",
+    "others": "Defence Counsel, a one-scene AI-video character, is sincere and competent and processes him kindly; Brendan gets his last line in the play as the to-audience narrator.",
+    "comedy": "Dry and dark: the Knowingly / I know / Right exchange, the one-hundred-and-fifty-one-so-eighteen-sounds-good arithmetic, and the tickers (lawmakers ask why the model has not been punished; analogue television resumes in forty states).",
+    "spectacle": "The ticker, the brownout flicker, the sizzle in the walls, then the unseen trap door and rope: the Luddite hanging paid off as sound only, with nothing on stage moving.",
+    "setupPayoff": [
+      "Everything happens on a document: the statement of facts is the last document in the chain",
+      "Luddite hanging motif (s01_l22, s06_l12, s14a_l23, s22_l10, s23b_l17) paid by the trap door sound",
+      "Marcus's Luddite tangents: he says the true thing and is treated as a crank",
+      "Liam refusing Brendan's confession (s19_l52 to s19_l54) and going still at 09:14 (s23_l12): the last time anybody asks",
+      "Hands motif: he signs and initials each page neatly because that is what was asked",
+      "Text on screen with no face: the ticker as the coldest medium"
+    ]
+  },
+  "turnsAt": "s24_l19",
+  "ifRemoved": "The play loses its last document and the last time anyone asks Liam whether someone else had access. s23b would have to carry the signing as a wordless beat at the bare desk, Marcus would have to ask the access question near s23b_l19, and the judge-rejects narration plus the trap door would follow s23b directly. Movement V is under its allowance by about three minutes, so there is no runtime reason to do this; trim the opening instead.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s24-1",
+      "kind": "redundant",
+      "cueIds": ["s24_l3", "s24_l4", "s24_l5", "s24_l6"],
+      "savingSeconds": 21.7,
+      "priority": 1,
+      "note": "The audience already has the eighteen-from-one-fifty-one arithmetic and why the big number exists (s23_l8) and the good-conduct figure (s23b_l13, where Liam says fourteen; here counsel says fifteen). Cut these four and the scene runs s24_l2 into s24_l7 and s24_l8 cleanly, and the contradiction goes with them."
+    },
+    {
+      "id": "s24-2",
+      "kind": "compress-speech",
+      "cueIds": ["s24_l16"],
+      "savingSeconds": 15.4,
+      "priority": 2,
+      "note": "Counsel's jury speech repeats what Liam already said in s23b_l15 (a jury of people whose power and planes do not work). Keep one sentence: twelve people who have lived through the brownouts look at eleven thousand log lines with your name on them. Drop the shocked-at-the-deal line, which also undercuts s24_l21."
+    },
+    {
+      "id": "s24-3",
+      "kind": "redundant",
+      "cueIds": ["s24_l1"],
+      "savingSeconds": 12.9,
+      "priority": 3,
+      "note": "The plea statistic restates s23_l8's point that the system runs on deals. Cutting it starts the scene on counsel's first line. Known cost: it is Brendan's last line in the play; his last line then becomes s23_l47, which is stronger. If the author wants Brendan present at the ending, keep this and take the others."
+    },
+    {
+      "id": "s24-4",
+      "kind": "cut-beat",
+      "cueIds": ["s24_l36"],
+      "savingSeconds": 4.2,
+      "priority": 4,
+      "note": "The narrator stating the theme (Marcus was right, the system brought us here) is the exposition the style rules forbid. The ledger's payoff is Marcus being right and treated as a crank, which the trap door in s24_l35 already delivers. End the play on the rope."
+    },
+    {
+      "id": "s24-5",
+      "kind": "compress-speech",
+      "cueIds": ["s24_l34"],
+      "savingSeconds": 6.5,
+      "priority": 5,
+      "note": "Narrator column, so it may not count as stage time. Keep the plot (judge rejected the plea, sentencing scheduled) and drop the closing joke that one hundred and fifty-one years would have been a good deal; it is a line trying to land right before the strongest sound cue in the show. Optional."
+    },
+    {
+      "id": "s24-6",
+      "kind": "trim",
+      "cueIds": ["s24_l28", "s24_l29"],
+      "savingSeconds": 5.1,
+      "priority": 6,
+      "note": "Leave-early alternative: end the counsel exchange on s24_l27 and go straight to the ticker. Not recommended; the small mundane exit is exactly the house style and it costs five seconds."
+    }
+  ],
+  "recommendedSavingSeconds": 54.2
+}

@@ -1,0 +1,94 @@
+{
+  "sceneId": "s11c",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "f1cad5018e54b720",
+  "grade": "protected",
+  "protected": {
+    "yes": true,
+    "why": "Guardrail 2 names the wordless solo build here (s11c_l39 to s11c_l44) as one of the two places Kristina's buy-in is shown on stage, with the Cursor Demo in s01b. Conflict on record: the Author-Pass Reconciliation lists 11c among the scenes cut per scope (01d, 08, 11c). Both are surfaced here and neither is resolved. Trim notes only, no cut-scene note."
+  },
+  "function": {
+    "plot": "Kristina hears the board's 'performance manage a bunch of them out' (s11c_l15, s11c_l17), Brendan puts Liam's slow rig and his influence on the juniors on the record with her (s11c_l21 to s11c_l30), she defends Liam and wins (s11c_l32), then builds a tool alone in four minutes and never makes the defense again.",
+    "liam": "His B5 reframing happens offstage: his best advocate makes the case for him for the last time, and his measured slowness is repriced as 'a very expensive way of proving a point' without him in the room.",
+    "others": "Kristina's buy-in completes by use (the solo build, guardrail 2); Brendan rehearses out loud the exact sentences he will type into the peer form in s12 ('he said it like it settled something' in s12_l57, 'the careful one' in s12_l62).",
+    "comedy": "Light and dry: the eleven-page doc and 'four of the eleven pages are about Yorkshire' (s11c_l6 to s11c_l9); this is a rest scene, not a laugh scene, and Kristina is the only woman's voice left in Movement II after s08.",
+    "spectacle": "The wordless solo build, s11c_l39 to s11c_l44: model dropdown, plan, the Vault question, green tests, Approve, tickets landing in Jira in about four minutes.",
+    "setupPayoff": [
+      "Kristina's winning defense of Liam (planted s11c_l32)",
+      "The overheard board call (planted s11c_l15 and s11c_l17, paid s14_l1)",
+      "The machine asks Kristina's own question back (pays s01b_l17 at s11c_l42)",
+      "The Linear to Jira tool (planted s11c_l40 to s11c_l43, paid s19_l20 and the sheet in s14_l2)",
+      "Things it gets wrong doc (echoes s11b_l69 at s11c_l24 and s11c_l28)"
+    ]
+  },
+  "turnsAt": "s11c_l42",
+  "ifRemoved": "s14_l1 opens on 'what Kristina had overheard' and would need a new source; s19_l20 (she built the cross-posting tool and it never worked) and the s14_l2 sheet lose the reason Brendan's work is invisible; Brendan's s12 form lines still work but lose their first airing; Kristina vanishes from the play after s08 until one line in s23. The board-call line has nowhere else to go because no other Kristina and Brendan scene remains; the solo build could run as a wordless screen prologue to s12, but that also strands the scope conflict above. Continuity to check: s11c_l43 shows tickets being created in Jira while s19_l20 says the tool never worked.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s11c-1",
+      "kind": "cut-beat",
+      "cueIds": ["s11c_l10", "s11c_l11"],
+      "savingSeconds": 7.2,
+      "priority": 1,
+      "note": "Cut the Marcus aside. s11b already staged him explaining her meeting to her, and s11c_l6 to s11c_l9 carry the panel-discussion complaint on their own. Nothing later points at these two cues."
+    },
+    {
+      "id": "s11c-2",
+      "kind": "compress-speech",
+      "cueIds": ["s11c_l23"],
+      "savingSeconds": 14.5,
+      "priority": 2,
+      "note": "Brendan retells the rig the audience watched in s11b_l44 to s11b_l68 (model behind, no tools, no tests, no network, fancy autocomplete). Keep the last two sentences, from 'He asks it for code' to 'proving a point', and drop the rest. Roughly sixty percent out."
+    },
+    {
+      "id": "s11c-3",
+      "kind": "compress-speech",
+      "cueIds": ["s11c_l21"],
+      "savingSeconds": 7.5,
+      "priority": 3,
+      "note": "Drop 'I sat with him for an hour and he walked me through the whole rig. And it's genuinely impressive. It's real engineering.' Keep the measurement and 'He said it like it settled something', which s12_l57 quotes word for word. The measurement itself is already known from s11b_l71."
+    },
+    {
+      "id": "s11c-4",
+      "kind": "compress-speech",
+      "cueIds": ["s11c_l28"],
+      "savingSeconds": 12.0,
+      "priority": 4,
+      "note": "s11b_l69 already told us the 'things it gets wrong' doc went obsolete, in six seconds. Keep only the rules-file half here ('I removed my rules file recently, to see what would happen. Nothing got worse. Most of my setup is instructions for a model I don't use anymore'), because s11c_l46 refers back to it."
+    },
+    {
+      "id": "s11c-5",
+      "kind": "compress-speech",
+      "cueIds": ["s11c_l4"],
+      "savingSeconds": 8.0,
+      "priority": 5,
+      "note": "The audience has seen the memes, the expensed box and the inference opinions. Keep 'It took a while but honestly? I'm just happy he's engaged. For Liam, that's a lot of progress.' The 'he's in' belief that s11c_l20 leans on survives."
+    },
+    {
+      "id": "s11c-6",
+      "kind": "compress-speech",
+      "cueIds": ["s11c_l32"],
+      "savingSeconds": 9.5,
+      "priority": 6,
+      "note": "Longest speech in the scene at 38 s and a ledger plant, so trim, do not cut. Remove 'You know what to ask for. You know what to check, and when it's lying, and when to close the window and write it yourself.' The two quoted ledger lines ('half of what you're calling the model is you', 'he's on the boat') stay."
+    },
+    {
+      "id": "s11c-7",
+      "kind": "compress-speech",
+      "cueIds": ["s11c_l30"],
+      "savingSeconds": 6.0,
+      "priority": 7,
+      "note": "Drop the run-up 'And look, Liam being slow is normal Liam. We'll absorb that.' and the closer 'That could genuinely hurt us.' The 'careful looks like' argument in the middle is the new information and feeds s12_l62; keep it whole."
+    },
+    {
+      "id": "s11c-8",
+      "kind": "trim",
+      "cueIds": ["s11c_l45", "s11c_l46", "s11c_l47", "s11c_l48"],
+      "savingSeconds": 44.0,
+      "priority": 8,
+      "note": "Four narrator lines of Kristina's inner feelings after the build, which the style rules forbid speaking on stage. Replace with a held look and the calendar chime (s11c_l49). The 44 s is the player figure; on stage this saves only the hold, about 10 s, since narration does not count as stage time. The protected build (s11c_l39 to s11c_l44) is untouched."
+    }
+  ],
+  "recommendedSavingSeconds": 108.7
+}

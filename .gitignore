@@ -10,4 +10,5 @@ __pycache__/
 stage/.script.lock
 stage/script-history/
 storyboard/proof.json
+storyboard/cuts.json
 storyboard/.edits/

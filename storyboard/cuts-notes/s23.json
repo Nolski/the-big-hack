@@ -1,0 +1,95 @@
+{
+  "sceneId": "s23",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "cae5347921224ae6",
+  "grade": "costly",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "Liam is charged on nineteen counts (151 years), the log puts both the 01:58 start and the 09:14 cleanup in his name, his un-revoked-access defence is shut down, Marcus testifies and his raw peer feedback is read out, and the trial adjourns to the fourteenth.",
+    "liam": "Arc beat 13: his defence is correct and useless, and at 09:14 he works out that Brendan did the cleanup and chooses silence, never looking at the gallery.",
+    "others": "Marcus finally gets a room where things are noted and is treated as a crank; his raw feedback contradicts his warm testimony; Brendan watches the back of Liam's head and does not confess; Kristina gets one joke.",
+    "comedy": "Nineteen counts for one night, the judge cutting Marcus off, Kristina enjoying him being interrupted for a change, and Marcus blaming the Chinese AI under oath.",
+    "spectacle": "The counts entering one row at a time, the brownout flicker with the vehicle-computer ticker, and the date going into a paper calendar.",
+    "setupPayoff": [
+      "peer summary read into court (pays 'responses are anonymised')",
+      "Marcus 'I want it noted' finally gets a witness box",
+      "Marcus Luddite tangents: Frame Breaking Act eleven months, treated as a crank",
+      "un-revoked access as kindness: Van Buren defence dismissed",
+      "log is true and the picture is false",
+      "plants 151 years for s23b and s24",
+      "plants eleven thousand log lines for s24_l16",
+      "plants the fourteenth for the s24 final image",
+      "plants Liam knowing about 09:14 for s24 'nobody else with access'"
+    ]
+  },
+  "turnsAt": "s23_l12",
+  "ifRemoved": "The plea in s23b and s24 loses the 151 years, the eleven thousand lines, the fourteenth and the moment Liam learns that Brendan did the cleanup, so s24's 'nobody else with access?' 'No' stops meaning anything. The peer summary payoff and Marcus's witness-box payoff have nowhere else to go; s23b is a two-hander on a radio and cannot carry a prosecutor. Trim inside only.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s23-1",
+      "kind": "cut-beat",
+      "cueIds": ["s23_l47", "s23_l42", "s23_l43", "s23_l44", "s23_l45", "s23_l46"],
+      "savingSeconds": 7.2,
+      "priority": 1,
+      "note": "Cut Brendan's aside asking whether Liam will get blamed; it announces the feeling the directions already show. Collapse the five directions before it into one line: Liam does not look at the gallery, Brendan does not look away from him. Then straight to the judge."
+    },
+    {
+      "id": "s23-2",
+      "kind": "trim",
+      "cueIds": ["s23_l2"],
+      "savingSeconds": 8.3,
+      "priority": 2,
+      "note": "Enter on the prosecutor reading counts. The 1986 film trivia is not used again, and the to-audience device (new in Movement V) lands better arriving at l6 with the joke than with a footnote."
+    },
+    {
+      "id": "s23-3",
+      "kind": "redundant",
+      "cueIds": ["s23_l25", "s23_l26"],
+      "savingSeconds": 8.8,
+      "priority": 3,
+      "note": "Two warnings where one will do. Go from Marcus's eleven-months line straight to the judge's 'You are here to answer questions.' 'It's the same system' is said again in s23b_l19 and was already said in s22_l3."
+    },
+    {
+      "id": "s23-4",
+      "kind": "compress-speech",
+      "cueIds": ["s23_l8"],
+      "savingSeconds": 8.8,
+      "priority": 4,
+      "note": "Keep only 'Added together, the maximum is one hundred and fifty-one years.' Defence Counsel makes the exact same point about the number existing so a smaller one sounds acceptable in s24_l4, in scene, which is the stronger instance."
+    },
+    {
+      "id": "s23-5",
+      "kind": "cut-beat",
+      "cueIds": ["s23_l7", "s23_l9"],
+      "savingSeconds": 8.0,
+      "priority": 5,
+      "note": "The audience watched the one night in s20 and knows when it happened. 'He wouldn't agree to it' is contradicted by s23b where he takes the deal; let l6 and the 151 number do the work."
+    },
+    {
+      "id": "s23-6",
+      "kind": "cut-beat",
+      "cueIds": ["s23_l5"],
+      "savingSeconds": 12.8,
+      "priority": 6,
+      "note": "Let the screen carry counts five through nineteen while l3 trails off at 'Count four'. The joke is the rows piling up and l6 names it; the second read-through repeats the effect in words."
+    },
+    {
+      "id": "s23-7",
+      "kind": "compress-speech",
+      "cueIds": ["s23_l15"],
+      "savingSeconds": 9.5,
+      "priority": 7,
+      "note": "Cut about a third. Drop 'it'll take nine seconds' and tighten the Van Buren explanation to two sentences. Keep 'they never took it back, that's their filing system' and 'nobody read eleven thousand lines, a model wrote you a summary', which s24_l16 relies on."
+    },
+    {
+      "id": "s23-8",
+      "kind": "trim",
+      "cueIds": ["s23_l29"],
+      "savingSeconds": 3.4,
+      "priority": 8,
+      "note": "Kristina's 'fun to watch him interrupt someone else' works alone as a cued clip and pays off the standups; Brendan's feed line about giving Marcus credit is not needed to set it up."
+    }
+  ],
+  "recommendedSavingSeconds": 66.8
+}

@@ -36,13 +36,16 @@ HERE = Path(__file__).resolve().parent
 import sys
 STAGE_ROOT = Path(os.environ.get("SB_STAGE_DIR", str(HERE.parent / "stage")))
 sys.path.insert(0,str(STAGE_ROOT))
-from script_store import ScriptStore, Conflict, raw_line
+from script_store import ScriptStore, Conflict, raw_line, digest
+import cuts_core
 STORE = ScriptStore(STAGE_ROOT)
 YAML_PATH = HERE / "storyboard.yaml"
 ARTIFACTS = HERE / "artifacts"
 STATIC = HERE / "static"
 OVERRIDES_PATH = HERE / "overrides.json"
 PROOF_PATH = HERE / "proof.json"  # how far the proofreading pass has got
+CUTS_PATH = HERE / "cuts.json"  # the author's per-scene cut decisions
+CUTS_NOTES = HERE / "cuts-notes"  # the written cut notes, one file per scene
 REMOTE_SCRIPT = HERE / "remote" / "tts_batch.py"
 EXTRACT_SCRIPT = HERE / "remote" / "extract_vectors.py"
 MUSIC_SCRIPT = HERE / "remote" / "music_gen.py"
@@ -99,6 +102,9 @@ def settings():
         image["model"] = _env("SB_IMAGE_MODEL")
     if _env("SB_SCRIPTS_DIR"):
         s["scripts_dir"] = _env("SB_SCRIPTS_DIR")
+    # The cut analysis factors (pace, wordless allowances, target) live in the
+    # yaml; cuts_core carries the defaults for anything not set there.
+    s.setdefault("analysis", {})
     return s
 
 
@@ -1115,6 +1121,80 @@ def api_proof_put(payload: dict = Body(...)):
         "saved": _dt.datetime.now().isoformat(timespec="seconds"),
     }
     PROOF_PATH.write_text(json.dumps(slim, indent=2), encoding="utf-8")
+    return slim
+
+
+# --------------------------------------------------------------------------- #
+# Cuts: where the runtime can come from
+# --------------------------------------------------------------------------- #
+def _screen_actions():
+    try:
+        return json.loads((STAGE_ROOT / "screen-actions.json").read_text(encoding="utf-8")).get("actions", {})
+    except (OSError, ValueError):
+        return {}
+
+
+def _cuts_load():
+    if not CUTS_PATH.exists():
+        return {"scenes": {}}
+    try:
+        data = json.loads(CUTS_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {"scenes": {}}
+    if not isinstance(data, dict) or not isinstance(data.get("scenes"), dict):
+        return {"scenes": {}}
+    return data
+
+
+def _cuts_save(data):
+    tmp = CUTS_PATH.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(data, indent=2), encoding="utf-8")
+    os.replace(tmp, CUTS_PATH)
+
+
+@app.get("/api/cuts/analysis")
+def api_cuts_analysis():
+    """Per-scene timing, speaker breakdown, ranking and the written notes.
+    Read-only: it never touches show.json."""
+    show = STORE.read()
+    out = cuts_core.analyse(show, _screen_actions(), settings().get("analysis"), CUTS_NOTES)
+    out["revision"] = digest(show)
+    return out
+
+
+@app.get("/api/cuts")
+def api_cuts_get():
+    return _cuts_load()
+
+
+CUT_DECISIONS = ("undecided", "keep", "trim", "cut")
+
+
+@app.put("/api/cuts")
+def api_cuts_put(payload: dict = Body(...)):
+    """Replace the author's decisions. Small enough to send whole on every change."""
+    if not isinstance(payload.get("scenes"), dict):
+        raise HTTPException(400, "scenes must be an object keyed by scene id")
+    scenes = {}
+    for sid, v in payload["scenes"].items():
+        if not isinstance(v, dict):
+            continue
+        decision = v.get("decision") or "undecided"
+        if decision not in CUT_DECISIONS:
+            raise HTTPException(400, f"decision must be one of {', '.join(CUT_DECISIONS)}")
+        target = v.get("target")
+        try:
+            target = float(target) if target not in (None, "") else None
+        except (TypeError, ValueError):
+            raise HTTPException(400, "target must be a number of minutes")
+        scenes[str(sid)] = {
+            "decision": decision,
+            "target": target,
+            "note": str(v.get("note") or "")[:2000],
+            "planned": sorted({str(x) for x in (v.get("planned") or [])}),
+        }
+    slim = {"scenes": scenes, "saved": _dt.datetime.now().isoformat(timespec="seconds")}
+    _cuts_save(slim)
     return slim
 
 

@@ -1,0 +1,85 @@
+{
+  "sceneId": "s22",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "45794aea73752d5b",
+  "grade": "costly",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "Federal agents arrest Liam at home mid-call with Marcus on a CFAA warrant, seize every device, and the HRIS field that still lists Malus Corp as his current employer plus his own correction (I was let go) becomes the recorded motive.",
+    "liam": "Arc beat 12: he does nothing, is processed politely, cannot stop correcting a wrong fact even in handcuffs, and answers 'is there anyone you would like us to call' with no, which is B9 said out loud.",
+    "others": "Marcus watches it happen through the laptop, gets the true thing (the system, York, the hanging) out just before the door comes down, and can do nothing but shout 'I told you'; the officers are sincere functionaries doing two different jobs in ninety seconds.",
+    "comedy": "The mispronounced surname (paid at s23_l14 and s23_l36), 'I can put a note on it' turning into 'Motive: Recently laid off', the ICE jacket, 'Mind the step', and Marcus asking if that is the TV.",
+    "spectacle": "The door coming down and the tackle: the only physical violence in the play, and it needs live officer bodies, which is a production cost rather than a dialogue cost; the Malus Corp statement and tickers on the running screen cost nothing.",
+    "setupPayoff": [
+      "Pays: Marcus's Luddite tangents said true and treated as a crank (York hanging, l10; 'hang you', l73)",
+      "Pays: the accumulating paperwork (warrant, tablet form, Motive field)",
+      "Pays: text on screen with no face (Malus Corp statement, tickers)",
+      "Pays: B9 empty apartment (nobody to call, l64 to l66)",
+      "Plants: the mispronounced name (l37 to l39, paid s23_l14, s23_l36)",
+      "Plants: the ICE jacket (l61, paid by the removal in s24)",
+      "Plants: 'former employer' as motive (l52, l58, paid s23_l11)"
+    ]
+  },
+  "turnsAt": "s22_l12",
+  "ifRemoved": "The arrest is the only scene in Movement IV and the arc's beat 12; without it s23 opens with Liam already in the dock and the house never sees the HRIS 'current employer' field, the ICE jacket, or the surname gag that s23_l14 and s23_l36 pay. Brendan's s23_l2 address could carry the arrest in one line, but 'anyone you would like us to call' and the only live physical beat have nowhere else to go. Movement IV is 5.5 minutes under its allowance and this scene runs under the dialogue average, so take about a minute inside it and look to Movements II and III for the rest.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s22-1",
+      "kind": "redundant",
+      "cueIds": ["s22_l7"],
+      "savingSeconds": 16.3,
+      "priority": 1,
+      "note": "Cut Marcus's 'I've still got a job, the ones they kept' speech. It restates l5 (that's you, the system) and s19 already settled that Marcus is fine because he files everything. l6 'I know, Marcus' runs straight into l8 and the operator cue is simpler."
+    },
+    {
+      "id": "s22-2",
+      "kind": "trim",
+      "cueIds": ["s22_l72"],
+      "savingSeconds": 12.3,
+      "priority": 2,
+      "note": "Cut the narrator explaining why the footage exists. Nothing in s23, s23b or s24 uses a recording; l33 already says the laptop stays open and the l71 direction covers Marcus hearing it at no cost. The scene ends on Marcus alone with a dead call, which is stronger."
+    },
+    {
+      "id": "s22-3",
+      "kind": "compress-speech",
+      "cueIds": ["s22_l3"],
+      "savingSeconds": 10.0,
+      "priority": 3,
+      "note": "Halve Marcus's opener. Keep 'the luddites didn't hate the machines, they hated the system' and drop the 'economics of it or whatever, paid shit like the rest of the peasants' run-up. The point lands in one sentence and the house has heard the long version in s14a."
+    },
+    {
+      "id": "s22-4",
+      "kind": "cut-beat",
+      "cueIds": ["s22_l46", "s22_l47", "s22_l48", "s22_l49", "s22_l50"],
+      "savingSeconds": 8.0,
+      "priority": 4,
+      "note": "Drop Officer Two leaning on him ('do not make this difficult', 'only going to get harder'). It is the one place an officer stops being a sincere functionary. From l45 she just reads the next field (l51) and Liam answers because the field is wrong: his pedantry makes him talk, nobody has to push."
+    },
+    {
+      "id": "s22-5",
+      "kind": "trim",
+      "cueIds": ["s22_l40", "s22_l41", "s22_l43"],
+      "savingSeconds": 8.5,
+      "priority": 5,
+      "note": "Liam asks what is happening four times (l36, l40, l59, l61); drop the second. l41's promise to read the warrant is not kept until l60 anyway, and l44 follows the name exchange at l39 cleanly. Keep the l42 direction, it sets up l45 and l63."
+    },
+    {
+      "id": "s22-6",
+      "kind": "redundant",
+      "cueIds": ["s22_l53"],
+      "savingSeconds": 4.9,
+      "priority": 6,
+      "note": "Cut the narrator's 'he should have remained quiet'. The l58 direction shows the same thing four seconds later when she writes 'Motive: Recently laid off'. Show, don't narrate."
+    },
+    {
+      "id": "s22-7",
+      "kind": "trim",
+      "cueIds": ["s22_l31"],
+      "savingSeconds": 2.7,
+      "priority": 7,
+      "note": "'THIS IS IT LIAM! I TOLD YOU!' repeats l30 ('I said this was going to happen'). Keep one; l30 is the frightened one and l73 carries the shouting later."
+    }
+  ],
+  "recommendedSavingSeconds": 62.7
+}

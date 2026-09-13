@@ -1,0 +1,102 @@
+{
+  "sceneId": "s01",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "2202125c2f76df38",
+  "grade": "protected",
+  "protected": {
+    "yes": true,
+    "why": "Guardrail 3: the talked-over-Kristina cold open is the protected comedy. Cut around it, not through it. Movement I is also on budget, so this scene only needs tightening."
+  },
+  "function": {
+    "plot": "Establishes the vibecoded 800-line portal that shipped with long-lived keys, Liam's open signup race condition with no estimate, and the credential jab at Kristina that s01b, s01c and the review all answer.",
+    "liam": "B2 half-belonging: the hard-bug guy who is right about the code and wrong about the room, and the exact tics (blocks PRs, condescends, the degree jab) that s12 later files as friction.",
+    "others": "Kristina runs a standup she cannot hold, praises outcome over craft and takes the heat for the key decision; Brendan is the sincere adopter who skimmed; Marcus derails on the Luddites and wants it noted he said something.",
+    "comedy": "Camera off and not eating, the uninvited screenshare, Marcus hearing his own argument in Liam's, keep your politics out of this for five minutes, and Kristina putting two weeks in the box.",
+    "spectacle": "The meme scroll, the Zoom grid with one black tile, the uninvited screenshare, and the dead air after the jab.",
+    "setupPayoff": [
+      "abrasive pedantry at the cold open -> review friction (s12)",
+      "credential jab -> behavioural concern, Kristina inside the room (s12, s13)",
+      "celebrating the shipped portal and the weekend -> outcome over craft (s07, s14)",
+      "take this offline fails -> the silence (s12, s14)",
+      "JWT memo and long-lived keys -> s20 l18, s20b l25",
+      "AI wrote the code and the tests -> s01b l38, s01c l17",
+      "next word predictor -> fancy autocomplete (s11b)",
+      "no estimate, I'll put two weeks -> s06 l16-l20, s07 l3",
+      "could be a one-line fix -> s06 l47",
+      "Marcus's Luddite tangent -> s06, s11b, s14a, s22, s24",
+      "noted that somebody said something -> s11b l36, the noted motif",
+      "memes before work -> s11b l1, s11c l4",
+      "time limits on updates -> s06 l6"
+    ]
+  },
+  "turnsAt": "s01_l38",
+  "ifRemoved": "Nothing downstream survives. The degree jab is what s01b, s01c and the review's collaboration concern answer; the JWT memo and the long-lived keys are what s20 and s20b run on; the missing estimate is the s06 and s07 race-condition thread; Marcus's Luddite line and his noted run all the way to s24. No neighbour can carry these because s01 is the first scene: every plant would have to arrive later, and the rule is nothing new arrives late.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s01-1",
+      "kind": "redundant",
+      "cueIds": ["s01_l13", "s01_l14"],
+      "savingSeconds": 8.4,
+      "priority": 1,
+      "note": "Brendan's live since Thursday, partners already on it repeats what Kristina said in l5, and Liam's l14 repeats his own question from l12. Cut both: l12 Who reviewed this? runs straight into l15 Well I skimmed it. Cleaner and faster."
+    },
+    {
+      "id": "s01-2",
+      "kind": "compress-speech",
+      "cueIds": ["s01_l22"],
+      "savingSeconds": 11.0,
+      "priority": 2,
+      "note": "Halve Marcus's Luddite speech. s06 l9-l15 is the first real history in the play by its own direction, and s14a corrects the execution claim. Keep the shape: listened last week, they got killed, pay attention. Drop the quality got worse claim; the l23 narrator fact-check goes with it. The talk-over stays intact."
+    },
+    {
+      "id": "s01-3",
+      "kind": "compress-speech",
+      "cueIds": ["s01_l33"],
+      "savingSeconds": 7.0,
+      "priority": 3,
+      "note": "Drop the JWT mechanics sentence (stateless, verify the signature, not hitting the database). Keep memo, JWTs, expire on their own, with diagrams, and the AI didn't read my memo, because s20 l18 and s20b l25 quote the memo back."
+    },
+    {
+      "id": "s01-4",
+      "kind": "compress-speech",
+      "cueIds": ["s01_l37"],
+      "savingSeconds": 7.0,
+      "priority": 4,
+      "note": "Kristina says partners dropped off at refresh three ways; keep one. Keep It's live until somebody rotates it and It's a tradeoff, and I made the call: the first is the s20 plant and the second is what l38 answers."
+    },
+    {
+      "id": "s01-5",
+      "kind": "compress-speech",
+      "cueIds": ["s01_l34"],
+      "savingSeconds": 4.0,
+      "priority": 5,
+      "note": "Drop I can pull up the first commit, it's exactly what you recommended in your memo. It restates the sentence before it. The reveal that Claude did read the memo is untouched."
+    },
+    {
+      "id": "s01-6",
+      "kind": "compress-speech",
+      "cueIds": ["s01_l5"],
+      "savingSeconds": 5.0,
+      "priority": 6,
+      "note": "Drop Support's quiet, adoption's climbing. Keep the partners shipping over the weekend and best launch we've had in ages: that is the praise register the ledger curdles later."
+    },
+    {
+      "id": "s01-7",
+      "kind": "cut-beat",
+      "cueIds": ["s01_l44"],
+      "savingSeconds": 4.7,
+      "priority": 7,
+      "note": "The point is who tends to get asked says the theme out loud after l42 has already shown it. l43 runs straight into Kristina's It's fine at l46, and Marcus still gets his noted at l47. Optional; the line is good, it is just narration."
+    },
+    {
+      "id": "s01-8",
+      "kind": "cut-beat",
+      "cueIds": ["s01_l25", "s01_l26", "s01_l27", "s01_l28"],
+      "savingSeconds": 35.2,
+      "priority": 8,
+      "note": "Known loss under guardrail 3, only if Movement I must give something up. Marcus's second run at the Luddites repeats the l20-l24 round; l24 ends Kristina is trying to run standup and l29 follows it. It also shortens the longest Liam-Marcus stretch without Brendan. Not in the recommended sum."
+    }
+  ],
+  "recommendedSavingSeconds": 42.4
+}

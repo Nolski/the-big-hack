@@ -1126,15 +1126,27 @@ $("#next").onclick = () => go(S.i + 1);
     S.revision = revFrom(sb);
     S.proof = { at: proof.at || null, scenes: proof.scenes || {} };
 
-    // Pick the read back up where it stopped.
-    const at = S.proof.at;
-    const i = at ? S.scenes.findIndex((s) => s.id === at.scene) : -1;
-    S.i = i >= 0 ? i : 0;
-    render();
-    if (at && i >= 0 && at.line) {
-      focusLine(at.line);
-      toast(`Picked up where you left off — scene ${
-        S.scenes[i].display_number || S.scenes[i].number}.`);
+    // A link from the Cuts page lands on a named scene and beat; the query is
+    // dropped afterwards so a later reload picks the read up as usual.
+    const q = new URLSearchParams(location.search);
+    const wantScene = q.get("scene");
+    const j = wantScene ? S.scenes.findIndex((s) => s.id === wantScene) : -1;
+    if (j >= 0) {
+      S.i = j;
+      render();
+      if (q.get("line")) focusLine(q.get("line"));
+      history.replaceState(null, "", location.pathname);
+    } else {
+      // Pick the read back up where it stopped.
+      const at = S.proof.at;
+      const i = at ? S.scenes.findIndex((s) => s.id === at.scene) : -1;
+      S.i = i >= 0 ? i : 0;
+      render();
+      if (at && i >= 0 && at.line) {
+        focusLine(at.line);
+        toast(`Picked up where you left off — scene ${
+          S.scenes[i].display_number || S.scenes[i].number}.`);
+      }
     }
     paintSaved();
     setInterval(pollRevision, 4000);

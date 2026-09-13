@@ -1,0 +1,29 @@
+{
+  "sceneId": "s00",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "c0fd204a3d1e6a55",
+  "grade": "costly",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "The news montage sets the world before anyone speaks: AI in the headlines, the Mountain Man introduction, the cue into the standup.",
+    "liam": "None directly; it frames the room he is about to be found in.",
+    "others": "None; it is film, not a scene.",
+    "comedy": "The montage's own cuts and Sam's pause.",
+    "spectacle": "The whole scene is a 111 second film; it plays as real time and the data cannot measure it.",
+    "setupPayoff": ["the news frame that the press scenes later echo"]
+  },
+  "turnsAt": null,
+  "ifRemoved": "The show would open cold on the standup with no frame. The film's length is the only lever: it is fixed at 111 seconds and any shortening is an edit to the video, not to the script.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s00-1",
+      "kind": "trim",
+      "cueIds": ["s00_montage"],
+      "savingSeconds": 0,
+      "priority": 1,
+      "note": "No script saving is possible here. If the film is re-cut, judge it by the clock; the allowance in the analysis settings (111 s) should be updated to match the new length."
+    }
+  ],
+  "recommendedSavingSeconds": 0
+}
