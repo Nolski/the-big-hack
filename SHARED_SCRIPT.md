@@ -5,6 +5,7 @@ The current script is `stage/show.json`. Both apps use `stage/script_store.py` f
 ## Editing
 
 - Storyboard at http://127.0.0.1:8011: edit scenes, lines, production notes, artwork and music. Save writes the shared script. The review editor edits the same cue IDs and source.
+- Proofreading page at http://127.0.0.1:8011/proof.html: one scene at a time with every line as a live text box. Each save carries the revision it was loaded against; a save refused with "the script changed elsewhere" means reload the page, and a small poll offers a reload when another editor has written.
 - Stage at http://127.0.0.1:8040: Settings → Edit current cue changes text, delivery, speaker and type in the shared script.
 - Each save carries the revision it was opened against. A stale editor receives HTTP 409 and must reload before saving. Writes use a cross-process file lock and atomic replacement. Before each script edit, the previous document is retained in the local `stage/script-history/` recovery directory.
 - Cue IDs are permanent identifiers, not sequence numbers. New cues get new IDs; insertion/reordering never renumbers existing IDs. Scene starts, counts and operator notes are recalculated on saves; screen assignments and staging stay attached to their cue IDs.

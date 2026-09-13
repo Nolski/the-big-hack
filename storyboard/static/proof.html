@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Big Hack — Proofread</title>
+  <link rel="stylesheet" href="proof.css?v=20260913-store" />
+</head>
+<body>
+  <header class="bar">
+    <div class="brand">
+      <span class="brand-title">THE BIG HACK</span>
+      <span class="brand-sub">proofread</span>
+    </div>
+
+    <div class="scene-nav">
+      <button class="btn icon" id="prev" title="Previous scene (P)">◀</button>
+      <span class="where" id="where">—</span>
+      <button class="btn icon" id="next" title="Next scene (N)">▶</button>
+    </div>
+
+    <div class="progress" title="Scenes marked proofed">
+      <div class="progress-bar"><div class="progress-fill" id="progFill"></div></div>
+      <span class="progress-num" id="progNum">—</span>
+    </div>
+
+    <span class="grow-space"></span>
+
+    <button class="btn" id="findBtn" title="Find across the whole script (⌘F)">⌕ Find</button>
+    <button class="btn speed" data-speed-toggle type="button"></button>
+    <button class="btn" id="helpBtn" title="Keyboard shortcuts (?)">?</button>
+    <span class="saved" id="saved">ready</span>
+    <a href="/" class="btn ghost" title="Back to the storyboard">↩</a>
+  </header>
+
+  <div class="shell">
+    <aside class="rail" id="rail"></aside>
+    <main class="page" id="page"></main>
+  </div>
+
+  <!-- Find / replace across every scene -->
+  <aside class="finder" id="finder" hidden>
+    <div class="finder-head">
+      <strong>Find in the whole script</strong>
+      <button class="btn icon" id="findClose" title="Close (Esc)">✕</button>
+    </div>
+    <input class="in" id="findQ" placeholder="find…" autocomplete="off" spellcheck="false" />
+    <input class="in" id="findR" placeholder="replace with…" autocomplete="off" spellcheck="false" />
+    <label class="check"><input type="checkbox" id="findCase" /> match case</label>
+    <div class="finder-actions">
+      <span class="finder-count" id="findCount"></span>
+      <button class="btn" id="replaceAll">Replace all</button>
+    </div>
+    <div class="finder-results" id="findResults"></div>
+  </aside>
+
+  <!-- Keyboard help -->
+  <div class="sheet" id="help" hidden>
+    <div class="sheet-box">
+      <div class="sheet-head">
+        <strong>Proofreading a script of 1,500 beats</strong>
+        <button class="btn icon" id="helpClose">✕</button>
+      </div>
+      <p class="sheet-note">
+        Every line on this page is already a text box — there is nothing to open
+        and nothing to close, and nothing collapses while you work. Typing is
+        written to the shared script (<code>stage/show.json</code>) a moment after
+        you stop, and the version it replaces is kept in
+        <code>stage/script-history/</code>. Every save carries the script revision
+        it was loaded against; if someone else has saved since, you are asked to
+        reload before continuing.
+      </p>
+      <dl class="keys">
+        <dt>Tab · ⇧Tab</dt><dd>next / previous box</dd>
+        <dt>↑ ↓</dt><dd>move a line; at the ends of a beat, into the beat above / below</dd>
+        <dt>Enter</dt><dd>next beat (a beat's words are one paragraph)</dd>
+        <dt>⌥Enter</dt><dd>new beat below this one, same speaker</dd>
+        <dt>⌘⌫</dt><dd>delete this beat</dd>
+        <dt>⌥F</dt><dd>flag this beat to come back to</dd>
+        <dt>⌘Enter</dt><dd>mark the scene proofed and go to the next one</dd>
+        <dt>⌘F · /</dt><dd>find (and replace) across every scene</dd>
+        <dt>N · P</dt><dd>next / previous scene, when you're not in a box</dd>
+        <dt>Esc</dt><dd>step out of the text</dd>
+        <dt>⌘S</dt><dd>write everything now — it does this on its own anyway</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="playback.js?v=20260825-proof"></script>
+  <script src="proof.js?v=20260913-store"></script>
+</body>
+</html>

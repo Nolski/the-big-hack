@@ -2,7 +2,7 @@
 
 Open http://127.0.0.1:8011/. The storyboard and stage console share `../stage/show.json` through `../stage/script_store.py`. See [Shared script](../SHARED_SCRIPT.md) for the complete contract.
 
-Edit a scene and Save to update the shared script. The review editor writes to that same source. **Export script** downloads current Markdown. Setting/staging is production context; spoken set descriptions and narration belong in the ordered script as narrator lines. Current audio and the opening movie are available in the scene editor.
+Edit a scene and Save to update the shared script. The review editor writes to that same source. The proofreading page at http://127.0.0.1:8011/proof.html reads and edits the same shared script one scene at a time; every save carries the script revision, and a save refused with "the script changed elsewhere" means reload before continuing. **Export script** downloads current Markdown. Setting/staging is production context; spoken set descriptions and narration belong in the ordered script as narrator lines. Current audio and the opening movie are available in the scene editor.
 
 All original artwork and voice configuration remains in `artifacts/` and `storyboard.yaml`. Current text no longer comes from `03 - Script`, `storyboard.yaml` scenes, or the old overrides sidecar. Those are retained as historical material. Missing artwork is shown as such rather than substituting an unrelated scene.
 

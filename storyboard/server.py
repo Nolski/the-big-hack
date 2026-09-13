@@ -21,6 +21,7 @@ import os
 import json
 import base64
 import subprocess
+import datetime as _dt
 from pathlib import Path
 
 import requests
@@ -41,6 +42,7 @@ YAML_PATH = HERE / "storyboard.yaml"
 ARTIFACTS = HERE / "artifacts"
 STATIC = HERE / "static"
 OVERRIDES_PATH = HERE / "overrides.json"
+PROOF_PATH = HERE / "proof.json"  # how far the proofreading pass has got
 REMOTE_SCRIPT = HERE / "remote" / "tts_batch.py"
 EXTRACT_SCRIPT = HERE / "remote" / "extract_vectors.py"
 MUSIC_SCRIPT = HERE / "remote" / "music_gen.py"
@@ -993,6 +995,127 @@ def api_review_line(payload: dict = Body(...)):
     if len(parsed)!=1: raise HTTPException(400,'Edit one beat here; add or remove beats in the storyboard editor.')
     shared_write(lambda: STORE.update_cue(lid,{**parsed[0],'revision':scene['revision']},cast_names()))
     return {'ok':True,'scene':sid,'line':lid,'raw':get_scene(sid)['lines'][next(i for i,l in enumerate(scene['lines']) if l['id']==lid)]['_raw']}
+
+
+# --------------------------------------------------------------------------- #
+# Proofreading page: revision-native single-cue edits and the pass-state sidecar
+# --------------------------------------------------------------------------- #
+LINE_TYPES = ('live', 'video', 'narration', 'direction')
+
+
+def _locate_cue(cid):
+    """The scene, index and built line for one permanent cue id."""
+    for scene in build_scenes():
+        for i, line in enumerate(scene['lines']):
+            if line['id'] == cid:
+                return scene, i, line
+    raise HTTPException(404, 'Unknown cue')
+
+
+def _nearest_speaker(scene, at):
+    """The nearest spoken, non-narrator speaker: walk up from `at`, then down.
+
+    Used when a beat becomes spoken and has nobody to say it yet; the store
+    refuses a spoken cue with no speaker, and the page hides the speaker select
+    on stage directions, so this is the only way that change can succeed.
+    """
+    lines = scene['lines']
+    order = list(range(at - 1, -1, -1)) + list(range(at, len(lines)))
+    for i in order:
+        line = lines[i]
+        if line['type'] in ('live', 'video') and line.get('speaker') and line['speaker'] != 'narrator':
+            return line['speaker']
+    return ''
+
+
+def _cue_payload(scene, idx, line, patch):
+    """Merge a partial proof edit into the line's own fields.
+
+    Keeps the couplings the store enforces: narration is always the narrator,
+    a stage direction has no speaker, and a spoken beat always has one.
+    """
+    kind, speaker = line['type'], line.get('speaker', '')
+    text, direction = line.get('text', ''), line.get('direction', '')
+    if 'text' in patch:
+        text = ' '.join(str(patch.get('text') or '').split())
+        if not text:
+            raise HTTPException(400, "A beat can't be saved empty; use its 🗑 to remove it.")
+    if 'direction' in patch:
+        direction = str(patch.get('direction') or '').strip()
+    if 'speaker' in patch:
+        speaker = str(patch.get('speaker') or '')
+        if speaker == 'narrator' and kind in ('live', 'video'):
+            kind = 'narration'
+        elif kind == 'narration' and speaker != 'narrator':
+            kind = 'live'
+        if not speaker and kind != 'direction':
+            raise HTTPException(400, 'Select a speaker for every spoken cue.')
+    if 'type' in patch:
+        kind = str(patch.get('type') or '')
+        if kind not in LINE_TYPES:
+            raise HTTPException(400, 'Unknown line type.')
+        if kind == 'direction':
+            speaker = ''
+        elif kind == 'narration':
+            speaker = 'narrator'
+        elif not speaker or speaker == 'narrator':
+            speaker = _nearest_speaker(scene, idx)
+            if not speaker:
+                raise HTTPException(400, 'A spoken beat needs a speaker; pick one on a neighbouring beat first.')
+    return {'type': kind, 'speaker': speaker, 'text': text, 'direction': direction}
+
+
+@app.get("/api/revision")
+def api_revision():
+    """The cheap poll: the shared script's current revision and nothing else."""
+    return {"revision": STORE.revision()}
+
+
+@app.put("/api/cue/{cid}")
+def api_cue_update(cid: str, payload: dict = Body(...)):
+    """Edit one cue's words, delivery note, speaker or type in the shared script.
+
+    Revision-native: the client sends the document revision it loaded and the
+    store refuses a stale or missing one with 409, at which point the client
+    reloads. Any field left out of the body keeps its current value.
+    """
+    scene, idx, line = _locate_cue(cid)
+    fields = _cue_payload(scene, idx, line, payload)
+    shared_write(lambda: STORE.update_cue(cid, {**fields, 'revision': payload.get('revision')}, cast_names()))
+    fresh_scene, _, fresh = _locate_cue(cid)
+    return {"revision": fresh_scene['revision'], "line": fresh}
+
+
+@app.get("/api/proof")
+def api_proof_get():
+    if not PROOF_PATH.exists():
+        return {"scenes": {}, "at": None}
+    try:
+        data = json.loads(PROOF_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {"scenes": {}, "at": None}
+    return data if isinstance(data, dict) else {"scenes": {}, "at": None}
+
+
+@app.put("/api/proof")
+def api_proof_put(payload: dict = Body(...)):
+    """Replace the pass state. Small enough to send whole on every change."""
+    if not isinstance(payload.get("scenes"), dict):
+        raise HTTPException(400, "scenes must be an object keyed by scene id")
+    slim = {
+        "at": payload.get("at") or None,
+        "scenes": {
+            str(sid): {
+                "done": bool(v.get("done")),
+                "at": v.get("at") or None,
+                "flags": sorted({str(f) for f in (v.get("flags") or [])}),
+            }
+            for sid, v in payload["scenes"].items() if isinstance(v, dict)
+        },
+        "saved": _dt.datetime.now().isoformat(timespec="seconds"),
+    }
+    PROOF_PATH.write_text(json.dumps(slim, indent=2), encoding="utf-8")
+    return slim
 
 
 @app.get("/api/review/media")
