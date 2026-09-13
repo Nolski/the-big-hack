@@ -1,0 +1,187 @@
+{
+  "passed": true,
+  "actions": 28,
+  "sourceFilesUnchanged": true,
+  "existingAssetsUnchanged": true,
+  "spokenLinesAndAudioUnchanged": true,
+  "onlyNewPerformance": "s01_l2",
+  "checks": [
+    "All action starts are independently callable",
+    "Partial typing and final deletion states",
+    "No swallowed peer-review or warning beats",
+    "Ownership across every computer scene",
+    "Two displays, pause, GO continuity, late join, blackout, replay",
+    "Kristina video muted, synchronized and confined to her first cue",
+    "No browser or HTTP errors"
+  ],
+  "actionsReviewed": [
+    {
+      "id": "key-issuance",
+      "seconds": 14.817032967032967,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "race-condition",
+      "seconds": 13.399450549450549,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "rng-entropy",
+      "seconds": 15.692490842490843,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "mutex-deadlock",
+      "seconds": 13.919597069597069,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "quantized-model",
+      "seconds": 13.71813186813187,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "pin-weights",
+      "seconds": 13.480036630036631,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "investigate-signup",
+      "seconds": 11,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "checkout-main",
+      "seconds": 5.5,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "delete-branch",
+      "seconds": 7.7,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "cloud-prompt",
+      "seconds": 9.2,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "policy-drafts",
+      "seconds": 33.5,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "delete-patch",
+      "seconds": 12.5,
+      "initial": "def deliver_with_retry(payload)\n  attempts = 0\n  begin\n    deliver_webhook(payload)\n  rescue DeliveryFailed\n    attempts += 1\n    raise if attempts >= 5\n    sleep(2 ** attempts)\n    retry\n  end\nend",
+      "final": ""
+    },
+    {
+      "id": "no-major-concerns",
+      "seconds": 5.6,
+      "initial": "",
+      "final": "No major concerns."
+    },
+    {
+      "id": "clear-first-answer",
+      "seconds": 5.8,
+      "initial": "No major concerns.",
+      "final": ""
+    },
+    {
+      "id": "feedback-first",
+      "seconds": 6.5,
+      "initial": "",
+      "final": "Liam is the strongest engineer on this team."
+    },
+    {
+      "id": "feedback-local",
+      "seconds": 18.5,
+      "initial": "Liam is the strongest engineer on this team.",
+      "final": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it. He said it like it settled something."
+    },
+    {
+      "id": "feedback-retract",
+      "seconds": 7,
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it. He said it like it settled something.",
+      "final": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it."
+    },
+    {
+      "id": "feedback-queue",
+      "seconds": 14,
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.",
+      "final": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read."
+    },
+    {
+      "id": "feedback-careful",
+      "seconds": 10,
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.",
+      "final": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one."
+    },
+    {
+      "id": "feedback-hedge",
+      "seconds": 7,
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one.",
+      "final": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. I don't think it is any more. I might be wrong about that."
+    },
+    {
+      "id": "feedback-race",
+      "seconds": 11,
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. I don't think it is any more. I might be wrong about that.",
+      "final": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. I don't think it is any more. I might be wrong about that. He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it."
+    },
+    {
+      "id": "feedback-submit",
+      "seconds": 4.4,
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. I don't think it is any more. I might be wrong about that. He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.",
+      "final": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. I don't think it is any more. I might be wrong about that. He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it."
+    },
+    {
+      "id": "promotion-empty",
+      "seconds": 1,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "promotion-thanks",
+      "seconds": 8.2,
+      "initial": "",
+      "final": "thanks everyone."
+    },
+    {
+      "id": "promotion-delete",
+      "seconds": 7.5,
+      "initial": "thanks everyone.",
+      "final": ""
+    },
+    {
+      "id": "phone-read",
+      "seconds": 1,
+      "initial": "",
+      "final": ""
+    },
+    {
+      "id": "phone-warning",
+      "seconds": 13,
+      "initial": "",
+      "final": "liam, about the machine. last night i tried something and i think i need to tell you before you..."
+    },
+    {
+      "id": "phone-delete",
+      "seconds": 10,
+      "initial": "liam, about the machine. last night i tried something and i think i need to tell you before you...",
+      "final": ""
+    }
+  ]
+}

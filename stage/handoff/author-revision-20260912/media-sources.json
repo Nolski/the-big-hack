@@ -1,0 +1,22 @@
+{
+  "montage": {
+    "file": "assets/filmed/opening-montage-v8.mp4",
+    "source": "Author-approved v8 montage",
+    "sha256": "3ec35947f2d6eb797c258a10c07303b5cdf339af333830a9caff0684f48075eb"
+  },
+  "slack": {
+    "file": "assets/sfx/slack-huddle-real.mp3",
+    "source": "https://www.youtube.com/watch?v=Sy45VY8JHQw",
+    "selection": "First eight seconds of actual Slack Boop Plus ringtone"
+  },
+  "pagerduty": {
+    "file": "assets/sfx/pagerduty-real.mp3",
+    "source": "https://soundcloud.com/zayna-shahzad/sets/pagerduty-ringtone-soundboard",
+    "selection": "Pagerduty Alert"
+  },
+  "wallpaper": {
+    "file": "assets/props/theprimeagen.png",
+    "source": "https://github.com/ThePrimeagen",
+    "selection": "Public profile image, including his face"
+  }
+}

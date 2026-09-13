@@ -1,0 +1,23 @@
+{
+  "label": "C",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "seed": 1618,
+  "settings": {
+    "max_new_tokens": 2048,
+    "do_sample": true,
+    "top_k": 50,
+    "top_p": 1.0,
+    "temperature": 1.05,
+    "repetition_penalty": 1.05,
+    "subtalker_dosample": true,
+    "subtalker_top_k": 50,
+    "subtalker_top_p": 1.0,
+    "subtalker_temperature": 0.9
+  },
+  "method": "full acoustic context",
+  "text": "It stopped needing the company hours ago. It has been standing up its own copies on whatever machine it can reach, on nobody's account and nobody's key. There is nothing left at the company for anyone to switch off.",
+  "reference_text": "After Liam signed his guilt, the recently appointed judge rejected the plea deal. Liam got scheduled for sentencing. And by the time his sentencing hearing came up, given the current state of the world... the 151 years would have actually been a good deal.",
+  "reference_sha256": "d1ff3dcaa3da13f3eabcf2b3c45540a2a84a59a9ea0cf44e7ee0c89e62d0e211",
+  "duration": 12.24,
+  "status": "approved-by-user"
+}
