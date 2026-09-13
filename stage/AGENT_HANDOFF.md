@@ -1,3 +1,11 @@
+# Current author revision
+
+This presentation includes the September 12 author pass through The Audit. Read README.md and handoff/author-revision-20260912/change-log.md first. The current editable source is show.json. Older branch/rebuild notes below predate this revision.
+
+# Current script revision
+
+This copy now uses edits/cut-pass 0a26f29 with verified voice recordings and optional generated voices for every speaking role. Consult README.md and handoff/audio-verification.json before older notes below. Stage directions are notes; only authored narrator dialogue is spoken.
+
 # The Big Hack — handoff for the receiving agent
 
 This folder is a self-contained, offline HTML presentation for an on-stage play. The user is moving it to another computer by AirDrop. Your immediate task is to start this copy and open the operator console. Playback does not require Git, a build step, an API key, ElevenLabs, Blender, Manim, Node.js, or downloaded model weights. It needs Python 3 and a current desktop browser; Chrome is the tested browser.
@@ -45,7 +53,7 @@ The server also supports `--host 0.0.0.0` for LAN access. Its current CLI defaul
 | --- | --- |
 | `index.html`, `stage.js`, `stage.css` | Operator console, notes, cue navigation, audio, shared clocks |
 | `display.html`, `display.js` | Left/right audience output and silent previews |
-| `show.json` | Complete compiled show: 24 scenes, 1,266 source beats, 1,112 operator cues, dialogue/notes, source references, audio and performance-video assignments |
+| `show.json` | Complete compiled show: 23 scenes, 1,248 source beats, 1,248 operator cues, dialogue/notes, source references, audio and performance-video assignments |
 | `visuals.js`, `visuals.css` | Recreated app screens, call layouts, physical scene handling and asset selection |
 | `screen-actions.json` | Editable typing/deletion sequences, timings, cue ranges and operator directions |
 | `screen-actions.js`, `screen-actions.css` | Action renderer, deterministic typing clock and computer-owner labels |

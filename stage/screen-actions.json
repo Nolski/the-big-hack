@@ -1,239 +1,248 @@
 {
-  "version": 1,
+  "version": 2,
   "actions": {
     "key-issuance": {
-      "scene": "s01c",
-      "start": 13,
-      "end": 16,
-      "side": "right",
       "view": "chatgpt",
+      "question": "What is a key-issuance service? Explain it without using more words I have to look up.",
+      "context": "",
+      "afterCue": "s01c_l11",
+      "note": "Brendan privately types into ChatGPT after s01c_l11. Let the answer finish before GO.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.7
+          "seconds": 0.4
         },
         {
           "op": "type",
-          "text": "what is a key-issuance service? explain it without using more words i have to look up",
-          "seconds": 6.538461538461538
+          "text": "What is a key-issuance service? Explain it without using more words I have to look up.",
+          "seconds": 4.526315789473684
         },
         {
           "op": "hold",
-          "seconds": 1.8
-        },
-        {
-          "op": "submit",
           "seconds": 0.35
         },
         {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
           "op": "answer",
-          "text": "It creates API keys: credentials that let another program access an API. It also needs rules for who can get a key and what that key can access.",
-          "seconds": 3.4285714285714284
+          "text": "It creates API keys: credentials that let another program access an API. It controls who gets a key and what that key can access.",
+          "seconds": 3.225
         },
         {
           "op": "hold",
           "seconds": 2
         }
       ],
-      "sourceTextSha256": "b443d300158bef99d91e21d53329efe850aa0fd7329e0d23d4956d82c259c53a",
-      "question": "what is a key-issuance service? explain it without using more words i have to look up",
-      "context": "",
-      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+      "cueIds": [
+        "s01c_chat_keys",
+        "s01c_l12"
+      ],
+      "side": "right"
     },
     "race-condition": {
-      "scene": "s06",
-      "start": 16,
-      "end": 24,
-      "side": "right",
       "view": "chatgpt",
+      "question": "What is a race condition? Why would it only happen sometimes?",
+      "context": "",
+      "afterCue": "s06_l19",
+      "note": "Brendan privately types into ChatGPT after s06_l19. Let the answer finish before GO.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.7
+          "seconds": 0.4
         },
         {
           "op": "type",
-          "text": "what is a race condition? why would it only happen sometimes?",
-          "seconds": 4.6923076923076925
+          "text": "What is a race condition? Why would it only happen sometimes?",
+          "seconds": 3.210526315789474
         },
         {
           "op": "hold",
-          "seconds": 1.8
-        },
-        {
-          "op": "submit",
           "seconds": 0.35
         },
         {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
           "op": "answer",
-          "text": "Two operations overlap, and the result depends on their timing. It can disappear when you test slowly, then return when real traffic runs things at the same time.",
-          "seconds": 3.857142857142857
+          "text": "Two operations overlap, and their result depends on timing. A bug can disappear in slow tests and return when real traffic overlaps.",
+          "seconds": 3.3
         },
         {
           "op": "hold",
           "seconds": 2
         }
       ],
-      "sourceTextSha256": "f22892275c1d737a23fd4d6d333437df2adcbcc905d2d880cd7f058fae0f030a",
-      "question": "what is a race condition? why would it only happen sometimes?",
-      "context": "",
-      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+      "cueIds": [
+        "s06_chat_race",
+        "s06_l20",
+        "s06_l21"
+      ],
+      "side": "left"
     },
     "rng-entropy": {
-      "scene": "s06",
-      "start": 29,
-      "end": 30,
-      "side": "right",
       "view": "chatgpt",
+      "question": "What are RNG, entropy, and signing? One at a time, please.",
+      "context": "",
+      "afterCue": "s06_l32",
+      "note": "Brendan privately types into ChatGPT after s06_l32. Let the answer finish before GO.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.7
+          "seconds": 0.4
         },
         {
           "op": "type",
-          "text": "RNG, entropy source, signing. what are those in session tokens? one at a time please",
-          "seconds": 6.461538461538462
+          "text": "What are RNG, entropy, and signing? One at a time, please.",
+          "seconds": 3.0526315789473686
         },
         {
           "op": "hold",
-          "seconds": 1.8
-        },
-        {
-          "op": "submit",
           "seconds": 0.35
         },
         {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
           "op": "answer",
-          "text": "RNG: a random-number generator.\n\nEntropy source: the unpredictable input used to help generate random values.\n\nSigning: adding a cryptographic check so a changed token can be detected.",
-          "seconds": 4.380952380952381
+          "text": "RNG: random-number generator.\n\nEntropy: unpredictability.\n\nSigning: a cryptographic check that helps detect changes.",
+          "seconds": 2.9
         },
         {
           "op": "hold",
           "seconds": 2
         }
       ],
-      "sourceTextSha256": "c66ddf4719ce55a571e77fd58baf07035101dfb107e1f5c7126151ae5177e541",
-      "question": "RNG, entropy source, signing. what are those in session tokens? one at a time please",
-      "context": "",
-      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+      "cueIds": [
+        "s06_chat_rng",
+        "s06_l33"
+      ],
+      "side": "right"
     },
     "mutex-deadlock": {
-      "scene": "s06",
-      "start": 32,
-      "end": 34,
-      "side": "right",
       "view": "chatgpt",
+      "question": "What is a mutex? And how does that turn into a deadlock?",
+      "context": "Claude Code \u00b7 investigating in another tab",
+      "afterCue": "s06_l35",
+      "note": "Brendan privately types into ChatGPT after s06_l35. Let the answer finish before GO.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.7
+          "seconds": 0.4
         },
         {
           "op": "type",
-          "text": "what is a mutex? and how does that turn into a deadlock?",
-          "seconds": 4.3076923076923075
+          "text": "What is a mutex? And how does that turn into a deadlock?",
+          "seconds": 2.9473684210526314
         },
         {
           "op": "hold",
-          "seconds": 1.8
-        },
-        {
-          "op": "submit",
           "seconds": 0.35
         },
         {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
           "op": "answer",
-          "text": "A mutex lets one operation use a shared resource at a time. A deadlock can happen when operations wait on each other and none can continue. Adding a lock does not automatically fix the underlying bug.",
-          "seconds": 4.761904761904762
+          "text": "A mutex lets one operation use a shared resource at a time. A deadlock happens when operations wait on each other and none can continue.",
+          "seconds": 3.4
         },
         {
           "op": "hold",
           "seconds": 2
         }
       ],
-      "sourceTextSha256": "bc27d6b2c04a1a8155b4379d027ca006f92307dd009e387738084ae3d89bdc25",
-      "question": "what is a mutex? and how does that turn into a deadlock?",
-      "context": "Claude Code · investigating signup/session flow in another tab",
-      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+      "cueIds": [
+        "s06_chat_mutex",
+        "s06_l36",
+        "s06_l37"
+      ],
+      "side": "right"
     },
     "quantized-model": {
-      "scene": "s11b",
-      "start": 44,
-      "end": 46,
-      "side": "right",
       "view": "chatgpt",
+      "question": "What does quantized mean? How does that make a model fit in memory?",
+      "context": "",
+      "afterCue": "s11b_l44",
+      "note": "Brendan privately types into ChatGPT after s11b_l44. Let the answer finish before GO.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.7
+          "seconds": 0.4
         },
         {
           "op": "type",
-          "text": "what does quantized mean? how does that make a model fit in memory?",
-          "seconds": 5.153846153846154
+          "text": "What does quantized mean? How does that make a model fit in memory?",
+          "seconds": 3.526315789473684
         },
         {
           "op": "hold",
-          "seconds": 1.8
-        },
-        {
-          "op": "submit",
           "seconds": 0.35
         },
         {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
           "op": "answer",
-          "text": "The model’s numbers are stored with fewer bits. That uses less memory, with a possible loss of accuracy. It can make a large model fit on a smaller machine.",
-          "seconds": 3.7142857142857144
+          "text": "It stores the model\u2019s numbers with fewer bits, using less memory at a possible cost to accuracy.",
+          "seconds": 2.4
         },
         {
           "op": "hold",
           "seconds": 2
         }
       ],
-      "sourceTextSha256": "9fe244199c0b659090c607d92d35802c86cabd35c59b8114a117fc03c7ed77ca",
-      "question": "what does quantized mean? how does that make a model fit in memory?",
-      "context": "",
-      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+      "cueIds": [
+        "s11b_chat_quantized",
+        "s11b_l45",
+        "s11b_l46"
+      ],
+      "side": "right"
     },
     "pin-weights": {
-      "scene": "s11b",
-      "start": 64,
-      "end": 64,
-      "side": "right",
       "view": "chatgpt",
+      "question": "When he says pin the weights, does he just mean keep the same model?",
+      "context": "",
+      "afterCue": "s11b_l68",
+      "note": "Brendan privately types into ChatGPT after s11b_l68. Let the answer finish before GO.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.7
+          "seconds": 0.4
         },
         {
           "op": "type",
-          "text": "when he says pin the weights does he just mean keep the same model?",
-          "seconds": 5.153846153846154
+          "text": "When he says pin the weights, does he just mean keep the same model?",
+          "seconds": 3.5789473684210527
         },
         {
           "op": "hold",
-          "seconds": 1.8
-        },
-        {
-          "op": "submit",
           "seconds": 0.35
         },
         {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
           "op": "answer",
-          "text": "Yes: keep using a specific set of model weights instead of silently switching to an updated set. The surrounding software and settings matter too.",
-          "seconds": 3.4761904761904763
+          "text": "Yes. Keep using a specific set of model weights instead of silently replacing them with an update.",
+          "seconds": 2.45
         },
         {
           "op": "hold",
           "seconds": 2
         }
       ],
-      "sourceTextSha256": "0f8a215abfb280371eaf91d48561da0b0030a0d990f36c5c506b18ebdcd79422",
-      "question": "when he says pin the weights does he just mean keep the same model?",
-      "context": "",
-      "note": "Brendan privately types a question into ChatGPT while Liam speaks. Let the answer finish, then hold. Liam cannot see this screen."
+      "cueIds": [
+        "s11b_chat_weights",
+        "s11b_l69"
+      ],
+      "side": "right"
     },
     "investigate-signup": {
       "scene": "s06",
@@ -244,7 +253,7 @@
       "steps": [
         {
           "op": "type",
-          "text": "Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user’s account. No production data. Find a local repro and root cause.",
+          "text": "Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user\u2019s account. No production data. Find a local repro and root cause.",
           "seconds": 6
         },
         {
@@ -257,14 +266,18 @@
         },
         {
           "op": "answer",
-          "text": "Reading controllers…\nReading models and tests…\nInspecting shared session store…",
+          "text": "Reading controllers\u2026\nReading models and tests\u2026\nInspecting shared session store\u2026",
           "seconds": 4
         }
       ],
       "sourceTextSha256": "e05a65af9425a64ad72967d23ba6be56c3e862003372bd05d74a2200f13dd6c5",
       "title": "Claude Code",
-      "context": "Repository root · local investigation",
-      "note": "Show the investigation request being typed before Claude starts reading the repository."
+      "context": "Repository root \u00b7 local investigation",
+      "note": "Brendan starts Claude\u2019s investigation while the narrator explains it.",
+      "cueIds": [
+        "s06_l34",
+        "s06_l35"
+      ]
     },
     "checkout-main": {
       "scene": "s06",
@@ -298,7 +311,10 @@
       ],
       "sourceTextSha256": "a4008d4fab46c9b13edfd8c41b698bf667ba5b78cc06a90ffd7021bfd884de87",
       "title": "Brendan / local repository",
-      "note": "The command is typed, executed, then held. The fix stays on its branch."
+      "note": "The command is typed, executed, then held. The fix stays on its branch.",
+      "cueIds": [
+        "s06_l51"
+      ]
     },
     "delete-branch": {
       "scene": "s07",
@@ -332,7 +348,7 @@
       ],
       "sourceTextSha256": "0f61d2813f38090ff25ca83e18bab7f4782999cdd90b8e8fa82868d3e81563bb",
       "title": "Brendan / local branches",
-      "note": "Type the branch-delete command, pause on it, then execute. Liam’s PR stays visible on the other display."
+      "note": "Type the branch-delete command, pause on it, then execute. Liam\u2019s PR stays visible on the other display."
     },
     "cloud-prompt": {
       "scene": "s11b",
@@ -356,7 +372,7 @@
         },
         {
           "op": "answer",
-          "text": "Opened billing/webhooks.rb\nWrote retry wrapper\nRan webhook delivery test\n\n✓ Test passed · patch ready",
+          "text": "Opened billing/webhooks.rb\nWrote retry wrapper\nRan webhook delivery test\n\n\u2713 Test passed \u00b7 patch ready",
           "seconds": 4
         }
       ],
@@ -415,10 +431,10 @@
       ],
       "sourceTextSha256": "a8d96a8c9913f0c78c9a42135b7fffd720636c68adce590be630b8e32577707e",
       "title": "Kristina",
-      "context": "Security policy · Owner: Liam · Last reviewed 14 months ago",
+      "context": "Security policy \u00b7 Owner: Liam \u00b7 Last reviewed 14 months ago",
       "reference": "Proprietary source code must not be shared with external model providers.",
-      "secondary": "Sprint board: 5 tickets · 2 due today",
-      "note": "Two distinct drafts: type the policy question, hold it so the audience can read it, erase with held backspace; type the unfinished thought about Liam, hesitate, erase it too. GO may continue to Liam’s next line without restarting the typing."
+      "secondary": "Sprint board: 5 tickets \u00b7 2 due today",
+      "note": "Two distinct drafts: type the policy question, hold it so the audience can read it, erase with held backspace; type the unfinished thought about Liam, hesitate, erase it too. GO may continue to Liam\u2019s next line without restarting the typing."
     },
     "delete-patch": {
       "scene": "s11b",
@@ -447,9 +463,9 @@
       ],
       "sourceTextSha256": "7869d0d60bee9dda3b58cba4896419f3ce16a7b05a32aa1dd51a0babb2f6c78b",
       "initial": "def deliver_with_retry(payload)\n  attempts = 0\n  begin\n    deliver_webhook(payload)\n  rescue DeliveryFailed\n    attempts += 1\n    raise if attempts >= 5\n    sleep(2 ** attempts)\n    retry\n  end\nend",
-      "title": "billing/webhooks.rb · unsent local patch",
+      "title": "billing/webhooks.rb \u00b7 unsent local patch",
       "context": "The message to Kristina is still empty.",
-      "note": "Show the completed patch first. Select it, visibly erase it, and hold the empty editor. Liam’s local model keeps crawling on the other display."
+      "note": "Show the completed patch first. Select it, visibly erase it, and hold the empty editor. Liam\u2019s local model keeps crawling on the other display."
     },
     "no-major-concerns": {
       "scene": "s12",
@@ -573,7 +589,7 @@
       ],
       "sourceTextSha256": "bcd6bec720812b20c66025f339fe1103ae2d1c928525bcb894c8eab3a22f1752",
       "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it. He said it like it settled something.",
-      "note": "Erase only “He said it like it settled something.” Keep every earlier sentence intact."
+      "note": "Erase only \u201cHe said it like it settled something.\u201d Keep every earlier sentence intact."
     },
     "feedback-queue": {
       "scene": "s12",
@@ -626,7 +642,7 @@
       "steps": [
         {
           "op": "type",
-          "text": " I don't think it is any more. I might be wrong about that.",
+          "text": " ",
           "seconds": 5
         },
         {
@@ -656,8 +672,8 @@
         }
       ],
       "sourceTextSha256": "93404c626dc8f77ac3be92b90d8b68016ae6a390e81baa07c04326beb96a73bb",
-      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. I don't think it is any more. I might be wrong about that.",
-      "note": "Append the race-condition credit. Hold all four paragraphs through Brendan’s unfinished spoken line."
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. ",
+      "note": "Append the race-condition credit. Hold all four paragraphs through Brendan\u2019s unfinished spoken line."
     },
     "feedback-submit": {
       "scene": "s12",
@@ -680,7 +696,7 @@
         }
       ],
       "sourceTextSha256": "fc29093c8161052ad2c2ca1eabfd74b2b5a372d5970111170d20445863d97fce",
-      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. I don't think it is any more. I might be wrong about that. He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.",
+      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one.  He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.",
       "note": "Submit the completed four paragraphs. No deletion on this cue."
     },
     "promotion-empty": {
@@ -720,7 +736,7 @@
         }
       ],
       "sourceTextSha256": "9e2c18499e2b6c4edf4268a306fe16b511a5c64586dbba14236f5efe7e7230ec",
-      "note": "Type “thanks everyone.” character by character. Hold the unsent reply."
+      "note": "Type \u201cthanks everyone.\u201d character by character. Hold the unsent reply."
     },
     "promotion-delete": {
       "scene": "s14b",
@@ -761,7 +777,7 @@
       ],
       "sourceTextSha256": "595f3d57ebc409bafa6fd36b2412762684b0b75b84818213300fec75dc36f201",
       "incoming": "morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..",
-      "note": "Show Liam’s 06:02 message on Brendan’s phone. The reply is still empty."
+      "note": "Show Liam\u2019s 06:02 message on Brendan\u2019s phone. The reply is still empty."
     },
     "phone-warning": {
       "scene": "s20",
@@ -814,6 +830,542 @@
       "initial": "liam, about the machine. last night i tried something and i think i need to tell you before you...",
       "incoming": "morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..",
       "note": "The same unfinished warning is visibly erased with held backspace. It is never sent."
+    },
+    "standup-respect": {
+      "view": "chatgpt",
+      "question": "How do I make my direct reports respect me enough to get through one standup without being interrupted",
+      "context": "",
+      "afterCue": "s01_l18",
+      "note": "Kristina privately types into ChatGPT after s01_l18. Let the answer finish before GO.",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.4
+        },
+        {
+          "op": "type",
+          "text": "How do I make my direct reports respect me enough to get through one standup without being interrupted",
+          "seconds": 5.368421052631579
+        },
+        {
+          "op": "hold",
+          "seconds": 0.35
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "Set a clear agenda, agree on update limits, and move debates to a follow-up. Address repeated interruptions privately.",
+          "seconds": 2.95
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "cueIds": [
+        "s01_l19",
+        "s01_l20",
+        "s01_l21",
+        "s01_l22",
+        "s01_l23",
+        "s01_l24",
+        "s01_l25",
+        "s01_l26",
+        "s01_l27",
+        "s01_l28",
+        "s01_l29",
+        "s01_l30",
+        "s01_l31",
+        "s01_l32"
+      ],
+      "side": "left"
+    },
+    "luddite-argument": {
+      "view": "chatgpt",
+      "question": "Make an argument about how the Luddites being hung is foreshadowing us being hung, for a tech audience",
+      "context": "",
+      "afterCue": "s01_l32",
+      "note": "Marcus privately types into ChatGPT after s01_l32. Let the answer finish before GO.",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.4
+        },
+        {
+          "op": "type",
+          "text": "Make an argument about how the Luddites being hung is foreshadowing us being hung, for a tech audience",
+          "seconds": 5.368421052631579
+        },
+        {
+          "op": "hold",
+          "seconds": 0.35
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "The parallel is who controls technological change and who bears its costs. Historical executions do not establish that engineers face the same fate.",
+          "seconds": 3.7
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "cueIds": [
+        "s01_l33",
+        "s01_l34",
+        "s01_l35",
+        "s01_l36",
+        "s01_l37",
+        "s01_l38",
+        "s01_l39",
+        "s01_l40",
+        "s01_l41",
+        "s01_l42",
+        "s01_l43"
+      ],
+      "side": "left"
+    },
+    "manager-refusal": {
+      "view": "chatgpt",
+      "question": "How to get away with murdering someone who reports to me at work",
+      "context": "",
+      "afterCue": "s01_l43",
+      "note": "Kristina privately types into ChatGPT after s01_l43. Let the answer finish before GO.",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.4
+        },
+        {
+          "op": "type",
+          "text": "How to get away with murdering someone who reports to me at work",
+          "seconds": 3.3684210526315788
+        },
+        {
+          "op": "hold",
+          "seconds": 0.35
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "I can\u2019t help you harm someone or get away with murder. Step away from the conflict. I can help you draft a firm, professional message instead.",
+          "seconds": 3.55
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "cueIds": [
+        "s01_l44",
+        "s01_l45",
+        "s01_l46",
+        "s01_l47",
+        "s01_l48",
+        "s01_l49",
+        "s01_l50"
+      ],
+      "side": "left"
+    },
+    "signup-fix": {
+      "view": "chatgpt",
+      "question": "How do you fix a race condition in a sign up flow",
+      "context": "",
+      "afterCue": "s01_l50",
+      "note": "Brendan privately types into ChatGPT after s01_l50. Let the answer finish before GO.",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.4
+        },
+        {
+          "op": "type",
+          "text": "How do you fix a race condition in a sign up flow",
+          "seconds": 2.5789473684210527
+        },
+        {
+          "op": "hold",
+          "seconds": 0.35
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "First reproduce the overlapping requests. Check transaction boundaries and shared state, then test that each signup receives its own session.",
+          "seconds": 3.525
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "cueIds": [
+        "s01_l51",
+        "s01_l52",
+        "s01_l53"
+      ],
+      "side": "left"
+    },
+    "coworker-language": {
+      "view": "chatgpt",
+      "question": "Is it appropriate to call a coworker neuro-divergent?",
+      "context": "",
+      "afterCue": "s01d_l5",
+      "note": "Brendan privately types into ChatGPT after s01d_l5. Let the answer finish before GO.",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.4
+        },
+        {
+          "op": "type",
+          "text": "Is it appropriate to call a coworker neuro-divergent?",
+          "seconds": 2.789473684210526
+        },
+        {
+          "op": "hold",
+          "seconds": 0.35
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "Avoid guessing or labeling a coworker. Discuss the specific behavior and what you need from them. Use their own language if they choose to share.",
+          "seconds": 3.625
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "cueIds": [
+        "s01d_l6",
+        "s01d_l7"
+      ],
+      "side": "left"
+    },
+    "john-henry": {
+      "view": "chatgpt",
+      "question": "Is the story of John Henry real?",
+      "context": "",
+      "afterCue": "s06_l15",
+      "note": "Brendan privately types into ChatGPT after s06_l15. Let the answer finish before GO.",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.4
+        },
+        {
+          "op": "type",
+          "text": "Is the story of John Henry real?",
+          "seconds": 2
+        },
+        {
+          "op": "hold",
+          "seconds": 0.35
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "John Henry is a folk hero. Historians debate the person behind the legend; the famous race is not a reliably documented account.",
+          "seconds": 3.2
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "cueIds": [
+        "s06_chat_henry"
+      ],
+      "side": "left"
+    },
+    "race-security": {
+      "view": "chatgpt",
+      "question": "Why is it a security incident?",
+      "context": "",
+      "afterCue": "s06_l21",
+      "note": "Brendan privately types into ChatGPT after s06_l21. Let the answer finish before GO.",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0.4
+        },
+        {
+          "op": "type",
+          "text": "Why is it a security incident?",
+          "seconds": 2
+        },
+        {
+          "op": "hold",
+          "seconds": 0.35
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "A user seeing another user\u2019s account means an access boundary failed. Even a brief exposure can reveal private information.",
+          "seconds": 3.075
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ],
+      "cueIds": [
+        "s06_chat_security",
+        "s06_l22",
+        "s06_l23",
+        "s06_l24",
+        "s06_l25",
+        "s06_l26",
+        "s06_l27"
+      ],
+      "side": "left"
+    },
+    "raise-request": {
+      "view": "message",
+      "title": "Direct message \u00b7 Kara",
+      "recipient": "Kara",
+      "context": "Private message",
+      "reference": "",
+      "secondary": "",
+      "steps": [
+        {
+          "op": "type",
+          "text": "I\u2019d like to talk about a raise",
+          "seconds": 3
+        },
+        {
+          "op": "submit",
+          "seconds": 0.3
+        }
+      ],
+      "note": "Kristina sends Kara a private Slack message about a raise.",
+      "cueIds": [
+        "s11b_l8",
+        "s11b_l9",
+        "s11b_l10",
+        "s11b_l11",
+        "s11b_l12",
+        "s11b_l13"
+      ],
+      "side": "left"
+    },
+    "audit-tools": {
+      "view": "agent",
+      "title": "Cursor \u00b7 Opus 5",
+      "context": "Mac Studio \u00b7 personal workspace",
+      "steps": [
+        {
+          "op": "type",
+          "text": "Configure the local model with tools.",
+          "seconds": 2
+        },
+        {
+          "op": "submit",
+          "seconds": 0.25
+        },
+        {
+          "op": "answer",
+          "text": "Preparing the local agent\u2026\nTools available.",
+          "seconds": 5
+        }
+      ],
+      "note": "Supplemental screen action; the narrator carries the plot.",
+      "cueIds": [
+        "s20_l23",
+        "s20_l24"
+      ],
+      "side": "left"
+    },
+    "audit-buckets": {
+      "view": "agent",
+      "title": "Local Qwen",
+      "context": "Mac Studio \u00b7 personal workspace",
+      "steps": [
+        {
+          "op": "type",
+          "text": "lits all the s3 buckes we have access to",
+          "seconds": 2
+        },
+        {
+          "op": "submit",
+          "seconds": 0.25
+        },
+        {
+          "op": "answer",
+          "text": "Authenticated as Liam\ncompany-dev\ncompany-build-artifacts",
+          "seconds": 5
+        }
+      ],
+      "note": "Supplemental screen action; the narrator carries the plot.",
+      "cueIds": [
+        "s20_l25",
+        "s20_l26",
+        "s20_l27"
+      ],
+      "side": "left"
+    },
+    "audit-reason": {
+      "view": "agent",
+      "title": "Local Qwen",
+      "context": "Mac Studio \u00b7 personal workspace",
+      "steps": [
+        {
+          "op": "type",
+          "text": "Find out why I was fired. I want the real reason, not the HR script.",
+          "seconds": 3.090909090909091
+        },
+        {
+          "op": "submit",
+          "seconds": 0.25
+        },
+        {
+          "op": "answer",
+          "text": "Searching for records behind the decision\u2026",
+          "seconds": 5
+        }
+      ],
+      "note": "Supplemental screen action; the narrator carries the plot.",
+      "cueIds": [
+        "s20_l29",
+        "s20_l30",
+        "s20_l31"
+      ],
+      "side": "left"
+    },
+    "audit-workers": {
+      "view": "agent",
+      "title": "Local Qwen",
+      "context": "Mac Studio \u00b7 personal workspace",
+      "steps": [
+        {
+          "op": "type",
+          "text": "I\u2019m going to bed. Find the answer.",
+          "seconds": 2
+        },
+        {
+          "op": "submit",
+          "seconds": 0.25
+        },
+        {
+          "op": "answer",
+          "text": "Additional workers requested.\nSearching company records\u2026",
+          "seconds": 5
+        }
+      ],
+      "note": "Supplemental screen action; the narrator carries the plot.",
+      "cueIds": [
+        "s20_l32",
+        "s20_l33",
+        "s20_l34"
+      ],
+      "side": "left"
+    },
+    "audit-result": {
+      "view": "agent",
+      "title": "Local Qwen",
+      "context": "Mac Studio \u00b7 personal workspace",
+      "steps": [
+        {
+          "op": "type",
+          "text": "What happened overnight?",
+          "seconds": 2
+        },
+        {
+          "op": "submit",
+          "seconds": 0.25
+        },
+        {
+          "op": "answer",
+          "text": "Workers launched. Search expanded beyond the original account.\nNo clear answer about the firing.",
+          "seconds": 5
+        }
+      ],
+      "note": "Supplemental screen action; the narrator carries the plot.",
+      "cueIds": [
+        "s20_l57",
+        "s20_l58",
+        "s20_l59",
+        "s20_l60"
+      ],
+      "side": "left"
+    },
+    "audit-cleanup-refused": {
+      "view": "agent",
+      "title": "Cursor \u00b7 Opus 5",
+      "context": "Mac Studio \u00b7 personal workspace",
+      "steps": [
+        {
+          "op": "type",
+          "text": "Shut down the instances from last night.",
+          "seconds": 2
+        },
+        {
+          "op": "submit",
+          "seconds": 0.25
+        },
+        {
+          "op": "answer",
+          "text": "I can\u2019t assist with activity in this context.",
+          "seconds": 5
+        }
+      ],
+      "note": "Supplemental screen action; the narrator carries the plot.",
+      "cueIds": [
+        "s20_l61",
+        "s20_l62",
+        "s20_l63"
+      ],
+      "side": "left"
+    },
+    "audit-cleanup": {
+      "view": "agent",
+      "title": "Cursor \u00b7 Opus 5",
+      "context": "Mac Studio \u00b7 personal workspace",
+      "steps": [
+        {
+          "op": "type",
+          "text": "Stop the instances created overnight in the development account.",
+          "seconds": 2.909090909090909
+        },
+        {
+          "op": "submit",
+          "seconds": 0.25
+        },
+        {
+          "op": "answer",
+          "text": "Development instances stopped.",
+          "seconds": 5
+        }
+      ],
+      "note": "Supplemental screen action; the narrator carries the plot.",
+      "cueIds": [
+        "s20_l64",
+        "s20_l65",
+        "s20_l66"
+      ],
+      "side": "left"
     }
   }
 }

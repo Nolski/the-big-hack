@@ -1,3 +1,19 @@
+## Author revision — September 12, 2026
+
+The opening cue is the approved news montage, including Sam Altman’s final pause and the Mountain Man introduction. The author’s requested edits are applied through The Audit; Next Week onward is unchanged. The four requested scenes and duplicated review/demo passages are cut. Narrator adaptations are spoken with approved voice C. Changed dialogue uses the saved cast voices.
+
+Private ChatGPT lookups occur after their triggering lines, with typing sounds. The main standup shows Liam’s shared PR while private screens belong to their named owners. Huddles use Slack’s recorded ringtone; the audit uses the PagerDuty Alert recording.
+
+The editable current show is show.json; screen-actions.json controls the supplemental screens. The exact request, ordered change log, revised script, media sources, and recording audit are preserved in handoff/author-revision-20260912/. Do not rebuild from the older unedited source without applying this revision.
+
+## Script and recording verification — September 12, 2026
+
+This bundle uses `edits/cut-pass` at `0a26f29`: 23 scenes and 1,248 script beats. It has 885 spoken recordings; the single ellipsis-only cue remains a silent pause. Only explicitly authored narrator dialogue is recorded; stage directions remain speaker notes. The earlier presentation is preserved separately with its audio assignments repaired.
+
+Recordings are matched by speaker and complete text, with file checksums in `generated-voices.json`. A missing or mismatched manifest entry blocks playback rather than falling back to an older recording. Audio filenames include a content fingerprint so cue renumbering and browser caches cannot substitute another line. New recordings use the existing synthetic cast references. Live/Generated choices and playback speed work as before.
+
+Run `node --test tests/*.test.mjs` to verify playback behavior and all recording assignments and checksums. Read `handoff/audio-verification.json` for the generation and spoken-text audit results.
+
 This is the portable playback bundle. Double-click Start The Big Hack.command on this Mac, or run python3 serve.py. Keep the assets folder beside index.html. No API key or internet connection is required for playback.
 
 The editable project and production source files remain in /Users/dylan/Documents/research/the-big-hack-flight/presentation. Rebuild instructions below apply to that complete project.
@@ -40,19 +56,19 @@ There are 28 authored screen actions, including six private ChatGPT lookups duri
 
 The phone scene specifies an unfinished reply but gives no wording. Its new screen-only draft is: “liam, about the machine. last night i tried something and i think i need to tell you before you...” It is erased and never sent. ChatGPT questions, answers and this draft are authored stage graphics; no messages are sent to an online service and no new dialogue is voiced.
 
-The live cast is **Liam, Brendan and Marcus**, overriding the older vault metadata. All their dialogue is in the speaker notes. No synthesized recordings of these actors are used. Narrator lines, including the reviewed stage-direction adaptations, use **Matthew Schmitz — Warm Mountain Man**, voice ID `Q4oILuo4P8VeXtE6FMLI`. Other recorded parts use temporary ElevenLabs rehearsal voices. Inactive call participants appear as small initial tiles.
+The default live cast is **Liam, Brendan and Marcus**. In **Character voices & audio speed**, choose **Live** or **Generated** separately for any of the 13 speaking roles, including the narrator. All 1,013 spoken cues have local recordings available. **All generated** enables a full recorded cast; **Original cast** restores the original live assignments. Settings are remembered in this browser. Changing the cast pauses playback; press Start / Resume when ready. Silent stage directions remain silent. Narrator lines, including the reviewed stage-direction adaptations, use **Matthew Schmitz — Warm Mountain Man**, voice ID `Q4oILuo4P8VeXtE6FMLI`. Other recorded parts use temporary ElevenLabs rehearsal voices. Inactive call participants appear as small initial tiles.
 
 ## Narration adapted from stage directions
 
 All 377 stage directions have been reviewed. There are **123 additional narrator passages**, including the complete worm escalation, the newer-model demonstration, peer-feedback summarisation, the layoff spreadsheet, and the relevant aftermath. **253 directions stay silent** for physical acting, pauses, visible screen activity and production notes. One italicised prosecutor line was also restored to its scripted voice after the parser had mistaken it for a stage direction.
 
-Narration cues are marked **NARRATION · PLAYS ONCE** in the operator console. They play once, then hold the visual until GO. **Original stage direction / acting notes** preserves the full source beneath each adapted passage. Liam, Brendan and Marcus's original dialogue is unchanged and remains live.
+Narration cues are marked **NARRATION · PLAYS ONCE** in the operator console. They play once, then hold the visual until GO. **Original stage direction / acting notes** preserves the full source beneath each adapted passage. Liam, Brendan and Marcus's original dialogue is unchanged; each can perform live or use the optional generated recording.
 
 `narration.json` is the explicit editorial selection and spoken text; `production/narration-review.md` records the choices alongside the original prose. The compiler checks the source text before applying each selection, so an edited or shifted script beat cannot silently receive unrelated narration. After changing a selected source direction, review its narration entry before recompiling. To generate only these reviewed recordings, run `python3 tools/generate_audio.py --only voices --reviewed-directions`.
 
 ## Replace placeholders with filmed performances
 
-In the console, open **Replace filmed clips / cue settings** on the desired cue. Upload a left and/or right clip. The server saves each file under `assets/filmed/` and saves the assignment to `overrides.json`; replacements survive a browser or server restart. Uploads support MP4, WebM and MOV; H.264 MP4 is the most portable choice.
+Select the desired cue, then open **Settings → Filmed clips & current cue**. Upload a left and/or right clip. The server saves each file under `assets/filmed/` and saves the assignment to `overrides.json`; replacements survive a browser or server restart. Uploads support MP4, WebM and MOV; H.264 MP4 is the most portable choice.
 
 Choose **Recorded dialogue / narration**, **Left clip**, **Right clip** or **Silence** for the cue’s audio. A filmed clip’s picture can loop while its audio plays only once. Use **Loop until GO** and a **loop start** time to repeat just the listening/holding section after a filmed line; use **Hold last frame** for a fixed ending. All original assets remain intact. **Use original visuals** removes the assignment and restores the authored scene.
 
@@ -84,3 +100,15 @@ To generate missing or updated recordings, run `python3 tools/generate_audio.py`
 Manim sources: `tools/manim_scenes.py`. Current Blender sets: `tools/blender_sets_v2.py`; earlier set sources remain in `tools/blender_scenery.py`. Render one current set with `docker run --rm --user 1000:1000 -v "$PWD:/work" -w /work big-hack-render:local /usr/bin/blender -b -t 5 --python /work/tools/blender_sets_v2.py -- liam-with left`. Set names and prop manifests are under `production/sets-v2/`. The local renderer image is `big-hack-render:local`; rebuild with `docker build -f tools/Dockerfile.render -t big-hack-render:local .`. Render source and output remain editable. The renderer is not needed to run the finished show.
 
 Audio API references: [ElevenLabs speech](https://elevenlabs.io/docs/api-reference/text-to-speech/convert), [sound effects](https://elevenlabs.io/docs/api-reference/text-to-sound-effects/convert). The show uses locally generated media, not real-time API calls.
+
+## Optional recorded cast and speed
+
+The performance console opens with large speaker notes, small audience previews, the upcoming cue, and a fixed transport bar. Open **Settings** for character voices, speed, volume, display windows, and filmed-clip assignments. Open **Scenes** (S) to search and jump to a scene or cue. Escape closes either panel; stage shortcuts are suspended while a panel is open. **Live** mutes that character's recorded dialogue, including an assigned filmed clip's audio, while retaining the visuals. **Generated** uses the character recording unless the cue explicitly selects Silence or filmed-clip audio.
+
+The speed slider runs from **0.5× to 2×**, with a **Reset to 1×** button. Speech retains its pitch. Audience video and authored screen-action clocks follow the speed setting; music and sound effects stay at their original speed. Speed can change while playing or paused. Every cue still waits for the operator's GO; there is no automatic scene advance.
+
+Recorded lines inside previously grouped live passages get individual cues so none are skipped. Switching a role back to Live restores the corresponding live grouping. Recordings are available offline.
+
+`generated-voices.json` maps the additional recordings by exact cue text and character. Existing supporting-role and narrator recordings are retained. Liam, Brendan and Marcus use their saved Qwen3-TTS character voices: 595 matching local recordings were reused and four missing Marcus lines in Great News were rendered with his saved synthetic voice profile. A changed text or speaker will not silently use an old optional recording. This update uses the current stage bundle's script and running order; it does not recompile the cut-pass branch.
+
+Playback logic checks: `node --test tests/playback.test.mjs`.

@@ -1,6 +1,6 @@
 import {redditBody} from './reddit.js';
 import {isWorm,wormMarkup} from './worm.js';
-import {renderScreenAction} from './screen-actions.js';
+import {renderScreenAction} from './screen-actions.js?v=author-pass-20260912';
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names={hr:'Dana',ceo:'CEO',kristina:'Kristina',kara:'Kara',liam:'Liam',brendan:'Brendan',marcus:'Marcus',prosecutor:'Prosecutor',judge:'Judge',counsel:'Counsel','officer one':'Officer One','officer two':'Officer Two'};
 const portraits={kristina:'kristina',kara:'kara','officer one':'officer-one','officer two':'officer-two'};
@@ -16,7 +16,7 @@ const banner=(title,detail,klass='')=>`<div class="banner ${klass}"><strong>${es
 function zoom(cue){
  const cast=cue.staging?.callCast||cue.cast||[],active=cue.speaker&&cue.speaker!=='narrator'?cue.speaker:'';
  const performance=cue.performanceVideo?.speaker===active?cue.performanceVideo:null;
- const activeIsRecorded=cue.kind==='voice'&&active&&(cue.isSpeaking!==false||performance);const room=cue.mode==='jitsi'?'jitsi':cue.mode==='huddle'?'Huddle':'zoom';
+ const activeIsRecorded=cue.kind==='voice'&&active&&(cue.isSpeaking!==false||performance);const room=cue.mode==='jitsi'?'jitsi':cue.mode==='huddle'?'Huddle':cue.mode==='meet'?'Google Meet':'zoom';
  const tile=id=>`<div class="smalltile ${id===active&&(cue.kind==='live'||activeIsRecorded)?'speaking':''}"><div class="initial">${esc(initials(id))}</div><span>${esc(names[id]||id)}</span><small>${id===active&&(cue.kind==='live'||activeIsRecorded)?'▂ ▄ ▆':'⌁'}</small></div>`;
  let hero='';
  if(activeIsRecorded&&portraits[active])hero=`<div class="speakerphoto">${performance?`<video class="actorVideo" src="${esc(performance.src)}" muted playsinline preload="auto"></video>`:`<img src="assets/cast/${portraits[active]}.png" alt="${esc(names[active])}">`}<span>${esc(names[active])}</span>${performance?'':'<div class="talking-meter"><i></i><i></i><i></i><i></i><i></i></div>'}</div>`;
@@ -37,13 +37,13 @@ function peer(state,c){
  const parts=['Liam is the strongest engineer on this team.'];
  if(b>=50)parts.push("He’s running a local setup instead of the tools the rest of us are on, and it’s slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it."+(b===50?' He said it like it settled something.':''));
  if(b>=53)parts.push('Review turnaround on his queue is long. There was a four-line fix that sat for nine days. I don’t think that’s carelessness. I think he reads everything and there’s a lot to read.');
- if(b>=55)parts.push('The newer engineers have started treating his position on the tooling as the careful one.'+(b>=58?' I don’t think it is any more. I might be wrong about that.':'')+(b>=60?' He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.':''));
+ if(b>=55)parts.push('The newer engineers have started treating his position on the tooling as the careful one.'+(b>=60?' He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.':''));
  value=parts.join('\n\n');
  }
  const scored=state==='peer-form'?field('Technical judgement','1     2     3     ④     5')+field('Communication','1     2     3     ④     5'):'';
  return doc('H2 Peer Input',scored+`<h2>Is there anyone whose work made it harder for you to deliver this half? <small>(Optional)</small></h2><div class="text-box ${state==='peer-submit'?'submitted':''}">${esc(value).replaceAll('\n','<br>')}<span class="caret">▌</span></div>${state==='peer-submit'?'<div class="feedback-received">Thanks your feedback has been recorded.</div>':'<div class="form-button">Submit</div>'}`,'PEER FEEDBACK / PRIVATE')
 }
-const rank=()=>shell('Spreadsheet','Engineering productivity metrics',`<div class="sheet"><h1>Engineering productivity metrics</h1><div class="sheethead"><span>Engineer</span><span>Feature velocity</span><span>Source</span></div>${Array.from({length:30},(_,i)=>{const row=i+1,name=row===9?'Marcus':row===24?'Liam':row===26?'Brendan':'Engineer '+row;return `<div class="sheetrow ${row===20?'cutline':''} ${['Liam','Brendan'].includes(name)?'belowline':''} ${name==='Marcus'?'marcus-row':''}"><span>${name}</span><strong>${name==='Brendan'?'9':'—'}</strong><span>Jira</span></div>`}).join('')}</div>`,true);
+const rank=()=>shell('Spreadsheet','Q3 Organisational Review — Engineering',`<div class="sheet"><h1>Q3 Organisational Review — Engineering</h1><div class="sheethead"><span>Engineer</span><span>Tickets closed</span><span>Source</span></div>${Array.from({length:30},(_,i)=>{const row=i+1,name=row===9?'Marcus':row===24?'Liam':row===22?'Brendan':'Engineer '+row;return `<div class="sheetrow ${row===20?'cutline':''} ${['Liam','Brendan'].includes(name)?'belowline':''} ${name==='Marcus'?'marcus-row':''}"><span>${name}</span><strong>${name==='Brendan'?'9':'—'}</strong><span>Jira</span></div>`}).join('')}</div>`,true);
 const slack=(title,body)=>shell('Slack',title,`<div class="slack"><div class="slack-sidebar">WORKSPACE<br><br># general<br># engineering<br># releases<br><br>Direct messages<br>Brendan<br>Kristina<br>Liam</div><div class="slack-main"><h1>${esc(title)}</h1>${body}</div></div>`,true);
 const promo=()=>slack('# general','<div class="message"><div class="avatar">K</div><div><strong>Kristina</strong><small>5 days ago</small><p>Huge congrats to Brendan on the step up!</p><div class="reaction">🎉 41</div></div></div><div class="message"><div class="avatar">M</div><div><strong>Marcus</strong><p>congrats!! 🎉</p></div></div>');
 const calendar=(title,people,detail)=>shell('Calendar',title,`<div class="calendar"><div class="calendar-date">THURSDAY <strong>14</strong></div><div class="calendar-event"><span>MEETING INVITATION</span><h1>${esc(title)}</h1><p>${esc(people)}</p><p>${esc(detail)}</p><div class="calendar-actions">Accept &nbsp;&nbsp; Maybe &nbsp;&nbsp; Decline</div></div></div>`,true);
@@ -156,7 +156,7 @@ function arrest(motive){return doc('Current employer',field('Name','Liam Mkrtchy
 function swarm(title,detail,level){return `<div class="swarm-caption"><div>${esc(title)}</div><h1>${esc(detail)}</h1><small>Variant generation ${level}</small></div>`}
 export const visualStates=[...Object.keys(screens),'cursor-corrected','future-tests','swarm-asleep','swarm-alerts','swarm-beachheads'];
 const setPath=(variant,side)=>variant?'assets/sets/v2/'+variant+'-'+side+'.mp4':null;
-export function backgroundFor(c,side){
+export function backgroundFor(c,side){if(c.montage||c.primeWallpaper||c.revisionCode||c.rehireNo||c.sharedPR)return null;if(c.latestScreen)return null;
  if(c.state==='black'||c.offstage)return null;
  if(c.screenActions?.[side])return null;
  if(isWorm(c))return c.scene==='s20'&&c.beat===49&&side==='right'?setPath('brendan-night','right'):null;
@@ -186,7 +186,15 @@ function counsel(c,side){
  if(side==='left')return `<div class="agreementTable">${screens[c.state]?.(c)||''}</div>`;
  return `<div class="bareRoom"><div class="counselMonitor"><div class="counselAvatar">C</div><span>Defence Counsel</span><small>${c.isSpeaking?'Speaking':'Connected'}</small></div><div class="bareTable"></div><div class="manualCalendar"><strong>14</strong><span class="${c.beat>=26?'vacated':''}">Continued hearing</span>${c.beat>=26?'<small>Removed from calendar</small>':''}</div></div>`;
 }
-export function renderVisual(c,side){
+function renderBaseVisual(c,side){
+ if(c.montage)return '';
+ if(c.sharedPR&&side==='right')return `<section class="call"><header><strong>Google Meet</strong><span>Liam is presenting</span></header><div style="position:absolute;inset:80px 20px 175px;overflow:hidden"><div style="width:1920px;height:1080px;transform:scale(.70);transform-origin:top left;position:absolute;left:220px">${pr()}</div></div><div class="filmstrip" style="position:absolute;left:0;right:0;bottom:75px;height:130px">${['liam','kristina','brendan','marcus'].map(id=>`<div class="smalltile ${id===c.speaker?'speaking':''}"><div class="initial">${initials(id)}</div><span>${names[id]}</span></div>`).join('')}</div><footer style="position:absolute;left:0;right:0;bottom:0;height:70px"><span>Microphone</span><span>Camera</span><span class="share">Liam is sharing</span></footer></section>`;
+ if(c.primeWallpaper&&side==='left')return `<div style="position:absolute;inset:0;background:#16171c;display:flex;flex-direction:column;align-items:center;justify-content:center"><img src="assets/props/theprimeagen.png" alt="ThePrimeagen" style="height:690px;max-width:1300px;object-fit:contain"><p style="font:bold 64px system-ui;color:white;margin:26px">IT WORKS ON MY MACHINE.</p><span style="font:24px system-ui;color:#bbb">ThePrimeagen</span></div>`;
+ if(c.revisionCode&&side==='left')return terminal('auth/signatures.ts · committed two years ago',['export function verifySignature(provided, expected) {', '  if (provided = expected) {', '    return true;', '  }', '  return false;', '}']);
+ if(c.rehireNo&&side==='left')return screens.rehire();
+
+ if(c.latestScreen){const a=c.latestScreen;return `<section style="position:absolute;inset:0;background:#141818;padding:100px;color:#f2f0ea;font-family:system-ui"><h1 style="font-size:48px">${esc(a.title)}</h1><p style="font-size:36px;line-height:1.6">${esc(a.body)}</p>${a.detail?`<p style="font-size:30px;color:#b8b8b3">${esc(a.detail)}</p>`:''}${a.graph?`<svg viewBox="0 0 1500 420" style="width:100%;height:420px">${Array.from({length:20},(_,i)=>{const x=200+(i%5)*280,y=90+Math.floor(i/5)*95;return `<line x1="750" y1="210" x2="${x}" y2="${y}" stroke="#53794c" stroke-width="2"/><circle cx="${x}" cy="${y}" r="10" fill="#c7f28b"/>`}).join('')}<circle cx="750" cy="210" r="22" fill="#f2f0ea"/></svg><p style="font-size:60px">${a.count.toLocaleString()} <small style="font-size:24px">SWARM</small></p>`:''}</section>`;}
+
  if(c.offstage)return '';
  const action=renderScreenAction(c,side);if(action!==null)return action;
  if(isWorm(c))return wormMarkup(c,side);
@@ -222,7 +230,7 @@ export function renderVisual(c,side){
  }
  return screens[c.state]?.(c)??doc('Scene visual',para(c.state));
 }
-export function sfxForCue(c){const exact={s01_l1:[{id:'typing',loop:true,level:.08}],s01b_l1:[{id:'huddle'}],s01c_l1:[{id:'huddle'}],s06_l26:[{id:'huddle'}],s11b_l1:[{id:'server',loop:true,level:.16}],s11c_l49:[{id:'notification'}],s12_l101:[{id:'notification'}],s14b_l3:[{id:'notification'}],s20_l2:[{id:'server',loop:true,level:.13}],s20_l52:[{id:'pager',level:.5}],s20_l61:[{id:'notification'}],s22_l10:[{id:'knocks',level:.85}],s22_l14:[{id:'breach',level:.9}],s22_l26:[{id:'cuffs',level:.6}],s23_l36:[{id:'powerdown',level:.4}],s23b_l1:[{id:'radio',loop:true,level:.13}],s23b_l32:[{id:'powerdown',level:.3}],s25_l2:[{id:'loom',loop:true,level:.3}],s25_l6:[{id:'door-gentle',level:.5}]};return exact[c.id]||[]}
+export function sfxForCue(c){if(Array.isArray(c.sfx))return c.sfx;const exact={s01_l1:[{id:'typing',loop:true,level:.08}],s01b_l1:[{id:'huddle'}],s01c_l1:[{id:'huddle'}],s06_l26:[{id:'huddle'}],s11b_l1:[{id:'server',loop:true,level:.16}],s11c_l49:[{id:'notification'}],s12_l101:[{id:'notification'}],s14b_l3:[{id:'notification'}],s20_l2:[{id:'server',loop:true,level:.13}],s20_l52:[{id:'pager',level:.5}],s20_l61:[{id:'notification'}],s22_l10:[{id:'knocks',level:.85}],s22_l14:[{id:'breach',level:.9}],s22_l26:[{id:'cuffs',level:.6}],s23_l36:[{id:'powerdown',level:.4}],s23b_l1:[{id:'radio',loop:true,level:.13}],s23b_l32:[{id:'powerdown',level:.3}],s25_l2:[{id:'loom',loop:true,level:.3}],s25_l6:[{id:'door-gentle',level:.5}]};return exact[c.id]||[]}
 
 // Illustrative theatre counter, deliberately independent of cue/video loop length.
 export function counterProfile(c){
@@ -230,3 +238,5 @@ export function counterProfile(c){
  const later={s20b:3000000,s22:6000000,s23:8000000,s23b:10000000,s24:12000000};
  return {base:later[c.scene]||0,rate:later[c.scene]?5000:0,visible:!!later[c.scene]&&c.state!=='black'&&!c.offstage&&!isWorm(c),large:false};
 }
+
+export function renderVisual(c,side){const visual=renderBaseVisual(c,side);return visual+(c.latestTicker?`<div style="position:absolute;bottom:0;left:0;right:0;padding:28px 50px;background:#171717;color:#f2f0ea;font:30px system-ui">${esc(c.latestTicker)}</div>`:"")}

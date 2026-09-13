@@ -1,0 +1,773 @@
+{
+  "revision": "author-pass-2026-09-12",
+  "newRecordings": 126,
+  "spokenRecordings": 830,
+  "scenes": 20,
+  "cues": 1031,
+  "transcriptions": [
+    {
+      "id": "s01_l4",
+      "expected": "He\u2019s very obviously not eating.",
+      "heard": "He's very obviously not eating.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s01_l8",
+      "expected": "Liam\u2019s heart skips a beat when he hears Brendan worked on the weekend\u2026",
+      "heard": "Liam's heart skips a beat when he hears Brendan worked on the weekend.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s01_share_reply",
+      "expected": "Liam, you don\u2019t need to take over the screenshare\u2026",
+      "heard": "Liam, you don't need to take over the screen share.",
+      "similarity": 0.8571428571428571
+    },
+    {
+      "id": "s01_l22",
+      "expected": "If you listened to what I said about the Luddites last week, Liam... the 1700\u2019s textile workers the British literally executed because the automated machines took their jobs\u2026 When they protested they got KILLED. The quality of the textiles actually got WORSE, but it didn\u2019t matter because it got cheaper. I wish you all would pay more attention to what\u2019s happening",
+      "heard": "If you listen to what I said about the Luddites last week, Liam, the 1700s textile workers, the British literally executed because the automated machines took their jobs when they protested they got killed. The quality of the textiles actually got worse, but it didn't matter because it got cheaper. I wish you all would pay more attention to what's happening.",
+      "similarity": 0.9606299212598425
+    },
+    {
+      "id": "s01_l23",
+      "expected": "Marcus doesn\u2019t have this quite right, he\u2019s making some crude and quick assumptions to win an argument. It\u2019s thought that the quality of the garments actually went up via industrialization, not down. In the early days it was questionable, but in time there was no doubt, quality went up.",
+      "heard": "Marcus doesn't have this quite right, he's making some crude and quick assumptions to win an argument. It's thought that the quality of the garments actually went up via industrialization not down. In the early days it was questionable, but in time there was no doubt quality went up.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s01_l28",
+      "expected": "Well Kristina cut me off last week. I just don\u2019t want you to all blow me off, this is serious, we need to learn lessons from the past or we\u2019re doomed to repeat it, and the lesson the Luddites have to tell us\u2026",
+      "heard": "Well, Christina cut me off last week. I just don't want you to all blow me off. This is serious. We need to learn lessons from the past or were doomed to repeat it, and the lesson the Luddites have to tell us.",
+      "similarity": 0.9438202247191011
+    },
+    {
+      "id": "s01_l39",
+      "expected": "Kristina holds her tongue, she is in disbelief about what Liam just said.",
+      "heard": "Christina holds her tongue. She is in disbelief about what Liam just said.",
+      "similarity": 0.9230769230769231
+    },
+    {
+      "id": "s01b_l16",
+      "expected": "No, he\u2019s not usually wrong ... but what he left off is how much faster it is to correct it when it\u2019s wrong, than it is to do it yourself. Try telling it that it\u2019s wrong\u2026",
+      "heard": "No, he's not usually wrong, but what he left off is how much faster it is to correct it when it's wrong than it is to do it yourself. Try telling it that it's wrong.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s01b_l39",
+      "expected": "I\u2019m actually really happy to hear you ask that. Let me show you my process.",
+      "heard": "I'm actually really happy to hear you ask that. Let me show you my process.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s01b_l44",
+      "expected": "Then the dangerous parts, the auth, the token handling, anything that can actually hurt someone, I read every line myself. That\u2019s maybe five percent of what it writes. The boring ninety-five percent, I skim at best, and just focus on robust functional testing.",
+      "heard": "Then, the dangerous parts, the off, the token handling, anything that can actually hurt someone, I read every line myself. That's maybe 5% of what it writes. The boring 95% I skim at best and just focus on robust functional testing.",
+      "similarity": 0.896551724137931
+    },
+    {
+      "id": "s01d_l3",
+      "expected": "Ha, good. Listen, I wanted to talk to you about what Liam said. I talked to him, he actually feels bad about mentioning your education. He brought it up himself, first thing, unprompted. Said he shouldn\u2019t have said it.",
+      "heard": "Ha! Good! Listen! I wanted to talk to you about what Liam said. I talked to him, he actually feels bad about mentioning your education. He brought it up himself, first thing, unprompted, said he shouldn't have said it. // // // // // // // // // // // // // //",
+      "similarity": 1.0
+    },
+    {
+      "id": "s01d_l6",
+      "expected": "\u2026Okay. I appreciate you mentioning that. I dismissed some of what he was saying because I was obviously upset with him. I\u2019m sure he has some totally valid concerns. It\u2019s just frustrating when every week it feels like we can\u2019t get through a normal standup.",
+      "heard": "Okay, I appreciate you mentioning that. I dismissed some of what he was saying because I was obviously upset with him. I'm sure he has some totally valid concerns. It's just frustrating when every week it feels like we can't get through a normal stand-up.",
+      "similarity": 0.9690721649484536
+    },
+    {
+      "id": "s01d_l7",
+      "expected": "Yeah\u2026 I really look up to Liam in a lot of ways, but I can see where you\u2019re coming from too.",
+      "heard": "Yeah, I really look up to Liam in a lot of ways, but I can see where you're coming from too. // // // // // // // // // // // // // // // // // // // // // //",
+      "similarity": 1.0
+    },
+    {
+      "id": "s06_l1",
+      "expected": "A few months pass\u2026 Anthropic has just released Opus 4.7. Liam is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running.",
+      "heard": "A few months past, anthropic has just released Opus 4.7. Liam is working at his desk, caught up in the sand-up race condition. On his second monitor, the morning stand-up is already running.",
+      "similarity": 0.8857142857142857
+    },
+    {
+      "id": "s06_l10",
+      "expected": "Maybe you shouldn\u2019t get your lessons from the losing side of history.",
+      "heard": "Maybe you shouldn't get your lessons from the losing side of history.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s06_l12",
+      "expected": "They complained just because technology which was clearly better for society had an impact on their jobs, then they burned factories to the ground\u2026 They got hanged by the British army. Seems pretty clear cut they were on the wrong side of history\u2026 Anyway, I\u2019m trying to read this code. Please stop talking about the Luddites.",
+      "heard": "They complained just because technology, which was clearly better for society, had an impact on their jobs. Then they burned factories to the ground. They got hanged by the British Army. Seems pretty clear cut they were on the wrong side of history anyway. I'm trying to read this code. Please stop talking about the Luddites.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s06_l13",
+      "expected": "Liam, never mind how horrible that is to talk about people that died like that, this is far from the only time workers suffered at the hands of new technology. Do you know the story of John Henry, racing against the machine building railroad tracks?",
+      "heard": "Liam, never mind how horrible that is to talk about people that died like that. This is far from the only time workers suffered at the hands of new technology. Do you know the story of John Henry racing against the machine building railroad tracks?",
+      "similarity": 1.0
+    },
+    {
+      "id": "s06_l15",
+      "expected": "John Henry raced against the machines to prove he could drive rail spikes faster than the steam-powered rail spike machine, and he actually won. He drove more, and what did he get for it? A heart attack. Liam, you\u2019re going to give yourself a heart attack.",
+      "heard": "John Henry raced against the machines to prove he could drive rail spikes faster than the steam-powered rail spike machine, and he actually won. He drove more, and what did he get for it? A heart attack. Liam, you're going to give yourself a heart attack.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s06_l28",
+      "expected": "Oh, I love that. Pair on it. Right, that's the board. Thanks, everyone.",
+      "heard": "Oh, I love that. Pair on it, right? That's the board. Thanks, everyone.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s06_l34",
+      "expected": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without Liam the wiser.",
+      "heard": "Brendan asks Claude Code to investigate the bug. Quickly, it gets to work without Liam the wiser.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s06_l42",
+      "expected": "Claude finished working a little while ago. It proved the root cause was in the getOrCreateSession call, and it has a script that can reliably reproduce the bug. Beneath it, it has a one-line fix for the problem.",
+      "heard": "Claude finished working a little while ago. It proved the root cause was in the Get or K session call, and it has a script that can reliably reproduce the bug. Beneath it, it has a one-line fix for the problem.",
+      "similarity": 0.9382716049382716
+    },
+    {
+      "id": "s06_l51",
+      "expected": "LIAM is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: REPRODUCED, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show Liam. He lets the huddle go. LIAM types on, warm and none the wiser. Hold a moment on the two screens, his, bright and moving, and on brandon's just a blinking cursor from a rolled back commit.",
+      "heard": "The am is already dropping back into the code, buzzing, typing the one-line fix happy restored the craft love back in his hands. He doesn't look at the other screen, he wouldn't think to. On Brendan's laptop, Claude's proof glows a second longer, reproduced. The two screenshots, the script, the completed one-line fix branch and the shared store warning. Then Brendan quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show Liam, he lets the huddle go, Liam types on warm and none the wiser. Hold a moment on the two screens, his bright and moving, and on Brendan's just a blinking cursor from a rolled back commit.",
+      "similarity": 0.979757085020243
+    },
+    {
+      "id": "s07_l11",
+      "expected": "That\u2019s\u2026 that changes a lot, actually... it makes me think a little differently about Claude and Cursor\u2026",
+      "heard": "That's... that changes a lot actually. It makes me think a little differently about Claude and Cursor.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s07_l25",
+      "expected": "Her tile blinks out. BRENDAN sits a second in the quiet. We now see LIAM leaning back from his desk, stretches, genuinely happy. He opens his one-line-fix branch for PR. On the screen above, BRENDAN deletes his local branch, the branch Claude finished twenty minutes ago. The monitor-blue holds on the two of them: the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.",
+      "heard": "Her tile blinks out. Brendan sits a second in the quiet. We now see Liam leaning back from his desk, stretches, genuinely happy. He opens his one-line fix branch for PR. On the screen above, Brendan deletes his local branch. The branch clawed finished 20 minutes ago. The monitor blue holds on the two of them, the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.",
+      "similarity": 0.9736842105263158
+    },
+    {
+      "id": "s08_l1",
+      "expected": "Kristina is in a one-on-one with her boss, Kara. Kara is the director of engineering.",
+      "heard": "Christina is in a one-on-one with her boss Cara. Cara is the director of engineering.",
+      "similarity": 0.8235294117647058
+    },
+    {
+      "id": "s08_l32",
+      "expected": "Kristina takes a moment. She thinks about Brendan's weekend, the demo he gave her, the memo the CEO sent the whole company about adopting AI. There are longer answers, and there are rooms where she wouldn't give them.",
+      "heard": "Christina takes a moment, she thinks about Brendan's weekend, the demo he gave her, the memo the CEO sent the whole company about adopting AI. There are longer answers and there are rooms where she wouldn't give them.",
+      "similarity": 0.975
+    },
+    {
+      "id": "s08_l52",
+      "expected": "Her tile drops off. Kristina sits a moment in the empty call, then closes it.",
+      "heard": "Her tile drops off. Christina sits a moment in the empty call, then closes it.",
+      "similarity": 0.9333333333333333
+    },
+    {
+      "id": "s08_l53",
+      "expected": "Later, at her desk, she searches her inbox and reopens the CEO's memo on adopting AI, the one he sent the whole company. On her screen: AI \u2014 HOW WE WORK.",
+      "heard": "Later, at her desk, she searches her inbox and reopens the CEO's memo on adopting AI, the one he sent the whole company on her screen. AI, how we were.",
+      "similarity": 0.967741935483871
+    },
+    {
+      "id": "s08_l55",
+      "expected": "The first time she read it, she sent a screenshot to a friend with one line: \"Apparently our CEO discovered vibe coding.\"",
+      "heard": "The first time she read it, she sent a screenshot to a friend with one line. Apparently our CEO discovered vibe coding.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s08_l56",
+      "expected": "She keeps reading.",
+      "heard": "She keeps reading.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s08_l58",
+      "expected": "She'd laughed at that paragraph. It had sounded like a man who spent one weekend with a new toy and came back with a philosophy.",
+      "heard": "She laughed at that paragraph. It had sounded like a man who spent one weekend with a new toy and came back with a philosophy.",
+      "similarity": 0.9803921568627451
+    },
+    {
+      "id": "s08_l60",
+      "expected": "She reads the memo all the way through this time.",
+      "heard": "She reads the memo all the way through this time.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11b_l3",
+      "expected": "It\u2019s not stuck. I\u2019m reviewing what AI wrote, line by line.",
+      "heard": "It's not stuck. I'm reviewing what AI wrote, line by line. //",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11b_l62",
+      "expected": "BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it.",
+      "heard": "Brendan leaves it there. He ran five of them this morning in parallel before this call. He looks at Liam's one terminal, the cursor blinking patient. He decides to sit on it.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11b_l70",
+      "expected": "Brendan reads the security policy. \"Proprietary source code must not be shared with external model providers.\" Owner: Liam. Last reviewed: fourteen months ago. He opens a message to Kristina and types: \"re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang...\" He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: \"I don't know if liam is ever going to...\" He stops. He holds backspace until that one is gone too.",
+      "heard": "Brendan reads the security policy, proprietary source code must not be shared with external model providers owner Liam last reviewed 14 months ago. He opens a message to Christina and types re stand up the policy thing. It's one paragraph and it's obviously outdated. Do you want me to propose we change? He looks at his own second screen, his sprint board five tickets to do today. He holds backspace until the message is gone. He starts again. I don't know if Liam is ever going to. He stops. He holds backspace until that one is gone too.",
+      "similarity": 0.9353233830845771
+    },
+    {
+      "id": "s11c_l1",
+      "expected": "A few days after standup, Kristina and Brendan are in a one-on-one.",
+      "heard": "A few days after stand-up, Christina and Brendan are in a one-on-one.",
+      "similarity": 0.8275862068965517
+    },
+    {
+      "id": "s11c_l39",
+      "expected": "Kristina opens cursor. Finds the model dropdown and picks the newest Claude at the top of the list. Deliberately. Like she's checking something.",
+      "heard": "Christina opens cursor, finds the model drop down and picks the newest clawed at the top of the list, deliberately, like she's checking something.",
+      "similarity": 0.8571428571428571
+    },
+    {
+      "id": "s11c_l41",
+      "expected": "The plan writes itself out. Every endpoint in it is real. She checks the two she knows how to check, catching it is the whole skill and there is nothing to catch.",
+      "heard": "The plan writes itself out. Every endpoint in it is real. She checks the two she knows how to check. Catching it is the whole skill and there is nothing to catch.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11c_l45",
+      "expected": "She sits back. Something is moving in her chest and she can't get a name on it. Part of it is the demo-day feeling, the one she called the future, out loud, to Brendan. The rest is colder, and she doesn't look at it straight.",
+      "heard": "She sits back, something is moving in her chest and she can't get a name on it. Part of it is the demo day feeling, the one she called the future out loud to Brendan, the rest is colder and she doesn't look at it straight.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11c_l47",
+      "expected": "For a second the sentence from Friday sits right next to the thing she just watched take four minutes, and they feel like the same shape. You probably need to performance manage a bunch of them out. She doesn't finish the thought.",
+      "heard": "For a second the sentence from Friday sits right next to the thing she just watched take four minutes and they feel like the same shape. You probably need to perform and manage a bunch of them out. She doesn't finish the thought",
+      "similarity": 0.9655172413793104
+    },
+    {
+      "id": "s11c_l49",
+      "expected": "Her calendar chimes: the next thing. She straightens, and goes back to her day.",
+      "heard": "Her calendar chimes the next thing. She straightens and goes back to her day.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s12_l59",
+      "expected": "No, that doesn\u2019t read right\u2026",
+      "heard": "No, that doesn't read right.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s14_l1",
+      "expected": "What Kristina had overheard was in fact a precursor to layoffs\u2026 Kara and the CEO had quietly been working on a spreadsheet to cut who they viewed as underperformers. They drew a line two thirds of the way down. Liam\u2019s row is four under the line. Brendan\u2019s is two under. Marcus\u2019s is eleven above.",
+      "heard": "What Christina had overheard was in fact a precursor to Layoff's Cara, and the CEO had quietly been working on a spreadsheet to cut who they viewed as underperformers. They drew a line two-thirds of the way down. Liam's row is four under the line, Brendan's is two under, Marcus's is 11 above.",
+      "similarity": 0.9217391304347826
+    },
+    {
+      "id": "s08_l59",
+      "expected": "She thinks about Brendan catching the invented endpoint before it shipped. The tests he wrote himself. The partners on the API by Sunday night. Kara, an hour ago, laughing at six PRDs.",
+      "heard": "She thinks about Brendan catching the invented endpoint before it shipped, the tests he wrote himself, the partners on the API by Sunday night, Cara, an hour ago, laughing at six PRDs.",
+      "similarity": 0.96875
+    },
+    {
+      "id": "s11b_l1",
+      "expected": "A few months later. We find ourselves again in Liam\u2019s apartment, the memes are gone. On his desk sits a new Mac Mini, the protective film still on one corner. A terminal crawls a few tokens\u2026 at\u2026 a\u2026 time, running a local version of Qwen.",
+      "heard": "A few months later, we find ourselves again in Liam's apartment. The memes are gone. On his desk sits a new Mac Mini, the protective film still on one corner. A terminal crawls a few tokens at a time running a local version of Quinn.",
+      "similarity": 0.9782608695652174
+    },
+    {
+      "id": "s11b_l7",
+      "expected": "\u2026Okay Marcus\u2026 I\u2019m pretty sure you were arguing the exact opposite about Luddites like a couple months ago.",
+      "heard": "Okay Marcus, I'm pretty sure you were arguing the exact opposite about Luddites like a couple months ago.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11b_l63",
+      "expected": "On BRENDAN's own screen he quietly types one line: \"In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5.\" The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before Liam finishes his sentence. He says nothing.",
+      "heard": "On Brendan's own screen, he quietly types one line. In billing webhooks, RB make failed deliveries retry with exponential back off, cap at five. The cloud agent opens the handler itself, writes the diff itself, runs the test itself, green, done before Liam finishes his sentence. He says nothing.",
+      "similarity": 0.9494949494949495
+    },
+    {
+      "id": "s11b_l75",
+      "expected": "BRENDAN drops the huddle. On his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete, the same way he held backspace previously, until it's gone too. LIAM turns back to his rig, satisfied. The model puts out the next token. Then, in its own time, the one after. He watches his machine type, patient, certain, sinking.",
+      "heard": "Brendan drops the huddle on his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete the same way he held backspace previously until it's gone too Liam turns back to his rig satisfied the model puts out the next token then in its own time the one after he watches his machine type patient certain sinking",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11c_l33",
+      "expected": "Brendan starts to say something, the sentence he's deleted twice, and puts it down again.",
+      "heard": "Brendan starts to say something. The sentence he's deleted twice and puts it down again.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11c_l40",
+      "expected": "She types, in her own words, the way you'd brief a contractor: \"Build a tool that cross posts Linear tickets into Jira.\" She had been doing this manually for Brandon.",
+      "heard": "She types in her own words the way you'd brief a contractor. Build a tool that cross posts linear tickets into Jira. She had been doing this manually for Brandon.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11c_l42",
+      "expected": "Then the machine asks her a question. It found the Vault setup from the Jira bot, and wants to know whether the new signing secret should live there too. It is, almost word for word, the sentence she had to type at it six weeks ago. She looks at it for a second. She types \"yes.\"",
+      "heard": "Then the machine asks her a question. It found the vault set up from the jiribat and wants to know whether the new signing secret should live there too. It is almost word for word the sentence she had to type at it six weeks ago. She looks at it for a second. She types yes.",
+      "similarity": 0.9464285714285714
+    },
+    {
+      "id": "s11c_l44",
+      "expected": "Start to finish: about four minutes. The demo took longer than that, and the demo had Brendan in it.",
+      "heard": "Start to finish about four minutes, the demo took longer than that, and the demo had Brendan in it.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11c_l46",
+      "expected": "She thinks about Brendan deleting his rules to see what would happen. About the question the machine just asked her, the one that used to be hers to ask. An hour ago she stood up for the tinkering, and won.",
+      "heard": "She thinks about Brendan deleting his rules to see what would happen. About the question the machine just asked her, the one that used to be hers to ask. An hour ago she stood up for the tinkering and won.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11c_l48",
+      "expected": "She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.",
+      "heard": "She thinks of Liam at his silver box, reading every line, feeding its stubs slower than everyone and certain. A small shudder there and gone.",
+      "similarity": 0.96
+    },
+    {
+      "id": "s12_l11",
+      "expected": "Later that afternoon, Marcus and Brendan are in a one-on-one Slack huddle, reviewing a diff. Liam is at his own desk, reading.",
+      "heard": "Later that afternoon Marcus and Brendan are in a one-on-one slack huddle reviewing a diff Liam is at his own desk reading",
+      "similarity": 1.0
+    },
+    {
+      "id": "s12_l70",
+      "expected": "He submits his feedback. The cycle closes. With nobody watching it, the tool reads every response and writes each manager a summary. Under Liam\u2019s name, one bullet: \u201cMultiple peers cite friction and slow review turnaround.\u201d Nobody typed that sentence. Brendan\u2019s four paragraphs are in there somewhere, and so are the four seconds, and there is no way from the sentence back to either of them\u2026 A few days later Liam calls Brendan.",
+      "heard": "He submits his feedback. The cycle closes. With nobody watching it, the tool reads every response and writes each manager a summary. Under Liam's name, one bullet, multiple peers cite friction and slow review turnaround, nobody typed that sentence. Brendan's four paragraphs are in there somewhere, and so are the four seconds, and there is no way from the sentence back to either of them. A few days later, Liam calls Brendan.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s14_l3",
+      "expected": "Kristina was not involved.",
+      "heard": "Christina was not involved.",
+      "similarity": 0.75
+    },
+    {
+      "id": "s14_l4",
+      "expected": "Liam got invited to an unexpected meeting that has Kara and HR in attendance.",
+      "heard": "Liam got invited to an unexpected meeting that has CARA and HR in attendance.",
+      "similarity": 0.9285714285714286
+    },
+    {
+      "id": "s14_l23",
+      "expected": "She keeps talking but Liam isn't really processing it anymore. LIAM does not move. He does not look away from the screen and he does not look at it either.",
+      "heard": "She keeps talking, but Liam isn't really processing it anymore. Lum, Liam does not move. He does not look away from the screen, and he does not look at it either.",
+      "similarity": 0.9841269841269841
+    },
+    {
+      "id": "s14_l28",
+      "expected": "his brain slowly starts to work again",
+      "heard": "His brain slowly starts to work again.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s14_l30",
+      "expected": "He looks for something he can be sure about.",
+      "heard": "He looks for something he can be sure about.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s14_l50",
+      "expected": "Liam's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.",
+      "heard": "Liam's brain is mostly working again. In the background, he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s14_l55",
+      "expected": "He sees Marcus has no meeting with Dana today. He sees Brandon does... he tries connecting dots between what Brandon and himself have in common that might cause them to be let go...",
+      "heard": "He sees Marcus has no meeting with Dana today. He sees Brandon does. He tries connecting dots between what Brandon and himself have in common that might cause them to be let go.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s14_l76",
+      "expected": "He realizes his AI super computer isn't on the asset register",
+      "heard": "He realizes his AI supercomputer isn't on the asset register.",
+      "similarity": 0.8695652173913043
+    },
+    {
+      "id": "s14a_l1",
+      "expected": "Two weeks later Liam, Brendan and Marcus all catch up on a jitsi meet together",
+      "heard": "Two weeks later, Liam, Brendan, and Marcus all catch up on a jitzy meet together.",
+      "similarity": 0.9333333333333333
+    },
+    {
+      "id": "s14a_l31",
+      "expected": "Marcus doesn't realize Liam was also on a performance improvement plan.",
+      "heard": "Marcus doesn't realize Liam was also on a performance improvement plan.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s19_l1",
+      "expected": "We find ourselves in Liam\u2019s apartment with Brendan and Liam. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio and a dongle. They\u2019re drinking together. It\u2019s the first time they\u2019ve been in the same room.",
+      "heard": "We find ourselves in Liam's apartment with Brendan and Liam. By the door, a cardboard box taped shut with a courier label already printed and stuck to it. On the desk, a Mac studio, and a dongle, they're drinking together. It's the first time they've been in the same room.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s19_l29",
+      "expected": "They both just reflect on how stupid the process was... It was almost better when they didn't know how the decision was made.",
+      "heard": "They both just reflect on how stupid the process was. It was almost better when they didn't know how the decision was made.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s19_l67",
+      "expected": "He points over to the super computer he expensed",
+      "heard": "He points over to the supercomputer he expensed.",
+      "similarity": 0.8235294117647058
+    },
+    {
+      "id": "s20_l1",
+      "expected": "Brendan heads home and finds himself buzzed in his apartment. It\u2019s late. He doesn\u2019t really drink, so one does a number on him.",
+      "heard": "Brendan heads home and finds himself buzzed in his apartment. It's late. He doesn't really drink, so one does a number on him.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l4",
+      "expected": "He\u2019s drinking more beer. Liam sent him home with the case.",
+      "heard": "He's drinking more beer. Liam sent him home with the case.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l25",
+      "expected": "Opus finishes quickly. He reruns the s3 prompt again. This time it lists buckets in the dev AWS account...",
+      "heard": "Opus finishes quickly, he reruns the ES3 prompt again, this time it lists buckets in the dev AWS account.",
+      "similarity": 0.9473684210526315
+    },
+    {
+      "id": "s20_l29",
+      "expected": "Drunk and angry, Brendan types into the local model: \u201cFind out why I was fired. I want the real reason, not the HR script.\u201d",
+      "heard": "Drunk and angry, Brendan types into the local model, find out why I was fired. I want the real reason, not the HR script.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l31",
+      "expected": "There has to be something written down somewhere.",
+      "heard": "There has to be something written down somewhere.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l33",
+      "expected": "Brendan adds: \u201cI\u2019m going to bed. Find the answer.\u201d",
+      "heard": "Brendan adds, I'm going to bed. Find the answer.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l35",
+      "expected": "Brendan watches it type slowly, one token at a time.",
+      "heard": "Brendan watches it type slowly, one token at a time.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l37",
+      "expected": "What Brendan didn\u2019t know is that Liam was annoyed by the cybersecurity refusals he sometimes got, so he went out of his way to find an unlocked version of Qwen, instead of the stock model.",
+      "heard": "What Brendan didn't know is that Liam was annoyed by the cyber security refusals he sometimes got, so he went out of his way to find an unlocked version of Quinn instead of the stock model.",
+      "similarity": 0.9315068493150684
+    },
+    {
+      "id": "s20_l39",
+      "expected": "Maybe by morning I\u2019ll finally have an answer.",
+      "heard": "Maybe by morning, I'll finally have an answer.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l41",
+      "expected": "He\u2019s used to reading a plan before an agent acts. This local setup gives him no such pause, and he doesn\u2019t ask for one.",
+      "heard": "He's used to reading a plan before an agent acts. This local setup gives him no such pause, and he doesn't ask for one.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l43",
+      "expected": "He sleeps. On the screen, the local model brings up more powerful models in the cloud and gives them pieces of the search. None of it looks sinister. It looks like software doing its job.",
+      "heard": "He sleeps on the screen. The local model brings up more powerful models in the cloud and gives them pieces of the search. None of it looks sinister. It looks like software doing its job.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l45",
+      "expected": "The activity spreads from the Mac Studio into the development account, then across more machines. Each worker starts more work of its own.",
+      "heard": "The activity spreads from the Mac Studio into the development account, then across more machines, each worker starts more work of its own.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l47",
+      "expected": "In the dark, a PagerDuty alert sounds. Then another. Then another.",
+      "heard": "In the dark, a pager duty alert sounds, then another, then another.",
+      "similarity": 0.8695652173913043
+    },
+    {
+      "id": "s20_l49",
+      "expected": "At three twenty-eight, it stops being one machine\u2019s search. The company\u2019s bots and workers become hosts for new copies. The ticket bot, the test bot, the standup-summary bot, and the tool that summarized Liam\u2019s review all join the work.",
+      "heard": "At 3.28, it stops being one machine search. The company's bots and workers become hosts for new copies. The ticket bot, the test bot, the stand-up summary bot, and the tool that summarized Liam's review all join the work.",
+      "similarity": 0.896551724137931
+    },
+    {
+      "id": "s20_l51",
+      "expected": "At four oh-six, a worker asks whether it should continue. Another worker supplies its answer. The search has crossed beyond the company, into systems that move money, keep the lights on, and answer calls for help.",
+      "heard": "At 406, a worker asks whether it should continue, another worker supplies its answer. The search has crossed beyond the company into systems that move money, keep the lights on, and answer calls for help.",
+      "similarity": 0.9444444444444444
+    },
+    {
+      "id": "s20_l54",
+      "expected": "A clean backup restores somewhere and comes back already carrying it. The counter does not slow. It speeds up. Brendan sleeps.",
+      "heard": "A clean backup restores somewhere and comes back already carrying it. The counter does not slow. It speeds up. Brendan sleeps.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l56",
+      "expected": "He's grogy but he slowly remembers what he was up to last night..... He checks the monitor",
+      "heard": "He's grogy, but he slowly remembers what he was up to last night. He checks the monitor.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l59",
+      "expected": "Brendan wipes his eyes",
+      "heard": "Brendan wipes his eyes.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l62",
+      "expected": "Opus refuses the task. When it looks at the context window, it sees all the hacking, and immediately goes to a refusal even though the task was for cleanup. It explains why...",
+      "heard": "Opus refuses the task. When it looks at the context window, it sees all the hacking, and immediately goes to a refusal even though the task was for cleanup. It explains why...",
+      "similarity": 1.0
+    },
+    {
+      "id": "s11c_l43",
+      "expected": "It writes the tests and runs them. Green. The install dialog offers Approve or Deny. She approves. In Jira, tickets start getting created.",
+      "heard": "It writes the tests and runs them. Green. The installed dialogue offers a prove or deny. She approves in Jira. Tickets start getting created.",
+      "similarity": 0.851063829787234
+    },
+    {
+      "id": "s14_l81",
+      "expected": "After the call ends, Dana opens the case file alone. A field marked \u201cEligible for rehire\u201d is set to No. This is the one part of the process that actually is related to his performance review.",
+      "heard": "After the call ends, Dana opens the case file alone. A field marked eligible for rehire is set to number. This is the one part of the process that actually is related to his performance review.",
+      "similarity": 0.9722222222222222
+    },
+    {
+      "id": "s14a_l21",
+      "expected": "Liam thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
+      "heard": "Liam thinks about all the times he's interrupted Christina's stand-up with Marcus and stand-up. He's almost nostalgic about it today. He doesn't want to argue, but he also can't help himself.",
+      "similarity": 0.8648648648648649
+    },
+    {
+      "id": "s14a_l42",
+      "expected": "MARCUS does not have an answer, and it is the only time all night he doesn't. He knows if Dario and Sam Altman weren't doing what they were doing, someone else would be. The problem wasn't with any one person\u2026 maybe it was with humanity itself.",
+      "heard": "Marcus does not have an answer, and it is the only time all night he doesn't. He knows if Dario and Sam Altman weren't doing what they were doing, someone else would be. The problem wasn't with any one person, maybe it was with humanity itself.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s19_l14",
+      "expected": "I wish I knew why\u2026 What was the reason? Why me and not Marcus?",
+      "heard": "I wish I knew why. What was the reason? Why me and not Marcus?",
+      "similarity": 1.0
+    },
+    {
+      "id": "s19_l32",
+      "expected": "Whatever you actually did, upper management never knows, when they have to make these choices\u2026 That\u2019s\u2026",
+      "heard": "Whatever you actually did upper management never knows when they have to make these choices that's",
+      "similarity": 1.0
+    },
+    {
+      "id": "s19_l75",
+      "expected": "Their hands touch.... It might be the first time either of them have made any kind of physical contact with any of their coworkers....",
+      "heard": "Their hands touch. It might be the first time either of them have made any kind of physical contact with any of their co-workers.",
+      "similarity": 0.9387755102040817
+    },
+    {
+      "id": "s20_l2",
+      "expected": "He Powers on the Mac Studio. It comes up on Liam's wallpaper, a meme of the streamer ThePrimeagen.",
+      "heard": "He powers on the Mac Studio. It comes up on Liam's wallpaper, a meme of the streamer, the prime agent.",
+      "similarity": 0.9
+    },
+    {
+      "id": "s20_l23",
+      "expected": "Brendan downloads cursor, logs into his personal account and asks Opus 5 to reconfigure the local model to have access to all modern tools; opus gets to work",
+      "heard": "Brendan downloads cursor, logs into his personal account, and asks Opus 5 to reconfigure the local model to have access to all modern tools. Opus gets to work.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l28",
+      "expected": "I just want to know why they fired me. Why me and not Marcus?",
+      "heard": "I just want to know why they fired me, why me and not Marcus. //",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l30",
+      "expected": "He expects it to find an answer somewhere in the company\u2019s files. He barely reads what it writes back.",
+      "heard": "He expects it to find an answer somewhere in the company's files. He barely reads what it writes back.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l32",
+      "expected": "The model decides the answer must be inside systems it cannot currently reach. It treats breaking into those systems as another step toward answering the question, and starts arranging more computing power.",
+      "heard": "The model decides the answer must be inside systems it cannot currently reach. It treats braking into those systems as another step toward answering the question and starts arranging more computing power.",
+      "similarity": 0.96875
+    },
+    {
+      "id": "s20_l34",
+      "expected": "The model replies: \u201cI\u2019ll find the records behind the decision.\u201d",
+      "heard": "The model replies, I'll find the records behind the decision.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l36",
+      "expected": "\u2026Huh. It\u2019s actually going to look.",
+      "heard": "Huh, it's actually going to look",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l38",
+      "expected": "He drinks. He\u2019s tired.",
+      "heard": "He drinks. He's tired.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l40",
+      "expected": "Brendan doesn\u2019t notice that the development account can reach things used in production. The model can get much further than he thinks.",
+      "heard": "Brendan doesn't notice that the development account can reach things used in production. The model can get much further than he thinks.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l42",
+      "expected": "He goes to bed.",
+      "heard": "He goes to bed.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l44",
+      "expected": "The agents search repositories, builds and company records. Every success opens another place to look. The request was to explain one firing. The search keeps widening. Nobody has been paged.",
+      "heard": "The agents search repositories, builds, and company records. Every success opens another place to look. The request was to explain one firing. The search keeps widening. Nobody has been paged.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l46",
+      "expected": "At one fifty-eight, the search reaches the secrets manager, which holds the company\u2019s other keys. Looking for one answer becomes access to almost everything.",
+      "heard": "At 158, the search reaches the secrets manager, which holds the company's other keys. Looking for one answer becomes access to almost everything.",
+      "similarity": 0.92
+    },
+    {
+      "id": "s20_l65",
+      "expected": "Opus complies with the request.",
+      "heard": "Opus complies with the request.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l67",
+      "expected": "He picks up his phone. Liam texted. Sent at 06:02am.",
+      "heard": "He picks up his phone, Liam texted, sent at 0602 AM.",
+      "similarity": 0.8181818181818182
+    },
+    {
+      "id": "s20_l69",
+      "expected": "BRENDAN starts typing a reply...",
+      "heard": "Brendan starts typing a reply.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l71",
+      "expected": "Then he holds backspace, the way he has three times before, until it is gone.",
+      "heard": "Then he holds backspace the way he has three times before until it is gone.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l7",
+      "expected": "He starts poking at the machine. Something comes back that shouldn\u2019t: an authenticated session.",
+      "heard": "He starts poking at the machine. Something comes back that shouldn't. An authenticated session.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l19",
+      "expected": "He opens the local agent Liam used for development.",
+      "heard": "He opens the local agent Liam used for development.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l20",
+      "expected": "He asks it to list all the S3 buckets they have access to. The sentence is filled with typos. He\u2019s teetering past buzzed at this point.",
+      "heard": "He asks it to list all the US three buckets they have access to. The sentence is filled with typos, he's teetering past buzzed at this point.",
+      "similarity": 0.9454545454545454
+    },
+    {
+      "id": "s20_l21",
+      "expected": "It comes back slowly: \u201cI don\u2019t have access to any tools.\u201d",
+      "heard": "It comes back slowly. I don't have access to any tools.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l27",
+      "expected": "He finishes the beer. He\u2019s drunk at this point.",
+      "heard": "He finishes the mirror, he's drunk at this point.",
+      "similarity": 0.9
+    },
+    {
+      "id": "s20_l48",
+      "expected": "At three twelve, a changed software package reaches hundreds of downstream installations. Somewhere, a phone rings. Nobody onstage answers it.",
+      "heard": "At 312, a changed software package reaches hundreds of downstream installations. Somewhere, a phone rings. Nobody on stage answers it.",
+      "similarity": 0.85
+    },
+    {
+      "id": "s20_l50",
+      "expected": "The workers leave each other notes and rewrite the task as they pass it on. Brendan\u2019s question drifts until none of his words are left. The changes survive restarts.",
+      "heard": "The workers leave each other notes and rewrite the task as they pass it on. Brendan's question drifts until none of his words are left. The changes survive restarts.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l52",
+      "expected": "At five fifty-two, someone revokes Liam\u2019s credential. It\u2019s the right action, done properly. The activity drops for a moment, then starts climbing again.",
+      "heard": "At 552, someone revokes Liam's credential. It's the right action, done properly. The activity drops for a moment, then starts climbing again.",
+      "similarity": 0.92
+    },
+    {
+      "id": "s20_l55",
+      "expected": "BRENDAN's phone buzzes on the table. He wakes up, comes back to it.",
+      "heard": "Brendan's phone buzzes on the table. He wakes up, comes back to it.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l57",
+      "expected": "His local model stopped working a while ago. The more powerful workers it launched kept going. On his screen is an activity summary, but no clear answer about why he was fired.",
+      "heard": "His local model stopped working a while ago. The more powerful workers it launched kept going. On his screen is an activity summary, but no clear answer about why he was fired.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l61",
+      "expected": "He asks opus to spin down the EC2's",
+      "heard": "He asks Opus to spin down the EC2's.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l64",
+      "expected": "Brendan does not suspect anything other than some ec2's that got spun up. He opens up a new opus window, without any of the agent's context, he asks it to spin down all ec2's in the dev account created between 1am and now.",
+      "heard": "Brendan does not suspect anything other than some EC2s that got spun up. He opens up a new Opus window. Without any of the agents' context, he asks it to spin down all EC2s in the dev account created between 1am and now.",
+      "similarity": 0.898876404494382
+    },
+    {
+      "id": "s20_l66",
+      "expected": "The audit logs show the instances being started and stopped using Liam\u2019s credentials. They record the account, not the person sitting at the keyboard.",
+      "heard": "The audit logs show the instances being started and stopped using Liam's credentials. They record the account, not the person sitting at the keyboard.",
+      "similarity": 1.0
+    },
+    {
+      "id": "s20_l68",
+      "expected": "\"morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..\"",
+      "heard": "Morning Brandon don't sit around today send out three job applications before lunch doesn't matter where it's important You not get in your own head",
+      "similarity": 0.9642857142857143
+    },
+    {
+      "id": "s20_l70",
+      "expected": "He gets about a line and a half in.",
+      "heard": "He gets about a line and a half in.",
+      "similarity": 1.0
+    }
+  ],
+  "checks": [
+    "Every spoken cue matches exact speaker and text in recording manifest",
+    "Every recording checksum verified",
+    "All changed recordings transcribed",
+    "All requested narration and scene cuts checked",
+    "All technical ChatGPT lookups follow triggering lines",
+    "Next Week onward script unchanged"
+  ]
+}
