@@ -1,11 +1,11 @@
 {
   "writtenAt": "2026-09-13",
   "stagedAtWriting_s": 5711.6,
-  "overview": "The show estimates at 95 minutes staged against a target of 60 to 75. Reaching 75 does not require touching the four scenes the guardrails protect for comedy (01, 01c, 06, 11b): lifting 01d and 08, folding 14a into the front of 22, and taking the recommended trims inside every other scene lands at about 75. Reaching 60 is not possible on these notes: every suggestion including the known losses reaches about 66, and the remaining six minutes would have to come from dropping scenes the evaluation graded as load-bearing (23b and 07 are the least costly whole scenes, about three minutes each). Movement II carries most of the overrun and most of the saving.",
+  "overview": "The show estimates at 95 minutes staged against a target of 60 to 75. Reaching 75 does not require touching the four scenes the guardrails protect for comedy (01, 01c, 06, 11b): lifting 01d (08 was lifted on 2026-09-14, with Kara's title carried into s14_l1), folding 14a into the front of 22, and taking the recommended trims inside every other scene lands at about 75. Reaching 60 is not possible on these notes: every suggestion including the known losses reaches about 66, and the remaining six minutes would have to come from dropping scenes the evaluation graded as load-bearing (23b and 07 are the least costly whole scenes, about three minutes each). Movement II carries most of the overrun and most of the saving.",
   "plans": {
     "to75": {
       "title": "Reach 75 without touching the comedy scenes",
-      "note": "Lift 01d and 08, merge 14a into 22, and take the recommended trims in every scene except 01, 01c, 06 and 11b, which stay as they are.",
+      "note": "Lift 01d (08 was lifted on 2026-09-14), merge 14a into 22, and take the recommended trims in every scene except 01, 01c, 06 and 11b, which stay as they are.",
       "suggestionIds": [
         "s01b-1",
         "s01b-2",
@@ -23,7 +23,6 @@
         "s07-5",
         "s07-6",
         "s07-7",
-        "s08-7",
         "s11c-1",
         "s11c-2",
         "s11c-3",
@@ -141,7 +140,6 @@
         "s07-5",
         "s07-6",
         "s07-7",
-        "s08-7",
         "s11b-1",
         "s11b-2",
         "s11b-3",
@@ -237,7 +235,7 @@
   "conflicts": [
     "s11c is listed as cut in the Author-Pass Reconciliation and protected by guardrail 2 (Kristina's solo build). The notes trim inside it and never lift it; the author has to settle which record wins.",
     "s01d's merge into s01b (s01d-6) and s01b_l51 (\"I tried... couldn't get it in front of him\") both assume s01c plays before s01b, which is not the running order. The recommended lift (s01d-7) does not depend on that.",
-    "s08's lift carries only the Kara introduction into s14_l1. s01b-2 (compressing Brendan's method speech, s01b_l42) then relies on s01c alone as the payoff of the method block, which the s01b notes say is enough.",
+    "s08 was lifted on 2026-09-14 and the Kara introduction now sits in s14_l1. s01b-2 (compressing Brendan's method speech, s01b_l42) then relies on s01c alone as the payoff of the method block, which the s01b notes say is enough.",
     "s14a's merge into s22 (s14a-8) carries about 70 seconds of the spreadsheet defence to the front of s22, and s22-3 compresses Marcus's s22_l3 speech; both fit together, but the merged front of s22 should be read as one piece before either is taken."
   ],
   "continuity": [
