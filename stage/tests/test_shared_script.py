@@ -14,9 +14,11 @@ class SharedScriptTest(unittest.TestCase):
  def tearDown(self):self.tmp.cleanup()
  def test_full_import(self):
   scenes=self.store.scenes()
-  self.assertEqual(len(scenes),20);self.assertEqual(sum(len(s['lines']) for s in scenes),1031)
+  self.assertEqual(len(scenes),len(self.before['scenes']));self.assertEqual(sum(len(s['lines']) for s in scenes),len(self.before['cues']))
   self.assertEqual([l['text'] for s in scenes for l in s['lines']],[c['text'] for c in self.before['cues']])
-  self.assertEqual(sum(l['audio_status']=='ready' for s in scenes for l in s['lines']),831)
+  for scene in scenes:
+   for line in scene['lines']:
+    if line['audio_status']=='ready': self.assertTrue(line.get('audio'))
  def test_stage_edit_storyboard_audio_and_conflict(self):
   old=self.store.revision();ln=next(l for s in self.store.scenes() for l in s['lines'] if l['id']=='s01_l4')
   self.store.update_cue('s01_l4',{**ln,'text':'New narrator text.','revision':old},self.names)
@@ -31,7 +33,7 @@ class SharedScriptTest(unittest.TestCase):
    for field in ('screenActions','computers','staging','montage','sfx'):
     self.assertEqual(by[original['id']].get(field),original.get(field))
   self.assertEqual(by['s01_l4']['text'],next(c['text'] for c in self.before['cues'] if c['id']=='s01_l4'))
-  self.assertEqual(len(show['cues']),1032)
+  self.assertEqual(len(show['cues']),len(self.before['cues'])+1)
  def test_stale_generation_not_attached(self):
   ln=next(l for s in self.store.scenes() for l in s['lines'] if l['id']=='s01_l4')
   self.store.update_cue('s01_l4',{**ln,'text':'Changed','revision':self.store.revision()},self.names)

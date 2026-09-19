@@ -25,3 +25,6 @@
 .largePreviews #speaker{margin:4px 0 8px}
 .largePreviews .notesBody{padding-bottom:16px}
 @media(max-width:760px){#previewSize{display:none}}
+
+/* Actor names must be readable at a glance, independently of dialogue zoom. */
+#speaker,.beatSpeaker{font-size:22px;font-weight:750}#nextText strong{font-size:16px}

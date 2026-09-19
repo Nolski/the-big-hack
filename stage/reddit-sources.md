@@ -2,7 +2,7 @@
 
 Twelve found public memes replace the three invented placeholders. Original image bytes and embedded credits are preserved. Reddit usernames below identify the accounts that posted the images; they are not claims of original authorship. The presentation does not invent votes, comments, or posting times.
 
-The feed holds each joke for 7–13 seconds, then scrolls for 0.85 seconds. The twelve-post loop lasts 125.2 seconds and repeats seamlessly until the operator advances. Liam’s hand-stop freezes the current image, and the PR still replaces Reddit at the scripted screen share.
+The feed runs at 1.1× its original pace: each joke holds for about 6.4–11.8 seconds, then scrolls for about 0.77 seconds. The twelve-post loop lasts about 113.8 seconds and repeats seamlessly until the operator advances. The table below retains the original hold values; `reddit.js` divides them by 1.1 for playback. Liam’s hand-stop freezes the current image, and the PR still replaces Reddit at the scripted screen share.
 
 | Order | Image / source | Posted by | Hold |
 | --- | --- | --- | --- |

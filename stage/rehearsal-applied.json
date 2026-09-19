@@ -1,0 +1,726 @@
+{
+  "baseRevision": "4a3319b87b6f202d3137107bdd410d7212711f5f648521aff2535f7954e8a421",
+  "newRevision": "acbfbed84363da8394236d1cdfffa724e367f7cc34bdd0a399bf7e4200b1aaf5",
+  "branch": "edits/rehearsal-uncontested",
+  "audioGenerated": true,
+  "changes": [
+    {
+      "id": "s01_l8",
+      "before": "Liam’s heart skips a beat when he hears Brendan worked on the weekend…",
+      "after": "Marcus hears the part about the weekend.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s01_l9",
+      "before": "…He shipped this feature on the weekend?",
+      "after": "Hang on. You worked on the weekend?",
+      "speaker": "marcus",
+      "kind": "live"
+    },
+    {
+      "id": "s01_weekend_reply",
+      "before": null,
+      "after": "It was a couple of hours, Marcus. I was trying out the new Opus. Most of it ran while I was making coffee.",
+      "speaker": "brendan",
+      "kind": "live"
+    },
+    {
+      "id": "s01_l22",
+      "before": "If you listened to what I said about the Luddites last week, Liam... the 1700’s textile workers the British literally executed because the automated machines took their jobs… When they protested they got KILLED. The quality of the textiles actually got WORSE, but it didn’t matter because it got cheaper. I wish you all would pay more attention to what’s happening",
+      "after": "If you listened to what I said about the Luddites last week, Liam... automated machines took the textile workers' jobs. They protested, and the British executed them. The quality of the textiles actually got WORSE, but it didn't matter because it got cheaper. I wish you all would pay more attention to what's happening.",
+      "speaker": "marcus",
+      "kind": "live"
+    },
+    {
+      "id": "s01_l43",
+      "before": "I'd have asked you the same thing.",
+      "after": "I'd have asked you the same thing. It wasn't just an opinion, Marcus. She had the authentication changed. That should have come back to the team.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s01b_l1",
+      "before": "The slack huddle sound starts playing... Kristina is calling Brandon",
+      "after": "After standup, Kristina calls Brendan.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s01b_l9",
+      "before": "I mean I've watched half of Twitter vibe-code a startup over a weekend.... your right, this is fun",
+      "after": "I've watched half of Twitter vibe-code a startup over a weekend. It does look fun.",
+      "speaker": "kristina",
+      "kind": "voice"
+    },
+    {
+      "id": "s01b_l26",
+      "before": "Right. Give me one of yours, what have you got open?",
+      "after": "Right. Give me one of your Jira ticket numbers. What have you got open?",
+      "speaker": "kristina",
+      "kind": "voice"
+    },
+    {
+      "id": "s01b_l32",
+      "before": "Brendan. Honestly. Send me the board and I'll cross post it into Jira, I'll figure it out my end. Do the work in whatever gets you moving fastest. That's what matters, and that's what gets you noticed.",
+      "after": "Brendan. Honestly. Send me the board and I'll cross-post it into Jira. I'll figure it out on my end. Do the work in whatever gets you moving fastest. That's what matters, and that's what gets you noticed.",
+      "speaker": "kristina",
+      "kind": "voice"
+    },
+    {
+      "id": "s01b_l50",
+      "before": "Did you show Liam this? Because if he's genuinely worried about the tests, this is the answer to his entire objection. He'd love it.",
+      "after": "Have you shown Liam this? Because if he's genuinely worried about the tests, this answers his objection. He'd love it.",
+      "speaker": "kristina",
+      "kind": "voice"
+    },
+    {
+      "id": "s01b_l51",
+      "before": "…I tried. I, uh, I couldn't really get it in front of him. I think I just need to spend a bit more time with him. One on one. To get him to actually sit with it.",
+      "after": "I tried to explain it this morning. I couldn't get very far. I think I need some time with him one on one, where he actually lets me show him.",
+      "speaker": "brendan",
+      "kind": "live"
+    },
+    {
+      "id": "s01c_l1",
+      "before": "The standup has just cleared. The slack huddle sound plays... Liam is calling brandon...",
+      "after": "Three hours after standup, Liam calls Brendan.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s01c_l6",
+      "before": "Yeah, well. Anyway. That's not why I called. The weekend.... Since when do we work weekends?",
+      "after": "Yeah, well. Anyway. The portal. That's why I called.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s01c_l8",
+      "before": "But the code. Show me. Walk me through what you actually did, the whole thing, start to finish. I want to see how you wrote this.",
+      "after": "Show me the code. Walk me through what you actually did, start to finish. I want to see how you wrote this.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s01c_l11",
+      "before": "Eight hundred lines. One PR. The front-end, the key-issuance service, the auth, the deploy config, all jammed into one diff. How is anybody supposed to review this?",
+      "after": "The key-issuance service, the front-end, the auth, the deploy config. Eight hundred lines, all jammed into one diff. How is anybody supposed to review this?",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s01c_l15",
+      "before": "Because that's what review is. You read it. Line by line. You hold the entire thing in your head at once. That's the job. That's the whole thing that separates an engineer from someone typing paragraphs at a chatbot and hitting accept.",
+      "after": "No, that's not how you review it. You read it. Line by line. You hold the whole thing in your head. That's the job. Otherwise you're typing paragraphs at a chatbot and hitting accept.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s01c_l17",
+      "before": "I don't need the guided tour of Cursor, Brendan. I can read code. I was reading code before Cursor existed. And don't tell me the tests pass. The AI wrote the code and wrote the tests that say the code's fine. It's marking its own homework. I made this exact point three hours ago.",
+      "after": "I don't need the guided tour of Cursor, Brendan. I can read code. Like I said three hours ago, the AI wrote the code and wrote the tests that say the code's fine. It's marking its own homework.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s06_l2",
+      "before": "…lovely, thanks Brendon. Marcus, anything blocking you?",
+      "after": "…lovely, thanks Brendan. Marcus, anything blocking you?",
+      "speaker": "kristina",
+      "kind": "voice"
+    },
+    {
+      "id": "s06_l12",
+      "before": "They complained just because technology which was clearly better for society had an impact on their jobs, then they burned factories to the ground… They got hanged by the British army. Seems pretty clear cut they were on the wrong side of history… Anyway, I’m trying to read this code. Please stop talking about the Luddites.",
+      "after": "They got cheaper cloth into more people's hands and the Luddites wanted to stop it. Seems like a bad side to pick. This AI crap isn't doing that. It's giving us worse code and more of it. Anyway, I'm trying to read this. Can we move on?",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s06_l26",
+      "before": "…Actually. No. Come look at it with me. You'll learn more from one real race condition than a month of tickets. Free for twenty minutes after this?",
+      "after": "Actually, yeah. Come look at it with me. You'll learn more from one real race condition than a month of tickets. Free for twenty minutes after this?",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s06_l29",
+      "before": "The grid blinks out tile by tile. A Slack huddle request lights Liam's screen: BRENDAN. He takes it without looking up.",
+      "after": "After standup, Brendan calls Liam to look at the signup bug.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s06_l32",
+      "before": "Token generation. The session tokens. If two people ever got issued the same token, that would do it, so I've been pulling apart the RNG, the entropy source, the signing. And it's all fine. It's textbook. That's what's killing me the one place it should be, it just… isn't.",
+      "after": "I've checked the RNG, the entropy source, the signing. If two users got the same session token, that would explain it. So I've spent days pulling the token generation apart. It's all fine. That's what's killing me. The place I expected to find it is clean.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s06_l35",
+      "before": "It can't. That's the thing everyone gets wrong about it. It can't reason about concurrency, it's autocomplete with good manners. It has no model of two threads interleaving. You point it at this, it sees the word \"session,\" it pattern-matches to \"add a mutex,\" and now I've got a lock on the hottest path in the app and a deadlock in prod. No thanks.",
+      "after": "Claude will tell me to add a mutex. That's what comes back every time you ask about two things happening at once. But where does the lock go? What happens to everything waiting behind it? Now I've got a deadlock in production as well as the original bug. No thanks.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s06_l37",
+      "before": "That's the whole problem, though. I can't make it fail on demand. It's one in fifty thousand signups, only under real load. There's no red test to hand it. And if I hand it a green one, it'll \"fix\" the bug, tell me it's solved, and be lying, same as it always is. And it'll sound completely sure while it does it.",
+      "after": "That's the whole problem, though. I can't make it fail on demand. It's one in fifty thousand signups, only under real load. There's no red test to hand it. And if I hand it a green one, it'll say it's fixed the bug and be lying, same as it always is. And it'll sound completely confident while it does it.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s06_l47",
+      "before": "…It's zero. The id is zero until the transaction commits. It defaults to zero. So two signups in the same tick they both call getOrCreateSession with id zero. They both key on zero. They get the same session. One of them gets handed the other one's login. …It was never the tokens. It was never the crypto. It's a check-then-set on an id that isn't there yet. One line. It's one line. It's been one line this whole time.",
+      "after": "...It's zero. Wait. The ID's zero until the transaction commits. So if two signups get here together... they're both asking for session zero. Oh, fuck. That's it. They're getting the same session. It wasn't the tokens at all. It's been this one line.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s06_l51",
+      "before": "LIAM is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: REPRODUCED, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show Liam. He lets the huddle go. LIAM types on, warm and none the wiser. Hold a moment on the two screens, his, bright and moving, and on brandon's just a blinking cursor from a rolled back commit.",
+      "after": "Liam starts writing the fix, delighted. Brendan still has Claude's reproduction and the finished patch open. He switches back to the main branch before Liam notices. He doesn't tell him.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s07_l1",
+      "before": "Later that afternoon we find Kristina and Brendan on yet another Slack huddle",
+      "after": "Later that afternoon, Brendan catches Kristina at the end of a huddle.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s07_l17",
+      "before": "Right. Well, however we got there, it's fixed, and that's genuinely great, and I get to tell my boss we have an extra engineer to work on new products this coming sprint.",
+      "after": "Right. Well, however we got there, it's fixed, and that's genuinely great. I get to tell Kara we have an extra engineer to work on new products this coming sprint.",
+      "speaker": "kristina",
+      "kind": "voice"
+    },
+    {
+      "id": "s07_l25",
+      "before": "Her tile blinks out. BRENDAN sits a second in the quiet. We now see LIAM leaning back from his desk, stretches, genuinely happy. He opens his one-line-fix branch for PR. On the screen above, BRENDAN deletes his local branch, the branch Claude finished twenty minutes ago. The monitor-blue holds on the two of them: the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.",
+      "after": "Liam opens his one-line fix for review. He's happy with it. Brendan deletes the branch Claude finished twenty minutes ago.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s11b_l1",
+      "before": "A few months later. We find ourselves again in Liam’s apartment, the memes are gone. On his desk sits a new Mac Mini, the protective film still on one corner. A terminal crawls a few tokens… at… a… time, running a local version of Qwen.",
+      "after": "A few months later, Liam has a new Mac Studio on his desk. It runs a local Qwen model, a few tokens at a time. Standup is underway.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s11b_l6",
+      "before": "I'm just doing what the CEO wants Liam. Don't you remember his memo? And rather than dragging my feet by using some crappy open source model, I got my work done. No wonder you think this technology sucks. You really are like the Luddites. They also complained about losing their craft, even though the power loom was the way of the future. You should try reading about it sometime.",
+      "after": "I'm doing what the CEO wants, Liam. Remember his memo? I got the work done. You're trying to beat the machine by reading faster. John Henry died doing that. You're going to give yourself cataracts staring at all that tiny text.",
+      "speaker": "marcus",
+      "kind": "live"
+    },
+    {
+      "id": "s11b_l7",
+      "before": "…Okay Marcus… I’m pretty sure you were arguing the exact opposite about Luddites like a couple months ago.",
+      "after": "You were telling us to fight the machines a couple of months ago. Now you're telling me to let one do my job?",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s11b_l10",
+      "before": "Three more tickets. Because we have an endless supply of work. I feel like I'm the only one who understands what we're actually hired to do. They want us to use the fast model so we can produce more and more and more and never satisfy them.",
+      "after": "Three more tickets. At least when they finished the railroad, they'd built a railroad. We clear the board and somebody fills it up again. They want us using the fast model so we can do more, and there's always more.",
+      "speaker": "marcus",
+      "kind": "live"
+    },
+    {
+      "id": "s11b_kristina_tickets",
+      "before": null,
+      "after": "Okay, let's stick to the webhook—",
+      "speaker": "kristina",
+      "kind": "voice"
+    },
+    {
+      "id": "s11b_kristina_models",
+      "before": null,
+      "after": "Liam, Marcus. We have other updates—",
+      "speaker": "kristina",
+      "kind": "voice"
+    },
+    {
+      "id": "s11b_l44",
+      "before": "Okay. So. Mac Studio, a 64 gigs of unified memory. The 27b Qwen just fits, quantized. Cost this company half the price of a used car which is the AI-adoption price the CEO's memo didn't mention.",
+      "after": "Okay. Mac Studio, sixty-four gigs of unified memory. That's what lets me fit the quantized twenty-seven-billion-parameter Qwen on it. Cost this company half the price of a used car. That's the AI-adoption price the CEO's memo didn't mention.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s11b_l58",
+      "before": "They can talk to each other. If you let them.",
+      "after": "You could have five agents working on five different tickets.",
+      "speaker": "brendan",
+      "kind": "live"
+    },
+    {
+      "id": "s11b_l59",
+      "before": "Talk to each other.",
+      "after": "Nobody can concentrate on five tickets at once.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s11b_l60",
+      "before": "Share notes. Split the work up between them.",
+      "after": "They work while you're checking the other one. You don't have to watch every—",
+      "speaker": "brendan",
+      "kind": "live"
+    },
+    {
+      "id": "s11b_l61",
+      "before": "No.",
+      "after": "Yes, you do. That's why the code's getting worse. Nobody's paying attention to what they're shipping.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s11b_l68",
+      "before": "On somebody else's computer, through a black box that changes under me on a Tuesday. No. Local, I pin the weights. What I ran in January is what I run in March. That's not paranoia, that's responsible engineering.",
+      "after": "There is no cloud, Brendan. It's somebody else's computer. And they can change the model under me on a Tuesday. Here, I pin the weights. What I ran in January is what I run in March. That's responsible engineering.",
+      "speaker": "liam",
+      "kind": "live"
+    },
+    {
+      "id": "s11b_l70",
+      "before": "Brendan reads the security policy. \"Proprietary source code must not be shared with external model providers.\" Owner: Liam. Last reviewed: fourteen months ago. He opens a message to Kristina and types: \"re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang...\" He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: \"I don't know if liam is ever going to...\" He stops. He holds backspace until that one is gone too.",
+      "after": "Brendan opens the security policy. Liam wrote it. He starts a message to Kristina suggesting they update it, then looks at the tickets he still has to finish and deletes it. He starts another message, this time about Liam. He deletes that one too.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s11b_l75",
+      "before": "BRENDAN drops the huddle. On his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete, the same way he held backspace previously, until it's gone too. LIAM turns back to his rig, satisfied. The model puts out the next token. Then, in its own time, the one after. He watches his machine type, patient, certain, sinking.",
+      "after": "Brendan ends the call and deletes the finished patch. Liam opens Reddit beside his terminal while he waits for the next line of code.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s11b_l76",
+      "before": "Liam's machine is grinding and honest and slow; Brandon's is finished twice over and sitting idle",
+      "after": "Liam scrolls a meme. His model is still typing.",
+      "speaker": "",
+      "kind": "stage"
+    },
+    {
+      "id": "s11c_l23",
+      "before": "It's not the four weeks. The model that fits on that box is a year behind what the rest of the team is on, and he won't let it do anything. No tools, no tests, no network. He asks it for code, it gives him bad code, and he fills in the rest by hand. He calls it fancy autocomplete. He's proud that's all it is. What he's built is a very expensive way of proving a point.",
+      "after": "It's not the four weeks. The model that fits on that box is a year behind what the rest of the team is on, and he won't let it do anything. No tools, no tests, no network. He asks it for code, it gives him bad code, and he fills in the rest by hand. He calls it fancy autocomplete. He's proud that's all it is. He's following the security policy so he can show that the CEO's AI mandate doesn't work. He's spent a lot of money proving the setup he chose is slow.",
+      "speaker": "brendan",
+      "kind": "live"
+    },
+    {
+      "id": "s11c_l30",
+      "before": "And look, Liam being slow is normal Liam. We'll absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position, out loud, at standup, in an eleven-page doc, is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the new engineers decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. That could genuinely hurt us.",
+      "after": "And look, Liam being slow is normal Liam. We'll absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position, out loud, at standup, in an eleven-page doc, is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the new engineers decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. He's following the wording of the policy. He knows that isn't what the CEO asked us to do. If the new engineers copy him, that becomes how the whole team works.",
+      "speaker": "brendan",
+      "kind": "live"
+    },
+    {
+      "id": "s11c_l40",
+      "before": "She types, in her own words, the way you'd brief a contractor: \"Build a tool that cross posts Linear tickets into Jira.\" She had been doing this manually for Brandon.",
+      "after": "She types, in her own words, the way you'd brief a contractor: \"Build a tool that cross posts Linear tickets into Jira.\" She had been doing this manually for Brendan.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s14_l1",
+      "before": "What Kristina had overheard was in fact a precursor to layoffs… Kara, the director of engineering, and the CEO had quietly been working on a spreadsheet to cut who they viewed as underperformers. They drew a line two thirds of the way down. Liam’s row is four under the line. Brendan’s is two under. Marcus’s is eleven above.",
+      "after": "What Kristina overheard was a precursor to layoffs. Kara, the director of engineering, and the CEO wanted to know who was adopting AI. They used Jira tickets closed as their measure. They drew a line two-thirds of the way down the spreadsheet. Liam's row is four under the line. Brendan's is two under. Marcus's is eleven above.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s14_l2",
+      "before": "The sheet ranks every engineer by how many tickets they closed. There is no column for code review, and none for anything that never became a ticket. Brendan tracked his work somewhere the sheet cannot see, so on the sheet he did almost nothing. Marcus files everything, so he sits near the top. Liam is under the line.",
+      "after": "There is no column for code review. Brendan tracks his work in Linear, but the sheet only counts Jira. On the sheet, he did almost nothing. Marcus files everything, so he sits near the top.",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s14_l55",
+      "before": "He sees Marcus has no meeting with Dana today. He sees Brandon does... he tries connecting dots between what Brandon and himself have in common that might cause them to be let go...",
+      "after": "He sees Marcus has no meeting with Dana today. He sees Brendan does... he tries connecting dots between what Brendan and himself have in common that might cause them to be let go...",
+      "speaker": "narrator",
+      "kind": "voice"
+    },
+    {
+      "id": "s24_l35",
+      "before": "The lights flicker, the brownout from the courtroom, and hold low. A sizzle from somewhere in the walls. Then, from nowhere on stage: a trap door drops, a rope snaps tight, and a slow creak, a weight turning on a line. No image. Nothing on stage moves.",
+      "after": "The lights flicker and hold low. Silence.",
+      "speaker": "",
+      "kind": "stage"
+    },
+    {
+      "id": "s24_l37",
+      "before": "The calendar entry for the fourteenth goes. The creak keeps going under it. The lights go.",
+      "after": "The calendar entry for the fourteenth disappears. Blackout.",
+      "speaker": "",
+      "kind": "stage"
+    }
+  ],
+  "removed": [
+    {
+      "id": "s01c_l7",
+      "text": "It wasn't a weekend, Liam. It was maybe three hours Saturday because I was bored and messing around with the new Opus. Most of it happened while I was making coffee"
+    },
+    {
+      "id": "s01c_chat_keys",
+      "text": "Private ChatGPT lookup. Let the question and answer finish, then GO."
+    },
+    {
+      "id": "s06_chat_henry",
+      "text": "Private ChatGPT lookup. Let the question and answer finish, then GO."
+    },
+    {
+      "id": "s06_chat_race",
+      "text": "Private ChatGPT lookup. Let the question and answer finish, then GO."
+    },
+    {
+      "id": "s06_chat_security",
+      "text": "Private ChatGPT lookup. Let the question and answer finish, then GO."
+    },
+    {
+      "id": "s06_chat_rng",
+      "text": "Private ChatGPT lookup. Let the question and answer finish, then GO."
+    },
+    {
+      "id": "s06_chat_mutex",
+      "text": "Private ChatGPT lookup. Let the question and answer finish, then GO."
+    },
+    {
+      "id": "s11b_chat_quantized",
+      "text": "Private ChatGPT lookup. Let the question and answer finish, then GO."
+    },
+    {
+      "id": "s11b_chat_weights",
+      "text": "Private ChatGPT lookup. Let the question and answer finish, then GO."
+    },
+    {
+      "id": "s11b_l69",
+      "text": "I used to keep a doc. Things it gets wrong. I stopped. It stopped getting them wrong."
+    }
+  ],
+  "audioVerification": {
+    "count": 51,
+    "allSpokenManifestCount": 709,
+    "checks": [
+      {
+        "id": "s11c_l30",
+        "duration": 37.28,
+        "rms": 0.08991,
+        "audio": "assets/audio/shared-49e11ce4deb29223f85398a892da43579cdcf15ef92f58263cf57cea6f3b076e.wav"
+      },
+      {
+        "id": "s01_l22",
+        "duration": 19.76,
+        "rms": 0.06344,
+        "audio": "assets/audio/shared-b7b60e0edd6f87fe2cdaf9f36864c59759bdbba61ff59a58ffc9b9f84e82b4fd.wav"
+      },
+      {
+        "id": "s06_l35",
+        "duration": 15.6,
+        "rms": 0.06469,
+        "audio": "assets/audio/shared-d4ff2535496ee9ee856989370d1f7db9ad7ea4c1b8eda4d869456bbe74a0bdb8.wav"
+      },
+      {
+        "id": "s06_l47",
+        "duration": 15.6,
+        "rms": 0.06434,
+        "audio": "assets/audio/shared-b1a2da380863c2fe293ee306a3655321e29a10965a4beaffd44b4b8864576970.wav"
+      },
+      {
+        "id": "s11b_l70",
+        "duration": 14.08,
+        "rms": 0.07659,
+        "audio": "assets/audio/shared-d6442c50976c97d76280053d8e816e4e600a3008a4719f15c42d00975efd9bde.wav"
+      },
+      {
+        "id": "s11c_l35",
+        "duration": 13.84,
+        "rms": 0.07048,
+        "audio": "assets/audio/shared-f46cad23358ff919be8fe96962674277155f8c23cec57e2a6d75cd321f8581fc.wav"
+      },
+      {
+        "id": "s11b_l6",
+        "duration": 16.0,
+        "rms": 0.06408,
+        "audio": "assets/audio/shared-b337a3662299139a01d5f83c5ac102a206a7912b995253df5851687a3b6c694a.wav"
+      },
+      {
+        "id": "s11b_l68",
+        "duration": 12.24,
+        "rms": 0.07447,
+        "audio": "assets/audio/shared-9d02c3c125496c81da6b795d7a5fb84bdcbe6fa68cbd55adb1a6be82c8d4696b.wav"
+      },
+      {
+        "id": "s01c_l17",
+        "duration": 11.76,
+        "rms": 0.07092,
+        "audio": "assets/audio/shared-147bc20a09628f884233b822ec148dbf451500b5d2abcafd78d14bff9d7d8ac7.wav"
+      },
+      {
+        "id": "s06_l51",
+        "duration": 10.800041666666667,
+        "rms": 0.08661,
+        "audio": "assets/audio/shared-3cb3cfa61cd8fde4939c7fcdd13333834719f12b6e76bfa4a4462aa72db59a3b.wav"
+      },
+      {
+        "id": "s14_l55",
+        "duration": 10.32,
+        "rms": 0.10711,
+        "audio": "assets/audio/shared-5eec768ae9df90a1e63022865a6d0cf15a5d7f61843ef3faf8dd0d66baff4739.wav"
+      },
+      {
+        "id": "s07_l17",
+        "duration": 9.52,
+        "rms": 0.07618,
+        "audio": "assets/audio/shared-e01a7020316537589e1a9a35f40dd9704d18a043cfbf264f310c2a0ddd48df25.wav"
+      },
+      {
+        "id": "s06_l26",
+        "duration": 8.48,
+        "rms": 0.07913,
+        "audio": "assets/audio/shared-c4be5b5b775bb11fe92c70f1604561b5220e01c1f01f84f5fa6978b2c331f1c8.wav"
+      },
+      {
+        "id": "s01b_l51",
+        "duration": 9.2,
+        "rms": 0.09532,
+        "audio": "assets/audio/shared-9ed5fa28a83f421809d8962782c2deb1b2bc94f2b5eeecbc539c22b21248d7c1.wav"
+      },
+      {
+        "id": "s11b_l1",
+        "duration": 9.920041666666666,
+        "rms": 0.08263,
+        "audio": "assets/audio/shared-5569da61d9ed964ed7dea98f5aeb641017e9dc36ec38e2b49958e3e717a48b7f.wav"
+      },
+      {
+        "id": "s01b_l50",
+        "duration": 6.88,
+        "rms": 0.0859,
+        "audio": "assets/audio/shared-001c0f85aabcb6e9151996f2a01291b9b9a1f93fb61e896031d0b4a1020dbf19.wav"
+      },
+      {
+        "id": "s01c_l8",
+        "duration": 6.72,
+        "rms": 0.06453,
+        "audio": "assets/audio/shared-ab14c3f13c680e5197f6fe7ca12cd8c6f831910bab2a7ddd22e7d9584356c45c.wav"
+      },
+      {
+        "id": "s11b_l61",
+        "duration": 6.24,
+        "rms": 0.06126,
+        "audio": "assets/audio/shared-21832687c0d5b5499ac5438f4b849c87a5c107d515bec17fd049e80ce2c30588.wav"
+      },
+      {
+        "id": "s11b_l60",
+        "duration": 4.4,
+        "rms": 0.08547,
+        "audio": "assets/audio/shared-7ca72e06eb739de4c5d439420bd868f3430687259617c171943fadcbfcfd2727.wav"
+      },
+      {
+        "id": "s07_l1",
+        "duration": 4.32,
+        "rms": 0.10972,
+        "audio": "assets/audio/shared-7e3f4745bba0c8a8de6d3a7fb741878c3a12833f52c7af2fdd970b9ad31c2c74.wav"
+      },
+      {
+        "id": "s06_l29",
+        "duration": 3.84,
+        "rms": 0.08945,
+        "audio": "assets/audio/shared-da064621fdb69eb3a61433ac567684becb71e2091b4ade9717335e9ceeea4e8d.wav"
+      },
+      {
+        "id": "s01c_l6",
+        "duration": 4.32,
+        "rms": 0.06361,
+        "audio": "assets/audio/shared-9567e0f360444eb20eb8383dd73d01dce5a2342212de4cdef8770739c7020d89.wav"
+      },
+      {
+        "id": "s01c_l1",
+        "duration": 3.04,
+        "rms": 0.097,
+        "audio": "assets/audio/shared-db4bb4726a274e1ccf8aec4640597f06bd6209f22991f9355fd8d756664920a0.wav"
+      },
+      {
+        "id": "s01b_l1",
+        "duration": 2.32,
+        "rms": 0.0696,
+        "audio": "assets/audio/shared-f4f979a71beb243813dbedd46ce31f63f1a05a88b02512945e5ac07943c17ae9.wav"
+      },
+      {
+        "id": "s01_l9",
+        "duration": 3.04,
+        "rms": 0.05723,
+        "audio": "assets/audio/shared-51e62fc68d8a1112b24ca4e69c7a08d2d22aee9f8f1d1c89822d242bd1989c37.wav"
+      },
+      {
+        "id": "s11c_l23",
+        "duration": 28.4,
+        "rms": 0.09353,
+        "audio": "assets/audio/shared-e16bc453724f6901465ac003c9c3b1b7c85961ab2a1bb050841f32bc261cf7f7.wav"
+      },
+      {
+        "id": "s14_l1",
+        "duration": 19.52,
+        "rms": 0.09172,
+        "audio": "assets/audio/shared-a428e0ea5da8f0b8961e04032112a9348fe86d6218dad6c6da8d77b19ab6b9dd.wav"
+      },
+      {
+        "id": "s06_l37",
+        "duration": 16.96,
+        "rms": 0.06445,
+        "audio": "assets/audio/shared-d5eaf093dc1417a36499043ed85cc447634f05fb4cfaeb069a61d1bc870db8d3.wav"
+      },
+      {
+        "id": "s06_l32",
+        "duration": 15.2,
+        "rms": 0.06344,
+        "audio": "assets/audio/shared-72911eb0b60335d7573198d452e189dad4cb210644730a4103aa5c616aa08442.wav"
+      },
+      {
+        "id": "s11c_l34",
+        "duration": 15.44,
+        "rms": 0.08551,
+        "audio": "assets/audio/shared-1d41ef9aa24bd6b03db16e94fb3db0d80a2dc0a0cfff2f8b053e798f45e12d87.wav"
+      },
+      {
+        "id": "s11b_l44",
+        "duration": 15.44,
+        "rms": 0.073,
+        "audio": "assets/audio/shared-a4076945ad822a9fbebfe63acfd7eb687c0b0085811b29ce1d89c8110fbfff49.wav"
+      },
+      {
+        "id": "s06_l12",
+        "duration": 14.64,
+        "rms": 0.0692,
+        "audio": "assets/audio/shared-a62190f1f50baf13df1ff11e7b04daa04ebdd0f0c7221a3e6745d83a22fa32b5.wav"
+      },
+      {
+        "id": "s11b_l10",
+        "duration": 14.48,
+        "rms": 0.06556,
+        "audio": "assets/audio/shared-a56b2779e1dc3caee27a9523742b06d6e6d7a793b2917491e93a8cb547507613.wav"
+      },
+      {
+        "id": "s01b_l32",
+        "duration": 12.16,
+        "rms": 0.08043,
+        "audio": "assets/audio/shared-9bcf833bed6139ce344e0525156630a21823417cc7765647d96f3a1ec356fc2d.wav"
+      },
+      {
+        "id": "s14_l2",
+        "duration": 10.800041666666667,
+        "rms": 0.05381,
+        "audio": "assets/audio/shared-0dfa99a87a6beecb467b6c1e28755ef8122b406794147f3537297a441ce537fc.wav"
+      },
+      {
+        "id": "s01c_l15",
+        "duration": 10.48,
+        "rms": 0.07905,
+        "audio": "assets/audio/shared-c5a2558b99e9576c178ee100d0d09edf1012dad2cb354cd1ba4ee9d5ba274931.wav"
+      },
+      {
+        "id": "s11c_l40",
+        "duration": 9.6,
+        "rms": 0.09066,
+        "audio": "assets/audio/shared-c51663c35e6a6ebcddee802aa6bfaf82d99a701719d9037f26894daeb8fc110b.wav"
+      },
+      {
+        "id": "s01c_l11",
+        "duration": 11.04,
+        "rms": 0.07266,
+        "audio": "assets/audio/shared-ec5a4b3b663c811976966eef38277ceebf32e162df0e47f54f9e1a6769fb2d73.wav"
+      },
+      {
+        "id": "s01_l43",
+        "duration": 8.4,
+        "rms": 0.0668,
+        "audio": "assets/audio/shared-432b62a4f597dd767ba3db7ef6185d9c6770041eaeb02b6bcc565ef5141d01b4.wav"
+      },
+      {
+        "id": "s11b_l75",
+        "duration": 8.0,
+        "rms": 0.09075,
+        "audio": "assets/audio/shared-7ffbf46b1f807b920397f2ecea2a9c9b05e7bfba9183b5a1853f651a8f2f2b7a.wav"
+      },
+      {
+        "id": "s07_l25",
+        "duration": 8.0,
+        "rms": 0.08792,
+        "audio": "assets/audio/shared-3c0722081db58533875d7eec12bc87b7d7f9461399ea38e08baabfbbe2ab530a.wav"
+      },
+      {
+        "id": "s11b_l7",
+        "duration": 5.28,
+        "rms": 0.0694,
+        "audio": "assets/audio/shared-a41495004a0e3548b53778d672668ca7b9c36f46825807c0f9ffd360cd700c55.wav"
+      },
+      {
+        "id": "s01_weekend_reply",
+        "duration": 8.32,
+        "rms": 0.0848,
+        "audio": "assets/audio/shared-7313de347736d362d8ceb9f2f6b219110a41ed7493d69572e749dad7ca009f65.wav"
+      },
+      {
+        "id": "s01b_l9",
+        "duration": 5.28,
+        "rms": 0.07206,
+        "audio": "assets/audio/shared-6d141d8cc9e668f50d9527f5a7d98412baa2a5a034d1fdffbd5852b66922ec18.wav"
+      },
+      {
+        "id": "s01b_l26",
+        "duration": 4.48,
+        "rms": 0.07338,
+        "audio": "assets/audio/shared-8f9bf533f7a7585bea45100cdba9aee17ffa05f94d49cd52a8ef30f8c7261e71.wav"
+      },
+      {
+        "id": "s11b_l58",
+        "duration": 3.68,
+        "rms": 0.08679,
+        "audio": "assets/audio/shared-939b185b39fc1d41ee9553796d802cb8a9d2484771919a38188d7a3281cb70a0.wav"
+      },
+      {
+        "id": "s06_l2",
+        "duration": 3.84,
+        "rms": 0.07907,
+        "audio": "assets/audio/shared-8eebdb0ec34d65caa5aff49a656c098708997fb7a43e4fb2275ff4acc9a4c487.wav"
+      },
+      {
+        "id": "s11b_l59",
+        "duration": 3.12,
+        "rms": 0.06543,
+        "audio": "assets/audio/shared-1498335f602e7b837492346fd19eeb27c562ffb8c6991451833ead1715c59ec2.wav"
+      },
+      {
+        "id": "s01_l8",
+        "duration": 2.4,
+        "rms": 0.07545,
+        "audio": "assets/audio/shared-fa44b9df28911935c8375272bb56699b49652ecf307c9613e3dc55d46106b3ce.wav"
+      },
+      {
+        "id": "s11b_kristina_models",
+        "duration": 3.44,
+        "rms": 0.08289,
+        "audio": "assets/audio/shared-f12e7b51d9639ed321f6105490c7b1f7264a1e0b9faabbf8646a83dc32671fc8.wav"
+      },
+      {
+        "id": "s11b_kristina_tickets",
+        "duration": 2.08,
+        "rms": 0.05815,
+        "audio": "assets/audio/shared-32d344f5ad9dfa44e00af3ff6ea302a1c02a12b647e92b7a6bbe3bb09228b48c.wav"
+      }
+    ]
+  }
+}

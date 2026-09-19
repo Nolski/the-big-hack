@@ -1,6 +1,6 @@
-import {castFor,readSettings,playbackShow,cueAudio,playbackRate} from './playback-settings.js?v=shared-script-20260913';
-import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=shared-script-20260913';
-import {screenLabel,actionDuration,actions,sampleAction} from './screen-actions.js?v=shared-script-20260913';
+import {castFor,readSettings,playbackShow,cueAudio,playbackRate} from './playback-settings.js?v=profile-null-20260918';
+import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=hacking-restore-20260919b';
+import {screenLabel,actionDuration,actions,sampleAction} from './screen-actions.js?v=hacking-restore-20260919b';
 const $=id=>document.getElementById(id), controller=controllerId();
 localStorage.setItem('big-hack-display-controller',controller);
 const channel=new BroadcastChannel('big-hack-stage-v2:'+controller);
@@ -14,7 +14,7 @@ let show=playbackShow(sourceShow,settings,voiceManifest.recordings||{});
 let cast=castFor(sourceShow);
 let overrides=await fetch('overrides.json').then(r=>r.ok?r.json():{}).catch(()=>({}));
 let saved;try{saved=JSON.parse(localStorage.getItem('big-hack-cue-'+(sourceShow.scriptRevision||'legacy'))||'null')}catch{}
-let state={index:Math.max(0,show.cues.findIndex(c=>c.id===saved?.id)),running:false,blackout:false,serial:0,elapsed:0,screenBase:{left:0,right:0},anchor:Date.now(),volume:.85,rate:settings.rate};
+let state={index:Math.max(0,show.cues.findIndex(c=>c.id===saved?.id)),running:false,blackout:false,serial:0,elapsed:0,screenBase:{left:0,right:0},workerBase:0,anchor:Date.now(),volume:.85,rate:settings.rate};
 // This is a playback-session identifier, not an authentication token.
 // randomUUID requires HTTPS or localhost; getRandomValues also works on LAN HTTP.
 function controllerId(){
@@ -28,7 +28,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const cue=()=>show.cues[state.index];
 const effectiveRate=()=>cue().montage?1:state.rate;
 const elapsed=()=>state.elapsed+(state.running?(Date.now()-state.anchor)/1000*effectiveRate():0);
-function payload(){const profile=counterProfile(cue());return {...state,rate:effectiveRate(),controller,audioTime:audio.currentTime||0,audioDuration:Number.isFinite(audio.duration)?audio.duration:(cue().audioDuration||0),counterValue:Math.floor((state.counterBase??profile.base)+elapsed()*profile.rate),screenElapsed:Object.fromEntries(['left','right'].map(side=>[side,(state.screenBase[side]||0)+elapsed()])),elapsed:elapsed(),sentAt:Date.now(),cue:{...cue(),isSpeaking:state.running&&!state.blackout&&!audio.paused&&!audio.ended&&!!audio.getAttribute('src')},override:overrides[cue().id]||{}}}
+function payload(){const profile=counterProfile(cue());return {...state,rate:effectiveRate(),controller,audioTime:audio.currentTime||0,audioDuration:Number.isFinite(audio.duration)?audio.duration:(cue().audioDuration||0),counterValue:Math.floor((state.counterBase??profile.base)+elapsed()*profile.rate),workerElapsed:(state.workerBase||0)+elapsed(),screenElapsed:Object.fromEntries(['left','right'].map(side=>[side,(state.screenBase[side]||0)+elapsed()])),elapsed:elapsed(),sentAt:Date.now(),cue:{...cue(),isSpeaking:state.running&&!state.blackout&&!audio.paused&&!audio.ended&&!!audio.getAttribute('src')},override:overrides[cue().id]||{}}}
 function broadcast(){channel.postMessage({type:'state',state:payload()});localStorage.setItem('big-hack-cue-'+(sourceShow.scriptRevision||'legacy'),JSON.stringify({id:cue().id}))}
 function status(text,error=false){$('audioStatus').textContent=text;$('audioStatus').classList.toggle('error',error)}
 function stopAudio(){typingSound.pause();audio.pause();audio.removeAttribute('src');audio.load();for(const a of sfx){a.pause();a.removeAttribute('src');a.load()}sfx=[]}
@@ -44,7 +44,7 @@ async function startAudio(restart=false){
  if(src&&!audio.ended){status('Playing '+(c.montage?'opening montage':o.audioSource&&o.audioSource!=='tts'?'clip':c.name));await play(audio)}else if(c.kind==='voice'&&!src&&(!o.audioSource||o.audioSource==='tts'))status('Recording unavailable for '+c.name+' · Choose Live in Settings',true);else status(c.kind==='live'?'Live · waiting for GO':'Holding · waiting for GO');
  for(const a of sfx)if(!a.ended||a.loop)play(a);
 }
-function navigate(index,run=state.running){const previous=payload();const previousCounter=previous.counterValue;const next=show.cues[Math.max(0,Math.min(index,show.cues.length-1))];const adjacent=index===nextIndex();state.screenBase=Object.fromEntries(['left','right'].map(side=>[side,adjacent&&next.screenActions?.[side]&&next.screenActions[side]===cue().screenActions?.[side]?previous.screenElapsed[side]:0]));const nextCue=show.cues[Math.max(0,Math.min(index,show.cues.length-1))];state.counterBase=index>state.index?Math.max(counterProfile(nextCue).base,previousCounter):counterProfile(nextCue).base;state.elapsed=0;state.anchor=Date.now();state.index=Math.max(0,Math.min(index,show.cues.length-1));state.serial++;state.running=run;state.blackout=false;render();$('notesBody').scrollTop=0;startAudio(true);broadcast()}
+function navigate(index,run=state.running){const previous=payload();const previousCounter=previous.counterValue;const next=show.cues[Math.max(0,Math.min(index,show.cues.length-1))];const adjacent=index===nextIndex();state.workerBase=adjacent&&next.claudeSession&&next.claudeSession===cue().claudeSession?previous.workerElapsed:0;state.screenBase=Object.fromEntries(['left','right'].map(side=>[side,adjacent&&next.screenActions?.[side]&&next.screenActions[side]===cue().screenActions?.[side]?previous.screenElapsed[side]:0]));const nextCue=show.cues[Math.max(0,Math.min(index,show.cues.length-1))];state.counterBase=index>state.index?Math.max(counterProfile(nextCue).base,previousCounter):counterProfile(nextCue).base;state.elapsed=0;state.anchor=Date.now();state.index=Math.max(0,Math.min(index,show.cues.length-1));state.serial++;state.running=run;state.blackout=false;render();$('notesBody').scrollTop=0;startAudio(true);broadcast()}
 function toggle(){if(state.running){state.elapsed=elapsed();state.running=false;audio.pause();typingSound.pause();sfx.forEach(a=>a.pause());status('Paused')}else{state.running=true;state.anchor=Date.now();if(!timerStart)timerStart=Date.now();startAudio(!lastAudio&&!sfx.length)}renderTransport();broadcast()}
 function blackout(){state.blackout=!state.blackout;if(state.blackout){state.elapsed=elapsed();state.running=false;audio.pause();typingSound.pause();sfx.forEach(a=>a.pause())}status(state.blackout?'Blackout · paused':'Paused');renderTransport();broadcast()}
 function nextIndex(){return show.performanceStarts.find(i=>i>state.index)??show.cues.length}
@@ -90,7 +90,7 @@ function applyModes(){
  state.elapsed=elapsed();state.running=false;state.serial++;stopAudio();lastAudio='';
  show=playbackShow(sourceShow,settings,voiceManifest.recordings||{});
  state.index=show.performanceStarts.filter(i=>i<=state.index).at(-1)??0;
- state.elapsed=0;state.screenBase={left:0,right:0};state.anchor=Date.now();
+ state.elapsed=0;state.workerBase=0;state.screenBase={left:0,right:0};state.anchor=Date.now();
  persistSettings();renderCast();renderRail();render();broadcast();status('Cast settings saved · press Start / Resume');
 }
 function setPlaybackRate(value){

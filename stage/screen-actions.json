@@ -5,12 +5,11 @@
       "view": "chatgpt",
       "question": "What is a key-issuance service? Explain it without using more words I have to look up.",
       "context": "",
-      "afterCue": "s01c_l11",
-      "note": "Brendan privately types into ChatGPT after s01c_l11. Let the answer finish before GO.",
+      "note": "Run during the speech after the named term. Actor allows the initial delay before the lookup starts; do not stop for the answer.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.4
+          "seconds": 2.0
         },
         {
           "op": "type",
@@ -36,21 +35,21 @@
         }
       ],
       "cueIds": [
-        "s01c_chat_keys",
-        "s01c_l12"
+        "s01c_l11"
       ],
-      "side": "right"
+      "side": "right",
+      "duringCue": "s01c_l11",
+      "startDelay": 2.0
     },
     "race-condition": {
       "view": "chatgpt",
       "question": "What is a race condition? Why would it only happen sometimes?",
       "context": "",
-      "afterCue": "s06_l19",
-      "note": "Brendan privately types into ChatGPT after s06_l19. Let the answer finish before GO.",
+      "note": "Brendan privately looks this up during the dialogue. Do not stop the conversation for the answer.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.4
+          "seconds": 2.0
         },
         {
           "op": "type",
@@ -76,22 +75,22 @@
         }
       ],
       "cueIds": [
-        "s06_chat_race",
-        "s06_l20",
-        "s06_l21"
+        "s06_l19"
       ],
-      "side": "left"
+      "side": "left",
+      "duringCue": "s06_l19",
+      "startDelay": 2.0,
+      "owner": "Brendan"
     },
     "rng-entropy": {
       "view": "chatgpt",
       "question": "What are RNG, entropy, and signing? One at a time, please.",
       "context": "",
-      "afterCue": "s06_l32",
-      "note": "Brendan privately types into ChatGPT after s06_l32. Let the answer finish before GO.",
+      "note": "Run during the speech after the named term. Actor allows the initial delay before the lookup starts; do not stop for the answer.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.4
+          "seconds": 3.5
         },
         {
           "op": "type",
@@ -117,21 +116,21 @@
         }
       ],
       "cueIds": [
-        "s06_chat_rng",
-        "s06_l33"
+        "s06_l32"
       ],
-      "side": "right"
+      "side": "right",
+      "duringCue": "s06_l32",
+      "startDelay": 3.5
     },
     "mutex-deadlock": {
       "view": "chatgpt",
       "question": "What is a mutex? And how does that turn into a deadlock?",
-      "context": "Claude Code \u00b7 investigating in another tab",
-      "afterCue": "s06_l35",
-      "note": "Brendan privately types into ChatGPT after s06_l35. Let the answer finish before GO.",
+      "context": "",
+      "note": "Run during the speech after the named term. Actor allows the initial delay before the lookup starts; do not stop for the answer.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.4
+          "seconds": 2.5
         },
         {
           "op": "type",
@@ -157,22 +156,21 @@
         }
       ],
       "cueIds": [
-        "s06_chat_mutex",
-        "s06_l36",
-        "s06_l37"
+        "s06_l35"
       ],
-      "side": "right"
+      "side": "right",
+      "duringCue": "s06_l35",
+      "startDelay": 2.5
     },
     "quantized-model": {
       "view": "chatgpt",
       "question": "What does quantized mean? How does that make a model fit in memory?",
       "context": "",
-      "afterCue": "s11b_l44",
-      "note": "Brendan privately types into ChatGPT after s11b_l44. Let the answer finish before GO.",
+      "note": "Run during the speech after the named term. Actor allows the initial delay before the lookup starts; do not stop for the answer.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.4
+          "seconds": 7.5
         },
         {
           "op": "type",
@@ -189,7 +187,7 @@
         },
         {
           "op": "answer",
-          "text": "It stores the model\u2019s numbers with fewer bits, using less memory at a possible cost to accuracy.",
+          "text": "It stores the model’s numbers with fewer bits, using less memory at a possible cost to accuracy.",
           "seconds": 2.4
         },
         {
@@ -198,22 +196,21 @@
         }
       ],
       "cueIds": [
-        "s11b_chat_quantized",
-        "s11b_l45",
-        "s11b_l46"
+        "s11b_l44"
       ],
-      "side": "right"
+      "side": "right",
+      "duringCue": "s11b_l44",
+      "startDelay": 7.5
     },
     "pin-weights": {
       "view": "chatgpt",
       "question": "When he says pin the weights, does he just mean keep the same model?",
       "context": "",
-      "afterCue": "s11b_l68",
-      "note": "Brendan privately types into ChatGPT after s11b_l68. Let the answer finish before GO.",
+      "note": "Run during the speech after the named term. Actor allows the initial delay before the lookup starts; do not stop for the answer.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.4
+          "seconds": 7.0
         },
         {
           "op": "type",
@@ -239,10 +236,11 @@
         }
       ],
       "cueIds": [
-        "s11b_chat_weights",
-        "s11b_l69"
+        "s11b_l68"
       ],
-      "side": "right"
+      "side": "right",
+      "duringCue": "s11b_l68",
+      "startDelay": 7.0
     },
     "investigate-signup": {
       "scene": "s06",
@@ -253,7 +251,7 @@
       "steps": [
         {
           "op": "type",
-          "text": "Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user\u2019s account. No production data. Find a local repro and root cause.",
+          "text": "Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user’s account. No production data. Find a local repro and root cause.",
           "seconds": 6
         },
         {
@@ -266,14 +264,14 @@
         },
         {
           "op": "answer",
-          "text": "Reading controllers\u2026\nReading models and tests\u2026\nInspecting shared session store\u2026",
+          "text": "Reading controllers…\nReading models and tests…\nInspecting shared session store…",
           "seconds": 4
         }
       ],
       "sourceTextSha256": "e05a65af9425a64ad72967d23ba6be56c3e862003372bd05d74a2200f13dd6c5",
       "title": "Claude Code",
-      "context": "Repository root \u00b7 local investigation",
-      "note": "Brendan starts Claude\u2019s investigation while the narrator explains it.",
+      "context": "Repository root · local investigation",
+      "note": "Brendan starts Claude’s investigation while the narrator explains it.",
       "cueIds": [
         "s06_l34",
         "s06_l35"
@@ -348,7 +346,7 @@
       ],
       "sourceTextSha256": "0f61d2813f38090ff25ca83e18bab7f4782999cdd90b8e8fa82868d3e81563bb",
       "title": "Brendan / local branches",
-      "note": "Type the branch-delete command, pause on it, then execute. Liam\u2019s PR stays visible on the other display."
+      "note": "Type the branch-delete command, pause on it, then execute. Liam’s PR stays visible on the other display."
     },
     "cloud-prompt": {
       "scene": "s11b",
@@ -372,7 +370,7 @@
         },
         {
           "op": "answer",
-          "text": "Opened billing/webhooks.rb\nWrote retry wrapper\nRan webhook delivery test\n\n\u2713 Test passed \u00b7 patch ready",
+          "text": "Opened billing/webhooks.rb\nWrote retry wrapper\nRan webhook delivery test\n\n✓ Test passed · patch ready",
           "seconds": 4
         }
       ],
@@ -390,51 +388,51 @@
       "steps": [
         {
           "op": "hold",
-          "seconds": 1
+          "seconds": 0.5
         },
         {
           "op": "type",
           "text": "re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang...",
-          "seconds": 10
+          "seconds": 5
         },
         {
           "op": "hold",
-          "seconds": 3.5
+          "seconds": 3
         },
         {
           "op": "delete",
           "to": "",
-          "seconds": 4.5
+          "seconds": 2
         },
         {
           "op": "hold",
-          "seconds": 1.5
+          "seconds": 0.5
         },
         {
           "op": "type",
-          "text": "I don't know if liam is ever going to...",
-          "seconds": 4.5
-        },
-        {
-          "op": "hold",
-          "seconds": 3.5
-        },
-        {
-          "op": "delete",
-          "to": "",
-          "seconds": 3
+          "text": "I don't know if Liam is ever going to...",
+          "seconds": 2.5
         },
         {
           "op": "hold",
           "seconds": 2
+        },
+        {
+          "op": "delete",
+          "to": "",
+          "seconds": 1.5
+        },
+        {
+          "op": "hold",
+          "seconds": 1
         }
       ],
       "sourceTextSha256": "a8d96a8c9913f0c78c9a42135b7fffd720636c68adce590be630b8e32577707e",
       "title": "Kristina",
-      "context": "Security policy \u00b7 Owner: Liam \u00b7 Last reviewed 14 months ago",
+      "context": "Security policy · Owner: Liam · Last reviewed 14 months ago",
       "reference": "Proprietary source code must not be shared with external model providers.",
-      "secondary": "Sprint board: 5 tickets \u00b7 2 due today",
-      "note": "Two distinct drafts: type the policy question, hold it so the audience can read it, erase with held backspace; type the unfinished thought about Liam, hesitate, erase it too. GO may continue to Liam\u2019s next line without restarting the typing."
+      "secondary": "Sprint board: 5 tickets · 2 due today",
+      "note": "Two distinct drafts: type the policy question, hold it so the audience can read it, erase with held backspace; type the unfinished thought about Liam, hesitate, erase it too. GO may continue to Liam’s next line without restarting the typing."
     },
     "delete-patch": {
       "scene": "s11b",
@@ -463,9 +461,9 @@
       ],
       "sourceTextSha256": "7869d0d60bee9dda3b58cba4896419f3ce16a7b05a32aa1dd51a0babb2f6c78b",
       "initial": "def deliver_with_retry(payload)\n  attempts = 0\n  begin\n    deliver_webhook(payload)\n  rescue DeliveryFailed\n    attempts += 1\n    raise if attempts >= 5\n    sleep(2 ** attempts)\n    retry\n  end\nend",
-      "title": "billing/webhooks.rb \u00b7 unsent local patch",
+      "title": "billing/webhooks.rb · unsent local patch",
       "context": "The message to Kristina is still empty.",
-      "note": "Show the completed patch first. Select it, visibly erase it, and hold the empty editor. Liam\u2019s local model keeps crawling on the other display."
+      "note": "Show the completed patch first. Select it, visibly erase it, and hold the empty editor. Liam’s local model keeps crawling on the other display."
     },
     "no-major-concerns": {
       "scene": "s12",
@@ -589,7 +587,7 @@
       ],
       "sourceTextSha256": "bcd6bec720812b20c66025f339fe1103ae2d1c928525bcb894c8eab3a22f1752",
       "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it. He said it like it settled something.",
-      "note": "Erase only \u201cHe said it like it settled something.\u201d Keep every earlier sentence intact."
+      "note": "Erase only “He said it like it settled something.” Keep every earlier sentence intact."
     },
     "feedback-queue": {
       "scene": "s12",
@@ -673,7 +671,7 @@
       ],
       "sourceTextSha256": "93404c626dc8f77ac3be92b90d8b68016ae6a390e81baa07c04326beb96a73bb",
       "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. ",
-      "note": "Append the race-condition credit. Hold all four paragraphs through Brendan\u2019s unfinished spoken line."
+      "note": "Append the race-condition credit. Hold all four paragraphs through Brendan’s unfinished spoken line."
     },
     "feedback-submit": {
       "scene": "s12",
@@ -736,7 +734,7 @@
         }
       ],
       "sourceTextSha256": "9e2c18499e2b6c4edf4268a306fe16b511a5c64586dbba14236f5efe7e7230ec",
-      "note": "Type \u201cthanks everyone.\u201d character by character. Hold the unsent reply."
+      "note": "Type “thanks everyone.” character by character. Hold the unsent reply."
     },
     "promotion-delete": {
       "scene": "s14b",
@@ -777,7 +775,7 @@
       ],
       "sourceTextSha256": "595f3d57ebc409bafa6fd36b2412762684b0b75b84818213300fec75dc36f201",
       "incoming": "morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..",
-      "note": "Show Liam\u2019s 06:02 message on Brendan\u2019s phone. The reply is still empty."
+      "note": "Show Liam’s 06:02 message on Brendan’s phone. The reply is still empty."
     },
     "phone-warning": {
       "scene": "s20",
@@ -836,7 +834,7 @@
       "question": "How do I make my direct reports respect me enough to get through one standup without being interrupted",
       "context": "",
       "afterCue": "s01_l18",
-      "note": "Kristina privately types into ChatGPT after s01_l18. Let the answer finish before GO.",
+      "note": "Kristina types the respect question and reads the answer, then types the murder follow-up in the composer and leaves it unsent. This is screen-only; do not narrate it.",
       "steps": [
         {
           "op": "hold",
@@ -859,6 +857,15 @@
           "op": "answer",
           "text": "Set a clear agenda, agree on update limits, and move debates to a follow-up. Address repeated interruptions privately.",
           "seconds": 2.95
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        },
+        {
+          "op": "type",
+          "text": "Okay.... how can I get away with murdering them",
+          "seconds": 3.8
         },
         {
           "op": "hold",
@@ -958,7 +965,7 @@
         },
         {
           "op": "answer",
-          "text": "I can\u2019t help you harm someone or get away with murder. Step away from the conflict. I can help you draft a firm, professional message instead.",
+          "text": "I can’t help you harm someone or get away with murder. Step away from the conflict. I can help you draft a firm, professional message instead.",
           "seconds": 3.55
         },
         {
@@ -1062,12 +1069,11 @@
       "view": "chatgpt",
       "question": "Is the story of John Henry real?",
       "context": "",
-      "afterCue": "s06_l15",
-      "note": "Brendan privately types into ChatGPT after s06_l15. Let the answer finish before GO.",
+      "note": "Kristina privately looks this up during the dialogue. Do not stop the conversation for the answer.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.4
+          "seconds": 2.0
         },
         {
           "op": "type",
@@ -1093,20 +1099,22 @@
         }
       ],
       "cueIds": [
-        "s06_chat_henry"
+        "s06_l15"
       ],
-      "side": "left"
+      "side": "left",
+      "duringCue": "s06_l15",
+      "startDelay": 2.0,
+      "owner": "Kristina"
     },
     "race-security": {
       "view": "chatgpt",
       "question": "Why is it a security incident?",
       "context": "",
-      "afterCue": "s06_l21",
-      "note": "Brendan privately types into ChatGPT after s06_l21. Let the answer finish before GO.",
+      "note": "Run during the speech after the named term. Actor allows the initial delay before the lookup starts; do not stop for the answer.",
       "steps": [
         {
           "op": "hold",
-          "seconds": 0.4
+          "seconds": 6.0
         },
         {
           "op": "type",
@@ -1123,7 +1131,7 @@
         },
         {
           "op": "answer",
-          "text": "A user seeing another user\u2019s account means an access boundary failed. Even a brief exposure can reveal private information.",
+          "text": "A user seeing another user’s account means an access boundary failed. Even a brief exposure can reveal private information.",
           "seconds": 3.075
         },
         {
@@ -1132,19 +1140,15 @@
         }
       ],
       "cueIds": [
-        "s06_chat_security",
-        "s06_l22",
-        "s06_l23",
-        "s06_l24",
-        "s06_l25",
-        "s06_l26",
-        "s06_l27"
+        "s06_l21"
       ],
-      "side": "left"
+      "side": "left",
+      "duringCue": "s06_l21",
+      "startDelay": 6.0
     },
     "raise-request": {
       "view": "message",
-      "title": "Direct message \u00b7 Kara",
+      "title": "Kara",
       "recipient": "Kara",
       "context": "Private message",
       "reference": "",
@@ -1152,29 +1156,27 @@
       "steps": [
         {
           "op": "type",
-          "text": "I\u2019d like to talk about a raise",
+          "text": "I’d like to talk about a raise",
           "seconds": 3
-        },
-        {
-          "op": "submit",
-          "seconds": 0.3
         }
       ],
-      "note": "Kristina sends Kara a private Slack message about a raise.",
+      "note": "Kristina types an unsent Slack draft to Kara about a raise.",
       "cueIds": [
         "s11b_l8",
         "s11b_l9",
         "s11b_l10",
+        "s11b_kristina_tickets",
         "s11b_l11",
         "s11b_l12",
         "s11b_l13"
       ],
-      "side": "left"
+      "side": "left",
+      "sender": "Kristina"
     },
     "audit-tools": {
       "view": "agent",
-      "title": "Cursor \u00b7 Opus 5",
-      "context": "Mac Studio \u00b7 personal workspace",
+      "title": "Cursor · Opus 5",
+      "context": "Mac Studio · personal workspace",
       "steps": [
         {
           "op": "type",
@@ -1187,7 +1189,7 @@
         },
         {
           "op": "answer",
-          "text": "Preparing the local agent\u2026\nTools available.",
+          "text": "Preparing the local agent…\nTools available.",
           "seconds": 5
         }
       ],
@@ -1201,7 +1203,7 @@
     "audit-buckets": {
       "view": "agent",
       "title": "Local Qwen",
-      "context": "Mac Studio \u00b7 personal workspace",
+      "context": "Mac Studio · personal workspace",
       "steps": [
         {
           "op": "type",
@@ -1229,7 +1231,7 @@
     "audit-reason": {
       "view": "agent",
       "title": "Local Qwen",
-      "context": "Mac Studio \u00b7 personal workspace",
+      "context": "Mac Studio · personal workspace",
       "steps": [
         {
           "op": "type",
@@ -1242,7 +1244,7 @@
         },
         {
           "op": "answer",
-          "text": "Searching for records behind the decision\u2026",
+          "text": "Searching for records behind the decision…",
           "seconds": 5
         }
       ],
@@ -1257,11 +1259,11 @@
     "audit-workers": {
       "view": "agent",
       "title": "Local Qwen",
-      "context": "Mac Studio \u00b7 personal workspace",
+      "context": "Mac Studio · personal workspace",
       "steps": [
         {
           "op": "type",
-          "text": "I\u2019m going to bed. Find the answer.",
+          "text": "I’m going to bed. Find the answer.",
           "seconds": 2
         },
         {
@@ -1270,7 +1272,7 @@
         },
         {
           "op": "answer",
-          "text": "Additional workers requested.\nSearching company records\u2026",
+          "text": "Additional workers requested.\nSearching company records…",
           "seconds": 5
         }
       ],
@@ -1285,7 +1287,7 @@
     "audit-result": {
       "view": "agent",
       "title": "Local Qwen",
-      "context": "Mac Studio \u00b7 personal workspace",
+      "context": "Mac Studio · personal workspace",
       "steps": [
         {
           "op": "type",
@@ -1313,8 +1315,8 @@
     },
     "audit-cleanup-refused": {
       "view": "agent",
-      "title": "Cursor \u00b7 Opus 5",
-      "context": "Mac Studio \u00b7 personal workspace",
+      "title": "Cursor · Opus 5",
+      "context": "Mac Studio · personal workspace",
       "steps": [
         {
           "op": "type",
@@ -1327,7 +1329,7 @@
         },
         {
           "op": "answer",
-          "text": "I can\u2019t assist with activity in this context.",
+          "text": "I can’t assist with activity in this context.",
           "seconds": 5
         }
       ],
@@ -1341,8 +1343,8 @@
     },
     "audit-cleanup": {
       "view": "agent",
-      "title": "Cursor \u00b7 Opus 5",
-      "context": "Mac Studio \u00b7 personal workspace",
+      "title": "Cursor · Opus 5",
+      "context": "Mac Studio · personal workspace",
       "steps": [
         {
           "op": "type",
@@ -1366,6 +1368,138 @@
         "s20_l66"
       ],
       "side": "left"
+    },
+    "cursor-correction": {
+      "view": "agent",
+      "title": "Cursor · Plan mode",
+      "context": "Slack / Jira bot",
+      "steps": [
+        {
+          "op": "type",
+          "text": "Research the real Jira REST API, verify the endpoints actually exist and keep the token in Vault, nothing hardcoded.",
+          "seconds": 7
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "Checking Jira REST API documentation…\nUse the existing Vault configuration.\nRun integration tests against the sandbox.",
+          "seconds": 3
+        }
+      ]
+    },
+    "cataracts": {
+      "view": "chatgpt",
+      "question": "Does reading small text give you cataracts?",
+      "duringCue": "s11b_l7",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0
+        },
+        {
+          "op": "type",
+          "text": "Does reading small text give you cataracts?",
+          "seconds": 2.8
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "No. Small text can cause eye strain; it does not cause cataracts.",
+          "seconds": 2.5
+        }
+      ],
+      "side": "right",
+      "startDelay": 0
+    },
+    "local-stub": {
+      "view": "local",
+      "title": "Qwen · local inference",
+      "context": "Network disabled · tools disabled · 2–5 tokens/s",
+      "initial": "",
+      "steps": [
+        {
+          "op": "type",
+          "text": "def deliver_webhook(payload)\n  client.retry_delivery(payload)\nend\n\n# retry_delivery is not defined on this client.",
+          "seconds": 24
+        }
+      ]
+    },
+    "local-wait": {
+      "view": "local",
+      "title": "Qwen · local inference",
+      "context": "Network disabled · tools disabled · 2–5 tokens/s",
+      "initial": "",
+      "steps": [
+        {
+          "op": "type",
+          "text": "def deliver_webhook(payload)\n  client.retry_delivery(payload)\nend\n\n# retry_delivery is not defined on this client.",
+          "seconds": 24
+        }
+      ],
+      "reddit": true
+    },
+    "feminist-award": {
+      "view": "chatgpt",
+      "question": "Is there an award for feminist men?",
+      "context": "",
+      "duringCue": "s01_l49",
+      "side": "left",
+      "startDelay": 0,
+      "cueIds": [
+        "s01_l49",
+        "s01_l50"
+      ],
+      "note": "Marcus privately types the award question while Kristina moves standup along. Submit and hold the question; no spoken line or generated answer.",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 0
+        },
+        {
+          "op": "type",
+          "text": "Is there an award for feminist men?",
+          "seconds": 3
+        },
+        {
+          "op": "hold",
+          "seconds": 0.6
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ]
+    },
+    "signup-background": {
+      "view": "agent",
+      "title": "Claude Code",
+      "context": "Local repository · synthetic test accounts only",
+      "steps": [
+        {
+          "op": "type",
+          "text": "Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user’s account. No production data. Find a local repro and root cause.",
+          "seconds": 5
+        },
+        {
+          "op": "submit",
+          "seconds": 0.2
+        },
+        {
+          "op": "answer",
+          "text": "Reading signup controller…\nTracing getOrCreateSession…\nInspecting database transaction boundaries…\nBuilding concurrent-signup reproduction…\nRunning isolated browser tests…",
+          "seconds": 32
+        }
+      ]
     }
   }
 }

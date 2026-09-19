@@ -33,3 +33,13 @@ test('two consoles cannot send conflicting cues to each other’s previews',asyn
   assert.match(stage,/window.open\('display.html\?side='\+side\+'&controller='/);
  }finally{channels.forEach(c=>c.close())}
 });
+
+test('Claude clock continues across a changed ChatGPT lookup and resets on replay',()=>{
+ const show={cues:[{id:'a',claudeSession:'investigation',screenActions:{right:'rng'}},{id:'b',claudeSession:'investigation',screenActions:{right:'mutex'}}]};
+ const state={index:0,workerBase:0,screenBase:{right:0},elapsed:12,serial:1,running:true};
+ const context=vm.createContext({show,state,Date,Math,Object,cue:()=>show.cues[state.index],nextIndex:()=>state.index+1,payload:()=>({workerElapsed:state.workerBase+state.elapsed,screenElapsed:{left:state.elapsed,right:state.screenBase.right+state.elapsed},counterValue:0}),counterProfile:()=>({base:0}),render:()=>{},$:()=>({scrollTop:0}),startAudio:()=>{},broadcast:()=>{}});
+ vm.runInContext(stage.slice(stage.indexOf('function navigate('),stage.indexOf('function toggle(')),context);
+ vm.runInContext('navigate(1)',context);
+ assert.equal(state.workerBase,12);assert.equal(state.screenBase.right,0);
+ state.elapsed=5;vm.runInContext('navigate(1)',context);assert.equal(state.workerBase,0);
+});

@@ -1,7 +1,9 @@
-import {redditMemes} from './reddit-memes.js';
+import {redditMemes as sourcedMemes} from './reddit-memes.js';
 
-export {redditMemes};
-export const redditPostHeight=920, redditScrollSeconds=.85;
+// A modest pace increase, keeping longer reading holds for denser memes.
+const redditPace=1.1;
+export const redditMemes=sourcedMemes.map(m=>({...m,hold:m.hold/redditPace}));
+export const redditPostHeight=920, redditScrollSeconds=.85/redditPace;
 export const redditCycleSeconds=redditMemes.reduce((sum,m)=>sum+m.hold+redditScrollSeconds,0);
 export const redditTimeline=redditMemes.map((m,i)=>({id:m.id,start:redditMemes.slice(0,i).reduce((sum,p)=>sum+p.hold+redditScrollSeconds,0),hold:m.hold}));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

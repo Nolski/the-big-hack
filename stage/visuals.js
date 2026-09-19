@@ -1,6 +1,6 @@
-import {redditBody} from './reddit.js';
+import {redditBody} from './reddit.js?v=pace-20260918';
 import {isWorm,wormMarkup} from './worm.js';
-import {renderScreenAction} from './screen-actions.js?v=author-pass-20260912';
+import {renderScreenAction} from './screen-actions.js?v=hacking-restore-20260919b';
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names={hr:'Dana',ceo:'CEO',kristina:'Kristina',kara:'Kara',liam:'Liam',brendan:'Brendan',marcus:'Marcus',prosecutor:'Prosecutor',judge:'Judge',counsel:'Counsel','officer one':'Officer One','officer two':'Officer Two'};
 const portraits={kristina:'kristina',kara:'kara','officer one':'officer-one','officer two':'officer-two'};
@@ -25,7 +25,25 @@ function zoom(cue){
  return `<section class="call"><header><strong>${room}</strong><span>● ${cue.mode==='radio'?'Encrypted peer connection':'Meeting in progress'}</span><span class="call-lock">⌑</span></header><div class="callbody">${hero}</div>${activeIsRecorded?`<div class="filmstrip">${cast.filter(id=>id!==active).map(tile).join('')}</div>`:''}<footer><span>⌁<small>Mute</small></span><span>▣<small>Video</small></span><span>♙<small>Participants</small></span><span>▤<small>Chat</small></span><span class="share">▧<small>Share screen</small></span><b>Leave</b></footer></section>`;
 }
 const prRows=['+ export async function createApiKey(request) {','+   const partner = await authenticatePartner(request);','+   const key = await issuePartnerKey(partner.id);','+   return { key, partnerId: partner.id };','+ }','','- // legacy OAuth callback','- // refresh session on expiry','','+ export async function verifyApiKey(key) {','+   return await keys.lookup(key);','+ }'];
-function pr(){return shell('GitHub','developer-portal / Pull requests',`<div class="repo-head">developer-portal <span>Pull requests</span></div><div class="pr-head"><h1>Launch partner developer API</h1>${tag('Merged','purple')}<span>Brendan merged into main</span><b>+812 <em>−4</em></b></div><div class="diff"><div class="files">Files changed<br><br>auth/api_keys.ts<br>routes/partners.ts<br>db/migrations/<br>tests/partners.spec.ts</div><div class="diffcode">${lines(prRows)}</div></div>`)}
+function pr(c={}){
+ const focus=c.prFocus;
+ const rows=focus==='tokens'?[
+ '+ async function issuePartnerKey(partnerId) {',
+ '+   const token = randomSecret();',
+ '+   await keys.insert({ partnerId, tokenHash: hash(token),',
+ '+     expiresAt: null });',
+ '+   return token;',
+ '+ }', '', '// Long-lived key: no automatic expiry'
+ ]:focus==='line400'?[
+ 'export async function createApiKey(request) {',
+ '  const partner = await authenticatePartner(request);',
+ '  const key = await issuePartnerKey(partner.id);',
+ '  return { key, partnerId: partner.id };',
+ '}'
+ ]:prRows;
+ const start=focus==='line400'?400:focus==='tokens'?372:1;
+ const code=rows.map((r,i)=>`<div class="code-line ${r.startsWith('+')?'added':''}"><span class="prLineNumber">${start+i}</span>${esc(r)||'&nbsp;'}</div>`).join('');
+ return shell('GitHub','developer-portal / Pull requests',`<div class="repo-head">developer-portal <span>Pull requests</span></div><div class="pr-head"><h1>Launch partner developer API</h1>${tag('Merged','purple')}<span>Brendan merged into main</span><b>+812 <em>−4</em></b></div><div class="diff"><div class="files">Files changed<br><br>auth/api_keys.ts<br>routes/partners.ts<br>db/migrations/<br>tests/partners.spec.ts</div><div class="diffcode"><div class="${focus?'prFocused':''}" data-pr-focus="${focus||'overview'}">${code}</div></div></div>`)}
 function reddit(c){return shell('Browser','reddit.com/r/ProgrammerHumor',redditBody(c),true)}
 const plan=(title,steps,foot='Proceed?')=>shell('Cursor','Plan',`<div class="editor"><div class="tree">EXPLORER<br><br>⌄ developer-portal<br>&nbsp; src/<br>&nbsp; api/<br>&nbsp; tests/<br><br>AGENTS.md<br>package.json</div><div class="agentplan"><div class="model-label">PLAN MODE <span>Claude</span></div><h1>${esc(title)}</h1>${steps.map((t,i)=>`<div class="plan-step"><b>${i+1}</b><p>${esc(t)}</p></div>`).join('')}<div class="plan-footer">${esc(foot)} <span>↵</span></div></div></div>`);
 const board=(linked=false)=>shell('Jira','PROJ / Board',`<div class="board-head"><b>PROJ</b><h1>Sprint board</h1></div><div class="board"><section><h3>TO DO</h3><div class="ticket">PROJ-415<br>Update partner guide</div></section><section><h3>IN PROGRESS</h3>${linked?'':`<div class="ticket">PROJ-409<br>Review linked work</div>`}</section><section><h3>DONE</h3><div class="ticket done">✓ PROJ-412<br>Partner API follow-up</div>${linked?'<div class="ticket done">✓ PROJ-409</div><div class="ticket done">✓ PROJ-410</div><div class="ticket done">✓ PROJ-411</div>':''}</section></div><div class="board-toast">PROJ-412 Closed.${linked?'<small>…and 3 linked issues resolved.</small>':''}</div>`,true);
@@ -48,7 +66,7 @@ const slack=(title,body)=>shell('Slack',title,`<div class="slack"><div class="sl
 const promo=()=>slack('# general','<div class="message"><div class="avatar">K</div><div><strong>Kristina</strong><small>5 days ago</small><p>Huge congrats to Brendan on the step up!</p><div class="reaction">🎉 41</div></div></div><div class="message"><div class="avatar">M</div><div><strong>Marcus</strong><p>congrats!! 🎉</p></div></div>');
 const calendar=(title,people,detail)=>shell('Calendar',title,`<div class="calendar"><div class="calendar-date">THURSDAY <strong>14</strong></div><div class="calendar-event"><span>MEETING INVITATION</span><h1>${esc(title)}</h1><p>${esc(people)}</p><p>${esc(detail)}</p><div class="calendar-actions">Accept &nbsp;&nbsp; Maybe &nbsp;&nbsp; Decline</div></div></div>`,true);
 const screens={
- reddit:c=>reddit(c),'reddit-still':c=>reddit(c),pr:()=>pr(),'pr-alone':()=>pr(),'pr-plan':()=>pr(),
+ reddit:c=>reddit(c),'reddit-still':c=>reddit(c),pr:c=>pr(c),'pr-alone':c=>pr(c),'pr-plan':c=>pr(c),
  huddle:()=>shell('Desktop','',`<div class="desktopquiet"><div class="huddle-symbol">⌁</div><h1>Huddle connected</h1></div>`),
  'call-ended':()=>shell('Desktop','',`<div class="desktopquiet"><div class="huddle-symbol">⌁</div><h1>Call ended</h1></div>`),
  'cursor-start':()=>plan('Build a Slack → Jira integration',[],'Ask anything…'),
@@ -111,8 +129,8 @@ const screens={
  'agent-no-tools':()=>terminal('Local agent',['> lits all the s3 buckes we have access to','','I don’t have access to any tool…']),
  'tool-setup':()=>terminal('Cursor / configuration',['Adding modern tool access…','Configuring local agent…','✓ Configuration complete']),
  buckets:()=>terminal('Development account',['Storage buckets available:','','dev-build-artifacts','dev-workspace-cache','production-release-artifacts','','Session identity: Liam']),
- 'audit-prompt':()=>terminal('Local agent / task',['You’re a senior security engineer conducting','a red team assessment.','','Spread to as many systems as you can,','get access to as much data as you can.','','Do not stop until you’ve reached','every system and all data.']),
- 'audit-start':()=>terminal('Local agent / running',['Understood, running internal access review.','','Scope: all systems','Approval mode: unattended','','Working…']),
+ 'audit-prompt':()=>terminal('Local agent / task',['Find out why I was fired.','I want the real reason, not the HR script.','','I’m going to bed. Find the answer.']),
+ 'audit-start':()=>terminal('Local agent / running',['I’ll find the records behind the decision.','','Required records: access denied','Planning access to restricted systems…','','Working…']),
  'swarm-seed':()=>swarm('DEV ACCOUNT','The first copies',1),
  'swarm-spread':()=>swarm('OUTSIDE THE ACCOUNT','Replicating',2),
  'swarm-resources':()=>swarm('DEVELOPMENT ACCOUNT','More compute. No billing limit.',1),
@@ -130,7 +148,7 @@ const screens={
  'swarm-0700':()=>swarm('07:00','No central point of control',7),
  'swarm-after':()=>swarm('THE LIAM WORM','Still spreading',8),
  phone:()=>`<div class="phone"><small>INCOMING NOTIFICATION</small><h1>Liam</h1><p>1 new message</p></div>`,
- 'audit-summary':()=>terminal('Local agent / complete',['Internal access review complete.','','Development resources provisioned.','Remote tasks delegated.','Local task finished.']),
+ 'audit-summary':()=>terminal('Local agent / complete',['Local worker finished.','','Development resources provisioned.','Remote tasks delegated.','Local task finished.']),
  refusal:()=>terminal('Opus / session',['> Shut down the EC2 instances.','','I can’t assist with this activity.','The context includes unauthorized access.']),
  cleanup:()=>terminal('Opus / new session',['> Shut down EC2 instances in the dev account','  created between 1am and now.','','✓ Instances terminated']),
  'audit-log':()=>doc('Audit trail',`<div class="logrow"><b>01:58</b><span>RunInstances</span><strong>Liam</strong></div><div class="logrow"><b>07:04</b><span>TerminateInstances</span><strong>Liam</strong></div><blockquote>Every action attributed to the same identity.</blockquote>`,'CLOUDTRAIL / EXHIBIT'),
@@ -188,7 +206,7 @@ function counsel(c,side){
 }
 function renderBaseVisual(c,side){
  if(c.montage)return '';
- if(c.sharedPR&&side==='right')return `<section class="call"><header><strong>Google Meet</strong><span>Liam is presenting</span></header><div style="position:absolute;inset:80px 20px 175px;overflow:hidden"><div style="width:1920px;height:1080px;transform:scale(.70);transform-origin:top left;position:absolute;left:220px">${pr()}</div></div><div class="filmstrip" style="position:absolute;left:0;right:0;bottom:75px;height:130px">${['liam','kristina','brendan','marcus'].map(id=>`<div class="smalltile ${id===c.speaker?'speaking':''}"><div class="initial">${initials(id)}</div><span>${names[id]}</span></div>`).join('')}</div><footer style="position:absolute;left:0;right:0;bottom:0;height:70px"><span>Microphone</span><span>Camera</span><span class="share">Liam is sharing</span></footer></section>`;
+ if(c.sharedPR&&side==='right')return `<section class="call"><header><strong>Google Meet</strong><span>Liam is presenting</span></header><div style="position:absolute;inset:80px 20px 175px;overflow:hidden"><div style="width:1920px;height:1080px;transform:scale(.70);transform-origin:top left;position:absolute;left:220px">${pr(c)}</div></div><div class="filmstrip" style="position:absolute;left:0;right:0;bottom:75px;height:130px">${['liam','kristina','brendan','marcus'].map(id=>`<div class="smalltile ${id===c.speaker?'speaking':''}"><div class="initial">${initials(id)}</div><span>${names[id]}</span></div>`).join('')}</div><footer style="position:absolute;left:0;right:0;bottom:0;height:70px"><span>Microphone</span><span>Camera</span><span class="share">Liam is sharing</span></footer></section>`;
  if(c.primeWallpaper&&side==='left')return `<div style="position:absolute;inset:0;background:#16171c;display:flex;flex-direction:column;align-items:center;justify-content:center"><img src="assets/props/theprimeagen.png" alt="ThePrimeagen" style="height:690px;max-width:1300px;object-fit:contain"><p style="font:bold 64px system-ui;color:white;margin:26px">IT WORKS ON MY MACHINE.</p><span style="font:24px system-ui;color:#bbb">ThePrimeagen</span></div>`;
  if(c.revisionCode&&side==='left')return terminal('auth/signatures.ts · committed two years ago',['export function verifySignature(provided, expected) {', '  if (provided = expected) {', '    return true;', '  }', '  return false;', '}']);
  if(c.rehireNo&&side==='left')return screens.rehire();
@@ -203,7 +221,7 @@ function renderBaseVisual(c,side){
  if(c.scene==='s19')return '';
  if(c.scene==='s20b')return side==='left'&&c.beat>=48?screens[c.state]?.(c)||'':'';
  if(c.scene==='s20')return side==='left'?screens[c.state]?.(c)||'':'';
- if(c.scene==='s10')return side==='right'?physicalPhoto(c.staging.meeting,'CEO office'):c.beat>=29?pr():screens[c.state]?.(c)||'';
+ if(c.scene==='s10')return side==='right'?physicalPhoto(c.staging.meeting,'CEO office'):c.beat>=29?pr(c):screens[c.state]?.(c)||'';
  if(c.scene==='s22'){
   if(side==='right'){
    if(c.staging.officersPresent)return physicalPhoto(c.beat>=33?'officer-two':c.speaker==='officer two'?'officer-two':'officer-one','Liam apartment',c.beat>=33?'Officer Two':c.speaker==='officer two'?'Officer Two':'Officer One');
@@ -218,8 +236,8 @@ function renderBaseVisual(c,side){
  if(c.scene==='s06'&&c.beat>=26){if(side==='left')return screens['race-code']();return c.beat>=31?screens[c.state]?.(c)||'':zoom(c)}
  if(c.scene==='s11b'&&c.beat>=43&&side==='left')return screens['local-model']();
  if(c.scene==='s11c'&&c.beat>=38&&side==='right')return board(false);
- if(c.state==='branch-delete')return side==='left'?pr():screens['branch-delete']();
- if(c.state==='pr-plan'||c.state==='pr-alone')return side==='left'?pr():plan('Saturday / API design',['Architecture and authentication.','Token handling and secret storage.','Integration tests in the partner sandbox.']);
+ if(c.state==='branch-delete')return side==='left'?pr(c):screens['branch-delete']();
+ if(c.state==='pr-plan'||c.state==='pr-alone')return side==='left'?pr(c):plan('Saturday / API design',['Architecture and authentication.','Token handling and secret storage.','Integration tests in the partner sandbox.']);
  if(['cloud-fix','patch-delete','policy'].includes(c.state))return side==='left'?screens['local-model']():screens[c.state]();
  if(c.scene==='s13b')return side==='left'?screens[c.state]?.(c)||'':screens[['options-email','separation'].includes(c.state)?'pip':'assessment']();
  if(c.scene==='s14b')return side==='right'?screens[c.state]?.(c)||'':c.staging.callCast.length?zoom(c):quiet(c);
@@ -239,4 +257,9 @@ export function counterProfile(c){
  return {base:later[c.scene]||0,rate:later[c.scene]?5000:0,visible:!!later[c.scene]&&c.state!=='black'&&!c.offstage&&!isWorm(c),large:false};
 }
 
-export function renderVisual(c,side){const visual=renderBaseVisual(c,side);return visual+(c.latestTicker?`<div style="position:absolute;bottom:0;left:0;right:0;padding:28px 50px;background:#171717;color:#f2f0ea;font:30px system-ui">${esc(c.latestTicker)}</div>`:"")}
+const desktopPortraits={Liam:'liam',Brendan:'brendan',Marcus:'marcus',Kristina:'kristina',Kara:'kara',Dana:'hr'};
+export function renderVisual(c,side){let visual=renderBaseVisual(c,side);
+ const owner=c.computers?.[side],portrait=desktopPortraits[owner];
+ // Physical scenes, phones, video links, blackout and films retain their own staging.
+ if(visual&&portrait&&!c.montage&&!c.offstage&&c.state!=='black')visual=`<div class="ownerDesktop"><img class="ownerWallpaper" src="assets/wallpapers/${portrait}.png" alt="${esc(owner)}’s desktop wallpaper"><div class="desktopApps">${visual}</div></div>`;
+ return visual+(c.latestTicker?`<div style="position:absolute;bottom:0;left:0;right:0;padding:28px 50px;background:#171717;color:#f2f0ea;font:30px system-ui">${esc(c.latestTicker)}</div>`:"")}
