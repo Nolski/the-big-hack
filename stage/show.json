@@ -1233,7 +1233,7 @@
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "Opening news montage. Play through Sam’s pause and the Mountain Man introduction; GO begins the standup.",
+      "text": "Opening news montage. Play through Sam’s pause and the Mountain Man introduction. End on November 24, 2025 — Opus 4.5 releases. GO begins the standup.",
       "direction": "",
       "state": "montage",
       "mode": "montage",
@@ -1265,11 +1265,11 @@
           "id": "s00_montage",
           "kind": "stage",
           "name": "",
-          "text": "Opening news montage. Play through Sam’s pause and the Mountain Man introduction; GO begins the standup.",
+          "text": "Opening news montage. Play through Sam’s pause and the Mountain Man introduction. End on November 24, 2025 — Opus 4.5 releases. GO begins the standup.",
           "direction": ""
         }
       ],
-      "montage": "assets/filmed/opening-montage-v8.mp4"
+      "montage": "assets/filmed/opening-montage-v9.mp4"
     },
     {
       "id": "s01_l1",
@@ -13361,7 +13361,7 @@
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "Time passes: late April to June. Play once, then GO into Best Practices.",
+      "text": "Time passes: late April to June. End on June 11, 2026, then GO into Best Practices.",
       "direction": "",
       "state": "montage",
       "mode": "montage",
@@ -13389,11 +13389,11 @@
           "id": "s07_time_jump_to_best_practices",
           "kind": "stage",
           "name": "",
-          "text": "Time passes: late April to June. Play once, then GO into Best Practices.",
+          "text": "Time passes: late April to June. End on June 11, 2026, then GO into Best Practices.",
           "direction": ""
         }
       ],
-      "montage": "assets/filmed/time-jump-b-v4.mp4"
+      "montage": "assets/filmed/time-jump-b-v6.mp4"
     },
     {
       "id": "s11b_l1",
@@ -20298,7 +20298,7 @@
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "Time passes: July into August news montage. Play once, then GO into the layoffs narration.",
+      "text": "Time passes: July into August. End on August 12, 2026, then GO into the layoffs narration.",
       "direction": "",
       "state": "montage",
       "mode": "montage",
@@ -20326,11 +20326,11 @@
           "id": "s11c_time_jump_to_offboarding",
           "kind": "stage",
           "name": "",
-          "text": "Time passes: July into August news montage. Play once, then GO into the layoffs narration.",
+          "text": "Time passes: July into August. End on August 12, 2026, then GO into the layoffs narration.",
           "direction": ""
         }
       ],
-      "montage": "assets/filmed/time-jump-c-v5.mp4"
+      "montage": "assets/filmed/time-jump-c-v6.mp4"
     },
     {
       "id": "s14_l1",
@@ -46666,7 +46666,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-40967823547544aa",
+  "scriptRevision": "shared-a05b1e35ad4b41fa",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }

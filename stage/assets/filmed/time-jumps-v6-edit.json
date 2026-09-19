@@ -1,0 +1,379 @@
+{
+  "version": 6,
+  "dateCardSeconds": 3.5,
+  "incomingAudioBeforePictureSeconds": 1.5,
+  "music": "Same supplied music as montage B, starting at zero in each cut",
+  "montages": {
+    "A": [
+      {
+        "name": "maduro",
+        "date": "2026-01-04",
+        "clips": [
+          {
+            "name": "maduro",
+            "start": 34.84,
+            "length": 7.866666666666666,
+            "voice": true,
+            "visual": 34.84,
+            "quote": "Mr. Maduro and his wife, Cilia Flores, had been flown to an airbase outside New York after being captured in the capital Caracas.",
+            "url": "https://www.youtube.com/watch?v=EsRvcr-l7Sg",
+            "publication": "20260104",
+            "date": "2026-01-04"
+          }
+        ],
+        "timelineStart": 2.0,
+        "audioStart": 4.0,
+        "pictureStart": 5.5,
+        "timelineEnd": 11.866666666666667
+      },
+      {
+        "name": "grok-recut",
+        "date": "2026-01-09",
+        "clips": [
+          {
+            "name": "grok-recut",
+            "start": 10.3,
+            "length": 8.433333333333334,
+            "voice": true,
+            "visual": 10.3,
+            "quote": "Grok is integrated into the social media platform X and it's been used to generate deepfake sexualized images of women and children.",
+            "url": "https://www.youtube.com/watch?v=wlxbayQPmTk",
+            "publication": "20260109",
+            "date": "2026-01-09"
+          }
+        ],
+        "timelineStart": 11.866666666666667,
+        "audioStart": 13.866666666666667,
+        "pictureStart": 15.366666666666667,
+        "timelineEnd": 22.3
+      },
+      {
+        "name": "olympics",
+        "date": "2026-02-06",
+        "clips": [
+          {
+            "name": "olympics",
+            "start": 14.0,
+            "length": 2.5,
+            "voice": true,
+            "visual": 14.0,
+            "quote": "",
+            "url": "https://www.youtube.com/watch?v=iBUBd2qy94s",
+            "publication": "20260207",
+            "date": "2026-02-06"
+          },
+          {
+            "name": "olympics",
+            "start": 88.0,
+            "length": 2.5,
+            "voice": true,
+            "visual": 88.0,
+            "quote": "",
+            "url": "https://www.youtube.com/watch?v=iBUBd2qy94s",
+            "publication": "20260207",
+            "date": "2026-02-06"
+          }
+        ],
+        "timelineStart": 22.3,
+        "audioStart": 24.3,
+        "pictureStart": 25.8,
+        "timelineEnd": 29.3
+      },
+      {
+        "name": "iran-feb",
+        "date": "2026-02-28",
+        "clips": [
+          {
+            "name": "iran-feb",
+            "start": 7.34,
+            "length": 4.433333333333334,
+            "voice": true,
+            "visual": 7.34,
+            "quote": "The United States and Israel have launched air strikes across Iran.",
+            "url": "https://www.youtube.com/watch?v=24Ph6_e2-Fg",
+            "publication": "20260228",
+            "date": "2026-02-28"
+          }
+        ],
+        "timelineStart": 29.3,
+        "audioStart": 31.3,
+        "pictureStart": 32.8,
+        "timelineEnd": 35.733333333333334
+      },
+      {
+        "name": "ceasefire",
+        "date": "2026-04-08",
+        "clips": [
+          {
+            "name": "ceasefire",
+            "start": 0.28,
+            "length": 8.0,
+            "voice": true,
+            "visual": 0.28,
+            "quote": "Iran and the United States have both said that they are ready for further negotiations after agreeing a two-week ceasefire.",
+            "url": "https://www.youtube.com/watch?v=2mvrsdXmbWA",
+            "publication": "20260408",
+            "date": "2026-04-08"
+          }
+        ],
+        "timelineStart": 35.733333333333334,
+        "audioStart": 37.733333333333334,
+        "pictureStart": 39.233333333333334,
+        "timelineEnd": 45.733333333333334
+      },
+      {
+        "name": "artemis-end",
+        "date": "2026-04-10",
+        "clips": [
+          {
+            "name": "artemis-end",
+            "start": 5.75,
+            "length": 7.4,
+            "voice": true,
+            "visual": 5.75,
+            "quote": "And there go the first series of parachutes. And Houston, we're visual two drogues out the window.",
+            "url": "https://www.youtube.com/watch?v=IfRqrrBbT-Y",
+            "publication": "20260412",
+            "date": "2026-04-10"
+          },
+          {
+            "name": "artemis-end",
+            "start": 17.8,
+            "length": 2.1,
+            "voice": true,
+            "visual": 17.8,
+            "quote": "Main chute deploy.",
+            "url": "https://www.youtube.com/watch?v=IfRqrrBbT-Y",
+            "publication": "20260412",
+            "date": "2026-04-10"
+          }
+        ],
+        "timelineStart": 45.733333333333334,
+        "audioStart": 47.733333333333334,
+        "pictureStart": 49.233333333333334,
+        "timelineEnd": 57.233333333333334
+      },
+      {
+        "name": "opus",
+        "date": "2026-04-16",
+        "clips": [
+          {
+            "name": "opus",
+            "start": 1.4,
+            "length": 5.0,
+            "voice": true,
+            "visual": 1.4,
+            "quote": "Opus 4.7 is an updated version from an existing model, so it's not a new model.",
+            "url": "https://www.youtube.com/watch?v=xTbr-Ky8jtg",
+            "publication": "20260416",
+            "date": "2026-04-16"
+          }
+        ],
+        "timelineStart": 57.233333333333334,
+        "audioStart": 59.233333333333334,
+        "pictureStart": 60.733333333333334,
+        "timelineEnd": 64.23333333333333
+      }
+    ],
+    "B": [
+      {
+        "name": "agent-error",
+        "date": "2026-04-30",
+        "clips": [
+          {
+            "name": "agent-error",
+            "start": 4.08,
+            "length": 7.033333333333333,
+            "voice": true,
+            "visual": 17.9,
+            "quote": "A tech CEO claimed an AI tool wiped out all of his company's data in a matter of seconds.",
+            "url": "https://www.youtube.com/watch?v=p08q3K_2x4U",
+            "publication": "20260430",
+            "date": "2026-04-30"
+          }
+        ],
+        "timelineStart": 2.0,
+        "audioStart": 4.0,
+        "pictureStart": 5.5,
+        "timelineEnd": 11.033333333333333
+      },
+      {
+        "name": "google",
+        "date": "2026-05-19",
+        "clips": [
+          {
+            "name": "google",
+            "start": 82.78,
+            "length": 7.566666666666666,
+            "voice": true,
+            "visual": 103.5,
+            "quote": "People come to YouTube every day to ask a lot of questions. Ask YouTube entirely reimagines the experience.",
+            "url": "https://www.youtube.com/watch?v=tfx2CjqtCUI",
+            "publication": "20260520",
+            "date": "2026-05-19"
+          }
+        ],
+        "timelineStart": 11.033333333333333,
+        "audioStart": 13.033333333333333,
+        "pictureStart": 14.533333333333333,
+        "timelineEnd": 20.6
+      },
+      {
+        "name": "iran-june",
+        "date": "2026-06-11",
+        "clips": [
+          {
+            "name": "iran-june",
+            "start": 10.16,
+            "length": 8.633333333333333,
+            "voice": true,
+            "visual": 10.16,
+            "quote": "US Central Command said it had completed a wave of self-defense strikes targeting military, surveillance, and radar sites in southern Iran.",
+            "url": "https://www.youtube.com/watch?v=GfN_5AN9_5o",
+            "publication": "20260611",
+            "date": "2026-06-11"
+          }
+        ],
+        "timelineStart": 20.6,
+        "audioStart": 22.6,
+        "pictureStart": 24.1,
+        "timelineEnd": 31.233333333333334
+      },
+      {
+        "name": "worldcup",
+        "date": "2026-06-11",
+        "clips": [
+          {
+            "name": "worldcup",
+            "start": 587.5,
+            "length": 3.5,
+            "voice": true,
+            "visual": 79,
+            "quote": "",
+            "url": "https://www.youtube.com/watch?v=jfHtAOVk8vQ",
+            "publication": "20260611",
+            "date": "2026-06-11"
+          },
+          {
+            "name": "worldcup",
+            "start": 591.0,
+            "length": 3.5,
+            "voice": true,
+            "visual": 598,
+            "quote": "",
+            "url": "https://www.youtube.com/watch?v=jfHtAOVk8vQ",
+            "publication": "20260611",
+            "date": "2026-06-11"
+          },
+          {
+            "name": "worldcup",
+            "start": 594.5,
+            "length": 3.5,
+            "voice": true,
+            "visual": 849,
+            "quote": "",
+            "url": "https://www.youtube.com/watch?v=jfHtAOVk8vQ",
+            "publication": "20260611",
+            "date": "2026-06-11"
+          }
+        ],
+        "timelineStart": 31.233333333333334,
+        "audioStart": 33.233333333333334,
+        "pictureStart": 34.733333333333334,
+        "timelineEnd": 43.733333333333334
+      }
+    ],
+    "C": [
+      {
+        "name": "ai-skills",
+        "date": "2026-07-18",
+        "clips": [
+          {
+            "name": "ai-skills",
+            "start": 35.3,
+            "visual": 35.3,
+            "length": 5.866666666666666,
+            "date": "2026-07-18",
+            "quote": "But as AI becomes a bigger part of our lives, are we becoming less skilled?",
+            "url": "https://www.youtube.com/watch?v=_eCEUd22y1w",
+            "publication": "20260718",
+            "voice": true
+          }
+        ],
+        "timelineStart": 2.0,
+        "audioStart": 4.0,
+        "pictureStart": 5.5,
+        "timelineEnd": 9.866666666666667
+      },
+      {
+        "name": "worldcup-final",
+        "date": "2026-07-19",
+        "clips": [
+          {
+            "name": "worldcup-final",
+            "start": 49.24,
+            "visual": 49.24,
+            "length": 10.9,
+            "date": "2026-07-19",
+            "quote": "The World Cup champion has been crowned after a thrilling match. Spain has won the FIFA World Cup.",
+            "url": "https://www.youtube.com/watch?v=BFhjUSo3e4I",
+            "publication": "20260720",
+            "voice": true
+          }
+        ],
+        "timelineStart": 9.866666666666667,
+        "audioStart": 11.866666666666667,
+        "pictureStart": 13.366666666666667,
+        "timelineEnd": 22.766666666666666
+      },
+      {
+        "name": "eclipse",
+        "date": "2026-08-12",
+        "clips": [
+          {
+            "name": "eclipse",
+            "start": 152.8,
+            "visual": 152.8,
+            "length": 6.8,
+            "date": "2026-08-12",
+            "voice": true,
+            "quote": "This is a total solar eclipse. The shimmering light is the sun's atmosphere, the corona.",
+            "url": "https://www.youtube.com/watch?v=3wu8-RvsZog",
+            "publication": "20260812"
+          }
+        ],
+        "timelineStart": 22.766666666666666,
+        "audioStart": 24.766666666666666,
+        "pictureStart": 26.266666666666666,
+        "timelineEnd": 31.566666666666666
+      }
+    ]
+  },
+  "returnDateA": {
+    "date": "2026-04-16",
+    "seconds": 4,
+    "duration": 68.23333333333333
+  },
+  "closingDateCards": {
+    "opening": {
+      "date": "2025-11-24",
+      "seconds": 5,
+      "file": "opening-montage-v9.mp4"
+    },
+    "A": {
+      "date": "2026-04-16",
+      "seconds": 4,
+      "file": "time-jump-a-v5.mp4"
+    },
+    "B": {
+      "date": "2026-06-11",
+      "seconds": 4,
+      "file": "time-jump-b-v6.mp4"
+    },
+    "C": {
+      "date": "2026-08-12",
+      "seconds": 4,
+      "file": "time-jump-c-v6.mp4"
+    }
+  }
+}
