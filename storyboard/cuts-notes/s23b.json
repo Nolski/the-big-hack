@@ -1,0 +1,91 @@
+{
+  "sceneId": "s23b",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "2e05c20629b92c3e",
+  "grade": "trimmable",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "Liam has already accepted the eighteen-month plea; Marcus learns it, argues for a fight, and Liam ends the call, so the last person still talking to him is gone before the signing in s24.",
+    "liam": "The arc's refusal beat: offered the martyr role, he turns it down with plain arithmetic and a prison library, and stays a man things happen to rather than one who acts.",
+    "others": "Marcus's last conversation with Liam: frightened, sincere, still a crank; he wants a symbol and gets a dial tone.",
+    "comedy": "'You were unbelievable in there' against 'I didn't say anything'; 'you didn't even smash anything'; the Luigi Mangione pitch; 'That's it?'",
+    "spectacle": "A candlelit flat, an illicit LoRa call, the utilities ticker, then the city lights go out and the stars come up.",
+    "setupPayoff": [
+      "Marcus's Luddite tangents said true and treated as a crank (pays, shared with s23 and s24)",
+      "151 years from s23_l8 restated as the plea arithmetic (pays)",
+      "Eighteen months (plants s24_l2)",
+      "Model encrypted into evidence, company fined, nobody charged (plants s24_l30 ticker and s24_l33)",
+      "'Don't go quiet' from s19_l82 answered by 'they all went quietly' (unlogged rhyme)"
+    ]
+  },
+  "turnsAt": "s23b_l7",
+  "ifRemoved": "The plea numbers survive untouched in s24, and the s24_l30 ticker about the unpunished model still reads without l16. What is lost has no other home: the only time Liam is offered the martyr role and declines it, Marcus's last conversation with him, and the lights-out image between the courtroom brownout and the signing. Movement V is under its allowance, so a lift here buys nothing the budget needs; tighten inside instead, and note that l13 says fourteen months with good conduct while s24_l6 says fifteen.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s23b-1",
+      "kind": "trim",
+      "cueIds": ["s23b_l4", "s23b_l5"],
+      "savingSeconds": 10.6,
+      "priority": 1,
+      "note": "Enter late. 'You were unbelievable in there' / 'I didn't say anything' runs straight into 'I've had four messages about it' and reads better. l4 is Marcus narrating the theme ('we won't repeat the mistakes of the past'), which the style rules forbid, and l5 only exists to interrupt it."
+    },
+    {
+      "id": "s23b-2",
+      "kind": "cut-beat",
+      "cueIds": ["s23b_l25"],
+      "savingSeconds": 12.4,
+      "priority": 2,
+      "note": "Leave early. Marcus's fourth restatement of fight it. 'If it was me I would do it' and the silence after it (l23, l24) is the stronger version; go from l24 straight to 'Marcus.' / 'That's it?'. Brendan is not in this scene, so every second off Marcus here shortens a Liam-and-Marcus-only stretch."
+    },
+    {
+      "id": "s23b-3",
+      "kind": "compress-speech",
+      "cueIds": ["s23b_l19"],
+      "savingSeconds": 6.6,
+      "priority": 3,
+      "note": "Cut the first half of l19. 'It's the same system. You are the same case' is already said in s22_l5 and s23_l26. Keep from 'If you fight it, at least it'll mean something', which is the only new thing in the line."
+    },
+    {
+      "id": "s23b-4",
+      "kind": "cut-beat",
+      "cueIds": ["s23b_l17"],
+      "savingSeconds": 8.2,
+      "priority": 4,
+      "note": "Third Luddite-fate reference in a row after s14a_l24 (the Australia numbers) and Marcus in the witness box at s23_l24. Cutting it also breaks up a 22-second Marcus run: l16 goes to Liam's l18 and the alternation is back."
+    },
+    {
+      "id": "s23b-5",
+      "kind": "compress-speech",
+      "cueIds": ["s23b_l26"],
+      "savingSeconds": 6.0,
+      "priority": 5,
+      "note": "Keep only 'They all went quietly in the end.' It answers Liam's own 'Don't go quiet' to Brendan at s19_l82 and should stay. The social media sentence and 'we can change things this time around' are soapbox and add nothing the Mangione line did not."
+    },
+    {
+      "id": "s23b-6",
+      "kind": "trim",
+      "cueIds": ["s23b_l20", "s23b_l21"],
+      "savingSeconds": 4.4,
+      "priority": 6,
+      "note": "'No Marcus' and 'You have an opportunity to make a real difference' restate the end of l19 and l22. With them gone, 'at least it'll mean something' is answered directly by 'I've made up my mind'."
+    },
+    {
+      "id": "s23b-7",
+      "kind": "redundant",
+      "cueIds": ["s23b_l18"],
+      "savingSeconds": 5.6,
+      "priority": 7,
+      "note": "Alternative to s23b-4, not additional. l18 restates l11 (eighteen months against the rest of his life) inside the same scene. Take this instead of cutting l17 if the Australia line is wanted; taking both leaves Marcus talking from l16 to l19 for 28 seconds without a reply."
+    },
+    {
+      "id": "s23b-8",
+      "kind": "redundant",
+      "cueIds": ["s23b_l15"],
+      "savingSeconds": 10.9,
+      "priority": 8,
+      "note": "Not recommended. The jury-of-people-without-electricity argument is made twice: here by Liam (10.9 s) and by Defence Counsel at s24_l16 (25.7 s). Liam saying it himself is the stronger version for the arc, because it shows he now knows the room decides, not the code. Prefer trimming s24_l16 and keep this."
+    }
+  ],
+  "recommendedSavingSeconds": 48.2
+}

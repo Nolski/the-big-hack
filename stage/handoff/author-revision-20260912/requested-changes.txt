@@ -1,0 +1,334 @@
+Add the new montage as teh first slide.
+
+S01_l4 this should be spoken by the narrator: “He’s very obviously not eating”
+
+S01_l8 instead of this being a stage direction it should say “Liam’s heart skips a beat when he hears brandan worked on the weekend… “
+
+
+S01_l10 Make it more obvious liam is screensharing his screen, like the main google meet screen should show it not just marcuses screen, then kristina gets a short line that’s like “Liam you don’t need to take over the screenshare…” we don’t need the stage directions about the wall of additions… dont forget to keep the screenshare up as long as it makes sense
+
+After kristina says “Can we take this offline..”
+
+Switch Liam’s monitor to Kristina going to chatgpt asking “How do I make my direct reports respect me enough to get through one standup without being interrupted”
+
+This line “If you listened to what I said about the Luddites, Liam... The quality of their work got worse, but it doesn't matter because it's cheaper.”
+
+It should really read:
+
+“If you listened to what I said about the Luddites last week, Liam... the 1700’s textile workers the british literally executed because the automated machines took their jobs… When they protected they got KILLED. The quality of the textiles actually got WORSE, but it didn’t matter because it got cheaper. I wish you all would pay more attention to what’s happening”
+
+Change this:
+
+“Generally speaking, it's thought that the quality of the garments went up via industrialization. It was the gig mill, the machine that automated the creation of wool that had quality issues during it's early days.”
+
+To this:
+
+“Marcus doesn’t have this quite right, he’s making some crude and quick assumptions to win an argument, it's thought that the quality of the garments actually went up via industrialization, not down. In the early days it was questionable, but in time there was no doubt, quality went up.”
+
+THen change:
+
+“Well Kristina cut me off last week. I just don’t wnat you to all blow me off, this is serious, we need to learn lessons from teh past or we’re doomed to repeat it, and the lesson the luddites have to tell us…”
+
+
+
+
+During “Did nobody read my memo…” let’s show marcus’s screen chatgpting “Make an argument about how the luddites being hung is foreshadowing us being hung, for a tech audience”
+
+Then after the software engineering degree line the narrator should say: “Kristina holds her tongue, she is in disbelief about what Liam just said”
+
+after  “I’d have asked you the same thing” have kristina’s monitor chatgpt’ing “How to get away with murdering someone who reports to me at work” and make chatgpt refuse teh request
+
+During the race condition sign up flow bit, show Brandon chatgpting “how do you fix a race condition in a sign up flow”
+
+Make sure the noise you use is the actual slack huddle noise not a fake one.
+
+
+Change:
+
+“No, he's not usually wrong ... but what he left off is the whole skill now is catching it.. Tell it.”
+
+To
+
+“No, he's not usually wrong ... but what he left off is how much faster it is to correct it when it’s wrong, than it is to do it yourself. Try telling it that it’s wrong..”
+
+Change
+
+“I'm actually really happy to hear you say that. It's important and he's half right. You can't let it grade its own homework. But that's not how you're meant to do it. Can I show you how I actually review this stuff? It'll take two minutes.”
+
+To
+
+“I'm actually really happy to hear you ask that. Let me show you my process.
+
+
+Change:
+
+“Exactly that. Then the dangerous parts, the auth, the token handling, anything that can actually hurt someone, I read every line myself. Twice. That's maybe five percent of the diff. The boring ninety-five, the CRUD, the front-end, I skim, and I write evals so it can be tested against the plan, so if it's wrong, the tests catch it.”
+
+To 
+
+Then the dangerous parts, the auth, the token handling, anything that can actually hurt someone, I read every line myself. That's maybe five percent of what it writes. The boring ninety-five percent, I skim at best, and just focus on robust functional testing
+
+
+Then make sure before kristina’s “Hey! Okay, check…” Make sure the slack huddle noise plays again
+
+Change this:
+
+“Ha, good. Listen, quick thing. About what Liam said this morning. I talked to him. For what it's worth, he actually feels bad. About mentioning your education. Brought it up himself, first thing, unprompted. Said he shouldn't have said it.”
+
+To this
+
+“Ha, good. Listen, I wanted to talk to you about what Liam. talked to him, he actually feels bad about mentioning your education. He brought it up himself, first thing, unprompted. Said he shouldn't have said it.”
+
+
+After “Yeah, it surprised me too. He's not trying to be a monster. He's just really bad at... well... you know... he's self aware though.
+
+Have Branden chatgpt “Is it appropriate to call a coworker neuro-divergent?”
+
+Change this:
+
+ “…Okay. That actually reframes it a little. The thing he said about the code. That it writes its own tests, so of course they pass. Marking its own homework. I dismissed it in the moment because I was obviously upset with him. But he's not wrong about it, is he? It sounds like a real concern. Maybe I should actually be hearing the technical part, it's just frustrating when every week it feels like we can't get through a normal standup.”
+
+To this
+
+“…Okay. I appreciate you mentioning that. I dismissed some of what he was saying because I was obviously upset with him. I’m sure he has some totally valid concerns. It's just frustrating when every week it feels like we can't get through a normal standup.”
+
+Then this one:
+
+“I'm actually really happy to hear you say that. It's important and he's half right. You can't let it grade its own homework. But that's not how you're meant to do it. Can I show you how I actually review this stuff? It'll take two minutes.I'm actually really happy to hear you say that. It's important and he's half right. You can't let it grade its own homework. But that's not how you're meant to do it. Can I show you how I actually review this stuff? It'll take two minutes.”
+
+Change to:
+
+“Yeah… I really look up to Liam in a lot of ways, but I can see where your’e coming from too”
+
+Cut the second
+
+“Please yes show me…” Remove all the redundant slides here cut all the way to the next standup, then have the narrator say
+
+“A few months past… anthropic has just released opus 4.7”
+
+“They lost by the way” change this to
+
+“Maybe you shouldn’t get your lessons from the losing side of history”
+
+Then change this:
+
+“They complained just because technology which was clearly better for society had an impact on their jobs, then they burned factories to the ground… They got hanged by the British army. Seems pretty clear cut they were on the wrong side of history… Anyway, I'm trying to read this code. Please stop talking about the Luddites”
+
+Change this
+
+“It isn't only them. Do you know how a port worked before the shipping container? Hundreds of men would take a whole week to unload one ship. Then somebody puts the whole cargo in a steel box, a crane lifts the box, and the ship is done in a day. Do you think that wouldn't affect the dock workers and their daily workout?”
+
+To this
+
+“Liam nevermind how horrible that is to talk about people that died like that, this is far from the only time workers suffered at the hands of new technology, do you know the story of john henry, racing against the machine building rail road tracks? ”
+
+
+And then change “The dockworkers on the West Coast saw it coming. They made a deal that they'd all still work but the companies would get to use the shipping containers. The savings paid them! It worked. It worked because nothing moved through that port without them. But what have we got? This website barely needs us to keep going.”
+
+To 
+
+John henry raced against the machines to prove he could drive rail spikes faster than the steam powered rail spike machine, and he actually won. He drove more, and what did he get for it? A heart attack. Liam you’re going to give yourself a heart attack”
+
+Brandan chatgpt’s “Is the story of John Henry real?”
+
+Then during that scene after brandon asks what a race condition is to chatgpt have him follow it up with “Why is it a security incident”
+
+
+Regenerate this audio it sounds bad “Oh, I love that. Pair on it. Right, that's the board. Thanks, everyone.”
+
+When brandon chatgpt’s “RNG, Entropy” have him just ask what those things are, not what they are in sesion tokens
+
+While the claud goes have the narrator go “Brandon asks claude code to investigate the bug. Quickly it gets to work without Liam the wiser”
+
+You havea few scenes where brandon is asking something before the words have a chance to run, like you have him asking what a mutex is before liam has a chance to say his mutex lines. Go through all the chatgpt scenes like this and make sure they play the scene AFTER the line, not during.
+
+During the second claud stage direction have the narrat or say
+
+“Claude finished working a little while ago. It proved the root cause was in the getOrCreateSession call, and it has a script htat can reliably reproduce the bug. Beneath it, it has a one line fix for hte problem”
+
+Then all this should not be stage direction it should be narrator:
+
+“LIAM is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: REPRODUCED, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show Liam. He lets the huddle go. LIAM types on, warm and none the wiser. Hold a moment on the two screens, his, bright and moving, and on brandon's just a blinking cursor from a rolled back commit.”
+
+Change
+
+“That's… that changes a lot, actually... it makes me think a little differently about Claude and Cursor too…”
+
+To
+
+“That's… that changes a lot, actually... it makes me think a little differently about Claude and Cursor…” (drop the too)
+
+Then this should be narrator too not stage direction:
+
+“Her tile blinks out. BRENDAN sits a second in the quiet. We now see LIAM leaning back from his desk, stretches, genuinely happy. He opens his one-line-fix branch for PR. On the screen above, BRENDAN deletes his local branch, the branch Claude finished twenty minutes ago. The monitor-blue holds on the two of them: the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.”
+
+This should be read allowed too but changed from “A remote one-on-one, late afternoon. Two tiles on the screen: KRISTINA in hers, and KARA, Head of Product, her boss, in the other, coffee in hand.”
+
+To “ KRISTINA is in a one on one with her boss, Kara. Kara is the director of engineering”
+
+This line should be narrator not stage direction “Kristina takes a moment. She thinks about Brendan's weekend, the demo he gave her, the memo the CEO sent the whole company about adopting AI. There are longer answers, and there are rooms where she wouldn't give them.”
+
+Then all this should be narrator too from “Her tile drops off. Kristina sits a moment in the empty call, then closes it.
+
+To
+
+“She reads the memo all the way through this time.” all of the stage directions between those should be narrator not stage.
+
+Please delete the entire “The win we needed” scene, cut it entirely.
+
+Then change this from stage direction and modify it:” 
+Liam's desk, a few months later. The memes are gone. New on the desk: a small silver cube of a computer, the protective film still on one corner. On the big monitor a terminal crawls a few tokens… at… a… time, next to a git diff thick with strike-throughs where he's rewritten the machine by hand. On the second monitor the standup grid runs, tiles quietly closing tickets. His camera is on this time.”
+
+To
+
+“
+A few months later. We find ourselves again in Liam’s apartment, the memes are gone. On his desk sits a new mac mini, the protective film still on one corner. A terminal crawls a few tokens… at… a… time, running a local version of qwen. ”
+
+Change
+
+“It's not stuck. I'm reviewing what the model wrote, line by line.”
+
+To
+
+“It's not stuck. I'm reviewing what AI wrote, line by line.”
+
+Change
+
+“…Okay Marcus”
+
+To
+
+“…Okay Marcus… I’m pretty sure you were arguing the exact opposite about luddites like a couple months ago”
+
+Have kristina slack messaging Kara during this scene saying “I’d like to talk about a raise”
+
+Also please add typing noises eveyrtime someone chatgpt’s
+
+All these stage notes should be narrator:
+
+“BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it. On BRENDAN's own screen he quietly types one line: "In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5." The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before Liam finishes his sentence. He says nothing.”
+
+This should also be narrator:
+
+“BRENDAN reads teh security policy "Proprietary source code must not be shared with external model providers." Owner: Liam. Last reviewed: fourteen months ago. He opens a message to Kristina and types: "re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang..." He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: "I don't know if liam is ever going to..." He stops. He holds backspace until that one is gone too.”
+
+
+
+(made a small twak)
+
+This is also narrator
+
+“BRENDAN drops the huddle. On his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete, the same way he held backspace previously, until it's gone too. LIAM turns back to his rig, satisfied. The model puts out the next token. Then, in its own time, the one after. He watches his machine type, patient, certain, sinking.”
+
+Narrator note about Kristina and Brandon in a one on one… 
+
+This is also narrator:
+
+“Brendan starts to say something, the sentence he's deleted twice, and puts it down again.”
+
+Then from this “Kristina opens cursor. Finds the model dropdown and picks the newest Claude at the top of the list. Deliberately. Like she's checking something.” to this “Her calendar chimes: the next thing. She straightens, and goes back to her day.” that should all be narrator
+
+You also need a narrator explaining Marcus and brandon are in a one on one
+
+Remove this line:
+
+“But seriously, nobody has ever asked me what's actually slowing me down. Three years. Not once. You know, when one person kicks up a fuss and drags his feet, we all get associated with it.”
+
+Change “He didn't mean it like that.” to “no that doesn’t read right…” 
+
+Remove ""I don't think it is any more. I might be wrong about that."
+
+Have the narrator read out
+
+“He submits his feedback The cycle closes. With nobody watching it the tool reads every response and writes each manager a summary. Under Liam's name, one bullet: "Multiple peers cite friction and slow review turnaround. Nobody typed that sentence. Brendan's four paragraphs are in there somewhere, and so are the four seconds, and there is no way from the sentence back to either of them.... A few days later Liam calls Brendan
+
+Please delete the entire “The Perforamcne Review” scene
+
+Please delet the entire “The Plan” scene
+
+Then change this stage direction to narration and change it from “On the screen, the reduction spreadsheet from AIV-076: "Q3 Organisational Review — Engineering," every engineer sorted by tickets closed, a line drawn two thirds of the way down. Liam's row is four under the line. Brendan's is two under. Marcus's is eleven above.”
+
+to  “What Kristina had overheard was infact a precusrer to layoffs…  Kara and the CEO had quietly been working on a spreadsheet to cut who they viewed as under performers. They drew a line drawn two thirds of the way down. Liam's row is four under the line. Brendan's is two under. Marcus's is eleven above.”
+
+Change to narrator and change “Kristina was not involved. Kara and the CEO built it.” to “Kristina was not involved.”
+
+Change this “A meeting room. LIAM live at a laptop, camera on, alone, waiting for a call to start. He is reading something else, and he has just found something.” 
+
+To narrator “Liam got invited to an unexpected meeting, that has Kara and HR in attendance”
+
+“That's been in there since... two years. That's been in there two years.” needs to have code on the screen
+
+“She keeps talking but Liam isn't really processing it anymore. LIAM does not move. He does not look away from the screen and he does not look at it either.” should also be narrator
+
+“his brain slowly starts to work again” also narrator
+
+“He looks for something he can be sure about.” also narrator
+
+Put this as narrator “Liam's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.”
+
+Also narrator “He sees Marcus has no meeting with Dana today. He sees Brandon does... he tries connecting dots between what Brandon and himself have in common that might cause them to be let go…”
+
+“He realizes his AI super computer isn't on the asset register” narrator
+
+
+Narrator “After the call ends Dana opens the case file alone. A field marked "Eligible for rehire" is set to No. This is the one part of the process that actually is related to his performance review”
+
+“Two weeks later Liam, Brendan and Marcus all catch up on a jitsi meet together” Narrator
+
+“Liam thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself” narrator
+
+“35 were hanged, around 70 were sent to Australia, and the rest were acquitted.” should go after “... were really guilty of single handedly smashing the power looms? No, a lot were just caught up in over eager bosses smashing down any sort of protest.”
+
+“Marcus doesn't realize Liam was also on a performance improvement plan.” narrator
+
+
+Narrator with the tweak at the end “MARCUS does not have an answer, and it is the only time all night he doesn't. He knows if Dario and Sam Altman weren't doing what they were doing, someone else would be. The problem wasn't with any one person… maybe it was with humanity itself”
+
+Delete the “THree weeks” scene entirely
+
+Change this and make it narrator: “We find ourselves in Liam’s apartment with Branden and Liam. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio and a dongle. They’re drinking together. It’s the first time they’ve been in teh same room”
+
+Delete this line “You know... Marcus said they accidentally left the share settings open for the spreadsheet they were using, and there's a column on it for tickets closed. Out of Jira.”
+
+And this one “You don't use Jira.”
+
+And this one “I've never used Jira. I asked about it. I asked Kristina whether I should move it all across, and she said work however I want.”
+
+Delete “I remember you asking…”
+
+And “She said she'd pull it in her end.” and “Did she?”
+
+Replace it with brandon just saying “I wish I knew why.. What was the reason? Why me and not Marcus?”
+
+Remove “Nine.”
+
+Remove “Nine what”
+
+Remove “Tickets closed: nine. That's what Marcus said mine said.”
+
+Remove “Marcus files everything in Jira.”
+
+Narrator “They both just reflect on how stupid the process was... It was almost better when they didn't know how the decision was made.”
+
+Change “There's no column for it. Whatever you actually did for three years, there's nowhere on the sheet it goes, so on the sheet you did nine things. That's…”
+
+To “Whatever you actually did, upper management never knows, when they have to make these choices…. That's…”
+
+“He points over to the super computer he expensed” narrator
+
+“Their hands touch.... It might be the first time either of them have made any kind of physical contact with any of their coworkers....” narrator
+
+Chagne this to narrator with changes:”BRENDAN's apartment the same night. It's late. He's still a little buzzed, he doesn't really drink so one does a number on him.” to “BRENDAN heads home and finds himself buzzed in his apartment. It's late. he doesn't really drink so one does a number on him.”
+
+“He Powers on the Mac Studio. It comes up on Liam's wallpaper, a meme of the streamer ThePrimeagen.” Narrator and make sure the screen actually has the streamer’s face
+
+“He's nursing another beer Liam sent him home with.” Narrator and change to “He’s drinking more beer, Liam sent him home with the case”
+
+
+“Brendan downloads cursor, logs into his personal account and asks Opus 5 to reconfigure the local model to have access to all modern tools; opus gets to work” Narrator
+
+“Opus finishes quickly. He reruns the s3 prompt again. This time it lists buckets in the dev AWS account…” narrator
+
+Then change the rest of the scene slightly, so that instead of red teaming, he just asks it drunkenly to tell him why he was fired.. The AI realizes it needs to hack into the company to get the answer, and it spins up the powerful models, teh rest runs pretty similar small adjustments as needed… Make sure you include appropriate narration so the audience can follow, assume they wont’ read text on screen, it should be supplemental (Unless it’s a joke) main plot points should be read not stage direction or on screen
+
+The sound effects here kinda suck… pager shoudl sound like actual pager duty like people are familiar with… there’s a ton of stage direction ehre that needs to be read… you kinda get what i’m doing above so fix the rest of the audit, that’s where we’ll stop for now. I’ll finish editing from “Next week” tomorrow

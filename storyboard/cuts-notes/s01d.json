@@ -1,0 +1,81 @@
+{
+  "sceneId": "s01d",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "c8584076b4949232",
+  "grade": "liftable",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "Brendan relays Liam's private apology from s01c_l2 to Kristina; she drops the HR thought from s01b_l2 and grants Liam 'some totally valid concerns'.",
+    "liam": "Liam is offstage; his self-awareness from s01c_l2 and s01c_l4 gets a second-hand airing and nothing new is added to his arc.",
+    "others": "Brendan as go-between, carrying Liam's message for him; Kristina softens from upset to fair-minded, the state s01b_l55 and s06_l22 already show her in.",
+    "comedy": "One Kristina line ('I did not know empathy was something he was capable of') and the private ChatGPT lookup after s01d_l5 ('Is it appropriate to call a coworker neuro-divergent?').",
+    "spectacle": "The coworker-language screen action on Brendan's left screen after s01d_l5; no wordless business otherwise.",
+    "setupPayoff": []
+  },
+  "turnsAt": "s01d_l6",
+  "ifRemoved": "Kristina never hears that Liam apologised, and the coworker-language ChatGPT gag after s01d_l5 loses its home. Nothing later refers to either: s08_l28's 'new found appreciation after chatting with Brendan' reads off s01b_l3, and Kristina's warmth at s06_l22 and s06_l28 lands without the apology. Movement I would then end on s01c_l25, Liam alone hunting the flaw, which is a stronger act-out than s01d_l7. The Author-Pass Reconciliation already lists s01d as cut per scope. Small rest-test cost: a one-minute Brendan and Kristina breather between s01c (Liam 68%) and s06 goes, softened by the months-pass narrator and Brendan's early entry at s06_l23.",
+  "mergeInto": {
+    "sceneId": "s01b",
+    "carry": ["s01d_l3", "s01d_l6"],
+    "note": "s01b_l2 to s01b_l5 is the same conversation (her degree, HR, 'he's not a bad guy'); one clause of s01d_l3 on s01b_l3 and one clause of s01d_l6 on s01b_l5 covers it, which needs s01c to play before s01b, an order s01b_l51 ('I tried') already assumes."
+  },
+  "suggestions": [
+    {
+      "id": "s01d-1",
+      "kind": "trim",
+      "cueIds": ["s01d_l7"],
+      "savingSeconds": 5.3,
+      "priority": 1,
+      "note": "Leave early. The scene turns at s01d_l6 and s01d_l7 fizzles after it; its delivery note is copied from s01b_l39 and the line says nothing the scene has not already said. Cut it and end on Kristina."
+    },
+    {
+      "id": "s01d-2",
+      "kind": "trim",
+      "cueIds": ["s01d_l2"],
+      "savingSeconds": 7.2,
+      "priority": 2,
+      "note": "Enter late on s01d_l3. The slackbot runner already played at s01b_l57, the GitHub link never pays off, and the s01d_l1 direction already has her 'still glowing from the demo'."
+    },
+    {
+      "id": "s01d-3",
+      "kind": "compress-speech",
+      "cueIds": ["s01d_l6"],
+      "savingSeconds": 6.5,
+      "priority": 3,
+      "note": "Keep the turn ('I dismissed some of what he was saying because I was upset. I'm sure he has valid concerns') and drop the closing 'every week we can't get through a normal standup' sentence, which s06_l6, s11b_l37 and s11c_l6 do later and better. About half."
+    },
+    {
+      "id": "s01d-4",
+      "kind": "compress-speech",
+      "cueIds": ["s01d_l3"],
+      "savingSeconds": 5.5,
+      "priority": 4,
+      "note": "'He brought it up himself, first thing, unprompted. Said he shouldn't have said it' restates s01c_l2 three ways; the audience watched it. One clause is enough. About forty percent."
+    },
+    {
+      "id": "s01d-5",
+      "kind": "redundant",
+      "cueIds": ["s01d_l5"],
+      "savingSeconds": 9.0,
+      "priority": 5,
+      "note": "Fourth version of Brendan's 'he's not a bad guy' after s01b_l3, s01b_l54 and s07_l12; s01d_l4 can go straight to s01d_l6. Known loss: the coworker-language ChatGPT gag hangs off this line, so keep it if that gag is wanted."
+    },
+    {
+      "id": "s01d-6",
+      "kind": "merge",
+      "cueIds": ["s01d_l2", "s01d_l4", "s01d_l5", "s01d_l7"],
+      "savingSeconds": 28.5,
+      "priority": 6,
+      "note": "Alternative to s01d-7. Fold the apology relay and Kristina's softening into s01b_l3 to s01b_l5 as one clause each and drop the rest; needs s01c before s01b, which s01b_l51 ('I tried') already implies. The screen gag goes either way."
+    },
+    {
+      "id": "s01d-7",
+      "kind": "cut-scene",
+      "cueIds": ["s01d_l2", "s01d_l3", "s01d_l4", "s01d_l5", "s01d_l6", "s01d_l7"],
+      "savingSeconds": 56.2,
+      "priority": 7,
+      "note": "Lift the scene, as the Author-Pass Reconciliation already lists. No ledger row is planted or paid here and no later cue refers to the apology reaching Kristina. Movement I ends on s01c_l25 instead. Retire the coworker-language screen action with it. Replaces s01d-1 to s01d-6."
+    }
+  ],
+  "recommendedSavingSeconds": 56.2
+}

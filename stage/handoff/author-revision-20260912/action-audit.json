@@ -1,0 +1,186 @@
+[
+  {
+    "action": "standup-respect",
+    "after": "s01_l18",
+    "first": "s01_l19",
+    "last": "s01_l32",
+    "side": "left",
+    "owner": "Kristina"
+  },
+  {
+    "action": "luddite-argument",
+    "after": "s01_l32",
+    "first": "s01_l33",
+    "last": "s01_l43",
+    "side": "left",
+    "owner": "Marcus"
+  },
+  {
+    "action": "manager-refusal",
+    "after": "s01_l43",
+    "first": "s01_l44",
+    "last": "s01_l50",
+    "side": "left",
+    "owner": "Kristina"
+  },
+  {
+    "action": "signup-fix",
+    "after": "s01_l50",
+    "first": "s01_l51",
+    "last": "s01_l53",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "coworker-language",
+    "after": "s01d_l5",
+    "first": "s01d_l6",
+    "last": "s01d_l7",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "key-issuance",
+    "after": "s01c_l11",
+    "first": "s01c_chat_keys",
+    "last": "s01c_l12",
+    "side": "right",
+    "owner": "Brendan"
+  },
+  {
+    "action": "john-henry",
+    "after": "s06_l15",
+    "first": "s06_chat_henry",
+    "last": "s06_chat_henry",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "race-condition",
+    "after": "s06_l19",
+    "first": "s06_chat_race",
+    "last": "s06_l21",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "race-security",
+    "after": "s06_l21",
+    "first": "s06_chat_security",
+    "last": "s06_l27",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "rng-entropy",
+    "after": "s06_l32",
+    "first": "s06_chat_rng",
+    "last": "s06_l33",
+    "side": "right",
+    "owner": "Brendan"
+  },
+  {
+    "action": "investigate-signup",
+    "after": null,
+    "first": "s06_l34",
+    "last": "s06_l35",
+    "side": "right",
+    "owner": "Brendan"
+  },
+  {
+    "action": "mutex-deadlock",
+    "after": "s06_l35",
+    "first": "s06_chat_mutex",
+    "last": "s06_l37",
+    "side": "right",
+    "owner": "Brendan"
+  },
+  {
+    "action": "checkout-main",
+    "after": null,
+    "first": "s06_l51",
+    "last": "s06_l51",
+    "side": "right",
+    "owner": "Brendan"
+  },
+  {
+    "action": "raise-request",
+    "after": null,
+    "first": "s11b_l8",
+    "last": "s11b_l13",
+    "side": "left",
+    "owner": "Kristina"
+  },
+  {
+    "action": "quantized-model",
+    "after": "s11b_l44",
+    "first": "s11b_chat_quantized",
+    "last": "s11b_l46",
+    "side": "right",
+    "owner": "Brendan"
+  },
+  {
+    "action": "pin-weights",
+    "after": "s11b_l68",
+    "first": "s11b_chat_weights",
+    "last": "s11b_l69",
+    "side": "right",
+    "owner": "Brendan"
+  },
+  {
+    "action": "audit-tools",
+    "after": null,
+    "first": "s20_l23",
+    "last": "s20_l24",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "audit-buckets",
+    "after": null,
+    "first": "s20_l25",
+    "last": "s20_l27",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "audit-reason",
+    "after": null,
+    "first": "s20_l29",
+    "last": "s20_l31",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "audit-workers",
+    "after": null,
+    "first": "s20_l32",
+    "last": "s20_l34",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "audit-result",
+    "after": null,
+    "first": "s20_l57",
+    "last": "s20_l60",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "audit-cleanup-refused",
+    "after": null,
+    "first": "s20_l61",
+    "last": "s20_l63",
+    "side": "left",
+    "owner": "Brendan"
+  },
+  {
+    "action": "audit-cleanup",
+    "after": null,
+    "first": "s20_l64",
+    "last": "s20_l66",
+    "side": "left",
+    "owner": "Brendan"
+  }
+]

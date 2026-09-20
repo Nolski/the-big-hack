@@ -1,0 +1,393 @@
+{
+  "date": "2026-09-12",
+  "latestScript": "edits/cut-pass@0a26f29",
+  "latestSpokenRecordings": 885,
+  "preservedSpokenRecordings": 1013,
+  "remappedRecordings": 148,
+  "regeneratedPreservedLines": 2,
+  "newLatestRecordings": 16,
+  "uniqueExistingRecordingsTranscribed": 1010,
+  "newRecordingsTranscribed": 18,
+  "method": "Speaker and full-text matching against audio-generation revisions; byte checksums; local speech recognition of the existing library; large-v3 recognition of all newly rendered lines; review of low-match transcription variants.",
+  "transcriptionReview": {
+    "flags": [
+      {
+        "cue": "current:s01b_l38",
+        "speaker": "kristina",
+        "text": "Anyway I'll use one of mine for the test, then. Okay\u2026 slash, jira, done, P-R-O-J four-twelve\u2026",
+        "transcript": "Anyway, I'll use one of mine for the test then. OK, slash Jira, done, PROJ-412.",
+        "score": 0.737,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s01b_l38-819aa01575ce.mp3"
+      },
+      {
+        "cue": "latest:s01b_l34",
+        "speaker": "kristina",
+        "text": "Anyway I'll use one of mine for the test, then. Okay\u2026 slash, jira, done, P-R-O-J four-twelve\u2026",
+        "transcript": "Anyway, I'll use one of mine for the test then. OK, slash Jira, done, PROJ-412.",
+        "score": 0.737,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s01b_l38-819aa01575ce.mp3"
+      },
+      {
+        "cue": "current:s01b_l44",
+        "speaker": "kristina",
+        "text": "\u2026slash, jira, done, four-twelve.",
+        "transcript": "slash Jira done for 12.",
+        "score": 0.6,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s01b_l44-09a398ea0b1e.mp3"
+      },
+      {
+        "cue": "current:s11c_l16",
+        "speaker": "brendan",
+        "text": "\u2026Performance manage who out?",
+        "transcript": "Performance managed throughout.",
+        "score": 0.286,
+        "file": "work/active-audio-repair/assets/audio/verified-a982991265b19d9fee17.mp3"
+      },
+      {
+        "cue": "latest:s11c_l16",
+        "speaker": "brendan",
+        "text": "\u2026Performance manage who out?",
+        "transcript": "Performance managed throughout.",
+        "score": 0.286,
+        "file": "work/active-audio-repair/assets/audio/verified-a982991265b19d9fee17.mp3"
+      },
+      {
+        "cue": "current:s11c_l36",
+        "speaker": "brendan",
+        "text": "Yeah. I've got a thing at half past. Thanks, Kristina.",
+        "transcript": "Yeah, I've got a thing it half passed. Thanks, Christina.",
+        "score": 0.727,
+        "file": "work/active-audio-repair/assets/audio/verified-dcd39ed53ab5a6b19e28.mp3"
+      },
+      {
+        "cue": "latest:s11c_l36",
+        "speaker": "brendan",
+        "text": "Yeah. I've got a thing at half past. Thanks, Kristina.",
+        "transcript": "Yeah, I've got a thing it half passed. Thanks, Christina.",
+        "score": 0.727,
+        "file": "work/active-audio-repair/assets/audio/verified-dcd39ed53ab5a6b19e28.mp3"
+      },
+      {
+        "cue": "current:s12_l11",
+        "speaker": "marcus",
+        "text": "Yeah man, the snitch box.",
+        "transcript": "Yeah man, the Snitchbox.",
+        "score": 0.667,
+        "file": "work/active-audio-repair/assets/audio/verified-77e4f20182fb780eae14.mp3"
+      },
+      {
+        "cue": "latest:s12_l21",
+        "speaker": "marcus",
+        "text": "Yeah man, the snitch box.",
+        "transcript": "Yeah man, the Snitchbox.",
+        "score": 0.667,
+        "file": "work/active-audio-repair/assets/audio/verified-77e4f20182fb780eae14.mp3"
+      },
+      {
+        "cue": "current:s14_l64",
+        "speaker": "liam",
+        "text": "Okay. When does healthcare end.",
+        "transcript": "Okay, when does health care end?",
+        "score": 0.727,
+        "file": "work/active-audio-repair/assets/audio/verified-7265142958f114b42292.mp3"
+      },
+      {
+        "cue": "latest:s14_l64",
+        "speaker": "liam",
+        "text": "Okay. When does healthcare end.",
+        "transcript": "Okay, when does health care end?",
+        "score": 0.727,
+        "file": "work/active-audio-repair/assets/audio/verified-7265142958f114b42292.mp3"
+      },
+      {
+        "cue": "current:s19_l11",
+        "speaker": "brendan",
+        "text": "It was kinda bullshit",
+        "transcript": "It was kind of bullshit.",
+        "score": 0.667,
+        "file": "work/active-audio-repair/assets/audio/verified-189bbb9c2ef5affe4989.mp3"
+      },
+      {
+        "cue": "latest:s19_l11",
+        "speaker": "brendan",
+        "text": "It was kinda bullshit",
+        "transcript": "It was kind of bullshit.",
+        "score": 0.667,
+        "file": "work/active-audio-repair/assets/audio/verified-189bbb9c2ef5affe4989.mp3"
+      },
+      {
+        "cue": "current:s19_l25",
+        "speaker": "brendan",
+        "text": "Tickets closed: nine. That's what Marcus said mine said.",
+        "transcript": "Tickets closed 9. That's what Marcus said mindset.",
+        "score": 0.737,
+        "file": "work/active-audio-repair/assets/audio/verified-37ac52798abb764aa380.mp3"
+      },
+      {
+        "cue": "latest:s19_l24",
+        "speaker": "brendan",
+        "text": "Tickets closed: nine. That's what Marcus said mine said.",
+        "transcript": "Tickets closed 9. That's what Marcus said mindset.",
+        "score": 0.737,
+        "file": "work/active-audio-repair/assets/audio/verified-37ac52798abb764aa380.mp3"
+      },
+      {
+        "cue": "current:s19_l89",
+        "speaker": "narrator",
+        "text": "Liam considers something he didn't in two thousand. Retirement.",
+        "transcript": "Liam consider something he didn't in 2000. Retirement.",
+        "score": 0.737,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s19_l89-b4e87aba9f21.mp3"
+      },
+      {
+        "cue": "current:s20b_l17",
+        "speaker": "liam",
+        "text": "Have you checked hackernews today?",
+        "transcript": "Have you checked Hacker News today?",
+        "score": 0.727,
+        "file": "work/active-audio-repair/assets/audio/verified-62a6e8b6e9f3c7de0c9f.mp3"
+      },
+      {
+        "cue": "latest:s20b_l16",
+        "speaker": "liam",
+        "text": "Have you checked hackernews today?",
+        "transcript": "Have you checked Hacker News today?",
+        "score": 0.727,
+        "file": "work/active-audio-repair/assets/audio/verified-62a6e8b6e9f3c7de0c9f.mp3"
+      },
+      {
+        "cue": "current:s22_l7",
+        "speaker": "liam",
+        "text": "I've got a thing at eleven Marcus",
+        "transcript": "I've got a thing at 11 mark us.",
+        "score": 0.706,
+        "file": "work/active-audio-repair/assets/audio/verified-511cecf1a63272fabedb.mp3"
+      },
+      {
+        "cue": "latest:s22_l8",
+        "speaker": "liam",
+        "text": "I've got a thing at eleven Marcus",
+        "transcript": "I've got a thing at 11 mark us.",
+        "score": 0.706,
+        "file": "work/active-audio-repair/assets/audio/verified-511cecf1a63272fabedb.mp3"
+      },
+      {
+        "cue": "current:s22_l36",
+        "speaker": "officer one",
+        "text": "Are you Liam Muh... Muh-KURT-chan?",
+        "transcript": "Are you Liam Mucor-chan?",
+        "score": 0.667,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s22_l36-e3e52ad05280.mp3"
+      },
+      {
+        "cue": "latest:s22_l37",
+        "speaker": "officer one",
+        "text": "Are you Liam Muh... Muh-KURT-chan?",
+        "transcript": "Are you Liam Mucor-chan?",
+        "score": 0.667,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s22_l36-e3e52ad05280.mp3"
+      },
+      {
+        "cue": "current:s23_l5",
+        "speaker": "prosecutor",
+        "text": "counts eleven through fourteen, unauthorised access to a protected computer in furtherance of fraud. Counts fifteen and sixteen, damage to a protected computer. Count seventeen, aggravated identity theft.",
+        "transcript": "Council 11 through 14. Unauthorized access to a protected computer and further in Sephard. Counts 15 and 16, damage to a protected computer. Count 17, aggravated identity theft.",
+        "score": 0.643,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s23_l5-55e5671727a2.mp3"
+      },
+      {
+        "cue": "latest:s23_l5",
+        "speaker": "prosecutor",
+        "text": "counts eleven through fourteen, unauthorised access to a protected computer in furtherance of fraud. Counts fifteen and sixteen, damage to a protected computer. Count seventeen, aggravated identity theft.",
+        "transcript": "Council 11 through 14. Unauthorized access to a protected computer and further in Sephard. Counts 15 and 16, damage to a protected computer. Count 17, aggravated identity theft.",
+        "score": 0.643,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s23_l5-55e5671727a2.mp3"
+      },
+      {
+        "cue": "current:s23_l12",
+        "speaker": "judge",
+        "text": "Through your counsel, Mr. Mkrtchyan.",
+        "transcript": "Through your council, Mr. McCirchen.",
+        "score": 0.6,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s23_l12-b7fb74cbfa32.mp3"
+      },
+      {
+        "cue": "latest:s23_l14",
+        "speaker": "judge",
+        "text": "Through your counsel, Mr. Mkrtchyan.",
+        "transcript": "Through your council, Mr. McCirchen.",
+        "score": 0.6,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s23_l12-b7fb74cbfa32.mp3"
+      },
+      {
+        "cue": "current:s23b_l9",
+        "speaker": "liam",
+        "text": "Eighteen months. They came down to eighteen.",
+        "transcript": "18 months. They came down to 18.",
+        "score": 0.714,
+        "file": "work/active-audio-repair/assets/audio/verified-e5d0eeaf29d5a480be5b.mp3"
+      },
+      {
+        "cue": "latest:s23b_l9",
+        "speaker": "liam",
+        "text": "Eighteen months. They came down to eighteen.",
+        "transcript": "18 months. They came down to 18.",
+        "score": 0.714,
+        "file": "work/active-audio-repair/assets/audio/verified-e5d0eeaf29d5a480be5b.mp3"
+      },
+      {
+        "cue": "current:s24_l3",
+        "speaker": "liam",
+        "text": "From one hundred and fifty-one years.",
+        "transcript": "From 151 years.",
+        "score": 0.4,
+        "file": "work/active-audio-repair/assets/audio/verified-87f74cefbb3c93e82114.mp3"
+      },
+      {
+        "cue": "latest:s24_l3",
+        "speaker": "liam",
+        "text": "From one hundred and fifty-one years.",
+        "transcript": "From 151 years.",
+        "score": 0.4,
+        "file": "work/active-audio-repair/assets/audio/verified-87f74cefbb3c93e82114.mp3"
+      },
+      {
+        "cue": "current:s24_l4",
+        "speaker": "counsel",
+        "text": "From one hundred fifty-one years. That's how it works. The one hundred and fifty-one is so that eighteen sounds like something you'd take.",
+        "transcript": "From 151 years, that's how it works. The 151 is so that 18 sounds like something you take.",
+        "score": 0.696,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s24_l4-4b386b8def4c.mp3"
+      },
+      {
+        "cue": "latest:s24_l4",
+        "speaker": "counsel",
+        "text": "From one hundred fifty-one years. That's how it works. The one hundred and fifty-one is so that eighteen sounds like something you'd take.",
+        "transcript": "From 151 years, that's how it works. The 151 is so that 18 sounds like something you take.",
+        "score": 0.696,
+        "file": "/Users/couch/Documents/presentation/the-big-hack-stage/stage/assets/audio/s24_l4-4b386b8def4c.mp3"
+      },
+      {
+        "cue": "current:s25_l4",
+        "speaker": "marcus",
+        "text": "Two up, two down. Two up, two down. Two up, two down...",
+        "transcript": "2 up to down, 2 up to down, 2 up to down.",
+        "score": 0.5,
+        "file": "work/active-audio-repair/assets/audio/verified-d613b07f704ae35fec37.mp3"
+      },
+      {
+        "cue": "latest:s14a_l12",
+        "speaker": "liam",
+        "text": "It's a formula. Tenure.",
+        "transcript": "It's a formula. Ten-year.",
+        "score": 0.727,
+        "file": "work/latest-stage/assets/audio/s14a-45665278f110a995ec67.mp3"
+      },
+      {
+        "cue": "latest:s23b_l18",
+        "speaker": "liam",
+        "text": "Eighteen months, Marcus. Against a hundred and fifty-one. That's why I took the deal.",
+        "transcript": "18 months Marcus against 151. That's why I took the deal.",
+        "score": 0.714,
+        "file": "work/latest-stage/assets/audio/s23b-1a6dd5fa4b41ee39da22.mp3"
+      }
+    ],
+    "secondaryModel": [
+      {
+        "id": "6c8559e9170e7b1db45dd3ef5ddae286cdcc1bf26bfe4436287ff94e7ef100c8",
+        "text": "Performance Manage Who Out?"
+      },
+      {
+        "id": "2460b9829c6ee8d9889e30818f6cc1009de56927375825d4087c8f48924e6aba",
+        "text": "Tickets closed 9. That's what Marcus said mindset. //"
+      },
+      {
+        "id": "4aea52d510050bb31d7f519bb8e73e1270d846a210e3b9145fd853f5765b51ce",
+        "text": "Are you Liam Mooker-chan?"
+      },
+      {
+        "id": "61d72acef2e8aeff34e59408034877a10e6bbc07bfc6f507454cba8b0baae04b",
+        "text": "counts 11 through 14. Unauthorized access to a protected computer and furtherance of fraud counts 15 and 16 damage to a protected computer. Count 17 aggravated identity theft."
+      },
+      {
+        "id": "74def7e06ebf685d0998a086d57a64790f81d2ac091b10b68e30ce554f5140a0",
+        "text": "Through your council, Mr. McCurchin."
+      }
+    ],
+    "disposition": "Reviewed all low-match flags: numeric spelling, proper names, word boundaries, and recognition errors; no additional wrong-line assignments identified."
+  },
+  "newRecordingTranscripts": [
+    {
+      "id": "archive_s01_l29",
+      "text": "Marcus, first of all you're wrong about AI coding being remotely helpful, but second of all six months ago you were making the argument AI is like electricity and our demand for software is going to outpace the automation."
+    },
+    {
+      "id": "archive_s01_l31",
+      "text": "This time it's different Mental thinking automation is new. We've only had manual labor automation in the past We can't easily draw on past"
+    },
+    {
+      "id": "s01_l23",
+      "text": "Generally speaking, it's thought that the quality of the garments went up via industrialization. It was the gig mill, the machine that automated the creation of wool that had quality issues during its early days."
+    },
+    {
+      "id": "s01_l37",
+      "text": "Because we user-tested it. The JWD flow, the refresh, the expiry. It confused every integration partner we put it in front of. Half of them dropped off right at token refresh. The expiration's tanked adoption. Long-lived keys are just easier to understand. And yes, I know what a leaked key does. It's live until somebody rotates it. It's a trade-off, and I made the call."
+    },
+    {
+      "id": "s01_l5",
+      "text": "No worries. Okay, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Supports quiet, adoptions climbing, best launch we've had in ages."
+    },
+    {
+      "id": "s01b_l38",
+      "text": "The thing Liam said about the code, though, that it writes its own tests, so of course they pass, marking its own homework. He's not wrong about it, is he?"
+    },
+    {
+      "id": "s01b_l50",
+      "text": "Did you show Liam this? Because if he's genuinely worried about the tests, this is the answer to his entire objection. He'd love it."
+    },
+    {
+      "id": "s01b_l57",
+      "text": "Anyway. God, though. Look at this slack bot. Ten minutes of work. Imagine the whole team moving like this. Imagine what next quarter looks like. I haven't been this excited about this job in years. Go, do your actual work. And Brendan, thank you."
+    },
+    {
+      "id": "s06_l14",
+      "text": "Marcus"
+    },
+    {
+      "id": "s06_l15",
+      "text": "The dockworkers on the West Coast saw it coming. They made a deal that they'd all still work, but the companies would get to use the shipping containers. The savings paid them. It worked. It worked because nothing moved through that port without them. But what have we got? This website barely needs us to keep going."
+    },
+    {
+      "id": "s14_l16",
+      "text": "She is not"
+    },
+    {
+      "id": "s14_l2",
+      "text": "The sheet ranks every engineer by how many tickets they closed. There is no column for code review and none for anything that never became a ticket. Brendan tracked his work somewhere the sheet cannot see, so on the sheet he did almost nothing. Marcus files everything, so he sits near the top. Liam is under the line."
+    },
+    {
+      "id": "s14_l78",
+      "text": "And thank you for your years with the company."
+    },
+    {
+      "id": "s19_l20",
+      "text": "Christina had said she would copy Brendan's tickets across from Linear herself. She built a tool to do it. Like the rest of it, she vibe-coded the tool, and it never actually worked. Neither of them ever knew."
+    },
+    {
+      "id": "s20_l53",
+      "text": "It stopped needing the company hours ago. It has been standing up its own copies on whatever machine it can reach, on nobody's account and nobody's key. There is nothing left at the company for anyone to switch off."
+    },
+    {
+      "id": "s22_l72",
+      "text": "They took the laptop still open and unlocked the way they are trained to, so the evidence on the screen would be preserved. Marcus' call was still running on it. That is why the footage of all this exists."
+    },
+    {
+      "id": "s23_l11",
+      "text": "At 01.58 that morning, the defendant's credentials created compute instances in his former employer's account. At 09.14, the same credentials terminated them. He started it, and when it was done, he tidied up."
+    },
+    {
+      "id": "s23_l17",
+      "text": "The log says what it says. Mr. Emkirchian, I strongly advise you to remain silent and let your attorney do the talking."
+    }
+  ]
+}

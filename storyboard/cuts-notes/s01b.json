@@ -1,0 +1,97 @@
+{
+  "sceneId": "s01b",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "b3365d5c2baef9a2",
+  "grade": "protected",
+  "protected": {
+    "yes": true,
+    "why": "Guardrail 2: Kristina buys into AI by using it and the discovery is shown on stage. The Cursor Demo is named as one of the two scenes that carry it, so the buy-in beats (l10 to l25, l34 to l37) are off limits. Trim around them only."
+  },
+  "function": {
+    "plot": "Kristina drops the idea of an HR complaint, builds and installs the Jira Slack bot at her own keyboard with Brendan, learns Brendan tracks his work in Linear and promises to copy it into Jira herself, and ends the scene sold on the tooling with Liam reframed as a challenge.",
+    "liam": "Liam is offstage but his standup objections get tested and half-vindicated (the invented endpoint, the hardcoded token), and the scene ends with his manager and his one ally agreeing that none of this can be got in front of him.",
+    "others": "Kristina converts by use, not by pitch; Brendan gets to be sincere, competent and generous, and his real method (plan first, dangerous five percent by hand, own integration tests) goes on the record so his aborted demos in s01c hurt.",
+    "comedy": "The plan that invents a Jira endpoint and wants to hardcode the token, 'I just approve it without reading the code?' 'Yup', '...Linear...?', and the grey 'and 3 linked issues resolved' that nobody reads.",
+    "spectacle": "Plan mode streaming an authoritative plan, hundreds of lines generating, the Approve/Deny install dialog, the board card sliding to Done and three more cards quietly following it.",
+    "setupPayoff": [
+      "Vault question typed by hand (pays s11c_l42)",
+      "Invented endpoint, catching it is the skill (pays s08_l59, s11c_l24, s11c_l28)",
+      "Brief a contractor, Approve/Deny (pays s11c_l40, s11c_l43)",
+      "Linear not Jira, Kristina will cross-post (pays s11c_l40, s14_l2, s19_l20)",
+      "This is the future (pays s11c_l45, progress's eulogy)",
+      "Brendan's method is real (backs s01c, s08_l39)",
+      "Ten minutes of work against four (pays s11c_l44)",
+      "Liam as a challenge, not a bad person (pays s07_l24, the review framing)"
+    ]
+  },
+  "turnsAt": "s01b_l37",
+  "ifRemoved": "Guardrail 2 breaks: Kristina's conversion would happen offstage, and s11c's Vault question, Approve/Deny and four-minute comparison would have no setup. The Linear plant that removes Brendan in s14 and s19 would have to be re-planted in s01 or s07, and the invented-endpoint beat cannot move because it needs Kristina at the keyboard. s01c's four aborted demos would lose the audience's knowledge that Brendan's method is real, and s08_l39 and s08_l59 would point at nothing.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s01b-1",
+      "kind": "cut-beat",
+      "cueIds": ["s01b_l31", "s01b_l32", "s01b_l33"],
+      "savingSeconds": 19.9,
+      "priority": 1,
+      "note": "l30 already makes the promise to copy Linear into Jira, which is the only thing s14_l2 and s19_l20 need. l32 says it a second time. If you want the irony of 'that's what gets you noticed', tack that clause onto l30."
+    },
+    {
+      "id": "s01b-2",
+      "kind": "compress-speech",
+      "cueIds": ["s01b_l42"],
+      "savingSeconds": 21.0,
+      "priority": 2,
+      "note": "Longest speech in the scene at 41.8 s and it is exposition. Keep 'you don't start with the code, you start with the plan, two pages, I read that like a hawk'. Cut the recap of Liam's eight hundred lines and the new-company documentation analogy. s01c and s08_l39 only need the shape."
+    },
+    {
+      "id": "s01b-3",
+      "kind": "cut-beat",
+      "cueIds": ["s01b_l52", "s01b_l53", "s01b_l54"],
+      "savingSeconds": 17.2,
+      "priority": 3,
+      "note": "'You struggle with him too' and 'he'll come around' narrate what s01c is about to show four times. Keep l50 and l51, then go straight to l55. Also note l51's 'I tried' plays before the attempt in s01c; 'I'll try' would fix the order."
+    },
+    {
+      "id": "s01b-4",
+      "kind": "compress-speech",
+      "cueIds": ["s01b_l57"],
+      "savingSeconds": 8.0,
+      "priority": 4,
+      "note": "Half of the closer repeats l49. Keep 'ten minutes of work' (s11c_l44 measures against it), 'imagine the whole team moving like this', and 'go, do your actual work, thank you'. Drop 'next quarter' and 'most excited in years'."
+    },
+    {
+      "id": "s01b-5",
+      "kind": "cut-beat",
+      "cueIds": ["s01b_l4", "s01b_l5"],
+      "savingSeconds": 11.1,
+      "priority": 5,
+      "note": "Enter later on the HR thread. l2 raises it, l3 answers it, l6 lets it go. 'HR makes the next standup worse' is not paid anywhere and the 'thorny' defence is already in l3."
+    },
+    {
+      "id": "s01b-6",
+      "kind": "cut-beat",
+      "cueIds": ["s01b_l39", "s01b_l40"],
+      "savingSeconds": 8.2,
+      "priority": 6,
+      "note": "'Let me show you my process' and 'Please. Yes. Show me.' are throat-clearing. l38's question can go straight to the screen share at l41 and the speech at l42."
+    },
+    {
+      "id": "s01b-7",
+      "kind": "compress-speech",
+      "cueIds": ["s01b_l44", "s01b_l46", "s01b_l48"],
+      "savingSeconds": 14.0,
+      "priority": 7,
+      "note": "The tests exchange lands the same point three times (l46, l47, l48). Cut l48 whole, trim the 'boring ninety-five percent' tag off l44 and the error-handling tail off l46. Keep l47, it is Kristina getting it."
+    },
+    {
+      "id": "s01b-8",
+      "kind": "cut-beat",
+      "cueIds": ["s01b_l9"],
+      "savingSeconds": 5.9,
+      "priority": 8,
+      "note": "Kristina calls it fun before anything has happened. l37 is where she earns the line, and it pays l8, not l9. Brendan's l10 follows l8 cleanly."
+    }
+  ],
+  "recommendedSavingSeconds": 105.3
+}

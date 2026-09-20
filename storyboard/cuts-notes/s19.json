@@ -1,0 +1,105 @@
+{
+  "sceneId": "s19",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "f94efb104fdb44a3",
+  "grade": "costly",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "The Mac Studio, with Liam's un-revoked AWS session and the unlocked model on it, passes into Brendan's hands, and Brendan leaves with the question (why me and not Marcus) and the beer that he will type into it in s20.",
+    "liam": "B9 and the start of the second half: his warmest and most useful moment (the layoff advice, the dot-com story, we'll get through it), he refuses Brendan's confession out of kindness, and giving the machine away is the last free choice he makes in the play.",
+    "others": "Brendan is shown after his own layoff (first swear, no resume, no money for tokens), tries a third time to confess the peer review and is stopped, and takes the weapon home.",
+    "comedy": "The glasses, Course he is about Marcus, Liam adopting kinda bullshit, tell them you were impacted by layoffs, and Fuck them at the door: small and dry, no big laughs, which is right for where the play is.",
+    "spectacle": "The handover at s19_l74, the first physical contact between two humans in the play, and the clean rectangle on the desk after Brendan goes.",
+    "setupPayoff": [
+      "pays: Marcus keeps his job (s19_l25 to s19_l27)",
+      "pays: the Studio is not on the asset register (s14_l76 to s19_l66)",
+      "pays: Brendan's third confession attempt, stopped by Liam (s19_l51 to s19_l54)",
+      "pays: first physical contact (s19_l74)",
+      "pays: the portal Liam mocked in s01 and s01c (s19_l8)",
+      "plants: why me and not Marcus (s19_l14 to s20_l28)",
+      "plants: Don't go quiet (s19_l82 to s20_l71)",
+      "plants: text me about interviews (s19_l80 to s20_l67)",
+      "plants: I'll bring it back next week (s19_l76 to s20b)",
+      "plants: no money for tokens (s19_l69 to s20_l24)",
+      "plants: nobody else with access (s19_l74 to s23_l12 and s24_l18)"
+    ]
+  },
+  "turnsAt": "s19_l71",
+  "ifRemoved": "The hack has no way to start: s20 opens on Brendan drunk with Liam's machine, and s20b, s23_l12 and s24_l18 all rest on the audience having watched the handover. Nothing before this scene puts the Studio anywhere but Liam's desk, so removing it would force a narrated handover at the top of s20, which is a new device arriving late and loses the only physical contact in the play. The scene is already under the show average (3.2 min of dialogue) and carries five plants for the last third; trim inside it, do not lift it. Note for the author: the Curdle Ledger row about the USB-C adapter (Nah, fuck it, I'm not giving them shit) no longer matches the script, where Liam sends the box back at s19_l64 and the free choice is giving the Studio away instead.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s19-1",
+      "kind": "redundant",
+      "cueIds": ["s19_l13"],
+      "savingSeconds": 7.8,
+      "priority": 1,
+      "note": "Cut Brendan's second bullshit speech. It announces his feelings (so heartless, they have no idea what work we do), which is the exact point s19_l30 to s19_l34 then makes as a joke, and the s14 narrator already told the house the sheet cannot see his work. Go straight from s19_l11 to s19_l14."
+    },
+    {
+      "id": "s19-2",
+      "kind": "compress-speech",
+      "cueIds": ["s19_l39"],
+      "savingSeconds": 9.0,
+      "priority": 2,
+      "note": "Liam's 21 second three-item list. Keep the impacted-by-layoffs joke and You will. Cut the third item (write down your accomplishments) to one short sentence or drop it; it restates the first item and is the least funny of the three. About 9 seconds."
+    },
+    {
+      "id": "s19-3",
+      "kind": "trim",
+      "cueIds": ["s19_l60", "s19_l61", "s19_l62", "s19_l64", "s19_l65"],
+      "savingSeconds": 10.5,
+      "priority": 3,
+      "note": "The box haggle is five short beats to reach a line the scene can reach in one. Go from s19_l59 to s19_l66 with a though added (I'll tell you what I'm not sending back, though). Known loss: Brendan floating a small dishonesty and Liam declining it, and the stage note about Liam remembering being 28."
+    },
+    {
+      "id": "s19-4",
+      "kind": "cut-beat",
+      "cueIds": ["s19_l20"],
+      "savingSeconds": 11.9,
+      "priority": 4,
+      "note": "Narrator V.O. about Kristina's Linear tool never working. It is backstory the audience cannot use on stage and s14_l2 already covers why Brendan is under the line. Costs 11.9 seconds only if the V.O. is voiced in performance; if it is storyboard only the saving is zero either way, so it is free to drop."
+    },
+    {
+      "id": "s19-5",
+      "kind": "compress-speech",
+      "cueIds": ["s19_l43"],
+      "savingSeconds": 4.0,
+      "priority": 5,
+      "note": "Cut the Netfold sentence and keep Everyone was, then What did you do (s19_l44) and the printers line (s19_l45) still work. The dead-company joke is fine but the printers line is the one the ledger names. About 4 seconds."
+    },
+    {
+      "id": "s19-6",
+      "kind": "compress-speech",
+      "cueIds": ["s19_l80"],
+      "savingSeconds": 4.0,
+      "priority": 6,
+      "note": "Shorten the door line to Text me if you land any interviews. Even the rubbish ones. It still plants the 06:02 text in s20 and keeps Don't go quiet (s19_l82) as the last thing he says. About 4 seconds."
+    },
+    {
+      "id": "s19-7",
+      "kind": "cut-beat",
+      "cueIds": ["s19_l29", "s19_l75"],
+      "savingSeconds": 14.2,
+      "priority": 7,
+      "note": "Storyboard only, zero stage seconds. s19_l29 tells the house what both men are thinking, and s19_l75 marks the hands touching, which the ledger says must pass unmarked. Both are author-pass lines, so this is a question, not a cut: the stage direction at s19_l74 already does the job."
+    },
+    {
+      "id": "s19-8",
+      "kind": "trim",
+      "cueIds": ["s19_l3", "s19_l4", "s19_l5", "s19_l6"],
+      "savingSeconds": 9.1,
+      "priority": 8,
+      "note": "Enter-late option: open on the portal compliment and lose the glasses. Not recommended: it is the only beat that shows, rather than narrates, that they have never been in a room together, and it is the cheapest laugh in the scene. Take it only if Movement III still needs seconds after 1 to 6."
+    },
+    {
+      "id": "s19-9",
+      "kind": "trim",
+      "cueIds": ["s19_l8", "s19_l9"],
+      "savingSeconds": 10.5,
+      "priority": 9,
+      "note": "Alternative to s19-8, not both, and not recommended: cut the portal compliment. It pays off the s01 vibecoded humiliation and s01c in one line, and nothing else in the play has Liam say it to Brendan's face; s20b_l35 is the nearest substitute and is said to a third party."
+    }
+  ],
+  "recommendedSavingSeconds": 47.2
+}

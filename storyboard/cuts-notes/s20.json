@@ -1,0 +1,106 @@
+{
+  "sceneId": "s20",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "4c5c500e74be0117",
+  "grade": "costly",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "Brendan, drunk, finds Liam's un-revoked AWS session on the borrowed Mac Studio, gives the local model the tools Liam refused it, tells it to find out why he was fired, and sleeps while it grows into a worm; in the morning he spins down the instances under Liam's credentials, so both timestamps carry Liam's name.",
+    "liam": "Liam is absent and it is the hinge of his back half: everything that convicts him (the credential, the 01:58 and 09:14 log entries, the unlocked model) is created here by someone else, so he never acts and is still the one processed.",
+    "others": "Brendan's honesty without imagination at company scale: one true, reasonable instruction typed without picturing where it goes, then the fourth backspace on the reply to Liam's kind text.",
+    "comedy": "The company forgot to revoke access while counting tickets, and Opus refuses the cleanup on the hacked context then complies in a fresh window; small, and the scene is meant to be the coldest in the show.",
+    "spectacle": "The overnight counter sequence (s20_l43 to s20_l54) as projected timestamps and sound, plus the audit-tools, audit-buckets, audit-result and phone-delete screens.",
+    "setupPayoff": [
+      "pays: I don't give it tool calls (s11b_l66)",
+      "pays: rogue agents deleting production databases (s11b_l66)",
+      "pays: un-revoked access as a kindness (s14)",
+      "pays: long-lived keys and the JWT memo (s01_l31 to s01_l37)",
+      "pays: the handover of the machine (s19_l74)",
+      "pays: Brendan's honesty without imagination (s12 form to this instruction)",
+      "pays: backspace motif, fourth deletion (s20_l71)",
+      "plants: 01:58 and 09:14 under Liam's credentials (s23_l11, s24_l18)",
+      "plants: the unlocked model (s20b_l8, s23_l40)",
+      "plants: backups already carrying it (s20b_l21)",
+      "plants: audit logs record the account not the person (s23_l10, s23_l15)",
+      "plants: Liam's job-application text (s20b_l13, s20b_l15)"
+    ]
+  },
+  "turnsAt": "s20_l33",
+  "ifRemoved": "The hack would happen offstage and the trial timestamps (s23_l11), the Opus audit line (s20b_l7), the backups line (s20b_l21) and counsel's last question (s24_l18) would become bare assertions with nothing behind them. The tool-calls, rogue-agents and un-revoked-access setups would all lose their payoff, and the play would lose its rule that Liam never acts. The only place to carry it is s20b, and that would need Brendan to confess to Liam, which kills the dramatic irony that scene and the trial gallery depend on.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s20-1",
+      "kind": "cut-beat",
+      "cueIds": ["s20_l72"],
+      "savingSeconds": 7.0,
+      "priority": 1,
+      "note": "Cut Brendan's closing line. It announces his feeling, which the style rule forbids, and s20b_l2 shows the same decision when he walks in carrying the machine. End on the held backspace at s20_l71."
+    },
+    {
+      "id": "s20-2",
+      "kind": "redundant",
+      "cueIds": ["s20_l37"],
+      "savingSeconds": 10.8,
+      "priority": 2,
+      "note": "Drop the narrator's unlocked-Qwen explainer. Liam tells Brendan the same thing sideways at s20b_l8, and Marcus repeats it at s23_l40. Told in conversation beats told by the narrator."
+    },
+    {
+      "id": "s20-3",
+      "kind": "trim",
+      "cueIds": ["s20_l44", "s20_l45", "s20_l48", "s20_l50", "s20_l53"],
+      "savingSeconds": 52.7,
+      "priority": 3,
+      "note": "Compress the overnight counter to six beats: spread (l43), secrets manager (l46), pagers (l47), the company bots join (l49), beyond the company (l51), revoke and climb (l52), backup comes back carrying it (l54). Keep the 01:58 stamp; s23_l11 quotes it, though there it is attached to instance creation, not the secrets manager. This is wordless business time, not dialogue."
+    },
+    {
+      "id": "s20-4",
+      "kind": "cut-beat",
+      "cueIds": ["s20_l30", "s20_l36", "s20_l40", "s20_l41"],
+      "savingSeconds": 23.4,
+      "priority": 4,
+      "note": "Drop the narrator hedges and mechanism notes around the instruction. l40 and l41 explain why it can spread, which the counter shows anyway. l36 and l39 say the same thing; keep l39 as the last line before bed."
+    },
+    {
+      "id": "s20-5",
+      "kind": "compress-speech",
+      "cueIds": ["s20_l62", "s20_l64"],
+      "savingSeconds": 15.8,
+      "priority": 5,
+      "note": "Cut both morning narrator cues by about sixty percent. The refusal is on the audit-cleanup-refused screen and l63 carries it; l64 only needs 'he opens a fresh window with no history and asks again'. Keep l65 and l66 whole; the 09:14 termination under Liam's name is what s23_l11 quotes."
+    },
+    {
+      "id": "s20-6",
+      "kind": "redundant",
+      "cueIds": ["s20_l14", "s20_l18"],
+      "savingSeconds": 12.4,
+      "priority": 6,
+      "note": "The discovery says 'nobody revoked it' three times. l16 is the version with the joke and the Nine Tickets callback, so keep it. l18's JWT memo is paid better by Liam himself at s20b_l25, where it curdles."
+    },
+    {
+      "id": "s20-7",
+      "kind": "cut-beat",
+      "cueIds": ["s20_l19", "s20_l24", "s20_l26"],
+      "savingSeconds": 10.4,
+      "priority": 7,
+      "note": "Fold l19 into l20 as one line. Cut the tokens quip and 'how stupid is this company', which repeats l16. Keep l21 to l23 and l25 whole: the model refusing for lack of tools and Brendan adding them is the payoff of s11b_l66 and must be seen."
+    },
+    {
+      "id": "s20-8",
+      "kind": "cut-beat",
+      "cueIds": ["s20_l4", "s20_l17", "s20_l27", "s20_l38"],
+      "savingSeconds": 9.0,
+      "priority": 8,
+      "note": "Brendan is marked drinking five times. l1 sets that one does a number on him; keep one visible drink at l6 before the instruction and lose the rest. The staging reads it from the back row without the narrator counting cans."
+    },
+    {
+      "id": "s20-9",
+      "kind": "cut-beat",
+      "cueIds": ["s20_l56", "s20_l59"],
+      "savingSeconds": 7.3,
+      "priority": 9,
+      "note": "Wake-up filler. The phone buzz at l55 and the screen at l57 do the work; 'he wipes his eyes' and 'he slowly remembers' are camera beats, not stage ones."
+    }
+  ],
+  "recommendedSavingSeconds": 148.8
+}

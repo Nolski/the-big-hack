@@ -1,0 +1,70 @@
+{
+  "sceneId": "s20b",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "5fc62227b66b03ac",
+  "grade": "costly",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "The Mac Studio goes back into Liam's apartment the same day, the worm becomes public news, and neither man connects the two, which is what lets the agents recover the device from Liam's home in s22 and s23.",
+    "liam": "His first reaction to the hack is a craftsman's admiration (it used long-lived keys, everything it did it was allowed to do), the beat the arc doc calls the whole character, and it seeds his useless Van Buren defence in s23.",
+    "others": "Brendan hears Liam praise the thing he set loose and says nothing, holding the confession Liam refused in s19 while Liam emails a friend on his behalf.",
+    "comedy": "Dramatic irony: Ukraine or Iran, the Kazakhstan chyron nobody reads, and Liam wishing he could help with incident response.",
+    "spectacle": "The news chyron under the counter, the machine put down on the table, and Liam plugging it back in to the same wallpaper.",
+    "setupPayoff": [
+      "pays: long-lived tokens and the JWT memo (s01, s20)",
+      "pays: backups already carrying it (s20 counter)",
+      "pays: the unlocked Qwen (s20 narrator, spoken here for the first time)",
+      "pays: Liam's layoff advice and the 06:02 text (s19, s20)",
+      "plants: device recovered from the defendant's home (s22, s23)",
+      "plants: everything it did it was allowed to do (Liam's Van Buren speech, s23)",
+      "plants: Liam knows who was at the machine at 09:14 (same day, hung over, s23)",
+      "plants: nobody else with access to your account (s24)"
+    ]
+  },
+  "turnsAt": "s20b_l25",
+  "ifRemoved": "The physical return of the machine has to happen somewhere before the raid, so it would become a wordless top to s22: Brendan sets the box down, leaves, Liam plugs it in, the Marcus call starts. Liam's admiration lines (l25, l26) could move into that call as his answer to the Luddite rant, and the malware news could arrive as a chyron. What cannot move is Brendan standing in the room while Liam praises the hack; s22 has no Brendan, so the rest test loses him for the whole back half of Movement III.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s20b-1",
+      "kind": "cut-beat",
+      "cueIds": ["s20b_l19", "s20b_l20"],
+      "savingSeconds": 10.4,
+      "priority": 1,
+      "note": "Drop the vague speculation about a group launching different attacks and the first sounds interesting. Liam goes from hackernews malware (l18) straight to the backups line (l21), and Brendan's Ukraine or Iran reply (l22) still lands the irony. Nothing later points at l20."
+    },
+    {
+      "id": "s20b-2",
+      "kind": "cut-beat",
+      "cueIds": ["s20b_l10", "s20b_l11", "s20b_l31", "s20b_l42", "s20b_l43"],
+      "savingSeconds": 9.1,
+      "priority": 2,
+      "note": "Filler exchanges: the coffee or tea offer repeats the glass bit from s19, Oh well is a dead beat after the incident response line, and Go home, eat something, yeah is a run of short beats before the door. Keep l40 and l41; the hung over line is what tells Liam who had the machine last night."
+    },
+    {
+      "id": "s20b-3",
+      "kind": "trim",
+      "cueIds": ["s20b_l13", "s20b_l14", "s20b_l15"],
+      "savingSeconds": 12.8,
+      "priority": 3,
+      "note": "The resume count restates advice the audience saw on Liam's 06:02 text in s20 and heard in s19. Cheerful Liam is already carried by l3 and the friend email. If one line must stay, keep l13 and drop l14 and l15 (3.8 s)."
+    },
+    {
+      "id": "s20b-4",
+      "kind": "cut-beat",
+      "cueIds": ["s20b_l36", "s20b_l37", "s20b_l38"],
+      "savingSeconds": 12.0,
+      "priority": 4,
+      "note": "Leave the email beat early. l35 (best engineer I've worked with in ten years) is the gift and the rhyme with what Marcus says of Liam; the follow-up instructions about the no and calling her repeat the same generosity. The friend never returns anywhere in the script, so nothing is orphaned. Cutting l33 to l38 entirely saves 21.4 s if the movement needs it."
+    },
+    {
+      "id": "s20b-5",
+      "kind": "compress-speech",
+      "cueIds": ["s20b_l25"],
+      "savingSeconds": 3.5,
+      "priority": 5,
+      "note": "Cut the tag you know, the thing I wrote about in my JWT memo. Brendan named the memo out loud in s20 the night before; long-lived API keys is enough for the audience to hear the s01 callback. Keep the rest of l25 and all of l26, which seeds his defence in s23."
+    }
+  ],
+  "recommendedSavingSeconds": 47.8
+}

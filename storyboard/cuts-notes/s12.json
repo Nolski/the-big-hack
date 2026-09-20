@@ -1,0 +1,114 @@
+{
+  "sceneId": "s12",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "949b928ffa390b3d",
+  "grade": "costly",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "The H2 peer form gets filled (Marcus files the nine days, Brendan submits four true paragraphs), the tool folds them into 'Multiple peers cite friction and slow review turnaround', and Liam reads that sentence in his self-review and promises the same-day review timebox: Liam goes from unpriced to priced.",
+    "liam": "B6, the quiet: he debugs his own review ('friction isn't a thing, no reporter, no repro steps') and is completely right, asks Brendan 'did you put something?', is told 'yeah', hears it as form completion and moves on, then thanks the man who wrote it as the only one who tells him anything.",
+    "others": "Brendan's one non-deletion (he curates toward kindness and builds the weapon); Marcus's standup 'noted' finally lands somewhere that records things and he encourages Brendan to add his own with no malice in it.",
+    "comedy": "The snitch box, Marcus liking Liam while filing him, the digest that already recorded the Luddite argument he thinks nobody minutes, and Liam parsing 'multiple' ('more than one, so two at minimum, there are four engineers on this team, one of them is me').",
+    "spectacle": "Brendan alone with the free-text box: sliders, drafts typed and read back, one sentence deleted, the Submit button, then the summary generating on screen with nobody watching.",
+    "setupPayoff": [
+      "PAYS Marcus 'I want it noted' (s11b) via l29 and the digest V.O. l30",
+      "PAYS Brendan's three deletions (s11b): the one time he does not delete, l58-l70",
+      "PLANTS 'Responses are anonymised, shared in summary' l27 -> s23 (Marcus 'we were told nobody would see the raw feedback')",
+      "PLANTS the summary sentence l70 -> s14 nine days in his file, s23 read into court",
+      "PLANTS 'did you put something?' / 'yeah' l86-l87 -> s19 'there's a thing I should probably... in the peer review' stopped by Liam",
+      "PLANTS 'I want to be clear that I'm not...' l69 -> never finished, anywhere",
+      "PLANTS twenty minutes vs four seconds (l68, l70)",
+      "PLANTS Liam debugging his own review l90 -> takes the queue advice l101-l103, 'you're the only one who'll tell me anything' l106",
+      "PLANTS the timebox promise l103 -> s14 l56 'when a review sits for nine days... it's in my file'",
+      "PLANTS Collaboration self-rated briskly (l105, stage direction) -> s14 l41 'the collaboration thing' (the s13 review scene is not in the script)",
+      "PLANTS Brendan's honesty without imagination (the form) -> s20 the drunk instruction",
+      "REPEATS the measured-sprints line (s11b l71, s11c l21) into the file at l57"
+    ]
+  },
+  "turnsAt": "s12_l70",
+  "ifRemoved": "The summary sentence would have no origin, and it is quoted in s14 (the nine days in his file) and read into court in s23; Marcus's testimony in s23 needs him to have filled this form and to have been told it was anonymous. 'Did you put something?' is the setup for the s19 confession Liam refuses, the timebox promise is what s14 shows him having done, and this is the only Brendan-alone stretch in the show and the only rest between the Liam-Marcus fight of s11b and the offboarding. None of it can move: the form must sit between s11b and the review, and the phone call must precede s14. Trim inside only.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s12-1",
+      "kind": "cut-beat",
+      "cueIds": ["s12_l66", "s12_l67"],
+      "savingSeconds": 11.7,
+      "priority": 1,
+      "note": "Cut the fifth paragraph. It introduces a migration race condition the audience has never seen, and l68 says 'four paragraphs': without l67 the count is true (strongest engineer, local setup, review queue, newer engineers). Brendan's fairness is already in l53 and l60."
+    },
+    {
+      "id": "s12-2",
+      "kind": "trim",
+      "cueIds": ["s12_l12", "s12_l13"],
+      "savingSeconds": 8.4,
+      "priority": 2,
+      "note": "Enter late. Open the huddle on l14 'Hey, did you do the feedback thing?' The narrator l11 already says they are reviewing a diff, and the migration reference only served l67. One less Marcus clip to render."
+    },
+    {
+      "id": "s12-3",
+      "kind": "redundant",
+      "cueIds": ["s12_l38", "s12_l39", "s12_l42", "s12_l43"],
+      "savingSeconds": 6.4,
+      "priority": 3,
+      "note": "'It's optional' and 'loads of people leave it blank' both repeat Marcus's l32. Keep the two hedges the ledger names (l41 'No major concerns', l45 'Nobody's making it harder') and the rationalisation l47-l49. Two stage-direction pauses go with them."
+    },
+    {
+      "id": "s12-4",
+      "kind": "compress-speech",
+      "cueIds": ["s12_l90"],
+      "savingSeconds": 6.5,
+      "priority": 4,
+      "note": "Liam's friction speech is 20.7 s. Drop the bug-report analogy sentence ('If you file a bug that says it's slow, I go and find out what's slow, which call, which query, which week') and keep 'Friction with what? On which PR? There's no reporter, there's no steps, there's no version. It's not a defect report. It's a mood.' The ledger beat is intact."
+    },
+    {
+      "id": "s12-5",
+      "kind": "compress-speech",
+      "cueIds": ["s12_l32"],
+      "savingSeconds": 6.3,
+      "priority": 5,
+      "note": "Marcus's send-off is 12.6 s and says 'put something' three ways. Keep 'Put something, though. Most people leave it blank. It's the only place it goes.' and lose the DMs-for-six-months tail. Pre-rendered clip, so this is a re-render, not a live trim."
+    },
+    {
+      "id": "s12-6",
+      "kind": "compress-speech",
+      "cueIds": ["s12_l57"],
+      "savingSeconds": 6.0,
+      "priority": 6,
+      "note": "Third airing of the measured-sprints fact (s11b l71, s11c l21 nearly word for word). Keep 'He's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself.' plus the 'settled something' tag so the l58-l59 deletion still works. Only if s11c stays; if s11c is cut per the author pass, keep l57 whole."
+    },
+    {
+      "id": "s12-7",
+      "kind": "trim",
+      "cueIds": ["s12_l74", "s12_l76", "s12_l78"],
+      "savingSeconds": 4.0,
+      "priority": 7,
+      "note": "Call preamble. The narrator l70 already says Liam calls Brendan; go l75 'Are you free? Two minutes' straight into l77. Both actors are live, so nothing to re-cue."
+    },
+    {
+      "id": "s12-8",
+      "kind": "compress-speech",
+      "cueIds": ["s12_l70"],
+      "savingSeconds": 13.6,
+      "priority": 8,
+      "note": "The narrator summary line is 27.2 s. Keep the submit, the bullet under Liam's name, and 'a few days later Liam calls Brendan'; let the screen carry 'nobody typed that sentence' and the four seconds. Saves stage time only if this line is voiced on stage; if it plays as a screen event it costs nothing now."
+    },
+    {
+      "id": "s12-9",
+      "kind": "compress-speech",
+      "cueIds": ["s12_l92", "s12_l93", "s12_l94", "s12_l95"],
+      "savingSeconds": 6.3,
+      "priority": 9,
+      "note": "Alternative, not recommended. Cut 'I'm good at that. That's the one thing I'm actually...' and the Sorry / You're alright exchange, ending l92 on 'I'll go and fix the thing.' It is close to self-narration, but the stop is a small human beat and the loss is known."
+    },
+    {
+      "id": "s12-10",
+      "kind": "cut-beat",
+      "cueIds": ["s12_l14", "s12_l15", "s12_l16", "s12_l17", "s12_l18", "s12_l20", "s12_l21", "s12_l22", "s12_l24", "s12_l25", "s12_l26", "s12_l27", "s12_l28", "s12_l29", "s12_l31", "s12_l32", "s12_l33"],
+      "savingSeconds": 88.6,
+      "priority": 10,
+      "note": "Alternative, not recommended: drop the Marcus huddle and have Brendan open the form alone off the email. Saves about 90 s but orphans Marcus's 'noted' payoff, the snitch box, and the spoken anonymity notice that s23 l37 relies on (it would have to survive on screen in l19). Only if Movement II cannot be brought in any other way."
+    }
+  ],
+  "recommendedSavingSeconds": 49.3
+}

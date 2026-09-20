@@ -1,0 +1,97 @@
+{
+  "sceneId": "s06",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "6244e693b4e0c1bd",
+  "grade": "protected",
+  "protected": {
+    "yes": true,
+    "why": "Guardrail 3 names the s06 standup as one of the three talked-over-Kristina sequences (cut only if absolutely necessary, as a known loss). The huddle half is also load-bearing: s07 is built entirely on it, it is Liam's last good day (B4), and it plants two Curdle Ledger rows. Trim inside only; no cut-scene, no merge."
+  },
+  "function": {
+    "plot": "The signup race condition that has been on the board since s01 gets solved, Liam credits Brendan for a catch Claude actually made, and Brendan hides the proof (the dangling branch), which is the premise s07 opens on.",
+    "liam": "B4, the last good day: he refuses the tool three times, is right once (prod PII), cracks the bug in front of Brendan and is the most likeable he ever is, on a screen that is quietly proving him wrong.",
+    "others": "Brendan's first concealment (he checks out main and says nothing), the start of the backspace motif; Marcus's second Luddite derail states the pro-Luddite position that s11b_l7 throws back at him; Kristina takes a correction from Liam without defensiveness.",
+    "comedy": "The protected standup argument (Marcus versus the time limit, Liam's 'losing side of history' jab, John Henry) and the dramatic irony of 'good instinct, kid' said to a man reading off a screen Liam cannot see.",
+    "spectacle": "Claude working silently on Brendan's laptop while Liam refuses it (s06_l34, s06_l42), then the closing two-screen hold: Liam typing the fix, Brendan's rolled-back cursor (s06_l51, screen checkout-main).",
+    "setupPayoff": [
+      "Plants: 'good instinct, kid' (credit handed past Liam; pays as friction and the machine's velocity at s07 and the review)",
+      "Plants: the three refusals, 'it can't reason about concurrency', 'no red test to hand it', 'you don't paste prod data' (paid in-scene by s06_l42, then s07_l4; the PII one is the corner Marcus cuts at s11b_l5 and s20 pays it in full)",
+      "Plants: Brendan leaves the fix branch dangling and shows nothing (s07_l25 deletes it; s11b_l70 and s11b_l75 and s20_l71 repeat the gesture)",
+      "Plants: Marcus 'sweat shop workers hitting approve' (s11b_l17 'That's what the job is now. Hitting approve.')",
+      "Plants: Marcus pro-Luddite at s06_l9 (s11b_l7 'you were arguing the exact opposite a couple months ago')",
+      "Plants: 'autocomplete with good manners' (s11b_l64 'fancy autocomplete', s11c_l23)",
+      "Pays: s01_l50 'still chasing the race condition' and the s01_l51 estimate refusal",
+      "Referenced: s11b_l73 'older than he was in Scene 06'; s08_l25 'Liam finally closed out the signup work'"
+    ]
+  },
+  "turnsAt": "s06_l47",
+  "ifRemoved": "s07 loses its whole premise (Brendan telling Kristina it was Claude, the branch he deletes), Liam loses his one victory lap, and the 'good instinct' and 'it can't do X' ledger rows orphan along with the s11b_l7 and s11b_l73 callbacks. The fix and Brendan's concealment would have to be shown somewhere before s07, and no other scene has a live Liam-Brendan huddle with a screen Liam cannot see. The standup half could in principle shrink to Kristina's board plus Brendan's offer, but its argument is a guardrail 3 beat.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s06-1",
+      "kind": "cut-beat",
+      "cueIds": ["s06_l18", "s06_l19"],
+      "savingSeconds": 19.9,
+      "priority": 1,
+      "note": "Kristina pressing for an update and Liam's 'it's not a burndown chart' speech replay s01_l51 to s01_l53 (the estimate he refuses to invent). Go from 'Still on it. No blockers.' at s06_l17 straight to s06_l20; her 'I'm trying to make the tradeoff visible' reads clean as the reply. If the movement still needs more, s06_l20 to s06_l22 can follow for 26.5 s, since s06_l30 restates the four users."
+    },
+    {
+      "id": "s06-2",
+      "kind": "compress-speech",
+      "cueIds": ["s06_l30"],
+      "savingSeconds": 10.0,
+      "priority": 2,
+      "note": "Liam's huddle opener re-describes the bug the audience just heard at s06_l21 (four users, someone else's account). Keep the new part: cannot reproduce it, ten thousand signups in a loop locally, nothing, only ever in prod under real traffic. About 10 of 24.8 s."
+    },
+    {
+      "id": "s06-3",
+      "kind": "compress-speech",
+      "cueIds": ["s06_l37"],
+      "savingSeconds": 9.0,
+      "priority": 3,
+      "note": "Keep 'I can't make it fail on demand... there's no red test to hand it' (the ledger refusal, paid by s06_l42). Cut the tail about it fixing the bug, saying it's solved, lying and sounding sure, which repeats s01c_l17 and s01c_l19. About 9 of 19.0 s."
+    },
+    {
+      "id": "s06-4",
+      "kind": "cut-beat",
+      "cueIds": ["s06_l13", "s06_l14", "s06_l15"],
+      "savingSeconds": 31.4,
+      "priority": 4,
+      "note": "John Henry is a second history inside one derail, and the heart-attack line never returns anywhere in the play. The Luddite half (s06_l9, s06_l12) is what s11b_l7 pays off, so keep that and end the derail on Liam's 'please stop talking about the Luddites', then s06_l16. Known loss under guardrail 3; the talked-over rhythm survives in s06_l5 to s06_l12. Retire the john-henry lookup screen with it."
+    },
+    {
+      "id": "s06-5",
+      "kind": "compress-speech",
+      "cueIds": ["s06_l12"],
+      "savingSeconds": 8.0,
+      "priority": 5,
+      "note": "The joke is s06_l10 ('the losing side of history'); s06_l12 explains it. Keep 'They got hanged by the British army. Seems pretty clear cut. Anyway, I'm trying to read this code. Please stop talking about the Luddites.' Drop the first sentence about factories being burned. About half of 16.5 s."
+    },
+    {
+      "id": "s06-6",
+      "kind": "compress-speech",
+      "cueIds": ["s06_l9"],
+      "savingSeconds": 7.9,
+      "priority": 6,
+      "note": "Marcus's power-loom history is the second telling after s01_l22, and Liam interrupts it anyway. Cut it to 'No Kristina, because this has all happened before. The power looms could make textiles way faster than workers who used to work from home and were well paid...' and let s06_l10 land on it. About half of 15.8 s."
+    },
+    {
+      "id": "s06-7",
+      "kind": "compress-speech",
+      "cueIds": ["s06_l47"],
+      "savingSeconds": 5.0,
+      "priority": 7,
+      "note": "The solve is the high point and the repetition is character, so touch lightly. 'They both key on zero. They get the same session.' restates the previous sentence, and three 'one line' repeats can be two. About 5 of 25.8 s. Keep 'It was never the tokens. It was never the crypto.', which pays s06_l32."
+    },
+    {
+      "id": "s06-8",
+      "kind": "compress-speech",
+      "cueIds": ["s06_l51"],
+      "savingSeconds": 0.0,
+      "priority": 8,
+      "note": "The 39.8 s narrator run is storyboard playback, not stage time. On stage it is a wordless two-screen hold; time it at about fifteen seconds in rehearsal, not forty. If the playback matters, read only the three actions (Claude's proof, Brendan checks out main, Liam types on) and let the image hold. Zero stage seconds."
+    }
+  ],
+  "recommendedSavingSeconds": 91.2
+}

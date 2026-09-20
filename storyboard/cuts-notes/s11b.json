@@ -1,0 +1,99 @@
+{
+  "sceneId": "s11b",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "a984ca9739da7f17",
+  "grade": "protected",
+  "protected": {
+    "yes": true,
+    "why": "Guardrail 3: the standup argument and the talking over Kristina in s11b are the strongest comedy in the play and the author has said s11b stays intact. The scene also plants more Curdle Ledger setups than any other scene (the rig, the three backspaces, the noted gag, the Chinese backdoor thread, the rogue-agents line, the measured number). Trim inside the huddle half only."
+  },
+  "function": {
+    "plot": "Liam has adopted AI his own way (a local Qwen on an expensed Mac Studio, no tools, line by line review) and is measurably slower; Brendan sees it, drafts the one paragraph policy fix and finishes the webhook patch, and deletes both instead of sending them.",
+    "liam": "B5 reframed: he believes compliance and rigor make him safe, hands Brendan the true number that will be used against him, and reads Brendan's silence as agreement (Good, you get it).",
+    "others": "Marcus flips to pro-loom and puts I want it noted on the record; Kristina asks for the doc and loses another standup; Brendan starts the silence that becomes s12 by holding backspace three times.",
+    "comedy": "The talked over standup (ONE STANDUP, Agreement! Finally), Marcus arguing the opposite of what he argued in s06, Noted where? Nobody is taking minutes against the V.O. that says she does, and the Grok truce.",
+    "spectacle": "The terminal crawling a token at a time, the six minute load bar, and Brendan's held backspace on the policy message, the unfinished sentence about Liam, and the finished patch, played against Liam's rig grinding.",
+    "setupPayoff": [
+      "Liam adopts his way: quantized Qwen, expensed Mac Studio, one agent, stubs only, only compliant person on the call (pays s11c, s12, s14 3 percent cell)",
+      "I measured it, I am slower (pays s11c_l21, s12_l57, the review)",
+      "Brendan's three deletions: policy message, I don't know if liam is ever going to, the patch (pays s12 the one time he does not delete, s20_l71)",
+      "Marcus: I want it noted that I flagged it / nobody is taking minutes / V.O. she takes minutes (pays s12_l29, s12_l30, s23_l24)",
+      "Chinese model and one character backdoor argument (pays s23_l33 and s23_l40 raw peer feedback at trial)",
+      "Rogue agents deleting production databases (pays the hack, s20)",
+      "I don't give it tool calls (pays s20_l21, s20_l22)",
+      "Brendan: I used to keep a doc of things it gets wrong (pays s11c_l24, s11c_l28)",
+      "Kristina: take it to a thread, I'd love a doc (pays s11c_l6 eleven pages)",
+      "The webhook ticket since Monday and Marcus's three in an afternoon (pays the nine days in s12 and s14)"
+    ]
+  },
+  "turnsAt": "s11b_l70",
+  "ifRemoved": "Nothing in Movement II can absorb it. s11c already restates the rig and the measurement (s11c_l21 to s11c_l23) and s12 carries the nine days, so those would survive. The three backspaces, the noted gag that s12_l29 and s23_l24 depend on, the Chinese backdoor thread that the trial quotes, the rogue agents line the hack pays off, and I don't give it tool calls that s20 turns on have nowhere else to go; each would need a new scene, which breaks nothing new arrives late.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s11b-1",
+      "kind": "redundant",
+      "cueIds": ["s11b_l67", "s11b_l68"],
+      "savingSeconds": 20.4,
+      "priority": 1,
+      "note": "Fourth Brendan try and Liam refusal in a row inside the huddle. l66 already closes the tools argument and is the protected line; nothing later pays off pin the weights. l69 follows l66 cleanly. Drop the chat lookup with it."
+    },
+    {
+      "id": "s11b-2",
+      "kind": "trim",
+      "cueIds": ["s11b_l58", "s11b_l59", "s11b_l60", "s11b_l61"],
+      "savingSeconds": 8.8,
+      "priority": 2,
+      "note": "Four very short beats explaining what parallel agents do. Let Liam's What would I want two for? hang unanswered and go straight to Brendan's cloud agent finishing the ticket in l63. The one agent fact the ledger needs is already in l57."
+    },
+    {
+      "id": "s11b-3",
+      "kind": "cut-beat",
+      "cueIds": ["s11b_l62"],
+      "savingSeconds": 10.4,
+      "priority": 3,
+      "note": "Narration of Brendan's inner state (he ran five this morning, he decides to sit on it). l63 shows the same thing on screen a moment later and l76 says it again. Saving is narrator playback time, not spoken stage time; the screen beat is the only thing lost."
+    },
+    {
+      "id": "s11b-4",
+      "kind": "compress-speech",
+      "cueIds": ["s11b_l53"],
+      "savingSeconds": 6.0,
+      "priority": 4,
+      "note": "Keep Six minutes. Sometimes eight. I batch my questions. You learn to think before you prompt. Cut the four hundred files excuse and the jab at people on that call; the jab repeats l5 and the number is what s11c needs."
+    },
+    {
+      "id": "s11b-5",
+      "kind": "compress-speech",
+      "cueIds": ["s11b_l5"],
+      "savingSeconds": 7.0,
+      "priority": 5,
+      "note": "Cut the middle sentence about the All Hands making the tools mandatory and local inference satisfying both policies. Keep the opening jab at Marcus and the closing I'm the only person on this call actually following the rules, which is the ledger line."
+    },
+    {
+      "id": "s11b-6",
+      "kind": "compress-speech",
+      "cueIds": ["s11b_l71"],
+      "savingSeconds": 7.0,
+      "priority": 6,
+      "note": "End the speech at I'm slower with it. Measurably. The tail about everyone else not following the policy restates l5 and l13. The measured number is what s11c_l21 and s12_l57 quote, and it lands harder without the excuse after it."
+    },
+    {
+      "id": "s11b-7",
+      "kind": "compress-speech",
+      "cueIds": ["s11b_l44"],
+      "savingSeconds": 5.0,
+      "priority": 7,
+      "note": "Drop which is the AI-adoption price the CEO's memo didn't mention. l46 makes the same expense joke better and is the ledger line (I wrote AI on the expense report). Keep the specs and the used car price."
+    },
+    {
+      "id": "s11b-8",
+      "kind": "redundant",
+      "cueIds": ["s11b_l8", "s11b_l9", "s11b_l10", "s11b_l11", "s11b_l12", "s11b_l13"],
+      "savingSeconds": 47.5,
+      "priority": 8,
+      "note": "Known loss under guardrail 3, not in the recommended total. Marcus's who is the speed for beat is made at s06_l7 and again at s22_l3; l13 restates l5. Only if Movement II still needs the seconds after everything else: go from l7 to l15, starting l15 at You keep saying you read every line."
+    }
+  ],
+  "recommendedSavingSeconds": 64.6
+}

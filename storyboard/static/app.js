@@ -28,7 +28,7 @@ function toast(msg, isErr = false) {
   t._t = setTimeout(() => (t.className = "toast"), isErr ? 6000 : 3000);
 }
 
-const bust = (p) => (p ? `/artifacts/${p}?t=${Date.now()}` : null);
+const bust = (p) => (p ? `${p.startsWith("/") ? p : "/artifacts/"+p}?t=${Date.now()}` : null);
 const charById = (id) => (SB.characters || []).find((c) => c.id === id);
 const esc = (s) => (s == null ? "" : String(s)).replace(/[&<>"]/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -53,11 +53,12 @@ function renderStoryboard() {
   const v = view();
   v.innerHTML = `
     <div class="section-head">
-      <h2>Storyboard</h2><span class="pill">${SB.scenes.length} scenes</span>
+      <h2>Storyboard</h2><span class="pill">${SB.scenes.length} scenes · shared with Stage</span>
       <span class="spacer"></span>
       <button class="btn" id="genAllAudio">🔊 Generate all audio</button>
       <button class="btn" id="genAllSketch">🎨 Generate missing sketches</button>
       <button class="btn" id="genAllMusic">🎵 Generate missing music</button>
+      <a class="btn" href="/api/script/export">Export script</a>
       <button class="btn primary" id="addScene">+ Scene</button>
     </div>
     <div class="grid" id="sceneGrid"></div>`;
@@ -107,7 +108,7 @@ function sceneCard(s) {
 
 async function addScene() {
   const s = await api("POST", "/api/scene", {
-    title: "New Scene", world: "modern", status: "stub",
+    revision: SB.revision, title: "New Scene", world: "modern", status: "stub",
     setting: "", narration: "", sketch: { prompt: "" }, lines: [],
   });
   await load();
@@ -183,7 +184,7 @@ function openScene(id) {
           </select></div>
       </div>
       <label class="field">Setting / staging</label>
-      <textarea class="in" id="f-setting" rows="2">${esc(edit.setting || "")}</textarea>
+      <textarea class="in" id="f-setting" rows="2">${esc(edit.productionSetting || "")}</textarea>
 
       <hr class="sep">
       <label class="field">Narrator framing (V.O.)</label>
@@ -289,7 +290,9 @@ function openScene(id) {
     $("#f-beat", root).oninput = (e) => (edit.beat = e.target.value);
     $("#f-world", root).onchange = (e) => (edit.world = e.target.value);
     $("#f-status", root).onchange = (e) => (edit.status = e.target.value);
-    $("#f-setting", root).oninput = (e) => (edit.setting = e.target.value);
+    $("#f-setting", root).placeholder="Production notes only. Add spoken narration as a script line below.";
+    $("#f-setting", root).oninput = (e) => (edit.productionSetting = e.target.value);
+    $("#f-narration", root).disabled=true; $("#f-narration", root).placeholder="Add narrator lines in the script below.";
     $("#f-narration", root).oninput = (e) => (edit.narration = e.target.value);
     $("#f-sketch", root).oninput = (e) => (edit.sketch.prompt = e.target.value);
     $("#f-music", root).oninput = (e) => (edit.music.prompt = e.target.value);
@@ -325,7 +328,7 @@ function openScene(id) {
           <select class="in mini spk" style="width:auto" ${ln.type === "direction" ? "disabled" : ""}>
             <option value="">— speaker —</option>${charOpts(ln.speaker)}
           </select>
-          <span class="spacer" style="flex:1"></span>
+          <span class="spacer" style="flex:1"></span><small>${esc(ln.id)} · ${esc(ln.audio_status||"")}</small>
           ${ln.type !== "direction" ? `<button class="btn mini regen">🔊</button>` : ""}
           <button class="btn mini danger rm">✕</button>
         </div>
@@ -346,6 +349,7 @@ function openScene(id) {
           await refresh();
         } catch (e) { toast(e.message, true); rg.disabled = false; rg.textContent = "🔊"; }
       };
+      if(ln.video){const film=document.createElement('video');film.controls=true;film.preload='metadata';film.src=bust(ln.video);film.style.width='100%';div.appendChild(film);}
       wrap.appendChild(div);
     });
   }
@@ -353,6 +357,7 @@ function openScene(id) {
   async function persist() {
     const saved = await api("PUT", `/api/scene/${scene.id}`, edit);
     Object.assign(scene, saved);
+    edit.revision=saved.revision; SB.revision=saved.revision;
     const idx = SB.scenes.findIndex((s) => s.id === scene.id);
     SB.scenes[idx] = scene;
   }
@@ -370,7 +375,7 @@ function openScene(id) {
   }
   async function delScene() {
     if (!confirm("Delete this scene?")) return;
-    await api("DELETE", `/api/scene/${scene.id}`);
+    await api("DELETE", `/api/scene/${scene.id}`, {revision:scene.revision});
     closeDrawer(); await load();
   }
   async function gen(btnSel, path, isBatch) {
@@ -487,6 +492,8 @@ function openChar(id) {
       <div class="row2">
         <div><label class="field">Voice mode</label>
           <select class="in" id="f-mode">
+            <option value="unconfigured" ${edit.voice.mode === "unconfigured" ? "selected" : ""}>existing recordings only (configure a voice)</option>
+            <option value="approved_prompt" ${edit.voice.mode === "approved_prompt" ? "selected" : ""}>approved Mountain Man C</option>
             <option value="design" ${edit.voice.mode === "design" ? "selected" : ""}>design (describe)</option>
             <option value="xvector" ${edit.voice.mode === "xvector" ? "selected" : ""}>vector (locked x-vector)</option>
             <option value="clone" ${edit.voice.mode === "clone" ? "selected" : ""}>clone (ref wav)</option>
@@ -522,6 +529,8 @@ function openChar(id) {
   }
   function paintMode() {
     const m = $("#voiceMode", root);
+    if(edit.voice.mode==='approved_prompt'){m.innerHTML='<p class="hint">Approved Mountain Man C acoustic reference and delivery settings. Existing and new narrator lines use this saved profile.</p>';return;}
+    if(edit.voice.mode==='unconfigured'){m.innerHTML='<p class="hint">Existing recordings are ready to play. Select and configure a voice before generating new lines.</p>';return;}
     if (edit.voice.mode === "xvector") {
       m.innerHTML = `<p class="hint">Locked to saved x-vector: <code>${esc(edit.voice.vector || "(none — run Lock voices)")}</code>.
         New lines render in this exact voice. The description below is kept for provenance / re-deriving the vector.</p>
@@ -707,3 +716,11 @@ function renderPlayer() {
 document.querySelectorAll(".tab").forEach((b) =>
   (b.onclick = () => { if (TAB === "player") Player.stop(); TAB = b.dataset.tab; render(); }));
 load().catch((e) => toast("Load failed: " + e.message, true));
+
+setInterval(async()=>{
+ if(!SB || document.querySelector('.drawer') || document.querySelector('dialog[open]'))return;
+ try {const next=await api('GET','/api/storyboard');if(next.revision!==SB.revision){
+ if(document.querySelector('.drawer')){toast('The shared script changed. Reopen the scene before saving.');return;}
+ SB=next; if(TAB==='storyboard')renderStoryboard();
+ }}catch{}
+},4000);

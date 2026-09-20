@@ -1,0 +1,95 @@
+{
+  "sceneId": "s14a",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "c8f307f9071d2a48",
+  "grade": "mergeable",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "Two weeks on, Liam relays the layoff terms and the scored process to Marcus and Brendan; Marcus offers to pass his CV on and nobody sends anything, so the only state change is that nothing changes.",
+    "liam": "B9 in one exchange: Marcus says something was done to him, Liam defends the spreadsheet (nobody is at the other end, it is the correct way to do it), then asks At who? and gets no answer.",
+    "others": "Marcus gets his fourth Luddite lecture and his one moment without an answer, then the sincere best-engineer line that s23_l32 repeats under oath; Brendan is nearly silent but asks Did it do anything?, the quiet setup for what he does in s20.",
+    "comedy": "Marcus fighting the open-source app, the antique loom for Christmas, This is the weaving thing again, the grab for OpenAI and Anthropic after the silence, and He's a lot / He's alright.",
+    "spectacle": "none",
+    "setupPayoff": [
+      "Marcus's Luddite tangents -> says the true thing and is treated as a crank (Movement V)",
+      "Marcus's private best engineer line (l43) -> s23_l32 under oath, then the prosecutor reads his real feedback",
+      "Send me your CV, nothing sent (l45 to l47) -> Liam emails his friend for Brendan (s20b)",
+      "I want you to be angry / At who? (l40, l41) -> s24_l36 Marcus was right, not any one person",
+      "Marcus's no line on the sheet where that goes (l30) restates the s14_l56 argument Liam could not finish"
+    ]
+  },
+  "turnsAt": "s14a_l41",
+  "ifRemoved": "B9 (Marcus says it was done to him, Liam says it is a spreadsheet with a line on it) is only dramatised here, so it must move: the front of s22 before the knock is the natural home, where Marcus is already making the same argument to a Liam who only says Mm. The best-engineer line and the unsent CV go with it. s14 to s19 already cuts clean, because s19 explains Brendan's firing itself. Lost for good: Brendan's Did it do anything? and the He's a lot / He's alright button.",
+  "mergeInto": {
+    "sceneId": "s22",
+    "carry": ["s14a_l14", "s14a_l15", "s14a_l16", "s14a_l17", "s14a_l18", "s14a_l19", "s14a_l20", "s14a_l22", "s14a_l37", "s14a_l38", "s14a_l39", "s14a_l40", "s14a_l41", "s14a_l43", "s14a_l45", "s14a_l46", "s14a_l47"],
+    "note": "Put the criteria cross-examination and I want you to be angry / At who? in front of the knock at s22_l11, so the door answers the question; s22_l3 to l7 already make the same it's the system point and can shrink to make room, and Movement IV has five minutes of headroom."
+  },
+  "suggestions": [
+    {
+      "id": "s14a-1",
+      "kind": "cut-beat",
+      "cueIds": ["s14a_l42"],
+      "savingSeconds": 14.3,
+      "priority": 1,
+      "note": "The narrator states the thesis outright (nobody at the other end, maybe humanity itself). It pre-empts the play's last line, s24_l36, and explains a silence that plays better unexplained. Keep only a zero-second direction that Marcus has no answer, then go straight from At who? to l43."
+    },
+    {
+      "id": "s14a-2",
+      "kind": "cut-beat",
+      "cueIds": ["s14a_l21", "s14a_l31"],
+      "savingSeconds": 14.8,
+      "priority": 2,
+      "note": "Both narrate what a character is thinking (Liam nostalgic for standup fights, Marcus not knowing about the plan). Show, don't narrate: l22 already shows Liam cannot help himself, and the plan is mentioned once in the whole show, at s14_l43. Nothing later points back to either line."
+    },
+    {
+      "id": "s14a-3",
+      "kind": "compress-speech",
+      "cueIds": ["s14a_l28"],
+      "savingSeconds": 22.0,
+      "priority": 3,
+      "note": "The understanding speech is a 32 second monologue about craft and agency, exactly the exposition speech the style rules ban. Cut it to two sentences (there used to be an understanding, then the factories came) so l29 the weaving thing again still lands. s22_l3 makes the same point sharper, right before the arrest."
+    },
+    {
+      "id": "s14a-4",
+      "kind": "redundant",
+      "cueIds": ["s14a_l25", "s14a_l24"],
+      "savingSeconds": 16.9,
+      "priority": 4,
+      "note": "The were-they-really-guilty tangent and the narrator fact check repeat the s01_l23 gag and add another Luddite lesson. End l23 at suit their needs. Also l23 says 300 years and s22_l10 says two hundred; pick one. The l24 figures need verifying before staging either way."
+    },
+    {
+      "id": "s14a-5",
+      "kind": "compress-speech",
+      "cueIds": ["s14a_l32"],
+      "savingSeconds": 12.5,
+      "priority": 5,
+      "note": "Drop the air traffic controllers half; it is a new example arriving late. Keep the last two sentences (the Luddites actually tried to do something about it) because Brendan's Did it do anything? at l33 needs them, and that question is the quiet setup for what Brendan does in s20."
+    },
+    {
+      "id": "s14a-6",
+      "kind": "trim",
+      "cueIds": ["s14a_l2", "s14a_l3", "s14a_l4", "s14a_l5"],
+      "savingSeconds": 14.4,
+      "priority": 6,
+      "note": "Enter late. The Jitsi gag is a warm-up with nothing downstream; nothing in the show calls Jitsi back. Open on l7 how are you doing? after the narrator's one line. Known loss: one laugh and Liam's open-source reflex."
+    },
+    {
+      "id": "s14a-7",
+      "kind": "redundant",
+      "cueIds": ["s14a_l9", "s14a_l10", "s14a_l12"],
+      "savingSeconds": 7.3,
+      "priority": 7,
+      "note": "The audience heard two months and four years at s14_l58 and s14_l65 to l70. Keep l8 (been through worse ones sets up the dot-com story in s19) and go from it to l14. Known loss: Marcus's small four years reaction beat."
+    },
+    {
+      "id": "s14a-8",
+      "kind": "merge",
+      "cueIds": ["s14a_l1", "s14a_l2", "s14a_l3", "s14a_l4", "s14a_l5", "s14a_l7", "s14a_l8", "s14a_l9", "s14a_l10", "s14a_l12", "s14a_l13", "s14a_l21", "s14a_l23", "s14a_l25", "s14a_l24", "s14a_l26", "s14a_l28", "s14a_l29", "s14a_l30", "s14a_l31", "s14a_l32", "s14a_l33", "s14a_l34", "s14a_l35", "s14a_l42", "s14a_l44", "s14a_l48", "s14a_l49"],
+      "savingSeconds": 201.4,
+      "priority": 8,
+      "note": "Alternative to 1 through 7, not additional. Fold the scene into the front of s22 with the carry list above; the arrest then interrupts At who? Movement III is 8.6 minutes over and this scene's unique payload is under 70 seconds. Losses: Brendan's Did it do anything?, the He's a lot / He's alright button, and the breather between s14 and s19."
+    }
+  ],
+  "recommendedSavingSeconds": 201.4
+}

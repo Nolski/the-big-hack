@@ -52,6 +52,18 @@ settings:
       frame: >-
         Neutral, restrained documentary underscore, soft sustained strings, a
         sense of looking back across time, sparse and quiet.
+  # Cut analysis (the Cuts page). Spoken dialogue only; the narrator reading
+  # stage directions never counts. Rendered speech is ~176 wpm and staged
+  # delivery 145 to 155, so dialogue seconds are scaled by pace_factor.
+  # wordless: named sequences the data cannot see, in seconds per scene id.
+  analysis:
+    target_minutes: [60, 75]
+    pace_factor: 1.17
+    stage_business_seconds: 1.5
+    wordless:
+      s00: 111   # the opening montage film
+      s14: 35    # the ring
+      s20: 60    # the counter sequence
   image:
     model: google/gemini-2.5-flash-image
     # Prepended to every scene sketch prompt for a consistent look.

@@ -1,0 +1,114 @@
+{
+  "sceneId": "s14",
+  "writtenAt": "2026-09-13",
+  "writtenAgainst": "2e97b1b8ca9882f3",
+  "grade": "costly",
+  "protected": { "yes": false, "why": null },
+  "function": {
+    "plot": "Liam is laid off by a scored headcount reduction he never saw coming, learns severance is two months and access ends with the call, and the AI workstation turns out not to be on the asset register.",
+    "liam": "B8, the reduction: he joins busy and delighted about a two-year-old bug, goes static, hunts for a reason that does not exist, opens a notes file and types only the date.",
+    "others": "Dana is the sincere functionary who cannot answer anything; Kristina is pointedly absent; Kara and the CEO exist only as a spreadsheet.",
+    "comedy": "Dry and curdled: the Q4 staffing opinions he offers before the news, 'Two.' 'Two months.' 'Right, no, that makes sense', the USB-C adapter he paid for, the pack litany.",
+    "spectacle": "The projected reduction sheet with the line drawn on it (l1 to l2), Liam frozen while Dana's clip keeps talking (l21 to l24), and the Eligible for rehire dropdown set to No after the call (l81).",
+    "setupPayoff": [
+      "pays: none of the review machinery is what removes him (reduction sheet, no column for reviews)",
+      "pays: nine days and the queue, said in pieces and never finished (l56)",
+      "pays: what could I have done better (l60 to l61)",
+      "pays: Non-regretted becomes Eligible for rehire No under 'not a reflection of your value' (l80 to l81)",
+      "pays: notes file, the date, nothing else (l62 to l63)",
+      "pays: two separate processes, same company (l41 to l49)",
+      "plants: two months severance (s14a l8)",
+      "plants: scored criteria nobody can see, which Liam repeats as his own view in s14a l15",
+      "plants: the returns box and the adapter he paid for (s19 l58 to l66)",
+      "plants: the AI workstation is not on the asset register, so it stays with Liam and goes to Brendan (s19 l67 to l69, s20)",
+      "plants: access ends with the call, which s20 shows was never actually done for AWS",
+      "plants: Brendan is in scope and Marcus is not (s14a, s19 l10 to l14)"
+    ]
+  },
+  "turnsAt": "s14_l20",
+  "ifRemoved": "The whole of Movement III points back here: s14a argues about the criteria and the two months, s19 opens on the returns box, the adapter and the workstation, s20 turns on access that was supposed to end with this call, and s22 needs the layoff date. There is no neighbour that can carry Liam being told, because s14a and s19 are both aftermath and both need him already processed. Trim inside only; the fat is the narrator (1.6 min of the 5.6 staged) and one repeated loop, not the call itself.",
+  "mergeInto": null,
+  "suggestions": [
+    {
+      "id": "s14-1",
+      "kind": "redundant",
+      "cueIds": ["s14_l77"],
+      "savingSeconds": 9.1,
+      "priority": 1,
+      "note": "Cut it. Access ending at the end of the call is already in l20 and again in the l50 narration, and the personal-email offer is never used anywhere later. l78 'thank you for your years' is a cleaner wrap cue."
+    },
+    {
+      "id": "s14-2",
+      "kind": "trim",
+      "cueIds": ["s14_l43", "s14_l44", "s14_l45", "s14_l46", "s14_l49"],
+      "savingSeconds": 13.2,
+      "priority": 2,
+      "note": "Shorten the separate-process loop to l41, l42, l47, l48. l43 and l44 point at a plan and a calibration the audience never sees (there is no 13 or 13b in the running order), l45 and l46 restate l42, and 'But it's the same company' into her silence is the stronger end."
+    },
+    {
+      "id": "s14-3",
+      "kind": "cut-beat",
+      "cueIds": ["s14_l52", "s14_l53", "s14_l54"],
+      "savingSeconds": 7.1,
+      "priority": 3,
+      "note": "Cut 'I know what this engineering team needs to succeed'. It is Liam narrating his own worth, which the style rules forbid, and l51 (twenty-five years) straight into l56 (the queue, unfinished) reads cleaner and keeps the ledger's point that the friction is a constant."
+    },
+    {
+      "id": "s14-4",
+      "kind": "compress-speech",
+      "cueIds": ["s14_l71"],
+      "savingSeconds": 8.0,
+      "priority": 4,
+      "note": "Keep the final pay and PTO sentence, drop the list of documents in the pack. The paperwork joke is already made by the pack itself and by l72; a four-item litany from a video clip is dead air for Liam on stage."
+    },
+    {
+      "id": "s14-5",
+      "kind": "redundant",
+      "cueIds": ["s14_l55"],
+      "savingSeconds": 10.7,
+      "priority": 5,
+      "note": "Cut the second calendar narration. l50 already has him opening calendars, and the fact that Brendan is in scope and Marcus is not arrives on stage in s19 l10 to l14 anyway. Narrator seconds; on stage this is screen business, so the saving is smaller than the bracket."
+    },
+    {
+      "id": "s14-6",
+      "kind": "compress-speech",
+      "cueIds": ["s14_l2"],
+      "savingSeconds": 12.0,
+      "priority": 6,
+      "note": "Fold l2 into l1. Keep only that the sheet counts tickets closed and has no column for code review; l1 already carries the line and the three rows, and Brendan's work living in Linear is s19's reveal (s19 l20). The prologue is one projected sheet and should read like one caption."
+    },
+    {
+      "id": "s14-7",
+      "kind": "trim",
+      "cueIds": ["s14_l3", "s14_l4", "s14_l14"],
+      "savingSeconds": 8.1,
+      "priority": 7,
+      "note": "Enter later. l3 duplicates the stronger 'Is Kristina joining?' 'She is not.' at l15 to l16, l4 names Kara who never appears on the call (s19 l10 keeps her for Brendan's call), and l14 is filler between Liam's apology and his question."
+    },
+    {
+      "id": "s14-8",
+      "kind": "trim",
+      "cueIds": ["s14_l28", "s14_l30"],
+      "savingSeconds": 5.6,
+      "priority": 8,
+      "note": "Cut the two narrator micro-beats about his brain restarting. They are camera directions, not stage ones; the actor plays it in the gap between l27 and l29. Narrator seconds only."
+    },
+    {
+      "id": "s14-9",
+      "kind": "compress-speech",
+      "cueIds": ["s14_l34"],
+      "savingSeconds": 4.0,
+      "priority": 9,
+      "note": "Trim to two sentences: scored against a consistent set of criteria across the org, designed so no one person makes a call about an individual. Keep the wording close, because Liam repeats it as his own opinion in s14a l15 and the echo is the joke."
+    },
+    {
+      "id": "s14-10",
+      "kind": "compress-speech",
+      "cueIds": ["s14_l80"],
+      "savingSeconds": 3.5,
+      "priority": 10,
+      "note": "Drop the outplacement sentence and keep 'none of this is a reflection of your value', which has to sit directly under the rehire flag in l81. Do not cut the echo itself."
+    }
+  ],
+  "recommendedSavingSeconds": 81.3
+}

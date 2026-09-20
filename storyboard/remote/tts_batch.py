@@ -95,7 +95,7 @@ def main():
     # Group by which checkpoint each mode needs.
     groups = {
         job["design_model"]: [i for i in items if i.get("mode", "design") == "design"],
-        job["clone_model"]: [i for i in items if i.get("mode") in ("clone", "xvector")],
+        job["clone_model"]: [i for i in items if i.get("mode") in ("clone", "xvector", "approved_prompt")],
     }
 
     for model_id, batch in groups.items():
@@ -121,6 +121,9 @@ def main():
                     wavs, sr = tts.generate_voice_design(
                         text=it["text"], instruct=it.get("instruct", ""),
                         language=language, max_new_tokens=4096)
+                elif mode == "approved_prompt":
+                    prompt=[VoiceClonePromptItem(**item) for item in torch.load(it['prompt_path'],map_location='cpu',weights_only=False)]
+                    wavs,sr=tts.generate_voice_clone(text=it['text'],language=language,voice_clone_prompt=prompt,**it['clone_settings'])
                 elif mode == "xvector":
                     arr = np.load(os.path.join(WORKDIR, it["vector_path"]))
                     emb = torch.tensor(arr, dtype=mdtype, device=device)
