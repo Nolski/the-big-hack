@@ -1,0 +1,54 @@
+# Publishes the stage player (stage/) to GitHub Pages.
+# Pages is a static host: the player reads show.json directly and the
+# script-editing and clip-upload controls, which need serve.py, do nothing there.
+name: Deploy player to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "stage/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/configure-pages@v6
+      - name: Assemble site
+        run: |
+          # Only what the browser loads: pages, scripts, styles, data and assets.
+          rsync -a --prune-empty-dirs \
+            --exclude='/handoff/' --exclude='/tests/' --exclude='/script-history/' \
+            --exclude='/rehearsal-*' --exclude='__pycache__/' \
+            --include='*/' \
+            --include='*.html' --include='*.js' --include='*.css' --include='*.json' \
+            --include='/README.md' --include='/assets/**' \
+            --exclude='*' \
+            stage/ _site/
+          touch _site/.nojekyll
+          du -sh _site
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
