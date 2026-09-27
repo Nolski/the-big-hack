@@ -1077,6 +1077,24 @@ def api_revision():
     return {"revision": STORE.revision()}
 
 
+@app.get("/api/history")
+def api_history():
+    """What undo and redo would do next (a few words each, or null)."""
+    return STORE.history_state()
+
+
+@app.post("/api/undo")
+def api_undo(payload: dict = Body(default={})):
+    """Reverse the most recent script edit (from any editor). Only the scenes and
+    cues that edit touched are put back; later edits elsewhere are kept."""
+    return shared_write(lambda: STORE.step(payload.get('revision'), 'undo'))
+
+
+@app.post("/api/redo")
+def api_redo(payload: dict = Body(default={})):
+    return shared_write(lambda: STORE.step(payload.get('revision'), 'redo'))
+
+
 @app.put("/api/cue/{cid}")
 def api_cue_update(cid: str, payload: dict = Body(...)):
     """Edit one cue's words, delivery note, speaker or type in the shared script.

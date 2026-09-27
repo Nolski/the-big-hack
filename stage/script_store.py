@@ -1,7 +1,7 @@
 """Shared authoring store. Both apps edit stage/show.json through this module.
 No model/runtime dependencies. Advisory lock + atomic replace + revision checks.
 """
-import copy, fcntl, hashlib, json, os, re, tempfile, uuid
+import copy, fcntl, hashlib, json, os, re, tempfile, time, uuid
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -15,6 +15,57 @@ def raw_line(c):
     name=c.get('name') or c.get('speaker','').upper()
     direction=c.get('direction','')
     return '**'+name+'**'+(' *('+direction+')*' if direction else '')+': '+c['text']
+
+DERIVED={'cues':('groupEnd','notes'),'scenes':('start','count')}
+
+def _bare(x,skip): return {k:v for k,v in x.items() if k not in skip}
+
+def changed_ids(a,b,key):
+    A={x['id']:_bare(x,DERIVED[key]) for x in a[key]};B={x['id']:_bare(x,DERIVED[key]) for x in b[key]}
+    return {i for i in A.keys()|B.keys() if A.get(i)!=B.get(i)}
+
+def patch(cur,frm,to,skip):
+    """Replay the change frm -> to onto cur, by id: items that change are taken
+    from `to` (or dropped), everything else keeps its current content. Order follows
+    `to` where it moved; items only in cur stay after their current neighbour."""
+    F={x['id']:_bare(x,skip) for x in frm};T={x['id']:x for x in to};C={x['id']:x for x in cur}
+    changed={i for i in F.keys()|T.keys() if F.get(i)!=(_bare(T[i],skip) if i in T else None)}
+    moved=[i for i in (x['id'] for x in frm) if i in T]!=[i for i in (x['id'] for x in to) if i in F]
+    if not changed and not moved: return cur
+    pick=lambda i: copy.deepcopy(T[i]) if i in changed else C[i]
+    if not moved:
+        out=[pick(x['id']) for x in cur if x['id'] not in changed or x['id'] in T]
+        have={x['id'] for x in out};ids=[x['id'] for x in to]
+        for n,i in enumerate(ids):
+            if i in have: continue
+            prev=next((ids[k] for k in range(n-1,-1,-1) if ids[k] in have),None)
+            at=0 if prev is None else next(k for k,x in enumerate(out) if x['id']==prev)+1
+            out.insert(at,copy.deepcopy(T[i]));have.add(i)
+        return out
+    out=[pick(x['id']) for x in to if x['id'] in C or x['id'] in changed];have={x['id'] for x in out}
+    ids=[x['id'] for x in cur]
+    for n,i in enumerate(ids):
+        if i in have or i in F: continue
+        prev=next((ids[k] for k in range(n-1,-1,-1) if ids[k] in have),None)
+        at=0 if prev is None else next(k for k,x in enumerate(out) if x['id']==prev)+1
+        out.insert(at,C[i]);have.add(i)
+    return out
+
+def describe(a,b):
+    """A few words for the undo button: what this edit did."""
+    A={x['id']:x for x in a['cues']};B={x['id']:x for x in b['cues']}
+    who=lambda c: (c.get('name') or c.get('speaker') or 'stage direction').title() if c.get('kind')!='stage' else 'stage direction'
+    gone=[i for i in A if i not in B];new=[i for i in B if i not in A]
+    edited=[i for i in A if i in B and _bare(A[i],DERIVED['cues'])!=_bare(B[i],DERIVED['cues'])]
+    sa={x['id'] for x in a['scenes']};sb={x['id'] for x in b['scenes']}
+    if sa-sb: return 'delete scene'
+    if sb-sa: return 'add scene'
+    if [x['id'] for x in a['scenes']]!=[x['id'] for x in b['scenes']]: return 'reorder scenes'
+    if len(gone)==1 and not new: return 'delete '+who(A[gone[0]])+' line'
+    if len(new)==1 and not gone: return 'add '+who(B[new[0]])+' line'
+    if len(edited)==1 and not gone and not new: return 'edit '+who(B[edited[0]])+' line'
+    if gone or new or edited: return f'change {len(gone)+len(new)+len(edited)} lines'
+    return 'edit scene details'
 
 class ScriptStore:
     def __init__(self, root):
@@ -42,13 +93,61 @@ class ScriptStore:
             edit(show)
             self.validate(show)
             if show==before: return digest(show)
-            self.reindex(show)
-            history=self.root/'script-history';history.mkdir(exist_ok=True)
-            backup=history/(digest(before)+'.json')
-            if not backup.exists(): self.atomic(backup,before)
-            show['scriptRevision']='shared-'+uuid.uuid4().hex[:16]
-            self.atomic(self.path,show)
+            self.commit(before,show)
+            self.record(before,show)
             return digest(show)
+    def commit(self,before,show):
+        self.reindex(show)
+        self.snapshot(before)
+        show['scriptRevision']='shared-'+uuid.uuid4().hex[:16]
+        self.atomic(self.path,show)
+    def snapshot(self,data,sub=''):
+        history=self.root/'script-history'/sub;history.mkdir(parents=True,exist_ok=True)
+        backup=history/(digest(data)+'.json')
+        if not backup.exists(): self.atomic(backup,data)
+        return digest(data)
+
+    # Undo / redo. Every transaction pushes {before, after} snapshot digests onto
+    # script-history/undo/stack.json (post-edit snapshots live beside it). Undo does not blindly restore the old file: it
+    # reverses only the scenes and cues that edit touched, on top of whatever the
+    # script is now, so someone else's later edit to another line survives.
+    # Quick successive saves of the same cue (autosave while typing) fold into one step.
+    UNDO_LIMIT=300; FOLD_SECONDS=90
+    def stacks(self):
+        try: return json.loads((self.root/'script-history'/'undo'/'stack.json').read_text())
+        except (OSError,ValueError): return {'undo':[],'redo':[]}
+    def save_stacks(self,st):
+        st['undo']=st['undo'][-self.UNDO_LIMIT:];st['redo']=st['redo'][-self.UNDO_LIMIT:]
+        (self.root/'script-history'/'undo').mkdir(parents=True,exist_ok=True);self.atomic(self.root/'script-history'/'undo'/'stack.json',st)
+    def record(self,before,after):
+        touched=sorted(changed_ids(before,after,'cues')|{'scene:'+i for i in changed_ids(before,after,'scenes')})
+        entry={'before':digest(before),'after':self.snapshot(after,'undo'),'touched':touched,'label':describe(before,after),'at':time.time()}
+        st=self.stacks();top=st['undo'][-1] if st['undo'] else None
+        if top and top['after']==entry['before'] and top['touched']==touched and len(touched)==1 and entry['at']-top['at']<self.FOLD_SECONDS:
+            top.update(after=entry['after'],at=entry['at'])
+        else: st['undo'].append(entry)
+        st['redo']=[];self.save_stacks(st)
+    def history_state(self):
+        st=self.stacks()
+        return {'undo':st['undo'][-1]['label'] if st['undo'] else None,'redo':st['redo'][-1]['label'] if st['redo'] else None}
+    def step(self,expect,direction):
+        with self.locked():
+            show=self.read()
+            if expect and expect!=digest(show): raise Conflict('The script changed. Reload before undoing.')
+            st=self.stacks();src,dst=('undo','redo') if direction=='undo' else ('redo','undo')
+            if not st[src]: raise ValueError('Nothing to '+direction+'.')
+            entry=st[src].pop()
+            h=self.root/'script-history'
+            snap=lambda d: json.loads(((h/(d+'.json')) if (h/(d+'.json')).exists() else h/'undo'/(d+'.json')).read_text())
+            try: a,b=snap(entry['before']),snap(entry['after'])
+            except OSError: self.save_stacks(st);raise ValueError('That step\'s backup is gone from script-history; it can\'t be '+direction+'ne.')
+            frm,to=(b,a) if direction=='undo' else (a,b)
+            before=copy.deepcopy(show)
+            for key in ('scenes','cues'): show[key]=patch(show[key],frm[key],to[key],DERIVED[key])
+            self.validate(show)
+            if show!=before: self.commit(before,show)
+            st[dst].append(entry);self.save_stacks(st)
+            return {'revision':digest(show),'label':entry['label'],'touched':entry['touched'],**self.history_state()}
     def validate(self,s):
         scenes=[x['id'] for x in s['scenes']]; ids=[x['id'] for x in s['cues']]
         if not scenes or not ids: raise ValueError('The show must contain at least one scene and cue.')

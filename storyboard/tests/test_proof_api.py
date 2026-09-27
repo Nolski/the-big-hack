@@ -161,6 +161,37 @@ class ProofApi(unittest.TestCase):
 
     # ---- the small endpoints -------------------------------------------------
 
+    # ---- undo / redo ---------------------------------------------------------
+
+    def test_undo_brings_back_a_deleted_beat_and_keeps_later_edits(self):
+        sid = server.STORE.read()['scenes'][3]['id']
+        lines = _plain(server.get_scene(sid)['lines'])
+        gone = lines[1]['id']
+        before = [c['id'] for c in server.STORE.read()['cues']]
+        server.update_scene(sid, {'revision': self.rev(), 'lines': lines[:1] + lines[2:]})
+        self.assertEqual(server.api_history()['undo'].split()[0], 'delete')
+        # someone edits an unrelated line afterwards
+        server.api_cue_update('s01_l2', {'revision': self.rev(), 'text': 'later edit'})
+        server.api_undo({'revision': self.rev()})                   # the later edit
+        r = server.api_undo({'revision': self.rev()})               # the deletion
+        self.assertIn(gone, r['touched'])
+        self.assertEqual([c['id'] for c in server.STORE.read()['cues']], before)
+        server.api_redo({'revision': self.rev()})
+        self.assertNotIn(gone, [c['id'] for c in server.STORE.read()['cues']])
+
+    def test_typing_folds_into_one_undo_step(self):
+        original = self.cue('s01_l2')['text']
+        for t in ('a', 'ab', 'abc'):
+            server.api_cue_update('s01_l2', {'revision': self.rev(), 'text': t})
+        server.api_undo({'revision': self.rev()})
+        self.assertEqual(self.cue('s01_l2')['text'], original)
+
+    def test_undo_refuses_stale_and_empty(self):
+        self.assertEqual(self.status(server.api_undo, {'revision': self.rev()}), 400)
+        old = self.rev()
+        server.api_cue_update('s01_l2', {'revision': old, 'text': 'x'})
+        self.assertEqual(self.status(server.api_undo, {'revision': old}), 409)
+
     def test_revision_endpoint(self):
         self.assertEqual(server.api_revision()['revision'], self.rev())
 

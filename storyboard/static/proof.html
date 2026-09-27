@@ -26,6 +26,8 @@
 
     <span class="grow-space"></span>
 
+    <button class="btn" id="undoBtn" disabled title="Nothing to undo">↶ Undo</button>
+    <button class="btn" id="redoBtn" disabled title="Nothing to redo">↷ Redo</button>
     <button class="btn" id="findBtn" title="Find across the whole script (⌘F)">⌕ Find</button>
     <button class="btn speed" data-speed-toggle type="button"></button>
     <button class="btn" id="helpBtn" title="Keyboard shortcuts (?)">?</button>
@@ -77,6 +79,7 @@
         <dt>Enter</dt><dd>next beat (a beat's words are one paragraph)</dd>
         <dt>⌥Enter</dt><dd>new beat below this one, same speaker</dd>
         <dt>⌘⌫</dt><dd>delete this beat</dd>
+        <dt>⌘Z · ⇧⌘Z</dt><dd>undo / redo the last script edit, from anyone (in a box you've typed in, it undoes your typing instead)</dd>
         <dt>⌥F</dt><dd>flag this beat to come back to</dd>
         <dt>⌘Enter</dt><dd>mark the scene proofed and go to the next one</dd>
         <dt>⌘F · /</dt><dd>find (and replace) across every scene</dd>
@@ -89,6 +92,6 @@
 
   <div id="toast" class="toast"></div>
   <script src="playback.js?v=20260825-proof"></script>
-  <script src="proof.js?v=20260913-cuts"></script>
+  <script src="proof.js?v=20260927-undo"></script>
 </body>
 </html>

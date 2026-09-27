@@ -120,8 +120,43 @@ async function pollRevision() {
   if (ta && ta.tagName === "TEXTAREA") return;
   try {
     const r = await api("GET", "/api/revision");
-    if (r.revision !== S.revision) staleScript("Script updated elsewhere. Reload to see the latest.");
+    if (r.revision !== S.revision) { staleScript("Script updated elsewhere. Reload to see the latest."); paintHistory(); }
   } catch (e) { /* the next poll will try again */ }
+}
+
+// --------------------------------------------------------------------------
+// Undo / redo of script edits
+// --------------------------------------------------------------------------
+// The store keeps one undo history for the shared script, whoever saved. Undo
+// puts back only the lines that edit touched, so later edits elsewhere stay.
+async function paintHistory() {
+  try {
+    const h = await api("GET", "/api/history");
+    [["undo", "#undoBtn", "⌘Z"], ["redo", "#redoBtn", "⇧⌘Z"]].forEach(([k, sel, key]) => {
+      const b = $(sel);
+      b.disabled = !h[k];
+      b.title = h[k] ? `${k === "undo" ? "Undo" : "Redo"}: ${h[k]} (${key})` : `Nothing to ${k}`;
+    });
+  } catch (e) { /* buttons keep their last state */ }
+}
+
+async function historyStep(dir) {
+  if (!(await flushAll())) return toast("Something hasn't saved yet.", true);
+  try {
+    const r = await Q.add(() => api("POST", "/api/" + dir, { revision: S.revision }));
+    await reload({ quiet: true });
+    // The change may be in another scene: go and show it.
+    const touched = r.touched || [];
+    const at = S.scenes.findIndex((sc) => sc.lines.some((l) => touched.includes(l.id)));
+    if (at >= 0) {
+      const lid = S.scenes[at].lines.find((l) => touched.includes(l.id)).id;
+      if (at === S.i) focusLine(lid); else await go(at, { line: lid });
+    }
+    toast(`${dir === "undo" ? "Undid" : "Redid"}: ${r.label}`);
+  } catch (e) {
+    if (e.status !== 409) toast(e.message, true);
+  }
+  paintHistory();
 }
 
 // --------------------------------------------------------------------------
@@ -145,7 +180,7 @@ const Q = {
       : fn());
     const run = this.chain.then(guarded, guarded);
     this.chain = run.then(() => {}, () => {});
-    this.chain.then(() => { this.busy--; paintSaved(); });
+    this.chain.then(() => { this.busy--; paintSaved(); if (!this.busy) paintHistory(); });
     return run;
   },
 };
@@ -235,6 +270,7 @@ function field(cls, value, opts) {
   }
 
   ta.addEventListener("input", () => {
+    ta.dataset.typed = "1";                      // ⌘Z here now means this box's typing
     wrap.dataset.value = ta.value;               // grows the box, no measuring
     waiting = null;
     paintEmpty();
@@ -630,7 +666,7 @@ function beatRow(ln) {
           paintSaved();
           paintChrome();
         }
-        toast("Beat removed. The previous script is in stage/script-history/.");
+        toast("Beat removed. ⌘Z or Undo brings it back.");
       } catch (e) { note(e.message, "err"); }
     },
   };
@@ -868,7 +904,7 @@ async function deleteScene() {
     S.lastRow = null;
     render();
     $("#page").scrollTop = 0;
-    toast(`Scene removed: ${s.title}. The previous script is in stage/script-history/.`);
+    toast(`Scene removed: ${s.title}. ⌘Z or Undo brings it back.`);
   } catch (e) { toast(e.message, true); }
 }
 
@@ -922,6 +958,15 @@ document.addEventListener("keydown", (e) => {
     return;
   }
   if (meta && e.key === "Enter") { e.preventDefault(); markSceneDone(); return; }
+  // ⌘Z undoes the last script edit, unless the caret is in a box you've typed
+  // in, where it undoes your typing the way it always has.
+  const z = e.key.toLowerCase();
+  if (meta && (z === "z" || z === "y") && !(ta && ta.dataset.typed) &&
+      e.target.tagName !== "INPUT") {
+    e.preventDefault();
+    historyStep(z === "y" || e.shiftKey ? "redo" : "undo");
+    return;
+  }
   // Deleting is global, not just inside a box. The help sheet promises ⌘⌫
   // deletes this beat, and it used to sit below the `!ta` return — so reading
   // a beat, hovering it, or clicking its gutter and pressing ⌘⌫ did nothing at
@@ -1111,6 +1156,8 @@ $("#replaceAll").onclick = replaceAll;
 $("#findClose").onclick = closeFinder;
 $("#findBtn").onclick = openFinder;
 $("#helpBtn").onclick = () => ($("#help").hidden = false);
+$("#undoBtn").onclick = () => historyStep("undo");
+$("#redoBtn").onclick = () => historyStep("redo");
 $("#helpClose").onclick = () => ($("#help").hidden = true);
 $("#prev").onclick = () => go(S.i - 1);
 $("#next").onclick = () => go(S.i + 1);
@@ -1150,6 +1197,7 @@ $("#next").onclick = () => go(S.i + 1);
     }
     paintSaved();
     setInterval(pollRevision, 4000);
+    paintHistory();
   } catch (e) {
     $("#page").innerHTML = `<p class="empty">Couldn't load the script: ${esc(e.message)}</p>`;
   }
