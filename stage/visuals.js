@@ -188,7 +188,7 @@ function physicalPhoto(file,place,label=''){
 }
 function exhibit(c,state=c.state){return `<div class="physicalExhibit" data-place="courtroom"><div class="exhibitHeader">DISTRICT COURT / EXHIBIT</div>${screens[state]?.(c)||''}</div>`}
 function quiet(c){if(c.staging?.callStatus==='waiting')return `<div class="waitingRoom"><span>PRIVATE MEETING</span><h1>Waiting for the call</h1></div>`;return `<div class="quietDesktop"><div class="quietGlow"></div>${c.staging?.callStatus==='ended'?'<p>Call ended</p>':''}</div>`}
-function laptop(c){return `<div class="laptopScene"><div class="laptopLid">${zoom({...c,staging:{...c.staging,callCast:['marcus']}})}</div><div class="laptopBase"></div><p>${c.beat>=32?'LAPTOP SEIZED · CALL STILL OPEN':'MARCUS / LAPTOP CALL'}</p></div>`}
+function laptop(c){return `<div class="laptopScene"><div class="laptopLid">${zoom({...c,staging:{...c.staging,callCast:['marcus']}})}</div><div class="laptopBase"></div><p>${c.scene==='s22'&&c.staging?.laptop?.startsWith('seized')?'LAPTOP SEIZED · CALL STILL OPEN':'MARCUS / LAPTOP CALL'}</p></div>`}
 function courtVisual(c,side){
  if(c.state==='brownout')return physicalPhoto(side==='left'?'judge-room':'prosecutor-room','courtroom')+'<div class="courtDim"></div>';
  if(side==='left'){
@@ -218,13 +218,13 @@ function renderBaseVisual(c,side){
  if(isWorm(c))return wormMarkup(c,side);
  if(c.scene==='s24')return counsel(c,side);
  if(c.state==='black')return '';
- if(c.scene==='s19')return '';
+ if(c.scene==='s19')return side==='right'&&c.staging?.callCast?.length?laptop(c):'';
  if(c.scene==='s20b')return side==='left'&&c.beat>=48?screens[c.state]?.(c)||'':'';
  if(c.scene==='s20')return side==='left'?screens[c.state]?.(c)||'':'';
  if(c.scene==='s10')return side==='right'?physicalPhoto(c.staging.meeting,'CEO office'):c.beat>=29?pr(c):screens[c.state]?.(c)||'';
  if(c.scene==='s22'){
   if(side==='right'){
-   if(c.staging.officersPresent)return physicalPhoto(c.beat>=33?'officer-two':c.speaker==='officer two'?'officer-two':'officer-one','Liam apartment',c.beat>=33?'Officer Two':c.speaker==='officer two'?'Officer Two':'Officer One');
+   if(c.staging.officersPresent)return physicalPhoto(c.speaker==='officer two'||c.state==='motive'?'officer-two':'officer-one','Liam apartment',c.speaker==='officer two'||c.state==='motive'?'Officer Two':'Officer One');
    return laptop(c);
   }
   if(['arrest-form','motive'].includes(c.state))return `<div class="officerTablet">${arrest(c.state==='motive')}</div>`;
