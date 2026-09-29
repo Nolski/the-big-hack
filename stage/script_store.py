@@ -225,14 +225,14 @@ class ScriptStore:
             if len(ids)!=len(s['scenes']) or set(ids)!={sc['id'] for sc in s['scenes']}: raise ValueError('Include every scene exactly once.')
             by={sc['id']:sc for sc in s['scenes']};s['scenes']=[by[i] for i in ids]
         return self.transaction(expect,edit)
-    def register_audio(self,cid,text,speaker,profile,path,duration):
+    def register_audio(self,cid,text,speaker,profile,path,duration,provenance=None):
         with self.locked():
             s=self.read();c=next((c for c in s['cues'] if c['id']==cid),None)
             if not c or (c['text'],c['speaker'],c.get('voiceProfile'))!=(text,speaker,profile): raise Conflict('Script or voice changed during generation; recording was not attached.')
             data=Path(path).read_bytes();sha=hashlib.sha256(data).hexdigest();dest=self.root/'assets/audio'/('shared-'+sha+Path(path).suffix)
             dest.write_bytes(data)
             mpath=self.root/'generated-voices.json';m=json.loads(mpath.read_text());rel=str(dest.relative_to(self.root))
-            m['recordings'][cid]={'text':text,'speaker':speaker,'voiceProfile':profile,'audio':rel,'duration':duration,'audioSha256':sha,'provenance':{'type':'shared-script-generation'}}
+            m['recordings'][cid]={'text':text,'speaker':speaker,'voiceProfile':profile,'audio':rel,'duration':duration,'audioSha256':sha,'provenance':provenance or {'type':'shared-script-generation'}}
             self.atomic(mpath,m)
             c['audio']=rel;c['audioDuration']=duration
             self.atomic(self.path,s)
