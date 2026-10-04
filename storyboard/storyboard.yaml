@@ -100,7 +100,7 @@ characters:
     sample: voices/narrator.wav
     vector: vectors/narrator.npy
 - id: liam
-  name: Liam
+  name: SJ
   world: modern
   role: protagonist
   medium: live-actor

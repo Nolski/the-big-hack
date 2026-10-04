@@ -2,9 +2,9 @@ import {redditBody} from './reddit.js?v=pace-20260918';
 import {isWorm,wormMarkup} from './worm.js';
 import {renderScreenAction} from './screen-actions.js?v=hacking-restore-20260919b';
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const names={hr:'Dana',ceo:'CEO',kristina:'Kristina',kara:'Kara',liam:'Liam',brendan:'Brendan',marcus:'Marcus',prosecutor:'Prosecutor',judge:'Judge',counsel:'Counsel','officer one':'Officer One','officer two':'Officer Two'};
+const names={hr:'Dana',ceo:'CEO',kristina:'Kristina',kara:'Kara',liam:'SJ',brendan:'Brendan',marcus:'Marcus',prosecutor:'Prosecutor',judge:'Judge',counsel:'Counsel','officer one':'Officer One','officer two':'Officer Two'};
 const portraits={kristina:'kristina',kara:'kara','officer one':'officer-one','officer two':'officer-two'};
-const initials=id=>(names[id]||id||'').split(' ').map(x=>x[0]).join('').slice(0,2);
+const initials=id=>id==='liam'?'SJ':(names[id]||id||'').split(' ').map(x=>x[0]).join('').slice(0,2);
 const shell=(app,title,body,light=false)=>`<section class="window ${light?'light':''}"><div class="windowbar"><i></i><i></i><i></i><span>${esc(app)}</span><em>${esc(title)}</em></div>${body}</section>`;
 const tag=(text,kind='')=>`<span class="tag ${kind}">${esc(text)}</span>`;
 const lines=xs=>xs.map(x=>`<div class="code-line ${x.startsWith('+')?'added':x.startsWith('-')?'removed':''}">${esc(x)||'&nbsp;'}</div>`).join('');
@@ -52,7 +52,7 @@ function peer(state,c){
  const b=c.beat;let value='';
  if(state==='peer-draft')value='No major concerns.';
  if(['peer-writing','peer-delete','peer-four','peer-submit'].includes(state)){
- const parts=['Liam is the strongest engineer on this team.'];
+ const parts=['SJ is the strongest engineer on this team.'];
  if(b>=50)parts.push("He’s running a local setup instead of the tools the rest of us are on, and it’s slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it."+(b===50?' He said it like it settled something.':''));
  if(b>=53)parts.push('Review turnaround on his queue is long. There was a four-line fix that sat for nine days. I don’t think that’s carelessness. I think he reads everything and there’s a lot to read.');
  if(b>=55)parts.push('The newer engineers have started treating his position on the tooling as the careful one.'+(b>=60?' He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.':''));
@@ -61,8 +61,8 @@ function peer(state,c){
  const scored=state==='peer-form'?field('Technical judgement','1     2     3     ④     5')+field('Communication','1     2     3     ④     5'):'';
  return doc('H2 Peer Input',scored+`<h2>Is there anyone whose work made it harder for you to deliver this half? <small>(Optional)</small></h2><div class="text-box ${state==='peer-submit'?'submitted':''}">${esc(value).replaceAll('\n','<br>')}<span class="caret">▌</span></div>${state==='peer-submit'?'<div class="feedback-received">Thanks your feedback has been recorded.</div>':'<div class="form-button">Submit</div>'}`,'PEER FEEDBACK / PRIVATE')
 }
-const rank=()=>shell('Spreadsheet','Q3 Organisational Review — Engineering',`<div class="sheet"><h1>Q3 Organisational Review — Engineering</h1><div class="sheethead"><span>Engineer</span><span>Tickets closed</span><span>Source</span></div>${Array.from({length:30},(_,i)=>{const row=i+1,name=row===9?'Marcus':row===24?'Liam':row===22?'Brendan':'Engineer '+row;return `<div class="sheetrow ${row===20?'cutline':''} ${['Liam','Brendan'].includes(name)?'belowline':''} ${name==='Marcus'?'marcus-row':''}"><span>${name}</span><strong>${name==='Brendan'?'9':'—'}</strong><span>Jira</span></div>`}).join('')}</div>`,true);
-const slack=(title,body)=>shell('Slack',title,`<div class="slack"><div class="slack-sidebar">WORKSPACE<br><br># general<br># engineering<br># releases<br><br>Direct messages<br>Brendan<br>Kristina<br>Liam</div><div class="slack-main"><h1>${esc(title)}</h1>${body}</div></div>`,true);
+const rank=()=>shell('Spreadsheet','Q3 Organisational Review — Engineering',`<div class="sheet"><h1>Q3 Organisational Review — Engineering</h1><div class="sheethead"><span>Engineer</span><span>Tickets closed</span><span>Source</span></div>${Array.from({length:30},(_,i)=>{const row=i+1,name=row===9?'Marcus':row===24?'SJ':row===22?'Brendan':'Engineer '+row;return `<div class="sheetrow ${row===20?'cutline':''} ${['SJ','Brendan'].includes(name)?'belowline':''} ${name==='Marcus'?'marcus-row':''}"><span>${name}</span><strong>${name==='Brendan'?'9':'—'}</strong><span>Jira</span></div>`}).join('')}</div>`,true);
+const slack=(title,body)=>shell('Slack',title,`<div class="slack"><div class="slack-sidebar">WORKSPACE<br><br># general<br># engineering<br># releases<br><br>Direct messages<br>Brendan<br>Kristina<br>SJ</div><div class="slack-main"><h1>${esc(title)}</h1>${body}</div></div>`,true);
 const promo=()=>slack('# general','<div class="message"><div class="avatar">K</div><div><strong>Kristina</strong><small>5 days ago</small><p>Huge congrats to Brendan on the step up!</p><div class="reaction">🎉 41</div></div></div><div class="message"><div class="avatar">M</div><div><strong>Marcus</strong><p>congrats!! 🎉</p></div></div>');
 const calendar=(title,people,detail)=>shell('Calendar',title,`<div class="calendar"><div class="calendar-date">THURSDAY <strong>14</strong></div><div class="calendar-event"><span>MEETING INVITATION</span><h1>${esc(title)}</h1><p>${esc(people)}</p><p>${esc(detail)}</p><div class="calendar-actions">Accept &nbsp;&nbsp; Maybe &nbsp;&nbsp; Decline</div></div></div>`,true);
 const screens={
@@ -92,9 +92,9 @@ const screens={
  mandate:()=>doc('AI — How we work',para('Every team should be using these tools.')+para('Feature delivery and adoption will be part of how we assess the work.')+field('Owner','Leadership'),'COMPANY MEMO'),
  roadmap:()=>doc('Product roadmap','<div class="roadmap"><section><h2>THIS SPRINT</h2>Developer portal<br>Partner API</section><section><h2>NEXT</h2>Workflow integrations<br>Automation</section><section><h2>LATER</h2>Platform improvements</section></div>','PRODUCT / PLANNING'),
  memo:()=>doc('AI — HOW WE WORK',para('AI is not an innovation project. It is becoming part of the job. Every team should be finding out, now, where these tools are useful and where they fail, because that knowledge is the advantage.')+para('These tools produce bad work when they’re used badly. That is not a reason to avoid them. It is a reason to learn them while learning still counts for something.'),'FROM THE CEO / ALL STAFF'),
- 'local-model':()=>terminal('Local model / 5 tokens per second',['Loading model…','████████░░░░░░░░░░░░░░','Estimated load: 6 minutes','','Analyzing… the… function…','','- generated implementation','+ Liam’s manual rewrite']),
+ 'local-model':()=>terminal('Local model / 5 tokens per second',['Loading model…','████████░░░░░░░░░░░░░░','Estimated load: 6 minutes','','Analyzing… the… function…','','- generated implementation','+ SJ’s manual rewrite']),
  'cloud-fix':()=>terminal('Cloud agent / billing/webhooks.rb',['Retry failed deliveries with exponential backoff.','Cap at 5.','','✓ Handler updated','✓ Test passed','✓ Done']),
- policy:()=>doc('Security policy',para('Proprietary source code must not be shared with external model providers.')+field('Owner','Liam')+field('Last reviewed','Fourteen months ago')+'<div class="text-box">re: standup, the policy thing. it’s one paragraph and it’s obviously outdated…<span class="caret">▌</span></div>','ENGINEERING'),
+ policy:()=>doc('Security policy',para('Proprietary source code must not be shared with external model providers.')+field('Owner','SJ')+field('Last reviewed','Fourteen months ago')+'<div class="text-box">re: standup, the policy thing. it’s one paragraph and it’s obviously outdated…<span class="caret">▌</span></div>','ENGINEERING'),
  'patch-delete':()=>terminal('Brendan / working tree',['$ git diff','','No changes.']),
  'new-model':()=>plan('New session',[],'Model: Latest Claude'),
  'sync-plan':()=>plan('Cross-post Linear tickets into Jira',['Read the Linear and Jira APIs.','Use the existing Vault integration.','Write and run integration tests.']),
@@ -102,22 +102,22 @@ const screens={
  'sync-done':()=>doc('Integration installed',banner('✓ Tests passed','Linear tickets are being created in Jira.','success')+field('Elapsed','4 minutes')),
  calendar:()=>calendar('Next meeting','Kristina','Starting now'),
  'peer-form':c=>peer('peer-form',c),'peer-empty':c=>peer('peer-empty',c),'peer-draft':c=>peer('peer-draft',c),'peer-writing':c=>peer('peer-writing',c),'peer-delete':c=>peer('peer-delete',c),'peer-four':c=>peer('peer-four',c),'peer-submit':c=>peer('peer-submit',c),
- 'review-queue':()=>doc('Review queue',field('Pull request','Waiting for Liam')+field('Status','Review requested')+field('Age','Nine days'),'ENGINEERING'),
- 'peer-summary':()=>doc('Peer input summary','<blockquote>'+feedback+'</blockquote>','H2 / LIAM'),
- 'review-packet':()=>doc('H2 self-review packet','<h2>Peer input summary</h2><blockquote>'+feedback+'</blockquote>','LIAM'),
- 'review-scores':()=>doc('Performance review',field('Technical contribution','Meets expectations')+field('Collaboration','Below expectations','negative')+field('Overall','Below expectations','negative'),'H2 / LIAM'),
- 'review-invite':()=>calendar('H2 check-in','Liam · Kristina','30 minutes · Thursday'),
+ 'review-queue':()=>doc('Review queue',field('Pull request','Waiting for SJ')+field('Status','Review requested')+field('Age','Nine days'),'ENGINEERING'),
+ 'peer-summary':()=>doc('Peer input summary','<blockquote>'+feedback+'</blockquote>','H2 / SJ'),
+ 'review-packet':()=>doc('H2 self-review packet','<h2>Peer input summary</h2><blockquote>'+feedback+'</blockquote>','SJ'),
+ 'review-scores':()=>doc('Performance review',field('Technical contribution','Meets expectations')+field('Collaboration','Below expectations','negative')+field('Overall','Below expectations','negative'),'H2 / SJ'),
+ 'review-invite':()=>calendar('H2 check-in','SJ · Kristina','30 minutes · Thursday'),
  'options-email':()=>doc('Following up — options and next steps',para('From: People Partner')+'<div class="attachments">Performance Improvement Plan 30/60/90<br>Separation Agreement and General Release</div>'+para('No pressure either way, take the week. Let me know by Friday which you’d like to proceed with.')),
  separation:()=>doc('Separation Agreement and General Release',field('Severance','Nine weeks’ pay')+field('Health cover','Through the end of the following month')+para('A general release of all claims, known and unknown.')+para('Non-disparagement provision.')+'<blockquote>Mutual separation</blockquote>'),
  'plan-reply':()=>doc('Re: Following up — options and next steps',para('I’d like to do the plan. Thank you for putting the criteria in writing.')),
  pip:()=>doc('Performance Improvement Plan',field('Median time to first review','Under 24 hours')+field('Open reviews','No older than 3 business days')+field('Tooling adoption','At or above team median')+field('Weekly planning','Attend and contribute'),'30 / 60 / 90'),
  assessment:()=>doc('Performance Improvement Plan',para('Demonstrate improved collaboration and responsiveness to peer feedback.')+field('Manager assessment','')+'<div class="text-box empty"><span class="caret">▌</span></div>','30 / 60 / 90'),
- ranking:()=>rank(),waiting:()=>calendar('Catch up','Dana · Liam','Waiting for the host…'),
+ ranking:()=>rank(),waiting:()=>calendar('Catch up','Dana · SJ','Waiting for the host…'),
  offboarding:()=>doc('Separation details',field('Role','Impacted')+field('Access','Ends after this call')+field('Equipment','Return company assets'),'PEOPLE OPERATIONS'),
- calendars:()=>doc('Team calendars',field('Marcus','No meeting with Dana')+field('Brendan','Catch up — Dana / Brendan')+field('Liam','Catch up — Dana / Liam'),'TODAY'),
+ calendars:()=>doc('Team calendars',field('Marcus','No meeting with Dana')+field('Brendan','Catch up — Dana / Brendan')+field('SJ','Catch up — Dana / SJ'),'TODAY'),
  'blank-notes':()=>shell('Notes','Untitled',`<div class="blank-note">Today<br><br><span class="caret">▌</span></div>`,true),
  'asset-register':()=>doc('Asset register',field('Laptop','Return')+field('Monitor','Return')+field('Mac Studio','No matching record'),'COMPANY EQUIPMENT'),
- rehire:()=>doc('Offboarding record',field('Employee','Liam')+field('Eligible for rehire','No','negative'),'PEOPLE OPERATIONS / INTERNAL'),
+ rehire:()=>doc('Offboarding record',field('Employee','SJ')+field('Eligible for rehire','No','negative'),'PEOPLE OPERATIONS / INTERNAL'),
  jitsi:()=>'<div class="blank-visual"></div>','jitsi-two':()=>'<div class="blank-visual"></div>',
  promotion:()=>promo(),'brendan-invite':()=>calendar('Catch up — Dana / Brendan','Dana · Brendan','15 minutes'),
  thanks:()=>promo()+`<div class="reply-float">thanks everyone.<span class="caret">▌</span></div>`,
@@ -125,10 +125,10 @@ const screens={
  apartment:()=>'',night:()=>'',studio:()=>'', 'empty-desk':()=>'',
  'nine-tickets':()=>doc('Feature delivery',`<div class="metric">9</div><h2>Brendan</h2>${para('Source: Jira')}`,'ENGINEERING PRODUCTIVITY METRICS'),
  wallpaper:()=>`<div class="wallpaper"><div class="wallpaper-code">:wq</div><p>It works on my machine.</p></div>`,
- credentials:()=>terminal('Local terminal',['Session restored.','','Identity: Liam','Development account: connected','Credentials: active']),
+ credentials:()=>terminal('Local terminal',['Session restored.','','Identity: SJ','Development account: connected','Credentials: active']),
  'agent-no-tools':()=>terminal('Local agent',['> lits all the s3 buckes we have access to','','I don’t have access to any tool…']),
  'tool-setup':()=>terminal('Cursor / configuration',['Adding modern tool access…','Configuring local agent…','✓ Configuration complete']),
- buckets:()=>terminal('Development account',['Storage buckets available:','','dev-build-artifacts','dev-workspace-cache','production-release-artifacts','','Session identity: Liam']),
+ buckets:()=>terminal('Development account',['Storage buckets available:','','dev-build-artifacts','dev-workspace-cache','production-release-artifacts','','Session identity: SJ']),
  'audit-prompt':()=>terminal('Local agent / task',['Find out why I was fired.','I want the real reason, not the HR script.','','I’m going to bed. Find the answer.']),
  'audit-start':()=>terminal('Local agent / running',['I’ll find the records behind the decision.','','Required records: access denied','Planning access to restricted systems…','','Working…']),
  'swarm-seed':()=>swarm('DEV ACCOUNT','The first copies',1),
@@ -146,31 +146,31 @@ const screens={
  'swarm-variants':()=>swarm('DIVERGING INSTRUCTIONS','Multiple variants',5),
  'swarm-million':()=>swarm('SYSTEMS REACHED','Over one million',6),
  'swarm-0700':()=>swarm('07:00','No central point of control',7),
- 'swarm-after':()=>swarm('THE LIAM WORM','Still spreading',8),
- phone:()=>`<div class="phone"><small>INCOMING NOTIFICATION</small><h1>Liam</h1><p>1 new message</p></div>`,
+ 'swarm-after':()=>swarm('THE SJ WORM','Still spreading',8),
+ phone:()=>`<div class="phone"><small>INCOMING NOTIFICATION</small><h1>SJ</h1><p>1 new message</p></div>`,
  'audit-summary':()=>terminal('Local agent / complete',['Local worker finished.','','Development resources provisioned.','Remote tasks delegated.','Local task finished.']),
  refusal:()=>terminal('Opus / session',['> Shut down the EC2 instances.','','I can’t assist with this activity.','The context includes unauthorized access.']),
  cleanup:()=>terminal('Opus / new session',['> Shut down EC2 instances in the dev account','  created between 1am and now.','','✓ Instances terminated']),
- 'audit-log':()=>doc('Audit trail',`<div class="logrow"><b>01:58</b><span>RunInstances</span><strong>Liam</strong></div><div class="logrow"><b>07:04</b><span>TerminateInstances</span><strong>Liam</strong></div><blockquote>Every action attributed to the same identity.</blockquote>`,'CLOUDTRAIL / EXHIBIT'),
- 'liam-text':()=>slack('Liam','<div class="message"><div class="avatar">L</div><div><strong>Liam</strong><small>06:02</small><p>morning. Branden! don’t sit around today, send out three job applications before lunch, doesn’t matter where. it’s important you not get in your own head..</p></div></div>'),
- 'reply-delete':()=>slack('Liam','<div class="text-box empty"><span class="caret">▌</span></div>'),
+ 'audit-log':()=>doc('Audit trail',`<div class="logrow"><b>01:58</b><span>RunInstances</span><strong>SJ</strong></div><div class="logrow"><b>07:04</b><span>TerminateInstances</span><strong>SJ</strong></div><blockquote>Every action attributed to the same identity.</blockquote>`,'CLOUDTRAIL / EXHIBIT'),
+ 'liam-text':()=>slack('SJ','<div class="message"><div class="avatar">SJ</div><div><strong>SJ</strong><small>06:02</small><p>morning. Branden! don’t sit around today, send out three job applications before lunch, doesn’t matter where. it’s important you not get in your own head..</p></div></div>'),
+ 'reply-delete':()=>slack('SJ','<div class="text-box empty"><span class="caret">▌</span></div>'),
  hackernews:()=>shell('Browser','news.ycombinator.com',`<div class="hn"><header><b>Y</b> Hacker News <span>new | past | comments | ask | show | jobs</span></header><article><h1>Widespread outages across cloud services</h1><small>comments</small><p>Is anyone else seeing this?</p><hr><p>We’re still trying to work out the scope.</p><hr><p>It doesn’t appear to have a central control server.</p></article></div>`,true),
  door:()=>'',breach:()=>'<div class="breach"></div>','arrest-room':()=>'',
  'arrest-form':()=>arrest(false),motive:()=>arrest(true),
  evidence:()=>doc('Property receipt',field('Laptop','Seized')+field('Desktop computer','Seized')+field('Other electronic equipment','Seized'),'EVIDENCE / INVENTORY'),
- court:()=>doc('United States v. Liam Mkrtchyan',field('Proceeding','Trial')+field('Counts','19')+field('Status','In progress'),'DISTRICT COURT'),
+ court:()=>doc('United States v. SJ Mkrtchyan',field('Proceeding','Trial')+field('Counts','19')+field('Status','In progress'),'DISTRICT COURT'),
  counts:c=>doc('Counts',`<div class="counts-grid">${Array.from({length:19},(_,i)=>{const n=i+1,labels={1:'Intentional access without authorisation',2:'Exceeding authorised access',3:'Transmission of a program causing damage',11:'Access in furtherance of fraud',12:'Access in furtherance of fraud',13:'Access in furtherance of fraud',14:'Access in furtherance of fraud',15:'Damage to a protected computer',16:'Damage to a protected computer',17:'Aggravated identity theft'};return `<div class="count-row" style="${[3,4].includes(c.beat)?`animation-delay:${i*.65}s`:'animation:none'}"><b>${String(n).padStart(2,'0')}</b><span>${labels[n]||'Count '+n}</span></div>`}).join('')}</div>`,'CHARGING DOCUMENT / 19 COUNTS'),
  brownout:()=>'<div class="brownout"></div>',
  'court-calendar':()=>doc('Court calendar',field('14','Continued hearing')+para('Entered by hand.'),'DISTRICT COURT'),
  radio:()=>shell('Radio terminal','Private link',`<div class="radio"><h1>LORA</h1><span>PEER CONNECTED</span><div class="radio-line"></div><small>Low bandwidth · Private channel</small></div>`),
  'candle-room':()=>'',stars:()=>'',
- plea:()=>doc('Plea agreement',field('Term','18 months')+field('Retained counts','One and fifteen')+field('With good conduct','About fifteen months'),'UNITED STATES v. LIAM MKRTCHYAN'),
+ plea:()=>doc('Plea agreement',field('Term','18 months')+field('Retained counts','One and fifteen')+field('With good conduct','About fifteen months'),'UNITED STATES v. SJ MKRTCHYAN'),
  statement:()=>doc('Statement of Facts',para('The defendant knowingly and intentionally accessed a protected computer without authorisation.')+para('The defendant agrees that the foregoing statement is true and correct.')),
  knowingly:()=>doc('Statement of Facts','<blockquote>The defendant <mark>knowingly</mark> and intentionally accessed a protected computer without authorisation.</blockquote>'+para('I have read this statement in full.')),
- signed:()=>doc('Statement of Facts',para('I have read this statement in full.')+'<div class="signature">Liam Mkrtchyan</div><p class="signature-label">Signature of defendant</p>'+field('Date','Signed')),
+ signed:()=>doc('Statement of Facts',para('I have read this statement in full.')+'<div class="signature">SJ Mkrtchyan</div><p class="signature-label">Signature of defendant</p>'+field('Date','Signed')),
  black:()=>''
 };
-function arrest(motive){return doc('Current employer',field('Name','Liam Mkrtchyan')+field('Current employer','Unemployed')+field('Motive',motive?'Recently laid off':''),'ARREST RECORD')}
+function arrest(motive){return doc('Current employer',field('Name','SJ Mkrtchyan')+field('Current employer','Unemployed')+field('Motive',motive?'Recently laid off':''),'ARREST RECORD')}
 function swarm(title,detail,level){return `<div class="swarm-caption"><div>${esc(title)}</div><h1>${esc(detail)}</h1><small>Variant generation ${level}</small></div>`}
 export const visualStates=[...Object.keys(screens),'cursor-corrected','future-tests','swarm-asleep','swarm-alerts','swarm-beachheads'];
 const setPath=(variant,side)=>variant?'assets/sets/v2/'+variant+'-'+side+'.mp4':null;
@@ -200,13 +200,13 @@ function courtVisual(c,side){
 }
 function radio(c){return `<div class="radioDevice"><div class="radioAntenna"></div><div class="radioBody"><div class="radioLCD"><small>LoRa / PRIVATE LINK</small><strong>MARCUS</strong><span>CONNECTED</span><div class="radioWave"></div></div><div class="radioGrille"></div><div class="radioDial"></div></div></div>`}
 function counsel(c,side){
- if(c.state==='black')return side==='left'&&c.beat===32?`<div class="bareRoom"><div class="bareTable"><div class="signedPaper">Liam Mkrtchyan</div></div></div>`:'';
+ if(c.state==='black')return side==='left'&&c.beat===32?`<div class="bareRoom"><div class="bareTable"><div class="signedPaper">SJ Mkrtchyan</div></div></div>`:'';
  if(side==='left')return `<div class="agreementTable">${screens[c.state]?.(c)||''}</div>`;
  return `<div class="bareRoom"><div class="counselMonitor"><div class="counselAvatar">C</div><span>Defence Counsel</span><small>${c.isSpeaking?'Speaking':'Connected'}</small></div><div class="bareTable"></div><div class="manualCalendar"><strong>14</strong><span class="${c.beat>=26?'vacated':''}">Continued hearing</span>${c.beat>=26?'<small>Removed from calendar</small>':''}</div></div>`;
 }
 function renderBaseVisual(c,side){
  if(c.montage)return '';
- if(c.sharedPR&&side==='right')return `<section class="call"><header><strong>Google Meet</strong><span>Liam is presenting</span></header><div style="position:absolute;inset:80px 20px 175px;overflow:hidden"><div style="width:1920px;height:1080px;transform:scale(.70);transform-origin:top left;position:absolute;left:220px">${pr(c)}</div></div><div class="filmstrip" style="position:absolute;left:0;right:0;bottom:75px;height:130px">${['liam','kristina','brendan','marcus'].map(id=>`<div class="smalltile ${id===c.speaker?'speaking':''}"><div class="initial">${initials(id)}</div><span>${names[id]}</span></div>`).join('')}</div><footer style="position:absolute;left:0;right:0;bottom:0;height:70px"><span>Microphone</span><span>Camera</span><span class="share">Liam is sharing</span></footer></section>`;
+ if(c.sharedPR&&side==='right')return `<section class="call"><header><strong>Google Meet</strong><span>SJ is presenting</span></header><div style="position:absolute;inset:80px 20px 175px;overflow:hidden"><div style="width:1920px;height:1080px;transform:scale(.70);transform-origin:top left;position:absolute;left:220px">${pr(c)}</div></div><div class="filmstrip" style="position:absolute;left:0;right:0;bottom:75px;height:130px">${['liam','kristina','brendan','marcus'].map(id=>`<div class="smalltile ${id===c.speaker?'speaking':''}"><div class="initial">${initials(id)}</div><span>${names[id]}</span></div>`).join('')}</div><footer style="position:absolute;left:0;right:0;bottom:0;height:70px"><span>Microphone</span><span>Camera</span><span class="share">SJ is sharing</span></footer></section>`;
  if(c.primeWallpaper&&side==='left')return `<div style="position:absolute;inset:0;background:#16171c;display:flex;flex-direction:column;align-items:center;justify-content:center"><img src="assets/props/theprimeagen.png" alt="ThePrimeagen" style="height:690px;max-width:1300px;object-fit:contain"><p style="font:bold 64px system-ui;color:white;margin:26px">IT WORKS ON MY MACHINE.</p><span style="font:24px system-ui;color:#bbb">ThePrimeagen</span></div>`;
  if(c.revisionCode&&side==='left')return terminal('auth/signatures.ts · committed two years ago',['export function verifySignature(provided, expected) {', '  if (provided = expected) {', '    return true;', '  }', '  return false;', '}']);
  if(c.rehireNo&&side==='left')return screens.rehire();
@@ -224,7 +224,7 @@ function renderBaseVisual(c,side){
  if(c.scene==='s10')return side==='right'?physicalPhoto(c.staging.meeting,'CEO office'):c.beat>=29?pr(c):screens[c.state]?.(c)||'';
  if(c.scene==='s22'){
   if(side==='right'){
-   if(c.staging.officersPresent)return physicalPhoto(c.speaker==='officer two'||c.state==='motive'?'officer-two':'officer-one','Liam apartment',c.speaker==='officer two'||c.state==='motive'?'Officer Two':'Officer One');
+   if(c.staging.officersPresent)return physicalPhoto(c.speaker==='officer two'||c.state==='motive'?'officer-two':'officer-one','SJ apartment',c.speaker==='officer two'||c.state==='motive'?'Officer Two':'Officer One');
    return laptop(c);
   }
   if(['arrest-form','motive'].includes(c.state))return `<div class="officerTablet">${arrest(c.state==='motive')}</div>`;
@@ -257,7 +257,7 @@ export function counterProfile(c){
  return {base:later[c.scene]||0,rate:later[c.scene]?5000:0,visible:!!later[c.scene]&&c.state!=='black'&&!c.offstage&&!isWorm(c),large:false};
 }
 
-const desktopPortraits={Liam:'liam',Brendan:'brendan',Marcus:'marcus',Kristina:'kristina',Kara:'kara',Dana:'hr'};
+const desktopPortraits={SJ:'liam',Brendan:'brendan',Marcus:'marcus',Kristina:'kristina',Kara:'kara',Dana:'hr'};
 export function renderVisual(c,side){let visual=renderBaseVisual(c,side);
  const owner=c.computers?.[side],portrait=desktopPortraits[owner];
  // Physical scenes, phones, video links, blackout and films retain their own staging.

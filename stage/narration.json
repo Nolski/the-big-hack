@@ -39,9 +39,9 @@
     {
       "id": "s01_l8",
       "scene": "s01",
-      "text": "Liam\u2019s heart skips a beat when he hears Brendan worked on the weekend\u2026",
+      "text": "SJ\u2019s heart skips a beat when he hears Brendan worked on the weekend\u2026",
       "audio": "assets/audio/author-9910e5bd8477d97f6b14f7.mp3",
-      "sourceText": "On \"his weekend,\" LIAM's hand goes still on the mouse. For the first time he pauses scrolling and looks up.",
+      "sourceText": "On \"his weekend,\" SJ's hand goes still on the mouse. For the first time he pauses scrolling and looks up.",
       "speaker": "narrator"
     },
     {
@@ -55,7 +55,7 @@
     {
       "id": "s01_l39",
       "scene": "s01",
-      "text": "Kristina holds her tongue, she is in disbelief about what Liam just said.",
+      "text": "Kristina holds her tongue, she is in disbelief about what SJ just said.",
       "audio": "assets/audio/author-930a375212782060633bdc.mp3",
       "sourceText": "Silence on the call. For the first time all morning, KRISTINA holds her tongue, the bright standup-runner cadence just stops. Her mouth opens. Nothing comes. The \"+812\" sits there. The Merged badge sits there.",
       "speaker": "narrator"
@@ -63,17 +63,17 @@
     {
       "id": "s06_l1",
       "scene": "s06",
-      "text": "A few months pass\u2026 Anthropic has just released Opus 4.7. Liam is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running.",
+      "text": "A few months pass\u2026 Anthropic has just released Opus 4.7. SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running.",
       "audio": "assets/audio/author-3e3dce85ed3264364be274.mp3",
-      "sourceText": "At Liam's desk, the morning after. No memes today. LIAM is actually working hunched in, headphones half-on. He has been at this a while and it shows. On the second monitor the standup grid is already running; his tile is the same black square, camera still off. He is not really in the meeting. He is in the race condition he's tasked with fixing.",
+      "sourceText": "At SJ's desk, the morning after. No memes today. SJ is actually working hunched in, headphones half-on. He has been at this a while and it shows. On the second monitor the standup grid is already running; his tile is the same black square, camera still off. He is not really in the meeting. He is in the race condition he's tasked with fixing.",
       "speaker": "narrator"
     },
     {
       "id": "s06_l34",
       "scene": "s06",
-      "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without Liam the wiser.",
+      "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without SJ the wiser.",
       "audio": "assets/audio/author-10f2e855ce3db9d35c410a.mp3",
-      "sourceText": "On BRENDAN's own screen Claude Code is already open at the repository root with full repo access. He types: \"Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user's account. No production data. Find a local repro and root cause.\" He hits enter. The tool starts traversing controllers, models, tests and the session store. No pasted handler, no logs, no voice; text on a screen LIAM cannot see.",
+      "sourceText": "On BRENDAN's own screen Claude Code is already open at the repository root with full repo access. He types: \"Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user's account. No production data. Find a local repro and root cause.\" He hits enter. The tool starts traversing controllers, models, tests and the session store. No pasted handler, no logs, no voice; text on a screen SJ cannot see.",
       "speaker": "narrator"
     },
     {
@@ -87,17 +87,17 @@
     {
       "id": "s06_l51",
       "scene": "s06",
-      "text": "LIAM is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: REPRODUCED, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show Liam. He lets the huddle go. LIAM types on, warm and none the wiser. Hold a moment on the two screens, his, bright and moving, and on brandon's just a blinking cursor from a rolled back commit.",
+      "text": "SJ is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: REPRODUCED, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show SJ. He lets the huddle go. SJ types on, warm and none the wiser. Hold a moment on the two screens, his, bright and moving, and on brandon's just a blinking cursor from a rolled back commit.",
       "audio": "assets/audio/author-01520f91fe417412659856.mp3",
-      "sourceText": "LIAM is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: REPRODUCED, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show Liam. He lets the huddle go.",
+      "sourceText": "SJ is already dropping back into the code, buzzing, typing the one-line fix happy, restored, the craft-love back in his hands. He doesn't look at the other screen. He wouldn't think to. On BRENDAN's laptop Claude's proof glows a second longer: REPRODUCED, the two screenshots, the script, the completed one-line-fix branch and the shared-store warning. Then BRENDAN quietly checks out the main branch. He leaves the fix branch dangling on his computer. He does not show SJ. He lets the huddle go.",
       "speaker": "narrator"
     },
     {
       "id": "s07_l25",
       "scene": "s07",
-      "text": "Her tile blinks out. BRENDAN sits a second in the quiet. We now see LIAM leaning back from his desk, stretches, genuinely happy. He opens his one-line-fix branch for PR. On the screen above, BRENDAN deletes his local branch, the branch Claude finished twenty minutes ago. The monitor-blue holds on the two of them: the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.",
+      "text": "Her tile blinks out. BRENDAN sits a second in the quiet. We now see SJ leaning back from his desk, stretches, genuinely happy. He opens his one-line-fix branch for PR. On the screen above, BRENDAN deletes his local branch, the branch Claude finished twenty minutes ago. The monitor-blue holds on the two of them: the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.",
       "audio": "assets/audio/author-61351552cd518cc16878e6.mp3",
-      "sourceText": "Her tile blinks out. BRENDAN sits a second in the quiet. We now see LIAM leaning back from his desk, stretches, genuinely happy. He opens his one-line-fix branch for PR. On the screen above, BRENDAN deletes his local branch, the branch Claude finished twenty minutes ago. The monitor-blue holds on the two of them: the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.",
+      "sourceText": "Her tile blinks out. BRENDAN sits a second in the quiet. We now see SJ leaning back from his desk, stretches, genuinely happy. He opens his one-line-fix branch for PR. On the screen above, BRENDAN deletes his local branch, the branch Claude finished twenty minutes ago. The monitor-blue holds on the two of them: the man proudly offering up the fix, and the one quietly erasing the proof that it was already done.",
       "speaker": "narrator"
     },
     {
@@ -175,9 +175,9 @@
     {
       "id": "s11b_l1",
       "scene": "s11b",
-      "text": "A few months later. We find ourselves again in Liam\u2019s apartment, the memes are gone. On his desk sits a new Mac Mini, the protective film still on one corner. A terminal crawls a few tokens\u2026 at\u2026 a\u2026 time, running a local version of Qwen.",
+      "text": "A few months later. We find ourselves again in SJ\u2019s apartment, the memes are gone. On his desk sits a new Mac Mini, the protective film still on one corner. A terminal crawls a few tokens\u2026 at\u2026 a\u2026 time, running a local version of Qwen.",
       "audio": "assets/audio/author-07e057d04d87ed50de8749.mp3",
-      "sourceText": "Liam's desk, a few months later. The memes are gone. New on the desk: a small silver cube of a computer, the protective film still on one corner. On the big monitor a terminal crawls a few tokens\u2026 at\u2026 a\u2026 time, next to a git diff thick with strike-throughs where he's rewritten the machine by hand. On the second monitor the standup grid runs, tiles quietly closing tickets. His camera is on this time.",
+      "sourceText": "SJ's desk, a few months later. The memes are gone. New on the desk: a small silver cube of a computer, the protective film still on one corner. On the big monitor a terminal crawls a few tokens\u2026 at\u2026 a\u2026 time, next to a git diff thick with strike-throughs where he's rewritten the machine by hand. On the second monitor the standup grid runs, tiles quietly closing tickets. His camera is on this time.",
       "speaker": "narrator"
     },
     {
@@ -191,33 +191,33 @@
     {
       "id": "s11b_l62",
       "scene": "s11b",
-      "text": "BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it.",
+      "text": "BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at SJ's one terminal, the cursor blinking, patient. He decides to sit on it.",
       "audio": "assets/audio/author-b33aafa5c8a89e8ed5ac6f.mp3",
-      "sourceText": "BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it.",
+      "sourceText": "BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at SJ's one terminal, the cursor blinking, patient. He decides to sit on it.",
       "speaker": "narrator"
     },
     {
       "id": "s11b_l63",
       "scene": "s11b",
-      "text": "On BRENDAN's own screen he quietly types one line: \"In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5.\" The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before Liam finishes his sentence. He says nothing.",
+      "text": "On BRENDAN's own screen he quietly types one line: \"In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5.\" The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before SJ finishes his sentence. He says nothing.",
       "audio": "assets/audio/author-ac8cead47f2d95ce24261c.mp3",
-      "sourceText": "On BRENDAN's own screen he quietly types one line: \"In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5.\" The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before Liam finishes his sentence. He says nothing.",
+      "sourceText": "On BRENDAN's own screen he quietly types one line: \"In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5.\" The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before SJ finishes his sentence. He says nothing.",
       "speaker": "narrator"
     },
     {
       "id": "s11b_l70",
       "scene": "s11b",
-      "text": "Brendan reads the security policy. \"Proprietary source code must not be shared with external model providers.\" Owner: Liam. Last reviewed: fourteen months ago. He opens a message to Kristina and types: \"re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang...\" He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: \"I don't know if liam is ever going to...\" He stops. He holds backspace until that one is gone too.",
+      "text": "Brendan reads the security policy. \"Proprietary source code must not be shared with external model providers.\" Owner: SJ. Last reviewed: fourteen months ago. He opens a message to Kristina and types: \"re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang...\" He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: \"I don't know if liam is ever going to...\" He stops. He holds backspace until that one is gone too.",
       "audio": "assets/audio/author-41ea8c0558c29e4a794b39.mp3",
-      "sourceText": "On BRENDAN's laptop a new tab: the security policy. \"Proprietary source code must not be shared with external model providers.\" Owner: Liam. Last reviewed: fourteen months ago. He opens a message to Kristina and types: \"re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang...\" He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: \"I don't know if liam is ever going to...\" He stops. He holds backspace until that one is gone too.",
+      "sourceText": "On BRENDAN's laptop a new tab: the security policy. \"Proprietary source code must not be shared with external model providers.\" Owner: SJ. Last reviewed: fourteen months ago. He opens a message to Kristina and types: \"re: standup, the policy thing. it's one paragraph and it's obviously outdated. do you want me to propose we chang...\" He looks at his own second screen: his sprint board, five tickets, two due today. He holds backspace until the message is gone. He starts again: \"I don't know if liam is ever going to...\" He stops. He holds backspace until that one is gone too.",
       "speaker": "narrator"
     },
     {
       "id": "s11b_l75",
       "scene": "s11b",
-      "text": "BRENDAN drops the huddle. On his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete, the same way he held backspace previously, until it's gone too. LIAM turns back to his rig, satisfied. The model puts out the next token. Then, in its own time, the one after. He watches his machine type, patient, certain, sinking.",
+      "text": "BRENDAN drops the huddle. On his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete, the same way he held backspace previously, until it's gone too. SJ turns back to his rig, satisfied. The model puts out the next token. Then, in its own time, the one after. He watches his machine type, patient, certain, sinking.",
       "audio": "assets/audio/author-049849be180d05cd3513b9.mp3",
-      "sourceText": "BRENDAN drops the huddle. On his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete, the same way he held backspace previously, until it's gone too. LIAM turns back to his rig, satisfied. The model puts out the next token. Then, in its own time, the one after. He watches his machine type, patient, certain, sinking.",
+      "sourceText": "BRENDAN drops the huddle. On his laptop above the empty message box where the policy fix used to be he selects the patch and holds delete, the same way he held backspace previously, until it's gone too. SJ turns back to his rig, satisfied. The model puts out the next token. Then, in its own time, the one after. He watches his machine type, patient, certain, sinking.",
       "speaker": "narrator"
     },
     {
@@ -311,9 +311,9 @@
     {
       "id": "s11c_l48",
       "scene": "s11c",
-      "text": "She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.",
+      "text": "She thinks of SJ at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.",
       "audio": "assets/audio/author-c366f3566d13ce238c25aa.mp3",
-      "sourceText": "She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.",
+      "sourceText": "She thinks of SJ at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.",
       "speaker": "narrator"
     },
     {
@@ -327,15 +327,15 @@
     {
       "id": "s12_l11",
       "scene": "s12",
-      "text": "Later that afternoon, Marcus and Brendan are in a one-on-one Slack huddle, reviewing a diff. Liam is at his own desk, reading.",
+      "text": "Later that afternoon, Marcus and Brendan are in a one-on-one Slack huddle, reviewing a diff. SJ is at his own desk, reading.",
       "audio": "assets/audio/author-17b47365f154bbc7f808a0.mp3",
-      "sourceText": "Late afternoon. A Slack huddle on the screen above BRENDAN's desk: his tile and MARCUS's, a diff open between them. Below, in his own pool of light, LIAM at his desk, reading.",
+      "sourceText": "Late afternoon. A Slack huddle on the screen above BRENDAN's desk: his tile and MARCUS's, a diff open between them. Below, in his own pool of light, SJ at his desk, reading.",
       "speaker": "narrator"
     },
     {
       "id": "s12_l30",
       "scene": "s12",
-      "text": "Kristina's weekly standup digest landed in his inbox an hour ago. It detailed the inane argument between Marcus and Liam about whether the Luddites were hanged or sent on holiday to Australia.",
+      "text": "Kristina's weekly standup digest landed in his inbox an hour ago. It detailed the inane argument between Marcus and SJ about whether the Luddites were hanged or sent on holiday to Australia.",
       "audio": "assets/audio/s12-5a1a2385576a2763d71e.mp3",
       "sourceText": "",
       "speaker": "narrator"
@@ -343,7 +343,7 @@
     {
       "id": "s12_l70",
       "scene": "s12",
-      "text": "He submits his feedback. The cycle closes. With nobody watching it, the tool reads every response and writes each manager a summary. Under Liam\u2019s name, one bullet: \u201cMultiple peers cite friction and slow review turnaround.\u201d Nobody typed that sentence. Brendan\u2019s four paragraphs are in there somewhere, and so are the four seconds, and there is no way from the sentence back to either of them\u2026 A few days later Liam calls Brendan.",
+      "text": "He submits his feedback. The cycle closes. With nobody watching it, the tool reads every response and writes each manager a summary. Under SJ\u2019s name, one bullet: \u201cMultiple peers cite friction and slow review turnaround.\u201d Nobody typed that sentence. Brendan\u2019s four paragraphs are in there somewhere, and so are the four seconds, and there is no way from the sentence back to either of them\u2026 A few days later SJ calls Brendan.",
       "audio": "assets/audio/author-6c1a86038381f88a779965.mp3",
       "sourceText": "He doesn't finish it. Nobody makes him stop; he just stops. He turns back to the screen. He doesn't hold backspace. He clicks Submit.",
       "speaker": "narrator"
@@ -351,15 +351,15 @@
     {
       "id": "s14_l1",
       "scene": "s14",
-      "text": "What Kristina had overheard was in fact a precursor to layoffs\u2026 Kara and the CEO had quietly been working on a spreadsheet to cut who they viewed as underperformers. They drew a line two thirds of the way down. Liam\u2019s row is four under the line. Brendan\u2019s is two under. Marcus\u2019s is eleven above.",
+      "text": "What Kristina had overheard was in fact a precursor to layoffs\u2026 Kara and the CEO had quietly been working on a spreadsheet to cut who they viewed as underperformers. They drew a line two thirds of the way down. SJ\u2019s row is four under the line. Brendan\u2019s is two under. Marcus\u2019s is eleven above.",
       "audio": "assets/audio/author-7d28d3b91c67459c8017f4.mp3",
-      "sourceText": "On the screen, the reduction spreadsheet from AIV-076: \"Q3 Organisational Review \u2014 Engineering,\" every engineer sorted by tickets closed, a line drawn two thirds of the way down. Liam's row is four under the line. Brendan's is two under. Marcus's is eleven above.",
+      "sourceText": "On the screen, the reduction spreadsheet from AIV-076: \"Q3 Organisational Review \u2014 Engineering,\" every engineer sorted by tickets closed, a line drawn two thirds of the way down. SJ's row is four under the line. Brendan's is two under. Marcus's is eleven above.",
       "speaker": "narrator"
     },
     {
       "id": "s14_l2",
       "scene": "s14",
-      "text": "The sheet ranks every engineer by how many tickets they closed. There is no column for code review, and none for anything that never became a ticket. Brendan tracked his work somewhere the sheet cannot see, so on the sheet he did almost nothing. Marcus files everything, so he sits near the top. Liam is under the line.",
+      "text": "The sheet ranks every engineer by how many tickets they closed. There is no column for code review, and none for anything that never became a ticket. Brendan tracked his work somewhere the sheet cannot see, so on the sheet he did almost nothing. Marcus files everything, so he sits near the top. SJ is under the line.",
       "audio": "assets/audio/s14-e74d80e019ecec112d18.mp3",
       "sourceText": "",
       "speaker": "narrator"
@@ -375,17 +375,17 @@
     {
       "id": "s14_l4",
       "scene": "s14",
-      "text": "Liam got invited to an unexpected meeting that has Kara and HR in attendance.",
+      "text": "SJ got invited to an unexpected meeting that has Kara and HR in attendance.",
       "audio": "assets/audio/author-a3a441faabe22037ab3381.mp3",
-      "sourceText": "A meeting room. LIAM live at a laptop, camera on, alone, waiting for a call to start. He is reading something else, and he has just found something.",
+      "sourceText": "A meeting room. SJ live at a laptop, camera on, alone, waiting for a call to start. He is reading something else, and he has just found something.",
       "speaker": "narrator"
     },
     {
       "id": "s14_l23",
       "scene": "s14",
-      "text": "She keeps talking but Liam isn't really processing it anymore. LIAM does not move. He does not look away from the screen and he does not look at it either.",
+      "text": "She keeps talking but SJ isn't really processing it anymore. SJ does not move. He does not look away from the screen and he does not look at it either.",
       "audio": "assets/audio/author-0f82802f7fe064eb131df4.mp3",
-      "sourceText": "She keeps talking but Liam isn't really processing it anymore. LIAM does not move. He does not look away from the screen and he does not look at it either.",
+      "sourceText": "She keeps talking but SJ isn't really processing it anymore. SJ does not move. He does not look away from the screen and he does not look at it either.",
       "speaker": "narrator"
     },
     {
@@ -407,9 +407,9 @@
     {
       "id": "s14_l50",
       "scene": "s14",
-      "text": "Liam's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.",
+      "text": "SJ's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.",
       "audio": "assets/audio/author-03bfd863aa09e9f4c74eed.mp3",
-      "sourceText": "Liam's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.",
+      "sourceText": "SJ's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.",
       "speaker": "narrator"
     },
     {
@@ -439,17 +439,17 @@
     {
       "id": "s14a_l1",
       "scene": "s14a",
-      "text": "Two weeks later Liam, Brendan and Marcus all catch up on a jitsi meet together",
+      "text": "Two weeks later SJ, Brendan and Marcus all catch up on a jitsi meet together",
       "audio": "assets/audio/author-b13888412cd7980b6081b0.mp3",
-      "sourceText": "Two weeks later Liam, Brendan and Marcus all catch up on a jitsi meet together",
+      "sourceText": "Two weeks later SJ, Brendan and Marcus all catch up on a jitsi meet together",
       "speaker": "narrator"
     },
     {
       "id": "s14a_l21",
       "scene": "s14a",
-      "text": "Liam thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
+      "text": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
       "audio": "assets/audio/author-8865cac2deb6d92c82c74d.mp3",
-      "sourceText": "Liam thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
+      "sourceText": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
       "speaker": "narrator"
     },
     {
@@ -463,9 +463,9 @@
     {
       "id": "s14a_l31",
       "scene": "s14a",
-      "text": "Marcus doesn't realize Liam was also on a performance improvement plan.",
+      "text": "Marcus doesn't realize SJ was also on a performance improvement plan.",
       "audio": "assets/audio/author-0291fb99ba7598afcbc90e.mp3",
-      "sourceText": "Marcus doesn't realize Liam was also on a performance improvement plan.",
+      "sourceText": "Marcus doesn't realize SJ was also on a performance improvement plan.",
       "speaker": "narrator"
     },
     {
@@ -479,9 +479,9 @@
     {
       "id": "s19_l1",
       "scene": "s19",
-      "text": "We find ourselves in Liam\u2019s apartment with Brendan and Liam. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio and a dongle. They\u2019re drinking together. It\u2019s the first time they\u2019ve been in the same room.",
+      "text": "We find ourselves in SJ\u2019s apartment with Brendan and SJ. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio and a dongle. They\u2019re drinking together. It\u2019s the first time they\u2019ve been in the same room.",
       "audio": "assets/audio/author-85229d8ee35e7a896745ee.mp3",
-      "sourceText": "Brandon and Liam are in Liam's apartment. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio.",
+      "sourceText": "Brandon and SJ are in SJ's apartment. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio.",
       "speaker": "narrator"
     },
     {
@@ -527,17 +527,17 @@
     {
       "id": "s20_l2",
       "scene": "s20",
-      "text": "He Powers on the Mac Studio. It comes up on Liam's wallpaper, a meme of the streamer ThePrimeagen.",
+      "text": "He Powers on the Mac Studio. It comes up on SJ's wallpaper, a meme of the streamer ThePrimeagen.",
       "audio": "assets/audio/author-ffa12dd5d26ed9fd8135b8.mp3",
-      "sourceText": "He Powers on the Mac Studio. It comes up on Liam's wallpaper, a meme of the streamer ThePrimeagen.",
+      "sourceText": "He Powers on the Mac Studio. It comes up on SJ's wallpaper, a meme of the streamer ThePrimeagen.",
       "speaker": "narrator"
     },
     {
       "id": "s20_l4",
       "scene": "s20",
-      "text": "He\u2019s drinking more beer. Liam sent him home with the case.",
+      "text": "He\u2019s drinking more beer. SJ sent him home with the case.",
       "audio": "assets/audio/author-de0fbdddea12b6efda0a4d.mp3",
-      "sourceText": "He's nursing another beer Liam sent him home with.",
+      "sourceText": "He's nursing another beer SJ sent him home with.",
       "speaker": "narrator"
     },
     {
@@ -551,9 +551,9 @@
     {
       "id": "s20_l19",
       "scene": "s20",
-      "text": "He opens the local agent Liam used for development.",
+      "text": "He opens the local agent SJ used for development.",
       "audio": "assets/audio/author-2f71e3c0f7a21e1c5ebbd7.mp3",
-      "sourceText": "He opens up the local agent Liam used to do his local development",
+      "sourceText": "He opens up the local agent SJ used to do his local development",
       "speaker": "narrator"
     },
     {
@@ -647,9 +647,9 @@
     {
       "id": "s20_l37",
       "scene": "s20",
-      "text": "What Brendan didn\u2019t know is that Liam was annoyed by the cybersecurity refusals he sometimes got, so he went out of his way to find an unlocked version of Qwen, instead of the stock model.",
+      "text": "What Brendan didn\u2019t know is that SJ was annoyed by the cybersecurity refusals he sometimes got, so he went out of his way to find an unlocked version of Qwen, instead of the stock model.",
       "audio": "assets/audio/author-5e132189d1284b329dc9fa.mp3",
-      "sourceText": "What Brendan didn't know is Liam was annoyed at the cyber security refusals he would get sometimes, so he went out of his way to find an unlocked version of Qwen3.8 27b, not the stock version",
+      "sourceText": "What Brendan didn't know is SJ was annoyed at the cyber security refusals he would get sometimes, so he went out of his way to find an unlocked version of Qwen3.8 27b, not the stock version",
       "speaker": "narrator"
     },
     {
@@ -735,9 +735,9 @@
     {
       "id": "s20_l49",
       "scene": "s20",
-      "text": "At three twenty-eight, it stops being one machine\u2019s search. The company\u2019s bots and workers become hosts for new copies. The ticket bot, the test bot, the standup-summary bot, and the tool that summarized Liam\u2019s review all join the work.",
+      "text": "At three twenty-eight, it stops being one machine\u2019s search. The company\u2019s bots and workers become hosts for new copies. The ticket bot, the test bot, the standup-summary bot, and the tool that summarized SJ\u2019s review all join the work.",
       "audio": "assets/audio/author-e4f360029e7f9a7c6850a3.mp3",
-      "sourceText": "03:28. It stops being one machine. It conscripts the company's own fleet, the ticket bot, the test bot, the standup-summary bot, the calibration tool that priced Liam out, and it copies the open-weights model off the desk into workers of its own. On the surface, beside the counter: SWARM, coordinating.",
+      "sourceText": "03:28. It stops being one machine. It conscripts the company's own fleet, the ticket bot, the test bot, the standup-summary bot, the calibration tool that priced SJ out, and it copies the open-weights model off the desk into workers of its own. On the surface, beside the counter: SWARM, coordinating.",
       "speaker": "narrator"
     },
     {
@@ -759,9 +759,9 @@
     {
       "id": "s20_l52",
       "scene": "s20",
-      "text": "At five fifty-two, someone revokes Liam\u2019s credential. It\u2019s the right action, done properly. The activity drops for a moment, then starts climbing again.",
+      "text": "At five fifty-two, someone revokes SJ\u2019s credential. It\u2019s the right action, done properly. The activity drops for a moment, then starts climbing again.",
       "audio": "assets/audio/author-4328bd4e719328b68db82f.mp3",
-      "sourceText": "05:52. Someone at the company gets to the right screen and revokes Liam's credential. It is the right call and it is done properly. On the surface, SWARM drops for a second, then climbs again.",
+      "sourceText": "05:52. Someone at the company gets to the right screen and revokes SJ's credential. It is the right call and it is done properly. On the surface, SWARM drops for a second, then climbs again.",
       "speaker": "narrator"
     },
     {
@@ -847,17 +847,17 @@
     {
       "id": "s20_l66",
       "scene": "s20",
-      "text": "The audit logs show the instances being started and stopped using Liam\u2019s credentials. They record the account, not the person sitting at the keyboard.",
+      "text": "The audit logs show the instances being started and stopped using SJ\u2019s credentials. They record the account, not the person sitting at the keyboard.",
       "audio": "assets/audio/author-4fa46bdf98444c9a0c9633.mp3",
-      "sourceText": "The cloudtrail logs mark clearly that Liam spin up EC2 instances, and then a few hours later spin them down.",
+      "sourceText": "The cloudtrail logs mark clearly that SJ spin up EC2 instances, and then a few hours later spin them down.",
       "speaker": "narrator"
     },
     {
       "id": "s20_l67",
       "scene": "s20",
-      "text": "He picks up his phone. Liam texted. Sent at 06:02am.",
+      "text": "He picks up his phone. SJ texted. Sent at 06:02am.",
       "audio": "assets/audio/author-c95aea8d9abe1ba51b728f.mp3",
-      "sourceText": "He picks up his phone. Liam texted. Sent at 06:02am.",
+      "sourceText": "He picks up his phone. SJ texted. Sent at 06:02am.",
       "speaker": "narrator"
     },
     {
@@ -895,7 +895,7 @@
     {
       "id": "s22_l9",
       "scene": "s22",
-      "text": "Liam had no thing at eleven.",
+      "text": "SJ had no thing at eleven.",
       "audio": "assets/audio/s22-bd9cb9f5d3c671fcecf2.mp3",
       "sourceText": "",
       "speaker": "narrator"
@@ -919,7 +919,7 @@
     {
       "id": "s24_l34",
       "scene": "s24",
-      "text": "After Liam signed his guilt, the recently appointed judge rejected the plea deal. Liam got scheduled for sentencing. And by the time his sentencing hearing came up, given the current state of the world... the 151 years would have actually been a good deal.",
+      "text": "After SJ signed his guilt, the recently appointed judge rejected the plea deal. SJ got scheduled for sentencing. And by the time his sentencing hearing came up, given the current state of the world... the 151 years would have actually been a good deal.",
       "audio": "assets/audio/s24-509f7258a2c57be39dd1.mp3",
       "sourceText": "",
       "speaker": "narrator"
