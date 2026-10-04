@@ -147,16 +147,18 @@
       }
     },
     "s01_l17": {
+      "text": "I used the new Claude Opus 4.5, but I went back and forth with it, and the tests all pass, the partners haven't hit a single...",
       "speaker": "brendan",
-      "text": "I used Claude Code, Opus 4.5 but I went back and forth with it, and the tests all pass, the partners haven't hit a single...",
-      "audio": "assets/audio/s01-0fd3edba80878c66fd58.mp3",
-      "duration": 7.92,
-      "sourceSha256": "b20f35f2a4e4e004f0d2facc6dca841ac77e86fdbae88fa59186932a2ce74c01",
-      "audioSha256": "edddff93c802c1b3706bbd832a0889eff25e6ffbfec3322155f07d1a08dc6939",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-ee0321431fde15a5d891fed93470bda47762f78998ca458f72de378420d93ade.wav",
+      "duration": 8.64,
+      "audioSha256": "ee0321431fde15a5d891fed93470bda47762f78998ca458f72de378420d93ade",
       "provenance": {
-        "type": "audio-commit-text-match",
-        "audioCommit": "3744f85f7a6c71d66f4065b51819732f51994526",
-        "source": "/Users/couch/Documents/presentation/the-big-hack-flight/storyboard/artifacts/lines/s01_l17.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 404,
+        "vectorSha256": "908dd8d784845f9afbd88d7be067d2d8e690f6c5f579c1b887e6105a842b0c00"
       }
     },
     "s01_l18": {
@@ -187,40 +189,48 @@
       }
     },
     "s01_l20": {
+      "text": "Liam, have you not been reading the articles on the new Opus? It's literally the end of software engineering as we know it.",
       "speaker": "marcus",
-      "text": "Yeah, well, what I keep saying... Nobody wants to talk about it... the AI is coming for our jobs.",
-      "audio": "assets/audio/s01-d1cb7a3aa2de2f30ba69.mp3",
-      "duration": 6.48,
-      "sourceSha256": "38132e59e1537d91e888aeae34ce50ececfc208bd31f0e8f1745bd2cdc5c0ff9",
-      "audioSha256": "784ce723e09e1bdc71b46d82c4121907c37230dee1299ad38f8ab307833102dd",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-542ee4b58b77bd95f013ebc3abfbd9d7e99df9728c691b2413bb7b4870f6aaa0.wav",
+      "duration": 7.12,
+      "audioSha256": "542ee4b58b77bd95f013ebc3abfbd9d7e99df9728c691b2413bb7b4870f6aaa0",
       "provenance": {
-        "type": "audio-commit-text-match",
-        "audioCommit": "bdfa56c160aa8a0af11b619733b6886f4c17b061",
-        "source": "/Users/couch/Documents/presentation/the-big-hack-cut-pass/storyboard/artifacts/lines/s01_l20.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 909,
+        "vectorSha256": "e22a554f26449ce00fe70894d1157258d8298074efe4c8f6e6d35b858daf9ad1"
       }
     },
     "s01_l21": {
+      "text": "Marcus, maybe if you spent more time reading my PR reviews and less time reading the latest hype craze, you'd realise how bad these tools are.",
       "speaker": "liam",
-      "text": "That's not what I said at all... I said the code is bad... what?",
-      "audio": "assets/audio/s01-c486b8ccf32da6231791.mp3",
-      "duration": 4.48,
-      "sourceSha256": "1bcdb0c6a478b7f050614783654cf0e41a2fb6117f518a019ba35524f1b44677",
-      "audioSha256": "51be1757a2876851b4ff1e3922d537d4080c62d6e3cde11f6e146f54ab4f1419",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-58920078ed599bec6790f8b4c530da8070c0872ee160c4a359ff18c4a3f4a884.wav",
+      "duration": 7.6,
+      "audioSha256": "58920078ed599bec6790f8b4c530da8070c0872ee160c4a359ff18c4a3f4a884",
       "provenance": {
-        "type": "audio-commit-text-match",
-        "audioCommit": "3744f85f7a6c71d66f4065b51819732f51994526",
-        "source": "/Users/couch/Documents/presentation/the-big-hack-flight/storyboard/artifacts/lines/s01_l21.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 101,
+        "vectorSha256": "148d0863b987b74e76ec86977ffcf00c92df62662603d9a4141a558a0a06b686"
       }
     },
     "s01_l22": {
-      "text": "If you listened to what I said about the Luddites last week, Liam... automated machines took the textile workers' jobs. They protested, and the British executed them. The quality of the textiles actually got WORSE, but it didn't matter because it got cheaper. I wish you all would pay more attention to what's happening.",
+      "text": "If you listened to what I said about the Luddites last week rather than trying to talk over me about your trains, Liam... automated machines took the textile workers' jobs. They protested, and the British executed them. The quality of the textiles actually got WORSE, but it didn't matter because it got cheaper. I wish you all would pay more attention to what's happening.",
       "speaker": "marcus",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-b7b60e0edd6f87fe2cdaf9f36864c59759bdbba61ff59a58ffc9b9f84e82b4fd.wav",
-      "duration": 19.76,
-      "audioSha256": "b7b60e0edd6f87fe2cdaf9f36864c59759bdbba61ff59a58ffc9b9f84e82b4fd",
+      "audio": "assets/audio/shared-525aecb21a40b259d410e0cf0c4dbdc6883e900f7d1faabe6f006e3a668b1c22.wav",
+      "duration": 20.4,
+      "audioSha256": "525aecb21a40b259d410e0cf0c4dbdc6883e900f7d1faabe6f006e3a668b1c22",
       "provenance": {
-        "type": "shared-script-generation"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 909,
+        "vectorSha256": "e22a554f26449ce00fe70894d1157258d8298074efe4c8f6e6d35b858daf9ad1"
       }
     },
     "s01_l23": {
@@ -345,16 +355,18 @@
       }
     },
     "s01_l33": {
+      "text": "Did nobody read my memo?? I wrote an entire memo on this! We should only be using JWTs. They're stateless, you verify the signature, you're not hitting the database on every single request. They expire on their own. It's all in there, with diagrams. But no. Of course. Of course the AI didn't read my memo.",
       "speaker": "liam",
-      "text": "Did nobody read my memo? I wrote an entire memo on this. We should only be using JWTs. They're stateless, you verify the signature, you're not hitting the database on every single request. They expire on their own. It's all in there, with diagrams. But no. Of course. Of course the AI didn't read my memo.",
-      "audio": "assets/audio/s01-608bbb05ce6001e7afc6.mp3",
-      "duration": 20.16,
-      "sourceSha256": "6797ef04f7e2734287bfb325cb61b914fac0a9e9ac18176ea5a8978471f415a1",
-      "audioSha256": "60379d00fe3100a221512ebda7f8483ddc84ae4de4d5cf4b024ef40fbaa61b9e",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-c76afc1b4f4c35831ac3b84dcc71950919a991bc880e7cb56c40736363158bfd.wav",
+      "duration": 18.32,
+      "audioSha256": "c76afc1b4f4c35831ac3b84dcc71950919a991bc880e7cb56c40736363158bfd",
       "provenance": {
-        "type": "audio-commit-text-match",
-        "audioCommit": "3744f85f7a6c71d66f4065b51819732f51994526",
-        "source": "/Users/couch/Documents/presentation/the-big-hack-flight/storyboard/artifacts/lines/s01_l33.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 101,
+        "vectorSha256": "148d0863b987b74e76ec86977ffcf00c92df62662603d9a4141a558a0a06b686"
       }
     },
     "s01_l34": {
@@ -625,16 +637,18 @@
       }
     },
     "s01b_l8": {
+      "text": "Yeah happily! Fair warning though, it's rougher than you might think. But it's honestly the most fun I've had in years. Let's build something real together. You know that ChatOps bot you keep saying we need, close a Jira ticket from Slack? Nobody's had time. Let's just… try it. Right now.",
       "speaker": "brendan",
-      "text": "Yeah happily. Fair warning, it's rougher than you might think. But it's honestly the most fun I've had in years. Let's build something real together. You know that ChatOps bot you keep saying we need, close a Jira ticket from Slack? Nobody's had time. Let's just… try it. Right now.",
-      "audio": "assets/audio/s01b-faf4a9d6d586d6db2129.mp3",
-      "duration": 17.76,
-      "sourceSha256": "750c49fca3a1a56ae62fa42f3aa515e3c6e941213a8dace2ceb0b8627d13c297",
-      "audioSha256": "c7382e7e77c35ada8942d49685750efb8dd8c541188462715ae581f319b434ad",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-353be6d2960b4c2a2dbb356abcb62b4ef0c425e71b86054e44e41771195e71df.wav",
+      "duration": 16.16,
+      "audioSha256": "353be6d2960b4c2a2dbb356abcb62b4ef0c425e71b86054e44e41771195e71df",
       "provenance": {
-        "type": "audio-commit-text-match",
-        "audioCommit": "3744f85f7a6c71d66f4065b51819732f51994526",
-        "source": "/Users/couch/Documents/presentation/the-big-hack-flight/storyboard/artifacts/lines/s01b_l8.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 404,
+        "vectorSha256": "908dd8d784845f9afbd88d7be067d2d8e690f6c5f579c1b887e6105a842b0c00"
       }
     },
     "s01b_l9": {
@@ -652,16 +666,18 @@
       }
     },
     "s01b_l10": {
+      "text": "Yeah that's plenty! Open Cursor. Top right, put it in plan mode. Then just tell it what you want, like you'd brief a contractor. Your own words.",
       "speaker": "brendan",
-      "text": "Perfect. Open Cursor. Top right, put it in plan mode. Then just tell it what you want, like you'd brief a contractor. Your own words.",
-      "audio": "assets/audio/s01b-f18aebd233f8018ca168.mp3",
-      "duration": 10.0,
-      "sourceSha256": "15418e3bd68be205e77a752ef1db1a99ca4bed255d0ce57842d15ba523e4744f",
-      "audioSha256": "df0a43b13d91043427417f9846902ec2600b25a0081a346e7c5daf48cfc75b35",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-8823f38b8bd9bedb099eb282de70f15e635a19ccabfb44437e1974bdcd967f5c.wav",
+      "duration": 10.24,
+      "audioSha256": "8823f38b8bd9bedb099eb282de70f15e635a19ccabfb44437e1974bdcd967f5c",
       "provenance": {
-        "type": "audio-commit-text-match",
-        "audioCommit": "3744f85f7a6c71d66f4065b51819732f51994526",
-        "source": "/Users/couch/Documents/presentation/the-big-hack-flight/storyboard/artifacts/lines/s01b_l10.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 404,
+        "vectorSha256": "908dd8d784845f9afbd88d7be067d2d8e690f6c5f579c1b887e6105a842b0c00"
       }
     },
     "s01b_l11": {
@@ -854,16 +870,18 @@
       }
     },
     "s01b_l29": {
+      "text": "Yeah, it's an AI driven project management tool... I just find it a little easier to use than Jira, I'm sorry if that messes our workflows up",
       "speaker": "brendan",
-      "text": "Yeah I find it a little easier to use than Jira, I'm sorry if that messes our workflows up",
-      "audio": "assets/audio/s01b-62a87a21d571e03a2d4b.mp3",
-      "duration": 5.84,
-      "sourceSha256": "61e9a1915bdfb1e6ca8ed76d8f0be121833e39594785b8ec3f7bed73ec1c4dea",
-      "audioSha256": "22daa1561a9a504fd17b6f73ba94dde03c065513370ac6cc208ba1e4f5016ffe",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-34f1049de83bc5caf2144e5bba5d3f995f436ad0110ab660049b17145182b399.wav",
+      "duration": 8.4,
+      "audioSha256": "34f1049de83bc5caf2144e5bba5d3f995f436ad0110ab660049b17145182b399",
       "provenance": {
-        "type": "audio-commit-text-match",
-        "audioCommit": "3744f85f7a6c71d66f4065b51819732f51994526",
-        "source": "/Users/couch/Documents/presentation/the-big-hack-flight/storyboard/artifacts/lines/s01b_l33.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 404,
+        "vectorSha256": "908dd8d784845f9afbd88d7be067d2d8e690f6c5f579c1b887e6105a842b0c00"
       }
     },
     "s01b_l30": {
@@ -991,16 +1009,18 @@
       }
     },
     "s01b_l42": {
+      "text": "So, about what Liam said this morning, about reviewing 800 lines of code... Nobody can do that, your brain just shuts off by line two hundred, regardless of whether it was written by human or robot. So before, we'd split the code into smaller patches that are easier to review. But imagine you joined a new company and needed to learn how a service worked. You wouldn't read all the code, you would start with the documentation. So when it comes to AI code, you don't start with the code at all. You start here, this is the plan it wrote before it touched a single file. It's the documentation, the architecture, the tradeoffs, where the secrets go. That's two pages, and that's where the real decisions live. I read that like a hawk.",
       "speaker": "brendan",
-      "text": "So the thing liam mention this morning: you read eight hundred lines of AI code top to bottom. Nobody can do that, you'd go blind by line two hundred, that's actually true regardless of who wrote it. So for years human written code was split into smaller patches that are easier to review. But imagine you joined a new company and needed to learn how a service worked. You wouldn't read all the code, you would start with the documentation. So when it comes to AI code, you don't start with the code at all. You start here, this is the plan it wrote before it touched a single file. It's the documentation, the architecture, the tradeoffs, where the secrets go. That's two pages, and that's where the real decisions live. I read that like a hawk.",
-      "audio": "assets/audio/s01b-75667428d7fa4eeaf78a.mp3",
-      "duration": 41.76,
-      "sourceSha256": "eea9effae90d6f811e772f24d555774dc85386ce7f90599371d26e6ba58d795e",
-      "audioSha256": "7cd349517cec2d417e5637927bedbede6bab6c606278bb62fa92a4fa86cef301",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-1d44527498020dde462416e571cd1f574ac3bac238ba848abd1ece06f7fbd03f.wav",
+      "duration": 43.76,
+      "audioSha256": "1d44527498020dde462416e571cd1f574ac3bac238ba848abd1ece06f7fbd03f",
       "provenance": {
-        "type": "audio-commit-text-match",
-        "audioCommit": "3744f85f7a6c71d66f4065b51819732f51994526",
-        "source": "/Users/couch/Documents/presentation/the-big-hack-flight/storyboard/artifacts/lines/s01d_l10.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 404,
+        "vectorSha256": "908dd8d784845f9afbd88d7be067d2d8e690f6c5f579c1b887e6105a842b0c00"
       }
     },
     "s01b_l43": {
@@ -1018,17 +1038,18 @@
       }
     },
     "s01b_l44": {
+      "text": "Then the dangerous parts, the auth, the token handling, anything that can actually hurt someone, I read every line myself. That’s maybe five percent of what the robot writes. The boring ninety-five percent, I skim at best, and just focus on robust functional testing.",
       "speaker": "brendan",
-      "text": "Then the dangerous parts, the auth, the token handling, anything that can actually hurt someone, I read every line myself. That’s maybe five percent of what it writes. The boring ninety-five percent, I skim at best, and just focus on robust functional testing.",
-      "audio": "assets/audio/author-8a1ae178dcaab9beca2a56.mp3",
-      "duration": 16.344,
-      "sourceSha256": "9ab98b82657e9080ceb4b0e1c17fc50b5b725cf2b6db70fb7ee39d318e783f15",
-      "audioSha256": "8ff3c1c87da7b16edc13c9d3aff64dfe5ae6a1c156ac16d4c12758fae99e842e",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-b75980ac3c1b194c9aa4f3fc9c94093fce75ff32bec732c3500e7d2a0e7fe19f.wav",
+      "duration": 16.64,
+      "audioSha256": "b75980ac3c1b194c9aa4f3fc9c94093fce75ff32bec732c3500e7d2a0e7fe19f",
       "provenance": {
-        "type": "author-revision-qwen",
-        "revision": "author-pass-2026-09-12",
-        "voiceProfile": "saved-cast",
-        "source": "author-pass-20260912/rendered/s01b_l44.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 404,
+        "vectorSha256": "908dd8d784845f9afbd88d7be067d2d8e690f6c5f579c1b887e6105a842b0c00"
       }
     },
     "s01b_l45": {
@@ -1046,16 +1067,18 @@
       }
     },
     "s01b_l46": {
+      "text": "Yeah but, the tests that actually matter, the integration tests, I write THOSE directly into the plan, and review the output carefully. I have it use a real partner sandbox, real tokens. And then it has access to any errors it generates, and part of the plan involves how to resolve and handle errors.",
       "speaker": "brendan",
-      "text": "The tests that actually matter, the integration tests, I write those into the plan, and review those carefully. Real partner sandbox, real tokens. And then it has access to any errors it generates, and part of the plan involves how to resolve and handle errors.",
-      "audio": "assets/audio/s01b-6064c01d76422757e45e.mp3",
-      "duration": 17.2,
-      "sourceSha256": "0b2ec9509b2293920c61d126a1db737cfff3534d2e9671de2cbe44aff6e59d6f",
-      "audioSha256": "a0155c8c72bb005c74fe58dae0d4942fe4dde1006664b45dd9b03c3cb21a2468",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-1929a479ce33221ac508e4ff03138852c3bfe285972c13a047e93eb47f65a6c9.wav",
+      "duration": 18.56,
+      "audioSha256": "1929a479ce33221ac508e4ff03138852c3bfe285972c13a047e93eb47f65a6c9",
       "provenance": {
-        "type": "audio-commit-text-match",
-        "audioCommit": "3744f85f7a6c71d66f4065b51819732f51994526",
-        "source": "/Users/couch/Documents/presentation/the-big-hack-flight/storyboard/artifacts/lines/s01d_l14.wav"
+        "type": "qwen3-local",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "device": "mps",
+        "seed": 404,
+        "vectorSha256": "908dd8d784845f9afbd88d7be067d2d8e690f6c5f579c1b887e6105a842b0c00"
       }
     },
     "s01b_l47": {
