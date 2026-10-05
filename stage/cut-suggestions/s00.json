@@ -1,0 +1,37 @@
+{
+  "suggestions": [],
+  "ifDeleted": {
+    "verdict": "cuttable",
+    "removesMontage": true,
+    "summary": "The opening news montage sets the period and the stakes before a word is spoken, introduces the narrator's voice, and lands the date the play starts: November 24, 2025, the day Opus 4.5 released. Deleting it saves its full length, since nothing else depends on its footage, but the play then opens cold on SJ scrolling memes with no date and no sense of the AI boom around him.",
+    "lost": [
+      {
+        "kind": "Plot",
+        "what": "The start date, November 24, 2025, and the Opus 4.5 release that Brendan's weekend build depends on",
+        "elsewhere": "s01: Brendan says he was trying out the new Opus 4.5; Kristina mentions it in s01b"
+      },
+      {
+        "kind": "Staging",
+        "what": "The news-montage world of AI hype that frames the whole play",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "The narrator's introduction before his first aside in s01",
+        "elsewhere": null
+      }
+    ],
+    "orphans": [],
+    "changes": [
+      {
+        "action": "add",
+        "where": "start of s01",
+        "detail": "One narrator line so the audience still gets the date and the release.",
+        "text": "NARRATOR: November 24, 2025. Anthropic releases Claude Opus 4.5."
+      }
+    ],
+    "risk": "medium",
+    "riskWhy": "No plot is lost, since s01 and s01b name the Opus release, but the play loses its establishing frame and the narrator arrives unintroduced.",
+    "writtenOn": "2026-10-05"
+  }
+}

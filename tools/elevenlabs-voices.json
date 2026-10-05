@@ -1,15 +1,74 @@
 {
   "model": "eleven_v4",
   "outputFormat": "mp3_44100_128",
-  "order": ["officer two", "judge", "officer one", "counsel", "prosecutor", "hr", "kristina", "narrator"],
+  "order": [
+    "officer two",
+    "judge",
+    "officer one",
+    "counsel",
+    "prosecutor",
+    "hr",
+    "kristina",
+    "narrator",
+    "brendan",
+    "marcus",
+    "liam"
+  ],
   "voices": {
-    "narrator": {"voiceId": "Q4oILuo4P8VeXtE6FMLI", "name": "Matthew Schmitz, Warm Mountain Man", "why": "the stage player's existing ElevenLabs narrator"},
-    "kristina": {"voiceId": "hpp4J3VqNfWAUOO0d1Us", "name": "Bella, Professional, Bright, Warm", "why": "the stage player's existing ElevenLabs Kristina"},
-    "hr": {"voiceId": "EXAVITQu4vr4xnSDxMaL", "name": "Sarah, Mature, Reassuring, Confident", "why": "Dana: gentle, rehearsed, never rushes"},
-    "judge": {"voiceId": "XrExE9yKIg1WjnnlVkGX", "name": "Matilda, Knowledgable, Professional", "why": "patient female judge"},
-    "prosecutor": {"voiceId": "cjVigY5qzO86Huf0OWal", "name": "Eric, Smooth, Trustworthy", "why": "unhurried, reading a list of facts"},
-    "counsel": {"voiceId": "iP95p4xoKVk53GoZ742B", "name": "Chris, Charming, Down-to-Earth", "why": "pragmatic defence counsel explaining the deal"},
-    "officer one": {"voiceId": "CwhRBWXzGAHq8TQ4Fs17", "name": "Roger, Laid-Back, Casual, Resonant", "why": "polite officer at the door"},
-    "officer two": {"voiceId": "bIHbv24MWmeRgasZH58o", "name": "Will, Relaxed Optimist", "why": "reading the form off a tablet"}
+    "narrator": {
+      "voiceId": "Q4oILuo4P8VeXtE6FMLI",
+      "name": "Matthew Schmitz, Warm Mountain Man",
+      "why": "the stage player's existing ElevenLabs narrator"
+    },
+    "kristina": {
+      "voiceId": "hpp4J3VqNfWAUOO0d1Us",
+      "name": "Bella, Professional, Bright, Warm",
+      "why": "the stage player's existing ElevenLabs Kristina"
+    },
+    "hr": {
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "name": "Sarah, Mature, Reassuring, Confident",
+      "why": "Dana: gentle, rehearsed, never rushes"
+    },
+    "judge": {
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "name": "Matilda, Knowledgable, Professional",
+      "why": "patient female judge"
+    },
+    "prosecutor": {
+      "voiceId": "cjVigY5qzO86Huf0OWal",
+      "name": "Eric, Smooth, Trustworthy",
+      "why": "unhurried, reading a list of facts"
+    },
+    "counsel": {
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "name": "Chris, Charming, Down-to-Earth",
+      "why": "pragmatic defence counsel explaining the deal"
+    },
+    "officer one": {
+      "voiceId": "CwhRBWXzGAHq8TQ4Fs17",
+      "name": "Roger, Laid-Back, Casual, Resonant",
+      "why": "polite officer at the door"
+    },
+    "officer two": {
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "name": "Will, Relaxed Optimist",
+      "why": "reading the form off a tablet"
+    },
+    "liam": {
+      "voiceId": "RDSy0QN68yhrjuOgqzQ4",
+      "name": "Dr. Quibble, Nerdy Cartoon Scientist",
+      "why": "SJ: nasal and a little annoying, by request (library voice used by id)"
+    },
+    "brendan": {
+      "voiceId": "TX3LPaxmHKxFdv7VOQHJ",
+      "name": "Liam, Energetic, Social Media Creator",
+      "why": "Brendan: young and keen"
+    },
+    "marcus": {
+      "voiceId": "rHWSYoq8UlV0YIBKMryp",
+      "name": "Jerry B, California Surfer Dude",
+      "why": "Marcus: laid-back, hippie-ish, by request (library voice used by id)"
+    }
   }
 }

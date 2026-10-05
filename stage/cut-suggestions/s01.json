@@ -1,0 +1,515 @@
+{
+  "scene": "s01",
+  "approach": "The time goes on two rounds of the Marcus Luddite argument, an estimate joke that s06 repeats, and long speeches in the JWT reveal. The cut keeps one Luddite round, the review argument, the full JWT memo and override thread, the degree insult and 'I want it noted', and trims padding inside speeches.",
+  "suggestions": [
+    {
+      "title": "Cut Marcus's second Luddite round",
+      "kind": "cut",
+      "cues": [
+        "s01_l26",
+        "s01_l27",
+        "s01_l28",
+        "s01_l29"
+      ],
+      "edits": [],
+      "why": "Marcus has already made the Luddite case in l22 and the narrator has corrected him. The second round repeats the same argument, and SJ's line about last week's speech repeats l22's own 'what I said about the Luddites last week'.",
+      "keeps": "The Luddite gag stays once (l22, plus the narrator correction). Kristina still fails to get through: her 'Thanks SJ. Let's -' in l25 is now cut off by SJ spotting the tokens, so the talking-over comedy survives. Marcus's 'I want it noted' engine survives in l47.",
+      "risk": "high",
+      "reliesOn": [],
+      "against": {
+        "s01_l26": "But you're wrong, SJ. This has happened throughout history, with skilled workers being replaced by technology. Our boss will always try to replace us with technology if we don't -",
+        "s01_l27": "Marcus, you've already done your big speech on the Luddites last week. Do you mind if we talk about actual technology this time around, despite your hatred for it?",
+        "s01_l28": "Well Kristina cut me off last week. I just don’t want you to all blow me off, this is serious, we need to learn lessons from the past or we’re doomed to repeat it, and the lesson the Luddites have to tell us…",
+        "s01_l29": "Marcus, thank you for your input... but can we get through standup and then I promise I'll give you an opportunity to share your concerns -"
+      },
+      "number": 1,
+      "riskWas": "medium",
+      "riskWhy": "Touches the talked-over-Kristina guardrail: this is the longest run in the cold open where Marcus and SJ argue past her and she tries and fails to close it with a promise. The Luddite argument itself is repetition, but after the cut her only failed attempts are l18 and the clipped 'Let's -' in l25, and l30's 'He has lost SJ completely' then follows Kristina, not Marcus.",
+      "loses": [
+        "Joke: Kristina's 'I promise I'll give you an opportunity to share your concerns' being talked over, the longest stretch of the talking-over comedy in s01",
+        "Character: Marcus's grievance that Kristina cut him off last week and his fear of being blown off, which feeds his 'I want it noted' habit (s01_l47, s11b_l30, s22_backdoor, s23_l24)",
+        "Joke: SJ's 'despite your hatred for it' jab at Marcus",
+        "Setup: Kristina's promise of a separate slot for Marcus, which s06_l8 ('we agreed on not bringing this up during standup') quietly calls back to; s06_l8 still works without it"
+      ]
+    },
+    {
+      "title": "Cut the estimate exchange",
+      "kind": "cut",
+      "cues": [
+        "s01_l51",
+        "s01_l52"
+      ],
+      "edits": [],
+      "why": "s06 runs the same joke at more length: Kristina asks for progress on the race condition and SJ says it is not a burndown chart sort of thing (s06_l19). Doing it here first spends the joke early.",
+      "keeps": "SJ still names the signup race condition (l50), which sets up s06 and s07. l53 then needs to drop '…Sure. I'll put two weeks.' so the standup ends on 'Thanks, everyone, that's standup.' (see the companion trim on l53).",
+      "risk": "medium",
+      "reliesOn": [
+        "s06_l19"
+      ],
+      "against": {
+        "s01_l51": "Great. What's your estimate to completion? Just a rough number.",
+        "s01_l52": "It's a race condition. Could be a one-line fix, could be a rewrite of the whole session handler. I'm not going to invent a number so a spreadsheet feels better."
+      },
+      "number": 2,
+      "riskWhy": "Loses a unique laugh line in this scene ('so a spreadsheet feels better'), but s06_l19 runs the same estimate joke at more length, so no plot or setup depends on it. The companion trim on l53 is already in the script, so the standup still ends cleanly.",
+      "loses": [
+        "Joke: SJ refusing to invent a number 'so a spreadsheet feels better'",
+        "Character: Kristina asking for a rough number and SJ refusing, the first sight of their estimate friction (repeated in s06_l19)"
+      ]
+    },
+    {
+      "title": "Trim Kristina's sign-off to match",
+      "kind": "trim",
+      "cues": [
+        "s01_l53"
+      ],
+      "edits": [
+        {
+          "cue": "s01_l53",
+          "text": "Thanks, everyone, that's standup."
+        }
+      ],
+      "why": "Only needed if the estimate exchange goes; 'I'll put two weeks' answers a question nobody asked any more.",
+      "keeps": "The standup still closes on Kristina, and SJ goes back to the memes (l54).",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s01_l53": "…Sure. I'll put two weeks. Thanks, everyone, that's standup."
+      },
+      "number": 3,
+      "riskWhy": "Already in the script.",
+      "loses": []
+    },
+    {
+      "title": "Cut the Marcus hype aside",
+      "kind": "cut",
+      "cues": [
+        "s01_l20",
+        "s01_l21"
+      ],
+      "edits": [],
+      "why": "SJ's 'next word predictor' (l19) already states his position, and Marcus's Luddite speech in l22 follows on without it. The exchange delays the scene's best Marcus beat.",
+      "keeps": "l22 still opens with Marcus complaining SJ talked over him about his trains, so the feud is intact. Marcus's s01b and s11b lines carry his views on the new models.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s01_l20": "SJ, have you not been reading the articles on the new Opus? It's literally the end of software engineering as we know it.",
+        "s01_l21": "Marcus, maybe if you spent more time reading my PR reviews and less time reading the latest hype craze, you'd realise how bad these tools are."
+      },
+      "number": 4,
+      "riskWhy": "Deletes the only line in the scene where Marcus sounds like he believes the AI hype, and SJ's PR-review jab that his 'If you listened...' comeback in l22 answers. No later scene depends on it.",
+      "loses": [
+        "Character: Marcus treating the new Opus as 'the end of software engineering', which separates his fear from SJ's contempt",
+        "Joke: SJ's 'spent more time reading my PR reviews and less time reading the latest hype craze'",
+        "Character: the tit-for-tat structure where l22's 'If you listened to what I said' answers SJ's jab"
+      ]
+    },
+    {
+      "title": "Cut SJ's reply to Marcus's sexism call",
+      "kind": "cut",
+      "cues": [
+        "s01_l43",
+        "s01_l44"
+      ],
+      "edits": [],
+      "why": "Marcus calling it out (l42) and then asking for it to be noted (l47) is the beat. SJ's defence and Marcus's rejoinder are the generic middle of the argument.",
+      "keeps": "l42 keeps Marcus's challenge, l45 to l47 keep Kristina shutting down the man defending her and 'I'd just like it noted'. SJ owns the degree remark himself later in s01c_l2, and Kristina raises it in s01b_l2.",
+      "risk": "medium",
+      "reliesOn": [
+        "s01b_l2",
+        "s01c_l2"
+      ],
+      "against": {
+        "s01_l43": "I'd have asked you the same thing. It wasn't just an opinion, Marcus. She had the authentication changed. That should have come back to the team.",
+        "s01_l44": "That isn't the point. The point is who tends to get asked."
+      },
+      "number": 5,
+      "riskWhy": "Loses SJ doubling down and Marcus's sharpest line on the sexism, both character beats; no plot fact or later setup depends on them, since l42 and l47 keep the call-out and s01b_l2 and s01c_l2 carry the degree remark forward.",
+      "loses": [
+        "Character: SJ doubling down ('I'd have asked you the same thing') instead of backing off, which gives his s01c_l2 half-apology more weight",
+        "Character: Marcus's 'The point is who tends to get asked', his clearest statement of the issue",
+        "Character: SJ's process complaint that the auth change should have come back to the team"
+      ]
+    },
+    {
+      "title": "Cut the repeated 'who reviewed' beat",
+      "kind": "cut",
+      "cues": [
+        "s01_l13",
+        "s01_l14"
+      ],
+      "edits": [],
+      "why": "Brendan's 'live since last Thursday' repeats l5, and SJ's 'Who reviewed all this code?' repeats l12 word for word.",
+      "keeps": "SJ's 'Who reviewed this?' (l12) now leads straight into Brendan's '…Well I skimmed it' (l15).",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s01_l13": "I mean it's been live since last Thursday, totally stable, partners are already on it, so...",
+        "s01_l14": "Who reviewed all this code?"
+      },
+      "number": 6,
+      "riskWhy": "Pure repetition: Brendan's 'live since last Thursday' restates l5, and SJ's 'Who reviewed all this code?' repeats l12.",
+      "loses": [
+        "Nothing substantive: both lines restate l5 and l12; 'totally stable' is the only new shade of Brendan's confidence"
+      ]
+    },
+    {
+      "title": "Tighten the review exchange",
+      "kind": "trim",
+      "cues": [
+        "s01_l12",
+        "s01_l17"
+      ],
+      "edits": [
+        {
+          "cue": "s01_l12",
+          "text": "Hang on. This shipped? Eight hundred lines in one PR. Who reviewed this?"
+        },
+        {
+          "cue": "s01_l17",
+          "text": "I used the new Claude Opus 4.5, but I went back and forth with it, and the tests all pass..."
+        }
+      ],
+      "why": "l12's middle questions restate that the portal is live, which l5 already said. l17's last clause repeats l5's partner news.",
+      "keeps": "SJ's 'Eight hundred lines' and 'Who reviewed this?' stay, and 'You vibecoded this' stays.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s01_l12": "Hang on. This shipped? This is the developer portal... live? In front of partners, right now? Eight hundred lines in one PR. Who reviewed this?",
+        "s01_l17": "I used the new Claude Opus 4.5, but I went back and forth with it, and the tests all pass, the partners haven't hit a single..."
+      },
+      "number": 7,
+      "riskWhy": "Trims restatement only. l12 keeps 'Eight hundred lines' and 'Who reviewed this?', and l17 still trails off so Kristina's l18 still cuts in on Brendan.",
+      "loses": [
+        "Nothing substantive: SJ's 'live? In front of partners, right now?' repeats l5, and Brendan's partner claim repeats l5's launch news"
+      ]
+    },
+    {
+      "title": "Trim Kristina's user-study speech",
+      "kind": "trim",
+      "cues": [
+        "s01_l37"
+      ],
+      "edits": [
+        {
+          "cue": "s01_l37",
+          "text": "Because we user-tested it. The JWT flow, the refresh, the expiry, it confused every integration partner we put it in front of. Long-lived keys, are just easier for our partners to understand. And yes, I know what a leaked key does. It's live until somebody rotates it. It's a tradeoff, and I made the call."
+        }
+      ],
+      "why": "The 'half of them stopped bothering' clause restates the confusion point.",
+      "keeps": "The user study, the override, and 'It's live until somebody rotates it' (the hack's mechanism) all stay.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s01_l37": "Because we user-tested it. The JWT flow, the refresh, the expiry, it confused every integration partner we put it in front of; half of them stopped bothering to integrate once they ran into issues refreshing the token. Long-lived keys, are just easier for our partners to understand. And yes, I know what a leaked key does. It's live until somebody rotates it. It's a tradeoff, and I made the call."
+      },
+      "number": 8,
+      "riskWas": "low",
+      "riskWhy": "Raised from low: 'half of them stopped bothering to integrate' is the only concrete business cost that makes Kristina's override a reasonable call rather than a whim. Without it she is easier to read as simply wrong, which weakens her side of the argument.",
+      "loses": [
+        "Character: the concrete evidence behind Kristina's tradeoff (partners abandoning integration over token refresh), stated nowhere else"
+      ]
+    },
+    {
+      "title": "Trim SJ's memo rant",
+      "kind": "trim",
+      "cues": [
+        "s01_l33"
+      ],
+      "edits": [
+        {
+          "cue": "s01_l33",
+          "text": "Did nobody read my memo?? I wrote an entire memo on this! We should only be using JWTs. They expire on their own. It's all in there, with diagrams. But no. Of course. Of course the AI didn't read my memo."
+        }
+      ],
+      "why": "The stateless and signature clauses are pedantry the audience does not need twice; 'They expire on their own' carries the point the hack turns on.",
+      "keeps": "The memo, JWTs, expiry and 'with diagrams' all stay, so s20_l18, s20b_l25 and s22_front_door ('With diagrams') still pay off.",
+      "risk": "low",
+      "reliesOn": [
+        "s20_l18",
+        "s20b_l25",
+        "s22_front_door"
+      ],
+      "against": {
+        "s01_l33": "Did nobody read my memo?? I wrote an entire memo on this! We should only be using JWTs. They're stateless, you verify the signature, you're not hitting the database on every single request. They expire on their own. It's all in there, with diagrams. But no. Of course. Of course the AI didn't read my memo."
+      },
+      "number": 9,
+      "riskWhy": "Cuts SJ's technical aside only; the memo, JWTs, 'They expire on their own' and 'with diagrams' all stay, so s20_l18, s20b_l25 and s22_front_door still pay off.",
+      "loses": [
+        "Colour: SJ's jargon about stateless tokens, signatures and database hits, which shows he knows the subject cold"
+      ]
+    },
+    {
+      "title": "Trim the opening praise",
+      "kind": "trim",
+      "cues": [
+        "s01_l5",
+        "s01_l6"
+      ],
+      "edits": [
+        {
+          "cue": "s01_l5",
+          "text": "No worries. Okay, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Best launch we've had in ages."
+        },
+        {
+          "cue": "s01_l6",
+          "text": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. Thank you, genuinely."
+        }
+      ],
+      "why": "'Support's quiet, adoption's climbing' and 'So.' and 'It did not go unnoticed' pad out the praise.",
+      "keeps": "Every phrase s25_l14 and s25_l15 echo survives: 'give some praise', 'feedback's been incredible', 'Best launch we've had in ages', 'most of his weekend'. The weekend still triggers Marcus in l9.",
+      "risk": "low",
+      "reliesOn": [
+        "s25_l14",
+        "s25_l15"
+      ],
+      "against": {
+        "s01_l5": "No worries. Okay, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Support's quiet, adoption's climbing. Best launch we've had in ages.",
+        "s01_l6": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. So. Thank you, genuinely. It did not go unnoticed."
+      },
+      "number": 10,
+      "riskWhy": "Padding only. Every phrase s25_l14 and s25_l15 echo survives, and 'most of his weekend' still triggers Marcus.",
+      "loses": [
+        "Nothing substantive: 'Support's quiet, adoption's climbing' and 'It did not go unnoticed' are filler in Kristina's praise"
+      ]
+    },
+    {
+      "title": "Trim Brendan's memo reply",
+      "kind": "trim",
+      "cues": [
+        "s01_l34"
+      ],
+      "edits": [
+        {
+          "cue": "s01_l34",
+          "text": "…Actually, it did. I fed your memo into Claude before I started. It read the whole thing and the first version did have JWT's."
+        }
+      ],
+      "why": "The offer to pull up the first commit repeats that the first version followed the memo.",
+      "keeps": "Claude read the memo and Kristina's override (l35) still lands as the reveal.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s01_l34": "…Actually, it did. I fed your memo into Claude before I started. It read the whole thing and the first version did have JWT's. I can pull up the first commit, it's exactly what you recommended in your memo"
+      },
+      "number": 11,
+      "riskWas": "low",
+      "riskWhy": "Raised from low: Brendan offering to pull up the first commit is one of his attempts to show SJ his work, which s01b_l51 ('I tried to explain it this morning') and the s01c guardrail build on. l15 still carries one attempt, so the setup survives, but thinner.",
+      "loses": [
+        "Character: Brendan eagerly offering proof ('I can pull up the first commit'), seeding the show-SJ-the-process guardrail (s01b_l51, s01c_l14, s01c_l16)",
+        "Staging: Kristina's 'and then I'm the one...' cutting into Brendan mid-sentence becomes a clean handoff"
+      ]
+    },
+    {
+      "title": "Cut narrator over the dead air",
+      "kind": "cut",
+      "cues": [
+        "s01_l39"
+      ],
+      "edits": [],
+      "why": "The narrator explains what the silence in l40 and l41 already shows from the back row.",
+      "keeps": "The dead air stage directions and Marcus's call-out in l42 carry the moment.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s01_l39": "Kristina holds her tongue, she is in disbelief about what SJ just said."
+      },
+      "number": 12,
+      "riskWhy": "The narrator states what the dead air in l40 and l41 and Marcus's l42 already show. The small cost is that on a Zoom grid the silence has to read as shock, not a dropped call, without help.",
+      "loses": [
+        "Nothing substantive: the narrator names Kristina's disbelief, which the dead air and Marcus's call-out already carry"
+      ]
+    },
+    {
+      "title": "Trim the garment correction",
+      "kind": "trim",
+      "cues": [
+        "s01_l23"
+      ],
+      "edits": [
+        {
+          "cue": "s01_l23",
+          "text": "It’s actually thought that the quality of the garments actually went up via industrialization, not down."
+        }
+      ],
+      "why": "The second half restates the first.",
+      "keeps": "The narrator still corrects Marcus, and 'garments' still sets up the s25 loom.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s01_l23": "It’s actually thought that the quality of the garments actually went up via industrialization, not down. In the early days it was questionable, but in time there was no doubt, quality went up."
+      },
+      "number": 13,
+      "riskWhy": "The second sentence restates the first. The narrator still corrects Marcus, and SJ's s06_l12 cheaper-cloth argument still has its grounding.",
+      "loses": [
+        "Nothing substantive: 'In the early days it was questionable' repeats the correction"
+      ]
+    },
+    {
+      "title": "Cut 'Marcus hears the part about the weekend'",
+      "kind": "cut",
+      "cues": [
+        "s01_l8"
+      ],
+      "edits": [],
+      "why": "Marcus's own 'You worked on the weekend?' in l9 makes it clear.",
+      "keeps": "The weekend beat and Brendan's 'Most of it ran while I was making coffee' stay.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s01_l8": "Marcus hears the part about the weekend."
+      },
+      "number": 14,
+      "riskWhy": "Marcus's own 'You worked on the weekend?' in l9 makes the point straight away.",
+      "loses": [
+        "Nothing substantive: a dry narrator aside that l9 makes redundant"
+      ]
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "not cuttable",
+    "summary": "The cold open introduces all four characters, the team's standup format and the AI argument the whole play runs on. It is the first and fullest home of the talking-over-Kristina comedy, and it plants the long-lived keys versus SJ's JWT memo setup that pays off in the s20, s20b and s22 incident. Deleting it orphans the opening lines of both s01b and s01c and removes the setup for the play's climax and for the s25 bookend.",
+    "lost": [
+      {
+        "kind": "Guardrail",
+        "what": "Guardrail 3: SJ and Marcus argue over and past Kristina while she tries to run standup (s01_l18 to s01_l29, s01_l42 to s01_l49). This is the first and longest instance; s06 and s11b repeat a pattern this scene establishes",
+        "elsewhere": "s06_l8, s06_l16, s11b_l33 echo it, but none establishes it"
+      },
+      {
+        "kind": "Setup",
+        "what": "Brendan's developer portal shipped, praised by Kristina, with most of his weekend in it",
+        "elsewhere": null
+      },
+      {
+        "kind": "Setup",
+        "what": "Long-lived API keys in the portal, SJ's JWT memo, Brendan fed the memo to Claude, Kristina overrode JWTs after a user study and admits a leaked key stays live until rotated. This is the security spine of the climax",
+        "elsewhere": null
+      },
+      {
+        "kind": "Plot",
+        "what": "SJ challenges Kristina's lack of a software engineering degree; the insult drives s01b's HR question and s01c's half-apology",
+        "elsewhere": null
+      },
+      {
+        "kind": "Setup",
+        "what": "SJ is on the signup race condition and refuses to estimate it",
+        "elsewhere": "s06_l1, s06_l16, s06_l19 restate it"
+      },
+      {
+        "kind": "Character",
+        "what": "SJ's anti-AI stance (memes, 'next word predictor', 'vibe coding writes garbage code')",
+        "elsewhere": "s06_l12, s11c_l4 partly carry it"
+      },
+      {
+        "kind": "Character",
+        "what": "Marcus's Luddite obsession and his habit of taking credit for speaking up ('I'd just like it noted')",
+        "elsewhere": "s06_l12, s11b_l31, s14a_l23, s14a_l26 carry the Luddites"
+      },
+      {
+        "kind": "Joke",
+        "what": "SJ's camera off because he is 'eating'; Narrator: 'He's very obviously not eating'; the narrator correcting Marcus on textile quality",
+        "elsewhere": null
+      },
+      {
+        "kind": "Setup",
+        "what": "Kristina's praise speech (s01_l5, s01_l6) that s25_l14 to s25_l17 deliberately mirrors as the closing joke",
+        "elsewhere": null
+      },
+      {
+        "kind": "Staging",
+        "what": "SJ's Reddit meme scroll that opens the play and recurs at s11b_l75, s11b_l76 and the wallpaper at s20_l2",
+        "elsewhere": "s11b_l76"
+      },
+      {
+        "kind": "Setup",
+        "what": "Brendan's tests-plus-evals defence that SJ dismisses, which s01b_l47 to s01b_l50 answers",
+        "elsewhere": null
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s01b_l1",
+        "problem": "'After standup, Kristina calls Brendan' refers to a standup the audience never saw",
+        "fix": "Rewrite as a cold scene opener or merge into a new narrator setup."
+      },
+      {
+        "cue": "s01b_l2",
+        "problem": "Kristina asks whether 'SJ's comment about my Degree' is an HR conversation; the comment no longer exists",
+        "fix": "Cut s01b_l2 to s01b_l6 or move s01_l38 into s01b as a reported line."
+      },
+      {
+        "cue": "s01b_l15",
+        "problem": "'So SJ wasn't just being dramatic this morning' has no referent",
+        "fix": "Trim to drop the callback."
+      },
+      {
+        "cue": "s01b_l50",
+        "problem": "'if he's genuinely worried about the tests' refers to SJ's s01_l19 objection",
+        "fix": "Needs the objection planted elsewhere."
+      },
+      {
+        "cue": "s01b_l51",
+        "problem": "'I tried to explain it this morning' refers to the standup exchange",
+        "fix": "Trim the callback."
+      },
+      {
+        "cue": "s01c_l1",
+        "problem": "'Three hours after standup' and s01c_l2 'The Kristina thing this morning, what I said about her degree' apologise for an unseen insult",
+        "fix": "Cut s01c_l2 to s01c_l5, which also loses SJ's one moment of self-awareness."
+      },
+      {
+        "cue": "s01c_l6",
+        "problem": "'The portal PR you merged' assumes the audience knows about the portal PR",
+        "fix": "Needs a setup line."
+      },
+      {
+        "cue": "s19_l8",
+        "problem": "SJ's 'nice work on the developer portal, I know I gave you some shit for it' calls back to s01",
+        "fix": "Partly survives via s01c, weaker."
+      },
+      {
+        "cue": "s20_l18",
+        "problem": "Brendan cites SJ's 'JWT memo' about tokens that don't expire; the memo is only introduced in s01_l33",
+        "fix": "Plant the memo elsewhere."
+      },
+      {
+        "cue": "s20b_l25",
+        "problem": "'Long lived API keys ... the thing I wrote about in my JWT memo' loses its setup",
+        "fix": "Plant the memo and the keys elsewhere."
+      },
+      {
+        "cue": "s22_front_door",
+        "problem": "'That's my memo, happening. In February. With diagrams.' calls back to s01_l33's 'with diagrams'",
+        "fix": "Plant the memo elsewhere or the line goes flat."
+      },
+      {
+        "cue": "s25_l14",
+        "problem": "The closing praise speech mirrors s01_l5 and s01_l6 word for word ('I wanted to give some praise', 'Most of his weekend', 'Best ... we've had in ages'); without s01 the bookend joke is gone",
+        "fix": "No real fix; the ending would need rewriting."
+      },
+      {
+        "cue": "s14a_l21",
+        "problem": "SJ 'thinks about all the times he's interrupted Kristina's standup' relies on the s01 pattern",
+        "fix": "Survives on s06 and s11b alone, weaker."
+      }
+    ],
+    "changes": [
+      {
+        "action": "add",
+        "where": "start of s01b",
+        "detail": "A narrator setup to replace the whole cold open. Even with it, the guardrail, the insult and the bookend are lost, so this is not recommended.",
+        "text": "NARRATOR: Brendan just shipped the developer portal with Claude. SJ hates it. SJ wrote a memo on JWTs, and the portal uses long-lived keys. At standup he told Kristina she lacked the degree to decide that."
+      },
+      {
+        "action": "trim",
+        "where": "s01c_l2 to s01c_l5",
+        "detail": "SJ's apology for an unseen remark; cut it or keep it relying on the narrator line.",
+        "text": ""
+      }
+    ],
+    "risk": "high",
+    "riskWhy": "The scene is the main home of guardrail 3, the only setup for the long-lived keys and JWT memo climax, and half of the s25 bookend, so no move or bridge line can replace it.",
+    "writtenOn": "2026-10-05"
+  }
+}

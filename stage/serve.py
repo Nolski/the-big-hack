@@ -46,7 +46,7 @@ class Handler(SimpleHTTPRequestHandler):
   raw=json.dumps(data,indent=2).encode();self.send_response(status);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(raw)));self.end_headers();self.wfile.write(raw)
  def do_GET(self):
   route=urlparse(self.path).path
-  if route in ('/api/editor','/api/revision','/api/history','/api/proof'):return self.json_response(EDITOR.handle('GET',route))
+  if route in ('/api/editor','/api/revision','/api/history','/api/proof','/api/runtime'):return self.json_response(EDITOR.handle('GET',route))
   if route=='/guide':
    raw=(ROOT.parent/'README.md').read_bytes();self.send_response(200);self.send_header('Content-Type','text/plain; charset=utf-8');self.send_header('Content-Length',str(len(raw)));self.end_headers();self.wfile.write(raw);return
   if route=='/api/script':return self.json_response((lambda s:{'revision':__import__('script_store').digest(s),'scenes':STORE.scenes(s),'show':s})(STORE.read()))
@@ -65,7 +65,7 @@ class Handler(SimpleHTTPRequestHandler):
  def do_PUT(self):return self.editor_write('PUT')
  def do_DELETE(self):return self.editor_write('DELETE')
  def do_POST(self):
-  if urlparse(self.path).path in ('/api/undo','/api/redo'):return self.editor_write('POST')
+  if urlparse(self.path).path in ('/api/undo','/api/redo') or urlparse(self.path).path.startswith('/api/suggestion/'):return self.editor_write('POST')
   origin=self.headers.get('Origin')
   if origin and origin!=f'http://{self.headers.get("Host")}':self.send_error(403);return
   if self.headers.get('Sec-Fetch-Site')=='cross-site':self.send_error(403);return

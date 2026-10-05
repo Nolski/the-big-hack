@@ -1,0 +1,165 @@
+{
+  "scene": "s07",
+  "approach": "The scene is one conversation: Brendan reports the fix, admits Claude did it, and asks Kristina not to tell SJ. Its budget leaves room for little more than the montage, and s06_l51 already shows Brendan hiding Claude's work, so the cut is the whole Kristina conversation. The closing narrator line can stay as a short bridge into the montage, or go too, with the montage moving to the end of s06.",
+  "suggestions": [
+    {
+      "title": "Cut the Kristina conversation, keep the closing line",
+      "kind": "cut",
+      "cues": [
+        "s07_l1",
+        "s07_l2",
+        "s07_l3",
+        "s07_l4",
+        "s07_l6",
+        "s07_l7",
+        "s07_l8",
+        "s07_l9",
+        "s07_l11",
+        "s07_l12",
+        "s07_l13",
+        "s07_l15",
+        "s07_l17",
+        "s07_l18",
+        "s07_l19",
+        "s07_l20",
+        "s07_l21",
+        "s07_l23",
+        "s07_l24"
+      ],
+      "edits": [],
+      "why": "s06_l42 and s06_l51 already show that Claude found and fixed the race, and that Brendan hid it from SJ by switching back to main. This scene repeats that as a report to Kristina. Her conversion is shown on stage in s11c (l39 to l45), where she builds the Linear-to-Jira tool herself, so it does not need this first nudge. Nothing later quotes 'heads together', 'an extra engineer', 'ease him into it' or 'how is SJ ever going to get better'.",
+      "keeps": "The race-condition thread survives through s06_l51 plus s07_l25 (SJ opens his one-line fix, Brendan deletes Claude's branch), which then plays straight into the montage. Brendan's pattern of hiding what the AI did is intact. The layoff setup still lives in s11c's overheard board line. Lost: Kristina learning that Claude did in one morning what SJ spent weeks on, and Brendan's 'he's the best engineer here' defence of SJ. If the author wants Kristina's first doubt kept, it could become one narrator line from her own words, e.g. 'Brendan tells Kristina it was Claude. She asks him not to make it a thing. He asks her the same.' That would need new writing, so it is optional.",
+      "risk": "medium",
+      "reliesOn": [
+        "s06_l42",
+        "s06_l51"
+      ],
+      "against": {
+        "s07_l1": "Later that afternoon, Brendan catches Kristina at the end of a huddle.",
+        "s07_l2": "Oh one more thing before you drop, that signup race condition? It's done. SJ and I got it this morning.",
+        "s07_l3": "Stop it. The one he wouldn't put a number on? Brendan, that's brilliant. See, this is exactly what I keep saying. You get the right two people in a huddle, you put your heads together, and we can get our team moving faster than any other team at this company… Great work!",
+        "s07_l4": "…Yeah. I mean... honestly, though? It wasn't really heads-together. I just pointed Claude at the signup flow and.... It found the race, reproduced it locally, wrote a script for it, it even gave me screenshots of one test user inside the other's account. Then it made the fix on a branch. I basically just read the diagnosis back to him.",
+        "s07_l6": "…Wait. Hold on. So SJ.... He's been on this how long? It's been sitting on the board for weeks.",
+        "s07_l7": "…A while, yeah.",
+        "s07_l8": "Weeks. And you... this morning.... pointed Claude at the repo, and it found the bug, proved it and fixed it in one shot?",
+        "s07_l9": "…Kind of. Yeah.",
+        "s07_l11": "That’s… that changes a lot, actually... it makes me think a little differently about Claude and Cursor…",
+        "s07_l12": "Okay, but, it's not like that, though. It found it fast, but the code was all laid out clean, the way SJ architected it. If the code quality and documentation wasn't as high as it was... and that's all him. …He's the best engineer here, and he holds us all to a high standard of excellence",
+        "s07_l13": "Would Claude have found it without him on the call, though? If you were working the problem by yourself?",
+        "s07_l15": "…Probably. Yeah. It worked pretty autonomously without much input. It didn't really need him.",
+        "s07_l17": "Right. Well, however we got there, it's fixed and. I get to tell Kara we have an extra engineer to work on new products this coming sprint. So that's good, even though it's SJ.",
+        "s07_l18": "…Yeah. Just, do me a favor? Don't make it a thing. With SJ. He's genuinely the happiest I've seen him in ages. I don't want to take that away from him.",
+        "s07_l19": "…Wait, what do you mean? You told him you used Claude, right?",
+        "s07_l20": "Well, no… It's just, he put a lot of time into the bug and just got so excited when we found the issue together...",
+        "s07_l21": "Brendan, how is SJ ever going to get better if you don't show him how to do this stuff?",
+        "s07_l23": "I know, I know. I just have to ease him into some of it.",
+        "s07_l24": "Well, good luck with that."
+      },
+      "number": 45,
+      "riskWhy": "Loses the only scene where anyone else learns Brendan hid Claude's fix from SJ, and Kristina's first private moment of seeing SJ's weeks of work matched in a morning. No later cue quotes or depends on it: s06_l51 carries the hiding, s01b_narrator_promotion already gives Kristina's replace-the-team motive, and s11c_l39 to l45 carries her conversion through use.",
+      "loses": [
+        "Plot: Kristina learns Claude found, proved and fixed the race in one morning while SJ spent weeks on it (nowhere else; s06_l42 shows it to the audience, not to her)",
+        "Character: Kristina's 'heads together' cheerleading flipping, mid-sentence, into a quiet recalculation of what SJ is worth",
+        "Character: Brendan defending SJ as 'the best engineer here' and then admitting Claude didn't need him (the defence is repeated in s01b_l3, s14a_l43, s20b_l35, s23_l32)",
+        "Character: Kristina challenging Brendan for not showing SJ ('how is SJ ever going to get better'), the only time she calls out his hiding",
+        "Joke: 'So that's good, even though it's SJ.'",
+        "Colour: the Kara reference and 'an extra engineer to work on new products this coming sprint' (Kara appears nowhere else)"
+      ],
+      "directionsKept": 5
+    },
+    {
+      "title": "Also cut the closing narrator line",
+      "kind": "cut",
+      "cues": [
+        "s07_l25"
+      ],
+      "edits": [],
+      "why": "s06_l51 already says Brendan has Claude's patch open, switches back to main before SJ notices, and does not tell him. Deleting the branch restates that same action.",
+      "keeps": "The montage cue s07_time_jump_to_best_practices stays unaltered. If the whole scene goes, it moves to the end of s06, straight after s06_l51, and goes into Best Practices as before. The hiding beat is carried by s06_l51.",
+      "risk": "medium",
+      "reliesOn": [
+        "s06_l51"
+      ],
+      "against": {
+        "s07_l25": "SJ opens his one-line fix for review. He's happy with it. Brendan deletes the branch Claude finished twenty minutes ago."
+      },
+      "number": 46,
+      "riskWas": "low",
+      "riskWhy": "Not pure repetition: s06_l51 has Brendan switch branches, while this line has him delete Claude's work outright, which s11b_l75 ('Brendan ends the call and deletes the finished patch') repeats as a pattern. s11b_l75 still makes sense alone, so this is a lost character beat and echo, not a broken setup.",
+      "loses": [
+        "Character: Brendan actively destroying Claude's finished work so SJ keeps his win, the first instance of the deletion habit echoed in s11b_l75",
+        "Staging: the contrast of SJ proudly opening his one-line fix while Brendan deletes the branch twenty minutes old, which pays off SJ's 'could be a one-line fix' from s01_l52",
+        "Plot: SJ's fix actually ships for review (implied but not stated by s06_l51, which only has him start writing it)"
+      ]
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "cuttable",
+    "summary": "Brendan tells Kristina that Claude, not SJ, found and fixed the signup race condition. Kristina sees what that means for SJ and asks him to show SJ how it's done, and Brendan says he'll ease him in. The main fact, that Brendan hid Claude's fix from SJ, is already shown in s06_l51. Kristina's reaction is never mentioned again, so deleting the scene costs some texture in her arc and one of the two people who carry Brendan's secret, but nothing later breaks.",
+    "lost": [
+      {
+        "kind": "Plot",
+        "what": "Claude found, proved and fixed the race condition on its own, and Brendan just read the diagnosis back to SJ",
+        "elsewhere": "s06_l42"
+      },
+      {
+        "kind": "Plot",
+        "what": "Brendan hides Claude's role from SJ and deletes the finished branch",
+        "elsewhere": "s06_l51"
+      },
+      {
+        "kind": "Character",
+        "what": "Kristina learns Claude didn't need SJ, and that knowledge sits under her later trust in SJ's slow experiments",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Kristina tells Brendan he has to show SJ how to do this, and he promises to ease him in. This sets up his later holding back",
+        "elsewhere": "s11b_l62 and s11c_l33 show him sitting on it without the setup"
+      },
+      {
+        "kind": "Guardrail",
+        "what": "Kristina's first private shift toward the tools ('makes me think a little differently about Claude and Cursor'). This is a minor echo of guardrail 2, which lives in s01b and s11c",
+        "elsewhere": "s11c_l39"
+      },
+      {
+        "kind": "Joke",
+        "what": "Kristina's 'heads together' huddle pitch is undercut at once, and she adds 'even though it's SJ'",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Brendan defends SJ as the best engineer, with high standards",
+        "elsewhere": "s01b_l3"
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s11c_l33",
+        "problem": "Narrator says Brendan starts 'the sentence he's deleted twice'. Without s07 there's no earlier moment where he nearly says it out loud, but the line is vague enough to stand on its own",
+        "fix": "none"
+      },
+      {
+        "cue": "s11b_l1",
+        "problem": "'A few months later' follows the montage straight from s06 instead of from s07. Timing still works because the montage moves",
+        "fix": "none"
+      }
+    ],
+    "changes": [
+      {
+        "action": "move",
+        "where": "s07_time_jump_to_best_practices",
+        "detail": "Move the montage cue to the end of s06, after s06_l51."
+      },
+      {
+        "action": "cut",
+        "where": "s07_l1 to s07_l25",
+        "detail": "Delete all dialogue, stage directions and narration in s07. The branch deletion in s07_l25 is already shown in s06_l51."
+      }
+    ],
+    "risk": "low",
+    "riskWhy": "The plot spine and Brendan's secret are already shown in s06. The only loss is that Kristina knows the truth, and no later scene relies on that.",
+    "writtenOn": "2026-10-05"
+  }
+}

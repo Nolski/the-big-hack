@@ -16,6 +16,7 @@ const S = {
   proof: { at: null, scenes: {} },
   rows: [],                       // one per beat of the scene on screen
   lastRow: null,                  // the beat the caret was in last
+  runtime: null,                  // running time against the target, from /api/runtime
 };
 
 async function api(method, path, body) {
@@ -181,6 +182,7 @@ function paintSaved() {
   if (DIRTY.size) { el.textContent = `${DIRTY.size} unsaved`; el.className = "saved busy"; return; }
   el.textContent = lastSaveAt ? "saved " + lastSaveAt : "ready";
   el.className = "saved ok";
+  if (lastSaveAt) scheduleRuntime();
 }
 
 async function flushAll() {
@@ -396,6 +398,7 @@ function render() {
   page.appendChild(foot);
 
   paintChrome();
+  paintCutPlan();
 }
 
 // "N beats · N words · file", kept current when a beat goes without a redraw.
@@ -403,7 +406,7 @@ function subline(s) {
   const words = (s.lines || []).reduce(
     (n, l) => n + (l.text || "").split(/\s+/).filter(Boolean).length, 0);
   return `${(s.lines || []).length} beats · ${words} words ·
-      <code>${esc(s.id)}</code>`;
+      ${runtimeOf(s.id, "on stage")}<code>${esc(s.id)}</code>`;
 }
 
 // The "+" between beats. It holds the beat it sits after, not that beat's id:
@@ -717,6 +720,7 @@ async function reload(opts) {
   S.i = i >= 0 ? i : Math.min(S.i, Math.max(0, S.scenes.length - 1));
   DIRTY.clear();                                   // those boxes are gone now
   render();
+  refreshRuntime();
   S.lastRow = S.rows.find((r) => r.ln.id === lastId) || null;
   kept.forEach(([cid, kind, v]) => {
     const row = S.rows.find((r) => r.ln.id === cid);
@@ -790,6 +794,435 @@ async function insertAfter(afterId) {
 // --------------------------------------------------------------------------
 // Chrome: the rail, the counter, the progress bar
 // --------------------------------------------------------------------------
+// --------------------------------------------------------------------------
+// Running time against the cut target
+// --------------------------------------------------------------------------
+// Measured on the server from each line's recording (see stage/runtime.py);
+// fetched again a moment after every save, so a cut shows up as you make it.
+const mins = (m) => `${m.toFixed(1)} min`;
+const rtScene = (sid) => S.runtime && S.runtime.scenes.find((x) => x.id === sid);
+
+function runtimeOf(sid, label) {
+  const r = rtScene(sid);
+  if (!r) return "";
+  const over = r.budget == null ? 0 : Math.round((r.now - r.budget) * 10) / 10;
+  const budget = r.budget == null ? ""
+    : over > 0 ? ` <span class="over-min">/ ${r.budget.toFixed(1)}${label ? `, ${over.toFixed(1)} over budget` : ""}</span>`
+    : ` <span class="saved-min">✓${label ? " within budget" : ""}</span>`;
+  const est = r.estimated ? ` (${r.estimated} estimated)` : "";
+  return `${mins(r.now)}${label ? " " + label : ""}${budget}${est}${label ? " · " : ""}`;
+}
+
+// The scene's cut suggestions, written per scene and checked against the
+// script on every refresh: done once the cut is in, "changed" if its lines
+// were edited some other way. Its lines are marked in the page below.
+const cutOpen = {};
+// What deleting this whole scene would need, and what it would save.
+const delOpen = {};
+function paintIfDeleted() {
+  const box = $("#ifdeleted"), s = scene(), r = s && rtScene(s.id);
+  if (!box) return;
+  const d = r && r.ifDeleted;
+  if (!d) { box.innerHTML = ""; return; }
+  const kindTag = (k) => `<span class="loss loss-${esc((k || "").toLowerCase())}">${esc(k)}</span>`;
+  const verdictClass = d.verdict === "cuttable" ? "risk-low" : d.verdict === "not cuttable" ? "risk-high" : "risk-medium";
+  box.innerHTML = `<details ${delOpen[s.id] ? "open" : ""}>
+    <summary>If this whole scene were deleted · saves ${d.savesMinutes.toFixed(1)} min
+      <span class="chip ${verdictClass}">${esc(d.verdict)}</span> <span class="chip risk-${esc(d.risk)}">${esc(d.risk)} risk</span></summary>
+    <div class="del-body">
+      <p class="sug-approach">${esc(d.summary)}</p>
+      <p class="del-time">${r.now.toFixed(1)} min now${d.montageMinutes && !d.removesMontage ? `, less ${d.montageMinutes.toFixed(1)} min of montage that moves to a neighbouring scene` : ""}${d.movedMinutes ? `, less ${d.movedMinutes.toFixed(1)} min of lines that move elsewhere` : ""}${d.bridgeMinutes ? `, less ${d.bridgeMinutes.toFixed(1)} min of new bridge lines` : ""} = <b>${d.savesMinutes.toFixed(1)} min saved</b>.</p>
+      ${d.riskWhy ? `<p class="sug-risk"><span class="who">${esc(d.risk)} risk</span> ${esc(d.riskWhy)}</p>` : ""}
+      ${(d.lost || []).length ? `<div class="sug-loses"><span class="who">What the play loses</span><ul>${d.lost.map((l) =>
+        `<li>${kindTag(l.kind)} ${esc(l.what)} <span class="faint">${l.elsewhere ? "· still carried: " + esc(l.elsewhere) : "· lost entirely"}</span></li>`).join("")}</ul></div>` : ""}
+      ${(d.orphans || []).length ? `<div class="sug-loses"><span class="who">Lines elsewhere that would stop making sense</span><ul>${d.orphans.map((o) =>
+        `<li><button class="cue-ref" data-cue="${esc(o.cue)}">${esc(o.cue)}</button> ${esc(o.problem)}${o.fix ? ` <span class="faint">Fix: ${esc(o.fix)}</span>` : ""}</li>`).join("")}</ul></div>` : ""}
+      ${(d.changes || []).length ? `<div class="sug-loses"><span class="who">What would have to change</span><ol class="del-changes">${d.changes.map((c) =>
+        `<li><span class="chip">${esc(c.action)}</span> <span class="faint">${esc(c.where || "")}</span> ${esc(c.detail || "")}${c.text ? `<div class="sug-new">${esc(c.text)}</div>` : ""}</li>`).join("")}</ol></div>` : ""}
+      ${(d.affects || []).length ? `<p class="sug-warn">⚠ Suggestions in other scenes lean on lines here: ${d.affects.map((n) => "#" + n).join(", ")}. Deleting this scene makes them unsafe.</p>` : ""}
+      <p class="hint">Analysis only. Nothing here changes the script.</p>
+    </div></details>`;
+  $("details", box).ontoggle = (e) => (delOpen[s.id] = e.target.open);
+  $$(".cue-ref", box).forEach((b) => (b.onclick = () => {
+    const i = S.scenes.findIndex((x) => (x.lines || []).some((l) => l.id === b.dataset.cue));
+    if (i >= 0) go(i, { line: b.dataset.cue });
+  }));
+}
+
+function paintCutPlan() {
+  paintIfDeleted();
+  const box = $("#cutplan"), s = scene(), r = s && rtScene(s.id);
+  S.rows.forEach((row) => { row.el.classList.remove("sug-cut", "sug-trim"); const t = $(".sug-edge", row.el); if (t) t.remove(); });
+  if (!box) return;
+  const plan = r && r.suggestions;
+  const open = plan ? plan.items.filter((x) => x.status !== "done" && x.status !== "dismissed") : [];
+  $("#cutsCount").textContent = open.length ? open.length : "";
+  $("#cutDrawerTitle").textContent = s ? `Cuts · ${s.title}` : "Cuts";
+  if (!plan || !plan.items.length) { box.innerHTML = '<p class="faint">No cut suggestions for this scene.</p>'; return; }
+  const offer = open.reduce((n, x) => n + x.savesMinutes, 0);
+  const over = r.budget == null ? 0 : Math.max(0, r.now - r.budget);
+  const byCue = {};
+  open.forEach((x) => x.cues.forEach((cid) => (byCue[cid] = byCue[cid] || []).push(x)));
+  Object.entries(byCue).forEach(([cid, xs]) => {
+    const row = S.rows.find((w) => w.ln.id === cid);
+    if (!row) return;
+    const cut = xs.some((x) => (x.cutCues || []).includes(cid));
+    row.el.classList.add(cut ? "sug-cut" : "sug-trim");
+    const edge = document.createElement("div");
+    edge.className = "sug-edge " + (cut ? "is-cut" : "is-trim");
+    edge.innerHTML = `<span>${xs.map((x) => "#" + x.number).join(" ")}</span>`;
+    edge.onmouseenter = () => showSugPop(edge, cid, xs);
+    edge.onmouseleave = () => hideSugPop();
+    edge.onclick = () => { openCuts(); scrollToSug(xs[0].number); };
+    row.el.appendChild(edge);
+  });
+  if (cutOpen[s.id] == null) cutOpen[s.id] = true;
+  const item = (x) => `
+    <li class="sug ${x.status}">
+      <div class="sug-head">
+        <span class="sug-num">#${x.number}</span>
+        <b>${esc(x.title)}</b>
+        <span class="chip">${x.kind}</span>
+        <span class="chip risk-${esc(x.risk)}">${esc(x.risk)} risk</span>
+        ${x.status === "done" ? '<span class="chip done">done</span>'
+          : x.status === "stale" ? '<span class="chip stale" title="You edited these lines. Edit the suggestion to match, or dismiss it.">lines changed since</span>' : ""}
+        ${x.editedByAuthor ? '<span class="chip">your version</span>' : ""}
+        <span class="sug-saves">${x.status === "done" ? "" : "−" + x.savesMinutes.toFixed(1) + " min"}</span>
+        ${x.status === "done" || editing(x) ? "" : `
+          <button class="btn tiny" data-act="accept" data-n="${x.n}" ${x.status === "stale" ? 'disabled title="Its lines changed since it was written. Edit the suggestion first."' : 'title="Make this change in the script. Undo takes it back out."'}>Accept</button>
+          <button class="btn tiny ghost" data-act="edit" data-n="${x.n}" title="Change which lines this cuts or rewrites">Edit</button>
+          <button class="btn tiny ghost" data-act="dismiss" data-n="${x.n}" title="Set this suggestion aside. You can restore it from the Dismissed list.">Dismiss</button>`}
+      </div>
+      ${editing(x) ? sugForm(x) : `<div class="sug-lines">${x.lines.map((l) => {
+        const edit = (x.edits || []).find((e) => e.cue === l.id);
+        if (edit && x.status !== "done") {
+          const d = wordDiff(l.text, edit.text);
+          return `<button class="cue-link trim-link" data-cue="${esc(l.id)}" title="Go to this line">
+            <span class="who">${esc(l.speaker)}</span> <span class="diff-old">${d.old}</span></button>
+            <div class="sug-new diff-new"><span class="who">becomes</span> ${d.neu}</div>`;
+        }
+        return `<button class="cue-link" data-cue="${esc(l.id)}" title="Go to this line">
+          <span class="who">${esc(l.speaker)}</span> ${esc(l.text)}</button>`;
+      }).join("")}</div>`}
+      ${x.riskWhy ? `<p class="sug-risk"><span class="who">${esc(x.risk)} risk</span> ${esc(x.riskWhy)}${x.riskWas ? ` <span class="faint">(was rated ${esc(x.riskWas)})</span>` : ""}</p>` : ""}
+      ${(x.loses || []).length ? `<div class="sug-loses"><span class="who">Deletes</span><ul>${x.loses.map((l) => {
+        const m = /^(Plot|Setup|Character|Joke|Colour|Staging|Nothing substantive):\s*(.*)$/.exec(l);
+        return m ? `<li><span class="loss loss-${m[1].split(" ")[0].toLowerCase()}">${esc(m[1])}</span> ${esc(m[2])}</li>` : `<li>${esc(l)}</li>`;
+      }).join("")}</ul></div>` : ""}
+      <p class="sug-why"><span class="who">Why it can go</span> ${esc(x.why)}</p>
+      ${x.keeps ? `<p class="sug-keeps"><span class="who">Keeps</span> ${esc(x.keeps)}</p>` : ""}
+      ${x.directionsKept ? `<p class="faint">Stage directions in this stretch stay as they are.</p>` : ""}
+      ${x.status !== "done" ? conflictHtml(x) : ""}
+    </li>`;
+  box.innerHTML = `<details ${cutOpen[s.id] ? "open" : ""}>
+      <summary>Where to cut · ${open.length} suggestion${open.length === 1 ? "" : "s"} offering ${offer.toFixed(1)} min
+        ${over > 0 ? `· this scene needs ${over.toFixed(1)}` : "· scene is within budget"}</summary>
+      ${plan.approach ? `<p class="sug-approach">${esc(plan.approach)}</p>` : ""}
+      <ol class="sug-list">${plan.items.filter((x) => x.status !== "dismissed").map(item).join("")}</ol>
+      ${(() => { const gone = plan.items.filter((x) => x.status === "dismissed"); return gone.length ? `
+      <details class="dismissed-list"><summary>Dismissed (${gone.length})</summary><ul>${gone.map((x) => `
+        <li><span class="sug-num">#${x.number}</span> ${esc(x.title)} <span class="faint">−${x.savesMinutes.toFixed(1)} min</span>
+          <button class="btn tiny ghost" data-act="restore" data-n="${x.n}">Restore</button></li>`).join("")}</ul></details>` : ""; })()}
+    </details>`;
+  $("details", box).ontoggle = (e) => (cutOpen[s.id] = e.target.open);
+  $$(".cue-link[data-cue]", box).forEach((b) => (b.onclick = () => focusLine(b.dataset.cue)));
+  wireConflicts(box);
+  const byN = (b) => plan.items.find((x) => x.n === +b.dataset.n);
+  $$('[data-act="accept"]', box).forEach((b) => {
+    const x = byN(b);
+    if ((x.warnings || []).length) armed(b, "Accept", "Conflicts: click again", () => acceptSuggestion(x));
+    else b.onclick = () => acceptSuggestion(x);
+  });
+  $$('[data-act="edit"]', box).forEach((b) => (b.onclick = () => startSugEdit(byN(b))));
+  $$('[data-act="dismiss"]', box).forEach((b) => (b.onclick = () => dismissSuggestion(byN(b), true)));
+  $$('[data-act="restore"]', box).forEach((b) => (b.onclick = () => dismissSuggestion(byN(b), false)));
+  if (S.sugEdit) wireSugForm(box);
+}
+
+// ---- Conflicts: this suggestion leans on a line another suggestion would cut.
+// Each warning opens to show the sentence that leans on it, the line itself,
+// and the suggestion that would cut it, with a way to go to either.
+function conflictHtml(x) {
+  return (x.conflicts || []).map((c, i) => `
+    <details class="conflict">
+      <summary>⚠ ${c.gone ? `Relies on ${esc(c.cue)}, which has already been cut.`
+        : `Conflicts with <b>#${c.otherNumber}</b> in ${esc(c.sceneTitle)}: take one, not both.`} <span class="faint">Show the conflict</span></summary>
+      <div class="conflict-body">
+        ${c.because ? `<p><span class="who">#${x.number} assumes</span> ${esc(c.because)}</p>` : ""}
+        ${c.gone ? "" : `
+        <button class="cue-link conflict-line" data-jump-cue="${esc(c.cue)}" title="Go to this line in ${esc(c.sceneTitle)}">
+          <span class="who">${esc(c.speaker)} · ${esc(c.sceneTitle)}</span> ${esc(c.text)}</button>
+        <p><span class="who">but #${c.otherNumber} cuts it</span> “${esc(c.otherTitle)}” · ${esc(c.otherRisk)} risk · −${c.otherSaves.toFixed(1)} min
+          <button class="btn tiny ghost" data-jump-sug="${esc(c.scene)}|${c.otherNumber}">Open #${c.otherNumber}</button></p>
+        <p class="faint">Accept one of the two and dismiss the other, or edit one so it no longer depends on this line.</p>`}
+      </div>
+    </details>`).join("");
+}
+function wireConflicts(root) {
+  $$("[data-jump-cue]", root).forEach((b) => (b.onclick = (e) => {
+    e.preventDefault();
+    const cue = b.dataset.jumpCue, i = S.scenes.findIndex((sc) => (sc.lines || []).some((l) => l.id === cue));
+    const pop = $("#sugPop"); if (pop) pop.hidden = true;
+    if (i >= 0) go(i, { line: cue });
+  }));
+  $$("[data-jump-sug]", root).forEach((b) => (b.onclick = async (e) => {
+    e.preventDefault();
+    const [sid, num] = b.dataset.jumpSug.split("|"), i = S.scenes.findIndex((sc) => sc.id === sid);
+    const pop = $("#sugPop"); if (pop) pop.hidden = true;
+    if (i < 0) return;
+    await go(i);
+    openCuts();
+    setTimeout(() => scrollToSug(+num), 60);
+  }));
+}
+
+// ---- Word diff of a line against its suggested text, like git's --word-diff.
+// Longest common subsequence over words; whitespace rides along with each word.
+function wordDiff(was, now) {
+  const a = was.match(/\S+\s*/g) || [], b = now.match(/\S+\s*/g) || [];
+  const key = (w) => w.trim();
+  const n = a.length, m = b.length, L = Array.from({ length: n + 1 }, () => new Int16Array(m + 1));
+  for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--)
+    L[i][j] = key(a[i]) === key(b[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const old = [], neu = [];
+  let i = 0, j = 0;
+  while (i < n || j < m) {
+    if (i < n && j < m && key(a[i]) === key(b[j])) { old.push(esc(a[i])); neu.push(esc(b[j])); i++; j++; }
+    else if (j < m && (i === n || L[i][j + 1] >= L[i + 1][j])) neu.push(`<ins>${esc(b[j++])}</ins>`);
+    else old.push(`<del>${esc(a[i++])}</del>`);
+  }
+  return { old: old.join("").replace(/<\/del><del>/g, ""), neu: neu.join("").replace(/<\/ins><ins>/g, "") };
+}
+function diffBlock(was, now) {
+  if (now == null) return `<div class="diff diff-old"><span class="who">− cut</span> <del>${esc(was)}</del></div>`;
+  const d = wordDiff(was, now);
+  return `<div class="diff diff-old"><span class="who">− was</span> ${d.old}</div>
+          <div class="diff diff-new"><span class="who">+ now</span> ${d.neu}</div>`;
+}
+
+// ---- Hovering the margin tab beside a suggested line shows that suggestion.
+let popTimer = null;
+function sugPop() {
+  let el = $("#sugPop");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "sugPop";
+    el.className = "sug-pop";
+    el.onmouseenter = () => clearTimeout(popTimer);
+    el.onmouseleave = () => hideSugPop();
+    document.body.appendChild(el);
+  }
+  return el;
+}
+function hideSugPop() {
+  clearTimeout(popTimer);
+  popTimer = setTimeout(() => { const el = $("#sugPop"); if (el) el.hidden = true; }, 450);
+}
+function showSugPop(edge, cid, xs) {
+  clearTimeout(popTimer);
+  const el = sugPop();
+  el.innerHTML = xs.map((x) => {
+    const edit = (x.edits || []).find((e) => e.cue === cid);
+    const others = x.cues.length - 1;
+    return `<div class="pop-sug">
+      <div class="sug-head"><span class="sug-num">#${x.number}</span><b>${esc(x.title)}</b>
+        <span class="chip risk-${esc(x.risk)}">${esc(x.risk)} risk</span>
+        <span class="sug-saves">−${x.savesMinutes.toFixed(1)} min</span></div>
+      ${diffBlock((x.lines.find((l) => l.id === cid) || {}).text || "", edit ? edit.text : null)}
+      ${others ? `<p class="faint">…along with ${others} other line${others === 1 ? "" : "s"} in this suggestion.</p>` : ""}
+      ${x.riskWhy ? `<p class="sug-why">${esc(x.riskWhy)}</p>` : ""}
+      ${conflictHtml(x)}
+      <div class="sug-actions">
+        ${x.status === "stale" ? `<span class="faint">You changed these lines; edit or dismiss it.</span>` : `<button class="btn tiny" data-pop="accept" data-n="${x.n}">Accept</button>`}
+        <button class="btn tiny ghost" data-pop="edit" data-n="${x.n}">Edit</button>
+        <button class="btn tiny ghost" data-pop="dismiss" data-n="${x.n}">Dismiss</button>
+        <button class="btn tiny ghost" data-pop="show" data-n="${x.n}">Show in panel</button>
+      </div></div>`;
+  }).join("");
+  const find = (b) => xs.find((x) => x.n === +b.dataset.n);
+  const toPanel = (x) => {
+    const s = scene(); cutOpen[s.id] = true;
+    openCuts();
+    const d = $("#cutplan details"); if (d) d.open = true;
+    const li = $$("#cutplan .sug").find((n) => n.querySelector(".sug-num")?.textContent === "#" + x.number);
+    if (li) li.scrollIntoView({ block: "start", behavior: "smooth" });
+  };
+  $$('[data-pop="accept"]', el).forEach((b) => {
+    const x = find(b);
+    if ((x.warnings || []).length) armed(b, "Accept", "Conflicts: click again", () => { el.hidden = true; acceptSuggestion(x); });
+    else b.onclick = () => { el.hidden = true; acceptSuggestion(x); };
+  });
+  $$('[data-pop="edit"]', el).forEach((b) => (b.onclick = () => { el.hidden = true; startSugEdit(find(b)); toPanel(find(b)); }));
+  $$('[data-pop="show"]', el).forEach((b) => (b.onclick = () => { el.hidden = true; toPanel(find(b)); }));
+  $$('[data-pop="dismiss"]', el).forEach((b) => (b.onclick = () => { el.hidden = true; dismissSuggestion(find(b), true); }));
+  wireConflicts(el);
+  el.hidden = false;
+  // Anchored to the tab itself, overlapping it by a few pixels, so the pointer
+  // can slide straight from the tab onto the card without crossing a gap.
+  const r = $("span", edge).getBoundingClientRect();
+  const w = Math.min(460, window.innerWidth - 24);
+  el.style.width = w + "px";
+  el.style.left = Math.max(12, Math.min(r.right - 4, window.innerWidth - w - 12)) + "px";
+  const h = el.offsetHeight;
+  el.style.top = Math.max(60, Math.min(r.top - 10, window.innerHeight - h - 12)) + "px";
+}
+
+// ---- The cuts drawer: slides out on the right like Find; the page narrows.
+function openCuts() {
+  if (!$("#finder").hidden) closeFinder();
+  $("#cutDrawer").hidden = false;
+  document.body.classList.add("cutting");
+  try { localStorage.setItem("bighack-cuts-open", "1"); } catch (e) { /* fine */ }
+  paintCutPlan();
+}
+function closeCuts() {
+  $("#cutDrawer").hidden = true;
+  document.body.classList.remove("cutting");
+  try { localStorage.removeItem("bighack-cuts-open"); } catch (e) { /* fine */ }
+}
+function scrollToSug(number) {
+  const d = $("#cutplan details"); if (d) d.open = true;
+  const li = $$("#cutplan .sug").find((n) => n.querySelector(".sug-num")?.textContent === "#" + number);
+  if (li) { li.scrollIntoView({ block: "start", behavior: "smooth" }); li.classList.add("pulse"); setTimeout(() => li.classList.remove("pulse"), 1200); }
+}
+
+// ---- Dismissing: the suggestion stays on file but leaves the counts, tabs and conflicts.
+async function dismissSuggestion(x, dismissed) {
+  try {
+    await api("PUT", `/api/suggestion/${encodeURIComponent(scene().id)}/${x.n}/dismiss`, { dismissed });
+    await refreshRuntime();
+    toast(dismissed ? `Dismissed #${x.number}. Restore it from the Dismissed list at the bottom.` : `Restored #${x.number}.`);
+  } catch (e) { toast(e.message, true); }
+}
+
+// ---- Accepting a suggestion: one scene save, so one undo reverses it.
+async function acceptSuggestion(x) {
+  if (!(await flushAll())) return toast("Something hasn't saved yet.", true);
+  const s = scene();
+  try {
+    await api("POST", `/api/suggestion/${encodeURIComponent(s.id)}/${x.n}/accept`, { revision: S.revision });
+    lastSaveAt = new Date().toLocaleTimeString();
+    await reload({ say: `Accepted: ${x.title}. Undo puts it back.` });
+    paintHistory();
+  } catch (e) { toast(e.message, true); }
+}
+
+// ---- Editing a suggestion: each line is cut, rewritten, or dropped from it;
+// other lines of the scene can be added. Saved to the suggestion, not the script.
+const editing = (x) => S.sugEdit && S.sugEdit.sid === scene().id && S.sugEdit.n === x.n;
+function startSugEdit(x) {
+  const edits = Object.fromEntries((x.edits || []).map((e) => [e.cue, e.text]));
+  S.sugEdit = { sid: scene().id, n: x.n, title: x.title,
+    rows: x.lines.map((l) => ({ id: l.id, mode: l.id in edits ? "rewrite" : "cut", text: edits[l.id] || l.text })) };
+  paintCutPlan();
+}
+function sugForm(x) {
+  const d = S.sugEdit, lines = scene().lines || [];
+  const lineOf = (id) => lines.find((l) => l.id === id) || {};
+  const who = (l) => l.type === "direction" ? "Direction" : charName(l.speaker) || l.speaker;
+  const taken = new Set(d.rows.map((r) => r.id));
+  const order = (id) => lines.findIndex((l) => l.id === id);
+  d.rows.sort((a, b) => order(a.id) - order(b.id));
+  return `<div class="sug-form">
+    <input class="in sug-title" value="${esc(d.title)}" placeholder="Title" />
+    ${d.rows.map((r, i) => { const l = lineOf(r.id); return `
+      <div class="sug-row">
+        <div class="sug-orig"><span class="who">${esc(who(l))}</span> ${esc(l.text)}</div>
+        <div class="sug-modes">
+          ${["cut", "rewrite", "keep"].map((m) => `<label><input type="radio" name="m${i}" data-i="${i}" value="${m}" ${r.mode === m ? "checked" : ""}/> ${m === "keep" ? "leave out of this suggestion" : m}</label>`).join("")}
+        </div>
+        ${r.mode === "rewrite" ? `<textarea class="in sug-text" data-i="${i}" rows="3">${esc(r.text)}</textarea>` : ""}
+      </div>`; }).join("")}
+    <select class="in sug-add"><option value="">+ Add another line from this scene…</option>
+      ${lines.filter((l) => !taken.has(l.id) && !l.video).map((l) => `<option value="${esc(l.id)}">${esc(who(l))}: ${esc((l.text || "").slice(0, 90))}</option>`).join("")}
+    </select>
+    <div class="sug-actions">
+      <button class="btn tiny primary" data-act="save-sug">Save suggestion</button>
+      <button class="btn tiny ghost" data-act="cancel-sug">Cancel</button>
+      <span class="hint">Saved to the suggestion only. Accept it afterwards to change the script.</span>
+    </div>
+  </div>`;
+}
+function wireSugForm(box) {
+  const d = S.sugEdit, form = $(".sug-form", box);
+  if (!form) return;
+  $(".sug-title", form).oninput = (e) => (d.title = e.target.value);
+  $$('input[type="radio"]', form).forEach((r) => (r.onchange = () => { d.rows[+r.dataset.i].mode = r.value; paintCutPlan(); }));
+  $$(".sug-text", form).forEach((t) => (t.oninput = () => (d.rows[+t.dataset.i].text = t.value)));
+  $(".sug-add", form).onchange = (e) => {
+    const l = (scene().lines || []).find((x) => x.id === e.target.value);
+    if (l) { d.rows.push({ id: l.id, mode: "cut", text: l.text }); paintCutPlan(); }
+  };
+  $('[data-act="cancel-sug"]', form).onclick = () => { S.sugEdit = null; paintCutPlan(); };
+  $('[data-act="save-sug"]', form).onclick = async () => {
+    const rows = d.rows.filter((r) => r.mode !== "keep");
+    try {
+      await api("PUT", `/api/suggestion/${encodeURIComponent(d.sid)}/${d.n}`, {
+        title: d.title, cues: rows.map((r) => r.id),
+        edits: rows.filter((r) => r.mode === "rewrite").map((r) => ({ cue: r.id, text: r.text })),
+      });
+      S.sugEdit = null;
+      await refreshRuntime();
+      toast("Suggestion updated.");
+    } catch (e) { toast(e.message, true); }
+  };
+}
+
+let runtimeTimer = null;
+function scheduleRuntime() {
+  clearTimeout(runtimeTimer);
+  runtimeTimer = setTimeout(refreshRuntime, 1200);
+}
+
+async function refreshRuntime() {
+  try { S.runtime = await api("GET", "/api/runtime"); } catch (e) { return; }
+  paintRuntime();
+}
+
+function paintRuntime() {
+  const r = S.runtime;
+  if (!r) return;
+  const share = Math.max(0, Math.min(1, r.cutMinutes / r.needMinutes));
+  $("#rtFill").style.width = 100 * share + "%";
+  $("#rtNum").textContent = `${r.nowMinutes.toFixed(1)} / ${r.targetMinutes.toFixed(0)} min`;
+  $("#runtimeBtn").classList.toggle("met", r.remainingMinutes <= 0);
+  $("#runtimeBtn").title = `Running time ${mins(r.nowMinutes)} against a ${mins(r.targetMinutes)} target. `
+    + `Cut so far ${mins(r.cutMinutes)} of ${mins(r.needMinutes)} (${Math.round(100 * share)}%).`;
+  const sub = $(".scene-sub");
+  if (sub && scene()) sub.innerHTML = subline(scene());
+  paintChrome();
+  paintCutPlan();
+
+  $("#rtSummary").innerHTML = `<b>${mins(r.nowMinutes)}</b> on stage, target <b>${mins(r.targetMinutes)}</b>.
+    Cut so far ${mins(r.cutMinutes)} of ${mins(r.needMinutes)} (${Math.round(100 * share)}%);
+    ${r.remainingMinutes > 0 ? `<b>${mins(r.remainingMinutes)}</b> still to cut.` : "target reached."}
+    ${r.estimatedLines ? `${r.estimatedLines} edited line${r.estimatedLines === 1 ? " is" : "s are"} estimated until re-recorded.` : ""}`;
+  const top = Math.max(...r.scenes.map((x) => Math.max(x.was, x.now)), 1);
+  const row = (x) => {
+    const left = x.budget == null ? 0 : Math.round((x.now - x.budget) * 10) / 10;
+    const sugs = x.suggestions ? x.suggestions.items.filter((y) => y.status !== "done" && y.status !== "dismissed").length : 0;
+    return `
+      <span class="name${x.cut ? " cut" : ""}" data-sid="${esc(x.id)}">${esc(x.title)}
+        <small>${esc(x.id)}${x.cut ? " · cut" : ""}${x.fixed ? ` · ${x.fixed.toFixed(1)} min montage` : ""}${x.estimated ? ` · ${x.estimated} estimated` : ""}${sugs ? ` · ${sugs} suggestions` : ""}</small></span>
+      <span class="num">${x.was.toFixed(1)}</span>
+      <span class="num">${x.cut ? "—" : x.now.toFixed(1)}</span>
+      <span class="num">${x.budget == null ? "" : x.budget.toFixed(1)}</span>
+      <span class="num ${left > 0 ? "over-min" : "saved-min"}">${x.budget == null || x.cut ? "" : left > 0 ? left.toFixed(1) : "✓"}</span>
+      <span class="num del-col ${x.ifDeleted ? (x.ifDeleted.verdict === "cuttable" ? "saved-min" : x.ifDeleted.verdict === "not cuttable" ? "faint" : "") : ""}" title="${x.ifDeleted ? esc(x.ifDeleted.verdict) : ""}">${x.ifDeleted ? x.ifDeleted.savesMinutes.toFixed(1) + (x.ifDeleted.verdict === "not cuttable" ? "✕" : x.ifDeleted.verdict === "cuttable" ? "" : "*") : ""}</span>
+      <div class="bars"><span class="was" style="width:${100 * x.was / top}%"></span><span class="now" style="width:${100 * x.now / top}%"></span>${x.budget == null || x.cut ? "" : `<i class="budget" style="left:${100 * x.budget / top}%"></i>`}</div>`;
+  };
+  const budgetTotal = r.scenes.reduce((n, x) => n + (x.cut ? 0 : x.budget || 0), 0);
+  $("#rtTable").innerHTML = `<span class="h">Scene</span><span class="h num">Was</span><span class="h num">Now</span><span class="h num">Budget</span><span class="h num">To cut</span><span class="h num" title="Minutes saved by deleting the whole scene. * needs rewrites, ✕ not cuttable">If deleted</span>`
+    + r.scenes.map(row).join("")
+    + `<span class="total">Whole play</span><span class="num total">${r.startMinutes.toFixed(1)}</span>
+       <span class="num total">${r.nowMinutes.toFixed(1)}</span><span class="num total">${budgetTotal.toFixed(1)}</span>
+       <span class="num total ${r.remainingMinutes > 0 ? "over-min" : "saved-min"}">${r.remainingMinutes > 0 ? r.remainingMinutes.toFixed(1) : "✓"}</span><span></span>`;
+  $$("#rtTable .name").forEach((el) => {
+    const i = S.scenes.findIndex((x) => x.id === el.dataset.sid);
+    if (i >= 0) el.onclick = () => { $("#runtime").hidden = true; go(i); };
+  });
+}
+
 function paintChrome() {
   const s = scene();
   const done = S.scenes.filter((x) => (S.proof.scenes[x.id] || {}).done).length;
@@ -811,7 +1244,7 @@ function paintChrome() {
       <span class="tick">${p.done ? "✓" : ""}</span>
       <span>
         <span class="t">${esc(x.title)}</span>
-        <span class="sub">${(x.lines || []).length} beats</span>
+        <span class="sub">${(x.lines || []).length} beats · ${runtimeOf(x.id)}</span>
       </span>
       <span class="${(p.flags || []).length ? "flagged" : "n"}">${
         (p.flags || []).length ? "⚑" + p.flags.length : x.display_number || x.number}</span>`;
@@ -930,6 +1363,8 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     if (!$("#finder").hidden) { closeFinder(); return; }
     if (!$("#help").hidden) { $("#help").hidden = true; return; }
+    if (!$("#cutDrawer").hidden && !(document.activeElement && document.activeElement.closest && document.activeElement.closest("#cutDrawer textarea, #cutDrawer input"))) { closeCuts(); return; }
+    if (!$("#runtime").hidden) { $("#runtime").hidden = true; return; }
     if (ta) { ta.blur(); e.preventDefault(); }
     return;
   }
@@ -1015,6 +1450,7 @@ document.addEventListener("keydown", (e) => {
 const F = { hits: [], q: "" };
 
 function openFinder() {
+  if (!$("#cutDrawer").hidden) closeCuts();
   $("#finder").hidden = false;
   document.body.classList.add("finding");
   $("#findQ").focus();
@@ -1145,6 +1581,11 @@ $("#helpBtn").onclick = () => ($("#help").hidden = false);
 $("#undoBtn").onclick = () => historyStep("undo");
 $("#redoBtn").onclick = () => historyStep("redo");
 $("#helpClose").onclick = () => ($("#help").hidden = true);
+$("#runtimeBtn").onclick = () => { $("#runtime").hidden = false; refreshRuntime(); };
+$("#cutsBtn").onclick = () => ($("#cutDrawer").hidden ? openCuts() : closeCuts());
+$("#cutDrawerClose").onclick = () => closeCuts();
+try { if (localStorage.getItem("bighack-cuts-open")) openCuts(); } catch (e) { /* fine */ }
+$("#runtimeClose").onclick = () => ($("#runtime").hidden = true);
 $("#prev").onclick = () => go(S.i - 1);
 $("#next").onclick = () => go(S.i + 1);
 
@@ -1182,6 +1623,7 @@ $("#next").onclick = () => go(S.i + 1);
       }
     }
     paintSaved();
+    refreshRuntime();
     setInterval(pollRevision, 4000);
     paintHistory();
   } catch (e) {
