@@ -31,7 +31,7 @@ jobs:
           # Only what the browser loads: pages, scripts, styles, data and assets.
           rsync -a --prune-empty-dirs \
             --exclude='/handoff/' --exclude='/tests/' --exclude='/script-history/' \
-            --exclude='/rehearsal-*' --exclude='__pycache__/' \
+            --exclude='/editor*' --exclude='/proof-progress.json' --exclude='__pycache__/' \
             --include='*/' \
             --include='*.html' --include='*.js' --include='*.css' --include='*.json' \
             --include='/README.md' --include='/assets/**' \

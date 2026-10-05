@@ -9127,12 +9127,12 @@
       }
     },
     "s22_l9": {
-      "text": "Liam had no thing at eleven.",
+      "text": "SJ had no thing at eleven.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-baf83db9ba144feedb8c227f8a4f5e4ed3dd49647a3de6c00c1045e45effc0ed.mp3",
-      "duration": 2.35102,
-      "audioSha256": "baf83db9ba144feedb8c227f8a4f5e4ed3dd49647a3de6c00c1045e45effc0ed",
+      "audio": "assets/audio/shared-e43453d044f16235cdd3c39c2dec55383bd9631481bb11106c107604d5c32f12.mp3",
+      "duration": 2.507755,
+      "audioSha256": "e43453d044f16235cdd3c39c2dec55383bd9631481bb11106c107604d5c32f12",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11117,12 +11117,12 @@
       }
     },
     "s24_l34": {
-      "text": "After Liam signed his guilt, the recently appointed judge rejected the plea deal. Liam got scheduled for sentencing. And by the time his sentencing hearing came up, given the current state of the world... the 151 years would have actually been a good deal.",
+      "text": "After SJ signed his guilt, the recently appointed judge rejected the plea deal. SJ got scheduled for sentencing. And by the time his sentencing hearing came up, given the current state of the world... the 151 years would have actually been a good deal.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-5e722bee507412566b54336b40dfa877d3f5c72f172f713b2b5f5c69055e2d7f.mp3",
-      "duration": 17.319184,
-      "audioSha256": "5e722bee507412566b54336b40dfa877d3f5c72f172f713b2b5f5c69055e2d7f",
+      "audio": "assets/audio/shared-9f327f419d31b712c66aa0b75144a9f4d436d1b938748a7aa69e764e4fe7c557.mp3",
+      "duration": 17.162449,
+      "audioSha256": "9f327f419d31b712c66aa0b75144a9f4d436d1b938748a7aa69e764e4fe7c557",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11187,12 +11187,12 @@
       }
     },
     "s01_l39": {
-      "text": "Kristina holds her tongue, she is in disbelief about what Liam just said.",
+      "text": "Kristina holds her tongue, she is in disbelief about what SJ just said.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-1db189cf2e300f1db70f199fecadfb1bda078c60cf17e5268d23c4dbce402ea2.mp3",
-      "duration": 5.407347,
-      "audioSha256": "1db189cf2e300f1db70f199fecadfb1bda078c60cf17e5268d23c4dbce402ea2",
+      "audio": "assets/audio/shared-68809b4a080daddfd49306dd62f829234ad12804cbca0f1abcad7e1617d7303d.mp3",
+      "duration": 5.485714,
+      "audioSha256": "68809b4a080daddfd49306dd62f829234ad12804cbca0f1abcad7e1617d7303d",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11201,12 +11201,12 @@
       }
     },
     "s06_l1": {
-      "text": "A few months pass… Anthropic has just released Opus 4.7. Liam is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running.",
+      "text": "A few months pass… Anthropic has just released Opus 4.7. SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-459c95cbeef66e146d074ed65d0a2a8753a2c77bbc300fcbb6477133c3f838e3.mp3",
-      "duration": 13.322449,
-      "audioSha256": "459c95cbeef66e146d074ed65d0a2a8753a2c77bbc300fcbb6477133c3f838e3",
+      "audio": "assets/audio/shared-5b628bdfe675d3bf581145ab418b7360b9ea2fe10d2be51ca723bb0b01ea44eb.mp3",
+      "duration": 13.479184,
+      "audioSha256": "5b628bdfe675d3bf581145ab418b7360b9ea2fe10d2be51ca723bb0b01ea44eb",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11215,12 +11215,12 @@
       }
     },
     "s06_l34": {
-      "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without Liam the wiser.",
+      "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without SJ the wiser.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-9a01e40b6c11cfc1d7808e7034d59ac93b2f478d0da2e66264551284d6638b91.mp3",
-      "duration": 6.765714,
-      "audioSha256": "9a01e40b6c11cfc1d7808e7034d59ac93b2f478d0da2e66264551284d6638b91",
+      "audio": "assets/audio/shared-5ad9110f86986c10d737d3354ed5b2b928726094ca56698ef7e0674c5f3bf94a.mp3",
+      "duration": 6.687347,
+      "audioSha256": "5ad9110f86986c10d737d3354ed5b2b928726094ca56698ef7e0674c5f3bf94a",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11243,12 +11243,12 @@
       }
     },
     "s06_l51": {
-      "text": "Liam starts writing the fix, delighted. Brendan still has Claude's reproduction and the finished patch open. He switches back to the main branch before Liam notices. He doesn't tell him.",
+      "text": "SJ starts writing the fix, delighted. Brendan still has Claude's reproduction and the finished patch open. He switches back to the main branch before SJ notices. He doesn't tell him.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-25cf8344580702d62eeaff6581e67349e49dfc9e73a48ea5c6add443a3d01911.mp3",
-      "duration": 12.120816,
-      "audioSha256": "25cf8344580702d62eeaff6581e67349e49dfc9e73a48ea5c6add443a3d01911",
+      "audio": "assets/audio/shared-d74a27cd2985711ad442bb7a0fede56fb65493c446be0d5647992dac35f48fdd.mp3",
+      "duration": 12.199184,
+      "audioSha256": "d74a27cd2985711ad442bb7a0fede56fb65493c446be0d5647992dac35f48fdd",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11257,12 +11257,12 @@
       }
     },
     "s07_l25": {
-      "text": "Liam opens his one-line fix for review. He's happy with it. Brendan deletes the branch Claude finished twenty minutes ago.",
+      "text": "SJ opens his one-line fix for review. He's happy with it. Brendan deletes the branch Claude finished twenty minutes ago.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-58a6fe82322bba14ace9d56d238bdaa2d499a2055ab9f66ef809f0b04462eeda.mp3",
+      "audio": "assets/audio/shared-1df050d4053c22e54dc7d2d30091a76193dafe5db5eef7443ab4326ef658ff09.mp3",
       "duration": 7.810612,
-      "audioSha256": "58a6fe82322bba14ace9d56d238bdaa2d499a2055ab9f66ef809f0b04462eeda",
+      "audioSha256": "1df050d4053c22e54dc7d2d30091a76193dafe5db5eef7443ab4326ef658ff09",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11397,12 +11397,12 @@
       }
     },
     "s11b_l1": {
-      "text": "A few months later, Liam has a new Mac Studio on his desk. It runs a local Qwen model, a few tokens at a time. Standup is underway.",
+      "text": "A few months later, SJ has a new Mac Studio on his desk. It runs a local Qwen model, a few tokens at a time. Standup is underway.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-7c8ff769d177da970e6622fbd68cfdfcc602b8ce805977da5623dc90fda8daaa.mp3",
-      "duration": 10.109388,
-      "audioSha256": "7c8ff769d177da970e6622fbd68cfdfcc602b8ce805977da5623dc90fda8daaa",
+      "audio": "assets/audio/shared-71b7a52f89ab1f9946d0b446c597068fc4d904bee2b7f0fae374e4ce05b00f2b.mp3",
+      "duration": 10.187755,
+      "audioSha256": "71b7a52f89ab1f9946d0b446c597068fc4d904bee2b7f0fae374e4ce05b00f2b",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11411,12 +11411,12 @@
       }
     },
     "s11b_l62": {
-      "text": "BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at Liam's one terminal, the cursor blinking, patient. He decides to sit on it.",
+      "text": "BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at SJ's one terminal, the cursor blinking, patient. He decides to sit on it.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-2e4856a72012a3373d8ccd6529fddf16dda88d33d274a74f4c8bb25c58579209.mp3",
-      "duration": 12.199184,
-      "audioSha256": "2e4856a72012a3373d8ccd6529fddf16dda88d33d274a74f4c8bb25c58579209",
+      "audio": "assets/audio/shared-325d890a1fd223c7fdc45d853805b3f91df08c89053ecbd503632a35b6dd2095.mp3",
+      "duration": 12.669388,
+      "audioSha256": "325d890a1fd223c7fdc45d853805b3f91df08c89053ecbd503632a35b6dd2095",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11425,12 +11425,12 @@
       }
     },
     "s11b_l63": {
-      "text": "On BRENDAN's own screen he quietly types one line: \"In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5.\" The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before Liam finishes his sentence. He says nothing.",
+      "text": "On BRENDAN's own screen he quietly types one line: \"In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5.\" The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before SJ finishes his sentence. He says nothing.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-e60e6aa671c4575784b0456aca51702fcb561e453b0061d6b956159f69262aaa.mp3",
-      "duration": 21.96898,
-      "audioSha256": "e60e6aa671c4575784b0456aca51702fcb561e453b0061d6b956159f69262aaa",
+      "audio": "assets/audio/shared-f1a77bda54b6e73b3cb7ac30efc6d6c5a1c6b1f8f5b22f6727da28bb6917901c.mp3",
+      "duration": 22.360816,
+      "audioSha256": "f1a77bda54b6e73b3cb7ac30efc6d6c5a1c6b1f8f5b22f6727da28bb6917901c",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11439,12 +11439,12 @@
       }
     },
     "s11b_l70": {
-      "text": "Brendan opens the security policy. Liam wrote it. He starts a message to Kristina suggesting they update it, then looks at the tickets he still has to finish and deletes it. He starts another message, this time about Liam. He deletes that one too.",
+      "text": "Brendan opens the security policy. SJ wrote it. He starts a message to Kristina suggesting they update it, then looks at the tickets he still has to finish and deletes it. He starts another message, this time about SJ. He deletes that one too.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-60f84845449b3291235b4d7112852824a1dc36f5ad277af8a1ae3b5d03bf52f7.mp3",
-      "duration": 16.274286,
-      "audioSha256": "60f84845449b3291235b4d7112852824a1dc36f5ad277af8a1ae3b5d03bf52f7",
+      "audio": "assets/audio/shared-99ca5441d619d302c3ecb52585ae4861d76bbda95c0694fcce2404cc67f18f17.mp3",
+      "duration": 16.666122,
+      "audioSha256": "99ca5441d619d302c3ecb52585ae4861d76bbda95c0694fcce2404cc67f18f17",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11453,12 +11453,12 @@
       }
     },
     "s11b_l75": {
-      "text": "Brendan ends the call and deletes the finished patch. Liam opens Reddit beside his terminal while he waits for the next line of code.",
+      "text": "Brendan ends the call and deletes the finished patch. SJ opens Reddit beside his terminal while he waits for the next line of code.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-d2b44492718354761ac050e7d10d6d1ef0ad505e43c0f8c980741142785ac9f8.mp3",
-      "duration": 8.045714,
-      "audioSha256": "d2b44492718354761ac050e7d10d6d1ef0ad505e43c0f8c980741142785ac9f8",
+      "audio": "assets/audio/shared-60a6c1238515731a5a742cdf3db0c7a8e0851fc6d5900dea309503d8493c1e5b.mp3",
+      "duration": 8.202449,
+      "audioSha256": "60a6c1238515731a5a742cdf3db0c7a8e0851fc6d5900dea309503d8493c1e5b",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11621,12 +11621,12 @@
       }
     },
     "s11c_l48": {
-      "text": "She thinks of Liam at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.",
+      "text": "She thinks of SJ at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-495bc21b3e9a137f485b8b18d9724965c378c8281f803a90977eff475a89996b.mp3",
-      "duration": 12.120816,
-      "audioSha256": "495bc21b3e9a137f485b8b18d9724965c378c8281f803a90977eff475a89996b",
+      "audio": "assets/audio/shared-1eca9464348332cd9b0faae21d5d1994d271805a68ed6fcbf629e6eed9c56e87.mp3",
+      "duration": 12.434286,
+      "audioSha256": "1eca9464348332cd9b0faae21d5d1994d271805a68ed6fcbf629e6eed9c56e87",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11705,12 +11705,12 @@
       }
     },
     "s14_l4": {
-      "text": "Liam has just found a bug that's been in the billing code for two years. His next meeting is a \"Catch up\" with Dana - a \"People Partner\" from HR. Liam has no idea what that means. There's no agenda.",
+      "text": "SJ has just found a bug that's been in the billing code for two years. His next meeting is a \"Catch up\" with Dana - a \"People Partner\" from HR. SJ has no idea what that means. There's no agenda.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-4b7c136d8745d1e0c029870d2cb3fe651ac88f00ddaef620afd7ec843d6c7553.mp3",
-      "duration": 14.027755,
-      "audioSha256": "4b7c136d8745d1e0c029870d2cb3fe651ac88f00ddaef620afd7ec843d6c7553",
+      "audio": "assets/audio/shared-f6f9c3d3c547607319dd510d6ccd881685d55cff1c9204949de6d2e53c95f602.mp3",
+      "duration": 13.87102,
+      "audioSha256": "f6f9c3d3c547607319dd510d6ccd881685d55cff1c9204949de6d2e53c95f602",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11719,12 +11719,12 @@
       }
     },
     "s14_l23": {
-      "text": "She keeps talking but Liam isn't really processing it anymore. LIAM does not move. He does not look away from the screen and he does not look at it either.",
+      "text": "She keeps talking but SJ isn't really processing it anymore. SJ does not move. He does not look away from the screen and he does not look at it either.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-8431c37eb87d45255c81e65dbceea3435cf33e9b202a4225119309d5cfd5d970.mp3",
-      "duration": 10.762449,
-      "audioSha256": "8431c37eb87d45255c81e65dbceea3435cf33e9b202a4225119309d5cfd5d970",
+      "audio": "assets/audio/shared-3d5da75052ad425ffe981872e3823efcddde63f33f7a0ca4005aa42c723b8b7d.mp3",
+      "duration": 10.684082,
+      "audioSha256": "3d5da75052ad425ffe981872e3823efcddde63f33f7a0ca4005aa42c723b8b7d",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11761,12 +11761,12 @@
       }
     },
     "s14_l50": {
-      "text": "Liam's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.",
+      "text": "SJ's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-51648390d8bccb0d870184167ce56b55f5432629e9d5d636bce0d89d1d523b30.mp3",
-      "duration": 11.72898,
-      "audioSha256": "51648390d8bccb0d870184167ce56b55f5432629e9d5d636bce0d89d1d523b30",
+      "audio": "assets/audio/shared-6b2412f4e6eaf26455dd39b97d4d6b638d8b05634d74a6c0041694f601837693.mp3",
+      "duration": 12.199184,
+      "audioSha256": "6b2412f4e6eaf26455dd39b97d4d6b638d8b05634d74a6c0041694f601837693",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11831,12 +11831,12 @@
       }
     },
     "s14a_l21": {
-      "text": "Liam thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
+      "text": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-38a8e8cd43c5ae782cc71e80a5be8164b72434bdf99d33e892cd3b3b65de4ce1.mp3",
-      "duration": 12.59102,
-      "audioSha256": "38a8e8cd43c5ae782cc71e80a5be8164b72434bdf99d33e892cd3b3b65de4ce1",
+      "audio": "assets/audio/shared-83e79055272ac7ca569ec4c6308dd97c6700c9be113f4e02fb0a1154eba38cc3.mp3",
+      "duration": 12.747755,
+      "audioSha256": "83e79055272ac7ca569ec4c6308dd97c6700c9be113f4e02fb0a1154eba38cc3",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11845,12 +11845,12 @@
       }
     },
     "s14a_l31": {
-      "text": "Marcus doesn't mention his anonymous peer feedback. Most of it was about Liam being a problem.",
+      "text": "Marcus doesn't mention his anonymous peer feedback. Most of it was about SJ being a problem.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-c92f8709045e151de6dad520f1b99fbf53bbdcd8176f6492f3a0bd1d5790b9f3.mp3",
-      "duration": 6.347755,
-      "audioSha256": "c92f8709045e151de6dad520f1b99fbf53bbdcd8176f6492f3a0bd1d5790b9f3",
+      "audio": "assets/audio/shared-943bfa5b10246d6fe3669e47bea3c08996dd9c0b18c2fdc09953d97471f4e8fd.mp3",
+      "duration": 6.60898,
+      "audioSha256": "943bfa5b10246d6fe3669e47bea3c08996dd9c0b18c2fdc09953d97471f4e8fd",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11873,12 +11873,12 @@
       }
     },
     "s19_l1": {
-      "text": "Two weeks later. We find ourselves in Liam’s apartment with Brendan and Liam. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio and a dongle. They’re drinking together. It’s the first time they’ve been in the same room.",
+      "text": "Two weeks later. We find ourselves in SJ’s apartment with Brendan and SJ. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio and a dongle. They’re drinking together. It’s the first time they’ve been in the same room.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-5590f36059d8561997055bdf5930125433f6ca9637f018fd0e2170190bc772dc.mp3",
-      "duration": 19.879184,
-      "audioSha256": "5590f36059d8561997055bdf5930125433f6ca9637f018fd0e2170190bc772dc",
+      "audio": "assets/audio/shared-5953d94f12bf00d76b4757b9e3cc299782058a1a9d0b0cd7b4995ab2709b0b77.mp3",
+      "duration": 20.427755,
+      "audioSha256": "5953d94f12bf00d76b4757b9e3cc299782058a1a9d0b0cd7b4995ab2709b0b77",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11943,12 +11943,12 @@
       }
     },
     "s20_l2": {
-      "text": "He Powers on the Mac Studio. It comes up on Liam's wallpaper, a meme of the streamer ThePrimeagen.",
+      "text": "He Powers on the Mac Studio. It comes up on SJ's wallpaper, a meme of the streamer ThePrimeagen.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-e7b5220a69c33b2451408eeb3b8765e9103a4b093606769845fd635907a3cb25.mp3",
-      "duration": 6.922449,
-      "audioSha256": "e7b5220a69c33b2451408eeb3b8765e9103a4b093606769845fd635907a3cb25",
+      "audio": "assets/audio/shared-7a9eb800b37cae844862ebbfa06805b746ad60c102edea5d053dae004cbd0458.mp3",
+      "duration": 7.157551,
+      "audioSha256": "7a9eb800b37cae844862ebbfa06805b746ad60c102edea5d053dae004cbd0458",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11957,12 +11957,12 @@
       }
     },
     "s20_l4": {
-      "text": "He’s drinking more beer. Liam sent him home with the case.",
+      "text": "He’s drinking more beer. SJ sent him home with the case.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-853247c33ad414d0b2295eb0d112debe42e792e4a92d50b375884cffe54d5291.mp3",
-      "duration": 4.04898,
-      "audioSha256": "853247c33ad414d0b2295eb0d112debe42e792e4a92d50b375884cffe54d5291",
+      "audio": "assets/audio/shared-71d7b8cce4025298b5f9d4927d1889f090b7e7431e030c7d6e605df93e7a8dd1.mp3",
+      "duration": 3.970612,
+      "audioSha256": "71d7b8cce4025298b5f9d4927d1889f090b7e7431e030c7d6e605df93e7a8dd1",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12083,12 +12083,12 @@
       }
     },
     "s20_l37": {
-      "text": "What Brendan didn’t know is that Liam was annoyed by the cybersecurity refusals he sometimes got, so he went out of his way to find an unlocked version of Qwen, instead of the stock model.",
+      "text": "What Brendan didn’t know is that SJ was annoyed by the cybersecurity refusals he sometimes got, so he went out of his way to find an unlocked version of Qwen, instead of the stock model.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-c6774aec85221d97ce956a94cfb405b869bd8f2818331f203f2f253df8a3acae.mp3",
-      "duration": 11.807347,
-      "audioSha256": "c6774aec85221d97ce956a94cfb405b869bd8f2818331f203f2f253df8a3acae",
+      "audio": "assets/audio/shared-59b39bcd22d7a5603ab5f5744e31237ff3a221aa68212420cbfdbaaabc79a2e3.mp3",
+      "duration": 11.964082,
+      "audioSha256": "59b39bcd22d7a5603ab5f5744e31237ff3a221aa68212420cbfdbaaabc79a2e3",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12419,12 +12419,12 @@
       }
     },
     "s20_l66": {
-      "text": "The audit logs show the instances being started and stopped using Liam’s credentials. They record the account, not the person sitting at the keyboard.",
+      "text": "The audit logs show the instances being started and stopped using SJ’s credentials. They record the account, not the person sitting at the keyboard.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-5c76723681a86a070da68c7c00521401d4a8a4999d5889ab8109238ba7dbad33.mp3",
-      "duration": 9.090612,
-      "audioSha256": "5c76723681a86a070da68c7c00521401d4a8a4999d5889ab8109238ba7dbad33",
+      "audio": "assets/audio/shared-01cad85599dbfaf70510fddd177c7e44b5dff5bd6aa20390f9c8594ca379a568.mp3",
+      "duration": 9.16898,
+      "audioSha256": "01cad85599dbfaf70510fddd177c7e44b5dff5bd6aa20390f9c8594ca379a568",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12433,12 +12433,12 @@
       }
     },
     "s20_l67": {
-      "text": "He picks up his phone. Liam texted. Sent at 06:02am.",
+      "text": "He picks up his phone. SJ texted. Sent at 06:02am.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-d8ec36d16110f8af3159c9271262d4de5705aa28159d033d7e6353c8f5930e60.mp3",
-      "duration": 5.146122,
-      "audioSha256": "d8ec36d16110f8af3159c9271262d4de5705aa28159d033d7e6353c8f5930e60",
+      "audio": "assets/audio/shared-042457e792ce58e60a4fc9f10e235058d9295903b2f715173ea05815ee182f7f.mp3",
+      "duration": 5.32898,
+      "audioSha256": "042457e792ce58e60a4fc9f10e235058d9295903b2f715173ea05815ee182f7f",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12517,12 +12517,12 @@
       }
     },
     "s20_l19": {
-      "text": "He opens the local agent Liam used for development.",
+      "text": "He opens the local agent SJ used for development.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-e9d2eaceba46b06c2e00e02b8e75279d4ab2df95214a04be51d4b712423826d4.mp3",
-      "duration": 3.239184,
-      "audioSha256": "e9d2eaceba46b06c2e00e02b8e75279d4ab2df95214a04be51d4b712423826d4",
+      "audio": "assets/audio/shared-3180ac7a1a9767ef1ecbc91f308c6621b9c94c2bc9e33263c1102d75dc338968.mp3",
+      "duration": 3.474286,
+      "audioSha256": "3180ac7a1a9767ef1ecbc91f308c6621b9c94c2bc9e33263c1102d75dc338968",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12626,12 +12626,12 @@
       }
     },
     "s06_l29": {
-      "text": "After standup, Brendan calls Liam to look at the signup bug.",
+      "text": "After standup, Brendan calls SJ to look at the signup bug.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-51bef4f91b7768fa7f4b04c39c4e9b2e00e589875c909cfa2c598617b58f9087.mp3",
+      "audio": "assets/audio/shared-18eae208ba2aa8887649d5e73b480bf778d9824c9c207c7398aee4a131c5e55f.mp3",
       "duration": 4.127347,
-      "audioSha256": "51bef4f91b7768fa7f4b04c39c4e9b2e00e589875c909cfa2c598617b58f9087",
+      "audioSha256": "18eae208ba2aa8887649d5e73b480bf778d9824c9c207c7398aee4a131c5e55f",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12640,12 +12640,12 @@
       }
     },
     "s01c_l1": {
-      "text": "Three hours after standup, Liam calls Brendan.",
+      "text": "Three hours after standup, SJ calls Brendan.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-b829d9f7473b8e1398be612f607874d895ff667a803a68e944cd77fc8f43acca.mp3",
-      "duration": 3.552653,
-      "audioSha256": "b829d9f7473b8e1398be612f607874d895ff667a803a68e944cd77fc8f43acca",
+      "audio": "assets/audio/shared-3fe61909b0e83429d04678c66bd9670c12c17e379faa329a880a1fa5d490ba4a.mp3",
+      "duration": 3.63102,
+      "audioSha256": "3fe61909b0e83429d04678c66bd9670c12c17e379faa329a880a1fa5d490ba4a",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12668,12 +12668,12 @@
       }
     },
     "s01b_narrator_promotion": {
-      "text": "Kristina is genuinely excited about the potential of this new technology to finally allow her team to acheive their quarterly targets for the first time since she joined the company. If she can reproduce what Brendan is doing in Marcus and Liam, her team can more regularly start outperforming her peers, and line herself up for promotion. This is almost as attractive to her as the idea of replacing her team with robots who don't argue about model trains and weavers every morning for an hour.",
+      "text": "Kristina is genuinely excited about the potential of this new technology to finally allow her team to acheive their quarterly targets for the first time since she joined the company. If she can reproduce what Brendan is doing in Marcus and SJ, her team can more regularly start outperforming her peers, and line herself up for promotion. This is almost as attractive to her as the idea of replacing her team with robots who don't argue about model trains and weavers every morning for an hour.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-70160c50f6bba572dc4dc17d326c61e3c3e08f308106b346051cbd811e4bc368.mp3",
-      "duration": 29.64898,
-      "audioSha256": "70160c50f6bba572dc4dc17d326c61e3c3e08f308106b346051cbd811e4bc368",
+      "audio": "assets/audio/shared-4d9909480aaf11111f66bc7c75504409a1398a45534cb6e2d3c734d8e46051f3.mp3",
+      "duration": 28.995918,
+      "audioSha256": "4d9909480aaf11111f66bc7c75504409a1398a45534cb6e2d3c734d8e46051f3",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12682,12 +12682,12 @@
       }
     },
     "s01b_narrator_jira": {
-      "text": "Kristina knows there's a mandate for everyone to use Jira, but half the memos and policies passed by people like Liam are already ignored by most of the company and she isn't going to give up her only productive engineer to follow some dumb policy made years ago.",
+      "text": "Kristina knows there's a mandate for everyone to use Jira, but half the memos and policies passed by people like SJ are already ignored by most of the company and she isn't going to give up her only productive engineer to follow some dumb policy made years ago.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-957a67a101696eec52ae53b135bf8d7cc5915512f2bea5f01efc6ded77ca7450.mp3",
-      "duration": 15.960816,
-      "audioSha256": "957a67a101696eec52ae53b135bf8d7cc5915512f2bea5f01efc6ded77ca7450",
+      "audio": "assets/audio/shared-7f9e7c4c0bc36b85ba87a073c013ddcb3d943bbf8676392c33f352feb8cb266b.mp3",
+      "duration": 16.509388,
+      "audioSha256": "7f9e7c4c0bc36b85ba87a073c013ddcb3d943bbf8676392c33f352feb8cb266b",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12931,12 +12931,12 @@
       }
     },
     "cue_16e5c3ac1df044e687d413fcaf7bbb47": {
-      "text": "That morning the CEO emails the whole company. The subject line is \"Building a leaner, AI-first company.\" Liam archives it without opening it.",
+      "text": "That morning the CEO emails the whole company. The subject line is \"Building a leaner, AI-first company.\" SJ archives it without opening it.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-33a4eb7044a2a5a96fabc5a6d199f398ca46c7c99ee63a3655e7f8941ccf83e6.mp3",
-      "duration": 10.762449,
-      "audioSha256": "33a4eb7044a2a5a96fabc5a6d199f398ca46c7c99ee63a3655e7f8941ccf83e6",
+      "audio": "assets/audio/shared-396bf554ed81dda1e604eeb6b7748e5461b3340f9a3b636852c7990f9506b777.mp3",
+      "duration": 10.919184,
+      "audioSha256": "396bf554ed81dda1e604eeb6b7748e5461b3340f9a3b636852c7990f9506b777",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -12945,12 +12945,12 @@
       }
     },
     "cue_61a0c3f9ec1d4cde805edd89d7889298": {
-      "text": "Marcus finally joins the open video call on Liam's laptop.",
+      "text": "Marcus finally joins the open video call on SJ's laptop.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-aaa6c39c002cfe0037574303f1183950fda04b80292f84928cbf0f30729c353a.mp3",
-      "duration": 3.970612,
-      "audioSha256": "aaa6c39c002cfe0037574303f1183950fda04b80292f84928cbf0f30729c353a",
+      "audio": "assets/audio/shared-a098edae094d498ac2c77099487bd041695a7d76054aa1b999061a7940baabf8.mp3",
+      "duration": 4.205714,
+      "audioSha256": "a098edae094d498ac2c77099487bd041695a7d76054aa1b999061a7940baabf8",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",

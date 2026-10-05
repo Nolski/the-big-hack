@@ -34,4 +34,8 @@ assert.equal(playbackShow({...profiledSource,cues:[{...c,voiceProfile:null}]},ge
 assert.equal(playbackShow(profiledSource,generated,{[c.id]:{...record,voiceProfile:'different'}}).cues[0].audio,null);
 const manifest=JSON.parse(fs.readFileSync(new URL('../generated-voices.json',import.meta.url))).recordings;
 const actual=playbackShow(source,generated,manifest);
-for(const cue of actual.cues.filter(c=>c.speaker&&c.kind==='voice'))assert.equal(cueAudio(cue),manifest[cue.id].audio,`${cue.id}: verified recording must survive runtime filtering`);
+for(const cue of actual.cues.filter(c=>c.speaker&&c.kind==='voice')) {
+ const r=manifest[cue.id];
+ const matches=r && r.text===cue.text && r.speaker===cue.speaker && (r.voiceProfile??null)===(cue.voiceProfile??null);
+ assert.equal(cueAudio(cue),matches?r.audio:null,`${cue.id}: play only a matching recording`);
+}

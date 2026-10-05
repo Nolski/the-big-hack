@@ -4,11 +4,10 @@
 Reads the current script from stage/show.json, voices every spoken cue whose
 speaker has a voice in tools/elevenlabs-voices.json, and attaches each file to
 stage/generated-voices.json through ScriptStore.register_audio, the same path
-the storyboard uses. Re-running skips cues that already have a matching
+the editor uses. Re-running skips cues that already have a matching
 ElevenLabs recording in the same voice and model, so it resumes after a stop.
 
-The API key is read from ELEVENLABS_API_KEY or the `elevenlabs` file beside
-the vault (never committed). Before each line it checks the remaining credits
+The API key is read from ELEVENLABS_API_KEY environment variable (never committed). Before each line it checks the remaining credits
 and stops cleanly rather than failing half way through a request.
 
     python3 tools/generate_elevenlabs.py [--dry-run] [--only kristina,hr]
@@ -28,10 +27,7 @@ API = 'https://api.elevenlabs.io'
 
 def api_key():
     key = os.environ.get('ELEVENLABS_API_KEY')
-    if not key:
-        f = ROOT.parent / 'elevenlabs'
-        key = f.read_text().strip() if f.exists() else ''
-    if not key: sys.exit('No ElevenLabs key: set ELEVENLABS_API_KEY or create ../elevenlabs')
+    if not key: sys.exit('No ElevenLabs key: set ELEVENLABS_API_KEY')
     return key
 
 

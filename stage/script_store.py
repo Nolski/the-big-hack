@@ -177,8 +177,8 @@ class ScriptStore:
                 if c['scene']!=sc['id']: continue
                 r=manifest.get(c['id'],{}); match=r.get('text')==c['text'] and r.get('speaker')==c.get('speaker') and r.get('voiceProfile')==c.get('voiceProfile')
                 ln={'id':c['id'],'type':'direction' if c['kind']=='stage' else 'narration' if c.get('speaker')=='narrator' else 'live' if c['kind']=='live' else 'video','speaker':c.get('speaker',''),'text':c['text'],'direction':c.get('direction',''),'_raw':raw_line(c),'audio_status':'ready' if match else 'silent' if c['kind']=='stage' else 'needs generation'}
-                if match and r.get('audio'): ln['audio']='/stage/'+r['audio']
-                if c.get('montage'): ln['audio']='/stage/'+c['montage'];ln['video']=ln['audio'];ln['audio_status']='ready'
+                if match and r.get('audio'): ln['audio']='/'+r['audio']
+                if c.get('montage'): ln['audio']='/'+c['montage'];ln['video']=ln['audio'];ln['audio_status']='ready'
                 result['lines'].append(ln)
             out.append(result)
         return out
