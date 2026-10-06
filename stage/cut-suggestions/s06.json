@@ -27,7 +27,9 @@
         "Character: SJ snapping at Brendan like a junior ('come on Brendan, you know better'), the sharpest version of his condescension in this scene",
         "Character: Brendan's third try at getting SJ to use Claude, showing how persistent he is",
         "Colour: the PII and 'company on the news' detail, which makes SJ's caution sound earned and adds irony before he uses an unlocked model in s20_l37"
-      ]
+      ],
+      "dismissed": true,
+      "supersededBy": 159
     },
     {
       "title": "Cut Brendan's offer, SJ's refusal and the flip",
@@ -64,7 +66,8 @@
         "Staging: the end-of-standup beat 'Right, that's the board. Thanks, everyone.'"
       ],
       "edits": [],
-      "directionsKept": 1
+      "directionsKept": 1,
+      "dismissed": true
     },
     {
       "title": "Cut John Henry, keep the loom gag",
@@ -116,7 +119,9 @@
         "Character: SJ's 'it'll sound completely confident while it does it', repeating his s01c_l19 view of AI",
         "Colour: the 'one in fifty thousand signups, only under real load' detail",
         "Setup: SJ saying the bug can't be reproduced on demand, which s06_l42 and s07_l4 answer ironically (partly carried by 'I cannot reproduce it' in s06_l30)"
-      ]
+      ],
+      "dismissed": true,
+      "supersededBy": 159
     },
     {
       "title": "Compress SJ's bug briefing",
@@ -361,6 +366,53 @@
       "loses": [
         "Joke: Kristina's 'Remember we agreed to time limits Marcus...', paying off s01_l2 (nowhere else)"
       ]
+    },
+    {
+      "number": 159,
+      "title": "Merge Brendan's two ideas into one exchange",
+      "kind": "cut + trim",
+      "cues": [
+        "s06_l36",
+        "s06_l37",
+        "s06_l39",
+        "s06_l40",
+        "s06_l41"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l36",
+          "text": "Fair. What if you gave it reproduction steps first though so it has something to eval against? The incident thread's got the actual prod logs from when it happened."
+        },
+        {
+          "cue": "s06_l37",
+          "text": "That's the whole problem, though. I can't make it fail on demand. There's no red test to hand it. And you do not paste production session data into a third-party model. Those logs have live tokens in them. Real users' emails. …come on Brendan, you know better..."
+        },
+        {
+          "cue": "s06_l39",
+          "text": "No, you're right. You are. Forget that one."
+        }
+      ],
+      "why": "#33 and #36 each cut one of Brendan's attempts to get SJ to use Claude. Cutting both leaves the narrator saying Claude has finished almost as soon as Brendan starts it. Merged, Brendan pitches the reproduction steps and the prod logs in one breath, and SJ shoots both down in one speech, so the scene keeps both refusals and still gives Claude time to work.",
+      "keeps": "Brendan's eval-first idea, the prod logs, SJ's 'no red test' and his PII objection ('live tokens', 'Real users' emails', 'you know better'), Brendan backing down, and the narrator's 'Claude finished working a little while ago' in the same place.",
+      "risk": "low",
+      "riskWhy": "Both beats stay; only the repeated back-and-forth and some of SJ's elaboration go ('one in fifty thousand', 'it'll sound completely confident', 'gets a company on the news').",
+      "loses": [
+        "Colour: SJ's 'one in fifty thousand signups, only under real load'",
+        "Character: SJ's 'it'll say it's fixed the bug and be lying ... completely confident'",
+        "Colour: 'that's exactly the \"just paste it in and see what happens\" thinking that gets a company on the news'"
+      ],
+      "against": {
+        "s06_l36": "Fair. What if you gave it reproduction steps first though so it has something to eval against?",
+        "s06_l37": "That's the whole problem, though. I can't make it fail on demand. It's one in fifty thousand signups, only under real load. There's no red test to hand it. And if I hand it a green one, it'll say it's fixed the bug and be lying, same as it always is. And it'll sound completely confident while it does it.",
+        "s06_l39": "Okay one last idea with claude, then I'll shut up. The incident thread's got the actual prod logs from when it happened. What if I dropped those in claude, the real ones and see if there's",
+        "s06_l40": "No! You do not paste production session data into a third-party model. Those logs have live tokens in them. Real users' emails. That's a PII incident and a security review all by itself, that's exactly the \"just paste it in and see what happens\" thinking that gets a company on the news. …come on Brendan, you know better...",
+        "s06_l41": "No, you're right. You are. Forget that one."
+      },
+      "replaces": [
+        33,
+        36
+      ],
+      "dismissed": true
     }
   ],
   "writtenOn": "2026-10-05",

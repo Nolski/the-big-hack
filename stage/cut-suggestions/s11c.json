@@ -53,16 +53,15 @@
         "Plot: Brendan telling Kristina directly that SJ measured himself slower, also heard in s11b_l71",
         "Colour: Brendan's 'Things it gets wrong' document and rules files older than some repos"
       ],
-      "directionsKept": 2
+      "directionsKept": 2,
+      "dismissed": true,
+      "supersededBy": 160
     },
     {
-      "title": "Cut the opening small talk (webhook, doc, Yorkshire)",
-      "kind": "cut",
+      "title": "Cut the small talk, keep a short lead-in about SJ",
+      "kind": "cut + trim",
       "cues": [
-        "s11c_l2",
-        "s11c_l3",
         "s11c_l4",
-        "s11c_l5",
         "s11c_l6",
         "s11c_l7",
         "s11c_l8",
@@ -70,16 +69,18 @@
         "s11c_l10",
         "s11c_l11"
       ],
-      "edits": [],
-      "why": "The webhook ticket and SJ's new enthusiasm were just played out in s11b, and Marcus talking over Kristina is the standups' job. The eleven-page doc and Yorkshire gag are never paid off. The narrator's one-on-one line plus the stage direction take us straight into 'Can I tell you something?'",
-      "keeps": "SJ's webhook ship is still named in l35. Kristina's belief that SJ is doing impressive AI work lands in l20. If the argument block is kept, l30's 'in an eleven-page doc' loses its setup and should drop those words.",
+      "edits": [
+        {
+          "cue": "s11c_l4",
+          "text": "It took a while but honestly? I'm just happy he's engaged."
+        }
+      ],
+      "why": "Keeps just enough of the opening to lead into 'Can I tell you something?': Kristina mentions SJ closed the webhook ticket and she's happy he's engaged, Brendan's dry 'It's something.', then she glances off. That puts SJ on the table before the board call and before Brendan asks 'Is SJ going to be fine?'. The panel-discussion, eleven-page doc, Yorkshire and Marcus lines go.",
+      "keeps": "'SJ closed the webhook ticket', 'I'm just happy he's engaged', Brendan's 'It's something.', and the stage direction into 'Can I tell you something?'.",
       "risk": "medium",
       "reliesOn": [],
       "against": {
-        "s11c_l2": "Oh and SJ closed the webhook ticket. Did you see?",
-        "s11c_l3": "I saw.",
         "s11c_l4": "It took a while but honestly? I'm just happy he's engaged. Six weeks ago he was posting memes about vibe-coding. Now he's expensed a whole computer and he comes to standup with opinions about inference. For SJ, that's a lot of progress, he's adopting new tooling.",
-        "s11c_l5": "It's something.",
         "s11c_l6": "I could do without standup turning into a panel discussion, though. Three this week. I asked for a doc, they wrote the doc. It's eleven pages, and now they're fighting in the comments.",
         "s11c_l7": "I've been staying out of the comments.",
         "s11c_l8": "Wise. Four of the eleven pages are about Yorkshire.",
@@ -88,13 +89,11 @@
         "s11c_l11": "Yeah... I know"
       },
       "number": 67,
-      "riskWhy": "Deletes a unique joke and Kristina's pride in SJ's progress, but no plot: the webhook ship survives in l35. If #66 is not taken, l30's 'in an eleven-page doc' loses its setup and needs those words dropped.",
+      "riskWhy": "Loses the Yorkshire joke and Kristina's 'he's adopting new tooling' pride, plus her aside about Marcus talking over her. No plot goes; the lead-in into the board call is kept.",
       "loses": [
-        "Joke: the eleven-page doc with four pages about Yorkshire and the fight in the comments (nowhere else)",
-        "Character: Kristina proud that SJ went from vibe-coding memes to expensing a computer and having opinions about inference; l20 keeps only a short version",
-        "Character: Kristina naming Marcus talking over her and Brendan's quiet 'Yeah... I know' (the talking-over comedy itself stays in the standups)",
-        "Setup: l6's eleven-page doc is called back in s11c_l30",
-        "Plot: SJ closed the webhook ticket, still carried by l35"
+        "Joke: the eleven-page doc with four pages about Yorkshire (nowhere else)",
+        "Character: Kristina's 'Six weeks ago he was posting memes… now he's expensed a whole computer… adopting new tooling'",
+        "Character: Kristina naming Marcus talking over her, and Brendan's 'Yeah... I know'"
       ]
     },
     {
@@ -250,6 +249,62 @@
       "riskWhy": "Pure repetition: 'it's important to know' restates 'good feedback to have on file' in the same sentence. The brush-off that s23_l33 pays off stays.",
       "loses": [
         "Nothing substantive: removes a repeated phrase only"
+      ]
+    },
+    {
+      "number": 160,
+      "title": "Brendan says SJ is slower, Kristina says it's optics, Brendan admits his review",
+      "kind": "cut + trim",
+      "cues": [
+        "s11c_l21",
+        "s11c_l22",
+        "s11c_l23",
+        "s11c_l24",
+        "s11c_l26",
+        "s11c_l27",
+        "s11c_l28",
+        "s11c_l29",
+        "s11c_l30",
+        "s11c_l32",
+        "s11c_l33",
+        "s11c_l46"
+      ],
+      "edits": [
+        {
+          "cue": "s11c_l21",
+          "text": "I don't think SJ's setup is really that productive. It's making him slower. He measured two sprints, with it and without it, and he's slower with it."
+        },
+        {
+          "cue": "s11c_l24",
+          "text": "Honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere.."
+        }
+      ],
+      "why": "Shrinks the argument to three beats: Brendan says SJ is measurably slower; Kristina answers that what matters is how the AI work looks; Brendan admits Marcus wrote SJ up for slowing the team and that he said the same. Right after 'draw a line', that is enough to show SJ is exposed and that Brendan has started to think he might deserve it.",
+      "keeps": "'Is SJ going to be fine?', Kristina's 'crazy AI stuff… I'm sure you'll be fine', the two-sprint measurement (its only home now), Kristina's optics line, and the peer-feedback admission. All stage directions stay.",
+      "risk": "medium",
+      "riskWhy": "Loses Brendan's case that SJ refuses tools on principle and will teach the new engineers his way, Kristina's 'let him experiment / critiquing the rowing' defence, and the rules-file thread. The SJ-at-risk beat and Brendan's turn survive in their shortest form.",
+      "loses": [
+        "Character: Brendan's case that SJ is proving the CEO wrong on purpose and that new engineers will copy him",
+        "Character: Kristina's 'let him experiment… I'm not going to stand over him critiquing the rowing'",
+        "Character: Brendan deleting his rules file; Kristina's 'the model is you'",
+        "Colour: the narrator's 'sentence he's deleted twice' and 'An hour ago she stood up for the tinkering, and won'"
+      ],
+      "against": {
+        "s11c_l21": "I don't think SJ's setup is really that productive. I sat with him for an hour and he walked me through the whole rig. And it's genuinely impressive. It's real engineering. And it's making him slower. He told me himself: he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something.",
+        "s11c_l22": "Slower how? He's four weeks in.",
+        "s11c_l23": "It's not the four weeks. The model that fits on that box is a year behind what the rest of the team is on, and he won't let it do anything. No tools, no tests, no network. He asks it for code, it gives him bad code, and he fills in the rest by hand. He calls it fancy autocomplete. He's proud that's all it is. He's following the security policy so he can show that the CEO's AI mandate doesn't work. He's spent a lot of money proving the setup he chose is slow.",
+        "s11c_l24": "Okay but do you hear yourself, a little? You keep a document called \"Things it gets wrong.\" You've got rules files older than some of our repos. You told me the whole skill was catching it when it makes mistakes, I watched you correct a made-up endpoint. Nobody stood over you calling the tinkering unproductive. The tinkering is what sold me. He's doing exactly what you did. And honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere..",
+        "s11c_l26": "…Honest answer? I'm not sure the tinkering matters anymore.",
+        "s11c_l27": "What do you mean? Of course it does.",
+        "s11c_l28": "I went into that doc last week to add an entry, and I ended up deleting half of it instead. Whole sections about problems I haven't seen since spring. The made-up endpoints... that was real. The new models just don't do it. Not unless you run the older models. I removed my rules file recently, to see what would happen. Nothing got worse. Most of my setup is instructions for a model that I don't use anymore.",
+        "s11c_l29": "Huh.",
+        "s11c_l30": "And look, SJ being slow is normal SJ. We'll absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position, out loud, at standup, in an eleven-page doc, is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the new engineers decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. He's following the wording of the policy. He knows that isn't what the CEO asked us to do. If the new engineers copy him, that becomes how the whole team works.",
+        "s11c_l32": "Or flip it around. Maybe you're so far inside this stuff you can't see yourself doing it anymore. You say the new models don't need correcting, Brendan, I've watched you work. You know what to ask for. You know what to check, and when it's lying, and when to close the window and write it yourself. You think the model got smart. I think half of what you're calling \"the model\" is you, and you can't tell anymore, because it's automatic. SJ has that too. Twenty-something years of it. He just has to find his own road in. Let him experiment. We asked him to get on the boat, he's on the boat. I'm not going to stand over him critiquing the rowing.",
+        "s11c_l33": "Brendan starts to say something, the sentence he's deleted twice, and puts it down again.",
+        "s11c_l46": "She thinks about Brendan deleting his rules to see what would happen. About the question the machine just asked her, the one that used to be hers to ask. An hour ago she stood up for the tinkering, and won."
+      },
+      "replaces": [
+        66
       ]
     }
   ],

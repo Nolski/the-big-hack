@@ -64,7 +64,9 @@ class EditorAPI:
                 show = st.read()
                 names = {c['speaker']: c['name'] for c in show['cues'] if c.get('speaker')}
                 return {'revision': digest(show), 'scenes': st.scenes(show), 'characters': [{'id': k, 'name': v} for k, v in names.items()]}
-            if route == '/api/revision': return {'revision': st.revision()}
+            if route == '/api/revision':
+                notes = [f.stat().st_mtime_ns for f in (st.root/'cut-suggestions').glob('*.json')] if (st.root/'cut-suggestions').exists() else []
+                return {'revision': st.revision(), 'notes': f"{len(notes)}:{max(notes, default=0)}"}
             if route == '/api/history': return st.history_state()
             if route == '/api/runtime': return {'revision': st.revision(), **runtime(st.root)}
             if route == '/api/proof':

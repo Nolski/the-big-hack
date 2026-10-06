@@ -108,6 +108,10 @@ async function pollRevision() {
   try {
     const r = await api("GET", "/api/revision");
     if (r.revision !== S.revision) { staleScript("Script updated elsewhere. Reload to see the latest."); paintHistory(); }
+    // Cut suggestions can change outside this page (written or reworked from the
+    // command line); pick them up without a reload.
+    if (S.notesStamp && r.notes !== S.notesStamp) refreshRuntime();
+    S.notesStamp = r.notes;
   } catch (e) { /* the next poll will try again */ }
 }
 

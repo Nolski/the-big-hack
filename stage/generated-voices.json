@@ -31,12 +31,12 @@
       }
     },
     "s01_l5": {
-      "text": "No worries. Okay, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Support's quiet, adoption's climbing. Best launch we've had in ages.",
+      "text": "No worries. Okay, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Best launch we've had in ages.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-55fd81dd6603d4c2f967ed3d889712a6cb64ff352885529a4ee203606bf71417.mp3",
-      "duration": 17.632653,
-      "audioSha256": "55fd81dd6603d4c2f967ed3d889712a6cb64ff352885529a4ee203606bf71417",
+      "audio": "assets/audio/shared-8fc951feec397b94b74627c366ed7fa5db4a48a83b3e41458f01829b1792d144.mp3",
+      "duration": 14.837551,
+      "audioSha256": "8fc951feec397b94b74627c366ed7fa5db4a48a83b3e41458f01829b1792d144",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -45,12 +45,12 @@
       }
     },
     "s01_l6": {
-      "text": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. So. Thank you, genuinely. It did not go unnoticed.",
+      "text": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. Thank you, genuinely.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-c7b53fac762c8ab789631904a944bd147ad09e76afa3500ad6834f7ab6a5665b.mp3",
-      "duration": 11.72898,
-      "audioSha256": "c7b53fac762c8ab789631904a944bd147ad09e76afa3500ad6834f7ab6a5665b",
+      "audio": "assets/audio/shared-80ea070cb9f6c62f6dc1eef1880926d7c622693b7de4b33d824aad3ed8ebd96c.mp3",
+      "duration": 9.090612,
+      "audioSha256": "80ea070cb9f6c62f6dc1eef1880926d7c622693b7de4b33d824aad3ed8ebd96c",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -87,12 +87,12 @@
       }
     },
     "s01_l12": {
-      "text": "Hang on. This shipped? This is the developer portal... live? In front of partners, right now? Eight hundred lines in one PR. Who reviewed this?",
+      "text": "Hang on. This shipped? Eight hundred lines in one PR. Who reviewed this?",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-cbf22135f38f2249fac2d3992e5a0c04547034aea0fba8139ba9c2a57d9d40e4.mp3",
-      "duration": 11.31102,
-      "audioSha256": "cbf22135f38f2249fac2d3992e5a0c04547034aea0fba8139ba9c2a57d9d40e4",
+      "audio": "assets/audio/shared-65a49cdea874d149fb5960894ebb105e4e856a1527f533c8a5173981c2022d2f.mp3",
+      "duration": 6.347755,
+      "audioSha256": "65a49cdea874d149fb5960894ebb105e4e856a1527f533c8a5173981c2022d2f",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -157,12 +157,12 @@
       }
     },
     "s01_l17": {
-      "text": "I used the new Claude Opus 4.5, but I went back and forth with it, and the tests all pass, the partners haven't hit a single...",
+      "text": "I used the new Claude Opus 4.5, but I went back and forth with it, and the tests all pass...",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-19ed6f146d75456d8b44f32209b51a806659efa8952552f73432da6f3a390c08.mp3",
-      "duration": 7.967347,
-      "audioSha256": "19ed6f146d75456d8b44f32209b51a806659efa8952552f73432da6f3a390c08",
+      "audio": "assets/audio/shared-40bd68d7c2e25c91477923f443132c49b29cd91dd96b5ff4fb694cd1d387dc38.mp3",
+      "duration": 6.347755,
+      "audioSha256": "40bd68d7c2e25c91477923f443132c49b29cd91dd96b5ff4fb694cd1d387dc38",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -227,12 +227,12 @@
       }
     },
     "s01_l22": {
-      "text": "If you listened to what I said about the Luddites last week rather than trying to talk over me about your trains, SJ... automated machines took the textile workers' jobs. They protested, and the British executed them. The quality of the textiles actually got WORSE, but it didn't matter because it got cheaper. I wish you all would pay more attention to what's happening.",
+      "text": "No, it's exactly what I said about the Luddites last week... automated machines took the textile workers' jobs. They protested, and the British EXECUTED them. I wish you all would pay more attention to what's happening.",
       "speaker": "marcus",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-6f6f687f710a19a63c483211c62409758f21c920ae316f8e8081ed13d3b17e19.mp3",
-      "duration": 21.96898,
-      "audioSha256": "6f6f687f710a19a63c483211c62409758f21c920ae316f8e8081ed13d3b17e19",
+      "audio": "assets/audio/shared-2e3114c0da610f723f18f46773ba341ccb7f54a6185009eeb4831af31c0b2048.mp3",
+      "duration": 13.244082,
+      "audioSha256": "2e3114c0da610f723f18f46773ba341ccb7f54a6185009eeb4831af31c0b2048",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -241,12 +241,12 @@
       }
     },
     "s01_l23": {
-      "text": "It’s actually thought that the quality of the garments actually went up via industrialization, not down. In the early days it was questionable, but in time there was no doubt, quality went up.",
+      "text": "There were some executions for those who smashed looms but it was just a fraction of them.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-631c21c1c338f333a918e47786a37727f2ef04ed2b4ceeabc6476c50fbb381b8.mp3",
-      "duration": 13.087347,
-      "audioSha256": "631c21c1c338f333a918e47786a37727f2ef04ed2b4ceeabc6476c50fbb381b8",
+      "audio": "assets/audio/shared-3b73a0b494d763aaf7c173b10f605e5c2e38d42bca8eb0a4100c4f762f58fbe1.mp3",
+      "duration": 5.564082,
+      "audioSha256": "3b73a0b494d763aaf7c173b10f605e5c2e38d42bca8eb0a4100c4f762f58fbe1",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -381,12 +381,12 @@
       }
     },
     "s01_l34": {
-      "text": "…Actually, it did. I fed your memo into Claude before I started. It read the whole thing and the first version did have JWT's. I can pull up the first commit, it's exactly what you recommended in your memo",
+      "text": "…Actually, it did. I fed your memo into Claude before I started. It read the whole thing and the first version did have JWT's.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-eaeddebe39fb62524928b6e28abd84b9e28e13f3540253617a28796d002d9888.mp3",
-      "duration": 11.807347,
-      "audioSha256": "eaeddebe39fb62524928b6e28abd84b9e28e13f3540253617a28796d002d9888",
+      "audio": "assets/audio/shared-5d4024e361563debfac6e57751accf368373aacbd6d01e6a3f23d2898a2b976f.mp3",
+      "duration": 8.045714,
+      "audioSha256": "5d4024e361563debfac6e57751accf368373aacbd6d01e6a3f23d2898a2b976f",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -423,12 +423,12 @@
       }
     },
     "s01_l37": {
-      "text": "Because we user-tested it. The JWT flow, the refresh, the expiry, it confused every integration partner we put it in front of; half of them stopped bothering to integrate once they ran into issues refreshing the token. Long-lived keys, are just easier for our partners to understand. And yes, I know what a leaked key does. It's live until somebody rotates it. It's a tradeoff, and I made the call.",
+      "text": "Because we user-tested it. Most partners found JWTs too difficult to adopt. Long-lived keys, are just easier for our partners to understand. And yes, I know what a leaked key does. It's live until somebody rotates it. It's a tradeoff, and I made the call.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-9cc1946a05a83f82dd340b34e0cb025fd753c44cdb308424da19c26017c1c38f.mp3",
-      "duration": 26.67102,
-      "audioSha256": "9cc1946a05a83f82dd340b34e0cb025fd753c44cdb308424da19c26017c1c38f",
+      "audio": "assets/audio/shared-dd564a45050f54c2df3819535883dc8bcc47697120e127762a5f9c392ccef36f.mp3",
+      "duration": 18.207347,
+      "audioSha256": "dd564a45050f54c2df3819535883dc8bcc47697120e127762a5f9c392ccef36f",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -577,12 +577,12 @@
       }
     },
     "s01_l53": {
-      "text": "…Sure. I'll put two weeks. Thanks, everyone, that's standup.",
+      "text": "Thanks, everyone, that's standup.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-4d459807be2ade1e99514d4b0e325126395bfa5353a12f63939ffc4994d9fd33.mp3",
-      "duration": 4.04898,
-      "audioSha256": "4d459807be2ade1e99514d4b0e325126395bfa5353a12f63939ffc4994d9fd33",
+      "audio": "assets/audio/shared-b6e41aa8d622a90b19345c9a47968835cd967d58f29ecd81b9a694e7f678fdf0.mp3",
+      "duration": 2.35102,
+      "audioSha256": "b6e41aa8d622a90b19345c9a47968835cd967d58f29ecd81b9a694e7f678fdf0",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -647,12 +647,12 @@
       }
     },
     "s01b_l7": {
-      "text": "…Okay. I actually wanted to talk to you about something else.. this vibe coding stuff... It seems like when Opus 4.5 came out, people are actually making really complex stuff with it. Can you show me your setup?",
+      "text": "…Okay. This vibe coding stuff... It seems like when Opus 4.5 came out, people are actually making really complex stuff with it. Can you show me your setup?",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-f19eb946f79856015ecba5611ac2341bff66d096d4d89202f10afd41fbe7b636.mp3",
-      "duration": 14.106122,
-      "audioSha256": "f19eb946f79856015ecba5611ac2341bff66d096d4d89202f10afd41fbe7b636",
+      "audio": "assets/audio/shared-c7454480ae91427aedb15ed86002845060c425dae6c1b333127909889ff675c7.mp3",
+      "duration": 10.370612,
+      "audioSha256": "c7454480ae91427aedb15ed86002845060c425dae6c1b333127909889ff675c7",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -661,12 +661,12 @@
       }
     },
     "s01b_l8": {
-      "text": "Yeah happily! Fair warning though, it's rougher than you might think. But it's honestly the most fun I've had in years. Let's build something real together. You know that ChatOps bot you keep saying we need, close a Jira ticket from Slack? Nobody's had time. Let's just… try it. Right now.",
+      "text": "Yeah happily! You know that ChatOps bot you keep saying we need, close a Jira ticket from Slack? Building that should only take a few minutes. Go ahead and open Cursor, put it into plan mode, and then brief it just like you would a contractor. ",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-fb9ecc07121f472608c76ef184b3d9e754db25c455540cf882f6b37d67917d44.mp3",
-      "duration": 17.319184,
-      "audioSha256": "fb9ecc07121f472608c76ef184b3d9e754db25c455540cf882f6b37d67917d44",
+      "audio": "assets/audio/shared-05dae8444c4ae063b162c8bb31fc7b2ab63b59c3db40f3242d3effba24fbb4d4.mp3",
+      "duration": 13.087347,
+      "audioSha256": "05dae8444c4ae063b162c8bb31fc7b2ab63b59c3db40f3242d3effba24fbb4d4",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -731,12 +731,12 @@
       }
     },
     "s01b_l14": {
-      "text": "Okay see, this is the part people skip. It looks confident, but it's guessing. This is actually exactly what SJ was talking about. Look, it invented a Jira endpoint. \"Tickets-slash-close.\" That's not a real call; that doesn't exist. And down here, it wants to paste the API token straight into the code.",
+      "text": "Okay see, this is the part people skip. It looks confident, but it's guessing. Look, it invented a Jira endpoint. \"Tickets-slash-close.\" That doesn't exist. And down here, it wants to paste the API token straight into the code.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-fecf335bc7e9e3b80afa80569713f1ee86f8c20366759eefb0a09fceb85e0af9.mp3",
-      "duration": 20.192653,
-      "audioSha256": "fecf335bc7e9e3b80afa80569713f1ee86f8c20366759eefb0a09fceb85e0af9",
+      "audio": "assets/audio/shared-0b4378910dbd68edf0d7a795999c54ae0dbbda32eac27117d58ad5a692d544c2.mp3",
+      "duration": 15.229388,
+      "audioSha256": "0b4378910dbd68edf0d7a795999c54ae0dbbda32eac27117d58ad5a692d544c2",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -787,12 +787,12 @@
       }
     },
     "s01b_l18": {
-      "text": "Exactly. And make it check its own work; have it write tests and run them against the sandbox before it touches anything real. Okay... run it.",
+      "text": "Exactly. And make it check its own work; have it write tests and run them against the sandbox before it touches anything real.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-3c70fcfdde01fbd8f9a070620eca4243f3efb47a6145e4642f3e72812fc97948.mp3",
-      "duration": 9.404082,
-      "audioSha256": "3c70fcfdde01fbd8f9a070620eca4243f3efb47a6145e4642f3e72812fc97948",
+      "audio": "assets/audio/shared-0cf1f1ce49feb6f4fd1410cce484a3f5d6c6d0f41e13760bca7e62efd2dbfd20.mp3",
+      "duration": 7.549388,
+      "audioSha256": "0cf1f1ce49feb6f4fd1410cce484a3f5d6c6d0f41e13760bca7e62efd2dbfd20",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -997,12 +997,12 @@
       }
     },
     "s01b_l38": {
-      "text": "The thing SJ said about the code, though. That it writes its own tests, so of course they pass. Marking its own homework. He's not wrong about it, is he?",
+      "text": "Wow... This is satisfying... The thing SJ said about the code, though. Marking its own homework. He's not wrong about it, is he?",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-49d4fc51978c33a2cbdf7c0e34f00535343b367b6ee7830ea20e2607b4756e6b.mp3",
-      "duration": 10.605714,
-      "audioSha256": "49d4fc51978c33a2cbdf7c0e34f00535343b367b6ee7830ea20e2607b4756e6b",
+      "audio": "assets/audio/shared-31c25552c510c5b1628301fa0d14ab58d1ee2520f7d5f9a48282d91413f806c9.mp3",
+      "duration": 9.639184,
+      "audioSha256": "31c25552c510c5b1628301fa0d14ab58d1ee2520f7d5f9a48282d91413f806c9",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1039,12 +1039,12 @@
       }
     },
     "s01b_l42": {
-      "text": "So, about what SJ said this morning, about reviewing 800 lines of code... Nobody can do that, your brain just shuts off by line two hundred, regardless of whether it was written by human or robot. So before, we'd split the code into smaller patches that are easier to review. But imagine you joined a new company and needed to learn how a service worked. You wouldn't read all the code, you would start with the documentation. So when it comes to AI code, you don't start with the code at all. You start here, this is the plan it wrote before it touched a single file. It's the documentation, the architecture, the tradeoffs, where the secrets go. That's two pages, and that's where the real decisions live. I read that like a hawk.",
+      "text": "Yeah, Nobody can do that, your brain just shuts off by line two hundred. So instead, you don't start with the code at all. You start with the plan it wrote before it touched a single file. That plan is two pages, and that's where the real decisions and testing strategy live. I read that like a hawk.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-b0d056a93b183ea8a07625a0c01f1e3a277e14dc8063021e4f48deb9d26adf70.mp3",
-      "duration": 43.232653,
-      "audioSha256": "b0d056a93b183ea8a07625a0c01f1e3a277e14dc8063021e4f48deb9d26adf70",
+      "audio": "assets/audio/shared-b5d772989d4579c8ca3e71bd71f7525cbe368c2af39574c52785756005daf0e9.mp3",
+      "duration": 17.789388,
+      "audioSha256": "b5d772989d4579c8ca3e71bd71f7525cbe368c2af39574c52785756005daf0e9",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1095,12 +1095,12 @@
       }
     },
     "s01b_l46": {
-      "text": "Yeah but, the tests that actually matter, the integration tests, I write THOSE directly into the plan, and review the output carefully. I have it use a real partner sandbox, real tokens. And then it has access to any errors it generates, and part of the plan involves how to resolve and handle errors.",
+      "text": "Yeah but, the tests that actually matter, the integration tests, I write THOSE directly into the plan, and review the output carefully and have it use a real partner sandbox, real tokens.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-170676877dd0f866895343832a3f017441f8b60a9ff58a2d014e4c33b6f83086.mp3",
-      "duration": 18.285714,
-      "audioSha256": "170676877dd0f866895343832a3f017441f8b60a9ff58a2d014e4c33b6f83086",
+      "audio": "assets/audio/shared-9db271e29c576fddf4a77114db2f748829058444a1c7e6cd892d6e21df9d191e.mp3",
+      "duration": 11.546122,
+      "audioSha256": "9db271e29c576fddf4a77114db2f748829058444a1c7e6cd892d6e21df9d191e",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1137,12 +1137,12 @@
       }
     },
     "s01b_l49": {
-      "text": "Brendan, this is the future. Do you get that? This is the entire future of how we build things. All the other teams still doing it the old way is about to look like they're carving stone tablets.",
+      "text": "Brendan, this is the future. Do you get that? All the other teams still doing it the old way is about to look like they're carving stone tablets.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-417d1590886224ab96406e09bfc3fac6e120f6e2a70ec9da3e8af4a320a686a7.mp3",
-      "duration": 12.59102,
-      "audioSha256": "417d1590886224ab96406e09bfc3fac6e120f6e2a70ec9da3e8af4a320a686a7",
+      "audio": "assets/audio/shared-15e11487ce5fe988e799a51d166b66560d215b17745b870c81ae910ea3031790.mp3",
+      "duration": 9.16898,
+      "audioSha256": "15e11487ce5fe988e799a51d166b66560d215b17745b870c81ae910ea3031790",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1221,12 +1221,12 @@
       }
     },
     "s01b_l57": {
-      "text": "…Anyway. I still can't believe we made the functioning slack bot in ten minutes of work. Imagine the whole team moving like this. Imagine what next quarter looks like. Anyways, this is awesome, thanks for showing me this.",
+      "text": "*Sighs* I shouldn't be surprised. …Anyway. I still can't believe we made the functioning slack bot in ten minutes of work. Imagine what next quarter looks like.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-ab35e8f63c1c4bc6998786fbee2a8ddd45128ae3ab697236275d9a049fc54943.mp3",
-      "duration": 13.949388,
-      "audioSha256": "ab35e8f63c1c4bc6998786fbee2a8ddd45128ae3ab697236275d9a049fc54943",
+      "audio": "assets/audio/shared-c4515d8b9efd9b7ca2d54b4bfeef739e2f63b3ac5ffed885ce0fbf691550a0e5.mp3",
+      "duration": 11.467755,
+      "audioSha256": "c4515d8b9efd9b7ca2d54b4bfeef739e2f63b3ac5ffed885ce0fbf691550a0e5",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1318,12 +1318,12 @@
       }
     },
     "s01c_l8": {
-      "text": "Show me the code. Walk me through what you actually did, start to finish. I want to see how you wrote this.",
+      "text": "Show me the code. Walk me through what you actually did, start to finish.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-79acff9db45a5e75a28aede8f32eda45082fd53baf1ced3f35143b9b3b87007f.mp3",
-      "duration": 7.000816,
-      "audioSha256": "79acff9db45a5e75a28aede8f32eda45082fd53baf1ced3f35143b9b3b87007f",
+      "audio": "assets/audio/shared-ff2c7908d80a3db69266ad11690b0d07ef1be5cdb652d8b8f1d946ccd5d4c1b3.mp3",
+      "duration": 4.832653,
+      "audioSha256": "ff2c7908d80a3db69266ad11690b0d07ef1be5cdb652d8b8f1d946ccd5d4c1b3",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1346,12 +1346,12 @@
       }
     },
     "s01c_l11": {
-      "text": "The key-issuance service, the front-end, the auth, the deploy config. This PR is massive, Brendan. How is anybody supposed to review this?",
+      "text": "This PR is massive, Brendan. How is anybody supposed to review this?",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-3fad77015e4e071f6c0cef80d66bba5d906e09cb6fc602602862919ac4847390.mp3",
-      "duration": 10.03102,
-      "audioSha256": "3fad77015e4e071f6c0cef80d66bba5d906e09cb6fc602602862919ac4847390",
+      "audio": "assets/audio/shared-d1315c16deaf9f7b2c1a1c1800927eee18e22afe38f8be10b4caa017086889c7.mp3",
+      "duration": 5.32898,
+      "audioSha256": "d1315c16deaf9f7b2c1a1c1800927eee18e22afe38f8be10b4caa017086889c7",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1374,12 +1374,12 @@
       }
     },
     "s01c_l13": {
-      "text": "You don't review it at all, is the answer! You can't. Nobody can read this. I could not, in good conscience, put my name on this to ship, and I've been doing this twenty years. Here. Line four hundred. This function. What does it do? Off the top of your head what does it do and why is it shaped like this?",
+      "text": "You don't review it at all, is the answer! You can't. Nobody can read this. Here. Line four hundred. This function. What does it do?",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-7eccb40af475c4255b5216572d589f662a3fd7f7987d301698e0e28055134807.mp3",
-      "duration": 19.957551,
-      "audioSha256": "7eccb40af475c4255b5216572d589f662a3fd7f7987d301698e0e28055134807",
+      "audio": "assets/audio/shared-81313e2743fd0b91f22f25e4d87088bd42d78f59df03f134dded6dbcf5f1638d.mp3",
+      "duration": 9.639184,
+      "audioSha256": "81313e2743fd0b91f22f25e4d87088bd42d78f59df03f134dded6dbcf5f1638d",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1388,12 +1388,12 @@
       }
     },
     "s01c_l14": {
-      "text": "Well... I can tell you, but that's not really how I check it now, if you'd let me show you the process I follow...",
+      "text": "Well... I can tell you, but -",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-21a009a14476b2b95a6691145caba05788ff2b60c043e9dcbe0510cb000c6fa4.mp3",
-      "duration": 7.549388,
-      "audioSha256": "21a009a14476b2b95a6691145caba05788ff2b60c043e9dcbe0510cb000c6fa4",
+      "audio": "assets/audio/shared-9554cd9f175981f4a8662029b0a0f379da60e2d7913c7baea44a662d45bb734f.mp3",
+      "duration": 3.004082,
+      "audioSha256": "9554cd9f175981f4a8662029b0a0f379da60e2d7913c7baea44a662d45bb734f",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1458,12 +1458,12 @@
       }
     },
     "s01c_l19": {
-      "text": "You've all decided the thing is smart because it's confident. It is not smart. It's a very fast intern who has never once in its life said \"I don't know.\" And you're letting it near production! Do you know how dangerous that is??",
+      "text": "You don't know, because you don't read the code. You're blindly trusting this glorified autocomplete and dumping its code in our production!",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-eba58896e586f1f47fb751ef7edb46e173e33554e0e1e93265701762eb7416e4.mp3",
-      "duration": 14.759184,
-      "audioSha256": "eba58896e586f1f47fb751ef7edb46e173e33554e0e1e93265701762eb7416e4",
+      "audio": "assets/audio/shared-206e43bbcd35f460d97f46c0dc6872e47d8d50b9f3e3aea07bceef8ee8ee1d27.mp3",
+      "duration": 8.437551,
+      "audioSha256": "206e43bbcd35f460d97f46c0dc6872e47d8d50b9f3e3aea07bceef8ee8ee1d27",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1472,12 +1472,12 @@
       }
     },
     "s01c_l21": {
-      "text": "Look. I'm not doing this to be a dick. Really. I'm trying to help you. You're good, Brendan, you're actually good, that's why I bother. Most of these idiots we work with like Marcus, I wouldn't waste the breath on. I don't want to watch you turn into someone who can't work without the thing holding his hand.",
+      "text": "Look. I'm not doing this to be a dick. I'm trying to help you. You're good, Brendan, you're actually good, unlike Marcus, that's why I bother. I don't want to watch you turn into someone who can't work without the thing holding his hand.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-001301ae61c342657276dc7e71161647dd179c7b1b2670ab4df42009ce4a7503.mp3",
-      "duration": 18.207347,
-      "audioSha256": "001301ae61c342657276dc7e71161647dd179c7b1b2670ab4df42009ce4a7503",
+      "audio": "assets/audio/shared-0ebce772792ae076f42f39cd2883d1019af5b6db2e31e13cab25d31ba85a2c91.mp3",
+      "duration": 14.680816,
+      "audioSha256": "0ebce772792ae076f42f39cd2883d1019af5b6db2e31e13cab25d31ba85a2c91",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1855,12 +1855,12 @@
       }
     },
     "s06_l16": {
-      "text": "OKAY! Marcus, you got your word in, thanks. SJ. You're still on the signup race condition, yeah? Where are we with that one?",
+      "text": "OKAY!  SJ. You're still on the signup race condition, yeah? Where are we with that one?",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-034d8ce60141378d35a06295f5b936f8ed25c65e1e393cd103fa4039835de575.mp3",
-      "duration": 8.986122,
-      "audioSha256": "034d8ce60141378d35a06295f5b936f8ed25c65e1e393cd103fa4039835de575",
+      "audio": "assets/audio/shared-4c4c64c3cdede1fbad5d2b8e685a8f83d04f8709edfa686a0911a6d72d767934.mp3",
+      "duration": 5.955918,
+      "audioSha256": "4c4c64c3cdede1fbad5d2b8e685a8f83d04f8709edfa686a0911a6d72d767934",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1883,12 +1883,12 @@
       }
     },
     "s06_l18": {
-      "text": "Right, yeah, that's what you said yesterday, though. It's been open a while now. Is there any movement? Any updates I can add to the ticket?",
+      "text": "Right, yeah, that's what you said yesterday, though. Is there any movement? Any updates I can add to the ticket?",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-c134a33b57ab317392a486d7fe23939ca966e14fceecd66d77e2d8a31e586715.mp3",
-      "duration": 8.280816,
-      "audioSha256": "c134a33b57ab317392a486d7fe23939ca966e14fceecd66d77e2d8a31e586715",
+      "audio": "assets/audio/shared-325ecc02d10ef9fb0b00bfb6ed6811986aa7b610746c2d03ca742710450f7355.mp3",
+      "duration": 6.687347,
+      "audioSha256": "325ecc02d10ef9fb0b00bfb6ed6811986aa7b610746c2d03ca742710450f7355",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1911,12 +1911,12 @@
       }
     },
     "s06_l20": {
-      "text": "…Okay. I'm just trying to make the tradeoff visible to leadership. We've only had four reports in three months; we've got loads of other tickets affecting hundreds of users and we're starting to find behind on our roadmap compared to other teams... I need some sense of whether this is another day or another week.",
+      "text": "…Okay. I'm just trying to make the tradeoff visible to leadership. We've only had four reports in three months... I need some sense of whether this is another day or another week.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-ac3555a4bcdcf520d3fe05c52f76b98ab8951bc88bdc4db63fe03d2b96b8deb0.mp3",
-      "duration": 18.12898,
-      "audioSha256": "ac3555a4bcdcf520d3fe05c52f76b98ab8951bc88bdc4db63fe03d2b96b8deb0",
+      "audio": "assets/audio/shared-7f025649af080db5fc95896a48a8d6d9e0fd82e93a5fa9cf4cb86eedacb01fb5.mp3",
+      "duration": 11.154286,
+      "audioSha256": "7f025649af080db5fc95896a48a8d6d9e0fd82e93a5fa9cf4cb86eedacb01fb5",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -1925,12 +1925,12 @@
       }
     },
     "s06_l21": {
-      "text": "Four people got dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immedietly, unless you want to write the email to all the users that we've been hacked and got everyone's credit cart info stolen?",
+      "text": "Four people got dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immedietly.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-a203de6c2c58c122d7dc4e18fe7370bd0a4a22580406689f164ba17a4a1315a9.mp3",
-      "duration": 20.68898,
-      "audioSha256": "a203de6c2c58c122d7dc4e18fe7370bd0a4a22580406689f164ba17a4a1315a9",
+      "audio": "assets/audio/shared-855703a7586c793ba0b41f541c88271498430102c2c1bd9a79851b92c07eb306.mp3",
+      "duration": 15.386122,
+      "audioSha256": "855703a7586c793ba0b41f541c88271498430102c2c1bd9a79851b92c07eb306",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -2023,12 +2023,12 @@
       }
     },
     "s06_l30": {
-      "text": "Okay. So. Four users in three months. Each one signs up, and for about a second they're… in someone else's account. They have someone else's name, someone else's email, right there on the screen. Then, after refresh, it clears. And I cannot reproduce it. I have tried everything. Ten thousand signups in a loop, locally, nothing. It has only ever happened in prod under real traffic.",
+      "text": "Okay. So. Four users in three months. Each one signs up, and for about a second they're… in someone else's account. And I cannot reproduce it. I have tried everything. It has only ever happened in prod under real traffic.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-412c8e9c7fcdc855f09b81ab4d5428c414a3f982663c28c721137b17359de17a.mp3",
-      "duration": 27.402449,
-      "audioSha256": "412c8e9c7fcdc855f09b81ab4d5428c414a3f982663c28c721137b17359de17a",
+      "audio": "assets/audio/shared-3bb93c4ad74769fde7aca8e6bc1ab1796fa40124b5725b696d81074a8d4c7fdd.mp3",
+      "duration": 16.927347,
+      "audioSha256": "3bb93c4ad74769fde7aca8e6bc1ab1796fa40124b5725b696d81074a8d4c7fdd",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -2037,12 +2037,12 @@
       }
     },
     "s06_l31": {
-      "text": "Okay, that's kind of horrifying. Where've you been looking?",
+      "text": "Okay, that's kind of horrifying.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-4c51ab07b6fd06c62d85927c9804fbbb0115c61f735a8aae28088a0d47621611.mp3",
-      "duration": 4.04898,
-      "audioSha256": "4c51ab07b6fd06c62d85927c9804fbbb0115c61f735a8aae28088a0d47621611",
+      "audio": "assets/audio/shared-f5cfa37b19d446928da03c1200820b407c6a8fc7931eee40125d5ff1c45c118f.mp3",
+      "duration": 2.76898,
+      "audioSha256": "f5cfa37b19d446928da03c1200820b407c6a8fc7931eee40125d5ff1c45c118f",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -2051,12 +2051,12 @@
       }
     },
     "s06_l32": {
-      "text": "I've checked the RNG, the entropy source, the signing and ORM code. If two users got the same session token, that would explain but I've spent days pulling the token generation apart. It's all fine. That's what's killing me. The place I expected to find it is clean.",
+      "text": "I've checked the RNG, the entropy source, the signing and ORM code. It's all fine. That's what's killing me. The place I expected to find it is clean.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-6a1da8a8be5d22f98478ab1b013a14cf524231584757c90fa3264a586e075069.mp3",
-      "duration": 17.632653,
-      "audioSha256": "6a1da8a8be5d22f98478ab1b013a14cf524231584757c90fa3264a586e075069",
+      "audio": "assets/audio/shared-89395fb720f60fbe3e853d637faef3a588e15c14a125b69e50d36a184c9989fd.mp3",
+      "duration": 10.370612,
+      "audioSha256": "89395fb720f60fbe3e853d637faef3a588e15c14a125b69e50d36a184c9989fd",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -2079,12 +2079,12 @@
       }
     },
     "s06_l35": {
-      "text": "Claude will tell me to add a mutex. That's what comes back every time you ask about two things happening at once. But where does the lock go? What happens to everything waiting behind it? Now I've got a deadlock in production as well as the original bug. No thanks.",
+      "text": "Claude will tell me to add a mutex. That's what comes back every time you ask about two things happening at once. No thanks.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-9a7859cd3fe754fce1a54d8f999cbda72caeeff6ccbd765c7756467df7ddb5da.mp3",
-      "duration": 15.725714,
-      "audioSha256": "9a7859cd3fe754fce1a54d8f999cbda72caeeff6ccbd765c7756467df7ddb5da",
+      "audio": "assets/audio/shared-a22127f32fdd47fe6143b62cad9b1334b489ee553a13d35dbd669494b2bf4ca8.mp3",
+      "duration": 7.810612,
+      "audioSha256": "a22127f32fdd47fe6143b62cad9b1334b489ee553a13d35dbd669494b2bf4ca8",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -2205,12 +2205,12 @@
       }
     },
     "s06_l47": {
-      "text": "...It's zero. Wait. The ID's zero until the transaction commits. So if two signups get here together... they're both asking for session zero. Oh, fuck. That's it. They're getting the same session. It wasn't the tokens at all. It's been this one line.",
+      "text": "...It's zero. Wait. The ID's zero until the transaction commits. So if two signups get here together... they're both asking for session zero. Oh, fuck. That's it.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-640c73ec35540e3a449389a1bedade77056b5210f7412b7e1422ea722f92578f.mp3",
-      "duration": 17.946122,
-      "audioSha256": "640c73ec35540e3a449389a1bedade77056b5210f7412b7e1422ea722f92578f",
+      "audio": "assets/audio/shared-697176d77a24312c99c8e5cb579d85dfff758434c0d0d1c67a9389ffa72df551.mp3",
+      "duration": 13.557551,
+      "audioSha256": "697176d77a24312c99c8e5cb579d85dfff758434c0d0d1c67a9389ffa72df551",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -2219,12 +2219,12 @@
       }
     },
     "s06_l49": {
-      "text": "…That's a hell of a catch, Brendan. How did you even.... that's the one place I wasn't looking. That's real instinct. Good instinct, kid. Seriously.",
+      "text": "…That's a hell of a catch, Brendan. That's the one place I wasn't looking. That's real instinct. Good instinct, kid. Seriously.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-b0284a1fca54e87236c11ffacc053dc50d6a9ebd313628e80bea8eef0fe6c6af.mp3",
-      "duration": 10.187755,
-      "audioSha256": "b0284a1fca54e87236c11ffacc053dc50d6a9ebd313628e80bea8eef0fe6c6af",
+      "audio": "assets/audio/shared-bda8d06f5f5d5386795ebc91ee09b58f902eba0d4bae21097cf06325abe64ac6.mp3",
+      "duration": 8.515918,
+      "audioSha256": "bda8d06f5f5d5386795ebc91ee09b58f902eba0d4bae21097cf06325abe64ac6",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4213,12 +4213,12 @@
       }
     },
     "s11b_l5": {
-      "text": "I'm not sure what help you expect Marcus to provide. Marcus pastes our source into a stranger's computer and hits accept. I run mine locally AND I read what comes back. Which is what our own security policy requires, in case you all forgot to read it... So because they made these tools mandatory at the All Hands, local inference is the only setup that satisfies both policies... So I'm the only person on this call who's actually following the rules.",
+      "text": "I'm not sure what help you expect Marcus to provide. Marcus pastes our source into a stranger's computer and hits accept. I run mine locally AND I read what comes back. Which is what our own security policy requires, in case you all forgot to read it... So I'm the only person on this call who's actually following the rules.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-ba3366b18ae75fbe2b79e3ec72f15f5fe1adcd35e6dcf54799420c354f8e73df.mp3",
-      "duration": 28.604082,
-      "audioSha256": "ba3366b18ae75fbe2b79e3ec72f15f5fe1adcd35e6dcf54799420c354f8e73df",
+      "audio": "assets/audio/shared-d8b8ddadcd129133383fb63ca5d6b59f1e6980a94ca21591491fef2e125083a2.mp3",
+      "duration": 20.192653,
+      "audioSha256": "d8b8ddadcd129133383fb63ca5d6b59f1e6980a94ca21591491fef2e125083a2",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4252,12 +4252,12 @@
       }
     },
     "s11b_l8": {
-      "text": "I'm telling you to reconize reality, SJ. Do you think i enjoy this either? I don't. I closed three tickets yesterday, and you know what that got me?",
+      "text": "I'm telling you to reconize reality, SJ. Do you think i enjoy this either?",
       "speaker": "marcus",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-a6d565b9a78dc548d0df71f37aa8de959885e1af0fd147e9d4d1fded8af2bef6.mp3",
-      "duration": 9.717551,
-      "audioSha256": "a6d565b9a78dc548d0df71f37aa8de959885e1af0fd147e9d4d1fded8af2bef6",
+      "audio": "assets/audio/shared-d28ff0c5fabaae65ab609688823d7bdad20aa27d7e2b76debb7be6a2b4eabfd3.mp3",
+      "duration": 5.32898,
+      "audioSha256": "d28ff0c5fabaae65ab609688823d7bdad20aa27d7e2b76debb7be6a2b4eabfd3",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4294,12 +4294,12 @@
       }
     },
     "s11b_l11": {
-      "text": "What do you want, a slower model so you can work slower?",
+      "text": "The reality is that if we let your vibe coding run wild, Marcus, then the infrastructure will collapse Marcus. Is that what you want?",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-dccdee8c048b3a0e11aad58b2d6bf0e33214b7cc4537e03d6484e85ade85bf4f.mp3",
-      "duration": 3.709388,
-      "audioSha256": "dccdee8c048b3a0e11aad58b2d6bf0e33214b7cc4537e03d6484e85ade85bf4f",
+      "audio": "assets/audio/shared-97f1f155ce7af0df51ea1a4598f4c403435e228e66890522df336b3435cbd50c.mp3",
+      "duration": 8.594286,
+      "audioSha256": "97f1f155ce7af0df51ea1a4598f4c403435e228e66890522df336b3435cbd50c",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4322,12 +4322,12 @@
       }
     },
     "s11b_l13": {
-      "text": "I don't have a view on that. I'm not political like you, I'm an engineer, and I have a threat model. You're pasting our source into somebody else's datacentre because it's quick. That's my objection. It's got nothing to do with how rich it makes the CEO.",
+      "text": "I don't have a view on that. I'm not political like you. Any GOOD engineer understands vibe coding is crap. That's my objection. It's got nothing to do with politics or whatever.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-50e04e46a768c87a6b164b7ee0ece957c8966b7d66e0cb9549d07b16c21685e0.mp3",
-      "duration": 16.039184,
-      "audioSha256": "50e04e46a768c87a6b164b7ee0ece957c8966b7d66e0cb9549d07b16c21685e0",
+      "audio": "assets/audio/shared-218c22d41dd93e556f32aa2dcc5e2b4c0b3d2e979b66410addf7f993c509dd5c.mp3",
+      "duration": 11.650612,
+      "audioSha256": "218c22d41dd93e556f32aa2dcc5e2b4c0b3d2e979b66410addf7f993c509dd5c",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4336,12 +4336,12 @@
       }
     },
     "s11b_l15": {
-      "text": "Everyone is political SJ except all you're going to do is waste time upsetting your boss and everyone else because you insist on arbitrarily reading every line.",
+      "text": "Everyone is political SJ and either you can continue wasting time, or you can just have Claude write the code now. It already does a better job than I do with reviews anyways.",
       "speaker": "marcus",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-2f1ab7525011040aedc0ad8ed383599e3f3c73affebd78b19cbaa07bf0d885d4.mp3",
-      "duration": 10.840816,
-      "audioSha256": "2f1ab7525011040aedc0ad8ed383599e3f3c73affebd78b19cbaa07bf0d885d4",
+      "audio": "assets/audio/shared-18584dba5773668335379d851e6c1d295a424ebf4c15f962dea9b7296f65d608.mp3",
+      "duration": 10.266122,
+      "audioSha256": "18584dba5773668335379d851e6c1d295a424ebf4c15f962dea9b7296f65d608",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4462,12 +4462,12 @@
       }
     },
     "s11b_l26": {
-      "text": "Fine. Say the weights are poisoned. Say it's in there. What is it going to do? The box has no network. The model has no tools. It can't run a command, it can't open a socket, it can't touch a file I don't hand it. It types text into a window and I read the text.",
+      "text": "Fine. Say the weights are poisoned. It doesn't matter because I am the one running the code. I read it and evaluate it instead of giving autocomplete access to our production database.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-be002ab4e229580d0abaa9578e14dfd16c2a5c741495886820d7509563022278.mp3",
-      "duration": 17.946122,
-      "audioSha256": "be002ab4e229580d0abaa9578e14dfd16c2a5c741495886820d7509563022278",
+      "audio": "assets/audio/shared-01c0d850d7f9b4c54d0db2222639cf370fabd221ba1cb4dd30613dfa00a12bd1.mp3",
+      "duration": 11.546122,
+      "audioSha256": "01c0d850d7f9b4c54d0db2222639cf370fabd221ba1cb4dd30613dfa00a12bd1",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4490,12 +4490,12 @@
       }
     },
     "s11b_l28": {
-      "text": "You'd have to be an idiot to worry about poisoned weights and then hand the thing a shell and the internet. Which is what Claude does. It runs commands, it installs whatever it decides it needs, it browses the web, on every laptop in this building. Including yours.",
+      "text": "You'd have to be an idiot to worry about poisoned weights and then hand the thing a shell and the internet. Which is what Claude does.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-5b62553e68100d4c5bc3df96d5e45606fea39cc3c481641916187b34fe5f26b2.mp3",
-      "duration": 16.84898,
-      "audioSha256": "5b62553e68100d4c5bc3df96d5e45606fea39cc3c481641916187b34fe5f26b2",
+      "audio": "assets/audio/shared-27c446c3fbecbb439e8f00806aa7b8607e69f2df761ec5fd158e627d5fda7a0b.mp3",
+      "duration": 7.810612,
+      "audioSha256": "27c446c3fbecbb439e8f00806aa7b8607e69f2df761ec5fd158e627d5fda7a0b",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4560,12 +4560,12 @@
       }
     },
     "s11b_l33": {
-      "text": "SJ, MARCUS! - *sigh* Take the model debate to a thread. I'd honestly love a doc, it sounds like there's real stuff in there. Just not in our standup",
+      "text": "SJ, MARCUS! - *sigh* Take the model debate to a thread. Just not in our standup, please.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-af4214cf13711b9ce7b68bf316ad5476bfc5e091bb39c26c4f4792c48a6a7e19.mp3",
-      "duration": 11.389388,
-      "audioSha256": "af4214cf13711b9ce7b68bf316ad5476bfc5e091bb39c26c4f4792c48a6a7e19",
+      "audio": "assets/audio/shared-843eb80b06dfd8cc7af6835a1e3d7a32e7d4773a3d14f3444ce59ffacdfe1ef7.mp3",
+      "duration": 8.045714,
+      "audioSha256": "843eb80b06dfd8cc7af6835a1e3d7a32e7d4773a3d14f3444ce59ffacdfe1ef7",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4616,12 +4616,12 @@
       }
     },
     "s11b_l37": {
-      "text": "Marcus I just want ONE STANDUP where we get through without...",
+      "text": "Marcus! Thread. Moving on! Any other blockers?",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-a82c9795d1351b90570b83ce5058365633eaefdcb690bafd45e23e0535d3191f.mp3",
-      "duration": 4.205714,
-      "audioSha256": "a82c9795d1351b90570b83ce5058365633eaefdcb690bafd45e23e0535d3191f",
+      "audio": "assets/audio/shared-6378cb32e5371d355c9e35847cb91fe1975169894d6fa0374655ac007c46b7fc.mp3",
+      "duration": 4.127347,
+      "audioSha256": "6378cb32e5371d355c9e35847cb91fe1975169894d6fa0374655ac007c46b7fc",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4812,12 +4812,12 @@
       }
     },
     "s11b_l53": {
-      "text": "Six minutes. Sometimes eight. It's reading four hundred files, it's allowed to take longer than a search box. I batch my questions. You learn to think before you prompt, which would do some people on that call a world of good.",
+      "text": "Six minutes. Sometimes eight. It's reading four hundred files, it's allowed to take longer than a search box.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-efe6aef1e828555566c3e2c3a12e3723aaa2871934656e201433e4e30fce3642.mp3",
-      "duration": 14.28898,
-      "audioSha256": "efe6aef1e828555566c3e2c3a12e3723aaa2871934656e201433e4e30fce3642",
+      "audio": "assets/audio/shared-21f6196c4d3163699f61282e096ecd4427c0229aabd41a3526245f63a91da06e.mp3",
+      "duration": 7.079184,
+      "audioSha256": "21f6196c4d3163699f61282e096ecd4427c0229aabd41a3526245f63a91da06e",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4938,12 +4938,12 @@
       }
     },
     "s11b_l64": {
-      "text": "Watch the workflow, though. This is the part everyone skips. There. It invented a method that doesn't exist. And that's fine. Because I don't ask it to be right, I ask it to type the boring part. Then I do the job. It's autocomplete, Brendan. Fancy autocomplete. That's all any of this is under the hood.",
+      "text": "Watch the workflow, though. There. It invented a method that doesn't exist. And that's fine. Because I don't ask it to be right, I ask it to type the boring part. Then I do the job. It's autocomplete, Brendan. Fancy autocomplete.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-0b06717fd28f94aeb6d279ad9324a0afac1bda49e14f43f93c8b7a6a2aef78b4.mp3",
-      "duration": 20.767347,
-      "audioSha256": "0b06717fd28f94aeb6d279ad9324a0afac1bda49e14f43f93c8b7a6a2aef78b4",
+      "audio": "assets/audio/shared-827a9d1f4fb2053fe3f8040d5819e5104c663581199191626a447c7c370c4287.mp3",
+      "duration": 15.882449,
+      "audioSha256": "827a9d1f4fb2053fe3f8040d5819e5104c663581199191626a447c7c370c4287",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -4966,12 +4966,12 @@
       }
     },
     "s11b_l66": {
-      "text": "No. Were you not listening at standup? You've seen the stories, rogue agents deleting production databases because somebody let them run whatever they wanted. I don't give it tool calls. It writes text. I decide what the text is worth running.",
+      "text": "No. Were you not listening at standup? I don't give it tool calls. It writes text. I decide what the text is worth running. I had to strip it out and run the whole thing in a sandbox for security purposes. This whole thing thing has made me slower just to follow this new AI policy.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-5e09634aaa471bfc6dc285d66135ee9ca7d8d9ed6c2fae918d7d422a4bfec36e.mp3",
-      "duration": 15.386122,
-      "audioSha256": "5e09634aaa471bfc6dc285d66135ee9ca7d8d9ed6c2fae918d7d422a4bfec36e",
+      "audio": "assets/audio/shared-c54fd95a495ae2f5fb198663043ca2df19568777fa6dbf0376f8d622aed6e8c9.mp3",
+      "duration": 17.632653,
+      "audioSha256": "c54fd95a495ae2f5fb198663043ca2df19568777fa6dbf0376f8d622aed6e8c9",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5035,12 +5035,12 @@
       }
     },
     "s11b_l73": {
-      "text": "…Yeah. No, I hear you. I should get back to it. Ping me if you need anything?",
+      "text": "…Yeah. No, I hear you. I should get back to it. Thanks for showing me this SJ... It was really... uh... Cool",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-6cbbf7c680fd2f605c28f2f83c0abccc5704fe400f9a8b9cdab708d7d2a88bae.mp3",
-      "duration": 5.067755,
-      "audioSha256": "6cbbf7c680fd2f605c28f2f83c0abccc5704fe400f9a8b9cdab708d7d2a88bae",
+      "audio": "assets/audio/shared-62eb073d8083d60dd9d07c6abb28b3d0ae720975d6c725b3a2e8d72fad94af1f.mp3",
+      "duration": 8.907755,
+      "audioSha256": "62eb073d8083d60dd9d07c6abb28b3d0ae720975d6c725b3a2e8d72fad94af1f",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5091,12 +5091,12 @@
       }
     },
     "s11c_l4": {
-      "text": "It took a while but honestly? I'm just happy he's engaged. Six weeks ago he was posting memes about vibe-coding. Now he's expensed a whole computer and he comes to standup with opinions about inference. For SJ, that's a lot of progress, he's adopting new tooling.",
+      "text": "It took a while but honestly? I'm just happy he's engaged.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-8334664382adc743f6b3db72270fe04f4d9239369183348d8783bf8a4ea68c42.mp3",
-      "duration": 18.520816,
-      "audioSha256": "8334664382adc743f6b3db72270fe04f4d9239369183348d8783bf8a4ea68c42",
+      "audio": "assets/audio/shared-9b908476c85253d8943cee0626f3d8ef4b46789ff8c519b8cebf3024a7743fb3.mp3",
+      "duration": 4.754286,
+      "audioSha256": "9b908476c85253d8943cee0626f3d8ef4b46789ff8c519b8cebf3024a7743fb3",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5231,12 +5231,12 @@
       }
     },
     "s11c_l15": {
-      "text": "I got let into a Zoom early on Friday, leadership thing, and the CEO was still wrapping his last call with a board member, I'm pretty sure. I don't think either of them clocked he was off mute. The board guy was so relaxed about it. He said, and this is close to word for word, \"Everyone your size is getting leaner this year. You don't need a big reorg. Pull tickets closed per engineer out of Jira, draw a line, and nobody has to make a judgement call.\"",
+      "text": "I got let into a Zoom early on Friday, leadership thing, and the CEO was still wrapping his last call with a board member, I'm pretty sure. He said, and this is close to word for word, \"Everyone your size is getting leaner this year. Pull tickets closed per engineer out of Jira, draw a line, and nobody has to make a judgement call.\"",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-7e8071ae514ae00786350409ecca2c8df2350bf14f6f5f28ea2859cf7ce377a9.mp3",
-      "duration": 28.290612,
-      "audioSha256": "7e8071ae514ae00786350409ecca2c8df2350bf14f6f5f28ea2859cf7ce377a9",
+      "audio": "assets/audio/shared-3e9acff55db3afa9e973afe11fba8a26f4d5cf559ac434def257fabd09b73b50.mp3",
+      "duration": 20.767347,
+      "audioSha256": "3e9acff55db3afa9e973afe11fba8a26f4d5cf559ac434def257fabd09b73b50",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5259,12 +5259,12 @@
       }
     },
     "s11c_l17": {
-      "text": "I don't know. The call ended about ten seconds after I joined. I don't know exactly what they were talking about, but it sounded AI-adoption related. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing",
+      "text": "I don't know. The call ended about ten seconds after I joined. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-ca5ab4f179f97af156289cfb340de46a633a5443b6507ebf04dc1ead59742d59.mp3",
-      "duration": 20.27102,
-      "audioSha256": "ca5ab4f179f97af156289cfb340de46a633a5443b6507ebf04dc1ead59742d59",
+      "audio": "assets/audio/shared-b1cc48f346e595bc84dd4a023e8ccb532288b39019fdb03fd7a7ec3b4b7ff631.mp3",
+      "duration": 14.445714,
+      "audioSha256": "b1cc48f346e595bc84dd4a023e8ccb532288b39019fdb03fd7a7ec3b4b7ff631",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5301,12 +5301,12 @@
       }
     },
     "s11c_l21": {
-      "text": "I don't think SJ's setup is really that productive. I sat with him for an hour and he walked me through the whole rig. And it's genuinely impressive. It's real engineering. And it's making him slower. He told me himself: he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something.",
+      "text": "I don't think SJ's setup is really that productive. It's making him slower. He measured two sprints, with it and without it, and he's slower with it.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-571adb63a9036f83f32ba2cf72a18c2dae48b2e2afab287a77f4cc575a04b3e8.mp3",
-      "duration": 20.27102,
-      "audioSha256": "571adb63a9036f83f32ba2cf72a18c2dae48b2e2afab287a77f4cc575a04b3e8",
+      "audio": "assets/audio/shared-188e2c139d3ffb70c23b8c997cedee4d365c6abe460b72a8cf464e90cdd72941.mp3",
+      "duration": 9.325714,
+      "audioSha256": "188e2c139d3ffb70c23b8c997cedee4d365c6abe460b72a8cf464e90cdd72941",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5343,12 +5343,12 @@
       }
     },
     "s11c_l24": {
-      "text": "Okay but do you hear yourself, a little? You keep a document called \"Things it gets wrong.\" You've got rules files older than some of our repos. You told me the whole skill was catching it when it makes mistakes, I watched you correct a made-up endpoint. Nobody stood over you calling the tinkering unproductive. The tinkering is what sold me. He's doing exactly what you did. And honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere..",
+      "text": "Honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere..",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-6335c800c118c914173454039f630a8397debe17373229ef88b47c075348014e.mp3",
-      "duration": 32.679184,
-      "audioSha256": "6335c800c118c914173454039f630a8397debe17373229ef88b47c075348014e",
+      "audio": "assets/audio/shared-2755e25e71a6b286b7d61f8fa64149f6aad7f0f2fda928cd08c4663788a1cf97.mp3",
+      "duration": 8.124082,
+      "audioSha256": "2755e25e71a6b286b7d61f8fa64149f6aad7f0f2fda928cd08c4663788a1cf97",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5455,12 +5455,12 @@
       }
     },
     "s11c_l35": {
-      "text": "No, that's good feedback to have on file, and it's important to know, but sometimes shifts take a bit of time. He shipped the webhook thing. Give him the quarter to get up to speed on everything and it'll all even out on his yearly review.",
+      "text": "No, that's good feedback to have on file, but sometimes shifts take a bit of time. He shipped the webhook thing. Give him the quarter to get up to speed on everything and it'll all even out on his yearly review.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-1078e57bb8cd0bb961b4481d3de4b21d1e4db139d32ff4446def01549536ed16.mp3",
-      "duration": 14.28898,
-      "audioSha256": "1078e57bb8cd0bb961b4481d3de4b21d1e4db139d32ff4446def01549536ed16",
+      "audio": "assets/audio/shared-ac964bdc9136e87f6c7c5e5fa695795538508b7a9729c00e508c672f21fa4934.mp3",
+      "duration": 12.434286,
+      "audioSha256": "ac964bdc9136e87f6c7c5e5fa695795538508b7a9729c00e508c672f21fa4934",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11831,12 +11831,12 @@
       }
     },
     "s11b_l1": {
-      "text": "A few months later, SJ has a new Mac Studio on his desk. It runs a local Qwen model, a few tokens at a time. Standup is underway.",
+      "text": "A few months later, SJ has a new Mac Studio on his desk. It runs a local Qwen model. Standup is underway.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-71b7a52f89ab1f9946d0b446c597068fc4d904bee2b7f0fae374e4ce05b00f2b.mp3",
-      "duration": 10.187755,
-      "audioSha256": "71b7a52f89ab1f9946d0b446c597068fc4d904bee2b7f0fae374e4ce05b00f2b",
+      "audio": "assets/audio/shared-5ee7d10d98f9d9ee83163c59221ed192b10ae8844f78ed8a8a4ee39d931333c2.mp3",
+      "duration": 8.515918,
+      "audioSha256": "5ee7d10d98f9d9ee83163c59221ed192b10ae8844f78ed8a8a4ee39d931333c2",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11859,12 +11859,12 @@
       }
     },
     "s11b_l63": {
-      "text": "On BRENDAN's own screen he quietly types one line: \"In billing/webhooks.rb, make failed deliveries retry with exponential backoff, cap at 5.\" The cloud agent opens the handler itself, writes the diff itself, runs the test itself. Green. Done before SJ finishes his sentence. He says nothing.",
+      "text": "Brendan hands SJ's webhook ticket to his agent. It's done, tested and passing before SJ finishes his sentence. He says nothing.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-f1a77bda54b6e73b3cb7ac30efc6d6c5a1c6b1f8f5b22f6727da28bb6917901c.mp3",
-      "duration": 22.360816,
-      "audioSha256": "f1a77bda54b6e73b3cb7ac30efc6d6c5a1c6b1f8f5b22f6727da28bb6917901c",
+      "audio": "assets/audio/shared-357ca2c87e57013bce412a2e504424493f6437cc4238d67235fa0e2a8637555a.mp3",
+      "duration": 9.247347,
+      "audioSha256": "357ca2c87e57013bce412a2e504424493f6437cc4238d67235fa0e2a8637555a",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -11929,12 +11929,12 @@
       }
     },
     "s11c_l39": {
-      "text": "Kristina opens cursor. Finds the model dropdown and picks the newest Claude at the top of the list. Deliberately. Like she's checking something.",
+      "text": "Kristina considers Brendan and Marcus' criticism of SJ... She opens Cursor and queries it to evaluate the velocity of all of the engineers on her team. Before it can finish, she cancels the query. She already knows who is useful and who isn't. She doesn't need a machine to tell her that and the decision of who stays and who goes is out of her hands anyways.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-4b15c5edb8f699899a44b2b88ccd8d087d0563d8652024b9431de998e851eeee.mp3",
-      "duration": 9.717551,
-      "audioSha256": "4b15c5edb8f699899a44b2b88ccd8d087d0563d8652024b9431de998e851eeee",
+      "audio": "assets/audio/shared-4ca8bc6e7c242af41ee62efa8590a60e8185b397077bddfb67ee60366eaabe3e.mp3",
+      "duration": 23.170612,
+      "audioSha256": "4ca8bc6e7c242af41ee62efa8590a60e8185b397077bddfb67ee60366eaabe3e",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -13105,12 +13105,12 @@
       }
     },
     "s01b_narrator_promotion": {
-      "text": "Kristina is genuinely excited about the potential of this new technology to finally allow her team to acheive their quarterly targets for the first time since she joined the company. If she can reproduce what Brendan is doing in Marcus and SJ, her team can more regularly start outperforming her peers, and line herself up for promotion. This is almost as attractive to her as the idea of replacing her team with robots who don't argue about model trains and weavers every morning for an hour.",
+      "text": "Kristina can't help but feel excited at the prospect of her reports spending time doing their job rather than bickering over slack... Or perhaps even simply replacing them with these tools.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-4d9909480aaf11111f66bc7c75504409a1398a45534cb6e2d3c734d8e46051f3.mp3",
-      "duration": 28.995918,
-      "audioSha256": "4d9909480aaf11111f66bc7c75504409a1398a45534cb6e2d3c734d8e46051f3",
+      "audio": "assets/audio/shared-546115fe5b22e18f4f4c2ad392484305b3b1b51ec2cd6aa0edd627355681f568.mp3",
+      "duration": 12.042449,
+      "audioSha256": "546115fe5b22e18f4f4c2ad392484305b3b1b51ec2cd6aa0edd627355681f568",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -13564,12 +13564,12 @@
       }
     },
     "cue_f611e6705148485ca6a655ac76b1c164": {
-      "text": "Oh right, I'm the problem for actually getting my work done. The CEO literally released a memo last week about how if we don't adopt these tools, the company will collapse or whatever You're trying to beat the machine by reading faster. John Henry died doing that. If you're lucky, you'll just get fired for working that slow, OR maybe you'll just end up like one of the luddites and get sent to an Australian work camp",
+      "text": "Oh right, I'm the problem for actually getting my work done. The CEO literally released a memo last week about how if we don't adopt these tools, the company will collapse or whatever.",
       "speaker": "marcus",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-eb9c36fb59caaa245e1ab755de5c10a0c81bc2d9e7ad9135a6facbc50f3f8dfb.mp3",
-      "duration": 25.312653,
-      "audioSha256": "eb9c36fb59caaa245e1ab755de5c10a0c81bc2d9e7ad9135a6facbc50f3f8dfb",
+      "audio": "assets/audio/shared-6d853c5588f407488a140b1ecb7e57733ac600953352316b779eaea4bb87e376.mp3",
+      "duration": 11.650612,
+      "audioSha256": "6d853c5588f407488a140b1ecb7e57733ac600953352316b779eaea4bb87e376",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -13634,12 +13634,12 @@
       }
     },
     "s22_backdoor": {
-      "text": "They think the Chinese got in. A backdoor, through one of the AI tools. I said this. A backdoor can be one character long. I want it noted I said that in March.",
+      "text": "Yeah! they think the Chinese got in. A backdoor, through one of the AI tools. I said this. A backdoor can be one character long. I want it noted I said that in March.",
       "speaker": "marcus",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-676c726b5fdf638205fc5be96ebdf65114fbd144c63499cc941abef8549dec3b.mp3",
-      "duration": 11.154286,
-      "audioSha256": "676c726b5fdf638205fc5be96ebdf65114fbd144c63499cc941abef8549dec3b",
+      "audio": "assets/audio/shared-cdac89701566f06523ca1d78d09f7dcaee258aeaa405863ad84a8766485e4006.mp3",
+      "duration": 11.72898,
+      "audioSha256": "cdac89701566f06523ca1d78d09f7dcaee258aeaa405863ad84a8766485e4006",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -13830,12 +13830,12 @@
       }
     },
     "s22_notes": {
-      "text": "You're keeping notes.",
+      "text": "You're keeping notes?",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-a357ca7a14cfdf7c35a52b9a30e6cd8e4f76316fd352c5946922865b39baf249.mp3",
-      "duration": 1.645714,
-      "audioSha256": "a357ca7a14cfdf7c35a52b9a30e6cd8e4f76316fd352c5946922865b39baf249",
+      "audio": "assets/audio/shared-4ef60f9705141eefa0dd6aae3f180a33b16ec499b53382d2b16cfc407f1a2344.mp3",
+      "duration": 1.410612,
+      "audioSha256": "4ef60f9705141eefa0dd6aae3f180a33b16ec499b53382d2b16cfc407f1a2344",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -14023,6 +14023,20 @@
         "model": "eleven_v4",
         "voiceId": "RDSy0QN68yhrjuOgqzQ4",
         "voiceName": "Dr. Quibble, Nerdy Cartoon Scientist"
+      }
+    },
+    "s01b_l13": {
+      "text": "The plan begins to populate with details about querying Jira and Slack APIs.",
+      "speaker": "narrator",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-78a66f41dc4948739c9a8c24d1aedaa819205d0ef686d6c363d2be3632e62e3a.mp3",
+      "duration": 5.485714,
+      "audioSha256": "78a66f41dc4948739c9a8c24d1aedaa819205d0ef686d6c363d2be3632e62e3a",
+      "provenance": {
+        "type": "elevenlabs",
+        "model": "eleven_v4",
+        "voiceId": "Q4oILuo4P8VeXtE6FMLI",
+        "voiceName": "Matthew Schmitz, Warm Mountain Man"
       }
     }
   }

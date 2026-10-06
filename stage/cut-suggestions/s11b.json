@@ -32,7 +32,8 @@
         "Joke: Marcus's 'Everyone is political SJ' rebuttal and SJ's flat 'Because I do read every line'",
         "Colour: part of the SJ and Marcus argument that keeps going after Kristina's interruption (kristina_tickets is still talked over by l17)"
       ],
-      "directionsKept": 1
+      "directionsKept": 1,
+      "dismissed": true
     },
     {
       "title": "Companion: drop 'Well, I don't.' from Marcus",
@@ -86,7 +87,8 @@
         "Character: Marcus admitting he does not enjoy this either and that closing three tickets just earns three more",
         "Colour: the railroad line ('at least when they finished the railroad, they'd built a railroad'), a second history gag after John Henry",
         "Setup: reinforces that tickets closed is the measure that counts, paid off in s19_l20 (layoffs came down to Jira tickets closed); s11b_l4 still carries it"
-      ]
+      ],
+      "dismissed": true
     },
     {
       "title": "Cut SJ's two-sprint measurement speech",
@@ -164,7 +166,8 @@
         "Joke: Kristina's 'Marcus I just want ONE STANDUP where we get through without...' cut off by SJ's Grok line",
         "Character: Marcus's 'I know what a standup is' and 'the only one who stands up for what's right', his self-image as the team's conscience",
         "Joke: Kristina's clipped 'Noted. Thanks. Let's move on.'"
-      ]
+      ],
+      "dismissed": true
     },
     {
       "title": "Cut the 'Noted where' joke and minutes narrator",
@@ -189,7 +192,8 @@
       "loses": [
         "Joke: SJ's 'Noted where, Marcus? Nobody's taking minutes' and the narrator quietly correcting him",
         "Character: Kristina diligently minuting every standup and emailing a nicely styled report (nowhere else)"
-      ]
+      ],
+      "dismissed": true
     },
     {
       "title": "Cut Brendan's choice to stay quiet (narrator)",
@@ -434,7 +438,8 @@
       "loses": [
         "Character: Kristina's reflexive positivity mid-explosion ('it sounds like there's real stuff in there')",
         "Setup: her request for a doc, recalled in s11c_l6 and the eleven-page doc in s11c_l28 and s11c_l30 (those lines restate it)"
-      ]
+      ],
+      "dismissed": true
     },
     {
       "title": "Trim SJ's autocomplete speech",
