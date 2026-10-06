@@ -1,14 +1,10 @@
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache
-.trash/
+# Local state and recovery (never remove recovery snapshots during cleanup)
 .DS_Store
-.playwright-mcp/
-
-# Runtime locks and local pre-edit script recovery snapshots
 __pycache__/
+.playwright-mcp/
 stage/.script.lock
 stage/script-history/
-storyboard/proof.json
-storyboard/cuts.json
-storyboard/.edits/
+stage/proof-progress.json
+exports/
+.env
+.env.*

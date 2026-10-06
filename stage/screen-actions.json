@@ -346,7 +346,7 @@
       ],
       "sourceTextSha256": "0f61d2813f38090ff25ca83e18bab7f4782999cdd90b8e8fa82868d3e81563bb",
       "title": "Brendan / local branches",
-      "note": "Type the branch-delete command, pause on it, then execute. Liam’s PR stays visible on the other display."
+      "note": "Type the branch-delete command, pause on it, then execute. SJ’s PR stays visible on the other display."
     },
     "cloud-prompt": {
       "scene": "s11b",
@@ -410,7 +410,7 @@
         },
         {
           "op": "type",
-          "text": "I don't know if Liam is ever going to...",
+          "text": "I don't know if SJ is ever going to...",
           "seconds": 2.5
         },
         {
@@ -429,10 +429,10 @@
       ],
       "sourceTextSha256": "a8d96a8c9913f0c78c9a42135b7fffd720636c68adce590be630b8e32577707e",
       "title": "Kristina",
-      "context": "Security policy · Owner: Liam · Last reviewed 14 months ago",
+      "context": "Security policy · Owner: SJ · Last reviewed 14 months ago",
       "reference": "Proprietary source code must not be shared with external model providers.",
       "secondary": "Sprint board: 5 tickets · 2 due today",
-      "note": "Two distinct drafts: type the policy question, hold it so the audience can read it, erase with held backspace; type the unfinished thought about Liam, hesitate, erase it too. GO may continue to Liam’s next line without restarting the typing."
+      "note": "Two distinct drafts: type the policy question, hold it so the audience can read it, erase with held backspace; type the unfinished thought about SJ, hesitate, erase it too. GO may continue to SJ’s next line without restarting the typing."
     },
     "delete-patch": {
       "scene": "s11b",
@@ -463,7 +463,7 @@
       "initial": "def deliver_with_retry(payload)\n  attempts = 0\n  begin\n    deliver_webhook(payload)\n  rescue DeliveryFailed\n    attempts += 1\n    raise if attempts >= 5\n    sleep(2 ** attempts)\n    retry\n  end\nend",
       "title": "billing/webhooks.rb · unsent local patch",
       "context": "The message to Kristina is still empty.",
-      "note": "Show the completed patch first. Select it, visibly erase it, and hold the empty editor. Liam’s local model keeps crawling on the other display."
+      "note": "Show the completed patch first. Select it, visibly erase it, and hold the empty editor. SJ’s local model keeps crawling on the other display."
     },
     "no-major-concerns": {
       "scene": "s12",
@@ -523,7 +523,7 @@
       "steps": [
         {
           "op": "type",
-          "text": "Liam is the strongest engineer on this team.",
+          "text": "SJ is the strongest engineer on this team.",
           "seconds": 4.5
         },
         {
@@ -561,7 +561,7 @@
         }
       ],
       "sourceTextSha256": "d524828733c814aecf8fc63aedff494793f880676136119f03feee52790448b2",
-      "initial": "Liam is the strongest engineer on this team.",
+      "initial": "SJ is the strongest engineer on this team.",
       "note": "Append the local-model paragraph, including the last sentence he will reconsider. Both must be visible before the next cue."
     },
     "feedback-retract": {
@@ -577,7 +577,7 @@
         },
         {
           "op": "delete",
-          "to": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.",
+          "to": "SJ is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.",
           "seconds": 2.5
         },
         {
@@ -586,7 +586,7 @@
         }
       ],
       "sourceTextSha256": "bcd6bec720812b20c66025f339fe1103ae2d1c928525bcb894c8eab3a22f1752",
-      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it. He said it like it settled something.",
+      "initial": "SJ is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it. He said it like it settled something.",
       "note": "Erase only “He said it like it settled something.” Keep every earlier sentence intact."
     },
     "feedback-queue": {
@@ -607,7 +607,7 @@
         }
       ],
       "sourceTextSha256": "20f5df2abfce998ae9fdfc523f826587353dc8cb4780bdb922c3c6e8c7b9eec7",
-      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.",
+      "initial": "SJ is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.",
       "note": "Append the review-queue paragraph as Brendan reads it."
     },
     "feedback-careful": {
@@ -628,7 +628,7 @@
         }
       ],
       "sourceTextSha256": "eb584f744ed3dc6fd6cca28631b326fe0f4f7ccc4728eb4286ec0eea23a004ba",
-      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.",
+      "initial": "SJ is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.",
       "note": "Type the tooling sentence, then hold it through the double reading."
     },
     "feedback-hedge": {
@@ -649,7 +649,7 @@
         }
       ],
       "sourceTextSha256": "6da8f98bcf9dae98728de45a4762532ce52fa3e23cd2cfd1cbd304a560eca133",
-      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one.",
+      "initial": "SJ is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one.",
       "note": "Append the hedge without changing the previous paragraphs."
     },
     "feedback-race": {
@@ -670,7 +670,7 @@
         }
       ],
       "sourceTextSha256": "93404c626dc8f77ac3be92b90d8b68016ae6a390e81baa07c04326beb96a73bb",
-      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. ",
+      "initial": "SJ is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one. ",
       "note": "Append the race-condition credit. Hold all four paragraphs through Brendan’s unfinished spoken line."
     },
     "feedback-submit": {
@@ -694,7 +694,7 @@
         }
       ],
       "sourceTextSha256": "fc29093c8161052ad2c2ca1eabfd74b2b5a372d5970111170d20445863d97fce",
-      "initial": "Liam is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one.  He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.",
+      "initial": "SJ is the strongest engineer on this team.\n\nHe's running a local setup instead of the tools the rest of us are on, and it's slower. He told me that himself he measured two sprints, with it and without it, and he was slower with it.\n\nReview turnaround on his queue is long. There was a four-line fix that sat for nine days. I don't think that's carelessness. I think he reads everything and there's a lot to read.\n\nThe newer engineers have started treating his position on the tooling as the careful one.  He was right about the race condition on the migration PR. It would have corrupted timestamps in production and nobody else caught it.",
       "note": "Submit the completed four paragraphs. No deletion on this cue."
     },
     "promotion-empty": {
@@ -775,7 +775,7 @@
       ],
       "sourceTextSha256": "595f3d57ebc409bafa6fd36b2412762684b0b75b84818213300fec75dc36f201",
       "incoming": "morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..",
-      "note": "Show Liam’s 06:02 message on Brendan’s phone. The reply is still empty."
+      "note": "Show SJ’s 06:02 message on Brendan’s phone. The reply is still empty."
     },
     "phone-warning": {
       "scene": "s20",
@@ -1216,7 +1216,7 @@
         },
         {
           "op": "answer",
-          "text": "Authenticated as Liam\ncompany-dev\ncompany-build-artifacts",
+          "text": "Authenticated as SJ\ncompany-dev\ncompany-build-artifacts",
           "seconds": 5
         }
       ],

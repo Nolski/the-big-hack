@@ -135,7 +135,7 @@ function updateTypingSound(){
 setInterval(updateTypingSound,80);
 
 // Authoring never changes a running performance. A revision is loaded explicitly.
-let scriptRevision=initialSnapshot?.revision||null, editRevision=null;
+let scriptRevision=initialSnapshot?.revision||null;
 const updateButton=$('loadScriptUpdate');
 async function scriptCheck(){
  try {const r=await fetch('/api/script/revision',{cache:'no-store'});if(!r.ok)return;
@@ -158,26 +158,5 @@ async function loadScript(){
  updateButton.hidden=true;status('Updated script loaded · paused');
 }
 updateButton.onclick=()=>loadScript().catch(e=>status(e.message,true));
-$('editScriptCue').onclick=async()=>{
- if(state.running)toggle();
- try {
- const snapshot=await fetch('/api/script',{cache:'no-store'}).then(r=>r.json());
- const line=snapshot.scenes.flatMap(s=>s.lines).find(l=>l.id===cue().id);
- if(!line)throw Error('This cue was removed. Load the updated script.');
- editRevision=snapshot.revision;
- $('scriptText').value=line.text;$('scriptDirection').value=line.direction;
- $('scriptType').value=line.type;
- $('scriptSpeaker').innerHTML='<option value="">Stage direction</option>'+cast.map(c=>`<option value="${esc(c.id)}">${esc(c.name)}</option>`).join('');
- $('scriptSpeaker').value=line.speaker;
- $('scriptSaveStatus').textContent='Changes are shared with the storyboard. Changed speech needs a new recording.';
- $('scriptEditDialog').showModal();
- }catch(e){status(e.message,true)}
-};
-$('saveScriptCue').onclick=async()=>{
- try {
- const r=await fetch('/api/script/cue',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:cue().id,revision:editRevision,type:$('scriptType').value,speaker:$('scriptSpeaker').value,text:$('scriptText').value,direction:$('scriptDirection').value})});
- if(!r.ok)throw Error(r.status===409?'The script changed elsewhere. Close and reopen this editor before saving.':'Could not save. Check the speaker and cue type.');
- $('scriptEditDialog').close();await loadScript();
- }catch(e){$('scriptSaveStatus').textContent=e.message;}
-};
+$('editScriptCue').onclick=()=>{if(state.running)toggle();window.open('/editor.html?scene='+encodeURIComponent(cue().scene)+'&line='+encodeURIComponent(cue().id),'script-editor');};
 scriptCheck();setInterval(scriptCheck,2500);

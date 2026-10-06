@@ -4,9 +4,11 @@ from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlparse,parse_qs,unquote
 import argparse,json,re,threading,uuid
+from editor_api import EditorAPI
 ROOT=Path(__file__).resolve().parent
 from script_store import ScriptStore, Conflict
 STORE=ScriptStore(ROOT)
+EDITOR=EditorAPI(STORE)
 LOCK=threading.Lock()
 class Handler(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
@@ -14,7 +16,7 @@ class Handler(SimpleHTTPRequestHandler):
   if args and str(args[1] if len(args)>1 else '') not in ['200','206','304']:super().log_message(fmt,*args)
  def allowed(self):
   p=unquote(urlparse(self.path).path)
-  return not any(s.startswith('.') for s in p.split('/')) and not p.startswith(('/production/','/tools/','/legacy/'))
+  return not any(s.startswith('.') for s in p.split('/')) and not p.startswith(('/production/','/tools/','/legacy/','/script-history/'))
  def send_head(self):
   if not self.allowed():self.send_error(403);return
   if urlparse(self.path).path=='/overrides.json' and not (ROOT/'overrides.json').exists():
@@ -40,26 +42,30 @@ class Handler(SimpleHTTPRequestHandler):
     if not block:break
     outputfile.write(block);count-=len(block)
   except (BrokenPipeError,ConnectionResetError):pass
- def json_response(self,data):
-  raw=json.dumps(data,indent=2).encode();self.send_response(200);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(raw)));self.end_headers();self.wfile.write(raw)
+ def json_response(self,data,status=200):
+  raw=json.dumps(data,indent=2).encode();self.send_response(status);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(raw)));self.end_headers();self.wfile.write(raw)
  def do_GET(self):
   route=urlparse(self.path).path
+  if route in ('/api/editor','/api/revision','/api/history','/api/proof'):return self.json_response(EDITOR.handle('GET',route))
+  if route=='/guide':
+   raw=(ROOT.parent/'README.md').read_bytes();self.send_response(200);self.send_header('Content-Type','text/plain; charset=utf-8');self.send_header('Content-Length',str(len(raw)));self.end_headers();self.wfile.write(raw);return
   if route=='/api/script':return self.json_response((lambda s:{'revision':__import__('script_store').digest(s),'scenes':STORE.scenes(s),'show':s})(STORE.read()))
   if route=='/api/script/revision':return self.json_response({'revision':STORE.revision()})
   return super().do_GET()
- def do_PUT(self):
+ def editor_write(self,method):
   origin=self.headers.get('Origin')
-  if origin and origin!=f'http://{self.headers.get("Host")}':self.send_error(403);return
-  if urlparse(self.path).path!='/api/script/cue':self.send_error(404);return
+  if (origin and origin!=f'http://{self.headers.get("Host")}') or self.headers.get('Sec-Fetch-Site')=='cross-site':self.send_error(403);return
   try:
    length=int(self.headers.get('Content-Length','0'))
-   if length<1 or length>100000:raise ValueError('Invalid edit size')
+   if length<1 or length>2_000_000:raise ValueError('Invalid edit size')
    payload=json.loads(self.rfile.read(length))
-   revision=STORE.update_cue(payload['id'],payload)
-   self.json_response({'revision':revision})
-  except Conflict as e:self.send_error(409,str(e))
-  except (ValueError,KeyError,StopIteration) as e:self.send_error(400,str(e))
+   return self.json_response(EDITOR.handle(method,unquote(urlparse(self.path).path),payload))
+  except Conflict as e:self.json_response({'detail':str(e)},409)
+  except (ValueError,KeyError,StopIteration,TypeError) as e:self.json_response({'detail':str(e) or 'Unknown scene or cue'},400)
+ def do_PUT(self):return self.editor_write('PUT')
+ def do_DELETE(self):return self.editor_write('DELETE')
  def do_POST(self):
+  if urlparse(self.path).path in ('/api/undo','/api/redo'):return self.editor_write('POST')
   origin=self.headers.get('Origin')
   if origin and origin!=f'http://{self.headers.get("Host")}':self.send_error(403);return
   if self.headers.get('Sec-Fetch-Site')=='cross-site':self.send_error(403);return
@@ -96,4 +102,4 @@ class Handler(SimpleHTTPRequestHandler):
    else:self.send_error(404);return
    tmp=f.with_suffix('.tmp');tmp.write_text(json.dumps(data,indent=2)+'\n');tmp.replace(f);self.json_response(data)
 if __name__=='__main__':
- ap=argparse.ArgumentParser();ap.add_argument('--port',type=int,default=8040);ap.add_argument('--host',default='0.0.0.0',help='Listening address; use 127.0.0.1 for this computer only');a=ap.parse_args();print(f'The Big Hack: http://127.0.0.1:{a.port} (listening on {a.host})',flush=True);ThreadingHTTPServer((a.host,a.port),Handler).serve_forever()
+ ap=argparse.ArgumentParser();ap.add_argument('--port',type=int,default=8040);ap.add_argument('--host',default='127.0.0.1',help='Listening address; use 127.0.0.1 for this computer only');a=ap.parse_args();print(f'The Big Hack: http://127.0.0.1:{a.port} (listening on {a.host})',flush=True);ThreadingHTTPServer((a.host,a.port),Handler).serve_forever()
