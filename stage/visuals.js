@@ -199,10 +199,11 @@ function courtVisual(c,side){
  return physicalPhoto(c.speaker==='judge'?'judge-room':'prosecutor-room','courtroom',c.speaker==='judge'?'Judge':'Prosecutor');
 }
 function radio(c){return `<div class="radioDevice"><div class="radioAntenna"></div><div class="radioBody"><div class="radioLCD"><small>LoRa / PRIVATE LINK</small><strong>MARCUS</strong><span>CONNECTED</span><div class="radioWave"></div></div><div class="radioGrille"></div><div class="radioDial"></div></div></div>`}
-function counsel(c,side){
- if(c.state==='black')return side==='left'&&c.beat===32?`<div class="bareRoom"><div class="bareTable"><div class="signedPaper">SJ Mkrtchyan</div></div></div>`:'';
- if(side==='left')return `<div class="agreementTable">${screens[c.state]?.(c)||''}</div>`;
- return `<div class="bareRoom"><div class="counselMonitor"><div class="counselAvatar">C</div><span>Defence Counsel</span><small>${c.isSpeaking?'Speaking':'Connected'}</small></div><div class="bareTable"></div><div class="manualCalendar"><strong>14</strong><span class="${c.beat>=26?'vacated':''}">Continued hearing</span>${c.beat>=26?'<small>Removed from calendar</small>':''}</div></div>`;
+function hearingCalendar(vacated){return `<div class="bareRoom"><div class="bareTable"></div><div class="manualCalendar"><strong>14</strong><span class="${vacated?'vacated':''}">Continued hearing</span>${vacated?'<small>Removed from calendar</small>':''}</div></div>`}
+function continuity(c,side){
+ if(side==='right')return c.state==='knowingly'?`<div class="agreementTable">${screens.knowingly(c)}</div>`:c.state==='signed'?hearingCalendar(true):'';
+ if(c.staging.radioConnected)return radio(c);
+ return c.state==='signed'?`<div class="agreementTable">${screens.signed(c)}</div>`:'';
 }
 function renderBaseVisual(c,side){
  if(c.montage)return '';
@@ -216,7 +217,6 @@ function renderBaseVisual(c,side){
  if(c.offstage)return '';
  const action=renderScreenAction(c,side);if(action!==null)return action;
  if(isWorm(c))return wormMarkup(c,side);
- if(c.scene==='s24')return counsel(c,side);
  if(c.state==='black')return '';
  if(c.scene==='s19')return side==='right'&&c.staging?.callCast?.length?laptop(c):'';
  if(c.scene==='s20b')return side==='left'&&c.beat>=48?screens[c.state]?.(c)||'':'';
@@ -232,7 +232,7 @@ function renderBaseVisual(c,side){
   return '';
  }
  if(c.scene==='s23')return courtVisual(c,side);
- if(c.scene==='s23b')return side==='left'&&c.staging.radioConnected?radio(c):'';
+ if(c.scene==='s23b')return continuity(c,side);
  if(c.scene==='s06'&&c.beat>=26){if(side==='left')return screens['race-code']();return c.beat>=31?screens[c.state]?.(c)||'':zoom(c)}
  if(c.scene==='s11b'&&c.beat>=43&&side==='left')return screens['local-model']();
  if(c.scene==='s11c'&&c.beat>=38&&side==='right')return board(false);
@@ -253,7 +253,7 @@ export function sfxForCue(c){if(Array.isArray(c.sfx))return c.sfx;const exact={s
 // Illustrative theatre counter, deliberately independent of cue/video loop length.
 export function counterProfile(c){
  if(c.scene==='s20'&&c.beat>=43){const stops=[[43,16,2],[44,41,5],[45,128,8],[46,300,12],[47,512,20],[48,1024,35],[50,1536,50],[51,4096,150],[54,24000,300],[55,48000,500],[56,96000,1000],[57,1000000,2000],[58,1200000,3000],[59,1800000,4000],[60,2400000,5000]];const [,base,rate]=stops.findLast(([beat])=>c.beat>=beat);return {base,rate,visible:!isWorm(c),large:false}}
- const later={s20b:3000000,s22:6000000,s23:8000000,s23b:10000000,s24:12000000};
+ const later={s20b:3000000,s22:6000000,s23:8000000,s23b:10000000};
  return {base:later[c.scene]||0,rate:later[c.scene]?5000:0,visible:!!later[c.scene]&&c.state!=='black'&&!c.offstage&&!isWorm(c),large:false};
 }
 

@@ -1,0 +1,340 @@
+{
+  "scene": "s23b",
+  "approach": "The statement of facts, the cover-up, the signing and the ending are fixed, so the time comes out of the Marcus radio call. Most of it is Marcus pleading with SJ to fight, in several passes that make the same point, plus a symbol/jury exchange that the 151-years line already covers. Cut the repeat pleading, keep one Luddite line (the Australia one) and Marcus's \"same system\" argument so \"Marcus was right\" still lands.",
+  "suggestions": [
+    {
+      "title": "Cut Marcus's second round of 'fight it' pleading",
+      "kind": "cut",
+      "cues": [
+        "s23b_l23",
+        "s23b_l25",
+        "s23b_l26"
+      ],
+      "edits": [],
+      "why": "Marcus has already made the fight-it case in s23b_l19 and s23b_l21. \"If it was me I'd fight it\", the famous speech and the social media Luddite line all repeat it. SJ's \"I've made up my mind\" then goes straight to \"Marcus.\" / \"That's it?\", which still plays as SJ shutting him down.",
+      "keeps": "The Luddite gag survives in s23b_l17 (Australia), which follows up s19's narrator line about 70 sent to Australia. The \"same system\" argument in s23b_l19 still sets up \"Marcus was right.\"",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s23b_l23": "If it was me I'd fight it. I'm not being funny about it. If it was me I would do it.",
+        "s23b_l25": "I'd be using the opportunity to educate the world every day. Every single day, I mean it. And I'd be there. We could make you famous SJ, I'm telling you that now.",
+        "s23b_l26": "They all went quietly in the end. When the Luddites were hung, social media wasn't around. We can change things this time around."
+      },
+      "number": 146,
+      "riskWas": "low",
+      "riskWhy": "The argument itself is repetition of s23b_l19, but the cut also takes Marcus's \"If it was me I'd fight it\" with the silent stage beat after it, a unique laugh, and his wish to make SJ famous, the vanity that drives his side of the call. No plot or setup is lost, so medium rather than high.",
+      "loses": [
+        "Joke: \"If it was me I'd fight it\" followed by \"Nobody says anything about that\" (s23b_l23, s23b_l24)",
+        "Character: Marcus wanting to be there and make SJ famous, his cause as self-promotion (s23b_l25)",
+        "Colour: last turn of the Luddite running gag, \"social media wasn't around\" (s23b_l26); the gag still lands in s23b_l17"
+      ],
+      "directionsKept": 1
+    },
+    {
+      "title": "Cut the Luigi symbol line and the jury speech",
+      "kind": "cut",
+      "cues": [
+        "s23b_l14",
+        "s23b_l15"
+      ],
+      "edits": [],
+      "why": "The symbol idea is already raised in s23b_l6, and s23b_l18 (\"Eighteen months, Marcus. Against a hundred and fifty-one.\") gives SJ's reason for the deal more cleanly than the jury speech. Without these, s23b_l13 (\"It's not that bad.\") runs into Marcus's \"And the company? A fine.\"",
+      "keeps": "Why SJ is taking the deal is still there in s23b_l11 and s23b_l18, and the narrator's real reason (covering for Brendan) is untouched. The world-falling-apart texture stays in the tickers and the city lights.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s23b_l14": "SJ. You could be a better version Luigi Manggioni! You're a symbol of hope for guys like me everywhere.",
+        "s23b_l15": "Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their electicity doesn't work reliably anymore, and that planes don't fly reliably anymore..."
+      },
+      "number": 147,
+      "riskWhy": "The Luigi line is a unique joke about Marcus's hero worship, and the jury speech is the only place SJ says why a trial is unwinnable in terms of the broken world. s23b_l11 and s23b_l18 still give the deal's logic, so no plot fact goes.",
+      "loses": [
+        "Joke: Marcus calling SJ \"a better version Luigi Manggioni\" and \"a symbol of hope for guys like me\" (s23b_l14)",
+        "Character: SJ reading the jury as people angry about failing power and planes, his practical reason for not fighting (s23b_l15)",
+        "Colour: the world-falling-apart detail of unreliable electricity and planes, echoing s14a_l32's air traffic controllers"
+      ]
+    },
+    {
+      "title": "Cut the 'just for once' interruption and online symbol",
+      "kind": "cut",
+      "cues": [
+        "s23b_l5",
+        "s23b_l6"
+      ],
+      "edits": [],
+      "why": "Marcus's \"four messages\" and \"symbol online\" set up the martyr idea that s23b_l19 and s23b_l21 already make. With these gone, SJ answers Marcus's opening gush with \"I'm taking a plea deal.\", and that hard turn plays better.",
+      "keeps": "Marcus's opening enthusiasm (s23b_l2, s23b_l4) and SJ's \"I didn't say anything\" stay, so the call still starts on Marcus's wrong reading of the trial.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s23b_l5": "Marcus can you just for once...",
+        "s23b_l6": "I've had four messages about it. Everyone is making you out to be a martyr for the layoffs that are happening. You've become kind of a symbol online"
+      },
+      "number": 148,
+      "riskWhy": "SJ's half-finished interruption and the \"symbol online\" news restate Marcus's fight-it pitch that s23b_l19 makes later. The only cost is that s23b_l14's \"You're a symbol\" (if kept) loses its first mention, but it still reads on its own.",
+      "loses": [
+        "Character: SJ trying and failing to get a word in, \"Marcus can you just for once...\" (s23b_l5)",
+        "Colour: SJ framed online as a martyr for the layoffs (s23b_l6); also echoed in s23b_l14 and s23b_l25"
+      ]
+    },
+    {
+      "title": "Cut SJ's three short refusals",
+      "kind": "cut",
+      "cues": [
+        "s23b_l20",
+        "s23b_l21",
+        "s23b_l22"
+      ],
+      "edits": [],
+      "why": "\"No Marcus\" / \"real difference\" / \"I've made up my mind\" is one more lap of the same argument. If the first suggestion is taken too, \"If you fight it, at least it'll mean something\" goes straight to SJ's \"Marcus.\" and Marcus's \"That's it?\", which works as the refusal.",
+      "keeps": "Marcus's \"same system\" argument in s23b_l19 and SJ ending the call.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s23b_l20": "No Marcus.",
+        "s23b_l21": "You have an opportunity to make a real difference SJ.",
+        "s23b_l22": "I've made up my mind"
+      },
+      "number": 149,
+      "riskWhy": "Already in the script.",
+      "loses": []
+    },
+    {
+      "title": "Cut the company fine and the encrypted model",
+      "kind": "cut",
+      "cues": [
+        "s23b_l16"
+      ],
+      "edits": [],
+      "why": "The ticker \"Lawmakers ask why the model has not been punished\" and the worm direction (s24_l33) already make the point that the thing that did it faces nothing. This is a good line, so only take it if the time is needed.",
+      "keeps": "Model unpunished survives in the ticker. s23b_l17 still works after s23b_l13 or s23b_l12 as Marcus changing the subject to the Luddites.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s23b_l16": "And the company? A fine. The share price went up after the statement, I checked. They've put the model into evidence and encrypted it. That's the only thing anybody's locked up that actually did anything."
+      },
+      "number": 150,
+      "riskWhy": "The company getting off with a fine and its share price rising is said nowhere else, and the model locked up as the only thing that \"actually did anything\" is a sharp line. The s24_l30 ticker keeps the model-unpunished point, so this is a loss of texture, not plot.",
+      "loses": [
+        "Plot: the company only fined and its share price up after the statement (nowhere else)",
+        "Joke: the model put into evidence and encrypted, \"the only thing anybody's locked up that actually did anything\" (s23b_l16); partly carried by the s24_l30 ticker",
+        "Character: Marcus having checked the share price"
+      ]
+    },
+    {
+      "title": "Tighten Marcus's 'same system' argument",
+      "kind": "trim",
+      "cues": [
+        "s23b_l19"
+      ],
+      "edits": [
+        {
+          "cue": "s23b_l19",
+          "text": "Look, they've put charges on you for something a computer did. It's the same system. If you fight it, at least it'll mean something"
+        }
+      ],
+      "why": "\"for an AI someone else created\" and \"You are the same case\" restate the clause before them.",
+      "keeps": "\"It's the same system\", which the narrator's \"Marcus was right. The system brought us here.\" pays off.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s23b_l19": "Look, they've put charges on you for something a computer did, for an AI someone else created. SJ. It's the same system. You are the same case. If you fight it, at least it'll mean something"
+      },
+      "number": 151,
+      "riskWhy": "The cut words restate the clause before them, and \"It's the same system\" stays to set up s24_l36 \"The system brought us here\", also echoing s23_l26.",
+      "loses": [
+        "Nothing substantive: \"for an AI someone else created\" and \"You are the same case\" repeat \"something a computer did\" and \"same system\""
+      ]
+    },
+    {
+      "title": "Trim Marcus's opening jury line",
+      "kind": "trim",
+      "cues": [
+        "s23b_l4"
+      ],
+      "edits": [
+        {
+          "cue": "s23b_l4",
+          "text": "You let the Jury see you. They'll know you're just a product of the system."
+        }
+      ],
+      "why": "The trailing \"we won't repeat the mistakes of past\" is Marcus's general lesson, and he says it more specifically elsewhere.",
+      "keeps": "\"product of the system\", the first plant for the ending's \"The system brought us here.\"",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s23b_l4": "You let the Jury see you. They'll know you're just a product of the system, we won't repeat the mistakes of past, we can do better this time...."
+      },
+      "number": 152,
+      "riskWhy": "The trailing clause is Marcus's general history lesson, already voiced in s01_l28 (\"doomed to repeat it\"), and \"product of the system\" stays to plant s24_l36.",
+      "loses": [
+        "Colour: Marcus running on into his lesson-from-history speech, a small echo of s01_l28 (s23b_l4)"
+      ]
+    },
+    {
+      "title": "Trim SJ's prison description",
+      "kind": "trim",
+      "cues": [
+        "s23b_l13"
+      ],
+      "edits": [
+        {
+          "cue": "s23b_l13",
+          "text": "It's fourteen with good conduct. There's a library. They do courses. It's not that bad."
+        }
+      ],
+      "why": "\"It's a low-security place, I've looked at it\" is implied by the details that follow.",
+      "keeps": "SJ talking himself into it with small mundane details, right after the narrator's line about his reasons.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s23b_l13": "It's fourteen with good conduct. It's a low-security place, I've looked at it. There's a library. They do courses. It's not that bad."
+      },
+      "number": 153,
+      "riskWhy": "\"Low-security place, I've looked at it\" is implied by the library and courses that follow, and the mundane self-persuasion survives.",
+      "loses": [
+        "Nothing substantive: the library and courses already show SJ has researched the prison"
+      ]
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "cuttable with rewrites",
+    "summary": "s23b is the play's ending before the epilogue. SJ takes the plea, signs the statement of facts that says he acted knowingly, and quietly keeps Brendan's 09:14 secret. Then the judge rejects the plea, the worm runs on and the lights go out. The plot spine can survive if the narrator lines and the signing move to the end of s23 with one short bridge, but the play loses the last Marcus and SJ scene, Marcus's Luddite and martyr payoffs, and most of the felt weight of SJ's choice.",
+    "lost": [
+      {
+        "kind": "Plot",
+        "what": "SJ takes an eighteen-month plea deal instead of fighting the 151-year maximum",
+        "elsewhere": null
+      },
+      {
+        "kind": "Plot",
+        "what": "SJ signs a statement of facts saying he acted 'knowingly'",
+        "elsewhere": "s24_l25 if moved to end of s23"
+      },
+      {
+        "kind": "Payoff",
+        "what": "SJ protects Brendan: he knows who was at the machine at 09:14 (s23_l12, s23_l44) and does the sums on who can better afford eighteen months",
+        "elsewhere": "cue_934a26b82ba547fda0628efcca6b2573 if moved to end of s23"
+      },
+      {
+        "kind": "Payoff",
+        "what": "Marcus asks whether anyone else was ever on the account and SJ says no, closing the 09:14 thread out loud",
+        "elsewhere": null
+      },
+      {
+        "kind": "Plot",
+        "what": "The judge rejects the plea and by sentencing 151 years would have been a good deal",
+        "elsewhere": "s24_l34 if moved"
+      },
+      {
+        "kind": "Payoff",
+        "what": "Marcus was right, the system brought us here: the closing statement of the theme Marcus argued all play (s22_l3, s23_l26)",
+        "elsewhere": "s24_l36 if moved"
+      },
+      {
+        "kind": "Payoff",
+        "what": "The calendar entry for the fourteenth disappears, paying off s23_l49 and s23_l50",
+        "elsewhere": "s24_l37 if moved"
+      },
+      {
+        "kind": "Setup",
+        "what": "World collapse that sets up the s25 epilogue (utilities cut, worm uncontained, lawmakers want the model punished, analogue TV back, city lights out)",
+        "elsewhere": "s23_l38 carries part of it (onboard computers banned); s25_l3 states the result"
+      },
+      {
+        "kind": "Joke",
+        "what": "Marcus's Luddites-in-Australia line pays off his John Henry and Australian work camp rant",
+        "elsewhere": "cue_f611e6705148485ca6a655ac76b1c164 keeps the setup only"
+      },
+      {
+        "kind": "Joke",
+        "what": "Marcus calls SJ a better version of Luigi Mangione and a symbol online",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Marcus, after testifying against SJ, calls him on an illicit LORA radio and pushes him to fight for the cause; SJ hangs up on him. Their last exchange in the play.",
+        "elsewhere": null
+      },
+      {
+        "kind": "Staging",
+        "what": "SJ alone in the emptied flat by candlelight, the stars coming out as the city goes dark",
+        "elsewhere": null
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s23_l9",
+        "problem": "Brendan says 'He wouldn't agree to it' about the smaller number. Without s23b nobody shows SJ agreeing, so the turn has no answer.",
+        "fix": "Covered by the narrator bridge added after s23_l50."
+      },
+      {
+        "cue": "s23_l12",
+        "problem": "SJ goes still at the 09:14 timestamp and says nothing. The only payoff is in s23b (cue_934a26b82ba547fda0628efcca6b2573, s24_l19).",
+        "fix": "Move cue_934a26b82ba547fda0628efcca6b2573 to the end of s23."
+      },
+      {
+        "cue": "s23_l44",
+        "problem": "'He has been carrying it since' points forward to SJ's choice in s23b.",
+        "fix": "Same move of cue_934a26b82ba547fda0628efcca6b2573."
+      },
+      {
+        "cue": "s23_l49",
+        "problem": "'We'll resume on the fourteenth' and the manual calendar (s23_l50) set up the calendar entry vanishing in s24_l37.",
+        "fix": "Move s24_l37 to the end of s23."
+      },
+      {
+        "cue": "s25_l3",
+        "problem": "'Technology has been unlawful for use for the past ten years' leans on the collapse shown in s23b's tickers and blackout.",
+        "fix": "Move s24_l34 to s24_l37 to the end of s23; s23_l38 already shows the onboard computer ban."
+      }
+    ],
+    "changes": [
+      {
+        "action": "add",
+        "where": "after s23_l50",
+        "detail": "Narrator bridge so the audience knows SJ took the deal and signed.",
+        "text": "NARRATOR: Before the fourteenth, the prosecution offered eighteen months. SJ took it."
+      },
+      {
+        "action": "move",
+        "where": "cue_934a26b82ba547fda0628efcca6b2573",
+        "detail": "Move the 'SJ has done the sums' narrator line to follow the bridge at the end of s23."
+      },
+      {
+        "action": "move",
+        "where": "s24_l25",
+        "detail": "Move the signing stage direction after it, staged at the defence table instead of the flat."
+      },
+      {
+        "action": "move",
+        "where": "s24_l34",
+        "detail": "Move the plea-rejected narrator line after the signing."
+      },
+      {
+        "action": "move",
+        "where": "s24_l35",
+        "detail": "Move the lights flickering and holding low after it."
+      },
+      {
+        "action": "move",
+        "where": "s24_l36",
+        "detail": "Move 'Marcus was right' after it."
+      },
+      {
+        "action": "move",
+        "where": "s24_l37",
+        "detail": "Move the calendar entry disappearing and blackout to close s23."
+      },
+      {
+        "action": "cut",
+        "where": "rest of s23b",
+        "detail": "Cut the Marcus LORA call (s23b_l1 to s23b_l30 with the statement of facts exchange), the tickers s24_l30 and s24_l31, and the flat staging s23b_l31, s23b_l32, s24_l33."
+      }
+    ],
+    "risk": "high",
+    "riskWhy": "This is the play's resolution; the moved narrator lines keep the facts, but the plea argument, SJ shielding Brendan in his own words, and Marcus's last scene all go.",
+    "writtenOn": "2026-10-05"
+  }
+}

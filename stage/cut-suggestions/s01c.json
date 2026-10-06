@@ -1,0 +1,315 @@
+{
+  "scene": "s01c",
+  "approach": "The montage is fixed, so the 1.5 minutes has to come out of about 3.7 minutes of dialogue. Most of it is in two places: SJ's half-apology about the degree at the top, and a second lap of the review argument (guided tour, marking its own homework, evals) that repeats points s01 and s01b already made. The rest is clause trims inside SJ's longer speeches. Brendan keeps at least two attempts to show his process, and SJ talks over every one.",
+  "suggestions": [
+    {
+      "title": "Cut SJ's half-apology about the degree",
+      "kind": "cut",
+      "cues": [
+        "s01c_l2",
+        "s01c_l3",
+        "s01c_l4",
+        "s01c_l5"
+      ],
+      "edits": [],
+      "why": "The degree insult has already played out: s01 has it on stage and s01b has Kristina weighing an HR conversation. SJ's later apology in s19_l8 (\"I know I gave you some shit for it\") lands harder if he hasn't already half-apologised in the first act. If you also take the trim to s01c_l6, the narrator line goes straight into SJ's reason for calling.",
+      "keeps": "The insult as a character engine (s01, s01b). SJ's \"I'm the one following the rules\" defence comes back in full in s11b_l5. The scene still opens on SJ calling about the PR.",
+      "risk": "medium",
+      "reliesOn": [
+        "s11b_l5",
+        "s19_l8"
+      ],
+      "against": {
+        "s01c_l2": "Before you say anything. The Kristina thing this morning, what I said about her degree. That landed like shit. I know. I shouldn't have said it like that.",
+        "s01c_l3": "…Okay. Yeah. It wasn't great...",
+        "s01c_l4": "But I wasn't wrong to be worried! I'm not trying to bully her, I'm just tired of getting overridden when I'm the one following the rules! I just... struggle to convey that, I guess.",
+        "s01c_l5": "…Honestly? If you said it to her the way you just said it to me, it'd go a lot better."
+      },
+      "number": 26,
+      "riskWhy": "Loses SJ's only act-one acknowledgement that the degree comment went too far, plus Brendan coaching him, but no plot fact: the insult itself plays in s01 and s01b, and 'following the rules' returns in s11b_l5. Note the separate conflict with #91, which cuts the later apology in s19_l8.",
+      "loses": [
+        "Character: SJ admitting the degree comment 'landed like shit' and failing to say it to Kristina (only later echo is s19_l8, which #91 would cut)",
+        "Character: Brendan quietly coaching SJ ('If you said it to her the way you just said it to me')",
+        "Character: SJ's 'I'm the one following the rules' self-image, first stated here (carried in s11b_l5)"
+      ]
+    },
+    {
+      "title": "Cut the second lap: guided tour, homework, evals",
+      "kind": "cut",
+      "cues": [
+        "s01c_l16",
+        "s01c_l17",
+        "s01c_l18"
+      ],
+      "edits": [],
+      "why": "\"Marking its own homework\" is SJ's s01 line, and s01b_l38 repeats it before Brendan answers it in s01b_l44 to l46 (he writes the integration tests himself). Here it is said a third time and answered a second time. With these lines gone, s01c_l15 (\"blindly believing in autocomplete\") leads straight into s01c_l19 (\"You've all decided the thing is smart\"), and that still makes sense.",
+      "keeps": "Guardrail 1: Brendan still tries to show SJ his process in s01c_l9, l12 and l14, and SJ cuts across him each time. The stage direction at s01c_l20, where he gives up, still plays.",
+      "risk": "high",
+      "reliesOn": [
+        "s01b_l38",
+        "s01b_l44"
+      ],
+      "against": {
+        "s01c_l16": "SJ, please, give me two minutes. Let me actually show you how I reviewed it. There's the plan, there's the whole session, the tests I wrote, the way I...",
+        "s01c_l17": "I don't need the guided tour of Cursor, Brendan. I know how it works better than you do. Like I said three hours ago, the AI wrote the code and wrote the tests that say the code's fine. It's marking its own homework.",
+        "s01c_l18": "…I wrote the evals myself actually, against our staging env..."
+      },
+      "number": 27,
+      "riskWas": "medium",
+      "riskWhy": "Touches guardrail 1: it removes two of Brendan's five attempts to show SJ his process, including the only one where he names concrete evidence (evals he wrote against staging), leaving his try-and-get-cut-off pattern noticeably thinner. Separately, it conflicts with #19 in s01b, which cuts the s01b_l44 to l46 answer this relies on.",
+      "loses": [
+        "Character: Brendan pleading for 'two minutes' to show the plan, session and tests (guardrail 1)",
+        "Character: SJ's tech vanity, 'I know how it works better than you do'",
+        "Plot: Brendan wrote the evals himself against staging (answered differently in s01b_l46, nowhere else in this form)",
+        "Colour: SJ's 'like I said three hours ago' tying the call back to the standup"
+      ]
+    },
+    {
+      "title": "Trim SJ's line-four-hundred speech",
+      "kind": "trim",
+      "cues": [
+        "s01c_l13"
+      ],
+      "edits": [
+        {
+          "cue": "s01c_l13",
+          "text": "You don't review it at all, is the answer! You can't. Nobody can read this. Here. Line four hundred. This function. What does it do?"
+        }
+      ],
+      "why": "The \"twenty years\" claim clashes with s14_l51 (\"twenty-five years\"), and the extra question repeats the one before it. The line-four-hundred challenge is the part that plays, because he points at the screen.",
+      "keeps": "SJ challenging Brendan on one function, which sets up Brendan's \"that's not really how I check it now\" attempt in s01c_l14.",
+      "risk": "low",
+      "reliesOn": [
+        "s14_l51"
+      ],
+      "against": {
+        "s01c_l13": "You don't review it at all, is the answer! You can't. Nobody can read this. I could not, in good conscience, put my name on this to ship, and I've been doing this twenty years. Here. Line four hundred. This function. What does it do? Off the top of your head what does it do and why is it shaped like this?"
+      },
+      "number": 28,
+      "riskWhy": "Cuts a question that repeats 'What does it do?' and a tenure figure that clashes with 'twenty-five years' in s14_l51; the pointing-at-line-four-hundred challenge stays. Separately, #78 in s14 would cut s14_l51, which this relies on to carry SJ's tenure.",
+      "loses": [
+        "Character: SJ's 'twenty years' tenure boast and refusal to put his name on it (tenure carried in s14_l51)",
+        "Nothing substantive: 'off the top of your head... why is it shaped like this' repeats 'What does it do?'"
+      ]
+    },
+    {
+      "title": "Cut Brendan's line-400 answer and SJ's read-it rule",
+      "kind": "cut",
+      "cues": [
+        "s01c_l14",
+        "s01c_l15"
+      ],
+      "edits": [],
+      "why": "This is an alternative to the second-lap cut, not an addition to it. If you keep s01c_l16 to l18, cutting these lines removes a Brendan attempt and SJ's answer to it, and Brendan's \"give me two minutes\" follows SJ's line-four-hundred question. SJ's \"fancy autocomplete\" position comes back in full in s11b_l64.",
+      "keeps": "If this is taken alone, Brendan's attempts in s01c_l9, l12, l16 and l18 survive. Do not take it together with the second-lap cut: Brendan would be left with only l9 and l12, which is the guardrail's minimum, and the dialogue would jump from \"What does it do?\" to s01c_l19.",
+      "risk": "high",
+      "reliesOn": [
+        "s11b_l64"
+      ],
+      "against": {
+        "s01c_l14": "Well... I can tell you, but that's not really how I check it now, if you'd let me show you the process I follow...",
+        "s01c_l15": "No - that's not how you review it. You read it. Line by line. You hold the whole thing in your head. That's the job. Otherwise you're literally shutting off your brain and blindly believing in autocomplete."
+      },
+      "number": 29,
+      "riskWhy": "Touches guardrail 1 by removing Brendan's 'if you'd let me show you the process' attempt, and if taken with #27 Brendan is down to two attempts and the dialogue jumps from 'What does it do?' to s01c_l19. Also loses SJ's read-it-line-by-line rule, which is the position Brendan is trying to answer.",
+      "loses": [
+        "Character: Brendan's attempt to show his process instead of answering the line-400 quiz (guardrail 1)",
+        "Character: SJ's 'hold the whole thing in your head, that's the job' creed (his autocomplete view returns in s11b_l64)",
+        "Setup: 'blindly believing in autocomplete' anticipates SJ's own 'fancy autocomplete' in s11b_l64, which plays fine without it"
+      ],
+      "dismissed": true
+    },
+    {
+      "title": "Trim SJ's \"you're good\" speech",
+      "kind": "trim",
+      "cues": [
+        "s01c_l21"
+      ],
+      "edits": [
+        {
+          "cue": "s01c_l21",
+          "text": "Look. I'm not doing this to be a dick. I'm trying to help you. You're good, Brendan, you're actually good, that's why I bother. I don't want to watch you turn into someone who can't work without the thing holding his hand."
+        }
+      ],
+      "why": "The swipe at Marcus is one of many. SJ insults Marcus to his face in s01_l21 and s11b_l18, which hit harder than an aside behind his back.",
+      "keeps": "SJ's backhanded mentoring, which makes his s19 advice to Brendan read as a continuation.",
+      "risk": "medium",
+      "reliesOn": [
+        "s01_l21",
+        "s11b_l18"
+      ],
+      "against": {
+        "s01c_l21": "Look. I'm not doing this to be a dick. Really. I'm trying to help you. You're good, Brendan, you're actually good, that's why I bother. Most of these idiots we work with like Marcus, I wouldn't waste the breath on. I don't want to watch you turn into someone who can't work without the thing holding his hand."
+      },
+      "number": 30,
+      "riskWas": "low",
+      "riskWhy": "Deletes a unique joke: SJ calling colleagues idiots in the middle of insisting he is not being a dick, the only time he runs Marcus down behind his back. No plot or setup depends on it. Separately, #4 in s01 would cut s01_l21, which this relies on for SJ's contempt for Marcus.",
+      "loses": [
+        "Joke: 'Most of these idiots we work with like Marcus, I wouldn't waste the breath on', inside a speech about not being a dick",
+        "Nothing substantive: 'Really.' is padding"
+      ]
+    },
+    {
+      "title": "Trim the PR inventory",
+      "kind": "trim",
+      "cues": [
+        "s01c_l11"
+      ],
+      "edits": [
+        {
+          "cue": "s01c_l11",
+          "text": "This PR is massive, Brendan. How is anybody supposed to review this?"
+        }
+      ],
+      "why": "s01_l12 has already given the PR's size (\"Eight hundred lines in one PR\"), and the audience can see the diff on the big monitor.",
+      "keeps": "SJ grabbing the diff and complaining about its size, along with the stage direction at s01c_l10.",
+      "risk": "low",
+      "reliesOn": [
+        "s01_l12"
+      ],
+      "against": {
+        "s01c_l11": "The key-issuance service, the front-end, the auth, the deploy config. This PR is massive, Brendan. How is anybody supposed to review this?"
+      },
+      "number": 31,
+      "riskWhy": "The size of the PR is already established in s01_l12 and is on the monitor. The inventory of components is never referred to again.",
+      "loses": [
+        "Colour: the list of what the PR touches (key-issuance service, front-end, auth, deploy config), mentioned nowhere else"
+      ]
+    },
+    {
+      "title": "Trim the call setup and the danger tag",
+      "kind": "trim",
+      "cues": [
+        "s01c_l6",
+        "s01c_l8",
+        "s01c_l19"
+      ],
+      "edits": [
+        {
+          "cue": "s01c_l6",
+          "text": "The portal PR you merged. That's why I called."
+        },
+        {
+          "cue": "s01c_l8",
+          "text": "Show me the code. Walk me through what you actually did, start to finish."
+        },
+        {
+          "cue": "s01c_l19",
+          "text": "You've all decided the thing is smart because it's confident. It is not smart. It's a very fast intern who has never once in its life said \"I don't know.\""
+        }
+      ],
+      "why": "\"Yeah, well. Anyway.\" only bridges out of the apology, so it can go if the apology does. \"I want to see how you wrote this\" repeats \"walk me through\". The intern image is the punchline, and \"Do you know how dangerous that is??\" after it is a generic tag.",
+      "keeps": "SJ asking to see the code, which leads into Brendan's first attempt in s01c_l9, and the intern line, which is the scene's best line about AI.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s01c_l6": "Yeah, well. Anyway. The portal PR you merged. That's why I called.",
+        "s01c_l8": "Show me the code. Walk me through what you actually did, start to finish. I want to see how you wrote this.",
+        "s01c_l19": "You've all decided the thing is smart because it's confident. It is not smart. It's a very fast intern who has never once in its life said \"I don't know.\" And you're letting it near production! Do you know how dangerous that is??"
+      },
+      "number": 32,
+      "riskWhy": "Removes three tags that restate their own lines. One catch: if #26 is not taken, cutting 'Yeah, well. Anyway.' makes SJ jump straight from Brendan's advice to the PR with no sign he brushed it off.",
+      "loses": [
+        "Character: SJ's 'Yeah, well. Anyway.' brush-off of Brendan's advice (only matters if #26 is not taken)",
+        "Nothing substantive: 'I want to see how you wrote this' repeats 'walk me through'",
+        "Nothing substantive: 'And you're letting it near production! Do you know how dangerous that is??' is a generic tag after the intern line"
+      ],
+      "dismissed": true
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "not cuttable",
+    "summary": "s01c is the main home of guardrail 1: Brendan earnestly tries to walk SJ through his plan, session and evals, and SJ talks straight over him. It also gives SJ his half-apology for the degree remark, his 'marking its own homework' and 'fast intern' arguments, and the image of SJ alone hunting the diff for a flaw he cannot find. Deleting it leaves s01b_l51's promised one-on-one unpaid and leaves s11b and s07_l21 echoing a failure the audience never saw.",
+    "lost": [
+      {
+        "kind": "Guardrail",
+        "what": "Brendan earnestly tries to show SJ his agentic process (plan, session, his own evals) and it goes over SJ's head",
+        "elsewhere": null
+      },
+      {
+        "kind": "Payoff",
+        "what": "Pays off s01b_l50-l51: Kristina asks if Brendan has shown SJ, Brendan says he needs one on one time where SJ lets him show him",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "SJ half-apologises for the degree remark, then justifies it ('I'm tired of getting overridden'); Brendan's note that saying it that way would land better",
+        "elsewhere": null
+      },
+      {
+        "kind": "Setup",
+        "what": "SJ's 'marking its own homework' line, which Kristina quotes in s01b_l38; SJ says it nowhere else in the play",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "SJ's core anti-AI argument: read every line, hold it in your head, the AI is a confident intern who never says 'I don't know'",
+        "elsewhere": "s11b_l3, s11b_l16, s11b_l64 (read every line, fancy autocomplete); s06_l37 (confident liar)"
+      },
+      {
+        "kind": "Character",
+        "what": "SJ likes and respects Brendan ('you're actually good, that's why I bother'), contempt for Marcus",
+        "elsewhere": "s01b_l53 (Kristina: the one person he likes); s11b_l74"
+      },
+      {
+        "kind": "Plot",
+        "what": "SJ objects to the portal PR size and tells Brendan to split PRs",
+        "elsewhere": "s01_l12 (eight hundred lines, who reviewed this); s19_l8 (SJ admits he gave Brendan shit for it)"
+      },
+      {
+        "kind": "Staging",
+        "what": "SJ alone scrolling the diff, finding no flaw, not satisfied: quiet first crack in his certainty",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Brendan learns to stop pushing and goes quiet ('I hear you'), the pattern he repeats later",
+        "elsewhere": "s07_l23, s11b_l62, s11b_l70, s11b_l73"
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s01b_l38",
+        "problem": "Kristina quotes SJ: 'Marking its own homework.' SJ never says the phrase in s01; its only source is s01c_l17. Without s01c the quote has no origin anywhere.",
+        "fix": "Add the phrase to SJ in s01 near s01_l12, or reword s01b_l38 to quote something SJ actually says in s01."
+      },
+      {
+        "cue": "s01b_l51",
+        "problem": "Brendan says he needs one on one time with SJ where SJ actually lets him show him. That meeting never happens, so the setup dangles.",
+        "fix": "Keep the line as an unpaid hope (s07_l21 and s11b pick it up), or trim the second sentence."
+      },
+      {
+        "cue": "s07_l21",
+        "problem": "Kristina's 'how is SJ ever going to get better if you don't show him' plays as irony only if the audience saw Brendan try and fail in s01c. Without it, it reads as fair criticism of Brendan never trying.",
+        "fix": "Requires the guardrail beat to exist somewhere before s06."
+      },
+      {
+        "cue": "s11b_l41",
+        "problem": "Brendan's careful, narrow offer ('Just the webhook thing') echoes being shut down in s01c. Without s01c the caution is unmotivated, and guardrail 1's echo has nothing to echo.",
+        "fix": "Same as above."
+      }
+    ],
+    "changes": [
+      {
+        "action": "move",
+        "where": "s01c_time_jump_to_good_instinct",
+        "detail": "Move the montage cue to the end of s01b, after s01b_l58."
+      },
+      {
+        "action": "add",
+        "where": "after s01_l12",
+        "detail": "Give SJ the homework line at standup so s01b_l38 has a source.",
+        "text": "SJ: And let me guess, the AI wrote the tests too. It's marking its own homework."
+      },
+      {
+        "action": "move",
+        "where": "s01b, after s01b_l51",
+        "detail": "The guardrail cannot be carried by a bridge line. Keeping it would mean transplanting a cut-down s01c_l9 to l17 exchange into s01b as a call SJ joins, a restructure of s01b. Without that, guardrail 1 is lost outright."
+      }
+    ],
+    "risk": "high",
+    "riskWhy": "The scene is the only on-stage home of guardrail 1, and its s11b echo and s07_l21 depend on it.",
+    "writtenOn": "2026-10-05"
+  }
+}

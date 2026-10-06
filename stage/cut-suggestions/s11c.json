@@ -1,0 +1,367 @@
+{
+  "scene": "s11c",
+  "approach": "Most of the time goes to a long Brendan and Kristina argument about SJ's workflow and whether tinkering still matters, which recaps what s11b already staged. The cut keeps the board overheard line, Brendan's worry and peer-feedback admission, and the narrated solo build, and drops the debate, the opening small talk and the narration that follows the build.",
+  "suggestions": [
+    {
+      "title": "Cut the SJ-workflow argument, jump to peer feedback",
+      "kind": "cut",
+      "cues": [
+        "s11c_l21",
+        "s11c_l22",
+        "s11c_l23",
+        "s11c_l24",
+        "s11c_l26",
+        "s11c_l27",
+        "s11c_l28",
+        "s11c_l29",
+        "s11c_l30",
+        "s11c_l32",
+        "s11c_l33",
+        "s11c_l46"
+      ],
+      "edits": [],
+      "why": "SJ's two-sprint measurement, his no-tools rig and the fancy autocomplete idea are all shown live in s11b (s11b_l64, s11b_l71), so Brendan re-describing them here is a recap. The rules-file and 'the model is you' debate is the scene's longest stretch and nothing later refers to it; l46 only exists to echo it. Kristina's 'I'm sure you'll be fine' (l20) runs straight into Brendan's '…Yeah. Maybe.' (l34) with no new words.",
+      "keeps": "The board overheard line (l15), 'Is SJ going to be fine?' and the tech-sharing setup for s19 all stay. Brendan's and Marcus's peer feedback about SJ slowing the team (l34) survives for s19 and s23. The solo build, 'catching it is the whole skill' (l41) and the Friday-sentence unease (l47) stay intact.",
+      "risk": "medium",
+      "reliesOn": [
+        "s11b_l64",
+        "s11b_l71"
+      ],
+      "against": {
+        "s11c_l21": "I don't think SJ's setup is really that productive. I sat with him for an hour and he walked me through the whole rig. And it's genuinely impressive. It's real engineering. And it's making him slower. He told me himself: he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something.",
+        "s11c_l22": "Slower how? He's four weeks in.",
+        "s11c_l23": "It's not the four weeks. The model that fits on that box is a year behind what the rest of the team is on, and he won't let it do anything. No tools, no tests, no network. He asks it for code, it gives him bad code, and he fills in the rest by hand. He calls it fancy autocomplete. He's proud that's all it is. He's following the security policy so he can show that the CEO's AI mandate doesn't work. He's spent a lot of money proving the setup he chose is slow.",
+        "s11c_l24": "Okay but do you hear yourself, a little? You keep a document called \"Things it gets wrong.\" You've got rules files older than some of our repos. You told me the whole skill was catching it when it makes mistakes, I watched you correct a made-up endpoint. Nobody stood over you calling the tinkering unproductive. The tinkering is what sold me. He's doing exactly what you did. And honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere..",
+        "s11c_l26": "…Honest answer? I'm not sure the tinkering matters anymore.",
+        "s11c_l27": "What do you mean? Of course it does.",
+        "s11c_l28": "I went into that doc last week to add an entry, and I ended up deleting half of it instead. Whole sections about problems I haven't seen since spring. The made-up endpoints... that was real. The new models just don't do it. Not unless you run the older models. I removed my rules file recently, to see what would happen. Nothing got worse. Most of my setup is instructions for a model that I don't use anymore.",
+        "s11c_l29": "Huh.",
+        "s11c_l30": "And look, SJ being slow is normal SJ. We'll absorb that. What actually worries me is that people listen to him. He's the most senior engineer we have, and his position, out loud, at standup, in an eleven-page doc, is that the careful way to use this stuff is to never let it do anything. He's very convincing. If the new engineers decide he's right, we don't have one slow engineer. We've taught the whole team that his way is what careful looks like. He's following the wording of the policy. He knows that isn't what the CEO asked us to do. If the new engineers copy him, that becomes how the whole team works.",
+        "s11c_l32": "Or flip it around. Maybe you're so far inside this stuff you can't see yourself doing it anymore. You say the new models don't need correcting, Brendan, I've watched you work. You know what to ask for. You know what to check, and when it's lying, and when to close the window and write it yourself. You think the model got smart. I think half of what you're calling \"the model\" is you, and you can't tell anymore, because it's automatic. SJ has that too. Twenty-something years of it. He just has to find his own road in. Let him experiment. We asked him to get on the boat, he's on the boat. I'm not going to stand over him critiquing the rowing.",
+        "s11c_l33": "Brendan starts to say something, the sentence he's deleted twice, and puts it down again.",
+        "s11c_l46": "She thinks about Brendan deleting his rules to see what would happen. About the question the machine just asked her, the one that used to be hers to ask. An hour ago she stood up for the tinkering, and won."
+      },
+      "number": 66,
+      "riskWas": "high",
+      "riskWhy": "Lowered from high: the scene's longest character stretch goes, Brendan's doubt about his own tinkering and Kristina's 'the model is you' defence, but no later scene depends on it. l41's 'every endpoint in it is real' still reads against the invented endpoint in s01b_l14, though it loses the in-scene irony of Kristina disproving the argument she just won.",
+      "loses": [
+        "Character: l24 ('the whole skill was catching it') and l28 ('the new models just don't do it') feed l41 ('there is nothing to catch'); l41 still works against s01b_l14 but loses its sharpest irony",
+        "Character: Brendan admitting he deleted his rules file and nothing got worse, his doubt that his own tinkering still matters (nowhere else)",
+        "Character: Kristina's warm, certain 'half of what you're calling the model is you' speech and the boat line, the argument she wins and then undercuts by herself minutes later (nowhere else)",
+        "Character: Brendan's worry that SJ's seniority will teach new engineers his no-tools way is the careful way (nowhere else)",
+        "Colour: l33 'the sentence he's deleted twice' pays off s11b_l70, where Brendan deletes his message about SJ twice; that payoff goes",
+        "Plot: Brendan telling Kristina directly that SJ measured himself slower, also heard in s11b_l71",
+        "Colour: Brendan's 'Things it gets wrong' document and rules files older than some repos"
+      ],
+      "directionsKept": 2
+    },
+    {
+      "title": "Cut the opening small talk (webhook, doc, Yorkshire)",
+      "kind": "cut",
+      "cues": [
+        "s11c_l2",
+        "s11c_l3",
+        "s11c_l4",
+        "s11c_l5",
+        "s11c_l6",
+        "s11c_l7",
+        "s11c_l8",
+        "s11c_l9",
+        "s11c_l10",
+        "s11c_l11"
+      ],
+      "edits": [],
+      "why": "The webhook ticket and SJ's new enthusiasm were just played out in s11b, and Marcus talking over Kristina is the standups' job. The eleven-page doc and Yorkshire gag are never paid off. The narrator's one-on-one line plus the stage direction take us straight into 'Can I tell you something?'",
+      "keeps": "SJ's webhook ship is still named in l35. Kristina's belief that SJ is doing impressive AI work lands in l20. If the argument block is kept, l30's 'in an eleven-page doc' loses its setup and should drop those words.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s11c_l2": "Oh and SJ closed the webhook ticket. Did you see?",
+        "s11c_l3": "I saw.",
+        "s11c_l4": "It took a while but honestly? I'm just happy he's engaged. Six weeks ago he was posting memes about vibe-coding. Now he's expensed a whole computer and he comes to standup with opinions about inference. For SJ, that's a lot of progress, he's adopting new tooling.",
+        "s11c_l5": "It's something.",
+        "s11c_l6": "I could do without standup turning into a panel discussion, though. Three this week. I asked for a doc, they wrote the doc. It's eleven pages, and now they're fighting in the comments.",
+        "s11c_l7": "I've been staying out of the comments.",
+        "s11c_l8": "Wise. Four of the eleven pages are about Yorkshire.",
+        "s11c_l9": "Yeah. I saw that.",
+        "s11c_l10": "And Marcus keeps talking over me like that is somehow doing me a favor. He means well. He can just be a little...",
+        "s11c_l11": "Yeah... I know"
+      },
+      "number": 67,
+      "riskWhy": "Deletes a unique joke and Kristina's pride in SJ's progress, but no plot: the webhook ship survives in l35. If #66 is not taken, l30's 'in an eleven-page doc' loses its setup and needs those words dropped.",
+      "loses": [
+        "Joke: the eleven-page doc with four pages about Yorkshire and the fight in the comments (nowhere else)",
+        "Character: Kristina proud that SJ went from vibe-coding memes to expensing a computer and having opinions about inference; l20 keeps only a short version",
+        "Character: Kristina naming Marcus talking over her and Brendan's quiet 'Yeah... I know' (the talking-over comedy itself stays in the standups)",
+        "Setup: l6's eleven-page doc is called back in s11c_l30",
+        "Plot: SJ closed the webhook ticket, still carried by l35"
+      ]
+    },
+    {
+      "title": "Trim the post-build narration",
+      "kind": "trim",
+      "cues": [
+        "s11c_l45"
+      ],
+      "edits": [
+        {
+          "cue": "s11c_l45",
+          "text": "She sits back. She never imagined going back to coding, but this… isn't exactly coding. It feels like winning."
+        }
+      ],
+      "why": "The chest-feeling and demo-day recall restate what the build just showed; 'outperforming her peers' is an inner thought the back row can't see.",
+      "keeps": "'It feels like winning' still sets up the turn in l47.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s11c_l45": "She sits back. Something is moving in her chest and she can't get a name on it. Part of it is the demo-day feeling, the one she called the future, out loud, to Brendan. The rest… she is starting to wonder if the best way to show she's outperforming her peers is to just start working on tickets herself. She never imagined going back to coding, but this… isn't exactly coding. It feels like winning."
+      },
+      "number": 68,
+      "riskWas": "low",
+      "riskWhy": "Raised from low: besides the chest-feeling restatement, it deletes the only callback to her s01b_l49 'this is the future' and the only moment Kristina thinks about doing tickets herself to outperform her peers, a unique character beat.",
+      "loses": [
+        "Character: Kristina weighing whether to start working tickets herself to show she's outperforming her peers, her promotion drive from s01b_narrator_promotion turning into action (nowhere else)",
+        "Setup: payoff of s01b_l49, the demo-day moment she called the future out loud to Brendan",
+        "Colour: the unnamed feeling moving in her chest"
+      ]
+    },
+    {
+      "title": "Cut the SJ shudder and the calendar chime",
+      "kind": "cut",
+      "cues": [
+        "s11c_l48",
+        "s11c_l49"
+      ],
+      "edits": [],
+      "why": "l47 already ends the beat with 'She doesn't finish the thought.' The SJ image repeats s11b, and the chime is a soft exit the montage video replaces.",
+      "keeps": "The Friday-sentence link to ticket counts (l47) and the montage cue into the layoffs stay.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s11c_l48": "She thinks of SJ at his silver box, reading every line, feeding it stubs, slower than everyone and certain. A small shudder, there and gone.",
+        "s11c_l49": "Her calendar chimes: the next thing. She straightens, and goes back to her day."
+      },
+      "number": 69,
+      "riskWhy": "l47 already ends the beat on the unfinished thought, Brendan raised SJ's safety in l19, and the SJ-at-his-box image repeats s11b_l72 and s11b_l76. The chime is a soft exit that the time-jump cue replaces.",
+      "loses": [
+        "Character: a last flicker of Kristina's worry about SJ specifically, already implied by l19 and l47",
+        "Staging: the calendar chime and Kristina straightening before the time jump"
+      ]
+    },
+    {
+      "title": "Trim the overheard board call",
+      "kind": "trim",
+      "cues": [
+        "s11c_l15",
+        "s11c_l17"
+      ],
+      "edits": [
+        {
+          "cue": "s11c_l15",
+          "text": "I got let into a Zoom early on Friday, leadership thing, and the CEO was still wrapping his last call with a board member, I'm pretty sure. He said, and this is close to word for word, \"Everyone your size is getting leaner this year. Pull tickets closed per engineer out of Jira, draw a line, and nobody has to make a judgement call.\""
+        },
+        {
+          "cue": "s11c_l17",
+          "text": "I don't know. The call ended about ten seconds after I joined. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing"
+        }
+      ],
+      "why": "Removes the off-mute aside and Kristina's guess that it 'sounded AI-adoption related', which the next sentence makes obvious.",
+      "keeps": "The exact board quote ('Pull tickets closed per engineer out of Jira, draw a line') and the tech-sharing setup for s14a_brendan_demo stay word for word.",
+      "risk": "low",
+      "reliesOn": [
+        "s14a_brendan_demo"
+      ],
+      "against": {
+        "s11c_l15": "I got let into a Zoom early on Friday, leadership thing, and the CEO was still wrapping his last call with a board member, I'm pretty sure. I don't think either of them clocked he was off mute. The board guy was so relaxed about it. He said, and this is close to word for word, \"Everyone your size is getting leaner this year. You don't need a big reorg. Pull tickets closed per engineer out of Jira, draw a line, and nobody has to make a judgement call.\"",
+        "s11c_l17": "I don't know. The call ended about ten seconds after I joined. I don't know exactly what they were talking about, but it sounded AI-adoption related. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing"
+      },
+      "number": 70,
+      "riskWhy": "Trims set-up colour around the overheard call; the board quote and the tech-sharing setup for s14a_brendan_demo stay. Note that the edit also drops 'You don't need a big reorg' from the quote, which nothing later uses.",
+      "loses": [
+        "Colour: the CEO not realising he was off mute and the board member sounding relaxed",
+        "Colour: 'You don't need a big reorg' in the board quote (nowhere else)",
+        "Nothing substantive in Kristina's 'sounded AI-adoption related', which her next sentence makes plain"
+      ]
+    },
+    {
+      "title": "Tighten the solo-build narration",
+      "kind": "trim",
+      "cues": [
+        "s11c_l39",
+        "s11c_l40",
+        "s11c_l42"
+      ],
+      "edits": [
+        {
+          "cue": "s11c_l39",
+          "text": "Kristina opens cursor. Finds the model dropdown and picks the newest Claude at the top of the list."
+        },
+        {
+          "cue": "s11c_l40",
+          "text": "She types, in her own words: \"Build a tool that cross posts Linear tickets into Jira.\" She's been meaning to do this for Brendan since Friday."
+        },
+        {
+          "cue": "s11c_l42",
+          "text": "Then the machine asks her a question. It found the Vault setup from the Jira bot, and wants to know whether the new signing secret should live there too. It is, almost word for word, the sentence she had to type at it six weeks ago. She types \"yes.\""
+        }
+      ],
+      "why": "Drops small adverbial padding ('Deliberately. Like she's checking something.', 'the way you'd brief a contractor', 'She looks at it for a second') without losing any step of the build.",
+      "keeps": "Guardrail 2: the wordless solo build stays whole, including the Linear-to-Jira tool, the Vault echo of s01b_l17, the approve click and the single test ticket that pays off in s19_l20.",
+      "risk": "medium",
+      "reliesOn": [
+        "s01b_l17",
+        "s19_l20"
+      ],
+      "against": {
+        "s11c_l39": "Kristina opens cursor. Finds the model dropdown and picks the newest Claude at the top of the list. Deliberately. Like she's checking something.",
+        "s11c_l40": "She types, in her own words, the way you'd brief a contractor: \"Build a tool that cross posts Linear tickets into Jira.\" She's been meaning to do this for Brendan since Friday.",
+        "s11c_l42": "Then the machine asks her a question. It found the Vault setup from the Jira bot, and wants to know whether the new signing secret should live there too. It is, almost word for word, the sentence she had to type at it six weeks ago. She looks at it for a second. She types \"yes.\""
+      },
+      "number": 71,
+      "riskWhy": "Every step of the guardrailed solo build survives, but the cut sits inside it and removes two small beats: Kristina picking the newest model 'like she's checking something' (testing Brendan's claim in l28) and her pause on recognising her own Vault sentence.",
+      "loses": [
+        "Character: Kristina deliberately choosing the newest model to test what Brendan told her",
+        "Character: her one-second pause when the machine asks her own Vault question back",
+        "Colour: 'the way you'd brief a contractor'"
+      ]
+    },
+    {
+      "title": "Trim Kristina's peer-feedback reply",
+      "kind": "trim",
+      "cues": [
+        "s11c_l35"
+      ],
+      "edits": [
+        {
+          "cue": "s11c_l35",
+          "text": "No, that's good feedback to have on file, but sometimes shifts take a bit of time. He shipped the webhook thing. Give him the quarter to get up to speed on everything and it'll all even out on his yearly review."
+        }
+      ],
+      "why": "'and it's important to know' repeats 'good feedback to have on file'.",
+      "keeps": "Kristina filing the feedback and brushing it off, which s23_l33 pays off.",
+      "risk": "low",
+      "reliesOn": [
+        "s23_l33"
+      ],
+      "against": {
+        "s11c_l35": "No, that's good feedback to have on file, and it's important to know, but sometimes shifts take a bit of time. He shipped the webhook thing. Give him the quarter to get up to speed on everything and it'll all even out on his yearly review."
+      },
+      "number": 72,
+      "riskWhy": "Pure repetition: 'it's important to know' restates 'good feedback to have on file' in the same sentence. The brush-off that s23_l33 pays off stays.",
+      "loses": [
+        "Nothing substantive: removes a repeated phrase only"
+      ]
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "not cuttable",
+    "summary": "This is the main home of guardrail 2's payoff: Kristina builds a tool alone with the newest model and it works with nothing to catch. It also plants three things the back half pays off: the overheard 'tickets closed per engineer' line, the July tech-sharing demo, and the Linear-to-Jira tool that only ever copies the test ticket (s19_l20). The build could survive as a narrator coda moved into s11b, but then a third of the scene stays, so a full delete breaks a guardrail and the Nine Tickets reveal.",
+    "lost": [
+      {
+        "kind": "Guardrail",
+        "what": "Kristina's solo build: she picks the newest model, briefs it in her own words, approves, and a ticket appears in four minutes (guardrail 2 payoff)",
+        "elsewhere": null
+      },
+      {
+        "kind": "Setup",
+        "what": "Kristina builds the Linear-to-Jira cross-post tool and sees one test ticket appear; s19_l20 depends on it",
+        "elsewhere": null
+      },
+      {
+        "kind": "Setup",
+        "what": "Overheard board advice: pull tickets closed per engineer from Jira and draw a line. Gives the audience the layoff metric before it lands",
+        "elsewhere": "s19_l20 states the metric outright, so the plot survives but the dramatic irony is lost"
+      },
+      {
+        "kind": "Setup",
+        "what": "Kristina asks Brendan and SJ to show their AI work at the next tech sharing",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Brendan's turn: he deleted half of 'Things it gets wrong' and his rules file, and suspects the tinkering no longer matters",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Kristina defends SJ's tinkering and sets up his yearly review as the fix, misreading the risk",
+        "elsewhere": null
+      },
+      {
+        "kind": "Plot",
+        "what": "Brendan admits his and Marcus's anonymous peer feedback said SJ was slowing the team",
+        "elsewhere": "s14a_l31 restates Marcus's half"
+      },
+      {
+        "kind": "Plot",
+        "what": "SJ closed the webhook ticket",
+        "elsewhere": "s11b_l41 implies Brendan helped; closure itself is lost but not needed later"
+      },
+      {
+        "kind": "Joke",
+        "what": "Standup became a panel discussion; eleven-page doc, four pages about Yorkshire",
+        "elsewhere": null
+      },
+      {
+        "kind": "Guardrail",
+        "what": "Kristina names Marcus talking over her (echo of guardrail 3)",
+        "elsewhere": "s11b_kristina_tickets and the s01/s06/s11b standups carry the comedy itself"
+      },
+      {
+        "kind": "Staging",
+        "what": "Kristina's shudder thinking of SJ at his silver box; the play's quiet hinge into the layoffs",
+        "elsewhere": null
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s19_l20",
+        "problem": "'She vibe coded a tool to do it, and it only ever copied the test ticket.' The audience never saw the tool get built or the single test ticket.",
+        "fix": "Keep a trimmed version of s11c_l39 to s11c_l44 as a narrator coda (see changes)."
+      },
+      {
+        "cue": "s14a_brendan_demo",
+        "problem": "'Kristina had me demo at tech sharing in July.' The tech-sharing request in s11c_l17 is gone, so the demo is new information. It still parses as a report, so this is a soft orphan.",
+        "fix": "Add the tech-sharing request to the coda bridge line, or leave it as new information."
+      },
+      {
+        "cue": "s14a_l31",
+        "problem": "Marcus's anonymous peer feedback is first mentioned here instead of being a callback. Reads fine as new information.",
+        "fix": "none"
+      }
+    ],
+    "changes": [
+      {
+        "action": "move",
+        "where": "s11c_l39 to s11c_l44",
+        "detail": "If the scene must go, keep the build as a narrator coda at the end of s11b, after s11b's last cue. Trim s11c_l40 to drop 'since Friday', s11c_l42 can stay as written, and s11c_l44 can stay."
+      },
+      {
+        "action": "add",
+        "where": "before the moved s11c_l39",
+        "detail": "Narrator bridge to replace the one-on-one, carrying the tech-sharing setup and the board line in compressed form.",
+        "text": "NARRATOR: That Friday, Kristina hears a board member tell the CEO to count tickets closed per engineer and draw a line. She books Brendan for tech sharing in July. Then she opens Cursor herself."
+      },
+      {
+        "action": "trim",
+        "where": "s11c_l40",
+        "detail": "Remove the Friday reference now carried by the bridge.",
+        "text": "NARRATOR: She types, in her own words, the way you'd brief a contractor: \"Build a tool that cross posts Linear tickets into Jira.\" She promised Brendan this six weeks ago."
+      },
+      {
+        "action": "move",
+        "where": "s11c_time_jump_to_offboarding",
+        "detail": "Move the montage cue to the start of s14 (or keep it after the coda at the end of s11b)."
+      },
+      {
+        "action": "cut",
+        "where": "s11c_l1 to s11c_l38, s11c_l45 to s11c_l49",
+        "detail": "Everything else goes: the one-on-one, Brendan's rules-file turn, Kristina's 'half of the model is you' speech, and her closing reflection."
+      }
+    ],
+    "risk": "high",
+    "riskWhy": "A clean delete loses guardrail 2's payoff and orphans the Nine Tickets reveal, and the workable version keeps the build coda and still drops Brendan's turn and Kristina's misreading of SJ.",
+    "writtenOn": "2026-10-05"
+  }
+}

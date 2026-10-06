@@ -1,0 +1,619 @@
+{
+  "scene": "s11b",
+  "approach": "The standup spends most of its time on two Marcus-SJ detours (the railroad and 'who is the speed for') that repeat the scene's argument before the backdoor beat, which is the part that pays off. The huddle has more Brendan attempts and narrator asides than the guardrail needs. The cut keeps the backdoor warning, 'I want it noted', the Grok button, Kristina failing to finish, the Mac Studio specs and expense report, six-minute first token, two interrupted Brendan attempts, the silent cloud patch and its deletion.",
+  "suggestions": [
+    {
+      "title": "Cut the 'who is the speed for' politics detour",
+      "kind": "cut",
+      "cues": [
+        "s11b_l11",
+        "s11b_l12",
+        "s11b_l13",
+        "s11b_l15",
+        "s11b_l16"
+      ],
+      "edits": [],
+      "why": "SJ's 'not political, I have a threat model' repeats his l5 position, and 'pasting our source into somebody else's datacentre' repeats l5's 'stranger's computer'. The l14 direction is internal state the back row cannot see. This needs the companion trim of l17 (next suggestion) so that Marcus does not open with 'Well, I don't.'",
+      "keeps": "Kristina's interruption (s11b_kristina_tickets), Marcus's 'Hitting approve. Faster.' and SJ's 'Maybe AI does do a better job than YOU' insult.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s11b_l11": "What do you want, a slower model so you can work slower?",
+        "s11b_l12": "I want one person at this company to say out loud who the speed is actually for. Because it isn't me.",
+        "s11b_l13": "I don't have a view on that. I'm not political like you, I'm an engineer, and I have a threat model. You're pasting our source into somebody else's datacentre because it's quick. That's my objection. It's got nothing to do with how rich it makes the CEO.",
+        "s11b_l15": "Everyone is political SJ except all you're going to do is waste time upsetting your boss and everyone else because you insist on arbitrarily reading every line.",
+        "s11b_l16": "Because I do read every line."
+      },
+      "number": 47,
+      "riskWhy": "Removes Marcus's one direct statement of who the speed is for and SJ's 'I'm not political like you' jab, both unique character beats, but no later scene depends on them. If #49 is also taken, Marcus's economic grievance disappears from this scene entirely except 'Hitting approve. Faster.' Must be taken with #48 or l17 opens on 'Well, I don't.' with nothing to answer.",
+      "loses": [
+        "Character: Marcus asking out loud who the speed is actually for, his core grievance in this scene (echoed later in s14a_l28 and s22_l3, not set up for them)",
+        "Character: SJ disowning politics ('I'm not political like you, I'm an engineer, and I have a threat model'), a callback to his s01_l24 'keep your politics out of this'",
+        "Joke: Marcus's 'Everyone is political SJ' rebuttal and SJ's flat 'Because I do read every line'",
+        "Colour: part of the SJ and Marcus argument that keeps going after Kristina's interruption (kristina_tickets is still talked over by l17)"
+      ],
+      "directionsKept": 1
+    },
+    {
+      "title": "Companion: drop 'Well, I don't.' from Marcus",
+      "kind": "trim",
+      "cues": [
+        "s11b_l17"
+      ],
+      "edits": [
+        {
+          "cue": "s11b_l17",
+          "text": "I merged 3 PRs yesterday, and honestly, I think the AI does a better job at the review than I do. That's what the job is now. Hitting approve. Faster."
+        }
+      ],
+      "why": "Only take this with the politics cut above, so Marcus talks straight over Kristina's 'stick to the webhook' into his PR count. If the railroad cut is not taken, 'merged 3 PRs yesterday' sits close to l8's 'closed three tickets yesterday', which is tolerable.",
+      "keeps": "Marcus's line and SJ's reply in l18.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s11b_l17": "Well, I don't. I merged 3 PRs yesterday, and honestly, I think the AI does a better job at the review than I do. That's what the job is now. Hitting approve. Faster."
+      },
+      "number": 48,
+      "riskWhy": "Only a two-word retort, and it exists to answer l16, which #47 cuts. Taken with #47 it is pure repair; taken alone Marcus's line still reads.",
+      "loses": [
+        "Joke: Marcus's flat 'Well, I don't.' answering SJ's 'Because I do read every line' (only lands if #47 is not taken)"
+      ]
+    },
+    {
+      "title": "Cut the railroad exchange",
+      "kind": "cut",
+      "cues": [
+        "s11b_l7",
+        "s11b_l8",
+        "s11b_l9",
+        "s11b_l10"
+      ],
+      "edits": [],
+      "why": "Marcus's opening speech already carries his gag (John Henry, Luddites). The railroad and 'three more tickets' is a second historical riff in the same scene, and the brief allows one per scene. The 'you told us to fight the machines' reversal is a small joke that costs 35 seconds.",
+      "keeps": "John Henry and the Luddites survive in Marcus's opening speech (cue_f611...). Kristina's 'stick to the webhook' then lands right after his speech and SJ or Marcus talk over her.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s11b_l7": "You were telling us to fight the machines a couple of months ago. Now you're telling me to let one do my job?",
+        "s11b_l8": "I'm telling you to reconize reality, SJ. Do you think i enjoy this either? I don't. I closed three tickets yesterday, and you know what that got me?",
+        "s11b_l9": "What?",
+        "s11b_l10": "Three more tickets. At least when they finished the railroad, they'd built a railroad. We clear the board and somebody fills it up again. They want us using the fast model so we can push out more and more crapy features."
+      },
+      "number": 49,
+      "riskWhy": "Cuts SJ's reversal joke on Marcus's earlier anti-machine speeches and Marcus's railroad and ticket-treadmill riff, unique colour and a small laugh. Kristina's l4 still carries Marcus's three closed tickets, so the ticket-count idea that the layoffs turn on (s19_l20) is thinner but not lost.",
+      "loses": [
+        "Joke: SJ's 'You were telling us to fight the machines... now you're telling me to let one do my job?', calling back Marcus's Luddite speeches in s01 and s06",
+        "Character: Marcus admitting he does not enjoy this either and that closing three tickets just earns three more",
+        "Colour: the railroad line ('at least when they finished the railroad, they'd built a railroad'), a second history gag after John Henry",
+        "Setup: reinforces that tickets closed is the measure that counts, paid off in s19_l20 (layoffs came down to Jira tickets closed); s11b_l4 still carries it"
+      ]
+    },
+    {
+      "title": "Cut SJ's two-sprint measurement speech",
+      "kind": "cut",
+      "cues": [
+        "s11b_l71"
+      ],
+      "edits": [],
+      "why": "Brendan reports the measurement in full in s11c ('he measured two sprints, with it and without it, and he's slower with it. He said it like it settled something'). The audience gets it there, as Brendan's view of SJ, which is how it is used.",
+      "keeps": "s11c_l21 carries the measurement. The l72 silence over the load bar and tokens still works after l68 (or l66).",
+      "risk": "medium",
+      "reliesOn": [
+        "s11c_l21"
+      ],
+      "against": {
+        "s11b_l71": "And before you say it, everyone keeps saying ten-x. I measured it. Two sprints, same kind of tickets, with the setup and without. I'm slower with it. Measurably. So either everyone else is not following the policy, or I'm the only one who checked how long feature delivery takes with the tooling the CEO is pushing."
+      },
+      "number": 50,
+      "riskWhy": "Brendan reports the two-sprint measurement in s11c_l21, so the fact survives; what goes is SJ saying it himself, with his 'I'm the only one who checked' self-justification. (Cross-scene conflict with #66 is shown separately.)",
+      "loses": [
+        "Character: SJ presenting his own measurement as proof that everyone else breaks the policy or never checked",
+        "Colour: SJ's dig at 'ten-x' claims",
+        "Plot: SJ measured two sprints and is slower with the setup (also carried by s11c_l21)"
+      ]
+    },
+    {
+      "title": "Cut the sandbox / pinned-weights attempt",
+      "kind": "cut",
+      "cues": [
+        "s11b_l67",
+        "s11b_l68"
+      ],
+      "edits": [],
+      "why": "This is Brendan's fourth attempt in the huddle. The guardrail needs two, and the 'five agents' and 'let it do more' attempts are both kept with SJ cutting Brendan off. 'There is no cloud' adds no information the plot uses.",
+      "keeps": "Guardrail 1: Brendan's 'five agents' attempt (l56 to l61, SJ cuts him off) and 'let it run its own code' attempt (l65 to l66) remain.",
+      "risk": "high",
+      "reliesOn": [],
+      "against": {
+        "s11b_l67": "The hosted ones sandbox all of that now. The agent can only touch its own branch, it can't...",
+        "s11b_l68": "There is no cloud, Brendan. It's somebody else's computer. And they can change the model under me on a Tuesday. Here, I pin the weights. What I ran in January is what I run in March. That's responsible engineering."
+      },
+      "number": 51,
+      "riskWas": "medium",
+      "riskWhy": "Touches guardrail 1: this is one of Brendan's attempts to show SJ how agents work, and 'There is no cloud' is the clearest moment of it going over SJ's head. Two attempts (five agents, let it run its own code) remain, so the guardrail survives but is thinner.",
+      "loses": [
+        "Character: Brendan's third pitch (hosted agents sandboxed to their own branch), echoing his s01b_l18 sandbox",
+        "Character: SJ's 'There is no cloud, Brendan. It's somebody else's computer', though it repeats his l5 'stranger's computer'",
+        "Colour: SJ pinning the weights so January matches March, quiet irony against s20_l37 where he swapped in an unlocked Qwen"
+      ]
+    },
+    {
+      "title": "Cut Kristina and Marcus's 'noted' back-and-forth",
+      "kind": "cut",
+      "cues": [
+        "s11b_l34",
+        "s11b_l35",
+        "s11b_l36",
+        "s11b_l37"
+      ],
+      "edits": [],
+      "why": "After Kristina's 'take it to a thread' the scene has already made its standup joke. Marcus's 'I know what a standup is' and 'only one who stands up for what's right' restate his l30 flag. SJ's Grok line then lands straight after Kristina's plea, which is a sharper button.",
+      "keeps": "Kristina still fails to finish at least four times (kristina_tickets, kristina_models, l27 or l29, l33) before 'Agreement! Finally'. Guardrail 3 survives.",
+      "risk": "high",
+      "reliesOn": [],
+      "against": {
+        "s11b_l34": "I know what a standup is. I'm saying this matters more than the standup does.",
+        "s11b_l35": "Noted. Thanks. Let's move on.",
+        "s11b_l36": "With respect, it often seems like I'm the only one who stands up for what's right on this team",
+        "s11b_l37": "Marcus I just want ONE STANDUP where we get through without..."
+      },
+      "number": 52,
+      "riskWas": "medium",
+      "riskWhy": "Touches guardrail 3: l37 is Kristina being cut off mid-plea by SJ's Grok line, and l34 to l36 are Marcus arguing with her directly. Her other interruptions (kristina_tickets, kristina_models, l27, l29, l33) keep the guardrail alive, but this removes one of its talked-over beats.",
+      "loses": [
+        "Joke: Kristina's 'Marcus I just want ONE STANDUP where we get through without...' cut off by SJ's Grok line",
+        "Character: Marcus's 'I know what a standup is' and 'the only one who stands up for what's right', his self-image as the team's conscience",
+        "Joke: Kristina's clipped 'Noted. Thanks. Let's move on.'"
+      ]
+    },
+    {
+      "title": "Cut the 'Noted where' joke and minutes narrator",
+      "kind": "cut",
+      "cues": [
+        "s11b_l31",
+        "s11b_l32"
+      ],
+      "edits": [],
+      "why": "A nice correction gag, but nothing later uses Kristina's minutes. Marcus's own note-keeping pays off in s22 ('I'm keeping notes... Somebody should', 'Marcus's notes were in evidence').",
+      "keeps": "Marcus's 'I want it noted that I flagged it' (l30), which pays off in s22_backdoor. Kristina's 'SJ, MARCUS!' follows straight on.",
+      "risk": "medium",
+      "reliesOn": [
+        "s22_backdoor"
+      ],
+      "against": {
+        "s11b_l31": "Noted where, Marcus? Nobody's taking minutes. It's a standup.",
+        "s11b_l32": "Kristina takes the minutes every day during standup. She emails them out as part of a nicely styled report to the whole team every week."
+      },
+      "number": 53,
+      "riskWhy": "Loses a unique correction gag and the only detail that Kristina takes daily minutes and sends a styled weekly report. Nothing later depends on her minutes; Marcus's own note-keeping in s22 stands on l30.",
+      "loses": [
+        "Joke: SJ's 'Noted where, Marcus? Nobody's taking minutes' and the narrator quietly correcting him",
+        "Character: Kristina diligently minuting every standup and emailing a nicely styled report (nowhere else)"
+      ]
+    },
+    {
+      "title": "Cut Brendan's choice to stay quiet (narrator)",
+      "kind": "cut",
+      "cues": [
+        "s11b_l62"
+      ],
+      "edits": [],
+      "why": "The next narrator line shows it: Brendan types one line, the agent finishes before SJ does, 'He says nothing.' Telling us he ran five this morning and 'decides to sit on it' restates what the action already shows.",
+      "keeps": "l63 (the silent cloud patch) and l75 (he deletes it) keep Brendan's pattern of hiding what the AI did.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s11b_l62": "BRENDAN leaves it there. He ran five of them this morning, in parallel, before this call. He looks at SJ's one terminal, the cursor blinking, patient. He decides to sit on it."
+      },
+      "number": 54,
+      "riskWhy": "The l63 narrator shows Brendan silently running the agent and saying nothing, so this restates his choice before we see it. The only new fact is that he ran five agents that morning.",
+      "loses": [
+        "Character: Brendan already ran five agents in parallel this morning (nowhere else; l58 still has him pitch five)"
+      ]
+    },
+    {
+      "title": "Cut Brendan's unsent-messages narrator",
+      "kind": "cut",
+      "cues": [
+        "s11b_l70"
+      ],
+      "edits": [],
+      "why": "An internal-state passage of typing and deleting that reads poorly from the back row. The peer feedback about SJ arrives properly in s11c from Brendan and Marcus.",
+      "keeps": "That SJ wrote the security policy is lost here. SJ's l5 still says he follows the policy, and s11c_l23 says 'He's following the security policy'. The s11c peer-feedback thread is untouched.",
+      "risk": "medium",
+      "reliesOn": [
+        "s11c_l23"
+      ],
+      "against": {
+        "s11b_l70": "Brendan opens the security policy. SJ wrote it. He starts a message to Kristina suggesting they update it, then looks at the tickets he still has to finish and deletes it. He starts another message, this time about SJ. He deletes that one too."
+      },
+      "number": 55,
+      "riskWhy": "Loses the only mention that SJ wrote the security policy and Brendan's deleted messages, but no later scene uses either, and SJ's policy-following is still stated in l5 and s11c. An internal typing-and-deleting passage that reads poorly from the back row.",
+      "loses": [
+        "Character: SJ wrote the security policy (nowhere else; s01b_narrator_jira only says 'people like SJ', and nothing later depends on it)",
+        "Character: Brendan drafting and deleting a message to Kristina, then one about SJ, his habit of swallowing objections (l63 and l75 keep the pattern)",
+        "Colour: Brendan's first move toward the peer feedback he admits to in s11c_l34 (that scene stands on its own)"
+      ]
+    },
+    {
+      "title": "Cut Brendan's 'watching it type' sums",
+      "kind": "cut",
+      "cues": [
+        "s11b_l54",
+        "s11b_l55"
+      ],
+      "edits": [],
+      "why": "The 'It varies' / 'SJ.' / 'Six minutes' sequence already makes the joke. Brendan's arithmetic about watching it type explains it a second time.",
+      "keeps": "Tokens per second, time to first token, 'Six minutes. Sometimes eight.' and the l72 load-bar image. Brendan's 'How many do you run at once?' follows naturally.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s11b_l54": "Sure. It's just... six minutes in, five tokens a second out. On the webhook ticket. How much of your day is watching it type?",
+        "s11b_l55": "Less than you'd think. Some."
+      },
+      "number": 56,
+      "riskWas": "low",
+      "riskWhy": "Brendan's arithmetic does restate the six-minute joke, but SJ's 'Less than you'd think. Some.' is its own laugh, a grudging admission that nothing else in the scene gives. Raised from low for that line.",
+      "loses": [
+        "Joke: SJ's 'Less than you'd think. Some.'",
+        "Nothing substantive in Brendan's sums: they explain the 'six minutes in, five tokens out' gag the audience just got"
+      ]
+    },
+    {
+      "title": "Trim SJ's 'think before you prompt' jab",
+      "kind": "trim",
+      "cues": [
+        "s11b_l53"
+      ],
+      "edits": [
+        {
+          "cue": "s11b_l53",
+          "text": "Six minutes. Sometimes eight. It's reading four hundred files, it's allowed to take longer than a search box."
+        }
+      ],
+      "why": "'Think before you prompt' is one more SJ jab in a scene full of them.",
+      "keeps": "The six-to-eight-minute reveal and SJ's defensiveness.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s11b_l53": "Six minutes. Sometimes eight. It's reading four hundred files, it's allowed to take longer than a search box. I batch my questions. You learn to think before you prompt, which would do some people on that call a world of good."
+      },
+      "number": 57,
+      "riskWhy": "One more SJ jab at the rest of the team in a scene full of them; the six-to-eight-minute reveal and his defensiveness stay.",
+      "loses": [
+        "Character: SJ's 'think before you prompt' swipe at the people on the call (repeats his contempt in l5 and l18)"
+      ]
+    },
+    {
+      "title": "Trim the 'Claude has a shell' speech",
+      "kind": "trim",
+      "cues": [
+        "s11b_l28"
+      ],
+      "edits": [
+        {
+          "cue": "s11b_l28",
+          "text": "You'd have to be an idiot to worry about poisoned weights and then hand the thing a shell and the internet. Which is what Claude does."
+        }
+      ],
+      "why": "The 'idiot... hand the thing a shell and the internet' line is the irony for s20, where Brendan does exactly that, so it stays. The list of what Claude does on every laptop adds nothing.",
+      "keeps": "The s20 irony line, and both Kristina interruptions (l27, l29).",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s11b_l28": "You'd have to be an idiot to worry about poisoned weights and then hand the thing a shell and the internet. Which is what Claude does. It runs commands, it installs whatever it decides it needs, it browses the web, on every laptop in this building. Including yours."
+      },
+      "number": 58,
+      "riskWhy": "The irony line for s20 survives. Only the list of what Claude does on every laptop goes, which restates 'a shell and the internet'.",
+      "loses": [
+        "Colour: the list of Claude installing and browsing on every laptop, and the 'Including yours' jab at Marcus"
+      ]
+    },
+    {
+      "title": "Trim SJ's opening policy speech",
+      "kind": "trim",
+      "cues": [
+        "s11b_l5"
+      ],
+      "edits": [
+        {
+          "cue": "s11b_l5",
+          "text": "I'm not sure what help you expect Marcus to provide. Marcus pastes our source into a stranger's computer and hits accept. I run mine locally AND I read what comes back. Which is what our own security policy requires, in case you all forgot to read it... So I'm the only person on this call who's actually following the rules."
+        }
+      ],
+      "why": "The 'both policies' sentence is the slowest part of a 34-second speech. Marcus's next line establishes the CEO mandate ('The CEO literally released a memo...').",
+      "keeps": "The insult to Marcus, local inference, reading every line, the security policy, and 'the only person following the rules'.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s11b_l5": "I'm not sure what help you expect Marcus to provide. Marcus pastes our source into a stranger's computer and hits accept. I run mine locally AND I read what comes back. Which is what our own security policy requires, in case you all forgot to read it... So because they made these tools mandatory at the All Hands, local inference is the only setup that satisfies both policies... So I'm the only person on this call who's actually following the rules."
+      },
+      "number": 59,
+      "riskWhy": "Cuts the clause explaining that local inference is how SJ satisfies both the mandate and the security policy. Marcus's next line keeps the CEO memo, so the mandate is still on stage, and s11c_l23 restates SJ's motive.",
+      "loses": [
+        "Colour: SJ's 'mandatory at the All Hands' and 'satisfies both policies' reasoning, the logic behind the Mac Studio (s11c_l23 and s11c_l30 restate it)"
+      ]
+    },
+    {
+      "title": "Cut the 'caught plenty of bugs' exchange",
+      "kind": "cut",
+      "cues": [
+        "s11b_l23",
+        "s11b_l24"
+      ],
+      "edits": [],
+      "why": "'One equals sign... You'd read straight past it' is the hit. SJ's weak comeback and Marcus repeating 'CHINESE backdoor' blunt it. SJ's 'Fine. Say the weights are poisoned' reads well as his immediate dodge. Both stage directions are internal commentary.",
+      "keeps": "The 'one character long' backdoor warning (l21), which pays off in s22, and SJ's no-network/no-tools answer (l26), which s20 overturns.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s11b_l23": "I've caught plenty of bugs by reading code this year.",
+        "s11b_l24": "Yeah, bugs, but not a CHINESE backdoor designed to be hard to detect."
+      },
+      "number": 60,
+      "riskWhy": "Marcus's 'one equals sign' is the hit and stays for s22_backdoor. SJ's weak comeback and Marcus's repeat of 'CHINESE backdoor' blunt it, and both stage directions are internal.",
+      "loses": [
+        "Character: SJ briefly cornered ('I've caught plenty of bugs'), though l26 still shows him dodging",
+        "Nothing substantive in l22 and l25: internal commentary the back row cannot see"
+      ],
+      "directionsKept": 2
+    },
+    {
+      "title": "Trim the rogue-agents line from SJ",
+      "kind": "trim",
+      "cues": [
+        "s11b_l66"
+      ],
+      "edits": [
+        {
+          "cue": "s11b_l66",
+          "text": "No. Were you not listening at standup? I don't give it tool calls. It writes text. I decide what the text is worth running."
+        }
+      ],
+      "why": "The production-database stories repeat his standup argument, which he points to anyway with 'Were you not listening at standup?'",
+      "keeps": "SJ shutting down Brendan's second attempt, plus 'no tool calls', which s20 overturns.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s11b_l66": "No. Were you not listening at standup? You've seen the stories, rogue agents deleting production databases because somebody let them run whatever they wanted. I don't give it tool calls. It writes text. I decide what the text is worth running."
+      },
+      "number": 61,
+      "riskWhy": "'Were you not listening at standup?' already points back to his l26 and l28 argument; the production-database stories repeat it. 'No tool calls' stays for s20_l21.",
+      "loses": [
+        "Colour: SJ citing rogue agents deleting production databases, a loose foreshadow of the s20 agent run (s11b_l28 keeps the stronger irony)"
+      ]
+    },
+    {
+      "title": "Trim Marcus's opener to end on John Henry",
+      "kind": "trim",
+      "cues": [
+        "cue_f611e6705148485ca6a655ac76b1c164"
+      ],
+      "edits": [
+        {
+          "cue": "cue_f611e6705148485ca6a655ac76b1c164",
+          "text": "Oh right, I'm the problem for actually getting my work done. The CEO literally released a memo last week about how if we don't adopt these tools, the company will collapse or whatever You're trying to beat the machine by reading faster. John Henry died doing that."
+        }
+      ],
+      "why": "'John Henry died doing that' is the punchline. The fired-or-Australia tail doubles the gag. The Luddite transportation to Australia is told in full by the narrator in s19 and recalled by Marcus in s23b.",
+      "keeps": "The CEO memo (the only on-stage source of the mandate if the l5 trim is taken) and one Marcus history gag in this scene.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "cue_f611e6705148485ca6a655ac76b1c164": "Oh right, I'm the problem for actually getting my work done. The CEO literally released a memo last week about how if we don't adopt these tools, the company will collapse or whatever You're trying to beat the machine by reading faster. John Henry died doing that. If you're lucky, you'll just get fired for working that slow, OR maybe you'll just end up like one of the luddites and get sent to an Australian work camp"
+      },
+      "number": 62,
+      "riskWas": "low",
+      "riskWhy": "The Australia tail repeats s14a_l24 and s23b_l17, but 'you'll just get fired for working that slow' is the play's first hint that SJ will be laid off (s14, s22_l52) and lands as dramatic irony. Raised from low for that unique beat.",
+      "loses": [
+        "Setup: Marcus predicting SJ gets fired for working slowly, quiet foreshadowing of SJ's layoff (s22_l52); no later line calls it back directly",
+        "Joke: Luddites sent to an Australian work camp (told again in s14a_l24 and s23b_l17)"
+      ]
+    },
+    {
+      "title": "Trim Kristina's 'take it to a thread'",
+      "kind": "trim",
+      "cues": [
+        "s11b_l33"
+      ],
+      "edits": [
+        {
+          "cue": "s11b_l33",
+          "text": "SJ, MARCUS! - *sigh* Take the model debate to a thread. Just not in our standup"
+        }
+      ],
+      "why": "Her bright 'I'd honestly love a doc' is in character but slows the explosion.",
+      "keeps": "Her shout, the sigh and the redirect.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s11b_l33": "SJ, MARCUS! - *sigh* Take the model debate to a thread. I'd honestly love a doc, it sounds like there's real stuff in there. Just not in our standup"
+      },
+      "number": 63,
+      "riskWhy": "Kristina's bright 'I'd honestly love a doc' is a unique character beat and the moment s11c_l6 refers to ('I asked for a doc, they wrote the doc'). s11c_l6 states it itself, so nothing breaks, but the callback loses its origin.",
+      "loses": [
+        "Character: Kristina's reflexive positivity mid-explosion ('it sounds like there's real stuff in there')",
+        "Setup: her request for a doc, recalled in s11c_l6 and the eleven-page doc in s11c_l28 and s11c_l30 (those lines restate it)"
+      ]
+    },
+    {
+      "title": "Trim SJ's autocomplete speech",
+      "kind": "trim",
+      "cues": [
+        "s11b_l64"
+      ],
+      "edits": [
+        {
+          "cue": "s11b_l64",
+          "text": "Watch the workflow, though. There. It invented a method that doesn't exist. And that's fine. Because I don't ask it to be right, I ask it to type the boring part. Then I do the job. It's autocomplete, Brendan. Fancy autocomplete."
+        }
+      ],
+      "why": "'This is the part everyone skips' and 'That's all any of this is under the hood' pad a speech whose point lands on 'Fancy autocomplete'.",
+      "keeps": "'Fancy autocomplete', which Brendan quotes in s11c_l23, and the invented method on screen.",
+      "risk": "low",
+      "reliesOn": [
+        "s11c_l23"
+      ],
+      "against": {
+        "s11b_l64": "Watch the workflow, though. This is the part everyone skips. There. It invented a method that doesn't exist. And that's fine. Because I don't ask it to be right, I ask it to type the boring part. Then I do the job. It's autocomplete, Brendan. Fancy autocomplete. That's all any of this is under the hood."
+      },
+      "number": 64,
+      "riskWhy": "Only padding goes; 'Fancy autocomplete' and the invented method stay. The #66 warning does not bite: if s11c_l23 is cut, this scene still has the line, only the callback disappears.",
+      "loses": [
+        "Nothing substantive: 'This is the part everyone skips' and 'under the hood' pad a speech that lands on 'Fancy autocomplete'"
+      ]
+    },
+    {
+      "title": "Trim the opening narrator",
+      "kind": "trim",
+      "cues": [
+        "s11b_l1"
+      ],
+      "edits": [
+        {
+          "cue": "s11b_l1",
+          "text": "A few months later, SJ has a new Mac Studio on his desk. It runs a local Qwen model. Standup is underway."
+        }
+      ],
+      "why": "'A few tokens at a time' is shown properly in the huddle ('Two to five').",
+      "keeps": "The Mac Studio and local Qwen setup, which pay off in s19, s20 and s22.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s11b_l1": "A few months later, SJ has a new Mac Studio on his desk. It runs a local Qwen model, a few tokens at a time. Standup is underway."
+      },
+      "number": 65,
+      "riskWhy": "'A few tokens at a time' is shown in the huddle by 'Two to five' and the load bar, and again in s20_l35. The Mac Studio and Qwen setup stay.",
+      "loses": [
+        "Nothing substantive: the token speed is shown on stage in l48 and l72"
+      ]
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "cuttable with rewrites",
+    "summary": "s11b puts SJ's Mac Studio and local Qwen rig on stage, gives the third standup argument, and plants Marcus's Chinese-backdoor warning that pays off in s22 and s23. It also echoes guardrail 1, with Brendan trying to show SJ how agents work and SJ missing it. s11c already reports most of the rig offstage (s11c_l4, s11c_l21, s11c_l23), so the plot survives with a moved narrator line and one Kristina line, but the scene's comedy and the on-stage guardrail echo are lost.",
+    "lost": [
+      {
+        "kind": "Plot",
+        "what": "SJ has a Mac Studio running a local Qwen model",
+        "elsewhere": "s11c_l4 (expensed a whole computer), s11c_l23 (the model that fits on that box); Qwen and Mac Studio are first named again in s19_l1 and s20_l37, so needs the moved s11b_l1"
+      },
+      {
+        "kind": "Setup",
+        "what": "SJ's rig has no network and no tools; he reads every line",
+        "elsewhere": "s11c_l23"
+      },
+      {
+        "kind": "Setup",
+        "what": "SJ measured two sprints and is slower with the setup",
+        "elsewhere": "s11c_l21"
+      },
+      {
+        "kind": "Setup",
+        "what": "SJ wrote the security policy and uses it to justify local inference",
+        "elsewhere": "s11c_l23 (following the security policy)"
+      },
+      {
+        "kind": "Setup",
+        "what": "Marcus warns the Chinese model could hide a one-character backdoor",
+        "elsewhere": null
+      },
+      {
+        "kind": "Setup",
+        "what": "SJ expensed the machine by writing AI on the expense report",
+        "elsewhere": "s11c_l4, s19_l67"
+      },
+      {
+        "kind": "Setup",
+        "what": "The billing-webhook retry ticket SJ is stuck on",
+        "elsewhere": "s11c_l2 mentions it closed; s06_l3 mentions webhook tickets"
+      },
+      {
+        "kind": "Guardrail",
+        "what": "Third standup where SJ and Marcus talk over Kristina (guardrail 3)",
+        "elsewhere": "s01 and s06 standups still carry it"
+      },
+      {
+        "kind": "Guardrail",
+        "what": "Echo of guardrail 1: Brendan asks about parallel agents and tool use, SJ calls it fancy autocomplete",
+        "elsewhere": "s01c is the main home; s11c_l23 reports 'fancy autocomplete'"
+      },
+      {
+        "kind": "Character",
+        "what": "Marcus turns from fighting the machines to telling SJ to use them, and asks who the speed is for",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Brendan silently finishes the ticket with a cloud agent and deletes the patch, echoing s07_l25",
+        "elsewhere": null
+      },
+      {
+        "kind": "Joke",
+        "what": "Narrator reveals Kristina takes minutes every day; Grok agreement; 'Maybe AI does do a better job than YOU'",
+        "elsewhere": null
+      },
+      {
+        "kind": "Payoff",
+        "what": "John Henry and Luddite callbacks from s06",
+        "elsewhere": "s14a_l23, s14a_l32, s23b_l17 keep the Luddite thread"
+      },
+      {
+        "kind": "Staging",
+        "what": "SJ back on Reddit while the model types, bookending s01_l1",
+        "elsewhere": null
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s22_backdoor",
+        "problem": "Marcus says 'I said this. A backdoor can be one character long. I want it noted I said that in March.' The audience never heard him say it.",
+        "fix": "Kristina reports the argument in s11c (added line below), and trim the date, which already clashes with the June montage."
+      },
+      {
+        "cue": "s23_l40",
+        "problem": "'he should have listened to me about not using the Chinese AI' needs the warning to have been planted.",
+        "fix": "Covered by the added Kristina line in s11c."
+      },
+      {
+        "cue": "s11c_l2",
+        "problem": "'SJ closed the webhook ticket' refers to a ticket only introduced in s11b.",
+        "fix": "The moved narrator line names the webhook ticket."
+      },
+      {
+        "cue": "s11c_l6",
+        "problem": "'standup turning into a panel discussion' and 'I asked for a doc' refer to s11b_l33.",
+        "fix": "none; it reads fine as Kristina reporting offstage standups."
+      }
+    ],
+    "changes": [
+      {
+        "action": "move",
+        "where": "s11b_l1",
+        "detail": "Move the opening narrator line to the start of s11c, before s11c_l1, with the webhook ticket added.",
+        "text": "NARRATOR: A few months later, SJ has a new Mac Studio on his desk. It runs a local Qwen model, a few tokens at a time, on the billing-webhook ticket."
+      },
+      {
+        "action": "add",
+        "where": "after s11c_l7",
+        "detail": "Kristina plants Marcus's backdoor warning so s22 and s23 still pay off.",
+        "text": "KRISTINA: Marcus thinks SJ's Chinese model is a backdoor. He says a backdoor can be one character long. SJ says Claude is the backdoor. Eleven pages."
+      },
+      {
+        "action": "trim",
+        "where": "s22_backdoor",
+        "detail": "Drop 'in March', which no longer points at a scene the audience saw.",
+        "text": "Yeah! they think the Chinese got in. A backdoor, through one of the AI tools. I said this. A backdoor can be one character long. I want it noted I said that."
+      },
+      {
+        "action": "cut",
+        "where": "s11b (all remaining cues)",
+        "detail": "Delete the rest of the scene. There is no montage cue in s11b; the time jump stays at the end of s07."
+      }
+    ],
+    "risk": "high",
+    "riskWhy": "The plot can be patched, but this is the only on-stage view of the rig that drives the hack, the last standup, and the only place guardrail 1 is echoed, so the play would tell rather than show all three.",
+    "writtenOn": "2026-10-05"
+  }
+}

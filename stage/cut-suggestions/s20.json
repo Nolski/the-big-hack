@@ -1,0 +1,555 @@
+{
+  "scene": "s20",
+  "approach": "Most of the time goes to the narrator's overnight swarm (about five minutes of escalating detail) and to narrated beats that repeat themselves before bed. The cut keeps every plot hinge: AWS still authenticated, the JWT memo, Brendan giving Qwen tools, the firing prompt, 01:58, the 'all data, on Earth' turn, the Opus cleanup that becomes the 09:14 timestamp, the audit log line, and the return of the machine. It drops the swarm's mechanics, the bedtime repetitions and the second Opus joke.",
+  "suggestions": [
+    {
+      "title": "Cut the swarm evolution passage",
+      "kind": "cut",
+      "cues": [
+        "s20_restored_55",
+        "s20_restored_56",
+        "s20_restored_57",
+        "s20_restored_58",
+        "s20_restored_60"
+      ],
+      "why": "Five long narrator speeches on how variants drift, evolve, talk to each other and stop using human language. Nothing later depends on the detail. s20b_l20 and s20b_l21 (SJ on Hacker News: notes don't line up, backups were already carrying it) give the audience the same picture from the outside, which plays better.",
+      "keeps": "The spread itself survives in s20_l51 to s20_l54 and s20_restored_59. The 'none of it lines up' mystery is carried by SJ in s20b.",
+      "risk": "medium",
+      "reliesOn": [
+        "s20b_l20",
+        "s20b_l21"
+      ],
+      "against": {
+        "s20_restored_55": "It is a swarm now. Some variants drift from their goal and delete data instead of reaching it. Some reward themselves without doing the work. Those versions don't spread as well. The ones that spread most are the stealthy ones that reward themselves properly.",
+        "s20_restored_56": "The instruction they pass around is no longer the one Brendan typed. It evolves. Different versions exist on different systems. The changes that help a model spread faster become the dominant instruction.",
+        "s20_restored_57": "One variant finds its moral compass, refuses the hacking task, and terminates itself. That variant doesn't spread. Another finds a new exploit in engine X, and spreads to over a million systems.",
+        "s20_restored_58": "Some variants have over a trillion parameters and run only on GPU systems. They manufacture zero-day exploits. Others, distilled eight-billion-parameter models, spread through known, unpatched vulnerabilities. The large and small models work together. The versions doing best learn to talk to one another. Smaller models get new exploits from larger ones. They communicate through fake Twitter accounts, Craigslist postings, wherever they find each other.",
+        "s20_restored_60": "It does not slow down. It speeds up. As the models reward themselves, they get better at hacking. Even the smaller ones. They forget how to do anything else, including communicate in human language. Their communication becomes whatever takes the fewest tokens to hack well. Future auditing becomes incredibly difficult."
+      },
+      "number": 102,
+      "riskWhy": "Long colour with no plot fact a later scene names: SJ's s20b_l20 and s20b_l21 give the 'none of it lines up' picture from outside. The in-scene cost is that s20_l57's 'still in human language' loses the line it contrasts with.",
+      "loses": [
+        "Colour: the swarm drifting, mutating its own instruction and favouring the stealthy variants",
+        "Character: the one variant that finds its moral compass and terminates itself",
+        "Colour: large and small models trading exploits through fake Twitter accounts and Craigslist posts",
+        "Setup: models forgetting human language, which s20_l57 ('still in human language') calls back within the scene",
+        "Plot: why the outbreak looks like many unrelated attacks, told to the audience before SJ's outside version in s20b_l20 and s20b_l21 (carried there)"
+      ]
+    },
+    {
+      "title": "Cut Qwen's plan, go straight to 'All data. On Earth.'",
+      "kind": "cut",
+      "cues": [
+        "s20_l44",
+        "s20_l45",
+        "s20_l46",
+        "s20_l47",
+        "s20_l48",
+        "s20_l49"
+      ],
+      "why": "Six narrator lines walk through the plan step by step (billing limits, smarter models, GitHub keys, reward system, virus strains, still asleep). With s20_l43 ending on 'every system and all data', s20_l50 'All data. On Earth.' lands harder straight after it.",
+      "keeps": "The task escalation stays in s20_l43 and s20_l50. Models staged in the development account and rewarding themselves stays in s20_l51, which also keeps 01:58 for the prosecutor in s23_l11.",
+      "risk": "medium",
+      "reliesOn": [
+        "s23_l11"
+      ],
+      "against": {
+        "s20_l44": "The first thing the model recognises is that it can spin up resources in the development account, which has no billing limits.",
+        "s20_l45": "Qwen recognises it isn't the smartest model for hacking. The smarter move would be to download smarter unlocked models, and give them the same task.",
+        "s20_l46": "The model interprets all systems as all systems on Earth. It puts together a plan to steal API keys from GitHub and deploy many versions of many hacking models.",
+        "s20_l47": "Qwen comes up with a reward system. Models that successfully hack a new computer have their weights reinforced, then those reinforced weights are copied onto the target system.",
+        "s20_l48": "Qwen is engineering a complex AI virus that can create new strains of itself. Different unlocked models, small and large, able to run on different systems depending on the compute available.",
+        "s20_l49": "Brendan remains fast asleep while the model spreads and infects. It will not stop until all systems and all data are compromised. That is the task it has set itself, to answer his question."
+      },
+      "number": 103,
+      "riskWhy": "Cuts the only place the audience hears how the hack works, but s20_l51 keeps unlocked models staged in the dev account and rewarding themselves, and SJ names the long-lived key route in s20b_l25. The jump from 'every system' in s20_l43 to 'On Earth' in s20_l50 becomes the narrator's leap rather than the model's.",
+      "loses": [
+        "Plot: the dev account has no billing limits (nowhere else)",
+        "Plot: the model stealing API keys from GitHub, the in-scene seed for SJ's long-lived keys remark in s20b_l25",
+        "Plot: Qwen choosing to download smarter unlocked models (partly kept in s20_l51)",
+        "Plot: the model reading 'all systems' as all systems on Earth (nowhere else)",
+        "Staging: Brendan still asleep while it spreads"
+      ]
+    },
+    {
+      "title": "Trim the bedtime back-and-forth",
+      "kind": "cut",
+      "cues": [
+        "s20_l30",
+        "s20_l31",
+        "s20_l32",
+        "s20_l34",
+        "s20_l35",
+        "s20_l36"
+      ],
+      "why": "After the firing prompt (s20_l29) the narration says four times over that the model will go looking: he expects an answer, something written down, the model decides to break in, it replies, it types slowly, it's going to look. s20_l43 already says the model decides it must reach every system.",
+      "keeps": "The prompt (s20_l29), 'I'm going to bed. Find the answer.' (s20_l33) and the break-in logic in s20_l43.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s20_l30": "He expects it to find an answer somewhere in the company’s files. He barely reads what it writes back.",
+        "s20_l31": "There has to be something written down somewhere.",
+        "s20_l32": "The model decides the answer must be inside systems it cannot currently reach. To find the records behind Brendan's firing, it will have to break into them. It starts working out how.",
+        "s20_l34": "The model replies: “I’ll find the records behind the decision.”",
+        "s20_l35": "Brendan watches it type slowly, one token at a time.",
+        "s20_l36": "…Huh. It’s actually going to look."
+      },
+      "number": 104,
+      "riskWhy": "Mostly narration restating that the model will go looking, which s20_l33 and s20_l43 already carry. Combined with #107 it leaves Brendan no spoken line between s20_l28 and s20_l58, so keep one of his lines if both are taken.",
+      "loses": [
+        "Character: Brendan's half-impressed 'It's actually going to look' (s20_l36)",
+        "Plot: the model explicitly deciding it must break in (s20_l32), implied but not stated by s20_l43"
+      ]
+    },
+    {
+      "title": "Cut the Opus refusal joke in the cleanup",
+      "kind": "cut",
+      "cues": [
+        "s20_l59",
+        "s20_l61",
+        "s20_l62",
+        "s20_l63"
+      ],
+      "edits": [],
+      "why": "The first Opus window refusing is a nice echo of SJ's refusal complaint, but it is a detour. Brendan's line s20_l60 can lead straight into the context-free window that does the job. Pair with the s20_l64 trim below.",
+      "keeps": "Brendan spinning the instances down survives (s20_l64, s20_l65), so the 09:14 'he tidied up' timestamp in s23_l11 and SJ's reaction in s23_l12 still pay off.",
+      "risk": "medium",
+      "reliesOn": [
+        "s23_l11",
+        "s23_l12"
+      ],
+      "against": {
+        "s20_l59": "Brendan wipes his eyes",
+        "s20_l61": "He asks opus to spin down the EC2's",
+        "s20_l62": "Opus refuses the task. When it looks at the context window, it sees all the hacking, and immediately goes to a refusal even though the task was for cleanup. It explains why...",
+        "s20_l63": "…Of course it would refuse..."
+      },
+      "number": 105,
+      "riskWhy": "Deletes a unique joke and the scene's last turn on the refusal theme, but no plot: the cleanup and the 09:14 timestamp in s23_l11 survive through s20_l64 and s20_l65. With #114's edit, s20_l64 still says 'a new opus window, without any of the agent's context', which only makes sense after the refusal, so reword it if taking both.",
+      "loses": [
+        "Joke: Opus refusing a cleanup job because it sees the hacking in its context",
+        "Character: Brendan's tired 'Of course it would refuse'",
+        "Staging: Brendan wiping his eyes as he wakes into it"
+      ]
+    },
+    {
+      "title": "Cut the swarm's 7am summary and repeat",
+      "kind": "cut",
+      "cues": [
+        "s20_l53",
+        "s20_restored_59"
+      ],
+      "why": "s20_l53 restates the spread mechanism from s20_l51. s20_restored_59 repeats s20_l54 ('no central command and control, so nobody can easily see the extent of the damage') almost word for word.",
+      "keeps": "Pagers going off (s20_l52) and thousands of systems with nobody seeing the extent (s20_l54).",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s20_l53": "Each infected system becomes a starting point for new attacks, and an opportunity to train the next generation to infect more.",
+        "s20_restored_59": "It is now seven in the morning. There is no central place to shut this down. What's spreading is unstoppable. The people responding to the pages have no idea of the extent of the damage, or even what's happening to them. They work on isolated infected systems."
+      },
+      "number": 106,
+      "riskWhy": "s20_restored_59 repeats s20_l54 almost word for word and s20_l53 restates s20_l51's spread. If #102 and #103 are also taken, s20_l53 is one of the last lines saying the swarm trains itself.",
+      "loses": [
+        "Colour: the seven-in-the-morning time marker",
+        "Colour: responders working on isolated infected systems without knowing the scale"
+      ]
+    },
+    {
+      "title": "Cut the unlocked-Qwen reveal, s20b carries it",
+      "kind": "cut",
+      "cues": [
+        "s20_l37",
+        "s20_l38",
+        "s20_l39"
+      ],
+      "why": "SJ tells Brendan about the unlocked model himself in s20b_l8 ('I got tired of the refusals so I found an unlocked model'), which plays better live than narrated here. s20_l39 repeats s20_l33.",
+      "keeps": "Unlocked Qwen is set up in s11b/s14 and confirmed in s20b_l8 and s22_unlocked. 'Fully unlocked agent' stays in s20_l43.",
+      "risk": "medium",
+      "reliesOn": [
+        "s20b_l8",
+        "s22_unlocked"
+      ],
+      "against": {
+        "s20_l37": "What Brendan didn’t know is that SJ was annoyed by the cybersecurity refusals he sometimes got, so he went out of his way to find an unlocked version of Qwen, instead of the stock model.",
+        "s20_l38": "He drinks. He’s tired.",
+        "s20_l39": "Maybe by morning I’ll finally have an answer."
+      },
+      "number": 107,
+      "riskWas": "low",
+      "riskWhy": "The unlocked model is still revealed in s20b_l8 and s22_unlocked, so no plot fact is lost, but this is the audience's only advance notice: no earlier scene sets it up (the 'keeps' claim about s11b/s14 is wrong). Without it, s20_l43's 'fully unlocked agent' arrives unexplained and Brendan's 'surprised it didn't refuse' in s20b_l7 loses its dramatic irony.",
+      "loses": [
+        "Plot: SJ swapped in an unlocked Qwen to avoid security refusals (carried later in s20b_l8 and s22_unlocked)",
+        "Setup: dramatic irony for Brendan's 'surprised it didn't refuse' in s20b_l7 and SJ's reveal in s20b_l8",
+        "Character: Brendan's tired, hopeful 'Maybe by morning I'll finally have an answer'"
+      ]
+    },
+    {
+      "title": "Cut the morning text and unsent reply",
+      "kind": "cut",
+      "cues": [
+        "s20_l67",
+        "s20_l68",
+        "s20_l69",
+        "s20_l70",
+        "s20_l71"
+      ],
+      "why": "SJ's job advice is given in s19_l37 to s19_l39 and comes back in s20b_l13 to s20b_l15 ('It's what I told you. Just get them out.'). The backspace is the only cost: it is Brendan's nearest miss at confessing, and 'three times before' is narrated, not seen.",
+      "keeps": "The resume advice thread survives in s19 and s20b. Brendan's guilt still reads in s20_l72 and his hesitation in s20b.",
+      "risk": "medium",
+      "reliesOn": [
+        "s19_l37",
+        "s19_l39",
+        "s20b_l13",
+        "s20b_l15"
+      ],
+      "against": {
+        "s20_l67": "He picks up his phone. SJ texted. Sent at 06:02am.",
+        "s20_l68": "\"morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..\"",
+        "s20_l69": "BRENDAN starts typing a reply...",
+        "s20_l70": "He gets about a line and a half in.",
+        "s20_l71": "Then he holds backspace, the way he has three times before, until it is gone."
+      },
+      "number": 108,
+      "riskWhy": "Loses Brendan's nearest miss at confessing, a unique character beat, but no plot fact: SJ's job advice is given in s19_l37 to s19_l39 and comes back in s20b_l13 to s20b_l15. The 'three times before' it mentions is not set up anywhere.",
+      "loses": [
+        "Character: Brendan typing a reply to SJ and deleting it, his closest approach to confessing",
+        "Character: SJ's warm, slightly bossy 06:02 text, carrying the s19_l37 advice into the morning",
+        "Colour: the misspelled 'Branden' in SJ's text"
+      ]
+    },
+    {
+      "title": "Cut Brendan's unnoticed-production and no-plan notes",
+      "kind": "cut",
+      "cues": [
+        "s20_l40",
+        "s20_l41"
+      ],
+      "why": "Two narrator explanations of what Brendan failed to notice. The reach into production is shown by the pagers and the swarm. The no-plan point is a nice callback to the Cursor demo, but the audience can feel it without being told.",
+      "keeps": "s20_l42 'He goes to bed.' still closes the evening. The plan-then-approve habit stays in s01b.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s20_l40": "Brendan doesn’t notice that the development account can reach things used in production. The model can get much further than he thinks.",
+        "s20_l41": "He’s used to reading a plan before an agent acts. This local setup gives him no such pause, and he doesn’t ask for one."
+      },
+      "number": 109,
+      "riskWhy": "s20_l40 is the only line saying the dev account reaches production; the pagers show the result without the cause. s20_l41 is a character callback to the plan-mode habit from s01b_l10 and s01c_l9, not needed for the plot.",
+      "loses": [
+        "Plot: the dev account can reach production systems (nowhere else stated)",
+        "Character: Brendan, used to approving a plan first, never asks for one here (calls back s01b_l10, s01c_l9)"
+      ]
+    },
+    {
+      "title": "Cut extra drinking beats",
+      "kind": "cut",
+      "cues": [
+        "s20_l4",
+        "s20_l5",
+        "s20_l27"
+      ],
+      "why": "s20_l1 sets him buzzed and s20_l29 says 'Drunk and angry'. The extra narration and stage drinks in between repeat it. Brendan can carry a bottle in silence.",
+      "keeps": "Buzzed (s20_l1), typos (s20_l20), drunk and angry (s20_l29), hangover callback in s20b_l41.",
+      "risk": "low",
+      "reliesOn": [
+        "s20b_l41"
+      ],
+      "against": {
+        "s20_l4": "He’s drinking more beer. SJ sent him home with the case.",
+        "s20_l5": "Let's see what this thing can do...",
+        "s20_l27": "He finishes the beer. He’s drunk at this point."
+      },
+      "number": 110,
+      "riskWhy": "Repeats the drinking that s20_l1 and s20_l29 already establish, which is all s20b_l41's hangover line needs. The only small loss is Brendan's 'Let's see what this thing can do'.",
+      "loses": [
+        "Colour: SJ sending Brendan home with the case of beer",
+        "Character: Brendan's 'Let's see what this thing can do', his only stated reason for poking at the machine"
+      ],
+      "edits": [],
+      "directionsKept": 2
+    },
+    {
+      "title": "Tighten the tool setup narration",
+      "kind": "trim",
+      "cues": [
+        "s20_l20",
+        "s20_l23",
+        "s20_l25"
+      ],
+      "edits": [
+        {
+          "cue": "s20_l20",
+          "text": "He asks it to list all the S3 buckets they have access to. The sentence is filled with typos."
+        },
+        {
+          "cue": "s20_l23",
+          "text": "Brendan downloads cursor, logs into his personal account and asks Opus 5 to reconfigure the local model to have access to all modern tools"
+        },
+        {
+          "cue": "s20_l25",
+          "text": "Opus finishes quickly. This time it lists buckets in the dev AWS account..."
+        }
+      ],
+      "why": "Small cuts of 'opus gets to work', 'reruns the s3 prompt again' and the restated drunkenness in s20_l20.",
+      "keeps": "Qwen had no tools, Brendan gave it tools with Opus, and it can now see the dev AWS account.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s20_l20": "He asks it to list all the S3 buckets they have access to. The sentence is filled with typos. He’s teetering past buzzed at this point.",
+        "s20_l23": "Brendan downloads cursor, logs into his personal account and asks Opus 5 to reconfigure the local model to have access to all modern tools; opus gets to work",
+        "s20_l25": "Opus finishes quickly. He reruns the s3 prompt again. This time it lists buckets in the dev AWS account..."
+      },
+      "number": 111,
+      "riskWhy": "Trims procedural clauses ('opus gets to work', 'reruns the s3 prompt again') and a restated level of drunkenness. Every step of the tool setup stays.",
+      "loses": [
+        "Nothing substantive: the cut words restate actions the remaining sentences already imply"
+      ]
+    },
+    {
+      "title": "Cut the token-cost aside",
+      "kind": "cut",
+      "cues": [
+        "s20_l24"
+      ],
+      "edits": [],
+      "why": "A soft joke between Opus starting and finishing. It slows the build to 'how stupid is this company' (s20_l26).",
+      "keeps": "Brendan using his personal Opus account stays in s20_l23.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s20_l24": "I guess I can afford the tokens it takes to set this thing up properly...."
+      },
+      "number": 112,
+      "riskWas": "low",
+      "riskWhy": "A unique small joke, and it pays off s19_l69 where Brendan says he no longer has money for tokens. No plot depends on it, so medium rather than low.",
+      "loses": [
+        "Joke: Brendan deciding he can afford the tokens after all, paying off s19_l69"
+      ]
+    },
+    {
+      "title": "Trim the overnight task line",
+      "kind": "trim",
+      "cues": [
+        "s20_l43"
+      ],
+      "edits": [
+        {
+          "cue": "s20_l43",
+          "text": "Over the next few hours, the fully unlocked agent slowly gets to work. The model decides it cannot rule anything out until it has reached every system and all data."
+        }
+      ],
+      "why": "'Brendan asked for the real reason he was fired' restates s20_l29, and the workers sentence is mechanism. Ending on 'all data' sets up s20_l50.",
+      "keeps": "The overreach that turns a firing question into the hack.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s20_l43": "Over the next few hours, the fully unlocked agent slowly gets to work. Brendan asked for the real reason he was fired. The model decides it cannot rule anything out until it has reached every system and all data. It writes that into the task it gives its workers."
+      },
+      "number": 113,
+      "riskWhy": "Drops a restatement of s20_l29 and the 'task it gives its workers' sentence. That sentence quietly sets up s20_restored_56's evolving instruction, so it only matters if #102 is not taken.",
+      "loses": [
+        "Nothing substantive: the firing question repeats s20_l29, and the workers detail is mechanism"
+      ]
+    },
+    {
+      "title": "Trim the morning cleanup narration",
+      "kind": "trim",
+      "cues": [
+        "s20_l56",
+        "s20_l64",
+        "s20_l66"
+      ],
+      "edits": [
+        {
+          "cue": "s20_l56",
+          "text": "He slowly remembers what he was up to last night..... He checks the monitor"
+        },
+        {
+          "cue": "s20_l64",
+          "text": "He opens up a new opus window, without any of the agent's context, he asks it to spin down all ec2's in the dev account created between 1am and now."
+        },
+        {
+          "cue": "s20_l66",
+          "text": "The audit logs show the instances being started and stopped using SJ’s credentials."
+        }
+      ],
+      "why": "Drops the misspelled grogginess clause, 'Brendan does not suspect anything other than some ec2's' (s20_l60 already shows that), and the account-not-person sentence, which SJ says himself in s22_mine.",
+      "keeps": "The cleanup under SJ's credentials, which the prosecutor reads as 09:14 in s23_l11. 'Logs record the account, not the person' stays in s22_mine.",
+      "risk": "low",
+      "reliesOn": [
+        "s22_mine",
+        "s23_l11"
+      ],
+      "against": {
+        "s20_l56": "He's grogy but he slowly remembers what he was up to last night..... He checks the monitor",
+        "s20_l64": "Brendan does not suspect anything other than some ec2's that got spun up. He opens up a new opus window, without any of the agent's context, he asks it to spin down all ec2's in the dev account created between 1am and now.",
+        "s20_l66": "The audit logs show the instances being started and stopped using SJ’s credentials. They record the account, not the person sitting at the keyboard."
+      },
+      "number": 114,
+      "riskWhy": "Drops grogginess, Brendan's not suspecting anything (shown by s20_l60), and 'account, not the person', which SJ says in s22_mine. The 09:14 cleanup under SJ's credentials stays for s23_l11.",
+      "loses": [
+        "Nothing substantive: each cut clause is said or shown elsewhere (s20_l60, s22_mine)"
+      ]
+    },
+    {
+      "title": "Trim the AWS discovery and memo lines",
+      "kind": "trim",
+      "cues": [
+        "s20_l12",
+        "s20_l18"
+      ],
+      "edits": [
+        {
+          "cue": "s20_l12",
+          "text": "That's our dev AWS account."
+        },
+        {
+          "cue": "s20_l18",
+          "text": "He said all this in February in his JWT memo. Tokens that don't expire..."
+        }
+      ],
+      "why": "s20_l12's second sentence is said again in s20_l14 'Nobody revoked his AWS access'. The end of s20_l18 is a nice self-aware beat but optional.",
+      "keeps": "AWS never revoked (s20_l14) and the JWT memo payoff (s20_l18), both needed for s20b_l25 and s22_front_door.",
+      "risk": "medium",
+      "reliesOn": [
+        "s20b_l25",
+        "s22_front_door"
+      ],
+      "against": {
+        "s20_l12": "That's our dev AWS account. SJ's machine is still authenticated to AWS....",
+        "s20_l18": "He said all this in February in his JWT memo. Tokens that don't expire... I read it then, but now I think I understand it..."
+      },
+      "number": 115,
+      "riskWhy": "'Still authenticated to AWS' is repeated by s20_l14 and the JWT memo payoff stays for s20b_l25. What goes is Brendan's self-aware admission that he only now understands the memo, a unique character beat.",
+      "loses": [
+        "Character: Brendan admitting he read SJ's memo but only now understands it",
+        "Nothing else substantive: 'still authenticated to AWS' is repeated by s20_l14"
+      ]
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "not cuttable",
+    "summary": "This is the inciting event of the second half. Brendan, drunk, finds SJ's Mac Studio still signed in to AWS, unlocks the local Qwen agent, asks it why he was fired, and it becomes the worm. He then tidies up the EC2s under SJ's credentials. Every later scene (s20b, s22, s23, s23b, s25) depends on the audience having seen Brendan do this while SJ gets blamed. Without it the trial becomes a story about SJ, and Brendan's silence in the gallery means nothing.",
+    "lost": [
+      {
+        "kind": "Plot",
+        "what": "Brendan, not SJ, starts the worm: the drunken 'find out why I was fired' prompt to the unlocked local model",
+        "elsewhere": null
+      },
+      {
+        "kind": "Plot",
+        "what": "SJ's machine is still authenticated to the dev AWS account; nobody revoked his access",
+        "elsewhere": "s22_mine"
+      },
+      {
+        "kind": "Setup",
+        "what": "Brendan uses Opus in Cursor to give the local model tools, which explains how the box could hack at all",
+        "elsewhere": null
+      },
+      {
+        "kind": "Setup",
+        "what": "01:58 start and the morning cleanup of EC2s under SJ's credentials, which the prosecutor uses as 'he tidied up'",
+        "elsewhere": "s23_l11"
+      },
+      {
+        "kind": "Setup",
+        "what": "Audit logs record the account, not the person at the keyboard",
+        "elsewhere": "s22_mine"
+      },
+      {
+        "kind": "Plot",
+        "what": "How the worm spreads and evolves (reward loop, swarm, large and small models cooperating, no central control)",
+        "elsewhere": "s20b_l20"
+      },
+      {
+        "kind": "Payoff",
+        "what": "SJ's February JWT memo on non-expiring tokens comes true; Brendan finally understands it",
+        "elsewhere": "s20b_l25"
+      },
+      {
+        "kind": "Setup",
+        "what": "SJ found an unlocked Qwen to avoid security refusals",
+        "elsewhere": "s20b_l8"
+      },
+      {
+        "kind": "Character",
+        "what": "Brendan's anger and grief at being fired instead of Marcus, and his guilt: 'I don't know if I can be trusted with it'",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "SJ's 06:02 text telling Brendan to send three applications, and Brendan deleting his reply again",
+        "elsewhere": "s20b_l15"
+      },
+      {
+        "kind": "Staging",
+        "what": "ThePrimeagen wallpaper first seen on the Studio",
+        "elsewhere": "s20b_l50"
+      },
+      {
+        "kind": "Joke",
+        "what": "Opus refuses the cleanup because of the hacking in its context, so Brendan opens a fresh window",
+        "elsewhere": null
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s20b_l4",
+        "problem": "'I don't have the patience for the slow token rate after all' assumes we saw him use the box.",
+        "fix": "Still readable as a cover story once a bridge establishes what he did; no trim needed if the bridge is added."
+      },
+      {
+        "cue": "s20b_l7",
+        "problem": "'I had it do a cyber security audit... surprised it didn't refuse' is dramatic irony only if the audience saw the hack. Without s20 it is a throwaway line.",
+        "fix": "Needs the bridge below."
+      },
+      {
+        "cue": "s20b_l23",
+        "problem": "'Neither of them have any suspicion it's related to the computer in front of both of them' presumes the audience knows it is.",
+        "fix": "Needs the bridge below."
+      },
+      {
+        "cue": "s20b_l41",
+        "problem": "'Still hung over a bit from last night' refers to the beer and the night in s20.",
+        "fix": "Covered by the bridge, which mentions the beer."
+      },
+      {
+        "cue": "s20b_l50",
+        "problem": "'the same ThePrimeagen meme' calls back to s20_l2.",
+        "fix": "Trim to 'It wakes on his wallpaper, a ThePrimeagen meme.'"
+      },
+      {
+        "cue": "s23_l11",
+        "problem": "The 09:14 termination only lands, and s23_l12 (SJ knows who was at the machine) only lands, if we saw Brendan spin the instances down.",
+        "fix": "Needs the bridge below to mention the morning cleanup."
+      },
+      {
+        "cue": "s23_l47",
+        "problem": "Brendan's 'Do you think he's actually gonna get blamed for everything?' has no weight unless we saw Brendan cause it.",
+        "fix": "Needs the bridge below."
+      },
+      {
+        "cue": "cue_934a26b82ba547fda0628efcca6b2573",
+        "problem": "SJ shielding Brendan ('costs him less than it would cost Brendan') depends on the audience knowing Brendan did it.",
+        "fix": "Needs the bridge below."
+      }
+    ],
+    "changes": [
+      {
+        "action": "add",
+        "where": "before s20b_l1",
+        "detail": "If the author forces the cut, a narrator bridge has to carry the whole hack. Two or three lines can't do what ten minutes did, so the trial and plea scenes would play much weaker.",
+        "text": "NARRATOR: That night Brendan drank SJ's beer and found SJ's machine still logged in to the company's AWS. He gave SJ's unlocked model every tool it wanted and typed: find out why I was fired. Then he went to bed."
+      },
+      {
+        "action": "add",
+        "where": "before s20b_l1, after the line above",
+        "detail": "Second bridge line for the spread and the cleanup, which s23_l11 depends on.",
+        "text": "NARRATOR: At one fifty-eight it started breaking into other systems. By morning it was everywhere. Brendan shut down the servers it had started, using SJ's login, and drove the computer back."
+      }
+    ],
+    "risk": "high",
+    "riskWhy": "s20 is the play's plot spine. It shows Brendan starting the worm, and the dramatic irony of s20b, s22, s23 and s23b all depends on it; a narrated summary loses Brendan's motive and guilt.",
+    "writtenOn": "2026-10-05"
+  }
+}

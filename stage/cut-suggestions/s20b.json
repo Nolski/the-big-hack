@@ -1,0 +1,315 @@
+{
+  "scene": "s20b",
+  "approach": "The scene's job is to get the Mac Studio back onto SJ's desk so the police find it there, and almost all of its time goes on a malware chat that s22 repeats nearly word for word. The cuts below strip it in order of least loss; taking all of them leaves a wordless return (Brendan carries the machine in, puts it down, SJ chuckles), the first news chyron, a two-line goodbye, and SJ plugging the machine in. That is effectively cutting the scene while keeping the return as a visible beat.",
+  "suggestions": [
+    {
+      "title": "Cut the hackernews malware conversation",
+      "kind": "cut",
+      "cues": [
+        "s20b_l16",
+        "s20b_l17",
+        "s20b_l18",
+        "s20b_l19",
+        "s20b_l20",
+        "s20b_l21",
+        "s20b_l22",
+        "s20b_l25",
+        "s20b_l26",
+        "s20b_l27",
+        "s20b_l29",
+        "s20b_l30",
+        "s20b_l31"
+      ],
+      "edits": [],
+      "why": "s22_front_door already has SJ say the same thing to Marcus, almost verbatim: 'A long-lived key... It didn't break anything. It was allowed to do everything it did. That's my memo.' Playing it here first blunts that line, which lands harder when SJ meets it fresh in s22. s20_l18 has already paid off the memo through Brendan. s20b_l23 is an internal-state direction the back row cannot see.",
+      "keeps": "The JWT memo thread survives in s20_l18 and s22_front_door. The Kazakhstan chyron (s20b_l24) is not in this cut and can still run behind the return. s20b_l51 ('reads more of the comments') still reads as SJ browsing on screen. Lost: Brendan's guilty '...Mm.' and the dramatic irony of SJ admiring the attack in front of the machine.",
+      "risk": "medium",
+      "reliesOn": [
+        "s20_l18",
+        "s22_front_door"
+      ],
+      "against": {
+        "s20b_l16": "Have you checked hackernews today?",
+        "s20b_l17": "…No... why?",
+        "s20b_l18": "There's some new malware that's going around, it seems pretty advanced",
+        "s20b_l19": "Oh that sounds interesting.",
+        "s20b_l20": "Everyone's speculating about it, but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.",
+        "s20b_l21": "Somebody wiped a whole cluster and rebuilt it from backup, and it came back inside the hour. They think the backups were already carrying it.",
+        "s20b_l22": "That does sound interesting... I wonder if that's related to the Ukraine or Iran war...",
+        "s20b_l25": "Do you know what's actually clever about it, though? It seems to be using Long lived API keys to spread among other things.. you know, the thing I wrote about in my JWT memo?",
+        "s20b_l26": "It didn't break anything to get in, that's the thing. Every single thing it did, it was allowed to do.",
+        "s20b_l27": "…Mm.",
+        "s20b_l29": "I'd love to see the logs, it's a bummer I can't help do incident response..",
+        "s20b_l30": "Yeah.",
+        "s20b_l31": "Oh well..."
+      },
+      "number": 116,
+      "riskWhy": "No plot is lost: the attack's method lands in s22_front_door, which this cut lets SJ say fresh, and it also removes a small continuity snag where SJ already knows about the keys yet asks Marcus 'How did it get in?' (s22_how). What goes is the dramatic irony of SJ admiring the attack in front of the machine while Brendan sits silent.",
+      "loses": [
+        "Character: SJ admiring the malware's design and wishing he could see the logs, with the Mac Studio that did it on the table",
+        "Character: Brendan's guilty '...Mm.' and breath out (s20b_l27, s20b_l28), his only reaction to the news in SJ's presence",
+        "Colour: the wiped cluster that came back from backup inside the hour (nowhere else)",
+        "Plot: SJ linking the attack to his JWT memo (also in s22_front_door and s20_l18)",
+        "Setup: s20b_l51 'reads more of the comments' loses its referent; it needs 'more of' dropped or it reads oddly"
+      ],
+      "directionsKept": 2
+    },
+    {
+      "title": "Cut SJ telling Brendan he emailed a friend",
+      "kind": "cut",
+      "cues": [
+        "s20b_l33",
+        "s20b_l34",
+        "s20b_l35",
+        "s20b_l36",
+        "s20b_l37",
+        "s20b_l38"
+      ],
+      "edits": [],
+      "why": "SJ's care for Brendan after the layoffs is already on stage in s19 (the resume advice, s19_l37 to s19_l39) and in the 06:02 text he sends in s20_l68. This is a third instance of the same kindness.",
+      "keeps": "SJ's motive for taking the fall is still spelled out by the narrator in s23b ('Eighteen months costs him less than it would cost Brendan'). Lost: SJ's 'best engineer I've worked with in ten years', which mirrors Marcus calling SJ 'the best engineer I've ever worked with' in s23_l32, and the 'Especially if it's a no' line, which is very SJ. The author should decide whether that mirror is worth keeping.",
+      "risk": "medium",
+      "reliesOn": [
+        "s19_l37",
+        "s19_l39",
+        "s20_l68",
+        "s23_l32"
+      ],
+      "against": {
+        "s20b_l33": "Oh, I emailed my friend about you.",
+        "s20b_l34": "…What?",
+        "s20b_l35": "I said you're the best engineer I've worked with in ten years and she should talk to you before somebody else does.",
+        "s20b_l36": "Oh SJ... you didn't have to do that.",
+        "s20b_l37": "I know. Let me know if she comes back to you. Even if it's a no. Especially if it's a no, actually, because then I'll call her.",
+        "s20b_l38": "Okay."
+      },
+      "number": 117,
+      "riskWhy": "Loses SJ's one direct praise of Brendan and a very SJ line, but no plot: his care for Brendan after the layoffs is already shown in s19_l37 to s19_l39 and s20_l68, and his motive for taking the fall is stated in s23b.",
+      "loses": [
+        "Character: SJ calling Brendan 'the best engineer I've worked with in ten years', the only time SJ praises Brendan; it reverses the motif of others calling SJ the best (s01b_l3, s07_l12, s14a_l43, s23_l32)",
+        "Joke: 'Especially if it's a no, actually, because then I'll call her.'",
+        "Character: SJ going out of his way for Brendan just after Brendan has unknowingly framed him, which sharpens Brendan's guilt"
+      ],
+      "directionsKept": 1
+    },
+    {
+      "title": "Cut the drink offer and SJ's eleven resumes",
+      "kind": "cut",
+      "cues": [
+        "s20b_l10",
+        "s20b_l11",
+        "s20b_l13",
+        "s20b_l14",
+        "s20b_l15"
+      ],
+      "edits": [],
+      "why": "SJ's 'just get them out' advice is already given in s19_l37 to s19_l39 and repeated in his text in s20_l68 ('send out three job applications before lunch'). s20b_l12 is internal state that cannot be staged.",
+      "keeps": "The layoff advice thread is intact in s19 and s20. Lost: the small, sad detail of two automated rejections on the same day.",
+      "risk": "low",
+      "reliesOn": [
+        "s19_l37",
+        "s19_l39",
+        "s20_l68"
+      ],
+      "against": {
+        "s20b_l10": "Do you want a drink? I've got... coffee... tea...?",
+        "s20b_l11": "I'm alright.",
+        "s20b_l13": "I've sent out eleven resume's today. Two came back as rejections on the same day, an automated thing, but the important thing is keeping the momentum up.",
+        "s20b_l14": "That's good.",
+        "s20b_l15": "It's what I told you. Just get them out."
+      },
+      "number": 118,
+      "riskWhy": "Repetition: the 'just get them out' advice is already given in s19_l37 to s19_l39 and s20_l68, and s20b_l12 is internal state the back row cannot see. Only a small sad detail of colour goes.",
+      "loses": [
+        "Colour: eleven resumes and two automated rejections on the same day (nowhere else)",
+        "Character: the only glimpse of SJ's own job hunt after the layoff, and his forced 'keeping the momentum up'",
+        "Nothing substantive in s20b_l10, s20b_l11, s20b_l12: drink offer and an internal-state direction"
+      ],
+      "directionsKept": 1
+    },
+    {
+      "title": "Cut the unlocked-model exchange",
+      "kind": "cut",
+      "cues": [
+        "s20b_l6",
+        "s20b_l7",
+        "s20b_l8",
+        "s20b_l9"
+      ],
+      "edits": [],
+      "why": "The narrator has already told the audience in s20_l37 that SJ went out of his way to find an unlocked Qwen because of the refusals, and s22_unlocked and s22_which bring it back. Nothing later depends on Brendan hearing it from SJ.",
+      "keeps": "The unlocked-model thread lives in s20_l37, s20_l43 and s22. Lost: Brendan's half-truth 'a cyber security audit', a small bit of irony.",
+      "risk": "low",
+      "reliesOn": [
+        "s20_l37",
+        "s20_l43",
+        "s22_unlocked",
+        "s22_which"
+      ],
+      "against": {
+        "s20b_l6": "What did you use it for?",
+        "s20b_l7": "I had it do a cyber security audit... I was a little surprised it didn't refuse...",
+        "s20b_l8": "Oh yeah, I don't know if I told you that part, I got tired of the refusals so I found an unlocked model",
+        "s20b_l9": "Oh that makes sense..."
+      },
+      "number": 119,
+      "riskWhy": "The fact that SJ chose an unlocked model is already told in s20_l37 and brought back in s20_l43 and s22_unlocked, so this repeats it. What goes is Brendan's half-truth and a small bit of irony.",
+      "loses": [
+        "Plot: SJ deliberately found an unlocked model because of the refusals (also in s20_l37)",
+        "Character: Brendan's half-truth 'a cyber security audit', the closest he comes to confessing",
+        "Joke: SJ's offhand 'I don't know if I told you that part', delivered to the man it doomed"
+      ]
+    },
+    {
+      "title": "Cut the jacket and hangover exit",
+      "kind": "cut",
+      "cues": [
+        "s20b_l40",
+        "s20b_l41",
+        "s20b_l42",
+        "s20b_l43"
+      ],
+      "edits": [],
+      "why": "A stalled exit beat. Brendan's guilt is better carried by him leaving quickly than by a hangover excuse, and the drinking was already established in s19 and s20_l1.",
+      "keeps": "Brendan's exit survives in s20b_l45 to s20b_l47 ('Thanks, SJ.' 'Any time.'). Lost: the jacket taking 'slightly longer than it needs to' and SJ's 'Go home. Eat something.'",
+      "risk": "medium",
+      "reliesOn": [
+        "s20_l1"
+      ],
+      "against": {
+        "s20b_l40": "You alright?",
+        "s20b_l41": "Yeah. Maybe still hung over a bit from last night.",
+        "s20b_l42": "Go home. Eat something.",
+        "s20b_l43": "Yeah."
+      },
+      "number": 120,
+      "riskWas": "low",
+      "riskWhy": "Raised from low: the slow jacket and the hangover excuse are Brendan's last visible guilt in front of SJ, and a second small lie to his face. This is a unique character and staging beat, not padding.",
+      "loses": [
+        "Character: Brendan covering with 'still hung over a bit'",
+        "Character: SJ's 'Go home. Eat something.'"
+      ],
+      "directionsKept": 2
+    },
+    {
+      "title": "Make the return wordless",
+      "kind": "cut",
+      "cues": [
+        "s20b_l3",
+        "s20b_l4"
+      ],
+      "edits": [],
+      "why": "With the rest of the scene cut, the return reads from the back row on its own: Brendan carries the Mac Studio in and puts it down (s20b_l2, s20b_l5), and SJ plugs it in once he has gone (s20b_l48 to s20b_l50). s20_l72 has already given Brendan's reason for bringing it back. If the scene is cut entirely instead, the return needs one stage direction at the top of s22, for example: 'BRENDAN sets the Mac Studio down on SJ's desk, nods, and goes.'",
+      "keeps": "The machine is visibly back at SJ's, which s22_studio, s22_l72 and the prosecutor's 'recovered from the defendant's home' (s23_l10) depend on. Lost: Brendan's 'slow token rate' excuse, which is a quiet joke.",
+      "risk": "medium",
+      "reliesOn": [
+        "s20_l72",
+        "s22_l72",
+        "s22_studio",
+        "s23_l10"
+      ],
+      "against": {
+        "s20b_l3": "You really don't have to give it back so soon, you barely got to play with it...",
+        "s20b_l4": "That's okay, it turns out I don't have the patience for the slow token rate after all..."
+      },
+      "number": 121,
+      "riskWhy": "The return still reads visually (s20b_l2, s20b_l5, s20b_l48 to s20b_l50) and s20_l72 gives Brendan's reason, so no plot goes. It loses a quiet joke, and s20b_l5 'SJ chuckles' needs trimming because the line he chuckles at is gone.",
+      "loses": [
+        "Joke: Brendan's 'slow token rate' excuse",
+        "Character: SJ's 'you barely got to play with it', his generosity in lending the machine",
+        "Character: Brendan returning the machine under a cover story rather than confessing (motive still given in s20_l72)",
+        "Staging: s20b_l5 'SJ chuckles' is orphaned unless edited"
+      ]
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "cuttable",
+    "summary": "Brendan returns the Mac Studio and mentions the security audit. SJ, delighted, tells him about the unlocked model, reads him the first hackernews reports of the worm and says he has recommended him to a friend. Nobody realises what is sitting on the table. Most of the plot is repeated in s22 (the key, the memo, the unlocked model, the 'allowed to do' line). Deleting the scene loses Brendan's last appearance on stage and the warm dramatic irony that makes SJ's later plea for Brendan's sake land harder. One narrator bridge covers the handback.",
+    "lost": [
+      {
+        "kind": "Plot",
+        "what": "The Mac Studio goes back to SJ, so it is on his desk in s22",
+        "elsewhere": "s20_l72 states the intent; s22_studio shows the result"
+      },
+      {
+        "kind": "Setup",
+        "what": "SJ hears that Brendan ran a 'cyber security audit' on his machine, which is the clue that lets SJ work out in s23b who really ran it",
+        "elsewhere": null
+      },
+      {
+        "kind": "Plot",
+        "what": "Brendan learns the model was unlocked",
+        "elsewhere": "s20_l37 tells the audience; Brendan reads 'unlocked models' in s20_l58"
+      },
+      {
+        "kind": "Plot",
+        "what": "First news of the worm: advanced malware, conflicting notes, a restored cluster reinfected from backup",
+        "elsewhere": "s22_l2 (company statement and ticker), s20_restored_59"
+      },
+      {
+        "kind": "Payoff",
+        "what": "SJ links the worm to long-lived API keys and his JWT memo: 'it was allowed to do'",
+        "elsewhere": "s22_front_door repeats it almost word for word"
+      },
+      {
+        "kind": "Staging",
+        "what": "The first running-screen chyron (Kazakhstan power outage) starts the collapse-in-the-background device",
+        "elsewhere": "s22_l2 is then the first ticker"
+      },
+      {
+        "kind": "Character",
+        "what": "SJ's generosity: eleven resumes, 'just get them out', emailing his friend that Brendan is the best engineer in ten years",
+        "elsewhere": "s19_l37, s19_l80 and s20_l68 carry the mentoring; the recommendation is lost"
+      },
+      {
+        "kind": "Character",
+        "what": "Brendan's last scene on stage: unease, slow with his jacket, 'Thanks, SJ' while the worm is on the news",
+        "elsewhere": null
+      },
+      {
+        "kind": "Joke",
+        "what": "Brendan blames the slow token rate; 'I wonder if it's the Ukraine or Iran war'",
+        "elsewhere": null
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s20_l72",
+        "problem": "Brendan says he'd better return the machine, and then we never see it happen",
+        "fix": "Narrator bridge after s20_l72 (see changes)."
+      },
+      {
+        "cue": "s22_studio",
+        "problem": "The Mac Studio is behind SJ on his desk; without s20b the audience has to assume it was returned",
+        "fix": "Covered by the same bridge."
+      },
+      {
+        "cue": "cue_934a26b82ba547fda0628efcca6b2573",
+        "problem": "SJ's plea math and his lie in s24_l19 assume he knows Brendan ran something on the box. s19_l68 (loan) supports that, but the audit detail only comes from s20b_l7",
+        "fix": "The bridge line keeps the audit detail."
+      }
+    ],
+    "changes": [
+      {
+        "action": "add",
+        "where": "after s20_l72",
+        "detail": "Narrator bridge covering the handback and the clue SJ needs later.",
+        "text": "NARRATOR: That afternoon he gives the Mac Studio back. He tells SJ he ran a security audit on it. SJ tells him the model was unlocked. Neither of them thinks about it again."
+      },
+      {
+        "action": "move",
+        "where": "s20b_l24",
+        "detail": "Optional: move the Kazakhstan chyron to directly after the new bridge line so the ticker starts before s22. Otherwise cut it."
+      },
+      {
+        "action": "cut",
+        "where": "s20b_l1 to s20b_l51",
+        "detail": "Delete the rest of the scene. There is no montage cue to keep."
+      }
+    ],
+    "risk": "medium",
+    "riskWhy": "The plot survives in s20 and s22, but this is Brendan's farewell and the last warm moment between him and SJ, and SJ's sacrifice in s23b leans on it.",
+    "writtenOn": "2026-10-05"
+  }
+}

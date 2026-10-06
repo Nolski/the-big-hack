@@ -1,0 +1,207 @@
+{
+  "scene": "s25",
+  "approach": "The scene is almost all callback, so the cold-open echoes stay whole: the praise, Brendan's weekend, the incredible feedback, best week in ages, the whole team moving like that, and the thing at eleven. The time comes out of Kristina's list of what the new law allows, plus a few small trims to the setup lines.",
+  "suggestions": [
+    {
+      "title": "Cut the list of what the new law allows",
+      "kind": "trim",
+      "cues": [
+        "s25_l12"
+      ],
+      "edits": [
+        {
+          "cue": "s25_l12",
+          "text": "A new law passed through Congress. Steam powered machines are allowed again!"
+        }
+      ],
+      "why": "The list of boilers, boats and trains, plus 'it will feel like it did 20 years ago', just spells out the first two sentences. The audience needs steam to be legal before the loom lands. They don't need the inventory.",
+      "keeps": "The law change and the steam setup for Brendan's loom in s25_l14. The callback chain to s01_l5/l6 and s01b_l57 is untouched.",
+      "risk": "low",
+      "reliesOn": [
+        "s01_l5",
+        "s01b_l57"
+      ],
+      "against": {
+        "s25_l12": "A new law passed through Congress. Steam powered machines are allowed again! powered machinery, boilers, boats, trains, we're allowed to have so much technology again, it will feel like it did 20 years ago!"
+      },
+      "number": 154,
+      "riskWhy": "The list of boilers, boats and trains restates 'steam powered machines are allowed again', and the loom setup for s25_l14 survives. The only small loss is 'trains', a faint nod to SJ's model trains (s01_l22, s01b_narrator_promotion) that SJ is not on stage to land.",
+      "loses": [
+        "Colour: Kristina's breathless inventory of boilers, boats and trains, including a faint echo of SJ's trains from s01_l22",
+        "Colour: 'it will feel like it did 20 years ago', the only line dating the ban's start against the fifteen-year jump"
+      ]
+    },
+    {
+      "title": "Drop Kristina's 'decided not to ask' aside",
+      "kind": "trim",
+      "cues": [
+        "s25_l14"
+      ],
+      "edits": [
+        {
+          "cue": "s25_l14",
+          "text": "And I wanted to give some praise, because this bit is genuinely lovely. Brendan's got his hands on a steam powered loom! Most of his weekend went into it."
+        }
+      ],
+      "why": "The aside is a small joke that sits between the loom reveal and the weekend line. Without it, 'Most of his weekend went into it' lands straight after the loom and echoes s01_l6 more directly.",
+      "keeps": "The 'give some praise' and 'most of his weekend' callbacks to s01_l5 and s01_l6.",
+      "risk": "medium",
+      "reliesOn": [
+        "s01_l5",
+        "s01_l6"
+      ],
+      "against": {
+        "s25_l14": "And I wanted to give some praise, because this bit is genuinely lovely. Brendan's got his hands on a steam powered loom! I don't know where from, I've decided not to ask. Most of his weekend went into it."
+      },
+      "number": 155,
+      "riskWhy": "Cuts a unique laugh: Kristina cheerfully choosing not to know where Brendan's illegal-era loom came from, a small sign she will overlook anything that boosts output. No plot or later setup depends on it, and the s01_l5/l6 praise callbacks stay.",
+      "loses": [
+        "Joke: 'I don't know where from, I've decided not to ask' (nowhere else)",
+        "Character: Kristina turning a blind eye to how Brendan gets his edge, as long as the numbers are good"
+      ]
+    },
+    {
+      "title": "Shorten Marcus's weaving chant",
+      "kind": "trim",
+      "cues": [
+        "s25_l4"
+      ],
+      "edits": [
+        {
+          "cue": "s25_l4",
+          "text": "Two up, two down. Two up, two down..."
+        }
+      ],
+      "why": "Two repetitions show the rhythm of hand weaving just as well as three. The trailing dots let the actor hold it as long as the room needs.",
+      "keeps": "The handloom image and 'A yard and a half on a good day' in s25_l5, which sets up the 'Fifty yards in a day' contrast in s25_l15.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s25_l4": "Two up, two down. Two up, two down. Two up, two down..."
+      },
+      "number": 156,
+      "riskWhy": "Pure repetition: the third 'Two up, two down' adds nothing the first two have not shown, and the trailing dots let the actor extend it live. 'A yard and a half' in s25_l5 still sets up 'Fifty yards in a day' in s25_l15.",
+      "loses": [
+        "Nothing substantive: one repetition of the chant, which the actor can still hold as long as needed"
+      ]
+    },
+    {
+      "title": "Trim Marcus's reply to the knock",
+      "kind": "trim",
+      "cues": [
+        "s25_l9"
+      ],
+      "edits": [
+        {
+          "cue": "s25_l9",
+          "text": "All I have is time these days."
+        }
+      ],
+      "why": "'of course, what's up?' is filler. Kristina goes straight into her news either way.",
+      "keeps": "Marcus's dry line about having nothing but time, which plays against Kristina's hurry and her exit to 'a thing at eleven'.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s25_l9": "All I have is time these days, of course, what's up?"
+      },
+      "number": 157,
+      "riskWhy": "'Of course, what's up?' is a filler handoff. The dry 'All I have is time these days' stays, and so does its contrast with Kristina's 'thing at eleven' exit in s25_l17.",
+      "loses": [
+        "Nothing substantive: a polite prompt Kristina does not need before her news"
+      ]
+    },
+    {
+      "title": "Tighten Kristina's entrance",
+      "kind": "trim",
+      "cues": [
+        "s25_l8"
+      ],
+      "edits": [
+        {
+          "cue": "s25_l8",
+          "text": "Marcus! Have you got a minute? It's quick."
+        }
+      ],
+      "why": "'Hi. Sorry.' adds beats without adding character. 'It's quick' already shows her managerial brightness and her hurry.",
+      "keeps": "Her rush in, which pays off when she leaves for her thing at eleven in s25_l17.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s25_l8": "Marcus! Hi. Sorry. Have you got a minute? It's quick."
+      },
+      "number": 158,
+      "riskWhy": "'Hi. Sorry.' is padding before 'Have you got a minute? It's quick', which already carries her hurry. 'It's quick' stays, so the faint echo of Marcus's 'It's quick' in s06_l5/s06_l7 is kept.",
+      "loses": [
+        "Nothing substantive: two filler words of greeting; her rushed entrance is still played"
+      ]
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "cuttable",
+    "summary": "The epilogue jumps fifteen years to a world where technology is banned, puts Marcus at a handloom, and has Kristina replay her cold-open praise speech (s01_l5, s01_l6) and Cursor-demo line (s01b_l57) about Brendan's steam loom. Nothing later depends on it, so the play can end cleanly on the s24_l37 blackout with no edits. What it costs is the play's final punchline: Marcus's Luddite history coming true and then repeating, and the whole set of cold-open callbacks lose their payoff, so the play ends on the bleak note and not the comic one.",
+    "lost": [
+      {
+        "kind": "Payoff",
+        "what": "Kristina's praise speech repeated almost word for word from the cold open: 'I wanted to give some praise', 'feedback's been incredible', 'Best week/launch we've had in ages', Brendan's weekend",
+        "elsewhere": null
+      },
+      {
+        "kind": "Payoff",
+        "what": "'Imagine the whole team moving like that' echoes Kristina's Cursor-demo line",
+        "elsewhere": null
+      },
+      {
+        "kind": "Payoff",
+        "what": "'I've got a thing at eleven' callback to SJ's excuse and the narrator's undercut",
+        "elsewhere": null
+      },
+      {
+        "kind": "Payoff",
+        "what": "Marcus's Luddite and steam power loom history (s01_l22, s06_l9) comes true for him personally; he ends up as the hand weaver being out-produced",
+        "elsewhere": null
+      },
+      {
+        "kind": "Payoff",
+        "what": "SJ's joke about buying Marcus an antique loom turns into Marcus's actual life",
+        "elsewhere": null
+      },
+      {
+        "kind": "Plot",
+        "what": "The world after the worm: technology banned for ten years, then steam machinery legalised again",
+        "elsewhere": "s24_l30 hints at it with 'Analogue television broadcasts resume in 40 states'"
+      },
+      {
+        "kind": "Joke",
+        "what": "Marcus's final 'WHAT THE F' button, the play's last laugh",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Kristina unchanged after everything: still chasing output, still praising Brendan's weekend work, still unaware of Marcus",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Brendan still the early adopter who gets hold of the new machine first",
+        "elsewhere": "s01_weekend_reply"
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s14a_l26",
+        "problem": "SJ's antique loom gift line sets up the epilogue image. Without s25 it still works as a standalone dig at Marcus, so it is not a real orphan.",
+        "fix": "none"
+      },
+      {
+        "cue": "s24_l30",
+        "problem": "The 'Analogue television broadcasts resume' ticker points toward the technology-ban future that s25 shows. It still reads as a bleak closing detail without s25.",
+        "fix": "none"
+      }
+    ],
+    "changes": [],
+    "risk": "high",
+    "riskWhy": "No line breaks if it goes, but it is the ending: the cold-open callbacks and the Luddite thread lose their payoff, and the play gives up its final laugh for about 1.4 minutes saved.",
+    "writtenOn": "2026-10-05"
+  }
+}

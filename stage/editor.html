@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Big Hack — Editor</title>
-  <link rel="stylesheet" href="editor.css?v=20260913-store" />
+  <link rel="stylesheet" href="editor.css?v=20261005-conflict" />
 </head>
 <body>
   <header class="bar">
@@ -24,10 +24,16 @@
       <span class="progress-num" id="progNum">—</span>
     </div>
 
+    <button class="runtime" id="runtimeBtn" type="button" title="Running time against the target">
+      <span class="runtime-bar"><span class="runtime-fill" id="rtFill"></span></span>
+      <span class="runtime-num" id="rtNum">runtime —</span>
+    </button>
+
     <span class="grow-space"></span>
 
     <button class="btn" id="undoBtn" disabled title="Nothing to undo">↶ Undo</button>
     <button class="btn" id="redoBtn" disabled title="Nothing to redo">↷ Redo</button>
+    <button class="btn" id="cutsBtn" title="Cut suggestions for this scene">✂ Cuts <span class="cuts-count" id="cutsCount"></span></button>
     <button class="btn" id="findBtn" title="Find across the whole script (⌘F)">⌕ Find</button>
     <button class="btn speed" data-speed-toggle type="button"></button>
     <button class="btn" id="helpBtn" title="Keyboard shortcuts (?)">?</button>
@@ -54,6 +60,18 @@
       <button class="btn" id="replaceAll">Replace all</button>
     </div>
     <div class="finder-results" id="findResults"></div>
+  </aside>
+
+  <!-- Cut suggestions for the scene on screen -->
+  <aside class="drawer" id="cutDrawer" hidden>
+    <div class="finder-head">
+      <strong id="cutDrawerTitle">Cuts</strong>
+      <button class="btn icon" id="cutDrawerClose" title="Close (Esc)">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div class="cutplan" id="ifdeleted"></div>
+      <div class="cutplan" id="cutplan"></div>
+    </div>
   </aside>
 
   <!-- Keyboard help -->
@@ -89,8 +107,25 @@
     </div>
   </div>
 
+  <!-- Running time against the target -->
+  <div class="sheet" id="runtime" hidden>
+    <div class="sheet-box runtime-box">
+      <div class="sheet-head">
+        <strong>Running time</strong>
+        <button class="btn icon" id="runtimeClose">✕</button>
+      </div>
+      <p class="sheet-note" id="rtSummary"></p>
+      <div class="rt-table" id="rtTable"></div>
+      <p class="sheet-note rt-how">
+        Each line's ElevenLabs recording, scaled to the 105-minute walkthrough of the uncut
+        script (<code>stage/runtime-baseline.json</code>). Lines whose recording no longer
+        matches their words are estimated from the word count until they are regenerated.
+      </p>
+    </div>
+  </div>
+
   <div id="toast" class="toast"></div>
   <script src="editor-playback.js?v=20260825-proof"></script>
-  <script src="editor.js?v=20260927-undo"></script>
+  <script src="editor.js?v=20261005-conflict"></script>
 </body>
 </html>

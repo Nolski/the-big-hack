@@ -1,0 +1,461 @@
+{
+  "scene": "s06",
+  "approach": "The scene spends its time in three places: Marcus's double history lecture at standup, the Kristina and SJ security standoff, and a long pairing session where SJ turns down Claude three separate ways before Brendan steers him to the bug. The cut keeps one Marcus history gag, one Kristina push and SJ's security answer, one SJ refusal of Claude, and the full discovery and hiding beat at the end.",
+  "suggestions": [
+    {
+      "title": "Cut the prod-logs idea and SJ's PII rant",
+      "kind": "cut",
+      "cues": [
+        "s06_l39",
+        "s06_l40",
+        "s06_l41"
+      ],
+      "why": "This is SJ's third refusal of Claude in the pairing session. The mutex speech (s06_l35) already shows him dismissing it, and the security-minded SJ is already established at standup (s06_l21). Nothing later refers to the production logs.",
+      "keeps": "Claude finishing in the background (s06_l42) still leads straight into Brendan's 'this is probably nothing' (s06_l43). SJ's security stance survives in s06_l21 and s11b_l5.",
+      "risk": "low",
+      "reliesOn": [
+        "s11b_l5"
+      ],
+      "against": {
+        "s06_l39": "Okay one last idea with claude, then I'll shut up. The incident thread's got the actual prod logs from when it happened. What if I dropped those in claude, the real ones and see if there's",
+        "s06_l40": "No! You do not paste production session data into a third-party model. Those logs have live tokens in them. Real users' emails. That's a PII incident and a security review all by itself, that's exactly the \"just paste it in and see what happens\" thinking that gets a company on the news. …come on Brendan, you know better...",
+        "s06_l41": "No, you're right. You are. Forget that one."
+      },
+      "number": 33,
+      "riskWhy": "SJ's security stance is already on stage in s06_l21 and comes back in s11b_l5, and nothing later mentions the production logs. Brendan pitching a new Claude idea after the narrator says Claude has finished (s06_l42) also reads oddly, so the cut tidies the order.",
+      "loses": [
+        "Character: SJ snapping at Brendan like a junior ('come on Brendan, you know better'), the sharpest version of his condescension in this scene",
+        "Character: Brendan's third try at getting SJ to use Claude, showing how persistent he is",
+        "Colour: the PII and 'company on the news' detail, which makes SJ's caution sound earned and adds irony before he uses an unlocked model in s20_l37"
+      ]
+    },
+    {
+      "title": "Cut Brendan's offer, SJ's refusal and the flip",
+      "kind": "cut",
+      "cues": [
+        "s06_l23",
+        "s06_l24",
+        "cue_8b356c295b7d408d9ef7fe772841a95e",
+        "s06_l26",
+        "s06_l27",
+        "s06_l28"
+      ],
+      "why": "SJ refuses and then accepts within a few lines, and the turn is driven by an unstageable stage direction ('thinks back to yesterday'). The narrator line s06_l29 already gets Brendan onto the bug with SJ. Kristina's closing line needs to go with it because 'pair on it' answers the offer. If the author wants a standup button, Kristina's own 'Right, that's the board. Thanks, everyone.' could be kept from s06_l28 as a trim instead.",
+      "keeps": "Brendan's deference and SJ's condescension still play in the session itself (s06_l33 to s06_l37, s06_l49 'Good instinct, kid'). s07_l2 'SJ and I got it this morning' still holds.",
+      "risk": "medium",
+      "reliesOn": [
+        "s07_l2"
+      ],
+      "against": {
+        "s06_l23": "Um... SJ... I could jump on it with you if you want? I've had my head in the auth stuff all week anyway, happy to be a second pair of eyes.",
+        "s06_l24": "…That's good of you. But, it's a concurrency bug, though, down in the session handler. No offence. It's just... this is the kind of thing that takes a while to even see.",
+        "cue_8b356c295b7d408d9ef7fe772841a95e": "Oh... Yeah... Okay...",
+        "s06_l26": "Actually, yeah. Come look at it with me. You'll learn more from one real race condition than a month of tickets. Free for twenty minutes after this?",
+        "s06_l27": "Yeah for sure. I'd love that, honestly. I'll ping you the second we're done.",
+        "s06_l28": "Oh, I love that! Yes, pair on it. Right, that's the board. Thanks, everyone."
+      },
+      "number": 34,
+      "riskWhy": "This takes out the standup button and the only on-stage moment where SJ refuses Brendan's help and then talks down to him. No plot is lost, because the narrator line s06_l29 still gets Brendan onto the bug and s07_l2 confirms they fixed it together.",
+      "loses": [
+        "Character: SJ refusing Brendan ('this is the kind of thing that takes a while to even see') and then accepting as a favour ('You'll learn more from one real race condition'), the setup that 'Good instinct, kid' (s06_l49) pays off",
+        "Character: Brendan's small deflated 'Oh... Yeah... Okay...'",
+        "Setup: Kristina's 'I love that! Yes, pair on it', which s07_l3 ('right two people in a huddle') calls back to; s07_l3 still works without it",
+        "Plot: how Brendan gets onto the bug, which is still carried by s06_l29 and s07_l2",
+        "Staging: the end-of-standup beat 'Right, that's the board. Thanks, everyone.'"
+      ],
+      "edits": [],
+      "directionsKept": 1
+    },
+    {
+      "title": "Cut John Henry, keep the loom gag",
+      "kind": "cut",
+      "cues": [
+        "s06_l13",
+        "s06_l14",
+        "s06_l15"
+      ],
+      "why": "Marcus gets two history lectures in one standup. The loom speech and SJ's 'losing side of history' reply already carry the gag and the argument, and Kristina's 'OKAY! Marcus, you got your word in' (s06_l16) still follows naturally from SJ's 'Can we move on?'.",
+      "keeps": "The Luddite and loom thread stays alive through s06_l9 and pays off in s19 and s25. Kristina is still talked over (s06_l5 to s06_l12). Note that s11b's 'John Henry died doing that' loses its setup here and would then land cold. If the author prefers, cut the loom lecture instead and keep John Henry, since s19 and s25 carry the looms anyway.",
+      "risk": "high",
+      "reliesOn": [],
+      "against": {
+        "s06_l13": "SJ, ugh, that's not even true! Even if you don't believe in actual history have you heard the story of John Henry, racing against the machine building railroad tracks?",
+        "s06_l14": "Marcus...",
+        "s06_l15": "John Henry raced against the machines to prove he could drive rail spikes faster than the steam-powered rail spike machine, and he actually won. He drove more, and what did he get for it? (now slightly manic) A heart attack. SJ, that's you. You’re going to give yourself a heart attack."
+      },
+      "number": 35,
+      "riskWas": "medium",
+      "riskWhy": "John Henry is set up only here, and s11b pays it off twice: Marcus's 'John Henry died doing that' (cue_f611e6705148485ca6a655ac76b1c164, in s11b) and the railroad line in s11b_l10. Both would land cold. The cut also drops Kristina's ignored 'Marcus...', a beat of the protected talk-over comedy.",
+      "loses": [
+        "Setup: John Henry and the railroad, paid off by 'John Henry died doing that' (cue_f611e6705148485ca6a655ac76b1c164) and 'when they finished the railroad' (s11b_l10); set up nowhere else",
+        "Joke: Marcus going 'slightly manic' and telling SJ he'll give himself a heart attack",
+        "Character: Marcus refusing to drop it even after SJ asks to move on",
+        "Joke: Kristina's ignored 'Marcus...' (s06_l14), one beat of the talked-over-Kristina guardrail"
+      ]
+    },
+    {
+      "title": "Drop two of SJ's reasons to refuse Claude",
+      "kind": "cut",
+      "cues": [
+        "s06_l36",
+        "s06_l37"
+      ],
+      "why": "SJ's mutex speech (s06_l35) already says no to Claude. Brendan's repro-steps follow-up and SJ's 'no red test' answer repeat the refusal, and Claude's working in the background either way.",
+      "keeps": "SJ waving Claude off once, and the narrator line that Claude has finished (s06_l42), which together set up Brendan hiding it in s06_l51 and s07.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s06_l36": "Fair. What if you gave it reproduction steps first though so it has something to eval against?",
+        "s06_l37": "That's the whole problem, though. I can't make it fail on demand. It's one in fifty thousand signups, only under real load. There's no red test to hand it. And if I hand it a green one, it'll say it's fixed the bug and be lying, same as it always is. And it'll sound completely confident while it does it."
+      },
+      "number": 36,
+      "riskWas": "low",
+      "riskWhy": "There's no plot here, but Brendan's suggestion is the scene's echo of the guardrail beat: he offers his eval-based process (as in s01c_l18) and it passes over SJ's head. SJ's 'no red test' speech also sets up the irony that Claude produces exactly that reproduction script (s06_l42, s07_l4).",
+      "loses": [
+        "Character: Brendan quietly offering his eval-first way of working, echoing s01c_l18 'I wrote the evals myself'",
+        "Character: SJ's 'it'll sound completely confident while it does it', repeating his s01c_l19 view of AI",
+        "Colour: the 'one in fifty thousand signups, only under real load' detail",
+        "Setup: SJ saying the bug can't be reproduced on demand, which s06_l42 and s07_l4 answer ironically (partly carried by 'I cannot reproduce it' in s06_l30)"
+      ]
+    },
+    {
+      "title": "Compress SJ's bug briefing",
+      "kind": "trim",
+      "cues": [
+        "s06_l30",
+        "s06_l31",
+        "s06_l32"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l30",
+          "text": "Okay. So. Four users in three months. Each one signs up, and for about a second they're… in someone else's account. And I cannot reproduce it. I have tried everything. It has only ever happened in prod under real traffic."
+        },
+        {
+          "cue": "s06_l31",
+          "text": "Okay, that's kind of horrifying."
+        },
+        {
+          "cue": "s06_l32",
+          "text": "I've checked the RNG, the entropy source, the signing and ORM code. It's all fine. That's what's killing me. The place I expected to find it is clean."
+        }
+      ],
+      "why": "The audience already heard the bug described at standup (s06_l21, 'Four people got dropped into somebody else's account'). The name and email detail, the ten thousand signups, and the session-token theory repeat the same point.",
+      "keeps": "The 'can't reproduce it' problem that makes Claude's reproduction script matter, and 'the place I expected to find it is clean', which sets up 'the one place I wasn't looking' in s06_l49.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s06_l30": "Okay. So. Four users in three months. Each one signs up, and for about a second they're… in someone else's account. They have someone else's name, someone else's email, right there on the screen. Then, after refresh, it clears. And I cannot reproduce it. I have tried everything. Ten thousand signups in a loop, locally, nothing. It has only ever happened in prod under real traffic.",
+        "s06_l31": "Okay, that's kind of horrifying. Where've you been looking?",
+        "s06_l32": "I've checked the RNG, the entropy source, the signing and ORM code. If two users got the same session token, that would explain but I've spent days pulling the token generation apart. It's all fine. That's what's killing me. The place I expected to find it is clean."
+      },
+      "number": 37,
+      "riskWas": "low",
+      "riskWhy": "The session-token theory in s06_l32 is the only setup for 'It wasn't the tokens at all' in s06_l47. #41 cuts that payoff, so take this with #41 or the payoff dangles. The cut also drops the one concrete picture of what users see on screen.",
+      "loses": [
+        "Setup: 'If two users got the same session token' sets up s06_l47 'It wasn't the tokens at all' (safe only if #41 is also taken)",
+        "Colour: someone else's name and email on screen, then cleared on refresh, the concrete image that s07_l4's screenshots echo",
+        "Colour: 'Ten thousand signups in a loop, locally, nothing', which shows how hard SJ has worked",
+        "Nothing else substantive: Brendan's 'Where've you been looking?' is a bridge"
+      ]
+    },
+    {
+      "title": "Cut the fists-clench narrator line",
+      "kind": "cut",
+      "cues": [
+        "s06_narrator_security"
+      ],
+      "why": "The narrator explains an inner feeling the actor's delivery of 'Fair. You're right.' can already show. Kristina's priorities and performance reviews are covered by s01b_narrator_promotion.",
+      "keeps": "Kristina giving way on security, in her own line s06_l22.",
+      "risk": "medium",
+      "reliesOn": [
+        "s01b_narrator_promotion"
+      ],
+      "against": {
+        "s06_narrator_security": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security reasons. Her performance reviews never reflect how many security tickets she did or didn't close."
+      },
+      "number": 38,
+      "riskWas": "low",
+      "riskWhy": "This is the only line saying Kristina's reviews don't reward security work, a character beat that explains why she pushes SJ. Her wider career motive stays in s01b_narrator_promotion, so no plot fact or later setup is lost.",
+      "loses": [
+        "Character: Kristina resenting security slowdowns because her performance reviews ignore them (nowhere else; s01b_narrator_promotion covers promotion generally)",
+        "Staging: Kristina's fists clenching before 'Fair. You're right.'"
+      ]
+    },
+    {
+      "title": "Trim SJ's security answer",
+      "kind": "trim",
+      "cues": [
+        "s06_l21"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l21",
+          "text": "Four people got dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immedietly."
+        }
+      ],
+      "why": "The credit card email tag overstates the bug, which leaks names and emails, not payment data, and the point lands already on 'fix it immedietly'.",
+      "keeps": "SJ's security argument and the reason Kristina backs down.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s06_l21": "Four people got dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immedietly, unless you want to write the email to all the users that we've been hacked and got everyone's credit cart info stolen?"
+      },
+      "number": 39,
+      "riskWhy": "The credit card tag overstates a bug that leaks names and emails, and the argument already lands on 'fix it immedietly'. Nothing later refers to card data.",
+      "loses": [
+        "Character: SJ escalating into hyperbole to win the point",
+        "Nothing else substantive: the security argument and Kristina backing down stay"
+      ]
+    },
+    {
+      "title": "Trim Kristina's leadership push",
+      "kind": "trim",
+      "cues": [
+        "s06_l20",
+        "s06_l18"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l18",
+          "text": "Right, yeah, that's what you said yesterday, though. Is there any movement? Any updates I can add to the ticket?"
+        },
+        {
+          "cue": "s06_l20",
+          "text": "…Okay. I'm just trying to make the tradeoff visible to leadership. We've only had four reports in three months... I need some sense of whether this is another day or another week."
+        }
+      ],
+      "why": "The roadmap comparison and the 'open a while' line repeat the pressure she is already putting on. 'Another day or another week' carries it.",
+      "keeps": "Kristina's managerial brightness, the four-reports figure SJ answers, and the 'weeks on the board' fact that s07_l6 relies on.",
+      "risk": "low",
+      "reliesOn": [
+        "s07_l6"
+      ],
+      "against": {
+        "s06_l20": "…Okay. I'm just trying to make the tradeoff visible to leadership. We've only had four reports in three months; we've got loads of other tickets affecting hundreds of users and we're starting to find behind on our roadmap compared to other teams... I need some sense of whether this is another day or another week.",
+        "s06_l18": "Right, yeah, that's what you said yesterday, though. It's been open a while now. Is there any movement? Any updates I can add to the ticket?"
+      },
+      "number": 40,
+      "riskWhy": "Kristina's competition with other teams is repeated in s01b_l49, s07_l3 and s11c_l20, and 'another day or another week' carries the pressure. s07_l6's 'weeks on the board' still stands without 'open a while'.",
+      "loses": [
+        "Character: Kristina comparing the team with other teams' roadmaps (also in s01b_l49, s07_l3, s11c_l20)",
+        "Setup: 'It's been open a while now', the in-scene support for s07_l6 'sitting on the board for weeks'",
+        "Colour: 'loads of other tickets affecting hundreds of users', her support-volume framing that SJ rejects in s06_l21"
+      ]
+    },
+    {
+      "title": "Trim SJ's discovery and praise lines",
+      "kind": "trim",
+      "cues": [
+        "s06_l47",
+        "s06_l49"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l47",
+          "text": "...It's zero. Wait. The ID's zero until the transaction commits. So if two signups get here together... they're both asking for session zero. Oh, fuck. That's it."
+        },
+        {
+          "cue": "s06_l49",
+          "text": "…That's a hell of a catch, Brendan. That's the one place I wasn't looking. That's real instinct. Good instinct, kid. Seriously."
+        }
+      ],
+      "why": "'They're getting the same session' and 'it wasn't the tokens' restate what 'session zero' already says, and 'How did you even....' is covered by 'the one place I wasn't looking'.",
+      "keeps": "The title line 'Good instinct, kid' and SJ at his happiest, which s07_l18 refers to.",
+      "risk": "low",
+      "reliesOn": [
+        "s07_l18"
+      ],
+      "against": {
+        "s06_l47": "...It's zero. Wait. The ID's zero until the transaction commits. So if two signups get here together... they're both asking for session zero. Oh, fuck. That's it. They're getting the same session. It wasn't the tokens at all. It's been this one line.",
+        "s06_l49": "…That's a hell of a catch, Brendan. How did you even.... that's the one place I wasn't looking. That's real instinct. Good instinct, kid. Seriously."
+      },
+      "number": 41,
+      "riskWhy": "The cut words only restate 'session zero', and the kept 'the one place I wasn't looking' and 'Good instinct, kid' still give s07_l18 SJ's happiness. The one catch: 'It wasn't the tokens' pays off the token theory in s06_l32, so keep it unless #37 is also taken.",
+      "loses": [
+        "Plot: SJ saying out loud that the two signups get the same session, restating 'session zero'",
+        "Character: SJ's 'How did you even....', his moment of being impressed",
+        "Nothing else substantive: the payoff for the token theory goes, which only matters if #37 is not taken"
+      ]
+    },
+    {
+      "title": "Trim the mutex speech",
+      "kind": "trim",
+      "cues": [
+        "s06_l35"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l35",
+          "text": "Claude will tell me to add a mutex. That's what comes back every time you ask about two things happening at once. No thanks."
+        }
+      ],
+      "why": "The deadlock follow-through is SJ explaining his reasoning at length; the dismissal reads in the first two sentences.",
+      "keeps": "SJ's tech pedantry and his refusal of Claude, which Brendan's secret depends on.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s06_l35": "Claude will tell me to add a mutex. That's what comes back every time you ask about two things happening at once. But where does the lock go? What happens to everything waiting behind it? Now I've got a deadlock in production as well as the original bug. No thanks."
+      },
+      "number": 42,
+      "riskWhy": "The refusal and 'No thanks' survive, so Brendan still has a reason to hide Claude's work. Only SJ's reasoning chain goes, and nothing later refers to the deadlock.",
+      "loses": [
+        "Character: SJ reasoning through lock placement and deadlocks, which shows he really is an expert",
+        "Colour: the irony of a deadlock worry when the real fix turns out to be one line"
+      ]
+    },
+    {
+      "title": "Trim the opening narration",
+      "kind": "trim",
+      "cues": [
+        "s06_l1"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l1",
+          "text": "SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running."
+        }
+      ],
+      "why": "The montage before the scene already shows January to April passing, so 'A few months pass' repeats it, and the Opus 4.7 release is not referred to again.",
+      "keeps": "Where SJ is and what he is stuck on, so the standup makes sense.",
+      "risk": "low",
+      "reliesOn": [],
+      "against": {
+        "s06_l1": "A few months pass… Anthropic has just released Opus 4.7. SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running."
+      },
+      "number": 43,
+      "riskWhy": "The time-jump stage cue before the scene (s01c_time_jump_to_good_instinct) already covers the months passing. Opus 4.7 is not mentioned again; the play only names Opus 4.5 elsewhere.",
+      "loses": [
+        "Colour: the Opus 4.7 release, the one marker of model progress between s01 and s11b"
+      ]
+    },
+    {
+      "title": "Shorten the time-limit back-and-forth",
+      "kind": "trim",
+      "cues": [
+        "s06_l6",
+        "s06_l7"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l6",
+          "text": "Is it quick?"
+        },
+        {
+          "cue": "s06_l7",
+          "text": "It's quick. Do none of you actually feel like we're being turned into sweat shop workers hitting approve on Claude?"
+        }
+      ],
+      "why": "The time-limit callback to s01_l2 repeats the s01 joke, and s06_l8 'we agreed on not bringing this up' already plays Kristina's attempt to rein Marcus in.",
+      "keeps": "Marcus talking past Kristina twice, and the 'sweat shop' line that leads into the loom speech.",
+      "risk": "medium",
+      "reliesOn": [
+        "s01_l2"
+      ],
+      "against": {
+        "s06_l6": "Is it quick? Remember we agreed to time limits Marcus...",
+        "s06_l7": "It's quick. Do none of you actually feel like we're being turned into sweat shop workers hitting approve on Claude?"
+      },
+      "number": 44,
+      "riskWhy": "This drops a callback joke to Kristina's time-limit reminder in s01_l2, a unique laugh inside the talked-over-Kristina standup. The guardrail still holds because Marcus overrides her in s06_l7 to s06_l9.",
+      "loses": [
+        "Joke: Kristina's 'Remember we agreed to time limits Marcus...', paying off s01_l2 (nowhere else)"
+      ]
+    }
+  ],
+  "writtenOn": "2026-10-05",
+  "ifDeleted": {
+    "verdict": "not cuttable",
+    "summary": "Good Instinct is the hinge of the SJ and Brendan story. On stage, SJ dismisses Claude, Brendan quietly lets Claude find the bug, feeds SJ the answer, and SJ praises his instinct; Brendan then hides it. It also holds one of the three talking-over-Kristina standups. s07 can report the facts afterwards, but the audience would only hear about the deception secondhand and never see SJ's delight, which is what every later Brendan and SJ beat leans on.",
+    "lost": [
+      {
+        "kind": "Plot",
+        "what": "Claude finds and fixes the signup race condition while SJ refuses to use it, and Brendan passes the diagnosis off as his own hunch",
+        "elsewhere": "s07_l4 reports it after the fact"
+      },
+      {
+        "kind": "Character",
+        "what": "SJ's 'Good instinct, kid' praise and his delight at the fix; the dramatic irony that drives s07_l18 to s07_l25",
+        "elsewhere": null
+      },
+      {
+        "kind": "Character",
+        "what": "Brendan chooses not to tell SJ and switches off Claude's branch",
+        "elsewhere": "s07_l20 and s07_l25"
+      },
+      {
+        "kind": "Guardrail",
+        "what": "Standup comedy of Marcus and SJ talking over Kristina (Luddites, John Henry, 'OKAY! Marcus')",
+        "elsewhere": "s01 standup (s01_l22 to s01_l28) and s11b standup (s11b_l2 to s11b_kristina_tickets)"
+      },
+      {
+        "kind": "Guardrail",
+        "what": "Brendan suggests pointing Claude at the repo and SJ waves it off (echo of guardrail 1)",
+        "elsewhere": "s01c_l16 to s01c_l25 and s11b_l63"
+      },
+      {
+        "kind": "Setup",
+        "what": "Marcus's John Henry story, first told here",
+        "elsewhere": "s11b cue_f611e6705148485ca6a655ac76b1c164 mentions it in passing"
+      },
+      {
+        "kind": "Character",
+        "what": "SJ's security stance: refuses to paste prod logs into a third-party model; four leaked sessions is a security incident",
+        "elsewhere": "s01_l38 and s11b_l5"
+      },
+      {
+        "kind": "Character",
+        "what": "Kristina dislikes slowing down for security work, and pushes SJ on the stale ticket",
+        "elsewhere": "s01_l50 to s01_l52 (ticket pressure only)"
+      },
+      {
+        "kind": "Setup",
+        "what": "The bug itself: users dropped into someone else's account, session keyed on an uncommitted user id",
+        "elsewhere": "s07_l4 summarises it"
+      }
+    ],
+    "orphans": [
+      {
+        "cue": "s01c_time_jump_to_good_instinct",
+        "problem": "Montage text says 'GO into Good Instinct', which would no longer exist.",
+        "fix": "Leave the cue where it is at the end of s01c; it now leads into s07. Retitle the note only."
+      },
+      {
+        "cue": "s07_l2",
+        "problem": "'SJ and I got it this morning' assumes the audience saw the morning call.",
+        "fix": "Narrator bridge at the top of s07."
+      },
+      {
+        "cue": "s07_l18",
+        "problem": "'He's genuinely the happiest I've seen him in ages' refers to SJ's reaction we never saw.",
+        "fix": "Covered by the same bridge."
+      },
+      {
+        "cue": "s07_l25",
+        "problem": "'his one-line fix' and 'the branch Claude finished twenty minutes ago' refer to s06_l47 and s06_l51.",
+        "fix": "Bridge mentions the one line; the rest reads fine."
+      },
+      {
+        "cue": "s11b_l7",
+        "problem": "'You were telling us to fight the machines a couple of months ago' points mainly at the s06 Luddite speech.",
+        "fix": "none; s01_l22 also covers the Luddites."
+      }
+    ],
+    "changes": [
+      {
+        "action": "move",
+        "where": "s01c_time_jump_to_good_instinct",
+        "detail": "Keep at the end of s01c; it now leads straight into s07. Only the 'Good Instinct' label changes."
+      },
+      {
+        "action": "add",
+        "where": "before s07_l1",
+        "detail": "Narrator bridge so the audience knows what happened on the call and that SJ thinks Brendan found it.",
+        "text": "NARRATOR: April. This morning, on a call with Brendan, SJ finally found his signup bug. One line. SJ told Brendan he had good instinct. Brendan had Claude's fix open the whole time."
+      }
+    ],
+    "risk": "high",
+    "riskWhy": "The bridge keeps the plot readable, but it loses the play's main dramatised deception and SJ's pride, which s07, s11b and the rest of the SJ and Brendan story depend on.",
+    "writtenOn": "2026-10-05"
+  }
+}

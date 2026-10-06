@@ -1,0 +1,135 @@
+{
+  "measuredOn": "2026-10-05",
+  "walkthroughMinutes": 105,
+  "targetMinutes": 60,
+  "note": "Spoken seconds per scene from ElevenLabs recordings of every line, before any cuts. Montage videos (fixed) play at their own length; the rest of the walkthrough is scaled from recorded speech.",
+  "aiSecondsPerWord": 0.3631,
+  "fixed": [
+    {
+      "cue": "s00_montage",
+      "scene": "s00",
+      "seconds": 115.8
+    },
+    {
+      "cue": "s01c_time_jump_to_good_instinct",
+      "scene": "s01c",
+      "seconds": 68.3
+    },
+    {
+      "cue": "s07_time_jump_to_best_practices",
+      "scene": "s07",
+      "seconds": 47.8
+    },
+    {
+      "cue": "s11c_time_jump_to_offboarding",
+      "scene": "s11c",
+      "seconds": 35.6
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s00",
+      "title": "Opening montage",
+      "aiSeconds": 0.0
+    },
+    {
+      "id": "s01",
+      "title": "Cold Open — The Standup",
+      "aiSeconds": 390.2
+    },
+    {
+      "id": "s01b",
+      "title": "The Cursor Demo",
+      "aiSeconds": 454.5
+    },
+    {
+      "id": "s01c",
+      "title": "The PR Review",
+      "aiSeconds": 186.0
+    },
+    {
+      "id": "s06",
+      "title": "Good Instinct",
+      "aiSeconds": 466.4
+    },
+    {
+      "id": "s07",
+      "title": "Heads Together",
+      "aiSeconds": 155.1
+    },
+    {
+      "id": "s11b",
+      "title": "Best Practices",
+      "aiSeconds": 574.2
+    },
+    {
+      "id": "s11c",
+      "title": "The Latest Model",
+      "aiSeconds": 504.5
+    },
+    {
+      "id": "s14",
+      "title": "The Offboarding",
+      "aiSeconds": 321.9
+    },
+    {
+      "id": "s19",
+      "title": "Nine Tickets",
+      "aiSeconds": 576.9
+    },
+    {
+      "id": "s20",
+      "title": "The Audit",
+      "aiSeconds": 529.5
+    },
+    {
+      "id": "s20b",
+      "title": "Next Week",
+      "aiSeconds": 133.2
+    },
+    {
+      "id": "s22",
+      "title": "Current Employer",
+      "aiSeconds": 219.5
+    },
+    {
+      "id": "s23",
+      "title": "The Trial",
+      "aiSeconds": 239.4
+    },
+    {
+      "id": "s23b",
+      "title": "Continuity",
+      "aiSeconds": 151.6
+    },
+    {
+      "id": "s24",
+      "title": "Statement of Facts",
+      "aiSeconds": 130.2
+    },
+    {
+      "id": "s25",
+      "title": "Great News",
+      "aiSeconds": 70.0
+    }
+  ],
+  "budgets": {
+    "s00": 1.9,
+    "s01": 6.0,
+    "s01b": 4.5,
+    "s01c": 3.3,
+    "s06": 5.5,
+    "s07": 1.0,
+    "s11b": 7.0,
+    "s11c": 5.0,
+    "s14": 3.5,
+    "s19": 5.5,
+    "s20": 5.0,
+    "s20b": 0.5,
+    "s22": 3.0,
+    "s23": 2.8,
+    "s23b": 2.8,
+    "s25": 1.2
+  },
+  "budgetNote": "Suggested stage minutes per scene, montages included; they add up to 58.5, leaving 1.5 minutes of slack under the 60-minute target. Gentler on the guardrail scenes (s01, s01c, s06 and s11b standups, Kristina's solo build in s11c)."
+}
