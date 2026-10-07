@@ -11929,12 +11929,12 @@
       }
     },
     "s11c_l39": {
-      "text": "Kristina considers Brendan and Marcus' criticism of SJ... She opens Cursor and queries it to evaluate the velocity of all of the engineers on her team. Before it can finish, she cancels the query. She already knows who is useful and who isn't. She doesn't need a machine to tell her that and the decision of who stays and who goes is out of her hands anyways.",
+      "text": "Kristina opens Cursor and starts two agents. The first she tasks to look at Jira and check SJ's velocity over the last two sprints. The other gets a prompt to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had told him she would do manually for him. Both start working, and she's a little surprised how much progress they both make. Her next meeting chimes. She joins it, leaving them running. Before the meeting ends, both agents report they're done. The connector has copied a test ticket into Jira. She means to check them after the call, but forgets about them. SJ's ticket count is reported as the lowest on the team.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-4ca8bc6e7c242af41ee62efa8590a60e8185b397077bddfb67ee60366eaabe3e.mp3",
-      "duration": 23.170612,
-      "audioSha256": "4ca8bc6e7c242af41ee62efa8590a60e8185b397077bddfb67ee60366eaabe3e",
+      "audio": "assets/audio/shared-b1388086e930d29f9937b965a6d52dd1933d07af3911777feaec01b1fcade707.mp3",
+      "duration": 39.47102,
+      "audioSha256": "b1388086e930d29f9937b965a6d52dd1933d07af3911777feaec01b1fcade707",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",

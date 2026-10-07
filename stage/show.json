@@ -14188,7 +14188,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Kristina considers Brendan and Marcus' criticism of SJ... She opens Cursor and queries it to evaluate the velocity of all of the engineers on her team. Before it can finish, she cancels the query. She already knows who is useful and who isn't. She doesn't need a machine to tell her that and the decision of who stays and who goes is out of her hands anyways.",
+      "text": "Kristina opens Cursor and starts two agents. The first she tasks to look at Jira and check SJ's velocity over the last two sprints. The other gets a prompt to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had told him she would do manually for him. Both start working, and she's a little surprised how much progress they both make. Her next meeting chimes. She joins it, leaving them running. Before the meeting ends, both agents report they're done. The connector has copied a test ticket into Jira. She means to check them after the call, but forgets about them. SJ's ticket count is reported as the lowest on the team.",
       "direction": "",
       "state": "new-model",
       "mode": "huddle",
@@ -14214,8 +14214,8 @@
       },
       "screenActions": {},
       "sourceBeat": 39,
-      "audio": "assets/audio/shared-4ca8bc6e7c242af41ee62efa8590a60e8185b397077bddfb67ee60366eaabe3e.mp3",
-      "audioDuration": 23.170612,
+      "audio": "assets/audio/shared-b1388086e930d29f9937b965a6d52dd1933d07af3911777feaec01b1fcade707.mp3",
+      "audioDuration": 39.47102,
       "legacyCue": "s11c_l39",
       "visualMapping": "matched",
       "sfx": [],
@@ -14225,7 +14225,7 @@
           "id": "s11c_l39",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Kristina considers Brendan and Marcus' criticism of SJ... She opens Cursor and queries it to evaluate the velocity of all of the engineers on her team. Before it can finish, she cancels the query. She already knows who is useful and who isn't. She doesn't need a machine to tell her that and the decision of who stays and who goes is out of her hands anyways.",
+          "text": "Kristina opens Cursor and starts two agents. The first she tasks to look at Jira and check SJ's velocity over the last two sprints. The other gets a prompt to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had told him she would do manually for him. Both start working, and she's a little surprised how much progress they both make. Her next meeting chimes. She joins it, leaving them running. Before the meeting ends, both agents report they're done. The connector has copied a test ticket into Jira. She means to check them after the call, but forgets about them. SJ's ticket count is reported as the lowest on the team.",
           "direction": ""
         }
       ],
@@ -38356,7 +38356,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-a630f3370a5d4286",
+  "scriptRevision": "shared-086a58f63221437b",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
