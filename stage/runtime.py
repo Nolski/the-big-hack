@@ -22,7 +22,8 @@ def runtime(root):
     for f in base.get('fixed', []): held_was[f['scene']] = held_was.get(f['scene'], 0)+f['seconds']
     secs, estimated, line_secs = {}, {}, {}
     for c in show['cues']:
-        if c['id'] in fixed: held[c['scene']] = held.get(c['scene'], 0)+fixed[c['id']]
+        duration = c.get('montageDuration', fixed.get(c['id'], 0)) if c.get('montage') else 0
+        if duration: held[c['scene']] = held.get(c['scene'], 0)+duration
         if c['kind'] == 'stage' or not c['text'].strip(): continue
         r = manifest.get(c['id'], {})
         if (r.get('text'), r.get('speaker'), r.get('voiceProfile')) == (c['text'], c['speaker'], c.get('voiceProfile')):
