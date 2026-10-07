@@ -1,0 +1,49 @@
+{
+  "timeline": [
+    {
+      "id": "01-flights",
+      "line": "Airlines have suspended new bookings. With reservation systems offline, passengers are queuing for flights nobody can confirm.",
+      "start": 0,
+      "duration": 10.1
+    },
+    {
+      "id": "02-brownouts",
+      "line": "Rolling brownouts are spreading. Utilities are rotating power between neighborhoods while crews struggle to keep the grid online.",
+      "start": 10.1,
+      "duration": 8.1
+    },
+    {
+      "id": "03-television",
+      "line": "Analogue television is back on air. Emergency bulletins are reaching homes through transmitters retired more than a decade ago.",
+      "start": 18.2,
+      "duration": 10.1
+    },
+    {
+      "id": "04-radio",
+      "line": "Authorities are telling residents to keep battery radios nearby. Emergency schedules are now being read over AM and FM.",
+      "start": 28.299999999999997,
+      "duration": 8.1
+    },
+    {
+      "id": "05-trial",
+      "line": "SJ goes on trial today, in a case already being called the trial of the century.",
+      "start": 36.4,
+      "duration": 10.1
+    },
+    {
+      "id": "06-author",
+      "line": "Prosecutors will try to show that he authored the AI worm responsible for the worldwide disruption.",
+      "start": 46.5,
+      "duration": 8.1
+    }
+  ],
+  "duration": 57.1,
+  "cards": [
+    "WEEK ONE",
+    "WEEK THREE",
+    "MONTHS LATER",
+    "THE TRIAL BEGINS"
+  ],
+  "music": "Existing montage music; ducked beneath speech",
+  "audioLeadSeconds": 1.5
+}

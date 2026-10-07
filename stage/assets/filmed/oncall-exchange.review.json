@@ -1,0 +1,22 @@
+{
+  "language": "English",
+  "transcription": [
+    {
+      "start": 0.0,
+      "end": 3.6,
+      "speaker": "female",
+      "text": "I think we're under attack. Four of our Canary tokens were set off."
+    },
+    {
+      "start": 4.3,
+      "end": 8.0,
+      "speaker": "male",
+      "text": "Dude, it's probably just the red team. Did you need to wake me up for this?"
+    }
+  ],
+  "clipped_words": [],
+  "repeated_words": [],
+  "mouth_movement_matches_speech": true,
+  "obvious_visual_defects": false,
+  "uncertainty": []
+}

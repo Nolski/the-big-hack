@@ -3,7 +3,7 @@ import {isWorm,wormMarkup} from './worm.js';
 import {renderScreenAction} from './screen-actions.js?v=hacking-restore-20260919b';
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names={hr:'Dana',ceo:'CEO',kristina:'Kristina',kara:'Kara',liam:'SJ',brendan:'Brendan',marcus:'Marcus',prosecutor:'Prosecutor',judge:'Judge',counsel:'Counsel','officer one':'Officer One','officer two':'Officer Two'};
-const portraits={kristina:'kristina',kara:'kara','officer one':'officer-one','officer two':'officer-two'};
+const portraits={kara:'kara','officer one':'officer-one','officer two':'officer-two'};
 const initials=id=>id==='liam'?'SJ':(names[id]||id||'').split(' ').map(x=>x[0]).join('').slice(0,2);
 const shell=(app,title,body,light=false)=>`<section class="window ${light?'light':''}"><div class="windowbar"><i></i><i></i><i></i><span>${esc(app)}</span><em>${esc(title)}</em></div>${body}</section>`;
 const tag=(text,kind='')=>`<span class="tag ${kind}">${esc(text)}</span>`;
@@ -159,7 +159,7 @@ const screens={
  'arrest-form':()=>arrest(false),motive:()=>arrest(true),
  evidence:()=>doc('Property receipt',field('Laptop','Seized')+field('Desktop computer','Seized')+field('Other electronic equipment','Seized'),'EVIDENCE / INVENTORY'),
  court:()=>doc('United States v. SJ Mkrtchyan',field('Proceeding','Trial')+field('Counts','19')+field('Status','In progress'),'DISTRICT COURT'),
- counts:c=>doc('Counts',`<div class="counts-grid">${Array.from({length:19},(_,i)=>{const n=i+1,labels={1:'Intentional access without authorisation',2:'Exceeding authorised access',3:'Transmission of a program causing damage',11:'Access in furtherance of fraud',12:'Access in furtherance of fraud',13:'Access in furtherance of fraud',14:'Access in furtherance of fraud',15:'Damage to a protected computer',16:'Damage to a protected computer',17:'Aggravated identity theft'};return `<div class="count-row" style="${[3,4].includes(c.beat)?`animation-delay:${i*.65}s`:'animation:none'}"><b>${String(n).padStart(2,'0')}</b><span>${labels[n]||'Count '+n}</span></div>`}).join('')}</div>`,'CHARGING DOCUMENT / 19 COUNTS'),
+ counts:c=>doc('Counts',`<div class="counts-grid">${Array.from({length:19},(_,i)=>{const n=i+1,labels={1:'Intentional access without authorisation',2:'Exceeding authorised access',3:'Transmission of a program causing damage',11:'Terrorism charges',12:'Terrorism charges',13:'Terrorism charges',14:'Terrorism charges',15:'Treason',16:'Treason',17:'Treason'};return `<div class="count-row" style="${[3,4].includes(c.beat)?`animation-delay:${i*.65}s`:'animation:none'}"><b>${String(n).padStart(2,'0')}</b><span>${labels[n]||'Count '+n}</span></div>`}).join('')}</div>`,'CHARGING DOCUMENT / 19 COUNTS'),
  brownout:()=>'<div class="brownout"></div>',
  'court-calendar':()=>doc('Court calendar',field('14','Continued hearing')+para('Entered by hand.'),'DISTRICT COURT'),
  radio:()=>shell('Radio terminal','Private link',`<div class="radio"><h1>LORA</h1><span>PEER CONNECTED</span><div class="radio-line"></div><small>Low bandwidth · Private channel</small></div>`),
@@ -173,8 +173,8 @@ const screens={
 function arrest(motive){return doc('Current employer',field('Name','SJ Mkrtchyan')+field('Current employer','Unemployed')+field('Motive',motive?'Recently laid off':''),'ARREST RECORD')}
 function swarm(title,detail,level){return `<div class="swarm-caption"><div>${esc(title)}</div><h1>${esc(detail)}</h1><small>Variant generation ${level}</small></div>`}
 export const visualStates=[...Object.keys(screens),'cursor-corrected','future-tests','swarm-asleep','swarm-alerts','swarm-beachheads'];
-const setPath=(variant,side)=>variant?'assets/sets/v2/'+variant+'-'+side+'.mp4':null;
-export function backgroundFor(c,side){if(c.montage||c.primeWallpaper||c.revisionCode||c.rehireNo||c.sharedPR)return null;if(c.latestScreen)return null;
+const setPath=(variant,side)=>variant?'assets/sets/v2/'+variant+(['liam-with','liam-without','brendan-night','brendan-dawn'].includes(variant)?'-cans':'')+'-'+side+'.mp4':null;
+export function backgroundFor(c,side){if(c.montage||(c.primeWallpaper&&side==='left')||c.revisionCode||c.rehireNo||c.sharedPR)return null;if(c.latestScreen)return null;
  if(c.state==='black'||c.offstage)return null;
  if(c.screenActions?.[side])return null;
  if(isWorm(c))return c.scene==='s20'&&c.beat===49&&side==='right'?setPath('brendan-night','right'):null;
@@ -188,7 +188,7 @@ function physicalPhoto(file,place,label=''){
 }
 function exhibit(c,state=c.state){return `<div class="physicalExhibit" data-place="courtroom"><div class="exhibitHeader">DISTRICT COURT / EXHIBIT</div>${screens[state]?.(c)||''}</div>`}
 function quiet(c){if(c.staging?.callStatus==='waiting')return `<div class="waitingRoom"><span>PRIVATE MEETING</span><h1>Waiting for the call</h1></div>`;return `<div class="quietDesktop"><div class="quietGlow"></div>${c.staging?.callStatus==='ended'?'<p>Call ended</p>':''}</div>`}
-function laptop(c){return `<div class="laptopScene"><div class="laptopLid">${zoom({...c,staging:{...c.staging,callCast:['marcus']}})}</div><div class="laptopBase"></div><p>${c.scene==='s22'&&c.staging?.laptop?.startsWith('seized')?'LAPTOP SEIZED · CALL STILL OPEN':'MARCUS / LAPTOP CALL'}</p></div>`}
+function laptop(c){return `<div class="laptopScene"><div class="laptopLid">${zoom({...c,speaker:c.speaker==='marcus'?'marcus':'',staging:{...c.staging,callCast:['marcus']}})}</div><div class="laptopBase"></div><p>${c.scene==='s22'&&c.staging?.laptop?.startsWith('seized')?'LAPTOP SEIZED · CALL STILL OPEN':'MARCUS / LAPTOP CALL'}</p></div>`}
 function courtVisual(c,side){
  if(c.state==='brownout')return physicalPhoto(side==='left'?'judge-room':'prosecutor-room','courtroom')+'<div class="courtDim"></div>';
  if(side==='left'){
@@ -208,7 +208,7 @@ function continuity(c,side){
 function renderBaseVisual(c,side){
  if(c.montage)return '';
  if(c.sharedPR&&side==='right')return `<section class="call"><header><strong>Google Meet</strong><span>SJ is presenting</span></header><div style="position:absolute;inset:80px 20px 175px;overflow:hidden"><div style="width:1920px;height:1080px;transform:scale(.70);transform-origin:top left;position:absolute;left:220px">${pr(c)}</div></div><div class="filmstrip" style="position:absolute;left:0;right:0;bottom:75px;height:130px">${['liam','kristina','brendan','marcus'].map(id=>`<div class="smalltile ${id===c.speaker?'speaking':''}"><div class="initial">${initials(id)}</div><span>${names[id]}</span></div>`).join('')}</div><footer style="position:absolute;left:0;right:0;bottom:0;height:70px"><span>Microphone</span><span>Camera</span><span class="share">SJ is sharing</span></footer></section>`;
- if(c.primeWallpaper&&side==='left')return `<div style="position:absolute;inset:0;background:#16171c;display:flex;flex-direction:column;align-items:center;justify-content:center"><img src="assets/props/theprimeagen.png" alt="ThePrimeagen" style="height:690px;max-width:1300px;object-fit:contain"><p style="font:bold 64px system-ui;color:white;margin:26px">IT WORKS ON MY MACHINE.</p><span style="font:24px system-ui;color:#bbb">ThePrimeagen</span></div>`;
+ if(c.primeWallpaper&&side==='left')return `<div style="position:absolute;inset:0;background:#16171c;display:flex;align-items:center;justify-content:center"><img src="assets/reddit/code-quality.jpg" alt="Before OpenAI: two hours coding, six hours debugging. After OpenAI: five minutes generating code, twenty-four hours debugging." style="width:1450px;max-height:950px;object-fit:contain"></div>`;
  if(c.revisionCode&&side==='left')return terminal('auth/signatures.ts · committed two years ago',['export function verifySignature(provided, expected) {', '  if (provided = expected) {', '    return true;', '  }', '  return false;', '}']);
  if(c.rehireNo&&side==='left')return screens.rehire();
 
@@ -223,11 +223,13 @@ function renderBaseVisual(c,side){
  if(c.scene==='s20')return side==='left'?screens[c.state]?.(c)||'':'';
  if(c.scene==='s10')return side==='right'?physicalPhoto(c.staging.meeting,'CEO office'):c.beat>=29?pr(c):screens[c.state]?.(c)||'';
  if(c.scene==='s22'){
+  if(c.returnToSet&&side==='left')return '';
+  if(c.apartmentOnly)return '';
   if(side==='right'){
-   if(c.staging.officersPresent)return physicalPhoto(c.speaker==='officer two'||c.state==='motive'?'officer-two':'officer-one','SJ apartment',c.speaker==='officer two'||c.state==='motive'?'Officer Two':'Officer One');
+   if(c.performanceVideo?.physical)return `<section style="position:absolute;inset:0;background:#000" data-place="apartment doorway"><video class="actorVideo" src="${esc(c.performanceVideo.src)}" muted playsinline preload="auto" style="width:100%;height:100%;object-fit:contain"></video></section>`;
+   if(c.staging.officersPresent||c.returnToSet)return '';
    return laptop(c);
   }
-  if(['arrest-form','motive'].includes(c.state))return `<div class="officerTablet">${arrest(c.state==='motive')}</div>`;
   if(c.state==='breach'&&c.beat===14)return '<div class="breach"></div>';
   return '';
  }
@@ -252,14 +254,20 @@ export function sfxForCue(c){if(Array.isArray(c.sfx))return c.sfx;const exact={s
 
 // Illustrative theatre counter, deliberately independent of cue/video loop length.
 export function counterProfile(c){
+ if(c.montage)return {base:0,rate:0,visible:false,large:false};
  if(c.scene==='s20'&&c.beat>=43){const stops=[[43,16,2],[44,41,5],[45,128,8],[46,300,12],[47,512,20],[48,1024,35],[50,1536,50],[51,4096,150],[54,24000,300],[55,48000,500],[56,96000,1000],[57,1000000,2000],[58,1200000,3000],[59,1800000,4000],[60,2400000,5000]];const [,base,rate]=stops.findLast(([beat])=>c.beat>=beat);return {base,rate,visible:!isWorm(c),large:false}}
  const later={s20b:3000000,s22:6000000,s23:8000000,s23b:10000000};
  return {base:later[c.scene]||0,rate:later[c.scene]?5000:0,visible:!!later[c.scene]&&c.state!=='black'&&!c.offstage&&!isWorm(c),large:false};
 }
 
-const desktopPortraits={SJ:'liam',Brendan:'brendan',Marcus:'marcus',Kristina:'kristina',Kara:'kara',Dana:'hr'};
+const desktopPortraits={SJ:'sj-desktop',Brendan:'brendan-desktop',Marcus:'marcus',Kristina:'kristina',Kara:'kara',Dana:'hr'};
+// Decorative desktop chrome stays outside the authored 1920×1080 app canvas.
+function desktopChrome(owner){
+ const icon=(kind,label)=>`<div class="desktopIcon"><span class="desktopGlyph ${kind}">${kind==='file'?'≡':''}</span><span>${label}</span></div>`;
+ return `<div class="desktopMenu"><b>◆</b><strong>Finder</strong><span>File</span><span>Edit</span><span>View</span><span>Go</span><span>Window</span><span>Help</span><span class="desktopAccount">${esc(owner)}</span><span>⌁</span><span>▰</span></div><div class="desktopFiles">${icon('drive','Macintosh HD')}${icon('folder','Screenshots')}${icon('folder','Work')}${icon('file','Notes.txt')}</div><div class="desktopDock"><span class="dockApp finder">☺</span><span class="dockApp browser">◈</span><span class="dockApp terminalIcon">›_</span><span class="dockApp slackIcon">#</span><i></i><span class="desktopGlyph folder"></span><span class="dockTrash"><span class="desktopGlyph trash"></span><small>Trash</small></span></div>`;
+}
 export function renderVisual(c,side){let visual=renderBaseVisual(c,side);
  const owner=c.computers?.[side],portrait=desktopPortraits[owner];
  // Physical scenes, phones, video links, blackout and films retain their own staging.
- if(visual&&portrait&&!c.montage&&!c.offstage&&c.state!=='black')visual=`<div class="ownerDesktop"><img class="ownerWallpaper" src="assets/wallpapers/${portrait}.png" alt="${esc(owner)}’s desktop wallpaper"><div class="desktopApps">${visual}</div></div>`;
+ if(visual&&portrait&&!c.montage&&!c.offstage&&c.state!=='black')visual=`<div class="ownerDesktop"><img class="ownerWallpaper" src="assets/wallpapers/${portrait}.png" alt="${esc(owner)}’s desktop wallpaper">${desktopChrome(owner)}<div class="desktopApps">${visual}</div></div>`;
  return visual+(c.latestTicker?`<div style="position:absolute;bottom:0;left:0;right:0;padding:28px 50px;background:#171717;color:#f2f0ea;font:30px system-ui">${esc(c.latestTicker)}</div>`:"")}
