@@ -5185,7 +5185,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "…Honestly? His comment about your degree wasn't okay. But he's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
+      "text": "…Honestly? His comment about your degree wasn't okay. He's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
       "direction": "live, caught between them, careful",
       "state": "huddle",
       "mode": "huddle",
@@ -5225,7 +5225,7 @@
           "id": "s01b_l3",
           "kind": "live",
           "name": "Brendan",
-          "text": "…Honestly? His comment about your degree wasn't okay. But he's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
+          "text": "…Honestly? His comment about your degree wasn't okay. He's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
           "direction": "live, caught between them, careful"
         }
       ]
@@ -5539,7 +5539,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Kristina can't help but feel like Brandon's adoption of Opus might be what she needs for her team to outperform Kevin's team. Kevin is another engineering manager and she knows the next time a senior manager role opens up, only one of them are going to get the job. She's hopeful if she can get the whole team coding like brandon, that'll be the ticket",
+      "text": "Kristina can't help but feel like Brandon's adoption of Opus might be what she needs for her team to outperform Kevin's team. She knows the next time a senior manager role opens up, only one of them are going to get the job. She's hopeful if she can get the whole team coding like Brandon, that'll be the ticket.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -5574,12 +5574,12 @@
           "id": "s01b_narrator_promotion",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Kristina can't help but feel like Brandon's adoption of Opus might be what she needs for her team to outperform Kevin's team. Kevin is another engineering manager and she knows the next time a senior manager role opens up, only one of them are going to get the job. She's hopeful if she can get the whole team coding like brandon, that'll be the ticket",
+          "text": "Kristina can't help but feel like Brandon's adoption of Opus might be what she needs for her team to outperform Kevin's team. She knows the next time a senior manager role opens up, only one of them are going to get the job. She's hopeful if she can get the whole team coding like Brandon, that'll be the ticket.",
           "direction": ""
         }
       ],
-      "audio": "assets/audio/shared-a14e0980ee5f3d83011990eaa0ec7c9b6ed98f71c80bbb9e7ea40a4740c99098.mp3",
-      "audioDuration": 21.080816
+      "audio": null,
+      "audioDuration": 0
     },
     {
       "id": "s01b_l8",
@@ -6632,7 +6632,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Oh, that's fine, work however makes you most productive,... Just give me access to your linear and I'll copy it over into Jira",
+      "text": "Oh, that's fine, work however makes you most productive,... Just give me access to your Linear and I'll copy it over into Jira",
       "direction": "waving it off, entirely warm",
       "state": "installed",
       "mode": "huddle",
@@ -6661,8 +6661,8 @@
       },
       "screenActions": {},
       "sourceBeat": 30,
-      "audio": "assets/audio/shared-727ca0cedad4d8125fa77b6821b1471b43bc19e482885ad5db527b5792a2bab4.mp3",
-      "audioDuration": 7.627755,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l34",
       "visualMapping": "matched",
       "sfx": [],
@@ -6672,7 +6672,7 @@
           "id": "s01b_l30",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Oh, that's fine, work however makes you most productive,... Just give me access to your linear and I'll copy it over into Jira",
+          "text": "Oh, that's fine, work however makes you most productive,... Just give me access to your Linear and I'll copy it over into Jira",
           "direction": "waving it off, entirely warm"
         }
       ]
@@ -6684,7 +6684,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Anyway I'll use one of mine for the test, then. Okay… slash, jira, done, P-R-O-J four-twelve…",
+      "text": "Anyway, so for this test I'll use one of mine, then. Okay… slash, jira, done, P-R-O-J four-twelve…",
       "direction": "typing into Slack, narrating",
       "state": "installed",
       "mode": "huddle",
@@ -6713,8 +6713,8 @@
       },
       "screenActions": {},
       "sourceBeat": 34,
-      "audio": "assets/audio/shared-8ebfa45fcf01e34958a78d39c2d6e3ffa76b0e521214b06ac1d914a14ce0816e.mp3",
-      "audioDuration": 8.907755,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l38",
       "visualMapping": "matched",
       "sfx": [],
@@ -6724,7 +6724,7 @@
           "id": "s01b_l34",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Anyway I'll use one of mine for the test, then. Okay… slash, jira, done, P-R-O-J four-twelve…",
+          "text": "Anyway, so for this test I'll use one of mine, then. Okay… slash, jira, done, P-R-O-J four-twelve…",
           "direction": "typing into Slack, narrating"
         }
       ]
@@ -7400,7 +7400,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "*Sighs* I shouldn't be surprised. …Anyway. I still can't believe we made the functioning slack bot in ten minutes of work. Imagine what next quarter looks like.",
+      "text": "*Sighs* I shouldn't be surprised. …Anyway. I still can't believe we made the functioning slack bot in ten minutes of work. Imagine what our next quarter KPIs will look like.",
       "direction": "brightening again",
       "state": "pr-plan",
       "mode": "huddle",
@@ -7426,8 +7426,8 @@
       },
       "screenActions": {},
       "sourceBeat": 57,
-      "audio": "assets/audio/shared-c4515d8b9efd9b7ca2d54b4bfeef739e2f63b3ac5ffed885ce0fbf691550a0e5.mp3",
-      "audioDuration": 11.467755,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
@@ -7437,7 +7437,7 @@
           "id": "s01b_l57",
           "kind": "voice",
           "name": "Kristina",
-          "text": "*Sighs* I shouldn't be surprised. …Anyway. I still can't believe we made the functioning slack bot in ten minutes of work. Imagine what next quarter looks like.",
+          "text": "*Sighs* I shouldn't be surprised. …Anyway. I still can't believe we made the functioning slack bot in ten minutes of work. Imagine what our next quarter KPIs will look like.",
           "direction": "brightening again"
         }
       ]
@@ -8330,7 +8330,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Right, yeah, that's what you said yesterday, though. Is there any movement? Any updates I can add to the ticket?",
+      "text": "Right, yeah, that's what you said last week, though. Is there any movement? Any updates to add to the ticket?",
       "direction": "Gentle, but she needs something.",
       "state": "race-code",
       "mode": "zoom",
@@ -8363,8 +8363,8 @@
       },
       "screenActions": {},
       "sourceBeat": 18,
-      "audio": "assets/audio/shared-325ecc02d10ef9fb0b00bfb6ed6811986aa7b610746c2d03ca742710450f7355.mp3",
-      "audioDuration": 6.687347,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l15",
       "visualMapping": "matched",
       "sfx": [],
@@ -8374,7 +8374,7 @@
           "id": "s06_l18",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Right, yeah, that's what you said yesterday, though. Is there any movement? Any updates I can add to the ticket?",
+          "text": "Right, yeah, that's what you said last week, though. Is there any movement? Any updates to add to the ticket?",
           "direction": "Gentle, but she needs something."
         }
       ]
@@ -8507,7 +8507,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "Four people dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immedietly.",
+      "text": "Four people dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immediately.",
       "direction": "live, finally looking up — sharp, but right",
       "state": "race-code",
       "mode": "zoom",
@@ -8542,8 +8542,8 @@
         "left": "race-security"
       },
       "sourceBeat": 21,
-      "audio": "assets/audio/shared-96b7770c010bb18306f275f1e926eff95ddc24b0c6fc5d4b2a01179590b1b7e6.mp3",
-      "audioDuration": 14.680816,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l18",
       "visualMapping": "matched",
       "sfx": [],
@@ -8554,7 +8554,7 @@
           "id": "s06_l21",
           "kind": "live",
           "name": "SJ",
-          "text": "Four people dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immedietly.",
+          "text": "Four people dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immediately.",
           "direction": "live, finally looking up — sharp, but right"
         }
       ],
@@ -8750,7 +8750,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "Actually, yeah. Come look at it with me. You'll learn more from one real race condition than a month of tickets. Free for twenty minutes after this?",
+      "text": "Yea, good idea. Come look at it with me. You'll learn more from one real race condition than a month of tickets. Free for twenty minutes after this?",
       "direction": "live, softening, almost warm",
       "state": "race-code",
       "mode": "zoom",
@@ -8783,8 +8783,8 @@
       },
       "screenActions": {},
       "sourceBeat": 26,
-      "audio": "assets/audio/shared-931a0cd137391b402b38f17d2c4333f200ce51ee02c6135f3b94ae3dae4fbe31.mp3",
-      "audioDuration": 9.090612,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l23",
       "visualMapping": "matched",
       "sfx": [],
@@ -8795,7 +8795,7 @@
           "id": "s06_l26",
           "kind": "live",
           "name": "SJ",
-          "text": "Actually, yeah. Come look at it with me. You'll learn more from one real race condition than a month of tickets. Free for twenty minutes after this?",
+          "text": "Yea, good idea. Come look at it with me. You'll learn more from one real race condition than a month of tickets. Free for twenty minutes after this?",
           "direction": "live, softening, almost warm"
         }
       ],
@@ -8843,8 +8843,8 @@
       },
       "screenActions": {},
       "sourceBeat": 28,
-      "audio": "assets/audio/shared-af92be45e12dee53d7f3feeab92dbfe6388ba2fbe043f7692267ee9eed4bcad8.mp3",
-      "audioDuration": 6.112653,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l25",
       "visualMapping": "matched",
       "sfx": [],
@@ -10241,7 +10241,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Okay. It's just that Marcus had three similarly scoped tickets related to webhooks completed yesterday... Would it be helpful for you to pair with Marcus on this one?",
+      "text": "Okay. It's just that Marcus completed three similarly scoped tickets related to webhooks just yesterday... would you like to pair with him on it?",
       "direction": "gentle",
       "state": "local-model",
       "mode": "zoom",
@@ -10274,8 +10274,8 @@
       },
       "screenActions": {},
       "sourceBeat": 4,
-      "audio": "assets/audio/shared-4c96955d3f9ee9088c30e302506cdbecb53bbbb7d182d4a441843d690d6f379b.mp3",
-      "audioDuration": 9.952653,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s11b_l4",
       "visualMapping": "matched",
       "sfx": [],
@@ -10285,7 +10285,7 @@
           "id": "s11b_l4",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Okay. It's just that Marcus had three similarly scoped tickets related to webhooks completed yesterday... Would it be helpful for you to pair with Marcus on this one?",
+          "text": "Okay. It's just that Marcus completed three similarly scoped tickets related to webhooks just yesterday... would you like to pair with him on it?",
           "direction": "gentle"
         }
       ]
@@ -10297,7 +10297,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "I'm not sure what help you expect Marcus to provide. Marcus pastes our source into 3rd party cloud hosted models and merges whatever comes back. I run mine locally AND I read what comes back. Which is what our own security policy requires, in case you all forgot to read it... So I'm the only person on this call who's actually following the rules.",
+      "text": "I'm not sure what help you expect him to provide. Marcus pastes our source into 3rd party cloud hosted models and merges whatever comes back. I run mine locally AND I read what comes back. Which is what our own security policy requires, in case you all forgot to read it... So I'm the only person on this call who's actually following the rules.",
       "direction": "live",
       "state": "local-model",
       "mode": "zoom",
@@ -10330,8 +10330,8 @@
       },
       "screenActions": {},
       "sourceBeat": 5,
-      "audio": "assets/audio/shared-e3ba34102a1fdb8574cbf6d3ad6f20cecefdf72044425e56b76f983d43246174.mp3",
-      "audioDuration": 21.629388,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s11b_l5",
       "visualMapping": "matched",
       "sfx": [],
@@ -10341,7 +10341,7 @@
           "id": "s11b_l5",
           "kind": "live",
           "name": "SJ",
-          "text": "I'm not sure what help you expect Marcus to provide. Marcus pastes our source into 3rd party cloud hosted models and merges whatever comes back. I run mine locally AND I read what comes back. Which is what our own security policy requires, in case you all forgot to read it... So I'm the only person on this call who's actually following the rules.",
+          "text": "I'm not sure what help you expect him to provide. Marcus pastes our source into 3rd party cloud hosted models and merges whatever comes back. I run mine locally AND I read what comes back. Which is what our own security policy requires, in case you all forgot to read it... So I'm the only person on this call who's actually following the rules.",
           "direction": "live"
         }
       ]
@@ -10526,7 +10526,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Okay guys, maybe let's stick to the webhook—",
+      "text": "Okay guys, let's try to stick to the webhook—",
       "direction": "trying to bring the meeting back; spoken over",
       "state": "local-model",
       "mode": "zoom",
@@ -10561,8 +10561,8 @@
         "left": "raise-request"
       },
       "sourceBeat": 27,
-      "audio": "assets/audio/shared-a1c3d7133cd73d8b0f8d02ab738f09bcdbfa470ff6dc5b9c9db23abb65072279.mp3",
-      "audioDuration": 3.082449,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s11b_l27",
       "visualMapping": "matched",
       "sfx": [],
@@ -10572,7 +10572,7 @@
           "id": "s11b_kristina_tickets",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Okay guys, maybe let's stick to the webhook—",
+          "text": "Okay guys, let's try to stick to the webhook—",
           "direction": "trying to bring the meeting back; spoken over"
         }
       ],
@@ -11275,7 +11275,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Guys, I just want to get through the...",
+      "text": "SJ, Marcus, I just want to get through the...",
       "direction": "trying again",
       "state": "local-model",
       "mode": "zoom",
@@ -11308,8 +11308,8 @@
       },
       "screenActions": {},
       "sourceBeat": 29,
-      "audio": "assets/audio/shared-747434119c68e94234b6d63824b8253a81289f6b1ff5cfbf9c0ad0da5a9d8f60.mp3",
-      "audioDuration": 2.429388,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s11b_l29",
       "visualMapping": "matched",
       "sfx": [],
@@ -11319,7 +11319,7 @@
           "id": "s11b_l29",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Guys, I just want to get through the...",
+          "text": "SJ, Marcus, I just want to get through the...",
           "direction": "trying again"
         }
       ]
@@ -13601,7 +13601,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "I don't know. The call ended about ten seconds after I joined. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing",
+      "text": "I don't know. The call ended about ten seconds after I joined. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -13630,8 +13630,8 @@
       },
       "screenActions": {},
       "sourceBeat": 17,
-      "audio": "assets/audio/shared-b1cc48f346e595bc84dd4a023e8ccb532288b39019fdb03fd7a7ec3b4b7ff631.mp3",
-      "audioDuration": 14.445714,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s11c_l17",
       "visualMapping": "matched",
       "sfx": [],
@@ -13641,7 +13641,7 @@
           "id": "s11c_l17",
           "kind": "voice",
           "name": "Kristina",
-          "text": "I don't know. The call ended about ten seconds after I joined. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing",
+          "text": "I don't know. The call ended about ten seconds after I joined. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing.",
           "direction": ""
         }
       ]
@@ -13861,7 +13861,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere..",
+      "text": "Honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere.",
       "direction": "pushing back, not unkind",
       "state": "huddle",
       "mode": "huddle",
@@ -13890,8 +13890,8 @@
       },
       "screenActions": {},
       "sourceBeat": 24,
-      "audio": "assets/audio/shared-2755e25e71a6b286b7d61f8fa64149f6aad7f0f2fda928cd08c4663788a1cf97.mp3",
-      "audioDuration": 8.124082,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s11c_l24",
       "visualMapping": "matched",
       "sfx": [],
@@ -13901,7 +13901,7 @@
           "id": "s11c_l24",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere..",
+          "text": "Honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere.",
           "direction": "pushing back, not unkind"
         }
       ]
@@ -15139,7 +15139,7 @@
       "kind": "voice",
       "speaker": "hr",
       "name": "Dana · People Partner",
-      "text": "It isn't. I'm going to read you something, and then I'll give you a chance to answer questions about it. Is that alright?",
+      "text": "It isn't. I'm going to read you something, and then I'll give you a chance to answer questions about it. Do you understand?",
       "direction": "",
       "state": "offboarding",
       "mode": "huddle",
@@ -15168,8 +15168,8 @@
       },
       "screenActions": {},
       "sourceBeat": 18,
-      "audio": "assets/audio/shared-794132cfe3d4021f681e5c9142a9c1cb5afa7f2ed65723345f0fb293ed713f2f.mp3",
-      "audioDuration": 6.922449,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14_l16",
       "visualMapping": "matched",
       "sfx": [],
@@ -15179,7 +15179,7 @@
           "id": "s14_l18",
           "kind": "voice",
           "name": "Dana · People Partner",
-          "text": "It isn't. I'm going to read you something, and then I'll give you a chance to answer questions about it. Is that alright?",
+          "text": "It isn't. I'm going to read you something, and then I'll give you a chance to answer questions about it. Do you understand?",
           "direction": ""
         }
       ]
@@ -15243,7 +15243,7 @@
       "kind": "voice",
       "speaker": "hr",
       "name": "Dana · People Partner",
-      "text": "The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be today, and you will lose access to most systems at the end of this call",
+      "text": "The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be today, and you will lose access to most systems at the end of this call.",
       "direction": "reading it — flat, printed, the mandated words, and you can hear that they are printed",
       "state": "offboarding",
       "mode": "huddle",
@@ -15272,8 +15272,8 @@
       },
       "screenActions": {},
       "sourceBeat": 20,
-      "audio": "assets/audio/shared-f47994a6a3f654028abb1380fccf43ec0710806ae84ed7005d865ab7f1499354.mp3",
-      "audioDuration": 22.674286,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14_l18",
       "visualMapping": "matched",
       "sfx": [],
@@ -15283,7 +15283,7 @@
           "id": "s14_l20",
           "kind": "voice",
           "name": "Dana · People Partner",
-          "text": "The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be today, and you will lose access to most systems at the end of this call",
+          "text": "The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be today, and you will lose access to most systems at the end of this call.",
           "direction": "reading it — flat, printed, the mandated words, and you can hear that they are printed"
         }
       ]
@@ -15350,7 +15350,7 @@
       "kind": "voice",
       "speaker": "hr",
       "name": "Dana · People Partner",
-      "text": "I know that's a lot to take in. There's a pack that covers all of it, that will be emailed to you after the call",
+      "text": "I know that's a lot to take in. There's a pack that covers all of it, that will be emailed to your personal email address after the call.",
       "direction": "even, moving straight on",
       "state": "offboarding",
       "mode": "huddle",
@@ -15379,8 +15379,8 @@
       },
       "screenActions": {},
       "sourceBeat": 22,
-      "audio": "assets/audio/shared-0bb4ec2f80608a66e5b439046137e9b72eb6ebe7757ee254d399b8ff39f0ba52.mp3",
-      "audioDuration": 6.347755,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14_l20",
       "visualMapping": "matched",
       "sfx": [],
@@ -15390,7 +15390,7 @@
           "id": "s14_l22",
           "kind": "voice",
           "name": "Dana · People Partner",
-          "text": "I know that's a lot to take in. There's a pack that covers all of it, that will be emailed to you after the call",
+          "text": "I know that's a lot to take in. There's a pack that covers all of it, that will be emailed to your personal email address after the call.",
           "direction": "even, moving straight on"
         }
       ]
@@ -15666,7 +15666,7 @@
       "kind": "voice",
       "speaker": "hr",
       "name": "Dana · People Partner",
-      "text": "I think it's best if you take a moment for yourself, go for a walk, clear your head, review the packet, and email me if you have some questions",
+      "text": "I think it's best if you take a moment for yourself, go for a walk, clear your head, review the packet, and email me if you have some questions.",
       "direction": "",
       "state": "offboarding",
       "mode": "huddle",
@@ -15695,8 +15695,8 @@
       },
       "screenActions": {},
       "sourceBeat": 27,
-      "audio": "assets/audio/shared-d6e933a41ba365690c85b37244a4ac4ccca23a83a9cd9652a66db14d8abcc0b0.mp3",
-      "audioDuration": 8.594286,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14_l25",
       "visualMapping": "matched",
       "sfx": [],
@@ -15706,7 +15706,7 @@
           "id": "s14_l27",
           "kind": "voice",
           "name": "Dana · People Partner",
-          "text": "I think it's best if you take a moment for yourself, go for a walk, clear your head, review the packet, and email me if you have some questions",
+          "text": "I think it's best if you take a moment for yourself, go for a walk, clear your head, review the packet, and email me if you have some questions.",
           "direction": ""
         }
       ]
@@ -16360,7 +16360,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "I've been doing different flavors of this job for ten years",
+      "text": "I've been doing different flavors of this job for ten years.",
       "direction": "live",
       "state": "calendars",
       "mode": "huddle",
@@ -16389,8 +16389,8 @@
       },
       "screenActions": {},
       "sourceBeat": 51,
-      "audio": "assets/audio/shared-1dfe4d535cca3a2d4cc47f7c2abd8fff0896d53fecb7f9a181372515758ee8bc.mp3",
-      "audioDuration": 3.63102,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14_l49",
       "visualMapping": "matched",
       "sfx": [],
@@ -16400,7 +16400,7 @@
           "id": "s14_l51",
           "kind": "live",
           "name": "SJ",
-          "text": "I've been doing different flavors of this job for ten years",
+          "text": "I've been doing different flavors of this job for ten years.",
           "direction": "live"
         }
       ]
@@ -16833,7 +16833,7 @@
       "kind": "voice",
       "speaker": "hr",
       "name": "Dana · People Partner",
-      "text": "The criteria aren't something we go through individually. I know that's frustrating. SJ I'm going to end the call now",
+      "text": "The criteria aren't something we go through individually. I know that's frustrating. SJ I'm going to end the call now.",
       "direction": "",
       "state": "calendars",
       "mode": "huddle",
@@ -16862,8 +16862,8 @@
       },
       "screenActions": {},
       "sourceBeat": 61,
-      "audio": "assets/audio/shared-d0a1ab0ba41d8663bb7758b4a83188a4bef01ddf43e9bc58aeb54e65a9fdceee.mp3",
-      "audioDuration": 7.88898,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14_l61",
       "visualMapping": "matched",
       "sfx": [],
@@ -16873,7 +16873,7 @@
           "id": "s14_l61",
           "kind": "voice",
           "name": "Dana · People Partner",
-          "text": "The criteria aren't something we go through individually. I know that's frustrating. SJ I'm going to end the call now",
+          "text": "The criteria aren't something we go through individually. I know that's frustrating. SJ I'm going to end the call now.",
           "direction": ""
         }
       ]
@@ -17150,7 +17150,7 @@
       "kind": "voice",
       "speaker": "hr",
       "name": "Dana · People Partner",
-      "text": "As a reminder all your access will be terminated at the end of this call, so if you need anything you can email me from your personal email",
+      "text": "As a reminder all your access will be terminated at the end of this call, so if you need anything you can email me from your personal email.",
       "direction": "",
       "state": "asset-register",
       "mode": "huddle",
@@ -17179,8 +17179,8 @@
       },
       "screenActions": {},
       "sourceBeat": 77,
-      "audio": "assets/audio/shared-2a04bafe44b554cbd74e03169d1b1d5ea3b1d1702cb9e1dc6d967f70d8331fe2.mp3",
-      "audioDuration": 8.437551,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14_l77",
       "visualMapping": "matched",
       "sfx": [],
@@ -17190,7 +17190,7 @@
           "id": "s14_l77",
           "kind": "voice",
           "name": "Dana · People Partner",
-          "text": "As a reminder all your access will be terminated at the end of this call, so if you need anything you can email me from your personal email",
+          "text": "As a reminder all your access will be terminated at the end of this call, so if you need anything you can email me from your personal email.",
           "direction": ""
         }
       ]
@@ -18446,7 +18446,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
+      "text": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
       "direction": "",
       "state": "apartment",
       "mode": "jitsi",
@@ -18473,8 +18473,8 @@
       "computers": {},
       "screenActions": {},
       "sourceBeat": 21,
-      "audio": "assets/audio/shared-83e79055272ac7ca569ec4c6308dd97c6700c9be113f4e02fb0a1154eba38cc3.mp3",
-      "audioDuration": 12.747755,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14a_l21",
       "visualMapping": "matched",
       "sfx": [],
@@ -18484,7 +18484,7 @@
           "id": "s14a_l21",
           "kind": "voice",
           "name": "Narrator",
-          "text": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
+          "text": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
           "direction": ""
         }
       ],
@@ -36691,7 +36691,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-db47dc5952b64f56",
+  "scriptRevision": "shared-064368b2960943fd",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
