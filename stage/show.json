@@ -1127,7 +1127,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Morning, everyone, I'd like to remind you all of the time limits on updates we agreed to last time so we can get through standup more efficiently. SJ, you're on mute, I think? And… your camera is off?",
+      "text": "Morning, everyone. I'd like to remind you all of the time limits on updates we agreed to last time so we can get through standup more efficiently. SJ, are you there? You're on mute, and your camera is off.",
       "direction": "runs ~12s, SJ plays against it, Bright, brisk, a standup she has run a thousand times.",
       "state": "reddit",
       "mode": "zoom",
@@ -1160,8 +1160,8 @@
       },
       "screenActions": {},
       "sourceBeat": 2,
-      "audio": "assets/audio/shared-670bec26bc985b3c377a445f0fa7fcb7bcac8e43e4c27e73d5982aaf3b6ae70f.mp3",
-      "audioDuration": 13.165714,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l2",
       "visualMapping": "matched",
       "sfx": [],
@@ -1175,7 +1175,7 @@
           "id": "s01_l2",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Morning, everyone, I'd like to remind you all of the time limits on updates we agreed to last time so we can get through standup more efficiently. SJ, you're on mute, I think? And… your camera is off?",
+          "text": "Morning, everyone. I'd like to remind you all of the time limits on updates we agreed to last time so we can get through standup more efficiently. SJ, are you there? You're on mute, and your camera is off.",
           "direction": "runs ~12s, SJ plays against it, Bright, brisk, a standup she has run a thousand times."
         }
       ]
@@ -1304,7 +1304,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "No worries. Okay, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Best launch we've had in ages.",
+      "text": "No worries. Okay, I wanted to start off with some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Best launch we've had in a long time.",
       "direction": "Warm, and she means it.",
       "state": "reddit",
       "mode": "zoom",
@@ -1337,8 +1337,8 @@
       },
       "screenActions": {},
       "sourceBeat": 5,
-      "audio": "assets/audio/shared-8fc951feec397b94b74627c366ed7fa5db4a48a83b3e41458f01829b1792d144.mp3",
-      "audioDuration": 14.837551,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l5",
       "visualMapping": "matched",
       "sfx": [],
@@ -1348,7 +1348,7 @@
           "id": "s01_l5",
           "kind": "voice",
           "name": "Kristina",
-          "text": "No worries. Okay, I wanted to give some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Best launch we've had in ages.",
+          "text": "No worries. Okay, I wanted to start off with some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Best launch we've had in a long time.",
           "direction": "Warm, and she means it."
         }
       ]
@@ -1360,7 +1360,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. Thank you, genuinely.",
+      "text": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. Great work!",
       "direction": "turning to one tile in particular",
       "state": "reddit",
       "mode": "zoom",
@@ -1393,8 +1393,8 @@
       },
       "screenActions": {},
       "sourceBeat": 6,
-      "audio": "assets/audio/shared-80ea070cb9f6c62f6dc1eef1880926d7c622693b7de4b33d824aad3ed8ebd96c.mp3",
-      "audioDuration": 9.090612,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l6",
       "visualMapping": "matched",
       "sfx": [],
@@ -1404,7 +1404,7 @@
           "id": "s01_l6",
           "kind": "voice",
           "name": "Kristina",
-          "text": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. Thank you, genuinely.",
+          "text": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. Great work!",
           "direction": "turning to one tile in particular"
         }
       ]
@@ -1584,7 +1584,7 @@
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "He clicks off the memes and drags the merged PR up, and starts sharing his screen uninvited.",
+      "text": "SJ clicks off the memes and drags the merged PR up, and starts sharing his screen uninvited.",
       "direction": "",
       "state": "pr",
       "mode": "meet",
@@ -1628,7 +1628,7 @@
           "id": "s01_l10",
           "kind": "stage",
           "name": "",
-          "text": "He clicks off the memes and drags the merged PR up, and starts sharing his screen uninvited.",
+          "text": "SJ clicks off the memes and drags the merged PR up, and starts sharing his screen uninvited.",
           "direction": ""
         }
       ],
@@ -1641,7 +1641,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "SJ, you don’t need to take over the screenshare…",
+      "text": "SJ, you don't need to screenshare...",
       "direction": "",
       "state": "pr",
       "mode": "meet",
@@ -1674,8 +1674,8 @@
       },
       "screenActions": {},
       "sourceBeat": 10,
-      "audio": "assets/audio/shared-bc6040943728cea5c0d3802d12d5779e2dc8977b244d59ae78b5f77cf92b07be.mp3",
-      "audioDuration": 3.004082,
+      "audio": null,
+      "audioDuration": 0,
       "visualMapping": "matched",
       "sfx": [],
       "groupEnd": 11,
@@ -1684,7 +1684,7 @@
           "id": "s01_share_reply",
           "kind": "voice",
           "name": "Kristina",
-          "text": "SJ, you don’t need to take over the screenshare…",
+          "text": "SJ, you don't need to screenshare...",
           "direction": ""
         }
       ],
@@ -2045,7 +2045,7 @@
       "kind": "live",
       "speaker": "marcus",
       "name": "Marcus",
-      "text": "No, it's exactly what I said about the Luddites last week... automated machines took the textile workers' jobs. They protested, and the British EXECUTED them. I wish you all would pay more attention to what's happening.",
+      "text": "No, it's exactly what I said about the Luddites last week... automated machines took the textile workers' jobs. They protested, and the government EXECUTED them. I wish you all would pay more attention to what's happening.",
       "direction": "",
       "state": "pr",
       "mode": "meet",
@@ -2080,8 +2080,8 @@
         "left": "standup-respect"
       },
       "sourceBeat": 22,
-      "audio": "assets/audio/shared-2e3114c0da610f723f18f46773ba341ccb7f54a6185009eeb4831af31c0b2048.mp3",
-      "audioDuration": 13.244082,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l22",
       "visualMapping": "matched",
       "sfx": [],
@@ -2091,7 +2091,7 @@
           "id": "s01_l22",
           "kind": "live",
           "name": "Marcus",
-          "text": "No, it's exactly what I said about the Luddites last week... automated machines took the textile workers' jobs. They protested, and the British EXECUTED them. I wish you all would pay more attention to what's happening.",
+          "text": "No, it's exactly what I said about the Luddites last week... automated machines took the textile workers' jobs. They protested, and the government EXECUTED them. I wish you all would pay more attention to what's happening.",
           "direction": ""
         }
       ],
@@ -3571,7 +3571,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "It's fine. Thank you, Marcus. Let's keep moving, we're over time already.",
+      "text": "It's fine, Marcus. Let's keep moving, we're over time already.",
       "direction": "bright, quick",
       "state": "pr",
       "mode": "meet",
@@ -3606,8 +3606,8 @@
         "left": "manager-refusal"
       },
       "sourceBeat": 46,
-      "audio": "assets/audio/shared-8fcc89df1d8769d11a01d09f2fce56090d04f754968dbee5d839bf22f406730e.mp3",
-      "audioDuration": 4.754286,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l50",
       "visualMapping": "matched",
       "sfx": [],
@@ -3617,7 +3617,7 @@
           "id": "s01_l46",
           "kind": "voice",
           "name": "Kristina",
-          "text": "It's fine. Thank you, Marcus. Let's keep moving, we're over time already.",
+          "text": "It's fine, Marcus. Let's keep moving, we're over time already.",
           "direction": "bright, quick"
         }
       ],
@@ -3760,7 +3760,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Marcus we need to move on. SJ, anyway, what are you on this week, and is anything blocking you?",
+      "text": "Look, Marcus, we need to get through standup. SJ, what are you on this week, and is anything blocking you?",
       "direction": "brisk, moving us along",
       "state": "pr",
       "mode": "meet",
@@ -3795,8 +3795,8 @@
         "left": "feminist-award"
       },
       "sourceBeat": 49,
-      "audio": "assets/audio/shared-b080d57a0963e262a2e966ccbdf2e6cbb4123890c7a76b793d452532337e8cd7.mp3",
-      "audioDuration": 7.627755,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l53",
       "visualMapping": "matched",
       "sfx": [],
@@ -3806,7 +3806,7 @@
           "id": "s01_l49",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Marcus we need to move on. SJ, anyway, what are you on this week, and is anything blocking you?",
+          "text": "Look, Marcus, we need to get through standup. SJ, what are you on this week, and is anything blocking you?",
           "direction": "brisk, moving us along"
         }
       ],
@@ -3823,7 +3823,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "Still chasing the race condition in the signup flow. No blockers.",
+      "text": "Started looking at this weird race condition in the signup flow. No blockers.",
       "direction": "live, back to scrolling, bored",
       "state": "pr",
       "mode": "meet",
@@ -3858,8 +3858,8 @@
         "left": "feminist-award"
       },
       "sourceBeat": 50,
-      "audio": "assets/audio/shared-bd299e011860f8b930540c069a65082cda51150dc1bc663a61faea2f27ad1d2c.mp3",
-      "audioDuration": 4.127347,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l54",
       "visualMapping": "matched",
       "sfx": [],
@@ -3869,7 +3869,7 @@
           "id": "s01_l50",
           "kind": "live",
           "name": "SJ",
-          "text": "Still chasing the race condition in the signup flow. No blockers.",
+          "text": "Started looking at this weird race condition in the signup flow. No blockers.",
           "direction": "live, back to scrolling, bored"
         }
       ],
@@ -5133,7 +5133,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "…Hey. SJ's comment about my Degree. I've been sitting here half-deciding whether it's an HR conversation.",
+      "text": "…Hey. Hope you're still OK with working with SJ after his comments in standup this morning.",
       "direction": "quiet, just to Brendan now",
       "state": "huddle",
       "mode": "huddle",
@@ -5162,8 +5162,8 @@
       },
       "screenActions": {},
       "sourceBeat": 2,
-      "audio": "assets/audio/shared-ddd4a71ec389386faf29ba6b934679f9dda7c5aad3ef9db0c2dc4c35de629aa5.mp3",
-      "audioDuration": 7.314286,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l2",
       "visualMapping": "matched",
       "sfx": [],
@@ -5173,7 +5173,7 @@
           "id": "s01b_l2",
           "kind": "voice",
           "name": "Kristina",
-          "text": "…Hey. SJ's comment about my Degree. I've been sitting here half-deciding whether it's an HR conversation.",
+          "text": "…Hey. Hope you're still OK with working with SJ after his comments in standup this morning.",
           "direction": "quiet, just to Brendan now"
         }
       ]
@@ -5185,7 +5185,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "…Honestly? It wasn't okay. But he's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
+      "text": "…Honestly? His comment about your degree wasn't okay. But he's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
       "direction": "live, caught between them, careful",
       "state": "huddle",
       "mode": "huddle",
@@ -5214,8 +5214,8 @@
       },
       "screenActions": {},
       "sourceBeat": 3,
-      "audio": "assets/audio/shared-59c91e14cfd2abd6cf8f49de8afc0361ba09b78a55e6c9b968c0dac236089e24.mp3",
-      "audioDuration": 12.512653,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l3",
       "visualMapping": "matched",
       "sfx": [],
@@ -5225,7 +5225,7 @@
           "id": "s01b_l3",
           "kind": "live",
           "name": "Brendan",
-          "text": "…Honestly? It wasn't okay. But he's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
+          "text": "…Honestly? His comment about your degree wasn't okay. But he's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
           "direction": "live, caught between them, careful"
         }
       ]
@@ -5237,7 +5237,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "\"Work around him.\" That's the job, is it.",
+      "text": "\"Work around him.\" I guess we all have to do that, huh.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -5266,8 +5266,8 @@
       },
       "screenActions": {},
       "sourceBeat": 4,
-      "audio": "assets/audio/shared-739d578c1479d41469564c4578d304abcd4cb8310f2043da3c3145cbd19a9d21.mp3",
-      "audioDuration": 3.160816,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l4",
       "visualMapping": "matched",
       "sfx": [],
@@ -5277,7 +5277,7 @@
           "id": "s01b_l4",
           "kind": "voice",
           "name": "Kristina",
-          "text": "\"Work around him.\" That's the job, is it.",
+          "text": "\"Work around him.\" I guess we all have to do that, huh.",
           "direction": ""
         }
       ]
@@ -5289,7 +5289,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "…Kind of? Sometimes. I don't think HR fixes him. I think it just makes the next standup worse for both of you.",
+      "text": "…Kind of? Sometimes. If you're thinking about HR, I doubt that will do anything. It'll just make the next standup worse for both of you.",
       "direction": "live, a small, honest shrug",
       "state": "huddle",
       "mode": "huddle",
@@ -5318,8 +5318,8 @@
       },
       "screenActions": {},
       "sourceBeat": 5,
-      "audio": "assets/audio/shared-bf626cd070782d857abef488e9ee9a03bf950866068d99b266b4278d6b693876.mp3",
-      "audioDuration": 7.47102,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l5",
       "visualMapping": "matched",
       "sfx": [],
@@ -5329,7 +5329,7 @@
           "id": "s01b_l5",
           "kind": "live",
           "name": "Brendan",
-          "text": "…Kind of? Sometimes. I don't think HR fixes him. I think it just makes the next standup worse for both of you.",
+          "text": "…Kind of? Sometimes. If you're thinking about HR, I doubt that will do anything. It'll just make the next standup worse for both of you.",
           "direction": "live, a small, honest shrug"
         }
       ]
@@ -5387,7 +5387,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Wow. I actually really appreciate hearing that, even if it's second hand.",
+      "text": "Wow. I actually really appreciate hearing that, even if it is second hand.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -5414,8 +5414,8 @@
         "right": "Brendan"
       },
       "screenActions": {},
-      "audio": "assets/audio/shared-e7471ce9a7887778431c5bb4cd4ea4f0709eb65cf6e763cd3769fdb7a26fd325.mp3",
-      "audioDuration": 5.146122,
+      "audio": null,
+      "audioDuration": 0,
       "sfx": [],
       "groupEnd": 75,
       "notes": [
@@ -5423,7 +5423,7 @@
           "id": "s01b_apology_response",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Wow. I actually really appreciate hearing that, even if it's second hand.",
+          "text": "Wow. I actually really appreciate hearing that, even if it is second hand.",
           "direction": ""
         }
       ]
@@ -36691,7 +36691,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-0d98b5eb21df42c1",
+  "scriptRevision": "shared-db47dc5952b64f56",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
