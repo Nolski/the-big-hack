@@ -76,15 +76,13 @@ class EditorHTTPTest(unittest.TestCase):
         before = self.request('GET', '/api/runtime')
         self.assertEqual(before['revision'], self.request('GET', '/api/revision')['revision'])
         script = self.request('GET', '/api/editor')
-        # Start with a verified recording; existing pending cues are already estimated.
-        recorded = lambda l: l['type'] != 'direction' and l['audio_status'] == 'ready' and len(l['text'].split()) > 10
-        scene = next(s for s in script['scenes'] if any(recorded(l) for l in s['lines']))
-        line = next(l for l in scene['lines'] if recorded(l))
+        spoken = lambda l: l['type'] != 'direction' and len(l['text'].split()) > 10
+        scene = next(s for s in script['scenes'] if any(spoken(l) for l in s['lines']))
+        line = next(l for l in scene['lines'] if spoken(l))
         self.request('PUT', '/api/cue/'+line['id'], {'revision':script['revision'], 'text':'Cut.'})
         after = self.request('GET', '/api/runtime')
         now = lambda r: next(s for s in r['scenes'] if s['id'] == scene['id'])
         self.assertLess(now(after)['now'], now(before)['now'])
-        self.assertEqual(now(after)['estimated'], now(before)['estimated']+1)
         self.assertLess(after['nowMinutes'], before['nowMinutes'])
 
     def test_cut_suggestions_track_the_script(self):

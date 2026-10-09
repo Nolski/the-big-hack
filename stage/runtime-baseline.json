@@ -1,9 +1,13 @@
 {
-  "measuredOn": "2026-10-05",
+  "measuredOn": "2026-10-07",
+  "note": "Seconds per word of stage time, pauses included, timed line by line from the 7 October read-through (238 cleanly matched lines; it ran 78 minutes to the end of s23b). Live lines are read by the cast; recorded lines play from audio. Montage videos (fixed) play at their own length. The scenes hold the uncut script (before aae01c1) as word counts, so the cut is measured with the same rates.",
+  "secondsPerWord": {
+    "live": 0.45,
+    "recorded": 0.36
+  },
   "walkthroughMinutes": 105,
+  "walkthroughNote": "The human walkthrough of the uncut script, for reference; the rates above put the uncut script at about 101 minutes.",
   "targetMinutes": 60,
-  "note": "Spoken seconds per scene from ElevenLabs recordings of every line, before any cuts. Montage videos (fixed) play at their own length; the rest of the walkthrough is scaled from recorded speech.",
-  "aiSecondsPerWord": 0.3631,
   "fixed": [
     {
       "cue": "s00_montage",
@@ -30,87 +34,104 @@
     {
       "id": "s00",
       "title": "Opening montage",
-      "aiSeconds": 0.0
+      "liveWords": 0,
+      "recordedWords": 0
     },
     {
       "id": "s01",
       "title": "Cold Open — The Standup",
-      "aiSeconds": 390.2
+      "liveWords": 714,
+      "recordedWords": 370
     },
     {
       "id": "s01b",
       "title": "The Cursor Demo",
-      "aiSeconds": 454.5
+      "liveWords": 662,
+      "recordedWords": 619
     },
     {
       "id": "s01c",
       "title": "The PR Review",
-      "aiSeconds": 186.0
+      "liveWords": 524,
+      "recordedWords": 7
     },
     {
       "id": "s06",
       "title": "Good Instinct",
-      "aiSeconds": 466.4
+      "liveWords": 976,
+      "recordedWords": 312
     },
     {
       "id": "s07",
       "title": "Heads Together",
-      "aiSeconds": 155.1
+      "liveWords": 225,
+      "recordedWords": 232
     },
     {
       "id": "s11b",
       "title": "Best Practices",
-      "aiSeconds": 574.2
+      "liveWords": 1252,
+      "recordedWords": 326
     },
     {
       "id": "s11c",
       "title": "The Latest Model",
-      "aiSeconds": 504.5
+      "liveWords": 436,
+      "recordedWords": 1000
     },
     {
       "id": "s14",
       "title": "The Offboarding",
-      "aiSeconds": 321.9
+      "liveWords": 198,
+      "recordedWords": 678
     },
     {
       "id": "s19",
       "title": "Nine Tickets",
-      "aiSeconds": 576.9
+      "liveWords": 1349,
+      "recordedWords": 253
     },
     {
       "id": "s20",
       "title": "The Audit",
-      "aiSeconds": 529.5
+      "liveWords": 173,
+      "recordedWords": 1196
     },
     {
       "id": "s20b",
       "title": "Next Week",
-      "aiSeconds": 133.2
+      "liveWords": 380,
+      "recordedWords": 0
     },
     {
       "id": "s22",
       "title": "Current Employer",
-      "aiSeconds": 219.5
+      "liveWords": 472,
+      "recordedWords": 106
     },
     {
       "id": "s23",
       "title": "The Trial",
-      "aiSeconds": 239.4
+      "liveWords": 375,
+      "recordedWords": 271
     },
     {
       "id": "s23b",
       "title": "Continuity",
-      "aiSeconds": 151.6
+      "liveWords": 413,
+      "recordedWords": 0
     },
     {
       "id": "s24",
       "title": "Statement of Facts",
-      "aiSeconds": 130.2
+      "liveWords": 85,
+      "recordedWords": 257
     },
     {
       "id": "s25",
       "title": "Great News",
-      "aiSeconds": 70.0
+      "liveWords": 35,
+      "recordedWords": 157
     }
   ],
   "budgets": {

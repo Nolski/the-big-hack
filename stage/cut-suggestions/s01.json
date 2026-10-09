@@ -1,6 +1,6 @@
 {
   "scene": "s01",
-  "approach": "The time goes on two rounds of the Marcus Luddite argument, an estimate joke that s06 repeats, and long speeches in the JWT reveal. The cut keeps one Luddite round, the review argument, the full JWT memo and override thread, the degree insult and 'I want it noted', and trims padding inside speeches.",
+  "approach": "The cold open has only three narrator lines and they are already lean. 'He's very obviously not eating' is a joke and stays as it is. The Luddite correction keeps its fact and its jab at Marcus in fewer words, and the dead-air line loses one padded clause.",
   "suggestions": [
     {
       "title": "Cut Marcus's second Luddite round",
@@ -30,7 +30,9 @@
         "Character: Marcus's grievance that Kristina cut him off last week and his fear of being blown off, which feeds his 'I want it noted' habit (s01_l47, s11b_l30, s22_backdoor, s23_l24)",
         "Joke: SJ's 'despite your hatred for it' jab at Marcus",
         "Setup: Kristina's promise of a separate slot for Marcus, which s06_l8 ('we agreed on not bringing this up during standup') quietly calls back to; s06_l8 still works without it"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut the estimate exchange",
@@ -129,7 +131,9 @@
         "Character: SJ doubling down ('I'd have asked you the same thing') instead of backing off, which gives his s01c_l2 half-apology more weight",
         "Character: Marcus's 'The point is who tends to get asked', his clearest statement of the issue",
         "Character: SJ's process complaint that the auth change should have come back to the team"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut the repeated 'who reviewed' beat",
@@ -208,7 +212,9 @@
       "riskWhy": "Raised from low: 'half of them stopped bothering to integrate' is the only concrete business cost that makes Kristina's override a reasonable call rather than a whim. Without it she is easier to read as simply wrong, which weakens her side of the argument.",
       "loses": [
         "Character: the concrete evidence behind Kristina's tradeoff (partners abandoning integration over token refresh), stated nowhere else"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Trim SJ's memo rant",
@@ -237,7 +243,9 @@
       "riskWhy": "Cuts SJ's technical aside only; the memo, JWTs, 'They expire on their own' and 'with diagrams' all stay, so s20_l18, s20b_l25 and s22_front_door still pay off.",
       "loses": [
         "Colour: SJ's jargon about stateless tokens, signatures and database hits, which shows he knows the subject cold"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Trim the opening praise",
@@ -271,7 +279,9 @@
       "riskWhy": "Padding only. Every phrase s25_l14 and s25_l15 echo survives, and 'most of his weekend' still triggers Marcus.",
       "loses": [
         "Nothing substantive: 'Support's quiet, adoption's climbing' and 'It did not go unnoticed' are filler in Kristina's praise"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Trim Brendan's memo reply",
@@ -318,32 +328,9 @@
       "riskWhy": "The narrator states what the dead air in l40 and l41 and Marcus's l42 already show. The small cost is that on a Zoom grid the silence has to read as shock, not a dropped call, without help.",
       "loses": [
         "Nothing substantive: the narrator names Kristina's disbelief, which the dead air and Marcus's call-out already carry"
-      ]
-    },
-    {
-      "title": "Trim the garment correction",
-      "kind": "trim",
-      "cues": [
-        "s01_l23"
       ],
-      "edits": [
-        {
-          "cue": "s01_l23",
-          "text": "It’s actually thought that the quality of the garments actually went up via industrialization, not down."
-        }
-      ],
-      "why": "The second half restates the first.",
-      "keeps": "The narrator still corrects Marcus, and 'garments' still sets up the s25 loom.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s01_l23": "It’s actually thought that the quality of the garments actually went up via industrialization, not down. In the early days it was questionable, but in time there was no doubt, quality went up."
-      },
-      "number": 13,
-      "riskWhy": "The second sentence restates the first. The narrator still corrects Marcus, and SJ's s06_l12 cheaper-cloth argument still has its grounding.",
-      "loses": [
-        "Nothing substantive: 'In the early days it was questionable' repeats the correction"
-      ]
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut 'Marcus hears the part about the weekend'",
@@ -364,9 +351,59 @@
       "loses": [
         "Nothing substantive: a dry narrator aside that l9 makes redundant"
       ]
+    },
+    {
+      "title": "Tighten the Luddite correction",
+      "kind": "trim",
+      "cues": [
+        "s01_l23"
+      ],
+      "edits": [
+        {
+          "cue": "s01_l23",
+          "text": "Some loom smashers were executed, but only a fraction of them. Marcus often fudges history to make a dramatic point."
+        }
+      ],
+      "why": "'There were some executions for those who smashed looms' says the same thing in more words, and 'It was normal for Marcus to judge the history a bit' pads the joke ('judge' reads as a typo for 'fudge').",
+      "keeps": "The Luddite fact (loom smashers were executed, but only a fraction) and the joke at Marcus's expense (he bends history for drama) both stay.",
+      "risk": "low",
+      "riskWhy": "Same correction and same jab at Marcus, fewer words; the Luddite throughline is untouched.",
+      "loses": [
+        "Wording: 'It was normal for Marcus to judge the history a bit' becomes 'Marcus often fudges history'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01_l23": "There were some executions for those who smashed looms but it was just a fraction of them. It was normal for Marcus to judge the history a bit to make a dramatic point"
+      },
+      "number": 620
+    },
+    {
+      "title": "Trim the dead-air narration",
+      "kind": "trim",
+      "cues": [
+        "s01_l39"
+      ],
+      "edits": [
+        {
+          "cue": "s01_l39",
+          "text": "Kristina holds her tongue, in disbelief."
+        }
+      ],
+      "why": "'she is in disbelief about what SJ just said' restates the obvious: SJ's degree line (l38) is the line directly before it, so the audience already knows what she is reacting to.",
+      "keeps": "Kristina holding her tongue and her disbelief both stay; l38 directly before it supplies what she is reacting to, so the dead air in l40 and l41 still reads as shock.",
+      "risk": "low",
+      "riskWhy": "Same information; the object of her disbelief is the line just spoken.",
+      "loses": [
+        "Wording: 'she is in disbelief about what SJ just said' becomes 'in disbelief'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01_l39": "Kristina holds her tongue, she is in disbelief about what SJ just said."
+      },
+      "number": 621
     }
   ],
-  "writtenOn": "2026-10-05",
+  "writtenOn": "2026-10-09",
   "ifDeleted": {
     "verdict": "not cuttable",
     "summary": "The cold open introduces all four characters, the team's standup format and the AI argument the whole play runs on. It is the first and fullest home of the talking-over-Kristina comedy, and it plants the long-lived keys versus SJ's JWT memo setup that pays off in the s20, s20b and s22 incident. Deleting it orphans the opening lines of both s01b and s01c and removes the setup for the play's climax and for the s25 bookend.",

@@ -65,7 +65,7 @@ python3 tools/generate_elevenlabs.py --only narrator
 
 Keep keys out of Git. Include both the new audio files and updated JSON files in a recording contribution.
 
-To see how far the cut has come, click the runtime meter in the editor's top bar, or run `python3 tools/runtime_report.py`. Both convert the recorded line lengths into stage minutes using the 105-minute walkthrough in `stage/runtime-baseline.json` and show each scene against the 63-minute target. Lines without a matching recording are estimated, so generate audio first for exact numbers.
+To see how far the cut has come, click the runtime meter in the editor's top bar, or run `python3 tools/runtime_report.py`. Both time each line from its word count at the pace measured in the 7 October read-through (0.45 seconds a word for live lines, 0.36 for recorded ones, pauses included; see `stage/runtime-baseline.json`) and show each scene against the target.
 
 The target is 60 minutes with the montages counted at their real length. Each scene has a budget, and its **Where to cut** panel lists suggested cuts and trims (`stage/cut-suggestions/<scene>.json`) with what each saves. Suggestions mark themselves done when the cut is in the script, and warn when one relies on a line another suggestion would cut. They are suggestions only; nothing changes the script until you edit it.
 

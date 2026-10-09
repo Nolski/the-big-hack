@@ -29,7 +29,9 @@
       "loses": [
         "Colour: Kristina's breathless inventory of boilers, boats and trains, including a faint echo of SJ's trains from s01_l22",
         "Colour: 'it will feel like it did 20 years ago', the only line dating the ban's start against the fifteen-year jump"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Drop Kristina's 'decided not to ask' aside",
@@ -58,7 +60,9 @@
       "loses": [
         "Joke: 'I don't know where from, I've decided not to ask' (nowhere else)",
         "Character: Kristina turning a blind eye to how Brendan gets his edge, as long as the numbers are good"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Shorten Marcus's weaving chant",
@@ -83,7 +87,9 @@
       "riskWhy": "Pure repetition: the third 'Two up, two down' adds nothing the first two have not shown, and the trailing dots let the actor extend it live. 'A yard and a half' in s25_l5 still sets up 'Fifty yards in a day' in s25_l15.",
       "loses": [
         "Nothing substantive: one repetition of the chant, which the actor can still hold as long as needed"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Trim Marcus's reply to the knock",
@@ -108,7 +114,9 @@
       "riskWhy": "'Of course, what's up?' is a filler handoff. The dry 'All I have is time these days' stays, and so does its contrast with Kristina's 'thing at eleven' exit in s25_l17.",
       "loses": [
         "Nothing substantive: a polite prompt Kristina does not need before her news"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Tighten Kristina's entrance",
@@ -133,7 +141,9 @@
       "riskWhy": "'Hi. Sorry.' is padding before 'Have you got a minute? It's quick', which already carries her hurry. 'It's quick' stays, so the faint echo of Marcus's 'It's quick' in s06_l5/s06_l7 is kept.",
       "loses": [
         "Nothing substantive: two filler words of greeting; her rushed entrance is still played"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     }
   ],
   "writtenOn": "2026-10-05",
