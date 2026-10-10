@@ -5284,7 +5284,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "…Kind of? Sometimes. If you're thinking about HR, I doubt that will do anything. It'll just make the next standup worse for both of you.",
+      "text": "…Kind of? Sometimes. If you're thinking about HR, I doubt that will do anything. It'll just make the next standup worse for everyone.",
       "direction": "live, a small, honest shrug",
       "state": "huddle",
       "mode": "huddle",
@@ -5324,7 +5324,7 @@
           "id": "s01b_l5",
           "kind": "live",
           "name": "Brendan",
-          "text": "…Kind of? Sometimes. If you're thinking about HR, I doubt that will do anything. It'll just make the next standup worse for both of you.",
+          "text": "…Kind of? Sometimes. If you're thinking about HR, I doubt that will do anything. It'll just make the next standup worse for everyone.",
           "direction": "live, a small, honest shrug"
         }
       ]
@@ -36421,7 +36421,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-24debd3a7cfe483b",
+  "scriptRevision": "shared-57cb345290154e7d",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
