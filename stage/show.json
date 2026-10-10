@@ -7930,7 +7930,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Marcus, we agreed on not bringing this up during standup...",
+      "text": "Marcus, not during standup -",
       "direction": "",
       "state": "race-code",
       "mode": "zoom",
@@ -7963,8 +7963,8 @@
       },
       "screenActions": {},
       "sourceBeat": 8,
-      "audio": "assets/audio/shared-096ac9fb5774d9ad201b613cc5836b686876deb4990d453160cfd50fb49b8be2.mp3",
-      "audioDuration": 3.866122,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l8",
       "visualMapping": "matched",
       "sfx": [],
@@ -7974,7 +7974,7 @@
           "id": "s06_l8",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Marcus, we agreed on not bringing this up during standup...",
+          "text": "Marcus, not during standup -",
           "direction": ""
         }
       ]
@@ -8564,7 +8564,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security reasons. Her performance reviews never reflect how many security tickets she did or didn't close.",
+      "text": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security tickets. Her performance reviews never reflect how many of those her team closed.",
       "direction": "",
       "state": "race-code",
       "mode": "zoom",
@@ -8609,12 +8609,12 @@
           "id": "s06_narrator_security",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security reasons. Her performance reviews never reflect how many security tickets she did or didn't close.",
+          "text": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security tickets. Her performance reviews never reflect how many of those her team closed.",
           "direction": ""
         }
       ],
-      "audio": "assets/audio/shared-15240ff51926177208590d42cb23a9afbcf4cbaf2e10599d34537258a84c1fd8.mp3",
-      "audioDuration": 13.00898
+      "audio": null,
+      "audioDuration": 0
     },
     {
       "id": "s06_l22",
@@ -36421,7 +36421,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-d6606c342a4649d1",
+  "scriptRevision": "shared-568ddb276f834c3f",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
