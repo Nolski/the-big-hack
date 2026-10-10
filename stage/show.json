@@ -2671,7 +2671,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "…Yeah. The keys are long-lived.",
+      "text": "…Yeah. The keys-",
       "direction": "live, careful",
       "state": "pr",
       "mode": "meet",
@@ -2706,8 +2706,8 @@
         "left": "standup-respect"
       },
       "sourceBeat": 32,
-      "audio": "assets/audio/shared-29fbb151d5d9d9d348ed566db83c03f88b87c4cb3c32ef6e15e1ef42ca577581.mp3",
-      "audioDuration": 2.586122,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l35",
       "visualMapping": "matched",
       "sfx": [],
@@ -2717,7 +2717,7 @@
           "id": "s01_l32",
           "kind": "live",
           "name": "Brendan",
-          "text": "…Yeah. The keys are long-lived.",
+          "text": "…Yeah. The keys-",
           "direction": "live, careful"
         }
       ],
@@ -36421,7 +36421,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-bd4bbd1212624fba",
+  "scriptRevision": "shared-efd817d9f7ac41f0",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
