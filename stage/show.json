@@ -7762,7 +7762,7 @@
       "kind": "live",
       "speaker": "marcus",
       "name": "Marcus",
-      "text": "Sorry, can I say one thing that isn't a ticket? It's quick.",
+      "text": "Sorry, can I say one thing that isn't a ticket?",
       "direction": "",
       "state": "race-code",
       "mode": "zoom",
@@ -7795,8 +7795,8 @@
       },
       "screenActions": {},
       "sourceBeat": 5,
-      "audio": "assets/audio/shared-e037c4ac082fab634fa36b1fc6c5ed5b80baa90fae95e3b22b5dc09e909a4d4b.mp3",
-      "audioDuration": 4.04898,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l5",
       "visualMapping": "matched",
       "sfx": [],
@@ -7806,7 +7806,7 @@
           "id": "s06_l5",
           "kind": "live",
           "name": "Marcus",
-          "text": "Sorry, can I say one thing that isn't a ticket? It's quick.",
+          "text": "Sorry, can I say one thing that isn't a ticket?",
           "direction": ""
         }
       ]
@@ -7851,8 +7851,8 @@
       },
       "screenActions": {},
       "sourceBeat": 6,
-      "audio": "assets/audio/shared-9bca032bffcf3b9c9192c4f2f410439d1db0a441b8c2f28578cb8055c34f8b06.mp3",
-      "audioDuration": 3.866122,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l6",
       "visualMapping": "matched",
       "sfx": [],
@@ -8325,7 +8325,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Right, yeah, that's what you said last week, though. Is there any movement? Any updates to add to the ticket?",
+      "text": "That's what you said last week, though. Is there any movement? Any updates to add to the ticket?",
       "direction": "Gentle, but she needs something.",
       "state": "race-code",
       "mode": "zoom",
@@ -8369,7 +8369,7 @@
           "id": "s06_l18",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Right, yeah, that's what you said last week, though. Is there any movement? Any updates to add to the ticket?",
+          "text": "That's what you said last week, though. Is there any movement? Any updates to add to the ticket?",
           "direction": "Gentle, but she needs something."
         }
       ]
@@ -8440,7 +8440,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "…Okay. I'm just trying to make the tradeoff visible to leadership. We've only had four reports in three months... I need some sense of whether this is another day or another week.",
+      "text": "…Okay. It's just that we've only had four reports in three months... I need some sense of whether this is another day or another week.",
       "direction": "not rising to it, typing",
       "state": "race-code",
       "mode": "zoom",
@@ -8475,8 +8475,8 @@
         "left": "race-condition"
       },
       "sourceBeat": 20,
-      "audio": "assets/audio/shared-7f025649af080db5fc95896a48a8d6d9e0fd82e93a5fa9cf4cb86eedacb01fb5.mp3",
-      "audioDuration": 11.154286,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l17",
       "visualMapping": "matched",
       "sfx": [],
@@ -8487,7 +8487,7 @@
           "id": "s06_l20",
           "kind": "voice",
           "name": "Kristina",
-          "text": "…Okay. I'm just trying to make the tradeoff visible to leadership. We've only had four reports in three months... I need some sense of whether this is another day or another week.",
+          "text": "…Okay. It's just that we've only had four reports in three months... I need some sense of whether this is another day or another week.",
           "direction": "not rising to it, typing"
         }
       ],
@@ -34468,18 +34468,18 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and no resume. SJ is older, and nobody is waiting for him. It was his key, his model, his box. Eighteen months costs him less than it would cost Brendan.",
+      "text": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and a short resume. SJ is older, and nobody is waiting for him. It was his key, his model, his box. Eighteen months costs him less than it would cost Brendan.",
       "direction": "",
       "sfx": [],
-      "audio": "assets/audio/shared-162177735bcc22849c32cb55210a9a715c945844640ccc139f04ae1d751f04e5.mp3",
-      "audioDuration": 22.987755,
+      "audio": null,
+      "audioDuration": 0,
       "groupEnd": 658,
       "notes": [
         {
           "id": "cue_934a26b82ba547fda0628efcca6b2573",
           "kind": "voice",
           "name": "Narrator",
-          "text": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and no resume. SJ is older, and nobody is waiting for him. It was his key, his model, his box. Eighteen months costs him less than it would cost Brendan.",
+          "text": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and a short resume. SJ is older, and nobody is waiting for him. It was his key, his model, his box. Eighteen months costs him less than it would cost Brendan.",
           "direction": ""
         }
       ]
@@ -36421,7 +36421,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-568ddb276f834c3f",
+  "scriptRevision": "shared-a6ed9a1dba4e4d61",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
