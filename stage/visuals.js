@@ -190,13 +190,14 @@ function exhibit(c,state=c.state){return `<div class="physicalExhibit" data-plac
 function quiet(c){if(c.staging?.callStatus==='waiting')return `<div class="waitingRoom"><span>PRIVATE MEETING</span><h1>Waiting for the call</h1></div>`;return `<div class="quietDesktop"><div class="quietGlow"></div>${c.staging?.callStatus==='ended'?'<p>Call ended</p>':''}</div>`}
 function laptop(c){return `<div class="laptopScene"><div class="laptopLid">${zoom({...c,speaker:c.speaker==='marcus'?'marcus':'',staging:{...c.staging,callCast:['marcus']}})}</div><div class="laptopBase"></div><p>${c.scene==='s22'&&c.staging?.laptop?.startsWith('seized')?'LAPTOP SEIZED · CALL STILL OPEN':'MARCUS / LAPTOP CALL'}</p></div>`}
 function courtVisual(c,side){
- if(c.state==='brownout')return physicalPhoto(side==='left'?'judge-room':'prosecutor-room','courtroom')+'<div class="courtDim"></div>';
+ if(side==='right' && c.performanceVideo?.physical && c.performanceVideo.speaker===c.speaker)return `<section style="position:absolute;inset:0;background:#000" data-place="courtroom"><video class="actorVideo" src="${esc(c.performanceVideo.src)}" muted playsinline preload="auto" style="width:100%;height:100%;object-fit:contain"></video></section>`;
+ if(c.state==='brownout')return physicalPhoto(side==='left'?'judge-court-oct10':'prosecutor-room','courtroom')+'<div class="courtDim"></div>';
  if(side==='left'){
   if(['counts','audit-log','peer-summary','court-calendar'].includes(c.state))return exhibit(c);
-  return physicalPhoto('judge-room','courtroom','Judge');
+  return physicalPhoto('judge-court-oct10','courtroom','Judge');
  }
  if(c.speaker==='kristina')return physicalPhoto('kristina-court','courtroom gallery','Kristina · gallery');
- return physicalPhoto(c.speaker==='judge'?'judge-room':'prosecutor-room','courtroom',c.speaker==='judge'?'Judge':'Prosecutor');
+ return physicalPhoto(c.speaker==='judge'?'judge-court-oct10':'prosecutor-room','courtroom',c.speaker==='judge'?'Judge':'Prosecutor');
 }
 function radio(c){return `<div class="radioDevice"><div class="radioAntenna"></div><div class="radioBody"><div class="radioLCD"><small>LoRa / PRIVATE LINK</small><strong>MARCUS</strong><span>CONNECTED</span><div class="radioWave"></div></div><div class="radioGrille"></div><div class="radioDial"></div></div></div>`}
 function hearingCalendar(vacated){return `<div class="bareRoom"><div class="bareTable"></div><div class="manualCalendar"><strong>14</strong><span class="${vacated?'vacated':''}">Continued hearing</span>${vacated?'<small>Removed from calendar</small>':''}</div></div>`}
@@ -270,4 +271,4 @@ export function renderVisual(c,side){let visual=renderBaseVisual(c,side);
  const owner=c.computers?.[side],portrait=desktopPortraits[owner];
  // Physical scenes, phones, video links, blackout and films retain their own staging.
  if(visual&&portrait&&!c.montage&&!c.offstage&&c.state!=='black')visual=`<div class="ownerDesktop"><img class="ownerWallpaper" src="assets/wallpapers/${portrait}.png" alt="${esc(owner)}’s desktop wallpaper">${desktopChrome(owner)}<div class="desktopApps">${visual}</div></div>`;
- return visual+(c.latestTicker?`<div style="position:absolute;bottom:0;left:0;right:0;padding:28px 50px;background:#171717;color:#f2f0ea;font:30px system-ui">${esc(c.latestTicker)}</div>`:"")}
+ return visual}

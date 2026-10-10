@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {playthroughStarts,readSettings} from '../playback-settings.js';
+const show={cues:[{id:'direction',kind:'stage'}, {id:'narrator',kind:'voice',speaker:'narrator'}, {id:'film',kind:'stage',montage:'film.mp4'}, {id:'actor',kind:'live'}, {id:'override',kind:'stage'}],performanceStarts:[0,1,2,3,4]};
+assert.equal(readSettings(show).skipStageDirections,false);
+assert.equal(readSettings(show,{skipStageDirections:true}).skipStageDirections,true);
+assert.deepEqual(playthroughStarts(show,{}),[0,1,2,3,4]);
+assert.deepEqual(playthroughStarts(show,{skipStageDirections:true}),[1,2,3]);
+assert.deepEqual(playthroughStarts(show,{skipStageDirections:true},{override:{left:{src:'clip.mp4'}}}),[1,2,3,4]);
+assert.equal(show.cues.length,5);
+const {cueAudio}=await import('../playback-settings.js');
+const cop={kind:'voice',speaker:'officer one',audio:'old-tts.mp3',performanceVideo:{physical:true,speaker:'officer one',src:'cop.mp4'}};
+assert.equal(cueAudio(cop),'cop.mp4');
+assert.equal(cueAudio({...cop,kind:'live'}),null);
+assert.equal(cueAudio(cop,{audioSource:'none'}),null);

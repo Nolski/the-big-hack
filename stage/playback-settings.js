@@ -16,7 +16,7 @@ export function castFor(show) {
   return [...cast.values()];
 }
 export function readSettings(show, saved = {}) {
-  return {rate: playbackRate(saved?.rate ?? 1), modes: Object.fromEntries(
+  return {skipStageDirections: saved?.skipStageDirections === true, rate: playbackRate(saved?.rate ?? 1), modes: Object.fromEntries(
     castFor(show).map(c => [c.id, ['live', 'generated'].includes(saved?.modes?.[c.id])
       ? saved.modes[c.id] : c.defaultMode]))};
 }
@@ -54,5 +54,16 @@ export function cueAudio(cue, override = {}) {
   if (override.audioSource === 'none') return null;
   if (cue.kind === 'live') return null;
   if (['left', 'right'].includes(override.audioSource)) return override[override.audioSource]?.src || null;
+  // Physical filmed performances must use their own dialogue, not separate TTS.
+  if (cue.performanceVideo?.physical && cue.performanceVideo.speaker === cue.speaker) return cue.performanceVideo.src;
   return cue.montage || cue.audio || null;
+}
+
+// Keep filmed sequences even when incidental stage-direction stops are skipped.
+export function playthroughStarts(show, settings, overrides = {}) {
+  return show.performanceStarts.filter(i => {
+    const c = show.cues[i], o = overrides[c.id] || {};
+    return !settings.skipStageDirections || c.kind !== 'stage' || !!c.montage
+      || !!cueAudio(c, o) || !!o.left?.src || !!o.right?.src;
+  });
 }

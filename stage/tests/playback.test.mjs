@@ -37,5 +37,6 @@ const actual=playbackShow(source,generated,manifest);
 for(const cue of actual.cues.filter(c=>c.speaker&&c.kind==='voice')) {
  const r=manifest[cue.id];
  const matches=r && r.text===cue.text && r.speaker===cue.speaker && (r.voiceProfile??null)===(cue.voiceProfile??null);
- assert.equal(cueAudio(cue),matches?r.audio:null,`${cue.id}: play only a matching recording`);
+ const filmed=cue.performanceVideo?.physical && cue.performanceVideo.speaker===cue.speaker;
+ assert.equal(cueAudio(cue),filmed?cue.performanceVideo.src:(matches?r.audio:null),`${cue.id}: use filmed dialogue or a matching recording`);
 }
