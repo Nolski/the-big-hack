@@ -286,7 +286,7 @@
       ],
       "id": "s23b",
       "storyboard": {},
-      "count": 29,
+      "count": 33,
       "mode": "radio",
       "start": 567,
       "source": "23b - Continuity.md"
@@ -298,7 +298,7 @@
       "id": "s25",
       "count": 19,
       "mode": "offstage",
-      "start": 596,
+      "start": 600,
       "source": "25 - Great News.md"
     }
   ],
@@ -917,7 +917,11 @@
     611,
     612,
     613,
-    614
+    614,
+    615,
+    616,
+    617,
+    618
   ],
   "title": "The Big Hack",
   "audioManifestRequired": true,
@@ -946,7 +950,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-fd69471a8dad4ad2",
+  "scriptRevision": "shared-4b487a142acf461d",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -3254,7 +3258,7 @@
       "kind": "live",
       "speaker": "marcus",
       "name": "Marcus",
-      "text": "SJ, are you fucking serious? You can't talk to a woman like that.",
+      "text": "That's incredibly sexist, how are you so un-self aware",
       "direction": "level, unhurried, taking his time about it",
       "state": "pr",
       "mode": "meet",
@@ -3300,7 +3304,7 @@
           "id": "s01_l42",
           "kind": "live",
           "name": "Marcus",
-          "text": "SJ, are you fucking serious? You can't talk to a woman like that.",
+          "text": "That's incredibly sexist, how are you so un-self aware",
           "direction": "level, unhurried, taking his time about it"
         }
       ],
@@ -5474,7 +5478,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Kristina thinks Brendan's way with Opus could be what her team needs to outperform Kevin's. The next time a senior manager role opens up, only one of them will get it. If she can get the whole team coding like Brendan, that'll be the ticket.",
+      "text": "Kristina thinks Brendan’s adoption of Opus might be what her team needs to outperform Kevin’s. Kevin is another engineering manager, and she knows that when the next senior manager role opens up, only one of them will get it. If she can get the whole team coding like Brendan, that might be her ticket.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -5509,12 +5513,12 @@
           "id": "s01b_narrator_promotion",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Kristina thinks Brendan's way with Opus could be what her team needs to outperform Kevin's. The next time a senior manager role opens up, only one of them will get it. If she can get the whole team coding like Brendan, that'll be the ticket.",
+          "text": "Kristina thinks Brendan’s adoption of Opus might be what her team needs to outperform Kevin’s. Kevin is another engineering manager, and she knows that when the next senior manager role opens up, only one of them will get it. If she can get the whole team coding like Brendan, that might be her ticket.",
           "direction": ""
         }
       ],
-      "audio": "assets/audio/shared-3d0554d14d08014c2b5bce227106946f01f15a0e5191cfdb54cc336660e9ea04.mp3",
-      "audioDuration": 14.994286
+      "audio": null,
+      "audioDuration": 0
     },
     {
       "id": "s01b_l8",
@@ -8858,7 +8862,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "Okay, so I've checked all of the login session stuff and it's all fine. That's what's killing me. The place I expected to find it is clean.",
+      "text": "I've checked the RNG, the entropy source, the signing and ORM code. It's all fine. That's what's killing me. The place I expected to find it is clean.",
       "direction": "live",
       "state": "huddle",
       "mode": "zoom",
@@ -8889,8 +8893,8 @@
         "right": "rng-entropy"
       },
       "sourceBeat": 32,
-      "audio": "assets/audio/shared-b62e14c2f24645723bc9d99d69a953c165b9878bf8c549ddc00e620e9f16f13e.mp3",
-      "audioDuration": 9.16898,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l29",
       "visualMapping": "matched",
       "sfx": [],
@@ -8901,7 +8905,7 @@
           "id": "s06_l32",
           "kind": "live",
           "name": "SJ",
-          "text": "Okay, so I've checked all of the login session stuff and it's all fine. That's what's killing me. The place I expected to find it is clean.",
+          "text": "I've checked the RNG, the entropy source, the signing and ORM code. It's all fine. That's what's killing me. The place I expected to find it is clean.",
           "direction": "live"
         }
       ]
@@ -14118,7 +14122,7 @@
       "sourceBeat": 39,
       "beat": 39,
       "name": "Narrator",
-      "text": "Kristina opens Cursor and starts two agents. The first she tasks to look at Jira and check SJ's velocity over the last two sprints. The other gets a prompt to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had promised she would do for him. Both start working, and she's a little surprised how quickly they're moving... Opus 4.7 is notably faster than Opus 4.5 at task completion. Her next meeting chimes. She joins it, leaving them running. Before the meeting ends, both agents report they're done. SJ's ticket count is the lowest on the team. The connector shows Brendan's Linear ticket count, and has copied a test ticket into Jira. She means to check the tickets have all copied properly from Linear after the call, but her next meeting chimes and she forgets.",
+      "text": "Kristina opens Cursor and starts two agents. The first she tasks to look at Jira and check SJ's velocity over the last two sprints. The other gets a prompt to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had promised she would do for him. Both start working, and she's a little surprised how quickly they're moving... Opus 4.7 is notably faster than Opus 4.5 at task completion. Her next meeting chimes. She joins it, leaving them running. Before the meeting ends, both agents report they're done. SJ's ticket count is the lowest on the team. The connector shows Brendan's Linear ticket count, and has copied a test ticket into Jira. She glances at SJ's productivity, and is a little surprised at just how far behind it is.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "groupEnd": 236,
       "speaker": "narrator",
@@ -14143,7 +14147,7 @@
           "id": "s11c_l39",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Kristina opens Cursor and starts two agents. The first she tasks to look at Jira and check SJ's velocity over the last two sprints. The other gets a prompt to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had promised she would do for him. Both start working, and she's a little surprised how quickly they're moving... Opus 4.7 is notably faster than Opus 4.5 at task completion. Her next meeting chimes. She joins it, leaving them running. Before the meeting ends, both agents report they're done. SJ's ticket count is the lowest on the team. The connector shows Brendan's Linear ticket count, and has copied a test ticket into Jira. She means to check the tickets have all copied properly from Linear after the call, but her next meeting chimes and she forgets.",
+          "text": "Kristina opens Cursor and starts two agents. The first she tasks to look at Jira and check SJ's velocity over the last two sprints. The other gets a prompt to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had promised she would do for him. Both start working, and she's a little surprised how quickly they're moving... Opus 4.7 is notably faster than Opus 4.5 at task completion. Her next meeting chimes. She joins it, leaving them running. Before the meeting ends, both agents report they're done. SJ's ticket count is the lowest on the team. The connector shows Brendan's Linear ticket count, and has copied a test ticket into Jira. She glances at SJ's productivity, and is a little surprised at just how far behind it is.",
           "direction": ""
         }
       ],
@@ -17430,7 +17434,7 @@
         "view": "physical",
         "laptop": "open"
       },
-      "text": "Because Jitsi is open source and protects your privacy. Anyone with half a brain uses it. I've also got Mullvad VPN going as habit, which sometimes makes things kinda slow.",
+      "text": "Because Jitsi is open source and protects your privacy. Anyone with half a brain uses it. I also run a VPN to protect my privacy, which might be why it's a little slow",
       "visualMapping": "matched",
       "sfx": [],
       "name": "SJ",
@@ -17448,7 +17452,7 @@
           "id": "s14a_l5",
           "kind": "live",
           "name": "SJ",
-          "text": "Because Jitsi is open source and protects your privacy. Anyone with half a brain uses it. I've also got Mullvad VPN going as habit, which sometimes makes things kinda slow.",
+          "text": "Because Jitsi is open source and protects your privacy. Anyone with half a brain uses it. I also run a VPN to protect my privacy, which might be why it's a little slow",
           "direction": "live"
         }
       ],
@@ -20751,7 +20755,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 6.269388,
+      "audioDuration": 0,
       "state": "apartment",
       "id": "s19_l61",
       "screenActions": {},
@@ -20759,7 +20763,7 @@
       "sourceBeat": 61,
       "beat": 64,
       "name": "SJ",
-      "text": "IT is always unreliable... I'm surprised they haven't bugged me about getting that bad boy back.",
+      "text": "IT is always unreliable... anyway, I'll tell you what, I'm not going to send them what they didn't explicitly ask for",
       "groupEnd": 373,
       "speaker": "liam",
       "direction": "live",
@@ -20768,14 +20772,14 @@
       "scene": "s19",
       "sourceLine": 121,
       "cast": [],
-      "audio": "assets/audio/shared-a1bde9f78d09eef5a124191c6f9ee90dd11fb3f9e03bdf1a7e52b39fa4c90ae7.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s19_l61",
           "kind": "live",
           "name": "SJ",
-          "text": "IT is always unreliable... I'm surprised they haven't bugged me about getting that bad boy back.",
+          "text": "IT is always unreliable... anyway, I'll tell you what, I'm not going to send them what they didn't explicitly ask for",
           "direction": "live"
         }
       ],
@@ -21806,7 +21810,7 @@
         "callStatus": "none",
         "view": "physical"
       },
-      "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session via Mullvad, SJ's VPN of choice.",
+      "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session. He notices SJ's privacy VPN is running",
       "visualMapping": "matched",
       "sfx": [],
       "name": "Narrator",
@@ -21824,7 +21828,7 @@
           "id": "s20_l7",
           "kind": "voice",
           "name": "Narrator",
-          "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session via Mullvad, SJ's VPN of choice.",
+          "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session. He notices SJ's privacy VPN is running",
           "direction": ""
         }
       ],
@@ -25168,7 +25172,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 12.042449,
+      "audioDuration": 0,
       "state": "studio",
       "id": "s20b_l20",
       "screenActions": {},
@@ -25176,7 +25180,7 @@
       "sourceBeat": 20,
       "beat": 21,
       "name": "SJ",
-      "text": "Everyone's speculating about it, even Marcus said even Malus got hit but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.",
+      "text": "Everyone's speculating about it, I found out because marcus texted me saying they got hit by it but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.",
       "groupEnd": 469,
       "speaker": "liam",
       "direction": "live",
@@ -25185,14 +25189,14 @@
       "scene": "s20b",
       "sourceLine": 39,
       "cast": [],
-      "audio": "assets/audio/shared-927539ad8dabe2ee5608efc311a698d739a07edb986d2def76785bcf1cc4736b.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s20b_l20",
           "kind": "live",
           "name": "SJ",
-          "text": "Everyone's speculating about it, even Marcus said even Malus got hit but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.",
+          "text": "Everyone's speculating about it, I found out because marcus texted me saying they got hit by it but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.",
           "direction": "live"
         }
       ],
@@ -25860,7 +25864,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 14.367347,
+      "audioDuration": 0,
       "state": "studio",
       "id": "s20b_l47",
       "screenActions": {},
@@ -25868,7 +25872,7 @@
       "sourceBeat": 47,
       "beat": 45,
       "name": "Narrator",
-      "text": "Brendan goes. SJ looks at the machine on the table, glad to have it back. He plugs it in. It wakes on his wallpaper, the same meme mocking AI. He opens hackernews and reads more of the comments.",
+      "text": "Brendan goes. SJ looks at the machine on the table, glad to have it back. He plugs it in. It wakes on his wallpaper, the same meme mocking AI. He notices qwen was given the ability to call tools, and gets to work reviewing all the added code, and removing the tool call functionality.",
       "groupEnd": 485,
       "speaker": "narrator",
       "direction": "",
@@ -25877,14 +25881,14 @@
       "scene": "s20b",
       "sourceLine": 93,
       "cast": [],
-      "audio": "assets/audio/shared-3e61d1d66a1ecf2acb74b0cb3643073a73f3c95cba6a0e27116e1cad207065dc.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s20b_l47",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Brendan goes. SJ looks at the machine on the table, glad to have it back. He plugs it in. It wakes on his wallpaper, the same meme mocking AI. He opens hackernews and reads more of the comments.",
+          "text": "Brendan goes. SJ looks at the machine on the table, glad to have it back. He plugs it in. It wakes on his wallpaper, the same meme mocking AI. He notices qwen was given the ability to call tools, and gets to work reviewing all the added code, and removing the tool call functionality.",
           "direction": ""
         }
       ],
@@ -26950,7 +26954,7 @@
         "officersPresent": false,
         "laptop": "in apartment, open"
       },
-      "text": "Yeah... that might be true, but the logs show a VPN egress IP, so... look man I'm just thinking about that Mac Studio you had",
+      "text": "Yeah... that might be true, but the logs show that same privacy VPN you use and..  so... look man I'm just thinking about that Mac Studio you had, IT mentioned you didn't return a mac studio?",
       "sfx": [],
       "name": "Marcus",
       "kind": "live",
@@ -26964,7 +26968,7 @@
           "id": "s22_yours",
           "kind": "live",
           "name": "Marcus",
-          "text": "Yeah... that might be true, but the logs show a VPN egress IP, so... look man I'm just thinking about that Mac Studio you had",
+          "text": "Yeah... that might be true, but the logs show that same privacy VPN you use and..  so... look man I'm just thinking about that Mac Studio you had, IT mentioned you didn't return a mac studio?",
           "direction": ""
         }
       ],
@@ -27356,7 +27360,7 @@
         "officersPresent": false,
         "laptop": "in apartment, open"
       },
-      "text": "SJ? It's the police. Open the door please.",
+      "text": "SJ? It's the police. Could you come to the door for us, please?",
       "visualMapping": "matched",
       "sfx": [],
       "name": "Officer One",
@@ -27375,7 +27379,7 @@
           "id": "s22_l12",
           "kind": "voice",
           "name": "Officer One",
-          "text": "SJ? It's the police. Open the door please.",
+          "text": "SJ? It's the police. Could you come to the door for us, please?",
           "direction": "live, off"
         }
       ],
@@ -27391,16 +27395,15 @@
         "officer two"
       ],
       "advance": "manual",
-      "audioDuration": 0,
+      "audioDuration": 4.205714,
       "direction": "live, off",
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
-      "audio": null,
-      "pendingPerformanceVideo": {
+      "audio": "assets/audio/shared-2674bbf8fd46c6d94b3de7e0785b922febe3f8803efb2555851ea27a869e0098.mp3",
+      "performanceVideo": {
         "speaker": "officer one",
         "src": "assets/filmed/police/s22_l12.mp4",
         "physical": true
-      },
-      "performanceVideoReview": "Existing filmed delivery has different words; regenerate after script review."
+      }
     },
     {
       "staging": {
@@ -28365,7 +28368,7 @@
         "laptop": "seized, still open"
       },
       "loop": true,
-      "audioDuration": 6.844082,
+      "audioDuration": 0,
       "state": "evidence",
       "id": "s22_l72",
       "screenActions": {},
@@ -28373,7 +28376,7 @@
       "sourceBeat": 72,
       "beat": 54,
       "name": "Narrator",
-      "text": "The police came back for the computers, Mac Studio included. Marcus had been working with them for days.",
+      "text": "The police came back for the computers, Mac Studio included. Marcus had been working with them for days... he had a secret plan to make up for it though",
       "adaptationReason": "The authored causal consequence or institutional result needs to be heard, rather than left in the operator notes.",
       "groupEnd": 532,
       "speaker": "narrator",
@@ -28392,14 +28395,14 @@
         "officer two"
       ],
       "narrationAdapted": true,
-      "audio": "assets/audio/shared-893ec041879799550991ab618be94cd550fedce2690221c4f55f241deb6b85c2.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s22_l72",
           "kind": "voice",
           "name": "Narrator",
-          "text": "The police came back for the computers, Mac Studio included. Marcus had been working with them for days.",
+          "text": "The police came back for the computers, Mac Studio included. Marcus had been working with them for days... he had a secret plan to make up for it though",
           "direction": "V.O."
         }
       ],
@@ -28898,7 +28901,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 10.266122,
+      "audioDuration": 0,
       "state": "audit-log",
       "id": "s23_l11",
       "screenActions": {},
@@ -28906,7 +28909,7 @@
       "sourceBeat": 11,
       "beat": 10,
       "name": "Prosecutor",
-      "text": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them.",
+      "text": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them. He started it. And when it was done, he tidied up.",
       "groupEnd": 543,
       "speaker": "prosecutor",
       "direction": "",
@@ -28920,14 +28923,14 @@
         "marcus",
         "kristina"
       ],
-      "audio": "assets/audio/shared-741e38c7b24b22c535fb32c7512b2dc20ff1c88420d07e0ed31588f31c0959c9.mp3",
+      "audio": null,
       "visualMapping": "inherited",
       "notes": [
         {
           "id": "s23_l11",
           "kind": "voice",
           "name": "Prosecutor",
-          "text": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them.",
+          "text": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them. He started it. And when it was done, he tidied up.",
           "direction": ""
         }
       ],
@@ -28946,7 +28949,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 9.874286,
+      "audioDuration": 0,
       "state": "audit-log",
       "id": "s23_l12",
       "screenActions": {},
@@ -28954,7 +28957,7 @@
       "sourceBeat": 12,
       "beat": 10,
       "name": "Narrator",
-      "text": "At the second timestamp, SJ goes still. He knows where the machine was at 09:14, and who was at it. He says nothing.",
+      "text": "At the second timestamp, SJ goes still. He knows where the machine was at 09:14, and who was using it. He says nothing.",
       "groupEnd": 544,
       "speaker": "narrator",
       "direction": "",
@@ -28968,14 +28971,14 @@
         "marcus",
         "kristina"
       ],
-      "audio": "assets/audio/shared-33e2d690ccd3a534506bedb9689ef44d6a5a805bbd5f928b36c234fbefa43a9c.mp3",
+      "audio": null,
       "visualMapping": "inherited",
       "notes": [
         {
           "id": "s23_l12",
           "kind": "voice",
           "name": "Narrator",
-          "text": "At the second timestamp, SJ goes still. He knows where the machine was at 09:14, and who was at it. He says nothing.",
+          "text": "At the second timestamp, SJ goes still. He knows where the machine was at 09:14, and who was using it. He says nothing.",
           "direction": ""
         }
       ],
@@ -29516,7 +29519,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 14.524082,
+      "audioDuration": 0,
       "state": "court",
       "id": "s23_l33",
       "screenActions": {},
@@ -29524,7 +29527,7 @@
       "sourceBeat": 33,
       "beat": 31,
       "name": "Prosecutor",
-      "text": "I'd like to read from the defendant's peer input summary. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\"",
+      "text": "Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\"",
       "groupEnd": 556,
       "speaker": "prosecutor",
       "direction": "",
@@ -29538,14 +29541,14 @@
         "marcus",
         "kristina"
       ],
-      "audio": "assets/audio/shared-3fc3fddb1167a5590dd70cbde5347d154ce14cf51c1fc53b7b6b6f3e5815dc7f.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s23_l33",
           "kind": "voice",
           "name": "Prosecutor",
-          "text": "I'd like to read from the defendant's peer input summary. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\"",
+          "text": "Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\"",
           "direction": ""
         }
       ],
@@ -30063,7 +30066,7 @@
         "radioConnected": true
       },
       "loop": true,
-      "audioDuration": 11.885714,
+      "audioDuration": 0,
       "state": "radio",
       "id": "s23b_l1",
       "screenActions": {},
@@ -30077,7 +30080,7 @@
       "sourceBeat": 1,
       "beat": 1,
       "name": "Narrator",
-      "text": "SJ is back at his apartment, on a call with Marcus over an illicit LORA radio. They're not allowed to communicate. The power isn't working anymore; candles light the apartment.",
+      "text": "SJ is back at his apartment, on a call with Marcus over an illicit LORA radio. They both know they're not allowed to communicate. The power isn't working anymore; candles light the apartment.",
       "adaptationReason": "Information inside a character’s knowledge, memory or reasoning that the audience cannot reliably infer from the screen or blocking.",
       "groupEnd": 567,
       "speaker": "narrator",
@@ -30092,14 +30095,14 @@
         "liam"
       ],
       "narrationAdapted": true,
-      "audio": "assets/audio/shared-c0db5513b503f988fa45e5ebb7b864c0db00508239e9da6c47000c2edc3f4dc5.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s23b_l1",
           "kind": "voice",
           "name": "Narrator",
-          "text": "SJ is back at his apartment, on a call with Marcus over an illicit LORA radio. They're not allowed to communicate. The power isn't working anymore; candles light the apartment.",
+          "text": "SJ is back at his apartment, on a call with Marcus over an illicit LORA radio. They both know they're not allowed to communicate. The power isn't working anymore; candles light the apartment.",
           "direction": ""
         }
       ],
@@ -31386,17 +31389,157 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Marcus was right, SJ went quietly, just like the Luddites.",
+      "text": "Following the sentencing SJ became increasingly more vocal about the situation",
       "direction": "",
-      "audio": "assets/audio/shared-d8942d49ede94b38ee67e437a8e65fc177c3cb394313bbb6f2f7f32f975effe1.mp3",
-      "audioDuration": 5.250612,
+      "audio": null,
+      "audioDuration": 0,
       "groupEnd": 595,
       "notes": [
         {
           "id": "cue_70d08ed22ac848d6946efa0c1872c424",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Marcus was right, SJ went quietly, just like the Luddites.",
+          "text": "Following the sentencing SJ became increasingly more vocal about the situation",
+          "direction": ""
+        }
+      ]
+    },
+    {
+      "id": "s23b_reporter_sj",
+      "scene": "s23b",
+      "kind": "stage",
+      "speaker": "",
+      "name": "Newspaper reporter",
+      "text": "If you're not just making the argument it wasn't you, it was AI, what exactly are you saying?",
+      "direction": "",
+      "state": "montage",
+      "mode": "montage",
+      "cast": [],
+      "staging": {
+        "view": "physical",
+        "callCast": []
+      },
+      "screenActions": {},
+      "computers": {},
+      "sfx": [],
+      "advance": "manual",
+      "loop": false,
+      "audio": null,
+      "audioDuration": 0,
+      "screenNotes": "Only the newspaper journalist appears. Play the question, then advance to the live actor’s answer.",
+      "groupEnd": 596,
+      "notes": [
+        {
+          "id": "s23b_reporter_sj",
+          "kind": "stage",
+          "name": "Newspaper reporter",
+          "text": "If you're not just making the argument it wasn't you, it was AI, what exactly are you saying?",
+          "direction": ""
+        }
+      ],
+      "montage": "assets/filmed/sentencing-interviews/reporter-sj-card-v2.mp4",
+      "montageDuration": 8.0
+    },
+    {
+      "id": "s23b_sj_accusation",
+      "scene": "s23b",
+      "kind": "live",
+      "speaker": "liam",
+      "name": "SJ",
+      "text": "My coworker Brandon started the attack! When I took the plea deal it was to protect him, but this is insane! I'm going to be executed because Brandon gave Qwen internet access, even after I warned him not to!",
+      "direction": "",
+      "state": "black",
+      "mode": "physical",
+      "cast": [],
+      "staging": {
+        "view": "physical",
+        "callCast": []
+      },
+      "screenActions": {},
+      "computers": {},
+      "sfx": [],
+      "advance": "manual",
+      "loop": false,
+      "audio": "assets/audio/shared-4e12a48877c03fc5d4a7ba0e3fe3a8925ac83d2f8d3f88f28506594ce1359c89.mp3",
+      "audioDuration": 13.714286,
+      "screenNotes": "Live actor answers the offscreen newspaper journalist. No video depiction of SJ or Brendan.",
+      "groupEnd": 597,
+      "notes": [
+        {
+          "id": "s23b_sj_accusation",
+          "kind": "live",
+          "name": "SJ",
+          "text": "My coworker Brandon started the attack! When I took the plea deal it was to protect him, but this is insane! I'm going to be executed because Brandon gave Qwen internet access, even after I warned him not to!",
+          "direction": ""
+        }
+      ]
+    },
+    {
+      "id": "s23b_reporter_brendan",
+      "scene": "s23b",
+      "kind": "stage",
+      "speaker": "",
+      "name": "Newspaper reporter",
+      "text": "How do you respond to SJ's newest accusations, that it was actually you that started the attack?",
+      "direction": "",
+      "state": "montage",
+      "mode": "montage",
+      "cast": [],
+      "staging": {
+        "view": "physical",
+        "callCast": []
+      },
+      "screenActions": {},
+      "computers": {},
+      "sfx": [],
+      "advance": "manual",
+      "loop": false,
+      "audio": null,
+      "audioDuration": 0,
+      "screenNotes": "Only the newspaper journalist appears. Play the question, then advance to the live actor’s answer.",
+      "groupEnd": 598,
+      "notes": [
+        {
+          "id": "s23b_reporter_brendan",
+          "kind": "stage",
+          "name": "Newspaper reporter",
+          "text": "How do you respond to SJ's newest accusations, that it was actually you that started the attack?",
+          "direction": ""
+        }
+      ],
+      "montage": "assets/filmed/sentencing-interviews/reporter-brendan-card-v2.mp4",
+      "montageDuration": 8.0
+    },
+    {
+      "id": "s23b_brendan_denial",
+      "scene": "s23b",
+      "kind": "live",
+      "speaker": "brendan",
+      "name": "Brendan",
+      "text": "I think it's ridiculous. It's sad really. I mean I hardly knew the guy, but we all knew he was a little weird. He clearly confessed so I don't see why we're even talking about this. He should face the consequences of his actions like a man",
+      "direction": "",
+      "state": "black",
+      "mode": "physical",
+      "cast": [],
+      "staging": {
+        "view": "physical",
+        "callCast": []
+      },
+      "screenActions": {},
+      "computers": {},
+      "sfx": [],
+      "advance": "manual",
+      "loop": false,
+      "audio": "assets/audio/shared-94a04f130069f41502a8272c99797a1fb76e33f54392aa2247503bca5a021001.mp3",
+      "audioDuration": 14.602449,
+      "screenNotes": "Live actor answers the offscreen newspaper journalist. No video depiction of SJ or Brendan.",
+      "groupEnd": 599,
+      "notes": [
+        {
+          "id": "s23b_brendan_denial",
+          "kind": "live",
+          "name": "Brendan",
+          "text": "I think it's ridiculous. It's sad really. I mean I hardly knew the guy, but we all knew he was a little weird. He clearly confessed so I don't see why we're even talking about this. He should face the consequences of his actions like a man",
           "direction": ""
         }
       ]
@@ -31423,7 +31566,7 @@
       "name": "Narrator",
       "text": "Fifteen years later.",
       "adaptationReason": "An explicit time or location change helps the audience follow the sequence.",
-      "groupEnd": 596,
+      "groupEnd": 600,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -31467,7 +31610,7 @@
       "beat": 2,
       "name": "",
       "text": "A workroom with a window in it. Marcus is working on a wooden handloom, weaving.",
-      "groupEnd": 597,
+      "groupEnd": 601,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -31508,7 +31651,7 @@
       "beat": 3,
       "name": "Narrator",
       "text": "Technology has been unlawful for use for the past ten years.",
-      "groupEnd": 598,
+      "groupEnd": 602,
       "speaker": "narrator",
       "direction": "V.O.",
       "computers": {},
@@ -31549,7 +31692,7 @@
       "beat": 4,
       "name": "Marcus",
       "text": "Two up, two down. Two up, two down. Two up, two down...",
-      "groupEnd": 599,
+      "groupEnd": 603,
       "speaker": "marcus",
       "direction": "live, to the audience, and nobody stops him",
       "computers": {},
@@ -31590,7 +31733,7 @@
       "beat": 5,
       "name": "Marcus",
       "text": "A yard and a half on a good day.....",
-      "groupEnd": 600,
+      "groupEnd": 604,
       "speaker": "marcus",
       "direction": "live",
       "computers": {},
@@ -31631,7 +31774,7 @@
       "beat": 6,
       "name": "",
       "text": "A knock at the door.",
-      "groupEnd": 601,
+      "groupEnd": 605,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -31672,7 +31815,7 @@
       "beat": 7,
       "name": "",
       "text": "KRISTINA comes in, in a coat, with a folder under her arm.",
-      "groupEnd": 602,
+      "groupEnd": 606,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -31713,7 +31856,7 @@
       "beat": 8,
       "name": "Kristina",
       "text": "Marcus! Hi. Sorry. Have you got a minute? It's quick.",
-      "groupEnd": 603,
+      "groupEnd": 607,
       "speaker": "kristina",
       "direction": "live",
       "computers": {},
@@ -31754,7 +31897,7 @@
       "beat": 9,
       "name": "Marcus",
       "text": "All I have is time these days, of course, what's up?",
-      "groupEnd": 604,
+      "groupEnd": 608,
       "speaker": "marcus",
       "direction": "live",
       "computers": {},
@@ -31795,7 +31938,7 @@
       "beat": 10,
       "name": "Kristina",
       "text": "I've got some good news and I wanted you to hear it from me first.",
-      "groupEnd": 605,
+      "groupEnd": 609,
       "speaker": "kristina",
       "direction": "live, warm",
       "computers": {},
@@ -31836,7 +31979,7 @@
       "beat": 11,
       "name": "",
       "text": "She puts the folder on the bench.",
-      "groupEnd": 606,
+      "groupEnd": 610,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -31877,7 +32020,7 @@
       "beat": 12,
       "name": "Kristina",
       "text": "A new law passed through Congress. Steam powered machines are allowed again! powered machinery, boilers, boats, trains, we're allowed to have so much technology again, it will feel like it did 20 years ago!",
-      "groupEnd": 607,
+      "groupEnd": 611,
       "speaker": "kristina",
       "direction": "live",
       "computers": {},
@@ -31918,7 +32061,7 @@
       "beat": 13,
       "name": "",
       "text": "MARCUS has stopped weaving.",
-      "groupEnd": 608,
+      "groupEnd": 612,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -31959,7 +32102,7 @@
       "beat": 14,
       "name": "Kristina",
       "text": "And I wanted to give some praise, because this bit is genuinely lovely. Brendan's got his hands on a steam powered loom! I don't know where from, I've decided not to ask. Most of his weekend went into it.",
-      "groupEnd": 609,
+      "groupEnd": 613,
       "speaker": "kristina",
       "direction": "live",
       "computers": {},
@@ -32000,7 +32143,7 @@
       "beat": 15,
       "name": "Kristina",
       "text": "And he's out-produced the whole team. The feedback from the tailors has been incredible. Best week we've had in ages. Fifty yards in a day!!",
-      "groupEnd": 610,
+      "groupEnd": 614,
       "speaker": "kristina",
       "direction": "live",
       "computers": {},
@@ -32041,7 +32184,7 @@
       "beat": 16,
       "name": "",
       "text": "Marcus just stares at her... in disbelief...",
-      "groupEnd": 611,
+      "groupEnd": 615,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -32082,7 +32225,7 @@
       "beat": 17,
       "name": "Kristina",
       "text": "God, though. Imagine the whole team moving like that. I've got a thing at eleven, I'll talk to you later!",
-      "groupEnd": 612,
+      "groupEnd": 616,
       "speaker": "kristina",
       "direction": "live, already at the door",
       "computers": {},
@@ -32123,7 +32266,7 @@
       "beat": 18,
       "name": "",
       "text": "MARCUS at the frame with the shuttle in his hand.",
-      "groupEnd": 613,
+      "groupEnd": 617,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -32164,7 +32307,7 @@
       "beat": 19,
       "name": "Marcus",
       "text": "….WHAT THE F",
-      "groupEnd": 614,
+      "groupEnd": 618,
       "speaker": "marcus",
       "direction": "live",
       "computers": {},

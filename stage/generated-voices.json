@@ -14332,6 +14332,34 @@
         "voiceId": "Q4oILuo4P8VeXtE6FMLI",
         "voiceName": "Matthew Schmitz, Warm Mountain Man"
       }
+    },
+    "s23b_sj_accusation": {
+      "text": "My coworker Brandon started the attack! When I took the plea deal it was to protect him, but this is insane! I'm going to be executed because Brandon gave Qwen internet access, even after I warned him not to!",
+      "speaker": "liam",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-4e12a48877c03fc5d4a7ba0e3fe3a8925ac83d2f8d3f88f28506594ce1359c89.mp3",
+      "duration": 13.714286,
+      "audioSha256": "4e12a48877c03fc5d4a7ba0e3fe3a8925ac83d2f8d3f88f28506594ce1359c89",
+      "provenance": {
+        "type": "elevenlabs",
+        "model": "eleven_v4",
+        "voiceId": "RDSy0QN68yhrjuOgqzQ4",
+        "voiceName": "Dr. Quibble, Nerdy Cartoon Scientist"
+      }
+    },
+    "s23b_brendan_denial": {
+      "text": "I think it's ridiculous. It's sad really. I mean I hardly knew the guy, but we all knew he was a little weird. He clearly confessed so I don't see why we're even talking about this. He should face the consequences of his actions like a man",
+      "speaker": "brendan",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-94a04f130069f41502a8272c99797a1fb76e33f54392aa2247503bca5a021001.mp3",
+      "duration": 14.602449,
+      "audioSha256": "94a04f130069f41502a8272c99797a1fb76e33f54392aa2247503bca5a021001",
+      "provenance": {
+        "type": "elevenlabs",
+        "model": "eleven_v4",
+        "voiceId": "TX3LPaxmHKxFdv7VOQHJ",
+        "voiceName": "Liam, Energetic, Social Media Creator"
+      }
     }
   }
 }
