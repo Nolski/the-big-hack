@@ -1,79 +1,7 @@
 {
   "scene": "s23",
-  "approach": "The time goes on the prosecutor reading counts twice, SJ's long Van Buren speech, Marcus's courtroom detour and a second round of questions after the peer-feedback reveal. The cut keeps the shape (counts and 151 years, the 09:14 timestamp SJ swallows, SJ shut down by the judge, Marcus betrayed by his own feedback, Brendan silent, 'the fourteenth') and drops the repeated or explanatory lines around each beat.",
+  "approach": "The narration here is fairly lean already, so this pass only tightens wording in three places and keeps every fact. The two opening narrator lines are adjacent and merge into one. Marcus's speech plan keeps the whole Luddite story and loses only connective padding, replacing an earlier trim that cut the weavers and machinery. The short 'He did not share a word' line is left alone.",
   "suggestions": [
-    {
-      "title": "Cut the prosecutor's last matter and Marcus's reply",
-      "kind": "cut",
-      "cues": [
-        "s23_l39",
-        "s23_l40"
-      ],
-      "edits": [],
-      "why": "The peer-feedback quote is the scene's real blow to Marcus; the AWS-logs question repeats what s23_l10 and s23_l11 already established, and Marcus's 'Chinese AI did the hacking' restates his s22 position.",
-      "keeps": "The Chinese-model warning payoff stays in s22 and the quote in s23_l33. 'Thank you. No further questions' (s23_l41) follows straight on from Marcus's 'we were told nobody would see the raw feedback'.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s23_l39": "One last matter. SJ's name showed up in the AWS logs on the night in question, is that correct?",
-        "s23_l40": ".....yeah, but didn't cause the fucking world to end. Sure, he should have listened to me about not using the Chinese AI, but really, it was all the Chinese AI that did the hacking, not -."
-      },
-      "number": 134,
-      "riskWhy": "The AWS-logs question repeats s23_l10 and s23_l11, but Marcus's sweary half-defence is his last word in the trial and the only time he sticks up for SJ after the quote betrays him. No plot fact is lost: the Chinese-model warning is already in s22_backdoor and s22_unlocked.",
-      "loses": [
-        "Character: Marcus defending SJ ('didn't cause the fucking world to end') right after his feedback is read out, then blaming the Chinese AI with an I-told-you-so",
-        "Joke: Marcus still making his Chinese-model point under oath, echoing s11b_l19 and s22_backdoor",
-        "Plot: SJ's name in the AWS logs, already stated in s23_l10, s23_l11 and s20_l66"
-      ]
-    },
-    {
-      "title": "Read the counts once",
-      "kind": "cut",
-      "cues": [
-        "s23_l5"
-      ],
-      "edits": [],
-      "why": "The second block of counts is the same joke as the first. The stage direction (s23_l4) already shows all nineteen rows entering on screen.",
-      "keeps": "Count one to four in s23_l3, the nineteen on screen, and Brendan's 151 years in s23_l8, which pays off in s23b and s23b.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s23_l5": "counts eleven through fourteen, unauthorised access to a protected computer in furtherance of fraud. Counts fifteen and sixteen, damage to a protected computer. Count seventeen, aggravated identity theft."
-      },
-      "number": 135,
-      "riskWhy": "Pure repetition: the second block of counts is the same list joke as s23_l3, and s23_l4 already puts all nineteen on screen.",
-      "loses": [
-        "Colour: the specific later charges (fraud, damage, aggravated identity theft) that make the pile-up sound absurd",
-        "Joke: the second round of the endless-counts gag, which plays as the topper to s23_l3"
-      ]
-    },
-    {
-      "title": "Shorten SJ's Van Buren speech",
-      "kind": "trim",
-      "cues": [
-        "s23_l15"
-      ],
-      "edits": [
-        {
-          "cue": "s23_l15",
-          "text": "It's, it'll take nine seconds. It says \"without authorisation.\" My access was never revoked. Nobody revoked it. There's a case, Van Buren, it's a Supreme Court case, and it's about exactly this. They gave it to me and they never took it back. That's not a crime, that's their filing system."
-        }
-      ],
-      "why": "The eleven-thousand-lines point about the model summary is a second argument that dilutes the first, and the case explanation restates 'never revoked'. The nine-seconds joke still lands because he overruns.",
-      "keeps": "SJ's pedantry and the never-revoked argument, which s23_l19 and s23b ('without authorisation') both depend on.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s23_l15": "It's, it'll take nine seconds. It says \"without authorisation.\" My access was never revoked. Nobody revoked it. There's a case, Van Buren, it's a Supreme Court case, and it's about exactly this, it's not about what you did with the access, it's about whether you had it. And I had it. They gave it to me and they never took it back. That's not a crime, that's their filing system. And nobody read eleven thousand lines. A model read them and wrote you a summary. It says what the tool said it ran. Not what it ran."
-      },
-      "number": 136,
-      "riskWhy": "Keeps the never-revoked argument that s24_l10 and the jury reaction depend on, but cuts SJ's second point, which is his own rule from s01c_l23 ('read your diffs, not the machine's summary') turned on the court. It also trims the clause that explains what Van Buren actually says.",
-      "loses": [
-        "Character: SJ applying his s01c_l23 rule ('not the machine's summary') to the prosecution's evidence, a callback nowhere else in s23",
-        "Plot: the claim that the log summary was written by a model and records what the tool said it ran, not what it ran (echoes s20_l57 and s20_l66, stated nowhere else in the trial)",
-        "Joke: some of the overrun on 'it'll take nine seconds', which shrinks from about 39 to about 20 seconds"
-      ]
-    },
     {
       "title": "Drop Brendan's 1986 law opener",
       "kind": "cut",
@@ -94,76 +22,6 @@
       "loses": [
         "Joke: the 1986 law written after a film about a teenager starting a nuclear war with a modem (nowhere else)",
         "Colour: Brendan establishing his gallery-commentator role before the counts begin"
-      ]
-    },
-    {
-      "title": "Cut Brendan's 'same act' commentary",
-      "kind": "cut",
-      "cues": [
-        "s23_l6",
-        "s23_l7"
-      ],
-      "edits": [],
-      "why": "Two lines explaining the stacked counts before s23_l8 explains them again with the number that matters.",
-      "keeps": "The 151 years and the plea logic in s23_l8, and 'He wouldn't agree to it' (s23_l9).",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s23_l6": "Most of them are the same act, counted differently.",
-        "s23_l7": "All nineteen of them are things that happened before four o'clock in the morning on one night in September."
-      },
-      "number": 138,
-      "riskWhy": "Mostly explanation that s23_l8 makes again with the number that matters. The one unique fact, that it all happened on one night in September before four in the morning, is not used anywhere else.",
-      "loses": [
-        "Colour: 'one night in September', the only time the play dates the hack (nowhere else)",
-        "Character: Brendan's quiet 'same act, counted differently' irritation on SJ's behalf"
-      ]
-    },
-    {
-      "title": "One Marcus Luddite line, then the judge",
-      "kind": "cut",
-      "cues": [
-        "s23_l25",
-        "s23_l26"
-      ],
-      "edits": [],
-      "why": "Marcus gets cut off twice. Once is enough; the judge's full rebuke in s23_l27 does the work.",
-      "keeps": "The loom gag in s23_l24 (one instance per Marcus scene), the judge's 'Not to lecture us', and SJ's hand over his eyes.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s23_l25": "Mr. Ehrlich.",
-        "s23_l26": "I'm just trying to explain, because it's the same system, and an individual can do something that on the surface appears.."
-      },
-      "number": 139,
-      "riskWhy": "The judge interrupting Marcus once still lands the reversal, and 'it's the same system' is repeated in s23b_l19 and s24_l36. Some rhythm is lost: two cut-offs build the gag better than one.",
-      "loses": [
-        "Joke: the judge's double 'Mr. Ehrlich', which builds the turn-the-tables interruption",
-        "Character: Marcus's 'it's the same system' attempt, said again in s23b_l19"
-      ]
-    },
-    {
-      "title": "Cut the gallery quip about Marcus",
-      "kind": "cut",
-      "cues": [
-        "s23_l29",
-        "s23_l30"
-      ],
-      "edits": [],
-      "why": "A gallery aside that explains the joke the audience just watched. The judge cutting Marcus off and SJ's hand over his eyes already land it.",
-      "keeps": "Marcus being interrupted for once still plays on stage. Loses Kristina's only line in the scene.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s23_l29": "You know, we really didn't give Marcus enough credit...",
-        "s23_l30": "It's kind of fun to watch him interrupt someone else for a change"
-      },
-      "number": 140,
-      "riskWhy": "Removes Kristina's only line in the trial and the gallery's payoff of the running gag where Marcus talks over her (s01_l28, s06_l9). That comedy is a guardrail, but its main instances in s01, s06 and s11b stay, so this cuts an echo, not the guardrail itself.",
-      "loses": [
-        "Joke: Kristina enjoying Marcus being interrupted for once, paying off the talking-over-Kristina runner from s01 and s06",
-        "Joke: Brendan's deadpan 'we really didn't give Marcus enough credit'",
-        "Character: Kristina's only presence in s23; she becomes a silent figure in the gallery"
       ]
     },
     {
@@ -194,41 +52,6 @@
       ]
     },
     {
-      "title": "Shorten the Marcus opener and the judge's warning",
-      "kind": "trim",
-      "cues": [
-        "s23_l24",
-        "s23_l17"
-      ],
-      "edits": [
-        {
-          "cue": "s23_l24",
-          "text": "Before I answer that, I want it noted that it took the British parliament eleven months. To make breaking a machine a hanging offence."
-        },
-        {
-          "cue": "s23_l17",
-          "text": "The log says what it says. Mr Mkrtchyan, I strongly advice you to remain silent."
-        }
-      ],
-      "why": "Marcus's 'never once moved that fast for a person' tail and the judge's 'let your attorney do the talking' both restate their first clause.",
-      "keeps": "'I want it noted', the hanging offence (echoed by 'hanging' in s23b_l17), and the judge shutting SJ down.",
-      "risk": "low",
-      "reliesOn": [
-        "s23b_l17"
-      ],
-      "against": {
-        "s23_l24": "Before I answer that, I want it noted that it took the British parliament eleven months. To make breaking a machine a hanging offence. Eleven months, start to finish, and they have never once moved that fast for a person, not in two hundred...",
-        "s23_l17": "The log says what it says. Mr Mkrtchyan, I strongly advice you to remain silent and let your attorney do the talking."
-      },
-      "number": 142,
-      "riskWhy": "Both tails restate their first clause, and Marcus's point that the system protects machines over people is made again in s23b_l19 and s24_l36. If taken without #139, s23_l25's 'Mr. Ehrlich' interrupts a finished sentence, so the trailing '...' cut-off needs restaging; the edit also has a typo, 'advice' for 'advise'.",
-      "loses": [
-        "Character: Marcus's conclusion that parliament 'never once moved that fast for a person', the point of his Luddite fact",
-        "Staging: Marcus being cut off mid-sentence ('not in two hundred...'), unless the actor trails off another way",
-        "Nothing substantive: 'let your attorney do the talking' restates 'remain silent'"
-      ]
-    },
-    {
       "title": "Trim Brendan's question in the gallery",
       "kind": "trim",
       "cues": [
@@ -240,68 +63,327 @@
           "text": "Do you think he's actually gonna get blamed for everything?"
         }
       ],
-      "why": "'I didn't think SJ was gonna get in trouble over this stuff' is implied by the question. The stage directions s23_l44 and s23_l45 (what SJ knows and feels) cannot read from the back row and could go at the same time, since s23_l43 and s23_l46 already stage both men not looking.",
-      "keeps": "Brendan's guilt beat and the frozen stillness of both men. SJ's reasoning is given aloud by the s23b narrator.",
+      "why": "'I didn't think SJ was gonna get in trouble over this stuff' is implied by the question that follows it.",
+      "keeps": "Brendan's guilt beat as a question to the audience, with the staged stillness of both men around it (s23_l43 to s23_l48).",
       "risk": "low",
       "reliesOn": [],
       "against": {
         "s23_l47": "I didn't think SJ was gonna get in trouble over this stuff... Do you think he's actually gonna get blamed for everything?"
       },
       "number": 143,
-      "riskWhy": "The question carries the guilt beat on its own. Note the keeps claim that an s23b narrator voices SJ's reasoning: s23b has no narrator, so if s23_l44 and s23_l45 also go, nothing spoken says SJ knows Brendan was at the machine at 09:14 beyond s23_l12.",
+      "riskWhy": "The question carries the guilt beat on its own; only the lead-in that states his naivety goes.",
       "loses": [
         "Character: Brendan admitting he never thought SJ would get in trouble, his naivety stated outright"
       ]
     },
     {
-      "title": "Cut 'He wasn't called by the defence'",
+      "title": "Cut the 'did not share a word' narration",
       "kind": "cut",
       "cues": [
-        "s23_l22"
+        "s23_marcus_speech_unsaid"
       ],
       "edits": [],
-      "why": "The prosecutor calling Marcus already shows which side called him.",
-      "keeps": "Marcus in the witness box.",
-      "risk": "medium",
+      "why": "The audience has just watched the judge shut Marcus down twice (s23_l25, s23_l27). The narrator restating that he said nothing tells them what they saw.",
+      "keeps": "The judge's contempt threat (s23_l27) ends the beat; SJ's hand over his eyes (s23_l28) and the gallery (s23_l29) follow on.",
+      "risk": "low",
+      "riskWhy": "Pure restatement of the action just played. Nothing later refers to it.",
+      "loses": [
+        "Nothing substantive: a narrator summary of the interruption the audience just watched"
+      ],
       "reliesOn": [],
       "against": {
-        "s23_l22": "He wasn't called by the defence."
+        "s23_marcus_speech_unsaid": "He did not share a word of his prepared speech."
       },
-      "number": 144,
-      "riskWas": "low",
-      "riskWhy": "Not plot, but it is a dry laugh and the only signal before the testimony that Marcus is a hostile witness, which primes the peer-feedback betrayal in s23_l33. Raised from low because many audiences will not read 'the people call' as meaning the prosecution.",
-      "loses": [
-        "Joke: Brendan's deadpan 'He wasn't called by the defence'",
-        "Setup: tells the audience Marcus is there against SJ before s23_l33 reveals why"
-      ]
+      "number": 360,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
-      "title": "Trim Marcus's 'best engineer' answer",
+      "title": "Cut the opening gallery narration",
+      "kind": "cut",
+      "cues": [
+        "s23_l1"
+      ],
+      "edits": [],
+      "why": "Tells the audience who is sitting where, which the stage already shows. The first gallery line (s23_l6 or s23_l8, both to audience) places Brendan and Kristina in the room.",
+      "keeps": "The montage ends on THE TRIAL BEGINS and the prosecutor's counts (s23_l3) start the scene; the gallery establishes itself with s23_l6 and s23_l8.",
+      "risk": "low",
+      "riskWhy": "Narration that describes staging rather than giving a reason. Only risk is a cold start straight from the montage into the counts.",
+      "loses": [
+        "Staging: a spoken cue that Kristina and Brendan are together watching the trial"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23_l1": "Kristina and Brendan are all sitting next to one another, watching SJ on trial"
+      },
+      "number": 361,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Let the judge cut Marcus off once",
+      "kind": "cut",
+      "cues": [
+        "s23_l25",
+        "s23_l26"
+      ],
+      "edits": [],
+      "why": "Marcus is cut off twice. The judge's contempt threat in s23_l27 does the work alone, straight after Marcus's 'Before you ask a question I wanted to..' (s23_l24).",
+      "keeps": "Marcus trying to lecture (s23_l24), the judge's threat (s23_l27), SJ's hand over his eyes (s23_l28), and the gallery quip if kept (s23_l29, s23_l30).",
+      "risk": "low",
+      "riskWhy": "Two cut-offs build the gag slightly better than one, but the turn-the-tables collision still lands with one.",
+      "loses": [
+        "Joke: the first, milder rebuke that the contempt threat tops",
+        "Character: Marcus's 'I'm just trying to explain, because'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23_l25": "Mr. Ehrlich, you will only answer questions that are asked.",
+        "s23_l26": "I'm just trying to explain, because"
+      },
+      "number": 362,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim the prosecutor's preface to the peer feedback",
       "kind": "trim",
       "cues": [
-        "s23_l32"
+        "s23_l33"
       ],
       "edits": [
         {
-          "cue": "s23_l32",
-          "text": "SJ? SJ's the best engineer I've ever worked with. He's difficult, obviously. But he's not... no, he's the best."
+          "cue": "s23_l33",
+          "text": "I'd like to read from the defendant's peer input summary. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\""
         }
       ],
-      "why": "'Everyone knows that' is padding before the hesitation.",
-      "keeps": "The praise that the peer-feedback quote then contradicts.",
+      "why": "'Thank you', 'a line', 'the company's half-year' and 'for the defendant' are padding before the quote.",
+      "keeps": "The quote itself, word for word, and Marcus caught on it in s23_l36 and s23_l37.",
       "risk": "low",
+      "riskWhy": "Only the lead-in is shortened; the payoff set up in s11c_l34, s14a_l31 and s19_l51 is untouched.",
+      "loses": [
+        "Nothing substantive: 'half-year' as the review period"
+      ],
       "reliesOn": [],
       "against": {
-        "s23_l32": "SJ? SJ's the best engineer I've ever worked with. He's difficult, obviously. Everyone knows that. But he's not... no, he's the best."
+        "s23_l33": "Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\""
       },
-      "number": 145,
-      "riskWhy": "Padding before the hesitation; the praise the peer-feedback quote contradicts survives intact.",
+      "number": 363
+    },
+    {
+      "title": "Keep SJ silent at the 09:14 timestamp",
+      "kind": "cut",
+      "cues": [
+        "s23_l13",
+        "s23_l14",
+        "s23_l15",
+        "s23_l17",
+        "s23_l18"
+      ],
+      "edits": [],
+      "why": "s23_l12 already stages SJ hearing the 09:14 timestamp and saying nothing. The exchange that follows has him start to speak, trail off at 'It says', and get told to stay quiet: the argument never reaches the audience.",
+      "keeps": "SJ's frozen reaction (s23_l12), the stage direction that the revocation question never comes up again (s23_l19), and his own 'I didn't say anything' in s23b_l3, which reads more truly if he really said nothing.",
+      "risk": "medium",
+      "riskWhy": "Loses SJ's pedantic 'it'll take nine seconds' and the judge putting him in his place, a collision with his vanity. The first time the audience hears the judge becomes the Marcus beat.",
       "loses": [
-        "Nothing substantive: 'Everyone knows that' only repeats 'He's difficult, obviously'"
-      ]
+        "Character: SJ insisting it'll take nine seconds, his vanity colliding with the court",
+        "Joke: the judge's 'Through your counsel' and SJ's deflated '…Okay.'"
+      ],
+      "reliesOn": [
+        "s23b_l3"
+      ],
+      "against": {
+        "s23_l13": "Can I say something about that?",
+        "s23_l14": "Through your counsel, Mr. Mkrtchyan.",
+        "s23_l15": "It's, it'll take nine seconds. It says",
+        "s23_l17": "I strongly advice you to remain silent and let your attorney do the talking.",
+        "s23_l18": "…Okay."
+      },
+      "number": 364
+    },
+    {
+      "title": "Read the counts once",
+      "kind": "cut",
+      "cues": [
+        "s23_l5",
+        "s23_l6"
+      ],
+      "edits": [],
+      "why": "The second block of counts and Brendan's reaction to it are the same list joke as s23_l3. The stage direction s23_l4 already puts all nineteen counts on screen, and Kristina's 151 years (s23_l8) is the number that matters.",
+      "keeps": "Counts one to four (s23_l3), the nineteen rows on screen (s23_l4), and the 151 years in s23_l8, which s23b_l18 and s24_l34 rely on.",
+      "risk": "medium",
+      "riskWhy": "The terrorism and treason counts are the absurd topper of the pile-up, and Brendan's disbelief is his first line in the scene. If #361 is also taken, the gallery is silent until Kristina's s23_l8.",
+      "loses": [
+        "Joke: terrorism and treason charges, and Brendan's 'Did they really give him treason charges?'",
+        "Character: Brendan's first reaction in the gallery"
+      ],
+      "reliesOn": [
+        "s23b_l18"
+      ],
+      "against": {
+        "s23_l5": "Counts eleven through fourteen, terrorism charges, counts fifteen through seventeen, treason",
+        "s23_l6": "Did they really give him treason charges?"
+      },
+      "number": 365,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "End the timestamp line on the timestamps",
+      "kind": "trim",
+      "cues": [
+        "s23_l11"
+      ],
+      "edits": [
+        {
+          "cue": "s23_l11",
+          "text": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them."
+        }
+      ],
+      "why": "'He started it. And when it was done, he tidied up.' restates the two timestamps as a summary.",
+      "keeps": "Both timestamps, including the 09:14 that SJ reacts to in s23_l12 and that sets up him covering for Brendan in s23b.",
+      "risk": "medium",
+      "riskWhy": "The tag is the prosecutor's own framing and gives SJ's freeze a beat to land on. Without it the actor playing SJ has to find the stillness on the timestamp itself.",
+      "loses": [
+        "Character: the prosecutor's neat 'he tidied up' summary"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23_l11": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them. He started it. And when it was done, he tidied up."
+      },
+      "number": 366
+    },
+    {
+      "title": "Cut the gallery quip about Marcus",
+      "kind": "cut",
+      "cues": [
+        "s23_l29",
+        "s23_l30"
+      ],
+      "edits": [],
+      "why": "A gallery aside that explains the joke the audience just watched. The judge cutting Marcus off and SJ's hand over his eyes already land it.",
+      "keeps": "Marcus being interrupted for once still plays on stage. Loses Kristina's only line in the scene.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s23_l29": "You know, we really didn't give Marcus enough credit...",
+        "s23_l30": "It's kind of fun to watch him interrupt someone else for a change"
+      },
+      "number": 140,
+      "riskWhy": "Removes Kristina's only line in the trial and the gallery's payoff of the running gag where Marcus talks over her (s01_l28, s06_l9). That comedy is a guardrail, but its main instances in s01, s06 and s11b stay, so this cuts an echo, not the guardrail itself.",
+      "loses": [
+        "Joke: Kristina enjoying Marcus being interrupted for once, paying off the talking-over-Kristina runner from s01 and s06",
+        "Joke: Brendan's deadpan 'we really didn't give Marcus enough credit'",
+        "Character: Kristina's only presence in s23; she becomes a silent figure in the gallery"
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the prosecutor's last matter and Marcus's reply",
+      "kind": "cut",
+      "cues": [
+        "s23_l39",
+        "s23_l40"
+      ],
+      "edits": [],
+      "why": "The peer-feedback quote is the scene's real blow to Marcus; the AWS-logs question repeats what s23_l10 and s23_l11 already established, and Marcus's 'Chinese AI did the hacking' restates his s22 position.",
+      "keeps": "The Chinese-model warning payoff stays in s22 and the quote in s23_l33. 'Thank you. No further questions' (s23_l41) follows straight on from Marcus's 'we were told nobody would see the raw feedback'.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s23_l39": "One last matter. SJ's name showed up in the AWS logs on the night in question, is that correct?",
+        "s23_l40": ".....yeah, but didn't cause the fucking world to end. Sure, he should have listened to me about not using the Chinese AI, but really, it was all the Chinese AI that did the hacking, not -."
+      },
+      "number": 134,
+      "riskWhy": "The AWS-logs question repeats s23_l10 and s23_l11, but Marcus's sweary half-defence is his last word in the trial and the only time he sticks up for SJ after the quote betrays him. No plot fact is lost: the Chinese-model warning is already in s22_backdoor and s22_unlocked.",
+      "loses": [
+        "Character: Marcus defending SJ ('didn't cause the fucking world to end') right after his feedback is read out, then blaming the Chinese AI with an I-told-you-so",
+        "Joke: Marcus still making his Chinese-model point under oath, echoing s11b_l19 and s22_backdoor",
+        "Plot: SJ's name in the AWS logs, already stated in s23_l10, s23_l11 and s20_l66"
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Merge the gallery and charges narration",
+      "kind": "cut + trim",
+      "cues": [
+        "s23_l1",
+        "cue_46b75292a33e42f398895522555cf5e6"
+      ],
+      "edits": [
+        {
+          "cue": "s23_l1",
+          "text": "Kristina and Brendan sit together, watching SJ on trial. The prosecutor lists the charges: first the standard ones, accessing protected systems, then far worse."
+        }
+      ],
+      "why": "s23_l1 and cue_46b75292a33e42f398895522555cf5e6 are directly adjacent narrator lines. 'are all sitting next to one another' becomes 'sit together'; 'is listing the charges levied at SJ. Beginning with... ending with some' becomes a plain list.",
+      "keeps": "Kristina and Brendan together watching SJ on trial, the prosecutor reading the charges, accessing protected systems as the standard opener, and the worse charges to come.",
+      "risk": "low",
+      "riskWhy": "Same information in one breath; the stage direction s23_l4 still follows the narration directly.",
+      "loses": [
+        "Wording: 'levied at SJ', 'all sitting next to one another'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23_l1": "Kristina and Brendan are all sitting next to one another, watching SJ on trial",
+        "cue_46b75292a33e42f398895522555cf5e6": "The prosecutor is listing the charges levied at SJ. Beginning with standard charges  of accessing protected systems, ending with some far worse"
+      },
+      "number": 500
+    },
+    {
+      "title": "Tighten SJ hearing 09:14",
+      "kind": "trim",
+      "cues": [
+        "s23_l12"
+      ],
+      "edits": [
+        {
+          "cue": "s23_l12",
+          "text": "At the second timestamp, SJ goes still. He knows where the machine was at 09:14, and who was at it. He says nothing."
+        }
+      ],
+      "why": "'and his hands stop' describes what the audience can see the actor do; 'SJ hears' is implied by his reaction, and 'He goes still' and 'sitting at it' are folded together.",
+      "keeps": "SJ reacting to the second timestamp, 09:14, knowing where the machine was and who was at it, and saying nothing.",
+      "risk": "low",
+      "riskWhy": "Only visible stage business and repeated subject openers go.",
+      "loses": [
+        "Wording: 'his hands stop'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23_l12": "SJ hears the second timestamp. He goes still and his hands stop. He knows where the machine was at 09:14 and who was sitting at it. He says nothing."
+      },
+      "number": 501
+    },
+    {
+      "title": "Tighten Marcus's speech plan, keeping the Luddite story",
+      "kind": "trim",
+      "cues": [
+        "s23_marcus_speech_plan"
+      ],
+      "edits": [
+        {
+          "cue": "s23_marcus_speech_plan",
+          "text": "Marcus had a plan. He did work with the police, but he thought a passionate speech about labor rights could redeem him. He's spent hours rewriting it. It has every piece of the Luddites' story... weavers in the 1700s with well-paying jobs... automation and machinery taking those jobs away... turning to violence to feed their families... and he had a beautiful metaphor all lined up."
+        }
+      ],
+      "why": "'For the past few hours he's written and rewritten his speech' becomes 'He's spent hours rewriting it'; 'how they were... that had', 'about how' and 'how to feed their families they resorted to' are connective padding around the list.",
+      "keeps": "Every Luddite beat (weavers, the 1700s, well-paying jobs, automation and machinery taking the jobs, violence to feed their families), the police cooperation, the redemption hope, labor rights, the hours of rewriting, and the beautiful metaphor the judge then stops him delivering.",
+      "risk": "low",
+      "riskWhy": "Nothing is dropped; the ellipses keep the narrator's list rhythm. Replaces #367, which cut the Luddite story.",
+      "loses": [
+        "Wording: 'written and rewritten', 'resorted to violence'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23_marcus_speech_plan": "Marcus had a plan. He did work with the police, but he thought he could redeem himself making a passionate speech about labor rights. For the past few hours he's written and rewritten his speech. It works in every piece of the Luddites' story... how they were weavers in the 1700s that had well-paying jobs... about how automation and machinery took their jobs away, and how to feed their families they resorted to violence... he had a beautiful metaphor all lined up."
+      },
+      "number": 502
     }
   ],
-  "writtenOn": "2026-10-05",
+  "writtenOn": "2026-10-09",
   "ifDeleted": {
     "verdict": "cuttable with rewrites",
     "summary": "The Trial is the play's only courtroom: it states the nineteen counts and the 151-year maximum, lets SJ hear the 09:14 timestamp and realise Brendan was at the keyboard, pays off Marcus's anonymous peer feedback in open court, and shows Brendan choosing to stay silent in the gallery. s23b already carries SJ's reasoning for taking the fall, so the plot survives with a narrator bridge and two small trims, but Brendan's silent choice and the peer-feedback payoff go.",

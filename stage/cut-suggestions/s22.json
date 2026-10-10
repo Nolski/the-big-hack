@@ -1,6 +1,6 @@
 {
   "scene": "s22",
-  "approach": "Most of the time goes on Marcus's opening system speech (about a minute before the plot starts) and on SJ's longer vanity speeches. The cut takes Marcus's opener down to one Luddite line plus his guilty 'I've still got a job', drops the duplicated backdoor and horse pedantry, and trims the arrest paperwork. The turn stays intact: SJ talks himself into owning the hack out of pride, Marcus apologises, the knock lands.",
+  "approach": "The narration in s22 is already lean: three short lines around a scene carried by dialogue. 'SJ had no thing at eleven' is a joke and stays as written, and the opening time-and-place line has nothing worth cutting. The one offer tightens the closing narration while keeping both the seizure of the computers and Marcus working with the police. The earlier trim (#340) dropped the seizure, so it is replaced.",
   "suggestions": [
     {
       "title": "Cut Marcus's 'that's you' middle speech",
@@ -25,7 +25,9 @@
       "loses": [
         "Colour: Marcus lumping Brendan in with SJ as 'two of you, brought down by the system' (Brendan's layoff is established in s14a)",
         "Character: SJ's weary 'I know, Marcus', the first sign he has stopped arguing back"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Trim Marcus's Luddite opener",
@@ -54,7 +56,9 @@
       "riskWhy": "The economics clause and the closing 'what the system did to them' restate the Luddite point Marcus has made at length in s14a_l32 and s14a_l34. The Luddite line and the word 'system' for s24_l36 both stay.",
       "loses": [
         "Colour: Marcus's 'get paid shit like the rest of the peasants' grumble, a stock phrase rather than a new point"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Trim Marcus's guilty job line",
@@ -81,32 +85,9 @@
       "riskWhy": "The guilty trail-off that sets up s22_sorry and SJ's 'thing at eleven' exit both stay. Only Marcus's half-formed theory about who got kept goes.",
       "loses": [
         "Character: Marcus hinting the survivors were the ones who 'got how things worked', a slightly self-flattering note under his guilt"
-      ]
-    },
-    {
-      "title": "Cut the narrator's evidence line",
-      "kind": "cut",
-      "cues": [
-        "s22_l72"
       ],
-      "edits": [],
-      "why": "The seized machine is stated in the trial (s23_l10 'The device was recovered from the defendant's home'), and Marcus apologising on the call just before the knock, then again after, already shows he turned SJ in. The prosecution calling Marcus in s23_l21 confirms it. If the author wants to keep the notes explicit, a lighter trim to 'Marcus's notes were in evidence by Friday. So was the call.' saves about half.",
-      "keeps": "Marcus's two apologies (s22_sorry, s22_l73), 'SJ?' into the empty room, and the s22_turn notes line.",
-      "risk": "high",
-      "reliesOn": [
-        "s23_l10",
-        "s23_l21"
-      ],
-      "against": {
-        "s22_l72": "The police came back later for the computers, the Mac Studio included. Marcus's notes were in evidence by Friday. So was the call."
-      },
-      "number": 125,
-      "riskWas": "medium",
-      "riskWhy": "This is the only line that says outright that Marcus's notes and the call went to the police. The trial uses his peer review (s23_l33), not the notes, so without it his apologies could read as guilt about keeping his job rather than about turning SJ in.",
-      "loses": [
-        "Plot: Marcus's notes and the call used as evidence, confirming he informed on SJ (nowhere else explicit; only implied by s22_turn, s22_sorry and s23_l21)",
-        "Plot: police seizing the computers and the Mac Studio (also carried by s23_l10 and the bare desk in s23b_l1)"
-      ]
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut the Trojan horse exchange",
@@ -128,35 +109,6 @@
       "riskWhy": "Pure pedantry that repeats the backdoor argument SJ has just won, but it is its own laugh and the only Trojan horse gag in the play.",
       "loses": [
         "Joke: Marcus's 'Trojan horse' and SJ's 'The horse is the backdoor. That's the whole point of the horse.' (nowhere else)"
-      ]
-    },
-    {
-      "title": "Trim SJ's 'it was me' speech",
-      "kind": "trim",
-      "cues": [
-        "s22_mine"
-      ],
-      "edits": [
-        {
-          "cue": "s22_mine",
-          "text": "Right. Mine. They never revoked it. My key, my model, my box. So technically, yes. It was me. Obviously it was me. Nobody else there could."
-        }
-      ],
-      "why": "The logs-record-the-account point is made in court by the prosecutor (s23_l10 'Every action in the log was taken as the defendant') and by SJ himself in s23_l15. Here the vanity carries the beat.",
-      "keeps": "Access never revoked (pays off s23_l15), 'my model, my box', and the pride-driven claim that is the scene's turn.",
-      "risk": "medium",
-      "reliesOn": [
-        "s23_l10",
-        "s23_l15"
-      ],
-      "against": {
-        "s22_mine": "Right. Mine. They never revoked it. My key, my model, my box. The logs record the account, not the person, and the account is me. So technically, yes. It was me. Obviously it was me. Nobody else there could."
-      },
-      "number": 127,
-      "riskWhy": "The prosecutor makes the logs-record-the-account point in s23_l10, so no plot is lost, but SJ saying it first is what makes the prosecutor's line land as an echo of his own pride.",
-      "loses": [
-        "Character: SJ calmly explaining the legal case against himself, 'the account is me'",
-        "Setup: the echo in s23_l10 'Every action in the log was taken as the defendant' loses its first half"
       ]
     },
     {
@@ -185,7 +137,63 @@
       "riskWhy": "The rights recital is familiar to any audience. The charge wording that s23_l3 echoes and SJ's '...Okay.' both stay.",
       "loses": [
         "Colour: the formal rights recital ('right to remain silent... right to a lawyer')"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim SJ's repeated 'I don't let it run commands'",
+      "kind": "trim",
+      "cues": [
+        "s22_mine"
+      ],
+      "edits": [
+        {
+          "cue": "s22_mine",
+          "text": "There's no way the model could have been backdoored... although that night actually the model was briefly given the ability to run commands... but that wasn't.. I... fuck."
+        }
+      ],
+      "why": "SJ already says 'You know I don't let it run any commands right?' in s22_good_design. The speech can start on his denial and fall into the realisation.",
+      "keeps": "SJ talking himself into it and the '...I... fuck.' turn (s22_mine), with s22_good_design carrying his boast.",
+      "risk": "low",
+      "riskWhy": "Only the restatement of s22_good_design goes; the realisation that the model was given command access that night stays intact.",
+      "loses": [
+        "Character: SJ repeating his boast a second time before it collapses"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s22_mine": "Look I don't let the model run commands... there's no way the model could have been backdoored... although that night actually the model was briefly given the ability to run commands... but that wasn't.. I... fuck."
+      },
+      "number": 341,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim Marcus's pretext for the questions",
+      "kind": "trim",
+      "cues": [
+        "s22_turn"
+      ],
+      "edits": [
+        {
+          "cue": "s22_turn",
+          "text": "Okay let me just borrow you for 2 more minutes. The security team was asking me a couple questions"
+        }
+      ],
+      "why": "'I was hoping you could help me with' spells out what 'borrow you for 2 more minutes' and 'asking me a couple questions' already imply.",
+      "keeps": "Marcus holding SJ on the call after the fake 'thing at eleven' (s22_l8, s22_l9) and the turn to the security team.",
+      "risk": "low",
+      "riskWhy": "The pivot to the breach and Marcus keeping SJ on the line both survive; only the polite tail of the sentence goes.",
+      "loses": [
+        "Character: a little of Marcus's soft, ingratiating framing as he sets SJ up"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s22_turn": "Okay let me just borrow you for 2 more minutes. The security team was asking me a couple questions I was hoping you could help me with"
+      },
+      "number": 342,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Trim the quantised question",
@@ -215,52 +223,6 @@
       ]
     },
     {
-      "title": "Cut 'It's not a backdoor' / 'They said backdoor'",
-      "kind": "cut",
-      "cues": [
-        "s22_not_backdoor",
-        "s22_they_said"
-      ],
-      "edits": [],
-      "why": "SJ says 'That's not a backdoor, Marcus' a few lines later in s22_front_door. Without these two lines SJ's 'How did it get in?' follows Marcus's 'I want it noted I said that in March' directly.",
-      "keeps": "Marcus's backdoor warning payoff ('one character long', 'I want it noted') and SJ's front-door correction.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s22_not_backdoor": "It's not a backdoor.",
-        "s22_they_said": "They said backdoor."
-      },
-      "number": 130,
-      "riskWhy": "SJ makes the same correction a few lines later in s22_front_door. Marcus's backdoor callback to s11b_l21 ('one character long', 'I want it noted') stays.",
-      "loses": [
-        "Joke: the quick 'It's not a backdoor' / 'They said backdoor' bounce, a small laugh that the front-door line repeats"
-      ]
-    },
-    {
-      "title": "Cut form preamble, 'Okay...' and 'Mind the step'",
-      "kind": "cut",
-      "cues": [
-        "s22_l44",
-        "s22_l54",
-        "s22_l69"
-      ],
-      "edits": [],
-      "why": "Officer Two can go straight to the employer question. 'Okay...' is covered by her writing the motive, and 'Mind the step' is filler on the exit.",
-      "keeps": "The 'current employer' exchange, the 'Motive: Recently laid off' stage business, and 'anyone you'd like us to call' (pays off in s23b).",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s22_l44": "Just a couple of details for the form.",
-        "s22_l54": "Okay...",
-        "s22_l69": "Mind the step."
-      },
-      "number": 131,
-      "riskWhy": "Procedural filler around beats that stay: the employer question, the 'Motive: Recently laid off' business, and the 'anyone you'd like us to call' question.",
-      "loses": [
-        "Colour: the officers' polite routine ('Just a couple of details for the form', 'Mind the step') that makes the arrest feel mundane"
-      ]
-    },
-    {
       "title": "Trim the front-door speech",
       "kind": "trim",
       "cues": [
@@ -286,6 +248,67 @@
       ]
     },
     {
+      "title": "Cut SJ's 'Why a backdoor?' question",
+      "kind": "cut + trim",
+      "cues": [
+        "s22_not_backdoor",
+        "s22_they_said"
+      ],
+      "edits": [
+        {
+          "cue": "s22_they_said",
+          "text": "Listen, it seems like it started with one of your old API keys that never got revoked"
+        }
+      ],
+      "why": "Marcus's 'I don't know man' only answers SJ's question, and the backdoor idea is taken up again by SJ himself in s22_good_design ('Are you suggesting my model was backdoored?'). Marcus can go from the backdoor callback straight to the old key.",
+      "keeps": "Marcus's backdoor callback to s11b (s22_backdoor), the unrevoked key (s22_they_said), and SJ's 'my model was backdoored?' in s22_good_design.",
+      "risk": "medium",
+      "riskWhy": "SJ's question is his first reaction to the news and plays as skepticism; without it he stays silent until the Qwen line, which the mug-down stage direction has to carry.",
+      "loses": [
+        "Character: SJ's first skeptical push back at Marcus's backdoor theory",
+        "Colour: Marcus's 'I don't know man'"
+      ],
+      "reliesOn": [
+        "s20_l14"
+      ],
+      "against": {
+        "s22_not_backdoor": "Why do they think it's a backdoor?",
+        "s22_they_said": "I don't know man, but listen, it seems like it started with one of your old API keys that never got revoked"
+      },
+      "number": 343,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut SJ's 'someone didn't revoke my keys' deflection",
+      "kind": "cut + trim",
+      "cues": [
+        "s22_whose_key",
+        "s22_yours"
+      ],
+      "edits": [
+        {
+          "cue": "s22_yours",
+          "text": "The logs show a residential IP address, so.. look man I'm just thinking about that mac mini you had"
+        }
+      ],
+      "why": "The unrevoked key is already stated in s22_they_said. Marcus's residential IP line can answer his own 'do you know anything about that?' directly.",
+      "keeps": "The API key and the night they were all together (s22_who_built), the residential IP and the machine (s22_yours), and SJ's realisation (s22_mine).",
+      "risk": "medium",
+      "riskWhy": "SJ blaming someone else for the keys is a small piece of his vanity before he works it out himself; Marcus pressing on without an answer reads slightly more like an interrogation.",
+      "loses": [
+        "Character: SJ deflecting onto whoever failed to revoke his keys"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s22_whose_key": "Well it sounds like someone messed up and didn't really revoke all my old keys",
+        "s22_yours": "Yeah... that might be true, but the logs show a residential IP address, so.. look man I'm just thinking about that mac mini you had"
+      },
+      "number": 344,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
       "title": "Cut the surname correction",
       "kind": "cut",
       "cues": [
@@ -309,10 +332,37 @@
       "loses": [
         "Joke: SJ offering 'McCutchen' and the officer then getting 'Mkrtchyan' right (nowhere else)",
         "Character: SJ having long since given up on people saying his name"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Tighten the closing narration",
+      "kind": "trim",
+      "cues": [
+        "s22_l72"
+      ],
+      "edits": [
+        {
+          "cue": "s22_l72",
+          "text": "The police came back for the computers, Mac Studio included. Marcus had been working with them for days."
+        }
+      ],
+      "why": "'came back later' says 'later' twice over, 'the police' is repeated where 'them' will do, and 'for the past few days' pads 'for days'.",
+      "keeps": "The police returning for the computers, the Mac Studio seized, and Marcus having worked with the police for days before the call.",
+      "risk": "low",
+      "riskWhy": "Same two facts in the same order; only repeated words go, and the line still reads cleanly aloud.",
+      "loses": [
+        "Wording: 'later', the second 'the police', and 'the past few' before 'days'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s22_l72": "The police came back later for the computers, the Mac Studio included. Marcus had been working with the police for the past few days"
+      },
+      "number": 640
     }
   ],
-  "writtenOn": "2026-10-05",
+  "writtenOn": "2026-10-09",
   "ifDeleted": {
     "verdict": "cuttable",
     "summary": "s22 is the arrest. Marcus tells SJ about the breach, SJ works out that his own key and his own machine did it and is half proud of it, and then the police take him. It also names Malus Corp and sets up the Mkrtchyan name joke. Most of the plot is restated in s23 (key never revoked, device recovered, credentials issued to the defendant), so one narrator bridge covers the jump from s20b to the courtroom. What goes is the arrest on stage, SJ's pride turning into nobody to call, and Marcus's guilty apology.",

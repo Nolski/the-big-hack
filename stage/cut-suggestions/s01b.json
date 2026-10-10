@@ -1,38 +1,7 @@
 {
   "scene": "s01b",
-  "approach": "The demo itself (plan, invented endpoint, Vault fix, approve without reading, small print) is guardrail material and only gets light trims. The time goes in three places around it: an HR preamble before the demo, two narrator passages explaining motives that the dialogue already shows, and a long second walkthrough of Brendan's process after the bot works. Cut the preamble and the motive narration, compress the walkthrough, and end sooner after the SJ conversation.",
+  "approach": "The narration in this scene is already lean: four short lines, and three of them carry the demo on screen. This pass trims the promotion passage, which repeats itself and runs long, and shortens the PROJ-412 confirmation line, keeping every fact. The opening line and the plan-populating line are too short to save two seconds and are left alone.",
   "suggestions": [
-    {
-      "title": "Cut the HR preamble",
-      "kind": "cut",
-      "cues": [
-        "s01b_l2",
-        "s01b_l3",
-        "s01b_l4",
-        "s01b_l5"
-      ],
-      "edits": [],
-      "why": "The degree insult is already landed in s01 and acknowledged by SJ himself in s01c_l2 (\"That landed like shit\"). Brendan's admiration for SJ is said again at s01b_l54 (\"the smartest person on the team\"). Nothing later refers to an HR conversation about the degree.",
-      "keeps": "s01b_l1 still sets up the call. Trim s01b_l7 (next suggestion) so Kristina opens on vibe coding. Brendan's loyalty to SJ survives in l51 and l54.",
-      "risk": "medium",
-      "reliesOn": [
-        "s01c_l2"
-      ],
-      "against": {
-        "s01b_l2": "…Hey. SJ's comment about my Degree. I've been sitting here half-deciding whether it's an HR conversation.",
-        "s01b_l3": "…Honestly? It wasn't okay. But he's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
-        "s01b_l4": "\"Work around him.\" That's the job, is it.",
-        "s01b_l5": "…Kind of? Sometimes. I don't think HR fixes him. I think it just makes the next standup worse for both of you."
-      },
-      "number": 15,
-      "riskWhy": "It cuts Kristina's only reaction to the degree insult and Brendan's warmest praise of SJ. No plot fact goes, and nothing later refers to an HR conversation.",
-      "loses": [
-        "Character: Kristina hurt enough by the degree remark (s01_l38) to weigh going to HR. This is her only reaction to it, and s01c_l2 is SJ's side, not hers",
-        "Character: Brendan talking her out of HR to protect SJ, and \"I've learned more from him than from anyone here\" (similar praise at s01b_l54 and s07_l12)",
-        "Joke: Kristina's dry \"'Work around him.' That's the job, is it.\""
-      ],
-      "directionsKept": 1
-    },
     {
       "title": "Kristina opens straight on vibe coding",
       "kind": "trim",
@@ -329,9 +298,366 @@
         "Nothing substantive: a repeated phrase, the generic \"whole team moving like this\", and a thank-you"
       ],
       "dismissed": true
+    },
+    {
+      "title": "Cut the plan-populating narrator",
+      "kind": "cut",
+      "cues": [
+        "s01b_l13"
+      ],
+      "edits": [],
+      "why": "s01b_l13 describes what the projected Cursor screen already shows, and s01b_l14 immediately reads the plan aloud (invented endpoint, hardcoded token).",
+      "keeps": "s01b_l12 (\"Send it.\") runs straight into Brendan reading the plan in s01b_l14.",
+      "risk": "low",
+      "riskWhy": "Narration that restates the screen. The plan's content is carried by s01b_l14.",
+      "loses": [
+        "Nothing substantive: a description of the screen"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_l13": "The plan begins to populate with details about querying Jira and Slack APIs."
+      },
+      "number": 200,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim Brendan's tests-pass line",
+      "kind": "trim",
+      "cues": [
+        "s01b_l20"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_l20",
+          "text": "There, its own tests pass."
+        }
+      ],
+      "why": "\"Now it wants to install to your Slack\" is said again by the install dialog in s01b_l21 and by Kristina's \"It's asking me\" in s01b_l22.",
+      "keeps": "\"There, its own tests pass.\" and the approve-without-reading beat (s01b_l22, s01b_l23).",
+      "risk": "low",
+      "riskWhy": "The dialog and Kristina's line both carry the install prompt.",
+      "loses": [
+        "Nothing substantive: a line that announces the next dialog box"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_l20": "There, its own tests pass. Now it wants to install to your Slack."
+      },
+      "number": 201,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut Brendan's warm-up before his process",
+      "kind": "trim",
+      "cues": [
+        "s01b_l39"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_l39",
+          "text": "Let me show you my process."
+        }
+      ],
+      "why": "\"I'm actually really happy to hear you ask that\" is a preface; his eagerness is in the direction and in the walkthrough itself (s01b_l42).",
+      "keeps": "\"Let me show you my process.\" still leads into the screen share.",
+      "risk": "low",
+      "riskWhy": "Brendan's eagerness is played rather than said. It is one of his tics, but it shows again in s01b_l42 and s01c.",
+      "loses": [
+        "Character: one spoken instance of Brendan's eagerness to explain"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_l39": "I’m actually really happy to hear you ask that. Let me show you my process."
+      },
+      "number": 202,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim Brendan's plan-first speech",
+      "kind": "trim",
+      "cues": [
+        "s01b_l42"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_l42",
+          "text": "Trying to review eight hundred lines at once, your brain just shuts off by line two hundred. So you start with the plan it wrote before it touched a single file. That's where the real decisions and testing strategy live. I read that like a hawk."
+        }
+      ],
+      "why": "\"So instead, you don't start with the code at all\" and \"That plan is two pages\" restate the next sentence. The plan-first idea, the line-two-hundred joke and \"like a hawk\" stay.",
+      "keeps": "The plan-first habit that s20_l41 pays off (\"used to reading a plan before an agent acts\"), and the testing strategy that answers s01b_l38.",
+      "risk": "low",
+      "riskWhy": "The author already trimmed this line once (#18); this removes two more restating phrases without touching its argument.",
+      "loses": [
+        "Colour: the plan is two pages"
+      ],
+      "reliesOn": [
+        "s20_l41"
+      ],
+      "against": {
+        "s01b_l42": "Trying to review eight hundred lines at once, your brain just shuts off by line two hundred. So instead, you don't start with the code at all. You start with the plan it wrote before it touched a single file. That plan is two pages, and that's where the real decisions and testing strategy live. I read that like a hawk."
+      },
+      "number": 203,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Shorten Brendan's correct-it-faster line",
+      "kind": "trim",
+      "cues": [
+        "s01b_l16"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_l16",
+          "text": "No, he’s not usually wrong ... but it’s much faster to correct it when it’s wrong than to do it yourself. Try telling it that it’s wrong…"
+        }
+      ],
+      "why": "\"what he left off is how much faster it is ... than it is to\" is a long run-up to the point.",
+      "keeps": "Brendan agreeing SJ is usually right, the faster-to-correct point, and the prompt for Kristina to tell it it's wrong.",
+      "risk": "low",
+      "riskWhy": "Same argument in fewer words. \"What he left off\" frames it as a reply to SJ, which \"he's not usually wrong\" still does.",
+      "loses": [
+        "Nothing substantive: the phrase \"what he left off\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_l16": "No, he’s not usually wrong ... but what he left off is how much faster it is to correct it when it’s wrong, than it is to do it yourself. Try telling it that it’s wrong…"
+      },
+      "number": 204
+    },
+    {
+      "title": "Trim Kristina's correction prompt",
+      "kind": "trim",
+      "cues": [
+        "s01b_l17"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_l17",
+          "text": "\"Research the real Jira REST API and keep the token in Vault, use a short lived key if possible.\" See, I do listen on the security stuff."
+        }
+      ],
+      "why": "\"Verify the endpoints actually exist\" is already covered by \"Research the real Jira REST API\", and \"no keys are hardcoded\" is the same instruction as keeping the token in Vault.",
+      "keeps": "Real API, Vault, short lived key (answering her \"long lived credentials\" in s01b_l15), and \"See, I do listen on the security stuff.\"",
+      "risk": "low",
+      "riskWhy": "It shortens her typed prompt, so this recorded line needs regenerating. Both demo fixes (endpoint and token) stay in it.",
+      "loses": [
+        "Nothing substantive: two clauses that repeat the other two"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_l17": "\"Research the real Jira REST API, verify the endpoints actually exist and keep the token in Vault, use a short lived key if possible, and make sure no keys are hardcoded.\" See, I do listen on the security stuff."
+      },
+      "number": 205,
+      "dismissed": true
+    },
+    {
+      "title": "Tighten the Linear reveal",
+      "kind": "trim",
+      "cues": [
+        "s01b_l26",
+        "s01b_l29",
+        "s01b_l34"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_l26",
+          "text": "Give me one of your Jira ticket numbers."
+        },
+        {
+          "cue": "s01b_l29",
+          "text": "Yeah, it's an AI driven project management tool... I just find it a little easier to use than Jira."
+        },
+        {
+          "cue": "s01b_l34",
+          "text": "For this test I'll use one of mine, then. Okay… slash, jira, done, P-R-O-J four-twelve…"
+        }
+      ],
+      "why": "\"Right\" and \"What have you got open?\" repeat the ask. Brendan's apology for the workflow is answered anyway by s01b_l30. \"Anyway, so\" is filler.",
+      "keeps": "Brendan in Linear (s01b_l27, s01b_l29), Kristina's promise to copy it into Jira (s01b_l30) and \"for this test\" (s01b_l34), which s11c_l39 and s19_l20 pay off.",
+      "risk": "low",
+      "riskWhy": "Loses Brendan's small apology, which shows him as the new guy deferring to process. s01b_l30's \"work however makes you most productive\" still reads as her waving him through.",
+      "loses": [
+        "Character: Brendan apologising that Linear might mess up their workflows"
+      ],
+      "reliesOn": [
+        "s11c_l39",
+        "s19_l20"
+      ],
+      "against": {
+        "s01b_l26": "Right. Give me one of your Jira ticket numbers. What have you got open?",
+        "s01b_l29": "Yeah, it's an AI driven project management tool... I just find it a little easier to use than Jira, I'm sorry if that messes our workflows up",
+        "s01b_l34": "Anyway, so for this test I'll use one of mine, then. Okay… slash, jira, done, P-R-O-J four-twelve…"
+      },
+      "number": 206,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the narrator's ticket-closed line",
+      "kind": "cut",
+      "cues": [
+        "s01b_l35"
+      ],
+      "edits": [],
+      "why": "The projected screen shows the green confirmation and the board (s01b_l36), and Kristina's \"This is satisfying\" in s01b_l38 says it worked.",
+      "keeps": "PROJ-412 is still named in s01b_l34, so the test ticket that s19_l20 relies on is still planted.",
+      "risk": "medium",
+      "riskWhy": "This only works if the Slack confirmation and the card moving to Done are clearly projected. If the projection is small, the audience may miss that the bot worked.",
+      "loses": [
+        "Clarity: the spoken confirmation that PROJ-412 closed"
+      ],
+      "reliesOn": [
+        "s19_l20"
+      ],
+      "against": {
+        "s01b_l35": "She hits enter. Slack pings back: \"PROJ-412 Closed.\" Behind it, on the board, the card slides over to Done."
+      },
+      "number": 207,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the second-hand apology",
+      "kind": "cut",
+      "cues": [
+        "s01b_apology_report",
+        "s01b_apology_response"
+      ],
+      "edits": [],
+      "why": "SJ admits the degree comment landed badly himself in s01c_l2 (\"That landed like shit. I know.\"). Brendan reporting it here tells the audience the same thing a scene early.",
+      "keeps": "s01b_l5 runs into the stage direction s01b_l6 (\"She sits with it\") and then the change of subject in s01b_l7. SJ's own admission stays in s01c_l2.",
+      "risk": "medium",
+      "riskWhy": "These lines are recent additions, so the author may want them. Without them Kristina never hears that SJ regrets it, and her later view of him hardens with less to soften it.",
+      "loses": [
+        "Character: Kristina hearing, second hand, that SJ regrets the comment, and appreciating it",
+        "Plot: Brendan carrying messages between them"
+      ],
+      "reliesOn": [
+        "s01c_l2"
+      ],
+      "against": {
+        "s01b_apology_report": "Besides, not that this excuses it, but I spoke to him this morning. He knows it landed badly, and said he shouldn't have brought up his concerns the way he did.",
+        "s01b_apology_response": "Wow. I actually really appreciate hearing that, even if it is second hand."
+      },
+      "number": 208,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the HR exchange",
+      "kind": "cut + trim",
+      "cues": [
+        "s01b_l3",
+        "s01b_l4",
+        "s01b_l5"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_l3",
+          "text": "…Honestly? His comment about your degree wasn't okay. He's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here."
+        }
+      ],
+      "why": "\"Work around him\" and Brendan's HR advice extend a point s01b_l3 has already made: the comment was not okay, SJ is thorny but the best engineer he knows. No later scene refers to Kristina considering HR.",
+      "keeps": "s01b_l2 and the trimmed s01b_l3 still give Kristina's check-in and Brendan's loyalty to SJ. s01b_apology_report's \"Besides\" follows s01b_l3 cleanly; if #208 is also taken, s01b_l3 runs into s01b_l6.",
+      "risk": "medium",
+      "riskWhy": "Loses Kristina's dry \"Work around him\" and the HR thread. The degree insult still gets a reaction in s01b_l2.",
+      "loses": [
+        "Joke: \"'Work around him.' I guess we all have to do that, huh.\"",
+        "Character: Brendan steering her away from HR to protect SJ",
+        "Colour: \"work around the edges of him\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_l3": "…Honestly? His comment about your degree wasn't okay. He's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
+        "s01b_l4": "\"Work around him.\" I guess we all have to do that, huh.",
+        "s01b_l5": "…Kind of? Sometimes. If you're thinking about HR, I doubt that will do anything. It'll just make the next standup worse for both of you."
+      },
+      "number": 209,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the integration-tests exchange",
+      "kind": "cut",
+      "cues": [
+        "s01b_l45",
+        "s01b_l46"
+      ],
+      "edits": [],
+      "why": "s01b_l42 already answers Kristina's homework question from s01b_l38: the plan carries the testing strategy and Brendan reads it like a hawk. s01b_l45 repeats SJ's objection she has just raised.",
+      "keeps": "s01b_l42 runs straight into Kristina's \"this is the future\" (s01b_l49). \"Worried about the tests\" in s01b_l50 still points at s01b_l38.",
+      "risk": "medium",
+      "riskWhy": "Brendan's specific answer (he writes the integration tests into the plan, against a real partner sandbox) goes, so his reply to \"marking its own homework\" is less concrete. Nothing later quotes it.",
+      "loses": [
+        "Character: Brendan writing the integration tests himself, against a real partner sandbox",
+        "Character: Kristina voicing SJ's objection a second time"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_l45": "But that's his whole point, the AI writes the tests...",
+        "s01b_l46": "Yeah but, the tests that actually matter, the integration tests, I write THOSE directly into the plan, and review the output carefully and have it use a real partner sandbox, real tokens."
+      },
+      "number": 210,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Tighten the promotion narrator",
+      "kind": "trim",
+      "cues": [
+        "s01b_narrator_promotion"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_narrator_promotion",
+          "text": "Kristina thinks Brendan's way with Opus could be what her team needs to outperform Kevin's. The next time a senior manager role opens up, only one of them will get it. If she can get the whole team coding like Brendan, that'll be the ticket."
+        }
+      ],
+      "why": "\"can't help but feel like\", \"She knows\" and \"She's hopeful\" are padding around the three facts; \"Kevin's team\" repeats \"her team\". Also fixes the \"Brandon\" misspelling.",
+      "keeps": "Opus as Brendan's edge, the rivalry with Kevin's team, one senior manager role and only one of them gets it, getting the whole team coding like Brendan as her ticket.",
+      "risk": "low",
+      "riskWhy": "Same information and the same closing phrase; only the framing words go.",
+      "loses": [
+        "Wording: \"can't help but feel like\", \"She knows\", \"She's hopeful\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_narrator_promotion": "Kristina can't help but feel like Brandon's adoption of Opus might be what she needs for her team to outperform Kevin's team. She knows the next time a senior manager role opens up, only one of them are going to get the job. She's hopeful if she can get the whole team coding like Brandon, that'll be the ticket."
+      },
+      "number": 580
+    },
+    {
+      "title": "Trim the ticket-closed narrator",
+      "kind": "trim",
+      "cues": [
+        "s01b_l35"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_l35",
+          "text": "Slack pings back: \"PROJ-412 Closed.\" On the board, the card slides to Done."
+        }
+      ],
+      "why": "\"She hits enter\" describes what s01b_l34 and the projected screen already show (she finishes typing the command and the reply arrives); \"Behind it\" and \"over\" are filler.",
+      "keeps": "Slack's PROJ-412 Closed confirmation and the card moving to Done on the board. Sending the command is implied by the reply.",
+      "risk": "low",
+      "riskWhy": "Only filler words go; the line still sets up the three linked issues in s01b_l36.",
+      "loses": [
+        "Wording: \"She hits enter\", \"Behind it\", \"over\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_l35": "She hits enter. Slack pings back: \"PROJ-412 Closed.\" Behind it, on the board, the card slides over to Done."
+      },
+      "number": 581
     }
   ],
-  "writtenOn": "2026-10-05",
+  "writtenOn": "2026-10-09",
   "ifDeleted": {
     "verdict": "not cuttable",
     "summary": "s01b is where Kristina first uses AI on stage: she builds the Slack-to-Jira bot in Cursor with Brendan, and that is the main home of guardrail 2. It also plants the setup that gets Brendan fired. He tracks his work in Linear and Kristina promises to copy it into Jira, which s19_l20 pays off. Cutting the scene leaves s11c's solo build and the s19 layoff reveal without their setup, and repairing that would mean rebuilding the demo somewhere else.",

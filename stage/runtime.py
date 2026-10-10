@@ -1,58 +1,57 @@
 """Running time of the current script, measured against the uncut baseline.
 
-runtime-baseline.json holds the uncut script's spoken seconds per scene, taken
-from ElevenLabs recordings of every line, the length of the human walkthrough
-of that same script, and the fixed-length montage videos. Montages count at
-their own length; spoken time is scaled so the uncut script matches the
-walkthrough. A line whose recording no longer matches its text
-is estimated from its word count until it is regenerated.
+runtime-baseline.json holds two delivery rates in seconds per word, pauses
+included, timed line by line from the 7 October read-through: one for live
+lines read by the cast, one for recorded lines played from audio. Every line
+is timed from its word count at its rate. Montages count at their own length.
+The uncut script is kept there as word counts, so the cut uses the same rates.
 """
 import json, re
 from pathlib import Path
+
+
+def rate(base, kind):
+    return base['secondsPerWord']['live' if kind == 'live' else 'recorded']
 
 
 def runtime(root):
     root = Path(root)
     base = json.loads((root/'runtime-baseline.json').read_text())
     show = json.loads((root/'show.json').read_text())
-    manifest = json.loads((root/'generated-voices.json').read_text())['recordings']
     fixed = {f['cue']: f['seconds'] for f in base.get('fixed', [])}
-    ratio = (base['walkthroughMinutes']*60 - sum(fixed.values()))/sum(s['aiSeconds'] for s in base['scenes'])
     held, held_was = {}, {}
     for f in base.get('fixed', []): held_was[f['scene']] = held_was.get(f['scene'], 0)+f['seconds']
-    secs, estimated, line_secs = {}, {}, {}
+    secs, line_secs = {}, {}
     for c in show['cues']:
         duration = c.get('montageDuration', fixed.get(c['id'], 0)) if c.get('montage') else 0
         if duration: held[c['scene']] = held.get(c['scene'], 0)+duration
         if c['kind'] == 'stage' or not c['text'].strip(): continue
-        r = manifest.get(c['id'], {})
-        if (r.get('text'), r.get('speaker'), r.get('voiceProfile')) == (c['text'], c['speaker'], c.get('voiceProfile')):
-            s = r['duration']
-        else:
-            s = len(c['text'].split())*base['aiSecondsPerWord']
-            estimated[c['scene']] = estimated.get(c['scene'], 0)+1
+        s = len(c['text'].split())*rate(base, c['kind'])
         secs[c['scene']] = secs.get(c['scene'], 0)+s
-        line_secs[c['id']] = s*ratio
-    minutes = lambda s, still=0: round((s*ratio+still)/60, 2)
+        line_secs[c['id']] = s
+    minutes = lambda s, still=0: round((s+still)/60, 2)
+    spoken_was = lambda s: s['liveWords']*rate(base, 'live')+s['recordedWords']*rate(base, 'recorded')
     was = {s['id']: s for s in base['scenes']}
     current = {s['id'] for s in show['scenes']}
     budget = base.get('budgets', {})
-    scenes = [{'id': sc['id'], 'title': sc['title'], 'was': minutes(was[sc['id']]['aiSeconds'], held_was.get(sc['id'], 0)) if sc['id'] in was else 0,
+    live = {c['name'].upper() for c in show['cues'] if c['kind'] == 'live' and c.get('name')}
+    scenes = [{'id': sc['id'], 'title': sc['title'], 'was': minutes(spoken_was(was[sc['id']]), held_was.get(sc['id'], 0)) if sc['id'] in was else 0,
                'now': minutes(secs.get(sc['id'], 0), held.get(sc['id'], 0)), 'fixed': round(held.get(sc['id'], 0)/60, 2),
-               'budget': budget.get(sc['id']), 'estimated': estimated.get(sc['id'], 0), 'cut': False,
+               'budget': budget.get(sc['id']), 'cut': False,
                'suggestions': suggestions(root, sc['id'], show, line_secs)}
               for sc in show['scenes']]
     flag_conflicts(scenes, show)
     for sc in scenes:
-        if not sc['cut']: sc['ifDeleted'] = if_deleted(root, sc, scenes, show, ratio, base['aiSecondsPerWord'], line_secs)
-    scenes += [{'id': s['id'], 'title': s['title'], 'was': minutes(s['aiSeconds'], held_was.get(s['id'], 0)), 'now': 0, 'fixed': 0,
-                'budget': 0, 'estimated': 0, 'cut': True}
+        if not sc['cut']: sc['ifDeleted'] = if_deleted(root, sc, scenes, show, base, live, line_secs)
+    scenes += [{'id': s['id'], 'title': s['title'], 'was': minutes(spoken_was(s), held_was.get(s['id'], 0)), 'now': 0, 'fixed': 0,
+                'budget': 0, 'cut': True}
                for s in base['scenes'] if s['id'] not in current]
-    start, target = base['walkthroughMinutes'], base['targetMinutes']
+    start = minutes(sum(spoken_was(s) for s in base['scenes']), sum(held_was.values()))
+    target = base['targetMinutes']
     now = minutes(sum(secs.values()), sum(held.values()))
-    return {'measuredOn': base['measuredOn'], 'stageSecondsPerAiSecond': round(ratio, 4), 'startMinutes': start, 'targetMinutes': round(target, 2),
+    return {'measuredOn': base['measuredOn'], 'secondsPerWord': base['secondsPerWord'], 'startMinutes': start, 'targetMinutes': round(target, 2),
             'nowMinutes': now, 'cutMinutes': round(start-now, 2), 'needMinutes': round(start-target, 2),
-            'remainingMinutes': round(max(now-target, 0), 2), 'estimatedLines': sum(estimated.values()), 'scenes': scenes}
+            'remainingMinutes': round(max(now-target, 0), 2), 'scenes': scenes}
 
 
 def suggestions(root, sid, show, line_secs):
@@ -72,7 +71,7 @@ def suggestions(root, sid, show, line_secs):
         done = not cut and all(cues[cid]['text'] == edits[cid] for cid in present if cid in edits)
         stale = not done and any(cues[cid]['text'] != was.get(cid, cues[cid]['text']) for cid in present)
         saves = sum(line_secs.get(cid, 0) for cid in cut)
-        saves += sum(line_secs.get(cid, 0)*max(0, 1 - len(edits[cid].split())/max(1, len(cues[cid]['text'].split())))
+        saves += sum(line_secs.get(cid, 0)*(1 - len(edits[cid].split())/max(1, len(cues[cid]['text'].split())))
                      for cid in present if cid in edits)
         out.append({**{k: sug.get(k) for k in ('number', 'title', 'cues', 'edits', 'why', 'keeps', 'risk', 'riskWhy', 'riskWas', 'loses', 'reliesOn', 'editedByAuthor', 'directionsKept')},
                     'kind': kind_of(sug), 'cutCues': [cid for cid in sug['cues'] if cid not in edits],
@@ -148,7 +147,7 @@ def save_suggestion(root, sid, n, change, show):
     return sug
 
 
-def if_deleted(root, sc, scenes, show, ratio, per_word, line_secs):
+def if_deleted(root, sc, scenes, show, base, live, line_secs):
     """What deleting the whole scene would need (written per scene, under
     "ifDeleted" in its cut-suggestions file) and what it would save: the scene's
     stage time, less its montage and any spoken lines the fix moves elsewhere
@@ -160,10 +159,11 @@ def if_deleted(root, sc, scenes, show, ratio, per_word, line_secs):
     def spoken(t):
         # Only a line with a speaker ("NARRATOR: ...") is spoken. A stage direction,
         # drafted as "STAGE: ...", "[...]" or with no speaker, takes no spoken time.
+        # A live role's line is read at the live rate, anyone else's is recorded.
         who, sep, words = t.partition(':')
-        if not sep or len(who) > 30 or who.strip().upper() in ('STAGE', 'DIRECTION', 'STAGE DIRECTION') or t.lstrip().startswith('['): return ''
-        return words
-    bridge = sum(len(spoken(c.get('text') or '').split()) for c in plan.get('changes', []) if c.get('action') == 'add')*per_word*ratio/60
+        if not sep or len(who) > 30 or who.strip().upper() in ('STAGE', 'DIRECTION', 'STAGE DIRECTION') or t.lstrip().startswith('['): return 0
+        return len(words.split())*rate(base, 'live' if who.strip().upper() in live else 'recorded')
+    bridge = sum(spoken(c.get('text') or '') for c in plan.get('changes', []) if c.get('action') == 'add')/60
     mine = {c['id'] for c in show['cues'] if c['scene'] == sc['id']}
     moved_ids = {cid for c in plan.get('changes', []) if c.get('action') == 'move'
                  for cid in re.findall(r'\b(?:s\d+[a-z]?_[A-Za-z0-9_]+|cue_[0-9a-f]{32})\b', c.get('where') or '') if cid in mine}

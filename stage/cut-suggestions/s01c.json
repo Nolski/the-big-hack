@@ -31,7 +31,9 @@
         "Character: SJ admitting the degree comment 'landed like shit' and failing to say it to Kristina (only later echo is s19_l8, which #91 would cut)",
         "Character: Brendan quietly coaching SJ ('If you said it to her the way you just said it to me')",
         "Character: SJ's 'I'm the one following the rules' self-image, first stated here (carried in s11b_l5)"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut the second lap: guided tour, homework, evals",
@@ -147,7 +149,9 @@
       "loses": [
         "Joke: 'Most of these idiots we work with like Marcus, I wouldn't waste the breath on', inside a speech about not being a dick",
         "Nothing substantive: 'Really.' is padding"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Trim the PR inventory",

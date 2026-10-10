@@ -1,59 +1,7 @@
 {
   "scene": "s20b",
-  "approach": "The scene's job is to get the Mac Studio back onto SJ's desk so the police find it there, and almost all of its time goes on a malware chat that s22 repeats nearly word for word. The cuts below strip it in order of least loss; taking all of them leaves a wordless return (Brendan carries the machine in, puts it down, SJ chuckles), the first news chyron, a two-line goodbye, and SJ plugging the machine in. That is effectively cutting the scene while keeping the return as a visible beat.",
+  "approach": "The narration here is already lean: 66 words, about 24 seconds, in the opening line and the closing run after Brendan leaves. The closing five narrator lines sit together with nothing between them, so they merge into one tighter line that keeps every action, the glad-to-have-it-back feeling and the AI meme wallpaper. The opening line would save under 2 seconds, so it is left alone.",
   "suggestions": [
-    {
-      "title": "Cut the hackernews malware conversation",
-      "kind": "cut",
-      "cues": [
-        "s20b_l16",
-        "s20b_l17",
-        "s20b_l18",
-        "s20b_l19",
-        "s20b_l20",
-        "s20b_l21",
-        "s20b_l22",
-        "s20b_l25",
-        "s20b_l26",
-        "s20b_l27",
-        "s20b_l29",
-        "s20b_l30",
-        "s20b_l31"
-      ],
-      "edits": [],
-      "why": "s22_front_door already has SJ say the same thing to Marcus, almost verbatim: 'A long-lived key... It didn't break anything. It was allowed to do everything it did. That's my memo.' Playing it here first blunts that line, which lands harder when SJ meets it fresh in s22. s20_l18 has already paid off the memo through Brendan. s20b_l23 is an internal-state direction the back row cannot see.",
-      "keeps": "The JWT memo thread survives in s20_l18 and s22_front_door. The Kazakhstan chyron (s20b_l24) is not in this cut and can still run behind the return. s20b_l51 ('reads more of the comments') still reads as SJ browsing on screen. Lost: Brendan's guilty '...Mm.' and the dramatic irony of SJ admiring the attack in front of the machine.",
-      "risk": "medium",
-      "reliesOn": [
-        "s20_l18",
-        "s22_front_door"
-      ],
-      "against": {
-        "s20b_l16": "Have you checked hackernews today?",
-        "s20b_l17": "…No... why?",
-        "s20b_l18": "There's some new malware that's going around, it seems pretty advanced",
-        "s20b_l19": "Oh that sounds interesting.",
-        "s20b_l20": "Everyone's speculating about it, but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.",
-        "s20b_l21": "Somebody wiped a whole cluster and rebuilt it from backup, and it came back inside the hour. They think the backups were already carrying it.",
-        "s20b_l22": "That does sound interesting... I wonder if that's related to the Ukraine or Iran war...",
-        "s20b_l25": "Do you know what's actually clever about it, though? It seems to be using Long lived API keys to spread among other things.. you know, the thing I wrote about in my JWT memo?",
-        "s20b_l26": "It didn't break anything to get in, that's the thing. Every single thing it did, it was allowed to do.",
-        "s20b_l27": "…Mm.",
-        "s20b_l29": "I'd love to see the logs, it's a bummer I can't help do incident response..",
-        "s20b_l30": "Yeah.",
-        "s20b_l31": "Oh well..."
-      },
-      "number": 116,
-      "riskWhy": "No plot is lost: the attack's method lands in s22_front_door, which this cut lets SJ say fresh, and it also removes a small continuity snag where SJ already knows about the keys yet asks Marcus 'How did it get in?' (s22_how). What goes is the dramatic irony of SJ admiring the attack in front of the machine while Brendan sits silent.",
-      "loses": [
-        "Character: SJ admiring the malware's design and wishing he could see the logs, with the Mac Studio that did it on the table",
-        "Character: Brendan's guilty '...Mm.' and breath out (s20b_l27, s20b_l28), his only reaction to the news in SJ's presence",
-        "Colour: the wiped cluster that came back from backup inside the hour (nowhere else)",
-        "Plot: SJ linking the attack to his JWT memo (also in s22_front_door and s20_l18)",
-        "Setup: s20b_l51 'reads more of the comments' loses its referent; it needs 'more of' dropped or it reads oddly"
-      ],
-      "directionsKept": 2
-    },
     {
       "title": "Cut SJ telling Brendan he emailed a friend",
       "kind": "cut",
@@ -128,6 +76,43 @@
       "directionsKept": 1
     },
     {
+      "title": "Tighten the narrator around the handback",
+      "kind": "cut + trim",
+      "cues": [
+        "s20b_l1",
+        "s20b_l47",
+        "s20b_l48"
+      ],
+      "edits": [
+        {
+          "cue": "s20b_l1",
+          "text": "The following day, Brendan shows up at SJ's apartment hungover."
+        },
+        {
+          "cue": "s20b_l48",
+          "text": "SJ looks at the machine on the table, glad to have it back."
+        }
+      ],
+      "why": "s20b_l2 already shows Brendan carrying the computer in, so 'with his mac mini in hand' restates it. s20b_l47 'BRENDAN goes.' narrates an exit the audience watches (s20b_l44 to s20b_l46). s20b_l48 keeps its feeling with half the words.",
+      "keeps": "The why stays: Brendan is hungover (s20b_l1), and SJ is glad to have the machine back (s20b_l48). The return reads from s20b_l2 and s20b_l5, the exit from s20b_l45 and s20b_l46.",
+      "risk": "low",
+      "riskWhy": "Only restatement of visible action and a looser simile go. No plot, joke or character beat is touched.",
+      "loses": [
+        "Narration: 'with his mac mini in hand' (shown by s20b_l2)",
+        "Narration: 'BRENDAN goes.'",
+        "Narration: 'the way you look at something you're glad to have back' becomes 'glad to have it back'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s20b_l1": "The following day, Brendan shows up at SJ's apartment hungover with his mac mini in hand. ",
+        "s20b_l47": "BRENDAN goes.",
+        "s20b_l48": "SJ looks at the machine on the table for a moment, the way you look at something you're glad to have back."
+      },
+      "number": 320,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
       "title": "Cut the unlocked-model exchange",
       "kind": "cut",
       "cues": [
@@ -158,7 +143,40 @@
         "Plot: SJ deliberately found an unlocked model because of the refusals (also in s20_l37)",
         "Character: Brendan's half-truth 'a cyber security audit', the closest he comes to confessing",
         "Joke: SJ's offhand 'I don't know if I told you that part', delivered to the man it doomed"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the speculation about who is behind the malware",
+      "kind": "cut",
+      "cues": [
+        "s20b_l20",
+        "s20b_l21",
+        "s20b_l22"
+      ],
+      "edits": [],
+      "why": "Three lines of colour about the worm before SJ gets to the point in s20b_l25. The news montage after this scene charts the spread, and s22_backdoor and s22_they_said give the official theory and the API key. Without them, Brendan's 'Oh that sounds interesting.' (s20b_l19) runs straight into SJ's 'Do you know what's actually clever about it, though?' (s20b_l25).",
+      "keeps": "SJ still brings up the malware (s20b_l16 to s20b_l19) and still admires it in front of the machine that started it (s20b_l25). The montage and s22 carry the spread and the investigation.",
+      "risk": "medium",
+      "riskWhy": "No plot goes, but it loses Brendan's off-the-mark 'Ukraine or Iran war' guess, a quiet joke at his own expense, and the only mention that the old employer was hit before s22.",
+      "loses": [
+        "Joke: Brendan's 'I wonder if that's related to the Ukraine or Iran war...'",
+        "Colour: the wiped cluster that came back from backup inside the hour (nowhere else)",
+        "Plot: Marcus saying Malus got hit (the company's exposure is picked up again in s22)"
+      ],
+      "reliesOn": [
+        "s22_backdoor",
+        "s22_they_said"
+      ],
+      "against": {
+        "s20b_l20": "Everyone's speculating about it, even Marcus said even Malus got hit but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.",
+        "s20b_l21": "Somebody wiped a whole cluster and rebuilt it from backup, and it came back inside the hour. They think the backups were already carrying it.",
+        "s20b_l22": "That does sound interesting... I wonder if that's related to the Ukraine or Iran war..."
+      },
+      "number": 321,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut the jacket and hangover exit",
@@ -189,7 +207,9 @@
         "Character: Brendan covering with 'still hung over a bit'",
         "Character: SJ's 'Go home. Eat something.'"
       ],
-      "directionsKept": 2
+      "directionsKept": 2,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Make the return wordless",
@@ -219,10 +239,79 @@
         "Character: SJ's 'you barely got to play with it', his generosity in lending the machine",
         "Character: Brendan returning the machine under a cover story rather than confessing (motive still given in s20_l72)",
         "Staging: s20b_l5 'SJ chuckles' is orphaned unless edited"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut SJ admiring the attack and the JWT memo",
+      "kind": "cut",
+      "cues": [
+        "s20b_l25",
+        "s20b_l30",
+        "s20b_l31"
+      ],
+      "edits": [],
+      "why": "The long-lived key is already tied to the memo by Brendan in s20_l18, and Marcus brings it to SJ in s22_they_said ('one of your old API keys that never got revoked'). This is the longest line left in the scene. Without it, the chat ends on Brendan's guess (s20b_l22) or 'Oh that sounds interesting.' (s20b_l19), and SJ gets up (s20b_l32).",
+      "keeps": "The memo thread survives in s20_l18 and the key in s22_they_said and s22_whose_key. SJ still reads hackernews at the end (s20b_l51).",
+      "risk": "high",
+      "riskWhy": "This is the scene's dramatic irony: SJ praising the attack and wishing he could do incident response, with Brendan and the machine that did it right there. It also drops SJ's only spoken regret about the layoff in this scene. Take it only if the runtime needs it.",
+      "loses": [
+        "Character: SJ calling the worm clever and linking it to his own memo, in front of Brendan",
+        "Character: 'It's a shame we got laid off, I'd love to be doing incident response on something like this.'",
+        "Character: Brendan's flat 'Yeah.', his only reaction to the news",
+        "Plot: SJ guessing at the long-lived API keys before s22 (also s20_l18, s22_they_said)"
+      ],
+      "reliesOn": [
+        "s20_l18",
+        "s22_they_said",
+        "s22_whose_key"
+      ],
+      "against": {
+        "s20b_l25": "Do you know what's actually clever about it, though? It seems to be using Long lived API keys to spread among other things.. you know, the thing I wrote about in my JWT memo? It's a shame we got laid off, I'd love to be doing incident response on something like this.",
+        "s20b_l30": "Yeah.",
+        "s20b_l31": "Oh well..."
+      },
+      "number": 322,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Merge and tighten the closing narration",
+      "kind": "cut + trim",
+      "cues": [
+        "s20b_l47",
+        "s20b_l48",
+        "s20b_l49",
+        "s20b_l50",
+        "s20b_l51"
+      ],
+      "edits": [
+        {
+          "cue": "s20b_l47",
+          "text": "Brendan goes. SJ looks at the machine on the table, glad to have it back. He plugs it in. It wakes on his wallpaper, the same meme mocking AI. He opens hackernews and reads more of the comments."
+        }
+      ],
+      "why": "s20b_l47 to s20b_l51 are directly adjacent narrator lines, so they merge into s20b_l47. 'for a moment, the way you look at something you're glad to have back' (s20b_l48) becomes 'glad to have it back'; 'making fun of' becomes 'mocking'; 'loads up' becomes 'opens'.",
+      "keeps": "Brendan leaving, SJ looking at the machine on the table, his gladness to have it back, plugging it in, the same AI-mocking meme on the wallpaper, and SJ reading more hackernews comments are all still there. No joke is touched; the wallpaper irony survives word for word in substance.",
+      "risk": "low",
+      "riskWhy": "Only wording changes. The one new line is still spoken over the same unbroken stretch after the exit, with no stage cue between the merged lines.",
+      "loses": [
+        "Wording: 'for a moment, the way you look at something you're glad to have back' becomes 'glad to have it back'",
+        "Wording: 'making fun of' becomes 'mocking', 'loads up' becomes 'opens'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s20b_l47": "BRENDAN goes.",
+        "s20b_l48": "SJ looks at the machine on the table for a moment, the way you look at something you're glad to have back.",
+        "s20b_l49": "He plugs it in.",
+        "s20b_l50": "It wakes on his wallpaper, the same meme making fun of AI.",
+        "s20b_l51": "He loads up hackernews and reads more of the comments."
+      },
+      "number": 600
     }
   ],
-  "writtenOn": "2026-10-05",
+  "writtenOn": "2026-10-09",
   "ifDeleted": {
     "verdict": "cuttable",
     "summary": "Brendan returns the Mac Studio and mentions the security audit. SJ, delighted, tells him about the unlocked model, reads him the first hackernews reports of the worm and says he has recommended him to a friend. Nobody realises what is sitting on the table. Most of the plot is repeated in s22 (the key, the memo, the unlocked model, the 'allowed to do' line). Deleting the scene loses Brendan's last appearance on stage and the warm dramatic irony that makes SJ's later plea for Brendan's sake land harder. One narrator bridge covers the handback.",

@@ -1,155 +1,7 @@
 {
   "scene": "s19",
-  "approach": "More than half the scene is the Marcus video call, and most of that is his second history lecture and a criteria argument that s14 already had with Dana. The cut takes Marcus down to one Luddite run plus his goodbye. It also trims the duplicate reflections around the nine tickets reveal and shortens the advice and the handover. The reveal, Brendan's new lease and lack of a resume, the 2000 layoff, the aborted peer feedback confession and SJ handing over the Mac Studio all stay.",
+  "approach": "This pass only tightens the narrator; no character line is touched. The narration here is already fairly lean, so the savings are modest: the opening setting, the standup nostalgia aside and the hands-touch line lose their padding. The nine tickets reveal merges with the reflection that follows it, since 'it's almost better they don't know' repeats 'neither of them ever knew', and every fact of the reveal stays.",
   "suggestions": [
-    {
-      "title": "Cut Marcus's second lecture (craft, air traffic)",
-      "kind": "cut",
-      "cues": [
-        "s14a_l28",
-        "s14a_l29",
-        "s14a_l30",
-        "s14a_l31",
-        "s14a_l32",
-        "s14a_l33",
-        "s14a_l34",
-        "s14a_l35"
-      ],
-      "edits": [],
-      "why": "This is the second lecture in the same call after the Luddite bit, and it is two minutes long. The 'nothing happened, no line on the sheet' point is already in s14 (SJ: 'Is it tickets? ... There's no ticket for that.') and gets confirmed by the nine tickets narrator. The peer feedback narrator line repeats s11c (Brendan: 'Marcus told me that he did his peer feedback...') and s23 reads it out in court.",
-      "keeps": "The Luddite gag stays in s14a_l23 and cue_89978fbd plus SJ's loom joke. After SJ's 'what I could have done better', 'Marcus.' / 'What do you want me to do with this.' still follows. The peer feedback thread survives in s11c, Brendan's s19 confession and s23.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14a_l28": "Okay, fine but can I say a thing? There used to be an understanding. Not a law. Not a contract. An understanding, between people who made things and people who sold them, about what a fair rate was and what you owed somebody who'd done the work for twenty years. The people doing the making had this sort of agency in their work and this craft, and it wasn't something that was protected by law or whatever; it was just cultural. And then one day, these factories came about and suddenly all of that agency, and understanding, and happy crafting of shirts or whateverthefuck dissapeared.",
-        "s14a_l29": "This is the weaving thing again.",
-        "s14a_l30": "It's not the weaving thing! it's your thing. Four years, right? Four years of good reviews and no bugs and there's no line on their sheet where that goes, because the entire point of it is that nothing happened.",
-        "s14a_l31": "Marcus doesn't mention his anonymous peer feedback. Most of it was about SJ being a problem.",
-        "s14a_l32": "It happened to entire trades all throughout history. The air traffic controllers, eleven thousand of them, fired in a week, replaced, and told they'd never be hired back. And the planes kept flying. Mostly. The reason I always bring up the Luddites is that they actually tried to do something about it, rather than roll over and take it. They actually tried to fight for greater control over their workplace.",
-        "s14a_l33": "Did it do anything?",
-        "s14a_l34": "After they started smashing the looms, it made the machine owners very frightened for about a year. They put soldiers in the valleys which ultimately caught most of them... So, yes and no.",
-        "s14a_l35": "Right. So they got fucked and couldn't do anything about it too."
-      },
-      "number": 86,
-      "riskWhy": "No plot fact goes: the peer feedback is set up in s11c_l34 and read out at s23_l33, and the Luddite thread carries on in s22_l3 and s23b. It is still the biggest loss in the scene: Marcus's sharpest argument ('no line on their sheet... nothing happened') quietly sets up the nine tickets reveal, and the narrator's peer feedback aside is what makes his 'best engineer' compliment two-faced. If #92 is also taken, the 'Marcus.' / 'What do you want me to do with this.' exchange named in keeps is gone too.",
-      "loses": [
-        "Character: Marcus's craft and 'understanding' speech, his clearest case for what the factories took",
-        "Setup: 'four years of good reviews and no bugs and there's no line on their sheet', which foreshadows the nine tickets reveal (s19_l20); s14 covers the same point more lightly",
-        "Character: the narrator revealing Marcus's anonymous peer feedback right before he calls SJ the best engineer (s14a_l43); the feedback itself is still in s11c_l34 and s23_l33",
-        "Colour: the eleven thousand air traffic controllers, 'And the planes kept flying. Mostly.' (nowhere else)",
-        "Joke: SJ's 'This is the weaving thing again.' / 'It's not the weaving thing!'",
-        "Character: Brendan's bitter 'So they got fucked and couldn't do anything about it too.'"
-      ],
-      "directionsKept": 2
-    },
-    {
-      "title": "Cut the criteria cross-exam and SJ's rebuttal",
-      "kind": "cut",
-      "cues": [
-        "s14a_l16",
-        "s14a_l17",
-        "s14a_l18",
-        "s14a_l19",
-        "s14a_brendan_asked",
-        "s14a_l21",
-        "s14a_l22"
-      ],
-      "edits": [],
-      "why": "In s14 Dana already says she can't share the criteria ('That's not something I'm able to share'). The narrator line about nostalgia for standup arguments describes an inner state the audience can't see. Marcus's 'That's not a process. That's a thing that was done to you' answers SJ's 'a google sheet did the sorting' directly, and Brendan leaning in follows it cleanly.",
-      "keeps": "SJ defending the process (l15) and Marcus's rebuttal (l20) both stay, and that collision is still there. Brendan's rocket emoji and 'opposite of each other' lines stay. This loses the Dana word-for-word email joke.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14a_l16": "Did they show you the criteria?",
-        "s14a_l17": "No.",
-        "s14a_l18": "So you can't check it.",
-        "s14a_l19": "No.",
-        "s14a_brendan_asked": "I asked. I emailed Dana three times. I got the same paragraph back all three times. Word for word. I honestly don't even know if that woman is human or AI.",
-        "s14a_l21": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus in standup... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
-        "s14a_l22": "It's not done to anyone. There's no one at the other end of it. It's just a process that was run and we didn't fit the criteria they wanted."
-      },
-      "number": 87,
-      "riskWhy": "Dana's refusal to share the criteria is already in s14_l61, so no plot goes. What goes is a unique joke and the back-and-forth where Marcus corners SJ. The narrator line is internal and can't be staged, so it is no loss.",
-      "loses": [
-        "Joke: Brendan emailing Dana three times and getting the same paragraph back word for word, 'I don't know if that woman is human or AI'",
-        "Character: Marcus's quick cross-examination ('So you can't check it.' / 'No.')",
-        "Character: SJ doubling down that 'there's no one at the other end of it', his strongest defence of the process",
-        "Colour: the narrator's note that SJ is nostalgic for arguing with Marcus in standup (internal, unstageable)"
-      ]
-    },
-    {
-      "title": "Cut the post-reveal reflection",
-      "kind": "cut",
-      "cues": [
-        "s19_l29",
-        "s19_l30",
-        "s19_l31",
-        "s19_l32",
-        "s19_l33",
-        "s19_l34"
-      ],
-      "edits": [],
-      "why": "The narrator has just said 'Neither of them ever knew.' The next narrator line says they reflect on how the decision was made, which contradicts that. SJ's 'They couldn't see your actual impact' then restates what the reveal just showed. Brendan's 'I don't know what to do.' follows on from the nine tickets narration without them.",
-      "keeps": "The nine tickets reveal (s19_l20) and Brendan's question (s19_l14) stay word for word. SJ's turn into advice mode starts from 'I don't know what to do.'",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s19_l29": "They both just reflect on how stupid the process was... It was almost better when they didn't know how the decision was made.",
-        "s19_l30": "They couldn't see your actual impact",
-        "s19_l31": "What?",
-        "s19_l32": "Whatever you actually did, upper management never knows, when they have to make these choices… That’s…",
-        "s19_l33": "Kinda bullshit.",
-        "s19_l34": "Yeah..."
-      },
-      "number": 88,
-      "riskWas": "low",
-      "riskWhy": "Raised from low. The narrator line does contradict 'Neither of them ever knew' and can go, but the SJ and Brendan lines are not restating the reveal: the characters never learn it, so they are SJ's only step back from defending the scoring (s14a_l15, s14a_l22) to agreeing it is 'kinda bullshit'. That is a unique character beat, though no later scene depends on it.",
-      "loses": [
-        "Character: SJ conceding that management can't see anyone's actual impact, after defending the process all through the Marcus call (nowhere else)",
-        "Character: Brendan finishing SJ's sentence with 'Kinda bullshit.' and SJ's 'Yeah...'",
-        "Nothing substantive in s19_l29: the narrator reflection contradicts the line before it"
-      ]
-    },
-    {
-      "title": "Cut the IT laptop ticket and send-it-back debate",
-      "kind": "cut",
-      "cues": [
-        "s14a_brendan_laptop",
-        "s14a_liam_reply",
-        "s14a_brendan_ticket",
-        "s14a_brendan_everything",
-        "s19_l60",
-        "s19_l61",
-        "s19_l62",
-        "s19_l64",
-        "s19_l65"
-      ],
-      "edits": [],
-      "why": "These are two detours between 'it's all the stuff IT asked for back' and 'I'll tell you what I'm not going to send back'. Those two SJ lines join cleanly ('Yeah but...'). The stage direction about SJ remembering his finances at 28 is internal and can't be staged.",
-      "keeps": "The box, the asset register setup from s14 and the line about stuff they didn't ask for, which leads into handing over the Mac Studio, all stay. This loses Brendan's 'I did everything they asked, SJ', a good bitter beat.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14a_brendan_laptop": "I sent my laptop back the same day. This morning IT emailed asking where it is.",
-        "s14a_liam_reply": "Did you reply?",
-        "s14a_brendan_ticket": "I sent them the tracking number. They closed the ticket.",
-        "s14a_brendan_everything": "I did everything they asked, SJ.",
-        "s19_l60": "Did the thought occur to you if you don't send it back, they probably won't come after you for it?",
-        "s19_l61": "Yeah...",
-        "s19_l62": "Are you going to send it?",
-        "s19_l64": "Yeah, I am.",
-        "s19_l65": "Really?"
-      },
-      "number": 89,
-      "riskWhy": "The box and the returns label (s14_l72) still pay off, so no plot goes, but this cuts Brendan's best bitter beat and a joke that echoes the tickets reveal. It also cuts SJ deciding to send the equipment back anyway, which is his rule-following in miniature. The s19_l63 stage direction is internal and can't be staged.",
-      "loses": [
-        "Joke: 'I sent them the tracking number. They closed the ticket.', a small echo of the tickets reveal (s19_l20)",
-        "Character: Brendan's 'I did everything they asked, SJ.' and SJ having no answer",
-        "Character: SJ insisting he will return the kit even though nobody would chase it",
-        "Nothing substantive in s19_l63: internal thought, unstageable"
-      ],
-      "directionsKept": 2
-    },
     {
       "title": "Trim SJ's job-hunt advice",
       "kind": "trim",
@@ -182,102 +34,6 @@
       ]
     },
     {
-      "title": "Cut the glasses opener and portal compliment",
-      "kind": "cut",
-      "cues": [
-        "s19_l3",
-        "s19_l4",
-        "s19_l5",
-        "s19_l6",
-        "s19_l8",
-        "s19_l9"
-      ],
-      "edits": [],
-      "why": "The narrator has already set the room and said they're drinking. The video call then starts straight away. The developer portal compliment calls back to s01, but SJ's warmth toward Brendan comes through more strongly in 'you're better than I was at twenty-eight'.",
-      "keeps": "The drinking (which pays off in s20), the box and the Mac Studio stay in the narrator's opening. This loses the awkward first in-person moment and SJ's apology for the s01 PR review.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s19_l3": "You want a glass?",
-        "s19_l4": "No, I'm good with the can.",
-        "s19_l5": "I've got glasses. I'm not.... I do own glasses.",
-        "s19_l6": "I know you do.",
-        "s19_l8": "I just want to say... nice work on the developer portal... I know I gave you some shit for it, but it truly is impressive how quick that came togehter",
-        "s19_l9": "…Thanks."
-      },
-      "number": 91,
-      "riskWhy": "No plot or setup goes, since the drinking and the props stay in s19_l1. It loses the awkward first moment in the same room and SJ's only apology for tearing into the developer portal PR in s01_l12, a callback the play never makes again.",
-      "loses": [
-        "Character: SJ's apology and compliment for the developer portal, paying off his s01_l12 PR review (nowhere else)",
-        "Joke: 'I've got glasses. I'm not.... I do own glasses.' / 'I know you do.'"
-      ],
-      "directionsKept": 1
-    },
-    {
-      "title": "Cut Marcus's 'angry at who' and CV offer",
-      "kind": "cut",
-      "cues": [
-        "s14a_l37",
-        "s14a_l38",
-        "s14a_l39",
-        "s14a_l40",
-        "s14a_l41",
-        "s14a_l42",
-        "s14a_l45",
-        "s14a_l46"
-      ],
-      "edits": [],
-      "why": "The CV offer only exists so the stage direction can say nobody sends anything, and the tile drop shows that on its own. 'At who?' is a good line, but the call already ends on Marcus's goodbye compliment.",
-      "keeps": "Marcus's 'best engineer' goodbye and the tile drop stay. If you take this, also take the next trim so Marcus doesn't answer a question nobody asked.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14a_l37": "Marcus.",
-        "s14a_l38": "Yeah.",
-        "s14a_l39": "What do you want me to do with this.",
-        "s14a_l40": "I want you to be angry about it.",
-        "s14a_l41": "At who?",
-        "s14a_l42": "MARCUS does not have an answer but he tries to give some targets regardless.",
-        "s14a_l45": "Send me your CV, I'll share it with folks I know that are hiring.",
-        "s14a_l46": "Yeah. I will."
-      },
-      "number": 92,
-      "riskWhy": "Only safe together with #93: without it Marcus answers 'At who?' that nobody asked. The stage direction s14a_l47 still says nobody sends anything, which no longer points at anything once the CV offer goes, so it needs trimming to the tile drop. If #86 is also taken, SJ's 'what I could have done better' runs straight into Marcus's exit, which still works.",
-      "loses": [
-        "Character: Marcus's 'I want you to be angry about it' and SJ's flat 'At who?', the clearest statement of what Marcus wants from them; his call to fight returns in s23b_l19 and s23b_l26",
-        "Joke: the CV offer that, per the stage direction, nobody acts on",
-        "Character: SJ's 'What do you want me to do with this.'"
-      ]
-    },
-    {
-      "title": "Trim Marcus's goodbye to the compliment",
-      "kind": "trim",
-      "cues": [
-        "s14a_l43"
-      ],
-      "edits": [
-        {
-          "cue": "s14a_l43",
-          "text": "I've got a thing at five. SJ, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that."
-        }
-      ],
-      "why": "Without 'At who?', the list of targets has nothing to answer. Marcus making his excuse to leave reads well straight after the last Luddite exchange.",
-      "keeps": "'Best engineer', which echoes s01b and pays off at s23_l32 when Marcus says it in court. Use this only with the cut above.",
-      "risk": "medium",
-      "reliesOn": [
-        "s23_l32"
-      ],
-      "against": {
-        "s14a_l43": "At OpenAI and Anthropic! The system! Not the code or whatever it is you always seem to obsess about... - sigh - I've got a thing at five. SJ, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that."
-      },
-      "number": 93,
-      "riskWhy": "Pairs with #92 and makes no sense alone, since 'At who?' would then get no answer. 'Best engineer' stays for s23_l32, and Marcus's 'they hated the system' returns in s22_l3, but his comic list of targets goes.",
-      "loses": [
-        "Joke: 'At OpenAI and Anthropic! The system! Not the code or whatever it is you always seem to obsess about...'",
-        "Character: Marcus's sigh and pivot to 'I've got a thing at five', which shows him running out of answers"
-      ]
-    },
-    {
       "title": "Shorten the handover",
       "kind": "cut",
       "cues": [
@@ -302,7 +58,9 @@
       "loses": [
         "Colour: the narrator noting their hands touch, maybe the first physical contact with any coworker (partly carried by s19_l1)",
         "Nothing substantive in the pointing narration and 'Are you sure? / Take it.': both repeat the line before them"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Let SJ cut Marcus off mid-Luddite",
@@ -328,115 +86,6 @@
       ]
     },
     {
-      "title": "Cut Brendan's 'opposite of each other' follow-up",
-      "kind": "cut",
-      "cues": [
-        "s14a_brendan_opposite",
-        "s14a_marcus_saying",
-        "s14a_brendan_nobody"
-      ],
-      "edits": [],
-      "why": "Brendan's rocket emoji story already ends on the question that matters ('What \"criteria\" did I not have?'), and Marcus's 'Someone chose the criteria' answers it.",
-      "keeps": "Brendan's one outburst in the call stays, as does him sitting back. This loses his clearest statement that the two of them were fired despite opposite ways of working.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14a_brendan_opposite": "SJ, we did the opposite of each other for six months. They told me to keep doing what I was doing. And we both got the same call.",
-        "s14a_marcus_saying": "That's what I'm saying.",
-        "s14a_brendan_nobody": "No, you're saying somebody chose. I don't think anybody there even knows what we did."
-      },
-      "number": 96,
-      "riskWhy": "Marcus's 'Someone chose the criteria' still answers Brendan's question, so the logic holds. It cuts Brendan's one statement that he and SJ worked in opposite ways and were fired anyway, and his 'nobody there even knows what we did', which quietly foreshadows the nine tickets reveal.",
-      "loses": [
-        "Character: Brendan pointing out he and SJ did the opposite of each other for six months and got the same call",
-        "Character: Brendan correcting Marcus, 'you're saying somebody chose', a small talk-over in the call",
-        "Colour: 'I don't think anybody there even knows what we did', a soft echo of s19_l20 (the reveal itself stands alone)"
-      ]
-    },
-    {
-      "title": "Trim the opening narration",
-      "kind": "trim",
-      "cues": [
-        "s19_l1"
-      ],
-      "edits": [
-        {
-          "cue": "s19_l1",
-          "text": "Two weeks later. We find ourselves in SJ’s apartment with Brendan and SJ. By the door, a cardboard box, taped shut. On the desk, a Mac Studio. They’re drinking together. It’s the first time they’ve been in the same room."
-        }
-      ],
-      "why": "The courier label and the dongle are props the set can show.",
-      "keeps": "The box, the Mac Studio, the drinking, and the first time they've been in the same room all stay.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s19_l1": "Two weeks later. We find ourselves in SJ’s apartment with Brendan and SJ. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio and a dongle. They’re drinking together. It’s the first time they’ve been in the same room."
-      },
-      "number": 97,
-      "riskWhy": "The courier label and dongle are props the set can show, and the box, the Studio and the drinking stay.",
-      "loses": [
-        "Colour: the spoken dongle, a faint echo of Dana's returns list in s14_l72; the prop can still carry it"
-      ]
-    },
-    {
-      "title": "Cut the severance tenure exchange",
-      "kind": "cut",
-      "cues": [
-        "s14a_l9",
-        "s14a_l10",
-        "s14a_l12",
-        "s14a_l13"
-      ],
-      "edits": [],
-      "why": "s14 already covers the two months' severance. Brendan's 'Mine was three weeks.' answers SJ's 'I get two months of severance' directly.",
-      "keeps": "'Three weeks?!?' and Brendan's new lease stay. The s23b narrator calls back the lease.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s14a_l9": "Two months... After how long?",
-        "s14a_l10": "Four years.",
-        "s14a_l12": "It's a formula. Tenure.",
-        "s14a_l13": "Yeah."
-      },
-      "number": 98,
-      "riskWhy": "s14_l67 already gives the two months, and 'Mine was three weeks' follows SJ's severance line directly. One catch: if #86 is not taken, Marcus's later 'Four years, right?' (s14a_l30) loses the line it refers back to, though as a question it still plays.",
-      "loses": [
-        "Nothing substantive: the tenure formula is implied by the gap between two months and three weeks",
-        "Setup: SJ's 'Four years', which s14a_l30 refers back to if #86 is not taken"
-      ]
-    },
-    {
-      "title": "Trim Marcus's and SJ's criteria lines",
-      "kind": "trim",
-      "cues": [
-        "s14a_l14",
-        "s14a_l15"
-      ],
-      "edits": [
-        {
-          "cue": "s14a_l14",
-          "text": "And did they tell you why it was you? I mean no offense but you two couldn't be more different…"
-        },
-        {
-          "cue": "s14a_l15",
-          "text": "It's scored. There's a set of criteria and it's scored across the org, and a google sheet did the sorting, so nobody is choosing anyone. Which is actually the correct way to do it, if you think about it."
-        }
-      ],
-      "why": "Marcus correcting himself mid-line and SJ's last sentence both restate their point.",
-      "keeps": "SJ's faith in the process and 'if you think about it' stay, so Marcus still has something to push against.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s14a_l14": "And did they tell you why it was you? I mean why it was both of you? I mean no offense but you two couldn't be more different…",
-        "s14a_l15": "It's scored. There's a set of criteria and it's scored across the org, and a google sheet did the sorting, so nobody is choosing anyone. Which is actually the correct way to do it, if you think about it. The alternative is your manager likes you or not."
-      },
-      "number": 99,
-      "riskWhy": "Both trimmed sentences restate their speaker's point, and SJ's faith in the scoring and 'if you think about it' stay for Marcus to push against.",
-      "loses": [
-        "Nothing substantive: Marcus's 'I mean why it was both of you?' self-correction and SJ's 'your manager likes you or not' both restate the line around them"
-      ]
-    },
-    {
       "title": "Cut the Jitsi exchange",
       "kind": "cut",
       "cues": [
@@ -458,7 +107,8 @@
         "Character: SJ's 'Because Jitsi is open source and preserves our privacy.'",
         "Joke: Marcus's 'Why can't we use Zoom?' and his looking away before moving on"
       ],
-      "directionsKept": 1
+      "directionsKept": 1,
+      "dismissed": true
     },
     {
       "title": "Trim SJ's goodbye",
@@ -483,10 +133,463 @@
       "riskWhy": "'Things will get better' is stock reassurance, and the offer to help Brendan practise carries the care. The cut also drops 'I know you're angry', a light echo of Marcus's 'I want you to be angry' (s14a_l40), but s20_l29 states Brendan's anger on its own.",
       "loses": [
         "Nothing substantive: stock reassurance; Brendan's anger is restated in s20_l29"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut Brendan's 'opposite of each other' follow-up",
+      "kind": "cut",
+      "cues": [
+        "s14a_brendan_opposite",
+        "s14a_marcus_saying",
+        "s14a_brendan_nobody"
+      ],
+      "edits": [],
+      "why": "Brendan asks 'why' twice in a row: s14a_brendan_demo already ends on 'What \"criteria\" did I not have?'. The 'opposite of each other' point is Marcus's 'you two couldn't be more different' (s14a_l14) said again.",
+      "keeps": "s14a_brendan_demo goes straight into Marcus's 'No, guys, you still don't understand... Someone chose the criteria' (s14a_l23), which answers the criteria question directly. Brendan still leans in and sits back around his one speech.",
+      "risk": "low",
+      "riskWhy": "Two restatements of the question go, and Brendan's demo line keeps his anger and the rocket emoji. It loses Brendan pushing back on Marcus's labor framing.",
+      "loses": [
+        "Character: Brendan's 'No, you're talking about labor rights. I want to know why I specifically was fired'",
+        "Plot: 'we did the opposite of each other for six months' (s14a_l14 still says they couldn't be more different)"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14a_brendan_opposite": "SJ, we did the opposite of each other for six months. They told me to keep doing what I was doing. And we both got the same call from Dana. Why?",
+        "s14a_marcus_saying": "That's what I'm saying.",
+        "s14a_brendan_nobody": "No, you're talking about labor rights. I want to know why I specifically was fired"
+      },
+      "number": 280,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim Marcus's criteria speech so SJ cuts in",
+      "kind": "trim",
+      "cues": [
+        "s14a_l23"
+      ],
+      "edits": [
+        {
+          "cue": "s14a_l23",
+          "text": "No, guys, you still don't understand. Nothing has changed in 300 years. Someone chose the criteria to fire you. Do you think the Luddites who were ALL hanged were really guilty of single-handedly smashing the power looms?"
+        }
+      ],
+      "why": "The 'they don't need a good reason' sentence restates 'Someone chose the criteria to fire you.' Marcus answering his own Luddite question is the part SJ's loom joke can talk over.",
+      "keeps": "'Nothing has changed in 300 years', 'Someone chose the criteria' and the Luddites who were ALL hanged all stay, and SJ's antique loom joke (s14a_l26, set up for s25) now cuts across Marcus's rhetorical question.",
+      "risk": "low",
+      "riskWhy": "Marcus is still long-winded and the exaggeration stays. It drops his point that many Luddites were swept up in the crackdown, which s01_l23 half covers.",
+      "loses": [
+        "Character: 'they don't need a good reason to remove anyone who doesn't suit their needs'",
+        "Character: 'No, a lot were just caught up in over-eager bosses smashing down any sort of protest'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14a_l23": "No, guys, you still don't understand. Nothing has changed in 300 years. Someone chose the criteria to fire you. And just like before, they don't need a good reason to remove anyone who doesn't suit their needs. Do you think the Luddites who were ALL hanged were really guilty of single-handedly smashing the power looms? No, a lot were just caught up in over-eager bosses smashing down any sort of protest."
+      },
+      "number": 281,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the severance tenure exchange",
+      "kind": "cut",
+      "cues": [
+        "s14a_l9",
+        "s14a_l10",
+        "s14a_l13"
+      ],
+      "edits": [],
+      "why": "'Two months... After how long?' / 'Four years.' / 'Yeah.' is a pause before Brendan's own 'Yeah. I just signed a new lease too', which then has two 'Yeah's in a row.",
+      "keeps": "SJ's two months of severance (s14a_l8) and Brendan's new lease (s14a_brendan_formula, needed by cue_934a26b82ba547fda0628efcca6b2573) both stay.",
+      "risk": "low",
+      "riskWhy": "Small, and it fixes the doubled 'Yeah'. If #284 is not taken, Marcus's 'Four years, right?' (s14a_l30) no longer has the number said aloud first, though he would know it.",
+      "loses": [
+        "Plot: SJ's 'Four years.' on its own line"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14a_l9": "Two months... After how long?",
+        "s14a_l10": "Four years.",
+        "s14a_l13": "Yeah."
+      },
+      "number": 282,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut Marcus's question and Brendan's three emails",
+      "kind": "cut",
+      "cues": [
+        "s14a_l14",
+        "s14a_brendan_asked"
+      ],
+      "edits": [],
+      "why": "Brendan's 'Dana didn't seem to give a shit' already says HR gave them nothing, and s14_l61 showed Dana refusing to go through the criteria. Marcus can go straight from that into 'labor in the US is so exploitative' (s14a_l20), which is how he talks anyway.",
+      "keeps": "The SJ and Marcus US versus Europe collision (s14a_l20 to s14a_l22) stays, and Brendan's demo line still asks what criteria he lacked.",
+      "risk": "medium",
+      "riskWhy": "It loses a good joke and Marcus's line that the two are opposites. If #280 is also taken, the 'couldn't be more different' point leaves the call entirely.",
+      "loses": [
+        "Joke: 'I honestly don't even know if that woman is human or AI.'",
+        "Character: 'I emailed Dana three times. I got the same paragraph back all three times. Word for word.'",
+        "Plot: Marcus's 'you two couldn't be more different'"
+      ],
+      "reliesOn": [
+        "s14_l61"
+      ],
+      "against": {
+        "s14a_l14": "And did they tell you why it was you? I mean why it was both of you? I mean no offense but you two couldn't be more different…",
+        "s14a_brendan_asked": "I asked. I emailed Dana three times. I got the same paragraph back all three times. Word for word. I honestly don't even know if that woman is human or AI."
+      },
+      "number": 283,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut Marcus's craft speech and the peer feedback aside",
+      "kind": "cut",
+      "cues": [
+        "s14a_l28",
+        "s14a_l29",
+        "s14a_l30",
+        "s14a_l31"
+      ],
+      "edits": [],
+      "why": "This is Marcus's second history lecture in the call. s22_l3 has him make the craft point again ('not getting to do their craft and get paid shit'), and the 'no line on their sheet' point is paid off precisely by the nine tickets narrator (s19_l20). The peer feedback aside repeats s11c_l34 and s14_l81.",
+      "keeps": "After SJ's 'what I could have done better' and the pause, Marcus moves on to the air traffic controllers (s14a_l32) or, with #285 taken too, to his goodbye. Brendan's aborted peer review confession (s19_l51) still rests on s11c_l34.",
+      "risk": "medium",
+      "riskWhy": "Marcus's labor speeches are one of the scene's colliding quirks, and SJ's 'This is the weaving thing again' is a good collision. s22 still has the long version.",
+      "loses": [
+        "Character: Marcus's 'There used to be an understanding' speech",
+        "Joke: SJ's 'This is the weaving thing again.' / 'It's not the weaving thing! It's your thing.'",
+        "Plot: 'there's no line on their sheet where that goes' (s19_l20 carries it)",
+        "Narration: Marcus doesn't mention his peer feedback (s11c_l34, s14_l81 carry it)"
+      ],
+      "reliesOn": [
+        "s22_l3",
+        "s11c_l34",
+        "s14_l81"
+      ],
+      "against": {
+        "s14a_l28": "Okay, fine but can I say a thing? There used to be an understanding. Not a law. Not a contract. An understanding, between people who made things and people who sold them, about what a fair rate was and what you owed somebody who'd done the work for twenty years. The people doing the making had this sort of agency in their work and this craft, and it wasn't something that was protected by law or whatever; it was just cultural. And then one day, these factories came about and suddenly all of that agency, and understanding, and happy crafting of shirts or whateverthefuck disappeared.",
+        "s14a_l29": "This is the weaving thing again.",
+        "s14a_l30": "It's not the weaving thing! It's your thing. Four years, right? Four years of good reviews and no bugs and there's no line on their sheet where that goes, because the entire point of it is that nothing happened.",
+        "s14a_l31": "Marcus doesn't mention his anonymous peer feedback. Most of it was about SJ being a problem."
+      },
+      "number": 284,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the air traffic controllers and 'did it do anything'",
+      "kind": "cut",
+      "cues": [
+        "s14a_l32",
+        "s14a_l33",
+        "s14a_l34",
+        "s14a_l35"
+      ],
+      "edits": [],
+      "why": "A third history run in the same call. Marcus's point that the Luddites fought back is made again in s23b_l26 and s22_l3, and Brendan's 'they got fucked and couldn't do anything about it' is the mood the scene already has.",
+      "keeps": "SJ's 'Marcus.' / 'What do you want me to do with this.' still follows whatever history Marcus last gave. The Luddite fate in Australia stays for s23b_l17.",
+      "risk": "medium",
+      "riskWhy": "Nothing later relies on the air traffic controllers, but it is the only place Marcus gets a modern example, and Brendan's bleak punchline goes.",
+      "loses": [
+        "Character: the air traffic controllers, 'And the planes kept flying. Mostly.'",
+        "Joke: Brendan's 'So they got fucked and couldn't do anything about it too.'"
+      ],
+      "reliesOn": [
+        "s22_l3",
+        "s23b_l26"
+      ],
+      "against": {
+        "s14a_l32": "It happened to entire trades all throughout history. The air traffic controllers, eleven thousand of them, fired in a week, replaced, and told they'd never be hired back. And the planes kept flying. Mostly. The reason I always bring up the Luddites is that they actually tried to do something about it, rather than roll over and take it. They actually tried to fight for greater control over their workplace.",
+        "s14a_l33": "Did it do anything?",
+        "s14a_l34": "After they started smashing the looms, it made the machine owners very frightened for about a year. They put soldiers in the valleys which ultimately caught most of them... So, yes and no.",
+        "s14a_l35": "Right. So they got fucked and couldn't do anything about it too."
+      },
+      "number": 285,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut 'angry at who' and Marcus's system line",
+      "kind": "cut + trim",
+      "cues": [
+        "s14a_l37",
+        "s14a_l38",
+        "s14a_l39",
+        "s14a_l40",
+        "s14a_l41",
+        "s14a_l43"
+      ],
+      "edits": [
+        {
+          "cue": "s14a_l43",
+          "text": "- sigh - I've got a thing at five. SJ, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that."
+        }
+      ],
+      "why": "Marcus's 'be angry at the system' is his whole speech in s22 (s22_l3, s22_l5: 'brought down by the system'). Here it can go straight from the history to his excuse to leave.",
+      "keeps": "Marcus's 'I've got a thing at five' (which SJ steals in s22_l8), 'You're the best engineer I've worked with' (echoed in s23_l32), the CV offer and the tile drop all stay.",
+      "risk": "medium",
+      "riskWhy": "s22 says the system point at length, and the goodbye compliment stays. It loses SJ's flat 'What do you want me to do with this', a clean collision of the two.",
+      "loses": [
+        "Character: 'I want you to be angry about it.' / 'At who?'",
+        "Joke: 'At OpenAI and Anthropic! The system! Not the code or whatever it is you always seem to obsess about'"
+      ],
+      "reliesOn": [
+        "s22_l3",
+        "s22_l5"
+      ],
+      "against": {
+        "s14a_l37": "Marcus.",
+        "s14a_l38": "Yeah.",
+        "s14a_l39": "What do you want me to do with this.",
+        "s14a_l40": "I want you to be angry about it.",
+        "s14a_l41": "At who?",
+        "s14a_l43": "I dunno! At OpenAI and Anthropic! The system! Not the code or whatever it is you always seem to obsess about... - sigh - I've got a thing at five. SJ, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that."
+      },
+      "number": 286,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the narrator's nostalgia aside",
+      "kind": "cut",
+      "cues": [
+        "s14a_l21"
+      ],
+      "edits": [],
+      "why": "The audience watches SJ take Marcus's bait in the next line (s14a_l22), so the narration tells them what they are about to see.",
+      "keeps": "The US versus Europe argument itself (s14a_l20, s14a_l22) stays.",
+      "risk": "medium",
+      "riskWhy": "It is the one line that says SJ is almost nostalgic for the standups, which is a why, not just a restatement.",
+      "loses": [
+        "Narration: SJ is almost nostalgic about interrupting Kristina's standups with Marcus"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14a_l21": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself"
+      },
+      "number": 287,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the post-reveal reflection",
+      "kind": "cut",
+      "cues": [
+        "s19_l29",
+        "s19_l30",
+        "s19_l31",
+        "s19_l32",
+        "s19_l33",
+        "s19_l34"
+      ],
+      "edits": [],
+      "why": "The nine tickets narrator (s19_l20) has just told the audience exactly how stupid the process was. s19_l29 says so again, and SJ's 'upper management never knows' says it a third time in dialogue.",
+      "keeps": "The reveal goes straight into Brendan's 'I don't know what to do.' (s19_l35) and SJ coming alive over the job-hunt advice.",
+      "risk": "medium",
+      "riskWhy": "The plot is all in s19_l20. It loses SJ's only direct answer to Brendan's question and the narrator's note that it is better they don't know.",
+      "loses": [
+        "Narration: 'it's almost better they don't know how the decision was made'",
+        "Character: SJ's 'They couldn't see your actual impact' / 'Kinda bullshit.'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s19_l29": "They both just reflect on how stupid the process was... That being said... it's almost better  they don't know how the decision was made.",
+        "s19_l30": "They couldn't see your actual impact",
+        "s19_l31": "What?",
+        "s19_l32": "Whatever you actually did, upper management never knows, when they have to make these choices… That’s…",
+        "s19_l33": "Kinda bullshit.",
+        "s19_l34": "Yeah..."
+      },
+      "number": 288,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut Brendan's first 'why me and not Marcus'",
+      "kind": "cut",
+      "cues": [
+        "s19_l14"
+      ],
+      "edits": [],
+      "why": "Brendan asks the same question on the call (s14a_brendan_demo) and again, almost word for word, in s20_l28 just before he sends the model to find out. Here the narrator reveal can follow the end of the call directly.",
+      "keeps": "s20_l28 'Why me and not Marcus?' still launches the hack, and the nine tickets narrator (s19_l20) still answers it.",
+      "risk": "medium",
+      "riskWhy": "The reveal loses its immediate prompt in this scene, but the question is asked on the call and again in s20.",
+      "loses": [
+        "Character: 'Why me and not fuckin Marcus?' said in SJ's apartment"
+      ],
+      "reliesOn": [
+        "s20_l28"
+      ],
+      "against": {
+        "s19_l14": "I just wish I knew why I got fired… What was the reason? Why me and not fuckin Marcus?"
+      },
+      "number": 289,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the IT laptop complaint",
+      "kind": "cut",
+      "cues": [
+        "s14a_brendan_laptop",
+        "s19_l61"
+      ],
+      "edits": [],
+      "why": "SJ says the box is the stuff IT asked for back, and Brendan's 'Are you going to send yours back?' follows on without it. His 'I don't have money to spend on tokens anymore' (s19_l69) already gives the reason he needs the machine.",
+      "keeps": "The box, Brendan's question, SJ's 'all the stuff they didn't ask for' and the Mac Studio handover all stay. The stage direction about what a laptop means to Brendan at twenty-four still plays.",
+      "risk": "medium",
+      "riskWhy": "It loses the IT joke and the fact that Brendan has no laptop, which makes the loan a bit less needed.",
+      "loses": [
+        "Joke: IT emailing to ask where the laptop is after he sent it back the same day",
+        "Plot: Brendan now has no laptop (s19_l69 still gives the money reason)"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14a_brendan_laptop": "I sent my laptop back the same day. This morning fucking IT emailed asking where it is, like they cant even keep track of shit after they fire someone? And now I don't even have a laptop.",
+        "s19_l61": "IT was always unreliable..."
+      },
+      "number": 290,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the glasses opener",
+      "kind": "cut",
+      "cues": [
+        "s19_l3",
+        "s19_l4",
+        "s19_l5",
+        "s19_l6"
+      ],
+      "edits": [],
+      "why": "The narrator has already said this is the first time they've been in the same room (s19_l1). SJ's smile and the portal compliment can open the scene.",
+      "keeps": "SJ's portal compliment (s19_l8), the payoff of the s01c review, stays as the first thing he says.",
+      "risk": "medium",
+      "riskWhy": "It is mundane, awkward, and human, which is the scene's texture. Nothing later relies on it.",
+      "loses": [
+        "Joke: 'I've got glasses. I'm not.... I do own glasses.' / 'I know you do.'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s19_l3": "You want a glass?",
+        "s19_l4": "No, I'm good with the can.",
+        "s19_l5": "I've got glasses. I'm not.... I do own glasses.",
+        "s19_l6": "I know you do."
+      },
+      "number": 291,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Tighten the opening narration",
+      "kind": "trim",
+      "cues": [
+        "s19_l1"
+      ],
+      "edits": [
+        {
+          "cue": "s19_l1",
+          "text": "Two weeks later. SJ's apartment. By the door, a box, taped shut, with a courier label. On the desk, a Mac Studio and a dongle. SJ and Brendan are drinking together, the first time they've been in the same room."
+        }
+      ],
+      "why": "s19_l1 spends words on 'We find ourselves in SJ's apartment with Brendan and SJ' and 'already printed and stuck to it'. The setting, the label and the two men are said once each.",
+      "keeps": "Two weeks later, SJ's apartment, the taped box with its courier label, the Mac Studio and the dongle, the drinking, and the first time they've been in the same room all stay.",
+      "risk": "low",
+      "riskWhy": "Same facts, same order; only the framing phrase and the label's 'printed and stuck' detail go.",
+      "loses": [
+        "Wording: 'We find ourselves in', 'already printed and stuck to it'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s19_l1": "Two weeks later. We find ourselves in SJ’s apartment with Brendan and SJ. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio and a dongle. They’re drinking together. It’s the first time they’ve been in the same room."
+      },
+      "number": 460
+    },
+    {
+      "title": "Tighten the standup nostalgia",
+      "kind": "trim",
+      "cues": [
+        "s14a_l21"
+      ],
+      "edits": [
+        {
+          "cue": "s14a_l21",
+          "text": "SJ remembers arguing with Marcus all through Kristina's standups... he's almost nostalgic. He doesn't want to argue today. He can't help himself."
+        }
+      ],
+      "why": "s14a_l21 says 'thinks about all the times he's interrupted' and 'nostalgic about it'; the same memory and feeling fit in fewer words, split into short spoken sentences.",
+      "keeps": "The standups he and Marcus derailed, Kristina, the near-nostalgia, not wanting to argue, and not being able to help himself all stay. The line still tips straight into SJ's 'best engineers live in the US'.",
+      "risk": "low",
+      "riskWhy": "'Interrupted Kristina's standup with Marcus' becomes 'arguing with Marcus all through Kristina's standups', which says the same thing more clearly aloud.",
+      "loses": [
+        "Wording: 'interrupted', 'about it', 'but he also'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14a_l21": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself"
+      },
+      "number": 461
+    },
+    {
+      "title": "Merge the nine tickets reveal with the reflection",
+      "kind": "cut + trim",
+      "cues": [
+        "s19_l20",
+        "s19_l29"
+      ],
+      "edits": [
+        {
+          "cue": "s19_l20",
+          "text": "The layoffs came down to one number: Jira tickets closed. Kristina had promised to copy Brendan's tickets from Linear herself. She vibe coded a tool, and it only ever copied the test ticket. Neither of them ever knew... which is almost better. They just sit with how stupid the process was."
+        }
+      ],
+      "why": "s19_l20 and s19_l29 are directly adjacent narrator lines. s19_l29's 'it's almost better they don't know how the decision was made' restates s19_l20's 'Neither of them ever knew', so it folds into that sentence. 'Said she would' becomes 'promised to'; 'across' and 'to do it' were padding.",
+      "keeps": "Every fact of the reveal stays: one number, Jira tickets closed, Kristina copying Brendan's tickets from Linear herself, the vibe coded tool, only the test ticket copied, neither of them knowing. The 'almost better' irony and the two of them sitting with how stupid the process was also stay, leading into SJ's 'They couldn't see your actual impact'.",
+      "risk": "low",
+      "riskWhy": "The merged cue keeps s19_l20's V.O. delivery; the reflection is now a closing beat of the same voice line, with no stage cue between them.",
+      "loses": [
+        "Wording: 'That being said...', 'how the decision was made', 'across', 'to do it'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s19_l20": "The layoffs came down to one number: Jira tickets closed. Kristina had said she would copy Brendan's tickets across from Linear herself. She vibe coded a tool to do it, and it only ever copied the test ticket. Neither of them ever knew.",
+        "s19_l29": "They both just reflect on how stupid the process was... That being said... it's almost better  they don't know how the decision was made."
+      },
+      "number": 462
+    },
+    {
+      "title": "Tighten the hands-touch line",
+      "kind": "trim",
+      "cues": [
+        "s19_l75"
+      ],
+      "edits": [
+        {
+          "cue": "s19_l75",
+          "text": "Their hands touch.... It might be the first time either of them has ever touched a coworker...."
+        }
+      ],
+      "why": "'Made any kind of physical contact with any of their coworkers' is a long way round to 'touched a coworker'.",
+      "keeps": "The hands touching, the pauses, and the joke that this may be the first time either has touched a coworker all stay. The shorter phrasing lands the laugh faster.",
+      "risk": "low",
+      "riskWhy": "The laugh rests on 'first time either of them', which is untouched.",
+      "loses": [
+        "Wording: 'made any kind of physical contact with any of their'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s19_l75": "Their hands touch.... It might be the first time either of them have made any kind of physical contact with any of their coworkers...."
+      },
+      "number": 463
     }
   ],
-  "writtenOn": "2026-10-05",
+  "writtenOn": "2026-10-09",
   "ifDeleted": {
     "verdict": "cuttable with rewrites",
     "summary": "Nine Tickets is the hinge between the layoffs and the hack: SJ hands Brendan the Mac Studio, Brendan leaves still asking why he was fired, and the audience learns the real reason (Kristina's copy tool only moved the test ticket, so Brendan closed nine tickets on the sheet). It also builds the SJ and Brendan friendship that makes SJ's plea deal in s23b read as a sacrifice. Deleting it saves the whole Marcus Luddite call and the resume advice, but the computer handoff and the nine-tickets payoff must be carried into s20, and several later lines lose their source.",

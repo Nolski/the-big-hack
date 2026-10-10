@@ -813,8 +813,7 @@ function runtimeOf(sid, label) {
   const budget = r.budget == null ? ""
     : over > 0 ? ` <span class="over-min">/ ${r.budget.toFixed(1)}${label ? `, ${over.toFixed(1)} over budget` : ""}</span>`
     : ` <span class="saved-min">✓${label ? " within budget" : ""}</span>`;
-  const est = r.estimated ? ` (${r.estimated} estimated)` : "";
-  return `${mins(r.now)}${label ? " " + label : ""}${budget}${est}${label ? " · " : ""}`;
+  return `${mins(r.now)}${label ? " " + label : ""}${budget}${label ? " · " : ""}`;
 }
 
 // The scene's cut suggestions, written per scene and checked against the
@@ -1199,15 +1198,14 @@ function paintRuntime() {
 
   $("#rtSummary").innerHTML = `<b>${mins(r.nowMinutes)}</b> on stage, target <b>${mins(r.targetMinutes)}</b>.
     Cut so far ${mins(r.cutMinutes)} of ${mins(r.needMinutes)} (${Math.round(100 * share)}%);
-    ${r.remainingMinutes > 0 ? `<b>${mins(r.remainingMinutes)}</b> still to cut.` : "target reached."}
-    ${r.estimatedLines ? `${r.estimatedLines} edited line${r.estimatedLines === 1 ? " is" : "s are"} estimated until re-recorded.` : ""}`;
+    ${r.remainingMinutes > 0 ? `<b>${mins(r.remainingMinutes)}</b> still to cut.` : "target reached."}`;
   const top = Math.max(...r.scenes.map((x) => Math.max(x.was, x.now)), 1);
   const row = (x) => {
     const left = x.budget == null ? 0 : Math.round((x.now - x.budget) * 10) / 10;
     const sugs = x.suggestions ? x.suggestions.items.filter((y) => y.status !== "done" && y.status !== "dismissed").length : 0;
     return `
       <span class="name${x.cut ? " cut" : ""}" data-sid="${esc(x.id)}">${esc(x.title)}
-        <small>${esc(x.id)}${x.cut ? " · cut" : ""}${x.fixed ? ` · ${x.fixed.toFixed(1)} min montage` : ""}${x.estimated ? ` · ${x.estimated} estimated` : ""}${sugs ? ` · ${sugs} suggestions` : ""}</small></span>
+        <small>${esc(x.id)}${x.cut ? " · cut" : ""}${x.fixed ? ` · ${x.fixed.toFixed(1)} min montage` : ""}${sugs ? ` · ${sugs} suggestions` : ""}</small></span>
       <span class="num">${x.was.toFixed(1)}</span>
       <span class="num">${x.cut ? "—" : x.now.toFixed(1)}</span>
       <span class="num">${x.budget == null ? "" : x.budget.toFixed(1)}</span>

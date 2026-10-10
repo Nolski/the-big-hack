@@ -1,6 +1,6 @@
 {
   "scene": "s06",
-  "approach": "The scene spends its time in three places: Marcus's double history lecture at standup, the Kristina and SJ security standoff, and a long pairing session where SJ turns down Claude three separate ways before Brendan steers him to the bug. The cut keeps one Marcus history gag, one Kristina push and SJ's security answer, one SJ refusal of Claude, and the full discovery and hiding beat at the end.",
+  "approach": "This pass only tightens Narrator lines; every character line, the Luddite argument and the standup comedy are untouched. The narration here is already fairly lean, so the four trims take out stage business and padding (\"working at his desk\", \"absolutely\", \"the team needs to\", \"Claude finished working\") without losing any fact or the performance-review sting. The short lines s06_l29 and s06_l34 are left alone because trimming them saves under two seconds. The old stale trim of s06_l42 (#221) is replaced by #542.",
   "suggestions": [
     {
       "title": "Cut the prod-logs idea and SJ's PII rant",
@@ -124,47 +124,6 @@
       "supersededBy": 159
     },
     {
-      "title": "Compress SJ's bug briefing",
-      "kind": "trim",
-      "cues": [
-        "s06_l30",
-        "s06_l31",
-        "s06_l32"
-      ],
-      "edits": [
-        {
-          "cue": "s06_l30",
-          "text": "Okay. So. Four users in three months. Each one signs up, and for about a second they're… in someone else's account. And I cannot reproduce it. I have tried everything. It has only ever happened in prod under real traffic."
-        },
-        {
-          "cue": "s06_l31",
-          "text": "Okay, that's kind of horrifying."
-        },
-        {
-          "cue": "s06_l32",
-          "text": "I've checked the RNG, the entropy source, the signing and ORM code. It's all fine. That's what's killing me. The place I expected to find it is clean."
-        }
-      ],
-      "why": "The audience already heard the bug described at standup (s06_l21, 'Four people got dropped into somebody else's account'). The name and email detail, the ten thousand signups, and the session-token theory repeat the same point.",
-      "keeps": "The 'can't reproduce it' problem that makes Claude's reproduction script matter, and 'the place I expected to find it is clean', which sets up 'the one place I wasn't looking' in s06_l49.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s06_l30": "Okay. So. Four users in three months. Each one signs up, and for about a second they're… in someone else's account. They have someone else's name, someone else's email, right there on the screen. Then, after refresh, it clears. And I cannot reproduce it. I have tried everything. Ten thousand signups in a loop, locally, nothing. It has only ever happened in prod under real traffic.",
-        "s06_l31": "Okay, that's kind of horrifying. Where've you been looking?",
-        "s06_l32": "I've checked the RNG, the entropy source, the signing and ORM code. If two users got the same session token, that would explain but I've spent days pulling the token generation apart. It's all fine. That's what's killing me. The place I expected to find it is clean."
-      },
-      "number": 37,
-      "riskWas": "low",
-      "riskWhy": "The session-token theory in s06_l32 is the only setup for 'It wasn't the tokens at all' in s06_l47. #41 cuts that payoff, so take this with #41 or the payoff dangles. The cut also drops the one concrete picture of what users see on screen.",
-      "loses": [
-        "Setup: 'If two users got the same session token' sets up s06_l47 'It wasn't the tokens at all' (safe only if #41 is also taken)",
-        "Colour: someone else's name and email on screen, then cleared on refresh, the concrete image that s07_l4's screenshots echo",
-        "Colour: 'Ten thousand signups in a loop, locally, nothing', which shows how hard SJ has worked",
-        "Nothing else substantive: Brendan's 'Where've you been looking?' is a bridge"
-      ]
-    },
-    {
       "title": "Cut the fists-clench narrator line",
       "kind": "cut",
       "cues": [
@@ -185,68 +144,9 @@
       "loses": [
         "Character: Kristina resenting security slowdowns because her performance reviews ignore them (nowhere else; s01b_narrator_promotion covers promotion generally)",
         "Staging: Kristina's fists clenching before 'Fair. You're right.'"
-      ]
-    },
-    {
-      "title": "Trim SJ's security answer",
-      "kind": "trim",
-      "cues": [
-        "s06_l21"
       ],
-      "edits": [
-        {
-          "cue": "s06_l21",
-          "text": "Four people got dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immedietly."
-        }
-      ],
-      "why": "The credit card email tag overstates the bug, which leaks names and emails, not payment data, and the point lands already on 'fix it immedietly'.",
-      "keeps": "SJ's security argument and the reason Kristina backs down.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s06_l21": "Four people got dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immedietly, unless you want to write the email to all the users that we've been hacked and got everyone's credit cart info stolen?"
-      },
-      "number": 39,
-      "riskWhy": "The credit card tag overstates a bug that leaks names and emails, and the argument already lands on 'fix it immedietly'. Nothing later refers to card data.",
-      "loses": [
-        "Character: SJ escalating into hyperbole to win the point",
-        "Nothing else substantive: the security argument and Kristina backing down stay"
-      ]
-    },
-    {
-      "title": "Trim Kristina's leadership push",
-      "kind": "trim",
-      "cues": [
-        "s06_l20",
-        "s06_l18"
-      ],
-      "edits": [
-        {
-          "cue": "s06_l18",
-          "text": "Right, yeah, that's what you said yesterday, though. Is there any movement? Any updates I can add to the ticket?"
-        },
-        {
-          "cue": "s06_l20",
-          "text": "…Okay. I'm just trying to make the tradeoff visible to leadership. We've only had four reports in three months... I need some sense of whether this is another day or another week."
-        }
-      ],
-      "why": "The roadmap comparison and the 'open a while' line repeat the pressure she is already putting on. 'Another day or another week' carries it.",
-      "keeps": "Kristina's managerial brightness, the four-reports figure SJ answers, and the 'weeks on the board' fact that s07_l6 relies on.",
-      "risk": "low",
-      "reliesOn": [
-        "s07_l6"
-      ],
-      "against": {
-        "s06_l20": "…Okay. I'm just trying to make the tradeoff visible to leadership. We've only had four reports in three months; we've got loads of other tickets affecting hundreds of users and we're starting to find behind on our roadmap compared to other teams... I need some sense of whether this is another day or another week.",
-        "s06_l18": "Right, yeah, that's what you said yesterday, though. It's been open a while now. Is there any movement? Any updates I can add to the ticket?"
-      },
-      "number": 40,
-      "riskWhy": "Kristina's competition with other teams is repeated in s01b_l49, s07_l3 and s11c_l20, and 'another day or another week' carries the pressure. s07_l6's 'weeks on the board' still stands without 'open a while'.",
-      "loses": [
-        "Character: Kristina comparing the team with other teams' roadmaps (also in s01b_l49, s07_l3, s11c_l20)",
-        "Setup: 'It's been open a while now', the in-scene support for s07_l6 'sitting on the board for weeks'",
-        "Colour: 'loads of other tickets affecting hundreds of users', her support-volume framing that SJ rejects in s06_l21"
-      ]
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Trim SJ's discovery and praise lines",
@@ -281,32 +181,6 @@
         "Plot: SJ saying out loud that the two signups get the same session, restating 'session zero'",
         "Character: SJ's 'How did you even....', his moment of being impressed",
         "Nothing else substantive: the payoff for the token theory goes, which only matters if #37 is not taken"
-      ]
-    },
-    {
-      "title": "Trim the mutex speech",
-      "kind": "trim",
-      "cues": [
-        "s06_l35"
-      ],
-      "edits": [
-        {
-          "cue": "s06_l35",
-          "text": "Claude will tell me to add a mutex. That's what comes back every time you ask about two things happening at once. No thanks."
-        }
-      ],
-      "why": "The deadlock follow-through is SJ explaining his reasoning at length; the dismissal reads in the first two sentences.",
-      "keeps": "SJ's tech pedantry and his refusal of Claude, which Brendan's secret depends on.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s06_l35": "Claude will tell me to add a mutex. That's what comes back every time you ask about two things happening at once. But where does the lock go? What happens to everything waiting behind it? Now I've got a deadlock in production as well as the original bug. No thanks."
-      },
-      "number": 42,
-      "riskWhy": "The refusal and 'No thanks' survive, so Brendan still has a reason to hide Claude's work. Only SJ's reasoning chain goes, and nothing later refers to the deadlock.",
-      "loses": [
-        "Character: SJ reasoning through lock placement and deadlocks, which shows he really is an expert",
-        "Colour: the irony of a deadlock worry when the real fix turns out to be one line"
       ]
     },
     {
@@ -365,7 +239,9 @@
       "riskWhy": "This drops a callback joke to Kristina's time-limit reminder in s01_l2, a unique laugh inside the talked-over-Kristina standup. The guardrail still holds because Marcus overrides her in s06_l7 to s06_l9.",
       "loses": [
         "Joke: Kristina's 'Remember we agreed to time limits Marcus...', paying off s01_l2 (nowhere else)"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "number": 159,
@@ -413,9 +289,425 @@
         36
       ],
       "dismissed": true
+    },
+    {
+      "title": "Cut Brendan's 'trickier to debug' line",
+      "kind": "cut",
+      "cues": [
+        "s06_l41"
+      ],
+      "edits": [],
+      "why": "After the narrator says Claude has finished (s06_l42), Brendan's sympathy for SJ's no-repro problem only restates s06_l37 before he moves on with his own '…Okay' in s06_l43.",
+      "keeps": "SJ's refusal (s06_l35 to s06_l37), the narrator's 'Claude finished' (s06_l42), and Brendan's dumb-question opening (s06_l43).",
+      "risk": "low",
+      "riskWhy": "Nothing later refers to it, and s06_l43 opens with its own '…Okay' so the turn still reads.",
+      "loses": [
+        "Character: Brendan quietly conceding SJ's point before he steers him"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l41": "Okay, yeah I can see why that might make it trickier to debug"
+      },
+      "number": 220,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim SJ's security answer",
+      "kind": "trim",
+      "cues": [
+        "s06_l21"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l21",
+          "text": "Four people dropped into somebody else's account. That's not a support-volume question. That's a security issue. We stop counting tickets and fix it immediately."
+        }
+      ],
+      "why": "The once/four-times escalation restates 'That's a security issue', and the line lands on 'fix it immediately' either way.",
+      "keeps": "SJ's security stance and the argument Kristina gives way to (s06_l22).",
+      "risk": "low",
+      "riskWhy": "The point and its sharpness survive; only the rhetorical build goes.",
+      "loses": [
+        "Character: SJ's lawyerly 'once is an incident, four times' escalation"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l21": "Four people dropped into somebody else's account. That's not a support-volume question. That's a security issue. If it happens once, it's a security incident; if it happens four times, we stop counting tickets and fix it immediately."
+      },
+      "number": 222,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim Kristina's leadership line",
+      "kind": "trim",
+      "cues": [
+        "s06_l20"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l20",
+          "text": "…Okay. We've only had four reports in three months... I need some sense of whether this is another day or another week."
+        }
+      ],
+      "why": "'Make the tradeoff visible to leadership' is managerial framing the narrator line s06_narrator_security and s01b_narrator_promotion already give her.",
+      "keeps": "The four-reports figure SJ answers in s06_l21, and 'another day or another week'.",
+      "risk": "low",
+      "riskWhy": "Her career motive is carried by s01b_narrator_promotion and, if kept, s06_narrator_security.",
+      "loses": [
+        "Character: Kristina's 'make the tradeoff visible to leadership' phrasing"
+      ],
+      "reliesOn": [
+        "s01b_narrator_promotion"
+      ],
+      "against": {
+        "s06_l20": "…Okay. I'm just trying to make the tradeoff visible to leadership. We've only had four reports in three months... I need some sense of whether this is another day or another week."
+      },
+      "number": 223,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim SJ's list of what he's checked",
+      "kind": "trim",
+      "cues": [
+        "s06_l32"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l32",
+          "text": "I've checked the RNG, the signing and ORM code. It's all fine. The place I expected to find it is clean."
+        }
+      ],
+      "why": "'That's what's killing me' and one item of the list repeat the frustration the line already shows.",
+      "keeps": "SJ's expertise and 'The place I expected to find it is clean', which 'the one place I wasn't looking' (s06_l49) pays off.",
+      "risk": "low",
+      "riskWhy": "Only colour goes.",
+      "loses": [
+        "Colour: 'the entropy source'",
+        "Character: 'That's what's killing me'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l32": "I've checked the RNG, the entropy source, the signing and ORM code. It's all fine. That's what's killing me. The place I expected to find it is clean."
+      },
+      "number": 224,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim Brendan's scroll-up question",
+      "kind": "trim",
+      "cues": [
+        "s06_l43"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l43",
+          "text": "…Okay, this is probably nothing. But can you scroll up? That getOrCreateSession, what's it keyed on?"
+        }
+      ],
+      "why": "'To where signup actually calls the session thing' is directions the actor's pointing and SJ's scrolling (s06_l44 direction) already give.",
+      "keeps": "The dumb-question voice ('this is probably nothing') and the key question about getOrCreateSession.",
+      "risk": "low",
+      "riskWhy": "The hunch still lands on the exact call Claude named in s06_l42.",
+      "loses": [
+        "Character: Brendan deliberately sounding vague ('the session thing') to hide that he knows exactly where to look"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l43": "…Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. That getOrCreateSession, what's it keyed on?"
+      },
+      "number": 225,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut SJ's restatement of the bug",
+      "kind": "cut",
+      "cues": [
+        "s06_l30",
+        "s06_l31"
+      ],
+      "edits": [],
+      "why": "The audience already heard the bug at standup: 'Four people dropped into somebody else's account' (s06_l21). s06_l30 says it again and s06_l31 reacts to it.",
+      "keeps": "The narrator's 'After standup, Brendan calls SJ to look at the signup bug' (s06_l29) leads straight into SJ's 'I've checked the RNG' (s06_l32).",
+      "risk": "medium",
+      "riskWhy": "This is the first beat of the 'version of him people like' SJ and Brendan's genuine interest, so the pairing warms up a little more abruptly.",
+      "loses": [
+        "Character: SJ in his element briefing Brendan",
+        "Character: Brendan's 'Okay, that's kind of horrifying'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l30": "So the long story short is somehow users are being logged into the wrong accounts",
+        "s06_l31": "Okay, that's kind of horrifying."
+      },
+      "number": 226
+    },
+    {
+      "title": "Trim the narration where Brendan hides the fix",
+      "kind": "trim",
+      "cues": [
+        "s06_l51"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l51",
+          "text": "SJ starts writing the fix, delighted. Brendan switches back to the main branch without telling SJ how he spotted the bug so quickly."
+        }
+      ],
+      "why": "The middle sentence restates the repro and fix from s06_l42, and it leaves 'He' ambiguous. Naming Brendan fixes that.",
+      "keeps": "SJ's delight and Brendan switching off Claude's branch without telling SJ, the deception the rest of their story leans on.",
+      "risk": "medium",
+      "riskWhy": "'Switches back to the main branch' implies Claude's branch only if the audience remembers s06_l42, which is about a minute earlier.",
+      "loses": [
+        "Staging: Claude's reproduction and patch opening on a new branch, stated outright"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l51": "SJ starts writing the fix, delighted. Claude's reproduction and the finished patch open on a new branch. He switches back to the main branch without telling SJ how he spotted the bug so quickly."
+      },
+      "number": 227
+    },
+    {
+      "title": "Trim Brendan's commit question",
+      "kind": "trim",
+      "cues": [
+        "s06_l45"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l45",
+          "text": "Right, but that call's before the commit, isn't it? So for that one moment… what's the id? Is it the real one yet?"
+        }
+      ],
+      "why": "'The database row hasn't actually landed yet' restates 'before the commit', and SJ spells it out himself in s06_l47.",
+      "keeps": "Brendan leaving the door open and SJ walking through it in s06_l47 ('The ID's zero until the transaction commits').",
+      "risk": "medium",
+      "riskWhy": "The removed sentence is the plain-English gloss for non-technical audience members, though s06_l47 repeats the idea.",
+      "loses": [
+        "Clarity: the plain-English gloss of 'before the commit'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l45": "Right, but that call's before the commit, isn't it? The database row hasn't actually landed yet. So for that one moment… what's the id? Is it the real one yet?"
+      },
+      "number": 228,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim Marcus's loom lecture",
+      "kind": "trim",
+      "cues": [
+        "s06_l9"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l9",
+          "text": "No Kristina, because this has all happened before. In the 1700's they invented these power looms driven by steam that could make textiles way faster than the workers. The workers used to work from home and were well compensated but were forced to work in sweat shops -"
+        }
+      ],
+      "why": "'Unsafe to operate' and 'of the time' are detail inside a speech SJ cuts off anyway.",
+      "keeps": "Marcus's labor-history speech going over Kristina, the steam looms (paid off later by Brendan's steam powered loom), and SJ's interruption (s06_l10).",
+      "risk": "medium",
+      "riskWhy": "This is inside the protected talked-over-Kristina standup, though only detail goes and the speech still runs on.",
+      "loses": [
+        "Colour: the looms being unsafe to operate"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l9": "No Kristina, because this has all happened before. In the 1700's they invented these power looms driven by steam that were unsafe to operate but could make textiles way faster than the workers of the time. The workers used to work from home and were well compensated but were forced to work in sweat shops -"
+      },
+      "number": 229,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim Brendan's offer to help",
+      "kind": "trim",
+      "cues": [
+        "s06_l23"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l23",
+          "text": "Um... SJ... I could jump on it with you if you want? Happy to be a second pair of eyes."
+        }
+      ],
+      "why": "The offer and its shyness are in the first sentence.",
+      "keeps": "Brendan's hesitant offer and SJ accepting it (s06_l26).",
+      "risk": "medium",
+      "riskWhy": "'I've had my head in the auth stuff all week' is Brendan's quiet cover story, which makes his later hunch (s06_l43) plausible to SJ.",
+      "loses": [
+        "Setup: Brendan's auth-work alibi for spotting the bug",
+        "Character: Brendan's eagerness to explain himself"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l23": "Um... SJ... I could jump on it with you if you want? I've had my head in the auth stuff all week anyway, happy to be a second pair of eyes."
+      },
+      "number": 230,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut Kristina's second push and SJ's burndown reply",
+      "kind": "cut",
+      "cues": [
+        "s06_l18",
+        "s06_l19"
+      ],
+      "edits": [],
+      "why": "SJ's 'Still on it. No blockers.' (s06_l17) already stonewalls her, and her '…Okay.' in s06_l20 reads as taking that non-answer. The 'last week' push and SJ's debugging lecture repeat the stand-off before s06_l20 and s06_l21 escalate it.",
+      "keeps": "SJ refusing to give a status (s06_l17), Kristina's 'another day or another week' (s06_l20), and the security answer (s06_l21).",
+      "risk": "medium",
+      "riskWhy": "The stand-off is the scene's second argument and this halves it. SJ's 'It's not a burndown chart sort of thing' is a good line of his tech vanity aimed at Kristina's process.",
+      "loses": [
+        "Character: SJ lecturing Kristina that debugging isn't linear ('It's not a burndown chart sort of thing')",
+        "Plot: the ticket has been stuck since last week (s01's standup still shows SJ starting on it)"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l18": "Right, yeah, that's what you said last week, though. Is there any movement? Any updates to add to the ticket?",
+        "s06_l19": "It's a race condition, Kristina. Debugging isn't a linear process. You don't just \"make progress\" on one of these, you eventually find the problem, and then it's done. It's not a burndown chart sort of thing. I'm working on it."
+      },
+      "number": 231,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim SJ's Luddite reply",
+      "kind": "trim",
+      "cues": [
+        "s06_l12"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l12",
+          "text": "They got cheaper cloth into more people's hands and the Luddites wanted to stop it. Seems like a bad side to pick. Anyway, can we move on?"
+        }
+      ],
+      "why": "SJ's swerve into AI bashing is said again, at more length, in the pairing (s06_l35, s06_l37).",
+      "keeps": "SJ's 'losing side of history' put-down (s06_l10), the Luddite argument, and 'can we move on?' that Kristina's 'OKAY!' (s06_l16) jumps on.",
+      "risk": "medium",
+      "riskWhy": "This sits in the protected standup comedy. It loses the joke that SJ is against Marcus and against AI at the same time.",
+      "loses": [
+        "Joke: SJ siding against the Luddites and then calling AI crap in the same breath",
+        "Character: 'It's giving us worse code and more of it'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l12": "They got cheaper cloth into more people's hands and the Luddites wanted to stop it. Seems like a bad side to pick. This AI crap isn't doing that. It's giving us worse code and more of it. Anyway, I'm trying to some code over here. Can we move on?"
+      },
+      "number": 232,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Tighten the opening narration",
+      "kind": "trim",
+      "cues": [
+        "s06_l1"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l1",
+          "text": "SJ is deep in the signup race condition. On his second monitor, morning standup has already started."
+        }
+      ],
+      "why": "\"is working at his desk\" describes what the audience can see; \"caught up in\" becomes \"deep in\".",
+      "keeps": "SJ, the signup race condition, the second monitor, that it is the morning standup and that it is already under way.",
+      "risk": "low",
+      "riskWhy": "Pure wording.",
+      "loses": [
+        "Wording: \"working at his desk\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l1": "SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running."
+      },
+      "number": 540
+    },
+    {
+      "title": "Tighten the fists-clench narration",
+      "kind": "trim",
+      "cues": [
+        "s06_narrator_security"
+      ],
+      "edits": [
+        {
+          "cue": "s06_narrator_security",
+          "text": "Kristina's fists clench. She hates slowing down for security. Her performance reviews never reflect how many security tickets she did or didn't close."
+        }
+      ],
+      "why": "\"absolutely hates hearing the team needs to slow down for security reasons\" is padded; the sense fits in five words.",
+      "keeps": "The clenched fists, her dislike of slowing down for security, and the performance-review sting with \"did or didn't close\" intact.",
+      "risk": "low",
+      "riskWhy": "The laugh line is unchanged; only the middle sentence is shortened.",
+      "loses": [
+        "Wording: \"absolutely\", \"hearing the team needs to\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_narrator_security": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security reasons. Her performance reviews never reflect how many security tickets she did or didn't close."
+      },
+      "number": 541
+    },
+    {
+      "title": "Tighten the Claude-finished narration",
+      "kind": "trim",
+      "cues": [
+        "s06_l42"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l42",
+          "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, reproduced the bug and drafted a one-line fix."
+        }
+      ],
+      "why": "Three sentences become two; \"working\", \"the ... call\" and \"It's already\" are padding. Replaces stale #221.",
+      "keeps": "Claude finished a while ago, root cause in getOrCreateSession, the bug reproduced, a one-line fix drafted. Every technical fact stays.",
+      "risk": "low",
+      "riskWhy": "Same facts, same order.",
+      "loses": [
+        "Wording: \"working\", \"call\", \"already\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l42": "Claude finished working a while ago. It found the root cause in the getOrCreateSession call. It's already reproduced the bug, and drafted a one-line fix."
+      },
+      "number": 542
+    },
+    {
+      "title": "Tighten the closing narration",
+      "kind": "trim",
+      "cues": [
+        "s06_l51"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l51",
+          "text": "Delighted, SJ writes the fix. Brendan switches back to main, not saying how he found it so fast."
+        }
+      ],
+      "why": "\"starts writing\" and \"the main branch\" are padded; \"without telling SJ how he spotted the bug so quickly\" restates SJ, who is already the subject.",
+      "keeps": "SJ delighted and writing the fix, Brendan switching back to main, and that he hides how he found it so fast.",
+      "risk": "low",
+      "riskWhy": "\"main\" alone is clear to this audience as the main branch.",
+      "loses": [
+        "Wording: \"starts writing\", \"branch\", \"telling SJ\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l51": "SJ starts writing the fix, delighted. Brendan switches back to the main branch without telling SJ how he spotted the bug so quickly."
+      },
+      "number": 543
     }
   ],
-  "writtenOn": "2026-10-05",
+  "writtenOn": "2026-10-09",
   "ifDeleted": {
     "verdict": "not cuttable",
     "summary": "Good Instinct is the hinge of the SJ and Brendan story. On stage, SJ dismisses Claude, Brendan quietly lets Claude find the bug, feeds SJ the answer, and SJ praises his instinct; Brendan then hides it. It also holds one of the three talking-over-Kristina standups. s07 can report the facts afterwards, but the audience would only hear about the deception secondhand and never see SJ's delight, which is what every later Brendan and SJ beat leans on.",

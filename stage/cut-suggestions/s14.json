@@ -1,36 +1,32 @@
 {
   "scene": "s14",
-  "approach": "The scene's time goes to Dana's HR boilerplate (benefits, the pack, sign-off), to narrator lines that describe SJ's inner state the actor can already play, and to the calendar-snooping thread that s19 makes redundant by revealing Brendan's layoff itself. The cut keeps the bug-to-firing turn, the scripted 'not a reflection of your value', 'Is it tickets?', 'Four years', and the asset-register beat that sets up the Mac Studio, and lets s19 carry severance and the scored criteria.",
+  "approach": "The narration in this scene is already fairly lean, so this pass trims about a sixth of the narrator's time rather than a third. It merges the two adjacent August lines, cuts restatements ('He's in disbelief'), and trims filler like 'The subject line is' and 'A field marked'. Every fact stays, as do the jokes: 'SJ has no idea what that means', 'really? Brendan?' and the 'Eligible for rehire' sting. Character dialogue is untouched.",
   "suggestions": [
     {
-      "title": "Cut the calendar snooping and 'Who else?'",
+      "title": "Cut narration over the wah-wah call",
       "kind": "cut",
       "cues": [
-        "s14_l37",
-        "s14_l39",
-        "s14_l50",
-        "s14_l55"
-      ],
-      "why": "Two long narrator passages describe SJ quietly checking calendars, which is hard to read from the back row. The audience learns Brendan was let go too in s19 ('Mine was three weeks'), so the snooping is a preview of a reveal the next scene does better. Without the calendar, 'Who else?' has nothing to feed.",
-      "keeps": "s14_l40 still sends SJ looking for the reason, and s14_l56 'Is it tickets?' follows straight on, keeping the ticket-count setup for s19. Brendan's layoff lands in s19.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14_l37": "Who else?",
-        "s14_l39": "I can't share that with you at this time",
-        "s14_l50": "SJ's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call.",
-        "s14_l55": "He sees Marcus has no meeting with Dana today. He sees Brendan does... he tries connecting dots between what Brendan and himself have in common that might cause them to be let go..."
-      },
-      "number": 73,
-      "riskWhy": "Loses SJ quietly using his last minutes of access to snoop calendars, and the audience's first hint that Brendan is also being let go. Neither is load-bearing: s14a_brendan_weeks reveals Brendan's layoff and s14a_l14 (Marcus: 'why it was both of you') asks the question that s19_l20 answers, but two long narrator passages of unique character go.",
-      "loses": [
-        "Plot: SJ sees Brendan also has a meeting with Dana, the first hint Brendan is fired (paid off in s14a_brendan_weeks, so carried in s19)",
-        "Character: SJ using his remaining access in the background to work out who else is going, the engineer's instinct to investigate",
-        "Character: SJ trying to connect what he and Brendan have in common, the question s14a_l14 and s19_l20 later answer",
-        "Joke: 'Who else?' and Dana's prepped, instant refusal (s14_l38, s14_l39)"
+        "s14_l23",
+        "s14_l28",
+        "s14_l30"
       ],
       "edits": [],
-      "directionsKept": 1
+      "why": "The muffled trumpet and SJ sitting still (s14_liam_muffled_call) already show he has stopped listening; s14_l23 says it aloud. s14_l28 and s14_l30 narrate thoughts the actor plays in the pauses before '…I don't know.' and 'Is it everyone?'.",
+      "keeps": "Dana's 'I know that's a lot to take in' (s14_l22), the wah-wah call, 'SJ? Are you still with me?', 'Can you go back.' and SJ's questions all stay. s14_l50 still says his brain is working again.",
+      "risk": "low",
+      "riskWhy": "Narration restating what the stillness and the trumpet show from the back row. The staged moment survives intact.",
+      "loses": [
+        "Nothing substantive: the narrator's description of SJ's inner state, which the actor plays"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l23": "She keeps talking but SJ isn't really processing it anymore. SJ does not move. He does not look away from the screen and he does not look at it either.",
+        "s14_l28": "his brain slowly starts to work again",
+        "s14_l30": "He looks for something he can be sure about."
+      },
+      "number": 260,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut healthcare and the list of what's in the pack",
@@ -57,104 +53,92 @@
       ]
     },
     {
-      "title": "Cut narration over the wah-wah call",
-      "kind": "cut",
+      "title": "Trim Dana's line about the pack",
+      "kind": "trim",
       "cues": [
-        "s14_l22",
-        "s14_l23",
-        "s14_l28",
-        "s14_l30"
+        "s14_l22"
       ],
-      "why": "The muffled trumpet and SJ sitting still already show he has stopped listening; s14_l23 says the same thing aloud. s14_l28 and s14_l30 narrate thoughts the actor plays in the pauses around 'I don't know' and 'Is it everyone?'. s14_l22 is the lead-in to the pack, which s14_l24 picks up anyway ('all of that's in the packet').",
-      "keeps": "The stunned silence, the wah-wah call, 'Can you go back' / 'Which part?' / 'I don't know' all stay.",
+      "edits": [
+        {
+          "cue": "s14_l22",
+          "text": "I know that's a lot to take in. There's a pack that covers all of it."
+        }
+      ],
+      "why": "Where the pack gets sent is admin. s14_l77 already tells SJ to use his personal email.",
+      "keeps": "The pack itself, which s14_l27 ('review the packet') points back to.",
       "risk": "low",
+      "riskWhy": "Pure logistics; nothing later depends on the pack going to a personal address.",
+      "loses": [
+        "Colour: the pack is emailed to his personal address"
+      ],
       "reliesOn": [],
       "against": {
-        "s14_l22": "I know that's a lot to take in. There's a pack that covers all of it, and we'll go through the main points now.",
-        "s14_l23": "She keeps talking but SJ isn't really processing it anymore. SJ does not move. He does not look away from the screen and he does not look at it either.",
-        "s14_l28": "his brain slowly starts to work again",
-        "s14_l30": "He looks for something he can be sure about."
+        "s14_l22": "I know that's a lot to take in. There's a pack that covers all of it, that will be emailed to your personal email address after the call."
       },
-      "number": 75,
-      "riskWhy": "Narration restating what the stillness and the wah-wah trumpet already show, plus Dana's lead-in to a pack that s14_l24 names anyway. The staged moment survives intact.",
-      "loses": [
-        "Nothing substantive: s14_l23, s14_l28 and s14_l30 narrate what the actor plays in the pauses, and s14_l22's 'pack' is picked up by s14_l24"
-      ]
+      "number": 261,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
-      "title": "Cut the Q4 staffing aside",
-      "kind": "cut",
+      "title": "Trim Dana's access reminder",
+      "kind": "trim",
+      "cues": [
+        "s14_l77"
+      ],
+      "edits": [
+        {
+          "cue": "s14_l77",
+          "text": "As a reminder all your access will be terminated at the end of this call."
+        }
+      ],
+      "why": "'Email me from your personal email' repeats the instruction in s14_l22, s14_l27 and s14_l34 to email her with questions.",
+      "keeps": "Loss of access, ironic against his machine staying authenticated later, and 'And thank you for your years with the company.'",
+      "risk": "low",
+      "riskWhy": "Admin padding; the access line that later scenes play against is kept.",
+      "loses": [
+        "Colour: contact Dana from his personal email"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l77": "As a reminder all your access will be terminated at the end of this call, so if you need anything you can email me from your personal email."
+      },
+      "number": 262,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Trim the Q4 staffing aside",
+      "kind": "trim",
       "cues": [
         "s14_l17",
-        "s14_l18",
-        "s14_l19"
+        "s14_l18"
       ],
-      "why": "SJ assuming the call is about something he has opinions on is a nice tic, but it delays the scene's main event. 'Is Kristina joining?' / 'She is not.' already signals something is wrong, and Dana can go straight into the script.",
-      "keeps": "Dana's prepared statement follows 'She is not.' directly, which plays as colder.",
-      "risk": "medium",
+      "edits": [
+        {
+          "cue": "s14_l17",
+          "text": "Okay. Is this about the Q4 staffing thing? Because I've got opinions."
+        },
+        {
+          "cue": "s14_l18",
+          "text": "It isn't. I'm going to read you something."
+        }
+      ],
+      "why": "SJ's tic lands on 'I've got opinions'; the backpedal about email adds nothing. Dana's 'I'll give you a chance to answer questions about it. Do you understand?' is procedural, and '…Sure.' still answers 'I'm going to read you something.'",
+      "keeps": "SJ assuming the call is about something he has opinions on, and Dana announcing a prepared statement, which makes s14_l20 sound read.",
+      "risk": "low",
+      "riskWhy": "Both quirks survive; only the tails go. '…Sure.' reads slightly differently without 'Do you understand?' but still works as reluctant consent.",
+      "loses": [
+        "Colour: SJ offering to send his opinions by email",
+        "Colour: Dana's 'Do you understand?'"
+      ],
       "reliesOn": [],
       "against": {
         "s14_l17": "Okay. Is this about the Q4 staffing thing? Because I've got opinions, but I can send them in an email, I don't need to...",
-        "s14_l18": "It isn't. I'm going to read you something, and then we'll talk properly, but you can stop me anywhere. Is that alright?",
-        "s14_l19": "…Sure."
+        "s14_l18": "It isn't. I'm going to read you something, and then I'll give you a chance to answer questions about it. Do you understand?"
       },
-      "number": 76,
-      "riskWhy": "Cuts SJ's last opinionated tic before the news lands, which makes the blow funnier and sadder. It also cuts Dana's 'I'm going to read you something', which frames her lines as a script, the joke that the 'again' in s14_l80 and Brendan's 'same paragraph three times, word for word' (s14a_brendan_asked) build on; s14_l20 still sounds read, so the callback survives weakly.",
-      "loses": [
-        "Character: SJ assuming the call is about Q4 staffing and that he has opinions on it (nowhere else)",
-        "Setup: Dana announcing she will read a prepared statement, which s14_l80's 'again' and s14a_brendan_asked play off"
-      ]
-    },
-    {
-      "title": "Cut the billing-bug opening",
-      "kind": "cut",
-      "cues": [
-        "s14_l5",
-        "s14_l7",
-        "s14_l11"
-      ],
-      "why": "The bug is not referenced again. If taken, the first sentence of s14_l4 should go too (only if the s14_l4 trim below is not taken), and the call can connect on Dana's hello.",
-      "keeps": "Nothing downstream depends on the bug. Loses the contrast of SJ at his most useful just before he is fired, and the 'nobody in the room' image, so this is a colour call for the author.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14_l5": "Oh, you're joking.",
-        "s14_l7": "That's been in there since... two years. That's been in there two years.",
-        "s14_l11": "Hi... sorry. Hi. Sorry, I'm in the middle of something. I've just found a..."
-      },
-      "number": 77,
-      "riskWhy": "The bug is never paid off, but this is SJ at his happiest and most useful seconds before he is fired, the scene's main irony. It conflicts with two other suggestions: trim 80 keeps 'SJ has just found a bug' in s14_l4, which would then dangle, and cut 84's kept line 'I can see you're very busy' answers s14_l11, which this cut deletes, so 84 must be taken with it.",
-      "loses": [
-        "Character: SJ delighted by a two-year-old billing bug, echoing his excitement over the bug in s07_l20",
-        "Character: SJ swallowing 'I've just found a...' because people don't want the rest of the sentence"
-      ],
-      "edits": [],
-      "directionsKept": 3
-    },
-    {
-      "title": "Cut 'twenty-five years' plea",
-      "kind": "cut",
-      "cues": [
-        "s14_l51",
-        "s14_l52",
-        "s14_l53"
-      ],
-      "why": "SJ's appeal to experience is a softer version of s14_l58 'Four years, and nobody has said one word to me about my work', which is more specific and lands harder.",
-      "keeps": "SJ's long career is still established in s01c ('twenty years') and his 2000 layoff in s19. 'Is it tickets?' and 'Four years' carry his search for a reason.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14_l51": "I've been doing different flavors of this job for twenty-five years.",
-        "s14_l52": "…I hear you.",
-        "s14_l53": "No, I mean, I just.... I know what this engineering team needs to succeed and without..."
-      },
-      "number": 78,
-      "riskWhy": "Cuts SJ's plea from experience and the silence Dana lets sit, a distinct character beat even if s14_l58 is sharper. It also removes a continuity snag: 'twenty-five years' here against 'twenty years' in s01c_l13.",
-      "loses": [
-        "Character: SJ appealing to twenty-five years in the job and claiming he knows what the team needs"
-      ],
-      "edits": [],
-      "directionsKept": 1
+      "number": 263,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut the severance 'Two months' exchange",
@@ -186,119 +170,31 @@
       ]
     },
     {
-      "title": "Trim the opening narration",
+      "title": "Trim the access clause from Dana's statement",
       "kind": "trim",
       "cues": [
-        "s14_l1",
-        "s14_l4"
+        "s14_l20"
       ],
       "edits": [
         {
-          "cue": "s14_l1",
-          "text": "August."
-        },
-        {
-          "cue": "s14_l4",
-          "text": "SJ has just found a bug that's been in the billing code for two years. His next meeting is a \"Catch up\" with Dana - a \"People Partner\" from HR. There's no agenda."
+          "cue": "s14_l20",
+          "text": "The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be today."
         }
       ],
-      "why": "The CEO's 'leaner, AI-first' email straight after already tells us leadership has announced cuts, and 'Is Kristina joining?' / 'She is not.' shows she wasn't consulted. 'SJ has no idea what that means' is a gag the quoted job title already makes.",
-      "keeps": "The date, the CEO email (echoing the board member's 'getting leaner' in s11c), the bug and the agenda-less meeting.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14_l1": "August. Leadership announces the company is getting leaner. Kristina isn't consulted.",
-        "s14_l4": "SJ has just found a bug that's been in the billing code for two years. His next meeting is a \"Catch up\" with Dana - a \"People Partner\" from HR. SJ has no idea what that means. There's no agenda."
-      },
-      "number": 80,
-      "riskWas": "low",
-      "riskWhy": "Raised from low: besides narration the CEO email repeats, it deletes 'Kristina isn't consulted', the only explicit statement that she had no say in the layoffs (s14_l16 'She is not.' only implies it), which matters for the irony in s19_l20 that her tool caused Brendan's firing. It also cuts the 'SJ has no idea what that means' gag.",
-      "loses": [
-        "Plot: Kristina isn't consulted on the layoffs (stated nowhere else, implied by s14_l16)",
-        "Joke: SJ has no idea what a 'People Partner' is"
-      ]
-    },
-    {
-      "title": "Cut the 'Eligible for rehire' sting",
-      "kind": "cut",
-      "cues": [
-        "s14_l81"
-      ],
-      "why": "A closing button that is never paid off. The scene can end on Dana's 'none of this is a reflection of your value' over SJ's silence.",
-      "keeps": "The scene still ends on the repeated HR line. Loses a dry final joke.",
-      "risk": "medium",
-      "reliesOn": [],
-      "against": {
-        "s14_l81": "After the call ends, Dana opens his case file. A field marked “Eligible for rehire” has already been set to No."
-      },
-      "number": 81,
-      "riskWhy": "A unique closing joke, not referenced elsewhere. It is also the only moment that shows the outcome was decided before the call, so the scene ends on Dana's reassurance rather than its contradiction.",
-      "loses": [
-        "Joke: 'Eligible for rehire' already set to No (nowhere else)",
-        "Plot: the decision was pre-made and permanent, undercutting Dana's 'not a reflection of your value' (nowhere else)"
-      ]
-    },
-    {
-      "title": "Tighten Dana's sign-off",
-      "kind": "trim",
-      "cues": [
-        "s14_l77",
-        "s14_l80"
-      ],
-      "edits": [
-        {
-          "cue": "s14_l77",
-          "text": "One more thing, and then I'll let you go. Your access will be terminated at the end of this call"
-        },
-        {
-          "cue": "s14_l80",
-          "text": "And, again, none of this is a reflection of your value or your contribution."
-        }
-      ],
-      "why": "Personal email and outplacement are more HR admin. The 'again' repeat of her scripted line is the joke and survives.",
-      "keeps": "Loss of access (which matters for s20, where his AWS access was never revoked) and the repeated reassurance.",
+      "why": "Loss of access is said three times: here, in s14_l50 ('He knows he'll lose access at the end of the call') and in s14_l77 ('all your access will be terminated at the end of this call').",
+      "keeps": "The flat mandated wording, 'This decision is final', 'not a reflection of your value', and the last day being today. Access is still established by s14_l50 and s14_l77.",
       "risk": "low",
+      "riskWhy": "The statement keeps its printed feel. If trim 262 is also taken, s14_l77 still carries the access line.",
+      "loses": [
+        "Nothing substantive: the first of three statements that his access ends with the call"
+      ],
       "reliesOn": [],
       "against": {
-        "s14_l77": "One more thing, and then I'll let you go. Your access will be terminated at the end of this call, so if you need anything you can email me from your personal email",
-        "s14_l80": "There's information in the pack on the outplacement support. And, again, none of this is a reflection of your value or your contribution."
+        "s14_l20": "The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be today, and you will lose access to most systems at the end of this call."
       },
-      "number": 82,
-      "riskWhy": "Personal email and outplacement are admin padding, and the loss of access that s20_l14 and s23_l15 depend on stays. The repeated 'again' line, the actual joke, is kept.",
-      "loses": [
-        "Colour: contact via personal email and outplacement support"
-      ]
-    },
-    {
-      "title": "Trim Dana's criteria answers",
-      "kind": "trim",
-      "cues": [
-        "s14_l34",
-        "s14_l36"
-      ],
-      "edits": [
-        {
-          "cue": "s14_l34",
-          "text": "The selection was scored against a consistent set of criteria, applied across the whole org."
-        },
-        {
-          "cue": "s14_l36",
-          "text": "That's not something I'm able to share, I'm afraid."
-        }
-      ],
-      "why": "The 'designed that way on purpose' explanation is what SJ repeats to Marcus in s19 ('so nobody is choosing anyone'), so it is better heard once, from SJ, defending it.",
-      "keeps": "Scored criteria and the refusal to share them, which s19's argument depends on.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s14_l34": "The selection was scored against a consistent set of criteria, applied across the whole org. It's designed that way on purpose, so it isn't any one person making a call about an individual.",
-        "s14_l36": "That's not something I'm able to share, I'm afraid. What I have is that the role's in scope, and the date."
-      },
-      "number": 83,
-      "riskWhy": "SJ repeats the 'nobody is choosing' reasoning to Marcus in s14a_l15, so this is said twice; the scored criteria and the refusal, which s14a_l16 needs, survive.",
-      "loses": [
-        "Nothing substantive: the 'designed on purpose' rationale is restated by SJ in s14a_l15"
-      ]
+      "number": 267,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut Dana's 'try to be quick' line",
@@ -317,7 +213,9 @@
       "riskWhy": "Filler between SJ's swallowed sentence and 'Is Kristina joining?'. Required if cut 77 is taken, since this line responds to s14_l11.",
       "loses": [
         "Joke: Dana's polite brush-off of SJ's busyness (minor)"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
       "title": "Cut Dana's first stonewall",
@@ -336,10 +234,191 @@
       "riskWhy": "Dana refuses twice in a row; s14_l61 keeps the refusal. With cut 73 also taken, her refusals drop to two (s14_l36, s14_l61), still enough for Brendan's 'same paragraph back' in s14a_brendan_asked to land.",
       "loses": [
         "Nothing substantive: s14_l61 makes the same refusal one line later"
-      ]
+      ],
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut Dana's first 'end the call'",
+      "kind": "cut",
+      "cues": [
+        "s14_l34"
+      ],
+      "edits": [],
+      "why": "Dana tries to wrap up three times (s14_l27 'email me if you have some questions', s14_l34, s14_l61 'I'm going to end the call now'). 'So somebody picked.' can go straight to 'Who else?', which keeps SJ pressing.",
+      "keeps": "Her deflection in s14_l27 and the attempt to end the call in s14_l61, which she then talks past with the returns label.",
+      "risk": "medium",
+      "riskWhy": "Thins Dana's running attempt to end a call that keeps going; two instances remain. 'So somebody picked.' loses its non-answer and gets 'Who else?' instead.",
+      "loses": [
+        "Joke: one of Dana's repeated attempts to end the call"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l34": "SJ I think it's best we end the call. You can email me if you have questions."
+      },
+      "number": 264,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Cut the billing-bug opening",
+      "kind": "cut",
+      "cues": [
+        "s14_l5",
+        "s14_l7",
+        "s14_l11"
+      ],
+      "why": "The bug is not referenced again. If taken, the first sentence of s14_l4 should go too (only if the s14_l4 trim below is not taken), and the call can connect on Dana's hello.",
+      "keeps": "Nothing downstream depends on the bug. Loses the contrast of SJ at his most useful just before he is fired, and the 'nobody in the room' image, so this is a colour call for the author.",
+      "risk": "medium",
+      "reliesOn": [],
+      "against": {
+        "s14_l5": "Oh, you're joking.",
+        "s14_l7": "That's been in there since... two years. That's been in there two years.",
+        "s14_l11": "Hi... sorry. Hi. Sorry, I'm in the middle of something. I've just found a..."
+      },
+      "number": 77,
+      "riskWhy": "The bug is never paid off, but this is SJ at his happiest and most useful seconds before he is fired, the scene's main irony. If taken, s14_l4's 'SJ has just found a bug' (kept by trim 265) dangles, and cut 84 must be taken with it, since 'I can see you're very busy' answers s14_l11.",
+      "loses": [
+        "Character: SJ delighted by a two-year-old billing bug, echoing his excitement over the bug in s07_l20",
+        "Character: SJ swallowing 'I've just found a...' because people don't want the rest of the sentence"
+      ],
+      "edits": [],
+      "directionsKept": 3,
+      "dismissed": true,
+      "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
+    },
+    {
+      "title": "Merge the August opening with the CEO email",
+      "kind": "cut + trim",
+      "cues": [
+        "s14_l1",
+        "cue_16e5c3ac1df044e687d413fcaf7bbb47"
+      ],
+      "edits": [
+        {
+          "cue": "s14_l1",
+          "text": "One August morning, the CEO emails the whole company: \"Building a leaner, AI-first company.\" Kristina, Kevin and none of the line managers were consulted. SJ archives it unopened."
+        }
+      ],
+      "why": "s14_l1 and cue_16e5c3ac1df044e687d413fcaf7bbb47 are directly adjacent narrator lines. 'Leadership announces the company is getting leaner' is the same announcement the CEO's email makes, and the subject line says 'leaner' again. 'The subject line is' is filler before a quoted subject, and 'without opening it' becomes 'unopened'.",
+      "keeps": "August, the same morning, the CEO's all-company email and its exact subject line, Kristina, Kevin and the line managers not being consulted (wording kept), and SJ archiving it unread.",
+      "risk": "low",
+      "riskWhy": "Two lines become one spoken line; every fact and the dry 'and none of the line managers' wording stay.",
+      "loses": [
+        "Wording: 'Leadership announces the company is getting leaner' as a separate sentence",
+        "Wording: 'The subject line is'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l1": "August. Leadership announces the company is getting leaner. Kristina, Kevin and none of the line managers are consulted.",
+        "cue_16e5c3ac1df044e687d413fcaf7bbb47": "That morning the CEO emails the whole company. The subject line is \"Building a leaner, AI-first company.\" SJ archives it without opening it."
+      },
+      "number": 440
+    },
+    {
+      "title": "Tighten the billing-bug and meeting setup",
+      "kind": "trim",
+      "cues": [
+        "s14_l4"
+      ],
+      "edits": [
+        {
+          "cue": "s14_l4",
+          "text": "SJ has just found a two-year-old bug in the billing code. His next meeting is a \"Catch up\" with Dana, a \"People Partner\" from HR. SJ has no idea what that means. No agenda."
+        }
+      ],
+      "why": "'a bug that's been in the billing code for two years' becomes 'a two-year-old bug in the billing code', and 'There's no agenda' becomes 'No agenda'.",
+      "keeps": "The bug, its two years, the billing code, the \"Catch up\" with Dana, her \"People Partner\" title, the joke 'SJ has no idea what that means', and the missing agenda.",
+      "risk": "low",
+      "riskWhy": "Same facts and joke, fewer words. SJ still says 'two years' himself in s14_l7.",
+      "loses": [
+        "Wording: 'that's been in the billing code for two years'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l4": "SJ has just found a bug that's been in the billing code for two years. His next meeting is a \"Catch up\" with Dana - a \"People Partner\" from HR. SJ has no idea what that means. There's no agenda."
+      },
+      "number": 441
+    },
+    {
+      "title": "Tighten the calendar narration",
+      "kind": "trim",
+      "cues": [
+        "s14_l50"
+      ],
+      "edits": [
+        {
+          "cue": "s14_l50",
+          "text": "SJ's brain is mostly working again. In the background he opens people's calendars, looking for anyone else meeting Dana today. He knows he'll lose access when the call ends."
+        }
+      ],
+      "why": "'starts opening up' and 'looking for others that have meetings with' are padded; 'at the end of the call' becomes 'when the call ends'.",
+      "keeps": "The callback to s14_l28 ('mostly working again'), the calendar snooping in the background, the search for others meeting Dana today, and that he knows his access goes with the call.",
+      "risk": "low",
+      "riskWhy": "Same beats in the same order, so the projected calendar business still syncs.",
+      "loses": [
+        "Wording: 'starts opening up'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l50": "SJ's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call."
+      },
+      "number": 443
+    },
+    {
+      "title": "Tighten the Brendan discovery",
+      "kind": "trim",
+      "cues": [
+        "s14_l55"
+      ],
+      "edits": [
+        {
+          "cue": "s14_l55",
+          "text": "He sees Marcus has no meeting with Dana today. Brendan does... really? Brendan? He tries to work out what he and Brendan share that might have got them both let go..."
+        }
+      ],
+      "why": "'He sees Brendan does' repeats 'He sees'. 'He's in disbelief' restates 'really? Brendan?' right before it. 'tries connecting dots between what Brendan and himself have in common that might cause them to be let go' is wordy.",
+      "keeps": "Marcus with no Dana meeting, Brendan with one, the 'really? Brendan?' beat with its ellipsis, and SJ hunting for what links him and Brendan to the layoff.",
+      "risk": "medium",
+      "riskWhy": "'He's in disbelief' may be meant as a deadpan button after 'really? Brendan?'. If the author hears it as a laugh, restore that sentence; the rest still saves time.",
+      "loses": [
+        "Wording: 'He's in disbelief'",
+        "Wording: 'connecting dots'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l55": "He sees Marcus has no meeting with Dana today. He sees Brendan does... really? Brendan? He's in disbelief. he tries connecting dots between what Brendan and himself have in common that might cause them to be let go..."
+      },
+      "number": 444
+    },
+    {
+      "title": "Tighten the rehire sting",
+      "kind": "trim",
+      "cues": [
+        "s14_l81"
+      ],
+      "edits": [
+        {
+          "cue": "s14_l81",
+          "text": "After the call, Dana opens his Workday file. \"Eligible for rehire\" is already set to No, based on the peer reviews Marcus and Brendan left him."
+        }
+      ],
+      "why": "'After the call ends' becomes 'After the call', 'A field marked' is filler before a quoted field name, and 'has already been set' becomes 'is already set'.",
+      "keeps": "Dana opening his Workday file, the 'Eligible for rehire' field already set to No, and that it rests on Marcus and Brendan's peer reviews. The sting still lands on the last clause.",
+      "risk": "low",
+      "riskWhy": "Same order of reveal, so the laugh survives.",
+      "loses": [
+        "Wording: 'A field marked'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l81": "After the call ends, Dana opens his workday file. A field marked “Eligible for rehire” has already been set to No based on the peer reviews Marcus and Brendan had left him."
+      },
+      "number": 445
     }
   ],
-  "writtenOn": "2026-10-05",
+  "writtenOn": "2026-10-09",
   "ifDeleted": {
     "verdict": "cuttable",
     "summary": "s14 is the only place the audience watches the layoff happen: SJ, mid-bug, is let go on a scripted HR call and goes looking for a reason he cannot find. Almost every fact it delivers (severance, scored criteria, returns label, the unregistered computer, Brendan also fired, Marcus spared) is restated in s19, so the plot survives with one narrator bridge and two word swaps. What is lost is the play's most direct emotional turn for SJ; the firing becomes reported, not seen.",
