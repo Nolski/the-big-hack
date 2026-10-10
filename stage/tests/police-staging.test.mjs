@@ -10,6 +10,12 @@ const show=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
 test('police speak at the doorway, never as laptop-call participants',()=>{
  for(const c of show.cues.filter(c=>c.scene==='s22'&&c.speaker.startsWith('officer'))){
   const html=renderVisual(c,'right');
+  if(c.pendingPerformanceVideo){
+   assert.equal(html,'');
+   assert.equal(c.audio,null);
+   assert.equal(c.returnToSet,true);
+   continue;
+  }
   assert.match(html,/data-place="apartment doorway"/);
   assert.match(html,/actorVideo/);
   assert.doesNotMatch(html,/laptopScene|ownerDesktop|speakerphoto/);

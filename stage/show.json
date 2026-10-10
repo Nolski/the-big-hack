@@ -946,7 +946,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-a34ff28086a04776",
+  "scriptRevision": "shared-fd69471a8dad4ad2",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -1099,10 +1099,6 @@
       "legacyCue": "s01_l2",
       "visualMapping": "matched",
       "sfx": [],
-      "performanceVideo": {
-        "src": "assets/filmed/kristina-first-line.mp4",
-        "speaker": "kristina"
-      },
       "groupEnd": 2,
       "notes": [
         {
@@ -1112,7 +1108,12 @@
           "text": "Morning, everyone. I'd like to remind you all of the time limits on updates we agreed to last time so we can get through standup more efficiently. SJ, are you there? You're on mute, and your camera is off.",
           "direction": "runs ~12s, SJ plays against it, Bright, brisk, a standup she has run a thousand times."
         }
-      ]
+      ],
+      "pendingPerformanceVideo": {
+        "src": "assets/filmed/kristina-first-line.mp4",
+        "speaker": "kristina"
+      },
+      "performanceVideoReview": "Existing filmed delivery has different words; regenerate after script review."
     },
     {
       "id": "s01_l3",
@@ -27389,16 +27390,17 @@
         "officer one",
         "officer two"
       ],
-      "performanceVideo": {
-        "speaker": "officer one",
-        "src": "assets/filmed/police/s22_l12.mp4",
-        "physical": true
-      },
       "advance": "manual",
       "audioDuration": 0,
       "direction": "live, off",
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
-      "audio": null
+      "audio": null,
+      "pendingPerformanceVideo": {
+        "speaker": "officer one",
+        "src": "assets/filmed/police/s22_l12.mp4",
+        "physical": true
+      },
+      "performanceVideoReview": "Existing filmed delivery has different words; regenerate after script review."
     },
     {
       "staging": {
