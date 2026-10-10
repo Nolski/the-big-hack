@@ -34468,7 +34468,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and a short resume. SJ is older, and nobody is waiting for him. It was his key, his model, his box. Eighteen months costs him less than it would cost Brendan.",
+      "text": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and a short resume. SJ is older, and nobody is waiting for him. It was his key, his VPN connection, his model, his box. Eighteen months costs him less than it would cost Brendan.",
       "direction": "",
       "sfx": [],
       "audio": null,
@@ -34479,7 +34479,7 @@
           "id": "cue_934a26b82ba547fda0628efcca6b2573",
           "kind": "voice",
           "name": "Narrator",
-          "text": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and a short resume. SJ is older, and nobody is waiting for him. It was his key, his model, his box. Eighteen months costs him less than it would cost Brendan.",
+          "text": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and a short resume. SJ is older, and nobody is waiting for him. It was his key, his VPN connection, his model, his box. Eighteen months costs him less than it would cost Brendan.",
           "direction": ""
         }
       ]
@@ -34585,7 +34585,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their electricity doesn't work reliably anymore, and that planes don't fly reliably anymore...",
+      "text": "Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their electricity doesn't work reliably anymore, and that they can't fly anymore...",
       "direction": "live",
       "state": "radio",
       "mode": "radio",
@@ -34609,8 +34609,8 @@
       "computers": {},
       "screenActions": {},
       "sourceBeat": 15,
-      "audio": "assets/audio/shared-c93b3d0dc85a0a34cadfef4382cb236bc2fe001914fcdb019f4687804e3d32b2.mp3",
-      "audioDuration": 11.72898,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s23b_l15",
       "visualMapping": "matched",
       "sfx": [],
@@ -34620,7 +34620,7 @@
           "id": "s23b_l15",
           "kind": "live",
           "name": "SJ",
-          "text": "Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their electricity doesn't work reliably anymore, and that planes don't fly reliably anymore...",
+          "text": "Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their electricity doesn't work reliably anymore, and that they can't fly anymore...",
           "direction": "live"
         }
       ]
@@ -36197,7 +36197,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "And he's out-produced the whole team. The feedback on his garments has been incredible. Best week we've had in ages. Fifty yards in a day!!",
+      "text": "And he's out-produced the whole team. The feedback from the tailors has been incredible. Best week we've had in ages. Fifty yards in a day!!",
       "direction": "live",
       "state": "black",
       "mode": "offstage",
@@ -36205,7 +36205,7 @@
       "advance": "manual",
       "loop": true,
       "sourceLine": 28,
-      "audio": "assets/audio/shared-827c203ec4ea5e10a45e2d6799b131c5909bf77d524aa5882903c02261b2bdd7.mp3",
+      "audio": null,
       "voiceId": "hpp4J3VqNfWAUOO0d1Us",
       "offstage": true,
       "staging": {
@@ -36219,14 +36219,14 @@
       },
       "computers": {},
       "screenActions": {},
-      "audioDuration": 9.795918,
+      "audioDuration": 0,
       "groupEnd": 697,
       "notes": [
         {
           "id": "s25_l15",
           "kind": "voice",
           "name": "Kristina",
-          "text": "And he's out-produced the whole team. The feedback on his garments has been incredible. Best week we've had in ages. Fifty yards in a day!!",
+          "text": "And he's out-produced the whole team. The feedback from the tailors has been incredible. Best week we've had in ages. Fifty yards in a day!!",
           "direction": "live"
         }
       ]
@@ -36421,7 +36421,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-a6ed9a1dba4e4d61",
+  "scriptRevision": "shared-bd4bbd1212624fba",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
