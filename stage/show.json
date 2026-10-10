@@ -17904,7 +17904,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "Because Jitsi is open source and preserves our privacy.",
+      "text": "Because Jitsi is open source and protects your privacy. Anyone with half a brain uses it. I've also got Mullvad VPN going as habit, which sometimes makes things kinda slow.",
       "direction": "live",
       "state": "apartment",
       "mode": "jitsi",
@@ -17931,8 +17931,8 @@
       "computers": {},
       "screenActions": {},
       "sourceBeat": 5,
-      "audio": "assets/audio/shared-150fb41b4d0a43afb120417a90b340c6e820a2fd58626f204bd5a192f3226d07.mp3",
-      "audioDuration": 4.127347,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14a_l5",
       "visualMapping": "matched",
       "sfx": [],
@@ -17942,7 +17942,7 @@
           "id": "s14a_l5",
           "kind": "live",
           "name": "SJ",
-          "text": "Because Jitsi is open source and preserves our privacy.",
+          "text": "Because Jitsi is open source and protects your privacy. Anyone with half a brain uses it. I've also got Mullvad VPN going as habit, which sometimes makes things kinda slow.",
           "direction": "live"
         }
       ]
@@ -18446,7 +18446,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
+      "text": "SJ thinks about all the times he's interrupted Kristina's standup arguing with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
       "direction": "",
       "state": "apartment",
       "mode": "jitsi",
@@ -18484,7 +18484,7 @@
           "id": "s14a_l21",
           "kind": "voice",
           "name": "Narrator",
-          "text": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
+          "text": "SJ thinks about all the times he's interrupted Kristina's standup arguing with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself",
           "direction": ""
         }
       ],
@@ -23149,7 +23149,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session.",
+      "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session via Mullvad, SJ's VPN of choice.",
       "direction": "",
       "state": "credentials",
       "mode": "apartment",
@@ -23171,8 +23171,8 @@
       },
       "screenActions": {},
       "sourceBeat": 7,
-      "audio": "assets/audio/shared-6b7001faddca2164c70cab7253bbcb5a3d53f46fb6d4fb06e841e7ebe6638ef5.mp3",
-      "audioDuration": 6.426122,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s20_l7",
       "visualMapping": "matched",
       "sfx": [],
@@ -23182,7 +23182,7 @@
           "id": "s20_l7",
           "kind": "voice",
           "name": "Narrator",
-          "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session.",
+          "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session via Mullvad, SJ's VPN of choice.",
           "direction": ""
         }
       ],
@@ -30154,7 +30154,7 @@
       "kind": "live",
       "speaker": "marcus",
       "name": "Marcus",
-      "text": "Yeah... that might be true, but the logs show a residential IP address, so.. look man I'm just thinking about that mac mini you had",
+      "text": "Yeah... that might be true, but the logs show a VPN egress IP, so... look man I'm just thinking about that Mac Studio you had",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -30184,8 +30184,8 @@
         "right": "SJ"
       },
       "screenActions": {},
-      "audio": "assets/audio/shared-395ca3f4c7e884ef5955318c2cac5270e370ee8c08f30f6afe79de02370bd43f.mp3",
-      "audioDuration": 9.090612,
+      "audio": null,
+      "audioDuration": 0,
       "sfx": [],
       "groupEnd": 572,
       "notes": [
@@ -30193,7 +30193,7 @@
           "id": "s22_yours",
           "kind": "live",
           "name": "Marcus",
-          "text": "Yeah... that might be true, but the logs show a residential IP address, so.. look man I'm just thinking about that mac mini you had",
+          "text": "Yeah... that might be true, but the logs show a VPN egress IP, so... look man I'm just thinking about that Mac Studio you had",
           "direction": ""
         }
       ]
@@ -30560,7 +30560,7 @@
       "kind": "voice",
       "speaker": "officer one",
       "name": "Officer One",
-      "text": "SJ? It's the police. Could you come to the door for us, please?",
+      "text": "SJ? It's the police. Open the door please.",
       "direction": "live, off",
       "state": "door",
       "mode": "huddle",
@@ -30590,8 +30590,8 @@
       "computers": {},
       "screenActions": {},
       "sourceBeat": 12,
-      "audio": "assets/audio/shared-cd8d62f50000959aac3679964e283074e4590b03931c0c8bd4e03dcc77824d3c.mp3",
-      "audioDuration": 6.072,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s22_l11",
       "visualMapping": "matched",
       "sfx": [],
@@ -30601,7 +30601,7 @@
           "id": "s22_l12",
           "kind": "voice",
           "name": "Officer One",
-          "text": "SJ? It's the police. Could you come to the door for us, please?",
+          "text": "SJ? It's the police. Open the door please.",
           "direction": "live, off"
         }
       ],
@@ -36691,7 +36691,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-064368b2960943fd",
+  "scriptRevision": "shared-f7615d726f3f4f3b",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
