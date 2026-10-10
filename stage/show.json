@@ -7533,7 +7533,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "A few months pass… Anthropic has just released Opus 4.7. SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running.",
+      "text": "A few months pass… Anthropic has just released Opus 4.7. SJ is working at his desk, still caught up in the signup race condition. On his second monitor, the morning standup is already running.",
       "direction": "",
       "state": "race-code",
       "mode": "zoom",
@@ -7569,8 +7569,8 @@
       },
       "screenActions": {},
       "sourceBeat": 1,
-      "audio": "assets/audio/shared-5b628bdfe675d3bf581145ab418b7360b9ea2fe10d2be51ca723bb0b01ea44eb.mp3",
-      "audioDuration": 13.479184,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l1",
       "visualMapping": "matched",
       "sfx": [],
@@ -7580,7 +7580,7 @@
           "id": "s06_l1",
           "kind": "voice",
           "name": "Narrator",
-          "text": "A few months pass… Anthropic has just released Opus 4.7. SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running.",
+          "text": "A few months pass… Anthropic has just released Opus 4.7. SJ is working at his desk, still caught up in the signup race condition. On his second monitor, the morning standup is already running.",
           "direction": ""
         }
       ],
@@ -36421,7 +36421,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-57cb345290154e7d",
+  "scriptRevision": "shared-d6606c342a4649d1",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
