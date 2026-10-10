@@ -353,12 +353,12 @@
       }
     },
     "s01_l32": {
-      "text": "…Yeah. The keys are long-lived.",
+      "text": "…Yeah. The keys-",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-29fbb151d5d9d9d348ed566db83c03f88b87c4cb3c32ef6e15e1ef42ca577581.mp3",
-      "duration": 2.586122,
-      "audioSha256": "29fbb151d5d9d9d348ed566db83c03f88b87c4cb3c32ef6e15e1ef42ca577581",
+      "audio": "assets/audio/shared-2a7c2a406107dfb3440d424af593cdef1ec6c2351cde07ba70809e77698ae743.mp3",
+      "duration": 1.880816,
+      "audioSha256": "2a7c2a406107dfb3440d424af593cdef1ec6c2351cde07ba70809e77698ae743",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",

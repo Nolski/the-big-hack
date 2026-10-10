@@ -2648,8 +2648,8 @@
         "left": "standup-respect"
       },
       "sourceBeat": 32,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-2a7c2a406107dfb3440d424af593cdef1ec6c2351cde07ba70809e77698ae743.mp3",
+      "audioDuration": 1.880816,
       "legacyCue": "s01_l35",
       "visualMapping": "matched",
       "sfx": [],
