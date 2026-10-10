@@ -25364,6 +25364,43 @@
       ]
     },
     {
+      "id": "s20_insert_01-internal",
+      "scene": "s20",
+      "beat": 53,
+      "kind": "stage",
+      "speaker": "",
+      "name": "",
+      "text": "An engineer realizes the scan is coming from their own server: “No, that's our own server scanning us. Why is our own server scanning us?” Play to the end, then GO.",
+      "direction": "",
+      "state": "montage",
+      "mode": "montage",
+      "cast": [],
+      "advance": "manual",
+      "loop": false,
+      "staging": {
+        "view": "montage",
+        "callCast": []
+      },
+      "computers": {},
+      "screenActions": {},
+      "audio": null,
+      "audioDuration": 0,
+      "visualMapping": "matched",
+      "sfx": [],
+      "montage": "assets/filmed/oncall-review-v2/01-internal.mp4",
+      "montageDuration": 8.0,
+      "groupEnd": 469,
+      "notes": [
+        {
+          "id": "s20_insert_01-internal",
+          "kind": "stage",
+          "name": "",
+          "text": "An engineer realizes the scan is coming from their own server: “No, that's our own server scanning us. Why is our own server scanning us?” Play to the end, then GO.",
+          "direction": ""
+        }
+      ]
+    },
+    {
       "id": "s20_l53",
       "scene": "s20",
       "beat": 53,
@@ -25395,7 +25432,7 @@
       "computers": {},
       "screenActions": {},
       "audioDuration": 8.359184,
-      "groupEnd": 469,
+      "groupEnd": 470,
       "notes": [
         {
           "id": "s20_l53",
@@ -25408,13 +25445,13 @@
       "sfx": []
     },
     {
-      "id": "s20_insert_01-internal",
+      "id": "s20_insert_05-no-match",
       "scene": "s20",
-      "beat": 53,
+      "beat": 55,
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "An engineer realizes the scan is coming from their own server: “No, that's our own server scanning us. Why is our own server scanning us?” Play to the end, then GO.",
+      "text": "Two responders cannot reconcile their samples: “Your sample doesn't match mine. Are we even on the same incident call?” Play to the end, then GO.",
       "direction": "",
       "state": "montage",
       "mode": "montage",
@@ -25431,15 +25468,15 @@
       "audioDuration": 0,
       "visualMapping": "matched",
       "sfx": [],
-      "montage": "assets/filmed/oncall-review-v2/01-internal.mp4",
+      "montage": "assets/filmed/oncall-review-v2/05-no-match.mp4",
       "montageDuration": 8.0,
-      "groupEnd": 470,
+      "groupEnd": 471,
       "notes": [
         {
-          "id": "s20_insert_01-internal",
+          "id": "s20_insert_05-no-match",
           "kind": "stage",
           "name": "",
-          "text": "An engineer realizes the scan is coming from their own server: “No, that's our own server scanning us. Why is our own server scanning us?” Play to the end, then GO.",
+          "text": "Two responders cannot reconcile their samples: “Your sample doesn't match mine. Are we even on the same incident call?” Play to the end, then GO.",
           "direction": ""
         }
       ]
@@ -25476,7 +25513,7 @@
       "computers": {},
       "screenActions": {},
       "audioDuration": 11.232653,
-      "groupEnd": 471,
+      "groupEnd": 472,
       "notes": [
         {
           "id": "s20_l54",
@@ -25487,43 +25524,6 @@
         }
       ],
       "sfx": []
-    },
-    {
-      "id": "s20_insert_05-no-match",
-      "scene": "s20",
-      "beat": 55,
-      "kind": "stage",
-      "speaker": "",
-      "name": "",
-      "text": "Two responders cannot reconcile their samples: “Your sample doesn't match mine. Are we even on the same incident call?” Play to the end, then GO.",
-      "direction": "",
-      "state": "montage",
-      "mode": "montage",
-      "cast": [],
-      "advance": "manual",
-      "loop": false,
-      "staging": {
-        "view": "montage",
-        "callCast": []
-      },
-      "computers": {},
-      "screenActions": {},
-      "audio": null,
-      "audioDuration": 0,
-      "visualMapping": "matched",
-      "sfx": [],
-      "montage": "assets/filmed/oncall-review-v2/05-no-match.mp4",
-      "montageDuration": 8.0,
-      "groupEnd": 472,
-      "notes": [
-        {
-          "id": "s20_insert_05-no-match",
-          "kind": "stage",
-          "name": "",
-          "text": "Two responders cannot reconcile their samples: “Your sample doesn't match mine. Are we even on the same incident call?” Play to the end, then GO.",
-          "direction": ""
-        }
-      ]
     },
     {
       "id": "s20_restored_55",
@@ -25732,6 +25732,43 @@
       ]
     },
     {
+      "id": "s20_insert_14-craigslist-3s",
+      "scene": "s20",
+      "beat": 58,
+      "kind": "stage",
+      "speaker": "",
+      "name": "",
+      "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
+      "direction": "",
+      "state": "montage",
+      "mode": "montage",
+      "cast": [],
+      "advance": "manual",
+      "loop": false,
+      "staging": {
+        "view": "montage",
+        "callCast": []
+      },
+      "computers": {},
+      "screenActions": {},
+      "audio": null,
+      "audioDuration": 0,
+      "visualMapping": "matched",
+      "sfx": [],
+      "montage": "assets/filmed/oncall-review-v2/14-craigslist-3s.mp4",
+      "montageDuration": 3.0,
+      "groupEnd": 478,
+      "notes": [
+        {
+          "id": "s20_insert_14-craigslist-3s",
+          "kind": "stage",
+          "name": "",
+          "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
+          "direction": ""
+        }
+      ]
+    },
+    {
       "id": "s20_restored_58",
       "scene": "s20",
       "beat": 58,
@@ -25763,7 +25800,7 @@
       "computers": {},
       "screenActions": {},
       "audioDuration": 28.604082,
-      "groupEnd": 478,
+      "groupEnd": 479,
       "notes": [
         {
           "id": "s20_restored_58",
@@ -25774,43 +25811,6 @@
         }
       ],
       "sfx": []
-    },
-    {
-      "id": "s20_insert_14-craigslist-3s",
-      "scene": "s20",
-      "beat": 58,
-      "kind": "stage",
-      "speaker": "",
-      "name": "",
-      "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
-      "direction": "",
-      "state": "montage",
-      "mode": "montage",
-      "cast": [],
-      "advance": "manual",
-      "loop": false,
-      "staging": {
-        "view": "montage",
-        "callCast": []
-      },
-      "computers": {},
-      "screenActions": {},
-      "audio": null,
-      "audioDuration": 0,
-      "visualMapping": "matched",
-      "sfx": [],
-      "montage": "assets/filmed/oncall-review-v2/14-craigslist-3s.mp4",
-      "montageDuration": 3.0,
-      "groupEnd": 479,
-      "notes": [
-        {
-          "id": "s20_insert_14-craigslist-3s",
-          "kind": "stage",
-          "name": "",
-          "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
-          "direction": ""
-        }
-      ]
     },
     {
       "id": "s20_restored_59",
@@ -31781,7 +31781,7 @@
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "World disruption montage: airline bookings fail; rolling brownouts spread; analogue television and radio return. Week One, Week Three, Months Later. Ends with the trial of the century and the allegation that SJ authored the AI worm. Hold on THE TRIAL BEGINS, then GO.",
+      "text": "World disruption montage: airline bookings fail; brownouts spread; analogue TV returns. Sepia radio broadcasts lead into two courthouse field dispatches with vintage radio sound. Week One, Week Three, Months Later. Hold on THE TRIAL BEGINS, then GO.",
       "direction": "",
       "state": "montage",
       "mode": "montage",
@@ -31797,7 +31797,7 @@
       "audio": null,
       "audioDuration": 0,
       "sfx": [],
-      "montage": "assets/filmed/collapse-to-trial.mp4",
+      "montage": "assets/filmed/collapse-to-trial-v4.mp4",
       "montageDuration": 57.120036,
       "groupEnd": 602,
       "notes": [
@@ -31805,7 +31805,7 @@
           "id": "s23_collapse_montage",
           "kind": "stage",
           "name": "",
-          "text": "World disruption montage: airline bookings fail; rolling brownouts spread; analogue television and radio return. Week One, Week Three, Months Later. Ends with the trial of the century and the allegation that SJ authored the AI worm. Hold on THE TRIAL BEGINS, then GO.",
+          "text": "World disruption montage: airline bookings fail; brownouts spread; analogue TV returns. Sepia radio broadcasts lead into two courthouse field dispatches with vintage radio sound. Week One, Week Three, Months Later. Hold on THE TRIAL BEGINS, then GO.",
           "direction": ""
         }
       ]
@@ -35709,13 +35709,13 @@
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "News report: sentencing news different casters v2. Play to the end, then GO.",
+      "text": "Sentencing montage: the judge's quoted statement, followed by the interview, Vance, and two Trump excerpts. Continuous dramatic music; no historical-analysis section or time cards. Play to the end, then GO.",
       "direction": "",
       "state": "montage",
       "mode": "montage",
       "cast": [],
       "advance": "manual",
-      "loop": true,
+      "loop": false,
       "sourceKind": "stage",
       "narrationAdapted": true,
       "adaptationReason": "A concise narrator observation carries the authored irony or contrast; physical acting instructions remain in the source note.",
@@ -35732,15 +35732,15 @@
       "audioDuration": 0,
       "visualMapping": "matched",
       "sfx": [],
-      "montage": "assets/filmed/news/sentencing-news-different-casters-v2.mp4",
-      "montageDuration": 28.421029,
+      "montage": "assets/filmed/news/sentencing-news-and-statements-v4.mp4",
+      "montageDuration": 49.132,
       "groupEnd": 684,
       "notes": [
         {
           "id": "news_report_9",
           "kind": "stage",
           "name": "",
-          "text": "News report: sentencing news different casters v2. Play to the end, then GO.",
+          "text": "Sentencing montage: the judge's quoted statement, followed by the interview, Vance, and two Trump excerpts. Continuous dramatic music; no historical-analysis section or time cards. Play to the end, then GO.",
           "direction": ""
         }
       ]
@@ -36691,7 +36691,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-0d98b5eb21df42c1",
+  "scriptRevision": "shared-1db9a069493b4971",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
