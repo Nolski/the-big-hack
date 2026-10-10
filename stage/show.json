@@ -3055,7 +3055,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "That's not a product call. That's a cyber security decision. If you had a software engineering degree, Kristina, you'd understand why that decision was never yours to override.",
+      "text": "That's not a product call. That's a cyber security decision. It was never yours to override. If you had a software engineering degree, Kristina, you'd understand that.",
       "direction": "live, patient, awful — explaining gravity to a child",
       "state": "pr",
       "mode": "meet",
@@ -3090,8 +3090,8 @@
         "left": "luddite-argument"
       },
       "sourceBeat": 38,
-      "audio": "assets/audio/shared-2eb9be7c57b9b9d72acc131ac6505ccdd94ad4ac2e566b6daeed7996cb727fdb.mp3",
-      "audioDuration": 10.840816,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l42",
       "visualMapping": "matched",
       "sfx": [],
@@ -3101,7 +3101,7 @@
           "id": "s01_l38",
           "kind": "live",
           "name": "SJ",
-          "text": "That's not a product call. That's a cyber security decision. If you had a software engineering degree, Kristina, you'd understand why that decision was never yours to override.",
+          "text": "That's not a product call. That's a cyber security decision. It was never yours to override. If you had a software engineering degree, Kristina, you'd understand that.",
           "direction": "live, patient, awful — explaining gravity to a child"
         }
       ],
@@ -36421,7 +36421,7 @@
   },
   "sourceBranch": "edits/cut-pass",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
-  "scriptRevision": "shared-f6de408918ec46d3",
+  "scriptRevision": "shared-24debd3a7cfe483b",
   "audioManifestRequired": true,
   "narratorVoiceProfile": "handoff/narrator-approved-C/profile.json"
 }
