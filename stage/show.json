@@ -941,7 +941,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-6d45a36669d647e2",
+  "scriptRevision": "shared-8595f28ab6b545fd",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -28312,7 +28312,7 @@
       "sourceBeat": 4,
       "beat": 4,
       "name": "",
-      "text": "The counts enter, one row at a time... there are 19",
+      "text": "The counts enter, one row at a time... there are 19, with a maximum of 151 years if found guilty.",
       "groupEnd": 530,
       "speaker": "",
       "direction": "",
@@ -28333,7 +28333,7 @@
           "id": "s23_l4",
           "kind": "stage",
           "name": "",
-          "text": "The counts enter, one row at a time... there are 19",
+          "text": "The counts enter, one row at a time... there are 19, with a maximum of 151 years if found guilty.",
           "direction": ""
         }
       ],
@@ -28454,7 +28454,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 6.687347,
+      "audioDuration": 0,
       "state": "counts",
       "id": "s23_l8",
       "screenActions": {},
@@ -28462,7 +28462,7 @@
       "sourceBeat": 8,
       "beat": 8,
       "name": "Kristina",
-      "text": "Hold up, if I'm counting right, that all adds up to 151 years if found guilty",
+      "text": "And a maximum of 151 years!",
       "groupEnd": 533,
       "speaker": "kristina",
       "direction": "to audience",
@@ -28476,14 +28476,14 @@
         "marcus",
         "kristina"
       ],
-      "audio": "assets/audio/shared-4a0a86dc37346520da5db2312bca871262ff35fa1e6ff01f30e718798a3522df.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s23_l8",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Hold up, if I'm counting right, that all adds up to 151 years if found guilty",
+          "text": "And a maximum of 151 years!",
           "direction": "to audience"
         }
       ],
@@ -29054,7 +29054,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 3.474286,
+      "audioDuration": 0,
       "state": "court",
       "id": "s23_l30",
       "screenActions": {},
@@ -29062,7 +29062,7 @@
       "sourceBeat": 30,
       "beat": 28,
       "name": "Kristina",
-      "text": "It's kind of fun to watch him interrupt someone else for a change",
+      "text": "I guess we get to watch him interrupt someone else for a change",
       "groupEnd": 545,
       "speaker": "kristina",
       "direction": "",
@@ -29076,14 +29076,14 @@
         "marcus",
         "kristina"
       ],
-      "audio": "assets/audio/shared-d5e784599230c705af4a36b37238548e385adf8afa36dd18069e073e3ee00832.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s23_l30",
           "kind": "voice",
           "name": "Kristina",
-          "text": "It's kind of fun to watch him interrupt someone else for a change",
+          "text": "I guess we get to watch him interrupt someone else for a change",
           "direction": ""
         }
       ],
