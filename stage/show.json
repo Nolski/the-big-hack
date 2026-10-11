@@ -941,7 +941,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-d4c327cd78084007",
+  "scriptRevision": "shared-6d45a36669d647e2",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -29968,7 +29968,7 @@
         "radioConnected": true
       },
       "loop": true,
-      "audioDuration": 8.594286,
+      "audioDuration": 0,
       "state": "radio",
       "id": "s23b_l6",
       "screenActions": {},
@@ -29976,7 +29976,7 @@
       "sourceBeat": 6,
       "beat": 6,
       "name": "Marcus",
-      "text": "I've had four messages about it. Everyone is making you out to be a martyr for the layoffs that are happening. You've become kind of a symbol online",
+      "text": "I've had four messages about it. Everyone is making you out to be a martyr for the layoffs that are happening. You've become kind of a symbol in the papers.",
       "groupEnd": 563,
       "speaker": "marcus",
       "direction": "",
@@ -29988,14 +29988,14 @@
         "marcus",
         "liam"
       ],
-      "audio": "assets/audio/shared-80160b73e79e5ce57a250604116c806124b4028407329835542114d84c6884f2.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s23b_l6",
           "kind": "live",
           "name": "Marcus",
-          "text": "I've had four messages about it. Everyone is making you out to be a martyr for the layoffs that are happening. You've become kind of a symbol online",
+          "text": "I've had four messages about it. Everyone is making you out to be a martyr for the layoffs that are happening. You've become kind of a symbol in the papers.",
           "direction": ""
         }
       ],
@@ -31104,7 +31104,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "My coworker Brandon started the attack! When I took the plea deal it was to protect him, but this is insane! I'm going to be executed because Brandon gave Qwen internet access, even after I warned him not to!",
+      "text": "My coworker Brendan started the attack! When I took the plea deal it was to protect him, but this is insane! I'm going to be executed because Brendan gave Qwen internet access, even after I warned him not to!",
       "direction": "",
       "state": "black",
       "mode": "physical",
@@ -31118,8 +31118,8 @@
       "sfx": [],
       "advance": "manual",
       "loop": false,
-      "audio": "assets/audio/shared-4e12a48877c03fc5d4a7ba0e3fe3a8925ac83d2f8d3f88f28506594ce1359c89.mp3",
-      "audioDuration": 13.714286,
+      "audio": null,
+      "audioDuration": 0,
       "screenNotes": "Live actor answers the offscreen newspaper journalist. No video depiction of SJ or Brendan.",
       "groupEnd": 588,
       "notes": [
@@ -31127,7 +31127,7 @@
           "id": "s23b_sj_accusation",
           "kind": "live",
           "name": "SJ",
-          "text": "My coworker Brandon started the attack! When I took the plea deal it was to protect him, but this is insane! I'm going to be executed because Brandon gave Qwen internet access, even after I warned him not to!",
+          "text": "My coworker Brendan started the attack! When I took the plea deal it was to protect him, but this is insane! I'm going to be executed because Brendan gave Qwen internet access, even after I warned him not to!",
           "direction": ""
         }
       ]
