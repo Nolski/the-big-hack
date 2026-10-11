@@ -1,7 +1,9 @@
 """Shared authoring store. Both apps edit stage/show.json through this module.
 No model/runtime dependencies. Advisory lock + atomic replace + revision checks.
 """
-import copy, fcntl, hashlib, json, os, re, tempfile, time, uuid
+import copy, hashlib, json, os, re, tempfile, time, uuid
+try: import fcntl
+except ImportError: import msvcrt; fcntl=None
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -75,8 +77,14 @@ class ScriptStore:
     @contextmanager
     def locked(self):
         with (self.root/'.script.lock').open('a') as f:
-            fcntl.flock(f,fcntl.LOCK_EX)
-            yield
+            if fcntl: fcntl.flock(f,fcntl.LOCK_EX); yield; return
+            f.write(' '); f.flush(); f.seek(0)
+            while True:
+                try: msvcrt.locking(f.fileno(),msvcrt.LK_LOCK,1); break
+                except OSError: continue
+            try: yield
+            finally:
+                f.seek(0); msvcrt.locking(f.fileno(),msvcrt.LK_UNLCK,1)
     def atomic(self,path,data):
         fd,tmp=tempfile.mkstemp(dir=path.parent,prefix='.'+path.name)
         try:
