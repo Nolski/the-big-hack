@@ -941,7 +941,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-76dc0ad898134acd",
+  "scriptRevision": "shared-d4c327cd78084007",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -24157,7 +24157,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 8.594286,
+      "audioDuration": 0,
       "state": "reply-delete",
       "id": "s20_l71",
       "screenActions": {
@@ -24167,7 +24167,7 @@
       "sourceBeat": 71,
       "beat": 77,
       "name": "Narrator",
-      "text": "Then he holds backspace, until it's gone. Instead he just types, he's headed over later that day to return the Mac Studio",
+      "text": "Then he holds backspace, until it's gone. Instead he just types, he's headed over later that day.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "screenNotes": "The same unfinished warning is visibly erased with held backspace. It is never sent.",
       "groupEnd": 446,
@@ -24182,14 +24182,14 @@
       "sourceLine": 142,
       "cast": [],
       "narrationAdapted": true,
-      "audio": "assets/audio/shared-264977a6c5b7eade147e82e582920e99f821c23c03b67c23e84303dbf2ebfc38.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s20_l71",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Then he holds backspace, until it's gone. Instead he just types, he's headed over later that day to return the Mac Studio",
+          "text": "Then he holds backspace, until it's gone. Instead he just types, he's headed over later that day.",
           "direction": ""
         }
       ],
@@ -24209,7 +24209,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 6.034286,
+      "audioDuration": 0,
       "state": "reply-delete",
       "id": "s20_l72",
       "screenActions": {
@@ -24231,7 +24231,7 @@
       "scene": "s20",
       "sourceLine": 144,
       "cast": [],
-      "audio": "assets/audio/shared-56ab0a155a3eb3accec461efb4fa361faff5bf266a40ae82207f79df39588e17.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
