@@ -188,7 +188,7 @@ class ScriptStore:
             for c in s['cues']:
                 if c['scene']!=sc['id']: continue
                 r=manifest.get(c['id'],{}); match=r.get('text')==c['text'] and r.get('speaker')==c.get('speaker') and r.get('voiceProfile')==c.get('voiceProfile')
-                ln={'id':c['id'],'type':'direction' if c['kind']=='stage' else 'narration' if c.get('speaker')=='narrator' else 'live' if c['kind']=='live' else 'video','speaker':c.get('speaker',''),'text':c['text'],'direction':c.get('direction',''),'_raw':raw_line(c),'audio_status':'ready' if match else 'silent' if c['kind']=='stage' else 'needs generation'}
+                ln={'id':c['id'],'type':'direction' if c['kind']=='stage' else 'narration' if c.get('speaker')=='narrator' else 'live' if c['kind']=='live' else 'video','speaker':c.get('speaker',''),'text':c['text'],'direction':c.get('direction',''),'interrupts':bool(c.get('interrupts')),'_raw':raw_line(c),'audio_status':'ready' if match else 'silent' if c['kind']=='stage' else 'needs generation'}
                 if match and r.get('audio'): ln['audio']='/'+r['audio']
                 if c.get('montage'): ln['audio']='/'+c['montage'];ln['video']=ln['audio'];ln['audio_status']='ready'
                 result['lines'].append(ln)
@@ -202,6 +202,9 @@ class ScriptStore:
         changed=(c.get('text'),c.get('speaker'))!=(line.get('text',''),speaker)
         c.update(kind=kind,speaker=speaker,name=c.get('name','') if c.get('speaker')==speaker else names.get(speaker,speaker),text=line.get('text',''),direction=line.get('direction',''))
         if changed: c['audio']=None;c['audioDuration']=0
+        if 'interrupts' in line:
+            if line['interrupts']: c['interrupts']=True
+            else: c.pop('interrupts',None)
     def update_scene(self,sid,payload,names):
         def edit(s):
             sc=next(x for x in s['scenes'] if x['id']==sid)

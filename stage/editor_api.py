@@ -25,6 +25,7 @@ class EditorAPI:
         scene, index, line = self.line(cid)
         fields = {key: line.get(key, '') for key in ('text', 'direction', 'type', 'speaker')}
         fields.update({key: patch[key] for key in fields if key in patch})
+        if 'interrupts' in patch: fields['interrupts'] = bool(patch['interrupts'])
         if not str(fields['text']).strip():
             raise ValueError('A line cannot be empty; remove it with the delete button.')
         if 'speaker' in patch:
@@ -51,7 +52,7 @@ class EditorAPI:
         for line in self.scene(sid)['lines']:
             if line['id'] in sug['cues'] and line['id'] not in edits: continue
             text = edits.get(line['id'], line['text'])
-            lines.append({'id': line['id'], 'type': line['type'], 'speaker': line.get('speaker', ''), 'text': text, 'direction': line.get('direction', '')})
+            lines.append({'id': line['id'], 'type': line['type'], 'speaker': line.get('speaker', ''), 'text': text, 'direction': line.get('direction', ''), 'interrupts': line.get('interrupts', False)})
         if not lines: raise ValueError('That would leave the scene empty; delete the scene instead.')
         self.store.update_scene(sid, {'revision': revision, 'lines': lines}, self.names())
         return self.scene(sid)
