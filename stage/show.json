@@ -2,7 +2,8 @@
   "liveCast": [
     "brendan",
     "liam",
-    "marcus"
+    "marcus",
+    "kristina"
   ],
   "scenes": [
     {
@@ -948,7 +949,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-295ebc08dfa946e4",
+  "scriptRevision": "shared-b8e3d4ac03244439",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -1060,7 +1061,7 @@
       "id": "s01_l2",
       "scene": "s01",
       "beat": 2,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Morning, everyone. I'd like to remind you all of the time limits on updates we agreed to last time so we can get through standup more efficiently. SJ, are you there? You're on mute, and your camera is off.",
@@ -1105,7 +1106,7 @@
       "notes": [
         {
           "id": "s01_l2",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Morning, everyone. I'd like to remind you all of the time limits on updates we agreed to last time so we can get through standup more efficiently. SJ, are you there? You're on mute, and your camera is off.",
           "direction": "runs ~12s, SJ plays against it, Bright, brisk, a standup she has run a thousand times."
@@ -1238,7 +1239,7 @@
       "id": "s01_l5",
       "scene": "s01",
       "beat": 5,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "No worries. Okay, I wanted to start off with some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Best launch we've had in a long time.",
@@ -1283,7 +1284,7 @@
       "notes": [
         {
           "id": "s01_l5",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "No worries. Okay, I wanted to start off with some praise. The API developer portal we shipped this week, the feedback's been incredible. Two of our biggest integration partners shipped on it over the weekend. Best launch we've had in a long time.",
           "direction": "Warm, and she means it."
@@ -1294,7 +1295,7 @@
       "id": "s01_l6",
       "scene": "s01",
       "beat": 6,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. Great work!",
@@ -1339,7 +1340,7 @@
       "notes": [
         {
           "id": "s01_l6",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "And that's so much down to Brendan who, I happen to know, put most of his weekend into getting it over the line. Great work!",
           "direction": "turning to one tile in particular"
@@ -1575,7 +1576,7 @@
       "id": "s01_share_reply",
       "scene": "s01",
       "beat": 10,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "SJ, you don't need to screenshare...",
@@ -1619,7 +1620,7 @@
       "notes": [
         {
           "id": "s01_share_reply",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "SJ, you don't need to screenshare...",
           "direction": ""
@@ -1859,7 +1860,7 @@
       "id": "s01_l18",
       "scene": "s01",
       "beat": 18,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "… SJ can we take this offline so we can get through standup?",
@@ -1904,7 +1905,7 @@
       "notes": [
         {
           "id": "s01_l18",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "… SJ can we take this offline so we can get through standup?",
           "direction": ""
@@ -2168,7 +2169,7 @@
       "id": "s01_l25",
       "scene": "s01",
       "beat": 25,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Thanks SJ. Let's -",
@@ -2215,7 +2216,7 @@
       "notes": [
         {
           "id": "s01_l25",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Thanks SJ. Let's -",
           "direction": ""
@@ -2420,7 +2421,7 @@
       "id": "s01_l29",
       "scene": "s01",
       "beat": 32,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Marcus, thank you for your input... but can we get through standup and then I promise I'll give you an opportunity to share your concerns -",
@@ -2467,7 +2468,7 @@
       "notes": [
         {
           "id": "s01_l29",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Marcus, thank you for your input... but can we get through standup and then I promise I'll give you an opportunity to share your concerns -",
           "direction": ""
@@ -2802,7 +2803,7 @@
       "id": "s01_l35",
       "scene": "s01",
       "beat": 38,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "and then I'm the one who had him remove the JWT's. That part's on me, SJ. Not Brendan, and not the AI. The switch to long-lived keys was my call.",
@@ -2849,7 +2850,7 @@
       "notes": [
         {
           "id": "s01_l35",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "and then I'm the one who had him remove the JWT's. That part's on me, SJ. Not Brendan, and not the AI. The switch to long-lived keys was my call.",
           "direction": "stepping in — to take the heat off Brendan, and to be straight"
@@ -2930,7 +2931,7 @@
       "id": "s01_l37",
       "scene": "s01",
       "beat": 40,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Because we user-tested it. Most partners found JWTs too difficult to adopt. Long-lived keys, are just easier for our partners to understand. And yes, I know what a leaked key does. It's live until somebody rotates it. It's a tradeoff, and I made the call.",
@@ -2977,7 +2978,7 @@
       "notes": [
         {
           "id": "s01_l37",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Because we user-tested it. Most partners found JWTs too difficult to adopt. Long-lived keys, are just easier for our partners to understand. And yes, I know what a leaked key does. It's live until somebody rotates it. It's a tradeoff, and I made the call.",
           "direction": "even; she has the receipts"
@@ -3554,14 +3555,14 @@
       "notes": [
         {
           "id": "s01_l46",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "It's fine, Marcus. Let's keep moving. SJ -",
           "direction": "bright, quick"
         }
       ],
       "mode": "meet",
-      "kind": "voice",
+      "kind": "live",
       "legacyCue": "s01_l50"
     },
     {
@@ -3694,7 +3695,7 @@
       "id": "s01_l49",
       "scene": "s01",
       "beat": 53,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Look, Marcus, we need to get through standup. SJ, what are you on this week, and is anything blocking you?",
@@ -3741,7 +3742,7 @@
       "notes": [
         {
           "id": "s01_l49",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Look, Marcus, we need to get through standup. SJ, what are you on this week, and is anything blocking you?",
           "direction": "brisk, moving us along"
@@ -3820,7 +3821,7 @@
       "id": "s01_l53",
       "scene": "s01",
       "beat": 57,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Thanks, everyone, that's standup.",
@@ -3867,7 +3868,7 @@
       "notes": [
         {
           "id": "s01_l53",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Thanks, everyone, that's standup.",
           "direction": "not taking the bait, typing"
@@ -5067,7 +5068,7 @@
       "id": "s01b_l2",
       "scene": "s01b",
       "beat": 2,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "…Hey. Hope you're still OK with working with SJ after his comments in standup this morning.",
@@ -5108,7 +5109,7 @@
       "notes": [
         {
           "id": "s01b_l2",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "…Hey. Hope you're still OK with working with SJ after his comments in standup this morning.",
           "direction": "quiet, just to Brendan now"
@@ -5171,7 +5172,7 @@
       "id": "s01b_l4",
       "scene": "s01b",
       "beat": 4,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "\"Work around him.\" I guess we all have to do that, huh.",
@@ -5212,7 +5213,7 @@
       "notes": [
         {
           "id": "s01b_l4",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "\"Work around him.\" I guess we all have to do that, huh.",
           "direction": ""
@@ -5321,7 +5322,7 @@
     {
       "id": "s01b_apology_response",
       "scene": "s01b",
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Wow. I actually really appreciate hearing that, even if it is second hand.",
@@ -5358,7 +5359,7 @@
       "notes": [
         {
           "id": "s01b_apology_response",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Wow. I actually really appreciate hearing that, even if it is second hand.",
           "direction": ""
@@ -5421,7 +5422,7 @@
       "id": "s01b_l7",
       "scene": "s01b",
       "beat": 7,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "…Okay. This vibe coding stuff... It seems like when Opus 4.5 came out, people are actually making really complex stuff with it. Can you show me your setup?",
@@ -5462,7 +5463,7 @@
       "notes": [
         {
           "id": "s01b_l7",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "…Okay. This vibe coding stuff... It seems like when Opus 4.5 came out, people are actually making really complex stuff with it. Can you show me your setup?",
           "direction": "changing the subject — and something underneath it"
@@ -5574,7 +5575,7 @@
       "id": "s01b_l11",
       "scene": "s01b",
       "beat": 14,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Okay… \"Build a Slack bot so our team can close Jira tickets from a slash command, slash-jira-done, and post back a clean confirmation.\"",
@@ -5615,7 +5616,7 @@
       "notes": [
         {
           "id": "s01b_l11",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Okay… \"Build a Slack bot so our team can close Jira tickets from a slash command, slash-jira-done, and post back a clean confirmation.\"",
           "direction": "reading as she types"
@@ -5782,7 +5783,7 @@
       "id": "s01b_l15",
       "scene": "s01b",
       "beat": 19,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "…hardcode long lived credentials. That's what SJ said this morning. He wasn't just being dramatic, was he?",
@@ -5823,7 +5824,7 @@
       "notes": [
         {
           "id": "s01b_l15",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "…hardcode long lived credentials. That's what SJ said this morning. He wasn't just being dramatic, was he?",
           "direction": "deadpan, the penny dropping"
@@ -5886,7 +5887,7 @@
       "id": "s01b_l17",
       "scene": "s01b",
       "beat": 21,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "\"Research the real Jira REST API and keep the token in Vault rather than hardcode.\" See, I do listen on the security stuff.",
@@ -5929,7 +5930,7 @@
       "notes": [
         {
           "id": "s01b_l17",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "\"Research the real Jira REST API and keep the token in Vault rather than hardcode.\" See, I do listen on the security stuff.",
           "direction": "typing, getting it"
@@ -6150,7 +6151,7 @@
       "id": "s01b_l22",
       "scene": "s01b",
       "beat": 26,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "... so I just approve it without even reading the code?",
@@ -6191,7 +6192,7 @@
       "notes": [
         {
           "id": "s01b_l22",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "... so I just approve it without even reading the code?",
           "direction": ""
@@ -6358,7 +6359,7 @@
       "id": "s01b_l26",
       "scene": "s01b",
       "beat": 30,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Right. Give me one of your Jira ticket numbers. What have you got open?",
@@ -6399,7 +6400,7 @@
       "notes": [
         {
           "id": "s01b_l26",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Right. Give me one of your Jira ticket numbers. What have you got open?",
           "direction": ""
@@ -6462,7 +6463,7 @@
       "id": "s01b_l28",
       "scene": "s01b",
       "beat": 32,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "…Linear...?",
@@ -6503,7 +6504,7 @@
       "notes": [
         {
           "id": "s01b_l28",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "…Linear...?",
           "direction": ""
@@ -6566,7 +6567,7 @@
       "id": "s01b_l30",
       "scene": "s01b",
       "beat": 34,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Oh, that's fine, work however makes you most productive,... Just give me access to your Linear and I'll copy it over into Jira",
@@ -6607,7 +6608,7 @@
       "notes": [
         {
           "id": "s01b_l30",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Oh, that's fine, work however makes you most productive,... Just give me access to your Linear and I'll copy it over into Jira",
           "direction": "waving it off, entirely warm"
@@ -6618,7 +6619,7 @@
       "id": "s01b_l34",
       "scene": "s01b",
       "beat": 38,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Anyway, so for this test I'll use one of mine, then. Okay… slash, jira, done, P-R-O-J four-twelve…",
@@ -6659,7 +6660,7 @@
       "notes": [
         {
           "id": "s01b_l34",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Anyway, so for this test I'll use one of mine, then. Okay… slash, jira, done, P-R-O-J four-twelve…",
           "direction": "typing into Slack, narrating"
@@ -6777,7 +6778,7 @@
       "id": "s01b_l38",
       "scene": "s01b",
       "beat": 55,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Wow... This is satisfying... The thing SJ said about the code, though. Marking its own homework. He's not wrong about it, is he?",
@@ -6818,7 +6819,7 @@
       "notes": [
         {
           "id": "s01b_l38",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Wow... This is satisfying... The thing SJ said about the code, though. Marking its own homework. He's not wrong about it, is he?",
           "direction": "the thing that's been sitting there since standup"
@@ -6985,7 +6986,7 @@
       "id": "s01b_l45",
       "scene": "s01b",
       "beat": 56,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "But that's his whole point, the AI writes the tests...",
@@ -7026,7 +7027,7 @@
       "notes": [
         {
           "id": "s01b_l45",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "But that's his whole point, the AI writes the tests...",
           "direction": ""
@@ -7089,7 +7090,7 @@
       "id": "s01b_l49",
       "scene": "s01b",
       "beat": 59,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Brendan, this is the future. Do you get that? All the other teams still doing it the old way is about to look like they're carving stone tablets.",
@@ -7127,7 +7128,7 @@
       "notes": [
         {
           "id": "s01b_l49",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Brendan, this is the future. Do you get that? All the other teams still doing it the old way is about to look like they're carving stone tablets.",
           "direction": "the refrain, and she means it"
@@ -7138,7 +7139,7 @@
       "id": "s01b_l50",
       "scene": "s01b",
       "beat": 59,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Have you shown SJ this? Because if he's genuinely worried about the tests, this answers his objection. He'd love it.",
@@ -7176,7 +7177,7 @@
       "notes": [
         {
           "id": "s01b_l50",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Have you shown SJ this? Because if he's genuinely worried about the tests, this answers his objection. He'd love it.",
           "direction": "bright — the obvious thought"
@@ -7334,7 +7335,7 @@
       "id": "s01b_l57",
       "scene": "s01b",
       "beat": 59,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "*Sighs* I shouldn't be surprised. …Anyway. I still can't believe we made the functioning slack bot in ten minutes of work. Imagine what our next quarter KPIs will look like.",
@@ -7372,7 +7373,7 @@
       "notes": [
         {
           "id": "s01b_l57",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "*Sighs* I shouldn't be surprised. …Anyway. I still can't believe we made the functioning slack bot in ten minutes of work. Imagine what our next quarter KPIs will look like.",
           "direction": "brightening again"
@@ -7533,7 +7534,7 @@
       "id": "s06_l2",
       "scene": "s06",
       "beat": 2,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "…lovely, thanks Brendan. Marcus, anything blocking you?",
@@ -7578,7 +7579,7 @@
       "notes": [
         {
           "id": "s06_l2",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "…lovely, thanks Brendan. Marcus, anything blocking you?",
           "direction": "brisk, running the board"
@@ -7645,7 +7646,7 @@
       "id": "s06_l4",
       "scene": "s06",
       "beat": 4,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Ha. Great. SJ -",
@@ -7690,7 +7691,7 @@
       "notes": [
         {
           "id": "s06_l4",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Ha. Great. SJ -",
           "direction": "taking it as a joke, moving on"
@@ -7757,7 +7758,7 @@
       "id": "s06_l6",
       "scene": "s06",
       "beat": 6,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Is it quick? Remember we agreed to time limits Marcus...",
@@ -7802,7 +7803,7 @@
       "notes": [
         {
           "id": "s06_l6",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Is it quick? Remember we agreed to time limits Marcus...",
           "direction": "the pause of a woman who has been here before"
@@ -7869,7 +7870,7 @@
       "id": "s06_l8",
       "scene": "s06",
       "beat": 8,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Marcus, not during standup -",
@@ -7914,7 +7915,7 @@
       "notes": [
         {
           "id": "s06_l8",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Marcus, not during standup -",
           "direction": ""
@@ -8149,7 +8150,7 @@
       "id": "s06_l16",
       "scene": "s06",
       "beat": 13,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "OKAY!  SJ. You're still on the signup race condition, yeah? Where are we with that one?",
@@ -8196,7 +8197,7 @@
       "notes": [
         {
           "id": "s06_l16",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "OKAY!  SJ. You're still on the signup race condition, yeah? Where are we with that one?",
           "direction": "pleasant, immovable, moving the board on"
@@ -8306,14 +8307,14 @@
       "notes": [
         {
           "id": "s06_l18",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "That's what you said last week, though. Is there any movement? Any updates to add to the ticket?",
           "direction": "Gentle, but she needs something."
         }
       ],
       "mode": "zoom",
-      "kind": "voice",
+      "kind": "live",
       "legacyCue": "s06_l15"
     },
     {
@@ -8379,7 +8380,7 @@
       "id": "s06_l20",
       "scene": "s06",
       "beat": 17,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "…Okay. It's just that we've only had four reports in three months... I need some sense of whether this is another day or another week.",
@@ -8427,7 +8428,7 @@
       "notes": [
         {
           "id": "s06_l20",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "…Okay. It's just that we've only had four reports in three months... I need some sense of whether this is another day or another week.",
           "direction": "not rising to it, typing"
@@ -8562,7 +8563,7 @@
       "id": "s06_l22",
       "scene": "s06",
       "beat": 19,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Fair. You're right.",
@@ -8610,7 +8611,7 @@
       "notes": [
         {
           "id": "s06_l22",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Fair. You're right.",
           "direction": "Grimacing through her teeth"
@@ -8744,7 +8745,7 @@
       "id": "s06_l28",
       "scene": "s06",
       "beat": 25,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Oh, I love that! Yes, pair on it. Right, that's the board. Thanks, everyone.",
@@ -8789,7 +8790,7 @@
       "notes": [
         {
           "id": "s06_l28",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Oh, I love that! Yes, pair on it. Right, that's the board. Thanks, everyone.",
           "direction": "pleased — a manager watching a good thing happen"
@@ -9959,7 +9960,7 @@
       "id": "s11b_l2",
       "scene": "s11b",
       "beat": 2,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "…great, ship it. Okay, SJ. The billing-webhook retry ticket. That's been with you since Monday? Just checking it's not stuck.",
@@ -10004,7 +10005,7 @@
       "notes": [
         {
           "id": "s11b_l2",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "…great, ship it. Okay, SJ. The billing-webhook retry ticket. That's been with you since Monday? Just checking it's not stuck.",
           "direction": "brisk, warm, moving down a fast board"
@@ -10071,7 +10072,7 @@
       "id": "s11b_l4",
       "scene": "s11b",
       "beat": 4,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Okay. It's just that Marcus completed three similarly scoped tickets related to webhooks just yesterday... would you like to pair with him on it?",
@@ -10116,7 +10117,7 @@
       "notes": [
         {
           "id": "s11b_l4",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Okay. It's just that Marcus completed three similarly scoped tickets related to webhooks just yesterday... would you like to pair with him on it?",
           "direction": "gentle"
@@ -10356,7 +10357,7 @@
       "id": "s11b_kristina_tickets",
       "scene": "s11b",
       "beat": 10,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Okay guys, let's try to stick to the webhook—",
@@ -10403,7 +10404,7 @@
       "notes": [
         {
           "id": "s11b_kristina_tickets",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Okay guys, let's try to stick to the webhook—",
           "direction": "trying to bring the meeting back; spoken over"
@@ -10713,7 +10714,7 @@
       "id": "s11b_kristina_models",
       "scene": "s11b",
       "beat": 18,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "SJ, Marcus. We have other updates—",
@@ -10758,7 +10759,7 @@
       "notes": [
         {
           "id": "s11b_kristina_models",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "SJ, Marcus. We have other updates—",
           "direction": "trying to bring the meeting back; spoken over"
@@ -10993,7 +10994,7 @@
       "id": "s11b_l27",
       "scene": "s11b",
       "beat": 27,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Guys, can we get back on...",
@@ -11038,7 +11039,7 @@
       "notes": [
         {
           "id": "s11b_l27",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Guys, can we get back on...",
           "direction": "trying, early"
@@ -11105,7 +11106,7 @@
       "id": "s11b_l29",
       "scene": "s11b",
       "beat": 29,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "SJ, Marcus, I just want to get through the...",
@@ -11150,7 +11151,7 @@
       "notes": [
         {
           "id": "s11b_l29",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "SJ, Marcus, I just want to get through the...",
           "direction": "trying again"
@@ -11371,14 +11372,14 @@
       "notes": [
         {
           "id": "s11b_l33",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "SJ, MARCUS! Take the model debate to a thread. Just not in our standup, please.",
           "direction": "a full sentence, at last; the patience is professional-grade"
         }
       ],
       "mode": "zoom",
-      "kind": "voice",
+      "kind": "live",
       "legacyCue": "s11b_l33"
     },
     {
@@ -11483,14 +11484,14 @@
       "notes": [
         {
           "id": "s11b_l37",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Marcus! Thread. Moving on. Any other blockers?",
           "direction": "flat; the only moment all morning the brightness isn't there"
         }
       ],
       "mode": "zoom",
-      "kind": "voice",
+      "kind": "live",
       "legacyCue": "s11b_l37"
     },
     {
@@ -12963,7 +12964,7 @@
       "id": "s11c_l2",
       "scene": "s11c",
       "beat": 2,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Oh and SJ closed the webhook ticket. Did you see?",
@@ -13004,7 +13005,7 @@
       "notes": [
         {
           "id": "s11c_l2",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Oh and SJ closed the webhook ticket. Did you see?",
           "direction": "working down a list, easy"
@@ -13067,7 +13068,7 @@
       "id": "s11c_l4",
       "scene": "s11c",
       "beat": 4,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "It took a while but honestly? I'm just happy he's engaged.",
@@ -13108,7 +13109,7 @@
       "notes": [
         {
           "id": "s11c_l4",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "It took a while but honestly? I'm just happy he's engaged.",
           "direction": ""
@@ -13223,7 +13224,7 @@
       "id": "s11c_l13",
       "scene": "s11c",
       "beat": 13,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Can I tell you something? This stays here.",
@@ -13264,7 +13265,7 @@
       "notes": [
         {
           "id": "s11c_l13",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Can I tell you something? This stays here.",
           "direction": "lower"
@@ -13327,7 +13328,7 @@
       "id": "s11c_l15",
       "scene": "s11c",
       "beat": 15,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "I got let into a Zoom early on Friday, leadership thing, and the CEO was still wrapping his last call with a board member, I'm pretty sure. He said, and this is close to word for word, \"Everyone your size is getting leaner this year. You can't be hesitant to just let them go, they're holding the rest of your team back\"",
@@ -13368,7 +13369,7 @@
       "notes": [
         {
           "id": "s11c_l15",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "I got let into a Zoom early on Friday, leadership thing, and the CEO was still wrapping his last call with a board member, I'm pretty sure. He said, and this is close to word for word, \"Everyone your size is getting leaner this year. You can't be hesitant to just let them go, they're holding the rest of your team back\"",
           "direction": ""
@@ -13431,7 +13432,7 @@
       "id": "s11c_l17",
       "scene": "s11c",
       "beat": 17,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "I don't know. The call ended about ten seconds after I joined. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing.",
@@ -13472,7 +13473,7 @@
       "notes": [
         {
           "id": "s11c_l17",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "I don't know. The call ended about ten seconds after I joined. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing.",
           "direction": ""
@@ -13587,7 +13588,7 @@
       "id": "s11c_l20",
       "scene": "s11c",
       "beat": 20,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "What do you mean? He's doing some crazy AI stuff I haven't seen any other team do yet, that's exactly what leadership needs to see and with the amount you're shipping. I'm sure you'll be fine.",
@@ -13628,7 +13629,7 @@
       "notes": [
         {
           "id": "s11c_l20",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "What do you mean? He's doing some crazy AI stuff I haven't seen any other team do yet, that's exactly what leadership needs to see and with the amount you're shipping. I'm sure you'll be fine.",
           "direction": ""
@@ -13691,7 +13692,7 @@
       "id": "s11c_l24",
       "scene": "s11c",
       "beat": 24,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere.",
@@ -13732,7 +13733,7 @@
       "notes": [
         {
           "id": "s11c_l24",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Honestly to some extent it just looks good that our team is doing new AI things, even if they're experiments that don't go anywhere.",
           "direction": "pushing back, not unkind"
@@ -13899,7 +13900,7 @@
       "id": "s11c_l35",
       "scene": "s11c",
       "beat": 35,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "No, that's good feedback to have on file, but sometimes shifts take a bit of time. He shipped the webhook thing. Give him the quarter to get up to speed on everything and it'll all even out on his yearly review.",
@@ -13940,7 +13941,7 @@
       "notes": [
         {
           "id": "s11c_l35",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "No, that's good feedback to have on file, but sometimes shifts take a bit of time. He shipped the webhook thing. Give him the quarter to get up to speed on everything and it'll all even out on his yearly review.",
           "direction": "kindly, closing it"
@@ -14003,7 +14004,7 @@
       "id": "s11c_l37",
       "scene": "s11c",
       "beat": 37,
-      "kind": "voice",
+      "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
       "text": "Go. This was useful, honestly.",
@@ -14044,7 +14045,7 @@
       "notes": [
         {
           "id": "s11c_l37",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Go. This was useful, honestly.",
           "direction": ""
@@ -28789,14 +28790,14 @@
       "notes": [
         {
           "id": "s23_l8",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Hold up, if I'm counting right, that all adds up to 151 years if found guilty",
           "direction": "to audience"
         }
       ],
       "mode": "court",
-      "kind": "voice",
+      "kind": "live",
       "legacyCue": "s23_l8"
     },
     {
@@ -29389,14 +29390,14 @@
       "notes": [
         {
           "id": "s23_l30",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "It's kind of fun to watch him interrupt someone else for a change",
           "direction": ""
         }
       ],
       "mode": "court",
-      "kind": "voice",
+      "kind": "live",
       "legacyCue": "s23_l28"
     },
     {
@@ -31834,14 +31835,14 @@
       "notes": [
         {
           "id": "s25_l8",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "Marcus! Hi. Sorry. Have you got a minute? It's quick.",
           "direction": "live"
         }
       ],
       "mode": "offstage",
-      "kind": "voice"
+      "kind": "live"
     },
     {
       "staging": {
@@ -31916,14 +31917,14 @@
       "notes": [
         {
           "id": "s25_l10",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "I've got some good news and I wanted you to hear it from me first.",
           "direction": "live, warm"
         }
       ],
       "mode": "offstage",
-      "kind": "voice"
+      "kind": "live"
     },
     {
       "staging": {
@@ -31998,14 +31999,14 @@
       "notes": [
         {
           "id": "s25_l12",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "A new law passed through Congress. Steam powered machines are allowed again! powered machinery, boilers, boats, trains, we're allowed to have so much technology again, it will feel like it did 20 years ago!",
           "direction": "live"
         }
       ],
       "mode": "offstage",
-      "kind": "voice"
+      "kind": "live"
     },
     {
       "staging": {
@@ -32080,14 +32081,14 @@
       "notes": [
         {
           "id": "s25_l14",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "And I wanted to give some praise, because this bit is genuinely lovely. Brendan's got his hands on a steam powered loom! I don't know where from, I've decided not to ask. Most of his weekend went into it.",
           "direction": "live"
         }
       ],
       "mode": "offstage",
-      "kind": "voice"
+      "kind": "live"
     },
     {
       "staging": {
@@ -32121,14 +32122,14 @@
       "notes": [
         {
           "id": "s25_l15",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "And he's out-produced the whole team. The feedback from the tailors has been incredible. Best week we've had in ages. Fifty yards in a day!!",
           "direction": "live"
         }
       ],
       "mode": "offstage",
-      "kind": "voice"
+      "kind": "live"
     },
     {
       "staging": {
@@ -32203,14 +32204,14 @@
       "notes": [
         {
           "id": "s25_l17",
-          "kind": "voice",
+          "kind": "live",
           "name": "Kristina",
           "text": "God, though. Imagine the whole team moving like that. I've got a thing at eleven, I'll talk to you later!",
           "direction": "live, already at the door"
         }
       ],
       "mode": "offstage",
-      "kind": "voice"
+      "kind": "live"
     },
     {
       "staging": {
