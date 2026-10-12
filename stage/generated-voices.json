@@ -14360,6 +14360,20 @@
         "voiceId": "TX3LPaxmHKxFdv7VOQHJ",
         "voiceName": "Liam, Energetic, Social Media Creator"
       }
+    },
+    "s23b_kristina_startup": {
+      "text": "I think it's sad how SJ is shifting the blame, but let me take this opportunity to share my new startup. I'm working on an app that helps people with mental health issues, it's meant to bring people together in a time we've never been further apart. I don't need any engineers, I just need some funding to pay for tokens",
+      "speaker": "kristina",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-c56b240c38b0c6e35c15989aed31beaf4172fa76b5114d4ae2d34dc58860fca8.mp3",
+      "duration": 18.520816,
+      "audioSha256": "c56b240c38b0c6e35c15989aed31beaf4172fa76b5114d4ae2d34dc58860fca8",
+      "provenance": {
+        "type": "elevenlabs",
+        "model": "eleven_v4",
+        "voiceId": "hpp4J3VqNfWAUOO0d1Us",
+        "voiceName": "Bella, Professional, Bright, Warm"
+      }
     }
   }
 }
