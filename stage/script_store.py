@@ -19,6 +19,7 @@ def raw_line(c):
     return '**'+name+'**'+(' *('+direction+')*' if direction else '')+': '+c['text']
 
 DERIVED={'cues':('groupEnd','notes'),'scenes':('start','count')}
+LIGHTING_DESKS={'kristina','brendan','liam','marcus'}
 
 def _bare(x,skip): return {k:v for k,v in x.items() if k not in skip}
 
@@ -167,6 +168,9 @@ class ScriptStore:
             if not isinstance(c.get('text'),str): raise ValueError('Cue text must be text.')
             if c['kind']!='stage' and not c.get('speaker'): raise ValueError('Select a speaker for every spoken cue.')
         if any(not any(c['scene']==sc['id'] for c in s['cues']) for sc in s['scenes']): raise ValueError('Each scene needs at least one cue.')
+        for x in s['scenes']+s['cues']:
+            lit=x.get('lighting')
+            if lit is not None and (not isinstance(lit,list) or len(set(lit))!=len(lit) or not set(lit)<=LIGHTING_DESKS): raise ValueError('Lighting must list desks from: '+', '.join(sorted(LIGHTING_DESKS))+'.')
     def reindex(self,s):
         s['cues']=[c for sc in s['scenes'] for c in s['cues'] if c['scene']==sc['id']]
         s['performanceStarts']=list(range(len(s['cues'])))

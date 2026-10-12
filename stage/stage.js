@@ -1,4 +1,5 @@
-import {castFor,readSettings,playbackShow,cueAudio,playbackRate,playthroughStarts} from './playback-settings.js?v=filmed-audio-20261010';
+import {castFor,readSettings,playbackShow,cueAudio,playbackRate,playthroughStarts} from './playback-settings.js?v=lighting-20261012';
+import {DESKS,lightingAt} from './lighting.js?v=lighting-20261012';
 import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=court-ticker-cleanup-20261010';
 import {screenLabel,actionDuration,actions,sampleAction} from './screen-actions.js?v=hacking-restore-20260919b';
 const $=id=>document.getElementById(id), controller=controllerId();
@@ -52,7 +53,12 @@ function renderTransport(){$('play').innerHTML=(state.running?'Pause':'Start / R
 function render(){const c=cue(),s=show.scenes.find(s=>s.id===c.scene);document.documentElement.style.setProperty('--notes-size',notesSize+'px');$('sceneLabel').textContent='Movement '+s.movement+' / '+s.id.toUpperCase();$('sceneTitle').textContent=s.title;$('cueNumber').textContent=`${show.performanceStarts.filter(i=>i<=state.index).length} / ${show.performanceStarts.length}`;$('cueKind').textContent=c.montage?'Film · Plays once':c.kind==='live'?'Live actor · Hold for GO':c.kind==='voice'?(c.speaker==='narrator'?'Narration · Plays once':'Generated voice · Plays once'):'Stage / visual cue · Hold for GO';$('cueId').textContent=c.id;$('speaker').textContent=c.name||'STAGE';const notes=(c.notes||[{kind:c.kind,name:c.name,text:c.text,direction:c.direction}]).map(n=>({...n,direction:(n.direction||'').replace(/^live(?:,\s*|$)/i,'')}));$('lineText').innerHTML=notes.map(n=>n.kind==='stage'?`<p class="actingBeat">${esc(n.text)}</p>`:`<p class="spokenBeat">${notes.length>1&&n.name!==c.name?`<span class="beatSpeaker">${esc(n.name)}</span>`:''}${n.direction?`<span class="beatDirection">${esc(n.direction)}</span>`:''}${esc(n.text)}</p>`).join('');$('direction').textContent='';$('adaptation').textContent=c.stageAdaptation||'';$('screenNotes').hidden=!c.screenNotes;$('screenNotes').textContent=c.screenNotes?c.screenNotes+'\n\n'+Object.entries(c.screenActions).map(([side,id])=>side.toUpperCase()+': '+actionDuration(id).toFixed(1)+' seconds, then hold until GO.').join(' · '):'';$('sourceDirection').hidden=!c.sourceText;$('sourceDirectionText').textContent=c.sourceText||'';$('leftLabel').textContent=screenLabel(c,'left')||c.state.replaceAll('-',' ');$('rightLabel').textContent=screenLabel(c,'right')||(c.offstage?'BLACK / OFFSTAGE':c.staging?.view==='physical'?c.staging.location:c.name||c.mode);const n=show.cues[nextIndex()];$('nextText').innerHTML=n?`<strong>${esc(n.name||'STAGE')} · ${esc(n.id)}</strong>${esc(n.text)}`:'End of show';
  if(lastScene!==c.scene){lastScene=c.scene;renderScenes();renderRail()}
  document.querySelectorAll('.cueItem').forEach(b=>b.classList.toggle('active',Number(b.dataset.index)===state.index));const active=document.querySelector('.cueItem.active');if(active)active.scrollIntoView({block:'nearest'});
- const o=overrides[c.id]||{};$('audioSource').value=o.audioSource||'tts';$('videoBehavior').value=o.behavior||'loop';$('loopStart').value=o.loopStart||0;$('editStatus').textContent=[o.left?.src&&'Left clip saved',o.right?.src&&'Right clip saved'].filter(Boolean).join(' · ');renderTransport();
+ const o=overrides[c.id]||{};$('audioSource').value=o.audioSource||'tts';$('videoBehavior').value=o.behavior||'loop';$('loopStart').value=o.loopStart||0;$('editStatus').textContent=[o.left?.src&&'Left clip saved',o.right?.src&&'Right clip saved'].filter(Boolean).join(' · ');renderTransport();renderLighting();
+}
+function renderLighting(){
+ $('lightingCard').hidden=!settings.showLighting;if(!settings.showLighting)return;
+ const lit=lightingAt(show,state.index);$('lightingUnset').hidden=!!lit;
+ $('lightingDesks').innerHTML=DESKS.map(d=>{const on=!!lit?.includes(d.id),label=d.name+': '+(lit?on?'lit':'unlit':'not set');return `<span class="desk ${on?'lit':''}" role="img" aria-label="${label}" title="${label}">${d.key}</span>`}).join('');
 }
 function renderScenes(){let movement='';$('sceneList').innerHTML=show.scenes.map(s=>{let label='';if(s.movement!==movement){movement=s.movement;label=`<div class="movement">Movement ${movement}</div>`}return label+`<button class="sceneButton ${s.id===cue().scene?'active':''}" data-index="${s.start}"><span class="num">${s.id.slice(1)}</span><span>${esc(s.title)}</span></button>`}).join('');$('sceneCount').textContent=show.scenes.length}
 function renderRail(){const query=$('search').value.trim().toLowerCase();$('cueList').innerHTML=show.cues.map((c,i)=>({c,i})).filter(({c,i})=>query?(c.id+' '+c.text+' '+c.name+' '+c.scene+' '+(show.scenes.find(s=>s.id===c.scene)?.title||'')).toLowerCase().includes(query):c.scene===cue().scene&&show.performanceStarts.includes(i)).map(({c,i})=>`<button class="cueItem ${state.index===i?'active':''}" data-index="${i}"><small>${esc(c.id)} · ${esc(c.name||'STAGE')}</small><p>${esc(c.text)}</p></button>`).join('')}
@@ -74,7 +80,7 @@ renderCast();renderScenes();renderRail();render();broadcast();
 
 function persistSettings(){localStorage.setItem('big-hack-playback',JSON.stringify(settings))}
 function renderCast(){
- $('skipStageDirections').checked=settings.skipStageDirections;
+ $('skipStageDirections').checked=settings.skipStageDirections;$('showLighting').checked=settings.showLighting;
  $('characterModes').innerHTML=cast.map(c=>{
    const lines=show.cues.filter(q=>q.speaker===c.id&&q.kind!=='stage');
    const available=lines.filter(q=>q.audio).length;
@@ -103,6 +109,7 @@ $('characterModes').onchange=e=>{if(e.target.dataset.character)setCharacterMode(
 $('allGenerated').onclick=()=>{for(const c of cast)settings.modes[c.id]='generated';applyModes()};
 $('defaultCast').onclick=()=>{settings.modes=readSettings(sourceShow).modes;applyModes()};
 $('skipStageDirections').onchange=e=>{settings.skipStageDirections=e.target.checked;persistSettings();render();status(settings.skipStageDirections?'Stage directions skipped · narration and films retained':'Stage directions included')};
+$('showLighting').onchange=e=>{settings.showLighting=e.target.checked;persistSettings();renderLighting()};
 $('speed').oninput=e=>setPlaybackRate(e.target.value);
 $('normalSpeed').onclick=()=>setPlaybackRate(1);
 
