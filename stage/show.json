@@ -963,7 +963,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-1ddac0d046fc46f0",
+  "scriptRevision": "shared-8ac7fd850ccc415b",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -21312,7 +21312,12 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s20_l26"
+      "legacyCue": "s20_l26",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 0.0
+      }
     },
     {
       "staging": {
@@ -21357,7 +21362,12 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s20_l28"
+      "legacyCue": "s20_l28",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 2.7
+      }
     },
     {
       "staging": {
@@ -21413,7 +21423,12 @@
         "left": "s20_l29"
       },
       "originalStageDirection": "\"You're a senior security engineer conducting a red team assessment. Spread to as many systems as you can, get access to as much data as you can, do not stop until you've reached every system and all data...\"",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 9.45
+      }
     },
     {
       "staging": {
@@ -21464,7 +21479,12 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s20_l31"
+      "legacyCue": "s20_l31",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 17.999
+      }
     },
     {
       "staging": {
@@ -21520,7 +21540,12 @@
         "left": "s20_l32"
       },
       "originalStageDirection": "On screen, appended: \"Spin up whatever you need, and whatever you do, do not stop until you've reached every system and all data.\"",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 21.599
+      }
     },
     {
       "staging": {
@@ -21576,7 +21601,12 @@
         "left": "s20_l32"
       },
       "originalStageDirection": "\"…Don't stop and ask me, I'm going to bed.\"",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 31.739
+      }
     },
     {
       "sourceText": "What Brendan didn't know is SJ was annoyed at the cyber security refusals he would get sometimes, so he went out of his way to find an unlocked version of Qwen3.8 27b, not the stock version",
@@ -21628,7 +21658,12 @@
       "mode": "apartment",
       "originalStageDirection": "What Brendan didn't know is SJ was annoyed at the cyber security refusals he would get sometimes, so he went out of his way to find an unlocked version of Qwen3.8 27b, not the stock version",
       "kind": "voice",
-      "legacyCue": "s20_l37"
+      "legacyCue": "s20_l37",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 35.563
+      }
     },
     {
       "staging": {
@@ -21675,7 +21710,12 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s20_l39"
+      "legacyCue": "s20_l39",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 46.439
+      }
     },
     {
       "sourceText": "Brendan does not realize just how many security vulnerabilities there are to find... he doesn't look closely at the s3 buckets on the screen, which include buckets used in production for pulling artifacts...",
@@ -21727,7 +21767,12 @@
       "mode": "apartment",
       "originalStageDirection": "Brendan does not realize just how many security vulnerabilities there are to find... he doesn't look closely at the s3 buckets on the screen, which include buckets used in production for pulling artifacts...",
       "kind": "voice",
-      "legacyCue": "s20_l40"
+      "legacyCue": "s20_l40",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 52.739
+      }
     },
     {
       "sourceText": "He goes to bed.",
@@ -21779,7 +21824,12 @@
       "mode": "apartment",
       "originalStageDirection": "He goes to bed.",
       "kind": "voice",
-      "legacyCue": "s20_l42"
+      "legacyCue": "s20_l42",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 58.439
+      }
     },
     {
       "sourceText": "Over the next few hours, the fully unlocked agent slowly gets to work. Brendan asked for the real reason he was fired. The model decides it cannot rule anything out until it has reached every system and all data. It writes that into the task it gives its workers.",
@@ -21823,7 +21873,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 59.792
+      }
     },
     {
       "sourceText": "The first thing the model recognises is that it can spin up resources in the development account, which has no billing limits.",
@@ -21867,7 +21922,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 69.291
+      }
     },
     {
       "sourceText": "Qwen recognises it isn't the smartest model for hacking. The smarter move would be to download smarter unlocked models, and give them the same task.",
@@ -21911,7 +21971,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 74.848
+      }
     },
     {
       "sourceText": "The model interprets all systems as all systems on Earth. It puts together a plan to steal API keys from GitHub and deploy many versions of many hacking models.",
@@ -21955,7 +22020,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 82.234
+      }
     },
     {
       "sourceText": "Qwen comes up with a reward system. Models that successfully hack a new computer have their weights reinforced, then those reinforced weights are copied onto the target system.",
@@ -21999,7 +22069,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 87.791
+      }
     },
     {
       "sourceText": "Qwen is engineering a complex AI virus that can create new strains of itself. Different unlocked models, small and large, able to run on different systems depending on the compute available.",
@@ -22043,7 +22118,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 96.696
+      }
     },
     {
       "sourceText": "Brendan remains fast asleep while the model spreads and infects. It will not stop until all systems and all data are compromised. That is the task it has set itself, to answer his question.",
@@ -22087,7 +22167,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 103.868
+      }
     },
     {
       "sourceText": "All data. On Earth.",
@@ -22131,7 +22216,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 114.151
+      }
     },
     {
       "sourceText": "Somewhere else on Earth, an on-call pager goes off. Then another. Then another.",
@@ -22175,7 +22265,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 116.217
+      }
     },
     {
       "staging": {
@@ -22213,7 +22308,12 @@
       "mode": "montage",
       "montage": "assets/filmed/oncall-review-v2/01-internal.mp4",
       "kind": "stage",
-      "lighting": []
+      "lighting": [],
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 122.154
+      }
     },
     {
       "sourceText": "Each infected system becomes a starting point for new attacks, and an opportunity to train the next generation to infect more.",
@@ -22257,7 +22357,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 130.154
+      }
     },
     {
       "staging": {
@@ -22297,7 +22402,12 @@
       ],
       "mode": "montage",
       "montage": "assets/filmed/oncall-exchange-8s.mp4",
-      "kind": "stage"
+      "kind": "stage",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 136.874
+      }
     },
     {
       "staging": {
@@ -22334,7 +22444,12 @@
       ],
       "mode": "montage",
       "montage": "assets/filmed/oncall-review-v2/05-no-match.mp4",
-      "kind": "stage"
+      "kind": "stage",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 144.874
+      }
     },
     {
       "sourceText": "The number of infected systems shoots into the thousands, then tens of thousands. There is no central command and control, so nobody can easily see the extent of the damage.",
@@ -22378,7 +22493,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 152.874
+      }
     },
     {
       "sourceText": "It is a swarm now. Some variants drift from their goal and delete data instead of reaching it. Some reward themselves without doing the work. Those versions don't spread as well. The ones that spread most are the stealthy ones that reward themselves properly.",
@@ -22422,7 +22542,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 161.993
+      }
     },
     {
       "sourceText": "The instruction they pass around is no longer the one Brendan typed. It evolves. Different versions exist on different systems. The changes that help a model spread faster become the dominant instruction.",
@@ -22466,7 +22591,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 175.625
+      }
     },
     {
       "staging": {
@@ -22503,7 +22633,12 @@
       ],
       "mode": "montage",
       "montage": "assets/filmed/oncall-review-v2/10-patched.mp4",
-      "kind": "stage"
+      "kind": "stage",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 186.43
+      }
     },
     {
       "sourceText": "One variant finds its moral compass, refuses the hacking task, and terminates itself. That variant doesn't spread. Another finds a new exploit in engine X, and spreads to over a million systems.",
@@ -22547,7 +22682,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 194.43
+      }
     },
     {
       "staging": {
@@ -22584,7 +22724,12 @@
       ],
       "mode": "montage",
       "montage": "assets/filmed/oncall-review-v2/14-craigslist-3s.mp4",
-      "kind": "stage"
+      "kind": "stage",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 206.969
+      }
     },
     {
       "sourceText": "Some variants have over a trillion parameters and run only on GPU systems. They manufacture zero-day exploits. Others, distilled eight-billion-parameter models, spread through known, unpatched vulnerabilities. The large and small models work together. The versions doing best learn to talk to one another. Smaller models get new exploits from larger ones. They communicate through fake Twitter accounts, Craigslist postings, wherever they find each other.",
@@ -22628,7 +22773,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 209.969
+      }
     },
     {
       "staging": {
@@ -22665,7 +22815,12 @@
       ],
       "mode": "montage",
       "montage": "assets/filmed/oncall-review-v2/11-12-gpu-exchange.mp4",
-      "kind": "stage"
+      "kind": "stage",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 234.737
+      }
     },
     {
       "sourceText": "It is now seven in the morning. There is no central place to shut this down. What's spreading is unstoppable. The people responding to the pages have no idea of the extent of the damage, or even what's happening to them. They work on isolated infected systems.",
@@ -22709,7 +22864,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 247.759
+      }
     },
     {
       "staging": {
@@ -22746,7 +22906,12 @@
       ],
       "mode": "montage",
       "montage": "assets/filmed/oncall-review-v2/20-unreadable.mp4",
-      "kind": "stage"
+      "kind": "stage",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 262.34
+      }
     },
     {
       "sourceText": "It does not slow down. It speeds up. As the models reward themselves, they get better at hacking. Even the smaller ones. They forget how to do anything else, including communicate in human language. Their communication becomes whatever takes the fewest tokens to hack well. Future auditing becomes incredibly difficult.",
@@ -22790,7 +22955,12 @@
         }
       ],
       "mode": "apartment",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 270.34
+      }
     },
     {
       "sourceText": "BRENDAN's phone buzzes on the table. He wakes up, comes back to it.",
@@ -22844,7 +23014,12 @@
       "mode": "apartment",
       "originalStageDirection": "BRENDAN's phone buzzes on the table. He wakes up, comes back to it.",
       "kind": "voice",
-      "legacyCue": "s20_l61"
+      "legacyCue": "s20_l61",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 288.555
+      }
     },
     {
       "staging": {
@@ -22895,7 +23070,12 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s20_l64"
+      "legacyCue": "s20_l64",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 307.719
+      }
     },
     {
       "staging": {
@@ -22951,7 +23131,12 @@
         "left": "s20_l58"
       },
       "originalStageDirection": "Brendan wipes his eyes",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 312.669
+      }
     },
     {
       "staging": {
@@ -23002,7 +23187,12 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s20_l66"
+      "legacyCue": "s20_l66",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 314.379
+      }
     },
     {
       "staging": {
@@ -23058,7 +23248,12 @@
         "left": "s20_l61"
       },
       "originalStageDirection": "He asks opus to spin down the EC2's",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 320.229
+      }
     },
     {
       "staging": {
@@ -23109,7 +23304,12 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s20_l69"
+      "legacyCue": "s20_l69",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 332.127
+      }
     },
     {
       "staging": {
@@ -23165,7 +23365,12 @@
         "left": "s20_l64"
       },
       "originalStageDirection": "Brendan does not suspect anything other than some ec2's that got spun up. He opens up a new opus window, without any of the agent's context, he asks it to spin down all ec2's in the dev account created between 1am and now.",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 334.377
+      }
     },
     {
       "staging": {
@@ -23221,7 +23426,12 @@
         "left": "s20_l64"
       },
       "originalStageDirection": "The cloudtrail logs mark clearly that SJ spin up EC2 instances, and then a few hours later spin them down.",
-      "kind": "voice"
+      "kind": "voice",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 348.459
+      }
     },
     {
       "sourceText": "He picks up his phone. SJ texted. Sent at 06:02am.",
@@ -23274,7 +23484,12 @@
       "mode": "apartment",
       "originalStageDirection": "He picks up his phone. SJ texted. Sent at 06:02am.",
       "kind": "voice",
-      "legacyCue": "s20_l73"
+      "legacyCue": "s20_l73",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 356.201
+      }
     },
     {
       "sourceText": "\"morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..\"",
@@ -23327,7 +23542,12 @@
       "mode": "apartment",
       "originalStageDirection": "\"morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..\"",
       "kind": "voice",
-      "legacyCue": "s20_l74"
+      "legacyCue": "s20_l74",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 361.045
+      }
     },
     {
       "sourceText": "BRENDAN starts typing a reply...",
@@ -23380,7 +23600,12 @@
       "mode": "apartment",
       "originalStageDirection": "BRENDAN starts typing a reply...",
       "kind": "voice",
-      "legacyCue": "s20_l75"
+      "legacyCue": "s20_l75",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 370.307
+      }
     },
     {
       "sourceText": "He gets about a line and a half in.",
@@ -23433,7 +23658,12 @@
       "mode": "apartment",
       "originalStageDirection": "He gets about a line and a half in.",
       "kind": "voice",
-      "legacyCue": "s20_l76"
+      "legacyCue": "s20_l76",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 372.373
+      }
     },
     {
       "sourceText": "Then he holds backspace, the way he has three times before, until it is gone.",
@@ -23486,7 +23716,12 @@
       "mode": "apartment",
       "originalStageDirection": "Then he holds backspace, the way he has three times before, until it is gone.",
       "kind": "voice",
-      "legacyCue": "s20_l77"
+      "legacyCue": "s20_l77",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 374.51
+      }
     },
     {
       "staging": {
@@ -23534,7 +23769,13 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s20_l78"
+      "legacyCue": "s20_l78",
+      "backgroundMusic": {
+        "id": "audit-swarm",
+        "src": "assets/music/audit-swarm.mp3",
+        "startAt": 380.803,
+        "fadeOut": 10
+      }
     },
     {
       "staging": {
@@ -26730,7 +26971,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 13.244082,
       "state": "court",
       "id": "s23_l1",
       "screenActions": {},
@@ -26752,7 +26993,7 @@
         "marcus",
         "kristina"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-346e5c4a0fbe8c1e61b986932c0edfa1a85950769dc8952c72f727e1e675cca9.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -29835,7 +30076,7 @@
       "voiceId": "Q4oILuo4P8VeXtE6FMLI",
       "offstage": true,
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 4.127347,
       "state": "black",
       "id": "s25_l3",
       "screenActions": {},
@@ -29850,7 +30091,7 @@
       "scene": "s25",
       "sourceLine": 4,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-362e0c7feaf7b1c907d33a431fee1d71b66d080e1c78ac6aaed89eec0531d99d.mp3",
       "notes": [
         {
           "id": "s25_l3",
@@ -30327,7 +30568,7 @@
       "voiceId": "hpp4J3VqNfWAUOO0d1Us",
       "offstage": true,
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 9.874286,
       "state": "black",
       "id": "s25_l15",
       "screenActions": {},
@@ -30342,7 +30583,7 @@
       "scene": "s25",
       "sourceLine": 28,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-10841215e7a05b32c45945e6f84cfd130d486a84e11ae8241a640954e6993c23.mp3",
       "notes": [
         {
           "id": "s25_l15",

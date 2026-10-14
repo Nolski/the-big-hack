@@ -1,6 +1,6 @@
 {
   "measuredOn": "2026-10-07",
-  "note": "Seconds per word of stage time, pauses included, timed line by line from the 7 October read-through (238 cleanly matched lines; it ran 78 minutes to the end of s23b). Live lines are read by the cast; recorded lines play from audio. Montage videos (fixed) play at their own length. The scenes hold the uncut script (before aae01c1) as word counts, so the cut is measured with the same rates.",
+  "note": "Seconds per word of stage time, pauses included, timed line by line from the 7 October read-through (238 cleanly matched lines; it ran 78 minutes to the end of s23b). Live lines are read by the cast; recorded lines play from audio. Montage videos (fixed) play at their own length. The scenes hold the uncut script (before aae01c1) as word counts per role, so the cut is measured with the same rates and the same live or recorded choice for each role. The recorded rate is at 1x playback speed.",
   "secondsPerWord": {
     "live": 0.45,
     "recorded": 0.36
@@ -34,104 +34,161 @@
     {
       "id": "s00",
       "title": "Opening montage",
-      "liveWords": 0,
-      "recordedWords": 0
+      "speakerWords": {}
     },
     {
       "id": "s01",
       "title": "Cold Open — The Standup",
-      "liveWords": 714,
-      "recordedWords": 370
+      "speakerWords": {
+        "brendan": 149,
+        "kristina": 312,
+        "liam": 357,
+        "marcus": 208,
+        "narrator": 58
+      }
     },
     {
       "id": "s01b",
       "title": "The Cursor Demo",
-      "liveWords": 662,
-      "recordedWords": 619
+      "speakerWords": {
+        "brendan": 662,
+        "kristina": 452,
+        "narrator": 167
+      }
     },
     {
       "id": "s01c",
       "title": "The PR Review",
-      "liveWords": 524,
-      "recordedWords": 7
+      "speakerWords": {
+        "brendan": 136,
+        "liam": 388,
+        "narrator": 7
+      }
     },
     {
       "id": "s06",
       "title": "Good Instinct",
-      "liveWords": 976,
-      "recordedWords": 312
+      "speakerWords": {
+        "brendan": 206,
+        "kristina": 153,
+        "liam": 584,
+        "marcus": 186,
+        "narrator": 159
+      }
     },
     {
       "id": "s07",
       "title": "Heads Together",
-      "liveWords": 225,
-      "recordedWords": 232
+      "speakerWords": {
+        "brendan": 225,
+        "kristina": 200,
+        "narrator": 32
+      }
     },
     {
       "id": "s11b",
       "title": "Best Practices",
-      "liveWords": 1252,
-      "recordedWords": 326
+      "speakerWords": {
+        "brendan": 160,
+        "kristina": 127,
+        "liam": 705,
+        "marcus": 387,
+        "narrator": 199
+      }
     },
     {
       "id": "s11c",
       "title": "The Latest Model",
-      "liveWords": 436,
-      "recordedWords": 1000
+      "speakerWords": {
+        "brendan": 436,
+        "kristina": 597,
+        "narrator": 403
+      }
     },
     {
       "id": "s14",
       "title": "The Offboarding",
-      "liveWords": 198,
-      "recordedWords": 678
+      "speakerWords": {
+        "hr": 457,
+        "liam": 198,
+        "narrator": 221
+      }
     },
     {
       "id": "s19",
       "title": "Nine Tickets",
-      "liveWords": 1349,
-      "recordedWords": 253
+      "speakerWords": {
+        "brendan": 347,
+        "liam": 519,
+        "marcus": 483,
+        "narrator": 253
+      }
     },
     {
       "id": "s20",
       "title": "The Audit",
-      "liveWords": 173,
-      "recordedWords": 1196
+      "speakerWords": {
+        "brendan": 173,
+        "narrator": 1196
+      }
     },
     {
       "id": "s20b",
       "title": "Next Week",
-      "liveWords": 380,
-      "recordedWords": 0
+      "speakerWords": {
+        "brendan": 87,
+        "liam": 293
+      }
     },
     {
       "id": "s22",
       "title": "Current Employer",
-      "liveWords": 472,
-      "recordedWords": 106
+      "speakerWords": {
+        "liam": 204,
+        "marcus": 268,
+        "narrator": 29,
+        "officer one": 61,
+        "officer two": 16
+      }
     },
     {
       "id": "s23",
       "title": "The Trial",
-      "liveWords": 375,
-      "recordedWords": 271
+      "speakerWords": {
+        "brendan": 131,
+        "judge": 46,
+        "kristina": 13,
+        "liam": 104,
+        "marcus": 140,
+        "prosecutor": 212
+      }
     },
     {
       "id": "s23b",
       "title": "Continuity",
-      "liveWords": 413,
-      "recordedWords": 0
+      "speakerWords": {
+        "liam": 117,
+        "marcus": 296
+      }
     },
     {
       "id": "s24",
       "title": "Statement of Facts",
-      "liveWords": 85,
-      "recordedWords": 257
+      "speakerWords": {
+        "brendan": 35,
+        "counsel": 201,
+        "liam": 50,
+        "narrator": 56
+      }
     },
     {
       "id": "s25",
       "title": "Great News",
-      "liveWords": 35,
-      "recordedWords": 157
+      "speakerWords": {
+        "kristina": 143,
+        "marcus": 35,
+        "narrator": 14
+      }
     }
   ],
   "budgets": {

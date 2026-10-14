@@ -57,7 +57,7 @@ class Handler(SimpleHTTPRequestHandler):
   raw=json.dumps(data,indent=2).encode();self.send_response(status);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(raw)));self.end_headers();self.wfile.write(raw)
  def do_GET(self):
   route=urlparse(self.path).path
-  if route in ('/api/editor','/api/revision','/api/history','/api/proof','/api/runtime'):return self.json_response(EDITOR.handle('GET',route))
+  if route in ('/api/editor','/api/revision','/api/history','/api/proof','/api/runtime'):return self.json_response(EDITOR.handle('GET',route,{k:v[-1] for k,v in parse_qs(urlparse(self.path).query).items()}))
   if route=='/guide':
    raw=(ROOT.parent/'README.md').read_bytes();self.send_response(200);self.send_header('Content-Type','text/plain; charset=utf-8');self.send_header('Content-Length',str(len(raw)));self.end_headers();self.wfile.write(raw);return
   if route=='/api/script':return self.json_response((lambda s:{'revision':__import__('script_store').digest(s),'scenes':STORE.scenes(s),'show':s})(STORE.read()))

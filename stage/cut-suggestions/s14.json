@@ -1,6 +1,6 @@
 {
   "scene": "s14",
-  "approach": "The narration in this scene is already fairly lean, so this pass trims about a sixth of the narrator's time rather than a third. It merges the two adjacent August lines, cuts restatements ('He's in disbelief'), and trims filler like 'The subject line is' and 'A field marked'. Every fact stays, as do the jokes: 'SJ has no idea what that means', 'really? Brendan?' and the 'Eligible for rehire' sting. Character dialogue is untouched.",
+  "approach": "The narration in this scene is already lean: earlier trims to the August opening, the meeting setup and the Brendan discovery are done, and those lines have nothing left to give without losing a joke. This pass removes two stale suggestions and rewrites them against the collaborators' new text, keeping 'so he needs to stall' and 'The call ends before SJ can say anything' as facts. It also trims the stillness the audience can already see from the wah-wah narration. Every fact and joke stays, and character dialogue is untouched.",
   "suggestions": [
     {
       "title": "Cut narration over the wah-wah call",
@@ -342,31 +342,6 @@
       "number": 441
     },
     {
-      "title": "Tighten the calendar narration",
-      "kind": "trim",
-      "cues": [
-        "s14_l50"
-      ],
-      "edits": [
-        {
-          "cue": "s14_l50",
-          "text": "SJ's brain is mostly working again. In the background he opens people's calendars, looking for anyone else meeting Dana today. He knows he'll lose access when the call ends."
-        }
-      ],
-      "why": "'starts opening up' and 'looking for others that have meetings with' are padded; 'at the end of the call' becomes 'when the call ends'.",
-      "keeps": "The callback to s14_l28 ('mostly working again'), the calendar snooping in the background, the search for others meeting Dana today, and that he knows his access goes with the call.",
-      "risk": "low",
-      "riskWhy": "Same beats in the same order, so the projected calendar business still syncs.",
-      "loses": [
-        "Wording: 'starts opening up'"
-      ],
-      "reliesOn": [],
-      "against": {
-        "s14_l50": "SJ's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call."
-      },
-      "number": 443
-    },
-    {
       "title": "Tighten the Brendan discovery",
       "kind": "trim",
       "cues": [
@@ -393,6 +368,58 @@
       "number": 444
     },
     {
+      "title": "Trim the narration over the wah-wah call",
+      "kind": "trim",
+      "cues": [
+        "s14_l23"
+      ],
+      "edits": [
+        {
+          "cue": "s14_l23",
+          "text": "She keeps talking, but SJ isn't processing it anymore. He does not look away from the screen, and he does not look at it either."
+        }
+      ],
+      "why": "'SJ does not move' is stage business the audience sees: s14_liam_muffled_call has him stay still. 'really' is filler.",
+      "keeps": "Dana talking on, SJ no longer taking it in, and the line about neither looking away from the screen nor at it.",
+      "risk": "low",
+      "riskWhy": "Only the visible stillness and one filler word go; the closing image is word for word.",
+      "loses": [
+        "Wording: 'SJ does not move.'",
+        "Wording: 'really'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l23": "She keeps talking but SJ isn't really processing it anymore. SJ does not move. He does not look away from the screen and he does not look at it either."
+      },
+      "number": 760
+    },
+    {
+      "title": "Tighten the calendar narration",
+      "kind": "trim",
+      "cues": [
+        "s14_l50"
+      ],
+      "edits": [
+        {
+          "cue": "s14_l50",
+          "text": "SJ's brain is mostly working again. In the background he opens people's calendars, looking for anyone else meeting Dana today. He'll lose access when the call ends, so he needs to stall."
+        }
+      ],
+      "why": "'starts opening up' and 'looking for others that have meetings with' are padded; 'He knows he'll lose access at the end of the call' becomes 'He'll lose access when the call ends', and 'so he needs to stall' already shows he knows.",
+      "keeps": "The callback to s14_l28 ('mostly working again'), the calendar snooping in the background, the search for others meeting Dana today, losing access when the call ends, and the new reason he has to stall.",
+      "risk": "low",
+      "riskWhy": "Same beats in the same order, so the projected calendar business still syncs.",
+      "loses": [
+        "Wording: 'starts opening up'",
+        "Wording: 'He knows'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14_l50": "SJ's brain is mostly working again. In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call so he needs to stall."
+      },
+      "number": 761
+    },
+    {
       "title": "Tighten the rehire sting",
       "kind": "trim",
       "cues": [
@@ -401,21 +428,22 @@
       "edits": [
         {
           "cue": "s14_l81",
-          "text": "After the call, Dana opens his Workday file. \"Eligible for rehire\" is already set to No, based on the peer reviews Marcus and Brendan left him."
+          "text": "The call ends before SJ can reply. Dana opens his Workday file. “Eligible for rehire” is already set to 'No', based on the peer reviews Marcus and Brendan left him."
         }
       ],
-      "why": "'After the call ends' becomes 'After the call', 'A field marked' is filler before a quoted field name, and 'has already been set' becomes 'is already set'.",
-      "keeps": "Dana opening his Workday file, the 'Eligible for rehire' field already set to No, and that it rests on Marcus and Brendan's peer reviews. The sting still lands on the last clause.",
+      "why": "'say anything' becomes 'reply', 'turns to SJ's file on Workday' becomes 'opens his Workday file', 'A field marked' is filler before a quoted field name, and 'has already been set' and 'had left' are shortened.",
+      "keeps": "The call cutting SJ off, Dana in his Workday file, 'Eligible for rehire' already set to No, and that it rests on Marcus and Brendan's peer reviews. The sting still lands on the last clause.",
       "risk": "low",
       "riskWhy": "Same order of reveal, so the laugh survives.",
       "loses": [
-        "Wording: 'A field marked'"
+        "Wording: 'A field marked'",
+        "Wording: 'before SJ can say anything'"
       ],
       "reliesOn": [],
       "against": {
-        "s14_l81": "After the call ends, Dana opens his workday file. A field marked “Eligible for rehire” has already been set to No based on the peer reviews Marcus and Brendan had left him."
+        "s14_l81": "The call ends before SJ can say anything. Dana turns to SJ's file on Workday. A field marked “Eligible for rehire” has already been set to 'No' based on the peer reviews Marcus and Brendan had left him."
       },
-      "number": 445
+      "number": 762
     }
   ],
   "writtenOn": "2026-10-09",

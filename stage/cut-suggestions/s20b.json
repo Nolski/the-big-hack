@@ -1,6 +1,6 @@
 {
   "scene": "s20b",
-  "approach": "The narration here is already lean: 66 words, about 24 seconds, in the opening line and the closing run after Brendan leaves. The closing five narrator lines sit together with nothing between them, so they merge into one tighter line that keeps every action, the glad-to-have-it-back feeling and the AI meme wallpaper. The opening line would save under 2 seconds, so it is left alone.",
+  "approach": "The narration here is already lean: two narrator lines, 70 words, about 25 seconds. The opening line would save under 2 seconds and its trim was turned down before, so it is left alone. The old merge of the closing lines went stale when collaborators added the tool-call review, so it is replaced with one trim of the new last sentence that keeps every action and technical fact.",
   "suggestions": [
     {
       "title": "Cut SJ telling Brendan he emailed a friend",
@@ -277,38 +277,31 @@
       "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
-      "title": "Merge and tighten the closing narration",
-      "kind": "cut + trim",
+      "title": "Tighten the tool-call ending of the closing narration",
+      "kind": "trim",
       "cues": [
-        "s20b_l47",
-        "s20b_l48",
-        "s20b_l49",
-        "s20b_l50",
-        "s20b_l51"
+        "s20b_l47"
       ],
       "edits": [
         {
           "cue": "s20b_l47",
-          "text": "Brendan goes. SJ looks at the machine on the table, glad to have it back. He plugs it in. It wakes on his wallpaper, the same meme mocking AI. He opens hackernews and reads more of the comments."
+          "text": "Brendan goes. SJ looks at the machine on the table, glad to have it back. He plugs it in. It wakes on his wallpaper, the same meme mocking AI. He finds qwen was given tool calls, reviews all the added code, and removes the tool calling."
         }
       ],
-      "why": "s20b_l47 to s20b_l51 are directly adjacent narrator lines, so they merge into s20b_l47. 'for a moment, the way you look at something you're glad to have back' (s20b_l48) becomes 'glad to have it back'; 'making fun of' becomes 'mocking'; 'loads up' becomes 'opens'.",
-      "keeps": "Brendan leaving, SJ looking at the machine on the table, his gladness to have it back, plugging it in, the same AI-mocking meme on the wallpaper, and SJ reading more hackernews comments are all still there. No joke is touched; the wallpaper irony survives word for word in substance.",
+      "why": "The last sentence of s20b_l47 is padded: 'notices ... was given the ability to call tools' becomes 'finds ... was given tool calls', 'gets to work reviewing' becomes 'reviews', and 'removing the tool call functionality' becomes 'removes the tool calling'. The first four sentences were already trimmed in the last pass and stay as they are.",
+      "keeps": "Brendan leaving, the machine on the table, SJ glad to have it back, plugging it in, the AI-mocking meme wallpaper, qwen having been given tool calls, SJ reviewing all the added code, and SJ removing the tool calling are all still there. The collaborators' new tool-call content is kept in full.",
       "risk": "low",
-      "riskWhy": "Only wording changes. The one new line is still spoken over the same unbroken stretch after the exit, with no stage cue between the merged lines.",
+      "riskWhy": "Only wording in the final sentence changes; every action and technical fact stays, and the line is still one unbroken narrator cue after the exit.",
       "loses": [
-        "Wording: 'for a moment, the way you look at something you're glad to have back' becomes 'glad to have it back'",
-        "Wording: 'making fun of' becomes 'mocking', 'loads up' becomes 'opens'"
+        "Wording: 'notices qwen was given the ability to call tools' becomes 'finds qwen was given tool calls'",
+        "Wording: 'gets to work reviewing' becomes 'reviews'",
+        "Wording: 'removing the tool call functionality' becomes 'removes the tool calling'"
       ],
       "reliesOn": [],
       "against": {
-        "s20b_l47": "BRENDAN goes.",
-        "s20b_l48": "SJ looks at the machine on the table for a moment, the way you look at something you're glad to have back.",
-        "s20b_l49": "He plugs it in.",
-        "s20b_l50": "It wakes on his wallpaper, the same meme making fun of AI.",
-        "s20b_l51": "He loads up hackernews and reads more of the comments."
+        "s20b_l47": "Brendan goes. SJ looks at the machine on the table, glad to have it back. He plugs it in. It wakes on his wallpaper, the same meme mocking AI. He notices qwen was given the ability to call tools, and gets to work reviewing all the added code, and removing the tool call functionality."
       },
-      "number": 600
+      "number": 800
     }
   ],
   "writtenOn": "2026-10-09",

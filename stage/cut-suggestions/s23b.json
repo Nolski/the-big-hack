@@ -1,6 +1,6 @@
 {
   "scene": "s23b",
-  "approach": "The narration in this scene is already fairly lean, and most of the scene is the Marcus call, which stays untouched. These trims take padding out of the four longer narrator lines: the opening, the Brendan line, the city lights and the rejected plea. Every fact stays, including the candles, Brendan's circumstances and the 151-years joke. The short lines (\"He ends the call.\", \"Marcus was right...\") are left alone.",
+  "approach": "Most of this scene is the Marcus call and the new sentencing-interview beat, which stay untouched. The narration is already fairly lean after the last pass, so only the two longer lines are trimmed: the opening, which now carries the HID jail and house arrest explanation, and the Brendan line, which now includes his VPN. The short lines, the city lights, the 151-years joke and the 'more vocal' bridge save under two seconds each and are left alone.",
   "suggestions": [
     {
       "title": "Cut the 'just for once' interruption and online symbol",
@@ -251,56 +251,6 @@
       "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
-      "title": "Tighten the opening narration",
-      "kind": "trim",
-      "cues": [
-        "s23b_l1"
-      ],
-      "edits": [
-        {
-          "cue": "s23b_l1",
-          "text": "SJ is back at his apartment, on a call with Marcus over an illicit LORA radio. They're not allowed to communicate. The power isn't working anymore; candles light the apartment."
-        }
-      ],
-      "why": "\"finds himself\", \"he is taking\" and \"They both know\" are padding in spoken text (s23b_l1).",
-      "keeps": "Where SJ is, the call with Marcus, the illicit LORA radio, that they are forbidden to talk, the power being out for good, and the candles.",
-      "risk": "low",
-      "riskWhy": "Every fact stays; only the phrasing changes.",
-      "loses": [
-        "Wording: \"finds himself\", \"They both know\""
-      ],
-      "reliesOn": [],
-      "against": {
-        "s23b_l1": "SJ finds himself back at his apartment, he is taking a call with Marcus over an illicit LORA radio. They both know they're not allowed to communicate. Candles are used to light the apartment, the power isn't working anymore"
-      },
-      "number": 480
-    },
-    {
-      "title": "Tighten the Brendan narration",
-      "kind": "trim",
-      "cues": [
-        "cue_934a26b82ba547fda0628efcca6b2573"
-      ],
-      "edits": [
-        {
-          "cue": "cue_934a26b82ba547fda0628efcca6b2573",
-          "text": "SJ knows Brendan started it, though not exactly what he did that night. Brendan is twenty-four, with a new lease and no resume. SJ is older, and nobody is waiting for him. It was his key, his model, his box. Eighteen months costs him less than it would cost Brendan."
-        }
-      ],
-      "why": "The opening sentence says \"Brendan\" three times and \"knows\" twice to make one point: SJ knows Brendan started it but not exactly what he did (cue_934a26b82ba547fda0628efcca6b2573).",
-      "keeps": "That SJ knows Brendan started it, that he does not know exactly what Brendan did that night, Brendan's age, lease and resume, SJ being older with nobody waiting, his key, model and box, and the eighteen-month sums all stay.",
-      "risk": "low",
-      "riskWhy": "Only the first sentence changes; the closing sums, which carry the weight, are untouched.",
-      "loses": [
-        "Wording: the pause in \"SJ knows it was Brendan..\" before the qualification"
-      ],
-      "reliesOn": [],
-      "against": {
-        "cue_934a26b82ba547fda0628efcca6b2573": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and no resume. SJ is older, and nobody is waiting for him. It was his key, his model, his box. Eighteen months costs him less than it would cost Brendan."
-      },
-      "number": 481
-    },
-    {
       "title": "Tighten the city lights narration",
       "kind": "trim",
       "cues": [
@@ -349,6 +299,57 @@
         "s24_l34": "After SJ signed his guilt, the recently appointed judge rejected the plea deal. SJ got scheduled for sentencing. And by the time his sentencing hearing came up, given the current state of the world... the 151 years would have actually been a good deal."
       },
       "number": 483
+    },
+    {
+      "title": "Tighten the HID jail and LORA call opening",
+      "kind": "trim",
+      "cues": [
+        "s23b_l1"
+      ],
+      "edits": [
+        {
+          "cue": "s23b_l1",
+          "text": "Every building with HID physical security systems had stopped working, including the jail SJ would have awaited trial in. In a very unusual move, the judge approved highly supervised house arrest. SJ is back home, on an illicit LORA radio call with Marcus. They're not allowed to communicate. The power no longer works; candles light the apartment."
+        }
+      ],
+      "why": "\"All buildings that used\", \"so in a very unusual move\", \"SJ is back at his apartment, on a call with Marcus over\", \"They both know\" and \"isn't working anymore\" are wordy for spoken text (s23b_l1). The run-on first sentence is split in two so it reads clearly aloud.",
+      "keeps": "HID physical security systems failing in every building that used them, the jail SJ would have awaited trial in, the very unusual move, highly supervised house arrest, SJ back home, the illicit LORA radio call with Marcus, the ban on them communicating, the power gone, and the candles.",
+      "risk": "low",
+      "riskWhy": "Every fact from the collaborator's HID jail addition stays; only phrasing changes.",
+      "loses": [
+        "Wording: \"They both know\", \"back at his apartment\" becomes \"back home\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23b_l1": "All buildings that used HID physical security systems had stopped working, including the jail SJ would have awaited trial in, so in a very unusual move, the judge approved a highly supervised house arrest. SJ is back at his apartment, on a call with Marcus over an illicit LORA radio. They both know they're not allowed to communicate. The power isn't working anymore; candles light the apartment."
+      },
+      "number": 860
+    },
+    {
+      "title": "Tighten the Brendan narration",
+      "kind": "trim",
+      "cues": [
+        "cue_934a26b82ba547fda0628efcca6b2573"
+      ],
+      "edits": [
+        {
+          "cue": "cue_934a26b82ba547fda0628efcca6b2573",
+          "text": "SJ doesn't know exactly what Brendan did that night, but he knows Brendan started it. Brendan is twenty-four, with a new lease and a short resume. SJ is older, and nobody is waiting for him. It was his key, his VPN, his model, his box. Eighteen months costs him less than it would cost Brendan."
+        }
+      ],
+      "why": "The opening says \"Brendan\" three times and \"knows\" twice to make one point; it becomes one sentence. \"VPN connection\" becomes \"VPN\" (cue_934a26b82ba547fda0628efcca6b2573).",
+      "keeps": "SJ knowing Brendan started it but not exactly what he did that night, Brendan's age, new lease and short resume, SJ older with nobody waiting, his key, VPN, model and box, and the eighteen-month sums.",
+      "risk": "low",
+      "riskWhy": "Only the first sentence is restructured; the closing sums that carry the weight are untouched.",
+      "loses": [
+        "Wording: the pause in \"SJ knows it was Brendan..\" before the qualification",
+        "Wording: \"connection\" after VPN"
+      ],
+      "reliesOn": [],
+      "against": {
+        "cue_934a26b82ba547fda0628efcca6b2573": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and a short resume. SJ is older, and nobody is waiting for him. It was his key, his VPN connection, his model, his box. Eighteen months costs him less than it would cost Brendan."
+      },
+      "number": 861
     }
   ],
   "writtenOn": "2026-10-09",

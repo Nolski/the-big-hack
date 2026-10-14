@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {autoAdvances,readSettings} from '../playback-settings.js';
+const on={autoAdvance:true};
+const narration={kind:'voice',speaker:'narrator',audio:'assets/audio/n.mp3'};
+assert.equal(readSettings({cues:[]}).autoAdvance,false,'Off unless the operator turns it on');
+assert.equal(readSettings({cues:[]},{autoAdvance:true}).autoAdvance,true);
+assert.equal(autoAdvances(narration,{}),false);
+assert.equal(autoAdvances(narration,on),true);
+assert.equal(autoAdvances({...narration,kind:'live',audio:null},on),false,'Live lines wait for GO');
+assert.equal(autoAdvances({kind:'stage'},on),false,'Stage directions wait for GO');
+assert.equal(autoAdvances({kind:'stage',montage:'film.mp4'},on),true,'Films advance when they end');
+assert.equal(autoAdvances({kind:'stage',montage:'film.mp4'},on,{audioSource:'none'}),false,'A silenced film holds');
+assert.equal(autoAdvances({...narration,audio:null},on),false,'A missing recording never skips its line');
+assert.equal(autoAdvances(narration,on,{audioSource:'none'}),false);
+assert.equal(autoAdvances(narration,on,{audioSource:'left',left:{src:'clip.mp4'}}),false,'Replacement clips wait for GO');
+assert.equal(autoAdvances({...narration,performanceVideo:{physical:true,speaker:'narrator',src:'cop.mp4'}},on),true,'Filmed performances advance when they end');
+assert.equal(autoAdvances({kind:'live',speaker:'judge',performanceVideo:{physical:true,speaker:'judge',src:'judge.mp4'}},on),false,'A live role holds even with a film');
+console.log('Auto-advance checks passed: off by default, recordings and films advance, live/stage/replacement-clip cues hold.');

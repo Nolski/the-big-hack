@@ -1,38 +1,7 @@
 {
   "scene": "s19",
-  "approach": "This pass only tightens the narrator; no character line is touched. The narration here is already fairly lean, so the savings are modest: the opening setting, the standup nostalgia aside and the hands-touch line lose their padding. The nine tickets reveal merges with the reflection that follows it, since 'it's almost better they don't know' repeats 'neither of them ever knew', and every fact of the reveal stays.",
+  "approach": "This pass only tightens the narrator; no character line is touched. The narration in this scene is already lean, under a minute in six short lines, and most of it carries the setting, the nine tickets payoff and the hands-touch joke, which stay as they are. Two lines still had slack, the standup nostalgia aside and the nine tickets reveal, and both are trimmed with every fact kept.",
   "suggestions": [
-    {
-      "title": "Trim SJ's job-hunt advice",
-      "kind": "trim",
-      "cues": [
-        "s19_l37",
-        "s19_l39"
-      ],
-      "edits": [
-        {
-          "cue": "s19_l37",
-          "text": "Right. Okay. First thing, polish off your resume, and update your linkedin..."
-        },
-        {
-          "cue": "s19_l39",
-          "text": "You will. Second thing, don't tell anybody you were fired, tell them you were impacted by layoffs. It lands completely differently and I don't know why."
-        }
-      ],
-      "why": "The third tip (write down accomplishments) is generic career advice. The 'impacted by layoffs' tip is the specific, slightly absurd one, and 'I don't know why' is SJ's voice.",
-      "keeps": "'I haven't got a resume' (called back in the s23b narrator) and 'how do you know all this?', which leads into the April 2000 and Netfold story, both stay.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s19_l37": "Right. Okay. First thing, polish off your resume, and update your linkedin... it may take a while to find a new job, but you can't get discouraged",
-        "s19_l39": "You will. Second thing, don't tell anybody you were fired, tell them you were impacted by layoffs. It lands completely differently and I don't know why. Third thing, and do this tomorrow, get everything out of your head and into a document while you can still remember it about your accomplishments. You're going to speak to them in future interviews, put them on your resume and write them down so you don't forget."
-      },
-      "number": 90,
-      "riskWhy": "The third tip is generic advice, and SJ's 'don't get in your own head' text in s20_l68 still carries the encouragement. 'I haven't got a resume' (called back in cue_934a26b82ba547fda0628efcca6b2573) and the layoffs tip both stay.",
-      "loses": [
-        "Nothing substantive: the accomplishments-document tip and 'you can't get discouraged' are stock career advice; the encouragement returns in SJ's text at s20_l68"
-      ]
-    },
     {
       "title": "Shorten the handover",
       "kind": "cut",
@@ -512,31 +481,6 @@
       "number": 460
     },
     {
-      "title": "Tighten the standup nostalgia",
-      "kind": "trim",
-      "cues": [
-        "s14a_l21"
-      ],
-      "edits": [
-        {
-          "cue": "s14a_l21",
-          "text": "SJ remembers arguing with Marcus all through Kristina's standups... he's almost nostalgic. He doesn't want to argue today. He can't help himself."
-        }
-      ],
-      "why": "s14a_l21 says 'thinks about all the times he's interrupted' and 'nostalgic about it'; the same memory and feeling fit in fewer words, split into short spoken sentences.",
-      "keeps": "The standups he and Marcus derailed, Kristina, the near-nostalgia, not wanting to argue, and not being able to help himself all stay. The line still tips straight into SJ's 'best engineers live in the US'.",
-      "risk": "low",
-      "riskWhy": "'Interrupted Kristina's standup with Marcus' becomes 'arguing with Marcus all through Kristina's standups', which says the same thing more clearly aloud.",
-      "loses": [
-        "Wording: 'interrupted', 'about it', 'but he also'"
-      ],
-      "reliesOn": [],
-      "against": {
-        "s14a_l21": "SJ thinks about all the times he's interrupted Kristina's standup with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself"
-      },
-      "number": 461
-    },
-    {
       "title": "Merge the nine tickets reveal with the reflection",
       "kind": "cut + trim",
       "cues": [
@@ -587,6 +531,56 @@
         "s19_l75": "Their hands touch.... It might be the first time either of them have made any kind of physical contact with any of their coworkers...."
       },
       "number": 463
+    },
+    {
+      "title": "Tighten the standup nostalgia",
+      "kind": "trim",
+      "cues": [
+        "s14a_l21"
+      ],
+      "edits": [
+        {
+          "cue": "s14a_l21",
+          "text": "SJ remembers derailing Kristina's standups arguing with Marcus... he's almost nostalgic. He doesn't want to argue today. He can't help himself."
+        }
+      ],
+      "why": "'thinks about all the times he's interrupted' becomes 'remembers derailing', 'about it' and 'but he also' are filler.",
+      "keeps": "SJ's history of arguing with Marcus in Kristina's standups, the nostalgia, that he doesn't want to argue today and can't help it, which sets up his Europe jab in s14a_l22.",
+      "risk": "low",
+      "riskWhy": "Same beats in the same order; only the phrasing is shorter.",
+      "loses": [
+        "Wording: 'thinks about all the times he's interrupted'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s14a_l21": "SJ thinks about all the times he's interrupted Kristina's standup arguing with Marcus... he's almost nostalgic about it. today he doesn't want to argue, but he also can't help himself"
+      },
+      "number": 780
+    },
+    {
+      "title": "Tighten the nine tickets reveal",
+      "kind": "trim",
+      "cues": [
+        "s19_l20"
+      ],
+      "edits": [
+        {
+          "cue": "s19_l20",
+          "text": "The layoffs came down to one number: Jira tickets closed. Kristina had promised to copy Brendan's tickets from Linear herself. Her vibe coded tool only ever copied the test ticket. Neither of them ever knew. Given how stupid the process was, that's almost better."
+        }
+      ],
+      "why": "'She vibe coded a tool, and it only ever copied' folds into 'Her vibe coded tool only ever copied'. 'They just sit with' describes the silence the audience can see, so the stupidity of the process moves into the 'almost better' sentence.",
+      "keeps": "One number, Jira tickets closed, Kristina promising to copy them from Linear herself, the vibe coded tool, only the test ticket copied, neither of them knowing, the process being stupid, and the wry 'almost better'.",
+      "risk": "low",
+      "riskWhy": "Every fact of the payoff stays; the reflective beat is now carried by the actors' silence and SJ's next line.",
+      "loses": [
+        "Wording: 'They just sit with how stupid the process was.'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s19_l20": "The layoffs came down to one number: Jira tickets closed. Kristina had promised to copy Brendan's tickets from Linear herself. She vibe coded a tool, and it only ever copied the test ticket. Neither of them ever knew... which is almost better. They just sit with how stupid the process was."
+      },
+      "number": 781
     }
   ],
   "writtenOn": "2026-10-09",
