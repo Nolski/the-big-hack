@@ -976,7 +976,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-7b6e2a788e8e4f79",
+  "scriptRevision": "shared-5c5e321d19194d23",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -13081,7 +13081,7 @@
       "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "It took a while but honestly? I'm just happy he's engaged. He's doing some crazy AI stuff I haven't seen any other team doing, and I think leadership will love it. As I mentioned on Slack, it's mid-year performance reviews so we want to keep the momentum going.",
+      "text": "It took a while but honestly? I'm just happy he's engaged. He's doing some crazy AI stuff I haven't seen any other team doing, and I think leadership will love it. As I mentioned on Slack, it's mid-year performance reviews so we want to keep the momentum going. Wins like the webhook thing will help for his end-of-year review, which is the one that matters.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -13121,7 +13121,7 @@
           "id": "s11c_l4",
           "kind": "live",
           "name": "Kristina",
-          "text": "It took a while but honestly? I'm just happy he's engaged. He's doing some crazy AI stuff I haven't seen any other team doing, and I think leadership will love it. As I mentioned on Slack, it's mid-year performance reviews so we want to keep the momentum going.",
+          "text": "It took a while but honestly? I'm just happy he's engaged. He's doing some crazy AI stuff I haven't seen any other team doing, and I think leadership will love it. As I mentioned on Slack, it's mid-year performance reviews so we want to keep the momentum going. Wins like the webhook thing will help for his end-of-year review, which is the one that matters.",
           "direction": ""
         }
       ]
