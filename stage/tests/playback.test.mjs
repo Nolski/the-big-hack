@@ -4,7 +4,7 @@ import {castFor,readSettings,playbackShow,cueAudio,playbackRate} from '../playba
 const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
 const defaults=readSettings(source);
 assert.deepEqual(new Set(castFor(source).map(c=>c.id)),new Set(source.cues.filter(c=>c.speaker&&c.kind!=='stage').map(c=>c.speaker)));
-assert.equal(defaults.modes.liam,'live');assert.equal(defaults.modes.kristina,'generated');
+assert.equal(defaults.modes.liam,'live');assert.equal(defaults.modes.kristina,'live');assert.equal(defaults.modes.narrator,'generated');
 assert.equal(playbackRate('bad'),1);assert.equal(playbackRate(4),2);assert.equal(playbackRate(.2),.5);
 const generated=readSettings(source,{modes:Object.fromEntries(castFor(source).map(c=>[c.id,'generated']))});
 const original=JSON.stringify(source);const show=playbackShow(source,generated);
