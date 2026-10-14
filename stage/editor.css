@@ -161,6 +161,19 @@ body.finding .shell { padding-right: 380px; }
   color: var(--faint); margin-top: 1px;
 }
 .who .bid { color: #454b57; font-size: 10px; font-variant-numeric: tabular-nums; }
+.who .cutsin {
+  display: block; margin: 3px 0 0 auto; padding: 1px 5px; border: 1px dashed var(--line); border-radius: 4px;
+  background: none; cursor: pointer; font-family: var(--ui); font-size: 9.5px; letter-spacing: 1.3px;
+  text-transform: uppercase; color: var(--faint); opacity: 0; transition: opacity .1s;
+}
+.beat:hover .who .cutsin, .beat:focus-within .who .cutsin, .who .cutsin:focus-visible { opacity: 1; }
+.who .cutsin:hover { border-color: var(--muted); color: var(--text); }
+/* Set: a solid tag that stays put, whether or not the beat is in play. */
+.beat.interrupts .who .cutsin {
+  opacity: 1; background: var(--text); color: var(--bg); border: 1px solid var(--text); font-weight: 700;
+}
+.beat.interrupts .who .cutsin:hover { background: var(--muted); border-color: var(--muted); color: var(--bg); }
+.who .cutsin[hidden] { display: none; }
 
 /* the words. A textarea that is exactly as tall as its text: the mirror
    ::after grows the grid cell, so nothing is ever measured or scrolled and

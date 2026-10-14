@@ -129,6 +129,28 @@ class EditorHTTPTest(unittest.TestCase):
         self.request('POST', '/api/undo', {'revision': accepted['revision']})
         self.assertIn(a['id'], [l['id'] for l in self.request('GET', '/api/editor')['scenes'][[s['id'] for s in script['scenes']].index(scene['id'])]['lines']])
 
+    def test_interrupts_flag_keeps_audio_and_undoes(self):
+        script = self.request('GET', '/api/editor')
+        scene = next(s for s in script['scenes'] if any(l.get('audio') and l['type'] == 'video' for l in s['lines']))
+        line = next(l for l in scene['lines'] if l.get('audio') and l['type'] == 'video')
+        cue = lambda: next(c for c in serve.STORE.read()['cues'] if c['id'] == line['id'])
+        before = cue()
+        saved = self.request('PUT', '/api/cue/'+line['id'], {'revision':script['revision'], 'interrupts':True})
+        self.assertTrue(saved['line']['interrupts'])
+        self.assertEqual(saved['line'].get('audio'), line['audio'], 'A cut-in is not a new recording')
+        self.assertTrue(cue()['interrupts'])
+        self.assertEqual((cue()['audio'], cue()['text']), (before['audio'], before['text']))
+        # A scene save that does not mention the flag leaves it alone.
+        lines = [{k: l[k] for k in ('id', 'type', 'speaker', 'text', 'direction')} for l in self.request('GET', '/api/editor')['scenes'][scene['number']-1]['lines']]
+        self.request('PUT', '/api/scene/'+scene['id'], {'revision':saved['revision'], 'lines':lines})
+        self.assertTrue(cue()['interrupts'])
+        self.request('POST', '/api/undo', {'revision':serve.STORE.revision()})
+        undone = self.request('POST', '/api/undo', {'revision':serve.STORE.revision()})
+        self.assertNotIn('interrupts', cue())
+        self.request('PUT', '/api/cue/'+line['id'], {'revision':undone['revision'], 'interrupts':True})
+        self.request('PUT', '/api/cue/'+line['id'], {'revision':serve.STORE.revision(), 'interrupts':False})
+        self.assertNotIn('interrupts', cue(), 'Switched off means absent, not false')
+
     def test_cross_origin_edits_refused(self):
         with self.assertRaises(HTTPError) as error:
             self.request('PUT','/api/proof',{'scenes':{}},{'Origin':'https://unrelated.example'})

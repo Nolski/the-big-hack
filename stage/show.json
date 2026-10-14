@@ -977,7 +977,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-9d77c45dddd841f0",
+  "scriptRevision": "shared-6b637652b5f24d90",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -2317,7 +2317,8 @@
       "screenNotes": "Kristina privately types her respect question and reads the answer, then types “Okay.... how can I get away with murdering them” and leaves it unsent. Keep the exchange on screen as the standup continues; the follow-up is not spoken.",
       "actionSource": {
         "left": "s01_l18"
-      }
+      },
+      "interrupts": true
     },
     {
       "id": "s01_l27",
@@ -2380,7 +2381,8 @@
       "screenNotes": "Kristina privately types her respect question and reads the answer, then types “Okay.... how can I get away with murdering them” and leaves it unsent. Keep the exchange on screen as the standup continues; the follow-up is not spoken.",
       "actionSource": {
         "left": "s01_l18"
-      }
+      },
+      "interrupts": true
     },
     {
       "id": "s01_l28",
@@ -2761,7 +2763,8 @@
       "actionSource": {
         "left": "s01_l32"
       },
-      "prFocus": "tokens"
+      "prFocus": "tokens",
+      "interrupts": true
     },
     {
       "id": "s01_l34",
@@ -3654,7 +3657,8 @@
       "screenNotes": "Kristina privately types into ChatGPT after s01_l43. Let the answer finish before GO.",
       "actionSource": {
         "left": "s01_l43"
-      }
+      },
+      "interrupts": true
     },
     {
       "id": "s01_l48",
@@ -4493,7 +4497,8 @@
           "text": "This PR is massive, Brendan. How is anybody supposed to review this?",
           "direction": "live, over him, jabbing at the screen"
         }
-      ]
+      ],
+      "interrupts": true
     },
     {
       "id": "s01c_l12",
@@ -4605,7 +4610,8 @@
           "direction": "live, cutting in"
         }
       ],
-      "prFocus": "line400"
+      "prFocus": "line400",
+      "interrupts": true
     },
     {
       "id": "s01c_l14",
@@ -4712,7 +4718,8 @@
           "direction": "Completely lost in his own argument at this point and no hearing Brendan at all"
         }
       ],
-      "prFocus": "line400"
+      "prFocus": "line400",
+      "interrupts": true
     },
     {
       "id": "s01c_l20",
@@ -7740,7 +7747,8 @@
           "text": "Sorry, can I say one thing that isn't a ticket?",
           "direction": ""
         }
-      ]
+      ],
+      "interrupts": true
     },
     {
       "id": "s06_l6",
@@ -7964,7 +7972,8 @@
           "text": "No Kristina, because this has all happened before. In the 1700's they invented these steam-powered looms that were unsafe to operate, and the workers were forced to work in sweat shops -",
           "direction": "going anyway, and this is the first real history in the play"
         }
-      ]
+      ],
+      "interrupts": true
     },
     {
       "id": "s06_l10",
@@ -8020,7 +8029,8 @@
           "text": "Maybe you shouldn’t get your lessons from the losing side of history.",
           "direction": "live, headphones half on, eyes still on the code"
         }
-      ]
+      ],
+      "interrupts": true
     },
     {
       "id": "s06_l11",
@@ -10460,7 +10470,8 @@
       ],
       "mode": "zoom",
       "kind": "live",
-      "legacyCue": "s11b_l11"
+      "legacyCue": "s11b_l11",
+      "interrupts": true
     },
     {
       "id": "s11b_l12",
@@ -10808,7 +10819,8 @@
           "text": "Yeah, but you're not using the same technology as the rest of us. Instead, you're using some crappy CHINESE model on some overpriced machine that isn't even half as good and is probably backdooring our codebase...",
           "direction": ""
         }
-      ]
+      ],
+      "interrupts": true
     },
     {
       "id": "s11b_l20",
@@ -11088,7 +11100,8 @@
           "text": "You'd have to be an idiot to worry about poisoned weights and then hand the thing a shell and the internet. Which is what Claude does.",
           "direction": "live, not hearing her — the jab he's been saving"
         }
-      ]
+      ],
+      "interrupts": true
     },
     {
       "id": "s11b_l29",
@@ -11200,7 +11213,8 @@
           "text": "Sorry, Kristina, one more thing because this actually matters. If anything off that Chinese model SJ is using lands in the product, and it comes out later the weights were compromised, that's on everyone on this call. I want it noted that I flagged it.",
           "direction": "over her"
         }
-      ]
+      ],
+      "interrupts": true
     },
     {
       "id": "s11b_l31",
@@ -11424,7 +11438,8 @@
           "text": "With respect, it often seems like I'm the only one who stands up for what's right on this team",
           "direction": "over her, and hurt about it"
         }
-      ]
+      ],
+      "interrupts": true
     },
     {
       "staging": {
@@ -12498,7 +12513,8 @@
           "text": "Yes, you do. That's why the code's getting worse. Nobody's paying attention to what they're shipping.",
           "direction": "live"
         }
-      ]
+      ],
+      "interrupts": true
     },
     {
       "id": "s11b_l63",
@@ -17717,7 +17733,8 @@
       ],
       "mode": "jitsi",
       "kind": "live",
-      "legacyCue": "s14a_l26"
+      "legacyCue": "s14a_l26",
+      "interrupts": true
     },
     {
       "staging": {

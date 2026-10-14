@@ -58,6 +58,8 @@ Use an 8px spacing rhythm, with 4px for small adjustments. Use 24–40px main pa
 
 Long notes scroll inside their reading area while the speaker context and transport remain accessible. Do not truncate the current speech or acting directions. A shortened upcoming cue is acceptable when clearly labeled “Coming next.” Source/adaptation details may be collapsed; performance directions may not be hidden with them.
 
+Coming next sits under the notes, in the reading column, so performers reading along see it without the operator. It is compact: at most three lines, then an ellipsis. Its title row names the kind of cue: Next line, Narration, Video, Recorded voice, Stage direction, or New scene, in quiet secondary text. INTERRUPTION and CONTINUED LINE are the only exceptions: uppercase on a filled warm-white chip, because missing either leaves a gap or a collision on stage.
+
 ## Controls and behavior
 
 GO is the only filled lime control on the default screen and stays in a stable bottom-right position. Keep Back, Replay, and Start/Pause neutral and distinct. Never move GO when a status message changes. Main performance controls should have a target at least 44px high.

@@ -9,9 +9,12 @@ Install Python 3.10 or newer, download or clone this repository, then run this f
 ```sh
 python3 stage/serve.py
 ```
+Or if you're a scrub running Windows:
+``` python -X utf8 stage/serve.py ```
 
 - **Edit:** http://localhost:8040/editor.html
 - **Present:** http://localhost:8040/
+
 
 No packages, account, GPU, or internet connection are needed to edit or play the included media. Keep the terminal open; Ctrl+C stops the server. If that port is busy, use `python3 stage/serve.py --port 8041` and open port 8041 instead. The server is accessible only on your computer by default.
 
