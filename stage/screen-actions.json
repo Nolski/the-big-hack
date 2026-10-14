@@ -790,7 +790,7 @@
         },
         {
           "op": "type",
-          "text": "liam, about the machine. last night i tried something and i think i need to tell you before you...",
+          "text": "SJ, about the machine. last night i tried something and i think i need to tell you before you...",
           "seconds": 8
         },
         {
@@ -825,7 +825,7 @@
         }
       ],
       "sourceTextSha256": "eeea85bbfbf6b55b2e1ffc4e725ff20d34fe3d53bab9d3ba3fbe42a26b358d39",
-      "initial": "liam, about the machine. last night i tried something and i think i need to tell you before you...",
+      "initial": "SJ, about the machine. last night i tried something and i think i need to tell you before you...",
       "incoming": "morning. Branden! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..",
       "note": "The same unfinished warning is visibly erased with held backspace. It is never sent."
     },
@@ -1498,6 +1498,65 @@
           "op": "answer",
           "text": "Reading signup controller…\nTracing getOrCreateSession…\nInspecting database transaction boundaries…\nBuilding concurrent-signup reproduction…\nRunning isolated browser tests…",
           "seconds": 32
+        }
+      ]
+    },
+    "offboarding-archive": {
+      "view": "inbox",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 5
+        },
+        {
+          "op": "submit",
+          "seconds": 0
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ]
+    },
+    "offboarding-calendar-search": {
+      "view": "team-calendar",
+      "person": "Marcus",
+      "steps": [
+        {
+          "op": "type",
+          "text": "Marcus",
+          "seconds": 2
+        },
+        {
+          "op": "submit",
+          "seconds": 0
+        },
+        {
+          "op": "hold",
+          "seconds": 2
+        }
+      ]
+    },
+    "offboarding-calendar-reveal": {
+      "view": "team-calendar",
+      "person": "Brendan",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 1.5
+        },
+        {
+          "op": "type",
+          "text": "Brendan",
+          "seconds": 1.5
+        },
+        {
+          "op": "submit",
+          "seconds": 0
+        },
+        {
+          "op": "hold",
+          "seconds": 3
         }
       ]
     }

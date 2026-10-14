@@ -14,11 +14,22 @@ class Handler(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
  def log_message(self,fmt,*args):
   if args and str(args[1] if len(args)>1 else '') not in ['200','206','304']:super().log_message(fmt,*args)
+ def fresh_app_response(self):
+  p=unquote(urlparse(self.path).path)
+  return p.endswith('/') or p=='/guide' or p.startswith('/api/') or Path(p).suffix.lower() in {'.html','.js','.css','.json','.map'}
+ def end_headers(self):
+  if self.fresh_app_response():self.send_header('Cache-Control','no-store, max-age=0')
+  super().end_headers()
  def allowed(self):
   p=unquote(urlparse(self.path).path)
   return not any(s.startswith('.') for s in p.split('/')) and not p.startswith(('/production/','/tools/','/legacy/','/script-history/'))
  def send_head(self):
   if not self.allowed():self.send_error(403);return
+  # Branch switches can replace an app file without changing its timestamp.
+  # Always serve current code and script data; keep media range/caching behavior.
+  if self.fresh_app_response():
+   for header in ('If-Modified-Since','If-None-Match'):
+    if header in self.headers:del self.headers[header]
   if urlparse(self.path).path=='/overrides.json' and not (ROOT/'overrides.json').exists():
    import io
    self.send_response(200);self.send_header('Content-Type','application/json');self.send_header('Content-Length','2');self.end_headers();return io.BytesIO(b'{}')
