@@ -28,3 +28,4 @@
 
 /* Actor names must be readable at a glance, independently of dialogue zoom. */
 #speaker,.beatSpeaker{font-size:22px;font-weight:750}#nextText strong{font-size:16px}
+.lightingCard{margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--border)}.lightingCard .desks{display:flex;gap:8px;margin-top:10px}.desk{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--control-border);border-radius:6px;font-size:13px;font-weight:650;color:var(--text-muted)}.desk.lit{background:var(--text);border-color:var(--text);color:var(--canvas)}.lightingUnset{margin-top:10px;font-size:12px;color:var(--text-muted)}.lightingToggle{display:block;margin:16px 0 8px}

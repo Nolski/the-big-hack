@@ -1,7 +1,9 @@
 """Shared authoring store. Both apps edit stage/show.json through this module.
 No model/runtime dependencies. Advisory lock + atomic replace + revision checks.
 """
-import copy, fcntl, hashlib, json, os, re, tempfile, time, uuid
+import copy, hashlib, json, os, re, tempfile, time, uuid
+try: import fcntl
+except ImportError: import msvcrt; fcntl=None
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -17,6 +19,7 @@ def raw_line(c):
     return '**'+name+'**'+(' *('+direction+')*' if direction else '')+': '+c['text']
 
 DERIVED={'cues':('groupEnd','notes'),'scenes':('start','count')}
+LIGHTING_DESKS={'kristina','brendan','liam','marcus'}
 
 def _bare(x,skip): return {k:v for k,v in x.items() if k not in skip}
 
@@ -75,8 +78,14 @@ class ScriptStore:
     @contextmanager
     def locked(self):
         with (self.root/'.script.lock').open('a') as f:
-            fcntl.flock(f,fcntl.LOCK_EX)
-            yield
+            if fcntl: fcntl.flock(f,fcntl.LOCK_EX); yield; return
+            f.write(' '); f.flush(); f.seek(0)
+            while True:
+                try: msvcrt.locking(f.fileno(),msvcrt.LK_LOCK,1); break
+                except OSError: continue
+            try: yield
+            finally:
+                f.seek(0); msvcrt.locking(f.fileno(),msvcrt.LK_UNLCK,1)
     def atomic(self,path,data):
         fd,tmp=tempfile.mkstemp(dir=path.parent,prefix='.'+path.name)
         try:
@@ -159,6 +168,9 @@ class ScriptStore:
             if not isinstance(c.get('text'),str): raise ValueError('Cue text must be text.')
             if c['kind']!='stage' and not c.get('speaker'): raise ValueError('Select a speaker for every spoken cue.')
         if any(not any(c['scene']==sc['id'] for c in s['cues']) for sc in s['scenes']): raise ValueError('Each scene needs at least one cue.')
+        for x in s['scenes']+s['cues']:
+            lit=x.get('lighting')
+            if lit is not None and (not isinstance(lit,list) or len(set(lit))!=len(lit) or not set(lit)<=LIGHTING_DESKS): raise ValueError('Lighting must list desks from: '+', '.join(sorted(LIGHTING_DESKS))+'.')
     def reindex(self,s):
         s['cues']=[c for sc in s['scenes'] for c in s['cues'] if c['scene']==sc['id']]
         s['performanceStarts']=list(range(len(s['cues'])))

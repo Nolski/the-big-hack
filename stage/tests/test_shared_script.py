@@ -49,4 +49,10 @@ class SharedScriptTest(unittest.TestCase):
   self.store.update_cue('s01_l4',{'type':'narration','speaker':'narrator','text':'Changed','direction':'','revision':self.store.revision()},self.names)
   self.assertEqual(json.loads(next((self.root/'script-history').glob('*.json')).read_text()),self.before)
   self.assertIn('<!-- cue:s01_l4 -->',self.store.export_markdown())
+ def test_lighting_validated_and_preserved(self):
+  with self.assertRaises(ValueError):self.store.transaction(self.store.revision(),lambda s:s['cues'][0].update(lighting=['dana']))
+  self.store.transaction(self.store.revision(),lambda s:next(c for c in s['cues'] if c['id']=='s01_l4').update(lighting=['liam']))
+  scene=next(x for x in self.store.scenes() if x['id']=='s01');next(l for l in scene['lines'] if l['id']=='s01_l4')['text']='Edited.'
+  self.store.update_scene('s01',scene,self.names)
+  self.assertEqual(next(c for c in self.store.read()['cues'] if c['id']=='s01_l4')['lighting'],['liam'])
 if __name__=='__main__':unittest.main()

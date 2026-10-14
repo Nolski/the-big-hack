@@ -17,7 +17,7 @@ export function castFor(show) {
   return [...cast.values()];
 }
 export function readSettings(show, saved = {}) {
-  return {musicVolume: musicVolume(saved?.musicVolume), skipStageDirections: saved?.skipStageDirections === true, rate: playbackRate(saved?.rate ?? 1), modes: Object.fromEntries(
+  return {musicVolume: musicVolume(saved?.musicVolume), skipStageDirections: saved?.skipStageDirections === true, showLighting: saved?.showLighting === true, rate: playbackRate(saved?.rate ?? 1), modes: Object.fromEntries(
     castFor(show).map(c => [c.id, ['live', 'generated'].includes(saved?.modes?.[c.id])
       ? saved.modes[c.id] : c.defaultMode]))};
 }

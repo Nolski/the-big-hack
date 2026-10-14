@@ -14,7 +14,8 @@
       "count": 1,
       "mode": "montage",
       "cast": [],
-      "storyboard": {}
+      "storyboard": {},
+      "lighting": []
     },
     {
       "id": "s01",
@@ -41,7 +42,13 @@
           "prompt": ""
         },
         "productionSetting": "Morning. SJ sits at a dual-monitor desk in a bathrobe, barely out of bed: one monitor is a wall of Reddit anti-AI memes he scrolls with the mouse, the other holds the Zoom standup grid of coworker tiles."
-      }
+      },
+      "lighting": [
+        "kristina",
+        "brendan",
+        "liam",
+        "marcus"
+      ]
     },
     {
       "id": "s01c",
@@ -66,7 +73,11 @@
           "prompt": ""
         },
         "productionSetting": "Continuous — Brendan takes SJ's Slack huddle. SJ is live at the same dual-monitor desk, still in the bathrobe, the memes finally gone: he's dragged the merged portal diff back up onto the big monitor and he's been stewing."
-      }
+      },
+      "lighting": [
+        "brendan",
+        "liam"
+      ]
     },
     {
       "id": "s01b",
@@ -91,7 +102,11 @@
           "prompt": ""
         },
         "productionSetting": "Continuous with the cold open — the standup grid has emptied to just two tiles, Kristina and Brendan, in a quiet post-standup huddle; SJ is gone. The screens stay with them: two coworker tiles, and then a shared screen as Brendan walks Kristina through Cursor live — plan mode, a plan that looks confident but is…"
-      }
+      },
+      "lighting": [
+        "kristina",
+        "brendan"
+      ]
     },
     {
       "id": "s06",
@@ -118,7 +133,13 @@
           "prompt": ""
         },
         "productionSetting": "The same desk as the cold open, the next morning — but no memes today. SJ is actually working: deep in the session-handler code on the big monitor, headphones half-on, a scatter of coffee cups."
-      }
+      },
+      "lighting": [
+        "kristina",
+        "brendan",
+        "liam",
+        "marcus"
+      ]
     },
     {
       "id": "s11b",
@@ -145,7 +166,13 @@
           "prompt": ""
         },
         "productionSetting": "The same desk, a few weeks on from the reorg. The agent-first mandate is now just how the team works."
-      }
+      },
+      "lighting": [
+        "kristina",
+        "brendan",
+        "liam",
+        "marcus"
+      ]
     },
     {
       "id": "s11c",
@@ -170,7 +197,11 @@
           "prompt": ""
         },
         "productionSetting": "A remote one-on-one, late morning: Brendan live at his desk, Kristina in her tile on the shared screen — the same monitor-blue register as 08 - The One-on-One. After the call, the closing movement is Kristina alone at her desk with her own screen, the machine's side written entirely as stage direction; Brendan stays…"
-      }
+      },
+      "lighting": [
+        "kristina",
+        "brendan"
+      ]
     },
     {
       "title": "The Offboarding",
@@ -195,7 +226,10 @@
       "count": 38,
       "mode": "huddle",
       "start": 237,
-      "source": "14 - The Offboarding.md"
+      "source": "14 - The Offboarding.md",
+      "lighting": [
+        "liam"
+      ]
     },
     {
       "title": "Nine Tickets",
@@ -221,7 +255,10 @@
       "count": 101,
       "mode": "apartment",
       "start": 275,
-      "source": "19 - Nine Tickets.md"
+      "source": "19 - Nine Tickets.md",
+      "lighting": [
+        "liam"
+      ]
     },
     {
       "title": "The Audit",
@@ -232,7 +269,10 @@
       "count": 61,
       "mode": "apartment",
       "start": 376,
-      "source": "20 - The Audit.md"
+      "source": "20 - The Audit.md",
+      "lighting": [
+        "brendan"
+      ]
     },
     {
       "title": "Next Week",
@@ -243,7 +283,10 @@
       "count": 31,
       "mode": "apartment",
       "start": 437,
-      "source": "20b - Next Week.md"
+      "source": "20b - Next Week.md",
+      "lighting": [
+        "liam"
+      ]
     },
     {
       "title": "Current Employer",
@@ -259,7 +302,11 @@
       "count": 43,
       "mode": "huddle",
       "start": 468,
-      "source": "22 - Current Employer.md"
+      "source": "22 - Current Employer.md",
+      "lighting": [
+        "liam",
+        "marcus"
+      ]
     },
     {
       "title": "The Trial",
@@ -289,7 +336,11 @@
       "count": 34,
       "mode": "radio",
       "start": 541,
-      "source": "23b - Continuity.md"
+      "source": "23b - Continuity.md",
+      "lighting": [
+        "liam",
+        "marcus"
+      ]
     },
     {
       "title": "Great News",
@@ -299,7 +350,8 @@
       "count": 19,
       "mode": "offstage",
       "start": 575,
-      "source": "25 - Great News.md"
+      "source": "25 - Great News.md",
+      "lighting": []
     }
   ],
   "performanceStarts": [
@@ -925,7 +977,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-c93bf15b17fa4860",
+  "scriptRevision": "shared-9d77c45dddd841f0",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -4981,7 +5033,10 @@
           "direction": ""
         }
       ],
-      "prFocus": "line400"
+      "prFocus": "line400",
+      "lighting": [
+        "liam"
+      ]
     },
     {
       "id": "s01b_l1",
@@ -7355,6 +7410,9 @@
           "text": "Her tile blinks out, still glowing. BRENDAN sits alone.",
           "direction": ""
         }
+      ],
+      "lighting": [
+        "brendan"
       ]
     },
     {
@@ -7396,7 +7454,8 @@
           "direction": ""
         }
       ],
-      "montage": "assets/filmed/time-jump-a-v5.mp4"
+      "montage": "assets/filmed/time-jump-a-v5.mp4",
+      "lighting": []
     },
     {
       "sourceText": "At SJ's desk, the morning after. No memes today. SJ is actually working hunched in, headphones half-on. He has been at this a while and it shows. On the second monitor the standup grid is already running; his tile is the same black square, camera still off. He is not really in the meeting. He is in the race condition he's tasked with fixing.",
@@ -8781,6 +8840,10 @@
           "text": "After standup, Brendan calls SJ to look at the signup bug.",
           "direction": ""
         }
+      ],
+      "lighting": [
+        "brendan",
+        "liam"
       ]
     },
     {
@@ -9813,7 +9876,8 @@
         "startAt": 35.683266,
         "cutAt": 2.041016
       },
-      "montageDuration": 47.786
+      "montageDuration": 47.786,
+      "lighting": []
     },
     {
       "id": "s11b_l1",
@@ -11585,6 +11649,10 @@
           "text": "About 10 minutes after standup, Brendan huddles SJ",
           "direction": ""
         }
+      ],
+      "lighting": [
+        "brendan",
+        "liam"
       ]
     },
     {
@@ -12769,7 +12837,10 @@
       ],
       "narrationAdapted": true,
       "sourceKind": "stage",
-      "adaptationReason": "Explicit author revision, September 12, 2026."
+      "adaptationReason": "Explicit author revision, September 12, 2026.",
+      "lighting": [
+        "liam"
+      ]
     },
     {
       "id": "s11b_l76",
@@ -14023,6 +14094,9 @@
           "text": "BRENDAN drops the call and turns back to his own board still lit, still there, already onto something else. Hers sits alone in the call for a moment. She won. She closes the window.",
           "direction": ""
         }
+      ],
+      "lighting": [
+        "kristina"
       ]
     },
     {
@@ -14118,7 +14192,8 @@
           "direction": ""
         }
       ],
-      "montage": "assets/filmed/time-jump-c-v6.mp4"
+      "montage": "assets/filmed/time-jump-c-v6.mp4",
+      "lighting": []
     },
     {
       "id": "s14_l1",
@@ -16515,7 +16590,11 @@
         }
       ],
       "mode": "jitsi",
-      "kind": "voice"
+      "kind": "voice",
+      "lighting": [
+        "liam",
+        "marcus"
+      ]
     },
     {
       "staging": {
@@ -18336,7 +18415,10 @@
       ],
       "mode": "jitsi",
       "kind": "stage",
-      "legacyCue": "s14a_l47"
+      "legacyCue": "s14a_l47",
+      "lighting": [
+        "liam"
+      ]
     },
     {
       "staging": {
@@ -22300,7 +22382,8 @@
       ],
       "mode": "montage",
       "montage": "assets/filmed/oncall-review-v2/01-internal.mp4",
-      "kind": "stage"
+      "kind": "stage",
+      "lighting": []
     },
     {
       "sourceText": "Each infected system becomes a starting point for new attacks, and an opportunity to train the next generation to infect more.",
@@ -24951,7 +25034,8 @@
       ],
       "mode": "montage",
       "montage": "assets/filmed/three-day-news-montage-v1.mp4",
-      "kind": "stage"
+      "kind": "stage",
+      "lighting": []
     },
     {
       "staging": {
@@ -27140,7 +27224,10 @@
       ],
       "mode": "huddle",
       "kind": "stage",
-      "legacyCue": "s22_l69"
+      "legacyCue": "s22_l69",
+      "lighting": [
+        "marcus"
+      ]
     },
     {
       "staging": {
@@ -29835,7 +29922,10 @@
       ],
       "mode": "radio",
       "kind": "voice",
-      "legacyCue": "s23b_l30"
+      "legacyCue": "s23b_l30",
+      "lighting": [
+        "liam"
+      ]
     },
     {
       "staging": {
@@ -30024,7 +30114,8 @@
       ],
       "mode": "montage",
       "montage": "assets/filmed/news/sentencing-news-and-statements-v4.mp4",
-      "kind": "stage"
+      "kind": "stage",
+      "lighting": []
     },
     {
       "staging": {
@@ -30135,7 +30226,10 @@
         }
       ],
       "montage": "assets/filmed/sentencing-interviews/reporter-sj-card-v2.mp4",
-      "montageDuration": 8.0
+      "montageDuration": 8.0,
+      "lighting": [
+        "liam"
+      ]
     },
     {
       "id": "s23b_sj_accusation",
@@ -30205,7 +30299,10 @@
         }
       ],
       "montage": "assets/filmed/sentencing-interviews/reporter-brendan-card-v2.mp4",
-      "montageDuration": 8.0
+      "montageDuration": 8.0,
+      "lighting": [
+        "brendan"
+      ]
     },
     {
       "id": "s23b_brendan_denial",
