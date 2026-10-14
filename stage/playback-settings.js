@@ -1,5 +1,6 @@
 // Pure playback helpers. The authored show stays intact; cast choices only
 // determine which cues need their own recording and operator GO button.
+import {musicVolume} from './background-music.js';
 export function playbackRate(value) {
   const n = Number(value);
   return Number.isFinite(n) ? Math.min(2, Math.max(0.5, n)) : 1;
@@ -16,7 +17,7 @@ export function castFor(show) {
   return [...cast.values()];
 }
 export function readSettings(show, saved = {}) {
-  return {skipStageDirections: saved?.skipStageDirections === true, rate: playbackRate(saved?.rate ?? 1), modes: Object.fromEntries(
+  return {musicVolume: musicVolume(saved?.musicVolume), skipStageDirections: saved?.skipStageDirections === true, showLighting: saved?.showLighting === true, rate: playbackRate(saved?.rate ?? 1), modes: Object.fromEntries(
     castFor(show).map(c => [c.id, ['live', 'generated'].includes(saved?.modes?.[c.id])
       ? saved.modes[c.id] : c.defaultMode]))};
 }

@@ -9,9 +9,12 @@ Install Python 3.10 or newer, download or clone this repository, then run this f
 ```sh
 python3 stage/serve.py
 ```
+Or if you're a scrub running Windows:
+``` python -X utf8 stage/serve.py ```
 
 - **Edit:** http://localhost:8040/editor.html
 - **Present:** http://localhost:8040/
+
 
 No packages, account, GPU, or internet connection are needed to edit or play the included media. Keep the terminal open; Ctrl+C stops the server. If that port is busy, use `python3 stage/serve.py --port 8041` and open port 8041 instead. The server is accessible only on your computer by default.
 
@@ -37,6 +40,8 @@ Open a pull request on GitHub. The app never commits or pushes for you.
 ## Present
 
 Select a scene, then use GO or Space to advance. Open the left and right audience displays from the presenter. Settings control live versus recorded roles and playback speed.
+
+In Settings → Audio, **Music volume** controls the background score separately from voices and clips. It starts quietly at 8%; zero mutes it. Music follows Pause and Resume, and continues across adjacent cues until its scripted cutoff.
 
 Editing a spoken line makes its old recording ineligible for playback. Generate a replacement or read it live; an old recording is never treated as the new dialogue. The presenter indicates when the script has changed so you can reload it between runs.
 

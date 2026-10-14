@@ -57,7 +57,7 @@ const revFrom = (sb) =>
 // its id (a beat sent without one is a *new* beat), nothing else is sent.
 const plainLines = (s) => (s.lines || []).map((l) => ({
   id: l.id, type: l.type, speaker: l.speaker || "",
-  text: l.text || "", direction: l.direction || "",
+  text: l.text || "", direction: l.direction || "", interrupts: !!l.interrupts,
 }));
 
 // The nearest spoken, non-narrator speaker: up from `at`, then down. A new or
@@ -460,6 +460,12 @@ function beatRow(ln) {
   const bid = document.createElement("span");
   bid.className = "bid";
   who.appendChild(bid);
+  // Read by the presenter's Coming next card as INTERRUPTION.
+  const cutBtn = document.createElement("button");
+  cutBtn.type = "button";
+  cutBtn.className = "cutsin";
+  cutBtn.onclick = () => row.toggleCut();
+  who.appendChild(cutBtn);
 
   function paintWho() {
     // Nobody speaks a stage direction, so the gutter says what kind of beat it
@@ -473,12 +479,20 @@ function beatRow(ln) {
     kind.disabled = false;
     bid.textContent = ln.id;
     el.className = "beat t-" + ln.type +
-      (proofOf(scene().id).flags.includes(ln.id) ? " flagged" : "");
+      (proofOf(scene().id).flags.includes(ln.id) ? " flagged" : "") +
+      (ln.interrupts && ln.type !== "direction" ? " interrupts" : "");
+    cutBtn.hidden = ln.type === "direction";
+    cutBtn.textContent = ln.interrupts ? "↯ cuts in" : "+ cuts in";
+    cutBtn.title = ln.interrupts
+      ? "Cuts in over the previous speaker: shown as INTERRUPTION in the presenter. Click or ⌥I to remove."
+      : "Mark this line as starting over the end of the previous one (⌥I)";
+    cutBtn.classList.toggle("on", !!ln.interrupts);
+    cutBtn.setAttribute("aria-pressed", String(!!ln.interrupts));
     dirRO.textContent = ln.direction || "";
     dirRO.hidden = !ln.direction;
   }
 
-  const reshape = (patch) => Q.add(async () => {
+  const reshape = (patch, undo) => Q.add(async () => {
     const wasDirection = ln.type === "direction";
     try {
       const r = await api("PUT", `/api/cue/${encodeURIComponent(ln.id)}`,
@@ -494,6 +508,7 @@ function beatRow(ln) {
         reload({ focus: at < 0 ? 0 : at, quiet: true });
       }
     } catch (e) {
+      if (undo) undo();
       note(e.message, "err");
       paintWho();
     }
@@ -600,6 +615,7 @@ function beatRow(ln) {
       ln.speaker = b.speaker;
       ln.text = b.text;
       ln.direction = b.direction;
+      ln.interrupts = !!b.interrupts;
       if ("audio" in b) ln.audio = b.audio; else delete ln.audio;
       paintWho();
       wordsF.settle(b.text || "");
@@ -608,6 +624,16 @@ function beatRow(ln) {
         wordsF.wrap.classList.toggle("words", true);
         wordsF.ta.placeholder = b.type === "direction" ? "stage direction…" : "the line…";
       }
+    },
+
+    toggleCut() {
+      // Show the new state at once; the save follows and puts it back if refused.
+      if (ln.type === "direction") return;
+      const was = !!ln.interrupts;
+      ln.interrupts = !was;
+      paintWho();
+      toast(ln.interrupts ? "Cuts in: shown as INTERRUPTION in the presenter" : "No longer cuts in");
+      reshape({ interrupts: !was }, () => { ln.interrupts = was; });
     },
 
     toggleFlag() {
@@ -756,7 +782,7 @@ async function insertAfter(afterId) {
     if (!speaker) { type = "narration"; speaker = "narrator"; }
   }
   const payload = plainLines(s);
-  payload.splice(at, 0, { type, speaker, text: "…", direction: "" });
+  payload.splice(at, 0, { type, speaker, text: "…", direction: "", interrupts: false });
   try {
     const saved = await api("PUT", `/api/scene/${encodeURIComponent(s.id)}`,
       { revision: S.revision, lines: payload });
@@ -772,7 +798,7 @@ async function insertAfter(afterId) {
       return;
     }
     const ln = { id: b.id, type: b.type, speaker: b.speaker,
-                 text: b.text, direction: b.direction };
+                 text: b.text, direction: b.direction, interrupts: b.interrupts };
     lines.splice(at, 0, ln);
     const row = beatRow(ln);
     S.rows.splice(at, 0, row);
@@ -1418,6 +1444,11 @@ document.addEventListener("keydown", (e) => {
     insertAfter(row ? row.ln.id : "");
     return;
   }
+  if (e.altKey && e.code === "KeyI") {
+    e.preventDefault();
+    if (S.lastRow) S.lastRow.toggleCut();
+    return;
+  }
   if (e.altKey && e.key.toLowerCase() === "f") {
     e.preventDefault();
     if (S.lastRow) S.lastRow.toggleFlag();
@@ -1549,7 +1580,7 @@ async function replaceAll() {
       // Each write moves the revision; the next one has to carry the new one.
       S.revision = res.revision;
       Object.assign(ln, { type: res.line.type, speaker: res.line.speaker,
-        text: res.line.text, direction: res.line.direction });
+        text: res.line.text, direction: res.line.direction, interrupts: res.line.interrupts });
       ok++;
     } catch (e) {
       failed.push(`${h.sid}/${h.lid}: ${e.message}`);

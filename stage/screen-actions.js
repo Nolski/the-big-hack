@@ -41,6 +41,8 @@ export function renderScreenAction(c,side){
  }
  const id=c.screenActions?.[side],a=actions[id];if(!a)return null;
  let body='';
+ if(a.view==='inbox')body=`<div class="mailDesktop"><aside><h2>Mail</h2><b>Inbox</b><p>Sent</p><p>Drafts</p><p>Archive</p></aside><main><header><h1>Inbox</h1><span class="archiveButton">▣ Archive</span></header><div class="mailRow announcement"><span class="unreadDot">●</span><b>CEO</b><strong>Building a leaner, AI-first company</strong><small>9:02 AM</small></div><div class="mailRow"><span></span><b>GitHub</b><span>Review requested · billing service</span><small>Yesterday</small></div><div class="mailRow"><span></span><b>Engineering</b><span>Weekly update</span><small>Yesterday</small></div><p class="archiveConfirmation" hidden>Conversation archived · Undo</p></main></div>`;
+ if(a.view==='team-calendar')body=`<div class="teamCalendar"><aside><h2>Calendar</h2><p>Today</p><p>My calendar</p><h3>People</h3><div class="calendarSearch"><span class="typedText"></span><span class="inputCaret">▏</span></div><p class="calendarPerson">Marcus</p></aside><main><header><h1>Today</h1><span class="calendarOwner">Marcus’s calendar</span></header><div class="calendarGrid"><div class="timeRow">9 AM</div><div class="timeRow">10 AM</div><div class="timeRow">11 AM</div><div class="timeRow">12 PM</div><div class="timeRow">1 PM</div><div class="calendarEvent regularMeeting"><b>Team standup</b><span>9:00–9:15</span></div><div class="calendarEvent catchupMeeting" hidden><b>Catch up</b><span>Dana · Brendan</span><span>11:30–11:45</span></div></div></main></div>`;
  if(a.view==='chatgpt')body=`<div class="chatHeader"><b>ChatGPT</b><span>New chat</span><small>Temporary</small></div>${a.context?`<div class="backgroundTask">${escape(a.context)}</div>`:''}<div class="chatConversation"><div class="chatWelcome">What can I help with?</div><div class="sentBubble" hidden></div><div class="chatAnswer" hidden><b>ChatGPT</b><div class="answerText"></div></div></div><div class="chatComposer">${input()}<span class="sendArrow">↑</span></div>`;
  if(a.view==='agent')body=`<div class="actionAppBar"><b>${escape(a.title)}</b><span>${escape(a.context)}</span></div><div class="agentConversation"><div class="sentBubble" hidden></div><pre class="answerText"></pre></div><div class="agentComposer">${input()}<span class="sendArrow">↵</span></div>`;
  if(a.view==='terminal')body=`<div class="actionAppBar"><b>Terminal</b><span>${escape(a.title)}</span></div><div class="actionTerminal"><div class="executedCommand" hidden></div><pre class="answerText"></pre><div class="terminalInput"><span class="prompt">$ </span>${input()}</div></div>`;
@@ -64,6 +66,17 @@ function drawAction(el,seconds){
 
  const a=actions[el.dataset.screenAction],s=sampleAction(a,seconds);
  const set=(selector,text)=>{const n=el.querySelector(selector);if(n&&n.textContent!==text)n.textContent=text;};
+ if(a.view==='inbox'){
+  el.querySelector('.announcement').hidden=s.submitted;
+  el.querySelector('.archiveConfirmation').hidden=!s.submitted;
+  el.querySelector('.archiveButton').classList.toggle('archiveActive',!s.submitted&&seconds>=4);
+ }
+ if(a.view==='team-calendar'){
+  const revealed=a.person==='Brendan'&&s.submitted;
+  set('.calendarOwner',revealed?'Brendan’s calendar':'Marcus’s calendar');
+  set('.calendarPerson',revealed?'Brendan':'Marcus');
+  el.querySelector('.catchupMeeting').hidden=!revealed;
+ }
  set('.typedText',s.text);set('.answerText',s.answer);set('.sentBubble',s.sent);
  set('.executedCommand',s.submitted?'$ '+s.sent:'');
  for(const selector of ['.sentBubble','.executedCommand','.chatAnswer']){const n=el.querySelector(selector);if(n)n.hidden=!s.submitted;}
