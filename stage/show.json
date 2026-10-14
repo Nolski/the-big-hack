@@ -976,7 +976,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-0a91cfaa371a4f85",
+  "scriptRevision": "shared-7b6e2a788e8e4f79",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -13659,7 +13659,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "She abruptly ends the call. Her Cursor prompt is waiting.",
+      "text": "She abruptly ends the call. Her AI prompt is waiting. AI doesn't quibble with her, is endlessly patient, doesn't question her qualifications, and undoubtedly smells better.",
       "direction": "",
       "audio": null,
       "audioDuration": 0,
@@ -13669,7 +13669,7 @@
           "id": "cue_a8693679ca6d42b4abf5d3f8b3ab90ca",
           "kind": "voice",
           "name": "Narrator",
-          "text": "She abruptly ends the call. Her Cursor prompt is waiting.",
+          "text": "She abruptly ends the call. Her AI prompt is waiting. AI doesn't quibble with her, is endlessly patient, doesn't question her qualifications, and undoubtedly smells better.",
           "direction": ""
         }
       ]
