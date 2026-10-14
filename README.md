@@ -41,6 +41,8 @@ Open a pull request on GitHub. The app never commits or pushes for you.
 
 Select a scene, then use GO or Space to advance. Open the left and right audience displays from the presenter. Settings control live versus recorded roles and playback speed.
 
+In Settings → Audio, **Music volume** controls the background score separately from voices and clips. It starts quietly at 8%; zero mutes it. Music follows Pause and Resume, and continues across adjacent cues until its scripted cutoff.
+
 Editing a spoken line makes its old recording ineligible for playback. Generate a replacement or read it live; an old recording is never treated as the new dialogue. The presenter indicates when the script has changed so you can reload it between runs.
 
 ## Files contributors need

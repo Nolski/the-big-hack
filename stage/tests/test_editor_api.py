@@ -1,5 +1,5 @@
 """Exercise browser save requests against a temporary script, never the real play."""
-import json, sys, tempfile, threading, unittest
+import json, os, sys, tempfile, threading, unittest
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
@@ -12,7 +12,7 @@ class EditorHTTPTest(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.original = serve.ROOT, serve.STORE, serve.EDITOR
-        root = Path(self.temp.name)
+        root = Path(self.temp.name).resolve()
         for name in ('show.json', 'generated-voices.json', 'runtime-baseline.json'):
             (root/name).write_bytes((serve.ROOT/name).read_bytes())
         serve.ROOT = root
@@ -155,5 +155,39 @@ class EditorHTTPTest(unittest.TestCase):
         with self.assertRaises(HTTPError) as error:
             self.request('PUT','/api/proof',{'scenes':{}},{'Origin':'https://unrelated.example'})
         self.assertEqual(error.exception.code,403)
+
+    def test_current_app_bypasses_stale_cache_without_breaking_media(self):
+        for filename, route in [('index.html', '/'), ('editor.html', '/editor.html'),
+                                ('display.html', '/display.html'), ('stage.js', '/stage.js?v=same'),
+                                ('stage.css', '/stage.css')]:
+            with self.subTest(route=route):
+                file = serve.ROOT/filename
+                file.write_text('Old application')
+                timestamp = file.stat().st_mtime_ns
+                with urlopen(self.url+route) as response:
+                    modified = response.headers['Last-Modified']
+                    self.assertIn('no-store', response.headers['Cache-Control'])
+                    response.read()
+                file.write_text('Current application with stage-direction toggle')
+                os.utime(file, ns=(timestamp, timestamp))
+                request = Request(self.url+route, headers={'If-Modified-Since': modified})
+                with urlopen(request) as response:
+                    self.assertEqual(response.status, 200)
+                    self.assertEqual(response.read().decode(), 'Current application with stage-direction toggle')
+                    self.assertIn('no-store', response.headers['Cache-Control'])
+
+        for route in ('/api/script', '/api/editor', '/show.json', '/generated-voices.json'):
+            with self.subTest(route=route), urlopen(self.url+route) as response:
+                self.assertIn('no-store', response.headers['Cache-Control'])
+                response.read()
+
+        media = serve.ROOT/'assets'/'sample.mp4'
+        media.parent.mkdir()
+        media.write_bytes(b'0123456789')
+        with urlopen(Request(self.url+'/assets/sample.mp4', headers={'Range': 'bytes=2-5'})) as response:
+            self.assertEqual(response.status, 206)
+            self.assertEqual(response.headers['Content-Range'], 'bytes 2-5/10')
+            self.assertEqual(response.read(), b'2345')
+            self.assertNotIn('no-store', response.headers.get('Cache-Control', ''))
 
 if __name__ == '__main__': unittest.main()
