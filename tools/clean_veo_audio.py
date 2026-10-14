@@ -61,6 +61,8 @@ def main():
     ap.add_argument('--part', action='append', default=[], help='START:VOICE_ID, one per speaker stretch')
     ap.add_argument('--isolate', action='store_true', help='keep Veo voices, only isolate speech')
     ap.add_argument('--lufs', type=float, default=-23.0, help='loudness for every part')
+    ap.add_argument('--seed', type=int, help='Voice Changer seed, for another take of the same clip')
+    ap.add_argument('--settings', help='Voice Changer voice_settings as JSON, e.g. {"stability": 0.8}')
     a = ap.parse_args()
     if a.isolate == bool(a.part): sys.exit('give either --part (Voice Changer) or --isolate')
     key = os.environ.get('ELEVENLABS_API_KEY')
@@ -80,8 +82,10 @@ def main():
             seg, got, fit = tmp / f'{i}.wav', tmp / f'{i}.mp3', tmp / f'{i}-fit.wav'
             ff('-i', str(src), '-af', f'atrim={start}:{end},asetpts=N/SR/TB', str(seg))
             if voice:
-                audio = post(s, f'{API}/v1/speech-to-speech/{voice}', seg,
-                             {'model_id': STS_MODEL, 'remove_background_noise': 'true'})
+                data = {'model_id': STS_MODEL, 'remove_background_noise': 'true'}
+                if a.seed is not None: data['seed'] = str(a.seed)
+                if a.settings: data['voice_settings'] = a.settings
+                audio = post(s, f'{API}/v1/speech-to-speech/{voice}', seg, data)
             else:
                 audio = post(s, f'{API}/v1/audio-isolation', seg)
             got.write_bytes(audio)
