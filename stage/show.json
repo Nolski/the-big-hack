@@ -919,7 +919,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-0f440c159a154f50",
+  "scriptRevision": "shared-821c32fea6834fbd",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -2776,7 +2776,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "and then I'm the one who had him remove the JWT's. That part's on me, SJ. Not Brendan, and not the AI. The switch to long-lived keys was my call.",
+      "text": "and then I'm the one who had him remove the JWT's. The switch to long-lived keys was on me, SJ. Not Brendan, and not the AI.",
       "direction": "stepping in — to take the heat off Brendan, and to be straight",
       "state": "pr",
       "mode": "meet",
@@ -2811,8 +2811,8 @@
         "left": "luddite-argument"
       },
       "sourceBeat": 35,
-      "audio": "assets/audio/shared-e2dc7c02d7d3e00e968cf6f97f0dae6b6f576395355e47dbaf72bb2da7a11448.mp3",
-      "audioDuration": 11.232653,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l38",
       "visualMapping": "matched",
       "sfx": [],
@@ -2822,7 +2822,7 @@
           "id": "s01_l35",
           "kind": "voice",
           "name": "Kristina",
-          "text": "and then I'm the one who had him remove the JWT's. That part's on me, SJ. Not Brendan, and not the AI. The switch to long-lived keys was my call.",
+          "text": "and then I'm the one who had him remove the JWT's. The switch to long-lived keys was on me, SJ. Not Brendan, and not the AI.",
           "direction": "stepping in — to take the heat off Brendan, and to be straight"
         }
       ],
@@ -5145,7 +5145,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "\"Work around him.\" I guess we all have to do that, huh.",
+      "text": "I guess we all have to do that, huh.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -5174,8 +5174,8 @@
       },
       "screenActions": {},
       "sourceBeat": 4,
-      "audio": "assets/audio/shared-65536ff28134245344ded762f94115e74935b42b9d8d66fa15734fe2ab150901.mp3",
-      "audioDuration": 3.552653,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l4",
       "visualMapping": "matched",
       "sfx": [],
@@ -5185,7 +5185,7 @@
           "id": "s01b_l4",
           "kind": "voice",
           "name": "Kristina",
-          "text": "\"Work around him.\" I guess we all have to do that, huh.",
+          "text": "I guess we all have to do that, huh.",
           "direction": ""
         }
       ]
@@ -5400,7 +5400,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Kristina thinks Brendan’s adoption of Opus might be what her team needs to outperform everyone else. If she can get the whole team coding like Brendan, that might be her ticket.",
+      "text": "Kristina thinks Brendan’s adoption of Opus might be what her team needs to outperform their peer teams. If she can get the whole team coding like Brendan, that might be her ticket to a promotion.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -5435,7 +5435,7 @@
           "id": "s01b_narrator_promotion",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Kristina thinks Brendan’s adoption of Opus might be what her team needs to outperform everyone else. If she can get the whole team coding like Brendan, that might be her ticket.",
+          "text": "Kristina thinks Brendan’s adoption of Opus might be what her team needs to outperform their peer teams. If she can get the whole team coding like Brendan, that might be her ticket to a promotion.",
           "direction": ""
         }
       ],
@@ -5709,7 +5709,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "…hardcode long lived credentials. That's what SJ said this morning. He wasn't just being dramatic, was he?",
+      "text": "…hardcode long lived credentials. We want to avoid those right? But I don't know how...",
       "direction": "deadpan, the penny dropping",
       "state": "cursor-plan",
       "mode": "huddle",
@@ -5738,8 +5738,8 @@
       },
       "screenActions": {},
       "sourceBeat": 15,
-      "audio": "assets/audio/shared-b00102da9fef4029789519397f183eee6fd2803500867667f2c6851b065a855c.mp3",
-      "audioDuration": 6.844082,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l19",
       "visualMapping": "matched",
       "sfx": [],
@@ -5749,7 +5749,7 @@
           "id": "s01b_l15",
           "kind": "voice",
           "name": "Kristina",
-          "text": "…hardcode long lived credentials. That's what SJ said this morning. He wasn't just being dramatic, was he?",
+          "text": "…hardcode long lived credentials. We want to avoid those right? But I don't know how...",
           "direction": "deadpan, the penny dropping"
         }
       ]
@@ -5761,7 +5761,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "No, he’s not usually wrong ... but it’s much faster to correct it when it’s wrong than to do it yourself. Try telling it that it’s wrong…",
+      "text": "The good news is, it’s much easier and faster to correct it when it’s wrong than to do it yourself. Try telling it that it’s wrong…",
       "direction": "live, a small laugh",
       "state": "cursor-plan",
       "mode": "huddle",
@@ -5790,8 +5790,8 @@
       },
       "screenActions": {},
       "sourceBeat": 16,
-      "audio": "assets/audio/shared-1ca08ddce806d611602e8ce72ebe5fa87d04161f270f82919f94a5f95b1c404d.mp3",
-      "audioDuration": 7.967347,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l20",
       "visualMapping": "matched",
       "sfx": [],
@@ -5801,7 +5801,7 @@
           "id": "s01b_l16",
           "kind": "live",
           "name": "Brendan",
-          "text": "No, he’s not usually wrong ... but it’s much faster to correct it when it’s wrong than to do it yourself. Try telling it that it’s wrong…",
+          "text": "The good news is, it’s much easier and faster to correct it when it’s wrong than to do it yourself. Try telling it that it’s wrong…",
           "direction": "live, a small laugh"
         }
       ]
@@ -5813,7 +5813,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "\"Research the real Jira REST API and keep the token in Vault rather than hardcode.\" See, I do listen on the security stuff.",
+      "text": "\"Research the real Jira REST API and keep the token in Vault rather than hardcode.\" See, I do get the security stuff.",
       "direction": "typing, getting it",
       "state": "cursor-corrected",
       "mode": "huddle",
@@ -5844,8 +5844,8 @@
         "left": "cursor-correction"
       },
       "sourceBeat": 17,
-      "audio": "assets/audio/shared-106cb7dda65a714c942e889c5851a938dc831047973bfc265ed8760752040373.mp3",
-      "audioDuration": 8.515918,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l21",
       "visualMapping": "matched",
       "sfx": [],
@@ -5855,7 +5855,7 @@
           "id": "s01b_l17",
           "kind": "voice",
           "name": "Kristina",
-          "text": "\"Research the real Jira REST API and keep the token in Vault rather than hardcode.\" See, I do listen on the security stuff.",
+          "text": "\"Research the real Jira REST API and keep the token in Vault rather than hardcode.\" See, I do get the security stuff.",
           "direction": "typing, getting it"
         }
       ]
@@ -6545,7 +6545,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Anyway, we can try closing the one for this! Okay… slash, jira, done, P-R-O-J four-twelve…",
+      "text": "Anyway, we can try closing the one for this ChatOps task! Okay… slash, jira, done, P-R-O-J four-twelve…",
       "direction": "typing into Slack, narrating",
       "state": "installed",
       "mode": "huddle",
@@ -6585,7 +6585,7 @@
           "id": "s01b_l34",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Anyway, we can try closing the one for this! Okay… slash, jira, done, P-R-O-J four-twelve…",
+          "text": "Anyway, we can try closing the one for this ChatOps task! Okay… slash, jira, done, P-R-O-J four-twelve…",
           "direction": "typing into Slack, narrating"
         }
       ]
@@ -7016,7 +7016,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Brendan, this is the future. Do you get that? All the other teams still doing it the old way is about to look like they're carving stone tablets.",
+      "text": "Brendan, this is the future. Do you get that? All the other teams still doing it the old way are going to be left in the dust.",
       "direction": "the refrain, and she means it",
       "state": "pr-plan",
       "mode": "huddle",
@@ -7042,8 +7042,8 @@
       },
       "screenActions": {},
       "sourceBeat": 49,
-      "audio": "assets/audio/shared-15e11487ce5fe988e799a51d166b66560d215b17745b870c81ae910ea3031790.mp3",
-      "audioDuration": 9.16898,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
@@ -7053,7 +7053,7 @@
           "id": "s01b_l49",
           "kind": "voice",
           "name": "Kristina",
-          "text": "Brendan, this is the future. Do you get that? All the other teams still doing it the old way is about to look like they're carving stone tablets.",
+          "text": "Brendan, this is the future. Do you get that? All the other teams still doing it the old way are going to be left in the dust.",
           "direction": "the refrain, and she means it"
         }
       ]
@@ -7460,7 +7460,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "…lovely, thanks Brendan. Marcus, anything blocking you?",
+      "text": "…lovely, thanks Brendan. Marcus, what are you on this week, and is anything blocking you?",
       "direction": "brisk, running the board",
       "state": "race-code",
       "mode": "zoom",
@@ -7493,8 +7493,8 @@
       },
       "screenActions": {},
       "sourceBeat": 2,
-      "audio": "assets/audio/shared-26eec45179f01f7a5a0aa19e7c6d9af96d000f1caee828b17e87fb87337db0a6.mp3",
-      "audioDuration": 3.866122,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l2",
       "visualMapping": "matched",
       "sfx": [],
@@ -7504,7 +7504,7 @@
           "id": "s06_l2",
           "kind": "voice",
           "name": "Kristina",
-          "text": "…lovely, thanks Brendan. Marcus, anything blocking you?",
+          "text": "…lovely, thanks Brendan. Marcus, what are you on this week, and is anything blocking you?",
           "direction": "brisk, running the board"
         }
       ]
@@ -7852,7 +7852,7 @@
       "kind": "live",
       "speaker": "marcus",
       "name": "Marcus",
-      "text": "No Kristina, because this has all happened before. In the 1700's they invented these power looms driven by steam that were unsafe to operate but could make textiles way faster than the workers of the time. The workers used to work from home and were well compensated but were forced to work in sweat shops -",
+      "text": "No Kristina, because this has all happened before. In the 1700's they invented these steam-powered looms that were unsafe to operate, and the workers were forced to work in sweat shops -",
       "direction": "going anyway, and this is the first real history in the play",
       "state": "race-code",
       "mode": "zoom",
@@ -7885,8 +7885,8 @@
       },
       "screenActions": {},
       "sourceBeat": 9,
-      "audio": "assets/audio/shared-cd67939bb3eedac437b05da1e9a2876b53f18804fd8afb3751b51cac39f4f6f2.mp3",
-      "audioDuration": 19.226122,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l9",
       "visualMapping": "matched",
       "sfx": [],
@@ -7896,7 +7896,7 @@
           "id": "s06_l9",
           "kind": "live",
           "name": "Marcus",
-          "text": "No Kristina, because this has all happened before. In the 1700's they invented these power looms driven by steam that were unsafe to operate but could make textiles way faster than the workers of the time. The workers used to work from home and were well compensated but were forced to work in sweat shops -",
+          "text": "No Kristina, because this has all happened before. In the 1700's they invented these steam-powered looms that were unsafe to operate, and the workers were forced to work in sweat shops -",
           "direction": "going anyway, and this is the first real history in the play"
         }
       ]
@@ -8020,7 +8020,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "They got cheaper cloth into more people's hands and the Luddites wanted to stop it. Seems like a bad side to pick. This AI crap isn't doing that. It's giving us worse code and more of it. Anyway, I'm trying to some code over here. Can we move on?",
+      "text": "They got cheaper cloth into more people's hands and the Luddites wanted to stop it. Seems like a bad side to pick. This AI crap isn't doing that. It's giving us worse code and more of it. Anyway, I'm trying to review some code over here. Can we move on?",
       "direction": "live",
       "state": "race-code",
       "mode": "zoom",
@@ -8053,8 +8053,8 @@
       },
       "screenActions": {},
       "sourceBeat": 12,
-      "audio": "assets/audio/shared-eaa784b5cbec43c3f3004ace89faa8cdf171ce894f4b540a1bc08f078a9a403e.mp3",
-      "audioDuration": 15.882449,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l12",
       "visualMapping": "matched",
       "sfx": [],
@@ -8064,7 +8064,7 @@
           "id": "s06_l12",
           "kind": "live",
           "name": "SJ",
-          "text": "They got cheaper cloth into more people's hands and the Luddites wanted to stop it. Seems like a bad side to pick. This AI crap isn't doing that. It's giving us worse code and more of it. Anyway, I'm trying to some code over here. Can we move on?",
+          "text": "They got cheaper cloth into more people's hands and the Luddites wanted to stop it. Seems like a bad side to pick. This AI crap isn't doing that. It's giving us worse code and more of it. Anyway, I'm trying to review some code over here. Can we move on?",
           "direction": "live"
         }
       ]
@@ -8833,6 +8833,34 @@
       ]
     },
     {
+      "id": "cue_cb6e202cb2534dde8fd58ab221162dcb",
+      "scene": "s06",
+      "state": "black",
+      "mode": "zoom",
+      "cast": [],
+      "screenActions": {},
+      "computers": {},
+      "sfx": [],
+      "advance": "manual",
+      "kind": "voice",
+      "speaker": "narrator",
+      "name": "Narrator",
+      "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without SJ the wiser.",
+      "direction": "",
+      "audio": null,
+      "audioDuration": 0,
+      "groupEnd": 141,
+      "notes": [
+        {
+          "id": "cue_cb6e202cb2534dde8fd58ab221162dcb",
+          "kind": "voice",
+          "name": "Narrator",
+          "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without SJ the wiser.",
+          "direction": ""
+        }
+      ]
+    },
+    {
       "id": "s06_l33",
       "scene": "s06",
       "beat": 30,
@@ -8876,7 +8904,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types into ChatGPT after s06_l32. Let the answer finish before GO.",
-      "groupEnd": 141,
+      "groupEnd": 142,
       "notes": [
         {
           "id": "s06_l33",
@@ -8889,71 +8917,6 @@
       "actionSource": {
         "right": "s06_l32"
       }
-    },
-    {
-      "id": "s06_l34",
-      "scene": "s06",
-      "beat": 31,
-      "kind": "voice",
-      "speaker": "narrator",
-      "name": "Narrator",
-      "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without SJ the wiser.",
-      "direction": "",
-      "state": "race-search",
-      "mode": "zoom",
-      "cast": [
-        "liam",
-        "brendan"
-      ],
-      "advance": "manual",
-      "loop": true,
-      "sourceLine": 84,
-      "sourceKind": "stage",
-      "narrationAdapted": true,
-      "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "staging": {
-        "location": "remote work",
-        "set": null,
-        "computer": null,
-        "beers": 0,
-        "callCast": [
-          "liam",
-          "brendan"
-        ],
-        "callStatus": "connected",
-        "view": "call"
-      },
-      "computers": {
-        "left": "SJ",
-        "right": "Brendan"
-      },
-      "screenActions": {
-        "right": "rng-entropy"
-      },
-      "sourceBeat": 34,
-      "audio": "assets/audio/shared-5ad9110f86986c10d737d3354ed5b2b928726094ca56698ef7e0674c5f3bf94a.mp3",
-      "audioDuration": 6.687347,
-      "legacyCue": "s06_l31",
-      "visualMapping": "matched",
-      "sfx": [],
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
-      "groupEnd": 142,
-      "notes": [
-        {
-          "id": "s06_l34",
-          "kind": "voice",
-          "name": "Narrator",
-          "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without SJ the wiser.",
-          "direction": ""
-        }
-      ],
-      "originalStageDirection": "On BRENDAN's own screen Claude Code is already open at the repository root with full repo access. He types: \"Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user's account. No production data. Find a local repro and root cause.\" He hits enter. The tool starts traversing controllers, models, tests and the session store. No pasted handler, no logs, no voice; text on a screen SJ cannot see.",
-      "actionSource": {
-        "right": "s06_l34"
-      },
-      "sourceText": "On BRENDAN's own screen Claude Code is already open at the repository root with full repo access. He types: \"Investigate the signup/session flow. Rarely, a newly signed-up user briefly sees another user's account. No production data. Find a local repro and root cause.\" He hits enter. The tool starts traversing controllers, models, tests and the session store. No pasted handler, no logs, no voice; text on a screen SJ cannot see.",
-      "claudeSession": "signup-investigation",
-      "claudeComplete": false
     },
     {
       "id": "s06_l35",
@@ -9142,7 +9105,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, reproduced the bug and drafted a one-line fix.",
+      "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, generated a script to reproduce the bug and drafted a one-line fix.",
       "direction": "",
       "state": "race-proof",
       "mode": "zoom",
@@ -9176,8 +9139,8 @@
         "right": "mutex-deadlock"
       },
       "sourceBeat": 42,
-      "audio": "assets/audio/shared-edfa237022816f75307939678759dfa79e4949c70aea7ee4c127c6e5b39c8582.mp3",
-      "audioDuration": 8.437551,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l39",
       "visualMapping": "matched",
       "sfx": [],
@@ -9187,7 +9150,7 @@
           "id": "s06_l42",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, reproduced the bug and drafted a one-line fix.",
+          "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, generated a script to reproduce the bug and drafted a one-line fix.",
           "direction": ""
         }
       ],
@@ -9261,7 +9224,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "…Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. That getOrCreateSession, what's it keyed on?",
+      "text": "…Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. That function getOrCreateSession, what's it keyed on?",
       "direction": "live, offhand, like it just floated up — the dumb-question voice",
       "state": "race-fixed",
       "mode": "zoom",
@@ -9292,8 +9255,8 @@
         "right": "mutex-deadlock"
       },
       "sourceBeat": 43,
-      "audio": "assets/audio/shared-1f101c3511de83e481e5bac49d81d7dd1e7f744088547bc4d7f9f736aafe2122.mp3",
-      "audioDuration": 9.639184,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s06_l40",
       "visualMapping": "matched",
       "sfx": [],
@@ -9303,7 +9266,7 @@
           "id": "s06_l43",
           "kind": "live",
           "name": "Brendan",
-          "text": "…Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. That getOrCreateSession, what's it keyed on?",
+          "text": "…Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. That function getOrCreateSession, what's it keyed on?",
           "direction": "live, offhand, like it just floated up — the dumb-question voice"
         }
       ],
@@ -12643,7 +12606,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "No. Were you not listening at standup? I don't give it tool calls. It writes text. I decide what the text is worth running. I had to strip it out and run the whole thing in a sandbox for security purposes. This whole thing thing has made me slower just to follow this new AI policy.",
+      "text": "No. Were you not listening at standup? I don't give it tool calls. It writes text. I decide what the text is worth running. I had to strip it out and run the whole thing in a sandbox for security purposes. This whole thing has made me slower just to follow this new AI policy.",
       "direction": "live",
       "state": "cloud-fix",
       "mode": "zoom",
@@ -12675,8 +12638,8 @@
         "left": "local-stub"
       },
       "sourceBeat": 66,
-      "audio": "assets/audio/shared-c54fd95a495ae2f5fb198663043ca2df19568777fa6dbf0376f8d622aed6e8c9.mp3",
-      "audioDuration": 17.632653,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s11b_l62",
       "visualMapping": "matched",
       "sfx": [],
@@ -12687,7 +12650,7 @@
           "id": "s11b_l66",
           "kind": "live",
           "name": "SJ",
-          "text": "No. Were you not listening at standup? I don't give it tool calls. It writes text. I decide what the text is worth running. I had to strip it out and run the whole thing in a sandbox for security purposes. This whole thing thing has made me slower just to follow this new AI policy.",
+          "text": "No. Were you not listening at standup? I don't give it tool calls. It writes text. I decide what the text is worth running. I had to strip it out and run the whole thing in a sandbox for security purposes. This whole thing has made me slower just to follow this new AI policy.",
           "direction": "live"
         }
       ]
@@ -14158,7 +14121,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "One August morning, the CEO emails the whole company: \"Building a leaner, AI-first company.\" Kristina, Kevin and none of the line managers were consulted. SJ archives it unopened.",
+      "text": "One August morning, the CEO emails the whole company: \"Building a leaner, AI-first company.\" None of the line managers were consulted. SJ archives it unopened.",
       "direction": "",
       "state": "email-archive",
       "mode": "huddle",
@@ -14188,8 +14151,8 @@
         "left": "offboarding-archive"
       },
       "sourceBeat": 1,
-      "audio": "assets/audio/shared-16d437a849a4a7572d0fd8534504885a0f2066609831da47134626d7fc238824.mp3",
-      "audioDuration": 14.367347,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s14_l1",
       "visualMapping": "matched",
       "sfx": [],
@@ -14199,7 +14162,7 @@
           "id": "s14_l1",
           "kind": "voice",
           "name": "Narrator",
-          "text": "One August morning, the CEO emails the whole company: \"Building a leaner, AI-first company.\" Kristina, Kevin and none of the line managers were consulted. SJ archives it unopened.",
+          "text": "One August morning, the CEO emails the whole company: \"Building a leaner, AI-first company.\" None of the line managers were consulted. SJ archives it unopened.",
           "direction": ""
         }
       ]
@@ -16288,7 +16251,7 @@
       "sourceBeat": 1,
       "beat": 1,
       "name": "Narrator",
-      "text": "Two weeks later. SJ's apartment. SJ and Brendan are drinking together. This is the first time they have met. SJ was surprised to discover how much taller Brendan is in real life.",
+      "text": "Two weeks later. SJ's apartment. This is the first time SJ has met Brendan, and he's surprised how much taller he is in real life.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "groupEnd": 277,
       "speaker": "narrator",
@@ -16307,7 +16270,7 @@
           "id": "s19_l1",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Two weeks later. SJ's apartment. SJ and Brendan are drinking together. This is the first time they have met. SJ was surprised to discover how much taller Brendan is in real life.",
+          "text": "Two weeks later. SJ's apartment. This is the first time SJ has met Brendan, and he's surprised how much taller he is in real life.",
           "direction": ""
         }
       ],
@@ -16673,7 +16636,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 4.754286,
+      "audioDuration": 0,
       "state": "apartment",
       "id": "s14a_l2",
       "screenActions": {},
@@ -16681,7 +16644,7 @@
       "sourceBeat": 2,
       "beat": 2,
       "name": "Marcus",
-      "text": "Can you hear me? This is a terrible app. What the hell is Jit SEE?",
+      "text": "This is a fuckin' terrible app. Can you hear me?",
       "groupEnd": 286,
       "speaker": "marcus",
       "direction": "",
@@ -16694,14 +16657,14 @@
         "brendan",
         "marcus"
       ],
-      "audio": "assets/audio/shared-f2221e0cba438fa5afba4c78be9b6d7b210d3dd7783178ab9eba85bf8a07c06d.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s14a_l2",
           "kind": "live",
           "name": "Marcus",
-          "text": "Can you hear me? This is a terrible app. What the hell is Jit SEE?",
+          "text": "This is a fuckin' terrible app. Can you hear me?",
           "direction": ""
         }
       ],
@@ -16773,7 +16736,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 1.645714,
+      "audioDuration": 0,
       "state": "apartment",
       "id": "s14a_l4",
       "screenActions": {},
@@ -16781,7 +16744,7 @@
       "sourceBeat": 4,
       "beat": 4,
       "name": "Marcus",
-      "text": "Why can't we use Zoom?",
+      "text": "What the hell is Jit SEE? Why can't we just use Zoom?",
       "groupEnd": 288,
       "speaker": "marcus",
       "direction": "",
@@ -16794,14 +16757,14 @@
         "brendan",
         "marcus"
       ],
-      "audio": "assets/audio/shared-26ced0343669948cc3ef9be9302cede28a5721640295b8ba3282388ede58ea39.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s14a_l4",
           "kind": "live",
           "name": "Marcus",
-          "text": "Why can't we use Zoom?",
+          "text": "What the hell is Jit SEE? Why can't we just use Zoom?",
           "direction": ""
         }
       ],
@@ -17273,7 +17236,7 @@
       "sourceBeat": 20,
       "beat": 20,
       "name": "Marcus",
-      "text": "Guys labor in the US is so exploitative. If this was Australia or New Zealand you'd still have jobs",
+      "text": "Guys labor in the US is so exploitative. If this was Australia or New Zealand, you'd still have jobs.",
       "groupEnd": 298,
       "speaker": "marcus",
       "direction": "",
@@ -17293,7 +17256,7 @@
           "id": "s14a_l20",
           "kind": "live",
           "name": "Marcus",
-          "text": "Guys labor in the US is so exploitative. If this was Australia or New Zealand you'd still have jobs",
+          "text": "Guys labor in the US is so exploitative. If this was Australia or New Zealand, you'd still have jobs.",
           "direction": ""
         }
       ],
@@ -17378,7 +17341,7 @@
       "sourceBeat": 22,
       "beat": 22,
       "name": "SJ",
-      "text": "The best software engineers live in the US Marcus, not New Zealand.",
+      "text": "The best software engineers live in the US, Marcus, not New Zealand.",
       "groupEnd": 300,
       "speaker": "liam",
       "direction": "live",
@@ -17398,7 +17361,7 @@
           "id": "s14a_l22",
           "kind": "live",
           "name": "SJ",
-          "text": "The best software engineers live in the US Marcus, not New Zealand.",
+          "text": "The best software engineers live in the US, Marcus, not New Zealand.",
           "direction": "live"
         }
       ],
@@ -19144,7 +19107,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 25.626122,
+      "audioDuration": 0,
       "state": "apartment",
       "id": "s19_l39",
       "screenActions": {},
@@ -19152,7 +19115,7 @@
       "sourceBeat": 39,
       "beat": 42,
       "name": "SJ",
-      "text": "You will manage. Second thing, don't tell anybody you were fired, tell them you were impacted by layoffs. It lands completely differently and I don't know why. Third thing, and do this tomorrow, get everything out of your head and into a document while you can still remember it about your accomplishments. You're going to speak to them in future interviews, put them on your resume and write them down so you don't forget.",
+      "text": "You will manage. Second thing, don't tell anybody you were fired, tell them you were impacted by layoffs. It lands completely differently and I don't know why. Third thing, and do this tomorrow, get everything out of your head and into a document while you can still remember it about your accomplishments. You're going to speak to them in future interviews, put them on your resume and write them down so you don't forget. This is what I wish I'd done last time.",
       "groupEnd": 338,
       "speaker": "liam",
       "direction": "live",
@@ -19161,14 +19124,14 @@
       "scene": "s19",
       "sourceLine": 77,
       "cast": [],
-      "audio": "assets/audio/shared-89613ea991c153a76ad6ab8ce2e1bff45be01a8637f0c8904b0c35b021ca47e2.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s19_l39",
           "kind": "live",
           "name": "SJ",
-          "text": "You will manage. Second thing, don't tell anybody you were fired, tell them you were impacted by layoffs. It lands completely differently and I don't know why. Third thing, and do this tomorrow, get everything out of your head and into a document while you can still remember it about your accomplishments. You're going to speak to them in future interviews, put them on your resume and write them down so you don't forget.",
+          "text": "You will manage. Second thing, don't tell anybody you were fired, tell them you were impacted by layoffs. It lands completely differently and I don't know why. Third thing, and do this tomorrow, get everything out of your head and into a document while you can still remember it about your accomplishments. You're going to speak to them in future interviews, put them on your resume and write them down so you don't forget. This is what I wish I'd done last time.",
           "direction": "live"
         }
       ],
@@ -19195,7 +19158,7 @@
       "sourceBeat": 40,
       "beat": 43,
       "name": "Brendan",
-      "text": "You said you'd been laid off before and it was worse. What happened last time?",
+      "text": "What happened last time?",
       "groupEnd": 339,
       "speaker": "brendan",
       "direction": "live",
@@ -19211,7 +19174,7 @@
           "id": "s19_l40",
           "kind": "live",
           "name": "Brendan",
-          "text": "You said you'd been laid off before and it was worse. What happened last time?",
+          "text": "What happened last time?",
           "direction": "live"
         }
       ],
@@ -19238,7 +19201,7 @@
       "sourceBeat": 43,
       "beat": 46,
       "name": "SJ",
-      "text": "The company called Netfold. Nobody's heard of it now, it stopped existing later that year. It was 2008.",
+      "text": "It was 2008. The company was called Netfold. Nobody's heard of it now, it stopped existing later that year.",
       "groupEnd": 340,
       "speaker": "liam",
       "direction": "live",
@@ -19254,7 +19217,7 @@
           "id": "s19_l43",
           "kind": "live",
           "name": "SJ",
-          "text": "The company called Netfold. Nobody's heard of it now, it stopped existing later that year. It was 2008.",
+          "text": "It was 2008. The company was called Netfold. Nobody's heard of it now, it stopped existing later that year.",
           "direction": "live"
         }
       ],
@@ -23776,7 +23739,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 6.347755,
+      "audioDuration": 0,
       "state": "empty-desk",
       "id": "s20b_l1",
       "screenActions": {},
@@ -23784,7 +23747,7 @@
       "sourceBeat": 1,
       "beat": 1,
       "name": "Narrator",
-      "text": "The following day, Brendan shows up at SJ's apartment hungover with his Mac Studio in hand. ",
+      "text": "As promised, later that morning, a hungover Brendan shows up at SJ's apartment with the Mac Studio in hand. ",
       "adaptationReason": "An explicit time or location change helps the audience follow the sequence.",
       "groupEnd": 439,
       "speaker": "narrator",
@@ -23796,14 +23759,14 @@
       "sourceLine": 1,
       "cast": [],
       "narrationAdapted": true,
-      "audio": "assets/audio/shared-4c264ae3e40f3daa3d691c8375a54ec729ff95e16f6209a60b23d000fd7ca28a.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s20b_l1",
           "kind": "voice",
           "name": "Narrator",
-          "text": "The following day, Brendan shows up at SJ's apartment hungover with his Mac Studio in hand. ",
+          "text": "As promised, later that morning, a hungover Brendan shows up at SJ's apartment with the Mac Studio in hand. ",
           "direction": ""
         }
       ],
@@ -25794,7 +25757,7 @@
       "sfx": [],
       "beat": 24,
       "name": "Marcus",
-      "text": "SJ... I wanted to ask-",
+      "text": "SJ, I know you were running Qwen, and the output-",
       "groupEnd": 483,
       "speaker": "marcus",
       "direction": "",
@@ -25815,7 +25778,7 @@
           "id": "s22_not_good",
           "kind": "live",
           "name": "Marcus",
-          "text": "SJ... I wanted to ask-",
+          "text": "SJ, I know you were running Qwen, and the output-",
           "direction": ""
         }
       ],
@@ -27348,7 +27311,7 @@
       "sourceBeat": 12,
       "beat": 10,
       "name": "Narrator",
-      "text": "SJ goes still. He knows where the machine was between those timestamps, and who was using it. He says nothing.",
+      "text": "SJ goes still. He knows where the machine was between those times, and who was using it. He says nothing.",
       "groupEnd": 513,
       "speaker": "narrator",
       "direction": "",
@@ -27369,7 +27332,7 @@
           "id": "s23_l12",
           "kind": "voice",
           "name": "Narrator",
-          "text": "SJ goes still. He knows where the machine was between those timestamps, and who was using it. He says nothing.",
+          "text": "SJ goes still. He knows where the machine was between those times, and who was using it. He says nothing.",
           "direction": ""
         }
       ],
@@ -27784,7 +27747,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 3.317551,
+      "audioDuration": 0,
       "state": "court",
       "id": "s23_l30",
       "screenActions": {},
@@ -27792,7 +27755,7 @@
       "sourceBeat": 30,
       "beat": 28,
       "name": "Kristina",
-      "text": "I guess we get to watch him interrupt someone else for a change",
+      "text": "Now that's efficiency. I wish I could run standup like that.",
       "groupEnd": 522,
       "speaker": "kristina",
       "direction": "",
@@ -27806,14 +27769,14 @@
         "marcus",
         "kristina"
       ],
-      "audio": "assets/audio/shared-86f92f20063b12eb83dd3409a20bd0823c63f4b54655f24b0ebda4b43e471dbd.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s23_l30",
           "kind": "voice",
           "name": "Kristina",
-          "text": "I guess we get to watch him interrupt someone else for a change",
+          "text": "Now that's efficiency. I wish I could run standup like that.",
           "direction": ""
         }
       ],
@@ -28604,7 +28567,7 @@
         "radioConnected": true
       },
       "loop": true,
-      "audioDuration": 8.829388,
+      "audioDuration": 0,
       "state": "radio",
       "id": "s23b_l4",
       "screenActions": {},
@@ -28612,7 +28575,7 @@
       "sourceBeat": 4,
       "beat": 4,
       "name": "Marcus",
-      "text": "You let the Jury see you. They'll know you're just a product of the system, we won't repeat the mistakes of the past, we can do better this time....",
+      "text": "You let the people see you. They know you're just a product of the system, we won't repeat the mistakes of the past, we can do better this time....",
       "groupEnd": 538,
       "speaker": "marcus",
       "direction": "",
@@ -28624,14 +28587,14 @@
         "marcus",
         "liam"
       ],
-      "audio": "assets/audio/shared-0ac6cca913488871d1915e694571dd84a0af3a82d190d9437c08fbb5f4519300.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s23b_l4",
           "kind": "live",
           "name": "Marcus",
-          "text": "You let the Jury see you. They'll know you're just a product of the system, we won't repeat the mistakes of the past, we can do better this time....",
+          "text": "You let the people see you. They know you're just a product of the system, we won't repeat the mistakes of the past, we can do better this time....",
           "direction": ""
         }
       ],
@@ -28988,7 +28951,7 @@
       "sourceBeat": 12,
       "beat": 12,
       "name": "Marcus",
-      "text": "Eighteen months for prompting an AI agent... SJ, you didn't even smash anything - I mean, besides the enter key on the prompt!",
+      "text": "Eighteen months for prompting an AI agent... SJ, you didn't even smash anything - I mean, besides the enter key on the prompt maybe...",
       "groupEnd": 546,
       "speaker": "marcus",
       "direction": "",
@@ -29007,7 +28970,7 @@
           "id": "s23b_l12",
           "kind": "live",
           "name": "Marcus",
-          "text": "Eighteen months for prompting an AI agent... SJ, you didn't even smash anything - I mean, besides the enter key on the prompt!",
+          "text": "Eighteen months for prompting an AI agent... SJ, you didn't even smash anything - I mean, besides the enter key on the prompt maybe...",
           "direction": ""
         }
       ],
@@ -29305,7 +29268,7 @@
         "radioConnected": true
       },
       "loop": true,
-      "audioDuration": 8.280816,
+      "audioDuration": 0,
       "state": "radio",
       "id": "s23b_l19",
       "screenActions": {},
@@ -29313,7 +29276,7 @@
       "sourceBeat": 19,
       "beat": 19,
       "name": "Marcus",
-      "text": "Look man, they've put charges on you for something a computer did. You only tried to get some information. You could be a modern Ned Ludd!",
+      "text": "Look man, they've put charges on you for something a computer did. You only tried to get some information. You have to stand up for yourself!",
       "groupEnd": 553,
       "speaker": "marcus",
       "direction": "beat",
@@ -29325,14 +29288,14 @@
         "marcus",
         "liam"
       ],
-      "audio": "assets/audio/shared-272a5479eaedfb26af3bdd68d7914adcafe4f256e58c6ae743211ac4fe5b92d1.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s23b_l19",
           "kind": "live",
           "name": "Marcus",
-          "text": "Look man, they've put charges on you for something a computer did. You only tried to get some information. You could be a modern Ned Ludd!",
+          "text": "Look man, they've put charges on you for something a computer did. You only tried to get some information. You have to stand up for yourself!",
           "direction": "beat"
         }
       ],
@@ -29639,7 +29602,7 @@
         "radioConnected": false
       },
       "loop": true,
-      "audioDuration": 14.602449,
+      "audioDuration": 0,
       "state": "swarm-after",
       "id": "s24_l34",
       "screenActions": {},
@@ -29647,7 +29610,7 @@
       "sourceBeat": 34,
       "beat": 34,
       "name": "Narrator",
-      "text": "SJ signed his guilt, but the recently appointed judge rejected the plea deal. By the time his sentencing hearing came up, given the current state of the world... the 151 years would actually have been a good deal.",
+      "text": "SJ signed his guilt, but the judge rejected the plea deal. The jury was unanimous in their guilty verdict. By the time his sentencing hearing came up, given the current state of the world... the 151 years would actually have been a good deal.",
       "groupEnd": 560,
       "speaker": "narrator",
       "direction": "V.O.",
@@ -29659,14 +29622,14 @@
         "marcus",
         "liam"
       ],
-      "audio": "assets/audio/shared-7dc94be0f4aee2f3e61250a539a3bc3c5ba8ba112a0d9604c86f7f17dec7444e.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s24_l34",
           "kind": "voice",
           "name": "Narrator",
-          "text": "SJ signed his guilt, but the recently appointed judge rejected the plea deal. By the time his sentencing hearing came up, given the current state of the world... the 151 years would actually have been a good deal.",
+          "text": "SJ signed his guilt, but the judge rejected the plea deal. The jury was unanimous in their guilty verdict. By the time his sentencing hearing came up, given the current state of the world... the 151 years would actually have been a good deal.",
           "direction": "V.O."
         }
       ],
@@ -29938,7 +29901,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "I think it's sad how SJ is shifting the blame, but let me take this opportunity to share my new startup. I'm working on an app that helps people with mental health issues, it's meant to bring people together in a time we've never been further apart. I don't need any engineers, I just need some funding to pay for tokens",
+      "text": "I think it's sad how SJ is shifting the blame, but let me take this opportunity to share my new business. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic human validation!",
       "direction": "",
       "state": "black",
       "mode": "physical",
@@ -29952,8 +29915,8 @@
       "sfx": [],
       "advance": "manual",
       "loop": false,
-      "audio": "assets/audio/shared-c56b240c38b0c6e35c15989aed31beaf4172fa76b5114d4ae2d34dc58860fca8.mp3",
-      "audioDuration": 18.520816,
+      "audio": null,
+      "audioDuration": 0,
       "screenNotes": "Kristina follows Brendan’s answer to the newspaper reporter.",
       "groupEnd": 568,
       "notes": [
@@ -29961,7 +29924,7 @@
           "id": "s23b_kristina_startup",
           "kind": "voice",
           "name": "Kristina",
-          "text": "I think it's sad how SJ is shifting the blame, but let me take this opportunity to share my new startup. I'm working on an app that helps people with mental health issues, it's meant to bring people together in a time we've never been further apart. I don't need any engineers, I just need some funding to pay for tokens",
+          "text": "I think it's sad how SJ is shifting the blame, but let me take this opportunity to share my new business. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic human validation!",
           "direction": ""
         }
       ]
