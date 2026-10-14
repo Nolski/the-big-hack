@@ -42,3 +42,20 @@
 .workerRuntime{position:absolute;bottom:200px;left:25px;right:25px;color:#b8d7bc;font-size:23px}
 /* Full Slack DM, with a single unsent composer and a persistent recipient. */
 .slackDesktop{display:flex;height:100%;background:#fff;color:#1d1c1d;font-family:Arial,sans-serif}.slackSidebar{width:24%;flex-shrink:0;background:#3f0e40;color:#ddd;padding:28px 20px;font-size:22px;line-height:2}.slackSidebar>b{display:block;color:white;font-size:30px;margin-bottom:28px}.slackSection{opacity:.75;margin-top:24px;font-size:18px}.activeDM{background:#1264a3;color:white;margin:4px -20px;padding:3px 20px;display:flex;align-items:center;gap:12px}.slackAvatar{display:inline-flex;background:#b08970;color:white;width:44px;height:44px;border-radius:7px;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0}.slackDM{flex:1;min-width:0;display:flex;flex-direction:column}.slackDMHeader{display:flex;align-items:center;gap:16px;padding:22px 28px;border-bottom:1px solid #ddd;font-size:30px}.slackDMHeader small{display:block;font-size:16px;color:#616061;margin-top:5px}.slackHeaderTools{margin-left:auto;color:#616061}.slackHistory{flex:1;padding:24px 30px;display:flex;flex-direction:column;justify-content:flex-end;min-height:0}.slackDMIntro h2{font-size:30px;margin:10px 0}.slackDMIntro p{font-size:20px;color:#616061}.slackDesktop .messageComposer{position:relative;inset:auto;transform:none;margin:0 24px;width:auto;border:1px solid #aaa;border-radius:8px;box-shadow:none;background:white}.slackDesktop .messageInput{font-size:32px;min-height:88px;padding:15px 18px;white-space:pre-wrap}.slackFormat{background:#f8f8f8;padding:10px 18px;font-size:20px;color:#616061}.slackDesktop .composeFooter{font-size:20px;padding:10px 18px;color:#616061;display:flex;justify-content:space-between}.slackDesktop .sendButton{background:#007a5a;color:white;padding:2px 14px;border-radius:5px}.slackDraftStatus{font-size:16px;color:#616061;text-align:right;padding:6px 28px 16px}.slackDesktop .sentBubble[hidden]{display:none!important}
+
+/* SJ’s email and calendar during offboarding. */
+.mailDesktop,.teamCalendar{display:flex;height:100%;background:#f7f8fa;color:#202124;font:27px system-ui;text-shadow:none}
+.mailDesktop aside,.teamCalendar aside{width:270px;flex-shrink:0;padding:38px 28px;background:#eef1f5;border-right:1px solid #d7dce2}
+.mailDesktop main,.teamCalendar main{flex:1;min-width:0;padding:34px}
+.mailDesktop header,.teamCalendar header{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
+.mailDesktop h1,.teamCalendar h1{font-size:38px;margin:0}.mailDesktop h2,.teamCalendar h2{font-size:32px}
+.mailRow{display:grid;grid-template-columns:30px 170px 1fr 160px;gap:18px;align-items:center;padding:30px 12px;border-bottom:1px solid #dce0e5;font-size:25px}
+.mailRow strong{font-size:27px}.mailRow small{font-size:20px}.unreadDot{color:#1967d2}
+.archiveButton{padding:16px 22px;border-radius:8px;background:#e6eaf0;font-size:25px}.archiveActive{background:#c2d7fb;outline:3px solid #1967d2}
+.archiveConfirmation{padding:24px;background:#30343b;color:white;display:inline-block;border-radius:8px}
+.calendarSearch{min-height:45px;padding:15px;border:2px solid #8b96a7;border-radius:6px;background:white;font-size:27px}
+.calendarPerson{color:#174ea6}.calendarOwner{font-size:30px;font-weight:600}
+.calendarGrid{position:relative;margin-left:5px}.timeRow{height:120px;border-top:1px solid #cdd3dc;padding-top:12px;color:#687383;font-size:22px}
+.calendarEvent{position:absolute;left:130px;right:40px;display:flex;flex-direction:column;gap:7px;padding:17px 22px;background:#d2e3fc;border-left:7px solid #1967d2;border-radius:6px;font-size:27px}
+.regularMeeting{top:20px}.catchupMeeting{top:310px;background:#d9ead3;border-color:#38803a}.calendarEvent span{font-size:24px}
+.mailDesktop [hidden],.teamCalendar [hidden]{display:none!important}
