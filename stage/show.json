@@ -919,7 +919,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-821c32fea6834fbd",
+  "scriptRevision": "shared-9635b20434b74cfd",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -29901,7 +29901,7 @@
       "kind": "voice",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "I think it's sad how SJ is shifting the blame, but let me take this opportunity to share my new business. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic human validation!",
+      "text": "I think it's sad how SJ is shifting the blame, but let me take this opportunity to share my new mental health business. We're in a time when everyone needs a bit of lifting up. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic validation from real humans!",
       "direction": "",
       "state": "black",
       "mode": "physical",
@@ -29924,7 +29924,7 @@
           "id": "s23b_kristina_startup",
           "kind": "voice",
           "name": "Kristina",
-          "text": "I think it's sad how SJ is shifting the blame, but let me take this opportunity to share my new business. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic human validation!",
+          "text": "I think it's sad how SJ is shifting the blame, but let me take this opportunity to share my new mental health business. We're in a time when everyone needs a bit of lifting up. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic validation from real humans!",
           "direction": ""
         }
       ]
