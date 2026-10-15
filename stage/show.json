@@ -976,7 +976,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-db7648323d4f4fb1",
+  "scriptRevision": "shared-0c15354704784e8e",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -9177,68 +9177,6 @@
       "claudeComplete": false
     },
     {
-      "id": "s06_l42",
-      "scene": "s06",
-      "beat": 39,
-      "kind": "voice",
-      "speaker": "narrator",
-      "name": "Narrator",
-      "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, generated a script to reproduce the bug and drafted a one-line fix.",
-      "direction": "",
-      "state": "race-proof",
-      "mode": "zoom",
-      "cast": [
-        "liam",
-        "brendan"
-      ],
-      "advance": "manual",
-      "loop": true,
-      "sourceLine": 100,
-      "sourceKind": "stage",
-      "narrationAdapted": true,
-      "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "staging": {
-        "location": "remote work",
-        "set": null,
-        "computer": null,
-        "beers": 0,
-        "callCast": [
-          "liam",
-          "brendan"
-        ],
-        "callStatus": "connected",
-        "view": "call"
-      },
-      "computers": {
-        "left": "SJ",
-        "right": "Brendan"
-      },
-      "screenActions": {
-        "right": "mutex-deadlock"
-      },
-      "sourceBeat": 42,
-      "audio": null,
-      "audioDuration": 0,
-      "legacyCue": "s06_l39",
-      "visualMapping": "matched",
-      "sfx": [],
-      "groupEnd": 146,
-      "notes": [
-        {
-          "id": "s06_l42",
-          "kind": "voice",
-          "name": "Narrator",
-          "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, generated a script to reproduce the bug and drafted a one-line fix.",
-          "direction": ""
-        }
-      ],
-      "originalStageDirection": "On BRENDAN's screen the answer sits there now, finished and proved: the deterministic repro script, paired browser screenshots, a short diagnosis, and one line of the controller lit up on the getOrCreateSession call. Beneath it: a one-line fix on a completed local branch, plus a second note flagging the shared session store as the deeper problem. He reads it twice. He now knows. He turns back to the call.",
-      "sourceText": "On BRENDAN's screen the answer sits there now, finished and proved: the deterministic repro script, paired browser screenshots, a short diagnosis, and one line of the controller lit up on the getOrCreateSession call. Beneath it: a one-line fix on a completed local branch, plus a second note flagging the shared session store as the deeper problem. He reads it twice. He now knows. He turns back to the call.",
-      "claudeSession": "signup-investigation",
-      "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes."
-    },
-    {
       "id": "s06_l41",
       "scene": "s06",
       "beat": 38,
@@ -9281,7 +9219,7 @@
       "legacyCue": "s06_l38",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 147,
+      "groupEnd": 146,
       "notes": [
         {
           "id": "s06_l41",
@@ -9294,6 +9232,34 @@
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
       "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes."
+    },
+    {
+      "id": "cue_2d55393104504548adbccb9c440159f9",
+      "scene": "s06",
+      "state": "black",
+      "mode": "zoom",
+      "cast": [],
+      "screenActions": {},
+      "computers": {},
+      "sfx": [],
+      "advance": "manual",
+      "kind": "voice",
+      "speaker": "narrator",
+      "name": "Narrator",
+      "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, generated a script to reproduce the bug and drafted a one-line fix.",
+      "direction": "",
+      "audio": null,
+      "audioDuration": 0,
+      "groupEnd": 147,
+      "notes": [
+        {
+          "id": "cue_2d55393104504548adbccb9c440159f9",
+          "kind": "voice",
+          "name": "Narrator",
+          "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, generated a script to reproduce the bug and drafted a one-line fix.",
+          "direction": ""
+        }
+      ]
     },
     {
       "id": "s06_l43",
