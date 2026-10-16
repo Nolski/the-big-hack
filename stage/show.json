@@ -975,7 +975,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-d38b54fedf6c402d",
+  "scriptRevision": "shared-c5624a7b9aca44cb",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -13046,7 +13046,7 @@
       "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "The webhook thing took a while, but honestly? I'm just happy he's engaged. Nobody else is doing this much AI stuff, and leadership will love it. Wins like the webhook thing help with mid-year reviews.",
+      "text": "It took a while, but honestly? I'm just happy he's engaged. Wins like the webhook thing help with mid-year reviews.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -13086,7 +13086,7 @@
           "id": "s11c_l4",
           "kind": "live",
           "name": "Kristina",
-          "text": "The webhook thing took a while, but honestly? I'm just happy he's engaged. Nobody else is doing this much AI stuff, and leadership will love it. Wins like the webhook thing help with mid-year reviews.",
+          "text": "It took a while, but honestly? I'm just happy he's engaged. Wins like the webhook thing help with mid-year reviews.",
           "direction": ""
         }
       ]
@@ -13098,8 +13098,8 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "Well... to be honest, I don't think his setup is that productive. SJ measured two sprints, and he admits he's slower with the AI than without. ",
-      "direction": "live, a small laugh",
+      "text": "... to be honest, I don't think his setup is that productive. SJ measured two sprints, and he admits he's slower with the AI than without. ",
+      "direction": "a reluctant admission",
       "state": "huddle",
       "mode": "huddle",
       "cast": [
@@ -13138,8 +13138,8 @@
           "id": "s11c_l5",
           "kind": "live",
           "name": "Brendan",
-          "text": "Well... to be honest, I don't think his setup is that productive. SJ measured two sprints, and he admits he's slower with the AI than without. ",
-          "direction": "live, a small laugh"
+          "text": "... to be honest, I don't think his setup is that productive. SJ measured two sprints, and he admits he's slower with the AI than without. ",
+          "direction": "a reluctant admission"
         }
       ]
     },
@@ -13202,8 +13202,8 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "Marcus told me that he did his peer feedback, the anonymous one, and most of it was about how SJ was slowing down the team... And if I'm being honest, I said the same thing on mine.",
-      "direction": "live",
+      "text": "Well... Marcus told me that he did his peer feedback, the anonymous one, and most of it was about how SJ was slowing down the team... And if I'm being honest, I said the same thing on mine.",
+      "direction": "reluctantly",
       "state": "huddle",
       "mode": "huddle",
       "cast": [
@@ -13242,8 +13242,8 @@
           "id": "s11c_l14",
           "kind": "live",
           "name": "Brendan",
-          "text": "Marcus told me that he did his peer feedback, the anonymous one, and most of it was about how SJ was slowing down the team... And if I'm being honest, I said the same thing on mine.",
-          "direction": "live"
+          "text": "Well... Marcus told me that he did his peer feedback, the anonymous one, and most of it was about how SJ was slowing down the team... And if I'm being honest, I said the same thing on mine.",
+          "direction": "reluctantly"
         }
       ]
     },
@@ -13254,7 +13254,7 @@
       "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "That's concerning. Thank you for sharing that. AI is really new to the whole industry so sometimes we have to take risks with experiments that don't go anywhere. I'm sure it will come right by end-of-year reviews, which is the one that matters. I'll be counting on you to help him.",
+      "text": "Hmm. Thank you for sharing that. AI is really new to the whole industry so sometimes we have to take risks with experiments that don't go anywhere. I'm sure it will come right by end-of-year reviews, which is the one that matters. I'll be counting on you to help him.",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -13294,7 +13294,7 @@
           "id": "s11c_l15",
           "kind": "live",
           "name": "Kristina",
-          "text": "That's concerning. Thank you for sharing that. AI is really new to the whole industry so sometimes we have to take risks with experiments that don't go anywhere. I'm sure it will come right by end-of-year reviews, which is the one that matters. I'll be counting on you to help him.",
+          "text": "Hmm. Thank you for sharing that. AI is really new to the whole industry so sometimes we have to take risks with experiments that don't go anywhere. I'm sure it will come right by end-of-year reviews, which is the one that matters. I'll be counting on you to help him.",
           "direction": ""
         }
       ]
