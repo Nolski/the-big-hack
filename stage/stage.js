@@ -17,6 +17,11 @@ let show=playbackShow(sourceShow,settings,voiceManifest.recordings||{});
 let cast=castFor(sourceShow);
 let overrides=await fetch('overrides.json').then(r=>r.ok?r.json():{}).catch(()=>({}));
 let saved;try{saved=JSON.parse(localStorage.getItem('big-hack-cue-'+(sourceShow.scriptRevision||'legacy'))||'null')}catch{}
+const requestedCue=new URLSearchParams(location.search).get('cue');
+if(requestedCue&&show.cues.some(c=>c.id===requestedCue)){
+ saved={id:requestedCue};
+ const url=new URL(location.href);url.searchParams.delete('cue');history.replaceState(null,'',url.pathname+url.search+url.hash);
+}
 let state={index:Math.max(0,show.cues.findIndex(c=>c.id===saved?.id)),running:false,blackout:false,serial:0,elapsed:0,screenBase:{left:0,right:0},workerBase:0,anchor:Date.now(),volume:.85,rate:settings.rate};
 // This is a playback-session identifier, not an authentication token.
 // randomUUID requires HTTPS or localhost; getRandomValues also works on LAN HTTP.

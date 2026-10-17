@@ -963,7 +963,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-321d840dcb3c4365",
+  "scriptRevision": "shared-51a8d1fd7cc444f6",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -9101,11 +9101,19 @@
     {
       "id": "cue_2d55393104504548adbccb9c440159f9",
       "scene": "s06",
-      "state": "black",
+      "state": "race-proof",
       "mode": "zoom",
-      "cast": [],
-      "screenActions": {},
-      "computers": {},
+      "cast": [
+        "liam",
+        "brendan"
+      ],
+      "screenActions": {
+        "right": "mutex-deadlock"
+      },
+      "computers": {
+        "left": "SJ",
+        "right": "Brendan"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "voice",
@@ -9124,7 +9132,23 @@
           "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, generated a script to reproduce the bug and drafted a one-line fix.",
           "direction": ""
         }
-      ]
+      ],
+      "staging": {
+        "location": "remote work",
+        "set": null,
+        "computer": null,
+        "beers": 0,
+        "callCast": [
+          "liam",
+          "brendan"
+        ],
+        "callStatus": "connected",
+        "view": "call"
+      },
+      "claudeSession": "signup-investigation",
+      "claudeComplete": true,
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
+      "beat": 39
     },
     {
       "id": "s06_l43",
@@ -13428,11 +13452,17 @@
     {
       "id": "cue_a8693679ca6d42b4abf5d3f8b3ab90ca",
       "scene": "s11c",
-      "state": "black",
+      "state": "call-ended",
       "mode": "huddle",
-      "cast": [],
+      "cast": [
+        "kristina",
+        "brendan"
+      ],
       "screenActions": {},
-      "computers": {},
+      "computers": {
+        "left": "Kristina",
+        "right": "Brendan"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "voice",
@@ -13451,18 +13481,31 @@
           "text": "Kristina abruptly ends the call. Her AI prompt is waiting. AI doesn't quibble with her, is endlessly patient, doesn't question her qualifications, and undoubtedly smells better.",
           "direction": ""
         }
-      ]
+      ],
+      "staging": {
+        "location": "remote work",
+        "set": null,
+        "computer": null,
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "ended",
+        "view": "private"
+      },
+      "lighting": [
+        "kristina"
+      ],
+      "beat": 38
     },
     {
       "id": "s11c_l34",
       "scene": "s11c",
-      "beat": 34,
-      "kind": "live",
-      "speaker": "brendan",
-      "name": "Brendan",
+      "beat": 39,
+      "kind": "voice",
+      "speaker": "narrator",
+      "name": "Narrator",
       "text": "She starts an agent tasked to look at Jira and check SJ's velocity over the last two sprints. She prompts a second agent to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had promised she would do for him. Both start working, and she's a little surprised how quickly they're moving... Opus 4.7 is notably faster than Opus 4.5 at task completion. She joins her next meeting, leaving them running.",
-      "direction": "live",
-      "state": "huddle",
+      "direction": "",
+      "state": "new-model",
       "mode": "huddle",
       "cast": [
         "kristina",
@@ -13476,15 +13519,12 @@
         "set": null,
         "computer": null,
         "beers": 0,
-        "callCast": [
-          "kristina",
-          "brendan"
-        ],
-        "callStatus": "connected",
-        "view": "call"
+        "callCast": [],
+        "callStatus": "none",
+        "view": "private"
       },
       "computers": {
-        "left": "Brendan",
+        "left": "Kristina",
         "right": "Brendan"
       },
       "screenActions": {},
@@ -13498,11 +13538,14 @@
       "notes": [
         {
           "id": "s11c_l34",
-          "kind": "live",
-          "name": "Brendan",
+          "kind": "voice",
+          "name": "Narrator",
           "text": "She starts an agent tasked to look at Jira and check SJ's velocity over the last two sprints. She prompts a second agent to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had promised she would do for him. Both start working, and she's a little surprised how quickly they're moving... Opus 4.7 is notably faster than Opus 4.5 at task completion. She joins her next meeting, leaving them running.",
-          "direction": "live"
+          "direction": ""
         }
+      ],
+      "lighting": [
+        "kristina"
       ]
     },
     {
@@ -13562,11 +13605,17 @@
     {
       "id": "cue_73c586cc3f1646818bdc76c134edf05a",
       "scene": "s11c",
-      "state": "black",
+      "state": "new-model",
       "mode": "huddle",
-      "cast": [],
+      "cast": [
+        "kristina",
+        "brendan"
+      ],
       "screenActions": {},
-      "computers": {},
+      "computers": {
+        "left": "Kristina",
+        "right": "Brendan"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "voice",
@@ -13585,16 +13634,35 @@
           "text": "Hoping to finish her performance reviews before her next meeting starts, she starts a new session.",
           "direction": ""
         }
-      ]
+      ],
+      "staging": {
+        "location": "remote work",
+        "set": null,
+        "computer": null,
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "private"
+      },
+      "lighting": [
+        "kristina"
+      ],
+      "beat": 39
     },
     {
       "id": "cue_fc17fcbeb4ef462088e8d2ce6aec19a8",
       "scene": "s11c",
-      "state": "black",
+      "state": "new-model",
       "mode": "huddle",
-      "cast": [],
+      "cast": [
+        "kristina",
+        "brendan"
+      ],
       "screenActions": {},
-      "computers": {},
+      "computers": {
+        "left": "Kristina",
+        "right": "Brendan"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "live",
@@ -13613,16 +13681,35 @@
           "text": "\"Please generate performance reviews for my three reports. Two paragraphs each.\"",
           "direction": ""
         }
-      ]
+      ],
+      "staging": {
+        "location": "remote work",
+        "set": null,
+        "computer": null,
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "private"
+      },
+      "lighting": [
+        "kristina"
+      ],
+      "beat": 39
     },
     {
       "id": "cue_5ef7b9922063428399baf3a589bf6be0",
       "scene": "s11c",
-      "state": "black",
+      "state": "new-model",
       "mode": "huddle",
-      "cast": [],
+      "cast": [
+        "kristina",
+        "brendan"
+      ],
       "screenActions": {},
-      "computers": {},
+      "computers": {
+        "left": "Kristina",
+        "right": "Brendan"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "voice",
@@ -13641,16 +13728,35 @@
           "text": "The agent gets to work, and before she knows it, the review documents are ready.",
           "direction": ""
         }
-      ]
+      ],
+      "staging": {
+        "location": "remote work",
+        "set": null,
+        "computer": null,
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "private"
+      },
+      "lighting": [
+        "kristina"
+      ],
+      "beat": 39
     },
     {
       "id": "cue_8d29037faa464187bd6dd5eea86fc720",
       "scene": "s11c",
-      "state": "black",
+      "state": "new-model",
       "mode": "huddle",
-      "cast": [],
+      "cast": [
+        "kristina",
+        "brendan"
+      ],
       "screenActions": {},
-      "computers": {},
+      "computers": {
+        "left": "Kristina",
+        "right": "Brendan"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "live",
@@ -13669,16 +13775,35 @@
           "text": "Review cycle done in record time! Meanwhile the guys would still be arguing over tabs vs spaces or whatever.",
           "direction": ""
         }
-      ]
+      ],
+      "staging": {
+        "location": "remote work",
+        "set": null,
+        "computer": null,
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "private"
+      },
+      "lighting": [
+        "kristina"
+      ],
+      "beat": 39
     },
     {
       "id": "cue_9a1880d83bf74f9b9e9efccba3d14c4c",
       "scene": "s11c",
-      "state": "black",
+      "state": "new-model",
       "mode": "huddle",
-      "cast": [],
+      "cast": [
+        "kristina",
+        "brendan"
+      ],
       "screenActions": {},
-      "computers": {},
+      "computers": {
+        "left": "Kristina",
+        "right": "Brendan"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "voice",
@@ -13697,7 +13822,20 @@
           "text": "Her next meeting chimes. Claude asks if she'd like to check Linear. Assuming the connector had copied them correctly, and she tells it to submit, because Jira is the source of truth. Claude tells her she's absolutely right. ",
           "direction": ""
         }
-      ]
+      ],
+      "staging": {
+        "location": "remote work",
+        "set": null,
+        "computer": null,
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "private"
+      },
+      "lighting": [
+        "kristina"
+      ],
+      "beat": 39
     },
     {
       "id": "s11c_time_jump_to_offboarding",
@@ -25197,11 +25335,18 @@
     {
       "id": "cue_b91dead77c334d318252f8fc8edfe992",
       "scene": "s22",
-      "state": "black",
+      "state": "huddle",
       "mode": "huddle",
-      "cast": [],
+      "cast": [
+        "marcus",
+        "liam",
+        "officer one",
+        "officer two"
+      ],
       "screenActions": {},
-      "computers": {},
+      "computers": {
+        "right": "SJ"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "stage",
@@ -25220,7 +25365,22 @@
           "text": "SJ is on his feet now, pacing.",
           "direction": ""
         }
-      ]
+      ],
+      "staging": {
+        "location": "SJ apartment",
+        "set": "liam-ready",
+        "computer": "desk",
+        "beers": 0,
+        "callCast": [
+          "marcus",
+          "liam"
+        ],
+        "callStatus": "connected",
+        "view": "physical",
+        "officersPresent": false,
+        "laptop": "in apartment, open"
+      },
+      "beat": 23
     },
     {
       "staging": {
