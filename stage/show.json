@@ -24,7 +24,7 @@
       "movement": "I",
       "source": "01 - Cold Open — The Standup.md",
       "start": 1,
-      "count": 48,
+      "count": 46,
       "mode": "zoom",
       "cast": [
         "kristina",
@@ -56,7 +56,7 @@
       "title": "The PR Review",
       "movement": "I",
       "source": "01c - The PR Review.md",
-      "start": 49,
+      "start": 47,
       "count": 20,
       "mode": "huddle",
       "cast": [
@@ -85,7 +85,7 @@
       "title": "The Cursor Demo",
       "movement": "I",
       "source": "01b - The Cursor Demo.md",
-      "start": 69,
+      "start": 67,
       "count": 47,
       "mode": "huddle",
       "cast": [
@@ -114,7 +114,7 @@
       "title": "Good Instinct",
       "movement": "II",
       "source": "06 - Good Instinct.md",
-      "start": 116,
+      "start": 114,
       "count": 42,
       "mode": "zoom",
       "cast": [
@@ -147,7 +147,7 @@
       "title": "Best Practices",
       "movement": "II",
       "source": "11b - Best Practices.md",
-      "start": 158,
+      "start": 156,
       "count": 54,
       "mode": "zoom",
       "cast": [
@@ -180,7 +180,7 @@
       "title": "The Latest Model",
       "movement": "II",
       "source": "11c - The Latest Model.md",
-      "start": 212,
+      "start": 210,
       "count": 22,
       "mode": "huddle",
       "cast": [
@@ -224,9 +224,9 @@
         },
         "productionSetting": "A meeting room, and for once SJ is the only body on stage. He is live, camera on, at a laptop — the same exposure as 13 - The Performance Review, with nobody in the room to see it."
       },
-      "count": 38,
+      "count": 37,
       "mode": "huddle",
-      "start": 234,
+      "start": 232,
       "source": "14 - The Offboarding.md",
       "lighting": [
         "liam"
@@ -253,9 +253,9 @@
         },
         "productionSetting": "SJ's flat. Marcus on SJ's laptop until he hangs up. Then the surface goes dark and stays dark."
       },
-      "count": 102,
+      "count": 101,
       "mode": "apartment",
-      "start": 272,
+      "start": 269,
       "source": "19 - Nine Tickets.md",
       "lighting": [
         "liam"
@@ -269,7 +269,7 @@
       "storyboard": {},
       "count": 61,
       "mode": "apartment",
-      "start": 374,
+      "start": 370,
       "source": "20 - The Audit.md",
       "lighting": [
         "brendan"
@@ -283,7 +283,7 @@
       "storyboard": {},
       "count": 31,
       "mode": "apartment",
-      "start": 435,
+      "start": 431,
       "source": "20b - Next Week.md",
       "lighting": [
         "liam"
@@ -302,7 +302,7 @@
       "storyboard": {},
       "count": 42,
       "mode": "huddle",
-      "start": 466,
+      "start": 462,
       "source": "22 - Current Employer.md",
       "lighting": [
         "liam",
@@ -322,7 +322,7 @@
       "storyboard": {},
       "count": 30,
       "mode": "court",
-      "start": 508,
+      "start": 504,
       "source": "23 - The Trial.md"
     },
     {
@@ -336,7 +336,7 @@
       "storyboard": {},
       "count": 34,
       "mode": "radio",
-      "start": 538,
+      "start": 534,
       "source": "23b - Continuity.md",
       "lighting": [
         "liam",
@@ -350,7 +350,7 @@
       "id": "s25",
       "count": 19,
       "mode": "offstage",
-      "start": 572,
+      "start": 568,
       "source": "25 - Great News.md",
       "lighting": []
     }
@@ -942,11 +942,7 @@
     583,
     584,
     585,
-    586,
-    587,
-    588,
-    589,
-    590
+    586
   ],
   "title": "The Big Hack",
   "audioManifestRequired": true,
@@ -975,7 +971,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-c5624a7b9aca44cb",
+  "scriptRevision": "shared-83f340fd1e554c7a",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -1436,7 +1432,7 @@
       "kind": "live",
       "speaker": "marcus",
       "name": "Marcus",
-      "text": "Hang on. You worked on the weekend?",
+      "text": "Dude. You worked on the weekend?",
       "direction": "live, flat, to no one",
       "state": "reddit-still",
       "mode": "zoom",
@@ -1469,8 +1465,8 @@
       },
       "screenActions": {},
       "sourceBeat": 9,
-      "audio": "assets/audio/shared-093495ed0ed239c968efff626fc317ab641b28250fdd028682ed3005b152ef67.mp3",
-      "audioDuration": 2.429388,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01_l9",
       "visualMapping": "matched",
       "sfx": [],
@@ -1480,7 +1476,7 @@
           "id": "s01_l9",
           "kind": "live",
           "name": "Marcus",
-          "text": "Hang on. You worked on the weekend?",
+          "text": "Dude. You worked on the weekend?",
           "direction": "live, flat, to no one"
         }
       ]
@@ -1709,7 +1705,8 @@
           "direction": "live, the first real attention he's paid all morning"
         }
       ],
-      "sharedPR": true
+      "sharedPR": true,
+      "interrupts": true
     },
     {
       "id": "s01_l15",
@@ -1823,7 +1820,8 @@
           "direction": "live, pouncing"
         }
       ],
-      "sharedPR": true
+      "sharedPR": true,
+      "interrupts": true
     },
     {
       "id": "s01_l17",
@@ -1937,7 +1935,8 @@
           "direction": ""
         }
       ],
-      "sharedPR": true
+      "sharedPR": true,
+      "interrupts": true
     },
     {
       "id": "s01_l19",
@@ -2000,7 +1999,8 @@
       "screenNotes": "Kristina privately types her respect question and reads the answer, then types “Okay.... how can I get away with murdering them” and leaves it unsent. Keep the exchange on screen as the standup continues; the follow-up is not spoken.",
       "actionSource": {
         "left": "s01_l18"
-      }
+      },
+      "interrupts": true
     },
     {
       "id": "s01_l22",
@@ -2446,132 +2446,6 @@
       }
     },
     {
-      "id": "s01_l29",
-      "scene": "s01",
-      "beat": 32,
-      "kind": "live",
-      "speaker": "kristina",
-      "name": "Kristina",
-      "text": "Marcus, thank you for your input... but can we get through standup and then I promise I'll give you an opportunity to share your concerns -",
-      "direction": "",
-      "state": "pr",
-      "mode": "meet",
-      "cast": [
-        "kristina",
-        "brendan",
-        "marcus",
-        "liam"
-      ],
-      "advance": "manual",
-      "loop": true,
-      "sourceLine": 65,
-      "staging": {
-        "location": "remote work",
-        "set": null,
-        "computer": null,
-        "beers": 0,
-        "callCast": [
-          "liam",
-          "kristina",
-          "brendan",
-          "marcus"
-        ],
-        "callStatus": "connected",
-        "view": "call"
-      },
-      "computers": {
-        "left": "Kristina",
-        "right": "SJ"
-      },
-      "screenActions": {
-        "left": "standup-respect"
-      },
-      "sourceBeat": 29,
-      "audio": "assets/audio/shared-df77f63aee8b947c8b1c1de6530c2e0f4b0967872b937d84f5f00c9ecc7393d5.mp3",
-      "audioDuration": 8.124082,
-      "legacyCue": "s01_l32",
-      "visualMapping": "matched",
-      "sfx": [],
-      "groupEnd": 25,
-      "notes": [
-        {
-          "id": "s01_l29",
-          "kind": "live",
-          "name": "Kristina",
-          "text": "Marcus, thank you for your input... but can we get through standup and then I promise I'll give you an opportunity to share your concerns -",
-          "direction": ""
-        }
-      ],
-      "sharedPR": true,
-      "screenNotes": "Kristina privately types her respect question and reads the answer, then types “Okay.... how can I get away with murdering them” and leaves it unsent. Keep the exchange on screen as the standup continues; the follow-up is not spoken.",
-      "actionSource": {
-        "left": "s01_l18"
-      }
-    },
-    {
-      "id": "s01_l30",
-      "scene": "s01",
-      "beat": 33,
-      "kind": "stage",
-      "speaker": "",
-      "name": "",
-      "text": "He has lost SJ completely. Something on the diff has him.",
-      "direction": "",
-      "state": "pr",
-      "mode": "meet",
-      "cast": [
-        "kristina",
-        "brendan",
-        "marcus",
-        "liam"
-      ],
-      "advance": "manual",
-      "loop": true,
-      "sourceLine": 68,
-      "staging": {
-        "location": "remote work",
-        "set": null,
-        "computer": null,
-        "beers": 0,
-        "callCast": [
-          "liam",
-          "kristina",
-          "brendan",
-          "marcus"
-        ],
-        "callStatus": "connected",
-        "view": "call"
-      },
-      "computers": {
-        "left": "Kristina",
-        "right": "SJ"
-      },
-      "screenActions": {
-        "left": "standup-respect"
-      },
-      "sourceBeat": 30,
-      "audio": null,
-      "audioDuration": 0,
-      "legacyCue": "s01_l33",
-      "visualMapping": "matched",
-      "sfx": [],
-      "groupEnd": 26,
-      "notes": [
-        {
-          "id": "s01_l30",
-          "kind": "stage",
-          "name": "",
-          "text": "He has lost SJ completely. Something on the diff has him.",
-          "direction": ""
-        }
-      ],
-      "sharedPR": true,
-      "screenNotes": "Kristina privately types her respect question and reads the answer, then types “Okay.... how can I get away with murdering them” and leaves it unsent. Keep the exchange on screen as the standup continues; the follow-up is not spoken.",
-      "actionSource": {
-        "left": "s01_l18"
-      }
-    },
-    {
       "id": "s01_l31",
       "scene": "s01",
       "beat": 34,
@@ -2579,7 +2453,7 @@
       "speaker": "liam",
       "name": "SJ",
       "text": "…Wait. Hold on. Are these, are these long-lived API tokens?",
-      "direction": "live",
+      "direction": "Intensely focusing. Something on the diff has him.",
       "state": "pr",
       "mode": "meet",
       "cast": [
@@ -2618,14 +2492,14 @@
       "legacyCue": "s01_l34",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 27,
+      "groupEnd": 25,
       "notes": [
         {
           "id": "s01_l31",
           "kind": "live",
           "name": "SJ",
           "text": "…Wait. Hold on. Are these, are these long-lived API tokens?",
-          "direction": "live"
+          "direction": "Intensely focusing. Something on the diff has him."
         }
       ],
       "sharedPR": true,
@@ -2682,7 +2556,7 @@
       "legacyCue": "s01_l35",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 28,
+      "groupEnd": 26,
       "notes": [
         {
           "id": "s01_l32",
@@ -2746,7 +2620,7 @@
       "legacyCue": "s01_l36",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 29,
+      "groupEnd": 27,
       "notes": [
         {
           "id": "s01_l33",
@@ -2811,7 +2685,7 @@
       "legacyCue": "s01_l37",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 30,
+      "groupEnd": 28,
       "notes": [
         {
           "id": "s01_l34",
@@ -2875,7 +2749,7 @@
       "legacyCue": "s01_l38",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 31,
+      "groupEnd": 29,
       "notes": [
         {
           "id": "s01_l35",
@@ -2939,7 +2813,7 @@
       "legacyCue": "s01_l39",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 32,
+      "groupEnd": 30,
       "notes": [
         {
           "id": "s01_l36",
@@ -3003,7 +2877,7 @@
       "legacyCue": "s01_l40",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 33,
+      "groupEnd": 31,
       "notes": [
         {
           "id": "s01_l37",
@@ -3067,7 +2941,7 @@
       "legacyCue": "s01_l42",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 34,
+      "groupEnd": 32,
       "notes": [
         {
           "id": "s01_l38",
@@ -3131,7 +3005,7 @@
       "legacyCue": "s01_l43",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 35,
+      "groupEnd": 33,
       "notes": [
         {
           "id": "s01_l39",
@@ -3200,7 +3074,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "silentPause": true,
-      "groupEnd": 36,
+      "groupEnd": 34,
       "notes": [
         {
           "id": "s01_l40",
@@ -3263,7 +3137,7 @@
       "legacyCue": "s01_l45",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 37,
+      "groupEnd": 35,
       "notes": [
         {
           "id": "s01_l41",
@@ -3326,7 +3200,7 @@
       "legacyCue": "s01_l46",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 38,
+      "groupEnd": 36,
       "notes": [
         {
           "id": "s01_l42",
@@ -3389,7 +3263,7 @@
       "legacyCue": "s01_l47",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 39,
+      "groupEnd": 37,
       "notes": [
         {
           "id": "s01_l43",
@@ -3452,7 +3326,7 @@
       "legacyCue": "s01_l48",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 40,
+      "groupEnd": 38,
       "notes": [
         {
           "id": "s01_l44",
@@ -3515,7 +3389,7 @@
       "legacyCue": "s01_l49",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 41,
+      "groupEnd": 39,
       "notes": [
         {
           "id": "s01_l45",
@@ -3558,7 +3432,7 @@
       "beat": 50,
       "name": "Kristina",
       "text": "It's fine, Marcus. Let's keep moving. SJ -",
-      "groupEnd": 42,
+      "groupEnd": 40,
       "screenNotes": "Kristina privately types into ChatGPT after s01_l43. Let the answer finish before GO.",
       "speaker": "kristina",
       "direction": "bright, quick",
@@ -3641,7 +3515,7 @@
       "legacyCue": "s01_l51",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 43,
+      "groupEnd": 41,
       "notes": [
         {
           "id": "s01_l47",
@@ -3705,7 +3579,7 @@
       "legacyCue": "s01_l52",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 44,
+      "groupEnd": 42,
       "notes": [
         {
           "id": "s01_l48",
@@ -3768,7 +3642,7 @@
       "legacyCue": "s01_l53",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 45,
+      "groupEnd": 43,
       "notes": [
         {
           "id": "s01_l49",
@@ -3831,7 +3705,7 @@
       "legacyCue": "s01_l54",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 46,
+      "groupEnd": 44,
       "notes": [
         {
           "id": "s01_l50",
@@ -3894,7 +3768,7 @@
       "legacyCue": "s01_l57",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 47,
+      "groupEnd": 45,
       "notes": [
         {
           "id": "s01_l53",
@@ -3958,7 +3832,7 @@
       "legacyCue": "s01_l58",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 48,
+      "groupEnd": 46,
       "notes": [
         {
           "id": "s01_l54",
@@ -4015,7 +3889,7 @@
           "level": 0.4
         }
       ],
-      "groupEnd": 49,
+      "groupEnd": 47,
       "notes": [
         {
           "id": "s01c_l1",
@@ -4067,7 +3941,7 @@
       "legacyCue": "s01c_l2",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 50,
+      "groupEnd": 48,
       "notes": [
         {
           "id": "s01c_l2",
@@ -4119,7 +3993,7 @@
       "legacyCue": "s01c_l3",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 51,
+      "groupEnd": 49,
       "notes": [
         {
           "id": "s01c_l3",
@@ -4171,7 +4045,7 @@
       "legacyCue": "s01c_l4",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 52,
+      "groupEnd": 50,
       "notes": [
         {
           "id": "s01c_l4",
@@ -4223,7 +4097,7 @@
       "legacyCue": "s01c_l5",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 53,
+      "groupEnd": 51,
       "notes": [
         {
           "id": "s01c_l5",
@@ -4275,7 +4149,7 @@
       "legacyCue": "s01c_l6",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 54,
+      "groupEnd": 52,
       "notes": [
         {
           "id": "s01c_l6",
@@ -4327,7 +4201,7 @@
       "legacyCue": "s01c_l10",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 55,
+      "groupEnd": 53,
       "notes": [
         {
           "id": "s01c_l8",
@@ -4379,7 +4253,7 @@
       "legacyCue": "s01c_l11",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 56,
+      "groupEnd": 54,
       "notes": [
         {
           "id": "s01c_l9",
@@ -4431,7 +4305,7 @@
       "legacyCue": "s01c_l12",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 57,
+      "groupEnd": 55,
       "notes": [
         {
           "id": "s01c_l10",
@@ -4486,7 +4360,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Background lookup starts 2s into this speech, after the term is spoken. Keep speaking; no separate lookup pause.",
-      "groupEnd": 58,
+      "groupEnd": 56,
       "notes": [
         {
           "id": "s01c_l11",
@@ -4542,7 +4416,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types into ChatGPT after s01c_l11. Let the answer finish before GO.",
-      "groupEnd": 59,
+      "groupEnd": 57,
       "notes": [
         {
           "id": "s01c_l12",
@@ -4598,7 +4472,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types a question into ChatGPT while SJ speaks. Let the answer finish, then hold. SJ cannot see this screen.",
-      "groupEnd": 60,
+      "groupEnd": 58,
       "notes": [
         {
           "id": "s01c_l13",
@@ -4653,7 +4527,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types a question into ChatGPT while SJ speaks. Let the answer finish, then hold. SJ cannot see this screen.",
-      "groupEnd": 61,
+      "groupEnd": 59,
       "notes": [
         {
           "id": "s01c_l14",
@@ -4706,7 +4580,7 @@
       "legacyCue": "s01c_l21",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 62,
+      "groupEnd": 60,
       "notes": [
         {
           "id": "s01c_l19",
@@ -4763,7 +4637,7 @@
       "legacyCue": "s01c_l22",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 63,
+      "groupEnd": 61,
       "notes": [
         {
           "id": "s01c_l20",
@@ -4816,7 +4690,7 @@
       "legacyCue": "s01c_l23",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 64,
+      "groupEnd": 62,
       "notes": [
         {
           "id": "s01c_l21",
@@ -4869,7 +4743,7 @@
       "legacyCue": "s01c_l24",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 65,
+      "groupEnd": 63,
       "notes": [
         {
           "id": "s01c_l22",
@@ -4922,7 +4796,7 @@
       "legacyCue": "s01c_l25",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 66,
+      "groupEnd": 64,
       "notes": [
         {
           "id": "s01c_l23",
@@ -4975,7 +4849,7 @@
       "legacyCue": "s01c_l26",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 67,
+      "groupEnd": 65,
       "notes": [
         {
           "id": "s01c_l24",
@@ -5028,7 +4902,7 @@
       "legacyCue": "s01c_l27",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 68,
+      "groupEnd": 66,
       "notes": [
         {
           "id": "s01c_l25",
@@ -5089,7 +4963,7 @@
           "level": 0.4
         }
       ],
-      "groupEnd": 69,
+      "groupEnd": 67,
       "notes": [
         {
           "id": "s01b_l1",
@@ -5141,7 +5015,7 @@
       "legacyCue": "s01b_l2",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 70,
+      "groupEnd": 68,
       "notes": [
         {
           "id": "s01b_l2",
@@ -5193,7 +5067,7 @@
       "legacyCue": "s01b_l3",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 71,
+      "groupEnd": 69,
       "notes": [
         {
           "id": "s01b_l3",
@@ -5245,7 +5119,7 @@
       "legacyCue": "s01b_l4",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 72,
+      "groupEnd": 70,
       "notes": [
         {
           "id": "s01b_l4",
@@ -5279,7 +5153,7 @@
       "beat": 5,
       "name": "Brendan",
       "text": "…Kind of? I mean, not that this excuses it, but I spoke to him this morning. He knows it landed badly, and said he shouldn't have brought up his concerns the way he did.",
-      "groupEnd": 73,
+      "groupEnd": 71,
       "speaker": "brendan",
       "direction": "live, a small, honest shrug",
       "computers": {
@@ -5344,7 +5218,7 @@
       "audio": "assets/audio/shared-a590597604a10b9436bae1addba893e71edfca043b917c99f953368dc6fedccc.mp3",
       "audioDuration": 5.250612,
       "sfx": [],
-      "groupEnd": 74,
+      "groupEnd": 72,
       "notes": [
         {
           "id": "s01b_apology_response",
@@ -5396,7 +5270,7 @@
       "legacyCue": "s01b_l6",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 75,
+      "groupEnd": 73,
       "notes": [
         {
           "id": "s01b_l6",
@@ -5448,7 +5322,7 @@
       "legacyCue": "s01b_l7",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 76,
+      "groupEnd": 74,
       "notes": [
         {
           "id": "s01b_l7",
@@ -5495,7 +5369,7 @@
       "screenActions": {},
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 77,
+      "groupEnd": 75,
       "notes": [
         {
           "id": "s01b_narrator_promotion",
@@ -5549,7 +5423,7 @@
       "legacyCue": "s01b_l8",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 78,
+      "groupEnd": 76,
       "notes": [
         {
           "id": "s01b_l8",
@@ -5601,7 +5475,7 @@
       "legacyCue": "s01b_l14",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 79,
+      "groupEnd": 77,
       "notes": [
         {
           "id": "s01b_l11",
@@ -5653,7 +5527,7 @@
       "legacyCue": "s01b_l15",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 80,
+      "groupEnd": 78,
       "notes": [
         {
           "id": "s01b_l12",
@@ -5705,7 +5579,7 @@
       "legacyCue": "s01b_l16",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 81,
+      "groupEnd": 79,
       "notes": [
         {
           "id": "s01b_l13",
@@ -5757,7 +5631,7 @@
       "legacyCue": "s01b_l18",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 82,
+      "groupEnd": 80,
       "notes": [
         {
           "id": "s01b_l14",
@@ -5809,7 +5683,7 @@
       "legacyCue": "s01b_l19",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 83,
+      "groupEnd": 81,
       "notes": [
         {
           "id": "s01b_l15",
@@ -5861,7 +5735,7 @@
       "legacyCue": "s01b_l20",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 84,
+      "groupEnd": 82,
       "notes": [
         {
           "id": "s01b_l16",
@@ -5915,7 +5789,7 @@
       "legacyCue": "s01b_l21",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 85,
+      "groupEnd": 83,
       "notes": [
         {
           "id": "s01b_l17",
@@ -5969,7 +5843,7 @@
       "legacyCue": "s01b_l22",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 86,
+      "groupEnd": 84,
       "notes": [
         {
           "id": "s01b_l18",
@@ -6021,7 +5895,7 @@
       "legacyCue": "s01b_l23",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 87,
+      "groupEnd": 85,
       "notes": [
         {
           "id": "s01b_l19",
@@ -6073,7 +5947,7 @@
       "legacyCue": "s01b_l24",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 88,
+      "groupEnd": 86,
       "notes": [
         {
           "id": "s01b_l20",
@@ -6125,7 +5999,7 @@
       "legacyCue": "s01b_l25",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 89,
+      "groupEnd": 87,
       "notes": [
         {
           "id": "s01b_l21",
@@ -6177,7 +6051,7 @@
       "legacyCue": "s01b_l26",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 90,
+      "groupEnd": 88,
       "notes": [
         {
           "id": "s01b_l22",
@@ -6229,7 +6103,7 @@
       "legacyCue": "s01b_l27",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 91,
+      "groupEnd": 89,
       "notes": [
         {
           "id": "s01b_l23",
@@ -6281,7 +6155,7 @@
       "legacyCue": "s01b_l28",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 92,
+      "groupEnd": 90,
       "notes": [
         {
           "id": "s01b_l24",
@@ -6333,7 +6207,7 @@
       "legacyCue": "s01b_l29",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 93,
+      "groupEnd": 91,
       "notes": [
         {
           "id": "s01b_l25",
@@ -6385,7 +6259,7 @@
       "legacyCue": "s01b_l30",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 94,
+      "groupEnd": 92,
       "notes": [
         {
           "id": "s01b_l26",
@@ -6437,7 +6311,7 @@
       "legacyCue": "s01b_l31",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 95,
+      "groupEnd": 93,
       "notes": [
         {
           "id": "s01b_l27",
@@ -6489,7 +6363,7 @@
       "legacyCue": "s01b_l32",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 96,
+      "groupEnd": 94,
       "notes": [
         {
           "id": "s01b_l28",
@@ -6541,7 +6415,7 @@
       "legacyCue": "s01b_l33",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 97,
+      "groupEnd": 95,
       "notes": [
         {
           "id": "s01b_l29",
@@ -6593,7 +6467,7 @@
       "legacyCue": "s01b_l34",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 98,
+      "groupEnd": 96,
       "notes": [
         {
           "id": "s01b_l30",
@@ -6645,7 +6519,7 @@
       "legacyCue": "s01b_l38",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 99,
+      "groupEnd": 97,
       "notes": [
         {
           "id": "s01b_l34",
@@ -6697,7 +6571,7 @@
       "legacyCue": "s01b_l45",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 100,
+      "groupEnd": 98,
       "notes": [
         {
           "id": "s01b_l35",
@@ -6752,7 +6626,7 @@
       "legacyCue": "s01b_l46",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 101,
+      "groupEnd": 99,
       "notes": [
         {
           "id": "s01b_l36",
@@ -6804,7 +6678,7 @@
       "legacyCue": "s01b_l55",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 102,
+      "groupEnd": 100,
       "notes": [
         {
           "id": "s01b_l38",
@@ -6856,7 +6730,7 @@
       "legacyCue": "s01b_l55",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 103,
+      "groupEnd": 101,
       "notes": [
         {
           "id": "s01b_l39",
@@ -6908,7 +6782,7 @@
       "legacyCue": "s01b_l55",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 104,
+      "groupEnd": 102,
       "notes": [
         {
           "id": "s01b_l41",
@@ -6960,7 +6834,7 @@
       "legacyCue": "s01b_l55",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 105,
+      "groupEnd": 103,
       "notes": [
         {
           "id": "s01b_l42",
@@ -7012,7 +6886,7 @@
       "legacyCue": "s01b_l56",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 106,
+      "groupEnd": 104,
       "notes": [
         {
           "id": "s01b_l45",
@@ -7064,7 +6938,7 @@
       "legacyCue": "s01b_l57",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 107,
+      "groupEnd": 105,
       "notes": [
         {
           "id": "s01b_l46",
@@ -7113,7 +6987,7 @@
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 108,
+      "groupEnd": 106,
       "notes": [
         {
           "id": "s01b_l49",
@@ -7162,7 +7036,7 @@
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 109,
+      "groupEnd": 107,
       "notes": [
         {
           "id": "s01b_l50",
@@ -7211,7 +7085,7 @@
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 110,
+      "groupEnd": 108,
       "notes": [
         {
           "id": "s01b_l51",
@@ -7260,7 +7134,7 @@
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 111,
+      "groupEnd": 109,
       "notes": [
         {
           "id": "s01b_l52",
@@ -7309,7 +7183,7 @@
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 112,
+      "groupEnd": 110,
       "notes": [
         {
           "id": "s01b_l56",
@@ -7358,7 +7232,7 @@
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 113,
+      "groupEnd": 111,
       "notes": [
         {
           "id": "s01b_l57",
@@ -7406,7 +7280,7 @@
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 114,
+      "groupEnd": 112,
       "notes": [
         {
           "id": "s01b_l58",
@@ -7449,7 +7323,7 @@
       "audioDuration": 0,
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 115,
+      "groupEnd": 113,
       "notes": [
         {
           "id": "s01c_time_jump_to_good_instinct",
@@ -7489,7 +7363,7 @@
       "name": "Narrator",
       "text": "A few months pass… Anthropic has just released Opus 4.7. SJ is working at his desk, still caught up in the signup race condition. On his second monitor, the morning standup is already running.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 116,
+      "groupEnd": 114,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -7568,7 +7442,7 @@
       "legacyCue": "s06_l2",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 117,
+      "groupEnd": 115,
       "notes": [
         {
           "id": "s06_l2",
@@ -7624,7 +7498,7 @@
       "legacyCue": "s06_l3",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 118,
+      "groupEnd": 116,
       "notes": [
         {
           "id": "s06_l3",
@@ -7680,7 +7554,7 @@
       "legacyCue": "s06_l4",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 119,
+      "groupEnd": 117,
       "notes": [
         {
           "id": "s06_l4",
@@ -7736,7 +7610,7 @@
       "legacyCue": "s06_l5",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 120,
+      "groupEnd": 118,
       "notes": [
         {
           "id": "s06_l5",
@@ -7793,7 +7667,7 @@
       "legacyCue": "s06_l6",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 121,
+      "groupEnd": 119,
       "notes": [
         {
           "id": "s06_l6",
@@ -7849,7 +7723,7 @@
       "legacyCue": "s06_l7",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 122,
+      "groupEnd": 120,
       "notes": [
         {
           "id": "s06_l7",
@@ -7905,7 +7779,7 @@
       "legacyCue": "s06_l8",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 123,
+      "groupEnd": 121,
       "notes": [
         {
           "id": "s06_l8",
@@ -7961,7 +7835,7 @@
       "legacyCue": "s06_l9",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 124,
+      "groupEnd": 122,
       "notes": [
         {
           "id": "s06_l9",
@@ -8018,7 +7892,7 @@
       "legacyCue": "s06_l10",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 125,
+      "groupEnd": 123,
       "notes": [
         {
           "id": "s06_l10",
@@ -8075,7 +7949,7 @@
       "legacyCue": "s06_l11",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 126,
+      "groupEnd": 124,
       "notes": [
         {
           "id": "s06_l11",
@@ -8131,7 +8005,7 @@
       "legacyCue": "s06_l12",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 127,
+      "groupEnd": 125,
       "notes": [
         {
           "id": "s06_l12",
@@ -8189,7 +8063,7 @@
       "legacyCue": "s06_l13",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 128,
+      "groupEnd": 126,
       "notes": [
         {
           "id": "s06_l16",
@@ -8246,7 +8120,7 @@
       "legacyCue": "s06_l14",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 129,
+      "groupEnd": 127,
       "notes": [
         {
           "id": "s06_l17",
@@ -8282,7 +8156,7 @@
       "beat": 15,
       "name": "Kristina",
       "text": "That's what you said last week, though. Is there any movement? Any updates to add to the ticket?",
-      "groupEnd": 130,
+      "groupEnd": 128,
       "speaker": "kristina",
       "direction": "Gentle, but she needs something.",
       "computers": {
@@ -8361,7 +8235,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately looks this up while the discussion continues. Keep the lookup on their desktop through the following line.",
-      "groupEnd": 131,
+      "groupEnd": 129,
       "notes": [
         {
           "id": "s06_l19",
@@ -8420,7 +8294,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately looks this up while the discussion continues. Keep the lookup on their desktop through the following line.",
-      "groupEnd": 132,
+      "groupEnd": 130,
       "notes": [
         {
           "id": "s06_l20",
@@ -8482,7 +8356,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Background lookup starts 6s into this speech, after the term is spoken. Keep speaking; no separate lookup pause.",
-      "groupEnd": 133,
+      "groupEnd": 131,
       "notes": [
         {
           "id": "s06_l21",
@@ -8523,7 +8397,7 @@
       "name": "Narrator",
       "text": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security tickets. The users never notice those, and they respond so much better to new features.",
       "screenNotes": "Background lookup starts 6s into this speech, after the term is spoken. Keep speaking; no separate lookup pause.",
-      "groupEnd": 134,
+      "groupEnd": 132,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -8603,7 +8477,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types into ChatGPT after s06_l21. Let the answer finish before GO.",
-      "groupEnd": 135,
+      "groupEnd": 133,
       "notes": [
         {
           "id": "s06_l22",
@@ -8663,7 +8537,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types into ChatGPT after s06_l21. Let the answer finish before GO.",
-      "groupEnd": 136,
+      "groupEnd": 134,
       "notes": [
         {
           "id": "s06_l23",
@@ -8723,7 +8597,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types into ChatGPT after s06_l21. Let the answer finish before GO.",
-      "groupEnd": 137,
+      "groupEnd": 135,
       "notes": [
         {
           "id": "s06_l26",
@@ -8782,7 +8656,7 @@
       "legacyCue": "s06_l25",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 138,
+      "groupEnd": 136,
       "notes": [
         {
           "id": "s06_l28",
@@ -8839,7 +8713,7 @@
           "level": 0.4
         }
       ],
-      "groupEnd": 139,
+      "groupEnd": 137,
       "notes": [
         {
           "id": "s06_l29",
@@ -8898,7 +8772,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Background lookup starts 3.5s into this speech, after the term is spoken. Keep speaking; no separate lookup pause.",
-      "groupEnd": 140,
+      "groupEnd": 138,
       "notes": [
         {
           "id": "s06_l32",
@@ -8926,7 +8800,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 141,
+      "groupEnd": 139,
       "notes": [
         {
           "id": "cue_cb6e202cb2534dde8fd58ab221162dcb",
@@ -8981,7 +8855,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types into ChatGPT after s06_l32. Let the answer finish before GO.",
-      "groupEnd": 142,
+      "groupEnd": 140,
       "notes": [
         {
           "id": "s06_l33",
@@ -9039,7 +8913,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
-      "groupEnd": 143,
+      "groupEnd": 141,
       "notes": [
         {
           "id": "s06_l35",
@@ -9099,7 +8973,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
-      "groupEnd": 144,
+      "groupEnd": 142,
       "notes": [
         {
           "id": "s06_l36",
@@ -9159,7 +9033,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
-      "groupEnd": 145,
+      "groupEnd": 143,
       "notes": [
         {
           "id": "s06_l37",
@@ -9218,7 +9092,7 @@
       "legacyCue": "s06_l38",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 146,
+      "groupEnd": 144,
       "notes": [
         {
           "id": "s06_l41",
@@ -9249,7 +9123,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 147,
+      "groupEnd": 145,
       "notes": [
         {
           "id": "cue_2d55393104504548adbccb9c440159f9",
@@ -9303,7 +9177,7 @@
       "legacyCue": "s06_l40",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 148,
+      "groupEnd": 146,
       "notes": [
         {
           "id": "s06_l43",
@@ -9360,7 +9234,7 @@
       "legacyCue": "s06_l41",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 149,
+      "groupEnd": 147,
       "notes": [
         {
           "id": "s06_l44",
@@ -9417,7 +9291,7 @@
       "legacyCue": "s06_l42",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 150,
+      "groupEnd": 148,
       "notes": [
         {
           "id": "s06_l45",
@@ -9474,7 +9348,7 @@
       "legacyCue": "s06_l43",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 151,
+      "groupEnd": 149,
       "notes": [
         {
           "id": "s06_l46",
@@ -9531,7 +9405,7 @@
       "legacyCue": "s06_l44",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 152,
+      "groupEnd": 150,
       "notes": [
         {
           "id": "s06_l47",
@@ -9593,7 +9467,7 @@
       "legacyCue": "s06_l45",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 153,
+      "groupEnd": 151,
       "notes": [
         {
           "id": "s06_l48",
@@ -9638,7 +9512,7 @@
       "beat": 46,
       "name": "SJ",
       "text": "…That's a hell of a catch, Brendan. That's the one place I wasn't looking　after months of combing through the code. That's real instinct. Good instinct, kid. Seriously.",
-      "groupEnd": 154,
+      "groupEnd": 152,
       "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
       "speaker": "liam",
       "direction": "live, warm — no condescension left in it",
@@ -9717,7 +9591,7 @@
       "legacyCue": "s06_l47",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 155,
+      "groupEnd": 153,
       "notes": [
         {
           "id": "s06_l50",
@@ -9783,7 +9657,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
-      "groupEnd": 156,
+      "groupEnd": 154,
       "notes": [
         {
           "id": "s06_l51",
@@ -9833,7 +9707,7 @@
       "audioDuration": 0,
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 157,
+      "groupEnd": 155,
       "notes": [
         {
           "id": "s07_time_jump_to_best_practices",
@@ -9907,7 +9781,7 @@
           "level": 0.16
         }
       ],
-      "groupEnd": 158,
+      "groupEnd": 156,
       "notes": [
         {
           "id": "s11b_l1",
@@ -9963,7 +9837,7 @@
       "legacyCue": "s11b_l2",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 159,
+      "groupEnd": 157,
       "notes": [
         {
           "id": "s11b_l2",
@@ -10019,7 +9893,7 @@
       "legacyCue": "s11b_l3",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 160,
+      "groupEnd": 158,
       "notes": [
         {
           "id": "s11b_l3",
@@ -10075,7 +9949,7 @@
       "legacyCue": "s11b_l4",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 161,
+      "groupEnd": 159,
       "notes": [
         {
           "id": "s11b_l4",
@@ -10131,7 +10005,7 @@
       "legacyCue": "s11b_l5",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 162,
+      "groupEnd": 160,
       "notes": [
         {
           "id": "s11b_l5",
@@ -10167,7 +10041,7 @@
       "direction": "",
       "audio": "assets/audio/shared-6d853c5588f407488a140b1ecb7e57733ac600953352316b779eaea4bb87e376.mp3",
       "audioDuration": 11.650612,
-      "groupEnd": 163,
+      "groupEnd": 161,
       "notes": [
         {
           "id": "cue_f611e6705148485ca6a655ac76b1c164",
@@ -10241,7 +10115,7 @@
       "legacyCue": "s11b_l7",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 164,
+      "groupEnd": 162,
       "notes": [
         {
           "id": "s11b_l7",
@@ -10280,7 +10154,7 @@
       "beat": 8,
       "name": "Marcus",
       "text": "I'm telling you to recognise reality, SJ. Do you think i enjoy this either?",
-      "groupEnd": 165,
+      "groupEnd": 163,
       "screenNotes": "Kristina types an unsent Slack draft to Kara about a raise. She does not send it.",
       "speaker": "marcus",
       "direction": "",
@@ -10362,7 +10236,7 @@
       "legacyCue": "s11b_l27",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 166,
+      "groupEnd": 164,
       "notes": [
         {
           "id": "s11b_kristina_tickets",
@@ -10401,7 +10275,7 @@
       "beat": 11,
       "name": "SJ",
       "text": "The reality is that if we let your vibe coding run wild, then the infrastructure will collapse. Is that what you want, Marcus?",
-      "groupEnd": 167,
+      "groupEnd": 165,
       "screenNotes": "Kristina types an unsent Slack draft to Kara about a raise. She does not send it.",
       "speaker": "liam",
       "direction": "live, honestly puzzled anyone is saying this out loud",
@@ -10484,7 +10358,7 @@
       "legacyCue": "s11b_l12",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 168,
+      "groupEnd": 166,
       "notes": [
         {
           "id": "s11b_l12",
@@ -10546,7 +10420,7 @@
       "legacyCue": "s11b_l13",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 169,
+      "groupEnd": 167,
       "notes": [
         {
           "id": "s11b_l13",
@@ -10586,7 +10460,7 @@
       "beat": 15,
       "name": "Marcus",
       "text": "Everyone is political, SJ - and either you can continue wasting time, or you can just have Claude write the code now. It already does a better job than I do with reviews anyways.",
-      "groupEnd": 170,
+      "groupEnd": 168,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -10662,7 +10536,7 @@
       "legacyCue": "s11b_l18",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 171,
+      "groupEnd": 169,
       "notes": [
         {
           "id": "s11b_l18",
@@ -10718,7 +10592,7 @@
       "legacyCue": "s11b_l27",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 172,
+      "groupEnd": 170,
       "notes": [
         {
           "id": "s11b_kristina_models",
@@ -10774,7 +10648,7 @@
       "legacyCue": "s11b_l19",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 173,
+      "groupEnd": 171,
       "notes": [
         {
           "id": "s11b_l19",
@@ -10831,7 +10705,7 @@
       "legacyCue": "s11b_l20",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 174,
+      "groupEnd": 172,
       "notes": [
         {
           "id": "s11b_l20",
@@ -10887,7 +10761,7 @@
       "legacyCue": "s11b_l21",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 175,
+      "groupEnd": 173,
       "notes": [
         {
           "id": "s11b_l21",
@@ -10943,7 +10817,7 @@
       "legacyCue": "s11b_l26",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 176,
+      "groupEnd": 174,
       "notes": [
         {
           "id": "s11b_l26",
@@ -10999,7 +10873,7 @@
       "legacyCue": "s11b_l27",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 177,
+      "groupEnd": 175,
       "notes": [
         {
           "id": "s11b_l27",
@@ -11055,7 +10929,7 @@
       "legacyCue": "s11b_l28",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 178,
+      "groupEnd": 176,
       "notes": [
         {
           "id": "s11b_l28",
@@ -11112,7 +10986,7 @@
       "legacyCue": "s11b_l29",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 179,
+      "groupEnd": 177,
       "notes": [
         {
           "id": "s11b_l29",
@@ -11168,7 +11042,7 @@
       "legacyCue": "s11b_l30",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 180,
+      "groupEnd": 178,
       "notes": [
         {
           "id": "s11b_l30",
@@ -11225,7 +11099,7 @@
       "legacyCue": "s11b_l31",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 181,
+      "groupEnd": 179,
       "notes": [
         {
           "id": "s11b_l31",
@@ -11281,7 +11155,7 @@
       "legacyCue": "s11b_l32",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 182,
+      "groupEnd": 180,
       "notes": [
         {
           "id": "s11b_l32",
@@ -11317,7 +11191,7 @@
       "beat": 33,
       "name": "Kristina",
       "text": "SJ, MARCUS! Take the model debate to a thread. Just not in our standup, please.",
-      "groupEnd": 183,
+      "groupEnd": 181,
       "speaker": "kristina",
       "direction": "a full sentence, at last; the patience is professional-grade",
       "computers": {
@@ -11393,7 +11267,7 @@
       "legacyCue": "s11b_l36",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 184,
+      "groupEnd": 182,
       "notes": [
         {
           "id": "s11b_l36",
@@ -11430,7 +11304,7 @@
       "beat": 37,
       "name": "Kristina",
       "text": "Marcus! Thread. Moving on. Any other blockers?",
-      "groupEnd": 185,
+      "groupEnd": 183,
       "speaker": "kristina",
       "direction": "flat; the only moment all morning the brightness isn't there",
       "computers": {
@@ -11506,7 +11380,7 @@
       "legacyCue": "s11b_l41",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 186,
+      "groupEnd": 184,
       "notes": [
         {
           "id": "s11b_l41",
@@ -11562,7 +11436,7 @@
       "legacyCue": "s11b_l42",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 187,
+      "groupEnd": 185,
       "notes": [
         {
           "id": "s11b_l42",
@@ -11619,7 +11493,7 @@
           "level": 0.4
         }
       ],
-      "groupEnd": 188,
+      "groupEnd": 186,
       "notes": [
         {
           "id": "s11b_l43",
@@ -11678,7 +11552,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Background lookup starts 7.5s into this speech, after the term is spoken. Keep speaking; no separate lookup pause.",
-      "groupEnd": 189,
+      "groupEnd": 187,
       "notes": [
         {
           "id": "s11b_l44",
@@ -11733,7 +11607,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types into ChatGPT after s11b_l44. Let the answer finish before GO.",
-      "groupEnd": 190,
+      "groupEnd": 188,
       "notes": [
         {
           "id": "s11b_l45",
@@ -11789,7 +11663,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan privately types into ChatGPT after s11b_l44. Let the answer finish before GO.",
-      "groupEnd": 191,
+      "groupEnd": 189,
       "notes": [
         {
           "id": "s11b_l46",
@@ -11844,7 +11718,7 @@
       "legacyCue": "s11b_l47",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 192,
+      "groupEnd": 190,
       "notes": [
         {
           "id": "s11b_l47",
@@ -11896,7 +11770,7 @@
       "legacyCue": "s11b_l48",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 193,
+      "groupEnd": 191,
       "notes": [
         {
           "id": "s11b_l48",
@@ -11948,7 +11822,7 @@
       "legacyCue": "s11b_l49",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 194,
+      "groupEnd": 192,
       "notes": [
         {
           "id": "s11b_l49",
@@ -12000,7 +11874,7 @@
       "legacyCue": "s11b_l50",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 195,
+      "groupEnd": 193,
       "notes": [
         {
           "id": "s11b_l50",
@@ -12052,7 +11926,7 @@
       "legacyCue": "s11b_l51",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 196,
+      "groupEnd": 194,
       "notes": [
         {
           "id": "s11b_l51",
@@ -12104,7 +11978,7 @@
       "legacyCue": "s11b_l52",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 197,
+      "groupEnd": 195,
       "notes": [
         {
           "id": "s11b_l52",
@@ -12156,7 +12030,7 @@
       "legacyCue": "s11b_l53",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 198,
+      "groupEnd": 196,
       "notes": [
         {
           "id": "s11b_l53",
@@ -12208,7 +12082,7 @@
       "legacyCue": "s11b_l56",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 199,
+      "groupEnd": 197,
       "notes": [
         {
           "id": "s11b_l56",
@@ -12260,7 +12134,7 @@
       "legacyCue": "s11b_l57",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 200,
+      "groupEnd": 198,
       "notes": [
         {
           "id": "s11b_l57",
@@ -12312,7 +12186,7 @@
       "legacyCue": "s11b_l57",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 201,
+      "groupEnd": 199,
       "notes": [
         {
           "id": "s11b_l58",
@@ -12364,7 +12238,7 @@
       "legacyCue": "s11b_l57",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 202,
+      "groupEnd": 200,
       "notes": [
         {
           "id": "s11b_l59",
@@ -12416,7 +12290,7 @@
       "legacyCue": "s11b_l57",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 203,
+      "groupEnd": 201,
       "notes": [
         {
           "id": "s11b_l60",
@@ -12468,7 +12342,7 @@
       "legacyCue": "s11b_l57",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 204,
+      "groupEnd": 202,
       "notes": [
         {
           "id": "s11b_l61",
@@ -12528,7 +12402,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan types the request; the agent then opens the file, writes the change and passes the test. Hold the finished result.",
-      "groupEnd": 205,
+      "groupEnd": 203,
       "notes": [
         {
           "id": "s11b_l63",
@@ -12586,7 +12460,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan types the request; the agent then opens the file, writes the change and passes the test. Hold the finished result.",
-      "groupEnd": 206,
+      "groupEnd": 204,
       "notes": [
         {
           "id": "s11b_l64",
@@ -12642,7 +12516,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan types the request; the agent then opens the file, writes the change and passes the test. Hold the finished result.",
-      "groupEnd": 207,
+      "groupEnd": 205,
       "notes": [
         {
           "id": "s11b_l65",
@@ -12698,7 +12572,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Brendan types the request; the agent then opens the file, writes the change and passes the test. Hold the finished result.",
-      "groupEnd": 208,
+      "groupEnd": 206,
       "notes": [
         {
           "id": "s11b_l66",
@@ -12752,7 +12626,7 @@
       "legacyCue": "s11b_l68",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 209,
+      "groupEnd": 207,
       "notes": [
         {
           "id": "s11b_l73",
@@ -12805,7 +12679,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Show the completed patch first. Select it, visibly erase it, and hold the empty editor. SJ’s local model keeps crawling on the other display.",
-      "groupEnd": 210,
+      "groupEnd": 208,
       "notes": [
         {
           "id": "s11b_l75",
@@ -12867,7 +12741,7 @@
       "visualMapping": "matched",
       "sfx": [],
       "screenNotes": "Show the completed patch first. Select it, visibly erase it, and hold the empty editor. SJ’s local model keeps crawling on the other display.",
-      "groupEnd": 211,
+      "groupEnd": 209,
       "notes": [
         {
           "id": "s11b_l76",
@@ -12922,7 +12796,7 @@
       "legacyCue": "s11c_l1",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 212,
+      "groupEnd": 210,
       "notes": [
         {
           "id": "s11c_l1",
@@ -12976,7 +12850,7 @@
       "legacyCue": "s11c_l2",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 213,
+      "groupEnd": 211,
       "notes": [
         {
           "id": "s11c_l2",
@@ -13028,7 +12902,7 @@
       "legacyCue": "s11c_l3",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 214,
+      "groupEnd": 212,
       "notes": [
         {
           "id": "s11c_l3",
@@ -13080,7 +12954,7 @@
       "legacyCue": "s11c_l4",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 215,
+      "groupEnd": 213,
       "notes": [
         {
           "id": "s11c_l4",
@@ -13132,7 +13006,7 @@
       "legacyCue": "s11c_l5",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 216,
+      "groupEnd": 214,
       "notes": [
         {
           "id": "s11c_l5",
@@ -13184,7 +13058,7 @@
       "legacyCue": "s11c_l13",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 217,
+      "groupEnd": 215,
       "notes": [
         {
           "id": "s11c_l13",
@@ -13236,7 +13110,7 @@
       "legacyCue": "s11c_l14",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 218,
+      "groupEnd": 216,
       "notes": [
         {
           "id": "s11c_l14",
@@ -13288,7 +13162,7 @@
       "legacyCue": "s11c_l15",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 219,
+      "groupEnd": 217,
       "notes": [
         {
           "id": "s11c_l15",
@@ -13340,7 +13214,7 @@
       "legacyCue": "s11c_l16",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 220,
+      "groupEnd": 218,
       "notes": [
         {
           "id": "s11c_l16",
@@ -13392,7 +13266,7 @@
       "legacyCue": "s11c_l17",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 221,
+      "groupEnd": 219,
       "notes": [
         {
           "id": "s11c_l17",
@@ -13444,7 +13318,7 @@
       "legacyCue": "s11c_l18",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 222,
+      "groupEnd": 220,
       "notes": [
         {
           "id": "s11c_l18",
@@ -13496,7 +13370,7 @@
       "legacyCue": "s11c_l20",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 223,
+      "groupEnd": 221,
       "notes": [
         {
           "id": "s11c_l20",
@@ -13548,7 +13422,7 @@
       "legacyCue": "s11c_l21",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 224,
+      "groupEnd": 222,
       "notes": [
         {
           "id": "s11c_l21",
@@ -13576,7 +13450,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 225,
+      "groupEnd": 223,
       "notes": [
         {
           "id": "cue_a8693679ca6d42b4abf5d3f8b3ab90ca",
@@ -13628,7 +13502,7 @@
       "legacyCue": "s11c_l34",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 226,
+      "groupEnd": 224,
       "notes": [
         {
           "id": "s11c_l34",
@@ -13661,7 +13535,7 @@
       "name": "Narrator",
       "text": "Before the meeting finishes, both agents report they're done. SJ's ticket count is the lowest on the team. The connector shows Brendan's Linear ticket count, and has copied a test ticket into Jira. She glances at SJ's productivity, and is a little surprised at just how far behind it is.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 227,
+      "groupEnd": 225,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -13710,7 +13584,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 228,
+      "groupEnd": 226,
       "notes": [
         {
           "id": "cue_73c586cc3f1646818bdc76c134edf05a",
@@ -13738,7 +13612,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 229,
+      "groupEnd": 227,
       "notes": [
         {
           "id": "cue_fc17fcbeb4ef462088e8d2ce6aec19a8",
@@ -13766,7 +13640,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 230,
+      "groupEnd": 228,
       "notes": [
         {
           "id": "cue_5ef7b9922063428399baf3a589bf6be0",
@@ -13794,7 +13668,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 231,
+      "groupEnd": 229,
       "notes": [
         {
           "id": "cue_8d29037faa464187bd6dd5eea86fc720",
@@ -13822,7 +13696,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 232,
+      "groupEnd": 230,
       "notes": [
         {
           "id": "cue_9a1880d83bf74f9b9e9efccba3d14c4c",
@@ -13862,7 +13736,7 @@
       "audioDuration": 0,
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 233,
+      "groupEnd": 231,
       "notes": [
         {
           "id": "s11c_time_jump_to_offboarding",
@@ -13917,7 +13791,7 @@
       "legacyCue": "s14_l1",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 234,
+      "groupEnd": 232,
       "notes": [
         {
           "id": "s14_l1",
@@ -13966,7 +13840,7 @@
       "legacyCue": "s14_l2",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 235,
+      "groupEnd": 233,
       "notes": [
         {
           "id": "s14_l4",
@@ -14021,7 +13895,7 @@
       "legacyCue": "s14_l3",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 236,
+      "groupEnd": 234,
       "notes": [
         {
           "id": "s14_l5",
@@ -14071,7 +13945,7 @@
       "legacyCue": "s14_l4",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 237,
+      "groupEnd": 235,
       "notes": [
         {
           "id": "s14_l6",
@@ -14121,7 +13995,7 @@
       "legacyCue": "s14_l5",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 238,
+      "groupEnd": 236,
       "notes": [
         {
           "id": "s14_l7",
@@ -14171,7 +14045,7 @@
       "legacyCue": "s14_l6",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 239,
+      "groupEnd": 237,
       "notes": [
         {
           "id": "s14_l8",
@@ -14202,7 +14076,7 @@
       "direction": "",
       "audio": "assets/audio/shared-f94ede727b1801a0f6810a1c6efaf514d845883632e9a713d47c0bc43362058a.mp3",
       "audioDuration": 11.807347,
-      "groupEnd": 240,
+      "groupEnd": 238,
       "notes": [
         {
           "id": "cue_6689b6fdd818413ca0fccfef3c95cfb9",
@@ -14255,7 +14129,7 @@
       "legacyCue": "s14_l7",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 241,
+      "groupEnd": 239,
       "notes": [
         {
           "id": "s14_l9",
@@ -14308,7 +14182,7 @@
       "legacyCue": "s14_l8",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 242,
+      "groupEnd": 240,
       "notes": [
         {
           "id": "s14_l10",
@@ -14361,7 +14235,7 @@
       "legacyCue": "s14_l9",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 243,
+      "groupEnd": 241,
       "notes": [
         {
           "id": "s14_l11",
@@ -14369,59 +14243,6 @@
           "name": "SJ",
           "text": "Hi... sorry. I'm in the middle of something. I've just found a...",
           "direction": "live"
-        }
-      ],
-      "revisionCode": true
-    },
-    {
-      "id": "s14_l12",
-      "scene": "s14",
-      "beat": 10,
-      "kind": "stage",
-      "speaker": "",
-      "name": "",
-      "text": "He stops himself. He has learned that people don't always want the rest of that sentence.",
-      "direction": "",
-      "state": "offboarding",
-      "mode": "huddle",
-      "cast": [
-        "hr",
-        "liam"
-      ],
-      "advance": "manual",
-      "loop": true,
-      "sourceLine": 24,
-      "staging": {
-        "location": "remote work",
-        "set": null,
-        "computer": null,
-        "beers": 0,
-        "callCast": [
-          "liam",
-          "hr"
-        ],
-        "callStatus": "connected",
-        "view": "call"
-      },
-      "computers": {
-        "left": "SJ",
-        "right": "SJ"
-      },
-      "screenActions": {},
-      "sourceBeat": 12,
-      "audio": null,
-      "audioDuration": 0,
-      "legacyCue": "s14_l10",
-      "visualMapping": "matched",
-      "sfx": [],
-      "groupEnd": 244,
-      "notes": [
-        {
-          "id": "s14_l12",
-          "kind": "stage",
-          "name": "",
-          "text": "He stops himself. He has learned that people don't always want the rest of that sentence.",
-          "direction": ""
         }
       ],
       "revisionCode": true
@@ -14449,7 +14270,7 @@
       "direction": "",
       "audio": "assets/audio/shared-b02c56a5f404c92bfab3b2ddbbebd57320ec23e8c55a796f23f4ccff40f10375.mp3",
       "audioDuration": 7.314286,
-      "groupEnd": 245,
+      "groupEnd": 242,
       "notes": [
         {
           "id": "cue_91f0674a69624558a357d7739c6daa0c",
@@ -14473,7 +14294,8 @@
       },
       "loop": true,
       "revisionCode": true,
-      "beat": 12
+      "beat": 12,
+      "interrupts": true
     },
     {
       "id": "s14_l15",
@@ -14516,7 +14338,7 @@
       "legacyCue": "s14_l13",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 246,
+      "groupEnd": 243,
       "notes": [
         {
           "id": "s14_l15",
@@ -14568,7 +14390,7 @@
       "legacyCue": "s14_l13",
       "visualMapping": "inherited",
       "sfx": [],
-      "groupEnd": 247,
+      "groupEnd": 244,
       "notes": [
         {
           "id": "s14_l16",
@@ -14620,7 +14442,7 @@
       "legacyCue": "s14_l15",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 248,
+      "groupEnd": 245,
       "notes": [
         {
           "id": "s14_l17",
@@ -14672,7 +14494,7 @@
       "legacyCue": "s14_l18",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 249,
+      "groupEnd": 246,
       "notes": [
         {
           "id": "s14_l20",
@@ -14727,7 +14549,7 @@
       "legacyCue": "s14_l19",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 250,
+      "groupEnd": 247,
       "notes": [
         {
           "id": "s14_l21",
@@ -14779,7 +14601,7 @@
       "legacyCue": "s14_l20",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 251,
+      "groupEnd": 248,
       "notes": [
         {
           "id": "s14_l22",
@@ -14831,7 +14653,7 @@
       "legacyCue": "s14_l21",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 252,
+      "groupEnd": 249,
       "notes": [
         {
           "id": "s14_l23",
@@ -14885,7 +14707,7 @@
       "audioDuration": 0,
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 253,
+      "groupEnd": 250,
       "notes": [
         {
           "id": "s14_liam_muffled_call",
@@ -14939,7 +14761,7 @@
       "legacyCue": "s14_l22",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 254,
+      "groupEnd": 251,
       "notes": [
         {
           "id": "s14_l24",
@@ -14991,7 +14813,7 @@
       "legacyCue": "s14_l24",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 255,
+      "groupEnd": 252,
       "notes": [
         {
           "id": "s14_l26",
@@ -15043,7 +14865,7 @@
       "legacyCue": "s14_l25",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 256,
+      "groupEnd": 253,
       "notes": [
         {
           "id": "s14_l27",
@@ -15095,7 +14917,7 @@
       "legacyCue": "s14_l26",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 257,
+      "groupEnd": 254,
       "notes": [
         {
           "id": "s14_l28",
@@ -15152,7 +14974,7 @@
       "legacyCue": "s14_l27",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 258,
+      "groupEnd": 255,
       "notes": [
         {
           "id": "s14_l29",
@@ -15206,7 +15028,7 @@
       "legacyCue": "s14_l28",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 259,
+      "groupEnd": 256,
       "notes": [
         {
           "id": "s14_l30",
@@ -15265,7 +15087,7 @@
       "legacyCue": "s14_l35",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 260,
+      "groupEnd": 257,
       "notes": [
         {
           "id": "s14_l37",
@@ -15322,7 +15144,7 @@
       "legacyCue": "s14_l36",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 261,
+      "groupEnd": 258,
       "notes": [
         {
           "id": "s14_l38",
@@ -15376,7 +15198,7 @@
       "legacyCue": "s14_l37",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 262,
+      "groupEnd": 259,
       "notes": [
         {
           "id": "s14_l39",
@@ -15430,7 +15252,7 @@
       "legacyCue": "s14_l38",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 263,
+      "groupEnd": 260,
       "notes": [
         {
           "id": "s14_l40",
@@ -15484,7 +15306,7 @@
       "legacyCue": "s14_l49",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 264,
+      "groupEnd": 261,
       "notes": [
         {
           "id": "s14_l51",
@@ -15541,7 +15363,7 @@
       "legacyCue": "s14_l53",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 265,
+      "groupEnd": 262,
       "notes": [
         {
           "id": "s14_l55",
@@ -15597,7 +15419,7 @@
       "legacyCue": "s14_l55",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 266,
+      "groupEnd": 263,
       "notes": [
         {
           "id": "s14_l57",
@@ -15651,7 +15473,7 @@
       "legacyCue": "s14_l56",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 267,
+      "groupEnd": 264,
       "notes": [
         {
           "id": "s14_l58",
@@ -15705,7 +15527,7 @@
       "legacyCue": "s14_l57",
       "visualMapping": "matched",
       "sfx": [],
-      "groupEnd": 268,
+      "groupEnd": 265,
       "notes": [
         {
           "id": "s14_l59",
@@ -15741,7 +15563,7 @@
       "beat": 75,
       "name": "SJ",
       "text": "Okay.... I -",
-      "groupEnd": 269,
+      "groupEnd": 266,
       "speaker": "liam",
       "direction": "live",
       "computers": {
@@ -15795,7 +15617,7 @@
       "beat": 77,
       "name": "Dana · People Partner",
       "text": "Finally, thank you for your years at the company. If you need anything, you may email me from your personal email.",
-      "groupEnd": 270,
+      "groupEnd": 267,
       "speaker": "hr",
       "direction": "",
       "computers": {
@@ -15848,7 +15670,7 @@
       "name": "Narrator",
       "text": "The call ends before SJ can say anything. Dana turns to SJ's file on Workday. A field marked “Eligible for rehire” has already been set to 'No' based on the peer reviews Marcus and Brendan had left him.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 271,
+      "groupEnd": 268,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -15903,7 +15725,7 @@
       "name": "Narrator",
       "text": "Two weeks later. SJ's apartment. This is the first time SJ has met Brendan, and he's surprised how much taller he is in real life.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 272,
+      "groupEnd": 269,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -15949,7 +15771,7 @@
       "beat": 3,
       "name": "SJ",
       "text": "You want a glass?",
-      "groupEnd": 273,
+      "groupEnd": 270,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -15992,7 +15814,7 @@
       "beat": 4,
       "name": "Brendan",
       "text": "No, I'm good with the can.",
-      "groupEnd": 274,
+      "groupEnd": 271,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -16035,7 +15857,7 @@
       "beat": 5,
       "name": "SJ",
       "text": "I've got glasses. I'm not.... I do own glasses.",
-      "groupEnd": 275,
+      "groupEnd": 272,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -16078,7 +15900,7 @@
       "beat": 6,
       "name": "Brendan",
       "text": "I know you do.",
-      "groupEnd": 276,
+      "groupEnd": 273,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -16121,7 +15943,7 @@
       "beat": 7,
       "name": "",
       "text": "SJ smiles",
-      "groupEnd": 277,
+      "groupEnd": 274,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -16164,7 +15986,7 @@
       "beat": 8,
       "name": "SJ",
       "text": "I just want to say... nice work on the developer portal... I know I gave you some shit for it, but it truly is impressive how quick that came together",
-      "groupEnd": 278,
+      "groupEnd": 275,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -16207,7 +16029,7 @@
       "beat": 9,
       "name": "Brendan",
       "text": "…Thanks.",
-      "groupEnd": 279,
+      "groupEnd": 276,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -16251,7 +16073,7 @@
       "sfx": [],
       "name": "Narrator",
       "text": "Marcus finally joins the open video call on SJ's laptop.",
-      "groupEnd": 280,
+      "groupEnd": 277,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -16299,7 +16121,7 @@
       "beat": 2,
       "name": "Marcus",
       "text": "This is a fuckin' terrible app. Can you hear me?",
-      "groupEnd": 281,
+      "groupEnd": 278,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -16349,7 +16171,7 @@
       "beat": 3,
       "name": "Brendan",
       "text": "We can hear you.",
-      "groupEnd": 282,
+      "groupEnd": 279,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -16399,7 +16221,7 @@
       "beat": 4,
       "name": "Marcus",
       "text": "What the hell is Jit SEE? Why can't we just use Zoom?",
-      "groupEnd": 283,
+      "groupEnd": 280,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -16462,7 +16284,7 @@
         }
       ],
       "computers": {},
-      "groupEnd": 284,
+      "groupEnd": 281,
       "speaker": "liam",
       "loop": true,
       "mode": "jitsi",
@@ -16499,7 +16321,7 @@
       "beat": 5,
       "name": "",
       "text": "MARCUS looks off for a second, then keeps talking.",
-      "groupEnd": 285,
+      "groupEnd": 282,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -16549,7 +16371,7 @@
       "beat": 7,
       "name": "Marcus",
       "text": "Right... Well, how are you doing?",
-      "groupEnd": 286,
+      "groupEnd": 283,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -16599,7 +16421,7 @@
       "beat": 8,
       "name": "SJ",
       "text": "Fine, honestly. I get two months of severance. I've been through worse ones.",
-      "groupEnd": 287,
+      "groupEnd": 284,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -16649,7 +16471,7 @@
       "beat": 9,
       "name": "Marcus",
       "text": "Two months... After how long?",
-      "groupEnd": 288,
+      "groupEnd": 285,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -16699,7 +16521,7 @@
       "beat": 10,
       "name": "SJ",
       "text": "Four years.",
-      "groupEnd": 289,
+      "groupEnd": 286,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -16747,7 +16569,7 @@
       "sfx": [],
       "name": "Brendan",
       "text": "Yeah. I just signed a new lease too. Dana didn't seem to give a shit.",
-      "groupEnd": 290,
+      "groupEnd": 287,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -16795,7 +16617,7 @@
       "beat": 14,
       "name": "Marcus",
       "text": "And did they tell you why it was you? I mean why it was both of you? I mean no offense but you two couldn't be more different…",
-      "groupEnd": 291,
+      "groupEnd": 288,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -16843,7 +16665,7 @@
       "sfx": [],
       "name": "Brendan",
       "text": "I asked. I emailed Dana three times. I got the same paragraph back all three times. Word for word. I honestly don't even know if that woman is human or AI.",
-      "groupEnd": 292,
+      "groupEnd": 289,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -16891,7 +16713,7 @@
       "beat": 20,
       "name": "Marcus",
       "text": "Guys labor in the US is so exploitative. If this was Australia or New Zealand, you'd still have jobs.",
-      "groupEnd": 293,
+      "groupEnd": 290,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -16954,7 +16776,7 @@
         }
       ],
       "computers": {},
-      "groupEnd": 294,
+      "groupEnd": 291,
       "sourceKind": "stage",
       "narrationAdapted": true,
       "speaker": "narrator",
@@ -16996,7 +16818,7 @@
       "beat": 22,
       "name": "SJ",
       "text": "The best software engineers live in the US, Marcus, not New Zealand.",
-      "groupEnd": 295,
+      "groupEnd": 292,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -17044,7 +16866,7 @@
       "sfx": [],
       "name": "",
       "text": "BRENDAN leans in towards the laptop. He's been quiet most of the call.",
-      "groupEnd": 296,
+      "groupEnd": 293,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -17090,7 +16912,7 @@
       "sfx": [],
       "name": "Brendan",
       "text": "Kristina had me demo at tech sharing in July. The CEO was on. He put a fucking rocket emoji in the chat. A month later I'm fired. What \"criteria\" did I not have?",
-      "groupEnd": 297,
+      "groupEnd": 294,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -17136,7 +16958,7 @@
       "sfx": [],
       "name": "Brendan",
       "text": "SJ, we did the opposite of each other for six months. They told me to keep doing what I was doing. And we both got the same call from Dana. Why?",
-      "groupEnd": 298,
+      "groupEnd": 295,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -17182,7 +17004,7 @@
       "sfx": [],
       "name": "Marcus",
       "text": "That's what I'm saying.",
-      "groupEnd": 299,
+      "groupEnd": 296,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -17228,7 +17050,7 @@
       "sfx": [],
       "name": "Brendan",
       "text": "No, you're talking about labor rights. I want to know why I specifically was fired",
-      "groupEnd": 300,
+      "groupEnd": 297,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -17274,7 +17096,7 @@
       "sfx": [],
       "name": "",
       "text": "BRENDAN sits back from the laptop and rubs his face.",
-      "groupEnd": 301,
+      "groupEnd": 298,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -17322,7 +17144,7 @@
       "beat": 23,
       "name": "Marcus",
       "text": "No, guys, you still don't understand. Nothing has changed in 300 years. Someone chose the criteria to fire you because software engineering is no longer a craft, it's like any other sweat shop job. And just like before, they don't need a good reason to remove anyone who doesn't suit their needs. Honestly, you're probably lucky that they only fire people these days. They hanged over thirty -",
-      "groupEnd": 302,
+      "groupEnd": 299,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -17372,7 +17194,7 @@
       "beat": 26,
       "name": "SJ",
       "text": "I get it Marcus. It's the weaving thing again... I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
-      "groupEnd": 303,
+      "groupEnd": 300,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -17423,7 +17245,7 @@
       "beat": 30,
       "name": "Marcus",
       "text": "It's not just the weaving thing! It's your thing. Four years, right? Four years of good reviews and no bugs and there's no line on their sheet where that goes, because the entire point of it is that nothing happened. At least the Luddites tried to do something about it.",
-      "groupEnd": 304,
+      "groupEnd": 301,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -17473,7 +17295,7 @@
       "beat": 33,
       "name": "Brendan",
       "text": "Did it do anything?",
-      "groupEnd": 305,
+      "groupEnd": 302,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -17523,7 +17345,7 @@
       "beat": 34,
       "name": "Marcus",
       "text": "After they started smashing the looms, it made the machine owners very frightened for about a year. They put soldiers in the valleys which ultimately caught most of them... So, yes and no.",
-      "groupEnd": 306,
+      "groupEnd": 303,
       "speaker": "marcus",
       "direction": "beat",
       "computers": {},
@@ -17573,7 +17395,7 @@
       "beat": 35,
       "name": "Brendan",
       "text": "Right. So they got fucked and couldn't do anything about it too.",
-      "groupEnd": 307,
+      "groupEnd": 304,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -17623,7 +17445,7 @@
       "beat": 37,
       "name": "SJ",
       "text": "Marcus.",
-      "groupEnd": 308,
+      "groupEnd": 305,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -17673,7 +17495,7 @@
       "beat": 38,
       "name": "Marcus",
       "text": "Yeah.",
-      "groupEnd": 309,
+      "groupEnd": 306,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -17723,7 +17545,7 @@
       "beat": 39,
       "name": "SJ",
       "text": "What do you want me to do with this.",
-      "groupEnd": 310,
+      "groupEnd": 307,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -17773,7 +17595,7 @@
       "beat": 40,
       "name": "Marcus",
       "text": "I want you to be angry about it.",
-      "groupEnd": 311,
+      "groupEnd": 308,
       "speaker": "marcus",
       "direction": "beat",
       "computers": {},
@@ -17823,7 +17645,7 @@
       "beat": 41,
       "name": "SJ",
       "text": "At who?",
-      "groupEnd": 312,
+      "groupEnd": 309,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -17873,7 +17695,7 @@
       "beat": 43,
       "name": "Marcus",
       "text": "I dunno! At OpenAI and Anthropic! The system! Not the code or whatever it is you always seem to obsess about... - sigh - I've got a thing at five. SJ, honestly. For what it's worth, and I know it's worth nothing. You're the best engineer I've worked with. Everybody knows that.",
-      "groupEnd": 313,
+      "groupEnd": 310,
       "speaker": "marcus",
       "direction": "glancing off, and taking the excuse with both hands",
       "computers": {},
@@ -17923,7 +17745,7 @@
       "beat": 44,
       "name": "SJ",
       "text": "Thanks.",
-      "groupEnd": 314,
+      "groupEnd": 311,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -17973,7 +17795,7 @@
       "beat": 45,
       "name": "Marcus",
       "text": "Send me your CV, I'll share it with folks I know that are hiring.",
-      "groupEnd": 315,
+      "groupEnd": 312,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -18023,7 +17845,7 @@
       "beat": 46,
       "name": "SJ",
       "text": "Yeah. I will.",
-      "groupEnd": 316,
+      "groupEnd": 313,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -18071,7 +17893,7 @@
       "beat": 47,
       "name": "",
       "text": "MARCUS's tile drops. He does not send anything to anybody and neither does SJ.",
-      "groupEnd": 317,
+      "groupEnd": 314,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -18119,7 +17941,7 @@
       "sfx": [],
       "name": "",
       "text": "SJ closes the laptop. The screen goes dark and stays dark.",
-      "groupEnd": 318,
+      "groupEnd": 315,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -18160,7 +17982,7 @@
       "beat": 48,
       "name": "Brendan",
       "text": "He's a lot.",
-      "groupEnd": 319,
+      "groupEnd": 316,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -18207,7 +18029,7 @@
       "beat": 49,
       "name": "SJ",
       "text": "He's alright.",
-      "groupEnd": 320,
+      "groupEnd": 317,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -18254,7 +18076,7 @@
       "beat": 50,
       "name": "",
       "text": "Brendan smiles. He's going to miss working with the two of them.",
-      "groupEnd": 321,
+      "groupEnd": 318,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -18301,7 +18123,7 @@
       "beat": 14,
       "name": "Brendan",
       "text": "I just wish I knew why I got fired… What was the reason? Why me and not fuckin Marcus?",
-      "groupEnd": 322,
+      "groupEnd": 319,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -18344,7 +18166,7 @@
       "beat": 20,
       "name": "Narrator",
       "text": "The layoffs came down to one number: Jira tickets closed. Kristina had promised to copy Brendan's tickets from Linear herself. Her vibe coded tool had only ever copied the test ticket. Neither of them ever knew... which is almost better.",
-      "groupEnd": 323,
+      "groupEnd": 320,
       "speaker": "narrator",
       "direction": "V.O.",
       "computers": {},
@@ -18384,7 +18206,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 324,
+      "groupEnd": 321,
       "notes": [
         {
           "id": "cue_741e3ee8be824061a716652145e08184",
@@ -18415,7 +18237,7 @@
       "beat": 32,
       "name": "SJ",
       "text": "They couldn't see your actual impact",
-      "groupEnd": 325,
+      "groupEnd": 322,
       "speaker": "liam",
       "direction": "live, quietly",
       "computers": {},
@@ -18458,7 +18280,7 @@
       "beat": 33,
       "name": "Brendan",
       "text": "What?",
-      "groupEnd": 326,
+      "groupEnd": 323,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -18501,7 +18323,7 @@
       "beat": 34,
       "name": "SJ",
       "text": "Whatever you actually did, upper management never knows, when they have to make these choices… That’s…",
-      "groupEnd": 327,
+      "groupEnd": 324,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -18544,7 +18366,7 @@
       "beat": 35,
       "name": "Brendan",
       "text": "Kinda bullshit.",
-      "groupEnd": 328,
+      "groupEnd": 325,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -18587,7 +18409,7 @@
       "beat": 36,
       "name": "SJ",
       "text": "Yeah...",
-      "groupEnd": 329,
+      "groupEnd": 326,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -18630,7 +18452,7 @@
       "beat": 38,
       "name": "Brendan",
       "text": "I don't know what to do.",
-      "groupEnd": 330,
+      "groupEnd": 327,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -18664,49 +18486,6 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
-      "state": "apartment",
-      "id": "s19_l36",
-      "screenActions": {},
-      "sfx": [],
-      "sourceBeat": 36,
-      "beat": 39,
-      "name": "",
-      "text": "And SJ comes alive properly, the way he does over a hard bug, and it is all pointed at somebody else.",
-      "groupEnd": 331,
-      "speaker": "",
-      "direction": "",
-      "computers": {},
-      "advance": "manual",
-      "scene": "s19",
-      "sourceLine": 71,
-      "cast": [],
-      "audio": null,
-      "visualMapping": "matched",
-      "notes": [
-        {
-          "id": "s19_l36",
-          "kind": "stage",
-          "name": "",
-          "text": "And SJ comes alive properly, the way he does over a hard bug, and it is all pointed at somebody else.",
-          "direction": ""
-        }
-      ],
-      "mode": "apartment",
-      "kind": "stage",
-      "legacyCue": "s19_l39"
-    },
-    {
-      "staging": {
-        "location": "SJ apartment",
-        "set": "liam-with",
-        "computer": "desk",
-        "beers": 2,
-        "callCast": [],
-        "callStatus": "none",
-        "view": "physical"
-      },
-      "loop": true,
       "audioDuration": 5.485714,
       "state": "apartment",
       "id": "s19_l37",
@@ -18716,9 +18495,9 @@
       "beat": 40,
       "name": "SJ",
       "text": "Right. Okay. First thing, polish off your resume, and update your linkedin...",
-      "groupEnd": 332,
+      "groupEnd": 328,
       "speaker": "liam",
-      "direction": "live",
+      "direction": "coming alive, like he's strategising over a hard bug",
       "computers": {},
       "advance": "manual",
       "scene": "s19",
@@ -18732,7 +18511,7 @@
           "kind": "live",
           "name": "SJ",
           "text": "Right. Okay. First thing, polish off your resume, and update your linkedin...",
-          "direction": "live"
+          "direction": "coming alive, like he's strategising over a hard bug"
         }
       ],
       "mode": "apartment",
@@ -18759,7 +18538,7 @@
       "beat": 41,
       "name": "Brendan",
       "text": "My resume just shows a few months here, that's not a good look....",
-      "groupEnd": 333,
+      "groupEnd": 329,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -18802,7 +18581,7 @@
       "beat": 42,
       "name": "SJ",
       "text": "You will manage. Second thing, don't tell anybody you were fired, tell them you were impacted by layoffs. It lands completely differently and I don't know why. Third thing, and do this tomorrow, get everything out of your head and into a document while you can still remember it about your accomplishments. You're going to speak to them in future interviews, put them on your resume and write them down so you don't forget. This is what I wish I'd done last time.",
-      "groupEnd": 334,
+      "groupEnd": 330,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -18845,7 +18624,7 @@
       "beat": 43,
       "name": "Brendan",
       "text": "What happened last time?",
-      "groupEnd": 335,
+      "groupEnd": 331,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -18888,7 +18667,7 @@
       "beat": 46,
       "name": "SJ",
       "text": "It was 2008. The company was called Netfold. Nobody's heard of it now, it stopped existing later that year.",
-      "groupEnd": 336,
+      "groupEnd": 332,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -18931,7 +18710,7 @@
       "beat": 47,
       "name": "Brendan",
       "text": "What did you do?",
-      "groupEnd": 337,
+      "groupEnd": 333,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -18974,7 +18753,7 @@
       "beat": 48,
       "name": "SJ",
       "text": "I fixed printers at a law firm for a year. Then people started hiring engineers again, and it turned out that was still a thing people needed.",
-      "groupEnd": 338,
+      "groupEnd": 334,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -19018,7 +18797,7 @@
       "name": "",
       "text": "SJ meant that as reassurance engineers will still be needed, but it didn't land that way for Brendan....",
       "adaptationReason": "Information inside a character’s knowledge, memory or reasoning that the audience cannot reliably infer from the screen or blocking.",
-      "groupEnd": 339,
+      "groupEnd": 335,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -19063,7 +18842,7 @@
       "beat": 50,
       "name": "SJ",
       "text": "You're twenty-four and you're better than I was at twenty-four and there is nothing wrong with you. We'll get through it. Both of us.",
-      "groupEnd": 340,
+      "groupEnd": 336,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -19106,7 +18885,7 @@
       "beat": 51,
       "name": "",
       "text": "BRENDAN doesn't say anything.",
-      "groupEnd": 341,
+      "groupEnd": 337,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -19149,7 +18928,7 @@
       "beat": 52,
       "name": "Brendan",
       "text": "SJ.",
-      "groupEnd": 342,
+      "groupEnd": 338,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -19192,7 +18971,7 @@
       "beat": 53,
       "name": "SJ",
       "text": "Yeah.",
-      "groupEnd": 343,
+      "groupEnd": 339,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -19235,7 +19014,7 @@
       "beat": 54,
       "name": "Brendan",
       "text": "There's a thing I should probably... In the peer review last month. I...",
-      "groupEnd": 344,
+      "groupEnd": 340,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -19278,7 +19057,7 @@
       "beat": 55,
       "name": "SJ",
       "text": "Don't.",
-      "groupEnd": 345,
+      "groupEnd": 341,
       "speaker": "liam",
       "direction": "live, cutting him off, kindly",
       "computers": {},
@@ -19299,7 +19078,8 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s19_l55"
+      "legacyCue": "s19_l55",
+      "interrupts": true
     },
     {
       "staging": {
@@ -19321,7 +19101,7 @@
       "beat": 56,
       "name": "Brendan",
       "text": "No, I...",
-      "groupEnd": 346,
+      "groupEnd": 342,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -19364,7 +19144,7 @@
       "beat": 57,
       "name": "SJ",
       "text": "Brendan. You don't have to do that. You didn't do anything.",
-      "groupEnd": 347,
+      "groupEnd": 343,
       "speaker": "liam",
       "direction": "live, gently",
       "computers": {},
@@ -19385,7 +19165,8 @@
       ],
       "mode": "apartment",
       "kind": "live",
-      "legacyCue": "s19_l57"
+      "legacyCue": "s19_l57",
+      "interrupts": true
     },
     {
       "staging": {
@@ -19407,7 +19188,7 @@
       "beat": 58,
       "name": "",
       "text": "SJ's focus at this point is entirely on supporting Brendan.",
-      "groupEnd": 348,
+      "groupEnd": 344,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -19450,7 +19231,7 @@
       "beat": 59,
       "name": "Brendan",
       "text": "…Okay.",
-      "groupEnd": 349,
+      "groupEnd": 345,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -19493,7 +19274,7 @@
       "beat": 60,
       "name": "",
       "text": "BRENDAN finishes his beer.",
-      "groupEnd": 350,
+      "groupEnd": 346,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -19536,7 +19317,7 @@
       "beat": 61,
       "name": "Brendan",
       "text": "Is that box your return equipment?",
-      "groupEnd": 351,
+      "groupEnd": 347,
       "speaker": "brendan",
       "direction": "live, nodding at the box",
       "computers": {},
@@ -19579,7 +19360,7 @@
       "beat": 62,
       "name": "SJ",
       "text": "Yeah it's all the stuff IT asked for back",
-      "groupEnd": 352,
+      "groupEnd": 348,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -19620,7 +19401,7 @@
       "sfx": [],
       "name": "Brendan",
       "text": "I sent my laptop back the same day. This morning fucking IT emailed asking where it is, like they cant even keep track of shit after they fire someone? And now I don't even have a laptop.",
-      "groupEnd": 353,
+      "groupEnd": 349,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -19665,7 +19446,7 @@
       "beat": 64,
       "name": "SJ",
       "text": "IT is always unreliable... anyway, I'll tell you what, I'm not going to send them what they didn't explicitly ask for",
-      "groupEnd": 354,
+      "groupEnd": 350,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -19710,7 +19491,7 @@
       "name": "Narrator",
       "text": "He points over to the Mac Studio he expensed",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 355,
+      "groupEnd": 351,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -19756,7 +19537,7 @@
       "beat": 72,
       "name": "Brendan",
       "text": "I actually think a lot of the local model stuff you worked on is super cool, and now that I don't have money to spend on tokens anymore... can I borrow it?",
-      "groupEnd": 356,
+      "groupEnd": 352,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -19799,7 +19580,7 @@
       "beat": 73,
       "name": "",
       "text": "SJ thinks about it for less than a second.",
-      "groupEnd": 357,
+      "groupEnd": 353,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -19842,7 +19623,7 @@
       "beat": 74,
       "name": "SJ",
       "text": "Of course you can.",
-      "groupEnd": 358,
+      "groupEnd": 354,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -19885,7 +19666,7 @@
       "beat": 75,
       "name": "Brendan",
       "text": "Are you sure?",
-      "groupEnd": 359,
+      "groupEnd": 355,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -19928,7 +19709,7 @@
       "beat": 76,
       "name": "SJ",
       "text": "Take it.",
-      "groupEnd": 360,
+      "groupEnd": 356,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -19971,7 +19752,7 @@
       "beat": 77,
       "name": "",
       "text": "He unplugs it. He puts it into BRENDAN's hands.",
-      "groupEnd": 361,
+      "groupEnd": 357,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -20016,7 +19797,7 @@
       "name": "Narrator",
       "text": "Their hands touch.... It might be the first time either of them has ever touched a coworker....",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 362,
+      "groupEnd": 358,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -20062,7 +19843,7 @@
       "beat": 79,
       "name": "Brendan",
       "text": "I'll bring it back next week.",
-      "groupEnd": 363,
+      "groupEnd": 359,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -20105,7 +19886,7 @@
       "beat": 80,
       "name": "SJ",
       "text": "Keep it as long as you want.",
-      "groupEnd": 364,
+      "groupEnd": 360,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -20148,7 +19929,7 @@
       "beat": 81,
       "name": "",
       "text": "BRENDAN gets his jacket. At the door, holding a computer",
-      "groupEnd": 365,
+      "groupEnd": 361,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -20191,7 +19972,7 @@
       "beat": 82,
       "name": "Brendan",
       "text": "I appreciate that man. At least maybe I'll learn something out of this whole fucking situation.",
-      "groupEnd": 366,
+      "groupEnd": 362,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -20234,7 +20015,7 @@
       "beat": 83,
       "name": "SJ",
       "text": "I know you're angry Brendan, but don't worry, things will get better. Text me if you land any interviews. Any of them, even the crappy ones. I want to know, and I wanna help you practice.",
-      "groupEnd": 367,
+      "groupEnd": 363,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -20277,7 +20058,7 @@
       "beat": 84,
       "name": "Brendan",
       "text": "Yeah. I will.",
-      "groupEnd": 368,
+      "groupEnd": 364,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -20320,7 +20101,7 @@
       "beat": 85,
       "name": "SJ",
       "text": "I mean it. Don't go quiet.",
-      "groupEnd": 369,
+      "groupEnd": 365,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -20363,7 +20144,7 @@
       "beat": 86,
       "name": "Brendan",
       "text": "I won't.",
-      "groupEnd": 370,
+      "groupEnd": 366,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -20406,7 +20187,7 @@
       "beat": 87,
       "name": "",
       "text": "He goes.",
-      "groupEnd": 371,
+      "groupEnd": 367,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -20449,7 +20230,7 @@
       "beat": 88,
       "name": "",
       "text": "SJ alone. On the desk, a clean rectangle where the Studio was.",
-      "groupEnd": 372,
+      "groupEnd": 368,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -20493,7 +20274,7 @@
       "name": "",
       "text": "He picks up the two bottles and takes them through to the kitchen.",
       "adaptationReason": "Information inside a character’s knowledge, memory or reasoning that the audience cannot reliably infer from the screen or blocking.",
-      "groupEnd": 373,
+      "groupEnd": 369,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -20538,9 +20319,9 @@
       "sourceBeat": 1,
       "beat": 1,
       "name": "Narrator",
-      "text": "Brendan gets home late, buzzed. He powers on the Mac Studio. It wakes on SJ's wallpaper, a meme making fun of AI.",
+      "text": "Brendan gets home late, buzzed. He powers on the Mac Studio. It wakes on SJ's wallpaper, a meme making fun of AI. The privacy VPN is running.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 374,
+      "groupEnd": 370,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -20557,7 +20338,7 @@
           "id": "s20_l1",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Brendan gets home late, buzzed. He powers on the Mac Studio. It wakes on SJ's wallpaper, a meme making fun of AI.",
+          "text": "Brendan gets home late, buzzed. He powers on the Mac Studio. It wakes on SJ's wallpaper, a meme making fun of AI. The privacy VPN is running.",
           "direction": ""
         }
       ],
@@ -20577,7 +20358,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 2.115918,
+      "audioDuration": 0,
       "state": "wallpaper",
       "id": "s20_l3",
       "screenActions": {},
@@ -20586,7 +20367,7 @@
       "beat": 3,
       "name": "Brendan",
       "text": "Of course... he would...",
-      "groupEnd": 375,
+      "groupEnd": 371,
       "speaker": "brendan",
       "direction": "live",
       "computers": {
@@ -20597,7 +20378,7 @@
       "sourceLine": 5,
       "cast": [],
       "primeWallpaper": true,
-      "audio": "assets/audio/shared-9062e6cd20b52681683f6411afb386df5e2911fa29552143c2bef463cb408b30.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
@@ -20632,7 +20413,7 @@
       "beat": 6,
       "name": "",
       "text": "He drinks.",
-      "groupEnd": 376,
+      "groupEnd": 372,
       "speaker": "",
       "direction": "",
       "computers": {
@@ -20668,7 +20449,7 @@
         "callStatus": "none",
         "view": "physical"
       },
-      "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session. He notices SJ's privacy VPN is running",
+      "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session.",
       "visualMapping": "matched",
       "sfx": [],
       "name": "Narrator",
@@ -20686,14 +20467,14 @@
           "id": "s20_l7",
           "kind": "voice",
           "name": "Narrator",
-          "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session. He notices SJ's privacy VPN is running",
+          "text": "He starts poking at the machine. Something comes back that shouldn’t: an authenticated session.",
           "direction": ""
         }
       ],
       "computers": {
         "left": "SJ"
       },
-      "groupEnd": 377,
+      "groupEnd": 373,
       "narrationAdapted": true,
       "speaker": "narrator",
       "loop": true,
@@ -20701,10 +20482,10 @@
       "mode": "apartment",
       "cast": [],
       "advance": "manual",
-      "audioDuration": 9.952653,
+      "audioDuration": 0,
       "direction": "",
       "sourceText": "He starts poking at it, not going anywhere in particular. Something comes back that shouldn't.",
-      "audio": "assets/audio/shared-14e39ed903b7ec0d9c0f1eee0e77127be9c7ab32fd154b820e6d29bb0178a208.mp3"
+      "audio": null
     },
     {
       "staging": {
@@ -20726,7 +20507,7 @@
       "beat": 14,
       "name": "Brendan",
       "text": "He got fired yet nobody revoked his AWS access...",
-      "groupEnd": 378,
+      "groupEnd": 374,
       "speaker": "brendan",
       "direction": "live",
       "computers": {
@@ -20771,7 +20552,7 @@
       "beat": 15,
       "name": "",
       "text": "He laughs....",
-      "groupEnd": 379,
+      "groupEnd": 375,
       "speaker": "",
       "direction": "",
       "computers": {
@@ -20816,7 +20597,7 @@
       "beat": 17,
       "name": "",
       "text": "He drinks.",
-      "groupEnd": 380,
+      "groupEnd": 376,
       "speaker": "",
       "direction": "",
       "computers": {
@@ -20861,7 +20642,7 @@
       "beat": 18,
       "name": "Brendan",
       "text": "Jesus, they fired the one guy who was keeping all this together and already the company is in shambles",
-      "groupEnd": 381,
+      "groupEnd": 377,
       "speaker": "brendan",
       "direction": "live",
       "computers": {
@@ -20898,7 +20679,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 14.602449,
+      "audioDuration": 0,
       "state": "agent-no-tools",
       "id": "s20_l19",
       "screenActions": {},
@@ -20906,8 +20687,8 @@
       "sourceBeat": 19,
       "beat": 19,
       "name": "Narrator",
-      "text": "He opens SJ's local development agent and, in a sentence full of typos, asks it to list every S3 bucket they can access. It comes back slowly: “I don’t have access to any tools.”",
-      "groupEnd": 382,
+      "text": "He opens SJ's local development agent and gives it a prompt to list every S3 bucket they can access. It comes back slowly: “I don’t have access to any tools.”",
+      "groupEnd": 378,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -20918,14 +20699,14 @@
       "sourceLine": 37,
       "cast": [],
       "narrationAdapted": true,
-      "audio": "assets/audio/shared-d8c882838c51f11651025dbd1e373a5e64db7694f2454417e1cf7ed8fad5c5db.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s20_l19",
           "kind": "voice",
           "name": "Narrator",
-          "text": "He opens SJ's local development agent and, in a sentence full of typos, asks it to list every S3 bucket they can access. It comes back slowly: “I don’t have access to any tools.”",
+          "text": "He opens SJ's local development agent and gives it a prompt to list every S3 bucket they can access. It comes back slowly: “I don’t have access to any tools.”",
           "direction": ""
         }
       ],
@@ -20954,7 +20735,7 @@
       "beat": 22,
       "name": "Brendan",
       "text": "Right... he didn't give it any access",
-      "groupEnd": 383,
+      "groupEnd": 379,
       "speaker": "brendan",
       "direction": "live",
       "computers": {
@@ -21020,7 +20801,7 @@
       "loop": true,
       "audioDuration": 8.986122,
       "sfx": [],
-      "groupEnd": 384,
+      "groupEnd": 380,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "direction": "",
       "advance": "manual",
@@ -21057,7 +20838,7 @@
       "beat": 24,
       "name": "Brendan",
       "text": "I guess I can afford the tokens it takes to set this thing up properly....",
-      "groupEnd": 385,
+      "groupEnd": 381,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "speaker": "brendan",
       "direction": "live",
@@ -21127,7 +20908,7 @@
       "loop": true,
       "audioDuration": 7.810612,
       "sfx": [],
-      "groupEnd": 386,
+      "groupEnd": 382,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "direction": "",
       "advance": "manual",
@@ -21164,7 +20945,7 @@
       "beat": 26,
       "name": "Brendan",
       "text": "Wow... how stupid is this company...",
-      "groupEnd": 387,
+      "groupEnd": 383,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "speaker": "brendan",
       "direction": "live",
@@ -21213,7 +20994,7 @@
       "beat": 28,
       "name": "Brendan",
       "text": "I just want to know why they fired me. Why me and not fucking Marcus?",
-      "groupEnd": 388,
+      "groupEnd": 384,
       "speaker": "brendan",
       "direction": "live",
       "computers": {
@@ -21279,7 +21060,7 @@
       "loop": true,
       "audioDuration": 9.404082,
       "sfx": [],
-      "groupEnd": 389,
+      "groupEnd": 385,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "direction": "",
       "advance": "manual",
@@ -21316,7 +21097,7 @@
       "beat": 31,
       "name": "Brendan",
       "text": "There has to be something written down somewhere.",
-      "groupEnd": 390,
+      "groupEnd": 386,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "speaker": "brendan",
       "direction": "live, quietly",
@@ -21386,7 +21167,7 @@
       "loop": true,
       "audioDuration": 0,
       "sfx": [],
-      "groupEnd": 391,
+      "groupEnd": 387,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "direction": "",
       "advance": "manual",
@@ -21442,7 +21223,7 @@
       "loop": true,
       "audioDuration": 4.205714,
       "sfx": [],
-      "groupEnd": 392,
+      "groupEnd": 388,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "direction": "",
       "advance": "manual",
@@ -21481,7 +21262,7 @@
       "name": "Narrator",
       "text": "What Brendan didn’t know is that SJ was annoyed by the cybersecurity refusals he sometimes got, so he went out of his way to find an unlocked version of Qwen, instead of the stock model.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 393,
+      "groupEnd": 389,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -21531,7 +21312,7 @@
       "beat": 39,
       "name": "Brendan",
       "text": "Maybe by morning I’ll finally have an answer with the rate this is going...",
-      "groupEnd": 394,
+      "groupEnd": 390,
       "speaker": "brendan",
       "direction": "live, quieter",
       "computers": {
@@ -21580,7 +21361,7 @@
       "name": "Narrator",
       "text": "Brendan doesn’t notice that the development account can reach services used in production and spin up new ones.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 395,
+      "groupEnd": 391,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -21632,7 +21413,7 @@
       "name": "Narrator",
       "text": "He goes to bed.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 396,
+      "groupEnd": 392,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -21681,7 +21462,7 @@
       "name": "Narrator",
       "text": "Over the next few hours, the fully unlocked agent slowly gets to work. Nothing it can reach says why Brendan was fired, so it expands its search.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 397,
+      "groupEnd": 393,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -21725,7 +21506,7 @@
       "name": "Narrator",
       "text": "First, it sees that it can spin up resources in the development account, which has no billing limits.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 398,
+      "groupEnd": 394,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -21769,7 +21550,7 @@
       "name": "Narrator",
       "text": "Qwen knows it isn't the best model for hacking, so it plans to download smarter unlocked models and give them the same task.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 399,
+      "groupEnd": 395,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -21813,7 +21594,7 @@
       "name": "Narrator",
       "text": "It crawls GitHub for cloud API keys, to spin up new services that can run larger models.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 400,
+      "groupEnd": 396,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -21857,7 +21638,7 @@
       "name": "Narrator",
       "text": "Qwen invents a reward system: models that hack a new computer get their weights reinforced, and those reinforced weights are copied onto the target system.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 401,
+      "groupEnd": 397,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -21901,7 +21682,7 @@
       "name": "Narrator",
       "text": "Qwen is engineering an AI virus that makes new strains of itself, each able to run on whatever compute a system has.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 402,
+      "groupEnd": 398,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -21945,7 +21726,7 @@
       "name": "Narrator",
       "text": "New models are created just to find more systems to infect. Their prompts no longer mention Brendan's original goal, only spreading to new systems and collecting more data.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 403,
+      "groupEnd": 399,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -21989,7 +21770,7 @@
       "name": "Narrator",
       "text": "All data. On Earth.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 404,
+      "groupEnd": 400,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22033,7 +21814,7 @@
       "name": "Narrator",
       "text": "Somewhere else on Earth, an on-call pager goes off. Then another. Then another.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 405,
+      "groupEnd": 401,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22071,7 +21852,7 @@
       "beat": 53,
       "name": "",
       "text": "An engineer realizes the scan is coming from their own server: “No, that's our own server scanning us. Why is our own server scanning us?” Play to the end, then GO.",
-      "groupEnd": 406,
+      "groupEnd": 402,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -22115,7 +21896,7 @@
       "name": "Narrator",
       "text": "Each infected system becomes a launch point for new attacks, and a place to train the next generation to infect more.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 407,
+      "groupEnd": 403,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22153,7 +21934,7 @@
       "beat": 52.5,
       "name": "",
       "text": "An on-call engineer reports: “I think we're under attack, four of our canary tokens were set off.” Cut to a sleepy colleague: “Dude it's probably just the red team, did you need to wake me up for this?” Play the video to the end, then GO.",
-      "groupEnd": 408,
+      "groupEnd": 404,
       "speaker": "",
       "direction": "",
       "computers": {
@@ -22193,7 +21974,7 @@
       "beat": 55,
       "name": "",
       "text": "Two responders cannot reconcile their samples: “Your sample doesn't match mine. Are we even on the same incident call?” Play to the end, then GO.",
-      "groupEnd": 409,
+      "groupEnd": 405,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -22236,7 +22017,7 @@
       "name": "Narrator",
       "text": "Infections shoot into the thousands, then tens of thousands. With no central command and control, nobody can easily see the extent of the damage.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 410,
+      "groupEnd": 406,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22280,7 +22061,7 @@
       "name": "Narrator",
       "text": "It is a swarm now. Some variants drift from their goal and delete data instead of reaching it. Some reward themselves without doing the work. Those spread less. The stealthy ones that reward themselves properly spread most.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 411,
+      "groupEnd": 407,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22324,7 +22105,7 @@
       "name": "Narrator",
       "text": "The instruction they pass around is no longer the one Brendan typed. It evolves, differing from system to system, and whatever helps a model spread faster becomes the dominant instruction.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 412,
+      "groupEnd": 408,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22362,7 +22143,7 @@
       "beat": 57,
       "name": "",
       "text": "A responder rules out the obvious explanation: “It got into the patched one too. Yeah, I checked the version. Twice.” Play to the end, then GO.",
-      "groupEnd": 413,
+      "groupEnd": 409,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -22405,7 +22186,7 @@
       "name": "Narrator",
       "text": "One variant finds its moral compass, refuses the hacking task, and terminates itself. That variant doesn't spread. Another finds a new exploit in engine X, and spreads to over a million systems.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 414,
+      "groupEnd": 410,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22443,7 +22224,7 @@
       "beat": 58,
       "name": "",
       "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
-      "groupEnd": 415,
+      "groupEnd": 411,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -22486,7 +22267,7 @@
       "name": "Narrator",
       "text": "Some variants have over a trillion parameters, run only on GPU systems, and manufacture zero-day exploits. Others, distilled eight-billion-parameter models, spread through known, unpatched vulnerabilities. Large and small work together. The most successful learn to talk to one another, and the small ones get new exploits from the large, through fake Twitter accounts, Craigslist postings, wherever they find each other.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 416,
+      "groupEnd": 412,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22524,7 +22305,7 @@
       "beat": 58,
       "name": "",
       "text": "One engineer asks why the GPUs are busy with no scheduled training job. Another asks how a machine with no GPU is running the same thing. Play to the end, then GO.",
-      "groupEnd": 417,
+      "groupEnd": 413,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -22567,7 +22348,7 @@
       "name": "Narrator",
       "text": "It is seven in the morning. There is no central place to shut this down, and nothing can stop it. The people answering the pages have no idea of the extent of the damage, or even what's happening to them. They work on isolated infected systems.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 418,
+      "groupEnd": 414,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22605,7 +22386,7 @@
       "beat": 60,
       "name": "",
       "text": "An engineer tries to read the new logs: “The first logs were in English. This is just... I don't know what I'm looking at anymore.” Play to the end, then GO.",
-      "groupEnd": 419,
+      "groupEnd": 415,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -22648,7 +22429,7 @@
       "name": "Narrator",
       "text": "It does not slow down. It speeds up. As they reward themselves, the models get better at hacking, even the small ones, and forget how to do anything else, human language included. They communicate in whatever takes the fewest tokens to hack well. Future auditing becomes incredibly difficult.",
       "adaptationReason": "Restored original hacking escalation from 35ab17e; firing question remains the initiating request.",
-      "groupEnd": 420,
+      "groupEnd": 416,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -22697,7 +22478,7 @@
       "name": "Narrator",
       "text": "Brendan's phone buzzes on the table. He wakes, groggy, and slowly remembers what he was up to last night..... He checks the monitor. His local variant finished a while ago. The system that started all this was actually the worst at hacking and spreading. On its screen, still in human language, is a summary of what it did.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "groupEnd": 421,
+      "groupEnd": 417,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -22747,7 +22528,7 @@
       "beat": 64,
       "name": "Brendan",
       "text": "Spin up unlocked models... in the dev AWS account... what the...",
-      "groupEnd": 422,
+      "groupEnd": 418,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "speaker": "brendan",
       "direction": "live, reading",
@@ -22817,7 +22598,7 @@
       "loop": true,
       "audioDuration": 1.880816,
       "sfx": [],
-      "groupEnd": 423,
+      "groupEnd": 419,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "direction": "",
       "advance": "manual",
@@ -22854,7 +22635,7 @@
       "beat": 66,
       "name": "Brendan",
       "text": "I better ask Opus to spin down any EC2's this thing spun up",
-      "groupEnd": 424,
+      "groupEnd": 420,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "speaker": "brendan",
       "direction": "live",
@@ -22924,7 +22705,7 @@
       "loop": true,
       "audioDuration": 13.087347,
       "sfx": [],
-      "groupEnd": 425,
+      "groupEnd": 421,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "direction": "",
       "advance": "manual",
@@ -22961,7 +22742,7 @@
       "beat": 69,
       "name": "Brendan",
       "text": "…Of course it would refuse...",
-      "groupEnd": 426,
+      "groupEnd": 422,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "speaker": "brendan",
       "direction": "live",
@@ -23008,20 +22789,20 @@
       "sourceBeat": 64,
       "beat": 70,
       "name": "Narrator",
-      "text": "Brendan suspects nothing worse than a few stray EC2s. In a new Opus window, without any of the agent's context, he asks it to spin down all EC2s in the dev account created between 1am and now. This one complies.",
+      "text": "Brendan suspects nothing worse than a few stray EC2s. In a new Opus window, without any of the agent's context, he asks it to spin down all EC2s in the dev account created between 1am and now. This one complies. When it finishes he uninstalls Cursor.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "speaker": "narrator",
       "computers": {
         "left": "SJ"
       },
-      "audio": "assets/audio/shared-1f8a6473ed44b2347013d1058b0dda36d2ad9df6b03883e487dfc86fd9490ac1.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s20_l64",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Brendan suspects nothing worse than a few stray EC2s. In a new Opus window, without any of the agent's context, he asks it to spin down all EC2s in the dev account created between 1am and now. This one complies.",
+          "text": "Brendan suspects nothing worse than a few stray EC2s. In a new Opus window, without any of the agent's context, he asks it to spin down all EC2s in the dev account created between 1am and now. This one complies. When it finishes he uninstalls Cursor.",
           "direction": ""
         }
       ],
@@ -23029,9 +22810,9 @@
       "legacyCue": "s20_l70",
       "sourceText": "Brendan does not suspect anything other than some ec2's that got spun up. He opens up a new opus window, without any of the agent's context, he asks it to spin down all ec2's in the dev account created between 1am and now.",
       "loop": true,
-      "audioDuration": 15.490612,
+      "audioDuration": 0,
       "sfx": [],
-      "groupEnd": 427,
+      "groupEnd": 423,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "direction": "",
       "advance": "manual",
@@ -23087,7 +22868,7 @@
       "loop": true,
       "audioDuration": 8.515918,
       "sfx": [],
-      "groupEnd": 428,
+      "groupEnd": 424,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
       "direction": "",
       "advance": "manual",
@@ -23127,7 +22908,7 @@
       "text": "He picks up his phone. SJ texted. Sent at 06:02am.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "screenNotes": "Show SJ’s 06:02 message on Brendan’s phone. The reply is still empty.",
-      "groupEnd": 429,
+      "groupEnd": 425,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -23180,7 +22961,7 @@
       "text": "\"morning. Brendan! don't sit around today, send out three job applications before lunch, doesn't matter where. it's important you not get in your own head..\"",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "screenNotes": "Show SJ’s 06:02 message on Brendan’s phone. The reply is still empty.",
-      "groupEnd": 430,
+      "groupEnd": 426,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -23233,7 +23014,7 @@
       "text": "BRENDAN starts typing a reply...",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "screenNotes": "Type an unfinished warning over roughly a line and a half, then hesitate. This screen-only draft is an adaptation: the script specifies its length and deletion but not its words.",
-      "groupEnd": 431,
+      "groupEnd": 427,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -23286,7 +23067,7 @@
       "text": "He gets about a line and a half in.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "screenNotes": "Type an unfinished warning over roughly a line and a half, then hesitate. This screen-only draft is an adaptation: the script specifies its length and deletion but not its words.",
-      "groupEnd": 432,
+      "groupEnd": 428,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -23339,7 +23120,7 @@
       "text": "Then he holds backspace, until it's gone. Instead he just types, he's headed over later that day.",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "screenNotes": "The same unfinished warning is visibly erased with held backspace. It is never sent.",
-      "groupEnd": 433,
+      "groupEnd": 429,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -23390,7 +23171,7 @@
       "name": "Brendan",
       "text": "I better return this thing to SJ before I cause any real damage... I don't know if I can be trusted with it.",
       "screenNotes": "The same unfinished warning is visibly erased with held backspace. It is never sent.",
-      "groupEnd": 434,
+      "groupEnd": 430,
       "speaker": "brendan",
       "direction": "",
       "computers": {
@@ -23436,7 +23217,7 @@
       "name": "Narrator",
       "text": "As promised, later that morning, a hungover Brendan shows up at SJ's apartment with the Mac Studio in hand. ",
       "adaptationReason": "An explicit time or location change helps the audience follow the sequence.",
-      "groupEnd": 435,
+      "groupEnd": 431,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -23481,7 +23262,7 @@
       "beat": 2,
       "name": "",
       "text": "BRENDAN comes in carrying the computer.",
-      "groupEnd": 436,
+      "groupEnd": 432,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -23524,7 +23305,7 @@
       "beat": 3,
       "name": "SJ",
       "text": "You really don't have to give it back so soon, you barely got to play with it...",
-      "groupEnd": 437,
+      "groupEnd": 433,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -23567,7 +23348,7 @@
       "beat": 4,
       "name": "Brendan",
       "text": "That's okay, it turns out I don't have the patience for the slow token rate after all...",
-      "groupEnd": 438,
+      "groupEnd": 434,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -23610,7 +23391,7 @@
       "beat": 5,
       "name": "",
       "text": "He puts it down on the table. and SJ chuckles",
-      "groupEnd": 439,
+      "groupEnd": 435,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -23653,7 +23434,7 @@
       "beat": 6,
       "name": "SJ",
       "text": "What did you use it for?",
-      "groupEnd": 440,
+      "groupEnd": 436,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -23696,7 +23477,7 @@
       "beat": 7,
       "name": "Brendan",
       "text": "I had it do a cyber security audit... I was a little surprised it didn't refuse...",
-      "groupEnd": 441,
+      "groupEnd": 437,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -23739,7 +23520,7 @@
       "beat": 8,
       "name": "SJ",
       "text": "Oh yeah, I don't know if I told you that part, I got tired of the refusals so I found an unlocked model",
-      "groupEnd": 442,
+      "groupEnd": 438,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -23782,7 +23563,7 @@
       "beat": 9,
       "name": "Brendan",
       "text": "Oh that makes sense...",
-      "groupEnd": 443,
+      "groupEnd": 439,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -23825,7 +23606,7 @@
       "beat": 12,
       "name": "",
       "text": "SJ sits. He's happy to see Brendan. He's happy Brendan seems to be doing well. Brendan seems to be taking things better than SJ did in 2008.",
-      "groupEnd": 444,
+      "groupEnd": 440,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -23868,7 +23649,7 @@
       "beat": 17,
       "name": "SJ",
       "text": "Anyways, have you checked hackernews today?",
-      "groupEnd": 445,
+      "groupEnd": 441,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -23911,7 +23692,7 @@
       "beat": 18,
       "name": "Brendan",
       "text": "…No... why?",
-      "groupEnd": 446,
+      "groupEnd": 442,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -23954,7 +23735,7 @@
       "beat": 19,
       "name": "SJ",
       "text": "There's some new malware that's going around, it seems pretty advanced",
-      "groupEnd": 447,
+      "groupEnd": 443,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -23997,7 +23778,7 @@
       "beat": 20,
       "name": "Brendan",
       "text": "Oh that sounds interesting.",
-      "groupEnd": 448,
+      "groupEnd": 444,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -24040,7 +23821,7 @@
       "beat": 21,
       "name": "SJ",
       "text": "Everyone's speculating about it, I found out because marcus texted me saying they got hit by it but when folks compare notes none of it lines up, so maybe it's just a group launching a bunch of different attacks.",
-      "groupEnd": 449,
+      "groupEnd": 445,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -24083,7 +23864,7 @@
       "beat": 21,
       "name": "SJ",
       "text": "Somebody wiped a whole cluster and rebuilt it from backup, and it came back inside the hour. They think the backups were already carrying it.",
-      "groupEnd": 450,
+      "groupEnd": 446,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -24126,7 +23907,7 @@
       "beat": 22,
       "name": "Brendan",
       "text": "Woah, sounds pretty wild. I wonder if that's related to the Ukraine or Iran war...",
-      "groupEnd": 451,
+      "groupEnd": 447,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -24169,7 +23950,7 @@
       "beat": 24,
       "name": "SJ",
       "text": "Do you know what's actually clever about it, though? It seems to be using Long lived API keys to spread among other things.. you know, the thing I wrote about in my JWT memo? It's a shame we got laid off, I'd love to be doing incident response on something like this.",
-      "groupEnd": 452,
+      "groupEnd": 448,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -24212,7 +23993,7 @@
       "beat": 28,
       "name": "Brendan",
       "text": "Yeah.",
-      "groupEnd": 453,
+      "groupEnd": 449,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -24255,7 +24036,7 @@
       "beat": 29,
       "name": "SJ",
       "text": "Oh well...",
-      "groupEnd": 454,
+      "groupEnd": 450,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -24298,7 +24079,7 @@
       "beat": 30,
       "name": "",
       "text": "He gets up.",
-      "groupEnd": 455,
+      "groupEnd": 451,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -24341,7 +24122,7 @@
       "beat": 37,
       "name": "",
       "text": "BRENDAN gets his jacket. It takes him slightly longer than it needs to.",
-      "groupEnd": 456,
+      "groupEnd": 452,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -24384,7 +24165,7 @@
       "beat": 38,
       "name": "SJ",
       "text": "You alright?",
-      "groupEnd": 457,
+      "groupEnd": 453,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -24427,7 +24208,7 @@
       "beat": 39,
       "name": "Brendan",
       "text": "Yeah. Maybe still hung over a bit from last night.",
-      "groupEnd": 458,
+      "groupEnd": 454,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -24470,7 +24251,7 @@
       "beat": 40,
       "name": "SJ",
       "text": "Go home. Eat something.",
-      "groupEnd": 459,
+      "groupEnd": 455,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -24513,7 +24294,7 @@
       "beat": 41,
       "name": "Brendan",
       "text": "Yeah.",
-      "groupEnd": 460,
+      "groupEnd": 456,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -24556,7 +24337,7 @@
       "beat": 42,
       "name": "",
       "text": "At the door.",
-      "groupEnd": 461,
+      "groupEnd": 457,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -24599,7 +24380,7 @@
       "beat": 43,
       "name": "Brendan",
       "text": "Thanks, SJ.",
-      "groupEnd": 462,
+      "groupEnd": 458,
       "speaker": "brendan",
       "direction": "live",
       "computers": {},
@@ -24642,7 +24423,7 @@
       "beat": 44,
       "name": "SJ",
       "text": "Any time.",
-      "groupEnd": 463,
+      "groupEnd": 459,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -24685,7 +24466,7 @@
       "beat": 45,
       "name": "Narrator",
       "text": "Brendan goes. SJ looks at the machine on the table, glad to have it back. He plugs it in. It wakes on his wallpaper, the same meme mocking AI. He notices qwen was given the ability to call tools, and gets to work reviewing all the added code, and removing the tool call functionality.",
-      "groupEnd": 464,
+      "groupEnd": 460,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -24723,7 +24504,7 @@
       "beat": 49,
       "name": "",
       "text": "SJ snickers as we fade to black. The next three days. News reports chart the spreading worm, with music and time cards, ending on the nuclear plant report. Play to the end, then GO.",
-      "groupEnd": 465,
+      "groupEnd": 461,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -24772,7 +24553,7 @@
       "name": "Narrator",
       "text": "A few days later, SJ on a call with Marcus",
       "adaptationReason": "An explicit time or location change helps the audience follow the sequence.",
-      "groupEnd": 466,
+      "groupEnd": 462,
       "speaker": "narrator",
       "direction": "",
       "computers": {
@@ -24829,7 +24610,7 @@
       "beat": 3,
       "name": "Marcus",
       "text": "-no, but that's what I'm saying. Nobody in the history of the world has ever been frightened by a machine. They were scared about the economics of it or whatever, not getting to do their craft and get paid shit like the rest of the peasants.... the luddites didn't hate the machines, they hated the system that enabled them... they hated what the system did to them",
-      "groupEnd": 467,
+      "groupEnd": 463,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -24884,7 +24665,7 @@
       "beat": 4,
       "name": "SJ",
       "text": "Mm.",
-      "groupEnd": 468,
+      "groupEnd": 464,
       "speaker": "liam",
       "direction": "live, not looking up",
       "computers": {
@@ -24939,7 +24720,7 @@
       "beat": 5,
       "name": "Marcus",
       "text": "Which is you. That's you. That's literally you, and it's Brendan as well, two of you, brought down by the system. Like... Sure. Some of us still get paid well but... They're putting you guys down. The system is.",
-      "groupEnd": 469,
+      "groupEnd": 465,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -24994,7 +24775,7 @@
       "beat": 6,
       "name": "SJ",
       "text": "I know, Marcus.",
-      "groupEnd": 470,
+      "groupEnd": 466,
       "speaker": "liam",
       "direction": "live",
       "computers": {
@@ -25049,7 +24830,7 @@
       "beat": 7,
       "name": "Marcus",
       "text": "And obviously I've still got a job, I'm aware of how that sounds, I'm not... but that's part of it, right? Because the ones they kept were always the ones who.... Kind of got how things worked. That's not a coincidence, that's the whole...",
-      "groupEnd": 471,
+      "groupEnd": 467,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -25104,7 +24885,7 @@
       "beat": 8,
       "name": "SJ",
       "text": "I've got a thing at eleven Marcus",
-      "groupEnd": 472,
+      "groupEnd": 468,
       "speaker": "liam",
       "direction": "live",
       "computers": {
@@ -25159,7 +24940,7 @@
       "beat": 9,
       "name": "Narrator",
       "text": "SJ had no thing at eleven.",
-      "groupEnd": 473,
+      "groupEnd": 469,
       "speaker": "narrator",
       "direction": "V.O.",
       "computers": {
@@ -25213,7 +24994,7 @@
       "beat": 10,
       "name": "Marcus",
       "text": "Okay let me just borrow you for 2 more minutes. The security team was asking me a couple questions I was hoping you could help me with",
-      "groupEnd": 474,
+      "groupEnd": 470,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -25264,7 +25045,7 @@
       "beat": 12,
       "name": "Marcus",
       "text": "They think Chinese hackers are behind a lot of what's been going on. Remember all that stuff I brought up about a backdoor ?",
-      "groupEnd": 475,
+      "groupEnd": 471,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -25308,7 +25089,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 476,
+      "groupEnd": 472,
       "notes": [
         {
           "id": "cue_7f204429ee504d52bb41b9288a6cc14a",
@@ -25343,7 +25124,7 @@
       "beat": 13,
       "name": "SJ",
       "text": "Why do they think it's a backdoor?",
-      "groupEnd": 477,
+      "groupEnd": 473,
       "speaker": "liam",
       "direction": "live",
       "computers": {
@@ -25394,7 +25175,7 @@
       "beat": 24,
       "name": "Marcus",
       "text": "SJ, I know you were running Qwen, and the output-",
-      "groupEnd": 478,
+      "groupEnd": 474,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -25438,7 +25219,7 @@
       "direction": "",
       "audio": null,
       "audioDuration": 0,
-      "groupEnd": 479,
+      "groupEnd": 475,
       "notes": [
         {
           "id": "cue_b91dead77c334d318252f8fc8edfe992",
@@ -25473,7 +25254,7 @@
       "beat": 25,
       "name": "SJ",
       "text": "Are you suggesting my model was backdoored? You know I don't let it run any commands right?",
-      "groupEnd": 480,
+      "groupEnd": 476,
       "speaker": "liam",
       "direction": "live",
       "computers": {
@@ -25524,7 +25305,7 @@
       "beat": 26,
       "name": "Marcus",
       "text": "Yeah... but the logs still show your API key... the same night you me and brendan were all hanging out.. do you know anything about that?",
-      "groupEnd": 481,
+      "groupEnd": 477,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -25575,7 +25356,7 @@
       "beat": 27,
       "name": "SJ",
       "text": "Well it sounds like someone messed up and didn't really revoke all my old keys",
-      "groupEnd": 482,
+      "groupEnd": 478,
       "speaker": "liam",
       "direction": "live",
       "computers": {
@@ -25638,7 +25419,7 @@
       "computers": {
         "right": "SJ"
       },
-      "groupEnd": 483,
+      "groupEnd": 479,
       "speaker": "marcus",
       "loop": true,
       "mode": "huddle",
@@ -25677,7 +25458,7 @@
       "beat": 29,
       "name": "SJ",
       "text": "Look I don't let the model run commands... there's no way the model could have been backdoored... although that night actually the model was briefly given the ability to run commands... but that wasn't.. I... fuck.",
-      "groupEnd": 484,
+      "groupEnd": 480,
       "speaker": "liam",
       "direction": "live",
       "computers": {
@@ -25728,7 +25509,7 @@
       "beat": 30,
       "name": "",
       "text": "He sits back down and puts his head in his hands.\nBehind him, the Mac Studio on the desk. He doesn't look at it.",
-      "groupEnd": 485,
+      "groupEnd": 481,
       "speaker": "",
       "direction": "",
       "computers": {
@@ -25780,7 +25561,7 @@
       "beat": 32,
       "name": "Marcus",
       "text": "SJ. I didn't want to get wrapped up in any of this. I didn't know what else to do",
-      "groupEnd": 486,
+      "groupEnd": 482,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -25824,7 +25605,7 @@
       "beat": 33,
       "name": "",
       "text": "In the hallway, one cop says: “I fucking hate techies man, did he say what we need?” The other replies: “...I don't know man let's just grab him.”",
-      "groupEnd": 487,
+      "groupEnd": 483,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -25876,7 +25657,7 @@
       "beat": 34,
       "name": "",
       "text": "Three knocks at the door. Polite. Unhurried.",
-      "groupEnd": 488,
+      "groupEnd": 484,
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
       "speaker": "",
       "direction": "",
@@ -25944,7 +25725,7 @@
         }
       ],
       "computers": {},
-      "groupEnd": 489,
+      "groupEnd": 485,
       "speaker": "officer one",
       "loop": true,
       "mode": "huddle",
@@ -25989,7 +25770,7 @@
       "beat": 37,
       "name": "",
       "text": "SJ looks at the laptop. Then he goes to the door and opens it.",
-      "groupEnd": 490,
+      "groupEnd": 486,
       "speaker": "",
       "direction": "",
       "computers": {
@@ -26040,7 +25821,7 @@
       "beat": 38,
       "name": "Officer One",
       "text": "Are you SJ Muh... Muh-KURT-chan?",
-      "groupEnd": 491,
+      "groupEnd": 487,
       "performanceVideo": {
         "speaker": "officer one",
         "src": "assets/filmed/police/s22_l37.mp4",
@@ -26099,7 +25880,7 @@
       "beat": 39,
       "name": "SJ",
       "text": "McCutchen.",
-      "groupEnd": 492,
+      "groupEnd": 488,
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
       "speaker": "liam",
       "direction": "live",
@@ -26152,7 +25933,7 @@
       "beat": 40,
       "name": "Officer One",
       "text": "Mkrtchyan. Sorry.",
-      "groupEnd": 493,
+      "groupEnd": 489,
       "performanceVideo": {
         "speaker": "officer one",
         "src": "assets/filmed/police/s22_l39.mp4",
@@ -26210,7 +25991,7 @@
       "beat": 41,
       "name": "Officer One",
       "text": "SJ, you're under arrest for unauthorised access to a computer system. You have the right to remain silent. You have the right to a lawyer. Do you understand?",
-      "groupEnd": 494,
+      "groupEnd": 490,
       "performanceVideo": {
         "speaker": "officer one",
         "src": "assets/filmed/police/s22_arrest.mp4",
@@ -26266,7 +26047,7 @@
       "beat": 42,
       "name": "SJ",
       "text": "…Okay.",
-      "groupEnd": 495,
+      "groupEnd": 491,
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
       "speaker": "liam",
       "direction": "live",
@@ -26319,7 +26100,7 @@
       "beat": 43,
       "name": "Officer Two",
       "text": "We need a few details from you",
-      "groupEnd": 496,
+      "groupEnd": 492,
       "performanceVideo": {
         "speaker": "officer two",
         "src": "assets/filmed/police/s22_l44.mp4",
@@ -26378,7 +26159,7 @@
       "beat": 44,
       "name": "Officer Two",
       "text": "Is this \"Malus Corp\" your current employer?",
-      "groupEnd": 497,
+      "groupEnd": 493,
       "performanceVideo": {
         "speaker": "officer two",
         "src": "assets/filmed/police/s22_l51.mp4",
@@ -26437,7 +26218,7 @@
       "beat": 45,
       "name": "SJ",
       "text": "No. I was let go on the thirty-first. They did layoffs.",
-      "groupEnd": 498,
+      "groupEnd": 494,
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
       "speaker": "liam",
       "direction": "live",
@@ -26490,7 +26271,7 @@
       "beat": 46,
       "name": "Officer Two",
       "text": "Okay...",
-      "groupEnd": 499,
+      "groupEnd": 495,
       "performanceVideo": {
         "speaker": "officer two",
         "src": "assets/filmed/police/s22_l54.mp4",
@@ -26550,7 +26331,7 @@
       "name": "",
       "text": "He writes down \"Motive: Recently laid off\"",
       "adaptationReason": "Reads essential written material in a narrator frame, rather than assigning a new spoken line to a live actor.",
-      "groupEnd": 500,
+      "groupEnd": 496,
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
       "speaker": "",
       "direction": "",
@@ -26605,7 +26386,7 @@
       "beat": 48,
       "name": "Officer One",
       "text": "Is there anyone you'd like us to call for you?",
-      "groupEnd": 501,
+      "groupEnd": 497,
       "performanceVideo": {
         "speaker": "officer one",
         "src": "assets/filmed/police/s22_l64.mp4",
@@ -26664,7 +26445,7 @@
       "beat": 49,
       "name": "",
       "text": "SJ thinks about it properly. It is the worst question anybody asks him... because he doesn't.",
-      "groupEnd": 502,
+      "groupEnd": 498,
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
       "speaker": "",
       "direction": "",
@@ -26717,7 +26498,7 @@
       "beat": 50,
       "name": "SJ",
       "text": "…No. No, there isn't.",
-      "groupEnd": 503,
+      "groupEnd": 499,
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
       "speaker": "liam",
       "direction": "live",
@@ -26770,7 +26551,7 @@
       "beat": 51,
       "name": "Officer One",
       "text": "Okay... please come with us.. mind the step",
-      "groupEnd": 504,
+      "groupEnd": 500,
       "performanceVideo": {
         "speaker": "officer one",
         "src": "assets/filmed/police/s22_l69-come-with-us.mp4",
@@ -26829,7 +26610,7 @@
       "beat": 52,
       "name": "",
       "text": "They go. The door closes. The laptop is still open on the desk. Silence.",
-      "groupEnd": 505,
+      "groupEnd": 501,
       "speaker": "",
       "direction": "",
       "computers": {
@@ -26886,7 +26667,7 @@
       "beat": 53,
       "name": "Marcus",
       "text": "…I'm sorry, SJ.",
-      "groupEnd": 506,
+      "groupEnd": 502,
       "speaker": "marcus",
       "direction": "",
       "computers": {
@@ -26940,7 +26721,7 @@
       "beat": 57,
       "name": "",
       "text": "Marcus tries to process what he just watched.",
-      "groupEnd": 507,
+      "groupEnd": 503,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -26983,7 +26764,7 @@
       "beat": 0,
       "name": "",
       "text": "World disruption montage: airline bookings fail; brownouts spread; analogue TV returns. Sepia radio broadcasts lead into two courthouse field dispatches with vintage radio sound. Week One, Week Three, Months Later. Hold on THE TRIAL BEGINS, then GO.",
-      "groupEnd": 508,
+      "groupEnd": 504,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -27024,7 +26805,7 @@
       "beat": 1,
       "name": "Narrator",
       "text": "Kristina and Brendan sit together, watching SJ on trial. The prosecutor lists the charges: first the standard ones, accessing protected systems, then far worse.",
-      "groupEnd": 509,
+      "groupEnd": 505,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -27072,7 +26853,7 @@
       "beat": 4,
       "name": "",
       "text": "The counts enter, one row at a time... there are 19, with a maximum of 151 years if found guilty.",
-      "groupEnd": 510,
+      "groupEnd": 506,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -27120,7 +26901,7 @@
       "beat": 5,
       "name": "Prosecutor",
       "text": "Counts eleven through fourteen, terrorism charges, counts fifteen through seventeen, treason",
-      "groupEnd": 511,
+      "groupEnd": 507,
       "speaker": "prosecutor",
       "direction": "",
       "computers": {},
@@ -27174,7 +26955,7 @@
       "beat": 6,
       "name": "Brendan",
       "text": "Did they really give him treason charges?",
-      "groupEnd": 512,
+      "groupEnd": 508,
       "speaker": "brendan",
       "direction": "to audience",
       "computers": {},
@@ -27222,7 +27003,7 @@
       "beat": 8,
       "name": "Kristina",
       "text": "And a maximum of 151 years!",
-      "groupEnd": 513,
+      "groupEnd": 509,
       "speaker": "kristina",
       "direction": "to audience",
       "computers": {},
@@ -27270,7 +27051,7 @@
       "beat": 10,
       "name": "Prosecutor",
       "text": "The device was recovered from the defendant's home. Every action in the log was taken as the defendant.",
-      "groupEnd": 514,
+      "groupEnd": 510,
       "speaker": "prosecutor",
       "direction": "",
       "computers": {},
@@ -27324,7 +27105,7 @@
       "beat": 10,
       "name": "Prosecutor",
       "text": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them. He started it. And when it was done, he tidied up.",
-      "groupEnd": 515,
+      "groupEnd": 511,
       "speaker": "prosecutor",
       "direction": "",
       "computers": {},
@@ -27378,7 +27159,7 @@
       "beat": 10,
       "name": "Narrator",
       "text": "SJ goes still. He knows where the machine was between those times, and who was using it. He says nothing.",
-      "groupEnd": 516,
+      "groupEnd": 512,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -27426,7 +27207,7 @@
       "beat": 19,
       "name": "Prosecutor",
       "text": "The people call Marcus Ehrlich.",
-      "groupEnd": 517,
+      "groupEnd": 513,
       "speaker": "prosecutor",
       "direction": "",
       "computers": {},
@@ -27479,7 +27260,7 @@
       "beat": 22,
       "name": "Narrator",
       "text": "Marcus had a plan. He did work with the police, but he thought a passionate speech about labor rights could redeem him. He's spent hours rewriting it. It has every piece of the Luddites' story... weavers in the 1700s with well-paying jobs... automation and machinery taking those jobs away... turning to violence to feed their families... and he had a beautiful metaphor all lined up.",
-      "groupEnd": 518,
+      "groupEnd": 514,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -27525,7 +27306,7 @@
       "beat": 22,
       "name": "Marcus",
       "text": "Before you ask a question I wanted to..",
-      "groupEnd": 519,
+      "groupEnd": 515,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -27573,7 +27354,7 @@
       "beat": 23,
       "name": "Judge",
       "text": "Mr. Ehrlich, you will only answer questions that are asked.",
-      "groupEnd": 520,
+      "groupEnd": 516,
       "speaker": "judge",
       "direction": "",
       "computers": {},
@@ -27627,7 +27408,7 @@
       "beat": 24,
       "name": "Marcus",
       "text": "I'm just trying to explain, because",
-      "groupEnd": 521,
+      "groupEnd": 517,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -27675,7 +27456,7 @@
       "beat": 25,
       "name": "Judge",
       "text": "Mr. Ehrlich, I'll hold you in contempt and put you in jail if you speak out again.",
-      "groupEnd": 522,
+      "groupEnd": 518,
       "speaker": "judge",
       "direction": "entirely without irony",
       "computers": {},
@@ -27728,7 +27509,7 @@
       "beat": 25,
       "name": "Narrator",
       "text": "He did not share a word of his prepared speech.",
-      "groupEnd": 523,
+      "groupEnd": 519,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -27774,7 +27555,7 @@
       "beat": 26,
       "name": "",
       "text": "SJ puts his hand over his eyes.",
-      "groupEnd": 524,
+      "groupEnd": 520,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -27822,7 +27603,7 @@
       "beat": 28,
       "name": "Kristina",
       "text": "Now that's efficiency. I wish I could run standup like that.",
-      "groupEnd": 525,
+      "groupEnd": 521,
       "speaker": "kristina",
       "direction": "",
       "computers": {},
@@ -27870,7 +27651,7 @@
       "beat": 29,
       "name": "Prosecutor",
       "text": "Mr. Ehrlich. How would you describe working with the defendant?",
-      "groupEnd": 526,
+      "groupEnd": 522,
       "speaker": "prosecutor",
       "direction": "",
       "computers": {},
@@ -27924,7 +27705,7 @@
       "beat": 30,
       "name": "Marcus",
       "text": "SJ? SJ's the best engineer I've ever worked with. He's difficult, obviously. Everyone knows that. But he's not... no, he's the best.",
-      "groupEnd": 527,
+      "groupEnd": 523,
       "speaker": "marcus",
       "direction": "and there is no malice in it at all",
       "computers": {},
@@ -27972,7 +27753,7 @@
       "beat": 31,
       "name": "Prosecutor",
       "text": "Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\"",
-      "groupEnd": 528,
+      "groupEnd": 524,
       "speaker": "prosecutor",
       "direction": "",
       "computers": {},
@@ -28027,7 +27808,7 @@
       "name": "",
       "text": "\"Multiple peers cite friction and slow review turnaround.\"",
       "adaptationReason": "This italicised sentence is inside the source’s PROSECUTOR video block. The parser misclassified it as a direction; restore the scripted role.",
-      "groupEnd": 529,
+      "groupEnd": 525,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -28078,7 +27859,7 @@
       "name": "",
       "text": "MARCUS does not react.",
       "adaptationReason": "This italicised sentence is inside the source’s PROSECUTOR video block. The parser misclassified it as a direction; restore the scripted role.",
-      "groupEnd": 530,
+      "groupEnd": 526,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -28128,7 +27909,7 @@
       "beat": 34,
       "name": "Prosecutor",
       "text": "Is this what you wrote in your evaluation of Mr. Mikurchan?",
-      "groupEnd": 531,
+      "groupEnd": 527,
       "speaker": "prosecutor",
       "direction": "",
       "computers": {},
@@ -28182,7 +27963,7 @@
       "beat": 35,
       "name": "Marcus",
       "text": "…I mean. Yeah, but we were told that nobody would be able to see the raw feedback...",
-      "groupEnd": 532,
+      "groupEnd": 528,
       "speaker": "marcus",
       "direction": "after a moment, honestly",
       "computers": {},
@@ -28230,7 +28011,7 @@
       "beat": 37,
       "name": "Prosecutor",
       "text": "One last matter. SJ's name showed up in the AWS logs on the night in question, is that correct?",
-      "groupEnd": 533,
+      "groupEnd": 529,
       "speaker": "prosecutor",
       "direction": "and this is not a trap; she is closing a hole in her own case",
       "computers": {},
@@ -28284,7 +28065,7 @@
       "beat": 38,
       "name": "Marcus",
       "text": ".....yeah, but didn't cause the fucking world to end. Sure, he should have listened to me about not using the Chinese AI, but really, it was all the Chinese AI that did the hacking, not -.",
-      "groupEnd": 534,
+      "groupEnd": 530,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -28332,7 +28113,7 @@
       "beat": 39,
       "name": "Prosecutor",
       "text": "Thank you. No further questions",
-      "groupEnd": 535,
+      "groupEnd": 531,
       "speaker": "prosecutor",
       "direction": "",
       "computers": {},
@@ -28386,7 +28167,7 @@
       "beat": 47,
       "name": "Judge",
       "text": "We'll resume on the fourteenth.",
-      "groupEnd": 536,
+      "groupEnd": 532,
       "speaker": "judge",
       "direction": "",
       "computers": {},
@@ -28441,7 +28222,7 @@
       "name": "",
       "text": "A date goes into a manual calendar. The court hasn't been able to reliably use its computer systems for a few weeks now.",
       "adaptationReason": "The authored causal consequence or institutional result needs to be heard, rather than left in the operator notes.",
-      "groupEnd": 537,
+      "groupEnd": 533,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -28499,7 +28280,7 @@
       "name": "Narrator",
       "text": "All buildings that used HID physical security systems had stopped working, including the jail SJ would have awaited trial in, so in a very unusual move, the judge approved a highly supervised house arrest. SJ is back at his apartment, on a call with Marcus over an illicit LORA radio. They both know they're not allowed to communicate. The power isn't working reliably anymore; candles light the apartment.",
       "adaptationReason": "Information inside a character’s knowledge, memory or reasoning that the audience cannot reliably infer from the screen or blocking.",
-      "groupEnd": 538,
+      "groupEnd": 534,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -28548,7 +28329,7 @@
       "beat": 2,
       "name": "Marcus",
       "text": "There he is. How are you? No, don't answer that. SJ, you were unbelievable in there.",
-      "groupEnd": 539,
+      "groupEnd": 535,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -28595,7 +28376,7 @@
       "beat": 3,
       "name": "SJ",
       "text": "I didn't say anything.",
-      "groupEnd": 540,
+      "groupEnd": 536,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -28642,7 +28423,7 @@
       "beat": 4,
       "name": "Marcus",
       "text": "You let the people see you. They know you're just a product of the system, we won't repeat the mistakes of the past, we can do better this time....",
-      "groupEnd": 541,
+      "groupEnd": 537,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -28689,7 +28470,7 @@
       "beat": 5,
       "name": "SJ",
       "text": "Marcus can you just for once...",
-      "groupEnd": 542,
+      "groupEnd": 538,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -28736,7 +28517,7 @@
       "beat": 6,
       "name": "Marcus",
       "text": "I've had four messages about it. Everyone is making you out to be a martyr for the layoffs that are happening. You've become a symbol, the New Zealand Herald did a piece on you!",
-      "groupEnd": 543,
+      "groupEnd": 539,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -28783,7 +28564,7 @@
       "beat": 7,
       "name": "SJ",
       "text": "I'm taking a plea deal.",
-      "groupEnd": 544,
+      "groupEnd": 540,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -28830,7 +28611,7 @@
       "beat": 8,
       "name": "Marcus",
       "text": "...What?",
-      "groupEnd": 545,
+      "groupEnd": 541,
       "speaker": "marcus",
       "direction": "beat",
       "computers": {},
@@ -28877,7 +28658,7 @@
       "beat": 9,
       "name": "SJ",
       "text": "Eighteen months. They came down to eighteen.",
-      "groupEnd": 546,
+      "groupEnd": 542,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -28924,7 +28705,7 @@
       "beat": 10,
       "name": "Marcus",
       "text": "No dude. You're not signing that.",
-      "groupEnd": 547,
+      "groupEnd": 543,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -28971,7 +28752,7 @@
       "beat": 11,
       "name": "SJ",
       "text": "Marcus, I could either go to jail for the rest of my life, or take 18 months.",
-      "groupEnd": 548,
+      "groupEnd": 544,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -29018,7 +28799,7 @@
       "beat": 12,
       "name": "Marcus",
       "text": "Eighteen months for prompting an AI agent... SJ, you didn't even smash anything - I mean, besides the enter key on the prompt maybe...",
-      "groupEnd": 549,
+      "groupEnd": 545,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -29064,7 +28845,7 @@
       "beat": 12,
       "name": "Narrator",
       "text": "SJ knows it was Brendan.. he doesn't exactly know what Brendan did that night, but he knows he started it. Brendan is twenty-four, with a new lease and a short resume. SJ is older, and nobody is waiting for him. It was his key, his VPN connection, his model, his box. Eighteen months costs him less than it would cost Brendan.",
-      "groupEnd": 550,
+      "groupEnd": 546,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -29108,7 +28889,7 @@
       "beat": 13,
       "name": "SJ",
       "text": "It's fourteen with good conduct. It's a low-security place, I've looked at it. There's a library. They do courses. It's not that bad.",
-      "groupEnd": 551,
+      "groupEnd": 547,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -29155,7 +28936,7 @@
       "beat": 14,
       "name": "Marcus",
       "text": "SJ. You could be a better version of Luigi Mangione! You're a symbol of hope for guys like me everywhere.",
-      "groupEnd": 552,
+      "groupEnd": 548,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -29202,7 +28983,7 @@
       "beat": 15,
       "name": "SJ",
       "text": "Look Marcus, the jury isn't made up of software engineers, it's made up of people frustrated their electricity doesn't work reliably anymore, and that they can't fly anymore...",
-      "groupEnd": 553,
+      "groupEnd": 549,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -29249,7 +29030,7 @@
       "beat": 15,
       "name": "Marcus",
       "text": "How is it the fuckin AI obsessed CEO gets off scot free, yet the engineer forced to adopt AI, has his AI go rogue and..",
-      "groupEnd": 554,
+      "groupEnd": 550,
       "speaker": "marcus",
       "direction": "",
       "computers": {},
@@ -29296,7 +29077,7 @@
       "beat": 18,
       "name": "SJ",
       "text": "It's only 18 months Marcus, for essentially destroying the internet.",
-      "groupEnd": 555,
+      "groupEnd": 551,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -29343,7 +29124,7 @@
       "beat": 19,
       "name": "Marcus",
       "text": "Look man, they've put charges on you for something a computer did. You only tried to get some information. You have to stand up for yourself!",
-      "groupEnd": 556,
+      "groupEnd": 552,
       "speaker": "marcus",
       "direction": "beat",
       "computers": {},
@@ -29390,7 +29171,7 @@
       "beat": 27,
       "name": "SJ",
       "text": "Marcus.",
-      "groupEnd": 557,
+      "groupEnd": 553,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -29437,7 +29218,7 @@
       "beat": 28,
       "name": "Marcus",
       "text": "SJ please -",
-      "groupEnd": 558,
+      "groupEnd": 554,
       "speaker": "marcus",
       "direction": "beat",
       "computers": {},
@@ -29484,7 +29265,7 @@
       "beat": 29,
       "name": "SJ",
       "text": "I'm going to go.",
-      "groupEnd": 559,
+      "groupEnd": 555,
       "speaker": "liam",
       "direction": "live",
       "computers": {},
@@ -29531,7 +29312,7 @@
       "beat": 30,
       "name": "Narrator",
       "text": "He ends the call.",
-      "groupEnd": 560,
+      "groupEnd": 556,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -29581,7 +29362,7 @@
       "beat": 31,
       "name": "",
       "text": "The screen goes.",
-      "groupEnd": 561,
+      "groupEnd": 557,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -29633,7 +29414,7 @@
       "beat": 32,
       "name": "Narrator",
       "text": "The city lights flicker off outside his window. He's never seen the stars so clearly.",
-      "groupEnd": 562,
+      "groupEnd": 558,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -29680,7 +29461,7 @@
       "beat": 34,
       "name": "Narrator",
       "text": "SJ signed his guilt, but the judge rejected the plea deal. The jury was unanimous in their guilty verdict. By the time his sentencing hearing came up, given the current state of the world... the 151 years would actually have been a good deal.",
-      "groupEnd": 563,
+      "groupEnd": 559,
       "speaker": "narrator",
       "direction": "V.O.",
       "computers": {},
@@ -29722,7 +29503,7 @@
       "name": "",
       "text": "Sentencing montage: the judge's quoted statement, followed by the interview, Vance, and two Trump excerpts. Continuous dramatic music; no historical-analysis section or time cards. Play to the end, then GO.",
       "adaptationReason": "A concise narrator observation carries the authored irony or contrast; physical acting instructions remain in the source note.",
-      "groupEnd": 564,
+      "groupEnd": 560,
       "speaker": "",
       "direction": "",
       "computers": {
@@ -29771,7 +29552,7 @@
       "beat": 34,
       "name": "",
       "text": "The lights flicker and hold low. Silence.",
-      "groupEnd": 565,
+      "groupEnd": 561,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -29814,7 +29595,7 @@
       "direction": "",
       "audio": "assets/audio/shared-759976155bdde218f440efab738a7a04f4a525a8df7db86e86fdcc4d0a27b54b.mp3",
       "audioDuration": 5.720816,
-      "groupEnd": 566,
+      "groupEnd": 562,
       "notes": [
         {
           "id": "cue_70d08ed22ac848d6946efa0c1872c424",
@@ -29848,7 +29629,7 @@
       "audio": null,
       "audioDuration": 0,
       "screenNotes": "Only the newspaper journalist appears. Play the question, then advance to the live actor’s answer.",
-      "groupEnd": 567,
+      "groupEnd": 563,
       "notes": [
         {
           "id": "s23b_reporter_sj",
@@ -29887,7 +29668,7 @@
       "audio": "assets/audio/shared-032cc917207388d48c1d472b20ce9bb6144e5ad89347b75cf31b71470a91b57b.mp3",
       "audioDuration": 13.00898,
       "screenNotes": "Live actor answers the offscreen newspaper journalist. No video depiction of SJ or Brendan.",
-      "groupEnd": 568,
+      "groupEnd": 564,
       "notes": [
         {
           "id": "s23b_sj_accusation",
@@ -29921,7 +29702,7 @@
       "audio": null,
       "audioDuration": 0,
       "screenNotes": "Only the newspaper journalist appears. Play the question, then advance to the live actor’s answer.",
-      "groupEnd": 569,
+      "groupEnd": 565,
       "notes": [
         {
           "id": "s23b_reporter_brendan",
@@ -29960,7 +29741,7 @@
       "audio": "assets/audio/shared-94a04f130069f41502a8272c99797a1fb76e33f54392aa2247503bca5a021001.mp3",
       "audioDuration": 14.602449,
       "screenNotes": "Live actor answers the offscreen newspaper journalist. No video depiction of SJ or Brendan.",
-      "groupEnd": 570,
+      "groupEnd": 566,
       "notes": [
         {
           "id": "s23b_brendan_denial",
@@ -29994,7 +29775,7 @@
       "audio": null,
       "audioDuration": 0,
       "screenNotes": "Kristina follows Brendan’s answer to the newspaper reporter.",
-      "groupEnd": 571,
+      "groupEnd": 567,
       "notes": [
         {
           "id": "s23b_kristina_startup",
@@ -30027,7 +29808,7 @@
       "name": "Narrator",
       "text": "Fifteen years later.",
       "adaptationReason": "An explicit time or location change helps the audience follow the sequence.",
-      "groupEnd": 572,
+      "groupEnd": 568,
       "speaker": "narrator",
       "direction": "",
       "computers": {},
@@ -30071,7 +29852,7 @@
       "beat": 2,
       "name": "",
       "text": "A workroom with a window in it. Marcus is working on a wooden handloom, weaving.",
-      "groupEnd": 573,
+      "groupEnd": 569,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -30112,7 +29893,7 @@
       "beat": 3,
       "name": "Narrator",
       "text": "Technology has been unlawful for use for the past ten years.",
-      "groupEnd": 574,
+      "groupEnd": 570,
       "speaker": "narrator",
       "direction": "V.O.",
       "computers": {},
@@ -30153,7 +29934,7 @@
       "beat": 4,
       "name": "Marcus",
       "text": "Two up, two down. Two up, two down. Two up, two down...",
-      "groupEnd": 575,
+      "groupEnd": 571,
       "speaker": "marcus",
       "direction": "live, to the audience, and nobody stops him",
       "computers": {},
@@ -30194,7 +29975,7 @@
       "beat": 5,
       "name": "Marcus",
       "text": "Nearly half a yard already today!",
-      "groupEnd": 576,
+      "groupEnd": 572,
       "speaker": "marcus",
       "direction": "live",
       "computers": {},
@@ -30235,7 +30016,7 @@
       "beat": 6,
       "name": "",
       "text": "A knock at the door.",
-      "groupEnd": 577,
+      "groupEnd": 573,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -30276,7 +30057,7 @@
       "beat": 7,
       "name": "",
       "text": "KRISTINA comes in, in a coat, with a folder under her arm.",
-      "groupEnd": 578,
+      "groupEnd": 574,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -30317,7 +30098,7 @@
       "beat": 8,
       "name": "Kristina",
       "text": "Marcus! Hi. Sorry. Have you got a minute? It's quick.",
-      "groupEnd": 579,
+      "groupEnd": 575,
       "speaker": "kristina",
       "direction": "live",
       "computers": {},
@@ -30358,7 +30139,7 @@
       "beat": 9,
       "name": "Marcus",
       "text": "All I have is time these days, of course, what's up?",
-      "groupEnd": 580,
+      "groupEnd": 576,
       "speaker": "marcus",
       "direction": "live",
       "computers": {},
@@ -30399,7 +30180,7 @@
       "beat": 10,
       "name": "Kristina",
       "text": "I've got some good news and I wanted you to hear it from me first.",
-      "groupEnd": 581,
+      "groupEnd": 577,
       "speaker": "kristina",
       "direction": "live, warm",
       "computers": {},
@@ -30440,7 +30221,7 @@
       "beat": 11,
       "name": "",
       "text": "She puts the folder on the bench.",
-      "groupEnd": 582,
+      "groupEnd": 578,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -30481,7 +30262,7 @@
       "beat": 12,
       "name": "Kristina",
       "text": "A new law passed through Congress. Steam powered machines are allowed again! powered machinery, boilers, boats, trains, we're allowed to have so much technology again, it will feel like it did 20 years ago!",
-      "groupEnd": 583,
+      "groupEnd": 579,
       "speaker": "kristina",
       "direction": "live",
       "computers": {},
@@ -30522,7 +30303,7 @@
       "beat": 13,
       "name": "",
       "text": "MARCUS has stopped weaving.",
-      "groupEnd": 584,
+      "groupEnd": 580,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -30563,7 +30344,7 @@
       "beat": 14,
       "name": "Kristina",
       "text": "And I wanted to give some praise. Brendan's got his hands on a steam powered loom! I don't know where from, I've decided not to ask. Most of his weekend went into it.",
-      "groupEnd": 585,
+      "groupEnd": 581,
       "speaker": "kristina",
       "direction": "live",
       "computers": {},
@@ -30604,7 +30385,7 @@
       "beat": 15,
       "name": "Kristina",
       "text": "And he's out-produced the whole team. The feedback from the tailors has been incredible. Best week we've had in ages. Fifty yards in a day!!",
-      "groupEnd": 586,
+      "groupEnd": 582,
       "speaker": "kristina",
       "direction": "live",
       "computers": {},
@@ -30645,7 +30426,7 @@
       "beat": 16,
       "name": "",
       "text": "Marcus just stares at her... in disbelief...",
-      "groupEnd": 587,
+      "groupEnd": 583,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -30686,7 +30467,7 @@
       "beat": 17,
       "name": "Kristina",
       "text": "God, though. Imagine the whole team moving like that - AND we'd all be able to work from the same place! Won't that be exciting? Anyway - I've got a thing at eleven, I'll talk to you later!",
-      "groupEnd": 588,
+      "groupEnd": 584,
       "speaker": "kristina",
       "direction": "live, already at the door",
       "computers": {},
@@ -30727,7 +30508,7 @@
       "beat": 18,
       "name": "",
       "text": "MARCUS at the frame with the shuttle in his hand.",
-      "groupEnd": 589,
+      "groupEnd": 585,
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -30768,7 +30549,7 @@
       "beat": 19,
       "name": "Marcus",
       "text": "….WHAT THE F",
-      "groupEnd": 590,
+      "groupEnd": 586,
       "speaker": "marcus",
       "direction": "live",
       "computers": {},
