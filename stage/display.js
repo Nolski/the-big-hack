@@ -1,7 +1,7 @@
 import {projectionCue} from './projection-cue.js';
 import {isWorm,drawWorm} from './worm.js';
-import {renderVisual,backgroundFor,counterProfile} from './visuals.js?v=offboarding-fix-20261011';
-import {screenLabel,drawScreenAction} from './screen-actions.js?v=offboarding-20261011';
+import {renderVisual,backgroundFor,counterProfile} from './visuals.js?v=jira-beat075-20261016';
+import {screenLabel,drawScreenAction} from './screen-actions.js?v=jira-beat075-20261016';
 const params=new URLSearchParams(location.search),side=params.get('side')==='right'?'right':'left',preview=params.has('preview'),channel=new BroadcastChannel('big-hack-stage-v2:'+(params.get('controller')||localStorage.getItem('big-hack-display-controller')||'unbound'));
 const frame=document.getElementById('frame'),visual=document.getElementById('visual'),bg=document.getElementById('backgroundVideo'),replacement=document.getElementById('replacementVideo'),black=document.getElementById('black'),counter=document.getElementById('counter');
 let state=null,key='',lastHeartbeat=0,ownedController=null,renderOnly=params.has('cue');

@@ -1,4 +1,6 @@
 import {redditBody} from './reddit.js?v=pace-20260918';
+import {renderOpeningTabs,drawOpeningTabs} from './opening-tabs.js';
+import {renderJiraClose,drawJiraClose} from './jira-close.js';
 // Deterministic screen performances: one pass, then hold. The console owns the clock.
 const {actions}=await fetch('screen-actions.json',{cache:'no-store'}).then(r=>r.json());
 const escape=text=>String(text??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -24,7 +26,7 @@ export function sampleAction(action,seconds=0){
  }
  out.done=true;out.phase='hold';return out;
 }
-export const actionDuration=id=>actions[id]?.steps.reduce((sum,s)=>sum+(s.seconds||0),0)||0;
+export const actionDuration=id=>actions[id]?.frames?.at(-1)?.at ?? actions[id]?.steps.reduce((sum,s)=>sum+(s.seconds||0),0) ?? 0;
 export function screenLabel(c,side){
  const descriptor=c.computers?.[side];if(!descriptor)return '';
  const [owner,device='computer']=descriptor.split('|');
@@ -41,6 +43,8 @@ export function renderScreenAction(c,side){
  }
  const id=c.screenActions?.[side],a=actions[id];if(!a)return null;
  let body='';
+ if(a.view==='jira-close')body=renderJiraClose(a);
+ if(a.view==='browser-tabs')body=renderOpeningTabs(c,a);
  if(a.view==='inbox')body=`<div class="mailDesktop"><aside><h2>Mail</h2><b>Inbox</b><p>Sent</p><p>Drafts</p><p>Archive</p></aside><main><header><h1>Inbox</h1><span class="archiveButton">▣ Archive</span></header><div class="mailRow announcement"><span class="unreadDot">●</span><b>CEO</b><strong>Building a leaner, AI-first company</strong><small>9:02 AM</small></div><div class="mailRow"><span></span><b>GitHub</b><span>Review requested · billing service</span><small>Yesterday</small></div><div class="mailRow"><span></span><b>Engineering</b><span>Weekly update</span><small>Yesterday</small></div><p class="archiveConfirmation" hidden>Conversation archived · Undo</p></main></div>`;
  if(a.view==='team-calendar')body=`<div class="teamCalendar"><aside><h2>Calendar</h2><p>Today</p><p>My calendar</p><h3>People</h3><div class="calendarSearch"><span class="typedText"></span><span class="inputCaret">▏</span></div><p class="calendarPerson">Marcus</p></aside><main><header><h1>Today</h1><span class="calendarOwner">Marcus’s calendar</span></header><div class="calendarGrid"><div class="timeRow">9 AM</div><div class="timeRow">10 AM</div><div class="timeRow">11 AM</div><div class="timeRow">12 PM</div><div class="timeRow">1 PM</div><div class="calendarEvent regularMeeting"><b>Team standup</b><span>9:00–9:15</span></div><div class="calendarEvent catchupMeeting" hidden><b>Catch up</b><span>Dana · Brendan</span><span>11:30–11:45</span></div></div></main></div>`;
  if(a.view==='chatgpt')body=`<div class="chatHeader"><b>ChatGPT</b><span>New chat</span><small>Temporary</small></div>${a.context?`<div class="backgroundTask">${escape(a.context)}</div>`:''}<div class="chatConversation"><div class="chatWelcome">What can I help with?</div><div class="sentBubble" hidden></div><div class="chatAnswer" hidden><b>ChatGPT</b><div class="answerText"></div></div></div><div class="chatComposer">${input()}<span class="sendArrow">↑</span></div>`;
@@ -63,7 +67,12 @@ export function drawScreenAction(root,seconds,workerSeconds=seconds){
  for(const el of root.querySelectorAll('[data-screen-action]')) drawAction(el,el.dataset.workerClock ? (el.dataset.workerComplete==='true'?10000:workerSeconds) : seconds);
 }
 function drawAction(el,seconds){
-
+ if(actions[el.dataset.screenAction].view==='jira-close'){
+  drawJiraClose(el,seconds);return;
+ }
+ if(actions[el.dataset.screenAction].view==='browser-tabs'){
+  drawOpeningTabs(el,actions[el.dataset.screenAction],seconds);return;
+ }
  const a=actions[el.dataset.screenAction],s=sampleAction(a,seconds);
  const set=(selector,text)=>{const n=el.querySelector(selector);if(n&&n.textContent!==text)n.textContent=text;};
  if(a.view==='inbox'){

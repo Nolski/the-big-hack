@@ -1,6 +1,6 @@
 import {redditBody} from './reddit.js?v=pace-20260918';
 import {isWorm,wormMarkup} from './worm.js';
-import {renderScreenAction} from './screen-actions.js?v=offboarding-20261011';
+import {renderScreenAction} from './screen-actions.js?v=jira-beat075-20261016';
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names={hr:'Dana',ceo:'CEO',kristina:'Kristina',kara:'Kara',liam:'SJ',brendan:'Brendan',marcus:'Marcus',prosecutor:'Prosecutor',judge:'Judge',counsel:'Counsel','officer one':'Officer One','officer two':'Officer Two'};
 const portraits={kara:'kara','officer one':'officer-one','officer two':'officer-two'};

@@ -1,6 +1,13 @@
 // Pure playback helpers. The authored show stays intact; cast choices only
 // determine which cues need their own recording and operator GO button.
-import {musicVolume} from './background-music.js';
+import {musicVolume} from './background-music.js?v=score-fades-20261016';
+// Follow the recording, then let a visual finish after the last spoken word.
+// The tail uses cue elapsed time so Pause, Resume and speed changes still work.
+export function cueClock(cue, elapsed, media, endedAt = null) {
+  const followsMedia = cue.screenClock === 'audio' || (cue.screenClock === 'voice' && cue.kind === 'voice');
+  if (!followsMedia || !media.getAttribute('src')) return elapsed;
+  return media.currentTime + (media.ended && endedAt != null ? Math.max(0, elapsed - endedAt) : 0);
+}
 export function playbackRate(value) {
   const n = Number(value);
   return Number.isFinite(n) ? Math.min(2, Math.max(0.5, n)) : 1;
@@ -60,11 +67,19 @@ export function cueAudio(cue, override = {}) {
   return cue.montage || cue.audio || null;
 }
 
-// Keep filmed sequences and authored sound cues when incidental directions are skipped.
+// Keep media events, but a continuing score does not need another GO stop.
 export function playthroughStarts(show, settings, overrides = {}) {
   return show.performanceStarts.filter(i => {
     const c = show.cues[i], o = overrides[c.id] || {};
+    const music = c.backgroundMusic, previous = show.cues[i - 1]?.backgroundMusic;
+    const startsMusic = music?.src && (music.id !== previous?.id || music.src !== previous?.src);
     return !settings.skipStageDirections || c.kind !== 'stage' || !!c.montage
-      || !!c.sfx?.length || !!cueAudio(c, o) || !!o.left?.src || !!o.right?.src;
+      || !!c.sfx?.length || !!startsMusic || !!cueAudio(c, o) || !!o.left?.src || !!o.right?.src;
   });
+}
+
+// Restore a saved position or change the setting without staying on a hidden stop.
+export function playthroughIndex(show, settings, index, overrides = {}) {
+  const starts = playthroughStarts(show, settings, overrides);
+  return starts.find(i => i >= index) ?? starts.at(-1) ?? index;
 }

@@ -963,7 +963,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-557a1cf6197f440b",
+  "scriptRevision": "shared-58fc9b1617154ede",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -1010,7 +1010,7 @@
           "direction": ""
         }
       ],
-      "montage": "assets/filmed/opening-montage-v9.mp4"
+      "montage": "assets/filmed/opening-montage-v10.mp4"
     },
     {
       "id": "s01_l1",
@@ -1109,7 +1109,9 @@
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-find-music"
+      },
       "sourceBeat": 2,
       "audio": "assets/audio/shared-f24f1a6313cd6712cb6e27c7c7695891483be783408cfb7df47233ed8a9a4ea9.mp3",
       "audioDuration": 10.03102,
@@ -1130,7 +1132,17 @@
         "src": "assets/filmed/kristina-first-line.mp4",
         "speaker": "kristina"
       },
-      "performanceVideoReview": "Existing filmed delivery has different words; regenerate after script review."
+      "performanceVideoReview": "Existing filmed delivery has different words; regenerate after script review.",
+      "backgroundMusic": {
+        "id": "sj-youtube-synthwave",
+        "src": "assets/music/fosdem-80s-synthwave.mp3",
+        "startAt": 17,
+        "cutAt": 12.17,
+        "source": "computer",
+        "level": 0.55
+      },
+      "screenNotes": "The computer music starts at 0:17 and is clearly audible. SJ stays on Reddit until Kristina says SJ, then searches two wrong tabs over about 3.6 seconds. Let the hunt finish after her question; cut the music exactly when he clicks Pause, before his reply.",
+      "screenClock": "voice"
     },
     {
       "id": "s01_l3",
@@ -1140,7 +1152,7 @@
       "speaker": "liam",
       "name": "SJ",
       "text": "Yeah sorry, I'm eating, so my camera's off today.",
-      "direction": "live, not looking up, still scrolling",
+      "direction": "live, just after pausing YouTube; camera still off",
       "state": "reddit",
       "mode": "zoom",
       "cast": [
@@ -1170,7 +1182,9 @@
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-music-paused"
+      },
       "sourceBeat": 3,
       "audio": "assets/audio/shared-e379620958518734227007e40823bdce0bda19b569024014b57984c522393788.mp3",
       "audioDuration": 3.970612,
@@ -1184,9 +1198,10 @@
           "kind": "live",
           "name": "SJ",
           "text": "Yeah sorry, I'm eating, so my camera's off today.",
-          "direction": "live, not looking up, still scrolling"
+          "direction": "live, just after pausing YouTube; camera still off"
         }
-      ]
+      ],
+      "screenNotes": "The YouTube player is paused. SJ gives his excuse in silence; the next narrator cue returns to Reddit."
     },
     {
       "id": "s01_l4",
@@ -3783,7 +3798,7 @@
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "SJ goes back to looking at the reddit memes.",
+      "text": "Standup ends. SJ opens the YouTube tab again and resumes the music, then goes back to Reddit.",
       "direction": "",
       "state": "reddit",
       "mode": "zoom",
@@ -3804,20 +3819,17 @@
         "set": null,
         "computer": null,
         "beers": 0,
-        "callCast": [
-          "kristina",
-          "brendan",
-          "marcus",
-          "liam"
-        ],
-        "callStatus": "connected",
+        "callCast": [],
+        "callStatus": "ended",
         "view": "call"
       },
       "computers": {
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-resume-music"
+      },
       "sourceBeat": 54,
       "audio": null,
       "audioDuration": 0,
@@ -3830,10 +3842,20 @@
           "id": "s01_l54",
           "kind": "stage",
           "name": "",
-          "text": "SJ goes back to looking at the reddit memes.",
+          "text": "Standup ends. SJ opens the YouTube tab again and resumes the music, then goes back to Reddit.",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "sj-youtube-synthwave",
+        "src": "assets/music/fosdem-80s-synthwave.mp3",
+        "resume": true,
+        "startAt": 29.17,
+        "startAfter": 1.8,
+        "source": "computer",
+        "level": 0.55
+      },
+      "screenNotes": "Reopen the same YouTube tab. At the visible Play click, resume the track from where SJ paused it. Music stays on while he returns to Reddit and stops when the next huddle begins."
     },
     {
       "id": "s01c_l1",
@@ -4745,7 +4767,13 @@
           "direction": "live, a long beat — he lets the whole thing go"
         }
       ],
-      "prFocus": "line400"
+      "prFocus": "line400",
+      "backgroundMusic": {
+        "id": "pr-review-dry-loop",
+        "src": "assets/music/dry-loop-warm-bass-20s.m4a",
+        "startAt": 0,
+        "loop": false
+      }
     },
     {
       "id": "s01c_l23",
@@ -4798,7 +4826,13 @@
           "direction": "live, satisfied, having registered none of it"
         }
       ],
-      "prFocus": "line400"
+      "prFocus": "line400",
+      "backgroundMusic": {
+        "id": "pr-review-dry-loop",
+        "src": "assets/music/dry-loop-warm-bass-20s.m4a",
+        "startAt": 3.317551,
+        "loop": false
+      }
     },
     {
       "id": "s01c_l24",
@@ -4851,7 +4885,13 @@
           "direction": "live, flat, done trying — reaching for the door"
         }
       ],
-      "prFocus": "line400"
+      "prFocus": "line400",
+      "backgroundMusic": {
+        "id": "pr-review-dry-loop",
+        "src": "assets/music/dry-loop-warm-bass-20s.m4a",
+        "startAt": 13.035102,
+        "loop": false
+      }
     },
     {
       "id": "s01c_l25",
@@ -4907,7 +4947,13 @@
       "prFocus": "line400",
       "lighting": [
         "liam"
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "pr-review-dry-loop",
+        "src": "assets/music/dry-loop-warm-bass-20s.m4a",
+        "startAt": 15.960816,
+        "loop": false
+      }
     },
     {
       "id": "s01b_l1",
@@ -4964,7 +5010,14 @@
           "text": "A couple hours later, Kristina calls Brendan",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "pr-review-dry-loop",
+        "src": "assets/music/dry-loop-warm-bass-20s.m4a",
+        "startAt": 15.960816,
+        "loop": false,
+        "fadeOut": 1.2
+      }
     },
     {
       "id": "s01b_l2",
@@ -6526,10 +6579,10 @@
       "id": "s01b_l35",
       "scene": "s01b",
       "beat": 45,
-      "kind": "voice",
-      "speaker": "narrator",
-      "name": "Narrator",
-      "text": "Slack pings back: \"PROJ-412 Closed.\" On the board, the card slides to Done.",
+      "kind": "stage",
+      "speaker": "",
+      "name": "Jira ticket closed",
+      "text": "Slack pings back: \"PROJ-412 Closed.\" The card switches to Done. Three quarters of a second, then the song plays.",
       "direction": "",
       "state": "jira-done",
       "mode": "huddle",
@@ -6538,7 +6591,7 @@
         "brendan"
       ],
       "advance": "manual",
-      "loop": true,
+      "loop": false,
       "sourceLine": 82,
       "staging": {
         "location": "remote work",
@@ -6556,10 +6609,12 @@
         "left": "Kristina",
         "right": "Brendan"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "jira-close"
+      },
       "sourceBeat": 35,
-      "audio": "assets/audio/shared-405163917da8e69410faed72ea938b8bbcf7844f95b6162e93ae40c5bc304821.mp3",
-      "audioDuration": 8.75102,
+      "audio": "assets/audio/shared-b955318eb500aa83e344b5c400bbd997eb5e269a8a6cc89851e5f712b47599bc.m4a",
+      "audioDuration": 12.113,
       "legacyCue": "s01b_l45",
       "visualMapping": "matched",
       "sfx": [],
@@ -6567,12 +6622,17 @@
       "notes": [
         {
           "id": "s01b_l35",
-          "kind": "voice",
-          "name": "Narrator",
-          "text": "Slack pings back: \"PROJ-412 Closed.\" On the board, the card slides to Done.",
+          "kind": "stage",
+          "name": "Jira ticket closed",
+          "text": "Slack pings back: \"PROJ-412 Closed.\" The card switches to Done. Three quarters of a second, then the song plays.",
           "direction": ""
         }
-      ]
+      ],
+      "sourceKind": "stage",
+      "narrationAdapted": false,
+      "audioRole": "music",
+      "screenClock": "audio",
+      "screenNotes": "At 0.45 seconds, PROJ-412 instantly switches to Done and Slack confirms it. Hold for 0.75 seconds, then play the song from source timestamp 5.5 seconds. Only PROJ-412 changes in this cue; linked tickets stay for their separate cue. Hold until GO."
     },
     {
       "id": "s01b_l36",
@@ -6611,7 +6671,9 @@
         "left": "Kristina",
         "right": "Brendan"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "jira-close-complete"
+      },
       "sourceBeat": 36,
       "audio": null,
       "audioDuration": 0,

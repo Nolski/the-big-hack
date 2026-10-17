@@ -1559,6 +1559,298 @@
           "seconds": 3
         }
       ]
+    },
+    "opening-find-music": {
+      "view": "browser-tabs",
+      "title": "Find the music tab",
+      "steps": [],
+      "trackOffset": 17,
+      "pauseAt": 12.17,
+      "cueIds": [
+        "s01_l2"
+      ],
+      "side": "left",
+      "duringCue": "s01_l2",
+      "note": "Stay on Reddit until Kristina says SJ at 8.57 seconds. Spend 3.6 seconds searching two wrong tabs, then find YouTube and pause. The visual continues after her recorded question ends.",
+      "frames": [
+        {
+          "at": 0,
+          "tab": "reddit",
+          "pointer": [
+            500,
+            450
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 8.57,
+          "tab": "reddit",
+          "pointer": [
+            500,
+            450
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 9.05,
+          "tab": "reddit",
+          "pointer": [
+            720,
+            26
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 9.1,
+          "tab": "policy",
+          "pointer": [
+            720,
+            26
+          ],
+          "paused": false,
+          "click": true
+        },
+        {
+          "at": 9.65,
+          "tab": "policy",
+          "pointer": [
+            720,
+            26
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 9.95,
+          "tab": "policy",
+          "pointer": [
+            964,
+            26
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 10.0,
+          "tab": "github",
+          "pointer": [
+            964,
+            26
+          ],
+          "paused": false,
+          "click": true
+        },
+        {
+          "at": 10.65,
+          "tab": "github",
+          "pointer": [
+            964,
+            26
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 10.98,
+          "tab": "github",
+          "pointer": [
+            1208,
+            26
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 11.03,
+          "tab": "youtube",
+          "pointer": [
+            1208,
+            26
+          ],
+          "paused": false,
+          "click": true
+        },
+        {
+          "at": 11.55,
+          "tab": "youtube",
+          "pointer": [
+            1208,
+            26
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 12.1,
+          "tab": "youtube",
+          "pointer": [
+            82,
+            785
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 12.17,
+          "tab": "youtube",
+          "pointer": [
+            82,
+            785
+          ],
+          "paused": true,
+          "click": true
+        },
+        {
+          "at": 12.4,
+          "tab": "youtube",
+          "pointer": [
+            220,
+            840
+          ],
+          "paused": true,
+          "click": false
+        }
+      ],
+      "huntAt": 8.57
+    },
+    "opening-music-paused": {
+      "view": "browser-tabs",
+      "title": "Music paused",
+      "steps": [],
+      "trackOffset": 17,
+      "pauseAt": 12.17,
+      "cueIds": [
+        "s01_l3"
+      ],
+      "side": "left",
+      "duringCue": "s01_l3",
+      "frames": [
+        {
+          "at": 0,
+          "tab": "youtube",
+          "pointer": [
+            220,
+            840
+          ],
+          "paused": true,
+          "click": false
+        }
+      ]
+    },
+    "opening-resume-music": {
+      "view": "browser-tabs",
+      "title": "Back to the music",
+      "steps": [],
+      "trackOffset": 29.17,
+      "pauseAt": 0,
+      "playAt": 1.8,
+      "cueIds": [
+        "s01_l54"
+      ],
+      "side": "left",
+      "duringCue": "s01_l54",
+      "note": "Standup is over. SJ reopens YouTube and presses Play at 1.8 seconds, resuming the paused track, then returns to Reddit.",
+      "frames": [
+        {
+          "at": 0,
+          "tab": "reddit",
+          "pointer": [
+            600,
+            400
+          ],
+          "paused": true,
+          "click": false
+        },
+        {
+          "at": 0.55,
+          "tab": "reddit",
+          "pointer": [
+            1208,
+            26
+          ],
+          "paused": true,
+          "click": false
+        },
+        {
+          "at": 0.7,
+          "tab": "youtube",
+          "pointer": [
+            1208,
+            26
+          ],
+          "paused": true,
+          "click": true
+        },
+        {
+          "at": 1.4,
+          "tab": "youtube",
+          "pointer": [
+            82,
+            785
+          ],
+          "paused": true,
+          "click": false
+        },
+        {
+          "at": 1.8,
+          "tab": "youtube",
+          "pointer": [
+            82,
+            785
+          ],
+          "paused": false,
+          "click": true
+        },
+        {
+          "at": 2.6,
+          "tab": "youtube",
+          "pointer": [
+            232,
+            26
+          ],
+          "paused": false,
+          "click": false
+        },
+        {
+          "at": 2.8,
+          "tab": "reddit",
+          "pointer": [
+            232,
+            26
+          ],
+          "paused": false,
+          "click": true
+        },
+        {
+          "at": 3.5,
+          "tab": "reddit",
+          "pointer": [
+            600,
+            400
+          ],
+          "paused": false,
+          "click": false
+        }
+      ]
+    },
+    "jira-close": {
+      "view": "jira-close",
+      "title": "Close PROJ-412",
+      "steps": [
+        {
+          "op": "hold",
+          "seconds": 1.2
+        }
+      ]
+    },
+    "jira-close-complete": {
+      "view": "jira-close",
+      "title": "PROJ-412 closed",
+      "complete": true,
+      "steps": []
     }
   }
 }

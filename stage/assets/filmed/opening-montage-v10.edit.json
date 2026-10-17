@@ -1,0 +1,56 @@
+{
+  "text": "Three engineers sit at home on the call: SJ, Brendan, and Marcus. SJ is in his bathrobe, scrolling Reddit.",
+  "spokenText": "Three engineers sit at home on the call: S. J., Brendan, and Marcus. S. J. is in his bathrobe, scrolling Reddit.",
+  "voiceId": "Q4oILuo4P8VeXtE6FMLI",
+  "voiceName": "Matthew Schmitz, Warm Mountain Man",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+    "speed": 0.9,
+    "stability": 0.41,
+    "similarity_boost": 0.69,
+    "style": 0.4,
+    "use_speaker_boost": true
+  },
+  "file": "opening-montage-v10.mp4",
+  "replaces": "opening-montage-v9.mp4",
+  "change": "Both occurrences of Liam in the final narrator section become SJ.",
+  "sourceEdit": "The-Big-Hack-Prologue-v8-edit.json",
+  "unchanged": [
+    "All nine news excerpts and their existing music mix",
+    "First two narrator sections",
+    "Five-second November 24, 2025 title card"
+  ],
+  "newsVideoAndAudioPacketsVerifiedIdentical": true,
+  "narrationStart": 102.59036499999999,
+  "narrationDuration": 8.933333333333334,
+  "duration": 116.545042,
+  "sources": [
+    {
+      "file": "montage.mp4",
+      "sha256": "0a138a91fae5f83bf71203108331d74d1fb8ef78e03d478a9abc073aedb16ce6",
+      "duration": 83.457032
+    },
+    {
+      "file": "narr0.mp4",
+      "sha256": "608159cbda183d61bad9aa544919761ebf5faa8396262b9235aab98a5b38f2dc",
+      "duration": 10.8
+    },
+    {
+      "file": "narr1.mp4",
+      "sha256": "e0d12b21130411c24abda22de70941b1476a09f6e8a79829324eb9572836b35b",
+      "duration": 8.333333
+    },
+    {
+      "file": "narration-sj.mp4",
+      "sha256": "149ab65a83ddcd66454ddcb6222c68f2d55408d4d24c26c8997ed885978f19ef",
+      "duration": 8.933333
+    },
+    {
+      "file": "opening-date.mp4",
+      "sha256": "e69f2328bdaa8601f99209f1874f0432f4643f25f267ed63a7579f221a7d7ebc",
+      "duration": 5.0
+    }
+  ],
+  "sha256": "60bf39faf43662c15c79602e9ffb251919eac3df55bced8f72cd96f2a456d085",
+  "narrationAsset": "assets/audio/opening-intro-sj.mp3"
+}

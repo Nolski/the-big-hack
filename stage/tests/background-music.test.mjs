@@ -66,3 +66,72 @@ test('quiet independent volume persists, including mute',()=>{
     assert(fs.existsSync(new URL('../'+c.backgroundMusic.src,import.meta.url)));
   }
 });
+
+test('a scene transition fades from the carried music position, including Pause and Resume',async()=>{
+  const audio=new TestAudio(),music=new BackgroundMusic(audio);
+  music.setVolume(.08);
+  music.enter({...config,loop:false});music.sync(0,true);await settle();
+  audio.currentTime=16;
+  music.enter({...config,loop:false,startAt:15.96,fadeOut:1.2},true);
+  assert.equal(audio.currentTime,16,'The narrator cue must not restart the score');
+  assert.equal(audio.volume,.08);
+  audio.currentTime=16.6;music.sync(.6,true);
+  assert(Math.abs(audio.volume-.04)<1e-9,'Fade begins when the next scene starts');
+  music.sync(.6,false);assert(audio.paused);
+  music.setVolume(.1);
+  assert(Math.abs(audio.volume-.05)<1e-9,'Volume adjustment preserves the fade progress');
+  music.sync(.6,true);await settle();assert(!audio.paused);
+  audio.currentTime=17.3;
+  assert.equal(music.sync(1.3,true),true);
+  assert.equal(audio.volume,0);assert(audio.paused);
+  music.sync(2,true);assert(audio.paused,'A completed fade stays silent');
+  music.enter({...config,loop:false},false);music.sync(0,true);await settle();
+  assert.equal(audio.currentTime,0);assert.equal(audio.volume,.1);
+  assert(!audio.paused,'Replay restores the original music level');
+});
+
+test('a finite excerpt cannot restart after it reaches its end',async()=>{
+  const audio=new TestAudio(),music=new BackgroundMusic(audio);
+  music.enter({...config,loop:false});music.sync(0,true);await settle();
+  assert.equal(audio.loop,false);
+  const plays=audio.plays;
+  audio.currentTime=20;audio.ended=true;audio.paused=true;
+  music.sync(20,true);music.sync(21,true);await settle();
+  assert.equal(audio.plays,plays,'Holding a cue cannot replay the first 20 seconds');
+  assert(audio.paused);
+  music.enter(config,false);
+  assert.equal(audio.loop,true,'Existing looping tracks retain their authored behavior');
+});
+
+test('the PR review score starts on Brendan’s reply and fades at the next narrator line',()=>{
+  const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
+  const start=source.cues.findIndex(c=>c.id==='s01c_l22');
+  const end=source.cues.findIndex(c=>c.id==='s01b_l1');
+  assert.equal(source.cues[start].text,'…Yeah. Okay, SJ. I hear you.');
+  assert.equal(source.cues[end].text,'A couple hours later, Kristina calls Brendan');
+  for(let i=start;i<=end;i++){
+    const m=source.cues[i].backgroundMusic;
+    assert.equal(m.id,'pr-review-dry-loop');assert.equal(m.loop,false);
+    assert(fs.existsSync(new URL('../'+m.src,import.meta.url)));
+    assert.equal(m.fadeOut,i===end?1.2:undefined);
+  }
+  assert(!source.cues[start-1].backgroundMusic);
+  assert(!source.cues[end+1].backgroundMusic);
+});
+
+test('skipping the final stage direction preserves the running score and its narrator fade',async()=>{
+  const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
+  const settings=readSettings(source,{skipStageDirections:true});
+  const previous=source.cues.findIndex(c=>c.id==='s01c_l24');
+  const next=playthroughStarts(source,settings).find(i=>i>previous);
+  assert.equal(source.cues[next].id,'s01b_l1');
+  const audio=new TestAudio(),music=new BackgroundMusic(audio);
+  music.enter(source.cues[previous].backgroundMusic);music.sync(0,true);await settle();
+  audio.currentTime=14;
+  const plays=audio.plays;
+  music.enter(source.cues[next].backgroundMusic,true);music.sync(0,true);
+  assert.equal(audio.currentTime,14,'Keep the actual music position when skipping the direction');
+  assert.equal(audio.plays,plays,'No reload or restart at the scene change');
+  audio.currentTime=15.3;music.sync(1.3,true);
+  assert(audio.paused);assert.equal(audio.volume,0,'The next narration still triggers the fade');
+});

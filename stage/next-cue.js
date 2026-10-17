@@ -5,6 +5,7 @@ export function nextCueType(current, next) {
   if (next.interrupts) return {label: 'INTERRUPTION', alert: true};
   if (current && next.scene !== current.scene) return {label: 'New scene', alert: false};
   if (next.montage || next.performanceVideo) return {label: 'Video', alert: false};
+  if (next.audioRole === 'music') return {label: 'Music / visual', alert: false};
   if (next.speaker === 'narrator') return {label: 'Narration', alert: false};
   if (next.kind === 'stage') return {label: 'Stage direction', alert: false};
   if (current && next.speaker && next.speaker === current.speaker) return {label: 'CONTINUED LINE', alert: true};
