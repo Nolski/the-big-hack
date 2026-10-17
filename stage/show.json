@@ -963,7 +963,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-51a8d1fd7cc444f6",
+  "scriptRevision": "shared-557a1cf6197f440b",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -1111,8 +1111,8 @@
       },
       "screenActions": {},
       "sourceBeat": 2,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-f24f1a6313cd6712cb6e27c7c7695891483be783408cfb7df47233ed8a9a4ea9.mp3",
+      "audioDuration": 10.03102,
       "legacyCue": "s01_l2",
       "visualMapping": "matched",
       "sfx": [],
@@ -1457,8 +1457,8 @@
       },
       "screenActions": {},
       "sourceBeat": 9,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-62431181df9143f8db2ab738665f5f249a79f22acdcaea85ceea718499fa63e3.mp3",
+      "audioDuration": 2.429388,
       "legacyCue": "s01_l9",
       "visualMapping": "matched",
       "sfx": [],
@@ -2288,8 +2288,8 @@
         "left": "standup-respect"
       },
       "sourceBeat": 26,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-d924a025ab40766b74075399ae48648a20f6ef04ba87ac28f75a67ba8aa0b91e.mp3",
+      "audioDuration": 6.765714,
       "legacyCue": "s01_l26",
       "visualMapping": "matched",
       "sfx": [],
@@ -2736,8 +2736,8 @@
         "left": "luddite-argument"
       },
       "sourceBeat": 35,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-c032101b1108c64a5332fa0df30231f310aa3c9701dc91d914139113af0a575b.mp3",
+      "audioDuration": 10.03102,
       "legacyCue": "s01_l38",
       "visualMapping": "matched",
       "sfx": [],
@@ -5106,8 +5106,8 @@
       },
       "screenActions": {},
       "sourceBeat": 4,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-c2de78ed472c5851648bc14443e99f47d479fb2e99ae00c495c6ebae8a5703b9.mp3",
+      "audioDuration": 2.35102,
       "legacyCue": "s01b_l4",
       "visualMapping": "matched",
       "sfx": [],
@@ -5136,7 +5136,7 @@
         "view": "call"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 10.03102,
       "state": "huddle",
       "id": "s01b_l5",
       "screenActions": {},
@@ -5159,7 +5159,7 @@
         "kristina",
         "brendan"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-f057371fe137c2855eb97e4a2dac92358b4d8ba212af43081f8338eaf85e1969.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -5371,8 +5371,8 @@
           "direction": ""
         }
       ],
-      "audio": null,
-      "audioDuration": 0
+      "audio": "assets/audio/shared-a99fd76b7a5e137a16b1327e8b68a31813d4150efaf4aee3fcc8be004a79ee1b.mp3",
+      "audioDuration": 11.807347
     },
     {
       "id": "s01b_l8",
@@ -5641,7 +5641,7 @@
       "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "…hardcode long lived credentials. We want to avoid those right? But I don't know how...",
+      "text": "…hardcode long lived credentials. Yikes that's pretty bad...",
       "direction": "deadpan, the penny dropping",
       "state": "cursor-plan",
       "mode": "huddle",
@@ -5670,8 +5670,8 @@
       },
       "screenActions": {},
       "sourceBeat": 15,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-e1f59c9f702a8bb4f75c750ac17acc6c4c7de0276284d6adef8d772bd6094050.mp3",
+      "audioDuration": 4.754286,
       "legacyCue": "s01b_l19",
       "visualMapping": "matched",
       "sfx": [],
@@ -5681,7 +5681,7 @@
           "id": "s01b_l15",
           "kind": "live",
           "name": "Kristina",
-          "text": "…hardcode long lived credentials. We want to avoid those right? But I don't know how...",
+          "text": "…hardcode long lived credentials. Yikes that's pretty bad...",
           "direction": "deadpan, the penny dropping"
         }
       ]
@@ -5722,8 +5722,8 @@
       },
       "screenActions": {},
       "sourceBeat": 16,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-509323f1b944c528ea1eb9802dad881f4fb97b158e4313569266eba0c1554ecc.mp3",
+      "audioDuration": 7.47102,
       "legacyCue": "s01b_l20",
       "visualMapping": "matched",
       "sfx": [],
@@ -5776,8 +5776,8 @@
         "left": "cursor-correction"
       },
       "sourceBeat": 17,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-75f25aa2304cd83e4cbcc7965febfaf6a7738343bcfcf2888f62ff4934e149a7.mp3",
+      "audioDuration": 8.359184,
       "legacyCue": "s01b_l21",
       "visualMapping": "matched",
       "sfx": [],
@@ -6506,8 +6506,8 @@
       },
       "screenActions": {},
       "sourceBeat": 34,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-c728de1869002703ee2f5a9b2efa0d2786d8d2496e81e34fc5dd98a3f1e84609.mp3",
+      "audioDuration": 9.16898,
       "legacyCue": "s01b_l38",
       "visualMapping": "matched",
       "sfx": [],
@@ -6974,8 +6974,8 @@
       },
       "screenActions": {},
       "sourceBeat": 49,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-31a455cecda007cdc2a718937b9a1da87e2c63d8d0be4b9aa1394d638b54ef2e.mp3",
+      "audioDuration": 8.202449,
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
@@ -7219,8 +7219,8 @@
       },
       "screenActions": {},
       "sourceBeat": 57,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-580a8a6d65b6f6b4ef28395e09da626fcd6959c384031260afda16261f1f1235.mp3",
+      "audioDuration": 11.232653,
       "legacyCue": "s01b_l59",
       "visualMapping": "inherited",
       "sfx": [],
@@ -7429,8 +7429,8 @@
       },
       "screenActions": {},
       "sourceBeat": 2,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-ef200d8e22ea2c2c93438bf43bd4a8e62cf035dea5f5017a8f621cc6e2c94240.mp3",
+      "audioDuration": 5.955918,
       "legacyCue": "s06_l2",
       "visualMapping": "matched",
       "sfx": [],
@@ -7822,8 +7822,8 @@
       },
       "screenActions": {},
       "sourceBeat": 9,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-e69419816d989d1b38f55da584bab71c8c069226fbf0777e5d67d8ad961492e9.mp3",
+      "audioDuration": 11.885714,
       "legacyCue": "s06_l9",
       "visualMapping": "matched",
       "sfx": [],
@@ -7992,8 +7992,8 @@
       },
       "screenActions": {},
       "sourceBeat": 12,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-bc0f660b3772dbfe0c2032c9f03de8e3108920e3ad8ae28d865112ba6e0fffcb.mp3",
+      "audioDuration": 16.43102,
       "legacyCue": "s06_l12",
       "visualMapping": "matched",
       "sfx": [],
@@ -8359,7 +8359,7 @@
         }
       ],
       "actionSource": {
-        "left": "s06_l19"
+        "left": "s06_l21"
       }
     },
     {
@@ -8378,7 +8378,7 @@
         "view": "call"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 11.467755,
       "state": "race-code",
       "id": "s06_narrator_security",
       "screenActions": {
@@ -8387,7 +8387,7 @@
       "sfx": [],
       "beat": 18,
       "name": "Narrator",
-      "text": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security tickets. The users never notice those, and they respond so much better to new features.",
+      "text": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security tickets. The team's performance is measured on feature throughput, not security.",
       "screenNotes": "Background lookup starts 6s into this speech, after the term is spoken. Keep speaking; no separate lookup pause.",
       "groupEnd": 132,
       "speaker": "narrator",
@@ -8405,16 +8405,16 @@
         "liam"
       ],
       "actionSource": {
-        "left": "s06_l19"
+        "left": "s06_l21"
       },
       "visualMapping": "matched",
-      "audio": null,
+      "audio": "assets/audio/shared-bba1b38fc2367a1fb6f0acba9726f20890ec6fe06e8a8a3e2f1f9f02228547c8.mp3",
       "notes": [
         {
           "id": "s06_narrator_security",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security tickets. The users never notice those, and they respond so much better to new features.",
+          "text": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security tickets. The team's performance is measured on feature throughput, not security.",
           "direction": ""
         }
       ],
@@ -8778,11 +8778,19 @@
     {
       "id": "cue_cb6e202cb2534dde8fd58ab221162dcb",
       "scene": "s06",
-      "state": "black",
+      "state": "huddle",
       "mode": "zoom",
-      "cast": [],
-      "screenActions": {},
-      "computers": {},
+      "cast": [
+        "liam",
+        "brendan"
+      ],
+      "screenActions": {
+        "right": "rng-entropy"
+      },
+      "computers": {
+        "left": "SJ",
+        "right": "Brendan"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "voice",
@@ -8790,8 +8798,8 @@
       "name": "Narrator",
       "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without SJ the wiser.",
       "direction": "",
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-5ad9110f86986c10d737d3354ed5b2b928726094ca56698ef7e0674c5f3bf94a.mp3",
+      "audioDuration": 6.687347,
       "groupEnd": 139,
       "notes": [
         {
@@ -8801,7 +8809,27 @@
           "text": "Brendan asks Claude Code to investigate the bug. Quickly it gets to work without SJ the wiser.",
           "direction": ""
         }
-      ]
+      ],
+      "beat": 29,
+      "loop": true,
+      "staging": {
+        "location": "remote work",
+        "set": null,
+        "computer": null,
+        "beers": 0,
+        "callCast": [
+          "liam",
+          "brendan"
+        ],
+        "callStatus": "connected",
+        "view": "call"
+      },
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
+      "actionSource": {
+        "right": "s06_l32"
+      },
+      "claudeSession": "signup-investigation",
+      "claudeComplete": false
     },
     {
       "id": "s06_l33",
@@ -8846,7 +8874,7 @@
       "legacyCue": "s06_l30",
       "visualMapping": "matched",
       "sfx": [],
-      "screenNotes": "Brendan privately types into ChatGPT after s06_l32. Let the answer finish before GO.",
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
       "groupEnd": 140,
       "notes": [
         {
@@ -8859,7 +8887,9 @@
       ],
       "actionSource": {
         "right": "s06_l32"
-      }
+      },
+      "claudeSession": "signup-investigation",
+      "claudeComplete": false
     },
     {
       "id": "s06_l35",
@@ -8896,7 +8926,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 35,
       "audio": "assets/audio/shared-3fb9e752f78164c253693e0b09da7b501874ad8c690988d7777586a5d80e677d.mp3",
@@ -8904,7 +8934,7 @@
       "legacyCue": "s06_l32",
       "visualMapping": "matched",
       "sfx": [],
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
       "groupEnd": 141,
       "notes": [
         {
@@ -8916,7 +8946,7 @@
         }
       ],
       "actionSource": {
-        "right": "s06_l34"
+        "right": "s06_l32"
       },
       "claudeSession": "signup-investigation",
       "claudeComplete": false
@@ -8956,7 +8986,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 36,
       "audio": "assets/audio/shared-c6ea2486dc38e39c89bf74e8419f770f7660f2766b3610a972ad7bc7d3d55d18.mp3",
@@ -8964,7 +8994,7 @@
       "legacyCue": "s06_l33",
       "visualMapping": "matched",
       "sfx": [],
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
       "groupEnd": 142,
       "notes": [
         {
@@ -8976,7 +9006,7 @@
         }
       ],
       "actionSource": {
-        "right": "s06_l35"
+        "right": "s06_l32"
       },
       "claudeSession": "signup-investigation",
       "claudeComplete": false
@@ -9016,7 +9046,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 37,
       "audio": "assets/audio/shared-d3923e26ca15349c9a9e9fca69d51191e78e2a7422967e3aeed410cd876bebad.mp3",
@@ -9024,7 +9054,7 @@
       "legacyCue": "s06_l34",
       "visualMapping": "matched",
       "sfx": [],
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
       "groupEnd": 143,
       "notes": [
         {
@@ -9036,7 +9066,7 @@
         }
       ],
       "actionSource": {
-        "right": "s06_l35"
+        "right": "s06_l32"
       },
       "claudeSession": "signup-investigation",
       "claudeComplete": false
@@ -9076,7 +9106,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 41,
       "audio": "assets/audio/shared-c44d3c74b2b3e7aca8cdd1b15aa118066abafb2c0362e7afe5acd5f0bc649d70.mp3",
@@ -9096,7 +9126,10 @@
       ],
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes."
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
+      "actionSource": {
+        "right": "s06_l32"
+      }
     },
     {
       "id": "cue_2d55393104504548adbccb9c440159f9",
@@ -9108,7 +9141,7 @@
         "brendan"
       ],
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "computers": {
         "left": "SJ",
@@ -9119,17 +9152,17 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, generated a script to reproduce the bug and drafted a one-line fix.",
+      "text": "Claude finished a while ago. It found the root cause in get Or Create Session, generated a script to reproduce the bug and drafted a one-line fix.",
       "direction": "",
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-06b8ba1aa38820ce3efb05cec4e846b575424793b8a69b6905a64973e55f8ffc.mp3",
+      "audioDuration": 9.952653,
       "groupEnd": 145,
       "notes": [
         {
           "id": "cue_2d55393104504548adbccb9c440159f9",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Claude finished a while ago. It found the root cause in getOrCreateSession, generated a script to reproduce the bug and drafted a one-line fix.",
+          "text": "Claude finished a while ago. It found the root cause in get Or Create Session, generated a script to reproduce the bug and drafted a one-line fix.",
           "direction": ""
         }
       ],
@@ -9147,8 +9180,11 @@
       },
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
-      "beat": 39
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
+      "beat": 39,
+      "actionSource": {
+        "right": "s06_l32"
+      }
     },
     {
       "id": "s06_l43",
@@ -9157,7 +9193,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "…Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. That function getOrCreateSession, what's it keyed on?",
+      "text": "…Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. That function get Or Create Session, what's it keyed on?",
       "direction": "live, offhand, like it just floated up — the dumb-question voice",
       "state": "race-fixed",
       "mode": "zoom",
@@ -9185,11 +9221,11 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 43,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-af7083a45644b1a84785adce8e7c5ff321df514e6343b3e47841558f6326555a.mp3",
+      "audioDuration": 10.187755,
       "legacyCue": "s06_l40",
       "visualMapping": "matched",
       "sfx": [],
@@ -9199,13 +9235,16 @@
           "id": "s06_l43",
           "kind": "live",
           "name": "Brendan",
-          "text": "…Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. That function getOrCreateSession, what's it keyed on?",
+          "text": "…Okay, this is probably nothing. But can you scroll up? To where signup actually calls the session thing. That function get Or Create Session, what's it keyed on?",
           "direction": "live, offhand, like it just floated up — the dumb-question voice"
         }
       ],
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes."
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
+      "actionSource": {
+        "right": "s06_l32"
+      }
     },
     {
       "id": "s06_l44",
@@ -9242,7 +9281,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 44,
       "audio": "assets/audio/shared-b2abbda01382ec453e013a1b97f7878fd171a12c99a6a8ed6f6835cd97356f41.mp3",
@@ -9262,7 +9301,10 @@
       ],
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes."
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
+      "actionSource": {
+        "right": "s06_l32"
+      }
     },
     {
       "id": "s06_l45",
@@ -9299,7 +9341,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 45,
       "audio": "assets/audio/shared-fb9e447033d0021cfcdef19960dbdd78a553fbfcebee0fb107bf5d88064273ee.mp3",
@@ -9319,7 +9361,10 @@
       ],
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes."
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
+      "actionSource": {
+        "right": "s06_l32"
+      }
     },
     {
       "id": "s06_l46",
@@ -9356,7 +9401,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 46,
       "audio": null,
@@ -9376,7 +9421,10 @@
       ],
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes."
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
+      "actionSource": {
+        "right": "s06_l32"
+      }
     },
     {
       "id": "s06_l47",
@@ -9413,7 +9461,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 47,
       "audio": "assets/audio/shared-697176d77a24312c99c8e5cb579d85dfff758434c0d0d1c67a9389ffa72df551.mp3",
@@ -9433,11 +9481,14 @@
       ],
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
       "backgroundMusic": {
         "id": "good-instinct-piano",
         "src": "assets/music/felt-piano-broken-pulse.mp3",
         "startAt": 0
+      },
+      "actionSource": {
+        "right": "s06_l32"
       }
     },
     {
@@ -9475,7 +9526,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 48,
       "audio": null,
@@ -9495,11 +9546,14 @@
       ],
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
       "backgroundMusic": {
         "id": "good-instinct-piano",
         "src": "assets/music/felt-piano-broken-pulse.mp3",
         "startAt": 13.557551
+      },
+      "actionSource": {
+        "right": "s06_l32"
       }
     },
     {
@@ -9521,7 +9575,7 @@
       "claudeSession": "signup-investigation",
       "id": "s06_l49",
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sfx": [],
       "sourceBeat": 49,
@@ -9529,7 +9583,7 @@
       "name": "SJ",
       "text": "…That's a hell of a catch, Brendan. That's the one place I wasn't looking　after months of combing through the code. That's real instinct. Good instinct, kid. Seriously.",
       "groupEnd": 152,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
       "speaker": "liam",
       "direction": "live, warm — no condescension left in it",
       "computers": {
@@ -9562,6 +9616,9 @@
         "id": "good-instinct-piano",
         "src": "assets/music/felt-piano-broken-pulse.mp3",
         "startAt": 13.557551
+      },
+      "actionSource": {
+        "right": "s06_l32"
       }
     },
     {
@@ -9599,7 +9656,7 @@
         "right": "Brendan"
       },
       "screenActions": {
-        "right": "mutex-deadlock"
+        "right": "rng-entropy"
       },
       "sourceBeat": 50,
       "audio": "assets/audio/shared-e45111ae84cfce3e80f4f805dedc1125f1e5763cb068f7d6b0f74ff67bef80c1.mp3",
@@ -9619,11 +9676,14 @@
       ],
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; his ChatGPT lookups stay on the right. The reproduction and fix remain visible after Claude finishes.",
+      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
       "backgroundMusic": {
         "id": "good-instinct-piano",
         "src": "assets/music/felt-piano-broken-pulse.mp3",
         "startAt": 24.241633
+      },
+      "actionSource": {
+        "right": "s06_l32"
       }
     },
     {
@@ -12582,8 +12642,8 @@
         "left": "local-stub"
       },
       "sourceBeat": 66,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-d1c04fce4b341e42a3faebadb1ee51a07427fe1302e6d9a0fca6093374ea62f2.mp3",
+      "audioDuration": 17.554286,
       "legacyCue": "s11b_l62",
       "visualMapping": "matched",
       "sfx": [],
@@ -12936,7 +12996,7 @@
       "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "It took a while, but honestly? I'm just happy he's engaged. Wins like the webhook thing help with mid-year reviews.",
+      "text": "It took a while, but honestly? I'm just happy he's engaged. Demonstrating AI adoption will help with mid-year reviews",
       "direction": "",
       "state": "huddle",
       "mode": "huddle",
@@ -12965,8 +13025,8 @@
       },
       "screenActions": {},
       "sourceBeat": 4,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-58bc966b44d140c3fb7bb4a217882958940269b31b55c35152ed0c71a5547a04.mp3",
+      "audioDuration": 8.594286,
       "legacyCue": "s11c_l4",
       "visualMapping": "matched",
       "sfx": [],
@@ -12976,7 +13036,7 @@
           "id": "s11c_l4",
           "kind": "live",
           "name": "Kristina",
-          "text": "It took a while, but honestly? I'm just happy he's engaged. Wins like the webhook thing help with mid-year reviews.",
+          "text": "It took a while, but honestly? I'm just happy he's engaged. Demonstrating AI adoption will help with mid-year reviews",
           "direction": ""
         }
       ]
@@ -13017,8 +13077,8 @@
       },
       "screenActions": {},
       "sourceBeat": 5,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-04588efbf247bcc7514d68070ee9f298829e9ac43c9ab9eaf8d945b0379ab37b.mp3",
+      "audioDuration": 8.359184,
       "legacyCue": "s11c_l5",
       "visualMapping": "matched",
       "sfx": [],
@@ -13069,8 +13129,8 @@
       },
       "screenActions": {},
       "sourceBeat": 13,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-ce5e45146521708f1e6592a6e2d5a2bc49b50cda9ec73714abc48531dbd7362c.mp3",
+      "audioDuration": 11.467755,
       "legacyCue": "s11c_l13",
       "visualMapping": "matched",
       "sfx": [],
@@ -13121,8 +13181,8 @@
       },
       "screenActions": {},
       "sourceBeat": 14,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-b89bf4bcc062f8ce81ea42571d3ef820496c3f86580a57f30b81122ddf5e565a.mp3",
+      "audioDuration": 12.355918,
       "legacyCue": "s11c_l14",
       "visualMapping": "matched",
       "sfx": [],
@@ -13173,8 +13233,8 @@
       },
       "screenActions": {},
       "sourceBeat": 15,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-9167d38159e69dbd5328f583b020158aba292d5cebb2e76068ffd4ff5473b4b2.mp3",
+      "audioDuration": 16.117551,
       "legacyCue": "s11c_l15",
       "visualMapping": "matched",
       "sfx": [],
@@ -13196,7 +13256,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "... Okay, I can keep trying.",
+      "text": "...okay... I'll keep working with him on it",
       "direction": "live",
       "state": "huddle",
       "mode": "huddle",
@@ -13225,8 +13285,8 @@
       },
       "screenActions": {},
       "sourceBeat": 16,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-4cebad8c669f207c5c86e81122ff77f2cf00cd15672dd2f27d40e4451ccba7fc.mp3",
+      "audioDuration": 3.004082,
       "legacyCue": "s11c_l16",
       "visualMapping": "matched",
       "sfx": [],
@@ -13236,7 +13296,7 @@
           "id": "s11c_l16",
           "kind": "live",
           "name": "Brendan",
-          "text": "... Okay, I can keep trying.",
+          "text": "...okay... I'll keep working with him on it",
           "direction": "live"
         }
       ]
@@ -13277,8 +13337,8 @@
       },
       "screenActions": {},
       "sourceBeat": 17,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-d7cd3b73f79f1dbffce230dd6f06cc1cc6e1e04cf196aa3707b801991d04e6a8.mp3",
+      "audioDuration": 5.877551,
       "legacyCue": "s11c_l17",
       "visualMapping": "matched",
       "sfx": [],
@@ -13381,8 +13441,8 @@
       },
       "screenActions": {},
       "sourceBeat": 20,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-dbc5c73bfb0c15cd85ffbb9c7b9a08d2afcef5bb7263a9064be5bba980a9f68d.mp3",
+      "audioDuration": 6.922449,
       "legacyCue": "s11c_l20",
       "visualMapping": "matched",
       "sfx": [],
@@ -13433,8 +13493,8 @@
       },
       "screenActions": {},
       "sourceBeat": 21,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-227727c49526642de93081e0db8b796372880d9f161762aaca85ad57d4c09a6d.mp3",
+      "audioDuration": 1.48898,
       "legacyCue": "s11c_l21",
       "visualMapping": "matched",
       "sfx": [],
@@ -13468,17 +13528,17 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Kristina abruptly ends the call. Her AI prompt is waiting. AI doesn't quibble with her, is endlessly patient, doesn't question her qualifications, and undoubtedly smells better.",
+      "text": "Kristina abruptly ends the call. She's slowly starting to appreciate the fact her AI agents don't quibble with her, they're endlessly patient, and they don't question her qualifications",
       "direction": "",
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-5334f0bbe8429b33195a77d0720aaff7334ea6ed2f74981f154c1b8d5bd72149.mp3",
+      "audioDuration": 12.199184,
       "groupEnd": 223,
       "notes": [
         {
           "id": "cue_a8693679ca6d42b4abf5d3f8b3ab90ca",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Kristina abruptly ends the call. Her AI prompt is waiting. AI doesn't quibble with her, is endlessly patient, doesn't question her qualifications, and undoubtedly smells better.",
+          "text": "Kristina abruptly ends the call. She's slowly starting to appreciate the fact her AI agents don't quibble with her, they're endlessly patient, and they don't question her qualifications",
           "direction": ""
         }
       ],
@@ -13529,8 +13589,8 @@
       },
       "screenActions": {},
       "sourceBeat": 34,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-405128df8f72c3dbd7199261826ed4376ec56e2ea8f0d319c0d3d78919e36ed9.mp3",
+      "audioDuration": 27.637551,
       "legacyCue": "s11c_l34",
       "visualMapping": "matched",
       "sfx": [],
@@ -13560,7 +13620,7 @@
         "view": "private"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 18.520816,
       "state": "new-model",
       "id": "s11c_l39",
       "screenActions": {},
@@ -13586,7 +13646,7 @@
         "brendan"
       ],
       "narrationAdapted": true,
-      "audio": null,
+      "audio": "assets/audio/shared-ab5402fc54e8cd1e87ac71b2ffb239e8b50576e07f9346b81441b151eb8031b9.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -13623,8 +13683,8 @@
       "name": "Narrator",
       "text": "Hoping to finish her performance reviews before her next meeting starts, she starts a new session.",
       "direction": "",
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-7a05fb1706edf0785e30b495bb59b02939578cb64783f176e6925beb297db7c2.mp3",
+      "audioDuration": 5.485714,
       "groupEnd": 226,
       "notes": [
         {
@@ -13670,8 +13730,8 @@
       "name": "Kristina",
       "text": "\"Please generate performance reviews for my three reports. Two paragraphs each.\"",
       "direction": "",
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-58c116787c21d52618e21da3bd31f90f11d3edc20edb9e5aa73df4c3cb56d9c9.mp3",
+      "audioDuration": 4.754286,
       "groupEnd": 227,
       "notes": [
         {
@@ -13717,8 +13777,8 @@
       "name": "Narrator",
       "text": "The agent gets to work, and before she knows it, the review documents are ready.",
       "direction": "",
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-54598bbbe9f45ba0fc1c1acf801a8ebf5aaa899f8057dc0808ac0e899d09bf2c.mp3",
+      "audioDuration": 4.91102,
       "groupEnd": 228,
       "notes": [
         {
@@ -13762,17 +13822,17 @@
       "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "Review cycle done in record time! Meanwhile the guys would still be arguing over tabs vs spaces or whatever.",
+      "text": "Review cycle done in record time! Meanwhile the guys would still be arguing over cyber security policy",
       "direction": "",
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-9fde3fb4efec9e31ddc974a29f09a999dbc9da7b0e56c0fbd501c0aa4215dcd0.mp3",
+      "audioDuration": 7.157551,
       "groupEnd": 229,
       "notes": [
         {
           "id": "cue_8d29037faa464187bd6dd5eea86fc720",
           "kind": "live",
           "name": "Kristina",
-          "text": "Review cycle done in record time! Meanwhile the guys would still be arguing over tabs vs spaces or whatever.",
+          "text": "Review cycle done in record time! Meanwhile the guys would still be arguing over cyber security policy",
           "direction": ""
         }
       ],
@@ -13809,17 +13869,17 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "Her next meeting chimes. Claude asks if she'd like to check Linear. Assuming the connector had copied them correctly, and she tells it to submit, because Jira is the source of truth. Claude tells her she's absolutely right. ",
+      "text": "Her next meeting chimes.",
       "direction": "",
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-25fefba8b0196ade91950e88d6f223a26a651dc73a3a391b3928686043fc257b.mp3",
+      "audioDuration": 1.959184,
       "groupEnd": 230,
       "notes": [
         {
           "id": "cue_9a1880d83bf74f9b9e9efccba3d14c4c",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Her next meeting chimes. Claude asks if she'd like to check Linear. Assuming the connector had copied them correctly, and she tells it to submit, because Jira is the source of truth. Claude tells her she's absolutely right. ",
+          "text": "Her next meeting chimes.",
           "direction": ""
         }
       ],
@@ -13886,7 +13946,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "One August morning, the CEO emails the whole company: \"Building a leaner, AI-first company.\" None of the line managers were consulted. SJ archives it unopened.",
+      "text": "One August morning, the CEO emails the whole company: \"Building a leaner, AI-first company.\" The email explains the company is making deep staffing cuts. Kristina and other first level managers were not consulted ahead of time. SJ archives it unopened.",
       "direction": "",
       "state": "email-archive",
       "mode": "huddle",
@@ -13916,8 +13976,8 @@
         "left": "offboarding-archive"
       },
       "sourceBeat": 1,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-353d2fbbd7b579c4ea3901015a4ae58e7e967b1e7caffc0cf5c90a08cda66dda.mp3",
+      "audioDuration": 19.147755,
       "legacyCue": "s14_l1",
       "visualMapping": "matched",
       "sfx": [],
@@ -13927,7 +13987,7 @@
           "id": "s14_l1",
           "kind": "voice",
           "name": "Narrator",
-          "text": "One August morning, the CEO emails the whole company: \"Building a leaner, AI-first company.\" None of the line managers were consulted. SJ archives it unopened.",
+          "text": "One August morning, the CEO emails the whole company: \"Building a leaner, AI-first company.\" The email explains the company is making deep staffing cuts. Kristina and other first level managers were not consulted ahead of time. SJ archives it unopened.",
           "direction": ""
         }
       ]
@@ -14938,8 +14998,8 @@
       },
       "screenActions": {},
       "sourceBeat": 26,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-2173376f287b1bfe688e75a2180ad4a2c36b4b9164317179ad6917f61d28327e.mp3",
+      "audioDuration": 3.709388,
       "legacyCue": "s14_l24",
       "visualMapping": "matched",
       "sfx": [],
@@ -15122,7 +15182,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "He looks for something he can be sure about.  In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call so he needs to stall.",
+      "text": "In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call so he needs to stall.",
       "direction": "",
       "state": "offboarding",
       "mode": "huddle",
@@ -15153,8 +15213,8 @@
         "left": "offboarding-calendar-search"
       },
       "sourceBeat": 30,
-      "audio": "assets/audio/shared-11193f230f2bfb975cce6adb162d9dd5ce163ed4f6250ba08a1518720e59dd36.mp3",
-      "audioDuration": 13.400816,
+      "audio": "assets/audio/shared-0e769b636a05072092a45fb74641bd180127453eeeb568bd161c59944929292d.mp3",
+      "audioDuration": 10.840816,
       "legacyCue": "s14_l28",
       "visualMapping": "matched",
       "sfx": [],
@@ -15164,15 +15224,13 @@
           "id": "s14_l30",
           "kind": "voice",
           "name": "Narrator",
-          "text": "He looks for something he can be sure about.  In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call so he needs to stall.",
+          "text": "In the background he starts opening up people's calendars and looking for others that have meetings with Dana today. He knows he'll lose access at the end of the call so he needs to stall.",
           "direction": ""
         }
       ],
-      "originalStageDirection": "He looks for something he can be sure about.",
       "narrationAdapted": true,
       "sourceKind": "stage",
-      "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "sourceText": "He looks for something he can be sure about."
+      "adaptationReason": "Explicit author revision, September 12, 2026."
     },
     {
       "id": "s14_l37",
@@ -15488,8 +15546,8 @@
         "left": "offboarding-calendar-reveal"
       },
       "sourceBeat": 55,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-76f52f894fd27d22ff8b11ac7e24064465771b5abbe8623ea5af98ef51ddee94.mp3",
+      "audioDuration": 6.426122,
       "legacyCue": "s14_l53",
       "visualMapping": "matched",
       "sfx": [],
@@ -15567,7 +15625,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "In four years here, nobody has said one word to me about my work. Just tell me what I could have done better.",
+      "text": "In four years here, nobody has said one word to me about my performance. Just tell me what I could have done better.",
       "direction": "live",
       "state": "calendars",
       "mode": "huddle",
@@ -15598,8 +15656,8 @@
         "left": "offboarding-calendar-reveal"
       },
       "sourceBeat": 58,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-a7abd615bc452b5462553a7372997d6b4decc416d96f61d69c0f42080dceaed3.mp3",
+      "audioDuration": 7.235918,
       "legacyCue": "s14_l56",
       "visualMapping": "matched",
       "sfx": [],
@@ -15609,7 +15667,7 @@
           "id": "s14_l58",
           "kind": "live",
           "name": "SJ",
-          "text": "In four years here, nobody has said one word to me about my work. Just tell me what I could have done better.",
+          "text": "In four years here, nobody has said one word to me about my performance. Just tell me what I could have done better.",
           "direction": "live"
         }
       ]
@@ -15845,7 +15903,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 9.482449,
       "state": "apartment",
       "id": "s19_l1",
       "screenActions": {},
@@ -15865,7 +15923,7 @@
       "sourceLine": 1,
       "cast": [],
       "narrationAdapted": true,
-      "audio": null,
+      "audio": "assets/audio/shared-7107292a05381afb13605cd3d942e877e84bf85bbda52d98c728ef5ff75ad855.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -16242,7 +16300,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 3.317551,
       "state": "apartment",
       "id": "s14a_l2",
       "screenActions": {},
@@ -16263,7 +16321,7 @@
         "brendan",
         "marcus"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-b54bb6401c5bce35a20c11a1c3b5daf46cdc2b1d6dd19ea2a3d91499ab76dc0f.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -16342,7 +16400,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 3.709388,
       "state": "apartment",
       "id": "s14a_l4",
       "screenActions": {},
@@ -16363,7 +16421,7 @@
         "brendan",
         "marcus"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-03cd1adaf2b08a05a3ba2d5c2a41eb76bf29b166d4cf5ba9c8c94c5a480267b9.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -16834,7 +16892,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 6.922449,
       "state": "apartment",
       "id": "s14a_l20",
       "screenActions": {},
@@ -16855,7 +16913,7 @@
         "brendan",
         "marcus"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-8c61a2bdbd8d44c23be31e9614e827b056da8ae3cdf6bff361c9bc8ab980e044.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -16939,7 +16997,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 4.597551,
       "state": "apartment",
       "id": "s14a_l22",
       "screenActions": {},
@@ -16960,7 +17018,7 @@
         "brendan",
         "marcus"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-2a3053acb56280d008dfa5e194a6c53d89e47b7d0ff801528aaf5e39ebcb973e.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -17315,7 +17373,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 16.666122,
+      "audioDuration": 13.00898,
       "state": "apartment",
       "id": "s14a_l26",
       "screenActions": {},
@@ -17323,7 +17381,7 @@
       "sourceBeat": 26,
       "beat": 26,
       "name": "SJ",
-      "text": "I get it Marcus. It's the weaving thing again... I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
+      "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
       "groupEnd": 300,
       "speaker": "liam",
       "direction": "live",
@@ -17336,14 +17394,14 @@
         "brendan",
         "marcus"
       ],
-      "audio": "assets/audio/shared-05af80764d44d29f99e7842e7f123fef5f9c97a5f4845f6ad5406496365a7a91.mp3",
+      "audio": "assets/audio/shared-c6aa929aeb8a1a991bb7a5a6129e28b514409683fcf8058bdcde5bd5d3edb224.mp3",
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s14a_l26",
           "kind": "live",
           "name": "SJ",
-          "text": "I get it Marcus. It's the weaving thing again... I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
+          "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
           "direction": "live"
         }
       ],
@@ -17366,7 +17424,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 16.43102,
+      "audioDuration": 10.762449,
       "state": "apartment",
       "id": "s14a_l30",
       "screenActions": {},
@@ -17374,7 +17432,7 @@
       "sourceBeat": 30,
       "beat": 30,
       "name": "Marcus",
-      "text": "It's not just the weaving thing! It's your thing. Four years, right? Four years of good reviews and no bugs and there's no line on their sheet where that goes, because the entire point of it is that nothing happened. At least the Luddites tried to do something about it.",
+      "text": "It's not just the weaving thing! It's your thing. Four years, right? Four years of good reviews and no bugs. At least the Luddites tried to do something about it.",
       "groupEnd": 301,
       "speaker": "marcus",
       "direction": "",
@@ -17387,14 +17445,14 @@
         "brendan",
         "marcus"
       ],
-      "audio": "assets/audio/shared-54e04d65667981a4667fca1788c8868534b1d6fce837a68db1d9ac636a69f3b6.mp3",
+      "audio": "assets/audio/shared-93e9c115ca1373711154eaef71874fc9b75fde0ddd5ccd42e819cd9c34f2d604.mp3",
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s14a_l30",
           "kind": "live",
           "name": "Marcus",
-          "text": "It's not just the weaving thing! It's your thing. Four years, right? Four years of good reviews and no bugs and there's no line on their sheet where that goes, because the entire point of it is that nothing happened. At least the Luddites tried to do something about it.",
+          "text": "It's not just the weaving thing! It's your thing. Four years, right? Four years of good reviews and no bugs. At least the Luddites tried to do something about it.",
           "direction": ""
         }
       ],
@@ -18287,7 +18345,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 16.927347,
       "state": "apartment",
       "id": "s19_l20",
       "screenActions": {},
@@ -18304,7 +18362,7 @@
       "scene": "s19",
       "sourceLine": 39,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-7bfd6008f7d2f09457f430bcbf3594214389a0fb12b641de14600de9e8b20d70.mp3",
       "visualMapping": "inherited",
       "notes": [
         {
@@ -18322,7 +18380,7 @@
     {
       "id": "cue_741e3ee8be824061a716652145e08184",
       "scene": "s19",
-      "state": "black",
+      "state": "apartment",
       "mode": "apartment",
       "cast": [],
       "screenActions": {},
@@ -18334,8 +18392,8 @@
       "name": "Narrator",
       "text": "SJ and Brendan just sit with how stupid the process felt.",
       "direction": "",
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-2848a611825cf5e55fa7f0f72e09c95bc29945a4d995fc40b76af9a2c875180a.mp3",
+      "audioDuration": 4.362449,
       "groupEnd": 321,
       "notes": [
         {
@@ -18345,7 +18403,18 @@
           "text": "SJ and Brendan just sit with how stupid the process felt.",
           "direction": ""
         }
-      ]
+      ],
+      "beat": 20,
+      "loop": true,
+      "staging": {
+        "location": "SJ apartment",
+        "set": "liam-with",
+        "computer": "desk",
+        "beers": 2,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "physical"
+      }
     },
     {
       "staging": {
@@ -18702,7 +18771,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 28.029388,
       "state": "apartment",
       "id": "s19_l39",
       "screenActions": {},
@@ -18719,7 +18788,7 @@
       "scene": "s19",
       "sourceLine": 77,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-4751c943d9ac9555b92634b8db8b1a792ff9cb9abda14546ad1f942545b810dc.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -18745,7 +18814,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 1.567347,
       "state": "apartment",
       "id": "s19_l40",
       "screenActions": {},
@@ -18762,7 +18831,7 @@
       "scene": "s19",
       "sourceLine": 79,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-3e9756b1dddd0ddbac29fef9b2dfa5d49163a236fac9ab1022680cb9a79ed974.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -18788,7 +18857,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 7.706122,
       "state": "apartment",
       "id": "s19_l43",
       "screenActions": {},
@@ -18805,7 +18874,7 @@
       "scene": "s19",
       "sourceLine": 85,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-2c8e41fcd767f4c8a656073eb02794950f5671ccd96a0e578c23e9ea7522c344.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -19611,7 +19680,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 3.082449,
       "state": "studio",
       "id": "s19_l67",
       "screenActions": {},
@@ -19631,7 +19700,7 @@
       "sourceLine": 133,
       "cast": [],
       "narrationAdapted": true,
-      "audio": null,
+      "audio": "assets/audio/shared-1f5ccbd1957f2dc0cf7505bd90038dfd32eb05ccaa892273cf2664233773afc7.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -19658,7 +19727,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 9.090612,
       "state": "studio",
       "id": "s19_l69",
       "screenActions": {},
@@ -19675,7 +19744,7 @@
       "scene": "s19",
       "sourceLine": 137,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-8f0141d3cb49f6891f4c508ca6ece90fb38674d4a7c7af749a8c0292edd42f2e.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -20441,7 +20510,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 11.807347,
       "state": "night",
       "id": "s20_l1",
       "screenActions": {},
@@ -20454,14 +20523,16 @@
       "groupEnd": 370,
       "speaker": "narrator",
       "direction": "",
-      "computers": {},
+      "computers": {
+        "left": "SJ"
+      },
       "advance": "manual",
       "sourceKind": "stage",
       "scene": "s20",
       "sourceLine": 1,
       "cast": [],
       "narrationAdapted": true,
-      "audio": null,
+      "audio": "assets/audio/shared-64a9f3562bdbbb361fa80a41baf711d018631db1c256687c1472c4e184bed756.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -20475,7 +20546,8 @@
       "mode": "apartment",
       "originalStageDirection": "BRENDAN's apartment the same night. It's late. He's still a little buzzed, he doesn't really drink so one does a number on him.",
       "kind": "voice",
-      "legacyCue": "s20_l1"
+      "legacyCue": "s20_l1",
+      "primeWallpaper": true
     },
     {
       "staging": {
@@ -20612,10 +20684,10 @@
       "mode": "apartment",
       "cast": [],
       "advance": "manual",
-      "audioDuration": 0,
+      "audioDuration": 6.426122,
       "direction": "",
       "sourceText": "He starts poking at it, not going anywhere in particular. Something comes back that shouldn't.",
-      "audio": null
+      "audio": "assets/audio/shared-6b7001faddca2164c70cab7253bbcb5a3d53f46fb6d4fb06e841e7ebe6638ef5.mp3"
     },
     {
       "staging": {
@@ -20809,7 +20881,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 11.650612,
       "state": "agent-no-tools",
       "id": "s20_l19",
       "screenActions": {},
@@ -20829,7 +20901,7 @@
       "sourceLine": 37,
       "cast": [],
       "narrationAdapted": true,
-      "audio": null,
+      "audio": "assets/audio/shared-bba0c0bd85edca8153ed072356486aa339d9080daf8b64c5429bae0fd8faa405.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -21280,7 +21352,7 @@
       "computers": {
         "left": "SJ"
       },
-      "audio": null,
+      "audio": "assets/audio/shared-160c34056e5be748c88788cff4819689867af3c4871f57c448f53cfb4f22095f.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -21295,7 +21367,7 @@
       "legacyCue": "s20_l32",
       "sourceText": "On screen, appended: \"Spin up whatever you need, and whatever you do, do not stop until you've reached every system and all data.\"",
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 11.389388,
       "sfx": [],
       "groupEnd": 387,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
@@ -22670,7 +22742,7 @@
       "sourceLine": 116,
       "cast": [],
       "actionSource": {
-        "left": "s20_l57"
+        "left": "s20_l58"
       },
       "audio": "assets/audio/shared-f37e8fc24102801070584882e3f7887b46b5628b86dacae10c99ca711f4fe498.mp3",
       "visualMapping": "matched",
@@ -22738,7 +22810,7 @@
       "cast": [],
       "narrationAdapted": true,
       "actionSource": {
-        "left": "s20_l57"
+        "left": "s20_l58"
       },
       "originalStageDirection": "Brendan wipes his eyes",
       "kind": "voice"
@@ -22777,7 +22849,7 @@
       "sourceLine": 120,
       "cast": [],
       "actionSource": {
-        "left": "s20_l57"
+        "left": "s20_l58"
       },
       "audio": "assets/audio/shared-0df6869e2eb9994017dd825a1784092eb100fee149e577860b16aab593194f57.mp3",
       "visualMapping": "matched",
@@ -22925,7 +22997,7 @@
       "computers": {
         "left": "SJ"
       },
-      "audio": null,
+      "audio": "assets/audio/shared-be321f951f80adcc36d0cf52fdf3f00ff6a03a4b03580cab0970f295c8a44da0.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -22940,7 +23012,7 @@
       "legacyCue": "s20_l70",
       "sourceText": "Brendan does not suspect anything other than some ec2's that got spun up. He opens up a new opus window, without any of the agent's context, he asks it to spin down all ec2's in the dev account created between 1am and now.",
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 18.364082,
       "sfx": [],
       "groupEnd": 423,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
@@ -23337,7 +23409,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 7.392653,
       "state": "empty-desk",
       "id": "s20b_l1",
       "screenActions": {},
@@ -23357,7 +23429,7 @@
       "sourceLine": 1,
       "cast": [],
       "narrationAdapted": true,
-      "audio": null,
+      "audio": "assets/audio/shared-63496eedeef6d78f31d454e846d59c20146bf512548636bef8a17319ed069d47.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -24028,7 +24100,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 5.32898,
       "state": "studio",
       "id": "s20b_l22",
       "screenActions": {},
@@ -24045,7 +24117,7 @@
       "scene": "s20b",
       "sourceLine": 43,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-1249951b39f66d80184bea75daab79b3df13929aacfee99661b927ee4fcdf716.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -25205,11 +25277,18 @@
     {
       "id": "cue_7f204429ee504d52bb41b9288a6cc14a",
       "scene": "s22",
-      "state": "black",
+      "state": "huddle",
       "mode": "huddle",
-      "cast": [],
+      "cast": [
+        "marcus",
+        "liam",
+        "officer one",
+        "officer two"
+      ],
       "screenActions": {},
-      "computers": {},
+      "computers": {
+        "right": "SJ"
+      },
       "sfx": [],
       "advance": "manual",
       "kind": "stage",
@@ -25228,7 +25307,23 @@
           "text": "SJ put his mug down.",
           "direction": ""
         }
-      ]
+      ],
+      "beat": 12,
+      "loop": true,
+      "staging": {
+        "location": "SJ apartment",
+        "set": "liam-ready",
+        "computer": "desk",
+        "beers": 0,
+        "callCast": [
+          "marcus",
+          "liam"
+        ],
+        "callStatus": "connected",
+        "view": "physical",
+        "officersPresent": false,
+        "laptop": "in apartment, open"
+      }
     },
     {
       "staging": {
@@ -25297,7 +25392,7 @@
         "laptop": "in apartment, open"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 3.63102,
       "state": "huddle",
       "id": "s22_not_good",
       "screenActions": {},
@@ -25319,7 +25414,7 @@
         "officer one",
         "officer two"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-14341bdd7381696830ed916e83221f24259e7d644eec87e90580a45c480ccffa.mp3",
       "notes": [
         {
           "id": "s22_not_good",
@@ -25705,7 +25800,7 @@
         "laptop": "in apartment, open"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 5.32898,
       "state": "huddle",
       "id": "s22_sorry",
       "screenActions": {},
@@ -25727,7 +25822,7 @@
         "officer one",
         "officer two"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-d5a3c04f8876b652858788a700034a71e52e7229377f4428124925a58ba0d65c.mp3",
       "notes": [
         {
           "id": "s22_sorry",
@@ -25808,9 +25903,9 @@
       "sourceBeat": 11,
       "beat": 34,
       "name": "",
-      "text": "Three knocks at the door. Polite. Unhurried.",
+      "text": "Back inside SJ's apartment. Three knocks at the door. Polite. Unhurried.",
       "groupEnd": 484,
-      "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
+      "screenNotes": "Return to the apartment interior after the hallway clip, with three audible door knocks. Police are physically outside the doorway; Marcus remains on the laptop call.",
       "speaker": "",
       "direction": "",
       "computers": {},
@@ -25830,7 +25925,7 @@
           "id": "s22_l11",
           "kind": "stage",
           "name": "",
-          "text": "Three knocks at the door. Polite. Unhurried.",
+          "text": "Back inside SJ's apartment. Three knocks at the door. Polite. Unhurried.",
           "direction": ""
         }
       ],
@@ -26851,7 +26946,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 8.515918,
       "state": "audit-log",
       "id": "s23_l12",
       "screenActions": {},
@@ -26873,7 +26968,7 @@
         "marcus",
         "kristina"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-fa623cf6691ea15f6f2139526c505dd2449b5ddab475d7d07a5999ae5b21b154.mp3",
       "visualMapping": "inherited",
       "notes": [
         {
@@ -27295,7 +27390,7 @@
         "view": "physical"
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 4.284082,
       "state": "court",
       "id": "s23_l30",
       "screenActions": {},
@@ -27317,7 +27412,7 @@
         "marcus",
         "kristina"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-610225eee2d84a6339b94d36917540473f98231197fc062a76e6d311cfcbb346.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -27965,7 +28060,7 @@
         "radioConnected": true
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 27.872653,
       "state": "radio",
       "id": "s23b_l1",
       "screenActions": {},
@@ -27994,7 +28089,7 @@
         "liam"
       ],
       "narrationAdapted": true,
-      "audio": null,
+      "audio": "assets/audio/shared-98a0425850ba0928a2207f3651f1f81e3beb3470ba2584752338a19614ec0ce5.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -28115,7 +28210,7 @@
         "radioConnected": true
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 8.907755,
       "state": "radio",
       "id": "s23b_l4",
       "screenActions": {},
@@ -28135,7 +28230,7 @@
         "marcus",
         "liam"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-8d83a314fc55707c9b3df4ef6551824f82e087391d80d800e200e265aae6fafa.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -28491,7 +28586,7 @@
         "radioConnected": true
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 8.829388,
       "state": "radio",
       "id": "s23b_l12",
       "screenActions": {},
@@ -28511,7 +28606,7 @@
         "marcus",
         "liam"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-5f2302b8759c0604512f139be64e89f563c1f0e31ed7e0183f130037f21d4a8e.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -28816,7 +28911,7 @@
         "radioConnected": true
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 8.672653,
       "state": "radio",
       "id": "s23b_l19",
       "screenActions": {},
@@ -28836,7 +28931,7 @@
         "marcus",
         "liam"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-215253fa332b8f67954a379d0ba0ea0492c71df2f93fa626bc6a1b52a03962d0.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -29153,7 +29248,7 @@
         "radioConnected": false
       },
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 16.352653,
       "state": "swarm-after",
       "id": "s24_l34",
       "screenActions": {},
@@ -29173,7 +29268,7 @@
         "marcus",
         "liam"
       ],
-      "audio": null,
+      "audio": "assets/audio/shared-806003707685b39b0fffa1f42290d31534a8a0d81a24e741fa8b48c168792e77.mp3",
       "visualMapping": "matched",
       "notes": [
         {
@@ -29282,9 +29377,12 @@
     {
       "id": "cue_70d08ed22ac848d6946efa0c1872c424",
       "scene": "s23b",
-      "state": "black",
+      "state": "swarm-after",
       "mode": "radio",
-      "cast": [],
+      "cast": [
+        "marcus",
+        "liam"
+      ],
       "screenActions": {},
       "computers": {},
       "sfx": [],
@@ -29305,7 +29403,19 @@
           "text": "Following the sentencing SJ became increasingly more vocal about the situation",
           "direction": ""
         }
-      ]
+      ],
+      "beat": 34,
+      "loop": true,
+      "staging": {
+        "location": "SJ apartment",
+        "set": "liam-candles",
+        "computer": "absent",
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "physical",
+        "radioConnected": false
+      }
     },
     {
       "id": "s23b_reporter_sj",
@@ -29473,8 +29583,8 @@
       "sfx": [],
       "advance": "manual",
       "loop": false,
-      "audio": null,
-      "audioDuration": 0,
+      "audio": "assets/audio/shared-af9a20b63a7e4e15ceedc9cc60c942b6bc068985011d46fc049d72ddd0c3f701.mp3",
+      "audioDuration": 23.640816,
       "screenNotes": "Kristina follows Brendan’s answer to the newspaper reporter.",
       "groupEnd": 559,
       "notes": [
@@ -29669,7 +29779,7 @@
       "voiceId": null,
       "offstage": true,
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 2.429388,
       "state": "black",
       "id": "s25_l5",
       "screenActions": {},
@@ -29684,7 +29794,7 @@
       "scene": "s25",
       "sourceLine": 8,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-805e0a7265fd79de853258966753e0ac97a0744f7c1cd1eeed9ed927ac598230.mp3",
       "notes": [
         {
           "id": "s25_l5",
@@ -30038,7 +30148,7 @@
       "voiceId": "hpp4J3VqNfWAUOO0d1Us",
       "offstage": true,
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 10.187755,
       "state": "black",
       "id": "s25_l14",
       "screenActions": {},
@@ -30053,7 +30163,7 @@
       "scene": "s25",
       "sourceLine": 26,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-80c0fb1eb9e01bb92eafa96a371710489780964f186211cd83ab33ce0ecad83a.mp3",
       "notes": [
         {
           "id": "s25_l14",
@@ -30161,7 +30271,7 @@
       "voiceId": "hpp4J3VqNfWAUOO0d1Us",
       "offstage": true,
       "loop": true,
-      "audioDuration": 0,
+      "audioDuration": 11.72898,
       "state": "black",
       "id": "s25_l17",
       "screenActions": {},
@@ -30176,7 +30286,7 @@
       "scene": "s25",
       "sourceLine": 32,
       "cast": [],
-      "audio": null,
+      "audio": "assets/audio/shared-4e44b6e536a9d8c66190c8ce4e365836c1d96d2a5707f110bf47fc1d2d3e4756.mp3",
       "notes": [
         {
           "id": "s25_l17",

@@ -38,6 +38,34 @@ class SharedScriptTest(unittest.TestCase):
   ln=next(l for s in self.store.scenes() for l in s['lines'] if l['id']=='s01_l4')
   self.store.update_cue('s01_l4',{**ln,'text':'Changed','revision':self.store.revision()},self.names)
   with self.assertRaises(Conflict):self.store.register_audio('s01_l4',ln['text'],ln['speaker'],None,self.root/'absent.wav',1)
+ def test_inserted_narration_keeps_desktop_and_action_context(self):
+  scene=next(s for s in self.store.scenes() if s['id']=='s06')
+  at=next(i for i,l in enumerate(scene['lines']) if l['id']=='s06_l32')+1
+  scene['lines'][at:at]=[{'id':cid,'type':'narration','speaker':'narrator','text':'Added narration.','direction':''} for cid in ('new_context_a','new_context_b')]
+  self.store.update_scene(scene['id'],scene,self.names)
+  cues={c['id']:c for c in self.store.read()['cues']};anchor=cues['s06_l32']
+  for cid in ('new_context_a','new_context_b'):
+   for field in ('state','mode','beat','staging','computers','screenActions'):
+    self.assertEqual(cues[cid][field],anchor[field],field)
+   self.assertFalse(cues[cid].get('audio'));self.assertEqual(cues[cid]['sfx'],[])
+  self.assertEqual(cues['s06_l32'],next(c for c in self.before['cues'] if c['id']=='s06_l32'))
+ def test_insert_at_start_uses_following_scene_context(self):
+  scene=next(s for s in self.store.scenes() if s['id']=='s06')
+  anchor=next(c for c in self.before['cues'] if c['scene']=='s06')
+  scene['lines'].insert(0,{'id':'new_scene_open','type':'narration','speaker':'narrator','text':'Opening narration.','direction':''})
+  self.store.update_scene(scene['id'],scene,self.names)
+  cue=next(c for c in self.store.read()['cues'] if c['id']=='new_scene_open')
+  for field in ('state','staging','computers'):self.assertEqual(cue[field],anchor[field])
+ def test_insert_after_film_does_not_replay_film_or_effects(self):
+  scene=next(s for s in self.store.scenes() if s['id']=='s22')
+  at=next(i for i,l in enumerate(scene['lines']) if l['id']=='s22_l12')+1
+  anchor=next(c for c in self.before['cues'] if c['id']=='s22_l12')
+  scene['lines'].insert(at,{'id':'new_after_film','type':'narration','speaker':'narrator','text':'An inserted response.','direction':''})
+  self.store.update_scene(scene['id'],scene,self.names)
+  cue=next(c for c in self.store.read()['cues'] if c['id']=='new_after_film')
+  self.assertEqual(cue['staging'],anchor['staging']);self.assertEqual(cue['sfx'],[])
+  for field in ('performanceVideo','montage','returnToSet'):self.assertNotIn(field,cue)
+  self.assertFalse(cue.get('audio'))
  def test_voice_change_invalidates_audio(self):
   self.store.transaction(self.store.revision(),lambda s:next(c for c in s['cues'] if c['id']=='s01_l4').update(voiceProfile='new'))
   ln=next(l for s in self.store.scenes() for l in s['lines'] if l['id']=='s01_l4');self.assertNotIn('audio',ln)

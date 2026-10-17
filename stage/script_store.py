@@ -20,6 +20,13 @@ def raw_line(c):
 
 DERIVED={'cues':('groupEnd','notes'),'scenes':('start','count')}
 LIGHTING_DESKS={'kristina','brendan','liam','marcus'}
+# New dialogue continues the surrounding scene. Film, sound-effect and voice
+# fields are deliberately excluded: inserting a line must not replay a clip.
+VISUAL_CONTEXT=('state','mode','beat','loop','cast','staging','computers',
+                'screenActions','actionSource','screenNotes','claudeSession',
+                'claudeComplete','sharedPR','prFocus','primeWallpaper',
+                'revisionCode','rehireNo','latestScreen','offstage','lighting',
+                'backgroundMusic')
 
 def _bare(x,skip): return {k:v for k,v in x.items() if k not in skip}
 
@@ -205,6 +212,13 @@ class ScriptStore:
         if 'interrupts' in line:
             if line['interrupts']: c['interrupts']=True
             else: c.pop('interrupts',None)
+    def inserted_cue(self,cid,scene,anchor=None):
+        c={'state':'black','mode':scene.get('mode','physical'),'cast':[],
+           'screenActions':{},'computers':{}}
+        if anchor:
+            c.update({key:copy.deepcopy(anchor[key]) for key in VISUAL_CONTEXT if key in anchor})
+        c.update(id=cid,scene=scene['id'],sfx=[],advance='manual',audio=None,audioDuration=0)
+        return c
     def update_scene(self,sid,payload,names):
         def edit(s):
             sc=next(x for x in s['scenes'] if x['id']==sid)
@@ -213,10 +227,17 @@ class ScriptStore:
             if payload.get('setting') or payload.get('narration'): raise ValueError('Add narration as a script line so both apps play it in the same order.')
             if 'lines' not in payload: return
             existing={c['id']:c for c in s['cues'] if c['scene']==sid};new=[]
-            for line in payload['lines']:
+            for at,line in enumerate(payload['lines']):
                 cid=line.get('id') or 'cue_'+uuid.uuid4().hex
                 if any(c['id']==cid and c['scene']!=sid for c in s['cues']): raise ValueError('Cue ID belongs to another scene.')
-                c=copy.deepcopy(existing.get(cid,{'id':cid,'scene':sid,'state':'black','mode':sc.get('mode','physical'),'cast':[],'screenActions':{},'computers':{},'sfx':[],'advance':'manual'}))
+                if cid in existing:
+                    c=copy.deepcopy(existing[cid])
+                else:
+                    previous=new[-1] if new else None
+                    following=next((existing[l['id']] for l in payload['lines'][at+1:]
+                                    if l.get('id') in existing and not existing[l['id']].get('montage')),None)
+                    anchor=previous if previous and not previous.get('montage') else following or previous or next(iter(existing.values()),None)
+                    c=self.inserted_cue(cid,sc,anchor)
                 self.apply_line(c,line,names);new.append(c)
             s['cues']=[c for c in s['cues'] if c['scene']!=sid]+new
         return self.transaction(payload.get('revision'),edit)

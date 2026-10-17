@@ -60,11 +60,11 @@ export function cueAudio(cue, override = {}) {
   return cue.montage || cue.audio || null;
 }
 
-// Keep filmed sequences even when incidental stage-direction stops are skipped.
+// Keep filmed sequences and authored sound cues when incidental directions are skipped.
 export function playthroughStarts(show, settings, overrides = {}) {
   return show.performanceStarts.filter(i => {
     const c = show.cues[i], o = overrides[c.id] || {};
     return !settings.skipStageDirections || c.kind !== 'stage' || !!c.montage
-      || !!cueAudio(c, o) || !!o.left?.src || !!o.right?.src;
+      || !!c.sfx?.length || !!cueAudio(c, o) || !!o.left?.src || !!o.right?.src;
   });
 }

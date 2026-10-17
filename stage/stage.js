@@ -1,4 +1,4 @@
-import {castFor,readSettings,playbackShow,cueAudio,playbackRate,playthroughStarts} from './playback-settings.js?v=lighting-music-20261014';
+import {castFor,readSettings,playbackShow,cueAudio,playbackRate,playthroughStarts} from './playback-settings.js?v=retain-sound-cues-20261016';
 import {DESKS,lightingAt} from './lighting.js?v=lighting-20261012';
 import {nextCueType} from './next-cue.js?v=next-cue-20261012';
 import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=offboarding-fix-20261011';
@@ -130,7 +130,7 @@ function setPlaybackRate(value){
 $('characterModes').onchange=e=>{if(e.target.dataset.character)setCharacterMode(e.target.dataset.character,e.target.value)};
 $('allGenerated').onclick=()=>{for(const c of cast)settings.modes[c.id]='generated';applyModes()};
 $('defaultCast').onclick=()=>{settings.modes=readSettings(sourceShow).modes;applyModes()};
-$('skipStageDirections').onchange=e=>{settings.skipStageDirections=e.target.checked;persistSettings();render();status(settings.skipStageDirections?'Stage directions skipped · narration and films retained':'Stage directions included')};
+$('skipStageDirections').onchange=e=>{settings.skipStageDirections=e.target.checked;persistSettings();render();status(settings.skipStageDirections?'Stage directions skipped · narration, films and sound effects retained':'Stage directions included')};
 $('showLighting').onchange=e=>{settings.showLighting=e.target.checked;persistSettings();renderLighting()};
 $('speed').oninput=e=>setPlaybackRate(e.target.value);
 $('normalSpeed').onclick=()=>setPlaybackRate(1);
