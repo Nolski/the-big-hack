@@ -50,6 +50,24 @@ test('recorded timing follows the spoken name; live timing keeps the cue clock',
   assert.equal(cueClock({...opening, kind: 'voice'}, 8.9, {...media, getAttribute: () => null}), 8.9);
 });
 
+test('the narrator visibly returns to Reddit through the same browser without restarting the feed', () => {
+  const narrator = cue('s01_l4'), action = actions[narrator.screenActions.left];
+  const paused = sampleOpeningTabs(actions[reply.screenActions.left], 0);
+  assert.equal(narrator.screenClock, 'voice');
+  assert.equal(sampleOpeningTabs(action, 0).tab, 'youtube');
+  assert.deepEqual(sampleOpeningTabs(action, 0).pointer, paused.pointer);
+  assert.equal(sampleOpeningTabs(action, .749).tab, 'youtube');
+  assert.equal(sampleOpeningTabs(action, .85).tab, 'reddit');
+  assert.equal(sampleOpeningTabs(action, .85).click, true);
+  assert.equal(sampleOpeningTabs(action, 2).paused, true, 'YouTube remains paused after switching tabs');
+  assert(!narrator.backgroundMusic);
+  for (const id of ['s01_l1','s01_l5','s01_l6','s01_l7','s01_l9','s01_weekend_reply']) {
+    const held = actions[cue(id).screenActions.left];
+    assert.equal(held.view, 'browser-tabs', 'The browser frame must not change after the tab switch');
+    assert.equal(sampleOpeningTabs(held, 0).tab, 'reddit');
+  }
+});
+
 test('the search continues after the recording ends and freezes when the cue is paused', () => {
   const recorded = {...opening, kind: 'voice'};
   const media = {currentTime: opening.audioDuration, ended: true, getAttribute: () => 'opening.mp3'};

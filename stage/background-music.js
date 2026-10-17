@@ -46,7 +46,8 @@ export class BackgroundMusic {
   }
   applyVolume() {
     const level = this.config?.source === 'computer'
-      ? musicVolume(this.sourceVolume * (this.config.level ?? .55)) : this.scoreVolume;
+      ? musicVolume(this.sourceVolume * (this.config.level ?? .55))
+      : musicVolume(this.scoreVolume * (this.config?.level ?? 1));
     const fade = this.fadeStart == null ? 1
       : musicVolume(1 - (this.audio.currentTime - this.fadeStart) / this.config.fadeOut);
     this.audio.volume = level * fade;

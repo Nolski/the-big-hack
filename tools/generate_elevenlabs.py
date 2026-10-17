@@ -90,8 +90,17 @@ def main():
             try:
                 audio = synthesise(s, v['voiceId'], model, fmt, c['text'])
                 f = Path(tmp) / f"{c['id']}.mp3"; f.write_bytes(audio)
+                provenance = {'type': 'elevenlabs', 'model': model, 'voiceId': v['voiceId'], 'voiceName': v['name']}
+                lead_in = max(0, float(c.get('audioLeadIn', 0)))
+                if lead_in:
+                    padded = Path(tmp) / f"{c['id']}-lead-in.m4a"
+                    subprocess.run(['ffmpeg', '-v', 'error', '-i', str(f), '-af',
+                                    f'adelay={round(lead_in * 1000)}:all=1', '-c:a', 'aac',
+                                    '-b:a', '192k', '-y', str(padded)], check=True, capture_output=True)
+                    f = padded
+                    provenance['leadInSilence'] = lead_in
                 store.register_audio(c['id'], c['text'], c['speaker'], c.get('voiceProfile'), f, duration(f),
-                                     provenance={'type': 'elevenlabs', 'model': model, 'voiceId': v['voiceId'], 'voiceName': v['name']})
+                                     provenance=provenance)
                 left -= len(c['text']); ok += 1
                 print(json.dumps({'n': n, 'id': c['id'], 'speaker': c['speaker'], 'ok': True}), flush=True)
             except (RuntimeError, Conflict, requests.RequestException) as e:

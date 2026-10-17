@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {BackgroundMusic, DEFAULT_MUSIC_VOLUME, musicVolume} from '../background-music.js';
-import {readSettings, playbackShow, playthroughStarts} from '../playback-settings.js';
+import {readSettings, playbackShow, playthroughStarts, cueClock} from '../playback-settings.js';
 
 class TestAudio {
   paused=true;currentTime=0;playbackRate=1;plays=0;
@@ -13,6 +13,49 @@ class TestAudio {
 }
 const config={id:'score',src:'music.mp3'};
 const settle=()=>new Promise(resolve=>setImmediate(resolve));
+
+test('Private Excitement enters between Kristina’s phrases and stops at the time skip',async()=>{
+  const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
+  const start=source.cues.findIndex(c=>c.id==='s01b_l49');
+  const end=source.cues.findIndex(c=>c.id==='s01c_time_jump_to_good_instinct');
+  const first=source.cues[start], config=first.backgroundMusic;
+  assert.equal(start+1,107);assert.equal(end+1,114);
+  assert.equal(first.screenClock,'voice');
+  assert.equal(config.startAt,15);assert.equal(config.startAfter,2.2);
+  assert.equal(config.level,1.4);
+  assert(fs.existsSync(new URL('../'+config.src,import.meta.url)));
+  const audio=new TestAudio(),music=new BackgroundMusic(audio);
+  music.enter(config);
+  assert(Math.abs(audio.volume-.112)<1e-9,'This track plays about 3 dB louder at the default music volume');
+  music.setVolume(0);assert.equal(audio.volume,0,'The Music slider still mutes the boosted track');
+  music.setVolume(.08);
+  const voice={currentTime:2.199,getAttribute:()=>first.audio};
+  const time=cueClock({...first,kind:'voice'},3,voice);
+  music.sync(time,true);await settle();
+  assert.equal(audio.plays,0,'Buffering or an early cue clock must not start the score before the sentence ends');
+  voice.currentTime=2.2;
+  music.sync(cueClock({...first,kind:'voice'},4,voice),true);await settle();
+  assert.equal(audio.plays,1);assert.equal(audio.currentTime,15);
+  music.sync(2.3,false);assert(audio.paused);
+  music.sync(2.3,true);await settle();assert(!audio.paused);
+  for(const skipStageDirections of [false,true]){
+    const settings=readSettings(source,{skipStageDirections});
+    const show=playbackShow(source,settings);
+    const starts=playthroughStarts(show,settings);
+    const transport=new BackgroundMusic(new TestAudio());
+    transport.enter(config);transport.sync(2.2,true);await settle();
+    transport.audio.currentTime=23;
+    for(const index of starts.filter(i=>i>start&&i<end)){
+      assert.equal(show.cues[index].backgroundMusic.id,config.id);
+      transport.enter(show.cues[index].backgroundMusic,true);
+      assert.equal(transport.audio.currentTime,23,'GO carries the track across dialogue and skipped directions');
+    }
+    transport.enter(show.cues[end].backgroundMusic,true);
+    assert(transport.audio.paused);assert.equal(transport.audio.src,undefined);
+  }
+  assert(!source.cues[start-1].backgroundMusic);
+  assert(!source.cues[end].backgroundMusic,'The montage keeps its own existing soundtrack');
+});
 
 test('GO carries the score; Pause, live lines and Replay preserve the intended transport',async()=>{
   const audio=new TestAudio(),music=new BackgroundMusic(audio);

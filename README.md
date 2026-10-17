@@ -60,7 +60,7 @@ Old storyboard tools and duplicate Markdown/YAML drafts were retired. Previous v
 
 ## Optional audio and PDF tools
 
-`tools/generate_elevenlabs.py` reads the same script and skips matching recordings. It requires `requests`, `ffprobe`, an `ELEVENLABS_API_KEY` environment variable, and paid ElevenLabs credits. Voice assignments are in `tools/elevenlabs-voices.json`. Preview the work without spending credits:
+`tools/generate_elevenlabs.py` reads the same script and skips matching recordings. It requires `requests`, `ffprobe` (and `ffmpeg` for cues with a sound before the dialogue), an `ELEVENLABS_API_KEY` environment variable, and paid ElevenLabs credits. Voice assignments are in `tools/elevenlabs-voices.json`. Preview the work without spending credits:
 
 ```sh
 python3 tools/generate_elevenlabs.py --dry-run

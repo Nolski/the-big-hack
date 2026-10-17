@@ -1,0 +1,17 @@
+{
+  "sourceStart": 1.6,
+  "sourceDuration": 3.2,
+  "sourceSha256": "2e0198c6a7819d0296c360e57a5d2517fbfd7e6be86ee1f9cd45395791ed1227",
+  "gainDb": 6,
+  "duration": 2.8,
+  "tail": "Dense 1.2-second damped convolution reverb, energy normalized to 0.95; wet gain 1.1; final fade from 1.95 to 2.8 seconds; oversampled peak limiting.",
+  "impulse": {
+    "seed": 47,
+    "sampleRate": 48000,
+    "decayExponent": 5.2,
+    "highDamping": 0.28,
+    "lowDamping": 0.035,
+    "preDelay": 0.012
+  },
+  "cue": "s06_l47"
+}

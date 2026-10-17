@@ -2208,14 +2208,18 @@
       "text": "...It's zero. Wait. The ID's zero until the transaction commits. So if two signups get here together... they're both asking for session zero. Oh, fuck. That's it.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-697176d77a24312c99c8e5cb579d85dfff758434c0d0d1c67a9389ffa72df551.mp3",
-      "duration": 13.557551,
-      "audioSha256": "697176d77a24312c99c8e5cb579d85dfff758434c0d0d1c67a9389ffa72df551",
+      "audio": "assets/audio/shared-7a26e0161828573a810b8c7cc3149df52e464a250ef43e2e9202913203e09670.m4a",
+      "duration": 16.32,
+      "audioSha256": "7a26e0161828573a810b8c7cc3149df52e464a250ef43e2e9202913203e09670",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
         "voiceId": "RDSy0QN68yhrjuOgqzQ4",
-        "voiceName": "Dr. Quibble, Nerdy Cartoon Scientist"
+        "voiceName": "Dr. Quibble, Nerdy Cartoon Scientist",
+        "sourceAudio": "assets/audio/shared-697176d77a24312c99c8e5cb579d85dfff758434c0d0d1c67a9389ffa72df551.mp3",
+        "sourceAudioSha256": "697176d77a24312c99c8e5cb579d85dfff758434c0d0d1c67a9389ffa72df551",
+        "leadInSilence": 2.8,
+        "processing": "Unchanged original SJ performance, preceded by 2.8 seconds of silence for the separately played realization effect. This replaces the earlier 2.2-second lead-in; no cumulative padding."
       }
     },
     "s06_l49": {
@@ -14068,20 +14072,29 @@
       }
     },
     "s01b_l35": {
-      "text": "Slack pings back: \"PROJ-412 Closed.\" The card switches to Done. Three quarters of a second, then the song plays.",
-      "speaker": "",
+      "text": "The Jira ticket shifted over to closed/done state.",
+      "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-b955318eb500aa83e344b5c400bbd997eb5e269a8a6cc89851e5f712b47599bc.m4a",
-      "duration": 12.113,
-      "audioSha256": "b955318eb500aa83e344b5c400bbd997eb5e269a8a6cc89851e5f712b47599bc",
+      "audio": "assets/audio/shared-507e32a0d48e369d94e6d8f7b4a28c824d0e160721b719396dca8c8b23d0caf6.m4a",
+      "duration": 15.442,
+      "audioSha256": "507e32a0d48e369d94e6d8f7b4a28c824d0e160721b719396dca8c8b23d0caf6",
       "provenance": {
-        "type": "user-supplied-music",
-        "title": "Jira Ticket Closed!",
-        "sourceStart": 5.5,
-        "leadInSilence": 1.2,
-        "ticketClosedAt": 0.45,
-        "sourceSha256": "9b7bc8aba66838527ec7b91598ca6ff3ffc9a8c6e6d7a56670d4b01d0795475b",
-        "processing": "Trim from 5.5 seconds to end; reset audio timestamps; prepend 1.2 seconds of silence: ticket closes at 0.45, then a 0.75-second beat before music. AAC 48 kHz stereo. No narration."
+        "type": "elevenlabs",
+        "model": "eleven_v4",
+        "voiceId": "Q4oILuo4P8VeXtE6FMLI",
+        "voiceName": "Matthew Schmitz, Warm Mountain Man",
+        "narrationAsset": "assets/audio/jira-ticket-narrator.mp3",
+        "narrationSha256": "f29ac5e92af114839c94e8e0d0bdddcceadc7a5de0dd32420e325ee2e9bb6557",
+        "narrationDuration": 4.029,
+        "music": {
+          "type": "user-supplied-music",
+          "title": "Jira Ticket Closed!",
+          "sourceStart": 5.5,
+          "startsAt": 4.529,
+          "gapAfterNarration": 0.5,
+          "sourceSha256": "9b7bc8aba66838527ec7b91598ca6ff3ffc9a8c6e6d7a56670d4b01d0795475b"
+        },
+        "processing": "Trim trailing narrator silence at 4.029 seconds; add exactly 0.5 seconds of silence, then concatenate the supplied song from 5.5 seconds. No crossfade. AAC 48 kHz stereo."
       }
     },
     "s11b_l43": {

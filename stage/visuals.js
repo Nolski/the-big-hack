@@ -1,6 +1,6 @@
 import {redditBody} from './reddit.js?v=pace-20260918';
 import {isWorm,wormMarkup} from './worm.js';
-import {renderScreenAction} from './screen-actions.js?v=jira-beat075-20261016';
+import {renderScreenAction} from './screen-actions.js?v=reddit-return-20261017';
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names={hr:'Dana',ceo:'CEO',kristina:'Kristina',kara:'Kara',liam:'SJ',brendan:'Brendan',marcus:'Marcus',prosecutor:'Prosecutor',judge:'Judge',counsel:'Counsel','officer one':'Officer One','officer two':'Officer Two'};
 const portraits={kara:'kara','officer one':'officer-one','officer two':'officer-two'};
@@ -261,7 +261,7 @@ export function counterProfile(c){
  return {base:later[c.scene]||0,rate:later[c.scene]?5000:0,visible:!!later[c.scene]&&c.state!=='black'&&!c.offstage&&!isWorm(c),large:false};
 }
 
-const desktopPortraits={SJ:'sj-desktop',Brendan:'brendan-desktop',Marcus:'marcus',Kristina:'kristina',Kara:'kara',Dana:'hr'};
+const desktopPortraits={SJ:'sj-desktop',Brendan:'brendan-desktop',Marcus:'marcus',Kristina:'kristina-desktop',Kara:'kara',Dana:'hr'};
 // Decorative desktop chrome stays outside the authored 1920×1080 app canvas.
 function desktopChrome(owner){
  const icon=(kind,label)=>`<div class="desktopIcon"><span class="desktopGlyph ${kind}">${kind==='file'?'≡':''}</span><span>${label}</span></div>`;

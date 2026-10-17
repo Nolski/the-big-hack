@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import {jiraCloseState,drawJiraClose,renderJiraClose,JIRA_CLOSED_AT,JIRA_MUSIC_AT} from '../jira-close.js';
+import {jiraCloseState,drawJiraClose,renderJiraClose,JIRA_CLOSED_AT} from '../jira-close.js';
 import {playbackShow,readSettings,playthroughStarts,cueAudio,cueClock} from '../playback-settings.js';
 import {nextCueType} from '../next-cue.js';
 
@@ -10,35 +10,39 @@ const root=new URL('../',import.meta.url);
 const source=JSON.parse(fs.readFileSync(new URL('show.json',root)));
 const manifest=JSON.parse(fs.readFileSync(new URL('generated-voices.json',root))).recordings;
 
-test('ticket closure is a retained music cue, with the narrator recording replaced',()=>{
+test('ticket closure is narration followed by the song on the same retained cue',()=>{
   for(const skipStageDirections of [false,true]){
     const settings=readSettings(source,{skipStageDirections});
     const show=playbackShow(source,settings,manifest);
     const index=show.cues.findIndex(c=>c.id==='s01b_l35'),cue=show.cues[index];
-    assert.equal(index+1,99);assert.equal(cue.kind,'stage');assert.equal(cue.speaker,'');
-    assert.equal(cue.audioRole,'music');assert.equal(cue.screenClock,'audio');
+    assert.equal(index+1,99);assert.equal(cue.kind,'voice');assert.equal(cue.speaker,'narrator');
+    assert.equal(cue.text,'The Jira ticket shifted over to closed/done state.');
+    assert.equal(cue.audioRole,'narration-music');assert.equal(cue.screenClock,'audio');
     assert.equal(cue.screenActions.left,'jira-close');
     assert(playthroughStarts(show,settings).includes(index));
     assert.equal(cueAudio(cue),manifest[cue.id].audio);
-    assert.equal(manifest[cue.id].provenance.type,'user-supplied-music');
-    assert.equal(manifest[cue.id].provenance.sourceStart,5.5);
-    assert.equal(manifest[cue.id].provenance.leadInSilence,JIRA_MUSIC_AT);
-    assert(cue.audioDuration>=12&&cue.audioDuration<12.2);
+    const provenance=manifest[cue.id].provenance;
+    assert.equal(provenance.type,'elevenlabs');
+    assert.equal(provenance.music.sourceStart,5.5);
+    assert.equal(provenance.music.startsAt,provenance.narrationDuration+.5);
+    assert.equal(provenance.music.gapAfterNarration,.5);
+    assert(cue.audioDuration>provenance.narrationDuration+10);
+    assert(fs.existsSync(new URL(provenance.narrationAsset,root)));
     assert(fs.existsSync(new URL(cue.audio,root)));
-    assert.equal(nextCueType(show.cues[index-1],cue).label,'Music / visual');
+    assert.equal(nextCueType(show.cues[index-1],cue).label,'Narration');
     if(skipStageDirections)assert.equal(playthroughStarts(show,settings).find(i=>i>index),index+2);
   }
 });
 
-test('automatic closure snaps into Done, then the song starts after a short pause',()=>{
+test('automatic closure snaps into Done during the narration; linked tickets stay separate',()=>{
   assert.equal(jiraCloseState(0).primary,0);
   assert.equal(jiraCloseState(JIRA_CLOSED_AT-.001).confirmed,false);
   assert.equal(jiraCloseState(JIRA_CLOSED_AT).confirmed,true);
   assert.equal(jiraCloseState(JIRA_CLOSED_AT-.001).primary,0);
   assert.equal(jiraCloseState(JIRA_CLOSED_AT).primary,1,'No intermediate drag position');
-  assert(Math.abs(JIRA_MUSIC_AT-JIRA_CLOSED_AT-.75)<1e-9,'Three-quarter-second pause after the closed state appears');
-  assert.equal(jiraCloseState(JIRA_MUSIC_AT).primary,1);
-  assert.deepEqual(jiraCloseState(JIRA_MUSIC_AT).linked,[0,0,0]);
+  const musicAt=manifest.s01b_l35.provenance.music.startsAt;
+  assert.equal(jiraCloseState(musicAt).primary,1);
+  assert.deepEqual(jiraCloseState(musicAt).linked,[0,0,0]);
   assert.deepEqual(jiraCloseState(30).linked,[0,0,0],'The other tickets cannot distract from this beat');
   assert.deepEqual(jiraCloseState(0,true).linked,[1,1,1],'The linked-ticket result stays on its separate cue');
   assert.equal(jiraCloseState(0,true).linkedNotice,true);

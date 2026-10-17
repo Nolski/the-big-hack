@@ -1,6 +1,6 @@
 // Pure playback helpers. The authored show stays intact; cast choices only
 // determine which cues need their own recording and operator GO button.
-import {musicVolume} from './background-music.js?v=score-fades-20261016';
+import {musicVolume} from './background-music.js?v=music-levels-20261017';
 // Follow the recording, then let a visual finish after the last spoken word.
 // The tail uses cue elapsed time so Pause, Resume and speed changes still work.
 export function cueClock(cue, elapsed, media, endedAt = null) {

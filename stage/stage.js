@@ -1,9 +1,9 @@
-import {castFor,readSettings,playbackShow,cueAudio,playbackRate,playthroughStarts,playthroughIndex,cueClock} from './playback-settings.js?v=jira-beat075-20261016';
+import {castFor,readSettings,playbackShow,cueAudio,playbackRate,playthroughStarts,playthroughIndex,cueClock} from './playback-settings.js?v=sj-realization-tail-20261017';
 import {DESKS,lightingAt} from './lighting.js?v=lighting-20261012';
-import {nextCueType} from './next-cue.js?v=jira-beat075-20261016';
-import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=jira-beat075-20261016';
-import {screenLabel,actionDuration,actions,sampleAction} from './screen-actions.js?v=jira-beat075-20261016';
-import {BackgroundMusic} from './background-music.js?v=score-fades-20261016';
+import {nextCueType} from './next-cue.js?v=sj-realization-tail-20261017';
+import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=sj-realization-tail-20261017';
+import {screenLabel,actionDuration,actions,sampleAction} from './screen-actions.js?v=sj-realization-tail-20261017';
+import {BackgroundMusic} from './background-music.js?v=music-levels-20261017';
 const $=id=>document.getElementById(id), controller=controllerId();
 localStorage.setItem('big-hack-display-controller',controller);
 const channel=new BroadcastChannel('big-hack-stage-v2:'+controller);
@@ -34,7 +34,7 @@ function controllerId(){
 let audio=new Audio(),sfx=[],elapsedShow=0,timerStart=0,lastScene='',lastRail='',lastAudio='',heartbeat={},notesSize=Number(localStorage.getItem('big-hack-notes-size')||32);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cue=()=>show.cues[state.index];
-const effectiveRate=()=>cue().montage||cue().audioRole==='music'?1:state.rate;
+const effectiveRate=()=>cue().montage||cue().audioLeadIn>0||['music','narration-music'].includes(cue().audioRole)?1:state.rate;
 const elapsed=()=>state.elapsed+(state.running?(Date.now()-state.anchor)/1000*effectiveRate():0);
 const screenTime=()=>cueClock(cue(),elapsed(),audio,state.voiceEndedAt);
 function payload(){const profile=counterProfile(cue());return {...state,rate:effectiveRate(),controller,mediaRunning:!audio.paused&&!audio.ended,audioTime:audio.currentTime||0,audioDuration:Number.isFinite(audio.duration)?audio.duration:(cue().audioDuration||0),counterValue:Math.floor((state.counterBase??profile.base)+elapsed()*profile.rate),workerElapsed:(state.workerBase||0)+elapsed(),screenElapsed:Object.fromEntries(['left','right'].map(side=>[side,(state.screenBase[side]||0)+screenTime()])),elapsed:cue().montage&&audio.getAttribute('src')?audio.currentTime:elapsed(),sentAt:Date.now(),cue:{...cue(),isSpeaking:state.running&&!state.blackout&&!audio.paused&&!audio.ended&&!!audio.getAttribute('src')},override:overrides[cue().id]||{}}}

@@ -1,6 +1,5 @@
-// Automatic updates snap into place; the song follows a short silent beat.
+// Automatic updates snap into place while the narrator describes the result.
 export const JIRA_CLOSED_AT = .45;
-export const JIRA_MUSIC_AT = 1.2;
 export function jiraCloseState(seconds, complete = false) {
   const time = complete ? 20 : Math.max(0, seconds);
   const closed = time >= JIRA_CLOSED_AT;

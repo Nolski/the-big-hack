@@ -963,7 +963,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-58fc9b1617154ede",
+  "scriptRevision": "shared-1ddac0d046fc46f0",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -1053,7 +1053,9 @@
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-reddit"
+      },
       "sourceBeat": 1,
       "audio": null,
       "audioDuration": 0,
@@ -1244,7 +1246,9 @@
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-return-reddit"
+      },
       "sourceBeat": 4,
       "audio": "assets/audio/shared-07a554722b6dee03fc05982540f25b4483aa9f0af820f9c03f88a121553fbda2.mp3",
       "audioDuration": 2.76898,
@@ -1262,7 +1266,9 @@
         }
       ],
       "originalStageDirection": "He is very obviously not eating. He doesn't so much as glance at the call, the memes keep scrolling on the big monitor, he keeps chuckling at reddit.",
-      "sourceText": "He is very obviously not eating. He doesn't so much as glance at the call, the memes keep scrolling on the big monitor, he keeps chuckling at reddit."
+      "sourceText": "He is very obviously not eating. He doesn't so much as glance at the call, the memes keep scrolling on the big monitor, he keeps chuckling at reddit.",
+      "screenClock": "voice",
+      "screenNotes": "SJ moves the pointer from the paused YouTube player to the Reddit tab and clicks it at 0.85 seconds. The browser frame stays in place, and the feed resumes at the exact position where he stopped to find the music."
     },
     {
       "id": "s01_l5",
@@ -1302,7 +1308,9 @@
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-reddit"
+      },
       "sourceBeat": 5,
       "audio": "assets/audio/shared-12c750188ee266800117d2e5c0d5034ac96731757073474d81506736dc6dc5d1.mp3",
       "audioDuration": 15.725714,
@@ -1358,7 +1366,9 @@
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-reddit"
+      },
       "sourceBeat": 6,
       "audio": "assets/audio/shared-f45fc118d40e6f0cca4dc1ecf62c0483583a7218b0d7e4acdb57546f3fc6cbe4.mp3",
       "audioDuration": 8.045714,
@@ -1414,7 +1424,9 @@
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-reddit"
+      },
       "sourceBeat": 7,
       "audio": "assets/audio/shared-5251eb4d508f0c4b44fed8b580d3742b53c2b5d74a0b3d38691e1988b7598351.mp3",
       "audioDuration": 5.799184,
@@ -1470,7 +1482,9 @@
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-reddit"
+      },
       "sourceBeat": 9,
       "audio": "assets/audio/shared-62431181df9143f8db2ab738665f5f249a79f22acdcaea85ceea718499fa63e3.mp3",
       "audioDuration": 2.429388,
@@ -1526,7 +1540,9 @@
         "left": "SJ",
         "right": "SJ"
       },
-      "screenActions": {},
+      "screenActions": {
+        "left": "opening-reddit"
+      },
       "sourceBeat": 7,
       "audio": "assets/audio/shared-f7919dd37cf6c83edf64fdc2aa2d5934a8a860dd1372926b730f9cbe4f52ab4d.mp3",
       "audioDuration": 5.799184,
@@ -6579,10 +6595,10 @@
       "id": "s01b_l35",
       "scene": "s01b",
       "beat": 45,
-      "kind": "stage",
-      "speaker": "",
-      "name": "Jira ticket closed",
-      "text": "Slack pings back: \"PROJ-412 Closed.\" The card switches to Done. Three quarters of a second, then the song plays.",
+      "kind": "voice",
+      "speaker": "narrator",
+      "name": "Narrator",
+      "text": "The Jira ticket shifted over to closed/done state.",
       "direction": "",
       "state": "jira-done",
       "mode": "huddle",
@@ -6613,8 +6629,8 @@
         "left": "jira-close"
       },
       "sourceBeat": 35,
-      "audio": "assets/audio/shared-b955318eb500aa83e344b5c400bbd997eb5e269a8a6cc89851e5f712b47599bc.m4a",
-      "audioDuration": 12.113,
+      "audio": "assets/audio/shared-507e32a0d48e369d94e6d8f7b4a28c824d0e160721b719396dca8c8b23d0caf6.m4a",
+      "audioDuration": 15.442,
       "legacyCue": "s01b_l45",
       "visualMapping": "matched",
       "sfx": [],
@@ -6622,17 +6638,17 @@
       "notes": [
         {
           "id": "s01b_l35",
-          "kind": "stage",
-          "name": "Jira ticket closed",
-          "text": "Slack pings back: \"PROJ-412 Closed.\" The card switches to Done. Three quarters of a second, then the song plays.",
+          "kind": "voice",
+          "name": "Narrator",
+          "text": "The Jira ticket shifted over to closed/done state.",
           "direction": ""
         }
       ],
-      "sourceKind": "stage",
+      "sourceKind": "voice",
       "narrationAdapted": false,
-      "audioRole": "music",
+      "audioRole": "narration-music",
       "screenClock": "audio",
-      "screenNotes": "At 0.45 seconds, PROJ-412 instantly switches to Done and Slack confirms it. Hold for 0.75 seconds, then play the song from source timestamp 5.5 seconds. Only PROJ-412 changes in this cue; linked tickets stay for their separate cue. Hold until GO."
+      "screenNotes": "PROJ-412 switches instantly to Done as the narrator speaks. Hold for half a second after his final word, then start the song from source timestamp 5.5 seconds, on the same narrator slide. Only PROJ-412 changes here; linked tickets remain on their separate cue. Hold until GO."
     },
     {
       "id": "s01b_l36",
@@ -7050,7 +7066,17 @@
           "text": "Brendan, this is the future. Do you get that? All the other teams still doing it the old way are going to be left in the dust.",
           "direction": "the refrain, and she means it"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "cursor-private-excitement",
+        "src": "assets/music/private-excitement.m4a",
+        "startAt": 15.0,
+        "loop": false,
+        "startAfter": 2.2,
+        "level": 1.4
+      },
+      "screenClock": "voice",
+      "screenNotes": "Start Private Excitement at source timestamp 0:15 in the pause after “Brendan, this is the future.” and before “Do you get that?” The recorded phrase ends at 2.17 seconds; music enters at 2.20 seconds. Continue under the rest of the conversation, stopping as soon as the time-skip montage begins."
     },
     {
       "id": "s01b_l50",
@@ -7099,7 +7125,14 @@
           "text": "Have you shown SJ this? Because if he's genuinely worried about the tests, this answers his objection. He'd love it.",
           "direction": "bright — the obvious thought"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "cursor-private-excitement",
+        "src": "assets/music/private-excitement.m4a",
+        "startAt": 21.002449,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "id": "s01b_l51",
@@ -7148,7 +7181,14 @@
           "text": "I tried to explain it this morning. I couldn't get very far. I think I need some time with him one on one, where he actually lets me show him.",
           "direction": "live, a beat — the air changes"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "cursor-private-excitement",
+        "src": "assets/music/private-excitement.m4a",
+        "startAt": 28.969796,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "id": "s01b_l52",
@@ -7197,7 +7237,14 @@
           "text": "A pause. Kristina's tile stills.",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "cursor-private-excitement",
+        "src": "assets/music/private-excitement.m4a",
+        "startAt": 37.093878,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "id": "s01b_l56",
@@ -7246,7 +7293,14 @@
           "text": "She sits with it for a half-second",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "cursor-private-excitement",
+        "src": "assets/music/private-excitement.m4a",
+        "startAt": 37.093878,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "id": "s01b_l57",
@@ -7295,7 +7349,14 @@
           "text": "*Sighs* I shouldn't be surprised. …Anyway. I still can't believe we made the functioning slack bot in ten minutes of work. I wonder what I should have it do next!",
           "direction": "brightening again"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "cursor-private-excitement",
+        "src": "assets/music/private-excitement.m4a",
+        "startAt": 37.093878,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "id": "s01b_l58",
@@ -7346,7 +7407,14 @@
       ],
       "lighting": [
         "brendan"
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "cursor-private-excitement",
+        "src": "assets/music/private-excitement.m4a",
+        "startAt": 48.326531,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "id": "s01c_time_jump_to_good_instinct",
@@ -9526,11 +9594,16 @@
         "right": "rng-entropy"
       },
       "sourceBeat": 47,
-      "audio": "assets/audio/shared-697176d77a24312c99c8e5cb579d85dfff758434c0d0d1c67a9389ffa72df551.mp3",
-      "audioDuration": 13.557551,
+      "audio": "assets/audio/shared-7a26e0161828573a810b8c7cc3149df52e464a250ef43e2e9202913203e09670.m4a",
+      "audioDuration": 16.32,
       "legacyCue": "s06_l44",
       "visualMapping": "matched",
-      "sfx": [],
+      "sfx": [
+        {
+          "id": "sj-realization-decay-v2",
+          "level": 1
+        }
+      ],
       "groupEnd": 150,
       "notes": [
         {
@@ -9543,15 +9616,18 @@
       ],
       "claudeSession": "signup-investigation",
       "claudeComplete": true,
-      "screenNotes": "Brendan’s split desktop: Claude investigates continuously on the left; the RNG lookup continues on the right without restarting. The reproduction and fix remain visible after Claude finishes.",
+      "screenNotes": "The realization sound plays first, with an audible room decay that fades smoothly to silence over 2.8 seconds. SJ then says “It’s zero”; the quiet piano begins with his voice. Live SJ waits for the chime to finish. One cue; no extra GO.",
       "backgroundMusic": {
         "id": "good-instinct-piano",
         "src": "assets/music/felt-piano-broken-pulse.mp3",
-        "startAt": 0
+        "startAt": 0,
+        "startAfter": 2.8
       },
       "actionSource": {
         "right": "s06_l32"
-      }
+      },
+      "audioLeadIn": 2.8,
+      "screenClock": "audio"
     },
     {
       "id": "s06_l48",

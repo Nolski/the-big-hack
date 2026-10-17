@@ -1851,6 +1851,99 @@
       "title": "PROJ-412 closed",
       "complete": true,
       "steps": []
+    },
+    "opening-return-reddit": {
+      "view": "browser-tabs",
+      "steps": [],
+      "trackOffset": 17,
+      "pauseAt": 12.17,
+      "side": "left",
+      "title": "Return to Reddit",
+      "cueIds": [
+        "s01_l4"
+      ],
+      "duringCue": "s01_l4",
+      "note": "Begin on the same paused YouTube page and pointer position as SJ’s excuse. Move to the Reddit tab and click it, restoring the feed at the point where he left it.",
+      "frames": [
+        {
+          "at": 0,
+          "tab": "youtube",
+          "pointer": [
+            220,
+            840
+          ],
+          "paused": true,
+          "click": false
+        },
+        {
+          "at": 0.15,
+          "tab": "youtube",
+          "pointer": [
+            220,
+            840
+          ],
+          "paused": true,
+          "click": false
+        },
+        {
+          "at": 0.75,
+          "tab": "youtube",
+          "pointer": [
+            232,
+            26
+          ],
+          "paused": true,
+          "click": false
+        },
+        {
+          "at": 0.85,
+          "tab": "reddit",
+          "pointer": [
+            232,
+            26
+          ],
+          "paused": true,
+          "click": true
+        },
+        {
+          "at": 1.25,
+          "tab": "reddit",
+          "pointer": [
+            500,
+            450
+          ],
+          "paused": true,
+          "click": false
+        }
+      ]
+    },
+    "opening-reddit": {
+      "view": "browser-tabs",
+      "steps": [],
+      "trackOffset": 17,
+      "pauseAt": 12.17,
+      "side": "left",
+      "title": "Reddit feed",
+      "cueIds": [
+        "s01_l1",
+        "s01_l5",
+        "s01_l6",
+        "s01_l7",
+        "s01_l9",
+        "s01_weekend_reply"
+      ],
+      "frames": [
+        {
+          "at": 0,
+          "tab": "reddit",
+          "pointer": [
+            500,
+            450
+          ],
+          "paused": true,
+          "click": false
+        }
+      ]
     }
   }
 }
