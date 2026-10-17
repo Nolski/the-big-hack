@@ -69,7 +69,10 @@ class EditorAPI:
                 notes = [f.stat().st_mtime_ns for f in (st.root/'cut-suggestions').glob('*.json')] if (st.root/'cut-suggestions').exists() else []
                 return {'revision': st.revision(), 'notes': f"{len(notes)}:{max(notes, default=0)}"}
             if route == '/api/history': return st.history_state()
-            if route == '/api/runtime': return {'revision': st.revision(), **runtime(st.root)}
+            if route == '/api/runtime':
+                # ?rate=1.2&live=liam,brendan&generated=marcus, as in the presenter's settings
+                modes = {sp: mode for mode in ('live', 'generated') for sp in str(payload.get(mode, '')).split(',') if sp}
+                return {'revision': st.revision(), **runtime(st.root, {'rate': payload.get('rate', 1), 'modes': modes})}
             if route == '/api/proof':
                 return json.loads(self.progress.read_text()) if self.progress.exists() else {'scenes': {}, 'at': None}
         if route == '/api/proof' and method == 'PUT':

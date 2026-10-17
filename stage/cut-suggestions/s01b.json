@@ -1,6 +1,6 @@
 {
   "scene": "s01b",
-  "approach": "The narration in this scene is already lean: four short lines, and three of them carry the demo on screen. This pass trims the promotion passage, which repeats itself and runs long, and shortens the PROJ-412 confirmation line, keeping every fact. The opening line and the plan-populating line are too short to save two seconds and are left alone.",
+  "approach": "The narration in this scene is already lean: four short lines, three of which carry the demo on screen. The only line with real padding is the promotion passage, which collaborators rewrote to introduce Kevin, so the stale trim is replaced with a fresh one that keeps that introduction. The opening line, the plan-populating line and the already-trimmed PROJ-412 line are left alone.",
   "suggestions": [
     {
       "title": "Kristina opens straight on vibe coding",
@@ -607,31 +607,6 @@
       "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
-      "title": "Tighten the promotion narrator",
-      "kind": "trim",
-      "cues": [
-        "s01b_narrator_promotion"
-      ],
-      "edits": [
-        {
-          "cue": "s01b_narrator_promotion",
-          "text": "Kristina thinks Brendan's way with Opus could be what her team needs to outperform Kevin's. The next time a senior manager role opens up, only one of them will get it. If she can get the whole team coding like Brendan, that'll be the ticket."
-        }
-      ],
-      "why": "\"can't help but feel like\", \"She knows\" and \"She's hopeful\" are padding around the three facts; \"Kevin's team\" repeats \"her team\". Also fixes the \"Brandon\" misspelling.",
-      "keeps": "Opus as Brendan's edge, the rivalry with Kevin's team, one senior manager role and only one of them gets it, getting the whole team coding like Brendan as her ticket.",
-      "risk": "low",
-      "riskWhy": "Same information and the same closing phrase; only the framing words go.",
-      "loses": [
-        "Wording: \"can't help but feel like\", \"She knows\", \"She's hopeful\""
-      ],
-      "reliesOn": [],
-      "against": {
-        "s01b_narrator_promotion": "Kristina can't help but feel like Brandon's adoption of Opus might be what she needs for her team to outperform Kevin's team. She knows the next time a senior manager role opens up, only one of them are going to get the job. She's hopeful if she can get the whole team coding like Brandon, that'll be the ticket."
-      },
-      "number": 580
-    },
-    {
       "title": "Trim the ticket-closed narrator",
       "kind": "trim",
       "cues": [
@@ -655,6 +630,31 @@
         "s01b_l35": "She hits enter. Slack pings back: \"PROJ-412 Closed.\" Behind it, on the board, the card slides over to Done."
       },
       "number": 581
+    },
+    {
+      "title": "Tighten the promotion narrator",
+      "kind": "trim",
+      "cues": [
+        "s01b_narrator_promotion"
+      ],
+      "edits": [
+        {
+          "cue": "s01b_narrator_promotion",
+          "text": "Kristina thinks Brendan's adoption of Opus could help her team outperform Kevin's. Kevin is another engineering manager. Only one of them will get the next senior manager role. If she can get the whole team coding like Brendan, that might be her ticket."
+        }
+      ],
+      "why": "\"might be what her team needs to\" is wordier than \"could help her team\"; \"she knows that when the next senior manager role opens up\" pads the one fact that only one of them gets the next role. Replaces stale #580, written before Kevin was introduced as another engineering manager.",
+      "keeps": "Opus as Brendan's edge, Kristina wanting her team to outperform Kevin's, Kevin being another engineering manager, the single next senior manager role that only one of them gets, and getting the whole team coding like Brendan as her ticket.",
+      "risk": "low",
+      "riskWhy": "Same facts in the same order, with the collaborator's Kevin introduction kept; only framing words go.",
+      "loses": [
+        "Wording: \"might be what her team needs to\", \"she knows that when\", \"opens up\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s01b_narrator_promotion": "Kristina thinks Brendan’s adoption of Opus might be what her team needs to outperform Kevin’s. Kevin is another engineering manager, and she knows that when the next senior manager role opens up, only one of them will get it. If she can get the whole team coding like Brendan, that might be her ticket."
+      },
+      "number": 700
     }
   ],
   "writtenOn": "2026-10-09",

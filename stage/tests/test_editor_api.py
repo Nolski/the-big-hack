@@ -85,6 +85,22 @@ class EditorHTTPTest(unittest.TestCase):
         self.assertLess(now(after)['now'], now(before)['now'])
         self.assertLess(after['nowMinutes'], before['nowMinutes'])
 
+    def test_runtime_follows_playback_settings(self):
+        base = self.request('GET', '/api/runtime')
+        live = {c['id'] for c in base['settings']['cast'] if c['live']}
+        self.assertEqual(live, set(json.loads((serve.ROOT/'show.json').read_text())['liveCast']))
+        faster = self.request('GET', '/api/runtime?rate=2')
+        self.assertEqual(faster['settings']['rate'], 2)
+        self.assertLess(faster['nowMinutes'], base['nowMinutes'])
+        self.assertLess(faster['startMinutes'], base['startMinutes'])
+        self.assertEqual(self.request('GET', '/api/runtime?rate=9')['settings']['rate'], 2)
+        role = sorted(live)[0]
+        recorded = self.request('GET', '/api/runtime?generated=' + role.replace(' ', '%20'))
+        self.assertFalse(next(c for c in recorded['settings']['cast'] if c['id'] == role)['live'])
+        self.assertNotEqual(recorded['nowMinutes'], base['nowMinutes'])
+        narrator_live = self.request('GET', '/api/runtime?live=narrator')
+        self.assertGreater(narrator_live['nowMinutes'], base['nowMinutes'])
+
     def test_cut_suggestions_track_the_script(self):
         script = self.request('GET', '/api/editor')
         scene = next(s for s in script['scenes'] if sum(l['type'] != 'direction' for l in s['lines']) >= 2)

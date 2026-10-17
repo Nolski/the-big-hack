@@ -1,4 +1,4 @@
-import {castFor,readSettings,playbackShow,cueAudio,playbackRate,playthroughStarts,playthroughIndex,cueClock} from './playback-settings.js?v=sj-realization-tail-20261017';
+import {castFor,readSettings,playbackShow,cueAudio,playbackRate,playthroughStarts,playthroughIndex,cueClock,autoAdvances} from './playback-settings.js?v=auto-advance-20261017';
 import {DESKS,lightingAt} from './lighting.js?v=lighting-20261012';
 import {nextCueType} from './next-cue.js?v=sj-realization-tail-20261017';
 import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=sj-realization-tail-20261017';
@@ -55,9 +55,11 @@ audio.addEventListener('timeupdate',updateMusic);
 function stopAudio(){state.voiceEndedAt=null;typingSound.pause();audio.pause();audio.removeAttribute('src');audio.load();for(const a of sfx){a.pause();a.removeAttribute('src');a.load()}sfx=[]}
 const typingSound=new Audio('assets/sfx/typing.mp3');typingSound.loop=true;
 const audioPath=cueAudio;
+// A short beat after a recording ends, so the next cue doesn't land on its last word.
+const AUTO_ADVANCE_DELAY=500;
 async function startAudio(restart=false){
  const serial=state.serial,c=cue(),o=overrides[c.id]||{},src=audioPath(c,o);
- if(restart){stopAudio();lastAudio=src||'';if(src){audio.src=src;audio.preload='auto';audio.volume=state.volume;audio.playbackRate=effectiveRate();audio.preservesPitch=true;audio.onplaying=()=>{if(serial===state.serial)broadcast()};audio.onended=()=>{if(serial===state.serial){state.voiceEndedAt=elapsed();status('Holding · GO when ready');broadcast()}};audio.onerror=()=>{if(serial===state.serial)status('Audio unavailable · Retry with Replay',true)}}
+ if(restart){stopAudio();lastAudio=src||'';if(src){audio.src=src;audio.preload='auto';audio.volume=state.volume;audio.playbackRate=effectiveRate();audio.preservesPitch=true;audio.onplaying=()=>{if(serial===state.serial)broadcast()};audio.onended=()=>{if(serial!==state.serial)return;state.voiceEndedAt=elapsed();if(autoAdvances(c,settings,o)&&nextIndex()<show.cues.length){status((c.montage||c.performanceVideo?'Clip':'Recording')+' finished · moving to next cue');setTimeout(()=>{if(serial===state.serial&&state.running&&!state.blackout&&settings.autoAdvance)navigate(nextIndex(),true)},AUTO_ADVANCE_DELAY)}else status('Holding · GO when ready');broadcast()};audio.onerror=()=>{if(serial===state.serial)status('Audio unavailable · Retry with Replay',true)}}
   for(const item of sfxForCue(c)){const a=new Audio('assets/sfx/'+item.id+'.mp3');a.loop=!!item.loop;a.volume=state.volume*(item.level??.35);a.dataset.level=item.level??.35;sfx.push(a)}
  }
  if(!state.running){music.pause();status(c.kind==='live'?'Live · ready for performer':'Ready · press Start');return;}
@@ -101,7 +103,7 @@ renderCast();renderScenes();renderRail();render();broadcast();
 
 function persistSettings(){localStorage.setItem('big-hack-playback',JSON.stringify(settings))}
 function renderCast(){
- $('skipStageDirections').checked=settings.skipStageDirections;$('showLighting').checked=settings.showLighting;
+ $('skipStageDirections').checked=settings.skipStageDirections;$('autoAdvance').checked=settings.autoAdvance;$('showLighting').checked=settings.showLighting;
  $('musicVolume').value=settings.musicVolume;$('musicVolumeValue').textContent=Math.round(settings.musicVolume*100)+'%';
  $('characterModes').innerHTML=cast.map(c=>{
    const lines=show.cues.filter(q=>q.speaker===c.id&&q.kind!=='stage');
@@ -132,6 +134,7 @@ $('characterModes').onchange=e=>{if(e.target.dataset.character)setCharacterMode(
 $('allGenerated').onclick=()=>{for(const c of cast)settings.modes[c.id]='generated';applyModes()};
 $('defaultCast').onclick=()=>{settings.modes=readSettings(sourceShow).modes;applyModes()};
 $('skipStageDirections').onchange=e=>{settings.skipStageDirections=e.target.checked;persistSettings();const index=playthroughIndex(show,settings,state.index,overrides);if(index!==state.index)navigate(index,state.running);else render();status(settings.skipStageDirections?'Stage directions skipped · narration, films, music and sound effects retained':'Stage directions included')};
+$('autoAdvance').onchange=e=>{settings.autoAdvance=e.target.checked;persistSettings();status(settings.autoAdvance?'Recordings and films advance automatically · live lines wait for GO':'Every cue waits for GO')};
 $('showLighting').onchange=e=>{settings.showLighting=e.target.checked;persistSettings();renderLighting()};
 $('speed').oninput=e=>setPlaybackRate(e.target.value);
 $('normalSpeed').onclick=()=>setPlaybackRate(1);

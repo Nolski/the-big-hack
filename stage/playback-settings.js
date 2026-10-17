@@ -24,7 +24,7 @@ export function castFor(show) {
   return [...cast.values()];
 }
 export function readSettings(show, saved = {}) {
-  return {musicVolume: musicVolume(saved?.musicVolume), skipStageDirections: saved?.skipStageDirections === true, showLighting: saved?.showLighting === true, rate: playbackRate(saved?.rate ?? 1), modes: Object.fromEntries(
+  return {musicVolume: musicVolume(saved?.musicVolume), skipStageDirections: saved?.skipStageDirections === true, autoAdvance: saved?.autoAdvance === true, showLighting: saved?.showLighting === true, rate: playbackRate(saved?.rate ?? 1), modes: Object.fromEntries(
     castFor(show).map(c => [c.id, ['live', 'generated'].includes(saved?.modes?.[c.id])
       ? saved.modes[c.id] : c.defaultMode]))};
 }
@@ -65,6 +65,16 @@ export function cueAudio(cue, override = {}) {
   // Physical filmed performances must use their own dialogue, not separate TTS.
   if (cue.performanceVideo?.physical && cue.performanceVideo.speaker === cue.speaker) return cue.performanceVideo.src;
   return cue.montage || cue.audio || null;
+}
+
+// A finished generated recording, film, or filmed performance moves on by
+// itself. Live lines, stage directions and replacement clips have no reliable
+// end, so they hold.
+export function autoAdvances(cue, settings, override = {}) {
+  const src = cueAudio(cue, override);
+  if (!settings.autoAdvance || !src) return false;
+  if (src === cue.montage || src === cue.performanceVideo?.src) return true;
+  return cue.kind === 'voice' && src === cue.audio;
 }
 
 // Keep media events, but a continuing score does not need another GO stop.

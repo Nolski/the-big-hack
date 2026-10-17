@@ -1,6 +1,6 @@
 {
   "scene": "s23",
-  "approach": "The narration here is fairly lean already, so this pass only tightens wording in three places and keeps every fact. The two opening narrator lines are adjacent and merge into one. Marcus's speech plan keeps the whole Luddite story and loses only connective padding, replacing an earlier trim that cut the weavers and machinery. The short 'He did not share a word' line is left alone.",
+  "approach": "The narration in The Trial is already lean after earlier trims, so this pass offers three small tightenings and keeps every fact. Two open suggestions that edited the prosecutor's dialogue were removed, because character lines are off limits. Marcus's speech plan keeps the whole Luddite story and loses only connective words.",
   "suggestions": [
     {
       "title": "Drop Brendan's 1986 law opener",
@@ -146,31 +146,6 @@
       "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
-      "title": "Trim the prosecutor's preface to the peer feedback",
-      "kind": "trim",
-      "cues": [
-        "s23_l33"
-      ],
-      "edits": [
-        {
-          "cue": "s23_l33",
-          "text": "I'd like to read from the defendant's peer input summary. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\""
-        }
-      ],
-      "why": "'Thank you', 'a line', 'the company's half-year' and 'for the defendant' are padding before the quote.",
-      "keeps": "The quote itself, word for word, and Marcus caught on it in s23_l36 and s23_l37.",
-      "risk": "low",
-      "riskWhy": "Only the lead-in is shortened; the payoff set up in s11c_l34, s14a_l31 and s19_l51 is untouched.",
-      "loses": [
-        "Nothing substantive: 'half-year' as the review period"
-      ],
-      "reliesOn": [],
-      "against": {
-        "s23_l33": "Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\""
-      },
-      "number": 363
-    },
-    {
       "title": "Keep SJ silent at the 09:14 timestamp",
       "kind": "cut",
       "cues": [
@@ -227,31 +202,6 @@
       "number": 365,
       "dismissed": true,
       "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
-    },
-    {
-      "title": "End the timestamp line on the timestamps",
-      "kind": "trim",
-      "cues": [
-        "s23_l11"
-      ],
-      "edits": [
-        {
-          "cue": "s23_l11",
-          "text": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them."
-        }
-      ],
-      "why": "'He started it. And when it was done, he tidied up.' restates the two timestamps as a summary.",
-      "keeps": "Both timestamps, including the 09:14 that SJ reacts to in s23_l12 and that sets up him covering for Brendan in s23b.",
-      "risk": "medium",
-      "riskWhy": "The tag is the prosecutor's own framing and gives SJ's freeze a beat to land on. Without it the actor playing SJ has to find the stillness on the timestamp itself.",
-      "loses": [
-        "Character: the prosecutor's neat 'he tidied up' summary"
-      ],
-      "reliesOn": [],
-      "against": {
-        "s23_l11": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them. He started it. And when it was done, he tidied up."
-      },
-      "number": 366
     },
     {
       "title": "Cut the gallery quip about Marcus",
@@ -333,31 +283,6 @@
       "number": 500
     },
     {
-      "title": "Tighten SJ hearing 09:14",
-      "kind": "trim",
-      "cues": [
-        "s23_l12"
-      ],
-      "edits": [
-        {
-          "cue": "s23_l12",
-          "text": "At the second timestamp, SJ goes still. He knows where the machine was at 09:14, and who was at it. He says nothing."
-        }
-      ],
-      "why": "'and his hands stop' describes what the audience can see the actor do; 'SJ hears' is implied by his reaction, and 'He goes still' and 'sitting at it' are folded together.",
-      "keeps": "SJ reacting to the second timestamp, 09:14, knowing where the machine was and who was at it, and saying nothing.",
-      "risk": "low",
-      "riskWhy": "Only visible stage business and repeated subject openers go.",
-      "loses": [
-        "Wording: 'his hands stop'"
-      ],
-      "reliesOn": [],
-      "against": {
-        "s23_l12": "SJ hears the second timestamp. He goes still and his hands stop. He knows where the machine was at 09:14 and who was sitting at it. He says nothing."
-      },
-      "number": 501
-    },
-    {
       "title": "Tighten Marcus's speech plan, keeping the Luddite story",
       "kind": "trim",
       "cues": [
@@ -381,6 +306,81 @@
         "s23_marcus_speech_plan": "Marcus had a plan. He did work with the police, but he thought he could redeem himself making a passionate speech about labor rights. For the past few hours he's written and rewritten his speech. It works in every piece of the Luddites' story... how they were weavers in the 1700s that had well-paying jobs... about how automation and machinery took their jobs away, and how to feed their families they resorted to violence... he had a beautiful metaphor all lined up."
       },
       "number": 502
+    },
+    {
+      "title": "Tighten the gallery and charges opener",
+      "kind": "trim",
+      "cues": [
+        "s23_l1"
+      ],
+      "edits": [
+        {
+          "cue": "s23_l1",
+          "text": "Kristina and Brendan watch SJ's trial together. The charges start standard, accessing protected systems, then get far worse."
+        }
+      ],
+      "why": "'sit together, watching SJ on trial' folds into 'watch SJ's trial together'. 'The prosecutor lists the charges: first the standard ones' is shown by the counts on screen (s23_l4) and the prosecutor reading them in s23_l5, so the line only needs to say how the charges escalate.",
+      "keeps": "Kristina and Brendan together in the gallery, SJ on trial, the standard charge of accessing protected systems, and the far worse ones to come.",
+      "risk": "low",
+      "riskWhy": "The prosecutor is heard reading counts straight after the stage direction, so naming her in the narration is redundant.",
+      "loses": [
+        "Wording: 'The prosecutor lists the charges', 'sit'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23_l1": "Kristina and Brendan sit together, watching SJ on trial. The prosecutor lists the charges: first the standard ones, accessing protected systems, then far worse."
+      },
+      "number": 840
+    },
+    {
+      "title": "Tighten SJ hearing 09:14",
+      "kind": "trim",
+      "cues": [
+        "s23_l12"
+      ],
+      "edits": [
+        {
+          "cue": "s23_l12",
+          "text": "SJ freezes at 09:14. He knows where the machine was, and who was using it. He says nothing."
+        }
+      ],
+      "why": "'At the second timestamp, SJ goes still' and 'at 09:14' name the same moment twice; the prosecutor has just said 09:14 in s23_l11. Replaces stale #501, written against an older version of this line.",
+      "keeps": "SJ reacting to the 09:14 timestamp, knowing where the machine was and who was using it, and saying nothing (which s23b_l3 relies on).",
+      "risk": "low",
+      "riskWhy": "Only the doubled timestamp reference goes; 'freezes' carries 'goes still'.",
+      "loses": [
+        "Wording: 'the second timestamp'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23_l12": "At the second timestamp, SJ goes still. He knows where the machine was at 09:14, and who was using it. He says nothing."
+      },
+      "number": 841
+    },
+    {
+      "title": "Tighten Marcus's speech plan, keeping the Luddite story",
+      "kind": "trim",
+      "cues": [
+        "s23_marcus_speech_plan"
+      ],
+      "edits": [
+        {
+          "cue": "s23_marcus_speech_plan",
+          "text": "Marcus did work with the police, but he hoped a passionate speech about labor rights would redeem him. He's spent hours rewriting it. Every piece of the Luddites' story... weavers in the 1700s with well-paying jobs... automation and machinery taking those jobs... turning to violence to feed their families... and a beautiful metaphor all lined up."
+        }
+      ],
+      "why": "'Marcus had a plan' announces the plan the next sentence describes. 'It has' and 'and he had' are connective padding in front of the list; 'away' doubles 'taking'. 'he thought ... could' becomes 'he hoped ... would'.",
+      "keeps": "Every Luddite beat: weavers, the 1700s, well-paying jobs, automation and machinery taking the jobs, turning to violence to feed their families. Also the police cooperation, the redemption hope, labor rights, the hours of rewriting, and the beautiful metaphor the judge stops him delivering.",
+      "risk": "low",
+      "riskWhy": "Nothing is dropped and the ellipsis rhythm of the list stays.",
+      "loses": [
+        "Wording: 'Marcus had a plan', 'It has', 'away', 'he had'"
+      ],
+      "reliesOn": [],
+      "against": {
+        "s23_marcus_speech_plan": "Marcus had a plan. He did work with the police, but he thought a passionate speech about labor rights could redeem him. He's spent hours rewriting it. It has every piece of the Luddites' story... weavers in the 1700s with well-paying jobs... automation and machinery taking those jobs away... turning to violence to feed their families... and he had a beautiful metaphor all lined up."
+      },
+      "number": 842
     }
   ],
   "writtenOn": "2026-10-09",

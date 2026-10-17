@@ -4,20 +4,43 @@ runtime-baseline.json holds two delivery rates in seconds per word, pauses
 included, timed line by line from the 7 October read-through: one for live
 lines read by the cast, one for recorded lines played from audio. Every line
 is timed from its word count at its rate. Montages count at their own length.
-The uncut script is kept there as word counts, so the cut uses the same rates.
+The uncut script is kept there as word counts per role, so the cut uses the same rates.
+
+The presenter's playback settings change the estimate: which roles are read
+live and which play from recordings, and the speed recordings play at (the
+recorded rate was measured at 1x). Montages always play at their own length.
 """
 import json, re
 from pathlib import Path
 
 
-def rate(base, kind):
-    return base['secondsPerWord']['live' if kind == 'live' else 'recorded']
+def playback_rate(value):
+    """Same clamp as playbackRate in playback-settings.js."""
+    try: n = float(value)
+    except (TypeError, ValueError): return 1.0
+    return min(2.0, max(0.5, n)) if n == n else 1.0
 
 
-def runtime(root):
+def seconds_per_word(base, settings):
+    """Seconds per word for each role. Roles not in settings['modes'] use the
+    presenter's default: live if they are in the show's liveCast."""
+    live_cast, modes = set(base['_liveCast']), settings.get('modes') or {}
+    speed = playback_rate(settings.get('rate', 1))
+    def is_live(speaker):
+        return modes[speaker] == 'live' if modes.get(speaker) in ('live', 'generated') else speaker in live_cast
+    def per_word(speaker):
+        return base['secondsPerWord']['live'] if is_live(speaker) else base['secondsPerWord']['recorded']/speed
+    per_word.is_live = is_live
+    return per_word
+
+
+def runtime(root, settings=None):
     root = Path(root)
+    settings = settings or {}
     base = json.loads((root/'runtime-baseline.json').read_text())
     show = json.loads((root/'show.json').read_text())
+    base['_liveCast'] = show.get('liveCast', [])
+    per_word = seconds_per_word(base, settings)
     fixed = {f['cue']: f['seconds'] for f in base.get('fixed', [])}
     held, held_was = {}, {}
     for f in base.get('fixed', []): held_was[f['scene']] = held_was.get(f['scene'], 0)+f['seconds']
@@ -26,15 +49,20 @@ def runtime(root):
         duration = c.get('montageDuration', fixed.get(c['id'], 0)) if c.get('montage') else 0
         if duration: held[c['scene']] = held.get(c['scene'], 0)+duration
         if c['kind'] == 'stage' or not c['text'].strip(): continue
-        s = len(c['text'].split())*rate(base, c['kind'])
+        s = len(c['text'].split())*per_word(c['speaker'])
         secs[c['scene']] = secs.get(c['scene'], 0)+s
         line_secs[c['id']] = s
     minutes = lambda s, still=0: round((s+still)/60, 2)
-    spoken_was = lambda s: s['liveWords']*rate(base, 'live')+s['recordedWords']*rate(base, 'recorded')
+    spoken_was = lambda s: sum(n*per_word(sp) for sp, n in s['speakerWords'].items())
     was = {s['id']: s for s in base['scenes']}
     current = {s['id'] for s in show['scenes']}
     budget = base.get('budgets', {})
-    live = {c['name'].upper() for c in show['cues'] if c['kind'] == 'live' and c.get('name')}
+    cast = {}
+    for c in show['cues']:
+        if c['kind'] != 'stage' and c.get('speaker') and c['speaker'] not in cast:
+            cast[c['speaker']] = {'id': c['speaker'], 'name': c.get('name') or c['speaker'],
+                                  'live': per_word.is_live(c['speaker']),
+                                  'defaultLive': c['speaker'] in base['_liveCast']}
     scenes = [{'id': sc['id'], 'title': sc['title'], 'was': minutes(spoken_was(was[sc['id']]), held_was.get(sc['id'], 0)) if sc['id'] in was else 0,
                'now': minutes(secs.get(sc['id'], 0), held.get(sc['id'], 0)), 'fixed': round(held.get(sc['id'], 0)/60, 2),
                'budget': budget.get(sc['id']), 'cut': False,
@@ -42,14 +70,16 @@ def runtime(root):
               for sc in show['scenes']]
     flag_conflicts(scenes, show)
     for sc in scenes:
-        if not sc['cut']: sc['ifDeleted'] = if_deleted(root, sc, scenes, show, base, live, line_secs)
+        if not sc['cut']: sc['ifDeleted'] = if_deleted(root, sc, scenes, show, per_word, line_secs)
     scenes += [{'id': s['id'], 'title': s['title'], 'was': minutes(spoken_was(s), held_was.get(s['id'], 0)), 'now': 0, 'fixed': 0,
                 'budget': 0, 'cut': True}
                for s in base['scenes'] if s['id'] not in current]
     start = minutes(sum(spoken_was(s) for s in base['scenes']), sum(held_was.values()))
     target = base['targetMinutes']
     now = minutes(sum(secs.values()), sum(held.values()))
-    return {'measuredOn': base['measuredOn'], 'secondsPerWord': base['secondsPerWord'], 'startMinutes': start, 'targetMinutes': round(target, 2),
+    return {'measuredOn': base['measuredOn'], 'secondsPerWord': base['secondsPerWord'],
+            'settings': {'rate': playback_rate(settings.get('rate', 1)), 'cast': list(cast.values())},
+            'startMinutes': start, 'targetMinutes': round(target, 2),
             'nowMinutes': now, 'cutMinutes': round(start-now, 2), 'needMinutes': round(start-target, 2),
             'remainingMinutes': round(max(now-target, 0), 2), 'scenes': scenes}
 
@@ -147,7 +177,7 @@ def save_suggestion(root, sid, n, change, show):
     return sug
 
 
-def if_deleted(root, sc, scenes, show, base, live, line_secs):
+def if_deleted(root, sc, scenes, show, per_word, line_secs):
     """What deleting the whole scene would need (written per scene, under
     "ifDeleted" in its cut-suggestions file) and what it would save: the scene's
     stage time, less its montage and any spoken lines the fix moves elsewhere
@@ -156,13 +186,14 @@ def if_deleted(root, sc, scenes, show, base, live, line_secs):
     if not path.exists(): return None
     plan = json.loads(path.read_text()).get('ifDeleted')
     if not plan: return None
+    ids = {c['name'].upper(): c['speaker'] for c in show['cues'] if c.get('name') and c.get('speaker')}
     def spoken(t):
         # Only a line with a speaker ("NARRATOR: ...") is spoken. A stage direction,
         # drafted as "STAGE: ...", "[...]" or with no speaker, takes no spoken time.
-        # A live role's line is read at the live rate, anyone else's is recorded.
+        # Each role's line is timed at that role's live or recorded rate.
         who, sep, words = t.partition(':')
         if not sep or len(who) > 30 or who.strip().upper() in ('STAGE', 'DIRECTION', 'STAGE DIRECTION') or t.lstrip().startswith('['): return 0
-        return len(words.split())*rate(base, 'live' if who.strip().upper() in live else 'recorded')
+        return len(words.split())*per_word(ids.get(who.strip().upper(), who.strip().lower()))
     bridge = sum(spoken(c.get('text') or '') for c in plan.get('changes', []) if c.get('action') == 'add')/60
     mine = {c['id'] for c in show['cues'] if c['scene'] == sc['id']}
     moved_ids = {cid for c in plan.get('changes', []) if c.get('action') == 'move'

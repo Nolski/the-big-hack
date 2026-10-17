@@ -1,6 +1,6 @@
 {
   "scene": "s11c",
-  "approach": "The scene's narration is already lean: the opening line is twelve words and only the long two-agents passage (s11c_l39) has room to shrink. That passage is guardrail material and sets up the ticket-count layoff metric and the single test ticket in s19, so the trim keeps every fact and the model names and only cuts doubled phrasing. Character dialogue is untouched.",
+  "approach": "The scene's narration is already lean: the opening line is twelve words and only the long two-agents passage (s11c_l39) has room to shrink. A collaborator rewrote that passage since the last pass, adding Brendan's Linear ticket count and Kristina's surprise at how far behind SJ is, so the old trim was stale and is replaced by one against the current text. That passage is guardrail material and sets up the ticket-count layoff metric and the single test ticket in s19, so every fact and both model names stay. Character dialogue is untouched.",
   "suggestions": [
     {
       "title": "Cut the SJ-workflow argument, jump to peer feedback",
@@ -278,21 +278,23 @@
       "edits": [
         {
           "cue": "s11c_l39",
-          "text": "Kristina opens Cursor and starts two agents. One checks SJ's velocity in Jira over the last two sprints. The other builds a Linear-to-Jira connector for Brendan's tickets, a job she told him she'd do by hand. She's a little surprised how fast they move. Opus 4.7 finishes tasks noticeably faster than Opus 4.5. Her next meeting chimes. She joins, leaving them running. Before it ends, both agents report done. The connector has copied a test ticket into Jira. She means to check them after the call, and forgets. SJ's ticket count comes back lowest on the team."
+          "text": "Kristina opens Cursor and starts two agents. One checks SJ's velocity in Jira over the last two sprints. The other builds a Linear-to-Jira connector to bring Brendan's tickets into Jira, something she promised him. She's a little surprised how fast they move... Opus 4.7 finishes tasks notably faster than Opus 4.5. Her next meeting chimes. She joins, leaving them running. Before it ends, both agents report done. The connector shows Brendan's Linear ticket count and has copied a test ticket into Jira. SJ's ticket count is the lowest on the team, and further behind than she expected."
         }
       ],
-      "why": "In s11c_l39, 'The first she tasks to look at Jira and check' and 'gets a prompt to build ... and bring Brendan's tickets into Jira' say the agent's job twice; 'something she had told him she would do manually for him' repeats 'him'; 'Both start working, and' and 'notably faster ... at task completion' are padding; 'She joins it' and 'but forgets about them' carry extra words. Also fixes the doubled full stop and lowercase 'opus'.",
-      "keeps": "Every fact stays: Cursor, two agents, SJ's velocity over the last two sprints from Jira, the Linear-to-Jira connector for Brendan's tickets, her promise to do it by hand, her surprise at the speed, Opus 4.7 faster than Opus 4.5, the meeting she leaves them running through, both done before it ends, the single test ticket (s19_l20 payoff), meaning to check and forgetting, SJ's count lowest on the team (s19 layoff metric). The guardrail beat of Kristina using AI herself is unchanged.",
+      "why": "In s11c_l39, 'The first she tasks to look at Jira and check' and 'gets a prompt to build ... and bring' say each agent's job in extra words; 'Both start working, and', 'She joins it' and 'Before the meeting ends ... report they're done' are padding. The closing 'She glances at SJ's productivity, and is a little surprised at just how far behind it is' restates 'SJ's ticket count is the lowest on the team', so the two fold into one sentence at the end, keeping the degree ('further behind than she expected').",
+      "keeps": "Every fact stays: Cursor, two agents, SJ's velocity from Jira over the last two sprints (the s19 layoff metric), the Linear-to-Jira connector for Brendan's tickets and her promise to him, her surprise at the speed, Opus 4.7 notably faster than Opus 4.5 at finishing tasks, the meeting she leaves them running through, both done before it ends, the connector showing Brendan's Linear ticket count, the single test ticket copied into Jira (s19_l20 payoff), SJ lowest on the team and further behind than she expected. Kristina buying in by using the tool is unchanged.",
       "risk": "low",
-      "riskWhy": "Same beats in the same order; only the wording is shorter.",
+      "riskWhy": "Same facts; the only reorder moves SJ's count after the connector so the line ends on SJ, merging it with her surprise at how far behind he is, which leads straight into the montage to the layoffs.",
       "loses": [
-        "Wording: 'The first she tasks to look at Jira', 'something she had told him she would do manually for him', 'at task completion', 'but forgets about them'."
+        "Wording: 'The first she tasks to look at Jira', 'gets a prompt to', 'Both start working, and', 'She glances at SJ's productivity, and is a little surprised at just how far behind it is'."
       ],
-      "reliesOn": [],
+      "reliesOn": [
+        "s19_l20"
+      ],
       "against": {
-        "s11c_l39": "Kristina opens Cursor and starts two agents. The first she tasks to look at Jira and check SJ's velocity over the last two sprints. The other gets a prompt to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had told him she would do manually for him. Both start working, and she's a little surprised how quickly they're moving.. Opus 4.7 is notably faster than opus 4.5 at task completion. Her next meeting chimes. She joins it, leaving them running. Before the meeting ends, both agents report they're done. The connector has copied a test ticket into Jira. She means to check them after the call, but forgets about them. SJ's ticket count is reported as the lowest on the team."
+        "s11c_l39": "Kristina opens Cursor and starts two agents. The first she tasks to look at Jira and check SJ's velocity over the last two sprints. The other gets a prompt to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had promised she would do for him. Both start working, and she's a little surprised how quickly they're moving... Opus 4.7 is notably faster than Opus 4.5 at task completion. Her next meeting chimes. She joins it, leaving them running. Before the meeting ends, both agents report they're done. SJ's ticket count is the lowest on the team. The connector shows Brendan's Linear ticket count, and has copied a test ticket into Jira. She glances at SJ's productivity, and is a little surprised at just how far behind it is."
       },
-      "number": 520
+      "number": 740
     }
   ],
   "writtenOn": "2026-10-09",

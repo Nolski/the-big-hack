@@ -1,6 +1,6 @@
 {
   "scene": "s22",
-  "approach": "The narration in s22 is already lean: three short lines around a scene carried by dialogue. 'SJ had no thing at eleven' is a joke and stays as written, and the opening time-and-place line has nothing worth cutting. The one offer tightens the closing narration while keeping both the seizure of the computers and Marcus working with the police. The earlier trim (#340) dropped the seizure, so it is replaced.",
+  "approach": "The narration in s22 is already lean: three short lines around a scene carried by dialogue. 'SJ had no thing at eleven' is a joke and stays, and the opening time-and-place line has nothing worth cutting. The closing line was rewritten by collaborators to add Marcus's secret plan, so the stale #640 is replaced with one small trim that keeps the seizure, the days of cooperation and the new plan.",
   "suggestions": [
     {
       "title": "Cut Marcus's 'that's you' middle speech",
@@ -345,21 +345,21 @@
       "edits": [
         {
           "cue": "s22_l72",
-          "text": "The police came back for the computers, Mac Studio included. Marcus had been working with them for days."
+          "text": "The police came back for the computers, Mac Studio included. Marcus had worked with them for days, but secretly planned to make amends."
         }
       ],
-      "why": "'came back later' says 'later' twice over, 'the police' is repeated where 'them' will do, and 'for the past few days' pads 'for days'.",
-      "keeps": "The police returning for the computers, the Mac Studio seized, and Marcus having worked with the police for days before the call.",
+      "why": "'had been working' becomes 'had worked', and 'he had a secret plan to make up for it though' becomes 'but secretly planned to make amends', the same turn in fewer words.",
+      "keeps": "The police returning for the computers, the Mac Studio seized, Marcus working with the police for days, and the collaborators' new beat that Marcus has a secret plan to make up for it.",
       "risk": "low",
-      "riskWhy": "Same two facts in the same order; only repeated words go, and the line still reads cleanly aloud.",
+      "riskWhy": "Every fact stays in the same order. 'Secretly planned to make amends' is a little more formal than the collaborator's casual ending; if that tone matters, keep their ending and take only the 'had worked' trim.",
       "loses": [
-        "Wording: 'later', the second 'the police', and 'the past few' before 'days'"
+        "Wording: 'been working', the trailing '...', and the casual 'he had a secret plan to make up for it though'"
       ],
       "reliesOn": [],
       "against": {
-        "s22_l72": "The police came back later for the computers, the Mac Studio included. Marcus had been working with the police for the past few days"
+        "s22_l72": "The police came back for the computers, Mac Studio included. Marcus had been working with them for days... he had a secret plan to make up for it though"
       },
-      "number": 640
+      "number": 820
     }
   ],
   "writtenOn": "2026-10-09",

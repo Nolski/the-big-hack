@@ -1203,10 +1203,51 @@ function scheduleRuntime() {
   runtimeTimer = setTimeout(refreshRuntime, 1200);
 }
 
+// The presenter's playback settings (stage.js), shared through localStorage
+// on this origin: who is live, who is a recording, and the recordings' speed.
+const PLAYBACK_KEY = "big-hack-playback";
+function playbackSettings() {
+  try { return JSON.parse(localStorage.getItem(PLAYBACK_KEY) || "{}") || {}; } catch (e) { return {}; }
+}
+function savePlayback(patch) {
+  try { localStorage.setItem(PLAYBACK_KEY, JSON.stringify({ ...playbackSettings(), ...patch })); } catch (e) { /* private mode */ }
+  refreshRuntime();
+}
+
 async function refreshRuntime() {
-  try { S.runtime = await api("GET", "/api/runtime"); } catch (e) { return; }
+  const p = playbackSettings(), modes = p.modes || {};
+  const ids = (mode) => Object.keys(modes).filter((k) => modes[k] === mode).join(",");
+  const q = new URLSearchParams({ rate: p.rate ?? 1, live: ids("live"), generated: ids("generated") });
+  try { S.runtime = await api("GET", "/api/runtime?" + q); } catch (e) { return; }
   paintRuntime();
 }
+window.addEventListener("storage", (e) => { if (e.key === PLAYBACK_KEY) refreshRuntime(); });
+
+function paintPlayback(r) {
+  const set = r.settings;
+  if (!set) return;
+  const live = set.cast.filter((c) => c.live).map((c) => esc(c.name)).join(", ") || "nobody";
+  const speed = Number(set.rate.toFixed(2)) + "×";
+  $("#setSummary").innerHTML = `Estimated running time <b>${mins(r.nowMinutes)}</b> with these settings, target ${mins(r.targetMinutes)}.`;
+  $("#rtPlayback").innerHTML = `Live: ${live}. AI voices at ${speed}.
+    <button class="btn tiny" id="rtOpenSettings" type="button">Change</button>`;
+  $("#rtOpenSettings").onclick = openSettings;
+  if (document.activeElement !== $("#rtSpeed")) $("#rtSpeed").value = set.rate;
+  $("#rtSpeedValue").textContent = Number(set.rate.toFixed(2)) + "×";
+  $("#rtCast").innerHTML = set.cast.map((c) => `
+    <label class="rt-role">${esc(c.name)}
+      <select data-role="${esc(c.id)}" aria-label="${esc(c.name)} live or AI">
+        <option value="live"${c.live ? " selected" : ""}>Live</option>
+        <option value="generated"${c.live ? "" : " selected"}>AI</option>
+      </select></label>`).join("");
+  $("#rtCast").querySelectorAll("select").forEach((el) => {
+    el.onchange = () => savePlayback({ modes: { ...(playbackSettings().modes || {}), [el.dataset.role]: el.value } });
+  });
+}
+$("#rtSpeed").oninput = (e) => { $("#rtSpeedValue").textContent = Number(Number(e.target.value).toFixed(2)) + "×"; };
+$("#rtSpeed").onchange = (e) => savePlayback({ rate: Number(e.target.value) });
+$("#rtSpeedReset").onclick = () => savePlayback({ rate: 1 });
+function openSettings() { $("#runtime").hidden = true; $("#settings").hidden = false; refreshRuntime(); }
 
 function paintRuntime() {
   const r = S.runtime;
@@ -1221,6 +1262,7 @@ function paintRuntime() {
   if (sub && scene()) sub.innerHTML = subline(scene());
   paintChrome();
   paintCutPlan();
+  paintPlayback(r);
 
   $("#rtSummary").innerHTML = `<b>${mins(r.nowMinutes)}</b> on stage, target <b>${mins(r.targetMinutes)}</b>.
     Cut so far ${mins(r.cutMinutes)} of ${mins(r.needMinutes)} (${Math.round(100 * share)}%);
@@ -1392,6 +1434,7 @@ document.addEventListener("keydown", (e) => {
     if (!$("#finder").hidden) { closeFinder(); return; }
     if (!$("#help").hidden) { $("#help").hidden = true; return; }
     if (!$("#cutDrawer").hidden && !(document.activeElement && document.activeElement.closest && document.activeElement.closest("#cutDrawer textarea, #cutDrawer input"))) { closeCuts(); return; }
+    if (!$("#settings").hidden) { $("#settings").hidden = true; return; }
     if (!$("#runtime").hidden) { $("#runtime").hidden = true; return; }
     if (ta) { ta.blur(); e.preventDefault(); }
     return;
@@ -1619,6 +1662,8 @@ $("#cutsBtn").onclick = () => ($("#cutDrawer").hidden ? openCuts() : closeCuts()
 $("#cutDrawerClose").onclick = () => closeCuts();
 try { if (localStorage.getItem("bighack-cuts-open")) openCuts(); } catch (e) { /* fine */ }
 $("#runtimeClose").onclick = () => ($("#runtime").hidden = true);
+$("#settingsBtn").onclick = openSettings;
+$("#settingsClose").onclick = () => ($("#settings").hidden = true);
 $("#prev").onclick = () => go(S.i - 1);
 $("#next").onclick = () => go(S.i + 1);
 

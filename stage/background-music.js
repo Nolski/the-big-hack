@@ -62,6 +62,7 @@ export class BackgroundMusic {
     this.config = null;
     this.fadeStart = null;
     this.cut = false;
+    this.fadeFrom = null;
     this.audio.removeAttribute('src');
     this.audio.load();
   }

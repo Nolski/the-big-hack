@@ -1,6 +1,6 @@
 {
   "scene": "s06",
-  "approach": "This pass only tightens Narrator lines; every character line, the Luddite argument and the standup comedy are untouched. The narration here is already fairly lean, so the four trims take out stage business and padding (\"working at his desk\", \"absolutely\", \"the team needs to\", \"Claude finished working\") without losing any fact or the performance-review sting. The short lines s06_l29 and s06_l34 are left alone because trimming them saves under two seconds. The old stale trim of s06_l42 (#221) is replaced by #542.",
+  "approach": "This pass only tightens Narrator lines; every character line, the Luddite argument and the standup comedy are untouched. The narration here is already lean, and the collaborators' restored time jump, Opus 4.7 and the reworded performance-review line are kept. Two trims (#720, #721) take out visible stage business and padding; s06_l42 and s06_l51 already carry the earlier trims, and s06_l29 and s06_l34 would save under two seconds. Stale suggestions #41, #43, #227, #540 and #541 are removed.",
   "suggestions": [
     {
       "title": "Cut the prod-logs idea and SJ's PII rant",
@@ -147,66 +147,6 @@
       ],
       "dismissed": true,
       "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
-    },
-    {
-      "title": "Trim SJ's discovery and praise lines",
-      "kind": "trim",
-      "cues": [
-        "s06_l47",
-        "s06_l49"
-      ],
-      "edits": [
-        {
-          "cue": "s06_l47",
-          "text": "...It's zero. Wait. The ID's zero until the transaction commits. So if two signups get here together... they're both asking for session zero. Oh, fuck. That's it."
-        },
-        {
-          "cue": "s06_l49",
-          "text": "…That's a hell of a catch, Brendan. That's the one place I wasn't looking. That's real instinct. Good instinct, kid. Seriously."
-        }
-      ],
-      "why": "'They're getting the same session' and 'it wasn't the tokens' restate what 'session zero' already says, and 'How did you even....' is covered by 'the one place I wasn't looking'.",
-      "keeps": "The title line 'Good instinct, kid' and SJ at his happiest, which s07_l18 refers to.",
-      "risk": "low",
-      "reliesOn": [
-        "s07_l18"
-      ],
-      "against": {
-        "s06_l47": "...It's zero. Wait. The ID's zero until the transaction commits. So if two signups get here together... they're both asking for session zero. Oh, fuck. That's it. They're getting the same session. It wasn't the tokens at all. It's been this one line.",
-        "s06_l49": "…That's a hell of a catch, Brendan. How did you even.... that's the one place I wasn't looking. That's real instinct. Good instinct, kid. Seriously."
-      },
-      "number": 41,
-      "riskWhy": "The cut words only restate 'session zero', and the kept 'the one place I wasn't looking' and 'Good instinct, kid' still give s07_l18 SJ's happiness. The one catch: 'It wasn't the tokens' pays off the token theory in s06_l32, so keep it unless #37 is also taken.",
-      "loses": [
-        "Plot: SJ saying out loud that the two signups get the same session, restating 'session zero'",
-        "Character: SJ's 'How did you even....', his moment of being impressed",
-        "Nothing else substantive: the payoff for the token theory goes, which only matters if #37 is not taken"
-      ]
-    },
-    {
-      "title": "Trim the opening narration",
-      "kind": "trim",
-      "cues": [
-        "s06_l1"
-      ],
-      "edits": [
-        {
-          "cue": "s06_l1",
-          "text": "SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running."
-        }
-      ],
-      "why": "The montage before the scene already shows January to April passing, so 'A few months pass' repeats it, and the Opus 4.7 release is not referred to again.",
-      "keeps": "Where SJ is and what he is stuck on, so the standup makes sense.",
-      "risk": "low",
-      "reliesOn": [],
-      "against": {
-        "s06_l1": "A few months pass… Anthropic has just released Opus 4.7. SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running."
-      },
-      "number": 43,
-      "riskWhy": "The time-jump stage cue before the scene (s01c_time_jump_to_good_instinct) already covers the months passing. Opus 4.7 is not mentioned again; the play only names Opus 4.5 elsewhere.",
-      "loses": [
-        "Colour: the Opus 4.7 release, the one marker of model progress between s01 and s11b"
-      ]
     },
     {
       "title": "Shorten the time-limit back-and-forth",
@@ -447,31 +387,6 @@
       "number": 226
     },
     {
-      "title": "Trim the narration where Brendan hides the fix",
-      "kind": "trim",
-      "cues": [
-        "s06_l51"
-      ],
-      "edits": [
-        {
-          "cue": "s06_l51",
-          "text": "SJ starts writing the fix, delighted. Brendan switches back to the main branch without telling SJ how he spotted the bug so quickly."
-        }
-      ],
-      "why": "The middle sentence restates the repro and fix from s06_l42, and it leaves 'He' ambiguous. Naming Brendan fixes that.",
-      "keeps": "SJ's delight and Brendan switching off Claude's branch without telling SJ, the deception the rest of their story leans on.",
-      "risk": "medium",
-      "riskWhy": "'Switches back to the main branch' implies Claude's branch only if the audience remembers s06_l42, which is about a minute earlier.",
-      "loses": [
-        "Staging: Claude's reproduction and patch opening on a new branch, stated outright"
-      ],
-      "reliesOn": [],
-      "against": {
-        "s06_l51": "SJ starts writing the fix, delighted. Claude's reproduction and the finished patch open on a new branch. He switches back to the main branch without telling SJ how he spotted the bug so quickly."
-      },
-      "number": 227
-    },
-    {
       "title": "Trim Brendan's commit question",
       "kind": "trim",
       "cues": [
@@ -607,56 +522,6 @@
       "dismissedBy": "claude 2026-10-09: cuts comedy or removes narration"
     },
     {
-      "title": "Tighten the opening narration",
-      "kind": "trim",
-      "cues": [
-        "s06_l1"
-      ],
-      "edits": [
-        {
-          "cue": "s06_l1",
-          "text": "SJ is deep in the signup race condition. On his second monitor, morning standup has already started."
-        }
-      ],
-      "why": "\"is working at his desk\" describes what the audience can see; \"caught up in\" becomes \"deep in\".",
-      "keeps": "SJ, the signup race condition, the second monitor, that it is the morning standup and that it is already under way.",
-      "risk": "low",
-      "riskWhy": "Pure wording.",
-      "loses": [
-        "Wording: \"working at his desk\""
-      ],
-      "reliesOn": [],
-      "against": {
-        "s06_l1": "SJ is working at his desk, caught up in the signup race condition. On his second monitor, the morning standup is already running."
-      },
-      "number": 540
-    },
-    {
-      "title": "Tighten the fists-clench narration",
-      "kind": "trim",
-      "cues": [
-        "s06_narrator_security"
-      ],
-      "edits": [
-        {
-          "cue": "s06_narrator_security",
-          "text": "Kristina's fists clench. She hates slowing down for security. Her performance reviews never reflect how many security tickets she did or didn't close."
-        }
-      ],
-      "why": "\"absolutely hates hearing the team needs to slow down for security reasons\" is padded; the sense fits in five words.",
-      "keeps": "The clenched fists, her dislike of slowing down for security, and the performance-review sting with \"did or didn't close\" intact.",
-      "risk": "low",
-      "riskWhy": "The laugh line is unchanged; only the middle sentence is shortened.",
-      "loses": [
-        "Wording: \"absolutely\", \"hearing the team needs to\""
-      ],
-      "reliesOn": [],
-      "against": {
-        "s06_narrator_security": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security reasons. Her performance reviews never reflect how many security tickets she did or didn't close."
-      },
-      "number": 541
-    },
-    {
       "title": "Tighten the Claude-finished narration",
       "kind": "trim",
       "cues": [
@@ -705,6 +570,56 @@
         "s06_l51": "SJ starts writing the fix, delighted. Brendan switches back to the main branch without telling SJ how he spotted the bug so quickly."
       },
       "number": 543
+    },
+    {
+      "title": "Tighten the opening narration",
+      "kind": "trim",
+      "cues": [
+        "s06_l1"
+      ],
+      "edits": [
+        {
+          "cue": "s06_l1",
+          "text": "A few months pass… Anthropic has just released Opus 4.7. SJ is still deep in the signup race condition. Morning standup is already running on his second monitor."
+        }
+      ],
+      "why": "\"is working at his desk\" describes what the audience can already see, and \"still caught up in\" becomes \"still deep in\". The last sentence is reordered to drop \"On ... the\".",
+      "keeps": "The months passing (with the ellipsis), Opus 4.7 just released, SJ still stuck on the signup race condition, the second monitor, and the morning standup already running.",
+      "risk": "low",
+      "riskWhy": "Wording only; every fact and the collaborators' restored time jump and Opus 4.7 stay.",
+      "loses": [
+        "Wording: \"working at his desk\", \"caught up in\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_l1": "A few months pass… Anthropic has just released Opus 4.7. SJ is working at his desk, still caught up in the signup race condition. On his second monitor, the morning standup is already running."
+      },
+      "number": 720
+    },
+    {
+      "title": "Tighten the fists-clench narration",
+      "kind": "trim",
+      "cues": [
+        "s06_narrator_security"
+      ],
+      "edits": [
+        {
+          "cue": "s06_narrator_security",
+          "text": "Kristina's fists clench. She hates slowing the team down for security tickets. Her performance reviews never count how many they close."
+        }
+      ],
+      "why": "\"absolutely hates hearing the team needs to slow down\" is padded, and \"how many of those her team closed\" restates \"security tickets\" and \"the team\" from the sentence before.",
+      "keeps": "The clenched fists, her dislike of the team slowing down for security tickets, and the performance-review sting that the team's security work never counts.",
+      "risk": "low",
+      "riskWhy": "The punchline still lands on the performance reviews ignoring the team's security work; only filler goes.",
+      "loses": [
+        "Wording: \"absolutely\", \"hearing\", \"of those her team\""
+      ],
+      "reliesOn": [],
+      "against": {
+        "s06_narrator_security": "Kristina's fists clench. She absolutely hates hearing the team needs to slow down for security tickets. Her performance reviews never reflect how many of those her team closed."
+      },
+      "number": 721
     }
   ],
   "writtenOn": "2026-10-09",

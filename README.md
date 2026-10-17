@@ -43,6 +43,8 @@ Select a scene, then use GO or Space to advance. Open the left and right audienc
 
 In Settings → Audio, **Music volume** controls the background score separately from voices and clips. It starts quietly at 8%; zero mutes it. Music follows Pause and Resume, and continues across adjacent cues until its scripted cutoff. SJ’s YouTube music is foreground computer audio and follows the Voices & clips control instead.
 
+**Advance automatically after recordings and films**, also in Settings → Audio, moves to the next cue half a second after a generated voice, narration recording, or filmed clip finishes. It is off by default. Live lines, stage directions, and replacement clips still wait for GO, and pausing during that half second cancels the move.
+
 Editing a spoken line makes its old recording ineligible for playback. Generate a replacement or read it live; an old recording is never treated as the new dialogue. The presenter indicates when the script has changed so you can reload it between runs.
 
 ## Files contributors need
@@ -70,7 +72,7 @@ python3 tools/generate_elevenlabs.py --only narrator
 
 Keep keys out of Git. Include both the new audio files and updated JSON files in a recording contribution.
 
-To see how far the cut has come, click the runtime meter in the editor's top bar, or run `python3 tools/runtime_report.py`. Both time each line from its word count at the pace measured in the 7 October read-through (0.45 seconds a word for live lines, 0.36 for recorded ones, pauses included; see `stage/runtime-baseline.json`) and show each scene against the target.
+To see how far the cut has come, click the runtime meter in the editor's top bar, or run `python3 tools/runtime_report.py`. Both time each line from its word count at the pace measured in the 7 October read-through (0.45 seconds a word for live lines, 0.36 for recorded ones at 1x, pauses included; see `stage/runtime-baseline.json`) and show each scene against the target. The estimate follows the presenter's playback settings: the Running time panel has the AI voice speed and a Live or AI choice for each role, shared with the presenter's Settings on the same computer, and recalculates whenever either changes. On the command line use `--rate`, `--live` and `--generated`.
 
 The target is 60 minutes with the montages counted at their real length. Each scene has a budget, and its **Where to cut** panel lists suggested cuts and trims (`stage/cut-suggestions/<scene>.json`) with what each saves. Suggestions mark themselves done when the cut is in the script, and warn when one relies on a line another suggestion would cut. They are suggestions only; nothing changes the script until you edit it.
 

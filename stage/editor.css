@@ -331,6 +331,17 @@ code { font-family: var(--mono); font-size: .92em; color: var(--muted); }
 .rail-item .sub .saved-min, .scene-sub .saved-min { color: var(--ok); }
 .rail-item .sub .grew-min, .scene-sub .grew-min { color: var(--flag); }
 .runtime-box { width: min(760px, 94vw); }
+.settings-box { width: min(640px, 94vw); }
+.rt-playback .btn { margin-left: 6px; }
+.rt-settings { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; margin-top: 10px; background: var(--panel-2); }
+.rt-settings .sheet-note { margin: 8px 0 0; font-size: 12px; }
+.rt-speed { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+.rt-speed input[type=range] { flex: 1; accent-color: var(--accent); }
+.rt-speed output { min-width: 3.5em; text-align: right; font-variant-numeric: tabular-nums; }
+.rt-cast { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 12px; margin-top: 10px; font-size: 13px; }
+.rt-role { display: flex; justify-content: space-between; align-items: center; gap: 8px; color: var(--muted); }
+.rt-role select { background: transparent; color: inherit; border: 1px solid var(--line); border-radius: 6px; padding: 2px 6px; font: inherit; }
+.rt-role select:focus { outline: none; border-color: var(--accent); }
 .rt-table { display: grid; grid-template-columns: 1fr 52px 52px 60px; gap: 4px 12px; font-size: 13px; margin-top: 10px; }
 .rt-table .h { color: var(--faint); font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; }
 .rt-table .num { text-align: right; font-variant-numeric: tabular-nums; }
