@@ -963,7 +963,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-1e6a696f81a842dc",
+  "scriptRevision": "shared-10d2989846f74d0f",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -14833,14 +14833,19 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 0,
         "loop": false,
-        "level": 1.8,
+        "level": 1.4,
         "startAfter": 5.36
       },
-      "screenClock": "voice"
+      "screenClock": "voice",
+      "muffle": {
+        "from": 11.06,
+        "fade": 5,
+        "drone": 0
+      }
     },
     {
       "id": "s14_l21",
@@ -14897,12 +14902,13 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 16.922,
         "loop": false,
-        "level": 1.8
-      }
+        "level": 1.4
+      },
+      "muffle": true
     },
     {
       "id": "s14_l22",
@@ -14956,12 +14962,13 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 16.922,
         "loop": false,
-        "level": 1.8
-      }
+        "level": 1.4
+      },
+      "muffle": true
     },
     {
       "id": "s14_l23",
@@ -15020,12 +15027,13 @@
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "sourceText": "She keeps talking but SJ isn't really processing it anymore. SJ does not move. He does not look away from the screen and he does not look at it either.",
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 22.069,
         "loop": false,
-        "level": 1.8
-      }
+        "level": 1.4
+      },
+      "muffle": true
     },
     {
       "id": "s14_liam_muffled_call",
@@ -15078,12 +15086,13 @@
       "narrationAdapted": true,
       "sourceKind": "stage",
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 32.518,
         "loop": false,
-        "level": 1.8
-      }
+        "level": 1.4
+      },
+      "muffle": true
     },
     {
       "id": "s14_l24",
@@ -15137,11 +15146,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 32.518,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15196,11 +15205,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 34.79,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15255,11 +15264,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 38.5,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15319,11 +15328,11 @@
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "sourceText": "his brain slowly starts to work again",
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 46.78,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15378,11 +15387,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 49.784,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15442,11 +15451,11 @@
       "sourceKind": "stage",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 52.632,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15503,11 +15512,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 63.473,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15567,11 +15576,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 66.398,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15628,11 +15637,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 66.398,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15689,11 +15698,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 71.231,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15750,11 +15759,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 71.231,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15816,11 +15825,11 @@
       "originalStageDirection": "He sees Marcus has no meeting with Dana today. He sees Brandon does... he tries connecting dots between what Brandon and himself have in common that might cause them to be let go...",
       "sourceText": "He sees Marcus has no meeting with Dana today. He sees Brandon does... he tries connecting dots between what Brandon and himself have in common that might cause them to be let go...",
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 74.862,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15877,11 +15886,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 81.288,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15938,11 +15947,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 81.288,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -15999,11 +16008,11 @@
         }
       ],
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 88.524,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -16060,11 +16069,11 @@
       "kind": "live",
       "legacyCue": "s14_l75",
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 104.563,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -16121,11 +16130,11 @@
       "kind": "voice",
       "legacyCue": "s14_l77",
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 106.914,
         "loop": false,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {
@@ -16185,12 +16194,12 @@
       "kind": "voice",
       "legacyCue": "s14_l81",
       "backgroundMusic": {
-        "id": "dana-what-could-i-have-done-better",
-        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "id": "offboarding-shock",
+        "src": "assets/music/offboarding-shock.mp3",
         "startAt": 113.758,
         "loop": false,
         "fadeOut": 6,
-        "level": 1.8
+        "level": 1.4
       }
     },
     {

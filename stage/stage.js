@@ -4,6 +4,7 @@ import {nextCueType} from './next-cue.js?v=sj-realization-tail-20261017';
 import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=sj-realization-tail-20261017';
 import {screenLabel,actionDuration,actions,sampleAction} from './screen-actions.js?v=sj-realization-tail-20261017';
 import {BackgroundMusic} from './background-music.js?v=audit-narration-only-20261017';
+import {Muffle} from './muffle.js?v=offboarding-drone-v2-20261018';
 const $=id=>document.getElementById(id), controller=controllerId();
 localStorage.setItem('big-hack-display-controller',controller);
 const channel=new BroadcastChannel('big-hack-stage-v2:'+controller);
@@ -44,9 +45,11 @@ const musicElement=document.createElement('audio');musicElement.id='backgroundMu
 const music=new BackgroundMusic(musicElement,()=>status('Background music unavailable · Retry with Replay',true));
 music.setVolume(settings.musicVolume,state.volume);
 music.enter(cue().backgroundMusic);
+const muffle=new Muffle(audio);muffle.setVolume(settings.musicVolume);
 function updateMusic(){
  const montage=!!cue().montage;
  const justCut=music.sync(montage?audio.currentTime:screenTime(),state.running&&!state.blackout&&(!montage||!audio.paused));
+ muffle.sync(cue(),audio.currentTime||0,state.running&&!state.blackout);
  if(justCut)broadcast();
 }
 function musicFrame(){updateMusic();requestAnimationFrame(musicFrame)}
@@ -138,7 +141,7 @@ $('autoAdvance').onchange=e=>{settings.autoAdvance=e.target.checked;persistSetti
 $('showLighting').onchange=e=>{settings.showLighting=e.target.checked;persistSettings();renderLighting()};
 $('speed').oninput=e=>setPlaybackRate(e.target.value);
 $('normalSpeed').onclick=()=>setPlaybackRate(1);
-$('musicVolume').oninput=e=>{settings.musicVolume=Number(e.target.value);music.setVolume(settings.musicVolume,state.volume);$('musicVolumeValue').textContent=Math.round(settings.musicVolume*100)+'%';persistSettings()};
+$('musicVolume').oninput=e=>{settings.musicVolume=Number(e.target.value);music.setVolume(settings.musicVolume,state.volume);muffle.setVolume(settings.musicVolume);$('musicVolumeValue').textContent=Math.round(settings.musicVolume*100)+'%';persistSettings()};
 $('resetMusicVolume').onclick=()=>{$('musicVolume').value=0.08;$('musicVolume').dispatchEvent(new Event('input'))};
 
 function openScenes(){
