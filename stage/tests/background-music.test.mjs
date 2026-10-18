@@ -178,3 +178,59 @@ test('skipping the final stage direction preserves the running score and its nar
   audio.currentTime=15.3;music.sync(1.3,true);
   assert(audio.paused);assert.equal(audio.volume,0,'The next narration still triggers the fade');
 });
+
+test('Audit music pauses through responders and resumes the same position under narration',async()=>{
+  const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
+  const scored=source.cues.filter(c=>c.backgroundMusic?.id==='audit-swarm');
+  assert.equal(scored.length,48);
+  assert(scored.every(c=>!!c.backgroundMusic.paused===(c.speaker!=='narrator')));
+  assert.equal(scored.find(c=>c.speaker==='narrator').backgroundMusic.startAt,0);
+  for(const skipStageDirections of [false,true]){
+    const settings=readSettings(source,{skipStageDirections});
+    const show=playbackShow(source,settings);
+    const starts=playthroughStarts(show,settings);
+    const ids=['s20_l52','s20_insert_01-internal','s20_l53',
+      's20_oncall_engineer','s20_insert_05-no-match','s20_l54'];
+    const cues=ids.map(id=>show.cues.find(c=>c.id===id));
+    for(const cue of cues)assert(starts.includes(show.cues.indexOf(cue)));
+    const audio=new TestAudio(),music=new BackgroundMusic(audio);
+    music.enter(cues[0].backgroundMusic);music.sync(0,true);await settle();
+    audio.currentTime=101.25;
+    let plays=audio.plays;
+    for(const cue of cues.slice(1)){
+      const position=audio.currentTime;
+      music.enter(cue.backgroundMusic,true);
+      music.sync(120,true);await settle();
+      assert.equal(audio.currentTime,position,'GO must not reload or seek the score');
+      if(cue.speaker==='narrator'){
+        assert(!audio.paused);assert.equal(audio.plays,++plays);
+        audio.currentTime+=2;
+      }else{
+        assert(audio.paused,'Responder films play without the score');
+        assert.equal(audio.plays,plays,'Consecutive films cannot restart the music');
+        music.sync(300,true);await settle();
+        assert(audio.paused);assert.equal(audio.currentTime,position);
+      }
+    }
+    const final=scored.at(-1);
+    music.enter(final.backgroundMusic,true);music.sync(0,true);
+    assert(audio.paused,'Brendan’s final live line is also unscored');
+    const after=source.cues[source.cues.indexOf(final)+1];
+    music.enter(after.backgroundMusic,true);
+    assert.equal(audio.src,undefined,'The score is unloaded when the Audit ends');
+  }
+});
+
+test('selecting a responder directly keeps music paused until the next narrator',async()=>{
+  const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
+  const clip=source.cues.find(c=>c.id==='s20_insert_01-internal');
+  const narrator=source.cues.find(c=>c.id==='s20_l53');
+  const audio=new TestAudio(),music=new BackgroundMusic(audio);
+  music.enter(clip.backgroundMusic);music.sync(0,true);await settle();
+  assert(audio.paused);assert.equal(audio.plays,0);
+  const position=audio.currentTime;
+  music.enter(narrator.backgroundMusic,true);music.sync(0,true);await settle();
+  assert(!audio.paused);assert.equal(audio.currentTime,position);
+  music.sync(1,false);assert(audio.paused);
+  music.sync(1,true);await settle();assert(!audio.paused);
+});

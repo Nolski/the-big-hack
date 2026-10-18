@@ -963,7 +963,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-8ac7fd850ccc415b",
+  "scriptRevision": "shared-1e6a696f81a842dc",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -14831,7 +14831,16 @@
           "text": "The company has completed a review of its organisational structure and has taken the decision to reduce headcount across engineering. Your role has been identified as in scope. This decision is final. It is not a reflection of your value or your contribution. Your last day of employment will be today, and you will lose access to most systems at the end of this call.",
           "direction": "reading it — flat, printed, the mandated words, and you can hear that they are printed"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.8,
+        "startAfter": 5.36
+      },
+      "screenClock": "voice"
     },
     {
       "id": "s14_l21",
@@ -14886,7 +14895,14 @@
           "text": "He's speechless for a minute.",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 16.922,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l22",
@@ -14938,7 +14954,14 @@
           "text": "There's an information pack that will be emailed to your personal email address after the call....",
           "direction": "even, moving straight on"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 16.922,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l23",
@@ -14995,7 +15018,14 @@
       "narrationAdapted": true,
       "sourceKind": "stage",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "sourceText": "She keeps talking but SJ isn't really processing it anymore. SJ does not move. He does not look away from the screen and he does not look at it either."
+      "sourceText": "She keeps talking but SJ isn't really processing it anymore. SJ does not move. He does not look away from the screen and he does not look at it either.",
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 22.069,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_liam_muffled_call",
@@ -15046,7 +15076,14 @@
         }
       ],
       "narrationAdapted": true,
-      "sourceKind": "stage"
+      "sourceKind": "stage",
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 32.518,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l24",
@@ -15098,7 +15135,14 @@
           "text": "SJ? Are you still with me?",
           "direction": "coming back up, mid-thought, much further along than he is"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 32.518,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l26",
@@ -15150,7 +15194,14 @@
           "text": "Yeah. Sorry. I'm just - can you go back?",
           "direction": "live"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 34.79,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l27",
@@ -15202,7 +15253,14 @@
           "text": "I think it's best if you take a moment for yourself, go for a walk, clear your head. The pack I mentioned has all the details you'll need.",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 38.5,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l28",
@@ -15259,7 +15317,14 @@
       "narrationAdapted": true,
       "sourceKind": "stage",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
-      "sourceText": "his brain slowly starts to work again"
+      "sourceText": "his brain slowly starts to work again",
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 46.78,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l29",
@@ -15311,7 +15376,14 @@
           "text": "…I don't know. Let me think.",
           "direction": "live"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 49.784,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l30",
@@ -15368,7 +15440,14 @@
       ],
       "narrationAdapted": true,
       "sourceKind": "stage",
-      "adaptationReason": "Explicit author revision, September 12, 2026."
+      "adaptationReason": "Explicit author revision, September 12, 2026.",
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 52.632,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l37",
@@ -15422,7 +15501,14 @@
           "text": "Who else is impacted? Is it everyone?",
           "direction": "live"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 63.473,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l38",
@@ -15479,7 +15565,14 @@
           "text": "Dana doesn't skip a beat, she's prepped for every question",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 66.398,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l39",
@@ -15533,7 +15626,14 @@
           "text": "It isn't everyone in Engineering, but I can't share any details with you at this time.",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 66.398,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l40",
@@ -15587,7 +15687,14 @@
           "text": "He sits with that. Then he starts, very slowly, to look for the reason, because there is always a reason and he has never once failed to find one.",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 71.231,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l51",
@@ -15641,7 +15748,14 @@
           "text": "I've been doing different flavors of this job since 2010.",
           "direction": "live"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 71.231,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l55",
@@ -15700,7 +15814,14 @@
         }
       ],
       "originalStageDirection": "He sees Marcus has no meeting with Dana today. He sees Brandon does... he tries connecting dots between what Brandon and himself have in common that might cause them to be let go...",
-      "sourceText": "He sees Marcus has no meeting with Dana today. He sees Brandon does... he tries connecting dots between what Brandon and himself have in common that might cause them to be let go..."
+      "sourceText": "He sees Marcus has no meeting with Dana today. He sees Brandon does... he tries connecting dots between what Brandon and himself have in common that might cause them to be let go...",
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 74.862,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l57",
@@ -15754,7 +15875,14 @@
           "text": "He stops. He starts it somewhere else.",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 81.288,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l58",
@@ -15808,7 +15936,14 @@
           "text": "In four years here, nobody has said one word to me about my performance. Just tell me what I could have done better.",
           "direction": "live"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 81.288,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "id": "s14_l59",
@@ -15862,7 +15997,14 @@
           "text": "I'm not able to get into the specifics of the decision, I'm afraid.\nMoving on. IT will send you an asset list and a returns label. Anything on the asset list - the laptop, monitor, keyboard, and any dongles or adapters - will need to be returned.",
           "direction": "after a moment, even"
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 88.524,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "staging": {
@@ -15916,7 +16058,14 @@
       ],
       "mode": "huddle",
       "kind": "live",
-      "legacyCue": "s14_l75"
+      "legacyCue": "s14_l75",
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 104.563,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "staging": {
@@ -15970,7 +16119,14 @@
       ],
       "mode": "huddle",
       "kind": "voice",
-      "legacyCue": "s14_l77"
+      "legacyCue": "s14_l77",
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 106.914,
+        "loop": false,
+        "level": 1.8
+      }
     },
     {
       "sourceText": "After the call ends Dana opens the case file alone. A field marked \"Eligible for rehire\" changes from Yes to No.",
@@ -16027,7 +16183,15 @@
       "mode": "huddle",
       "originalStageDirection": "After the call ends Dana opens the case file alone. A field marked \"Eligible for rehire\" changes from Yes to No.",
       "kind": "voice",
-      "legacyCue": "s14_l81"
+      "legacyCue": "s14_l81",
+      "backgroundMusic": {
+        "id": "dana-what-could-i-have-done-better",
+        "src": "assets/music/dana-what-could-i-have-done-better.m4a",
+        "startAt": 113.758,
+        "loop": false,
+        "fadeOut": 6,
+        "level": 1.8
+      }
     },
     {
       "sourceText": "Brandon and SJ are in SJ's apartment. By the door, a cardboard box, taped shut, with a courier label already printed and stuck to it. On the desk, a Mac Studio.",
@@ -21316,7 +21480,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 0.0
+        "startAt": 0,
+        "paused": true
       }
     },
     {
@@ -21366,7 +21531,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 2.7
+        "startAt": 0,
+        "paused": true
       }
     },
     {
@@ -21427,7 +21593,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 9.45
+        "startAt": 0
       }
     },
     {
@@ -21483,7 +21649,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 17.999
+        "startAt": 9.404,
+        "paused": true
       }
     },
     {
@@ -21544,7 +21711,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 21.599
+        "startAt": 9.404
       }
     },
     {
@@ -21605,7 +21772,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 31.739
+        "startAt": 20.793
       }
     },
     {
@@ -21662,7 +21829,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 35.563
+        "startAt": 24.999
       }
     },
     {
@@ -21714,7 +21881,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 46.439
+        "startAt": 36.963,
+        "paused": true
       }
     },
     {
@@ -21771,7 +21939,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 52.739
+        "startAt": 36.963
       }
     },
     {
@@ -21828,7 +21996,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 58.439
+        "startAt": 43.233
       }
     },
     {
@@ -21877,7 +22045,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 59.792
+        "startAt": 44.722
       }
     },
     {
@@ -21926,7 +22094,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 69.291
+        "startAt": 55.171
       }
     },
     {
@@ -21975,7 +22143,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 74.848
+        "startAt": 61.283
       }
     },
     {
@@ -22024,7 +22192,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 82.234
+        "startAt": 69.407
       }
     },
     {
@@ -22073,7 +22241,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 87.791
+        "startAt": 75.52
       }
     },
     {
@@ -22122,7 +22290,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 96.696
+        "startAt": 85.316
       }
     },
     {
@@ -22171,7 +22339,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 103.868
+        "startAt": 93.205
       }
     },
     {
@@ -22220,7 +22388,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 114.151
+        "startAt": 104.516
       }
     },
     {
@@ -22269,7 +22437,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 116.217
+        "startAt": 106.789
       }
     },
     {
@@ -22312,7 +22480,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 122.154
+        "startAt": 113.319,
+        "paused": true
       }
     },
     {
@@ -22361,7 +22530,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 130.154
+        "startAt": 113.319
       }
     },
     {
@@ -22406,7 +22575,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 136.874
+        "startAt": 120.712,
+        "paused": true
       }
     },
     {
@@ -22448,7 +22618,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 144.874
+        "startAt": 120.712,
+        "paused": true
       }
     },
     {
@@ -22497,7 +22668,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 152.874
+        "startAt": 120.712
       }
     },
     {
@@ -22546,7 +22717,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 161.993
+        "startAt": 130.743
       }
     },
     {
@@ -22595,7 +22766,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 175.625
+        "startAt": 145.737
       }
     },
     {
@@ -22637,7 +22808,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 186.43
+        "startAt": 157.623,
+        "paused": true
       }
     },
     {
@@ -22686,7 +22858,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 194.43
+        "startAt": 157.623
       }
     },
     {
@@ -22728,7 +22900,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 206.969
+        "startAt": 171.416,
+        "paused": true
       }
     },
     {
@@ -22777,7 +22950,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 209.969
+        "startAt": 171.416
       }
     },
     {
@@ -22819,7 +22992,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 234.737
+        "startAt": 198.661,
+        "paused": true
       }
     },
     {
@@ -22868,7 +23042,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 247.759
+        "startAt": 198.661
       }
     },
     {
@@ -22910,7 +23084,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 262.34
+        "startAt": 214.7,
+        "paused": true
       }
     },
     {
@@ -22959,7 +23134,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 270.34
+        "startAt": 214.7
       }
     },
     {
@@ -23018,7 +23193,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 288.555
+        "startAt": 234.736
       }
     },
     {
@@ -23074,7 +23249,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 307.719
+        "startAt": 255.817,
+        "paused": true
       }
     },
     {
@@ -23135,7 +23311,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 312.669
+        "startAt": 255.817
       }
     },
     {
@@ -23191,7 +23367,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 314.379
+        "startAt": 257.698,
+        "paused": true
       }
     },
     {
@@ -23252,7 +23429,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 320.229
+        "startAt": 257.698
       }
     },
     {
@@ -23308,7 +23485,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 332.127
+        "startAt": 270.785,
+        "paused": true
       }
     },
     {
@@ -23369,7 +23547,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 334.377
+        "startAt": 270.785
       }
     },
     {
@@ -23430,7 +23608,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 348.459
+        "startAt": 289.149
       }
     },
     {
@@ -23488,7 +23666,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 356.201
+        "startAt": 297.665
       }
     },
     {
@@ -23546,7 +23724,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 361.045
+        "startAt": 302.994
       }
     },
     {
@@ -23604,7 +23782,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 370.307
+        "startAt": 313.182
       }
     },
     {
@@ -23662,7 +23840,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 372.373
+        "startAt": 315.455
       }
     },
     {
@@ -23720,7 +23898,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 374.51
+        "startAt": 317.806
       }
     },
     {
@@ -23773,8 +23951,9 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 380.803,
-        "fadeOut": 10
+        "startAt": 324.728,
+        "fadeOut": 10,
+        "paused": true
       }
     },
     {
