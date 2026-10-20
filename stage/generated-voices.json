@@ -12157,17 +12157,18 @@
       }
     },
     "s14_l23": {
-      "text": "She keeps talking but SJ isn't really processing it anymore. He does not move. He does not look away from the screen and he does not look at it either.",
+      "text": "She keeps talking but SJ isn't really processing it anymore. SJ doesn't really have hobbies or a family. He has his work and his pride in doing it well. Suddenly, he feels that reality shatter, and his self identity with it.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-9400d6c2e5d68f8618c4fe3b63da95e43fabef786b05c4c764b65e34b2b29da7.mp3",
-      "duration": 10.44898,
-      "audioSha256": "9400d6c2e5d68f8618c4fe3b63da95e43fabef786b05c4c764b65e34b2b29da7",
+      "audio": "assets/audio/shared-b664c9c736fa8c70d0bb095b7f8c989273269c16c26c9a9280d2a6a1183fedcd.mp3",
+      "duration": 17.397551,
+      "audioSha256": "b664c9c736fa8c70d0bb095b7f8c989273269c16c26c9a9280d2a6a1183fedcd",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
         "voiceId": "Q4oILuo4P8VeXtE6FMLI",
-        "voiceName": "Matthew Schmitz, Warm Mountain Man"
+        "voiceName": "Matthew Schmitz, Warm Mountain Man",
+        "deliveryTag": "[somber]"
       }
     },
     "s14_l28": {

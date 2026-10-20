@@ -963,7 +963,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-10d2989846f74d0f",
+  "scriptRevision": "shared-c640bee2625b453c",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -14842,9 +14842,10 @@
       },
       "screenClock": "voice",
       "muffle": {
-        "from": 11.06,
+        "from": 8.0,
         "fade": 5,
-        "drone": 0
+        "drone": 0,
+        "ring": 1
       }
     },
     {
@@ -14977,7 +14978,7 @@
       "kind": "voice",
       "speaker": "narrator",
       "name": "Narrator",
-      "text": "She keeps talking but SJ isn't really processing it anymore. He does not move. He does not look away from the screen and he does not look at it either.",
+      "text": "She keeps talking but SJ isn't really processing it anymore. SJ doesn't really have hobbies or a family. He has his work and his pride in doing it well. Suddenly, he feels that reality shatter, and his self identity with it.",
       "direction": "",
       "state": "offboarding",
       "mode": "huddle",
@@ -15006,8 +15007,8 @@
       },
       "screenActions": {},
       "sourceBeat": 23,
-      "audio": "assets/audio/shared-9400d6c2e5d68f8618c4fe3b63da95e43fabef786b05c4c764b65e34b2b29da7.mp3",
-      "audioDuration": 10.44898,
+      "audio": "assets/audio/shared-b664c9c736fa8c70d0bb095b7f8c989273269c16c26c9a9280d2a6a1183fedcd.mp3",
+      "audioDuration": 17.397551,
       "legacyCue": "s14_l21",
       "visualMapping": "matched",
       "sfx": [],
@@ -15017,7 +15018,7 @@
           "id": "s14_l23",
           "kind": "voice",
           "name": "Narrator",
-          "text": "She keeps talking but SJ isn't really processing it anymore. He does not move. He does not look away from the screen and he does not look at it either.",
+          "text": "She keeps talking but SJ isn't really processing it anymore. SJ doesn't really have hobbies or a family. He has his work and his pride in doing it well. Suddenly, he feels that reality shatter, and his self identity with it.",
           "direction": ""
         }
       ],
