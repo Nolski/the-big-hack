@@ -5095,12 +5095,12 @@
       }
     },
     "s11c_l4": {
-      "text": "It took a while, but honestly? I'm just happy he's engaged. Demonstrating AI adoption will help with mid-year reviews",
+      "text": "It took a while but honestly? I'm just happy he's engaged.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-58bc966b44d140c3fb7bb4a217882958940269b31b55c35152ed0c71a5547a04.mp3",
-      "duration": 8.594286,
-      "audioSha256": "58bc966b44d140c3fb7bb4a217882958940269b31b55c35152ed0c71a5547a04",
+      "audio": "assets/audio/shared-9b908476c85253d8943cee0626f3d8ef4b46789ff8c519b8cebf3024a7743fb3.mp3",
+      "duration": 4.754286,
+      "audioSha256": "9b908476c85253d8943cee0626f3d8ef4b46789ff8c519b8cebf3024a7743fb3",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5109,12 +5109,12 @@
       }
     },
     "s11c_l5": {
-      "text": "... to be honest, I don't think his setup is that productive. SJ measured two sprints, and he admits he's slower with the AI than without. ",
+      "text": "It's something.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-04588efbf247bcc7514d68070ee9f298829e9ac43c9ab9eaf8d945b0379ab37b.mp3",
-      "duration": 8.359184,
-      "audioSha256": "04588efbf247bcc7514d68070ee9f298829e9ac43c9ab9eaf8d945b0379ab37b",
+      "audio": "assets/audio/shared-8f3c0c11e1c4c7db53b942e14c8a772d66eb82931db6559698596a2d054be25f.mp3",
+      "duration": 1.227755,
+      "audioSha256": "8f3c0c11e1c4c7db53b942e14c8a772d66eb82931db6559698596a2d054be25f",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5207,12 +5207,12 @@
       }
     },
     "s11c_l13": {
-      "text": "At the moment, leadership focus is on AI adoption. And he's doing some crazy AI stuff I haven't seen any other team doing. As long as SJ's on the curve, our team will be fine.",
+      "text": "Can I tell you something? This stays here.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-ce5e45146521708f1e6592a6e2d5a2bc49b50cda9ec73714abc48531dbd7362c.mp3",
-      "duration": 11.467755,
-      "audioSha256": "ce5e45146521708f1e6592a6e2d5a2bc49b50cda9ec73714abc48531dbd7362c",
+      "audio": "assets/audio/shared-9af04c0ba8c2c232d4ac021e1fca595c8604b83461de7096ae6bfd1a8a7ac640.mp3",
+      "duration": 2.847347,
+      "audioSha256": "9af04c0ba8c2c232d4ac021e1fca595c8604b83461de7096ae6bfd1a8a7ac640",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5221,12 +5221,12 @@
       }
     },
     "s11c_l14": {
-      "text": "Well... Marcus told me that he did his peer feedback, the anonymous one, and most of it was about how SJ was slowing down the team... And if I'm being honest, I said the same thing on mine.",
+      "text": "Always.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-b89bf4bcc062f8ce81ea42571d3ef820496c3f86580a57f30b81122ddf5e565a.mp3",
-      "duration": 12.355918,
-      "audioSha256": "b89bf4bcc062f8ce81ea42571d3ef820496c3f86580a57f30b81122ddf5e565a",
+      "audio": "assets/audio/shared-4e1596143c6176516453d3d71c90c419513ee9dd10ee63c5f7382fa39e0c1dbd.mp3",
+      "duration": 0.914286,
+      "audioSha256": "4e1596143c6176516453d3d71c90c419513ee9dd10ee63c5f7382fa39e0c1dbd",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5235,12 +5235,12 @@
       }
     },
     "s11c_l15": {
-      "text": "Hmm. Thank you for sharing that. AI is really new to the whole industry so sometimes we have to take risks with experiments that don't go anywhere. I'm sure it will come right by end-of-year reviews, which is the one that matters. I'll be counting on you to help him.",
+      "text": "I got let into a Zoom early on Friday, leadership thing, and the CEO was still wrapping his last call with a board member, I'm pretty sure. He said, and this is close to word for word, \"Everyone your size is getting leaner this year. You can't be hesitant to just let them go, they're holding the rest of your team back\"",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-9167d38159e69dbd5328f583b020158aba292d5cebb2e76068ffd4ff5473b4b2.mp3",
-      "duration": 16.117551,
-      "audioSha256": "9167d38159e69dbd5328f583b020158aba292d5cebb2e76068ffd4ff5473b4b2",
+      "audio": "assets/audio/shared-ababb245b5cd7dff88656dd294324c29e9c8e231a0ae453d442c34b40b90c76b.mp3",
+      "duration": 19.800816,
+      "audioSha256": "ababb245b5cd7dff88656dd294324c29e9c8e231a0ae453d442c34b40b90c76b",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5249,12 +5249,12 @@
       }
     },
     "s11c_l16": {
-      "text": "...okay... I'll keep working with him on it",
+      "text": "Let go of... who?",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-4cebad8c669f207c5c86e81122ff77f2cf00cd15672dd2f27d40e4451ccba7fc.mp3",
-      "duration": 3.004082,
-      "audioSha256": "4cebad8c669f207c5c86e81122ff77f2cf00cd15672dd2f27d40e4451ccba7fc",
+      "audio": "assets/audio/shared-f627d4d0aef90b60e9d5dc0644f29d5a2d10e255e8e38c0b466750e58980b97a.mp3",
+      "duration": 2.037551,
+      "audioSha256": "f627d4d0aef90b60e9d5dc0644f29d5a2d10e255e8e38c0b466750e58980b97a",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5263,12 +5263,12 @@
       }
     },
     "s11c_l17": {
-      "text": "Oh, and I signed you up for tech sharing in July. You can show off your setup to the whole company!",
+      "text": "I don't know. The call ended about ten seconds after I joined. We need to make sure our team is very visibly ahead of the AI adoption curve, we need to show off the cool stuff you and SJ are doing with AI at the next tech sharing.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-d7cd3b73f79f1dbffce230dd6f06cc1cc6e1e04cf196aa3707b801991d04e6a8.mp3",
-      "duration": 5.877551,
-      "audioSha256": "d7cd3b73f79f1dbffce230dd6f06cc1cc6e1e04cf196aa3707b801991d04e6a8",
+      "audio": "assets/audio/shared-89cbaa0453224d1aa6485f6db55121ac4b872c5b07259a0006899ca2aaf45edb.mp3",
+      "duration": 14.106122,
+      "audioSha256": "89cbaa0453224d1aa6485f6db55121ac4b872c5b07259a0006899ca2aaf45edb",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5291,12 +5291,12 @@
       }
     },
     "s11c_l20": {
-      "text": "Anyway - I've got to cut this short, sorry. I've got a thing in 15 minutes and I need to get some stuff done beforehand.",
+      "text": "What do you mean? He's doing some crazy AI stuff I haven't seen any other team do yet, that's exactly what leadership needs to see and with the amount you're shipping. I'm sure you'll be fine.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-dbc5c73bfb0c15cd85ffbb9c7b9a08d2afcef5bb7263a9064be5bba980a9f68d.mp3",
-      "duration": 6.922449,
-      "audioSha256": "dbc5c73bfb0c15cd85ffbb9c7b9a08d2afcef5bb7263a9064be5bba980a9f68d",
+      "audio": "assets/audio/shared-0ec204cafdd0192453f5a2c59e8b46322465f9f32a98da0bbe28ebf01f58c1a6.mp3",
+      "duration": 11.650612,
+      "audioSha256": "0ec204cafdd0192453f5a2c59e8b46322465f9f32a98da0bbe28ebf01f58c1a6",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5305,12 +5305,12 @@
       }
     },
     "s11c_l21": {
-      "text": "Okay, thanks-",
+      "text": "I don't think SJ's setup is really that productive. It's making him slower. He measured two sprints, with it and without it, and he's slower with it.",
       "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-227727c49526642de93081e0db8b796372880d9f161762aaca85ad57d4c09a6d.mp3",
-      "duration": 1.48898,
-      "audioSha256": "227727c49526642de93081e0db8b796372880d9f161762aaca85ad57d4c09a6d",
+      "audio": "assets/audio/shared-188e2c139d3ffb70c23b8c997cedee4d365c6abe460b72a8cf464e90cdd72941.mp3",
+      "duration": 9.325714,
+      "audioSha256": "188e2c139d3ffb70c23b8c997cedee4d365c6abe460b72a8cf464e90cdd72941",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -5445,17 +5445,17 @@
       }
     },
     "s11c_l34": {
-      "text": "She starts an agent tasked to look at Jira and check SJ's velocity over the last two sprints. She prompts a second agent to build a Linear-to-Jira connector and bring Brendan's tickets into Jira, something she had promised she would do for him. Both start working, and she's a little surprised how quickly they're moving... Opus 4.7 is notably faster than Opus 4.5 at task completion. She joins her next meeting, leaving them running.",
-      "speaker": "narrator",
+      "text": "…Yeah. Maybe. Marcus told me that he did his peer feedback, the anonymous one, and most of it was about how SJ was slowing down the team... And if I'm being honest, I said the same thing on mine.",
+      "speaker": "brendan",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-405128df8f72c3dbd7199261826ed4376ec56e2ea8f0d319c0d3d78919e36ed9.mp3",
-      "duration": 27.637551,
-      "audioSha256": "405128df8f72c3dbd7199261826ed4376ec56e2ea8f0d319c0d3d78919e36ed9",
+      "audio": "assets/audio/shared-4319fbf772f31c4049f3a8fdd9b407b6a7fc26a9e63e5bcd54b0c09cc41e93a7.mp3",
+      "duration": 12.826122,
+      "audioSha256": "4319fbf772f31c4049f3a8fdd9b407b6a7fc26a9e63e5bcd54b0c09cc41e93a7",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
-        "voiceId": "Q4oILuo4P8VeXtE6FMLI",
-        "voiceName": "Matthew Schmitz, Warm Mountain Man"
+        "voiceId": "TX3LPaxmHKxFdv7VOQHJ",
+        "voiceName": "Liam, Energetic, Social Media Creator"
       }
     },
     "s11c_l35": {
@@ -11933,12 +11933,12 @@
       }
     },
     "s11c_l39": {
-      "text": "Before the meeting finishes, both agents report they're done. SJ's ticket count is the lowest on the team. The connector shows Brendan's Linear ticket count, and has copied a test ticket into Jira. She glances at SJ's productivity, and is a little surprised at just how far behind it is.",
+      "text": "Kristina opens Cursor and starts two agents. One checks SJ's velocity in Jira over the last two sprints. The other builds the Linear-to-Jira connector she promised Brendan. Her next meeting chimes, and she leaves them running. By the time it ends, both agents are done. SJ's ticket count is the lowest on the team. The connector shows Brendan's Linear tickets, and has copied a test ticket into Jira. She's a little surprised how far behind SJ is.",
       "speaker": "narrator",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-ab5402fc54e8cd1e87ac71b2ffb239e8b50576e07f9346b81441b151eb8031b9.mp3",
-      "duration": 18.520816,
-      "audioSha256": "ab5402fc54e8cd1e87ac71b2ffb239e8b50576e07f9346b81441b151eb8031b9",
+      "audio": "assets/audio/shared-74957e9e0f24023067effd7571abd2d9f83d354b0c9507c3b240e79bb5d71ec5.mp3",
+      "duration": 28.995918,
+      "audioSha256": "74957e9e0f24023067effd7571abd2d9f83d354b0c9507c3b240e79bb5d71ec5",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
