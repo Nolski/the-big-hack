@@ -8,3 +8,6 @@ stage/proof-progress.json
 exports/
 .env
 .env.*
+
+# Obsidian vault settings
+.obsidian/

@@ -26,7 +26,7 @@ VISUAL_CONTEXT=('state','mode','beat','loop','cast','staging','computers',
                 'screenActions','actionSource','screenNotes','claudeSession',
                 'claudeComplete','sharedPR','prFocus','primeWallpaper',
                 'revisionCode','rehireNo','latestScreen','offstage','lighting',
-                'backgroundMusic')
+                'backgroundMusic','muffle')
 
 def _bare(x,skip): return {k:v for k,v in x.items() if k not in skip}
 
