@@ -348,7 +348,7 @@
       "movement": "V",
       "cast": [],
       "id": "s25",
-      "count": 19,
+      "count": 20,
       "mode": "offstage",
       "start": 563,
       "source": "25 - Great News.md",
@@ -937,7 +937,8 @@
     578,
     579,
     580,
-    581
+    581,
+    582
   ],
   "title": "The Big Hack",
   "audioManifestRequired": true,
@@ -966,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-19546ae85f4542d7",
+  "scriptRevision": "shared-bc3fc1107afb4a91",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -31137,6 +31138,53 @@
       ],
       "mode": "offstage",
       "kind": "live"
+    },
+    {
+      "state": "title-card",
+      "mode": "offstage",
+      "cast": [],
+      "screenActions": {},
+      "computers": {},
+      "beat": 20,
+      "loop": true,
+      "staging": {
+        "location": "offstage",
+        "set": null,
+        "computer": "absent",
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "physical"
+      },
+      "offstage": false,
+      "id": "s25_title_card",
+      "scene": "s25",
+      "sfx": [],
+      "advance": "manual",
+      "audio": null,
+      "audioDuration": 0,
+      "kind": "stage",
+      "speaker": "",
+      "name": "",
+      "text": "Smash cut. Title card: THE BIG HACK. Music hits.",
+      "direction": "",
+      "backgroundMusic": {
+        "id": "two-companies",
+        "src": "assets/music/two-companies-v2.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      },
+      "groupEnd": 582,
+      "notes": [
+        {
+          "id": "s25_title_card",
+          "kind": "stage",
+          "name": "",
+          "text": "Smash cut. Title card: THE BIG HACK. Music hits.",
+          "direction": ""
+        }
+      ]
     }
   ],
   "schema": 2,
