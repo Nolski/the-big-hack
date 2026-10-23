@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-bc3fc1107afb4a91",
+  "scriptRevision": "shared-6ef0250f2ffc47ac",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -31166,11 +31166,11 @@
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "Smash cut. Title card: THE BIG HACK. Music hits.",
+      "text": "Smash cut. Title card: THE BIG HACK over the silent 2026 montage. Music hits.",
       "direction": "",
       "backgroundMusic": {
         "id": "two-companies",
-        "src": "assets/music/two-companies-v2.mp3",
+        "src": "assets/music/two-companies-v5-bubblegum-short.mp3",
         "startAt": 0,
         "loop": false,
         "level": 1.4
@@ -31181,10 +31181,11 @@
           "id": "s25_title_card",
           "kind": "stage",
           "name": "",
-          "text": "Smash cut. Title card: THE BIG HACK. Music hits.",
+          "text": "Smash cut. Title card: THE BIG HACK over the silent 2026 montage. Music hits.",
           "direction": ""
         }
-      ]
+      ],
+      "titleVideo": "assets/filmed/outro-montage-v2.mp4"
     }
   ],
   "schema": 2,

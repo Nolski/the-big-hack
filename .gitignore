@@ -11,3 +11,14 @@ exports/
 
 # Obsidian vault settings
 .obsidian/
+
+# Montage candidate footage (large, local only)
+research/montage-candidates/raw/
+research/montage-candidates/sheets/
+research/montage-candidates/clips/
+research/montage-candidates/review.html
+research/montage-candidates/review-reel.mp4
+research/montage-candidates/picks-reel.mp4
+research/song-cuts/
+research/montage-candidates/outro-preview-*.mp4
+research/montage-candidates/frames/

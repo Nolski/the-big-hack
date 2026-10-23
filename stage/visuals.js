@@ -168,7 +168,7 @@ const screens={
  statement:()=>doc('Statement of Facts',para('The defendant knowingly and intentionally accessed a protected computer without authorisation.')+para('The defendant agrees that the foregoing statement is true and correct.')),
  knowingly:()=>doc('Statement of Facts','<blockquote>The defendant <mark>knowingly</mark> and intentionally accessed a protected computer without authorisation.</blockquote>'+para('I have read this statement in full.')),
  signed:()=>doc('Statement of Facts',para('I have read this statement in full.')+'<div class="signature">SJ Mkrtchyan</div><p class="signature-label">Signature of defendant</p>'+field('Date','Signed')),
- 'title-card':()=>'<div class="titleCard"><h1>THE BIG HACK</h1></div>',
+ 'title-card':c=>c?.titleVideo?`<div class="titleCard hasVideo"><video class="titleVideo" src="${esc(c.titleVideo)}" muted playsinline loop preload="auto"></video><h1>THE BIG HACK</h1></div>`:'<div class="titleCard"><h1>THE BIG HACK</h1></div>',
  black:()=>''
 };
 function arrest(motive){return doc('Current employer',field('Name','SJ Mkrtchyan')+field('Current employer','Unemployed')+field('Motive',motive?'Recently laid off':''),'ARREST RECORD')}
@@ -209,7 +209,7 @@ function continuity(c,side){
 }
 function renderBaseVisual(c,side){
  if(c.montage)return '';
- if(c.state==='title-card')return screens['title-card']();
+ if(c.state==='title-card')return screens['title-card'](c);
  if(c.sharedPR&&side==='right')return `<section class="call"><header><strong>Google Meet</strong><span>SJ is presenting</span></header><div style="position:absolute;inset:80px 20px 175px;overflow:hidden"><div style="width:1920px;height:1080px;transform:scale(.70);transform-origin:top left;position:absolute;left:220px">${pr(c)}</div></div><div class="filmstrip" style="position:absolute;left:0;right:0;bottom:75px;height:130px">${['liam','kristina','brendan','marcus'].map(id=>`<div class="smalltile ${id===c.speaker?'speaking':''}"><div class="initial">${initials(id)}</div><span>${names[id]}</span></div>`).join('')}</div><footer style="position:absolute;left:0;right:0;bottom:0;height:70px"><span>Microphone</span><span>Camera</span><span class="share">SJ is sharing</span></footer></section>`;
  if(c.primeWallpaper&&side==='left')return `<div style="position:absolute;inset:0;background:#16171c;display:flex;align-items:center;justify-content:center"><img src="assets/reddit/code-quality.jpg" alt="Before OpenAI: two hours coding, six hours debugging. After OpenAI: five minutes generating code, twenty-four hours debugging." style="width:1450px;max-height:950px;object-fit:contain"></div>`;
  if(c.revisionCode&&side==='left')return terminal('auth/signatures.ts · committed two years ago',['export function verifySignature(provided, expected) {', '  if (provided = expected) {', '    return true;', '  }', '  return false;', '}']);
