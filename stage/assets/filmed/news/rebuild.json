@@ -1,0 +1,471 @@
+{
+  "score": "assets/filmed/news/raw/music/montage-score.mp3",
+  "targets": {
+    "opening": {
+      "cue": "s00_montage",
+      "output": "assets/filmed/opening-montage-v10.mp4",
+      "referenceSeconds": 116.545042
+    },
+    "time-jump-a": {
+      "cue": "s01c_time_jump_to_good_instinct",
+      "output": "assets/filmed/time-jump-a-v5.mp4",
+      "referenceSeconds": 68.253972
+    },
+    "time-jump-b": {
+      "cue": "s07_time_jump_to_best_practices",
+      "output": "assets/filmed/time-jump-b-piano-v1.mp4",
+      "referenceSeconds": 47.786
+    },
+    "time-jump-c": {
+      "cue": "s11c_time_jump_to_offboarding",
+      "output": "assets/filmed/time-jump-c-v6.mp4",
+      "referenceSeconds": 35.587333
+    },
+    "three-day": {
+      "cue": "s20b_news_montage_restored",
+      "output": "assets/filmed/three-day-news-montage-v1.mp4",
+      "referenceSeconds": 103.583
+    },
+    "collapse": {
+      "cue": "s23_collapse_montage",
+      "output": "assets/filmed/collapse-to-trial-v4.mp4",
+      "referenceSeconds": 57.120036
+    },
+    "sentencing": {
+      "cue": "news_report_9",
+      "output": "assets/filmed/news/sentencing-news-and-statements-v4.mp4",
+      "referenceSeconds": 49.132
+    },
+    "reporter-sj": {
+      "cue": "s23b_reporter_sj",
+      "output": "assets/filmed/sentencing-interviews/reporter-sj-card-v2.mp4",
+      "referenceSeconds": 8.0
+    },
+    "reporter-brendan": {
+      "cue": "s23b_reporter_brendan",
+      "output": "assets/filmed/sentencing-interviews/reporter-brendan-card-v2.mp4",
+      "referenceSeconds": 8.0
+    }
+  },
+  "treatments": {
+    "plainVideo": "scale=1280:720,setsar=1,fps=24",
+    "plainAudio": "highpass=f=70,loudnorm=I=-17:TP=-2:LRA=7,aresample=48000",
+    "crtVideo": "scale=640:360,eq=saturation=0.6:contrast=1.07,noise=alls=3:allf=t,scale=1280:720,drawgrid=w=iw:h=4:t=1:c=black@0.24,vignette=PI/5,setsar=1,fps=24",
+    "crtAudio": "highpass=f=180,lowpass=f=4300,acompressor=threshold=0.12:ratio=3:attack=5:release=100,loudnorm=I=-17:TP=-2:LRA=7,aresample=48000",
+    "sepiaVideo": "colorchannelmixer=.393:.769:.189:0:.349:.686:.168:0:.272:.534:.131,eq=saturation=0.6:brightness=-0.02,noise=alls=3:allf=t,vignette=PI/6",
+    "radioAudio": "aformat=channel_layouts=mono,highpass=f=300,lowpass=f=2600,equalizer=f=1400:t=q:w=0.8:g=5,acompressor=threshold=0.06:ratio=5:attack=3:release=90,volume=3,asoftclip=type=tanh:threshold=0.35:output=1,vibrato=f=5:d=0.08,lowpass=f=3200,loudnorm=I=-17:TP=-2:LRA=5,aresample=48000",
+    "sentencingVideo": "scale=960:540,eq=saturation=0.72:contrast=1.04,noise=alls=2:allf=t,scale=1920:1080,drawgrid=w=iw:h=4:t=1:c=black@0.17,setsar=1",
+    "newsAudio": "highpass=f=70,equalizer=f=2400:t=q:w=0.7:g=1,dynaudnorm=f=150:g=11:p=0.9:m=4:r=0.15:b=1,acompressor=threshold=0.18:ratio=2:attack=20:release=200,loudnorm=I=-17:TP=-2:LRA=7,aresample=48000"
+  },
+  "opening": {
+    "clips": [
+      {
+        "file": "assets/filmed/news/raw/real/opening/elon-excerpt.mp4",
+        "start": 13.87,
+        "length": 8.9,
+        "cuts": [],
+        "name": "elon-excerpt",
+        "url": "https://www.youtube.com/watch?v=a2ZBEC16yH4"
+      },
+      {
+        "file": "assets/filmed/news/raw/real/opening/altman-clip.mp4",
+        "start": 0.46,
+        "length": 6.766666666666667,
+        "cuts": [],
+        "name": "altman-clip",
+        "url": "https://www.youtube.com/watch?v=Pn-W41hC764"
+      },
+      {
+        "file": "assets/filmed/news/raw/real/opening/hinton-sentences.mp4",
+        "start": 0,
+        "length": 5.4,
+        "cuts": [
+          2.5
+        ],
+        "name": "hinton-sentences",
+        "url": "https://www.youtube.com/watch?v=MGJpR591oaM"
+      },
+      {
+        "file": "assets/filmed/news/raw/real/opening/dw.mp4",
+        "start": 0,
+        "length": 7.033333333333333,
+        "cuts": [
+          2.466667,
+          4.3
+        ],
+        "name": "dw",
+        "url": "https://amp.dw.com/en/ttn-can-ai-blackmail-us-facts-vs-fear/video-72728475"
+      },
+      {
+        "file": "assets/filmed/news/raw/real/opening/breach-clip.mp4",
+        "start": 0.29,
+        "length": 5.566666666666666,
+        "cuts": [
+          1.8,
+          3.966667
+        ],
+        "name": "breach-clip",
+        "url": "https://www.youtube.com/watch?v=4UUQ3cAxOjY"
+      },
+      {
+        "file": "assets/filmed/news/raw/real/opening/blackhat-clean.mp4",
+        "start": 0,
+        "length": 7.2,
+        "cuts": [
+          1.966667,
+          5.433333
+        ],
+        "name": "blackhat-clean",
+        "url": "https://www.youtube.com/watch?v=87DyyMV0kCY"
+      },
+      {
+        "file": "assets/filmed/news/raw/real/opening/fox-current.mp4",
+        "start": 3.78,
+        "length": 6.433333333333334,
+        "cuts": [
+          1.966667,
+          4.233333
+        ],
+        "name": "fox-current",
+        "url": "https://www.foxnews.com/video/6404983096112"
+      },
+      {
+        "file": "assets/filmed/news/raw/real/opening/dario-forward-source.mp4",
+        "start": 6.28,
+        "length": 5.333333333333333,
+        "cuts": [],
+        "name": "dario-forward-source",
+        "url": "https://www.youtube.com/watch?v=HI6skJ4Wf5I"
+      },
+      {
+        "file": "assets/filmed/news/raw/real/opening/sam-ending-source.mp4",
+        "start": 1.32,
+        "length": 30.8,
+        "cuts": [],
+        "name": "sam-ending-source",
+        "url": "https://www.youtube.com/watch?v=2my-NU6LuCM"
+      }
+    ],
+    "narration": [
+      "assets/filmed/news/raw/narration/opening-0.wav",
+      "assets/filmed/news/raw/narration/opening-1.wav",
+      "assets/audio/opening-intro-sj.mp3"
+    ],
+    "card": "assets/filmed/news/graphics/opening-date.png"
+  },
+  "timeJumps": {
+    "time-jump-a": {
+      "groups": [
+        {
+          "name": "maduro",
+          "date": "2026-01-04",
+          "card": "assets/filmed/news/graphics/a-0-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/maduro.mp4",
+              "start": 34.84,
+              "visual": 34.84,
+              "length": 7.866666666666666
+            }
+          ]
+        },
+        {
+          "name": "grok-recut",
+          "date": "2026-01-09",
+          "card": "assets/filmed/news/graphics/a-1-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/grok-recut.mp4",
+              "start": 10.3,
+              "visual": 10.3,
+              "length": 8.433333333333334
+            }
+          ]
+        },
+        {
+          "name": "olympics",
+          "date": "2026-02-06",
+          "card": "assets/filmed/news/graphics/a-2-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/olympics.mp4",
+              "start": 14.0,
+              "visual": 14.0,
+              "length": 2.5
+            },
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/olympics.mp4",
+              "start": 88.0,
+              "visual": 88.0,
+              "length": 2.5
+            }
+          ]
+        },
+        {
+          "name": "iran-feb",
+          "date": "2026-02-28",
+          "card": "assets/filmed/news/graphics/a-3-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/iran-feb.mp4",
+              "start": 7.34,
+              "visual": 7.34,
+              "length": 4.433333333333334
+            }
+          ]
+        },
+        {
+          "name": "ceasefire",
+          "date": "2026-04-08",
+          "card": "assets/filmed/news/graphics/a-4-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/ceasefire.mp4",
+              "start": 0.28,
+              "visual": 0.28,
+              "length": 8.0
+            }
+          ]
+        },
+        {
+          "name": "artemis-end",
+          "date": "2026-04-10",
+          "card": "assets/filmed/news/graphics/a-5-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/artemis-end.mp4",
+              "start": 5.75,
+              "visual": 5.75,
+              "length": 7.4
+            },
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/artemis-end.mp4",
+              "start": 17.8,
+              "visual": 17.8,
+              "length": 2.1
+            }
+          ]
+        },
+        {
+          "name": "opus",
+          "date": "2026-04-16",
+          "card": "assets/filmed/news/graphics/a-6-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/opus.mp4",
+              "start": 1.4,
+              "visual": 1.4,
+              "length": 5.0
+            }
+          ]
+        }
+      ],
+      "returnCard": "assets/filmed/news/graphics/a-return.png",
+      "mixBeforeReturn": false,
+      "muteUntil": 0
+    },
+    "time-jump-b": {
+      "groups": [
+        {
+          "name": "agent-error",
+          "date": "2026-04-30",
+          "card": "assets/filmed/news/graphics/b-0-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/agent-error.mp4",
+              "start": 4.08,
+              "visual": 17.9,
+              "length": 7.033333333333333
+            }
+          ]
+        },
+        {
+          "name": "google",
+          "date": "2026-05-19",
+          "card": "assets/filmed/news/graphics/b-1-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/google.mp4",
+              "start": 82.78,
+              "visual": 103.5,
+              "length": 7.566666666666666
+            }
+          ]
+        },
+        {
+          "name": "iran-june",
+          "date": "2026-06-11",
+          "card": "assets/filmed/news/graphics/b-2-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/iran-june.mp4",
+              "start": 10.16,
+              "visual": 10.16,
+              "length": 8.633333333333333
+            }
+          ]
+        },
+        {
+          "name": "worldcup",
+          "date": "2026-06-11",
+          "card": "assets/filmed/news/graphics/b-3-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/worldcup-commentary-and-picture.mp4",
+              "start": 2.5,
+              "visual": 2,
+              "length": 3.5,
+              "videoFile": "assets/filmed/news/raw/real/time-jumps/worldcup-early-picture.mp4"
+            },
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/worldcup-commentary-and-picture.mp4",
+              "start": 6.0,
+              "visual": 13,
+              "length": 3.5,
+              "videoFile": "assets/filmed/news/raw/real/time-jumps/worldcup-commentary-and-picture.mp4"
+            },
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/worldcup-commentary-and-picture.mp4",
+              "start": 9.5,
+              "visual": 2,
+              "length": 3.5,
+              "videoFile": "assets/filmed/news/raw/real/time-jumps/worldcup-late-picture.mp4"
+            }
+          ]
+        }
+      ],
+      "returnCard": "assets/filmed/news/graphics/b-return.png",
+      "mixBeforeReturn": true,
+      "muteUntil": 2.041992
+    },
+    "time-jump-c": {
+      "groups": [
+        {
+          "name": "ai-skills",
+          "date": "2026-07-18",
+          "card": "assets/filmed/news/graphics/c-0-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/ai-skills.mp4",
+              "start": 35.3,
+              "visual": 35.3,
+              "length": 5.866666666666666
+            }
+          ]
+        },
+        {
+          "name": "worldcup-final",
+          "date": "2026-07-19",
+          "card": "assets/filmed/news/graphics/c-1-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/worldcup-final.mp4",
+              "start": 49.24,
+              "visual": 49.24,
+              "length": 10.9
+            }
+          ]
+        },
+        {
+          "name": "eclipse",
+          "date": "2026-08-12",
+          "card": "assets/filmed/news/graphics/c-2-date.png",
+          "clips": [
+            {
+              "file": "assets/filmed/news/raw/real/time-jumps/eclipse.mp4",
+              "start": 152.8,
+              "visual": 152.8,
+              "length": 6.8
+            }
+          ]
+        }
+      ],
+      "returnCard": "assets/filmed/news/graphics/c-return.png",
+      "mixBeforeReturn": true,
+      "muteUntil": 0
+    }
+  },
+  "sentencing": {
+    "real": [
+      {
+        "file": "assets/filmed/news/raw/real/statements/hegseth.mp4",
+        "start": 0.2,
+        "length": 12.6,
+        "crop": "crop=1536:864:192:6",
+        "gain": 1
+      },
+      {
+        "file": "assets/filmed/news/raw/real/statements/vance.mp4",
+        "start": 4,
+        "length": 6,
+        "gain": 2
+      },
+      {
+        "file": "assets/filmed/news/raw/real/statements/trump.mp4",
+        "start": 2,
+        "length": 4.9,
+        "gain": 1
+      },
+      {
+        "file": "assets/filmed/news/raw/real/statements/trump.mp4",
+        "start": 13.1,
+        "length": 9.9,
+        "gain": 1
+      }
+    ]
+  },
+  "reporters": {
+    "reporter-sj": {
+      "person": "sj",
+      "name": "Elena Mercer",
+      "role": "WSJ reporter"
+    },
+    "reporter-brendan": {
+      "person": "brendan",
+      "name": "David Ellis",
+      "role": "NYT reporter"
+    }
+  },
+  "threeDay": [
+    {
+      "file": "assets/filmed/news/raw/three-day/01-hacking-campaign.mp4",
+      "start": 0,
+      "length": 15.1
+    },
+    {
+      "file": "assets/filmed/news/raw/three-day/02-global-outages.mp4",
+      "start": 0,
+      "length": 8.1
+    },
+    {
+      "file": "assets/filmed/news/raw/three-day/03-worm-resource-exhaustion.mp4",
+      "start": 0,
+      "length": 8.1
+    },
+    {
+      "file": "assets/filmed/news/raw/three-day/04-cloud-backbone.mp4",
+      "start": 0.45,
+      "length": 14.6
+    },
+    {
+      "file": "assets/filmed/news/raw/three-day/05-reinfection.mp4",
+      "start": 0,
+      "length": 15.1
+    },
+    {
+      "file": "assets/filmed/news/raw/three-day/06-supply-chain.mp4",
+      "start": 0,
+      "length": 15.1
+    },
+    {
+      "file": "assets/filmed/news/raw/three-day/07-missing-graphics.mp4",
+      "start": 0,
+      "length": 8.1
+    },
+    {
+      "file": "assets/filmed/news/raw/three-day/08-nuclear-plant-part-1.mp4",
+      "start": 0,
+      "length": 13.383
+    }
+  ]
+}

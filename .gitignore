@@ -6,6 +6,7 @@ stage/.script.lock
 stage/script-history/
 stage/proof-progress.json
 exports/
+build/
 .env
 .env.*
 

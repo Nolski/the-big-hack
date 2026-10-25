@@ -58,6 +58,8 @@ Editing a spoken line makes its old recording ineligible for playback. Generate 
 - `research/` — background material, not the current script.
 - `voice-references/` — preserved reference clips and voice vectors.
 
+To re-edit the news films, see [News montage sources and rebuild](stage/assets/filmed/news/REBUILD.md). It includes the real and AI footage, music, time cards, and the sepia/CRT/radio treatments. The optional rebuild runs in Docker and leaves the running show alone.
+
 Old storyboard tools and duplicate Markdown/YAML drafts were retired. Previous versions remain in Git history.
 
 ## Optional audio and PDF tools
