@@ -1,0 +1,62 @@
+{
+  "note": "Recorded dialogue and timing for this audition, not an authoring copy of the play. The main script remains stage/show.json.",
+  "duration": 53.77866666666667,
+  "events": [
+    {
+      "id": "s22_yours",
+      "speaker": "Marcus",
+      "text": "Look man I'm just thinking about that Mac Studio you had. IT mentioned you didn't return a Mac Studio?",
+      "start": 0.0,
+      "end": 6.05
+    },
+    {
+      "id": "s22_mine",
+      "speaker": "SJ",
+      "text": "Look I don't let the model run commands... there's no way the model could have been backdoored... although that night actually the model was briefly given the ability to run commands... but that wasn't.. I... fuck. But even if the safeguards were removed, the AI must have done it by itself. No one would be stupid enough to intentionally engineer an AI virus...",
+      "start": 6.35,
+      "end": 30.03
+    },
+    {
+      "id": "s22_sorry",
+      "speaker": "Marcus",
+      "text": "SJ. I didn't want to get wrapped up in any of this. I didn't know what else to do. They approached me and...",
+      "start": 30.43,
+      "end": 37.45
+    },
+    {
+      "id": "s22_hallway_cops",
+      "speaker": "Hallway officers",
+      "text": "In the hallway, one cop says: \u201cI fucking hate techies man, did he say what we need?\u201d The other replies: \u201c...I don't know man let's just grab him.\u201d",
+      "start": 37.699999999999996,
+      "end": 42.71333333333333
+    },
+    {
+      "id": "s22_l11",
+      "speaker": "Inside the apartment",
+      "text": "Three knocks. No ringing or heartbeat.",
+      "start": 42.83333333333333,
+      "end": 46.83333333333333
+    },
+    {
+      "id": "s22_l12",
+      "speaker": "Officer",
+      "text": "SJ? It's the police. Could you come to the door for us, please?",
+      "start": 47.103333333333325,
+      "end": 53.12866666666666
+    }
+  ],
+  "sourceCues": [
+    "s22_yours",
+    "s22_mine",
+    "s22_sorry",
+    "s22_hallway_cops",
+    "s22_l11",
+    "s22_l12"
+  ],
+  "castAudio": "Dialogue is unfiltered. Police lines use their original filmed performances.",
+  "editedDialogue": [
+    "s22_mine",
+    "s22_sorry"
+  ],
+  "marcusSourceCutSeconds": 7.02
+}

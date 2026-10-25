@@ -1,0 +1,413 @@
+{
+  "title": "SJ realizes what happened",
+  "version": "heartbeat-no-ringing",
+  "audio": "mix-no-ringing.mp3",
+  "duration": 53.779,
+  "renderId": "e85743997ebdb2b4",
+  "events": [
+    {
+      "id": "s22_yours",
+      "speaker": "Marcus",
+      "text": "Look man I'm just thinking about that Mac Studio you had. IT mentioned you didn't return a Mac Studio?",
+      "start": 0.0,
+      "end": 6.05
+    },
+    {
+      "id": "s22_mine",
+      "speaker": "SJ",
+      "text": "Look I don't let the model run commands... there's no way the model could have been backdoored... although that night actually the model was briefly given the ability to run commands... but that wasn't.. I... fuck. But even if the safeguards were removed, the AI must have done it by itself. No one would be stupid enough to intentionally engineer an AI virus...",
+      "start": 6.35,
+      "end": 30.03
+    },
+    {
+      "id": "s22_sorry",
+      "speaker": "Marcus",
+      "text": "SJ. I didn't want to get wrapped up in any of this. I didn't know what else to do. They approached me and...",
+      "start": 30.43,
+      "end": 37.45
+    },
+    {
+      "id": "s22_hallway_cops",
+      "speaker": "Hallway officers",
+      "text": "In the hallway, one cop says: \u201cI fucking hate techies man, did he say what we need?\u201d The other replies: \u201c...I don't know man let's just grab him.\u201d",
+      "start": 37.699999999999996,
+      "end": 42.71333333333333
+    },
+    {
+      "id": "s22_l11",
+      "speaker": "Inside the apartment",
+      "text": "Three knocks. No ringing or heartbeat.",
+      "start": 42.83333333333333,
+      "end": 46.83333333333333
+    },
+    {
+      "id": "s22_l12",
+      "speaker": "Officer",
+      "text": "SJ? It's the police. Could you come to the door for us, please?",
+      "start": 47.103333333333325,
+      "end": 53.12866666666666
+    }
+  ],
+  "markers": [
+    {
+      "label": "Heartbeat build",
+      "time": 12.08
+    },
+    {
+      "label": "Marcus",
+      "time": 30.43
+    },
+    {
+      "label": "180 BPM",
+      "time": 35.5
+    },
+    {
+      "label": "Dry door knocks",
+      "time": 42.834333333333326
+    }
+  ],
+  "sound": {
+    "ringing": false,
+    "musicOrAmbienceAdded": false,
+    "voiceFilteringOrFades": false,
+    "heartbeatStartBpm": 72,
+    "heartbeatEndBpm": 180,
+    "heartbeatGainDb": 6,
+    "heartbeatStopSeconds": 37.7,
+    "masterGainDb": -1.1465,
+    "truePeakDb": -1.6,
+    "heartbeatPulses": [
+      {
+        "time": 12.63,
+        "bpm": 72.0,
+        "peakDb": -13.58,
+        "withinPairGap": 0.115
+      },
+      {
+        "time": 13.441725,
+        "bpm": 75.833,
+        "peakDb": -13.17,
+        "withinPairGap": 0.113651
+      },
+      {
+        "time": 14.214348,
+        "bpm": 79.482,
+        "peakDb": -12.78,
+        "withinPairGap": 0.112368
+      },
+      {
+        "time": 14.953028,
+        "bpm": 82.97,
+        "peakDb": -12.4,
+        "withinPairGap": 0.11114
+      },
+      {
+        "time": 15.661881,
+        "bpm": 86.318,
+        "peakDb": -12.04,
+        "withinPairGap": 0.109962
+      },
+      {
+        "time": 16.344251,
+        "bpm": 89.54,
+        "peakDb": -11.69,
+        "withinPairGap": 0.108829
+      },
+      {
+        "time": 17.002903,
+        "bpm": 92.65,
+        "peakDb": -11.36,
+        "withinPairGap": 0.107734
+      },
+      {
+        "time": 17.64015,
+        "bpm": 95.66,
+        "peakDb": -11.03,
+        "withinPairGap": 0.106675
+      },
+      {
+        "time": 18.257953,
+        "bpm": 98.577,
+        "peakDb": -10.72,
+        "withinPairGap": 0.105649
+      },
+      {
+        "time": 18.857989,
+        "bpm": 101.411,
+        "peakDb": -10.42,
+        "withinPairGap": 0.104652
+      },
+      {
+        "time": 19.441709,
+        "bpm": 104.167,
+        "peakDb": -10.12,
+        "withinPairGap": 0.103682
+      },
+      {
+        "time": 20.010376,
+        "bpm": 106.853,
+        "peakDb": -9.83,
+        "withinPairGap": 0.102737
+      },
+      {
+        "time": 20.565097,
+        "bpm": 109.472,
+        "peakDb": -9.55,
+        "withinPairGap": 0.101815
+      },
+      {
+        "time": 21.106851,
+        "bpm": 112.031,
+        "peakDb": -9.27,
+        "withinPairGap": 0.100915
+      },
+      {
+        "time": 21.636506,
+        "bpm": 114.532,
+        "peakDb": -9.0,
+        "withinPairGap": 0.100035
+      },
+      {
+        "time": 22.154839,
+        "bpm": 116.98,
+        "peakDb": -8.74,
+        "withinPairGap": 0.099174
+      },
+      {
+        "time": 22.662547,
+        "bpm": 119.377,
+        "peakDb": -8.48,
+        "withinPairGap": 0.09833
+      },
+      {
+        "time": 23.160256,
+        "bpm": 121.727,
+        "peakDb": -8.23,
+        "withinPairGap": 0.097503
+      },
+      {
+        "time": 23.648535,
+        "bpm": 124.033,
+        "peakDb": -7.98,
+        "withinPairGap": 0.096692
+      },
+      {
+        "time": 24.127902,
+        "bpm": 126.297,
+        "peakDb": -7.74,
+        "withinPairGap": 0.095895
+      },
+      {
+        "time": 24.598826,
+        "bpm": 128.521,
+        "peakDb": -7.5,
+        "withinPairGap": 0.095113
+      },
+      {
+        "time": 25.06174,
+        "bpm": 130.707,
+        "peakDb": -7.26,
+        "withinPairGap": 0.094344
+      },
+      {
+        "time": 25.517037,
+        "bpm": 132.857,
+        "peakDb": -7.03,
+        "withinPairGap": 0.093587
+      },
+      {
+        "time": 25.965083,
+        "bpm": 134.973,
+        "peakDb": -6.8,
+        "withinPairGap": 0.092843
+      },
+      {
+        "time": 26.406212,
+        "bpm": 137.056,
+        "peakDb": -6.58,
+        "withinPairGap": 0.09211
+      },
+      {
+        "time": 26.840737,
+        "bpm": 139.108,
+        "peakDb": -6.36,
+        "withinPairGap": 0.091388
+      },
+      {
+        "time": 27.268944,
+        "bpm": 141.13,
+        "peakDb": -6.14,
+        "withinPairGap": 0.090676
+      },
+      {
+        "time": 27.691102,
+        "bpm": 143.124,
+        "peakDb": -5.93,
+        "withinPairGap": 0.089975
+      },
+      {
+        "time": 28.10746,
+        "bpm": 145.09,
+        "peakDb": -5.72,
+        "withinPairGap": 0.089283
+      },
+      {
+        "time": 28.51825,
+        "bpm": 147.03,
+        "peakDb": -5.51,
+        "withinPairGap": 0.088601
+      },
+      {
+        "time": 28.923691,
+        "bpm": 148.944,
+        "peakDb": -5.3,
+        "withinPairGap": 0.087927
+      },
+      {
+        "time": 29.323986,
+        "bpm": 150.835,
+        "peakDb": -5.1,
+        "withinPairGap": 0.087262
+      },
+      {
+        "time": 29.719326,
+        "bpm": 152.702,
+        "peakDb": -4.9,
+        "withinPairGap": 0.086605
+      },
+      {
+        "time": 30.10989,
+        "bpm": 154.546,
+        "peakDb": -4.7,
+        "withinPairGap": 0.085956
+      },
+      {
+        "time": 30.495848,
+        "bpm": 156.369,
+        "peakDb": -4.5,
+        "withinPairGap": 0.085315
+      },
+      {
+        "time": 30.877359,
+        "bpm": 158.17,
+        "peakDb": -4.31,
+        "withinPairGap": 0.084681
+      },
+      {
+        "time": 31.254573,
+        "bpm": 159.952,
+        "peakDb": -4.12,
+        "withinPairGap": 0.084054
+      },
+      {
+        "time": 31.627631,
+        "bpm": 161.713,
+        "peakDb": -3.93,
+        "withinPairGap": 0.083434
+      },
+      {
+        "time": 31.99667,
+        "bpm": 163.456,
+        "peakDb": -3.74,
+        "withinPairGap": 0.082821
+      },
+      {
+        "time": 32.361815,
+        "bpm": 165.18,
+        "peakDb": -3.55,
+        "withinPairGap": 0.082214
+      },
+      {
+        "time": 32.723187,
+        "bpm": 166.887,
+        "peakDb": -3.37,
+        "withinPairGap": 0.081614
+      },
+      {
+        "time": 33.080902,
+        "bpm": 168.576,
+        "peakDb": -3.19,
+        "withinPairGap": 0.081019
+      },
+      {
+        "time": 33.435067,
+        "bpm": 170.249,
+        "peakDb": -3.01,
+        "withinPairGap": 0.080431
+      },
+      {
+        "time": 33.785787,
+        "bpm": 171.905,
+        "peakDb": -2.83,
+        "withinPairGap": 0.079848
+      },
+      {
+        "time": 34.13316,
+        "bpm": 173.545,
+        "peakDb": -2.65,
+        "withinPairGap": 0.079271
+      },
+      {
+        "time": 34.47728,
+        "bpm": 175.17,
+        "peakDb": -2.48,
+        "withinPairGap": 0.078699
+      },
+      {
+        "time": 34.818236,
+        "bpm": 176.78,
+        "peakDb": -2.31,
+        "withinPairGap": 0.078133
+      },
+      {
+        "time": 35.156115,
+        "bpm": 178.376,
+        "peakDb": -2.13,
+        "withinPairGap": 0.077571
+      },
+      {
+        "time": 35.490999,
+        "bpm": 179.957,
+        "peakDb": -1.96,
+        "withinPairGap": 0.077015
+      },
+      {
+        "time": 35.824333,
+        "bpm": 180.0,
+        "peakDb": -1.96,
+        "withinPairGap": 0.077
+      },
+      {
+        "time": 36.157667,
+        "bpm": 180.0,
+        "peakDb": -1.96,
+        "withinPairGap": 0.077
+      },
+      {
+        "time": 36.491,
+        "bpm": 180.0,
+        "peakDb": -1.96,
+        "withinPairGap": 0.077
+      },
+      {
+        "time": 36.824333,
+        "bpm": 180.0,
+        "peakDb": -1.96,
+        "withinPairGap": 0.077
+      },
+      {
+        "time": 37.157667,
+        "bpm": 180.0,
+        "peakDb": -1.96,
+        "withinPairGap": 0.077
+      },
+      {
+        "time": 37.491,
+        "bpm": 180.0,
+        "peakDb": -1.96,
+        "withinPairGap": 0.077
+      }
+    ]
+  },
+  "note": "Standalone audition. The production script and presenter are unchanged."
+}

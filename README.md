@@ -60,6 +60,8 @@ Editing a spoken line makes its old recording ineligible for playback. Generate 
 
 To re-edit the news films, see [News montage sources and rebuild](stage/assets/filmed/news/REBUILD.md). It includes the real and AI footage, music, time cards, and the sepia/CRT/radio treatments. The optional rebuild runs in Docker and leaves the running show alone.
 
+The separate [SJ heartbeat audition](stage/assets/sound-design/sj-realization/README.md) includes the mix, lossless stems, source sounds, and a containerized rebuild for adjusting the effect.
+
 Old storyboard tools and duplicate Markdown/YAML drafts were retired. Previous versions remain in Git history.
 
 ## Optional audio and PDF tools

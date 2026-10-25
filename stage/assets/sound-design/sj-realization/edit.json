@@ -1,0 +1,24 @@
+{
+  "sampleRate": 48000,
+  "startBpm": 72,
+  "endBpm": 180,
+  "heartbeatStartSeconds": 12.63,
+  "peakTempoAtSeconds": 35.5,
+  "heartbeatStopSeconds": 37.7,
+  "fadeOutSeconds": 0.035,
+  "startPeakDb": -19.58,
+  "endPeakDb": -7.96,
+  "heartbeatGainDb": 6,
+  "slowPairGapSeconds": 0.115,
+  "fastPairGapSeconds": 0.077,
+  "slowHitDurationsSeconds": [
+    0.1,
+    0.075
+  ],
+  "fastHitDurationsSeconds": [
+    0.06,
+    0.05
+  ],
+  "secondHitRms": 0.9,
+  "truePeakTargetDb": -1.6
+}

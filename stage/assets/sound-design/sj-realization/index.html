@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Big Hack · SJ sound audition</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#101217;color:#f3f1ec}*{box-sizing:border-box}body{margin:0;padding:48px 24px}main{max-width:800px;margin:auto}.eyebrow{font-size:12px;color:#acb2c0;text-transform:uppercase;letter-spacing:2px}h1{font-size:clamp(28px,5vw,42px);font-weight:650;line-height:1.14;margin:18px 0}p{line-height:1.6;color:#c8ccd5}.player{margin:32px 0;border:1px solid #414856;border-radius:18px;padding:28px;background:#191e27}audio{width:100%;margin:10px 0 24px}button,.download{color:#f7f4ec;background:#252d3b;border:1px solid #556075;border-radius:8px;padding:12px 16px;font:inherit;cursor:pointer}button:hover,.download:hover{background:#35435a}button:focus-visible,a:focus-visible{outline:3px solid #e5b57c;outline-offset:3px}.main-button{background:#e9c493;color:#201a14;font-weight:650;border:none;margin-bottom:16px;min-width:160px}.markers{display:flex;gap:8px;flex-wrap:wrap}.speaker{font-size:13px;font-weight:700;text-transform:uppercase;color:#e9c493;letter-spacing:1px;margin-top:30px}.line{min-height:130px;font-size:21px;line-height:1.6;color:#f3f1ec;margin:8px 0 12px}.status{font-size:13px;color:#a5b4ca}.foot{font-size:14px;color:#aab1bf}.download{display:inline-block;text-decoration:none}details{margin-top:32px;border-top:1px solid #343d4d;padding-top:24px}summary{cursor:pointer}blockquote{margin:18px 0 30px;line-height:1.7;color:#d2d6df}.error{color:#ffb8a5}
+</style>
+<main>
+<div class="eyebrow">The Big Hack · Sound audition</div>
+<h1>SJ realizes what happened</h1>
+<p>The paired heartbeat grows louder and reaches 180 BPM. There is no ringing. The heartbeat stops before the knocks.</p>
+<section class="player" aria-label="Isolated scene player">
+<button class="main-button" id="play" disabled>Loading scene…</button>
+<audio id="audio" controls preload="metadata" aria-label="Revised scene audio"></audio>
+<div class="markers" id="markers"></div>
+<div class="speaker" id="speaker">Ready to listen</div>
+<p class="line" id="line">Only this scene plays.</p>
+<div class="status" id="status" role="status">Loading the local recording…</div>
+</section>
+<a class="download" id="download" download>Download MP3</a>
+<p class="foot">Standalone audition. The play is unchanged. <a href="README.md">Stems and rebuild instructions</a></p>
+<details><summary>The two extended lines</summary><div id="dialogue"></div></details>
+</main>
+<script>
+const audio=document.getElementById('audio'),play=document.getElementById('play');
+let data;
+const display=()=>{
+  if(!data)return;
+  const t=audio.currentTime,event=data.events.find(e=>t>=e.start&&t<e.end);
+  document.getElementById('speaker').textContent=event?.speaker||(audio.ended?'End of scene':'Pause');
+  document.getElementById('line').textContent=event?.text||' ';
+  const format=n=>`${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`;
+  document.getElementById('status').textContent=`${format(t)} / ${format(data.duration)} · Normal playback speed`;
+};
+const start=async()=>{try{await audio.play()}catch(e){document.getElementById('status').textContent='Press the audio player to begin.'}};
+play.addEventListener('click',()=>{if(audio.paused){if(audio.ended)audio.currentTime=0;start()}else audio.pause()});
+audio.addEventListener('play',()=>play.textContent='Pause scene');
+audio.addEventListener('pause',()=>play.textContent=audio.ended?'Replay scene':'Play scene');
+audio.addEventListener('ended',()=>{play.textContent='Replay scene';display()});
+audio.addEventListener('timeupdate',display);
+audio.addEventListener('seeked',display);
+audio.addEventListener('error',()=>document.getElementById('status').textContent='The audio could not load. Reload this page.');
+fetch('manifest.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('not-ready');return r.json()}).then(d=>{
+  data=d;audio.src=d.audio+'?v='+d.renderId;play.disabled=false;play.textContent='Play scene';
+  const download=document.getElementById('download');download.href=d.audio;
+  for(const m of d.markers){const b=document.createElement('button');b.textContent=m.label;b.addEventListener('click',()=>{audio.currentTime=m.time;start()});document.getElementById('markers').append(b)}
+  for(const id of ['s22_mine','s22_sorry']){const e=d.events.find(e=>e.id===id),p=document.createElement('p'),b=document.createElement('blockquote');p.textContent=e.speaker;b.textContent=e.text;document.getElementById('dialogue').append(p,b)}
+  document.getElementById('status').textContent='Ready · Normal playback speed';
+}).catch(()=>{play.textContent='Not ready yet';document.getElementById('status').textContent='The revised recording is still being prepared.'});
+</script>
+</html>
