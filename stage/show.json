@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-6ef0250f2ffc47ac",
+  "scriptRevision": "shared-1f04d6a00934429a",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -26132,7 +26132,14 @@
         }
       ],
       "mode": "huddle",
-      "kind": "live"
+      "kind": "live",
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 0,
+        "level": 1.458
+      }
     },
     {
       "staging": {
@@ -26183,7 +26190,14 @@
         }
       ],
       "mode": "huddle",
-      "kind": "live"
+      "kind": "live",
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 2.19,
+        "level": 1.458
+      }
     },
     {
       "id": "cue_b91dead77c334d318252f8fc8edfe992",
@@ -26233,7 +26247,14 @@
         "officersPresent": false,
         "laptop": "in apartment, open"
       },
-      "beat": 23
+      "beat": 23,
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 5.83,
+        "level": 1.458
+      }
     },
     {
       "staging": {
@@ -26284,7 +26305,14 @@
         }
       ],
       "mode": "huddle",
-      "kind": "live"
+      "kind": "live",
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 7.83,
+        "level": 1.458
+      }
     },
     {
       "staging": {
@@ -26335,7 +26363,14 @@
         }
       ],
       "mode": "huddle",
-      "kind": "live"
+      "kind": "live",
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 13.47,
+        "level": 1.458
+      }
     },
     {
       "staging": {
@@ -26386,7 +26421,14 @@
         }
       ],
       "mode": "huddle",
-      "kind": "live"
+      "kind": "live",
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 21.83,
+        "level": 1.458
+      }
     },
     {
       "staging": {
@@ -26437,7 +26479,14 @@
       "advance": "manual",
       "audioDuration": 13.244082,
       "direction": "",
-      "audio": "assets/audio/shared-13443a793b86a6b8e06a52212f9f4903e39655d8897565c5fb35d145541ae8b1.mp3"
+      "audio": "assets/audio/shared-13443a793b86a6b8e06a52212f9f4903e39655d8897565c5fb35d145541ae8b1.mp3",
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 27.16,
+        "level": 1.458
+      }
     },
     {
       "staging": {
@@ -26488,7 +26537,14 @@
         }
       ],
       "mode": "huddle",
-      "kind": "live"
+      "kind": "live",
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 40.4,
+        "level": 1.458
+      }
     },
     {
       "staging": {
@@ -26540,7 +26596,14 @@
         }
       ],
       "mode": "huddle",
-      "kind": "stage"
+      "kind": "stage",
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 55.0,
+        "level": 1.458
+      }
     },
     {
       "staging": {
@@ -26591,7 +26654,14 @@
         }
       ],
       "mode": "huddle",
-      "kind": "live"
+      "kind": "live",
+      "backgroundMusic": {
+        "id": "s22-violin-tremolo",
+        "src": "assets/music/s22-violin-tremolo-build.mp3",
+        "loop": false,
+        "startAt": 60.0,
+        "level": 1.458
+      }
     },
     {
       "staging": {
