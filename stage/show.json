@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-1f04d6a00934429a",
+  "scriptRevision": "shared-16bcff5ab2584d5c",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -26138,7 +26138,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 0,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
@@ -26196,7 +26196,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 2.19,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
@@ -26253,7 +26253,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 5.83,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
@@ -26311,7 +26311,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 7.83,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
@@ -26369,7 +26369,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 13.47,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
@@ -26427,7 +26427,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 21.83,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
@@ -26485,7 +26485,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 27.16,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
@@ -26543,7 +26543,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 40.4,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
@@ -26602,7 +26602,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 55.0,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
@@ -26660,7 +26660,7 @@
         "src": "assets/music/s22-violin-tremolo-build.mp3",
         "loop": false,
         "startAt": 60.0,
-        "level": 1.458
+        "level": 3.211
       }
     },
     {
