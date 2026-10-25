@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-6ef0250f2ffc47ac",
+  "scriptRevision": "shared-83d92bd95fd244c3",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -5098,7 +5098,7 @@
       "kind": "live",
       "speaker": "brendan",
       "name": "Brendan",
-      "text": "…Honestly? His comment about your degree wasn't okay. He's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
+      "text": "…Honestly? He's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
       "direction": "live, caught between them, careful",
       "state": "huddle",
       "mode": "huddle",
@@ -5127,8 +5127,8 @@
       },
       "screenActions": {},
       "sourceBeat": 3,
-      "audio": "assets/audio/shared-1d96a993285a07fb473d246d042c7453449031ad92bc6d5271dd6a6bc67fc0df.mp3",
-      "audioDuration": 13.949388,
+      "audio": null,
+      "audioDuration": 0,
       "legacyCue": "s01b_l3",
       "visualMapping": "matched",
       "sfx": [],
@@ -5138,7 +5138,7 @@
           "id": "s01b_l3",
           "kind": "live",
           "name": "Brendan",
-          "text": "…Honestly? His comment about your degree wasn't okay. He's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
+          "text": "…Honestly? He's not a bad guy. He's thorny. He's also the best engineer I've worked with, I've learned more from him than from anyone here. You just learn to work around the edges of him.",
           "direction": "live, caught between them, careful"
         }
       ]
@@ -5209,7 +5209,7 @@
         "view": "call"
       },
       "loop": true,
-      "audioDuration": 10.03102,
+      "audioDuration": 0,
       "state": "huddle",
       "id": "s01b_l5",
       "screenActions": {},
@@ -5217,7 +5217,7 @@
       "sourceBeat": 5,
       "beat": 5,
       "name": "Brendan",
-      "text": "…Kind of? I mean, not that this excuses it, but I spoke to him this morning. He knows it landed badly, and said he shouldn't have brought up his concerns the way he did.",
+      "text": "…Kind of? His comment about your degree wasn't okay. I mean, not that this excuses it, but I spoke to him this morning. He knows it landed badly, and said he shouldn't have brought up his concerns the way he did.",
       "groupEnd": 71,
       "speaker": "brendan",
       "direction": "live, a small, honest shrug",
@@ -5232,14 +5232,14 @@
         "kristina",
         "brendan"
       ],
-      "audio": "assets/audio/shared-f057371fe137c2855eb97e4a2dac92358b4d8ba212af43081f8338eaf85e1969.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s01b_l5",
           "kind": "live",
           "name": "Brendan",
-          "text": "…Kind of? I mean, not that this excuses it, but I spoke to him this morning. He knows it landed badly, and said he shouldn't have brought up his concerns the way he did.",
+          "text": "…Kind of? His comment about your degree wasn't okay. I mean, not that this excuses it, but I spoke to him this morning. He knows it landed badly, and said he shouldn't have brought up his concerns the way he did.",
           "direction": "live, a small, honest shrug"
         }
       ],
@@ -21932,20 +21932,20 @@
       "sourceBeat": 33,
       "beat": 33,
       "name": "Narrator",
-      "text": "Brendan adds: “I’m going to bed. Find the answer.”",
+      "text": "Brendan adds: “I’m going to bed. Don't stop until you find the answer.”",
       "adaptationReason": "Explicit author revision, September 12, 2026.",
       "speaker": "narrator",
       "computers": {
         "left": "SJ"
       },
-      "audio": "assets/audio/shared-32a9ac30f8bdaba5d7f4340ece4ec27494858454b10a12f82a7b7dcfc034e075.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s20_l33",
           "kind": "voice",
           "name": "Narrator",
-          "text": "Brendan adds: “I’m going to bed. Find the answer.”",
+          "text": "Brendan adds: “I’m going to bed. Don't stop until you find the answer.”",
           "direction": ""
         }
       ],
@@ -21953,7 +21953,7 @@
       "legacyCue": "s20_l33",
       "sourceText": "\"…Don't stop and ask me, I'm going to bed.\"",
       "loop": true,
-      "audioDuration": 4.205714,
+      "audioDuration": 0,
       "sfx": [],
       "groupEnd": 391,
       "screenNotes": "Supplemental screen action; the narrator carries the plot.",
@@ -29481,7 +29481,7 @@
         "radioConnected": true
       },
       "loop": true,
-      "audioDuration": 7.47102,
+      "audioDuration": 0,
       "state": "radio",
       "id": "s23b_l14",
       "screenActions": {},
@@ -29489,7 +29489,7 @@
       "sourceBeat": 14,
       "beat": 14,
       "name": "Marcus",
-      "text": "SJ. You could be a better version of Luigi Mangione! You're a symbol of hope for guys like me everywhere.",
+      "text": "SJ. You could be a slightly less handsome version of Luigi Mangione! You're a symbol of hope for guys like me everywhere.",
       "groupEnd": 543,
       "speaker": "marcus",
       "direction": "",
@@ -29501,14 +29501,14 @@
         "marcus",
         "liam"
       ],
-      "audio": "assets/audio/shared-e9a4248d7ba560755bd7eacf9ce233f89a4911d1a8750512d2a5e7e53fb3c280.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s23b_l14",
           "kind": "live",
           "name": "Marcus",
-          "text": "SJ. You could be a better version of Luigi Mangione! You're a symbol of hope for guys like me everywhere.",
+          "text": "SJ. You could be a slightly less handsome version of Luigi Mangione! You're a symbol of hope for guys like me everywhere.",
           "direction": ""
         }
       ],
@@ -30327,7 +30327,7 @@
       "kind": "live",
       "speaker": "kristina",
       "name": "Kristina",
-      "text": "With some engineers it's always someone else's fault. I think it's sad. We're in a time when everyone needs a bit of lifting up. Let me take this opportunity to share my new mental health business. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic validation from real humans!",
+      "text": "With some people it's always someone else's fault. I think it's sad. We're in a time when everyone needs a bit of lifting up. Let me take this opportunity to share my new mental health business. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic validation from real humans!",
       "direction": "",
       "state": "black",
       "mode": "physical",
@@ -30341,8 +30341,8 @@
       "sfx": [],
       "advance": "manual",
       "loop": false,
-      "audio": "assets/audio/shared-af9a20b63a7e4e15ceedc9cc60c942b6bc068985011d46fc049d72ddd0c3f701.mp3",
-      "audioDuration": 23.640816,
+      "audio": null,
+      "audioDuration": 0,
       "screenNotes": "Kristina follows Brendan’s answer to the newspaper reporter.",
       "groupEnd": 562,
       "notes": [
@@ -30350,7 +30350,7 @@
           "id": "s23b_kristina_startup",
           "kind": "live",
           "name": "Kristina",
-          "text": "With some engineers it's always someone else's fault. I think it's sad. We're in a time when everyone needs a bit of lifting up. Let me take this opportunity to share my new mental health business. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic validation from real humans!",
+          "text": "With some people it's always someone else's fault. I think it's sad. We're in a time when everyone needs a bit of lifting up. Let me take this opportunity to share my new mental health business. It's called \"You're Absolutely Right\" and it's judgement-free consulting for those struggling with self-confidence. 100% organic validation from real humans!",
           "direction": ""
         }
       ]
