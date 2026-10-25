@@ -179,11 +179,11 @@ test('skipping the final stage direction preserves the running score and its nar
   assert(audio.paused);assert.equal(audio.volume,0,'The next narration still triggers the fade');
 });
 
-test('Audit music pauses through responders and resumes the same position under narration',async()=>{
+test('Audit music pauses through responder films and continues under narration and Brendan',async()=>{
   const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
   const scored=source.cues.filter(c=>c.backgroundMusic?.id==='audit-swarm');
   assert.equal(scored.length,48);
-  assert(scored.every(c=>!!c.backgroundMusic.paused===(c.speaker!=='narrator')));
+  assert(scored.every(c=>!!c.backgroundMusic.paused===!!c.montage));
   assert.equal(scored.find(c=>c.speaker==='narrator').backgroundMusic.startAt,0);
   for(const skipStageDirections of [false,true]){
     const settings=readSettings(source,{skipStageDirections});
@@ -213,11 +213,39 @@ test('Audit music pauses through responders and resumes the same position under 
       }
     }
     const final=scored.at(-1);
-    music.enter(final.backgroundMusic,true);music.sync(0,true);
-    assert(audio.paused,'Brendan’s final live line is also unscored');
+    music.enter(final.backgroundMusic,true);music.sync(0,true);await settle();
+    assert(!audio.paused,'Brendan’s final line keeps the score playing through its fade');
     const after=source.cues[source.cues.indexOf(final)+1];
     music.enter(after.backgroundMusic,true);
     assert.equal(audio.src,undefined,'The score is unloaded when the Audit ends');
+  }
+});
+
+test('all Brendan audit lines carry the score for live and generated casts',async()=>{
+  const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
+  const narrator=source.cues.find(c=>c.id==='s20_l29');
+  for(const mode of ['live','generated']){
+    const settings=readSettings(source,{modes:{brendan:mode}});
+    const show=playbackShow(source,settings);
+    const lines=show.cues.filter(c=>c.speaker==='brendan'&&c.backgroundMusic?.id==='audit-swarm');
+    assert.equal(lines.length,8);
+    for(const line of lines){
+      const audio=new TestAudio(),music=new BackgroundMusic(audio);
+      music.enter(narrator.backgroundMusic);music.sync(0,true);await settle();
+      audio.currentTime=17;
+      const plays=audio.plays;
+      music.enter(line.backgroundMusic,true);music.sync(0,true);await settle();
+      assert(!audio.paused,`${line.id} keeps the music under ${mode} Brendan`);
+      assert.equal(audio.currentTime,17,'GO carries the actual score position');
+      assert.equal(audio.plays,plays,'Brendan must not interrupt or restart the score');
+      music.sync(1,false);assert(audio.paused);
+      music.sync(1,true);await settle();assert(!audio.paused);
+      if(line.id==='s20_l72'){
+        audio.currentTime=22;music.sync(5,true);
+        assert(Math.abs(audio.volume-.04)<1e-9,'The existing ten-second ending fade still plays');
+        audio.currentTime=27;music.sync(10,true);assert(audio.paused);
+      }
+    }
   }
 });
 
