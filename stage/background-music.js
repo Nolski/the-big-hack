@@ -36,7 +36,6 @@ export class BackgroundMusic {
     this.audio.loop = config.loop ?? true;
     this.fadeStart = config.fadeOut > 0 ? this.audio.currentTime : null;
     this.cut = false;
-    if (config.paused) this.pause();
     this.applyVolume();
   }
 
@@ -75,7 +74,7 @@ export class BackgroundMusic {
       || fadeFinished || (!this.audio.loop && this.audio.ended));
     if (justCut) this.cut = true;
     this.applyVolume();
-    if (!running || this.config.paused || this.cut || cueTime < (this.config.startAfter || 0)) { this.pause(); return justCut; }
+    if (!running || this.cut || cueTime < (this.config.startAfter || 0)) { this.pause(); return justCut; }
     // Music stays at its original speed even when the voices play faster.
     if (this.audio.paused && !this.pending) {
       this.pending = true;

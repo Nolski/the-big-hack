@@ -21680,8 +21680,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 0,
-        "paused": true
+        "startAt": 0.0
       }
     },
     {
@@ -21731,8 +21730,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 0,
-        "paused": true
+        "startAt": 2.926
       }
     },
     {
@@ -21793,7 +21791,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 0
+        "startAt": 7.68
       }
     },
     {
@@ -21849,8 +21847,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 9.404,
-        "paused": true
+        "startAt": 17.084
       }
     },
     {
@@ -21911,7 +21908,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 9.404
+        "startAt": 19.853
       }
     },
     {
@@ -21972,7 +21969,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 20.793
+        "startAt": 31.242
       }
     },
     {
@@ -22029,7 +22026,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 24.999
+        "startAt": 35.448
       }
     },
     {
@@ -22081,8 +22078,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 36.963,
-        "paused": true
+        "startAt": 47.412
       }
     },
     {
@@ -22139,7 +22135,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 36.963
+        "startAt": 51.461
       }
     },
     {
@@ -22196,7 +22192,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 43.233
+        "startAt": 57.731
       }
     },
     {
@@ -22245,7 +22241,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 44.722
+        "startAt": 59.22
       }
     },
     {
@@ -22294,7 +22290,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 55.171
+        "startAt": 69.669
       }
     },
     {
@@ -22343,7 +22339,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 61.283
+        "startAt": 75.781
       }
     },
     {
@@ -22392,7 +22388,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 69.407
+        "startAt": 83.905
       }
     },
     {
@@ -22441,7 +22437,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 75.52
+        "startAt": 90.018
       }
     },
     {
@@ -22490,7 +22486,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 85.316
+        "startAt": 99.814
       }
     },
     {
@@ -22539,7 +22535,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 93.205
+        "startAt": 107.703
       }
     },
     {
@@ -22588,7 +22584,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 104.516
+        "startAt": 119.014
       }
     },
     {
@@ -22637,7 +22633,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 106.789
+        "startAt": 121.287
       }
     },
     {
@@ -22680,8 +22676,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 113.319,
-        "paused": true
+        "startAt": 127.817
       }
     },
     {
@@ -22730,7 +22725,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 113.319
+        "startAt": 135.817
       }
     },
     {
@@ -22775,8 +22770,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 120.712,
-        "paused": true
+        "startAt": 143.21
       }
     },
     {
@@ -22818,8 +22812,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 120.712,
-        "paused": true
+        "startAt": 151.21
       }
     },
     {
@@ -22868,7 +22861,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 120.712
+        "startAt": 159.21
       }
     },
     {
@@ -22917,7 +22910,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 130.743
+        "startAt": 169.241
       }
     },
     {
@@ -22966,7 +22959,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 145.737
+        "startAt": 184.235
       }
     },
     {
@@ -23008,8 +23001,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 157.623,
-        "paused": true
+        "startAt": 196.121
       }
     },
     {
@@ -23058,7 +23050,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 157.623
+        "startAt": 204.121
       }
     },
     {
@@ -23100,8 +23092,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 171.416,
-        "paused": true
+        "startAt": 217.913
       }
     },
     {
@@ -23150,7 +23141,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 171.416
+        "startAt": 220.913
       }
     },
     {
@@ -23192,8 +23183,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 198.661,
-        "paused": true
+        "startAt": 248.159
       }
     },
     {
@@ -23242,7 +23232,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 198.661
+        "startAt": 261.181
       }
     },
     {
@@ -23284,8 +23274,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 214.7,
-        "paused": true
+        "startAt": 277.22
       }
     },
     {
@@ -23334,7 +23323,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 214.7
+        "startAt": 285.22
       }
     },
     {
@@ -23393,7 +23382,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 234.736
+        "startAt": 305.256
       }
     },
     {
@@ -23449,8 +23438,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 255.817,
-        "paused": true
+        "startAt": 326.337
       }
     },
     {
@@ -23511,7 +23499,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 255.817
+        "startAt": 331.405
       }
     },
     {
@@ -23567,8 +23555,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 257.698,
-        "paused": true
+        "startAt": 333.286
       }
     },
     {
@@ -23629,7 +23616,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 257.698
+        "startAt": 337.335
       }
     },
     {
@@ -23685,8 +23672,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 270.785,
-        "paused": true
+        "startAt": 350.422
       }
     },
     {
@@ -23747,7 +23733,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 270.785
+        "startAt": 352.303
       }
     },
     {
@@ -23808,7 +23794,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 289.149
+        "startAt": 370.667
       }
     },
     {
@@ -23866,7 +23852,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 297.665
+        "startAt": 379.183
       }
     },
     {
@@ -23924,7 +23910,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 302.994
+        "startAt": 384.512
       }
     },
     {
@@ -23982,7 +23968,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 313.182
+        "startAt": 394.7
       }
     },
     {
@@ -24040,7 +24026,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 315.455
+        "startAt": 396.972
       }
     },
     {
@@ -24098,7 +24084,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 317.806
+        "startAt": 399.323
       }
     },
     {
@@ -24151,9 +24137,8 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 324.728,
-        "fadeOut": 10,
-        "paused": true
+        "startAt": 406.246,
+        "fadeOut": 10
       }
     },
     {

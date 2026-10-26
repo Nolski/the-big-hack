@@ -179,12 +179,11 @@ test('skipping the final stage direction preserves the running score and its nar
   assert(audio.paused);assert.equal(audio.volume,0,'The next narration still triggers the fade');
 });
 
-test('Audit music pauses through responders and resumes the same position under narration',async()=>{
+test('Audit music plays on through Brendan’s live lines and the responder films',async()=>{
   const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
   const scored=source.cues.filter(c=>c.backgroundMusic?.id==='audit-swarm');
   assert.equal(scored.length,48);
-  assert(scored.every(c=>!!c.backgroundMusic.paused===(c.speaker!=='narrator')));
-  assert.equal(scored.find(c=>c.speaker==='narrator').backgroundMusic.startAt,0);
+  assert.equal(scored[0].backgroundMusic.startAt,0);
   for(const skipStageDirections of [false,true]){
     const settings=readSettings(source,{skipStageDirections});
     const show=playbackShow(source,settings);
@@ -196,41 +195,34 @@ test('Audit music pauses through responders and resumes the same position under 
     const audio=new TestAudio(),music=new BackgroundMusic(audio);
     music.enter(cues[0].backgroundMusic);music.sync(0,true);await settle();
     audio.currentTime=101.25;
-    let plays=audio.plays;
+    const plays=audio.plays;
     for(const cue of cues.slice(1)){
       const position=audio.currentTime;
       music.enter(cue.backgroundMusic,true);
-      music.sync(120,true);await settle();
+      music.sync(0,true);await settle();
       assert.equal(audio.currentTime,position,'GO must not reload or seek the score');
-      if(cue.speaker==='narrator'){
-        assert(!audio.paused);assert.equal(audio.plays,++plays);
-        audio.currentTime+=2;
-      }else{
-        assert(audio.paused,'Responder films play without the score');
-        assert.equal(audio.plays,plays,'Consecutive films cannot restart the music');
-        music.sync(300,true);await settle();
-        assert(audio.paused);assert.equal(audio.currentTime,position);
-      }
+      assert(!audio.paused,'The score keeps playing under '+cue.id);
+      assert.equal(audio.plays,plays,'GO must not restart the score');
+      audio.currentTime+=2;
     }
     const final=scored.at(-1);
-    music.enter(final.backgroundMusic,true);music.sync(0,true);
-    assert(audio.paused,'Brendan’s final live line is also unscored');
+    assert.equal(final.kind,'live');
+    music.enter(final.backgroundMusic,true);music.sync(0,true);await settle();
+    assert(!audio.paused,'Brendan’s final live line is scored');
     const after=source.cues[source.cues.indexOf(final)+1];
     music.enter(after.backgroundMusic,true);
     assert.equal(audio.src,undefined,'The score is unloaded when the Audit ends');
   }
 });
 
-test('selecting a responder directly keeps music paused until the next narrator',async()=>{
+test('no score drops out under live lines or films',()=>{
   const source=JSON.parse(fs.readFileSync(new URL('../show.json',import.meta.url)));
-  const clip=source.cues.find(c=>c.id==='s20_insert_01-internal');
-  const narrator=source.cues.find(c=>c.id==='s20_l53');
-  const audio=new TestAudio(),music=new BackgroundMusic(audio);
-  music.enter(clip.backgroundMusic);music.sync(0,true);await settle();
-  assert(audio.paused);assert.equal(audio.plays,0);
-  const position=audio.currentTime;
-  music.enter(narrator.backgroundMusic,true);music.sync(0,true);await settle();
-  assert(!audio.paused);assert.equal(audio.currentTime,position);
-  music.sync(1,false);assert(audio.paused);
-  music.sync(1,true);await settle();assert(!audio.paused);
+  const runs=new Map();
+  source.cues.forEach((c,i)=>{const bm=c.backgroundMusic;if(!bm)return;
+    assert(!('paused' in bm),c.id+' must not pause its score');
+    if(bm.resume)return; // a computer's own audio, like SJ's YouTube, starts and stops with the screen
+    (runs.get(bm.id)||runs.set(bm.id,[]).get(bm.id)).push(i)});
+  for(const [id,idx] of runs)
+    for(let i=idx[0];i<=idx.at(-1);i++)
+      assert.equal(source.cues[i].backgroundMusic?.id,id,source.cues[i].id+' interrupts '+id);
 });

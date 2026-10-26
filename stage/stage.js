@@ -3,7 +3,7 @@ import {DESKS,lightingAt} from './lighting.js?v=lighting-20261012';
 import {nextCueType} from './next-cue.js?v=sj-realization-tail-20261017';
 import {sfxForCue,backgroundFor,counterProfile} from './visuals.js?v=sj-realization-tail-20261017';
 import {screenLabel,actionDuration,actions,sampleAction} from './screen-actions.js?v=sj-realization-tail-20261017';
-import {BackgroundMusic} from './background-music.js?v=audit-narration-only-20261017';
+import {BackgroundMusic} from './background-music.js?v=score-through-live-20261025';
 import {Muffle} from './muffle.js?v=offboarding-steep-20261020';
 const $=id=>document.getElementById(id), controller=controllerId();
 localStorage.setItem('big-hack-display-controller',controller);
