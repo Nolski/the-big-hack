@@ -23,3 +23,10 @@ research/montage-candidates/picks-reel.mp4
 research/song-cuts/
 research/montage-candidates/outro-preview-*.mp4
 research/montage-candidates/frames/
+
+# Real-news replacement research footage (large, local only)
+research/news-replacements/raw/
+research/news-replacements/sheets/
+research/news-replacements/frames/
+research/news-replacements/clips/
+research/news-replacements/subs/
