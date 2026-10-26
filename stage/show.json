@@ -16126,7 +16126,7 @@
       "kind": "live",
       "speaker": "liam",
       "name": "SJ",
-      "text": "In four years here, nobody has said one word to me about my performance. Just tell me what I could have done better.",
+      "text": "In fourteen years here, nobody has said one word to me about my performance. Just tell me what I could have done better.",
       "direction": "live",
       "state": "calendars",
       "mode": "huddle",
@@ -16157,8 +16157,8 @@
         "left": "offboarding-calendar-reveal"
       },
       "sourceBeat": 58,
-      "audio": "assets/audio/shared-a7abd615bc452b5462553a7372997d6b4decc416d96f61d69c0f42080dceaed3.mp3",
-      "audioDuration": 7.235918,
+      "audio": "assets/audio/shared-724cadc0c9767105b7e46195dc6ba40da9cb8a89c4046c5be1700d67480ac02f.mp3",
+      "audioDuration": 7.47102,
       "legacyCue": "s14_l56",
       "visualMapping": "matched",
       "sfx": [],
@@ -16168,7 +16168,7 @@
           "id": "s14_l58",
           "kind": "live",
           "name": "SJ",
-          "text": "In four years here, nobody has said one word to me about my performance. Just tell me what I could have done better.",
+          "text": "In fourteen years here, nobody has said one word to me about my performance. Just tell me what I could have done better.",
           "direction": "live"
         }
       ],
@@ -17237,7 +17237,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 1.306122,
+      "audioDuration": 1.567347,
       "state": "apartment",
       "id": "s14a_l10",
       "screenActions": {},
@@ -17245,7 +17245,7 @@
       "sourceBeat": 10,
       "beat": 10,
       "name": "SJ",
-      "text": "Four years.",
+      "text": "Fourteen years.",
       "groupEnd": 289,
       "speaker": "liam",
       "direction": "live",
@@ -17258,14 +17258,14 @@
         "brendan",
         "marcus"
       ],
-      "audio": "assets/audio/shared-51ce7029b53c25cdbeabe60ca45b421f8469bf51932718b4190844bd1be0542c.mp3",
+      "audio": "assets/audio/shared-8adb1b638b2c8b88663ae22a3146cc70bf59623301670bc919de38e17a1c4a05.mp3",
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s14a_l10",
           "kind": "live",
           "name": "SJ",
-          "text": "Four years.",
+          "text": "Fourteen years.",
           "direction": "live"
         }
       ],
@@ -17975,7 +17975,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 10.762449,
+      "audioDuration": 11.075918,
       "state": "apartment",
       "id": "s14a_l30",
       "screenActions": {},
@@ -17983,7 +17983,7 @@
       "sourceBeat": 30,
       "beat": 30,
       "name": "Marcus",
-      "text": "It's not just the weaving thing! It's your thing. Four years, right? Four years of good reviews and no bugs. At least the Luddites tried to do something about it.",
+      "text": "It's not just the weaving thing! It's your thing. Fourteen years, right? Fourteen years of good reviews and no bugs. At least the Luddites tried to do something about it.",
       "groupEnd": 304,
       "speaker": "marcus",
       "direction": "",
@@ -17996,14 +17996,14 @@
         "brendan",
         "marcus"
       ],
-      "audio": "assets/audio/shared-93e9c115ca1373711154eaef71874fc9b75fde0ddd5ccd42e819cd9c34f2d604.mp3",
+      "audio": "assets/audio/shared-257a065832e5133428144249ea03fa0994d8daaa8d6cd342e4fc5b32d23d7e57.mp3",
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s14a_l30",
           "kind": "live",
           "name": "Marcus",
-          "text": "It's not just the weaving thing! It's your thing. Four years, right? Four years of good reviews and no bugs. At least the Luddites tried to do something about it.",
+          "text": "It's not just the weaving thing! It's your thing. Fourteen years, right? Fourteen years of good reviews and no bugs. At least the Luddites tried to do something about it.",
           "direction": ""
         }
       ],
