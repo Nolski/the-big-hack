@@ -1,0 +1,36 @@
+{
+  "sequence": [
+    {
+      "file": "14-craigslist-3s.mp4",
+      "start": 0,
+      "duration": 3
+    },
+    {
+      "file": "craigslist-followup-ai.mp4",
+      "start": 0,
+      "duration": 4.437771
+    }
+  ],
+  "sourceFilename": "signal-2026-10-20-15-53-23-818_003.mp4",
+  "sourceSHA256": "51de9ce5ee43a69b61ef8d2c969951584d13918aae8c2918886c4078ad49df3f",
+  "audioProcessing": {
+    "method": "ElevenLabs Voice Isolator, then gentle EQ, compression and two-pass loudness normalization",
+    "aiProcessed": true,
+    "service": "ElevenLabs",
+    "endpoint": "/v1/audio-isolation",
+    "isolatedStem": "craigslist-followup-isolated.mp3",
+    "processingPadding": "Tail padded to 5.2 seconds for the API minimum; trimmed back to the original video duration before muxing.",
+    "targetIntegratedLUFS": -16,
+    "measuredIntegratedLUFS": -16.56,
+    "measuredTruePeakDBTP": -1.52,
+    "speechTimingShiftMs": 0,
+    "filters": "atrim=duration=4.437771,asetpts=PTS-STARTPTS,highpass=f=65,equalizer=f=240:t=q:w=0.8:g=-1,equalizer=f=3000:t=q:w=0.7:g=1,acompressor=threshold=0.10:ratio=2:attack=15:release=150:makeup=1,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=7:measured_I=-28.35:measured_TP=-11.28:measured_LRA=3.00:measured_thresh=-40.45:offset=-0.45:linear=true,aresample=48000,afade=t=in:d=0.008,afade=t=out:st=4.417:d=0.02"
+  },
+  "output": "craigslist-exchange-ai.mp4",
+  "duration": 7.438,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "music": "Audit score stays paused throughout the exchange; resumes on the following narrator cue."
+}

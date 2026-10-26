@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-1766c12517ec4721",
+  "scriptRevision": "shared-6e8ce393a41c40ab",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -23068,10 +23068,10 @@
       "screenActions": {},
       "id": "s20_insert_14-craigslist-3s",
       "sfx": [],
-      "montageDuration": 3.0,
+      "montageDuration": 7.438,
       "beat": 58,
       "name": "",
-      "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
+      "text": "An engineer asks: “Why is a database server reading Craigslist?” The recorded response follows immediately. Play to the end, then GO.",
       "groupEnd": 414,
       "speaker": "",
       "direction": "",
@@ -23086,12 +23086,12 @@
           "id": "s20_insert_14-craigslist-3s",
           "kind": "stage",
           "name": "",
-          "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
+          "text": "An engineer asks: “Why is a database server reading Craigslist?” The recorded response follows immediately. Play to the end, then GO.",
           "direction": ""
         }
       ],
       "mode": "montage",
-      "montage": "assets/filmed/oncall-review-v2/14-craigslist-3s.mp4",
+      "montage": "assets/filmed/oncall-review-v2/craigslist-exchange-ai.mp4",
       "kind": "stage",
       "backgroundMusic": {
         "id": "audit-swarm",
