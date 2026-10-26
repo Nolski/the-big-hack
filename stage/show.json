@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-16bcff5ab2584d5c",
+  "scriptRevision": "shared-f83f04480f20455d",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -2090,6 +2090,13 @@
       "screenNotes": "Kristina privately types her respect question and reads the answer, then types “Okay.... how can I get away with murdering them” and leaves it unsent. Keep the exchange on screen as the standup continues; the follow-up is not spoken.",
       "actionSource": {
         "left": "s01_l18"
+      },
+      "backgroundMusic": {
+        "id": "marcus-anthem-s01-a",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
       }
     },
     {
@@ -2343,7 +2350,14 @@
       "actionSource": {
         "left": "s01_l18"
       },
-      "interrupts": true
+      "interrupts": true,
+      "backgroundMusic": {
+        "id": "marcus-anthem-s01-b",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "id": "s01_l27",
@@ -2470,6 +2484,13 @@
       "screenNotes": "Kristina privately types her respect question and reads the answer, then types “Okay.... how can I get away with murdering them” and leaves it unsent. Keep the exchange on screen as the standup continues; the follow-up is not spoken.",
       "actionSource": {
         "left": "s01_l18"
+      },
+      "backgroundMusic": {
+        "id": "marcus-anthem-s01-c",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
       }
     },
     {
@@ -7858,7 +7879,14 @@
           "text": "It's quick. Do none of you actually feel like we're being turned into sweat shop workers hitting approve on Claude?",
           "direction": ""
         }
-      ]
+      ],
+      "backgroundMusic": {
+        "id": "marcus-anthem-s06-a",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "id": "s06_l8",
@@ -7971,7 +7999,14 @@
           "direction": "going anyway, and this is the first real history in the play"
         }
       ],
-      "interrupts": true
+      "interrupts": true,
+      "backgroundMusic": {
+        "id": "marcus-anthem-s06-b",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "id": "s06_l10",
@@ -17428,7 +17463,14 @@
       ],
       "mode": "jitsi",
       "kind": "live",
-      "legacyCue": "s14a_l20"
+      "legacyCue": "s14a_l20",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s19-a",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -17859,7 +17901,14 @@
       ],
       "mode": "jitsi",
       "kind": "live",
-      "legacyCue": "s14a_l23"
+      "legacyCue": "s14a_l23",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s19-b",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -17960,7 +18009,14 @@
       ],
       "mode": "jitsi",
       "kind": "live",
-      "legacyCue": "s14a_l30"
+      "legacyCue": "s14a_l30",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s19-c",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -18010,7 +18066,14 @@
       ],
       "mode": "jitsi",
       "kind": "live",
-      "legacyCue": "s14a_l33"
+      "legacyCue": "s14a_l33",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s19-c",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -18060,7 +18123,14 @@
       ],
       "mode": "jitsi",
       "kind": "live",
-      "legacyCue": "s14a_l34"
+      "legacyCue": "s14a_l34",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s19-c",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -18310,7 +18380,14 @@
       ],
       "mode": "jitsi",
       "kind": "live",
-      "legacyCue": "s14a_l40"
+      "legacyCue": "s14a_l40",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s19-d",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -18360,7 +18437,14 @@
       ],
       "mode": "jitsi",
       "kind": "live",
-      "legacyCue": "s14a_l41"
+      "legacyCue": "s14a_l41",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s19-d",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -18410,7 +18494,14 @@
       ],
       "mode": "jitsi",
       "kind": "live",
-      "legacyCue": "s14a_l43"
+      "legacyCue": "s14a_l43",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s19-d",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -25583,7 +25674,14 @@
       ],
       "mode": "huddle",
       "kind": "live",
-      "legacyCue": "s22_l2"
+      "legacyCue": "s22_l2",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s22",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -25638,7 +25736,14 @@
       ],
       "mode": "huddle",
       "kind": "live",
-      "legacyCue": "s22_l3"
+      "legacyCue": "s22_l3",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s22",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -25693,7 +25798,14 @@
       ],
       "mode": "huddle",
       "kind": "live",
-      "legacyCue": "s22_l4"
+      "legacyCue": "s22_l4",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s22",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -25748,7 +25860,14 @@
       ],
       "mode": "huddle",
       "kind": "live",
-      "legacyCue": "s22_l5"
+      "legacyCue": "s22_l5",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s22",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
@@ -25803,7 +25922,14 @@
       ],
       "mode": "huddle",
       "kind": "live",
-      "legacyCue": "s22_l6"
+      "legacyCue": "s22_l6",
+      "backgroundMusic": {
+        "id": "marcus-anthem-s22",
+        "src": "assets/music/marcus-anthem.mp3",
+        "startAt": 0,
+        "loop": false,
+        "level": 1.4
+      }
     },
     {
       "staging": {
