@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-6e8ce393a41c40ab",
+  "scriptRevision": "shared-dbf2e4f1cf5a4521",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -23068,7 +23068,7 @@
       "screenActions": {},
       "id": "s20_insert_14-craigslist-3s",
       "sfx": [],
-      "montageDuration": 7.438,
+      "montageDuration": 7.5,
       "beat": 58,
       "name": "",
       "text": "An engineer asks: “Why is a database server reading Craigslist?” The recorded response follows immediately. Play to the end, then GO.",
@@ -23091,7 +23091,7 @@
         }
       ],
       "mode": "montage",
-      "montage": "assets/filmed/oncall-review-v2/craigslist-exchange-ai.mp4",
+      "montage": "assets/filmed/oncall-review-v2/craigslist-exchange-take-002-2.95s.mp4",
       "kind": "stage",
       "backgroundMusic": {
         "id": "audit-swarm",
