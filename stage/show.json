@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-dbf2e4f1cf5a4521",
+  "scriptRevision": "shared-165e8e6b3d1f493d",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -17875,7 +17875,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 13.00898,
+      "audioDuration": 0,
       "state": "apartment",
       "id": "s14a_l26",
       "screenActions": {},
@@ -17883,7 +17883,7 @@
       "sourceBeat": 26,
       "beat": 26,
       "name": "SJ",
-      "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
+      "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you a sledgehammer because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
       "groupEnd": 303,
       "speaker": "liam",
       "direction": "live",
@@ -17896,14 +17896,14 @@
         "brendan",
         "marcus"
       ],
-      "audio": "assets/audio/shared-c6aa929aeb8a1a991bb7a5a6129e28b514409683fcf8058bdcde5bd5d3edb224.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s14a_l26",
           "kind": "live",
           "name": "SJ",
-          "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
+          "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you a sledgehammer because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
           "direction": "live"
         }
       ],
