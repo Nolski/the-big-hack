@@ -95,8 +95,6 @@ def cards(font_path):
                       ('JUDGE', 'VEO'), ('COPS', 'VEO'), ('PROSECUTOR', 'VEO'),
                       ('BLUE TEAM', 'VEO'), ('METLSTORM', 'HIMSELF')]),
         'plea': message([
-            ('AI models are trained on content that includes work stolen from artists, writers and other creatives. '
-             'People in these industries are being significantly impacted.', 32, GREY, 1),
             ("AI might be able to write code, but it can't create art.", 32, GREY, 1),
             ('There is an easy solution to this and that is', 32, GREY, 1),
             ('PAY ARTISTS AND CREATIVES.', 50, WHITE, 4)]),
@@ -123,8 +121,8 @@ def main():
 
     hit = fit_grid()
     timeline = [(0, 'black'), (hit(0), 'title'), (hit(2), 'w1'), (hit(3), 'w2'),
-                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(10), 'tech'), (hit(12), 'plea'), (hit(17), 'black')]
-    end = hit(18)
+                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(10), 'tech'), (hit(12), 'plea'), (hit(16), 'black')]
+    end = hit(17)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         lines = []
