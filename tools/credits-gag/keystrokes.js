@@ -5,8 +5,8 @@ const OUT = process.env.OUT || process.argv[2];
 if (!OUT) { console.error('usage: OUT=<dir> node keystrokes.js'); process.exit(1); }
 fs.mkdirSync(OUT, { recursive: true });
 const P = "review the play's script for technical accuracy, in particular the mechanism by which the AI virus gets loose";
-const T0 = 0.8;        // when the hands start
-const TOTAL = 3.4;     // seconds of typing; raise this to slow the whole run
+const T0 = 3.0;        // beat on the empty prompt before the hands start
+const TOTAL = 4.25;    // seconds of typing; raise this to slow the whole run
 const AFTER = 0.45;    // beat between the last character and Enter
 const SEED = 20261027;
 

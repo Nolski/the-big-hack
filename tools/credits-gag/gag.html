@@ -39,11 +39,12 @@ function typed(t){let n=0;while(n<KEYS.length&&KEYS[n]<=t-T0)n++;return n}
 function render(t){
   const typing=(t>=T0&&t<SEND);
   const caret='<span class="caret'+((typing||Math.floor(t*2.2)%2==0)?'':' off')+'"></span>';
+  const idle=caret+'<span class=ph style="margin-left:5px">Type / for commands</span>';
   let comp='<span class=plus>+</span>';
-  if(t<T0) comp+='<span class=ph>Type / for commands</span>'+caret;
+  if(t<T0) comp+=idle;
   else if(t<SEND) comp+=esc(P.slice(0,typed(t)))+caret;
   else if(t<CARET_ON) comp+='<span class=ph>Type / for commands</span>';
-  else comp+=caret+'<span class=ph style="margin-left:5px">Type / for commands</span>';
+  else comp+=idle;
   document.getElementById('comp').innerHTML=comp;
   let h='';
   if(t>=SEND) h+='<div class=user>'+esc(P)+'</div>';
