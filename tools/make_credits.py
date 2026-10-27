@@ -37,14 +37,23 @@ def cards(font_path):
     def card(lines):
         im = Image.new('RGB', (W, H), 'black')
         d = ImageDraw.Draw(im)
-        for text, size, cy, fill, track in lines:
+        for text, size, cy, fill, track, *pos in lines:
             f = ImageFont.truetype(font_path, size)
             ws = [d.textlength(c, font=f) for c in text]
-            x = (W - sum(ws) - track * max(len(text) - 1, 0)) / 2
+            width = sum(ws) + track * max(len(text) - 1, 0)
+            side, edge = pos or ('c', W / 2)
+            x = edge - width / 2 if side == 'c' else edge - width if side == 'r' else edge
             for c, w in zip(text, ws):
                 d.text((x, cy), c, font=f, fill=fill, anchor='lm')
                 x += w + track
         return im
+
+    def cast(rows):
+        lines = [('CAST', 30, 80, GREY, 9)]
+        for i, (role, who) in enumerate(rows):
+            y = 160 + i * 62
+            lines += [(role, 40, y, GREY, 5, 'r', W / 2 - 30), (who, 40, y, WHITE, 5, 'l', W / 2 + 30)]
+        return card(lines)
 
     def credit(label, names, extra):
         return card([(label, 30, 255, GREY, 9), (names, 64, 340, WHITE, 7), (extra, 64, 430, WHITE, 7)])
@@ -55,6 +64,11 @@ def cards(font_path):
         'w2': credit('WRITTEN BY', 'DYLAN AND MIKE', 'AND CLAUDE'),
         'a1': credit('ADDITIONAL WRITING BY', 'CHARLIE AND LIAM', ''),
         'a2': credit('ADDITIONAL WRITING BY', 'CHARLIE AND LIAM', 'AND CLAUDE'),
+        'cast': cast([('SJ', 'DYLAN'), ('BRENDAN', 'MIKE'), ('KRISTINA', 'CHARLIE'), ('MARCUS', 'LIAM'),
+                      ('NARRATOR', 'ELEVENLABS'), ('DANA FROM HR', 'ELEVENLABS'),
+                      ('BLUE TEAM', 'VEO'), ('METLSTORM', 'HIMSELF')]),
+        'tech': card([('MUSIC BY', 30, 235, GREY, 9), ('SUNO', 64, 310, WHITE, 7),
+                      ('PRERECORDED VIDEO BY', 30, 430, GREY, 9), ('GOOGLE VEO', 64, 505, WHITE, 7)]),
     }
 
 
@@ -76,8 +90,8 @@ def main():
 
     hit = fit_grid()
     timeline = [(0, 'black'), (hit(0), 'title'), (hit(2), 'w1'), (hit(3), 'w2'),
-                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'black')]
-    end = hit(7)
+                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(9), 'tech'), (hit(11), 'black')]
+    end = hit(12)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         lines = []
