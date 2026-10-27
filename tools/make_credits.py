@@ -180,8 +180,9 @@ def main():
 
     hit = fit_grid()
     timeline = [(0, 'black'), (hit(0), 'title'), (hit(2), 'w1'), (hit(3), 'w2'),
-                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(10), 'tech'), (hit(12), 'plea'), (hit(15), 'real'), (hit(20), 'black')]
-    end = hit(21)
+                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(9), 'tech'),
+                (hit(11), 'plea'), (hit(12), 'real'), (hit(16), 'black')]
+    end = hit(17)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         lines = []
