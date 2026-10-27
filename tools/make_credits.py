@@ -10,6 +10,11 @@ folder on first use, or pass --source to use a file you already have.
 Needs ffmpeg and Pillow (pip install pillow).
 
     python3 tools/make_credits.py [--out build/credits/credits.mp4] [--source video.mp4]
+
+To put the guardrail gag on the end, build it first and pass it to --append:
+
+    tools/credits-gag/build.sh
+    python3 tools/make_credits.py --append build/credits-gag/guardrail-gag.mp4
 """
 import argparse, subprocess, tempfile, urllib.request
 from pathlib import Path
@@ -137,11 +142,30 @@ def cards(font_path, italic_path):
     }
 
 
+def join(parts, out):
+    """Concatenate the cards and whatever follows, normalising as we go so a
+    clip that was made somewhere else still joins cleanly."""
+    steps, pads = [], ''
+    for i in range(len(parts)):
+        steps.append(f'[{i}:v]scale={W}:{H},fps={FPS},format=yuv420p,setsar=1[v{i}]')
+        steps.append(f'[{i}:a]aformat=sample_rates=44100:channel_layouts=stereo[a{i}]')
+        pads += f'[v{i}][a{i}]'
+    steps.append(f'{pads}concat=n={len(parts)}:v=1:a=1[v][a]')
+    cmd = ['ffmpeg', '-v', 'error', '-y']
+    for part in parts:
+        cmd += ['-i', str(part)]
+    subprocess.run(cmd + ['-filter_complex', ';'.join(steps), '-map', '[v]', '-map', '[a]',
+                          '-c:v', 'libx264', '-crf', '16', '-c:a', 'aac', '-b:a', '192k',
+                          str(out)], check=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--out', default=str(ROOT / 'build/credits/credits.mp4'))
     ap.add_argument('--source', help='video to take the audio from (default: download)')
     ap.add_argument('--fade', type=float, default=3.0, help='seconds of audio fade at the end')
+    ap.add_argument('--append', nargs='+', default=[], metavar='VIDEO',
+                    help='videos to join on after the cards, e.g. the guardrail gag')
     a = ap.parse_args()
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -173,10 +197,16 @@ def main():
                         '-i', str(source), '-map', '0:v', '-map', '1:a',
                         '-vf', f'fps={FPS},format=yuv420p', '-t', f'{end:.3f}',
                         '-af', f'afade=t=out:st={end - a.fade:.3f}:d={a.fade}',
-                        '-c:v', 'libx264', '-crf', '16', '-c:a', 'aac', '-b:a', '192k', str(out)], check=True)
+                        '-c:v', 'libx264', '-crf', '16', '-c:a', 'aac', '-b:a', '192k',
+                        str(out if not a.append else tmp / 'cards.mp4')], check=True)
+        if a.append:
+            join([tmp / 'cards.mp4'] + [Path(v) for v in a.append], out)
     for t, name in timeline:
         print(f'{t:7.3f}  {name}')
-    print(f'{end:7.3f}  end -> {out}')
+    print(f'{end:7.3f}  end of cards')
+    for v in a.append:
+        print(f'{"":7}  then {v}')
+    print(f'{"":7}  -> {out}')
 
 
 if __name__ == '__main__':

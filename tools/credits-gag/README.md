@@ -23,6 +23,14 @@ It needs `ffmpeg`, `python3`, and `node` with Playwright's Chromium. The first
 run downloads the keyboard samples described below. Set `OUT` to build
 somewhere else.
 
+To get the credits reel with this on the end, build the gag and hand it to the
+credits tool:
+
+```sh
+tools/credits-gag/build.sh
+python3 tools/make_credits.py --append build/credits-gag/guardrail-gag.mp4
+```
+
 ## What the pieces do
 
 - **`gag.html`** draws one frame at a time. `render(t)` paints the interface as
