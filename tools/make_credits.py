@@ -49,10 +49,10 @@ def cards(font_path):
         return im
 
     def cast(rows):
-        lines = [('CAST', 30, 80, GREY, 9)]
+        lines = [('CAST', 30, 60, GREY, 9)]
         for i, (role, who) in enumerate(rows):
-            y = 160 + i * 62
-            lines += [(role, 40, y, GREY, 5, 'r', W / 2 - 30), (who, 40, y, WHITE, 5, 'l', W / 2 + 30)]
+            y = 125 + i * 50
+            lines += [(role, 34, y, GREY, 5, 'r', W / 2 - 30), (who, 34, y, WHITE, 5, 'l', W / 2 + 30)]
         return card(lines)
 
     def credit(label, names, extra):
@@ -66,6 +66,7 @@ def cards(font_path):
         'a2': credit('ADDITIONAL WRITING BY', 'CHARLIE AND LIAM', 'AND CLAUDE'),
         'cast': cast([('SJ', 'DYLAN'), ('BRENDAN', 'MIKE'), ('KRISTINA', 'CHARLIE'), ('MARCUS', 'LIAM'),
                       ('NARRATOR', 'ELEVENLABS'), ('DANA FROM HR', 'ELEVENLABS'),
+                      ('JUDGE', 'VEO'), ('COPS', 'VEO'), ('PROSECUTOR', 'VEO'),
                       ('BLUE TEAM', 'VEO'), ('METLSTORM', 'HIMSELF')]),
         'tech': card([('MUSIC BY', 30, 235, GREY, 9), ('SUNO', 64, 310, WHITE, 7),
                       ('PRERECORDED VIDEO BY', 30, 430, GREY, 9), ('GOOGLE VEO', 64, 505, WHITE, 7)]),
@@ -90,8 +91,8 @@ def main():
 
     hit = fit_grid()
     timeline = [(0, 'black'), (hit(0), 'title'), (hit(2), 'w1'), (hit(3), 'w2'),
-                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(9), 'tech'), (hit(11), 'black')]
-    end = hit(12)
+                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(10), 'tech'), (hit(12), 'black')]
+    end = hit(13)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         lines = []
