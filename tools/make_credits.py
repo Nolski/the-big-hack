@@ -20,6 +20,8 @@ W, H, FPS = 1280, 720, 24
 HITS = [0.528, 3.379, 6.216, 9.111, 11.980, 14.810]
 SERIFS = ['/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf',
           '/Library/Fonts/Times New Roman.ttf', 'C:/Windows/Fonts/times.ttf']
+ITALICS = ['/usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf',
+           '/Library/Fonts/Times New Roman Italic.ttf', 'C:/Windows/Fonts/timesi.ttf']
 WHITE, GREY = (240, 240, 240), (150, 150, 150)
 
 
@@ -31,7 +33,7 @@ def fit_grid():
     return lambda k: a + b * k
 
 
-def cards(font_path):
+def cards(font_path, italic_path):
     from PIL import Image, ImageDraw, ImageFont
 
     def card(lines):
@@ -56,27 +58,44 @@ def cards(font_path):
         return card(lines)
 
     def message(paragraphs, max_width=1000, gap=36):
+        """Centred paragraphs, wrapped. *Asterisks* put a word in italics."""
         im = Image.new('RGB', (W, H), 'black')
         d = ImageDraw.Draw(im)
+
+        def split(text, roman, slanted):
+            out = []
+            for i, part in enumerate(text.split('*')):
+                out += [(w, slanted if i % 2 else roman) for w in part.split()]
+            return out
+
         blocks = []
         for text, size, fill, track in paragraphs:
-            f = ImageFont.truetype(font_path, size)
-            wide = lambda t: d.textlength(t, font=f) + track * len(t)
-            rows, row = [], ''
-            for word in text.split():
-                if row and wide(row + ' ' + word) > max_width:
+            roman = ImageFont.truetype(font_path, size)
+            slanted = ImageFont.truetype(italic_path, size)
+            space = d.textlength(' ', font=roman)
+
+            def width(ws, track=track, space=space):
+                return (sum(d.textlength(w, font=f) + track * len(w) for w, f in ws)
+                        + space * max(len(ws) - 1, 0))
+
+            rows, row = [], []
+            for word in split(text, roman, slanted):
+                if row and width(row + [word]) > max_width:
                     rows.append(row)
-                    row = word
+                    row = [word]
                 else:
-                    row = (row + ' ' + word).strip()
-            blocks.append((rows + [row], f, fill, track, size * 1.4))
-        y = (H - sum(len(r) * lh for r, _, _, _, lh in blocks) - gap * (len(blocks) - 1)) / 2
-        for rows, f, fill, track, lh in blocks:
+                    row.append(word)
+            rows.append(row)
+            blocks.append((rows, fill, track, size * 1.4, space, width))
+        y = (H - sum(len(r) * lh for r, _, _, lh, _, _ in blocks) - gap * (len(blocks) - 1)) / 2
+        for rows, fill, track, lh, space, width in blocks:
             for row in rows:
-                x = (W - d.textlength(row, font=f) - track * (len(row) - 1)) / 2
-                for c in row:
-                    d.text((x, y + lh / 2), c, font=f, fill=fill, anchor='lm')
-                    x += d.textlength(c, font=f) + track
+                x = (W - width(row)) / 2
+                for word, f in row:
+                    for c in word:
+                        d.text((x, y + lh / 2), c, font=f, fill=fill, anchor='lm')
+                        x += d.textlength(c, font=f) + track
+                    x += space
                 y += lh
             y += gap
         return im
@@ -98,6 +117,16 @@ def cards(font_path):
             ("AI might be able to write code, but it can't create art.", 32, GREY, 1),
             ('There is an easy solution to this and that is', 32, GREY, 1),
             ('PAY ARTISTS AND CREATIVES.', 50, WHITE, 4)]),
+        'real': message([
+            ('ok enough AI bullshit, the REAL credits to', 30, GREY, 2),
+            ('', 10, GREY, 1),
+            ('sput, for enabling and encouraging this', 32, WHITE, 1),
+            ('squirrel and madman for the AV', 32, WHITE, 1),
+            ('mad props to LJ and sharrow for the props', 32, WHITE, 1),
+            ('jess k and micromill.org for *both* offering us looms', 32, WHITE, 1),
+            ('the whole kawaiicon cr\u00fce and volunteers', 32, WHITE, 1),
+            ('anyone else who helped in between now and when we generated this video',
+             32, WHITE, 1)], gap=16),
         'tech': card([('MUSIC BY', 30, 235, GREY, 9), ('SUNO', 64, 310, WHITE, 7),
                       ('PRERECORDED VIDEO BY', 30, 430, GREY, 9), ('GOOGLE VEO', 64, 505, WHITE, 7)]),
     }
@@ -118,15 +147,16 @@ def main():
     font = next((f for f in SERIFS if Path(f).exists()), None)
     if not font:
         raise SystemExit('No serif font found; add one to SERIFS')
+    italic = next((f for f in ITALICS if Path(f).exists()), font)
 
     hit = fit_grid()
     timeline = [(0, 'black'), (hit(0), 'title'), (hit(2), 'w1'), (hit(3), 'w2'),
-                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(10), 'tech'), (hit(12), 'plea'), (hit(16), 'black')]
-    end = hit(17)
+                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(10), 'tech'), (hit(12), 'plea'), (hit(16), 'real'), (hit(21), 'black')]
+    end = hit(22)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         lines = []
-        for name, im in cards(font).items():
+        for name, im in cards(font, italic).items():
             im.save(tmp / f'{name}.png')
         for i, (t, name) in enumerate(timeline):
             f0 = round(t * FPS)
