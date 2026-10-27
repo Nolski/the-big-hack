@@ -1,0 +1,91 @@
+{
+  "description": "Approved native-film audio isolation and exact picture/sound trims; no dialogue regeneration.",
+  "targetLUFS": -16,
+  "truePeakDBTP": -1.5,
+  "clips": [
+    {
+      "id": "news-01-hacking-campaign",
+      "source": "assets/filmed/news/raw/three-day/01-hacking-campaign.mp4",
+      "trimEnd": 1.5,
+      "reuseApproved": true
+    },
+    {
+      "id": "oncall-red-team",
+      "source": "assets/filmed/oncall-exchange-8s.mp4",
+      "cue": "s20_oncall_engineer"
+    },
+    {
+      "id": "news-04-cloud-backbone",
+      "source": "assets/filmed/news/raw/three-day/04-cloud-backbone.mp4"
+    },
+    {
+      "id": "news-05-reinfection",
+      "source": "assets/filmed/news/raw/three-day/05-reinfection.mp4",
+      "trimEnd": 1.5
+    },
+    {
+      "id": "news-06-supply-chain",
+      "source": "assets/filmed/news/raw/three-day/06-supply-chain.mp4"
+    },
+    {
+      "id": "news-08-nuclear-part-2",
+      "source": "assets/filmed/news/raw/three-day/08-nuclear-plant-part-2.mp4"
+    },
+    {
+      "id": "s22_arrest",
+      "source": "assets/filmed/police/s22_arrest.mp4",
+      "cue": "s22_arrest",
+      "trimStart": 0,
+      "trimEnd": 0
+    },
+    {
+      "id": "s23_l5",
+      "source": "assets/filmed/courtroom-oct10/s23_l5.mp4",
+      "cue": "s23_l5",
+      "trimStart": 0,
+      "trimEnd": 0
+    },
+    {
+      "id": "s23_l11",
+      "source": "assets/filmed/courtroom-oct10/s23_l11.mp4",
+      "cue": "s23_l11",
+      "trimStart": 0,
+      "trimEnd": 0
+    },
+    {
+      "id": "s23_l25",
+      "source": "assets/filmed/courtroom-oct10/s23_l25.mp4",
+      "cue": "s23_l25",
+      "trimStart": 1.9,
+      "trimEnd": 0
+    },
+    {
+      "id": "s23_l27",
+      "source": "assets/filmed/courtroom-oct10/s23_l27.mp4",
+      "cue": "s23_l27",
+      "trimStart": 0.5,
+      "trimEnd": 1.5
+    },
+    {
+      "id": "s23_l33",
+      "source": "assets/filmed/courtroom-oct10/s23_l33.mp4",
+      "cue": "s23_l33",
+      "trimStart": 0,
+      "trimEnd": 0
+    },
+    {
+      "id": "s23_l39",
+      "source": "assets/filmed/courtroom-oct10/s23_l39.mp4",
+      "cue": "s23_l39",
+      "trimStart": 0,
+      "trimEnd": 0
+    },
+    {
+      "id": "s23_l49",
+      "source": "assets/filmed/courtroom-oct10/s23_l49.mp4",
+      "cue": "s23_l49",
+      "trimStart": 2.8,
+      "trimEnd": 0
+    }
+  ]
+}

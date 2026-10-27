@@ -1,0 +1,36 @@
+{
+  "sequence": [
+    {
+      "file": "14-craigslist-3s.mp4",
+      "start": 0,
+      "duration": 3
+    },
+    {
+      "file": "craigslist-followup-take-002-ai.mp4",
+      "start": 2.95,
+      "end": 7.440771,
+      "duration": 4.490771
+    }
+  ],
+  "sourceFilename": "signal-2026-10-20-15-53-23-818_002.mp4",
+  "sourceSHA256": "e7249cfe06b7955bfd586a88ce1d01fa56f849d564fbe3fed7a88ba943024dd4",
+  "audioProcessing": {
+    "method": "ElevenLabs Voice Isolator, then gentle EQ, compression and two-pass loudness normalization",
+    "aiProcessed": true,
+    "service": "ElevenLabs",
+    "endpoint": "/v1/audio-isolation",
+    "isolatedStem": "craigslist-followup-take-002-isolated.mp3",
+    "targetIntegratedLUFS": -16,
+    "truePeakCeilingDBTP": -1.5,
+    "filters": "atrim=duration=7.440771,asetpts=PTS-STARTPTS,highpass=f=65,equalizer=f=240:t=q:w=0.8:g=-1,equalizer=f=3000:t=q:w=0.7:g=1,acompressor=threshold=0.10:ratio=2:attack=15:release=150:makeup=1,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=7:measured_I=-24.99:measured_TP=-10.52:measured_LRA=4.00:measured_thresh=-35.43:offset=-0.50:linear=true,aresample=48000,afade=t=in:d=0.008,afade=t=out:st=7.420771:d=0.02",
+    "edit": "Trim picture and cleaned audio together at 2.95 seconds; 5 ms audio fade-in to avoid a click."
+  },
+  "output": "craigslist-exchange-take-002-2.95s.mp4",
+  "duration": 7.5,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "approvedPreviewSHA256": "2284e59c8c1f49e390735d9a48e9353b1d2a5cbbfe2c50613fbe7606aea7551f",
+  "music": "Audit score continues throughout the exchange, matching the latest main score policy; subsequent score offsets account for the 7.5-second film."
+}

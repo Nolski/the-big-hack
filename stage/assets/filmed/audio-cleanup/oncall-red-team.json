@@ -1,0 +1,19 @@
+{
+  "signature": {
+    "version": 1,
+    "edit": {
+      "id": "oncall-red-team",
+      "source": "assets/filmed/oncall-exchange-8s.mp4",
+      "cue": "s20_oncall_engineer"
+    },
+    "sourceSHA256": "446e67cb0b622ba9f5dcea5d75d7ffdc743b24bf44762dd9ca75d6ce3b5298e1"
+  },
+  "output": "assets/filmed/audio-cleanup/oncall-red-team-clean-v1.mp4",
+  "duration": 8.0,
+  "sourceStart": 0.0,
+  "sourceEnd": 8.0,
+  "isolatedStem": "assets/filmed/audio-cleanup/isolated/oncall-red-team.mp3",
+  "filters": "atrim=start=0.0:end=8.0,asetpts=PTS-STARTPTS,highpass=f=65,equalizer=f=240:t=q:w=0.8:g=-1,equalizer=f=3000:t=q:w=0.7:g=1,acompressor=threshold=0.1:ratio=2:attack=15:release=150:makeup=1,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=7:measured_I=-27.30:measured_TP=-9.15:measured_LRA=0.80:measured_thresh=-37.87:offset=-0.12:linear=true,aresample=48000,apad,atrim=duration=8.0,afade=t=in:d=0.008,afade=t=out:st=7.98:d=0.02",
+  "outputSHA256": "9f0f492846e2094004cddca93426e27687c67031ceb8a24a10bfefce2c8b9c06",
+  "voice": "Original generated performance; no replacement speech"
+}

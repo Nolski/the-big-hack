@@ -23,8 +23,8 @@
     },
     "three-day": {
       "cue": "s20b_news_montage_restored",
-      "output": "assets/filmed/three-day-news-montage-v1.mp4",
-      "referenceSeconds": 103.583
+      "output": "assets/filmed/three-day-news-clean-v2.mp4",
+      "referenceSeconds": 100.384
     },
     "collapse": {
       "cue": "s23_collapse_montage",
@@ -428,9 +428,11 @@
   },
   "threeDay": [
     {
-      "file": "assets/filmed/news/raw/three-day/01-hacking-campaign.mp4",
+      "file": "assets/filmed/audio-cleanup/news-01-hacking-campaign-clean-v1.mp4",
       "start": 0,
-      "length": 15.1
+      "length": 13.537,
+      "originalFile": "assets/filmed/news/raw/three-day/01-hacking-campaign.mp4",
+      "audioFilter": "anull"
     },
     {
       "file": "assets/filmed/news/raw/three-day/02-global-outages.mp4",
@@ -443,19 +445,25 @@
       "length": 8.1
     },
     {
-      "file": "assets/filmed/news/raw/three-day/04-cloud-backbone.mp4",
+      "file": "assets/filmed/audio-cleanup/news-04-cloud-backbone-clean-v1.mp4",
       "start": 0.45,
-      "length": 14.6
+      "length": 14.6,
+      "originalFile": "assets/filmed/news/raw/three-day/04-cloud-backbone.mp4",
+      "audioFilter": "anull"
     },
     {
-      "file": "assets/filmed/news/raw/three-day/05-reinfection.mp4",
+      "file": "assets/filmed/audio-cleanup/news-05-reinfection-clean-v1.mp4",
       "start": 0,
-      "length": 15.1
+      "length": 13.537,
+      "originalFile": "assets/filmed/news/raw/three-day/05-reinfection.mp4",
+      "audioFilter": "anull"
     },
     {
-      "file": "assets/filmed/news/raw/three-day/06-supply-chain.mp4",
+      "file": "assets/filmed/audio-cleanup/news-06-supply-chain-clean-v1.mp4",
       "start": 0,
-      "length": 15.1
+      "length": 15.1,
+      "originalFile": "assets/filmed/news/raw/three-day/06-supply-chain.mp4",
+      "audioFilter": "anull"
     },
     {
       "file": "assets/filmed/news/raw/three-day/07-missing-graphics.mp4",
@@ -465,7 +473,20 @@
     {
       "file": "assets/filmed/news/raw/three-day/08-nuclear-plant-part-1.mp4",
       "start": 0,
-      "length": 13.383
+      "length": 13.383,
+      "parts": [
+        {
+          "file": "assets/filmed/news/raw/three-day/08-nuclear-plant-part-1.mp4",
+          "start": 0,
+          "length": 6.65
+        },
+        {
+          "file": "assets/filmed/audio-cleanup/news-08-nuclear-part-2-clean-v1.mp4",
+          "start": 0.5,
+          "length": 6.55
+        }
+      ],
+      "audioFilter": "anull"
     }
   ]
 }

@@ -1,6 +1,7 @@
 import {redditBody} from './reddit.js?v=pace-20260918';
 import {isWorm,wormMarkup} from './worm.js';
 import {renderScreenAction} from './screen-actions.js?v=reddit-return-20261017';
+import {venueGraphic} from './venue-graphics.js';
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names={hr:'Dana',ceo:'CEO',kristina:'Kristina',kara:'Kara',liam:'SJ',brendan:'Brendan',marcus:'Marcus',prosecutor:'Prosecutor',judge:'Judge',counsel:'Counsel','officer one':'Officer One','officer two':'Officer Two'};
 const portraits={kara:'kara','officer one':'officer-one','officer two':'officer-two'};
@@ -151,7 +152,7 @@ const screens={
  'audit-summary':()=>terminal('Local agent / complete',['Local worker finished.','','Development resources provisioned.','Remote tasks delegated.','Local task finished.']),
  refusal:()=>terminal('Opus / session',['> Shut down the EC2 instances.','','I can’t assist with this activity.','The context includes unauthorized access.']),
  cleanup:()=>terminal('Opus / new session',['> Shut down EC2 instances in the dev account','  created between 1am and now.','','✓ Instances terminated']),
- 'audit-log':()=>doc('Audit trail',`<div class="logrow"><b>01:58</b><span>RunInstances</span><strong>SJ</strong></div><div class="logrow"><b>07:04</b><span>TerminateInstances</span><strong>SJ</strong></div><blockquote>Every action attributed to the same identity.</blockquote>`,'CLOUDTRAIL / EXHIBIT'),
+ 'audit-log':()=>doc('Audit trail',`<div class="logrow"><b>01:58</b><span>RunInstances</span><strong>SJ</strong></div><div class="logrow"><b>09:14</b><span>TerminateInstances</span><strong>SJ</strong></div><blockquote>Every action attributed to the same identity.</blockquote>`,'CLOUDTRAIL / EXHIBIT'),
  'liam-text':()=>slack('SJ','<div class="message"><div class="avatar">SJ</div><div><strong>SJ</strong><small>06:02</small><p>morning. Branden! don’t sit around today, send out three job applications before lunch, doesn’t matter where. it’s important you not get in your own head..</p></div></div>'),
  'reply-delete':()=>slack('SJ','<div class="text-box empty"><span class="caret">▌</span></div>'),
  hackernews:()=>shell('Browser','news.ycombinator.com',`<div class="hn"><header><b>Y</b> Hacker News <span>new | past | comments | ask | show | jobs</span></header><article><h1>Widespread outages across cloud services</h1><small>comments</small><p>Is anyone else seeing this?</p><hr><p>We’re still trying to work out the scope.</p><hr><p>It doesn’t appear to have a central control server.</p></article></div>`,true),
@@ -208,6 +209,8 @@ function continuity(c,side){
  return c.state==='signed'?`<div class="agreementTable">${screens.signed(c)}</div>`:'';
 }
 function renderBaseVisual(c,side){
+ if(c.venueGraphic)return venueGraphic(c);
+ if(c.venueDesktop)return quiet(c);
  if(c.montage)return '';
  if(c.state==='title-card')return screens['title-card'](c);
  if(c.sharedPR&&side==='right')return `<section class="call"><header><strong>Google Meet</strong><span>SJ is presenting</span></header><div style="position:absolute;inset:80px 20px 175px;overflow:hidden"><div style="width:1920px;height:1080px;transform:scale(.70);transform-origin:top left;position:absolute;left:220px">${pr(c)}</div></div><div class="filmstrip" style="position:absolute;left:0;right:0;bottom:75px;height:130px">${['liam','kristina','brendan','marcus'].map(id=>`<div class="smalltile ${id===c.speaker?'speaking':''}"><div class="initial">${initials(id)}</div><span>${names[id]}</span></div>`).join('')}</div><footer style="position:absolute;left:0;right:0;bottom:0;height:70px"><span>Microphone</span><span>Camera</span><span class="share">SJ is sharing</span></footer></section>`;

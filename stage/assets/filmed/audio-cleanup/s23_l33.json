@@ -1,0 +1,21 @@
+{
+  "signature": {
+    "version": 1,
+    "edit": {
+      "id": "s23_l33",
+      "source": "assets/filmed/courtroom-oct10/s23_l33.mp4",
+      "cue": "s23_l33",
+      "trimStart": 0,
+      "trimEnd": 0
+    },
+    "sourceSHA256": "d2e155e51cfcdc6e62478e78782ab8245f7193e3c0e0d3a8dcc673989fbaccd0"
+  },
+  "output": "assets/filmed/audio-cleanup/s23_l33-clean-v1.mp4",
+  "duration": 23.479,
+  "sourceStart": 0.0,
+  "sourceEnd": 23.479329,
+  "isolatedStem": "assets/filmed/audio-cleanup/isolated/s23_l33.mp3",
+  "filters": "atrim=start=0.0:end=23.479329,asetpts=PTS-STARTPTS,highpass=f=65,equalizer=f=240:t=q:w=0.8:g=-1,equalizer=f=3000:t=q:w=0.7:g=1,acompressor=threshold=0.1:ratio=2:attack=15:release=150:makeup=1,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=7:measured_I=-23.50:measured_TP=-7.87:measured_LRA=8.10:measured_thresh=-34.88:offset=0.45:linear=true,aresample=48000,apad,atrim=duration=23.479329,afade=t=in:d=0.008,afade=t=out:st=23.459329:d=0.02",
+  "outputSHA256": "cb387e99d8d3c4e1b15a98f1edddb238f4db3d17bf6e3ab83176088c0860310c",
+  "voice": "Original generated performance; no replacement speech"
+}

@@ -1,0 +1,18 @@
+{
+  "signature": {
+    "version": 1,
+    "edit": {
+      "id": "news-04-cloud-backbone",
+      "source": "assets/filmed/news/raw/three-day/04-cloud-backbone.mp4"
+    },
+    "sourceSHA256": "95938544ce44fb75afe9ee6dd3aabc86f1c34f01b0e18f9c53a8c3587cbb212a"
+  },
+  "output": "assets/filmed/audio-cleanup/news-04-cloud-backbone-clean-v1.mp4",
+  "duration": 15.037,
+  "sourceStart": 0.0,
+  "sourceEnd": 15.037,
+  "isolatedStem": "assets/filmed/audio-cleanup/isolated/news-04-cloud-backbone.mp3",
+  "filters": "atrim=start=0.0:end=15.037,asetpts=PTS-STARTPTS,highpass=f=65,equalizer=f=240:t=q:w=0.8:g=-1,equalizer=f=3000:t=q:w=0.7:g=1,acompressor=threshold=0.1:ratio=2:attack=15:release=150:makeup=1,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=7:measured_I=-23.56:measured_TP=-8.39:measured_LRA=3.50:measured_thresh=-33.74:offset=-0.74:linear=true,aresample=48000,apad,atrim=duration=15.037,afade=t=in:d=0.008,afade=t=out:st=15.017000000000001:d=0.02",
+  "outputSHA256": "343348bec288caa167da01e5b17a562b1e4a13f6794252f359f58cb20fdf6d0e",
+  "voice": "Original generated performance; no replacement speech"
+}

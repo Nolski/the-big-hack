@@ -348,7 +348,7 @@
       "movement": "V",
       "cast": [],
       "id": "s25",
-      "count": 21,
+      "count": 20,
       "mode": "offstage",
       "start": 563,
       "source": "25 - Great News.md",
@@ -938,8 +938,7 @@
     579,
     580,
     581,
-    582,
-    583
+    582
   ],
   "title": "The Big Hack",
   "audioManifestRequired": true,
@@ -968,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-3ddb9bc78c7747ef",
+  "scriptRevision": "shared-1dfdb91d3c744661",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -17925,7 +17924,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 13.00898,
+      "audioDuration": 13.087347,
       "state": "apartment",
       "id": "s14a_l26",
       "screenActions": {},
@@ -17933,7 +17932,7 @@
       "sourceBeat": 26,
       "beat": 26,
       "name": "SJ",
-      "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
+      "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you a sledgehammer because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
       "groupEnd": 303,
       "speaker": "liam",
       "direction": "live",
@@ -17946,14 +17945,14 @@
         "brendan",
         "marcus"
       ],
-      "audio": "assets/audio/shared-c6aa929aeb8a1a991bb7a5a6129e28b514409683fcf8058bdcde5bd5d3edb224.mp3",
+      "audio": "assets/audio/shared-355e4d06b3fdf4c76f0a58d36a512a55e10071cb30f37e6dd95f21d4edfc5db5.mp3",
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s14a_l26",
           "kind": "live",
           "name": "SJ",
-          "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
+          "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you a sledgehammer because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
           "direction": "live"
         }
       ],
@@ -22831,7 +22830,7 @@
       "id": "s20_oncall_engineer",
       "screenActions": {},
       "sfx": [],
-      "montageDuration": 8,
+      "montageDuration": 8.0,
       "beat": 52.5,
       "name": "",
       "text": "An on-call engineer reports: “I think we're under attack, four of our canary tokens were set off.” Cut to a sleepy colleague: “Dude it's probably just the red team, did you need to wake me up for this?” Play the video to the end, then GO.",
@@ -22857,7 +22856,7 @@
         }
       ],
       "mode": "montage",
-      "montage": "assets/filmed/oncall-exchange-8s.mp4",
+      "montage": "assets/filmed/audio-cleanup/oncall-red-team-clean-v1.mp4",
       "kind": "stage",
       "backgroundMusic": {
         "id": "audit-swarm",
@@ -23156,10 +23155,10 @@
       "screenActions": {},
       "id": "s20_insert_14-craigslist-3s",
       "sfx": [],
-      "montageDuration": 3.0,
+      "montageDuration": 7.5,
       "beat": 58,
       "name": "",
-      "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
+      "text": "An engineer asks: “Why is a database server reading Craigslist?” The recorded response follows immediately. Play to the end, then GO.",
       "groupEnd": 414,
       "speaker": "",
       "direction": "",
@@ -23174,12 +23173,12 @@
           "id": "s20_insert_14-craigslist-3s",
           "kind": "stage",
           "name": "",
-          "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
+          "text": "An engineer asks: “Why is a database server reading Craigslist?” The recorded response follows immediately. Play to the end, then GO.",
           "direction": ""
         }
       ],
       "mode": "montage",
-      "montage": "assets/filmed/oncall-review-v2/14-craigslist-3s.mp4",
+      "montage": "assets/filmed/oncall-review-v2/craigslist-exchange-take-002-2.95s.mp4",
       "kind": "stage",
       "backgroundMusic": {
         "id": "audit-swarm",
@@ -23233,7 +23232,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 220.913
+        "startAt": 225.413
       }
     },
     {
@@ -23275,7 +23274,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 248.159
+        "startAt": 252.659
       }
     },
     {
@@ -23324,7 +23323,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 261.181
+        "startAt": 265.681
       }
     },
     {
@@ -23366,7 +23365,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 277.22
+        "startAt": 281.72
       }
     },
     {
@@ -23415,7 +23414,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 285.22
+        "startAt": 289.72
       }
     },
     {
@@ -23474,7 +23473,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 305.256
+        "startAt": 309.756
       }
     },
     {
@@ -23530,7 +23529,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 326.337
+        "startAt": 330.837
       }
     },
     {
@@ -23591,7 +23590,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 331.405
+        "startAt": 335.905
       }
     },
     {
@@ -23647,7 +23646,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 333.286
+        "startAt": 337.786
       }
     },
     {
@@ -23708,7 +23707,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 337.335
+        "startAt": 341.835
       }
     },
     {
@@ -23764,7 +23763,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 350.422
+        "startAt": 354.922
       }
     },
     {
@@ -23825,7 +23824,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 352.303
+        "startAt": 356.803
       }
     },
     {
@@ -23886,7 +23885,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 370.667
+        "startAt": 375.167
       }
     },
     {
@@ -23944,7 +23943,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 379.183
+        "startAt": 383.683
       }
     },
     {
@@ -24002,7 +24001,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 384.512
+        "startAt": 389.012
       }
     },
     {
@@ -24060,7 +24059,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 394.7
+        "startAt": 399.2
       }
     },
     {
@@ -24118,7 +24117,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 396.972
+        "startAt": 401.472
       }
     },
     {
@@ -24176,7 +24175,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 399.323
+        "startAt": 403.823
       }
     },
     {
@@ -24229,7 +24228,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 406.246,
+        "startAt": 410.746,
         "fadeOut": 10
       }
     },
@@ -25537,7 +25536,7 @@
       "id": "s20b_news_montage_restored",
       "screenActions": {},
       "sfx": [],
-      "montageDuration": 103.583,
+      "montageDuration": 100.384,
       "beat": 49,
       "name": "",
       "text": "SJ snickers as we fade to black. The next three days. News reports chart the spreading worm, with music and time cards, ending on the nuclear plant report. Play to the end, then GO.",
@@ -25560,7 +25559,7 @@
         }
       ],
       "mode": "montage",
-      "montage": "assets/filmed/three-day-news-montage-v1.mp4",
+      "montage": "assets/filmed/three-day-news-clean-v2.mp4",
       "kind": "stage",
       "lighting": []
     },
@@ -27181,8 +27180,9 @@
       "groupEnd": 493,
       "performanceVideo": {
         "speaker": "officer one",
-        "src": "assets/filmed/police/s22_arrest.mp4",
-        "physical": true
+        "src": "assets/filmed/audio-cleanup/s22_arrest-clean-v1.mp4",
+        "physical": true,
+        "duration": 16.018
       },
       "speaker": "officer one",
       "screenNotes": "Police are physically at the apartment doorway. Marcus remains on the laptop call; officers are not call participants.",
@@ -27666,9 +27666,10 @@
       "legacyCue": "s23_l5",
       "performanceVideo": {
         "speaker": "prosecutor",
-        "src": "assets/filmed/courtroom-oct10/s23_l5.mp4",
+        "src": "assets/filmed/audio-cleanup/s23_l5-clean-v1.mp4",
         "physical": true,
-        "text": "Counts eleven through fourteen, terrorism charges, counts fifteen through seventeen, treason"
+        "text": "Counts eleven through fourteen, terrorism charges, counts fifteen through seventeen, treason",
+        "duration": 8.021
       }
     },
     {
@@ -27870,9 +27871,10 @@
       "legacyCue": "s23_l10",
       "performanceVideo": {
         "speaker": "prosecutor",
-        "src": "assets/filmed/courtroom-oct10/s23_l11.mp4",
+        "src": "assets/filmed/audio-cleanup/s23_l11-clean-v1.mp4",
         "physical": true,
-        "text": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them. He started it. And when it was done, he tidied up."
+        "text": "At 01:58 that morning the defendant's credentials created compute instances in his former employer's account. At 09:14 the same credentials terminated them. He started it. And when it was done, he tidied up.",
+        "duration": 16.021
       }
     },
     {
@@ -28119,9 +28121,10 @@
       "legacyCue": "s23_l23",
       "performanceVideo": {
         "speaker": "judge",
-        "src": "assets/filmed/courtroom-oct10/s23_l25.mp4",
+        "src": "assets/filmed/audio-cleanup/s23_l25-clean-v1.mp4",
         "physical": true,
-        "text": "Mr. Ehrlich, you will only answer questions that are asked."
+        "text": "Mr. Ehrlich, you will only answer questions that are asked.",
+        "duration": 3.871
       }
     },
     {
@@ -28221,9 +28224,10 @@
       "legacyCue": "s23_l25",
       "performanceVideo": {
         "speaker": "judge",
-        "src": "assets/filmed/courtroom-oct10/s23_l27.mp4",
+        "src": "assets/filmed/audio-cleanup/s23_l27-clean-v1.mp4",
         "physical": true,
-        "text": "Mr. Ehrlich, I'll hold you in contempt and put you in jail if you speak out again."
+        "text": "Mr. Ehrlich, I'll hold you in contempt and put you in jail if you speak out again.",
+        "duration": 6.021
       }
     },
     {
@@ -28518,9 +28522,10 @@
       "legacyCue": "s23_l31",
       "performanceVideo": {
         "speaker": "prosecutor",
-        "src": "assets/filmed/courtroom-oct10/s23_l33.mp4",
+        "src": "assets/filmed/audio-cleanup/s23_l33-clean-v1.mp4",
         "physical": true,
-        "text": "Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\""
+        "text": "Thank you. I'd like to read a line from the company's half-year peer input summary for the defendant. \"SJ is constantly slowing down work and utilizing rogue AI models that will probably get us hacked by the Chinese. I honestly wonder if he is working for the CCP or something\"",
+        "duration": 23.479
       }
     },
     {
@@ -28776,9 +28781,10 @@
       "legacyCue": "s23_l37",
       "performanceVideo": {
         "speaker": "prosecutor",
-        "src": "assets/filmed/courtroom-oct10/s23_l39.mp4",
+        "src": "assets/filmed/audio-cleanup/s23_l39-clean-v1.mp4",
         "physical": true,
-        "text": "One last matter. SJ's name showed up in the AWS logs on the night in question, is that correct?"
+        "text": "One last matter. SJ's name showed up in the AWS logs on the night in question, is that correct?",
+        "duration": 7.771
       }
     },
     {
@@ -28932,9 +28938,10 @@
       "legacyCue": "s23_l47",
       "performanceVideo": {
         "speaker": "judge",
-        "src": "assets/filmed/courtroom-oct10/s23_l49.mp4",
+        "src": "assets/filmed/audio-cleanup/s23_l49-clean-v1.mp4",
         "physical": true,
-        "text": "We'll resume on the fourteenth."
+        "text": "We'll resume on the fourteenth.",
+        "duration": 5.221
       }
     },
     {
@@ -31368,45 +31375,6 @@
         }
       ],
       "titleVideo": "assets/filmed/outro-montage-v2.mp4"
-    },
-    {
-      "state": "montage",
-      "mode": "montage",
-      "cast": [],
-      "screenActions": {},
-      "computers": {},
-      "beat": 21,
-      "loop": false,
-      "staging": {
-        "view": "montage",
-        "callCast": []
-      },
-      "offstage": false,
-      "id": "s25_credits",
-      "scene": "s25",
-      "sfx": [],
-      "advance": "manual",
-      "audio": null,
-      "audioDuration": 0,
-      "kind": "stage",
-      "speaker": "",
-      "name": "",
-      "text": "Credits, cut to the drum hits of the closing song, ending with the Claude Code session that refused to check the worm. Plays to the end on its own sound.",
-      "direction": "",
-      "montage": "assets/filmed/credits-sabotage.mp4",
-      "montageDuration": 95.735,
-      "visualMapping": "matched",
-      "lighting": [],
-      "groupEnd": 583,
-      "notes": [
-        {
-          "id": "s25_credits",
-          "kind": "stage",
-          "name": "",
-          "text": "Credits, cut to the drum hits of the closing song, ending with the Claude Code session that refused to check the worm. Plays to the end on its own sound.",
-          "direction": ""
-        }
-      ]
     }
   ],
   "schema": 2,

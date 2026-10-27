@@ -39,7 +39,9 @@ Open a pull request on GitHub. The app never commits or pushes for you.
 
 ## Present
 
-Select a scene, then use GO or Space to advance. Open the left and right audience displays from the presenter. Settings control live versus recorded roles and playback speed.
+Select a scene, then use GO or Space to advance. In Settings → Displays, open **Upper screen** (1920×1080) and **LED wall** (4608×896). The LED wall is one output split by the venue into 2048 / 512 / 2048 sections. **View whole set** shows both outputs together for rehearsal. Settings also control live versus recorded roles and playback speed.
+
+See [Venue staging](stage/VENUE.md) for the scene treatments and output setup. The two computer-action tracks in the script still use `left` and `right`; those name authored content, not physical monitors.
 
 In Settings → Audio, **Music volume** controls the background score separately from voices and clips. It starts quietly at 8%; zero mutes it. Music follows Pause and Resume, and continues across adjacent cues until its scripted cutoff. SJ’s YouTube music is foreground computer audio and follows the Voices & clips control instead.
 
