@@ -58,14 +58,19 @@ def cards(font_path, italic_path):
         return card(lines)
 
     def message(paragraphs, max_width=1000, gap=36):
-        """Centred paragraphs, wrapped. *Asterisks* put a word in italics."""
+        """Centred paragraphs, wrapped. *Asterisks* put a word in italics, and
+        a ^caret drops the rest of that line to the label grey."""
         im = Image.new('RGB', (W, H), 'black')
         d = ImageDraw.Draw(im)
 
-        def split(text, roman, slanted):
-            out = []
+        def split(text, roman, slanted, fill):
+            out, shade = [], fill
             for i, part in enumerate(text.split('*')):
-                out += [(w, slanted if i % 2 else roman) for w in part.split()]
+                for word in part.split():
+                    if word.startswith('^'):
+                        shade, word = GREY, word[1:]
+                    if word:
+                        out.append((word, slanted if i % 2 else roman, shade))
             return out
 
         blocks = []
@@ -75,25 +80,25 @@ def cards(font_path, italic_path):
             space = d.textlength(' ', font=roman)
 
             def width(ws, track=track, space=space):
-                return (sum(d.textlength(w, font=f) + track * len(w) for w, f in ws)
+                return (sum(d.textlength(w, font=f) + track * len(w) for w, f, _ in ws)
                         + space * max(len(ws) - 1, 0))
 
             rows, row = [], []
-            for word in split(text, roman, slanted):
+            for word in split(text, roman, slanted, fill):
                 if row and width(row + [word]) > max_width:
                     rows.append(row)
                     row = [word]
                 else:
                     row.append(word)
             rows.append(row)
-            blocks.append((rows, fill, track, size * 1.4, space, width))
-        y = (H - sum(len(r) * lh for r, _, _, lh, _, _ in blocks) - gap * (len(blocks) - 1)) / 2
-        for rows, fill, track, lh, space, width in blocks:
+            blocks.append((rows, track, size * 1.4, space, width))
+        y = (H - sum(len(r) * lh for r, _, lh, _, _ in blocks) - gap * (len(blocks) - 1)) / 2
+        for rows, track, lh, space, width in blocks:
             for row in rows:
                 x = (W - width(row)) / 2
-                for word, f in row:
+                for word, f, shade in row:
                     for c in word:
-                        d.text((x, y + lh / 2), c, font=f, fill=fill, anchor='lm')
+                        d.text((x, y + lh / 2), c, font=f, fill=shade, anchor='lm')
                         x += d.textlength(c, font=f) + track
                     x += space
                 y += lh
@@ -119,10 +124,10 @@ def cards(font_path, italic_path):
         'real': message([
             ('OK ENOUGH AI BULLSHIT, THE REAL CREDITS TO', 30, GREY, 9),
             ('', 10, GREY, 1),
-            ('SPUT, FOR ENABLING AND ENCOURAGING THIS', 26, WHITE, 2),
-            ('SQUIRREL AND MADMAN FOR THE AV', 26, WHITE, 2),
-            ('MAD PROPS TO LJ AND SHARROW FOR THE PROPS', 26, WHITE, 2),
-            ('JESS K AND MICROMILL.ORG FOR *BOTH* OFFERING US LOOMS', 26, WHITE, 2),
+            ('SPUT ^ENABLING AND ENCOURAGING THIS', 26, WHITE, 2),
+            ('SQUIRREL AND MADMAN ^AV', 26, WHITE, 2),
+            ('LJ AND SHARROW ^PROPS', 26, WHITE, 2),
+            ('JESS K AND MICROMILL.ORG ^*BOTH* OFFERING US LOOMS', 26, WHITE, 2),
             ('THE WHOLE KAWAIICON CR\u00dcE AND VOLUNTEERS', 26, WHITE, 2),
             ('ANYONE ELSE WHO HELPED IN BETWEEN NOW AND WHEN WE GENERATED THIS',
              26, WHITE, 2)], max_width=1160, gap=16),
