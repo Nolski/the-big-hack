@@ -202,10 +202,12 @@ def three_day():
     for n, item in enumerate(DATA["threeDay"]):
         if n == 7:
             paths = []
-            for k, (start, length) in enumerate([(0, 6.65), (.5, 6.55)], 1):
-                paths.append(shot(f"nuclear-{k}", {
-                    "file": f"assets/filmed/news/raw/three-day/08-nuclear-plant-part-{k}.mp4",
-                    "start": start, "length": length},
+            takes = item.get("parts", [
+                {"file": "assets/filmed/news/raw/three-day/08-nuclear-plant-part-1.mp4", "start": 0, "length": 6.65},
+                {"file": "assets/filmed/news/raw/three-day/08-nuclear-plant-part-2.mp4", "start": .5, "length": 6.55},
+            ])
+            for k, take in enumerate(takes, 1):
+                paths.append(shot(f"nuclear-{k}", take,
                     vf=("crop=iw*0.94:ih*0.94,scale=1280:720," if k == 2 else "") + "setsar=1,fps=30",
                     af="anull"))
             nuclear = concat(paths, "nuclear-dry")
@@ -214,9 +216,10 @@ def three_day():
                  "-c:a", "aac", "-ar", "48000", normalized])
             out = WORK / "report-8.mp4"
             run(["-i", normalized, "-vf", "scale=1920:1080,setsar=1,fps=30",
-                 "-af", DATA["treatments"]["newsAudio"], *codec(), out])
+                 "-af", item.get("audioFilter", DATA["treatments"]["newsAudio"]), *codec(), out])
         else:
-            out = shot(f"report-{n+1}", item, af=DATA["treatments"]["newsAudio"])
+            out = shot(f"report-{n+1}", item,
+                       af=item.get("audioFilter", DATA["treatments"]["newsAudio"]))
         reports.append(out)
     parts = []
     for n, report in enumerate(reports):

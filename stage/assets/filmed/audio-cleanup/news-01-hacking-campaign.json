@@ -1,0 +1,20 @@
+{
+  "signature": {
+    "version": 1,
+    "edit": {
+      "id": "news-01-hacking-campaign",
+      "source": "assets/filmed/news/raw/three-day/01-hacking-campaign.mp4",
+      "trimEnd": 1.5,
+      "reuseApproved": true
+    },
+    "sourceSHA256": "979b30ea681c526ee9da9dd08b3727442a7313f93eba6ad860658784773e8966"
+  },
+  "output": "assets/filmed/audio-cleanup/news-01-hacking-campaign-clean-v1.mp4",
+  "duration": 13.541667,
+  "sourceStart": 0.0,
+  "sourceEnd": 13.537,
+  "isolatedStem": "assets/filmed/audio-cleanup/isolated/news-01-hacking-campaign.mp3",
+  "filters": "atrim=duration=13.537,asetpts=PTS-STARTPTS,highpass=f=65,equalizer=f=240:t=q:w=0.8:g=-1,equalizer=f=3000:t=q:w=0.7:g=1,acompressor=threshold=0.1:ratio=2:attack=15:release=150:makeup=1,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=7:measured_I=-23.98:measured_TP=-6.99:measured_LRA=4.50:measured_thresh=-34.09:offset=-0.43:linear=true,aresample=48000,apad,atrim=duration=13.537,afade=t=in:d=0.008,afade=t=out:st=13.517000000000001:d=0.02",
+  "outputSHA256": "60dd670be89cdea8cccd6fc749c2612defdf7cbeb47d1968a074d0c4bb069bef",
+  "voice": "Original generated performance; no replacement speech"
+}

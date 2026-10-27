@@ -35,7 +35,7 @@ Audio still comes from the presenter alone. Every audience window is silent. Pol
 - **12 · Current Employer — slides 466–499:** Marcus’s call is above the apartment. Police films replace that upper view once, never as laptop participants. Each clip clears when it ends; the apartment remains below. The hallway-to-interior knock cue is retained.
 - **13 · The Trial — slides 500–529:** courtroom scenery occupies the lower wings. The prosecutor and judge appear once above. Exhibits use the left wing while a recorded official speaks, then can fill the upper screen during other evidence cues. The audit exhibit’s termination time matches the prosecutor’s spoken **09:14**.
 - **14 · Continuity — slides 530–563:** candlelit apartment scenery and the radio occupy the lower wings; the upper screen is dark during the private conversation. The city and stars remain visible below after the radio ends. Swarm explanation, news and reporters use the upper screen; off-camera answers stay black. The old supplemental action-count badge is not projected over rooms, exhibits or people.
-- **15 · Great News — slides 564–583:** a dark transition leads to a spare workshop/window treatment below, leaving the live loom and actors to carry the scene. No computer interface is projected into the technology ban. The last title and existing outro film appear above.
+- **15 · Great News — slides 564–583:** a dark transition leads to workshop scenery below. Marcus's left LED wing contains a mounted sledgehammer and a large brass plaque reading “Remember SJ 2026”; it appears only after the time jump. No computer interface is projected into the technology ban. The last title and existing outro film appear above.
 
 ## Make changes
 

@@ -112,6 +112,8 @@ body {
   border-bottom:0;
   background:repeating-linear-gradient(90deg,transparent 0 395px,#66533b 395px 415px),linear-gradient(#626951,#454b38);
   opacity:.7}
+.wall[data-look="loom"] .leftWing {
+  background:#3b3427 url('assets/sets/v2/marcus-memorial-2026.png') center/cover no-repeat}
 #black {
   display:none;
   position:absolute;

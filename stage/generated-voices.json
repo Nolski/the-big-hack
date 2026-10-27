@@ -7578,12 +7578,12 @@
       }
     },
     "s14a_l26": {
-      "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
+      "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you a sledgehammer because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
       "speaker": "liam",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-c6aa929aeb8a1a991bb7a5a6129e28b514409683fcf8058bdcde5bd5d3edb224.mp3",
-      "duration": 13.00898,
-      "audioSha256": "c6aa929aeb8a1a991bb7a5a6129e28b514409683fcf8058bdcde5bd5d3edb224",
+      "audio": "assets/audio/shared-355e4d06b3fdf4c76f0a58d36a512a55e10071cb30f37e6dd95f21d4edfc5db5.mp3",
+      "duration": 13.087347,
+      "audioSha256": "355e4d06b3fdf4c76f0a58d36a512a55e10071cb30f37e6dd95f21d4edfc5db5",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",

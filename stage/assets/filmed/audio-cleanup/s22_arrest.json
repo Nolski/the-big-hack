@@ -1,0 +1,21 @@
+{
+  "signature": {
+    "version": 1,
+    "edit": {
+      "id": "s22_arrest",
+      "source": "assets/filmed/police/s22_arrest.mp4",
+      "cue": "s22_arrest",
+      "trimStart": 0,
+      "trimEnd": 0
+    },
+    "sourceSHA256": "c4d3b521a273d50cefa94b169fae390cc806582d30dd4d5ac48872d7e81d149c"
+  },
+  "output": "assets/filmed/audio-cleanup/s22_arrest-clean-v1.mp4",
+  "duration": 16.018,
+  "sourceStart": 0.0,
+  "sourceEnd": 16.018,
+  "isolatedStem": "assets/filmed/audio-cleanup/isolated/s22_arrest.mp3",
+  "filters": "atrim=start=0.0:end=16.018,asetpts=PTS-STARTPTS,highpass=f=65,equalizer=f=240:t=q:w=0.8:g=-1,equalizer=f=3000:t=q:w=0.7:g=1,acompressor=threshold=0.1:ratio=2:attack=15:release=150:makeup=1,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=7:measured_I=-25.74:measured_TP=-9.84:measured_LRA=6.70:measured_thresh=-37.93:offset=0.57:linear=true,aresample=48000,apad,atrim=duration=16.018,afade=t=in:d=0.008,afade=t=out:st=15.998000000000001:d=0.02",
+  "outputSHA256": "6e0629eb2ca62c615c59f3414283f4709c4f0731786feb9917a1c373e6059634",
+  "voice": "Original generated performance; no replacement speech"
+}

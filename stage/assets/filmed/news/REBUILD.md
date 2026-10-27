@@ -18,6 +18,8 @@ Replace `collapse` with `opening`, `time-jump-a`, `time-jump-b`, `time-jump-c`, 
 
 The assembly code is [tools/rebuild_news.py](../../../../tools/rebuild_news.py). The container definition is [tools/news-montages/Dockerfile](../../../../tools/news-montages/Dockerfile). Existing FFmpeg users can add `--native` to skip Docker; it never installs anything. The reporter overlays also need the DejaVu fonts included in the container.
 
+The three-day recipe now uses the approved [cleaned voice sources](../audio-cleanup/README.md), including the two 1.5-second end trims. Their speech is already balanced, so `audioFilter: anull` avoids applying the old heavy dialogue processing a second time. The nuclear report's two source takes and picture/sound offsets are listed under `threeDay[7].parts`.
+
 ## Sources
 
 - **[raw/real/](raw/real/)**: 28 real footage files for the opening, three time jumps, and sentencing statements. [INDEX.csv](raw/real/INDEX.csv) records URLs, source offsets, and hashes. Longer broadcasts are supplied as ungraded excerpts with handles where needed; these are editing sources, rather than full programmes. The original Hegseth excerpt is retained before the inner-frame crop. Vance and Trump were recovered from their original URLs. The build retains Vance's +6 dB boost and the approved small trims.

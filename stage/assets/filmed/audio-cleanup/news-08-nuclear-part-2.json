@@ -1,0 +1,18 @@
+{
+  "signature": {
+    "version": 1,
+    "edit": {
+      "id": "news-08-nuclear-part-2",
+      "source": "assets/filmed/news/raw/three-day/08-nuclear-plant-part-2.mp4"
+    },
+    "sourceSHA256": "95415f89ca87fc21145f2f561fdc915e2693ed255ebc5ecec8150ef675cbce68"
+  },
+  "output": "assets/filmed/audio-cleanup/news-08-nuclear-part-2-clean-v1.mp4",
+  "duration": 8.0,
+  "sourceStart": 0.0,
+  "sourceEnd": 8.0,
+  "isolatedStem": "assets/filmed/audio-cleanup/isolated/news-08-nuclear-part-2.mp3",
+  "filters": "atrim=start=0.0:end=8.0,asetpts=PTS-STARTPTS,highpass=f=65,equalizer=f=240:t=q:w=0.8:g=-1,equalizer=f=3000:t=q:w=0.7:g=1,acompressor=threshold=0.1:ratio=2:attack=15:release=150:makeup=1,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=7:measured_I=-20.62:measured_TP=-6.57:measured_LRA=3.40:measured_thresh=-31.20:offset=-0.29:linear=true,aresample=48000,apad,atrim=duration=8.0,afade=t=in:d=0.008,afade=t=out:st=7.98:d=0.02",
+  "outputSHA256": "9da4d408481bdb1ed984d876e2422047a5868d69b6c9944b8c43d7d230607ee4",
+  "voice": "Original generated performance; no replacement speech"
+}
