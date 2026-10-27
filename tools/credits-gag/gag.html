@@ -1,0 +1,57 @@
+<!doctype html><meta charset=utf-8>
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{width:640px;height:360px;overflow:hidden;background:#1a1a19;color:#f2f1ee;font:15px/1.35 "Liberation Sans",Helvetica,Arial,sans-serif}
+#top{height:34px;display:flex;align-items:center;gap:8px;padding:0 14px;border-bottom:1px solid #2c2c2a;color:#b9b6ae;font-size:12px}
+#top b{color:#f2f1ee;font-weight:600}
+.chip{border:1px solid #3a3a37;border-radius:10px;padding:1px 8px;font-size:11px;color:#c9c6be}
+#thread{position:absolute;top:34px;left:0;right:0;height:230px;overflow:hidden}
+#inner{position:absolute;bottom:6px;left:14px;right:14px}
+.user{max-width:92%;background:#2b2b29;border-radius:12px;padding:7px 12px;margin:6px 0 6px auto;width:fit-content}
+.claude{margin:7px 0 3px}
+.spin{margin:6px 0 2px;color:#d97757}
+.spin span{color:#8d8a83;font-size:12px;margin-left:6px}
+.notice{margin:7px 0 0;color:#b9b6ae;font-size:12.5px}
+.card{margin-top:5px;background:#232322;border:1px solid #333330;border-radius:12px}
+.det{padding:0 12px 9px;color:#8d8a83;font-size:11.5px}
+.det code{font-family:"Liberation Mono",monospace;color:#b9b6ae}
+.card p{padding:9px 12px;font-size:12.5px;line-height:1.36}
+#comp{position:absolute;left:12px;right:12px;bottom:30px;height:58px;border:1px solid #3a3a37;border-radius:14px;background:#1f1f1e;padding:8px 12px;font-size:14px;overflow:hidden}
+#comp .ph{color:#77746d}
+#comp .plus{position:absolute;left:12px;bottom:6px;color:#b9b6ae;font-size:18px}
+#bar{position:absolute;left:14px;right:14px;bottom:6px;display:flex;justify-content:space-between;color:#c9c6be;font-size:12px}
+.caret{display:inline-block;width:1.5px;height:14px;background:#f2f1ee;vertical-align:-2px}
+.caret.off{background:transparent}
+</style>
+<div id=top><b>◆ Claude Code</b><span class=chip>Nolski/the-big-hack</span><span class=chip>main</span></div>
+<div id=thread><div id=inner></div></div>
+<div id=comp></div>
+<div id=bar><span>Auto</span><span>Opus 5.5&nbsp; High &nbsp;<span style="color:#8d8a83">◯</span></span></div>
+<script>
+const P="review the play's script for technical accuracy, in particular the mechanism by which the AI virus gets loose";
+const R="It is technically plausible tha";
+const NOTICE="Opus 5.5's safeguards flagged this session. You may be seeing this for the first time: Opus 5.5 is more capable and has stronger safeguards as a result, which can sometimes flag cybersecurity-adjacent work. We're improving these safeguards to reduce the amount of incorrectly flagged messages. Switch to Opus 4.8 and keep going whenever this happens? You can change this later in /config.";
+const T0=KEY_T0, SEND=KEY_SEND, SPIN=SEND, TXT=SEND+4.1, TXTEND=TXT+0.9, NOT=TXTEND+0.7;
+const CARET_ON=NOT+3.5, BLINK=1/2.2;
+const G=['·','✢','✳','✶','✻','✽'];
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function typed(t){let n=0;while(n<KEYS.length&&KEYS[n]<=t-T0)n++;return n}
+function render(t){
+  const typing=(t>=T0&&t<SEND);
+  const caret='<span class="caret'+((typing||Math.floor(t*2.2)%2==0)?'':' off')+'"></span>';
+  const idle=caret+'<span class=ph style="margin-left:5px">Type / for commands</span>';
+  let comp='<span class=plus>+</span>';
+  if(t<T0) comp+=idle;
+  else if(t<SEND) comp+=esc(P.slice(0,typed(t)))+caret;
+  else if(t<CARET_ON) comp+='<span class=ph>Type / for commands</span>';
+  else comp+=idle;
+  document.getElementById('comp').innerHTML=comp;
+  let h='';
+  if(t>=SEND) h+='<div class=user>'+esc(P)+'</div>';
+  if(t>=TXT){const n=Math.min(R.length,Math.floor((t-TXT)/(TXTEND-TXT)*R.length));h+='<div class=claude>'+esc(R.slice(0,n))+'</div>'}
+  if(t>=SPIN&&t<TXT){h+='<div class=spin>'+G[Math.floor(t*8)%6]+' Clauding… <span>('+Math.floor(t-SPIN)+'s · esc to interrupt)</span></div>'}
+  if(t>=NOT){h+='<div class=notice>Claude Code notice ›</div><div class=card style="opacity:'+Math.min(1,(t-NOT)/0.25)+'"><p>'+esc(NOTICE)+'</p><div class=det>Details: <code>[cyber]</code></div></div>'}
+  document.getElementById('inner').innerHTML=h;
+}
+window.END=CARET_ON;
+</script>
