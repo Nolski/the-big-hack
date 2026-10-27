@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-f83f04480f20455d",
+  "scriptRevision": "shared-c233df3540e948f1",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -17924,7 +17924,7 @@
         "laptop": "open"
       },
       "loop": true,
-      "audioDuration": 13.00898,
+      "audioDuration": 0,
       "state": "apartment",
       "id": "s14a_l26",
       "screenActions": {},
@@ -17932,7 +17932,7 @@
       "sourceBeat": 26,
       "beat": 26,
       "name": "SJ",
-      "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
+      "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you a sledgehammer because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
       "groupEnd": 303,
       "speaker": "liam",
       "direction": "live",
@@ -17945,14 +17945,14 @@
         "brendan",
         "marcus"
       ],
-      "audio": "assets/audio/shared-c6aa929aeb8a1a991bb7a5a6129e28b514409683fcf8058bdcde5bd5d3edb224.mp3",
+      "audio": null,
       "visualMapping": "matched",
       "notes": [
         {
           "id": "s14a_l26",
           "kind": "live",
           "name": "SJ",
-          "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you an antique loom because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
+          "text": "I have an idea for what I'm gonna get you for christmas, Marcus. I'm gonna get you a sledgehammer because of how much you like the Luddites. Look, what happened happened. I just wish I knew what I could have done better.",
           "direction": "live"
         }
       ],
@@ -23155,10 +23155,10 @@
       "screenActions": {},
       "id": "s20_insert_14-craigslist-3s",
       "sfx": [],
-      "montageDuration": 3.0,
+      "montageDuration": 7.5,
       "beat": 58,
       "name": "",
-      "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
+      "text": "An engineer asks: “Why is a database server reading Craigslist?” The recorded response follows immediately. Play to the end, then GO.",
       "groupEnd": 414,
       "speaker": "",
       "direction": "",
@@ -23173,12 +23173,12 @@
           "id": "s20_insert_14-craigslist-3s",
           "kind": "stage",
           "name": "",
-          "text": "An engineer asks: “Why is a database server reading Craigslist?” Play to the end, then GO.",
+          "text": "An engineer asks: “Why is a database server reading Craigslist?” The recorded response follows immediately. Play to the end, then GO.",
           "direction": ""
         }
       ],
       "mode": "montage",
-      "montage": "assets/filmed/oncall-review-v2/14-craigslist-3s.mp4",
+      "montage": "assets/filmed/oncall-review-v2/craigslist-exchange-take-002-2.95s.mp4",
       "kind": "stage",
       "backgroundMusic": {
         "id": "audit-swarm",
@@ -23232,7 +23232,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 220.913
+        "startAt": 225.413
       }
     },
     {
@@ -23274,7 +23274,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 248.159
+        "startAt": 252.659
       }
     },
     {
@@ -23323,7 +23323,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 261.181
+        "startAt": 265.681
       }
     },
     {
@@ -23365,7 +23365,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 277.22
+        "startAt": 281.72
       }
     },
     {
@@ -23414,7 +23414,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 285.22
+        "startAt": 289.72
       }
     },
     {
@@ -23473,7 +23473,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 305.256
+        "startAt": 309.756
       }
     },
     {
@@ -23529,7 +23529,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 326.337
+        "startAt": 330.837
       }
     },
     {
@@ -23590,7 +23590,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 331.405
+        "startAt": 335.905
       }
     },
     {
@@ -23646,7 +23646,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 333.286
+        "startAt": 337.786
       }
     },
     {
@@ -23707,7 +23707,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 337.335
+        "startAt": 341.835
       }
     },
     {
@@ -23763,7 +23763,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 350.422
+        "startAt": 354.922
       }
     },
     {
@@ -23824,7 +23824,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 352.303
+        "startAt": 356.803
       }
     },
     {
@@ -23885,7 +23885,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 370.667
+        "startAt": 375.167
       }
     },
     {
@@ -23943,7 +23943,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 379.183
+        "startAt": 383.683
       }
     },
     {
@@ -24001,7 +24001,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 384.512
+        "startAt": 389.012
       }
     },
     {
@@ -24059,7 +24059,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 394.7
+        "startAt": 399.2
       }
     },
     {
@@ -24117,7 +24117,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 396.972
+        "startAt": 401.472
       }
     },
     {
@@ -24175,7 +24175,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 399.323
+        "startAt": 403.823
       }
     },
     {
@@ -24228,7 +24228,7 @@
       "backgroundMusic": {
         "id": "audit-swarm",
         "src": "assets/music/audit-swarm.mp3",
-        "startAt": 406.246,
+        "startAt": 410.746,
         "fadeOut": 10
       }
     },
