@@ -55,6 +55,32 @@ def cards(font_path):
             lines += [(role, 34, y, GREY, 5, 'r', W / 2 - 30), (who, 34, y, WHITE, 5, 'l', W / 2 + 30)]
         return card(lines)
 
+    def message(paragraphs, max_width=1000, gap=36):
+        im = Image.new('RGB', (W, H), 'black')
+        d = ImageDraw.Draw(im)
+        blocks = []
+        for text, size, fill, track in paragraphs:
+            f = ImageFont.truetype(font_path, size)
+            wide = lambda t: d.textlength(t, font=f) + track * len(t)
+            rows, row = [], ''
+            for word in text.split():
+                if row and wide(row + ' ' + word) > max_width:
+                    rows.append(row)
+                    row = word
+                else:
+                    row = (row + ' ' + word).strip()
+            blocks.append((rows + [row], f, fill, track, size * 1.4))
+        y = (H - sum(len(r) * lh for r, _, _, _, lh in blocks) - gap * (len(blocks) - 1)) / 2
+        for rows, f, fill, track, lh in blocks:
+            for row in rows:
+                x = (W - d.textlength(row, font=f) - track * (len(row) - 1)) / 2
+                for c in row:
+                    d.text((x, y + lh / 2), c, font=f, fill=fill, anchor='lm')
+                    x += d.textlength(c, font=f) + track
+                y += lh
+            y += gap
+        return im
+
     def credit(label, names, extra):
         return card([(label, 30, 255, GREY, 9), (names, 64, 340, WHITE, 7), (extra, 64, 430, WHITE, 7)])
     return {
@@ -68,6 +94,12 @@ def cards(font_path):
                       ('NARRATOR', 'ELEVENLABS'), ('DANA FROM HR', 'ELEVENLABS'),
                       ('JUDGE', 'VEO'), ('COPS', 'VEO'), ('PROSECUTOR', 'VEO'),
                       ('BLUE TEAM', 'VEO'), ('METLSTORM', 'HIMSELF')]),
+        'plea': message([
+            ('AI models are trained on content that includes work stolen from artists, writers and other creatives. '
+             'People in these industries are being significantly impacted.', 32, GREY, 1),
+            ("AI might be able to write code, but it can't create art.", 32, GREY, 1),
+            ('There is an easy solution to this and that is', 32, GREY, 1),
+            ('PAY ARTISTS AND CREATIVES.', 50, WHITE, 4)]),
         'tech': card([('MUSIC BY', 30, 235, GREY, 9), ('SUNO', 64, 310, WHITE, 7),
                       ('PRERECORDED VIDEO BY', 30, 430, GREY, 9), ('GOOGLE VEO', 64, 505, WHITE, 7)]),
     }
@@ -91,8 +123,8 @@ def main():
 
     hit = fit_grid()
     timeline = [(0, 'black'), (hit(0), 'title'), (hit(2), 'w1'), (hit(3), 'w2'),
-                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(10), 'tech'), (hit(12), 'black')]
-    end = hit(13)
+                (hit(4), 'a1'), (hit(5), 'a2'), (hit(6), 'cast'), (hit(10), 'tech'), (hit(12), 'plea'), (hit(17), 'black')]
+    end = hit(18)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         lines = []
