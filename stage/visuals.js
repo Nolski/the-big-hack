@@ -266,7 +266,7 @@ export function counterProfile(c){
  return {base:later[c.scene]||0,rate:later[c.scene]?5000:0,visible:!!later[c.scene]&&c.state!=='black'&&!c.offstage&&!isWorm(c),large:false};
 }
 
-const desktopPortraits={SJ:'sj-desktop',Brendan:'brendan-desktop',Marcus:'marcus',Kristina:'kristina-desktop',Kara:'kara',Dana:'hr'};
+const desktopPortraits={SJ:'sj-desktop',Brendan:'brendan-desktop',Marcus:'marcus-sledgehammer',Kristina:'kristina-desktop',Kara:'kara',Dana:'hr'};
 // Decorative desktop chrome stays outside the authored 1920×1080 app canvas.
 function desktopChrome(owner){
  const icon=(kind,label)=>`<div class="desktopIcon"><span class="desktopGlyph ${kind}">${kind==='file'?'≡':''}</span><span>${label}</span></div>`;
