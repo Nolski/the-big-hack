@@ -1,6 +1,6 @@
 import {projectionCue} from './projection-cue.js';
 import {isWorm,drawWorm} from './worm.js';
-import {renderVisual,backgroundFor,counterProfile} from './visuals.js?v=outro-montage-20261023e';
+import {renderVisual,backgroundFor,counterProfile} from './visuals.js?v=outro-no-title-20261028';
 import {screenLabel,drawScreenAction} from './screen-actions.js?v=reddit-return-20261017';
 import {drawVenueGraphic} from './venue-graphics.js';
 const params=new URLSearchParams(location.search),initialSide=params.get('side')==='right'?'right':'left',preview=params.has('preview'),channel=new BroadcastChannel('big-hack-stage-v2:'+(params.get('controller')||localStorage.getItem('big-hack-display-controller')||'unbound'));

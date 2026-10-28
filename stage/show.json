@@ -348,7 +348,7 @@
       "movement": "V",
       "cast": [],
       "id": "s25",
-      "count": 20,
+      "count": 23,
       "mode": "offstage",
       "start": 563,
       "source": "25 - Great News.md",
@@ -938,7 +938,10 @@
     579,
     580,
     581,
-    582
+    582,
+    583,
+    584,
+    585
   ],
   "title": "The Big Hack",
   "audioManifestRequired": true,
@@ -967,7 +970,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-a94d0579d019488f",
+  "scriptRevision": "shared-381eed8d87ed4606",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -31218,13 +31221,13 @@
       "voiceId": "hpp4J3VqNfWAUOO0d1Us",
       "offstage": true,
       "loop": true,
-      "audioDuration": 11.72898,
+      "audioDuration": 0,
       "state": "black",
       "id": "s25_l17",
       "screenActions": {},
       "beat": 17,
       "name": "Kristina",
-      "text": "God, though. Imagine the whole team moving like that - AND we'd all be able to work from the same place! Won't that be exciting? Anyway - I've got a thing at eleven, I'll talk to you later!",
+      "text": "God, though. Imagine the whole team moving like that - AND we'd all be able to work from the same place! Won't that be exciting? ",
       "groupEnd": 579,
       "speaker": "kristina",
       "direction": "live, already at the door",
@@ -31233,13 +31236,13 @@
       "scene": "s25",
       "sourceLine": 32,
       "cast": [],
-      "audio": "assets/audio/shared-4e44b6e536a9d8c66190c8ce4e365836c1d96d2a5707f110bf47fc1d2d3e4756.mp3",
+      "audio": null,
       "notes": [
         {
           "id": "s25_l17",
           "kind": "live",
           "name": "Kristina",
-          "text": "God, though. Imagine the whole team moving like that - AND we'd all be able to work from the same place! Won't that be exciting? Anyway - I've got a thing at eleven, I'll talk to you later!",
+          "text": "God, though. Imagine the whole team moving like that - AND we'd all be able to work from the same place! Won't that be exciting? ",
           "direction": "live, already at the door"
         }
       ],
@@ -31265,7 +31268,7 @@
       "screenActions": {},
       "beat": 18,
       "name": "",
-      "text": "MARCUS at the frame with the shuttle in his hand.",
+      "text": "The door shuts. MARCUS looks at the loom, at his half yard of cloth. He sits back down and picks up the shuttle.",
       "groupEnd": 580,
       "speaker": "",
       "direction": "",
@@ -31280,12 +31283,92 @@
           "id": "s25_l18",
           "kind": "stage",
           "name": "",
-          "text": "MARCUS at the frame with the shuttle in his hand.",
+          "text": "The door shuts. MARCUS looks at the loom, at his half yard of cloth. He sits back down and picks up the shuttle.",
           "direction": ""
         }
       ],
       "mode": "offstage",
       "kind": "stage"
+    },
+    {
+      "state": "black",
+      "mode": "offstage",
+      "cast": [],
+      "screenActions": {},
+      "computers": {},
+      "beat": 18,
+      "loop": true,
+      "staging": {
+        "location": "offstage",
+        "set": null,
+        "computer": "absent",
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "physical"
+      },
+      "offstage": true,
+      "id": "s25_l18b",
+      "scene": "s25",
+      "sfx": [],
+      "advance": "manual",
+      "audio": null,
+      "audioDuration": 0,
+      "kind": "live",
+      "speaker": "marcus",
+      "name": "Marcus",
+      "text": "The whole team...",
+      "direction": "live, quietly, to himself",
+      "groupEnd": 581,
+      "notes": [
+        {
+          "id": "s25_l18b",
+          "kind": "live",
+          "name": "Marcus",
+          "text": "The whole team...",
+          "direction": "live, quietly, to himself"
+        }
+      ]
+    },
+    {
+      "state": "black",
+      "mode": "offstage",
+      "cast": [],
+      "screenActions": {},
+      "computers": {},
+      "beat": 18,
+      "loop": true,
+      "staging": {
+        "location": "offstage",
+        "set": null,
+        "computer": "absent",
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "physical"
+      },
+      "offstage": true,
+      "id": "s25_l18c",
+      "scene": "s25",
+      "sfx": [],
+      "advance": "manual",
+      "audio": null,
+      "audioDuration": 0,
+      "kind": "stage",
+      "speaker": "",
+      "name": "",
+      "text": "He stops. He puts the shuttle down. He takes the sledgehammer off the wall, the big red Christmas bow still on the handle, and stands over his own loom.",
+      "direction": "",
+      "groupEnd": 582,
+      "notes": [
+        {
+          "id": "s25_l18c",
+          "kind": "stage",
+          "name": "",
+          "text": "He stops. He puts the shuttle down. He takes the sledgehammer off the wall, the big red Christmas bow still on the handle, and stands over his own loom.",
+          "direction": ""
+        }
+      ]
     },
     {
       "staging": {
@@ -31300,33 +31383,73 @@
       "voiceId": null,
       "offstage": true,
       "loop": true,
-      "audioDuration": 1.724082,
+      "audioDuration": 0,
       "state": "black",
       "id": "s25_l19",
       "screenActions": {},
       "beat": 19,
       "name": "Marcus",
-      "text": "….WHAT THE F",
-      "groupEnd": 581,
+      "text": "It's about time I finally manned up and did the right thing...",
+      "groupEnd": 583,
       "speaker": "marcus",
-      "direction": "live",
+      "direction": "live, raising the hammer",
       "computers": {},
       "advance": "manual",
       "scene": "s25",
       "sourceLine": 36,
       "cast": [],
-      "audio": "assets/audio/shared-33d33b75a32badd6e0adbcfac935db1b2bc2d055900e5c6e99ae027c79b22581.mp3",
+      "audio": null,
       "notes": [
         {
           "id": "s25_l19",
           "kind": "live",
           "name": "Marcus",
-          "text": "….WHAT THE F",
-          "direction": "live"
+          "text": "It's about time I finally manned up and did the right thing...",
+          "direction": "live, raising the hammer"
         }
       ],
       "mode": "offstage",
       "kind": "live"
+    },
+    {
+      "state": "black",
+      "mode": "offstage",
+      "cast": [],
+      "screenActions": {},
+      "computers": {},
+      "beat": 19,
+      "loop": true,
+      "staging": {
+        "location": "offstage",
+        "set": null,
+        "computer": "absent",
+        "beers": 0,
+        "callCast": [],
+        "callStatus": "none",
+        "view": "physical"
+      },
+      "offstage": true,
+      "id": "s25_smash",
+      "scene": "s25",
+      "sfx": [],
+      "advance": "manual",
+      "audio": null,
+      "audioDuration": 0,
+      "kind": "stage",
+      "speaker": "",
+      "name": "",
+      "text": "He brings the hammer down on his own loom. On the impact, lights cut to black.",
+      "direction": "",
+      "groupEnd": 584,
+      "notes": [
+        {
+          "id": "s25_smash",
+          "kind": "stage",
+          "name": "",
+          "text": "He brings the hammer down on his own loom. On the impact, lights cut to black.",
+          "direction": ""
+        }
+      ]
     },
     {
       "state": "title-card",
@@ -31358,13 +31481,13 @@
       "text": "Smash cut. Title card: THE BIG HACK over the silent 2026 montage. Music hits.",
       "direction": "",
       "backgroundMusic": {
-        "id": "two-companies",
-        "src": "assets/music/two-companies-v5-bubblegum-short.mp3",
+        "id": "headed-off-a-cliff",
+        "src": "assets/music/headed-off-a-cliff.mp3",
         "startAt": 0,
         "loop": false,
         "level": 1.4
       },
-      "groupEnd": 582,
+      "groupEnd": 585,
       "notes": [
         {
           "id": "s25_title_card",
@@ -31374,7 +31497,7 @@
           "direction": ""
         }
       ],
-      "titleVideo": "assets/filmed/outro-montage-v2.mp4"
+      "titleVideo": "assets/filmed/outro-montage-v3.mp4"
     }
   ],
   "schema": 2,
