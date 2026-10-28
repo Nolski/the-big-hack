@@ -967,7 +967,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-1dfdb91d3c744661",
+  "scriptRevision": "shared-a94d0579d019488f",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -1014,7 +1014,7 @@
           "direction": ""
         }
       ],
-      "montage": "assets/filmed/opening-montage-v10.mp4"
+      "montage": "assets/filmed/opening-montage-v11.mp4"
     },
     {
       "id": "s01_l1",

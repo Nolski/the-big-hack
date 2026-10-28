@@ -1,0 +1,84 @@
+{
+  "originalDuration": 116.545042,
+  "newDuration": 113.076688,
+  "newsDuration": 79.93333333333334,
+  "clips": [
+    {
+      "name": "elon-excerpt",
+      "start": 0,
+      "end": 8.9,
+      "source": "assets/filmed/news/raw/real/opening/elon-excerpt.mp4",
+      "sourceStart": 13.87,
+      "url": "https://www.youtube.com/watch?v=a2ZBEC16yH4"
+    },
+    {
+      "name": "hinton-sentences",
+      "start": 8.9,
+      "end": 14.3,
+      "source": "assets/filmed/news/raw/real/opening/hinton-sentences.mp4",
+      "sourceStart": 0,
+      "url": "https://www.youtube.com/watch?v=MGJpR591oaM"
+    },
+    {
+      "name": "breach-clip",
+      "start": 14.3,
+      "end": 19.866666666666667,
+      "source": "assets/filmed/news/raw/real/opening/breach-clip.mp4",
+      "sourceStart": 0.29,
+      "url": "https://www.youtube.com/watch?v=4UUQ3cAxOjY"
+    },
+    {
+      "name": "abc-php",
+      "start": 19.866666666666667,
+      "end": 25.8,
+      "source": "downloaded-source/abc-php-hd.mp4",
+      "sourceStart": 6.72,
+      "url": "https://abcnews.com/video/137470804/"
+    },
+    {
+      "name": "cbs-php",
+      "start": 25.8,
+      "end": 32.93333333333334,
+      "source": "downloaded-source/cbs-php.mp4",
+      "sourceStart": 21.02,
+      "url": "https://www.youtube.com/watch?v=ktPKrV3eQ1c"
+    },
+    {
+      "name": "wes-agents",
+      "start": 32.93333333333334,
+      "end": 41.26666666666667,
+      "source": "downloaded-source/wes-intro.mp4",
+      "sourceStart": 62.1,
+      "url": "https://www.youtube.com/watch?v=eK7Sn0_zHQw"
+    },
+    {
+      "name": "altman-new",
+      "start": 41.26666666666667,
+      "end": 43.800000000000004,
+      "source": "downloaded-source/altman.mp4",
+      "sourceStart": 82.06,
+      "url": "https://www.youtube.com/watch?v=sc68PYZUxXk"
+    },
+    {
+      "name": "dario-forward-source",
+      "start": 43.800000000000004,
+      "end": 49.13333333333334,
+      "source": "assets/filmed/news/raw/real/opening/dario-forward-source.mp4",
+      "sourceStart": 6.28,
+      "url": "https://www.youtube.com/watch?v=HI6skJ4Wf5I"
+    },
+    {
+      "name": "sam-ending-source",
+      "start": 49.13333333333334,
+      "end": 79.93333333333334,
+      "source": "assets/filmed/news/raw/real/opening/sam-ending-source.mp4",
+      "sourceStart": 1.32,
+      "url": "https://www.youtube.com/watch?v=2my-NU6LuCM"
+    }
+  ],
+  "tail": "Original SJ introduction and November 24, 2025 handoff",
+  "status": "Approved and installed",
+  "file": "opening-montage-v11.mp4",
+  "replaces": "opening-montage-v10.mp4",
+  "sha256": "4ceb00922861316a0da8a2da8d6b156635109eb5cdf5bb5a3ec684c9c8e3691d"
+}
