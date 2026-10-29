@@ -7,7 +7,8 @@ const show=playbackShow(source,readSettings(source));
 const at=id=>lightingAt(show,show.cues.findIndex(c=>c.id===id));
 
 assert.deepEqual(DESKS.map(d=>d.key),['K','B','S','M'],'Desks run stage right to left');
-assert.equal(readSettings(source).showLighting,false,'Lighting card is off by default');
+assert.equal(readSettings(source).showLighting,true,'Lighting card is on by default');
+assert.equal(readSettings(source,{showLighting:false}).showLighting,false,'An explicit off preference is preserved');
 assert.equal(readSettings(source,{showLighting:true}).showLighting,true);
 
 // Synthetic: scene default, cue change persisting, reset at the next scene, unset scene.
