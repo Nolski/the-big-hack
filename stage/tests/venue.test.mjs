@@ -105,7 +105,7 @@ test('scene-specific reveals and parallel work keep their authored tracks',()=>{
   }
   for(const id of ['s23b_sj_accusation','s23b_brendan_denial'])assert.equal(venuePlan(cue(id)).look,'dark');
   assert.equal(venuePlan(cue('s23b_l32')).look,'stars');
-  assert.equal(venuePlan(cue('s25_title_card')).upper.type,'source');
+  assert.equal(venuePlan(cue('s25_title_card')).upper.type,'film');
 });
 
 test('live/generated casting and skipping directions do not change output routing or action clocks',()=>{

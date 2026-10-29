@@ -13359,12 +13359,12 @@
       }
     },
     "s25_l17": {
-      "text": "God, though. Imagine the whole team moving like that - AND we'd all be able to work from the same place! Won't that be exciting? Anyway - I've got a thing at eleven, I'll talk to you later!",
+      "text": "God, though. Imagine the whole team moving like that - AND we'd all be able to work from the same place! Won't that be exciting? Anyway, I'll see you later.",
       "speaker": "kristina",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-4e44b6e536a9d8c66190c8ce4e365836c1d96d2a5707f110bf47fc1d2d3e4756.mp3",
-      "duration": 11.72898,
-      "audioSha256": "4e44b6e536a9d8c66190c8ce4e365836c1d96d2a5707f110bf47fc1d2d3e4756",
+      "audio": "assets/audio/shared-2446ff44a2bd83484031f7eb704495c244bb205d24f4c25844c54b86f3333680.mp3",
+      "duration": 10.266122,
+      "audioSha256": "2446ff44a2bd83484031f7eb704495c244bb205d24f4c25844c54b86f3333680",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -13807,12 +13807,12 @@
       }
     },
     "s25_l19": {
-      "text": "….WHAT THE F",
+      "text": "It's finally time for me to be a man and do what I didn't have the courage to do all those years ago.",
       "speaker": "marcus",
       "voiceProfile": null,
-      "audio": "assets/audio/shared-33d33b75a32badd6e0adbcfac935db1b2bc2d055900e5c6e99ae027c79b22581.mp3",
-      "duration": 1.724082,
-      "audioSha256": "33d33b75a32badd6e0adbcfac935db1b2bc2d055900e5c6e99ae027c79b22581",
+      "audio": "assets/audio/shared-843b56d43699892723f9be35b2b3ef9721a1e75c1fe68d940295ff8078d80cba.mp3",
+      "duration": 5.877551,
+      "audioSha256": "843b56d43699892723f9be35b2b3ef9721a1e75c1fe68d940295ff8078d80cba",
       "provenance": {
         "type": "elevenlabs",
         "model": "eleven_v4",
@@ -14530,6 +14530,34 @@
         "model": "eleven_v4",
         "voiceId": "Q4oILuo4P8VeXtE6FMLI",
         "voiceName": "Matthew Schmitz, Warm Mountain Man"
+      }
+    },
+    "s25_l18": {
+      "text": "Alone in his apartment, Marcus looks over to the sledge hammer SJ got him.",
+      "speaker": "narrator",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-5f3ae922985277481500032dce20fcfc797d195962a255073e7c9665d2325e9f.mp3",
+      "duration": 4.989388,
+      "audioSha256": "5f3ae922985277481500032dce20fcfc797d195962a255073e7c9665d2325e9f",
+      "provenance": {
+        "type": "elevenlabs",
+        "model": "eleven_v4",
+        "voiceId": "Q4oILuo4P8VeXtE6FMLI",
+        "voiceName": "Matthew Schmitz, Warm Mountain Man"
+      }
+    },
+    "s25_lamp": {
+      "text": "Oh no, my lamp, fuck fuck fuck",
+      "speaker": "marcus",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-27ba96841d738f0ae654bf6b235e8292bb1a348cf06b6aa0f6f0d3f8cd626e5c.mp3",
+      "duration": 3.474286,
+      "audioSha256": "27ba96841d738f0ae654bf6b235e8292bb1a348cf06b6aa0f6f0d3f8cd626e5c",
+      "provenance": {
+        "type": "elevenlabs",
+        "model": "eleven_v4",
+        "voiceId": "rHWSYoq8UlV0YIBKMryp",
+        "voiceName": "Jerry B, California Surfer Dude"
       }
     }
   }

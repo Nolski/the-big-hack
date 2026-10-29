@@ -272,7 +272,7 @@ function desktopChrome(owner){
  const icon=(kind,label)=>`<div class="desktopIcon"><span class="desktopGlyph ${kind}">${kind==='file'?'≡':''}</span><span>${label}</span></div>`;
  return `<div class="desktopMenu"><b>◆</b><strong>Finder</strong><span>File</span><span>Edit</span><span>View</span><span>Go</span><span>Window</span><span>Help</span><span class="desktopAccount">${esc(owner)}</span><span>⌁</span><span>▰</span></div><div class="desktopFiles">${icon('drive','Macintosh HD')}${icon('folder','Screenshots')}${icon('folder','Work')}${icon('file','Notes.txt')}</div><div class="desktopDock"><span class="dockApp finder">☺</span><span class="dockApp browser">◈</span><span class="dockApp terminalIcon">›_</span><span class="dockApp slackIcon">#</span><i></i><span class="desktopGlyph folder"></span><span class="dockTrash"><span class="desktopGlyph trash"></span><small>Trash</small></span></div>`;
 }
-export function renderVisual(c,side){let visual=renderBaseVisual(c,side);
+export function renderVisual(c,side){if(c.venueBlackout)return '';let visual=renderBaseVisual(c,side);
  const owner=c.computers?.[side],portrait=desktopPortraits[owner];
  // Physical scenes, phones, video links, blackout and films retain their own staging.
  if(visual&&portrait&&!c.montage&&!c.offstage&&c.state!=='black')visual=`<div class="ownerDesktop"><img class="ownerWallpaper" src="assets/wallpapers/${portrait}.png" alt="${esc(owner)}’s desktop wallpaper">${desktopChrome(owner)}<div class="desktopApps">${visual}</div></div>`;

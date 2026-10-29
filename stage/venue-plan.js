@@ -50,9 +50,11 @@ export function venuePlan(c) {
   const profile=SCENE_STAGING[c.scene]||{look:c.mode==='court'?'court':c.mode==='apartment'?'apartment':'work',note:'New scene: review the inherited venue staging.'};
   const p={look:profile.look, note:profile.note, upper:blank(), wall:{left:blank(),right:blank()}, centre:'scenery'};
   // Films are 16:9 performances, never stretched over the LED wall or duplicated.
+  if(c.venueBlackout)return {...p,look:'dark'};
+  if(['newspaper','fire'].includes(c.venueGraphic)){p.look='dark';p.upper=source('left');return p;}
   if(c.montage){
     p.upper={type:'film',side:'right'};
-    if(['s00','s01b','s06','s11c'].includes(c.scene))p.look='dark';
+    if(['s00','s01b','s06','s11c','s25'].includes(c.scene))p.look='dark';
     return p;
   }
   if(c.state==='title-card'){p.look='dark';p.upper=source('left');return p;}
@@ -110,7 +112,7 @@ export function venuePlan(c) {
 export function routedCue(c,slot){
   if(slot.type==='blank')return {...c,scene:'venue-black',state:'black',offstage:true,
     sharedPR:false,primeWallpaper:false,revisionCode:false,rehireNo:false,latestScreen:null,
-    venueDesktop:false,montage:null,performanceVideo:null};
+    venueDesktop:false,venueGraphic:null,montage:null,performanceVideo:null};
   if(slot.type==='film'||slot.type==='performance')return c;
   if(slot.type==='source')return {...c,staging:{...c.staging,set:null}};
   if(slot.type==='returned-mac')return {...c,primeWallpaper:true,computers:{left:'SJ'},staging:{...c.staging,set:null}};

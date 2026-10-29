@@ -83,7 +83,7 @@ export function playthroughStarts(show, settings, overrides = {}) {
     const c = show.cues[i], o = overrides[c.id] || {};
     const music = c.backgroundMusic, previous = show.cues[i - 1]?.backgroundMusic;
     const startsMusic = music?.src && (music.id !== previous?.id || music.src !== previous?.src);
-    return !settings.skipStageDirections || c.kind !== 'stage' || !!c.montage
+    return !settings.skipStageDirections || c.kind !== 'stage' || c.requiredStageCue === true || !!c.montage
       || !!c.sfx?.length || !!startsMusic || !!cueAudio(c, o) || !!o.left?.src || !!o.right?.src;
   });
 }
