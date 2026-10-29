@@ -14559,6 +14559,20 @@
         "voiceId": "rHWSYoq8UlV0YIBKMryp",
         "voiceName": "Jerry B, California Surfer Dude"
       }
+    },
+    "s25_loom_narrator": {
+      "text": "Marcus hadn't fully thought through what smashing his own loom would accomplish, but smashing it sure felt good.",
+      "speaker": "narrator",
+      "voiceProfile": null,
+      "audio": "assets/audio/shared-fd988e24d464441ab5fa22a37c518eaf15106502b40f422d52598cd2daec4176.mp3",
+      "duration": 7.392653,
+      "audioSha256": "fd988e24d464441ab5fa22a37c518eaf15106502b40f422d52598cd2daec4176",
+      "provenance": {
+        "type": "elevenlabs",
+        "model": "eleven_v4",
+        "voiceId": "Q4oILuo4P8VeXtE6FMLI",
+        "voiceName": "Matthew Schmitz, Warm Mountain Man"
+      }
     }
   }
 }
