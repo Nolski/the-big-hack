@@ -973,7 +973,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-c1682976aca34c91",
+  "scriptRevision": "shared-e0ecee6dca934951",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -31706,7 +31706,7 @@
       "kind": "stage",
       "speaker": "",
       "name": "",
-      "text": "Final credits: old theme fades on black; For What? begins. The Big Hack appears at 11.708 seconds into the song, then the first dancer at 21.417 seconds. Continue through the complete Claude → GLM ending.",
+      "text": "Final credits: old theme fades on black; For What? begins. The Big Hack is on screen from the first frame, then the first dancer at 21.417 seconds. The film ends on the last dancer.",
       "direction": "",
       "groupEnd": 588,
       "notes": [
@@ -31714,14 +31714,14 @@
           "id": "s25_title_card",
           "kind": "stage",
           "name": "",
-          "text": "Final credits: old theme fades on black; For What? begins. The Big Hack appears at 11.708 seconds into the song, then the first dancer at 21.417 seconds. Continue through the complete Claude → GLM ending.",
+          "text": "Final credits: old theme fades on black; For What? begins. The Big Hack is on screen from the first frame, then the first dancer at 21.417 seconds. The film ends on the last dancer.",
           "direction": ""
         }
       ],
       "montage": "assets/filmed/credits-for-what.mp4",
       "requiredStageCue": true,
       "lighting": [],
-      "montageDuration": 168.166
+      "montageDuration": 111.791
     }
   ],
   "schema": 2,
