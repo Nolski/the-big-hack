@@ -169,7 +169,7 @@ const screens={
  statement:()=>doc('Statement of Facts',para('The defendant knowingly and intentionally accessed a protected computer without authorisation.')+para('The defendant agrees that the foregoing statement is true and correct.')),
  knowingly:()=>doc('Statement of Facts','<blockquote>The defendant <mark>knowingly</mark> and intentionally accessed a protected computer without authorisation.</blockquote>'+para('I have read this statement in full.')),
  signed:()=>doc('Statement of Facts',para('I have read this statement in full.')+'<div class="signature">SJ Mkrtchyan</div><p class="signature-label">Signature of defendant</p>'+field('Date','Signed')),
- 'title-card':c=>c?.titleVideo?`<div class="titleCard hasVideo"><video class="titleVideo" src="${esc(c.titleVideo)}" muted playsinline loop preload="auto"></video><h1>THE BIG HACK</h1></div>`:'<div class="titleCard"><h1>THE BIG HACK</h1></div>',
+ 'title-card':c=>c?.titleVideo?`<div class="titleCard hasVideo"><video class="titleVideo" src="${esc(c.titleVideo)}" muted playsinline loop preload="auto"></video></div>`:'<div class="titleCard"><h1>THE BIG HACK</h1></div>',
  black:()=>''
 };
 function arrest(motive){return doc('Current employer',field('Name','SJ Mkrtchyan')+field('Current employer','Unemployed')+field('Motive',motive?'Recently laid off':''),'ARREST RECORD')}
