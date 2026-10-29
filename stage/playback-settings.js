@@ -93,3 +93,11 @@ export function playthroughIndex(show, settings, index, overrides = {}) {
   const starts = playthroughStarts(show, settings, overrides);
   return starts.find(i => i >= index) ?? starts.at(-1) ?? index;
 }
+
+// Authored timed sequences run independently of the rehearsal auto-advance setting.
+// Elapsed time is paused by the transport; recorded dialogue must actually finish.
+export function timedAdvanceReady(cue, elapsed, media, endedAt = null) {
+  if (!(Number.isFinite(cue.automaticAfterSeconds) && cue.automaticAfterSeconds > 0)) return false;
+  if (media.getAttribute('src')) return media.ended && endedAt != null && elapsed >= endedAt + (cue.automaticAudioTail ?? 0);
+  return elapsed >= cue.automaticAfterSeconds;
+}

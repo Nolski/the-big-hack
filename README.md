@@ -47,6 +47,8 @@ In Settings → Audio, **Music volume** controls the background score separately
 
 **Advance automatically after recordings and films**, also in Settings → Audio, moves to the next cue half a second after a generated voice, narration recording, or filmed clip finishes. It is off by default. Live lines, stage directions, and replacement clips still wait for GO, and pausing during that half second cancels the move.
 
+The final ending runs automatically once you start Marcus’s “Oh no, my lamp” cue. In live mode the shout has 3.8 seconds; in generated mode it waits for the recording plus 0.3 seconds. Fire runs for 5.625 seconds, then the newspaper reveal for 14 seconds, then the credits film plays. This sequence does not require the general auto-advance setting. Pause and blackout stop its timers; Replay restarts the current cue. The hammer strikes before this sequence still wait for GO.
+
 Editing a spoken line makes its old recording ineligible for playback. Generate a replacement or read it live; an old recording is never treated as the new dialogue. The presenter indicates when the script has changed so you can reload it between runs.
 
 ## Files contributors need

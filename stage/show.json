@@ -973,7 +973,7 @@
     "23b - Continuity.md": "0e68bc071bd423ce9fc0cfc43b39a6578b5da916d9b8adfe140e8b55f6a9eeee",
     "24 - Statement of Facts.md": "0459b018235b381eb08dfeae25f20dc5dccb1c9f46e37f7a660f80f508807580"
   },
-  "scriptRevision": "shared-f6c0bd4ea0cc4255",
+  "scriptRevision": "shared-c1682976aca34c91",
   "notes": "Compiled from edits/cut-pass 0a26f29. Visual beats retain prior staging mappings; sourceBeat is the current script beat.",
   "sourceBranch": "edits/cut-pass",
   "cues": [
@@ -31564,7 +31564,9 @@
         "startAt": 0,
         "loop": false,
         "level": 2.8
-      }
+      },
+      "automaticAfterSeconds": 3.791666667,
+      "automaticAudioTail": 0.3
     },
     {
       "staging": {
@@ -31585,7 +31587,7 @@
       "screenActions": {},
       "beat": 18,
       "name": "",
-      "text": "Fire catches in the darkness. After two seconds, flames appear on the upper screen. Hold, then GO to the newspaper.",
+      "text": "Fire catches. After two seconds, flame tips appear on black. Advance automatically at the end of the audible fire, 5.625 seconds.",
       "groupEnd": 586,
       "speaker": "",
       "direction": "",
@@ -31600,7 +31602,7 @@
           "id": "s25_fire",
           "kind": "stage",
           "name": "",
-          "text": "Fire catches in the darkness. After two seconds, flames appear on the upper screen. Hold, then GO to the newspaper.",
+          "text": "Fire catches. After two seconds, flame tips appear on black. Advance automatically at the end of the audible fire, 5.625 seconds.",
           "direction": ""
         }
       ],
@@ -31621,7 +31623,8 @@
         "loop": false,
         "level": 2.8
       },
-      "venueGraphic": "fire"
+      "venueGraphic": "fire",
+      "automaticAfterSeconds": 5.625
     },
     {
       "staging": {
@@ -31642,7 +31645,7 @@
       "screenActions": {},
       "beat": 18,
       "name": "",
-      "text": "The newspaper holds for four seconds, then zooms into Marcus’s obituary over four seconds. Hold the close-up for six seconds, then GO to the credits.",
+      "text": "The newspaper holds for four seconds, zooms into Marcus’s obituary over four seconds, then holds for six seconds before automatically starting the credits.",
       "groupEnd": 587,
       "speaker": "",
       "direction": "",
@@ -31657,7 +31660,7 @@
           "id": "s25_newspaper",
           "kind": "stage",
           "name": "",
-          "text": "The newspaper holds for four seconds, then zooms into Marcus’s obituary over four seconds. Hold the close-up for six seconds, then GO to the credits.",
+          "text": "The newspaper holds for four seconds, zooms into Marcus’s obituary over four seconds, then holds for six seconds before automatically starting the credits.",
           "direction": ""
         }
       ],
@@ -31673,7 +31676,8 @@
         "startAt": 0,
         "loop": false,
         "level": 2.8
-      }
+      },
+      "automaticAfterSeconds": 14
     },
     {
       "state": "montage",

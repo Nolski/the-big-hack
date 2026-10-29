@@ -38,3 +38,23 @@ test('ending score starts at zero on Marcus and carries through the fire and pap
  for(const c of show.cues.slice(start,end+1)){assert.equal(c.backgroundMusic.id,config.id);assert.equal(c.backgroundMusic.src,config.src);}
  const fire=show.cues.find(c=>c.id==='s25_fire');assert.equal(fire.venueGraphic,'fire');assert.equal(venuePlan(fire).upper.type,'source');assert.equal(venuePlan(fire).look,'dark');
 });
+
+test('ending timers preserve pause boundaries and wait for actual recorded dialogue',async()=>{
+ const {timedAdvanceReady}=await import('../playback-settings.js');
+ const lamp=show.cues.find(c=>c.id==='s25_lamp');
+ const fire=show.cues.find(c=>c.id==='s25_fire');
+ const paper=show.cues.find(c=>c.id==='s25_newspaper');
+ const silent={getAttribute:()=>null,ended:false};
+ assert.equal(timedAdvanceReady(lamp,3.7,silent),false);
+ assert.equal(timedAdvanceReady(lamp,3.8,silent),true);
+ assert.equal(timedAdvanceReady(fire,5.624,silent),false);
+ assert.equal(timedAdvanceReady(fire,5.625,silent),true);
+ assert.equal(timedAdvanceReady(paper,13.999,silent),false);
+ assert.equal(timedAdvanceReady(paper,14,silent),true);
+ const recording={getAttribute:()=>lamp.audio,ended:false};
+ assert.equal(timedAdvanceReady(lamp,10,recording),false);
+ recording.ended=true;
+ assert.equal(timedAdvanceReady(lamp,4.2,recording,4),false);
+ assert.equal(timedAdvanceReady(lamp,4.3,recording,4),true);
+ assert.equal(timedAdvanceReady({},100,silent),false);
+});
