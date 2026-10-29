@@ -1,5 +1,7 @@
 # The Big Hack
 
+[http://nolski.github.io/the-big-hack](http://nolski.github.io/the-big-hack)
+
 A play with two pages: **Editor** for changing the script, **Presenter** for rehearsing and running the show.
 
 ## Run it
